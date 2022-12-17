@@ -1,0 +1,25 @@
+state=
+{
+	id=638
+	name="STATE_638"
+	state_category = small_island
+	manpower=75153
+	history=
+	{
+		set_state_flag = USA_controls
+		owner = USA
+		buildings = {
+			infrastructure = 5
+			13260 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13259 1
+		 }
+
+	}
+	provinces={
+		12140 13259 13260 13261
+	}
+}
