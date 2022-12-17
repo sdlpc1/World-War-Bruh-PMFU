@@ -1,3 +1,0 @@
-characters={
-	# Left empty, everything is stored in CHI.txt instead
-}
