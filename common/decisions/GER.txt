@@ -384,6 +384,13 @@ GER_case_anton_category = {
 			divisions_in_state = { state = 26 size < 1 }
 			divisions_in_state = { state = 33 size < 1 }
 			divisions_in_state = { state = 20 size < 1 }
+			462 = { CONTROLLER = { NOT = { has_war_with = GER } } }
+			461 = { CONTROLLER = { NOT = { has_war_with = GER } } }
+			513 = { CONTROLLER = { NOT = { has_war_with = GER } } }
+			459 = { CONTROLLER = { NOT = { has_war_with = GER } } }
+			460 = { CONTROLLER = { NOT = { has_war_with = GER } } }
+			458 = { CONTROLLER = { NOT = { has_war_with = GER } } }
+			665 = { CONTROLLER = { NOT = { has_war_with = GER } } }
 			OR = {
 				ITA = { owns_state = 735 }
 				divisions_in_state = { state = 735 size < 1 }

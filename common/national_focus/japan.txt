@@ -1454,6 +1454,7 @@
 
 		available = {
 			NOT = { has_war_with = CHI }
+			date > 1940.4.1
 		}
 
 		completion_reward = {

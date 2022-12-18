@@ -2525,7 +2525,8 @@ focus_tree = {
 		available = {
 			
 			is_puppet = no
-			has_army_manpower = { size > 949999 } #100 div			
+			has_army_manpower = { size > 949999 } #100 div		
+			date > 1939.1.1	
 			#Make custom trigger tooltip here
 			85 = {
 				owner = {
@@ -2927,14 +2928,6 @@ focus_tree = {
 		available = {
 			has_army_manpower = { size > 1199999 }
 			OR = {
-				AND = {
-					date > 1939.3.1
-					date < 1939.8.1
-				}
-				AND = {
-					date > 1940.3.1
-					date < 1940.8.1
-				}
 				AND = {
 					date > 1941.3.1
 					date < 1941.8.1
