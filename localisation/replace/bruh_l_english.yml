@@ -1178,3 +1178,7 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  news.120.t:0 "The Fall of Los Santos"
  ## HOL battlecruiser ##
  HOL_the_battlecruiser_plan_tt:0 "§RGermany will accept this no matter what"
+
+ army_organizational_1:1 "Army Organization\n(Specialist)"
+ army_organizational_2:1 "Army Organization\n(Expert)"
+ army_organizational_3:1 "Army Organization\n(Genius)"

@@ -1438,7 +1438,9 @@
 			hidden_effect = {
 			remove_ideas = { FRA_defeatism }
 			remove_ideas = { FRA_workers_strikes_2 }
-			remove_ideas = { FRA_workers_strikes }
+			remove_ideas = { FRA_workers_strikes_1 }
+			remove_ideas = { FRA_inefficient_economy_2}
+			remove_ideas = { FRA_inefficient_economy_1 }
 			remove_ideas = { FRA_workers_strikes_1 }
 			remove_ideas = { FRA_compromise_with_the_workers_1 }
 			remove_ideas = { FRA_matignon_agreements_1 }
@@ -1749,7 +1751,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			USA = { country_event = lar_arms_purchases.1 }

@@ -514,49 +514,49 @@ propaganda_efforts = {
 		}
 	}
 
-	war_propaganda_radio_industry = { 
-		icon = generic_prepare_civil_war
+	# war_propaganda_radio_industry = { 
+	# 	icon = generic_prepare_civil_war
 
-		available = {
-			threat > 0.25
-			has_tech = radio
-		}
+	# 	available = {
+	# 		threat > 0.25
+	# 		has_tech = radio
+	# 	}
 
-		visible = {
-			if = {
-				limit = {
-					tag = SPR
-					has_dlc = "La Resistance"
-				}
-				NOT = {
-					has_idea = SPR_political_violence
-				}
-			}
-			if = {
-				limit = {
-					original_tag = SPR
-					has_dlc = "La Resistance"
-				}
-				has_global_flag = scw_over
-			}
-		}
+	# 	visible = {
+	# 		if = {
+	# 			limit = {
+	# 				tag = SPR
+	# 				has_dlc = "La Resistance"
+	# 			}
+	# 			NOT = {
+	# 				has_idea = SPR_political_violence
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				original_tag = SPR
+	# 				has_dlc = "La Resistance"
+	# 			}
+	# 			has_global_flag = scw_over
+	# 		}
+	# 	}
 
-		fire_only_once = yes
+	# 	fire_only_once = yes
 
-		cost = 75
+	# 	cost = 75
 
-		complete_effect = {
-			add_war_support = 0.05
-		}
+	# 	complete_effect = {
+	# 		add_war_support = 0.05
+	# 	}
 
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 201
-				has_war_support < 0.6
-			}
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 201
+	# 			has_war_support < 0.6
+	# 		}
+	# 	}
+	# }
 	
 	war_propaganda_film_industry = { 
 

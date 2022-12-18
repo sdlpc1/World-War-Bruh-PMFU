@@ -65,6 +65,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_airplane_launcher
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -225,7 +226,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries}
+				allowed_module_categories = { ship_anti_air ship_secondaries ship_dp_secondaries }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -247,15 +248,7 @@ equipments = {
 					ship_airplane_launcher
 				}
 			}
-			mid_2_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_airplane_launcher
-					ship_anti_air
-					ship_secondaries
-					ship_dp_secondaries
-				}
-			}
+			mid_2_custom_slot = mid_1_custom_slot
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -318,7 +311,7 @@ equipments = {
 					ship_secondaries
 					ship_dp_secondaries
 					ship_airplane_launcher
-					ship_heavy_battery
+					#ship_heavy_battery
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -384,7 +377,7 @@ equipments = {
 					ship_secondaries
 					ship_dp_secondaries
 					ship_airplane_launcher
-					ship_heavy_battery
+					#ship_heavy_battery
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -450,7 +443,7 @@ equipments = {
 					ship_secondaries
 					ship_dp_secondaries
 					ship_airplane_launcher
-					ship_heavy_battery
+					#ship_heavy_battery
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -518,7 +511,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+				allowed_module_categories = { ship_anti_air ship_secondaries ship_dp_secondaries }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -537,6 +530,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_secondaries
+					ship_airplane_launcher
 					ship_dp_secondaries
 				}
 			}
