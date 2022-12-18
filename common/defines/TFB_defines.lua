@@ -59,6 +59,10 @@ NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bo
 NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
 NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_ON_CORE = 0.05 -- Attack bonus factor when fighting on cores.
 NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_ON_CORE = 0.05 -- Defense bonus factor when fighting on cores.
+NDefines.MAX_PROPAGANDA_STABILITY_IMPACT = 0			-- Max total penalty from operative performing the propaganda mission in a country
+NDefines.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = 0		-- Max total penalty from operative performing the propaganda mission in a country
+NDefines.PROPAGANDA_STABILITY_DAILY_DECAY = 0		-- Amount of stability recovered daily from propaganda effort
+NDefines.PROPAGANDA_WAR_SUPPORT_DAILY_DECAY = 0		-- Amount of war support recovered daily from war support effort
 
 NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1	-- compliance factor that applies when the state controller changes (in between allies compliance is zeroed if it is taken by original country)
 NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.10 -- base compliance grow
