@@ -13,6 +13,19 @@
 - TFB Mod Included
 - TFB Plane Designer Included
 
+- Logistics bombing disabled
+- No sub 4
+- Danzig or war can only be done after 1.1.1939 (January 1st 1939)
+- Barbarossa can only be done after 1.3.1941 (March 1st 1941)
+- Sudetenland and fate of czechoslovakia events no longer can be refused
+- Japan has no option to not attack the USA
+- Japan cannot strike west before 1.4.1940 (April 1st 1940)
+- Germany has no option to not give eastern poland to USSR
+- Embargo cost is over 2000 PP so its not possible to use
+- Coup operation removed
+- Case anton only avaiable if west africa is controlled by countries that are at war with germany
+- Cant justify wargoals before 1940
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
