@@ -4372,12 +4372,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_embargo_cost_texticon"
-		texturefile = "gfx/texticons/embargo_cost_texticon.dds"
-		legacy_lazy_load = no
-	}
-	
-	spriteType = {
 		name = "GFX_balance_of_power_texticon"
 		texturefile = "gfx/texticons/balance_of_power_texticon.dds"
 		legacy_lazy_load = no
