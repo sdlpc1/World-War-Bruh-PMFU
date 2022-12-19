@@ -3045,6 +3045,13 @@
 
 		cost = 5
 
+		visible = {
+			has_game_rule = {
+				rule = RULE_USSR_WAR_FOCUS_ONLY
+				option = ENABLED
+			}
+		}
+
 		ai_will_do = {
 			factor = 2
 		}

@@ -237,6 +237,20 @@ allow_take_over_faction = {
 		desc = "RULE_ALLOW_TAKE_OVER_FACTION_BLOCKED_DESC"
 	}
 }
+allow_access = {
+	name = "RULE_USSR_WAR_FOCUS_ONLY"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	default = {
+		name = "DISABLED"
+		text = "RULE_USSR_WAR_FOCUS_ONLY_DISABLED"
+		desc = "RULE_USSR_WAR_FOCUS_ONLY_DISABLED_DESC"
+	}
+	option = {
+		name = "ENABLED"
+		text = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED"
+		desc = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED_DESC"
+	}
+}
 
  ##   ##  #   # ### ###  ###      ##   ##  ### ###  ##  #  #  ## 
 #  # #  # #   # #   #  #  #      #  # #  #  #   #  #  # ## # #   

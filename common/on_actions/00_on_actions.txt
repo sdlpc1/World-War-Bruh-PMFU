@@ -1294,6 +1294,12 @@ on_actions = {
 					}
 				}
 				if = {
+					limit = {
+						has_game_rule = {
+							rule = RULE_USSR_WAR_FOCUS_ONLY
+							option = ENABLED
+						}
+					}
 					SOV = {
 						add_ideas = SOV_block_japan_justify
 					}
