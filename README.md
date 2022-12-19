@@ -26,8 +26,6 @@
 - Case anton only avaiable if west africa is controlled by countries that are at war with germany
 - Cant justify wargoals before 1940
 - Propaganda mission no longer does anything
-- USSR has +10000% enemy justification time so USSR can no longer be justified on by anyone, only focuses can be used
-- Japan can go to war with USSR through a focus if they control India, Australia, New Zealand, Singapore and Philippines
 
 ## License
 
