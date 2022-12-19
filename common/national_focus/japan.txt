@@ -3045,9 +3045,9 @@
 
 		cost = 5
 
-		visible = {
+		allow_branch = {
 			has_game_rule = {
-				rule = RULE_USSR_WAR_FOCUS_ONLY
+				rule = ussr_war_focus_only
 				option = ENABLED
 			}
 		}
