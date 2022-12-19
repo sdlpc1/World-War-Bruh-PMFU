@@ -71,6 +71,7 @@
  JAP_pacify_china:0 "Pacify Chinese Populace"
  JAP_pacify_china_tt:0 "Will gain §Y20 Compliance Stength§! on every state we own with a Chinese core"
  JAP_asw_train:0 "Anti-Sub Warfare Training"
+ JAP_war_with_SOV:0 "Operation Kantokuen"
  #### EVENTS ####
  japan.500.t:0 "Southern Strike: Siam"
  japan.500.d:0 "Siam is located in a very important strategic position. Should we invite them to our faction or ask for their subjucation?"

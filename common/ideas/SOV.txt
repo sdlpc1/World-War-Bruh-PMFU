@@ -4736,7 +4736,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				enemy_justify_war_goal_time = 9999
+				enemy_justify_war_goal_time = 100
 			}
 		}
 	}

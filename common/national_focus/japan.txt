@@ -3037,7 +3037,7 @@
 
 	focus = {
 		id = JAP_war_with_SOV
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = JAP_strike_the_west }
 		x = -3
 		y = 1
@@ -3056,7 +3056,7 @@
 			440 = { controller = { is_in_faction_with = JAP } }
 			# australia
 			517 = { controller = { is_in_faction_with = JAP } }
-			552 = { controller = { is_in_faction_with = JAP } }
+			522 = { controller = { is_in_faction_with = JAP } }
 			429 = { controller = { is_in_faction_with = JAP } }
 			# new zealand
 			284 = { controller = { is_in_faction_with = JAP } }
