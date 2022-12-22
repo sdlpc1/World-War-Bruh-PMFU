@@ -1120,7 +1120,10 @@
 		}
 
 		available = {
-			NOT = {country_exists = CZE }
+			OR = {
+				NOT = {country_exists = CZE }
+				date > 1939.1.1
+			}
 		}
 
 		cancel_if_invalid = yes
