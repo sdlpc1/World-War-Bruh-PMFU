@@ -585,7 +585,15 @@ focus_tree = {
 			add_ideas = CAN_war_bonds_1
 			hidden_effect = {
 				CAN = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Areweatwar"
+					}
 				}
 			}
 		}

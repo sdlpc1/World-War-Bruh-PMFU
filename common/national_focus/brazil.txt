@@ -237,40 +237,136 @@ focus_tree = {
 			remove_ideas = neutrality_idea2
 			hidden_effect = {
 				ENG = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 				CAN = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 				SAF = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 				AST = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 				NZL = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 				RAJ = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 				IRE = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 				MEX = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 				FRA = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 				USA = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 				POL = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 				BRA = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "Brazil"
+					}
 				}
 			}
 		}

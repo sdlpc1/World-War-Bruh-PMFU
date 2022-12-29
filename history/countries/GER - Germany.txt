@@ -127,7 +127,7 @@ if = {
 }
 
 set_variable = { var = ger_gateway_to_europe_influence value = 0 }
-
+add_timed_idea = { idea = GER_mefo_air days = 1340 }
 set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
 #set_variable = { GER_poster_center_icon_frame = 1 }

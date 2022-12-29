@@ -18,7 +18,7 @@
  SOV_auto_industry:0 "Tractor Factories"
  SOV_auto_industry_desc:0 "Forget General Motors, Soviet automobiles are better than anything capitalism has to offer. Let us expand our production capabilities!"
  SOV_plant_expansion:0 "Expand the Tractor Plants"
- SOV_plant_expansion_desc:0 "More facotories for more tractors for more factories! It is this way the Soviet Union will surpass all the world and achieve self-sufficiency forever!"
+ SOV_plant_expansion_desc:0 "More factories for more tractors for more factories! It is this way the Soviet Union will surpass all the world and achieve self-sufficiency forever!"
  SOV_society_urbanisation:0 "Urbanisation of Society"
  SOV_society_urbanisation_desc:0 "The hardy forest-dweller must become the industrious factory worker if we are to create the true Soviet Model."
  SOV_tolkach:0 "Establish the Tolkachi"
@@ -67,9 +67,11 @@
  SOV_defend_stalingrad_desc:0 "From the mountains and the plains, come in thousands on the trains. Day and night, they're rolling in, to join the fight."
  SOV_liquidate_church:0 "Liquidate the Clergy" #unfortunately not a focus anymore, so we don't get to use my amazing description
  SOV_liquidate_church_desc:0 "All who possess loyalties to deities other than the great Josef Stalin should be considered traitors and shot, their properties liquidated for use by the Commisariat."
- SOV_seize_assets:0 "Seize Church Assets" #not a focus anymore
+ SOV_seize_assets:0 "Seize Church Assets"
+ SOV_seize_assets_desc:0 "The Orthodox Church has long been too powerful, its time to change that."
  SOV_childcare:0 "Establish Childcare" #not a focus anymore
- SOV_women:0 "Women Workers" #not a focus anymore
+ SOV_women:0 "Women Workers"
+ SOV_women_desc:0 "Women have been kept in homes for too long, its time we take action for equality."
  SOV_stakhanovite:0 "Embrace the Stakhanovite Movement"
  SOV_stakhanovite_desc:0 "The Stakhanovite Movement represents the best of the Soviet workforce--hardworking individuals laboring for the glory and prosperity of the motherland."
  SOV_extra_tech_slot:0 "Expand the Leningrad Institute of Technology"
@@ -101,7 +103,7 @@
  SOV_tank1:0 "Tank Development Program"
  SOV_tank1_desc:0 "Our current armor designs, though serving the Union dutifully, cannot hope to stand the test of time in their current state. Further development is required to ensure that the Soviet Union fights with modern tanks."
  SOV_tank2:0 "Mechanisation Effort"
- SOV_tank2_desc:0 "Horses are well and good, but quality, not quantity, is what shall win us the day. Armored personel carriers would serve us well."
+ SOV_tank2_desc:0 "Horses are well and good, but quality, not quantity, is what shall win us the day. Armored personnel carriers would serve us well."
  SOV_heavy_tank1:0 "Continue the KV Series"
  SOV_heavy_tank1_desc:0 "The Kliment Voroshilov (KV) series of heavy tanks has a ripe and just history serving the Soviet Union, packing some of the largest firepower we can offer in resistance to invasion."
  SOV_heavy_tank2:0 "Appoint OKMO"
@@ -182,7 +184,7 @@
  SOV_fareast_reserves_desc:0 "The survival of the entire Soviet Union is now in doubt. We must deploy all troops left on the Far East border to the frontline in a last ditch attempt to survive."
  SOV_reorganise_command:0 "Reorganise High Command" #not a focus
  SOV_slacken_inf:0 "Slacken Infantry Standards"
- SOV_slacken_inf:0 "While other armies may struggle, Soviet soldiers know how to make do"
+ SOV_slacken_inf_desc:0 "While other armies may struggle, Soviet soldiers know how to make do."
  SOV_coordinate_industry:0 "Improve Industry Coordination"
  SOV_coordinate_industry_desc:0 "The time has come to be heavy-handed. Any collectivization left to do must be done."
  SOV_focus_forced_labour:0 "Mobilise Gulag Workers"
@@ -204,6 +206,7 @@
  SOV_generic_partisans:0 "Coordinate Partisans"
  SOV_organise_partisans:0 "Partisan Coordination"
  SOV_partisan_organisation:0 "Organise the Partisans"
+ SOV_partisan_organisation_desc:0 "We must organize partisan movements in occupied territories to disrupt enemy logistics and cause chaos in the enemy's rear."
  SOV_nkvd_upgrade_tooltip:1 "Enables §HKNVD Integration§!\n§HAll Military Police:§!\n   £organization_texticon Organization: §G+40§!\n   £army_morale_texticon Recovery Rate: §G+0.2§!\n   £trickleback_texticon Trickleback: §R-20%§!"
 
  #### EVENTS ####
@@ -267,7 +270,6 @@
  SOV_winter_war_adapt:0 "Adapt Against the Fins"
  SOV_assure_competency:0 "Assure Public of Our Competency"
  SOV_bessarabia_adapt:0 "Adapt Against the Romanians"
- SOV_block_japan_justify:0 "Use a focus to declare war on USSR"
  
 
  #### DECISIONS ####

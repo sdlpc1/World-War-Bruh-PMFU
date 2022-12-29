@@ -210,6 +210,13 @@ ideas = {
 
 			picture = eng_tackle_capitalism
 			removal_cost = -1	
+
+			cancel = {
+				has_game_rule = {
+					rule = fatherless_spirit
+					option = DISABLED
+				}
+			}
 			
 			allowed = {
 				always = no

@@ -1144,7 +1144,6 @@ focus_tree = {
 		id = FIN_join_axis
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = FIN_marshal_of_finland }
-		text = ROM_join_axis
 		x = -1
 		y = 1
 		relative_position_id = FIN_marshal_of_finland

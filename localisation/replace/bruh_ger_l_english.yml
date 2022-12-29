@@ -57,6 +57,7 @@
  GER_strategic_air_effort2:0 "Amerikabomber"
  GER_strategic_air_effort2_desc:0 "The Kriegsmarine may not be up to the task of tackling America, but a bomber capable of traversing the vast Atlantic, delivering its payload, then making the return trip would certainly give us the edge in a war of attrition. We shall break the American Dream yet!"
  GER_air_doc:0 "Battlefield Support Theory"
+ GER_air_doc_desc:0 "Using planes to support us on the battlefield can lead to great results."
  GER_luft_2:0 "Expand the Luftwaffe"
  GER_luft_2_desc:0 "big plane, moar plane, lots of plane."
  GER_luft:0 "Luftwaffe"
@@ -218,6 +219,9 @@
  germany.104.f:0 "Nothing lol"
  germany.104.d:0 "Italy is asking for French lands after joining the war. What should we give them?"
  anschluss_mefo_bills_double_reduction:0 "Modify §YMEFO Bills§! by £political_power_texticon  §G+0.10§! Daily Political Power Gain\n"
+ germany.2003.t:0 "Spanish Gold Trade"
+ germany.2003.d:0 "We now get 33% more resources per civ given to Spain."
+ germany.2003.a:0 "Excellent!"
  
  ### IDEAS ###
  german_cooperation_focus:0 "German Advisors"
@@ -261,6 +265,7 @@
  GER_cas:0 "Advanced CAS Designs"
  #### DECISIONS ####
  GER_share_tanks:0 "Tank Sharing Programme"
+ GER_share_tanks_desc:0 "We have great tank designs and we should share them with our allies."
  GER_share_p4:0 "Purchase the Panzer III/IV"
  GER_share_p5:0 "Purchase the Panther"
  GER_share_p6:0 "Purchase the Tiger"
@@ -281,7 +286,7 @@
  GER_wunder_raketenwerfer:0 "Develop the Raketenwerfer"
  GER_wunder_hs132:0 "Develop the Hs 132"
  wunderwaffe:0 "Wunderwaffe"
- SS_recruitment_desc:1 ""
+ SS_recruitment_desc:1 "Recruit into the SS"
  SS_templates_desc:1 "SS Divisions cannot be trained, they can only be spawned by decisions. Divisions spawned can be of 2 types: Infantry or Armour. Whenever a division is spawned it will take the template currently assigned to that type.\n\nCurrent §YInfantry§! Template: [Root.GetSS_infantry_count]\n\nCurrent §YArmour§! Template: [Root.GetSS_armour_count]"
  SS_templates:1 "Waffen SS Templates"
  SS_heavy_template_create:0 "Create Heavy Armour Templates"

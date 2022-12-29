@@ -4,25 +4,25 @@
 
 add_namespace = mongolia
 
-country_event = {
-	id = mongolia.start
-	title = mongolia.start.t
-	desc = mongolia.start.d
-	picture = GFX_report_event_german_speech
+# country_event = {
+# 	id = mongolia.start
+# 	title = mongolia.start.t
+# 	desc = mongolia.start.d
+# 	picture = GFX_report_event_german_speech
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
- 	immediate = {		
- 	}
+#  	immediate = {		
+#  	}
 
-	option = {
-		name = mongolia.start.a
-		add_ideas = MON_nomad_1
-	}
-}
+# 	option = {
+# 		name = mongolia.start.a
+# 		add_ideas = MON_nomad_1
+# 	}
+# }
 
 
 

@@ -3489,7 +3489,15 @@
 			custom_effect_tooltip = ITA_blackshirts_tt
 			hidden_effect = {
 				ITA = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
 					scoped_sound_effect = "BlackShirts"
+					}
 				}
 			}
 		}

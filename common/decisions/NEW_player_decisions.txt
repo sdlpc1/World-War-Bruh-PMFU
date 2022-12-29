@@ -1,5 +1,45 @@
 NEW_player_decisions = {
 
+	hide_new_player_help = {
+		icon = generic_propaganda
+
+		allowed = {
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = new_player_help_disabled
+		}
+	}
+
+	# show_new_player_help = {
+	# 	icon = generic_propaganda
+
+	# 	allowed = {
+
+	# 	}
+
+	# 	visible = {
+	# 		always = yes
+	# 		has_country_flag = new_player_help_disabled
+	# 	}
+
+	# 	fire_only_once = no
+	# 	cost = 0
+
+	# 	complete_effect = {
+	# 		clr_country_flag = new_player_help_disabled
+	# 	}
+	# }
+
 	explain_standard_things = {
 		icon = generic_propaganda
 
@@ -9,6 +49,7 @@ NEW_player_decisions = {
 
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no
@@ -27,6 +68,7 @@ NEW_player_decisions = {
 
 	# 	visible = {
 	# 		always = yes
+	#  		NOT = { has_country_flag = new_player_help_disabled }
 	# 	}
 
 	# 	fire_only_once = no
@@ -49,6 +91,7 @@ NEW_player_decisions = {
 
 	# 	visible = {
 	# 		always = yes
+	# 		NOT = { has_country_flag = new_player_help_disabled }
 	# 	}
 
 	# 	fire_only_once = no
@@ -71,6 +114,7 @@ NEW_player_decisions = {
 
 	# 	visible = {
 	# 		always = yes
+	# 		NOT = { has_country_flag = new_player_help_disabled }
 	# 	}
 
 	# 	fire_only_once = no
@@ -99,6 +143,7 @@ NEW_player_decisions = {
 
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no
@@ -126,6 +171,7 @@ NEW_player_decisions = {
 
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no
@@ -153,6 +199,7 @@ NEW_player_decisions = {
 
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no
@@ -180,6 +227,7 @@ NEW_player_decisions = {
 
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no
@@ -205,6 +253,7 @@ NEW_player_decisions = {
 
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no
@@ -231,6 +280,7 @@ NEW_player_decisions = {
 
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no
@@ -255,6 +305,7 @@ NEW_player_decisions = {
 
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no
@@ -279,6 +330,7 @@ NEW_player_decisions = {
 		}
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no
@@ -304,6 +356,7 @@ NEW_player_decisions = {
 		}
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no
@@ -329,6 +382,7 @@ NEW_player_decisions = {
 		}
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no
@@ -354,6 +408,7 @@ NEW_player_decisions = {
 		}
 		visible = {
 			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
 		}
 
 		fire_only_once = no

@@ -26,6 +26,7 @@ add_ideas = {
 	ITA_neutrality_idea
 	ITA_old_guard_base
 	ITA_incompetent_officers
+	ITA_outdated_industry
 }
 
 

@@ -3227,15 +3227,43 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SPA_expand_the_axis_gold_trade
+		}
+
+		completion_reward = {
 			hidden_effect = {
 				GER = {
+					if = { 
+						limit = {
+							has_game_rule = {
+								rule = allow_voice_lines
+								option = ENABLED
+							}
+						}
 					scoped_sound_effect = "20000dollars"
+					}
+					country_event = {id = germany.2003} 
 				}
 				SPA = {
+					if = { 
+						limit = {
+							has_game_rule = {
+								rule = allow_voice_lines
+								option = ENABLED
+							}
+						}
 					scoped_sound_effect = "20000dollars"
+					}
 				}
 				SPR = {
+					if = { 
+						limit = {
+							has_game_rule = {
+								rule = allow_voice_lines
+								option = ENABLED
+							}
+						}
 					scoped_sound_effect = "20000dollars"
+					}
 				}
 			}
 		}
