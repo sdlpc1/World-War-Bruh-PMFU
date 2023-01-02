@@ -26,6 +26,7 @@
 - Case anton only avaiable if west africa is controlled by countries that are at war with germany
 - Cant justify wargoals before 1940
 - Propaganda mission no longer does anything
+- Japan has focus to go to war with the USSR if the conditions included in the ruleset are fullfilled.
 
 ## License
 
