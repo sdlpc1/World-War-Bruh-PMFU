@@ -3045,12 +3045,12 @@
 
 		cost = 5
 
-		allow_branch = {
-			has_game_rule = {
-				rule = ussr_war_focus_only
-				option = ENABLED
-			}
-		}
+		# allow_branch = {
+		# 	has_game_rule = {
+		# 		rule = ussr_war_focus_only
+		# 		option = ENABLED
+		# 	}
+		# }
 
 		ai_will_do = {
 			factor = 2
@@ -3061,19 +3061,24 @@
 			439 = { controller = { is_in_faction_with = JAP } }
 			285 = { controller = { is_in_faction_with = JAP } }
 			440 = { controller = { is_in_faction_with = JAP } }
+			RAJ = has_capitulated
 			# australia
 			517 = { controller = { is_in_faction_with = JAP } }
 			522 = { controller = { is_in_faction_with = JAP } }
 			429 = { controller = { is_in_faction_with = JAP } }
+			AST = has_capitulated
 			# new zealand
 			284 = { controller = { is_in_faction_with = JAP } }
 			723 = { controller = { is_in_faction_with = JAP } }
+			NZL = has_capitulated
 			# singapore
 			336 = { controller = { is_in_faction_with = JAP } }
+			MAL = has_capitulated
 			# philipphines
 			327 = { controller = { is_in_faction_with = JAP } }
 			627 = { controller = { is_in_faction_with = JAP } }
 			624 = { controller = { is_in_faction_with = JAP } } 
+			PHI = has_capitulated
 		}
 
 		cancel_if_invalid = yes
