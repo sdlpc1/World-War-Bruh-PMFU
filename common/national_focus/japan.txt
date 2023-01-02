@@ -3053,7 +3053,7 @@
 		# }
 
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 
 		available = {
@@ -3061,24 +3061,23 @@
 			439 = { controller = { is_in_faction_with = JAP } }
 			285 = { controller = { is_in_faction_with = JAP } }
 			440 = { controller = { is_in_faction_with = JAP } }
-			RAJ = has_capitulated
+			RAJ = { has_capitulated = yes }
 			# australia
 			517 = { controller = { is_in_faction_with = JAP } }
 			522 = { controller = { is_in_faction_with = JAP } }
 			429 = { controller = { is_in_faction_with = JAP } }
-			AST = has_capitulated
+			AST = { has_capitulated = yes }
 			# new zealand
 			284 = { controller = { is_in_faction_with = JAP } }
 			723 = { controller = { is_in_faction_with = JAP } }
-			NZL = has_capitulated
+			NZL = { has_capitulated = yes }
 			# singapore
 			336 = { controller = { is_in_faction_with = JAP } }
-			MAL = has_capitulated
 			# philipphines
 			327 = { controller = { is_in_faction_with = JAP } }
 			627 = { controller = { is_in_faction_with = JAP } }
 			624 = { controller = { is_in_faction_with = JAP } } 
-			PHI = has_capitulated
+			PHI = { has_capitulated = yes }
 		}
 
 		cancel_if_invalid = yes
