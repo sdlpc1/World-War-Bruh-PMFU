@@ -1,11 +1,17 @@
 BRA_prio_military_factories = {
 	allowed = { original_tag = BRA }
 	enable = {
-		date = 1936.1.1
+		ALL = {
+			date < 1936.1.2
+			date > 1935.12.31
+		}
 		date > 1939.6.1
 	}	
 	abort = {
-		date = 1938.1.1
+		ALL = {
+			date > 1937.12.31
+			date < 1938.1.2
+		}
 	}
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
@@ -24,7 +30,7 @@ BRA_rubber_refs = {
 		date > 1938.1.1
 	}	
 	abort = {
-		date = 1939.6.1
+		date > 1939.6.1
 	}
 	ai_strategy = {
 		type = building_target

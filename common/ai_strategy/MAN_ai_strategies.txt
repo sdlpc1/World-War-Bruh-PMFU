@@ -17,11 +17,17 @@ MAN_handle_bandits = { # haha manhandle.... hah... hah... lol... I'm tired... ST
 MAN_prio_military_factories = {
 	allowed = { original_tag = MAN }
 	enable = {
-		date = 1936.1.1
+		ALL = {
+			date > 1935.12.31
+			date < 1936.1.2
+		}
 		date > 1939.6.1
 	}	
 	abort = {
-		date = 1938.1.1
+		ALL = {
+			date < 1938.1.2
+			date > 1937.12.31
+		}
 	}
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
@@ -40,7 +46,7 @@ MAN_steel_refs = {
 		date > 1938.1.1
 	}	
 	abort = {
-		date = 1939.6.1
+		date = > 1939.6.1
 	}
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
