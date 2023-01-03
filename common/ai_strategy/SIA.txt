@@ -1,27 +1,11 @@
-MAN_handle_bandits = { # haha manhandle.... hah... hah... lol... I'm tired... STOP LOOKING AT ME LIKE THAT!
-	enable = {
-		original_tag = MAN
-		has_idea = MAN_banditry
-	}
-	abort = {
-		NOT = {	has_idea = MAN_banditry }
-	}
-
-	ai_strategy = {
-		type = save_equipment
-		id = infantry_equipment
-		value = 501
-	}
-}
-
-MAN_prio_military_factories = {
+SIA_prio_military_factories = {
 	allowed = { original_tag = MAN }
 	enable = {
 		date = 1936.1.1
-		date > 1938.1.1
+		date > 1938.3.1
 	}	
 	abort = {
-		date = 1937.1.7
+		date = 1936.12.1
 	}
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
@@ -34,13 +18,13 @@ MAN_prio_military_factories = {
 	}
 }
 
-MAN_steel_refs = {
+SIA_rubber_refs = {
 	allowed = { original_tag = MAN }
 	enable = {
-		date > 1937.1.7
+		date > 1936.12.1
 	}	
 	abort = {
-		date = 1938.1.1
+		date = 1938.3.1
 	}
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
@@ -48,7 +32,7 @@ MAN_steel_refs = {
 	}
 	ai_strategy = {
 		type = building_target
-		id = steel_refinery
+		id = synthetic_rubber_refinery
 		value = 49999
 	}
 }

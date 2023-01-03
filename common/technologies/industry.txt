@@ -1039,6 +1039,13 @@ technologies = {
 				factor = 0.4
 				date < "1938.1.1"
 			}
+			modifier = {
+				factor = 50000
+				AND = {
+					original_tag = SIA
+					tag = SIA
+				}
+			}
 		}
 	}
 
@@ -1798,7 +1805,14 @@ technologies = {
 			modifier = {
 				factor = 0.5
 				oil > 30
-			}			
+			}	
+			modifier = {
+				factor = 50000
+				AND = {
+					original_tag = SIA
+					tag = SIA
+				}
+			}
 		}
 		
 		ai_research_weights = {
@@ -2279,6 +2293,14 @@ technologies = {
 				factor = 5
 				date > "1937.1.1"
 			}
+
+			modifier = {
+				factor = 50000
+				AND = {
+					original_tag = MAN
+					tag = MAN
+				}
+			}
 		}
 	}
 
@@ -2331,6 +2353,13 @@ technologies = {
 					tungsten > 8
 					steel > 8
 					chromium > 8
+				}
+			}
+			modifier = {
+				factor = 50000
+				AND = {
+					original_tag = MAN
+					tag = MAN
 				}
 			}
 		}
