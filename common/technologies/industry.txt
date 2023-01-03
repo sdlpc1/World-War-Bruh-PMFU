@@ -1040,10 +1040,10 @@ technologies = {
 				date < "1938.1.1"
 			}
 			modifier = {
-				factor = 50000
-				AND = {
-					original_tag = SIA
+				factor = 1200
+				OR = {
 					tag = SIA
+					tag= BRA
 				}
 			}
 		}
@@ -1807,10 +1807,10 @@ technologies = {
 				oil > 30
 			}	
 			modifier = {
-				factor = 50000
-				AND = {
-					original_tag = SIA
+				factor = 1200
+				OR = {
 					tag = SIA
+					tag = BRA
 				}
 			}
 		}
@@ -2075,7 +2075,14 @@ technologies = {
 			modifier = {
 				factor = 0.5
 				rubber > 30
-			}			
+			}	
+			modifier = {
+				factor = 1200
+				OR = {
+					tag = SIA
+					tag = BRA
+				}
+			}		
 		}
 		
 		ai_research_weights = {
@@ -2295,11 +2302,8 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 50000
-				AND = {
-					original_tag = MAN
-					tag = MAN
-				}
+				factor = 1200
+				tag = MAN
 			}
 		}
 	}
@@ -2356,11 +2360,8 @@ technologies = {
 				}
 			}
 			modifier = {
-				factor = 50000
-				AND = {
-					original_tag = MAN
-					tag = MAN
-				}
+				factor = 1200
+				tag = MAN
 			}
 		}
 	}

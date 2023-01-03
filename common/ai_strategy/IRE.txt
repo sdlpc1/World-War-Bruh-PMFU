@@ -1,5 +1,5 @@
 IRE_prio_military_factories = {
-	allowed = { original_tag = MAN }
+	allowed = { original_tag = IRE }
 	enable = {
 		always = yes
 	}	

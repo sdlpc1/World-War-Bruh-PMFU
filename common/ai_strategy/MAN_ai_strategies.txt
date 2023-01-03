@@ -18,10 +18,10 @@ MAN_prio_military_factories = {
 	allowed = { original_tag = MAN }
 	enable = {
 		date = 1936.1.1
-		date > 1938.1.1
+		date > 1939.6.1
 	}	
 	abort = {
-		date = 1937.1.7
+		date = 1938.1.1
 	}
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
@@ -37,10 +37,10 @@ MAN_prio_military_factories = {
 MAN_steel_refs = {
 	allowed = { original_tag = MAN }
 	enable = {
-		date > 1937.1.7
+		date > 1938.1.1
 	}	
 	abort = {
-		date = 1938.1.1
+		date = 1939.6.1
 	}
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
@@ -49,6 +49,6 @@ MAN_steel_refs = {
 	ai_strategy = {
 		type = building_target
 		id = steel_refinery
-		value = 49999
+		value = 1000
 	}
 }

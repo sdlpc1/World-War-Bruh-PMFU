@@ -1,5 +1,5 @@
-SIA_prio_military_factories = {
-	allowed = { original_tag = SIA }
+BRA_prio_military_factories = {
+	allowed = { original_tag = BRA }
 	enable = {
 		date = 1936.1.1
 		date > 1939.6.1
@@ -18,8 +18,8 @@ SIA_prio_military_factories = {
 	}
 }
 
-SIA_rubber_refs = {
-	allowed = { original_tag = SIA }
+BRA_rubber_refs = {
+	allowed = { original_tag = BRA }
 	enable = {
 		date > 1938.1.1
 	}	

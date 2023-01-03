@@ -1287,7 +1287,6 @@
 		}
 	}
 	
-	
 	focus = {
 		id = MAN_national_defence_state
 		icon = GFX_focus_secret_rearmament
@@ -1297,9 +1296,58 @@
 		relative_position_id = MAN_crush_the_bandits
 
 		cost = 5
+		
+		available = {
+			NOT = { MAN = { is_ai = yes } }
+		}
+
+		bypass = {
+			has_completed_focus = MAN_national_defence_state_ai
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = war_economy
+				}
+				add_political_power = 150
+			}
+			else = {
+				add_ideas = war_economy
+			}
+		}
+	}
+
+	focus = {
+		id = MAN_national_defence_state_ai
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = MAN_crush_the_bandits }
+		x = 6
+		y = 1
+		relative_position_id = MAN_crush_the_bandits
+
+		cost = 5
 
 		available = {
+			MAN = { is_ai = yes }
+			OR = {
+				has_war_support > 0.55
+				has_war = yes
+			}
+		}
 
+		allow_branch = {
+		 	MAN = { is_ai = yes }
+			NOT = { has_completed_focus = MAN_national_defence_state_ai }
+			NOT = { has_completed_focus = MAN_national_defence_state }
 		}
 
 		cancel_if_invalid = yes

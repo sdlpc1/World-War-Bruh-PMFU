@@ -26,9 +26,9 @@ Siam_Historical = {
         SIA_rise_of_phibun
         SIA_monarchy_question
         SIA_songsuradet_rebellion
-        SIA_prepare_for_expansion
         SIA_curb_civilian_wing
         SIA_military_dominance
+        SIA_prepare_for_expansion
         SIA_solidify_the_dictatorship
         SIA_cultural_mandates
         SIA_alter_national_anthem

@@ -437,7 +437,9 @@
  MAN_expand_eastern_railways_desc:0 "The eastern railways are not sufficient to be able to supply our army."
  MAN_japanese_warfare:0 "Embrace Japanese Warfare"
  MAN_japanese_warfare_desc:0 "Only with Japanese warfare we can achive total victory."
- 
+ MAN_national_defence_state_ai:0 "National Defence State - AI Only"
+ MAN_national_defence_state_ai_desc:0 "National defence needs to be one of the biggest priorities of our government."
+
  #### IDEAS ####
  MAN_puyi:0 "Puyi"
  MAN_yamato-damashii:0 "Yamato-Damshii"

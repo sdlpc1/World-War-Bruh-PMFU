@@ -8,12 +8,14 @@ Manchuko_Historical = {
 		MAN_meeting_of_the_gac
 		MAN_crush_the_bandits
 		MAN_5_year_plan
+		MAN_zaibatsu_alliance
 		MAN_expand_the_industrial_centres
 		MAN_forced_urbanisation
 		MAN_expand_the_civilian_industry
 		MAN_textile_industry_investments
 		MAN_expand_the_mukden_arsenal
 		MAN_establish_the_daqing_arsenal
+		MAN_industrial_heart
 		MAN_forced_collectivisation
 		MAN_increase_soy_production
 		MAN_expand_opium_plantations
@@ -27,13 +29,7 @@ Manchuko_Historical = {
 		MAN_expand_the_railways
 		MAN_national_works
 		MAN_expand_eastern_railways
-		if = {
-			limit = {
-				has_war_support > 0.55
-				has_war = yes
-			}
-			MAN_national_defence_state
-		}
+		MAN_national_defence_state_ai
 		MAN_yakuza_alliance
 		MAN_emergency_labour_act
 		MAN_expand_the_workforce
