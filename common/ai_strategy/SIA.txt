@@ -17,7 +17,7 @@ SIA_prio_military_factories = {
 SIA_rubber_refs = {
 	allowed = { original_tag = SIA }
 	enable = {
-		date > 1938.1.1
+		always = yes
 	}	
 	ai_strategy = {
 		type = building_target

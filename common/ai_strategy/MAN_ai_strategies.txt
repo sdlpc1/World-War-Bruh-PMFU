@@ -33,7 +33,7 @@ MAN_prio_military_factories = {
 MAN_steel_refs = {
 	allowed = { original_tag = MAN }
 	enable = {
-		date > 1938.1.1
+		always = yes
 	}	
 	ai_strategy = {
 		type = building_target
