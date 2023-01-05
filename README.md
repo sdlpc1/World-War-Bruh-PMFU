@@ -1,5 +1,5 @@
-# TheirFinestRats
- TheirFinestRats TFB Submod for the Bunker Rats server
+# World War Bruh (PMFU)
+ World War Bruh (PMFU) TFB Submod for the Bunker Rats server
  
 ## Links
 
