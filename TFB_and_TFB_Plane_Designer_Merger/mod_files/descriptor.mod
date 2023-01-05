@@ -1,4 +1,4 @@
-version="1.2.72"
+version="1.2.80"
 tags={
 	"Balance"
 	"Events"
@@ -7,7 +7,7 @@ tags={
 	"National Focuses"
 	"Technologies"
 }
-name="Their Finest Rats"
+name="World War Bruh (PMFU)"
 picture="thumbnail.png"
 replace_path="common/ai_equipment"
 replace_path="common/ai_strategy"
