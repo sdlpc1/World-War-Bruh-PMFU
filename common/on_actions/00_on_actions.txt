@@ -741,7 +741,10 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = FRA
-					has_government = democratic
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
 					NOT = { has_global_flag = achievement_france_surrender } #might as well use the achievement flag to check if france.10 fired
 					is_subject = no
 					is_in_faction_with = ENG

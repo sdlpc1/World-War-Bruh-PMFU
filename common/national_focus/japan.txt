@@ -1177,6 +1177,8 @@
 					surrender_progress > 0.75
 				}
 			}
+			JAP = { NOT = { has_war_with = ENG } }
+			country_exists = CHI
 		}
 
 		bypass = {
@@ -3057,27 +3059,17 @@
 		}
 
 		available = {
-			# india
-			439 = { controller = { is_in_faction_with = JAP } }
-			285 = { controller = { is_in_faction_with = JAP } }
-			440 = { controller = { is_in_faction_with = JAP } }
-			RAJ = { has_capitulated = yes }
-			# australia
-			517 = { controller = { is_in_faction_with = JAP } }
-			522 = { controller = { is_in_faction_with = JAP } }
-			429 = { controller = { is_in_faction_with = JAP } }
-			AST = { has_capitulated = yes }
-			# new zealand
-			284 = { controller = { is_in_faction_with = JAP } }
-			723 = { controller = { is_in_faction_with = JAP } }
-			NZL = { has_capitulated = yes }
 			# singapore
 			336 = { controller = { is_in_faction_with = JAP } }
+			# india
+			RAJ = { has_capitulated = yes }
+			# australia
+			AST = { has_capitulated = yes }
+			# new zealand
+			284 = { controller = { is_in_faction_with = JAP } } # north island
+			723 = { controller = { is_in_faction_with = JAP } } # south island
 			# philipphines
-			327 = { controller = { is_in_faction_with = JAP } }
-			627 = { controller = { is_in_faction_with = JAP } }
-			624 = { controller = { is_in_faction_with = JAP } } 
-			PHI = { has_capitulated = yes }
+			327 = { controller = { is_in_faction_with = JAP } } # manila
 		}
 
 		cancel_if_invalid = yes

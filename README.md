@@ -1,5 +1,5 @@
 # World War Bruh (PMFU)
- World War Bruh (PMFU) TFB Submod for the Bunker Rats server
+ "World War Bruh (PMFU)" Their Finest Bruh submod for the Bunker Rats server
  
 ## Links
 
@@ -14,19 +14,22 @@
 - TFB Plane Designer Included
 
 - Logistics bombing disabled
-- No sub 4
-- Danzig or war can only be done after 1.1.1939 (January 1st 1939)
-- Barbarossa can only be done after 1.3.1941 (March 1st 1941)
-- Sudetenland and fate of czechoslovakia events no longer can be refused
-- Japan has no option to not attack the USA
-- Japan cannot strike west before 1.4.1940 (April 1st 1940)
-- Germany has no option to not give eastern poland to USSR
-- Embargo cost is over 2000 PP so its not possible to use
-- Coup operation removed
-- Case anton only avaiable if west africa is controlled by countries that are at war with germany
-- Cant justify wargoals before 1940
-- Propaganda mission no longer does anything
-- Japan has focus to go to war with the USSR if the conditions included in the ruleset are fullfilled.
+- Submarine 4 research has been removed
+- Focus "Danzig or War" cannot be started before January 1st 1939
+- Focus "Barbarossa" cannot be started before March 1st 1941
+- "Sudetenland" and "Fate of Czechoslovakia" events no longer have the option to deny them
+- "Strike the USA" event no longer has a decision to not strike the USA
+- Focus "Strike the West" cannot be started before April 1st 1940
+- German event to give USSR Eastern Poland can no longer be denied
+- Nations can no longer be embargoed
+- The "Coup" operation has been removed
+- Case Anton is only avaiLable if west africa is controlled by countries that are at war with Germany
+- Wargoals cannot be justified before 1940
+- Propaganda mission has no effects
+- Added focus "Operation Kantokuen" for Japan to go to war with the USSR
+- Fixed the "Defeat" event for France being communist
+- Countries with the neutrality spirits can no longer be justified on
+- Hungarian focus "Treaty of Trianon" no longer cancels if conditions arent met
 
 ## License
 
