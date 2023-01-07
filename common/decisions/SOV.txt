@@ -3475,6 +3475,7 @@ SOV_propaganda_campaigns = {
 
 		available = {
 			SOV_propaganda_poster_slot_available = yes
+			has_completed_focus = SOV_order_270
 		}
 
 		visible = {
@@ -3491,10 +3492,10 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_do_not_blab_cost
 
 		modifier = {
-			army_intel_to_others = -30
-			navy_intel_to_others = -30
-			airforce_intel_to_others = -30
-			civilian_intel_to_others = -30
+			army_intel_to_others = -15
+			navy_intel_to_others = -15
+			airforce_intel_to_others = -15
+			civilian_intel_to_others = -15
 			foreign_subversive_activites = -0.20
 		}
 
