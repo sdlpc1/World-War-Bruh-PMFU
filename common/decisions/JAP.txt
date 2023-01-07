@@ -165,7 +165,7 @@ JAP_interservice_rivalry = {
 
 		days_mission_timeout = 179
 		is_good = no
-		fire_only_once = yes
+		fire_only_once = false
 
 		cancel_trigger = {
 			NOT = {has_country_flag = JAP_war_conferences_cd}

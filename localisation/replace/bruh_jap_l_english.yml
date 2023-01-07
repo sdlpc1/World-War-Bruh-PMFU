@@ -257,6 +257,7 @@
  CHI_yellow_river_flood_recede:0 "Flood Receding"
  SOV_border_war_warning_JAP:0 "Soviet Provocation"
  JAP_annex_man:0 "Annex Manchukuo"
+ JAP_rivalry_cooldown:0 "Imperial War Conference Cooldown"
  #### TOOLTIP ####
  JAP_yamato_tt:0 "Adds two Yamato-Class Battleships to the production queue, at 50% and 30% complete, respectively."
  JAP_siam1:0 "Pressure Siam"
