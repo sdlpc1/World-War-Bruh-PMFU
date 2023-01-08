@@ -128,14 +128,62 @@ GER_prio_military_factories = {
 GER_rubber_refs = {
 	allowed = { original_tag = GER }
 	enable = {
-		date > 1938.1.1
+		always = yes
 	}	
     abort = {
-		GER = { has_war = yes }
+		has_built = {
+			type = synthetic_rubber_refinery
+			value > 40
+		}
 	}
 	ai_strategy = {
 		type = building_target
 		id = synthetic_rubber_refinery
+		target = 40
 		value = 1000
+	}
+}
+
+GER_dont_defend_ally_and_neutral_border = {
+	allowed = { original_tag = GER }
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SWI
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ITA
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = HUN
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SPR
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SWE
+		value = 1000
+	}
+}
+
+GER_no_dockyards = {
+	allowed = { original_tag = GER }
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = -1000
 	}
 }

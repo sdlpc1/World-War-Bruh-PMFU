@@ -125,3 +125,19 @@ mexico_stay_in_russias_faction = {
 	}	
 }
 
+MEX_dont_defend_ally_and_neutral_border = {
+	allowed = { original_tag = MEX }
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = USA
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ENG
+		value = 1000
+	}
+}

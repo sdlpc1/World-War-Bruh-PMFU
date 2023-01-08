@@ -132,3 +132,15 @@ ROM_highway_to_the_danger_zone_79 = { # Moldova
 		value = 1
 	}	
 }
+
+ROM_no_dockyards = {
+	allowed = { original_tag = ROM }
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = -1000
+	}
+}

@@ -13,3 +13,15 @@ IRE_prio_military_factories = {
 		value = 500
 	}
 }
+
+IRE_no_dockyards = {
+	allowed = { original_tag = IRE }
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = -1000
+	}
+}

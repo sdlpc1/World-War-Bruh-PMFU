@@ -606,7 +606,7 @@ SOV_prio_civilian_factories = {
 		NOT = { has_completed_focus = SOV_finish_2_plan }
 	}	
     abort = {
-		date > 1936.11.1
+		date > 1936.10.1
 	}
 	ai_strategy = {
 		type = building_target
@@ -618,7 +618,7 @@ SOV_prio_civilian_factories = {
 SOV_prio_military_factories = {
 	allowed = { original_tag = SOV }
 	enable = {
-		date > 1936.11.1
+		date > 1936.10.1
 	}	
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
@@ -634,14 +634,47 @@ SOV_prio_military_factories = {
 SOV_steel_refs = {
 	allowed = { original_tag = SOV }
 	enable = {
-		date > 1938.1.1
+		always = yes
 	}	
     abort = {
-		date > 1940.1.1
+		has_built = {
+			type = steel_refinery
+			value > 30
+		}
 	}
 	ai_strategy = {
 		type = building_target
 		id = steel_refinery
+		target = 30
 		value = 1000
+	}
+}
+
+SOV_dont_defend_ally_and_neutral_border = {
+	allowed = { original_tag = SOV }
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = TUR
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MON
+		value = 1000
+	}
+}
+
+SOV_no_dockyards = {
+	allowed = { original_tag = SOV }
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = -1000
 	}
 }

@@ -473,3 +473,32 @@ BUL_reject_bulgarian_aggressive_ai = {
 		value = -99999
 	}
 }
+
+BUL_dont_defend_ally_and_neutral_border = {
+	allowed = { original_tag = BUL }
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = TUR
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ROM
+		value = 1000
+	}
+}
+
+BUL_no_dockyards = {
+	allowed = { original_tag = BUL }
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = -1000
+	}
+}
