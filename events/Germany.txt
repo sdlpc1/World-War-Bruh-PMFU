@@ -230,31 +230,6 @@ country_event = {
 		}
 		set_global_flag = sov_yes_pact
 	}
-
-	option = {
-		name = germany.11.b	#no way
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-				GER = {
-					NOT = { has_wargoal_against = SOV }
-					NOT = { is_justifying_wargoal_against = SOV }
-				}
-			}
-			modifier = {
-				factor = 0
-				is_in_faction_with = GER
-			}
-		}
-		add_political_power = -50
-		add_opinion_modifier = { target = GER modifier = refused_MR_pact }# no pact
-		GER = {
-			country_event = { days = 1 id = germany.13 }
-		}
-		set_global_flag = sov_no_pact
-	}
 }
 
 # Soviets Sign MR Pact
@@ -887,19 +862,6 @@ country_event = {
 			country_event = { hours = 2 id = germany.4 }
 		}
 		custom_effect_tooltip = GAME_OVER_TT
-	}
-	option = { # Refuse
-		name = germany.28.b
-		ai_chance = {
-			base = 0			
-		}
-		GER = {
-			add_opinion_modifier = { target = ROOT modifier = GER_anschluss_rejected }
-			country_event = { hours = 2 id = germany.29 }
-			if = { limit = { is_in_faction_with = AUS }
-				remove_from_faction = AUS
-			}
-		}
 	}
 }
 

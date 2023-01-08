@@ -562,15 +562,15 @@ MTG_naval_treaties = {
 			
 		}
 		timeout_effect = {
-			every_other_country = {
-				limit = {
-					has_naval_treaty_trigger = yes
-				}
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = ROOT
-				}
-			}
+			# every_other_country = {
+			# 	limit = {
+			# 		has_naval_treaty_trigger = yes
+			# 	}
+			# 	create_wargoal = {
+			# 		type = puppet_wargoal_focus
+			# 		target = ROOT
+			# 	}
+			# }
 		}
 		complete_effect = {
 			
