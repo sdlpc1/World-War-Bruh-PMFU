@@ -5303,6 +5303,9 @@ country_event = {
 	option = {
 		name = germany.501.b
 		add_ideas = GER_hjalmar_schacht
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 
