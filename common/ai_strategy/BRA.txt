@@ -25,30 +25,3 @@ BRA_rubber_refs = {
 		value = 1000
 	}
 }
-
-BRA_dont_defend_ally_and_neutral_border = {
-	allowed = { original_tag = BRA }
-	enable = {
-		always = yes
-	}	
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = ENG
-		value = 1000
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = HOL
-		value = 1000
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = FRA
-		value = 1000
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = VEN
-		value = 1000
-	}
-}

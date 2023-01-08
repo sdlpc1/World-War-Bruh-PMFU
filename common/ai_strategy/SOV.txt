@@ -641,28 +641,12 @@ SOV_steel_refs = {
 			type = steel_refinery
 			value > 30
 		}
+		date > 1940.1.1
 	}
 	ai_strategy = {
 		type = building_target
 		id = steel_refinery
 		target = 30
-		value = 1000
-	}
-}
-
-SOV_dont_defend_ally_and_neutral_border = {
-	allowed = { original_tag = SOV }
-	enable = {
-		always = yes
-	}	
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = TUR
-		value = 1000
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = MON
 		value = 1000
 	}
 }
