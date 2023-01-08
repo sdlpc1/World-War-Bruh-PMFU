@@ -1043,7 +1043,8 @@ technologies = {
 				factor = 1200
 				OR = {
 					tag = SIA
-					tag= BRA
+					tag = BRA
+					tag = GER
 				}
 			}
 		}
@@ -1811,6 +1812,7 @@ technologies = {
 				OR = {
 					tag = SIA
 					tag = BRA
+					tag = GER
 				}
 			}
 		}
@@ -2081,6 +2083,7 @@ technologies = {
 				OR = {
 					tag = SIA
 					tag = BRA
+					tag = GER
 				}
 			}		
 		}
@@ -2304,6 +2307,7 @@ technologies = {
 			modifier = {
 				factor = 1200
 				tag = MAN
+				tag = SOV
 			}
 		}
 	}
@@ -2362,6 +2366,7 @@ technologies = {
 			modifier = {
 				factor = 1200
 				tag = MAN
+				tag = SOV
 			}
 		}
 	}

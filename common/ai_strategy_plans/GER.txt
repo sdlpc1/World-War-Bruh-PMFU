@@ -22,12 +22,6 @@ German_historical = {
 		GER_steel_werke
 		GER_reichsarbeit
 		GER_extra_research
-		GER_heer
-		GER_bewegungskrieg
-		GER_panzer
-		GER_panzer_support
-		GER_mech
-		GER_cas_air_effort
 		GER_grosraumwirtschaft
 		GER_expand_mefo
 		# grab whicher was picked via descsion
@@ -50,6 +44,12 @@ German_historical = {
 		GER_synthetic_rubber
 		GER_synthetic_rubber2
 		GER_ig_farben
+		GER_heer
+		GER_bewegungskrieg
+		GER_panzer
+		GER_panzer_support
+		GER_mech
+		GER_cas_air_effort
 		GER_cas_air_effort2
 		GER_mol_rib_pact
 		#Danzig
