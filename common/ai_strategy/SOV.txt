@@ -606,7 +606,7 @@ SOV_prio_civilian_factories = {
 		NOT = { has_completed_focus = SOV_finish_2_plan }
 	}	
     abort = {
-		date > 1936.9.1
+		date > 1936.11.1
 	}
 	ai_strategy = {
 		type = building_target
@@ -618,7 +618,7 @@ SOV_prio_civilian_factories = {
 SOV_prio_military_factories = {
 	allowed = { original_tag = SOV }
 	enable = {
-		date > 1936.9.1
+		date > 1936.11.1
 	}	
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio

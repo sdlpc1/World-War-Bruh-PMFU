@@ -100,7 +100,7 @@ GER_prio_civilian_factories = {
 		NOT = { has_completed_focus = GER_rearmed_and_ready }
 	}	
     abort = {
-		date > 1936.4.1
+		date > 1936.7.1
 	}
 	ai_strategy = {
 		type = building_target
@@ -112,7 +112,7 @@ GER_prio_civilian_factories = {
 GER_prio_military_factories = {
 	allowed = { original_tag = GER }
 	enable = {
-		date > 1937.1.1
+		date > 1936.7.1
 	}	
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
