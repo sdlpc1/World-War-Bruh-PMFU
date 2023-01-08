@@ -131,16 +131,11 @@ GER_rubber_refs = {
 		always = yes
 	}	
     abort = {
-		has_built = {
-			type = synthetic_rubber_refinery
-			value > 40
-		}
-		date > 1939.9.1
+		GER = { has_war = yes }
 	}
 	ai_strategy = {
 		type = building_target
 		id = synthetic_rubber_refinery
-		target = 40
 		value = 1000
 	}
 }

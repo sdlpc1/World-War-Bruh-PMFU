@@ -637,16 +637,11 @@ SOV_steel_refs = {
 		always = yes
 	}	
     abort = {
-		has_built = {
-			type = steel_refinery
-			value > 30
-		}
 		date > 1940.1.1
 	}
 	ai_strategy = {
 		type = building_target
 		id = steel_refinery
-		target = 30
 		value = 1000
 	}
 }
