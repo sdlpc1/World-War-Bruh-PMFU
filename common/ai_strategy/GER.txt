@@ -175,15 +175,3 @@ GER_dont_defend_ally_and_neutral_border = {
 		value = 1000
 	}
 }
-
-GER_no_dockyards = {
-	allowed = { original_tag = GER }
-	enable = {
-		always = yes
-	}	
-	ai_strategy = {
-		type = building_target
-		id = dockyard
-		value = -1000
-	}
-}

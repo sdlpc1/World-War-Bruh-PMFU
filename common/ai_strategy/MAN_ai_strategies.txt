@@ -41,15 +41,3 @@ MAN_steel_refs = {
 		value = 1000
 	}
 }
-
-MAN_no_dockyards = {
-	allowed = { original_tag = MAN }
-	enable = {
-		always = yes
-	}	
-	ai_strategy = {
-		type = building_target
-		id = dockyard
-		value = -1000
-	}
-}
