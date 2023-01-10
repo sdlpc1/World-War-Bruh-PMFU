@@ -19,6 +19,9 @@ BRA_rubber_refs = {
 	enable = {
 		always = yes
 	}	
+	abort = {
+		date > 1940.6.1
+	}
 	ai_strategy = {
 		type = building_target
 		id = synthetic_rubber_refinery
