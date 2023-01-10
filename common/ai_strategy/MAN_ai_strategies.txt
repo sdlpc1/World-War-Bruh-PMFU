@@ -30,14 +30,14 @@ MAN_prio_military_factories = {
 	}
 }
 
-MAN_steel_refs = {
-	allowed = { original_tag = MAN }
-	enable = {
-		always = yes
-	}	
-	ai_strategy = {
-		type = building_target
-		id = steel_refinery
-		value = 1000
-	}
-}
+# MAN_steel_refs = {
+# 	allowed = { original_tag = MAN }
+# 	enable = {
+# 		always = yes
+# 	}	
+# 	ai_strategy = {
+# 		type = building_target
+# 		id = steel_refinery
+# 		value = 1000
+# 	}
+# }
