@@ -349,8 +349,8 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_close_support_gun.dds"
 	}
 	spriteType = {
-		name = "GFX_EMI_extended_barrel"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_rangefinder.dds"
+		name = "GFX_EMI_apcr_round"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/apcr_rounds.dds"
 	}
 	
 	spriteType = {
@@ -716,6 +716,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_sov_light_tank_3_medium"
 		texturefile = "gfx/interface/technologies/tanks/sov/sov_t70_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_zis30_tech_medium"
+		texturefile = "gfx/interface/technologies/tanks/sov/sov_zis30_hull.dds"
 	}
 	SpriteType = {
 		name = "GFX_sov_heavy_tank_1_medium"

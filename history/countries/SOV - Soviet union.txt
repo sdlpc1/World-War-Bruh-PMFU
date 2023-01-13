@@ -154,6 +154,9 @@ if = {
 	# recruit_character = SOV_anton_denikin
 }
 
+set_variable = { SOV_RG_division_cap = 0 }
+set_variable = { SOV_RG_cap_increase = 2 }
+set_variable = { SOV_RG_cap_increase_double = 4 }
 
 #Initialize character flags Part I (aka who's safe)
 SOV_mikhail_kalinin = {
@@ -721,6 +724,8 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	fuel_refining = 1
 	basic_train = 1
 }
+
+RG_armored_division_standard = yes
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

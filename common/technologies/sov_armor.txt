@@ -589,12 +589,27 @@ technologies = {
 		enable_equipment_modules = {
 			tank_light_superstructure_zis
 		}
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.0
+		start_year = 1936
+		folder = {
+			name = sov_armour_folder
+			position = { x = -3 y = 8 }
+		}
 		
 		categories = {
 			armor
-			cat_heavy_armor
+			cat_light_armor
 		}
-		
+
+		on_research_complete = {
+			custom_effect_tooltip = sov_zis_30_short_tt
+		}
+
 		ai_will_do = {
 			factor = 0
 		}

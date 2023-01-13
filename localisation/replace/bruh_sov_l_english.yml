@@ -331,3 +331,6 @@
  SOV_CONQ_TT:0 "Gives 80% Compliance on all controlled Molotov States that will decrease during Barbarossa"
  SOV_cowed_by_stalin_trait_tt:0 "This Trait will be removed upon completion of the focus §Y$SOV_order_270$§!."
  dismantle_surrender_tt:0 "§RTaking this path will increase the Surrender Progress Threshold for some focuses, to compensate for gaining a large number of VP's cored.§!"
+ SOV_RG_div_cap_2_tt:0 "Increase template cap of §YRed Guards Tanks§! by §G+2§!."
+ SOV_RG_div_cap_4_tt:0 "Increase template cap of §YRed Guards Tanks§! by §G+4§!."
+ rg_hq_company:0 "Red Guard HQ"

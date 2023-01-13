@@ -2512,8 +2512,8 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 	}
 
-	extended_barrel = {
-		abbreviation = "exb"
+	apcr_round = {
+		abbreviation = "apr"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {

@@ -547,7 +547,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_med_hv_gun_2
 			tank_med_gun_squeeze
-			extended_barrel
+			apcr_round
 		}
 		
 		research_cost = 2.0
@@ -881,7 +881,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_heavy_gun_1
-			extended_barrel
+			apcr_round
 		}
 		
 		research_cost = 2.0

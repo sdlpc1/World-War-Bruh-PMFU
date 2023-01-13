@@ -250,14 +250,14 @@
  JAP_takao_idea:0 "Takao Class Cruisers"
  JAP_tank:0 "Tank Propaganda"
  JAP_man_prop:0 "EACPS Propaganda"
- asw_training: "ASW Training"
+ asw_training:0 "ASW Training"
  osaka_artillery_arsenal:0 "Osaka Artillery Arsenal"
  #### DECISIONS ####
  CHI_yellow_river_flood:0 "Flood the Yellow River"
  CHI_yellow_river_flood_recede:0 "Flood Receding"
  SOV_border_war_warning_JAP:0 "Soviet Provocation"
  JAP_annex_man:0 "Annex Manchukuo"
- JAP_rivalry_cooldown:0 "Imperial War Conference Cooldown"
+ JAP_rivalry_cooldown:0 "Cooldown Until Next Conference"
  #### TOOLTIP ####
  JAP_yamato_tt:0 "Adds two Yamato-Class Battleships to the production queue, at 50% and 30% complete, respectively."
  JAP_siam1:0 "Pressure Siam"
@@ -440,7 +440,7 @@
  MAN_japanese_warfare_desc:0 "Only with Japanese warfare we can achive total victory."
  MAN_national_defence_state_ai:0 "National Defence State - AI Only"
  MAN_national_defence_state_ai_desc:0 "National defence needs to be one of the biggest priorities of our government."
-
+ 
  #### IDEAS ####
  MAN_puyi:0 "Puyi"
  MAN_yamato-damashii:0 "Yamato-Damshii"
@@ -484,6 +484,7 @@
  JAP_intel_prop:0 "Supai no te ni wataranaide kudasai"
  JAP_tank2_prop:0 "Sensha-tai ni sanka suru"
  JAP_usa_prop:0 "Oni ni chūi"
+ JAP_rivalry_cooldown:0 "Cooldown before next Service Decision is available"
  MAN_propaganda_campaigns:0 "Naikaku Jōhōbu"
  MAN_china_prop:0 "Jinsei Hoso"
  MAN_tech_prop:0 "Ka Bō Kuni"
@@ -492,6 +493,7 @@
  MAN_strike_prop:0 "Nishi o Utsu"
  MAN_bombing_prop:0 "I no Kasane Sora Shito"
  MAN_running_prop:0 "Running Propaganda Campaign"
+ 
  
  #### TOOLTIP ####
  MAN_expand_the_imperial_guards_tt:1 "Gain 6 units of §Y30 Width Imperial Guard§!.\n"

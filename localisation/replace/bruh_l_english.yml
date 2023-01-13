@@ -210,6 +210,11 @@
  STRATEGICREGION_230:0 "Hawaii"
  STRATEGICREGION_NAMIBIA: "Namibia"
  OTRANTO_STRAIT:0 "Strait of Otranto"
+ DJIBOUTI_STRAIT:0 "Bab-el-Mandeb Strait"
+ SINGAPORE_CORRIDOR:0 "Singapore Corridor"
+ JAVA_STRAIT:0 "Java Strait"
+ ORESUND_STRAIT:0 "Øresund Strait"
+ THE_BELTS:0 "Danish Belt Straits"
  BUL_neutrality:0 "Tsardom of Bulgaria"
  BUL_neutrality_DEF:0 "the Tsardom of Bulgaria"
  ITA_fascism:0 "Kingdom of Italy"
@@ -755,8 +760,9 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  ger_cze_td_equipment_2:0 "Jagdpanzer 38"
  ger_cze_spg_equipment_1:0 "Grille Ausf. K"
  ger_cze_spaa_equipment_1:0 "Flakpanzer 38(t)"
- ger_cze_tank_equipment_1_short_tt:0 "§RThis will automatically unlock after the 'Fate of Czechoslovakia' Focus§!"
+ ger_cze_tank_equipment_1_short_tt:0 "\n§RThis will automatically unlock after the 'Fate of Czechoslovakia' Focus and can only be unlocked with it.§!"
  ger_cze_tank_equipment_2_short_tt:0 "This Light Tank Chassis is able to use Tier 6 §6Advanced§! §OMedium§! Armanents!"
+ sov_zis_30_short_tt:0 "\n§RThis will automatically unlock after the 'Tankograd' Focus and can only be unlocked with it.§!\n\n§OYou can only make Tank Destroyers, Self Propelled AA, and Self Propelled Guns with this chassis.§!"
  
  ger_assault_gun_equipment_1:0 "StuG III Ausf. A"
  ger_assault_gun_equipment_2_short:0 "StuH 42"
@@ -1201,6 +1207,9 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  army_organizational_1:1 "Army Organization\n(Specialist)"
  army_organizational_2:1 "Army Organization\n(Expert)"
  army_organizational_3:1 "Army Organization\n(Genius)"
+ navy_chief_anti_submarine_1:0 "Anti-Submarine\n(Specialist)"
+ navy_chief_anti_submarine_2:0 "Anti-Submarine\n(Expert)"
+ navy_chief_anti_submarine_3:0 "Anti-Submarine\n(Genius)"
 
 # GAME RULES
  RULE_GROUP_TFB:0 "Custom TFB Game Rules"

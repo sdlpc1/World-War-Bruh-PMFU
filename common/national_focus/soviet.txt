@@ -1142,11 +1142,12 @@
 			date > 1941.8.1
 		}
 		completion_reward = {
-		swap_ideas = {
-			remove_idea = SOV_3_5_plan
-			add_idea = SOV_3_5_plan_ger
-		}	
+			swap_ideas = {
+				remove_idea = SOV_3_5_plan
+				add_idea = SOV_3_5_plan_ger
+			}
 
+			SOV_increase_RG_cap = yes
 		}
 	}
 	focus = {
@@ -1362,6 +1363,9 @@
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
 			add_ideas = SOV_war_mob
+
+			SOV_increase_RG_cap = yes
+
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_treacherous_enemy
 			unlock_decision_tooltip = SOV_propaganda_do_not_blab
@@ -1427,10 +1431,13 @@
 			surrender_progress > 0.24 
 		}
 		completion_reward = {
-			add_ideas = SOV_tankograd_idea
 			set_technology = {
 				sov_zis30_tech = 1
 			}
+
+			SOV_increase_RG_cap = yes
+
+			add_ideas = SOV_tankograd_idea
 		}
 	}
 
@@ -1468,6 +1475,8 @@
 
 		completion_reward = {
 			add_ideas = SOV_guards_ideas
+
+			SOV_increase_RG_cap_double = yes
 		}
 	}
 	
@@ -2504,6 +2513,8 @@
 
 			}
 			custom_effect_tooltip = SOV_frontline_mob_tt
+
+			SOV_increase_RG_cap = yes
 		}
 	}
 
@@ -5535,6 +5546,8 @@
 			add_to_variable = { SOV_the_red_army_acclimatization_hot_climate_gain_factor = 0.15 }
 			add_to_variable = { SOV_the_red_army_terrain_penalty_reduction = 0.05 }
 			custom_effect_tooltip = SOV_an_adaptable_army_ns_tt
+
+			SOV_increase_RG_cap_double = yes
 		}
 	}
 	

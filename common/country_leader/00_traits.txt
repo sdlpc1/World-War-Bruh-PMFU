@@ -8087,6 +8087,42 @@ leader_traits = {
 			factor = 3
 		}
 	}
+
+	navy_chief_anti_submarine_1 = {
+		sprite = 4
+		navy_submarine_detection_factor = 0.1
+		experience_gain_navy = @chief_experience_gain_low
+		
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	navy_chief_anti_submarine_2 = {
+		sprite = 4
+		navy_submarine_detection_factor = 0.15
+		experience_gain_navy = @chief_experience_gain_medium
+		
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	navy_chief_anti_submarine_3 = {
+		sprite = 4
+		navy_submarine_detection_factor = 0.2
+		experience_gain_navy = @chief_experience_gain_high
+		
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
 	
 	
 	navy_naval_air_defense_1 = {
