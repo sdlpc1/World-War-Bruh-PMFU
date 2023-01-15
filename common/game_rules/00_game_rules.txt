@@ -22,21 +22,6 @@
 # }
 
 # TFB CUSTOM RULES
-allow_golden_troll = {
-	name = "RULE_GOLDEN_TROLL"
-	group = "RULE_GROUP_TFB"
-	icon = "GFX_boosting_party_popularity"
-	option = {
-		name = "DISABLED"
-		text = "RULE_OPTION_DISABLED"
-		desc = "RULE_GOLDEN_TROLL_DISABLED_DESC"
-	}	
-	option = {
-		name = "ENABLED"
-		text = "RULE_OPTION_ENABLED"
-		desc = "RULE_GOLDEN_TROLL_ENABLED_DESC"
-	}
-}
 allow_china_waves = {
 	name = "RULE_CHINA_WAVES"
 	group = "RULE_GROUP_TFB"

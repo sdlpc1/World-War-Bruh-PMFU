@@ -2372,6 +2372,9 @@ ideas = {
 			}
 		}
 		GER_weapons = {
+
+			picture = generic_infantry_equipment_manufacturer_1
+
 			equipment_bonus = {
 				squad_equipment = {
 					build_cost_ic = -0.05 instant = yes
