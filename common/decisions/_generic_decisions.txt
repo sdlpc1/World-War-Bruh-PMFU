@@ -1,5 +1,72 @@
-political_actions = {
+host_decisions = {
+	end_spanish_civil_war = {
 
+		icon = GFX_decision_generic_break_treaty
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			SPA = {
+				has_civil_war = yes
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				every_other_country = {
+					limit = { original_tag = SPR }
+					add_timed_idea = {
+						idea = spirit_of_bozo
+						days = 365
+					}
+				}
+
+			}
+			every_other_country = {
+				limit = { original_tag = SPR }
+				SPA = { annex_country = { target = PREV transfer_troops = no } }
+			}
+		}
+
+	}
+
+	end_sino_japanese_war = {
+
+		icon = GFX_decision_generic_break_treaty
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			JAP = {
+				has_war_with = CHI
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					add_timed_idea = {
+						idea = spirit_of_bozo
+						days = 365
+					}
+				}			
+			}
+			JAP = {
+				annex_country = {
+					target = CHI
+					transfer_troops = no
+				}
+			}
+		}
+
+	}
+
+}
+political_actions = {
 	
 	targeted_race_for_the_bomb = {
 
