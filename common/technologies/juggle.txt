@@ -6,7 +6,7 @@ technologies = {
 		}
 		folder = {
 			name = industry_folder
-			position = { x = -3 y = 0 }
+			# position = { x = -3 y = 0 }
 		}
 	}
 	Juggle2 = {
@@ -16,7 +16,7 @@ technologies = {
 		research_cost = 0
 		folder = {
 			name = industry_folder
-			position = { x = -5 y = 0 }
+			# position = { x = 2 y = 0 }
 		}
 	}
 }

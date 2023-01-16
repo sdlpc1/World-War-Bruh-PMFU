@@ -5008,6 +5008,26 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+
+			# JUGGLE
+
+			gridboxtype = {
+				name = "Juggle1_tree"
+				position = { x = 1154 y = 172 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "Juggle2_tree"
+				position = { x = 1294 y = 172 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			# END JUGGLE
 			
 			iconType = {
 				name = "highlight_industry_2"
