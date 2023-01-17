@@ -22,21 +22,6 @@
 # }
 
 # TFB CUSTOM RULES
-allow_golden_troll = {
-	name = "RULE_GOLDEN_TROLL"
-	group = "RULE_GROUP_TFB"
-	icon = "GFX_boosting_party_popularity"
-	option = {
-		name = "DISABLED"
-		text = "RULE_OPTION_DISABLED"
-		desc = "RULE_GOLDEN_TROLL_DISABLED_DESC"
-	}	
-	option = {
-		name = "ENABLED"
-		text = "RULE_OPTION_ENABLED"
-		desc = "RULE_GOLDEN_TROLL_ENABLED_DESC"
-	}
-}
 allow_china_waves = {
 	name = "RULE_CHINA_WAVES"
 	group = "RULE_GROUP_TFB"
@@ -106,6 +91,108 @@ ussr_war_focus_only = {
 		name = "ENABLED"
 		text = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED"
 		desc = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED_DESC"
+	}
+}
+
+horst_host_country = {
+	name = "Select Host"
+	group = "RULE_GROUP_TFB"
+	icon = "GFX_volunteers"
+	default = {
+		name = GER
+		text = "Germany"
+		desc = ""
+	}
+
+	option = {
+		name = ITA
+		text = "Italy"
+		desc = ""
+	}
+	option = {
+		name = ROM
+		text = "Romania"
+		desc = ""
+	}
+	option = {
+		name = HUN
+		text = "Hungary"
+		desc = ""
+	}
+	option = {
+		name = BUL
+		text = "Bulgaria"
+		desc = ""
+	}
+	option = {
+		name = FIN
+		text = "Finland"
+		desc = ""
+	}
+	option = {
+		name = ENG
+		text = "Great Britain"
+		desc = ""
+	}
+	option = {
+		name = USA
+		text = "USA"
+		desc = ""
+	}
+	option = {
+		name = CAN
+		text = "Canada"
+		desc = ""
+	}
+	option = {
+		name = SAF
+		text = "South Africa"
+		desc = ""
+	}
+	option = {
+		name = RAJ
+		text = "British Raj"
+		desc = ""
+	}
+	option = {
+		name = AST
+		text = "Australia"
+		desc = ""
+	}
+	option = {
+		name = JAP
+		text = "Japan"
+		desc = ""
+	}
+	option = {
+		name = SOV
+		text = "Soviet Union"
+		desc = ""
+	}
+	option = {
+		name = FRA
+		text = "France"
+		desc = ""
+	}
+	option = {
+		name = SPR
+		text = "Spain"
+		desc = ""
+	}
+	option = {
+		name = BRA
+		text = "Brazil"
+		desc = ""
+	}
+	option = {
+		name = SWE
+		text = "Sweden"
+		desc = ""
+	}
+	option = {
+		name = AUS
+		text = "Austria"
+		desc = ""
 	}
 }
 

@@ -7507,6 +7507,19 @@ spriteTypes = {
 		name = "GFX_goal_continuous_armor_production"
 		textureFile = "gfx/interface/goals/goal_continuous_armor_production.dds"
 	}
+
+	# JUGGLE TECH
+
+	SpriteType = {
+		name = "GFX_Juggle2_medium"
+		texturefile = "gfx/interface/technologies/industry/juggle.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_Juggle1_medium"
+		texturefile = "gfx/interface/technologies/industry/juggle.dds"
+	}
+
 	
 	SpriteType = {
 		name = "GFX_goal_continuous_armor_production_shine"

@@ -10,9 +10,6 @@ category = {
 	Poland
 	Brazil
 	BlackShirts
-	Bench3
-	Pain
-	Linda4
 	}
 }
 
@@ -2969,45 +2966,6 @@ soundeffect = {
 	volume = 3
 	sounds = {
 		sound = "BlackShirts"
-	}
-	max_audible = 3
-	max_audible_behaviour = fail
-}
-sound = {
-	name = "Bench3"
-	file = "playerQuotes/Bench3.wav"
-}
-soundeffect = {
-	name = "Bench3"
-	volume = 3
-	sounds = {
-		sound = "Bench3"
-	}
-	max_audible = 3
-	max_audible_behaviour = fail
-}
-sound = {
-	name = "Pain"
-	file = "playerQuotes/Pain.wav"
-}
-soundeffect = {
-	name = "Pain"
-	volume = 3
-	sounds = {
-		sound = "Pain"
-	}
-	max_audible = 3
-	max_audible_behaviour = fail
-}
-sound = {
-	name = "Linda4"
-	file = "playerQuotes/Linda4.wav"
-}
-soundeffect = {
-	name = "Linda4"
-	volume = 3
-	sounds = {
-		sound = "Linda4"
 	}
 	max_audible = 3
 	max_audible_behaviour = fail

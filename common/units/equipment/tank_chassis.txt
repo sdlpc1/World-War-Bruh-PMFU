@@ -124,6 +124,10 @@ equipments = {
 			module = additional_heavy_machine_guns
 			count < 2
 		}
+		module_count_limit = {
+			module = apcr_round
+			count < 2
+		}
 
 		default_modules = {
 			main_armament_slot = empty
@@ -274,6 +278,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = additional_heavy_machine_guns
+			count < 2
+		}
+		module_count_limit = {
+			module = apcr_round
 			count < 2
 		}
 
@@ -427,6 +435,10 @@ equipments = {
 			module = secondary_turret_howitzer
 			count < 2
 		}
+		module_count_limit = {
+			module = apcr_round
+			count < 2
+		}
 		
 		default_modules = {
 			main_armament_slot = empty
@@ -569,6 +581,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = additional_heavy_machine_guns
+			count < 2
+		}
+		module_count_limit = {
+			module = apcr_round
 			count < 2
 		}
 

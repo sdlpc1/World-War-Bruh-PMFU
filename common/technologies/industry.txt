@@ -961,14 +961,14 @@ technologies = {
 			leads_to_tech = aviation_fuel 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = Juggle1
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = Juggle2
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = Juggle1
+		# 	research_cost_coeff = 1
+		# }
+		# path = {
+		# 	leads_to_tech = Juggle2
+		# 	research_cost_coeff = 1
+		# }
 		
 		research_cost = 1
 		start_year = 1936

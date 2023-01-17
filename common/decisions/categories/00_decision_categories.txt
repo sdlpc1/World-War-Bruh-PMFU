@@ -1,3 +1,11 @@
+host_decisions = {
+	icon = GFX_decision_category_hol_obtain_foreign_colonial_investments
+
+	visible = {
+		has_country_flag = host
+	}
+
+}
 debug_decisions = {
 	icon = generic_research
 	visible = {
