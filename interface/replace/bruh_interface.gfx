@@ -596,6 +596,11 @@ spriteTypes = {
 		name = "GFX_autonomy_protectorate_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_dominion_icon.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_autonomy_soviet_protectorate_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
+	}
 	###
 	spriteType = {
 		name = "GFX_div_subunit_item_bg_sup"
