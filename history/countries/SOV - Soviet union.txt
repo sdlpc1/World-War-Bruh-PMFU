@@ -16,6 +16,19 @@ set_party_name = {
 	name = SOV_fascism_party_russian
 }
 
+# DIPLOMACY
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_soviet_protectorate
+	}
+}
+
 #COUNTRY LEADERS
 recruit_character = SOV_iosif_stalin
 recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus

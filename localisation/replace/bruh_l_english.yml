@@ -249,6 +249,7 @@
  ITA_ISR_fascism:0 "Italian Social Republic"
  #### AUTONOMY ####
  autonomy_protectorate:0 "Colonial Protectorate"
+ autonomy_soviet_protectorate:0 "Soviet Protectorate"
 
  #### IDEAS ####
  air_factory_1:0 "Small Aircraft Factories"
