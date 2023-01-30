@@ -486,6 +486,59 @@ NDefines.NGraphics.WEATHER_PLAYBACK_RATE = 0.25 -- Playback rate at maximum dist
 NDefines.NGraphics.WEATHER_PLAYBACK_RATE_CUTOFF = 400 -- Playback rate maximum distance
 NDefines.NGraphics.WEATHER_PLAYBACK_RATE_LENGTH = 200 -- For how long to fade between normal playback rate and maximum distance playback rate
 
+-- EXPERIMENTAL GRAPHICS
+
+NDefines.NMapIcons.STRATEGIC_AIR_PRIORITY_AIR_MISSION = 290
+
+NDefines.NGraphics.VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {300, 500, 1500}
+
+NDefines.NGraphics.MAP_ICONS_GROUP_CAM_DISTANCE = 100				--group moving and still units
+NDefines.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 325.0		--group into states
+NDefines.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 400		--group units into air regions
+NDefines.NGraphics.MAP_ICONS_STRATEGIC_AREA_HUGE = 220					--size limit for air region grouping
+NDefines.NGraphics.MAP_ICONS_STATE_HUGE = 100							--size limit for state grouping
+NDefines.NGraphics.MAPICON_GROUP_STRATEGIC_SIZE = 1000
+NDefines.NGraphics.MAP_ICONS_GROUP_SPLIT_SELECTED_LIMIT = 10
+NDefines.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 200
+NDefines.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE_STRATEGIC = 0
+
+NDefines.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
+	0.0/360.0, 1.0, 0.75,	--red
+	10.0/360.0, 1.0, 0.75,	--orange
+	60.0/360.0, 1.0, 0.75,	--yellow
+	120.0/360.0, 0.85, 0.75,	--green
+	155.0/360.0, 1.0, 0.75,	--greenish
+	180.0/360.0, 1.0, 0.75,	--turq
+	220.0/360.0, 1.0, 0.75,	--blue
+	260.0/360.0, 1.0, 0.85,	--dark purple
+	330.0/360.0, 0, 0.75		--white
+}
+
+NDefines.NGraphics.CAMERA_ZOOM_SPEED_DISTANCE_MULT = 20
+
+NDefines.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 900
+NDefines.NGraphics.NAVALBASE_ICON_DISTANCE_CUTOFF = 900
+
+-- NDefines.NGraphics.STRATEGIC_AIR_COLOR_BAD = {0.65, 0, 0, 1}
+-- NDefines.NGraphics.STRATEGIC_AIR_COLOR_GOOD = {0, 0.65, 0, 1}
+-- NDefines.NGraphics.STRATEGIC_AIR_COLOR_AVERAGE = {0.65, 0.65, 0, 1}
+-- NDefines.NGraphics.STRATEGIC_AIR_COLOR_NEUTRAL = {130.0/255, 130.0/255, 130.0/255, 1}
+
+NDefines.NGraphics.GRADIENT_BORDERS_THICKNESS_STRATEGIC_REGIONS = 250.0
+NDefines.NGraphics.GRADIENT_BORDERS_THICKNESS_SUPPLY_AREA_A = 250 --250.0
+NDefines.NGraphics.GRADIENT_BORDERS_THICKNESS_SUPPLY_AREA_B = 250 --250.0
+	
+-- NDefines.NGraphics.RESISTANCE_COLOR_GOOD = {0.0, 0.65, 0, 1}
+-- NDefines.NGraphics.RESISTANCE_COLOR_AVERAGE = {0.65, 0.65, 0, 1}
+-- NDefines.NGraphics.RESISTANCE_COLOR_BAD = {0.65, 0, 0, 1}
+	
+-- NDefines.NGraphics.STRATEGIC_NAVY_COLOR_MISSION = {0.65, 0.65, 0.0, 1}
+-- NDefines.NGraphics.STRATEGIC_NAVY_COLOR_NEUTRAL = {130.0/255, 130.0/255, 130.0/255, 1}
+
+NDefines.NGraphics.ROOT_FRONT_OFFSET = 2
+
+-- EXPERIMENTAL END
+
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 4
 NDefines.NCharacter.GENIUS_ADVISOR_MIN_RANK = 6
