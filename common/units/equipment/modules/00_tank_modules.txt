@@ -136,6 +136,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 		}
+		dismantle_cost_ic = 2
 	}
 
 	tank_christie_suspension = {
@@ -151,6 +152,7 @@ equipment_modules = {
 			defense = -0.1
 			breakthrough = -0.1
 		}
+		dismantle_cost_ic = 2
 	}
 
 	tank_bogie_suspension = {
@@ -161,6 +163,7 @@ equipment_modules = {
 		add_stats = {
 			#build_cost_ic = 2
 		}
+		dismantle_cost_ic = 2
 	}
 
 	tank_interleaved_suspension = {
@@ -175,6 +178,7 @@ equipment_modules = {
 		}
 		multiply_stats =  {
 		}
+		dismantle_cost_ic = 2
 	}
 
 	tank_horstmann_suspension = {
@@ -189,6 +193,7 @@ equipment_modules = {
 		}
 		multiply_stats =  {
 		}
+		dismantle_cost_ic = 2
 	}
 	
 	tank_wheeled_suspension = {
@@ -204,6 +209,7 @@ equipment_modules = {
 			build_cost_ic = -0.15
 			hardness = -0.3
 		}
+		dismantle_cost_ic = 2
 	}
 
 	tank_half_track_suspension = {
@@ -219,6 +225,7 @@ equipment_modules = {
 			maximum_speed = 0.1
 			hardness = -0.2
 		}
+		dismantle_cost_ic = 2
 	}
 
 	
@@ -240,13 +247,16 @@ equipment_modules = {
 	# 	}
 	# }
 
+	# Soviet ZIS 'Gun Platform'
 	tank_light_superstructure_zis = { ## TIER 3 ##
 		abbreviation = "lfs"
 		category = tank_light_turret_type_zis
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = artillery
-		forbid_equipment_type = flame
+		forbid_equipment_type = { 
+			anti_air
+			artillery
+			flame
+		}
 		forbid_equipment_type_exact_match = armor
 		build_cost_resources = {
 			steel = 5
@@ -286,12 +296,15 @@ equipment_modules = {
 	# 	}
 	# }
 	
+	# Italian cv33 'Tankette Superstructure'
 	tank_light_superstructure_cv33 = { ## TIER 3 ##
 		abbreviation = "lfs"
 		category = tank_light_turret_type_cv33
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			artillery
+		}
 		
 		multiply_stats = {
 			soft_attack = -0.2
@@ -301,13 +314,16 @@ equipment_modules = {
 	}
 	### Multi Turret Designs ###
 
+	# Basic Multi-Turret Designs
 	tank_multi_turret_1 = { ## TIER 1 ##
 		abbreviation = "l1m"
 		category = tank_light_turret_type_multi
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 
 		add_stats = {
 			build_cost_ic = 4
@@ -319,13 +335,16 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 	}
 
+	# Improved Multi-Turret Designs
 	tank_multi_turret_2 = { ## TIER 2 ##
 		abbreviation = "l2m"
 		category = tank_light_turret_type_multi
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -344,13 +363,16 @@ equipment_modules = {
 		dismantle_cost_ic = 2
 	}
 
+	# Advanced Multi-Turret Designs
 	tank_multi_turret_3 = { ## TIER 3 ##
 		abbreviation = "l3m"
 		category = tank_light_turret_type_multi
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -374,14 +396,17 @@ equipment_modules = {
 	
     ### AC TURRETS ###
 	
+	# Armored Car Turret 1
 	tank_ac_turret_1 = {
 		abbreviation = "l1m"
 		category = tank_ac_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
-		forbid_equipment_type = flame
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+			flame
+		}
 
 		add_stats = {
 			build_cost_ic = 2
@@ -394,14 +419,17 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 	}
 
+	# Armored Car Turret 2
 	tank_ac_turret_2 = {
 		abbreviation = "l1m"
 		category = tank_ac_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
-		forbid_equipment_type = flame
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+			flame
+		}
 		
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -420,14 +448,17 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 	}
 
+	# Armored Car Turret 3
 	tank_ac_turret_3 = {
 		abbreviation = "l1m"
 		category = tank_ac_advanced_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
-		forbid_equipment_type = flame
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+			flame
+		}
 		
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -476,13 +507,16 @@ equipment_modules = {
     ###Turret Types - light
 	### turrets are split by chassis to make it easier to control which guns they can mount
 
+	# Light Turret 1
 	tank_light_turret_1 = { ## TIER 1 ##
 		abbreviation = "l1m"
 		category = tank_light_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 
 		add_stats = {
 			build_cost_ic = 4
@@ -498,13 +532,16 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 	}
 
+	# Light Turret 2
 	tank_light_turret_2 = { ## TIER 2 ##
 		abbreviation = "l2m"
 		category = tank_light_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -526,13 +563,16 @@ equipment_modules = {
 		dismantle_cost_ic = 2
 	}
 
+	# Light Turret 3
 	tank_light_turret_3 = { ## TIER 3 ##
 		abbreviation = "l3m"
 		category = tank_light_turret_type_alt
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -554,6 +594,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 	}
 
+	# Light Open Turret
 	tank_light_turret_open = {  ## TIER 4 ##
 		abbreviation = "l3m"
 		category = tank_light_turret_type_1
@@ -581,6 +622,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 	}
 
+	# Light Open Turret Large
 	tank_light_turret_open_large = {  ## TIER 6 ##
 		abbreviation = "l3l"
 		category = tank_light_turret_type_5
@@ -610,12 +652,15 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 	}
 
+	# Fixed Light Casemate
 	tank_light_superstructure = { ## TIER 5 ##
 		abbreviation = "lfs"
 		category = tank_light_turret_type_2
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			artillery
+		}	
 		forbid_equipment_type_exact_match = armor
 
 		allowed_module_categories = {
@@ -642,13 +687,16 @@ equipment_modules = {
 		dismantle_cost_ic = 2
 	}
 
+	# Light Open Superstructure
 	tank_light_open_superstructure = { ## TIER 5 ##
 		abbreviation = "los"
 		category = tank_light_turret_type_3
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type_exact_match = armor
-		forbid_equipment_type = flame
-		forbid_equipment_type = amphibious 
+		forbid_equipment_type = {
+			flame
+			amphibious
+		}
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -673,13 +721,16 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 	}
 
+	# Medium Turret 1
 	tank_medium_turret_1 = { ## TIER 4 ##
 		abbreviation = "m1m"
 		category = tank_medium_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -702,13 +753,16 @@ equipment_modules = {
 		dismantle_cost_ic = 3
 	}
 
+	# Medium Turret 2
 	tank_medium_turret_2 = { ## TIER 5 ##
 		abbreviation = "m2m"
 		category = tank_medium_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -729,13 +783,16 @@ equipment_modules = {
 		dismantle_cost_ic = 3
 	}
 
+	# Medium Turret 3
 	tank_medium_turret_3 = { ## TIER 6 ##
 		abbreviation = "m3m"
 		category = tank_medium_turret_type_1
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -786,6 +843,7 @@ equipment_modules = {
 	# 	}
 	# }
 
+	# Medium Open Turret
 	tank_medium_turret_open = { ## TIER 7 ##
 		abbreviation = "mom"
 		category = tank_medium_turret_type_2
@@ -815,12 +873,15 @@ equipment_modules = {
 		dismantle_cost_ic = 3
 	}
 
+	# Fixed Medium Casemate
 	tank_medium_superstructure = { ## TIER 7 ##
 		abbreviation = "mfs"
 		category = tank_medium_turret_type_3
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			artillery
+		}
 		forbid_equipment_type_exact_match = armor
 
 		allowed_module_categories = {
@@ -843,12 +904,15 @@ equipment_modules = {
 		dismantle_cost_ic = 3
 	}
 
+	# Fixed Medium Large Casemate
 	tank_large_medium_superstructure = { ## TIER 8 ##
 		abbreviation = "mfl"
 		category = tank_medium_turret_type_5
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			artillery
+		}
 		forbid_equipment_type_exact_match = armor
 
 		allowed_module_categories = {
@@ -873,14 +937,16 @@ equipment_modules = {
 		dismantle_cost_ic = 5
 	}
 	
-	
+	# Medium Open Superstructure
 	tank_medium_open_superstructure = { ## TIER 7 ##
 		abbreviation = "mos"
 		category = tank_medium_turret_type_4
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type_exact_match = armor
-		forbid_equipment_type = flame
-		forbid_equipment_type = amphibious 
+		forbid_equipment_type = {
+			flame
+			amphibious
+		}
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -906,13 +972,16 @@ equipment_modules = {
 
 	}
 
+	# Early Heavy Turret
 	tank_heavy_turret_early = { ## TIER 5 ##
 		abbreviation = "h2m"
 		category = tank_heavy_turret_type_0
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 		
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -940,13 +1009,16 @@ equipment_modules = {
 		dismantle_cost_ic = 5
 	}
 
+	# Heavy Turret 1
 	tank_heavy_turret_1 = { ## TIER 7 ##
 		abbreviation = "h2m"
 		category = tank_heavy_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 		
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -965,14 +1037,16 @@ equipment_modules = {
 		dismantle_cost_ic = 5
 	}
 
+	# Heavy Turret 2
 	tank_heavy_turret_2 = { ## TIER 8 ##
 		abbreviation = "h3m"
 		category = tank_heavy_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
-
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_armament_tier_8
@@ -993,6 +1067,7 @@ equipment_modules = {
 		dismantle_cost_ic = 5
 	}
 
+	# Fixed Heavy Casemate
 	tank_heavy_superstructure = { ## TIER 9 ##
 		abbreviation = "hfs"
 		category = tank_heavy_turret_type_1
@@ -1022,13 +1097,16 @@ equipment_modules = {
 		dismantle_cost_ic = 5
 	}
 	
+	# Fixed Heavy Open Casemate
 	tank_heavy_open_superstructure = { ## TIER 8 ##
 		abbreviation = "hos"
 		category = tank_heavy_turret_type_4
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type_exact_match = armor
-		forbid_equipment_type = flame
-		forbid_equipment_type = amphibious 
+		forbid_equipment_type = {
+			flame
+			amphibious
+		}
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -1051,13 +1129,16 @@ equipment_modules = {
 		dismantle_cost_ic = 5
 	}
 
+	# Heavy Turret 3
 	tank_super_heavy_turret = { ## TIER 9 ##
 		abbreviation = "s4m"
 		category = tank_super_heavy_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 
 		add_stats = {
 			build_cost_ic = 16
@@ -1079,13 +1160,16 @@ equipment_modules = {
 		dismantle_cost_ic = 5
 	}
 
+	# Modern Turret
 	tank_modern_tank_turret = { ## TIER 7 ##
 		abbreviation = "mbt"
 		category = tank_modern_turret_type
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+		}
 		
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -2249,10 +2333,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = amphibious
 		forbid_equipment_type_exact_match = armor
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = artillery
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = flame
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			artillery
+			flame
+		}
 
 		add_stats = {
 			build_cost_ic = 4

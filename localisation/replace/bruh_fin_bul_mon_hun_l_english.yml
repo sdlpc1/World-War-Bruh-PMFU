@@ -76,6 +76,8 @@
  FIN_white_guard2:0 "The White Guard"
  FIN_white_guard1:0 "The White Guard"
  FIN_lahti:0 "Lahti"
+ FIN_lahti_instant_desc:0 "\n§RNote that this designer will add a 20% penalty to production speed on Finnish infantry equipment for countries that are licensing it.§!"
+ FIN_lahti_tt:0 "\n§RNote that this designer will add a 20% penalty to production speed on Finnish infantry equipment for countries that are licensing it.§!"
  sisu2:0 "Sisu"
  sisu3:0 "Sisu"
  FIN_kitchens:0 "Field Kitchens"
