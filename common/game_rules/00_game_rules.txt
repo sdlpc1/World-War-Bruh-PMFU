@@ -57,7 +57,7 @@ allow_voice_lines = {
 		text = "RULE_OPTION_ENABLED"
 		desc = "RULE_VOICE_LINES_ENABLED_DESC"
 	}
-	option = {
+	default = {
 		name = "DISABLED"
 		text = "RULE_OPTION_DISABLED"
 		desc = "RULE_VOICE_LINES_DISABLED_DESC"
@@ -72,25 +72,10 @@ fatherless_spirit = {
 		text = "RULE_OPTION_ENABLED"
 		desc = "RULE_FATHERLESS_SPIRIT_ENABLED_DESC"
 	}
-	option = {
+	default = {
 		name = "DISABLED"
 		text = "RULE_OPTION_DISABLED"
 		desc = "RULE_FATHERLESS_SPIRIT_DISABLED_DESC"
-	}
-}
-
-ussr_war_focus_only = {
-	name = "RULE_USSR_WAR_FOCUS_ONLY"
-	group = "RULE_GROUP_TFB"
-	default = {
-		name = "DISABLED"
-		text = "RULE_USSR_WAR_FOCUS_ONLY_DISABLED"
-		desc = "RULE_USSR_WAR_FOCUS_ONLY_DISABLED_DESC"
-	}
-	option = {
-		name = "ENABLED"
-		text = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED"
-		desc = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED_DESC"
 	}
 }
 
@@ -98,6 +83,7 @@ horst_host_country = {
 	name = "Select Host"
 	group = "RULE_GROUP_TFB"
 	icon = "GFX_volunteers"
+	# axis
 	default = {
 		name = GER
 		text = "Germany"
@@ -107,6 +93,11 @@ horst_host_country = {
 	option = {
 		name = ITA
 		text = "Italy"
+		desc = ""
+	}
+	option = {
+		name = SPR
+		text = "Spain"
 		desc = ""
 	}
 	option = {
@@ -120,15 +111,34 @@ horst_host_country = {
 		desc = ""
 	}
 	option = {
-		name = BUL
-		text = "Bulgaria"
-		desc = ""
-	}
-	option = {
 		name = FIN
 		text = "Finland"
 		desc = ""
 	}
+	option = {
+		name = BUL
+		text = "Bulgaria"
+		desc = ""
+	}
+
+	# Co-prosperity Sphere
+	option = {
+		name = JAP
+		text = "Japan"
+		desc = ""
+	}
+	option = {
+		name = MAN
+		text = "Manchukuo"
+		desc = ""
+	}
+	option = {
+		name = SIA
+		text = "Siam"
+		desc = ""
+	}
+
+	# allies
 	option = {
 		name = ENG
 		text = "Great Britain"
@@ -140,13 +150,8 @@ horst_host_country = {
 		desc = ""
 	}
 	option = {
-		name = CAN
-		text = "Canada"
-		desc = ""
-	}
-	option = {
-		name = SAF
-		text = "South Africa"
+		name = FRA
+		text = "France"
 		desc = ""
 	}
 	option = {
@@ -155,28 +160,23 @@ horst_host_country = {
 		desc = ""
 	}
 	option = {
+		name = CAN
+		text = "Canada"
+		desc = ""
+	}
+	option = {
 		name = AST
 		text = "Australia"
 		desc = ""
 	}
 	option = {
-		name = JAP
-		text = "Japan"
+		name = SAF
+		text = "South Africa"
 		desc = ""
 	}
 	option = {
-		name = SOV
-		text = "Soviet Union"
-		desc = ""
-	}
-	option = {
-		name = FRA
-		text = "France"
-		desc = ""
-	}
-	option = {
-		name = SPR
-		text = "Spain"
+		name = MEX
+		text = "Mexico"
 		desc = ""
 	}
 	option = {
@@ -185,14 +185,36 @@ horst_host_country = {
 		desc = ""
 	}
 	option = {
-		name = SWE
-		text = "Sweden"
+		name = HOL
+		text = "Netherlands"
+		desc = ""
+	}
+	# comintern
+	option = {
+		name = SOV
+		text = "Soviet Union"
 		desc = ""
 	}
 	option = {
-		name = AUS
-		text = "Austria"
+		name = MON
+		text = "Mongolia"
 		desc = ""
+	}
+}
+
+
+ussr_war_focus_only = {
+	name = "RULE_USSR_WAR_FOCUS_ONLY"
+	group = "RULE_GROUP_TFB"
+	default = {
+		name = "DISABLED"
+		text = "RULE_USSR_WAR_FOCUS_ONLY_DISABLED"
+		desc = "RULE_USSR_WAR_FOCUS_ONLY_DISABLED_DESC"
+	}
+	option = {
+		name = "ENABLED"
+		text = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED"
+		desc = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED_DESC"
 	}
 }
 
