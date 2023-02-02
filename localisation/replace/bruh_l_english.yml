@@ -249,6 +249,7 @@
  ITA_ISR_fascism:0 "Italian Social Republic"
  #### AUTONOMY ####
  autonomy_protectorate:0 "Colonial Protectorate"
+ autonomy_soviet_protectorate:0 "Soviet Protectorate"
 
  #### IDEAS ####
  air_factory_1:0 "Small Aircraft Factories"
@@ -1234,3 +1235,8 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  RULE_FATHERLESS_SPIRIT:0 "Fatherless Spirit"
  RULE_FATHERLESS_SPIRIT_ENABLED_DESC:0 "Add the Fatherless Spirit to minor nations to make sub and bomber spam less beneficial (Default)"
  RULE_FATHERLESS_SPIRIT_DISABLED_DESC:0 "Don't add the Fatherless Spirit to minor nations"
+ RULE_USSR_WAR_FOCUS_ONLY:0 "War with USSR focus only"
+ RULE_USSR_WAR_FOCUS_ONLY_DISABLED:0 "Disabled"
+ RULE_USSR_WAR_FOCUS_ONLY_DISABLED_DESC:0 "War with USSR is possible in all ways"
+ RULE_USSR_WAR_FOCUS_ONLY_ENABLED:0 "Enabled"
+ RULE_USSR_WAR_FOCUS_ONLY_ENABLED_DESC:0 "War with USSR is focuses only"
