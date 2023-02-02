@@ -249,7 +249,6 @@
  ITA_ISR_fascism:0 "Italian Social Republic"
  #### AUTONOMY ####
  autonomy_protectorate:0 "Colonial Protectorate"
- autonomy_soviet_protectorate:0 "Soviet Protectorate"
 
  #### IDEAS ####
  air_factory_1:0 "Small Aircraft Factories"
@@ -361,6 +360,8 @@
  mountain_training_effect:0 "Enables §HMountain Training§!\n§HAll Infantry:\n    Mountain§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
  motti_tactic:0 "Enables §HMotti Tactics§!\n§HAll Infantry:\n    Forest§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
  JAP_adaptable_armor_designs:0 "Enables §HAdaptable Light Armor Designs§!\n§HLight Tanks and Variants:\n    Jungle§!\n     Attack: §G+10%§!\n      Movement: §G+15%§!\n    §HMountain§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!"
+ MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
+
 officer_training_flag:0 "Officer Training in Progress"
 
 superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General the trait §Y"Engineer"§!"
@@ -1233,8 +1234,3 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  RULE_FATHERLESS_SPIRIT:0 "Fatherless Spirit"
  RULE_FATHERLESS_SPIRIT_ENABLED_DESC:0 "Add the Fatherless Spirit to minor nations to make sub and bomber spam less beneficial (Default)"
  RULE_FATHERLESS_SPIRIT_DISABLED_DESC:0 "Don't add the Fatherless Spirit to minor nations"
- RULE_USSR_WAR_FOCUS_ONLY:0 "War with USSR focus only"
- RULE_USSR_WAR_FOCUS_ONLY_DISABLED:0 "Disabled"
- RULE_USSR_WAR_FOCUS_ONLY_DISABLED_DESC:0 "War with USSR is possible in all ways"
- RULE_USSR_WAR_FOCUS_ONLY_ENABLED:0 "Enabled"
- RULE_USSR_WAR_FOCUS_ONLY_ENABLED_DESC:0 "War with USSR is focuses only"

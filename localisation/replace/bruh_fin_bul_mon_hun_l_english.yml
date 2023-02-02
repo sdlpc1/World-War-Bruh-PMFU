@@ -278,6 +278,29 @@ BUL_army_restrictions_mobilization_law_tt:2 "§RCannot produce armor, aircraft o
  MON_spirit_of_genghis_desc:0 "Perhaps those Buddhists were onto something... shame that we purged them all."
  MON_mobilize_the_steppes:0 "Mobilize the Steppes"
  MON_mobilize_the_steppes_desc:0 "In the face of true war, every man of the steppes must be prepared to put his life on the line for the glory of communism."
+
+#Right-side political/new focuses
+
+MON_buddhist_compromise:0 "Buddhism Compromise"
+MON_religious_taxations:0 "Religious Taxation"
+MON_remove_religious_figureheads:0 "Remove Religious Figureheads"
+MON_cooperation_with_buddhists:0 "Cooperation with Buddhists"
+MON_government_reforms:0 "Government Reforms"
+MON_society_reforms:0 "Society Reforms"
+MON_new_constitution:0 "New Mongolian Constition"
+MON_soviet_subsidies:0 "Soviet Subsidies"
+MON_paving_the_road:0 "Paving the roads"
+MON_mobilise_the_workers:0 "Mobilising the Workers"
+MON_unite_steppes:0 "Unite the Steppes"
+MON_invite_soviet_scientists:0 "Invite Soviet Scientists"
+MON_industrial_expansion:0 "Industrial Expansion"
+MON_war_industry:0 "War Industry"
+MON_search_for_resources:0 "The Search for Resources"
+MON_expansion_of_refineries:0 "Expansion of Refineries"
+MON_expansion_of_resources:0 "Expansion of Steel resources"
+MON_self_sufficient:0 "Mongolian Self-Sufficient"
+MON_soviet_transportation:0 "Soviet Transportation Investment"
+
  #### EVENTS ####
  mongolia.1.t:0 "Mongolia Calls for Mongol Unity" #pretty much all of these events seem outdated
  mongolia.1.d:0 "Mongolia has requested that we allow them to take control of Tannu Tuva."
@@ -315,6 +338,15 @@ BUL_army_restrictions_mobilization_law_tt:2 "§RCannot produce armor, aircraft o
  MON_mobilize_steppes:0 "Mobilize the Mongol People"
  MON_brothers_war:0 "Brothers War"
  MON_brothers_war_desc:0 "This debuff will expire upon the end of the winter war, or if at war with Germany."
+ MON_self_sufficient_idea:0 "Self-Sufficent"
+ MON_volunteers_idea:0 "Mongolian Volunteers"
+ MON_mobilise_the_workers_idea:0 "Mobilising the Workers" 
+ MON_nomadic_priortize_horses_ideas:0 "Priortizing Horses over Armour"
+ MON_buddhist_compromise_idea:0 "Buddhist Cooperation"
+ MON_religious_taxation:0 "Religious Taxations"
+ MON_nomadic_war_idea:0 "Nomadic Warriors"
+ 
+
  #### DECISIONS ####
  MON_tribute:0 "The Tribute"
  MON_propaganda_transport:0 "Transport is the Sibling of the Red Army"

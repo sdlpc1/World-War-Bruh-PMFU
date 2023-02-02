@@ -310,5 +310,21 @@ technologies = {
 		}
 		
 	}
+
+	#Mon Genghis Khan Buffs
+
+	adaptable_cavalry_designs = {
+
+		research_cost = 1
+
+		category_cavalry = {
+			plains = {
+				attack = 0.05
+				movement = 0.05
+			}
+
+		}
+	}
+
 	
 }
