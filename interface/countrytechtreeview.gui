@@ -932,9 +932,9 @@ guiTypes = {
 				orientation = center_up
 				origo = center_up
 			
-				instantTextBoxType = {
+				# instantTextBoxTypeinstantTextBoxType = {
 					name = "armour_subtitle_heavy"
-					position = { x = 480 y = 55 }
+					position = { x = 545 y = -50 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -947,10 +947,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = 207 y = 335 }
+					position = { x = 200 y = -50 }
 					textureFile = ""
 					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
+					borderSize = {x = 0 y = 4 }
 					text = "ARMOUR_TITLE_MEDIUM"
 					maxWidth = 200
 					maxHeight = 62
@@ -960,7 +960,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_light"
-					position = { x = -84 y = 55  }
+					position = { x = -220 y = 55  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -970,18 +970,18 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
-				instantTextBoxType = {
-					name = "armour_subtitle_amphibious"
-					position = { x = -360 y = 335 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_AMPH"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}		
+				# instantTextBoxType = {
+				# 	name = "armour_subtitle_amphibious"
+				# 	position = { x = -360 y = 335 }
+				# 	textureFile = ""
+				# 	font = "hoi_33"
+				# 	borderSize = {x = 0 y = 4}
+				# 	text = "ARMOUR_TITLE_AMPH"
+				# 	maxWidth = 200
+				# 	maxHeight = 62
+				# 	format = center
+				# 	Orientation = "UPPER_LEFT"
+				# }	
 			}	
 
 		}
@@ -1727,7 +1727,7 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "armour_subtitle_heavy"
-					position = { x = 480 y = 55 }
+					position = { x = 475 y = -50 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1740,10 +1740,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = 207 y = 335 }
+					position = { x = 200 y = -50 }
 					textureFile = ""
 					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
+					borderSize = {x = 0 y = 4 }
 					text = "ARMOUR_TITLE_MEDIUM"
 					maxWidth = 200
 					maxHeight = 62
@@ -1753,7 +1753,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_light"
-					position = { x = -84 y = 55  }
+					position = { x = -150 y = -50  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1763,18 +1763,18 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
-				instantTextBoxType = {
-					name = "armour_subtitle_amphibious"
-					position = { x = -360 y = 335 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_AMPH"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}		
+				# instantTextBoxType = {
+				# 	name = "armour_subtitle_amphibious"
+				# 	position = { x = -360 y = 335 }
+				# 	textureFile = ""
+				# 	font = "hoi_33"
+				# 	borderSize = {x = 0 y = 4}
+				# 	text = "ARMOUR_TITLE_AMPH"
+				# 	maxWidth = 200
+				# 	maxHeight = 62
+				# 	format = center
+				# 	Orientation = "UPPER_LEFT"
+				# }		
 			}	
 
 			gridboxtype = {
@@ -2147,7 +2147,7 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "armour_subtitle_heavy"
-					position = { x = 480 y = 55 }
+					position = { x = 620 y = -50 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2160,10 +2160,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = 207 y = 335 }
+					position = { x = 200 y = -50 }
 					textureFile = ""
 					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
+					borderSize = {x = 0 y = 4 }
 					text = "ARMOUR_TITLE_MEDIUM"
 					maxWidth = 200
 					maxHeight = 62
@@ -2173,7 +2173,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_light"
-					position = { x = -84 y = 55  }
+					position = { x = -150 y = -50  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2183,18 +2183,18 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
-				instantTextBoxType = {
-					name = "armour_subtitle_amphibious"
-					position = { x = -360 y = 335 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_AMPH"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}		
+				# instantTextBoxType = {
+				# 	name = "armour_subtitle_amphibious"
+				# 	position = { x = -360 y = 335 }
+				# 	textureFile = ""
+				# 	font = "hoi_33"
+				# 	borderSize = {x = 0 y = 4}
+				# 	text = "ARMOUR_TITLE_AMPH"
+				# 	maxWidth = 200
+				# 	maxHeight = 62
+				# 	format = center
+				# 	Orientation = "UPPER_LEFT"
+				# }		
 			}	
 
 			gridboxtype = {
@@ -2566,7 +2566,7 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "armour_subtitle_heavy"
-					position = { x = 480 y = 55 }
+					position = { x = 685 y = 470 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2579,10 +2579,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = 207 y = 335 }
+					position = { x = 200 y = -50 }
 					textureFile = ""
 					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
+					borderSize = {x = 0 y = 4 }
 					text = "ARMOUR_TITLE_MEDIUM"
 					maxWidth = 200
 					maxHeight = 62
@@ -2592,7 +2592,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_light"
-					position = { x = -84 y = 55  }
+					position = { x = -287 y = 55  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -2602,18 +2602,18 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
-				instantTextBoxType = {
-					name = "armour_subtitle_amphibious"
-					position = { x = -360 y = 335 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_AMPH"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}		
+				# instantTextBoxType = {
+				# 	name = "armour_subtitle_amphibious"
+				# 	position = { x = -360 y = 335 }
+				# 	textureFile = ""
+				# 	font = "hoi_33"
+				# 	borderSize = {x = 0 y = 4}
+				# 	text = "ARMOUR_TITLE_AMPH"
+				# 	maxWidth = 200
+				# 	maxHeight = 62
+				# 	format = center
+				# 	Orientation = "UPPER_LEFT"
+				# }		
 			}	
 
 			gridboxtype = {
@@ -2945,56 +2945,56 @@ guiTypes = {
 				orientation = center_up
 				origo = center_up
 			
-				instantTextBoxType = {
-					name = "armour_subtitle_heavy"
-					position = { x = 520 y = 55 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_HEAVY"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}				
+				# instantTextBoxType = {
+				# 	name = "armour_subtitle_heavy"
+				# 	position = { x = 545 y = -50 }
+				# 	textureFile = ""
+				# 	font = "hoi_33"
+				# 	borderSize = {x = 0 y = 4}
+				# 	text = "ARMOUR_TITLE_HEAVY"
+				# 	maxWidth = 200
+				# 	maxHeight = 62
+				# 	format = center
+				# 	Orientation = "UPPER_LEFT"
+				# }				
 
-				instantTextBoxType = {
-					name = "armour_subtitle_medium"
-					position = { x = 177 y = 135 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_MEDIUM"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
+				# instantTextBoxType = {
+				# 	name = "armour_subtitle_medium"
+				# 	position = { x = 340 y = -50 }
+				# 	textureFile = ""
+				# 	font = "hoi_33"
+				# 	borderSize = {x = 0 y = 4 }
+				# 	text = "ARMOUR_TITLE_MEDIUM"
+				# 	maxWidth = 200
+				# 	maxHeight = 62
+				# 	format = center
+				# 	Orientation = "UPPER_LEFT"
+				# }
 
-				instantTextBoxType = {
-					name = "armour_subtitle_light"
-					position = { x = -84 y = 55  }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_LIGHT"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
-				instantTextBoxType = {
-					name = "armour_subtitle_amphibious"
-					position = { x = 227 y = 305 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_AMPH"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}		
+				# instantTextBoxType = {
+				# 	name = "armour_subtitle_light"
+				# 	position = { x = -75 y = 55  }
+				# 	textureFile = ""
+				# 	font = "hoi_33"
+				# 	borderSize = {x = 0 y = 4}
+				# 	text = "ARMOUR_TITLE_LIGHT"
+				# 	maxWidth = 200
+				# 	maxHeight = 62
+				# 	format = center
+				# 	Orientation = "UPPER_LEFT"
+				# }
+				# instantTextBoxType = {
+				# 	name = "armour_subtitle_amphibious"
+				# 	position = { x = -360 y = 335 }
+				# 	textureFile = ""
+				# 	font = "hoi_33"
+				# 	borderSize = {x = 0 y = 4}
+				# 	text = "ARMOUR_TITLE_AMPH"
+				# 	maxWidth = 200
+				# 	maxHeight = 62
+				# 	format = center
+				# 	Orientation = "UPPER_LEFT"
+				# }		
 			}
 
 			gridboxtype = {
