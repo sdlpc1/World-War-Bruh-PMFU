@@ -932,7 +932,7 @@ guiTypes = {
 				orientation = center_up
 				origo = center_up
 			
-				# instantTextBoxTypeinstantTextBoxType = {
+				instantTextBoxTypeinstantTextBoxType = {
 					name = "armour_subtitle_heavy"
 					position = { x = 545 y = -50 }
 					textureFile = ""

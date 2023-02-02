@@ -300,6 +300,7 @@ MON_expansion_of_refineries:0 "Expansion of Refineries"
 MON_expansion_of_resources:0 "Expansion of Steel resources"
 MON_self_sufficient:0 "Mongolian Self-Sufficient"
 MON_soviet_transportation:0 "Soviet Transportation Investment"
+ MON_volunteers:0 "Mongolian Volunteers"
 
  #### EVENTS ####
  mongolia.1.t:0 "Mongolia Calls for Mongol Unity" #pretty much all of these events seem outdated
