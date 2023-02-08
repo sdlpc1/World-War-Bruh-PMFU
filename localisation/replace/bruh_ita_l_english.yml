@@ -282,10 +282,31 @@ ITA_arditi_camouflage_tactics_desc:0 "In order to negate the Allies their Air Su
  italy.500.d:0 "Italian Steel Purchases"
  italy.500.a:0 "Accept"
  italy.500.b:0 "Deny their Request"
+
+ # steel response event
+ italy.5001.t:0 "Italian Steel Purchases - Success"
+ italy.5001.d:0 "Italian Steel Purchases - Success"
+ italy.5001.a:0 "Our co-operation with Germany grows by the day..."
+
+ italy.5002.t:0 "Italian Steel Purchases - Failure"
+ italy.5002.d:0 "Italian Steel Purchases - Failure"
+ italy.5002.a:0 "We shall look elsewhere for our steel."
+ # over
  italy.501.t:0 "Italian Oil Purchases"
  italy.501.d:0 "Italian Oil Purchases"
  italy.501.a:0 "Accept"
  italy.501.b:0 "Deny their Request"
+
+ # oil response event
+ italy.5011.t:0 "Italian Oil Purchases - Success"
+ italy.5011.d:0 "Italian Oil Purchases - Success"
+ italy.5011.a:0 "Our co-operation with Romania grows by the day..."
+
+ italy.5012.t:0 "Italian Oil Purchases - Failure"
+ italy.5012.d:0 "Italian Oil Purchases - Failure"
+ italy.5012.a:0 "We shall look elsewhere for our oil."
+ #over
+
  italy.air.t:0 "Obselete Air Industry"
  italy.air.d:0 "Our aircraft are made from lasagne sheets."
  italy.air.a:0 "Obselete Air Industry"

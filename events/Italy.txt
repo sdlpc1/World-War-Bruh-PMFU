@@ -599,6 +599,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
+		ITA = { news_event = italy.5001 }
 	}
 	
 	option = {
@@ -607,6 +608,35 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
+		ITA = { news_event = italy.5002 }
+	}
+}
+
+country_event = {
+	id = italy.5001
+	title = italy.5001.t
+	desc = italy.5001.d
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.5001.a
+	}
+}
+
+country_event = {
+	id = italy.5002
+	title = italy.5002.t
+	desc = italy.5002.d
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.5002.a
 	}
 }
 
@@ -639,6 +669,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
+		ITA = { news_event = italy.5011 }
 	}
 	
 	option = {
@@ -647,6 +678,35 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
+		ITA = { news_event = italy.5012 }
+	}
+}
+
+country_event = {
+	id = italy.5011
+	title = italy.5011.t
+	desc = italy.5011.d
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.5011.a
+	}
+}
+
+country_event = {
+	id = italy.5012
+	title = italy.5012.t
+	desc = italy.5012.d
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.5012.a
 	}
 }
 
