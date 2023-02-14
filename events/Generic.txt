@@ -1843,3 +1843,16 @@ news_event = {
 		clear_variable=this.target_country
 	}
 }
+
+news_event = {
+	id = horsttool.2
+	title = "Snek teleported again"
+	desc = " You little shit"
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Im gonna break your kneecaps snek"
+		add_political_power = -1
+	}
+}

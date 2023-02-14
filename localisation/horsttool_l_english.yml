@@ -34,16 +34,25 @@
  ADD_CHEAT:0 "§HCheat§!\nSelection is given to the selected country\n\n"
  ADD_CHEAT_DELAYED:0 ""
 
- PINGTOOL:0 "§HAI Reenabler§!\nMark, then click (WiP)\n\n"
- PINGTOOL_DELAYED:0 ""
+#  PINGTOOL:0 "§HAI Reenabler§!\nMark, then click (WiP)\n\n"
+#  PINGTOOL_DELAYED:0 ""
 
- CIVADD:0 "§HAdd 1 Civillian Factory§!\nClicking this button will add a civillian factory to the selected state.\n\n"
+ WTADD:0 "§HAdd 1% world tension§!\nClicking this button will add 1% world tension\n\n"
+ WTADD_DELAYED:0 ""
+
+ WTREMOVE:0 "§HRemove 1% world tension§!\nClicking this button will remove 1% world tension\n\n"
+ WTREMOVE_DELAYED:0 ""
+
+ SNEK_TP:0 "§HSnek teleported...§!\nSnek teleported again...\n\n"
+ SNEK_TP_DELAYED:0 "§"
+
+ CIVADD:0 "§HAdd 1 Civillian Factory§!\nClicking this button will add one offmap civillian factory.\n\n"
  CIVADD_DELAYED:0 ""
 
  CIVREMOVE:0 "§HRemove 1 Civillian Factory§!\nClicking this button will remove a civillian factory from the selected state owber.\n\n"
  CIVREMOVE_DELAYED:0 ""
 
- MILADD:0 "§HAdd 5 Military Factories§!\nClicking this button will add five military factories to the selected state owner.\n\n"
+ MILADD:0 "§HAdd 1 Military Factories§!\nClicking this button will add one offmap military factory.\n\n"
  MILADD_DELAYED:0 ""
 
  ADDPP:0 "§HAdd 50 Political Power§!\nClicking this button will add political power to the selected state's owner.\n\n"

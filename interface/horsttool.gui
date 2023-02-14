@@ -124,7 +124,7 @@ guiTypes = {
 			pdx_tooltip_delayed = "MILADD_DELAYED"
 			scale = 0.95
 		}
-				buttonType = { 
+		buttonType = { 
 			name = "civ_add"	
 			position = {x=172 y=142}
 			spriteType = "GFX_horst_civ_pluss"
@@ -132,15 +132,42 @@ guiTypes = {
 			pdx_tooltip_delayed = "CIVADD_DELAYED"
 			scale = 0.95
 		}
+
+		buttonType = { 
+			name = "wt_add"	
+			position = {x=340 y=250}
+			spriteType = "GFX_horst_increase_wt"
+			pdx_tooltip = "WTADD"
+			pdx_tooltip_delayed = "WTADD_DELAYED"
+			scale = 0.8
+		}
+
+		buttonType = { 
+			name = "wt_remove"	
+			position = {x=400 y=250}
+			spriteType = "GFX_horst_decrease_wt"
+			pdx_tooltip = "WTREMOVE"
+			pdx_tooltip_delayed = "WTREMOVE_DELAYED"
+			scale = 0.8
+		}
+
+		buttonType = { 
+			name = "snek_tped"	
+			position = {x=460 y=250}
+			spriteType = "GFX_horst_snek"
+			pdx_tooltip = "SNEK_TP"
+			pdx_tooltip_delayed = "SNEK_TP_DELAYED"
+			scale = 0.8
+		}
 		
-	 buttonType = {
-		name = "pingtool"	
-			position = {x=180 y=198}
-			spriteType = "GFX_horst_pingtool"
-		scale = 0.75
-			pdx_tooltip = "PINGTOOL"
-			pdx_tooltip_delayed = "PINGTOOL_DELAYED"
-		} 
+	#  buttonType = {
+	# 	name = "pingtool"	
+	# 		position = {x=180 y=198}
+	# 		spriteType = "GFX_horst_pingtool"
+	# 	scale = 0.75
+	# 		pdx_tooltip = "PINGTOOL"
+	# 		pdx_tooltip_delayed = "PINGTOOL_DELAYED"
+	# 	} 
 		buttonType = {
 			name = "addpp"	
 			position = {x=118 y=192}
@@ -150,14 +177,14 @@ guiTypes = {
 			pdx_tooltip_delayed = "ADDPP_DELAYED"
 		}
 ####################################################################
-		buttonType = {
-            name = "horsttool_helpbutton" 
-            position = {x=460 y=250}
-           spriteType = "GFX_horst_help"
-            scale = 0.8
-            pdx_tooltip = "HORST_HELP"
-           pdx_tooltip_delayed = "HOST_HELP_DELAYED"
-         }
+		# buttonType = {
+        #     name = "horsttool_helpbutton" 
+        #     position = {x=460 y=250}
+        #    spriteType = "GFX_horst_help"
+        #     scale = 0.8
+        #     pdx_tooltip = "HORST_HELP"
+        #    pdx_tooltip_delayed = "HOST_HELP_DELAYED"
+        #  }
 ####################################################################
 		buttonType = {
 			name = "cheat1"

@@ -18,6 +18,21 @@ spriteTypes = {
         texturefile = "gfx/horst_gui/horsttool/horst_civ_pluss.dds"
         effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
     }	
+    spriteType = {
+        name = "GFX_horst_snek"
+        texturefile = "gfx/horst_gui/horsttool/horst_snek.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }	
+    spriteType = {
+        name = "GFX_horst_increase_wt"
+        texturefile = "gfx/horst_gui/horsttool/horst_increase_wt.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }	 
+    spriteType = {
+        name = "GFX_horst_decrease_wt"
+        texturefile = "gfx/horst_gui/horsttool/horst_decrease_wt.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }	   
 	spriteType = {
         name = "GFX_horst_addcheat"
         texturefile = "gfx/horst_gui/horsttool/horst_addcheat.dds"
@@ -33,11 +48,11 @@ spriteTypes = {
         texturefile = "gfx/horst_gui/horsttool/horst_addpp.dds"
         effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
     }
-	spriteType = {
-		name = "GFX_horst_pingtool"
-		texturefile = "gfx/horst_gui/horsttool/horst_pingtool.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-    }
+	# spriteType = {
+	# 	name = "GFX_horst_pingtool"
+	# 	texturefile = "gfx/horst_gui/horsttool/horst_pingtool.dds"
+	# 	effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    # }
    	spriteType = {
    		name = "GFX_change_host_nation"
    		texturefile = "gfx/interface/lobby_country_mapmode_button.dds"
