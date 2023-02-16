@@ -344,6 +344,7 @@
  ITA_annex_bul:0 "Annex Bulgaria"
  USA_annex_mex:0 "Annex Mexico"
  USA_annex_bra:0 "Annex Brazil"
+ BRA_annex_mex:0 "Annex Mexico" 
  #### TOOLTIP ####
  ENG_home_guard_tt:0 "Create the Home Guard, Spawning §Y40 20 Width Garrison Divisions§! across the UK.\n§RIf we don't control all the states we won't get all 40 divisions§!"
  ENG_commandos_tt:0 "Enables §HCommando Improvements§!\n§HAll Marines:\n    Ampibious§!\n        £attack_texticon Attack: §G+10%§!\n        £movement_texticon Movement: §G+10%§!\n   £land_night_attack_texticon Land Night Attack: §G+20%§!\n   £specops_texticon  Special Forces Equipment Required: §R+5§!\n   £training_speed_texticon Training Time: §R20§!"

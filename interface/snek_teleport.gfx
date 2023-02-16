@@ -1,0 +1,6 @@
+spriteTypes = {	
+    spriteType = {
+        name = "GFX_snek_event"
+        texturefile = "gfx/events/snek_event.dds"
+    }
+}
