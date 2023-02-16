@@ -367,26 +367,7 @@ MTG_naval_treaties = {
 		cost = 50
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				NOT = {
-					OR = {
-						TAG = ENG
-						TAG = USA
-					}
-				}
-				factor = 0
-			}
-			modifier = {
-				is_historical_focus_on = yes
-				FROM = {
-					OR = {
-						tag = JAP
-						tag = ITA
-					}
-				}
-				factor = 0
-			}
+			factor = 0 # FIX ANNOYING SHIT
 		}
 	
 		visible = {
@@ -494,16 +475,7 @@ MTG_naval_treaties = {
 		cost = 50
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				NOT = {
-					OR = {
-						TAG = ENG
-						TAG = USA
-					}
-				}
-				factor = 0
-			}
+			factor = 0 # NO STUPID SHIT
 		}
 	
 		visible = {
