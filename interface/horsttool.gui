@@ -75,11 +75,11 @@ guiTypes = {
 			pdx_tooltip_delayed = "ADD_CHEAT_DELAYED"
 		}
 
-				buttonType = {
+		buttonType = {
 			name = "award_states" 
 			position = {x=250 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
-            		frame = 13
+            frame = 13
 			pdx_tooltip = "TRANSFER_STATES"
 			pdx_tooltip_delayed = "TRANSFER_STATES_DELAYED"
 		}
@@ -95,24 +95,25 @@ guiTypes = {
 			name = "annex_country" 
 			position = {x=300 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
-            		frame = 2
+            frame = 2
 			pdx_tooltip = "ANNEX_COUNTRY"
 			pdx_tooltip_delayed = "ANNEX_COUNTRY_DELAYED"
 		}
-				buttonType = { 
+		buttonType = { 
 			name = "fix_production"  
-			position = {x=452 y=190}  	  
+			position = {x=310 y=250} 	  
 			spriteType = "GFX_topbar_production_horst_tool"
-            		frame = 2
+			scale = 0.95
+            #frame = 2
 			pdx_tooltip = "FIX_PRODUCTION_TT" 
 			pdx_tooltip_delayed = "FIX_PRODUCTION_TT_DELAYED"
 		}
 		buttonType = { 
 			name = "fix_xp"         
-			position = {x=401 y=190} 	    
+			position = {x=270 y=250} 	    
 			spriteType = "GFX_endgame_army_button"
-			scale = 0.9
-            		#frame = 2    
+			scale = 0.8
+            #frame = 2    
 			pdx_tooltip = "FIX_XP_TT" 
 			pdx_tooltip_delayed = "FIX_XP_TT_DELAYED"
 		}
@@ -135,7 +136,7 @@ guiTypes = {
 
 		buttonType = { 
 			name = "wt_add"	
-			position = {x=340 y=250}
+			position = {x=360 y=250}
 			spriteType = "GFX_horst_increase_wt"
 			pdx_tooltip = "WTADD"
 			pdx_tooltip_delayed = "WTADD_DELAYED"
@@ -144,7 +145,7 @@ guiTypes = {
 
 		buttonType = { 
 			name = "wt_remove"	
-			position = {x=400 y=250}
+			position = {x=410 y=250}
 			spriteType = "GFX_horst_decrease_wt"
 			pdx_tooltip = "WTREMOVE"
 			pdx_tooltip_delayed = "WTREMOVE_DELAYED"
@@ -210,13 +211,21 @@ guiTypes = {
 			scale= 1
 			
 		}
-			buttonType = {
+		buttonType = {
 			name = "add_cores" 
 			position = {x=350 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
-            		frame = 6
+            frame = 6
 			pdx_tooltip = "ADD_CORES"
 			pdx_tooltip_delayed = "ADD_CORES_DELAYED"
+		}
+		buttonType = {
+			name = "add_cores_to_all_cores_of_selected_nation" 
+			position = {x=400 y=190}	
+			spriteType = "GFX_global_diplorequest_icons"
+            frame = 6
+			pdx_tooltip = "ADD_CORES_TO_ALL_CORES_SELECTED_NATION"
+			pdx_tooltip_delayed = "ADD_CORES_TO_ALL_CORES_SELECTED_NATION_DELAYED"
 		}
 		instantTextboxType = {
 			name = "cheat1_text"

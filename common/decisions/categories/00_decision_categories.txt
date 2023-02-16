@@ -5,6 +5,13 @@ host_decisions = {
 		has_country_flag = host
 	}
 
+	priority = 2000
+
+	on_map_area = {
+		name = marked_states_hosttool
+		target_array = ROOT.marked_states
+		zoom = 800
+	}
 }
 debug_decisions = {
 	icon = generic_research

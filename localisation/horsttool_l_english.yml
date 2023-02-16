@@ -1,12 +1,14 @@
 ﻿l_english:
  
+ marked_states_hosttool:0 "Shows states marked by host tool"
+
  ST_STATE_MARK_FOR_TRANSFER:0 "§HMark State for Transfer§!\nMark the selected state so it can be transfered \n"
  ST_STATE_UNMARK_FOR_TRANSFER:0 "§HUnmark State§!\nUnmarks the selected state\n"
  mark_state_yes:0 ""
  mark_state_no:0 "\n  §RMarked!§!"
 
  FIX_XP_TT:0 "§HAdd 25 Army Experience§!"
- FIX_XP_TT_DELAYED:0 "Clicking this button will give 25 Army Experience to the selected nation.?"
+ FIX_XP_TT_DELAYED:0 "Clicking this button will give 25 Army Experience to the selected nation."
  FIX_PRODUCTION_TT:0 "§HFix Production Problems§! [§RWARNING: READ DESCRIPTION BEFORE USE§!]" 
  FIX_PRODUCTION_TT_DELAYED:0 "Use this to fix 'We need to rehost, I accidentally deleted my fighter line' and avoid an unnecessary rehost. \n\nWhat it does: §YBase efficiency for all current and new lines is set to 130% for one day. The efficiency will immediately lower to their old maximum cap.§!\n\nOnly use this to fix massive production mistakes (e.g. accidentally deleting a fighter line or changing a tank line to SPAA) in cases where the nation that made the mistake is already at or near full efficiency on most of their remaining assigned mills (make a judgment call here). Be very selective with how you use this!"
  why_use_lel_lennard_tt:0 "[This.Owner.GetName] ([This.Owner.GetTag])" 
@@ -15,6 +17,8 @@
  OBSERVER_DELAYED:0 ""
  WHITEPEACE:0 "§HWhitepeace§!\nCountry will be whitepeaced with every enemy\n\n"
  WHITEPEACE_DELAYED:0 ""
+
+ CHANGE_HOST_NATION_TT:0 "Change host nation"
   
  CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\nEvery mark on world will be removed\n\n"
  CLEAR_ALL_MARKINGS_DELAYED:0 ""
@@ -24,6 +28,9 @@
  
  ADD_CORES:0 "§HAdd cores§!\nAdd cores to marked states for this country\n\n"
  ADD_CORES_DELAYED:0 ""
+
+ ADD_CORES_TO_ALL_CORES_SELECTED_NATION:0 "§HGive 1st nations cores to an another nation.§!\nAdd cores to the 2nd nation for every core of the 1st nation.\n\nFor example if you first mark a Australian state, then select a German state and then press this button it will give Germany cores on every Australian core but not non-core states of Australia\n\n"
+ ADD_CORES_TO_ALL_CORES_SELECTED_NATION_DELAYED:0 ""
  
  ANNEX_COUNTRY:0 "§HAnnex§!\nSelected country annexes the owner of the selected state\n\n"
  ANNEX_COUNTRY_DELAYED:0 ""
@@ -80,5 +87,7 @@ transfer_states_off:0 "Host Tool: £trigger_yes"
  host_decisions_desc:0 "Host decisions are used for the sake of keeping the game alive. §RDO NOT ABUSE THESE DECISIONS.§!"
  end_spanish_civil_war:0 "End Spanish Civil War"
  end_sino_japanese_war:0 "End Sino-Japanese War"
- spirit_of_bozo:0 "Spirit of Bozo"
- spirit_of_bozo_desc:0 "HAHAHAHA BOZO TOOK AN L"
+ spirit_of_bozo:0 "Ruby Spain Build Moment."
+ spirit_of_bozo_desc:0 "You're gonna get the UNTrusted Spain Player role after this LMAO."
+ JPA_spirit_of_bozo:0 "Chezloc Japan Build Moment."
+ JPA_spirit_of_bozo_desc:0 "You're gonna get the UNTrusted Japan Player role after this LMAO."
