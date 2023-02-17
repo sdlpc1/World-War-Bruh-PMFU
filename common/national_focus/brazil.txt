@@ -1361,7 +1361,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = BRA_pracinhas
+		id = BRA_pracinhas_focus
 		icon = GFX_focus_prc_infiltration
 		prerequisite = { focus = BRA_special_forces_divisions }
 		mutually_exclusive = { focus = BRA_bandeirantes }
@@ -1384,7 +1384,7 @@ focus_tree = {
 		id = BRA_bandeirantes
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = BRA_special_forces_divisions }
-		mutually_exclusive = { focus = BRA_pracinhas }
+		mutually_exclusive = { focus = BRA_pracinhas_focus }
 		x = -4
 		y = -3
 		relative_position_id = BRA_american_advisors

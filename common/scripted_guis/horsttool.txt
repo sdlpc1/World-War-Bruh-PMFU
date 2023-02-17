@@ -228,9 +228,9 @@ st_country_powers = {
 		cheat10_click = { set_variable = { Root.selected_cheat = 10 } ROOT = { clr_country_flag = cheating } }
 		cheat11_click = { set_variable = { Root.selected_cheat = 11 } ROOT = { clr_country_flag = cheating } }
 		# cheat12_click = { set_variable = { Root.selected_cheat = 12 } ROOT = { clr_country_flag = cheating } } # VAPE
-		cheat13_click = { set_variable = { Root.selected_cheat = 12 } ROOT = { clr_country_flag = cheating } }
-		cheat14_click = { set_variable = { Root.selected_cheat = 13 } ROOT = { clr_country_flag = cheating } }
-		cheat15_click = { set_variable = { Root.selected_cheat = 14 } ROOT = { clr_country_flag = cheating } }
+		cheat12_click = { set_variable = { Root.selected_cheat = 12 } ROOT = { clr_country_flag = cheating } }
+		cheat13_click = { set_variable = { Root.selected_cheat = 13 } ROOT = { clr_country_flag = cheating } }
+		cheat14_click = { set_variable = { Root.selected_cheat = 14 } ROOT = { clr_country_flag = cheating } }
 		}
 		properties = {
 			toogle_mark = { frame = mark_status }

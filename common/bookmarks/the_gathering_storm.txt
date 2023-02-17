@@ -212,7 +212,7 @@ bookmarks = {
 			}
 			focuses = {
 				BRA_curtail_the_coffe_oligarchs
-				BRA_pracinhas
+				BRA_pracinhas_focus
 				BRA_bandeirantes
 			}
 		}	

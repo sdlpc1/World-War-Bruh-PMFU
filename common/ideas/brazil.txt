@@ -113,7 +113,7 @@ ideas = {
 			}
 		}
 		
-		BRA_pracinhas = {
+		BRA_pracinhas_idea = {
 
 			picture = por_volunteers_in_the_war2
 			
