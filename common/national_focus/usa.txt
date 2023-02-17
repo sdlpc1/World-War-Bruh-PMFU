@@ -247,7 +247,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			swap_ideas = {
-				add_idea = new_deal2
+				add_idea = USA_new_deal2
 				remove_idea = new_deal
 			}
 		}
@@ -594,7 +594,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			swap_ideas = {
-				add_idea = landons_deal
+				add_idea = USA_landons_deal
 				remove_idea = new_deal
 			}
 		}
@@ -772,11 +772,11 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = landons_deal
+					has_idea = USA_landons_deal
 				}
 				swap_ideas = {
-					add_idea = new_deal2
-					remove_idea = landons_deal
+					add_idea = USA_new_deal2
+					remove_idea = USA_landons_deal
 				}
 			}
 			else = {
@@ -899,20 +899,20 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = new_deal2
+					has_idea = USA_new_deal2
 				}
 				swap_ideas = {
-					add_idea = wilkies_new_deal
-					remove_idea = new_deal2
+					add_idea = USA_wilkies_new_deal
+					remove_idea = USA_new_deal2
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = landons_deal
+					has_idea = USA_landons_deal
 				}
 				swap_ideas = {
-					add_idea = wilkies_new_deal
-					remove_idea = landons_deal
+					add_idea = USA_wilkies_new_deal
+					remove_idea = USA_landons_deal
 				}
 			}
 			else_if = {
@@ -920,7 +920,7 @@ focus_tree = {
 					has_idea = new_deal
 				}
 				swap_ideas = {
-					add_idea = wilkies_new_deal
+					add_idea = USA_wilkies_new_deal
 					remove_idea = new_deal
 				}
 			}
@@ -1256,24 +1256,24 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = new_deal2
+					has_idea = USA_new_deal2
 				}
 				swap_ideas = {
-					add_idea = all_in
-					remove_idea = new_deal2
+					add_idea = USA_all_in
+					remove_idea = USA_new_deal2
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = wilkies_new_deal
+					has_idea = USA_wilkies_new_deal
 				}
 				swap_ideas = {
-					add_idea = all_in
-					remove_idea = wilkies_new_deal
+					add_idea = USA_all_in
+					remove_idea = USA_wilkies_new_deal
 				}
 			}
 			else = {
-				add_ideas = all_in
+				add_ideas = USA_all_in
 			}
 		}
 	}
@@ -1340,24 +1340,24 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = new_deal2
+					has_idea = USA_new_deal2
 				}
 				swap_ideas = {
-					add_idea = final_table
-					remove_idea = new_deal2
+					add_idea = USA_final_table
+					remove_idea = USA_new_deal2
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = wilkies_new_deal
+					has_idea = USA_wilkies_new_deal
 				}
 				swap_ideas = {
-					add_idea = final_table
-					remove_idea = wilkies_new_deal
+					add_idea = USA_final_table
+					remove_idea = USA_wilkies_new_deal
 				}
 			}
 			else = {
-				add_ideas = final_table
+				add_ideas = USA_final_table
 			}
 		}
 	}
@@ -1416,24 +1416,24 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = new_deal2
+					has_idea = USA_new_deal2
 				}
 				swap_ideas = {
-					add_idea = third_man
-					remove_idea = new_deal2
+					add_idea = USA_third_man
+					remove_idea = USA_new_deal2
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = wilkies_new_deal
+					has_idea = USA_wilkies_new_deal
 				}
 				swap_ideas = {
-					add_idea = third_man
-					remove_idea = wilkies_new_deal
+					add_idea = USA_third_man
+					remove_idea = USA_wilkies_new_deal
 				}
 			}
 			else = {
-				add_ideas = third_man
+				add_ideas = USA_third_man
 			}
 		}
 	}

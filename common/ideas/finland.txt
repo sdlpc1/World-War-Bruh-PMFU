@@ -1,5 +1,24 @@
 ideas = {
 
+	hidden_ideas = {
+
+		no_meme_equipment = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = ger_ita_trade
+			
+			removal_cost = -1
+			
+			targeted_modifier = { 
+				tag = FIN
+				license_infantry_eq_production_speed_factor =  -0.2
+			}
+		}
+
+	}
 	country = {
 		FIN_victorious_idea = {
 			

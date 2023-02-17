@@ -220,7 +220,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = british_fighter_discount
+			add_ideas = ENG_british_fighter_discount
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = ENG_air_production_prop
 		}
@@ -462,8 +462,8 @@ focus_tree = {
 		}	
 		completion_reward = {
 			swap_ideas = {
-				add_idea = british_fighter_discount2
-				remove_idea = british_fighter_discount
+				add_idea = ENG_british_fighter_discount2
+				remove_idea = ENG_british_fighter_discount
 			}
 		}
 	}

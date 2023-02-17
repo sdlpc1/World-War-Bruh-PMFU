@@ -1261,7 +1261,7 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = BRA_mark_clark
 
-			custom_effect_tooltip = tooltip_brazil_expedionary_forces
+			custom_effect_tooltip = BRA_brazil_expedionary_forces_tt
 
 			hidden_effect = {
 				division_template = {
@@ -1376,7 +1376,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = BRA_pracinhas
+			add_ideas = BRA_pracinhas_idea
 		}
 	}
 	

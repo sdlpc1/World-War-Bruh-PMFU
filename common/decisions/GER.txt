@@ -1803,7 +1803,7 @@ GER_share_tanks = {
 	}
 }
 
-wunderwaffe = {
+GER_wunderwaffe = {
 	GER_wunder_sturm = {
 	
 		icon = generic_construction

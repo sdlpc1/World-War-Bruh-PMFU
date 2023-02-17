@@ -360,6 +360,7 @@ on_actions = {
 							}
 						}
 						PACIFIC_COMMONWEALTH_bases_level_down = yes
+						PACIFIC_COMMONWEALTH_AXIS_bases_level_down = yes
 					}
 				} else = {
 					add_to_variable = {
@@ -425,6 +426,7 @@ on_actions = {
 							}
 						}
 						PACIFIC_COMMONWEALTH_bases_level_up = yes
+						PACIFIC_COMMONWEALTH_AXIS_bases_level_up = yes
 					}
 				} else = {
 					subtract_from_variable = {

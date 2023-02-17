@@ -5878,10 +5878,6 @@
 				SWI_make_centralized_president = yes 
 			}
 			SWI_turn_into_alpine = yes
-			swap_ideas = {
-				remove_idea = SWI_swiss_neutrality
-				add_idea = SWI_democratic_unrest
-			}
 		}
 	}
 

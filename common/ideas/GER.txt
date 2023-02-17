@@ -441,7 +441,7 @@ ideas = {
 			}
 		}
 		
-		general_staff2 = {
+		GER_general_staff2 = {
 			
 			allowed = {
 				original_tag = GER

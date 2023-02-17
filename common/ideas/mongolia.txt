@@ -444,6 +444,31 @@ ideas = {
 				}
 			}
 		}
+
+		MON_nomad_4 = {
+
+			picture = chi_army_corruption2
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_building_slots_factor = -0.1
+				mobilization_speed = -0.1
+			}
+			equipment_bonus = {
+				horse_equipment = {
+					build_cost_ic = -0.30 instant = yes
+				}
+			}
+		}
 		
 		MON_mobilize_steppes = {
 			picture = generic_victors_of_ww1

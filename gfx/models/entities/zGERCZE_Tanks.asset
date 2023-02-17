@@ -18,7 +18,7 @@ entity = {
 entity = {
 	clone = "CZE_medium_armor_entity"
 	name = "GER_light_armor_5_entity"
-	pdxmesh = "CZE_tank_light_st38_mesh"
+	pdxmesh = "CZE_tank_medium_st38_mesh"
 	scale = 0.8
 }
 

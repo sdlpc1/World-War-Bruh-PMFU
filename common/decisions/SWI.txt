@@ -221,30 +221,25 @@ SWI_federal_council_decisions_category = {
 		icon = GFX_decision_SWI_no_elected_president
 		priority = 101 
 
-		allowed = { always = no }
+		allowed = { original_tag = SWI }
 
 		visible = {
 			SWI_council_not_filled = yes
 			has_completed_focus = SWI_swiss_guiding_principles
+			NOT = { has_country_flag = SWI_elected_centralized_president }
 		}
 
 		available = {
-			NOT = { SWI_council_not_filled = yes } 	
-			has_completed_focus = SWI_swiss_guiding_principles  
-		}
-
-		days_mission_timeout = 20
-
-		is_good = no 
-
-		activation = {
-			SWI_council_not_filled = yes
-			#has_completed_focus = SWI_swiss_guiding_principles 
-
-		}
-
-		timeout_effect = {
-			SWI_add_random_councillor = yes
+			if = {
+				limit =	{
+					NOT = {	has_country_flag = SWI_elected_centralized_president }
+				}
+				has_completed_focus = SWI_swiss_guiding_principles
+				NOT = { SWI_council_not_filled = yes }   	
+			}
+			else = {
+				has_country_flag = SWI_elected_centralized_president
+			}
 		}
 	}
 

@@ -54,8 +54,8 @@ equipments = {
 					dp_light_battery
 					# ship_light_medium_battery
 					# ship_medium_battery
-					ship_secondaries
-					ship_dp_secondaries
+					#ship_secondaries
+					#ship_dp_secondaries
 					ship_airplane_launcher
 					ship_depth_charge
 					ship_mine_layer
@@ -195,8 +195,8 @@ equipments = {
 					dp_light_battery
 					# ship_light_medium_battery
 					# ship_medium_battery
-					ship_secondaries
-					ship_dp_secondaries
+					#ship_secondaries
+					#ship_dp_secondaries
 					ship_airplane_launcher
 					ship_mine_layer
 				}
@@ -271,8 +271,8 @@ equipments = {
 					dp_light_battery
 					# ship_light_medium_battery
 					# ship_medium_battery
-					ship_secondaries
-					ship_dp_secondaries
+					#ship_secondaries
+					#ship_dp_secondaries
 					ship_airplane_launcher
 					ship_depth_charge
 				}
@@ -363,8 +363,8 @@ equipments = {
 					dp_light_battery
 					# ship_light_medium_battery
 					# ship_medium_battery
-					ship_secondaries
-					ship_dp_secondaries
+					#ship_secondaries
+					#ship_dp_secondaries
 					ship_airplane_launcher
 				}
 			}
@@ -633,8 +633,8 @@ equipments = {
 					dp_light_battery
 					# ship_medium_battery
 					# ship_light_medium_battery
-					ship_secondaries
-					ship_dp_secondaries
+					#ship_secondaries
+					#ship_dp_secondaries
 					ship_airplane_launcher
 				}
 			}
@@ -1109,8 +1109,8 @@ equipments = {
 				allowed_module_categories = {
 					ship_medium_battery
 					ship_anti_air
-					ship_secondaries
-					ship_dp_secondaries
+					#ship_secondaries
+					#ship_dp_secondaries
 					ship_airplane_launcher
 					ship_torpedo
 				}
@@ -1170,7 +1170,7 @@ equipments = {
 					ship_torpedo
 					ship_light_battery
 					ship_medium_battery
-					ship_secondaries
+					#ship_secondaries
 					ship_anti_air
 				}
 			}
@@ -1181,8 +1181,8 @@ equipments = {
 					ship_torpedo
 					ship_light_battery
 					ship_anti_air
-					ship_secondaries
-					ship_dp_secondaries
+					#ship_secondaries
+					#ship_dp_secondaries
 					ship_airplane_launcher
 				}
 			}

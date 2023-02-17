@@ -2,7 +2,7 @@
 #### GERMANY ####
 #################
 
-wunderwaffe = {
+GER_wunderwaffe = {
 	icon = military_operation
 
 	picture = GFX_decision_cat_picture_ger_case_anton

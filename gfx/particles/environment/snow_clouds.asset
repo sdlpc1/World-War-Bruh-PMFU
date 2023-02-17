@@ -56,6 +56,19 @@ particle={
 		op="MUL"
 		time="life"
 	}
+	animation={
+		name="smoke_spread"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.656 0.279 0.781 1.000 1.000 
+		}
+		op="MUL"
+		time="life"
+	}
 	force={
 		type="turbulence"
 		name="chaos"

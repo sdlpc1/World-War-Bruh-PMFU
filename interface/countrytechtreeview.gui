@@ -5079,7 +5079,7 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
+				
 			instantTextBoxType = {
 				name = "industry_subtitle_juggle"
 				position = { x = 1130 y = 130  }
@@ -5092,7 +5092,7 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-				
+
 			gridboxtype = {
 				name = "basic_machine_tools_tree"
 				position = { x = 50 y = 172 }
@@ -5124,7 +5124,7 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
-
+			
 			# JUGGLE
 
 			gridboxtype = {

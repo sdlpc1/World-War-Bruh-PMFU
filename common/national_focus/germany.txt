@@ -2534,7 +2534,7 @@ focus_tree = {
 			
 			is_puppet = no
 			has_army_manpower = { size > 949999 } #100 div		
-			date > 1939.1.1
+			date > 1939.1.1	
 			#Make custom trigger tooltip here
 			85 = {
 				owner = {
@@ -5281,7 +5281,7 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				add_idea = general_staff2
+				add_idea = GER_general_staff2
 				remove_idea = general_staff
 			}
 		}

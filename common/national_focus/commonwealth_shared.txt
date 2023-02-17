@@ -299,7 +299,7 @@ shared_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = com_nuffield
+		show_ideas_tooltip = COM_nuffield
 	}
 }
 
@@ -322,7 +322,7 @@ shared_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = com_vauxhall
+		show_ideas_tooltip = COM_vauxhall
 	}
 }
 
@@ -345,7 +345,7 @@ shared_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = com_rsaf_enfield
+		show_ideas_tooltip = COM_rsaf_enfield
 	}
 }
 

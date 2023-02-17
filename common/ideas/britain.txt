@@ -444,7 +444,7 @@ ideas = {
 			}
 		}
 		
-		british_fighter_discount = {
+		ENG_british_fighter_discount = {
 			
 			allowed = {
 				always = no
@@ -465,7 +465,7 @@ ideas = {
 			}
 		}
 		
-		british_fighter_discount2 = {
+		ENG_british_fighter_discount2 = {
 			
 			allowed = {
 				always = no
@@ -2398,7 +2398,7 @@ ideas = {
 
 	
 	tank_manufacturer = {
-		vickers_armstrong_eng = {
+		ENG_vickers_armstrong_eng = {
 			
 			allowed = {
 				original_TAG = ENG

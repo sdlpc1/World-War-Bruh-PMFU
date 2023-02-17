@@ -547,7 +547,7 @@ ideas = {
 			}
 		}
 
-		asw_training = {
+		JAP_asw_training = {
 
 			picture = SPR_international_brigades
 
@@ -1600,6 +1600,69 @@ ideas = {
 				army_attack_factor = 0.1
 				army_defence_factor = 0.1
 				command_power_gain_mult = 0.25
+			}
+		}
+
+		## Post China War Ideas ##
+
+		JAP_mid_war_industry_bonus = {
+			removal_cost = -1
+			picture = generic_central_management
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				production_speed_bunker_factor = 0.05
+				production_speed_coastal_bunker_factor = 0.05
+			}
+		}
+
+		JAP_mid_war_military_bonus = {
+			removal_cost = -1
+			picture = generic_japanese_conflict
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				naval_invasion_capacity = 10
+				invasion_preparation = -0.1
+				amphibious_invasion = 0.1
+			}
+		}
+
+		JAP_late_war_industry_bonus = {
+			removal_cost = -1
+			picture = generic_central_management
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.1
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+			}
+		}
+
+		JAP_late_war_military_bonus = {
+			removal_cost = -1
+			picture = generic_japanese_conflict
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				naval_invasion_capacity = 20
+				invasion_preparation = -0.25
+				amphibious_invasion = 0.25
 			}
 		}
 	}

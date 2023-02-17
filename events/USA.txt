@@ -855,7 +855,7 @@ country_event = {
 		democratic > 0.5
 		date > 1940.1.1
 		date < 1941.1.1
-		has_idea = wilkies_new_deal
+		has_idea = USA_wilkies_new_deal
 	}
 
 	immediate = {
@@ -1413,7 +1413,7 @@ country_event = {
 		date > 1944.1.1
 		date < 1945.1.1
 		NOT = { has_idea = new_deal }
-		NOT = { has_idea = new_deal2 }
+		NOT = { has_idea = USA_new_deal2 }
 	}
 	
 	option = { 
@@ -1429,7 +1429,7 @@ country_event = {
 
 	option = { 
 		name = usa.10.b
-		add_ideas = new_deal2
+		add_ideas = USA_new_deal2
 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
@@ -1439,8 +1439,8 @@ country_event = {
 		add_political_power = 120
 		custom_effect_tooltip = usa_congress_elections_tt_good
 		if = {
-			limit = { has_idea = wilkies_new_deal }
-			remove_ideas = wilkies_new_deal
+			limit = { has_idea = USA_wilkies_new_deal }
+			remove_ideas = USA_wilkies_new_deal
 		}
 		retire_country_leader = yes
 		country_event = usa.31
@@ -1467,7 +1467,7 @@ country_event = {
 		date < 1945.1.1
 		OR = {
 			has_idea = new_deal
-			has_idea = new_deal2
+			has_idea = USA_new_deal2
 		}
 		has_country_flag = macarthur_candidate
 	}
@@ -1539,7 +1539,7 @@ country_event = {
 		date < 1945.1.1
 		OR = {
 			has_idea = new_deal
-			has_idea = new_deal2
+			has_idea = USA_new_deal2
 		}
 		always = no
 	}

@@ -1073,7 +1073,7 @@
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = sov_2_plan_tt
+			custom_effect_tooltip = SOV_2_plan_tt
 			remove_ideas = SOV_2_5_plan
 			if = {
 				limit = {
@@ -1525,7 +1525,7 @@
 				has_civil_war = yes
 			}	
 		}
-
+		
 		bypass = {
 			OR = {
 				PER = { is_puppet = yes }
@@ -4212,7 +4212,7 @@
 		available = {
 			country_exists = JAP
 			date > 1942.8.1
-			has_war_with = GER
+			as_war_with = GER
 		}
 		will_lead_to_war_with = JAP
 		cost = 5
@@ -7756,6 +7756,7 @@
 					type = ship_hull_heavy_2
 					name_group = SOV_BC_HISTORICAL
 					parent_version = 0
+					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 					modules = {
 						fixed_ship_battery_slot = ship_heavy_battery_1
 						fixed_ship_anti_air_slot = ship_anti_air_1
@@ -7860,6 +7861,7 @@
 					type = ship_hull_super_heavy_1
 					name_group = SOV_STATES
 					parent_version = 0
+					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 					modules = {
 						fixed_ship_battery_slot = ship_super_heavy_battery_1
 						fixed_ship_anti_air_slot = ship_anti_air_2
@@ -8163,6 +8165,7 @@
 						type = ship_hull_carrier_3
 						name_group = SOV_CV_HISTORICAL
 						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_ship_deck_slot_1 = ship_deck_space
 							fixed_ship_deck_slot_2 = ship_deck_space
@@ -8196,6 +8199,7 @@
 						type = ship_hull_carrier_2
 						name_group = SOV_CV_HISTORICAL
 						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_ship_deck_slot_1 = ship_deck_space
 							fixed_ship_deck_slot_2 = ship_deck_space
@@ -8229,6 +8233,7 @@
 						type = ship_hull_carrier_1
 						name_group = SOV_CV_HISTORICAL
 						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_ship_deck_slot_1 = ship_deck_space
 							fixed_ship_deck_slot_2 = ship_deck_space
@@ -8265,6 +8270,7 @@
 						type = ship_hull_carrier_conversion_ca
 						name_group = SOV_CV_HISTORICAL
 						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_ship_deck_slot_1 = ship_deck_space
 							fixed_ship_deck_slot_2 = ship_deck_space

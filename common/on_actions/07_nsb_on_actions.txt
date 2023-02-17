@@ -1544,7 +1544,41 @@ on_actions = {
 					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 15 }} add_ideas = PACIFIC_COMMONWEALTH_controls_idea_15}
 					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 16 }} add_ideas = PACIFIC_COMMONWEALTH_controls_idea_16}
 					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 17 }} add_ideas = PACIFIC_COMMONWEALTH_controls_idea_17}
-					else = {log = "Couldn't set the pacific bases"}
+					else = {log = "Couldn't set the pacific bases - allies"}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							tag = GER
+							tag = ITA
+							tag = VIC
+							tag = SPR
+							tag = HUN
+							tag = ROM
+							tag = BUL
+							tag = YUG
+							tag = FIN
+						}
+					}
+					remove_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
+					if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 1 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_1}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 2 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_2}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 3 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_3}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 4 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_4}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 5 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_5}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 6 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_6}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 7 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_7}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 8 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_8}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 9 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_9}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 10 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_10}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 11 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_11}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 12 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_12}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 13 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_13}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 14 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_14}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 15 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_15}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 16 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_16}
+					else_if = { limit = {check_variable = {JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL = 17 }} add_ideas = PACIFIC_COMMONWEALTH_controls_axis_idea_17}
+					else = {log = "Couldn't set the pacific bases - axis"}
 				}
 			}
 		}

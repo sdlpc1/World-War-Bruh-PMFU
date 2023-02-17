@@ -1208,7 +1208,7 @@ ideas = {
 			}
 		}
 
-		FRA_special_forces = {
+		FRA_special_forces_spirit = {
 			picture = generic_manpower_bonus
 			allowed = {
 				original_tag = FRA 

@@ -1325,7 +1325,7 @@ ideas = {
 				mobilization_speed = 0.5
 			}
 		}
-		final_table = {
+		USA_final_table = {
 			
 			allowed = {
 				always = no
@@ -1345,7 +1345,7 @@ ideas = {
 				stability_factor = 0.10
 			}
 		}
-		all_in = {
+		USA_all_in = {
 			
 			allowed = {
 				always = no
@@ -1366,7 +1366,7 @@ ideas = {
 				army_speed_factor = 0.1
 			}
 		}
-		third_man = {
+		USA_third_man = {
 			
 			allowed = {
 				always = no
@@ -1403,7 +1403,7 @@ ideas = {
 				stability_factor = 0.10
 			}
 		}
-		new_deal2 = {
+		USA_new_deal2 = {
 			
 			allowed = {
 				always = no
@@ -1424,7 +1424,7 @@ ideas = {
 			}
 		}
 
-		wilkies_new_deal = {
+		USA_wilkies_new_deal = {
 			
 			allowed = {
 				always = no
@@ -1441,7 +1441,7 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
-		landons_deal = {
+		USA_landons_deal = {
 			
 			allowed = {
 				always = no

@@ -27,6 +27,7 @@ add_ideas = {
 	ITA_old_guard_base
 	ITA_incompetent_officers
 	ITA_outdated_industry
+	PACIFIC_COMMONWEALTH_controls_axis_original
 }
 
 
@@ -367,7 +368,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			front_1_custom_slot = ship_anti_air_1
-			mid_1_custom_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_torpedo_1
 		}

@@ -370,7 +370,7 @@ NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT							= 0.01 -- light gun a
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns if target ih profile is lower the gun will have lower accuracy
 		65.0,	-- big guns
 		150.0,	-- torpedos
-		55.0	-- small guns
+		60.0	-- small guns
 	}
 NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE 									= 0.25		-- chance for critical hit from torpedo.
 NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT								= 4.0		-- multiplier to damage when got critical hit from torpedo. (Critical hits are devastating as usually torpedo_attack are pretty high base values)

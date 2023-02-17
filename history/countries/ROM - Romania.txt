@@ -80,6 +80,7 @@ if = {
 	give_guarantee = TUR
 }
 add_ideas = neutrality_idea
+add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
 
 
 #Kick off kings crazy life

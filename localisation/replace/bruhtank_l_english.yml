@@ -829,6 +829,7 @@
  usa_heavy_tank_chassis_t29:0 "T29 Chassis"
  usa_heavy_tank_chassis_t28:0 "T28 Chassis"
  usa_light_tank_upgrade:0 "M2A4"
+ usa_medium_tank_3:0 "M4 Chassis"
  usa_medium_tank_4:0 "M4 HVSS"
  usa_medium_tank_5:0 "M4 Jumbo"
  usa_medium_tank_7:0 "T26E4 Super Pershing"

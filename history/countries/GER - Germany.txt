@@ -168,6 +168,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	PACIFIC_COMMONWEALTH_controls_axis_original
 }
 
 

@@ -21,7 +21,7 @@ add_ideas = {
 
 set_variable = { mon_poster_center_icon_frame = 1 }
 
-set_convoys = 50
+set_convoys = 100
 
 set_politics = {
 	ruling_party = communism

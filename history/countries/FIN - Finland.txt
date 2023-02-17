@@ -13,6 +13,8 @@ set_research_slots = 5
 
 add_ideas = {
 	limited_conscription
+	sisu
+	PACIFIC_COMMONWEALTH_controls_axis_original
 }
 add_manpower = 80000
 
@@ -52,9 +54,6 @@ if = {
 set_convoys = 5
 
 set_variable = { axis_poster_center_icon_frame = 1 }
-add_ideas = {
-	limited_conscription
-}
 
 1939.1.1 = {
 	add_political_power = 1198
@@ -161,12 +160,6 @@ recruit_character = FIN_harald_ohquist
 recruit_character = FIN_eero_rahola
 recruit_character = FIN_ake_henrik_gartz
 recruit_character = FIN_lauri_tiainen
-
-
-
-add_ideas = {
-	sisu
-}
 
 ### VARIANTS ###
 # 1936 Start #
