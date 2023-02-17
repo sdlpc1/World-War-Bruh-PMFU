@@ -318,13 +318,13 @@ guiTypes = {
 			scale= 1
 			
 		}
-		buttonType = {
-			name = "cheat15"
-			position = {x=40 y=454}
-			spriteType = "GFX_generic_box_125"
-			scale= 1
+		# buttonType = {
+		# 	name = "cheat15"
+		# 	position = {x=40 y=454}
+		# 	spriteType = "GFX_generic_box_125"
+		# 	scale= 1
 			
-		}
+		# }
 		instantTextboxType = {
 			name = "cheat1_text"
 			position = {x=45 y=95}
@@ -468,16 +468,16 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
-		instantTextboxType = {
-			name = "cheat15_text"
-			position = {x=45 y=459}
-			font = "hoi_18mbs"
-			text = "CHEAT15"
-			maxWidth = 340
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
+		# instantTextboxType = {
+		# 	name = "cheat15_text"
+		# 	position = {x=45 y=459}
+		# 	font = "hoi_18mbs"
+		# 	text = "CHEAT15"
+		# 	maxWidth = 340
+		# 	maxHeight = 23
+		# 	format = left
+		# 	alwaystransparent = yes
+		# }
 		buttonType = {
 			name = "toogle_mark" 
 			position = {x=203 y=35}

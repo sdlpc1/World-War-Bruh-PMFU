@@ -127,10 +127,10 @@ st_country_powers = {
 					if = { limit = { check_variable = { Root.selected_cheat = 9 } } add_offsite_building = { type = arms_factory level = -1 }}
 					if = { limit = { check_variable = { Root.selected_cheat = 10 } } add_offsite_building = { type = industrial_complex level = -1 } }
 					if = { limit = { check_variable = { Root.selected_cheat = 11 } } scoped_sound_effect = "earrape_sound_effect" }
-					if = { limit = { check_variable = { Root.selected_cheat = 12 } } set_cosmetic_tag = VAPE }
-					if = { limit = { check_variable = { Root.selected_cheat = 13 } } army_experience = 25 }
-					if = { limit = { check_variable = { Root.selected_cheat = 14 } } air_experience = 25 }
-					if = { limit = { check_variable = { Root.selected_cheat = 15 } } navy_experience = 25 }
+					# if = { limit = { check_variable = { Root.selected_cheat = 12 } } set_cosmetic_tag = VAPE } # VAPE
+					if = { limit = { check_variable = { Root.selected_cheat = 12 } } army_experience = 25 }
+					if = { limit = { check_variable = { Root.selected_cheat = 13 } } air_experience = 25 }
+					if = { limit = { check_variable = { Root.selected_cheat = 14 } } navy_experience = 25 }
 				}	
 		}
 			GER={
@@ -227,10 +227,10 @@ st_country_powers = {
 		cheat9_click = { set_variable = { Root.selected_cheat = 9 } ROOT = { clr_country_flag = cheating } }
 		cheat10_click = { set_variable = { Root.selected_cheat = 10 } ROOT = { clr_country_flag = cheating } }
 		cheat11_click = { set_variable = { Root.selected_cheat = 11 } ROOT = { clr_country_flag = cheating } }
-		cheat12_click = { set_variable = { Root.selected_cheat = 12 } ROOT = { clr_country_flag = cheating } }
-		cheat13_click = { set_variable = { Root.selected_cheat = 13 } ROOT = { clr_country_flag = cheating } }
-		cheat14_click = { set_variable = { Root.selected_cheat = 14 } ROOT = { clr_country_flag = cheating } }
-		cheat15_click = { set_variable = { Root.selected_cheat = 15 } ROOT = { clr_country_flag = cheating } }
+		# cheat12_click = { set_variable = { Root.selected_cheat = 12 } ROOT = { clr_country_flag = cheating } } # VAPE
+		cheat13_click = { set_variable = { Root.selected_cheat = 12 } ROOT = { clr_country_flag = cheating } }
+		cheat14_click = { set_variable = { Root.selected_cheat = 13 } ROOT = { clr_country_flag = cheating } }
+		cheat15_click = { set_variable = { Root.selected_cheat = 14 } ROOT = { clr_country_flag = cheating } }
 		}
 		properties = {
 			toogle_mark = { frame = mark_status }
@@ -269,8 +269,8 @@ st_country_powers = {
 		cheat13_text_visible = { ROOT = { has_country_flag = cheating } } 
 		cheat14_visible = { ROOT = { has_country_flag = cheating } }
 		cheat14_text_visible = { ROOT = { has_country_flag = cheating } }
-		cheat15_visible = { ROOT = { has_country_flag = cheating } }
-		cheat15_text_visible = { ROOT = { has_country_flag = cheating } }
+		# cheat15_visible = { ROOT = { has_country_flag = cheating } }
+		# cheat15_text_visible = { ROOT = { has_country_flag = cheating } }
 		clear_all_markings_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
 		award_states_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
 		annex_country_click_enabled = {	check_variable = { ROOT.marked_states^num > 0 }	}
