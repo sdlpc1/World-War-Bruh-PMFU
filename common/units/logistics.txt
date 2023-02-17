@@ -36,8 +36,8 @@ sub_units = {
 		supply_consumption_factor = -0.2
 		fuel_consumption_factor = -0.05
 
-		fuel_capacity = -0.96
-		own_equipment_fuel_consumption_mult = 0.01 # no fuel use
+		fuel_capacity = -1.00
+		own_equipment_fuel_consumption_mult = 0.00 # no fuel use
 		
 		essential = {
 			support_equipment
@@ -89,8 +89,8 @@ sub_units = {
 		supply_consumption_factor = -0.30
 		fuel_consumption_factor = -0.05
 
-		fuel_capacity = -0.96
-		own_equipment_fuel_consumption_mult = 0.01 # no fuel use
+		fuel_capacity = -1.00
+		own_equipment_fuel_consumption_mult = 0.00 # no fuel use
 		
 		essential = {
 			support_equipment

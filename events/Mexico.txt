@@ -1046,24 +1046,6 @@ country_event = {
 	
 	trigger = {
 		tag = MEX
-		date > 1936.08.28
-		OR = {
-			has_government = neutrality
-			AND = {
-				has_government = communism
-				NOT = {
-					has_country_leader = { ruling_only = yes name = "Dionisio Encina" }
-				} 
-			}
-
-		}
-		# NOT = {
-		# 	has_global_flag = trotsky_not_welcome_in_mexico
-		# }
-	}
-	
-	mean_time_to_happen = {
-		months = 3 # Historically arrived in January 1937
 	}
 	
 	option = {
@@ -1090,56 +1072,7 @@ country_event = {
 		}
 		set_global_flag = trotsky_exile_mexico
 		ai_chance = {
-			factor = 1
-			
-			modifier = {
-				add = 100
-				OR = {
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = DEFAULT
-					}
-					has_country_flag = MEX_AI_SECULAR_REPUBLIC 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = SECULAR_REPUBLIC
-					}
-					has_country_flag = MEX_AI_SOCIAL_CATHOLICISM 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = SOCIAL_CATHOLICISM
-					}
-					has_country_flag = MEX_AI_FASCIST_DICTATORSHIP 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = FASCIST_DICTATORSHIP
-					}
-				}
-			}
-			
-			modifier = {
-				add = 100
-				is_historical_focus_on = yes
-				NOT = {
-					OR = {
-						has_country_flag = MEX_AI_THEOCRATIC_ORDER 
-						has_game_rule = {
-							rule = MEX_ai_behavior
-							option = THEOCRATIC_ORDER
-						}
-						has_country_flag = MEX_AI_SOVIET_REPUBLIC 
-						has_game_rule = {
-							rule = MEX_ai_behavior
-							option = SOVIET_REPUBLIC
-						}
-						has_country_flag = MEX_AI_CARDENISMO 
-						has_game_rule = {
-							rule = MEX_ai_behavior
-							option = CARDENISMO
-						}
-					}
-				}
-			}
+			factor = 1000
 		}
 	}
 	
@@ -1186,22 +1119,6 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 0
-			
-			modifier = {
-				add = 100
-				OR = {
-					has_country_flag = MEX_AI_THEOCRATIC_ORDER 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = THEOCRATIC_ORDER
-					}
-					has_country_flag = MEX_AI_SOVIET_REPUBLIC 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = SOVIET_REPUBLIC
-					}
-				}
-			}
 		}
 	}
 	

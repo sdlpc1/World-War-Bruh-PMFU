@@ -6395,6 +6395,18 @@ spriteTypes = {
 		name = "GFX_RAJ_armored_car_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/tanks/eng/eng_ac_3.dds"
 	}
+
+	# IDEAS RAJ
+
+	SpriteType = {
+		name = "GFX_idea_RAJ_lions_of_the_great_war"
+		textureFile = "gfx/interface/ideas/lions_of_the_great_war.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_RAJ_indian_gurkhas"
+		textureFile = "gfx/interface/ideas/indian_gurkhas.dds"
+	}
 	
 	## France ##
 	

@@ -1,7 +1,49 @@
 ideas = {
 
-	hidden_ideas = {
+	# hidden_ideas = {
+	# 	RAJ_lions_of_the_great_war = {
+
+	# 		allowed = {
+	# 			original_tag = RAJ
+	# 		}
+
+	# 		allowed_civil_war = {
+	# 			always = yes
+	# 		}
+
+	# 		removal_cost = -1
+
+	# 		modifier = {
+	# 			army_core_attack_factor = 0.1
+	# 			army_core_defence_factor = 0.1
+	# 			conscription_factor = 0.05
+	# 			supply_consumption_factor = -0.1
+	# 		}
+	# 	}
+
+	# 	RAJ_indian_gurkhas = {
+
+	# 		allowed = {
+	# 			original_tag = RAJ
+	# 		}
+
+	# 		allowed_civil_war = {
+	# 			always = yes
+	# 		}
+
+	# 		removal_cost = -1
+
+	# 		modifier = {
+	# 			special_forces_cap = 0.02
+	# 		}
+	# 	}
+	# }
+
+	country = {
+	
 		RAJ_lions_of_the_great_war = {
+
+			picture = GFX_idea_RAJ_lions_of_the_great_war
 
 			allowed = {
 				original_tag = RAJ
@@ -23,6 +65,8 @@ ideas = {
 
 		RAJ_indian_gurkhas = {
 
+			picture = GFX_idea_RAJ_indian_gurkhas
+			
 			allowed = {
 				original_tag = RAJ
 			}
@@ -37,10 +81,7 @@ ideas = {
 				special_forces_cap = 0.02
 			}
 		}
-	}
 
-	country = {
-	
 		RAJ_indian_labour = {
 		
 			picture = GER_arbeitsinsatz

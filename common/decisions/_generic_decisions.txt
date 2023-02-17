@@ -18,7 +18,7 @@ host_decisions = {
 				every_other_country = {
 					limit = { original_tag = SPR }
 					add_timed_idea = {
-						idea = spirit_of_bozo
+						idea = spirit_of_bozo_spain
 						days = 365
 					}
 				}
@@ -50,7 +50,7 @@ host_decisions = {
 			hidden_effect = {
 				JAP = {
 					add_timed_idea = {
-						idea = spirit_of_bozo
+						idea = spirit_of_bozo_japan
 						days = 365
 					}
 				}			
@@ -1914,7 +1914,7 @@ foreign_politics = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 }

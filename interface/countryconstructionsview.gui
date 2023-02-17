@@ -479,7 +479,7 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
-	
+		
 		buttonType = {
 			name = "increase_priority"
 			position = { x=318 y=14 }
@@ -495,16 +495,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_arrow_down_small"
 			pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
 			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
-			clicksound = click_default
-		}
-		
-		buttonType = {
-			name = "increase_amount"
-			quadTextureSprite ="GFX_zoom_in"
-			position = { x = 214 y = 3 }
-			pdx_tooltip = "CONSTRUCTION_INCREASE_AMOUNT_LABEL"
-			pdx_tooltip_delayed = "CONSTRUCTION_MAXIMIZE"
-			scale = 0.9
 			clicksound = click_default
 		}
 		

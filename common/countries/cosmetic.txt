@@ -187,6 +187,11 @@ SPR_civil_war_rep = {
 	color_ui = rgb { 255 255 122 }
 }
 
+VAPE = {
+	color = rgb { 21 94 12 }
+	color_ui = rgb { 21 94 12 }
+}
+
 GER_civil_war = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
