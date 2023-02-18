@@ -490,6 +490,16 @@ guiTypes = {
 		}
 		
 		buttonType = {
+			name = "increase_amount"
+			quadTextureSprite ="GFX_zoom_in"
+			position = { x = 214 y = 3 }
+			pdx_tooltip = "CONSTRUCTION_INCREASE_AMOUNT_LABEL"
+			pdx_tooltip_delayed = "CONSTRUCTION_MAXIMIZE"
+			scale = 0.9
+			clicksound = click_default
+		}
+
+		buttonType = {
 			name = "decrease_priority"
 			position = { x=341 y=14	 }
 			quadTextureSprite = "GFX_arrow_down_small"
@@ -497,7 +507,7 @@ guiTypes = {
 			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
 			clicksound = click_default
 		}
-		
+
 		buttonType = {
 			name = "decrease_amount"
 			quadTextureSprite ="GFX_zoom_out"
