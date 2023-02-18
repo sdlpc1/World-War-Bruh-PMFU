@@ -1,4 +1,5 @@
 ﻿capital = 141	
+set_variable = { var = pause_blocker_variable value = 0 } #only majors can pause
 
 oob = "SWE_1936"
 if = {

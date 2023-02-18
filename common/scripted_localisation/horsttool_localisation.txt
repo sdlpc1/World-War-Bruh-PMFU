@@ -65,6 +65,38 @@ defined_text = { # global
 		localization_key = mark_status_unmarked
 	}
 }
+
+defined_text = { # global
+	name = pause_selected
+	text = {
+		trigger = {
+			check_variable = {SWE.pause_blocker_variable=0}
+			NOT={Root={has_global_flag=blocking_pauses}}
+		}
+		localization_key = PAUSE_SELECT
+	}
+	text = {
+		trigger = {
+			check_variable = {SWE.pause_blocker_variable=1}
+		}
+		localization_key = PAUSE1
+	}
+	text = {
+		trigger = {
+			check_variable = {SWE.pause_blocker_variable=2}
+		}
+		localization_key = PAUSE2
+	}
+	
+		text = {
+		trigger = {
+			check_variable = {SWE.pause_blocker_variable=3}
+		}
+		localization_key = PAUSE3
+	}
+	
+}
+
 defined_text = { # global
 	name = cheat_selected
 	text = {
@@ -161,10 +193,10 @@ defined_text = { # global
 		}
 		localization_key = CHEAT14
 	}
-	# text = {
-	# 	trigger = {
-	# 		check_variable = { Root.selected_cheat = 15 }
-	# 	}
-	# 	localization_key = CHEAT15
-	# }
+	text = {
+		trigger = {
+			check_variable = { Root.selected_cheat = 15 }
+		}
+		localization_key = CHEAT15
+	}
 }

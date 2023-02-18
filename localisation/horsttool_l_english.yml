@@ -74,10 +74,17 @@
  CHEAT9:0  "Remove 1 Off-Mil"
  CHEAT10:0  "Remove 1 Off-Civ"
  CHEAT11:0  "Earrape"
- # CHEAT12:0  "Vape Nation"
  CHEAT12:0  "25 Army XP"
  CHEAT13:0  "25 Air XP"
  CHEAT14:0  "25 Naval XP"
+ CHEAT15:0  "Schizophrenic Meltdown"
+
+ PAUSE_SELECT:0 "Pause Settings"
+ PAUSE1:0 "Everyone"
+ PAUSE2:0 "Host Only"
+ PAUSE3:0 "Majors Only"
+ pause_blocker_shield_tt:0 "§HPause Blocker Function§!"
+ pause_blocker_shield_delayed_tt:0 "By default anyone can pause the game, but if you want to restrict pausing to just the host (you) or majors then you can select the 'Majors Only' setting (first on the list) or 'Host Only' setting to prevent pausing by most or all other nations."
 
  fix_production_idea:0 "Production Fixer"
   

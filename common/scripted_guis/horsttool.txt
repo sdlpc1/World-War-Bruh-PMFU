@@ -1,5 +1,17 @@
 scripted_gui = {
 
+	pause_is_blocked = {
+		context_type = player_context
+		window_name = "pause_block_window"
+		parent_window_name = time_control_window
+		visible = {
+		OR ={ 
+			AND = { SWE = { check_variable = { pause_blocker_variable = 2    } } NOT = { has_country_flag = host }     } 
+			AND = { SWE = { check_variable = { pause_blocker_variable = 3    } } NOT = { immune_to_pause_block = yes  }     } 
+		}
+		}
+	}
+
 st_country_powers = {	
 	context_type = selected_state_context	
 	window_name = "horsttool_container"	
@@ -127,10 +139,10 @@ st_country_powers = {
 					if = { limit = { check_variable = { Root.selected_cheat = 9 } } add_offsite_building = { type = arms_factory level = -1 }}
 					if = { limit = { check_variable = { Root.selected_cheat = 10 } } add_offsite_building = { type = industrial_complex level = -1 } }
 					if = { limit = { check_variable = { Root.selected_cheat = 11 } } scoped_sound_effect = "earrape_sound_effect" }
-					# if = { limit = { check_variable = { Root.selected_cheat = 12 } } set_cosmetic_tag = VAPE } # VAPE
 					if = { limit = { check_variable = { Root.selected_cheat = 12 } } army_experience = 25 }
 					if = { limit = { check_variable = { Root.selected_cheat = 13 } } air_experience = 25 }
 					if = { limit = { check_variable = { Root.selected_cheat = 14 } } navy_experience = 25 }
+					if = { limit = { check_variable = { Root.selected_cheat = 15 } } scoped_sound_effect = "schizophrenic_meltdown_sound_effect" } # VAPE
 				}	
 		}
 			GER={
@@ -212,6 +224,10 @@ st_country_powers = {
 		mill_add_click = { owner = { news_event = { id = horsttool.1 days = 0} add_offsite_building = { type = arms_factory level = 1 }	} }
 		civ_add_click = { owner = { news_event = { id = horsttool.1 days = 0} add_offsite_building = { type = industrial_complex level = 1 } } }
 
+		pause_blocker_all_click = { SWE =  { clear_variable = pause_blocker_variable set_variable = { var = pause_blocker_variable value = 1 } } ROOT={clr_global_flag=blocking_pauses} }#ALL CAN PAUSE
+		pause_blocker_host_click = { SWE =  { clear_variable = pause_blocker_variable set_variable = { var = pause_blocker_variable value = 2 } } ROOT={clr_global_flag=blocking_pauses } } #ONLY HOST CAN USE PAUSE BUTTON
+		pause_blocker_major_click = {if={limit={ROOT={has_global_flag=blocking_pauses}} SWE =  { clear_variable = pause_blocker_variable set_variable = { var = pause_blocker_variable value = 3 } }  ROOT={clr_global_flag=blocking_pauses}} else = {ROOT={set_global_flag = blocking_pauses } } }#ONLY MAJORS CAN PAUSE
+
 		wt_add_click = { GER = { add_threat = 1 } }
 		wt_remove_click = { GER = { add_threat = -1 } }
 		snek_tped_click = { owner = { news_event = horsttool.2 } }
@@ -227,10 +243,10 @@ st_country_powers = {
 		cheat9_click = { set_variable = { Root.selected_cheat = 9 } ROOT = { clr_country_flag = cheating } }
 		cheat10_click = { set_variable = { Root.selected_cheat = 10 } ROOT = { clr_country_flag = cheating } }
 		cheat11_click = { set_variable = { Root.selected_cheat = 11 } ROOT = { clr_country_flag = cheating } }
-		# cheat12_click = { set_variable = { Root.selected_cheat = 12 } ROOT = { clr_country_flag = cheating } } # VAPE
 		cheat12_click = { set_variable = { Root.selected_cheat = 12 } ROOT = { clr_country_flag = cheating } }
 		cheat13_click = { set_variable = { Root.selected_cheat = 13 } ROOT = { clr_country_flag = cheating } }
 		cheat14_click = { set_variable = { Root.selected_cheat = 14 } ROOT = { clr_country_flag = cheating } }
+		cheat15_click = { set_variable = { Root.selected_cheat = 15 } ROOT = { clr_country_flag = cheating } }
 		}
 		properties = {
 			toogle_mark = { frame = mark_status }
@@ -269,8 +285,14 @@ st_country_powers = {
 		cheat13_text_visible = { ROOT = { has_country_flag = cheating } } 
 		cheat14_visible = { ROOT = { has_country_flag = cheating } }
 		cheat14_text_visible = { ROOT = { has_country_flag = cheating } }
-		# cheat15_visible = { ROOT = { has_country_flag = cheating } }
-		# cheat15_text_visible = { ROOT = { has_country_flag = cheating } }
+		cheat15_visible = { ROOT = { has_country_flag = cheating } }
+		cheat15_text_visible = { ROOT = { has_country_flag = cheating } }
+		pause_blocker_all_visible ={ has_global_flag=blocking_pauses}
+		pause_blocker_major_visible ={ }
+		pause_blocker_host_visible ={has_global_flag=blocking_pauses }	
+		pause_blocker_all_text_visible ={ has_global_flag=blocking_pauses}
+		pause_blocker_major_text_visible ={ }
+		pause_blocker_host_text_visible ={has_global_flag=blocking_pauses }
 		clear_all_markings_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
 		award_states_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
 		annex_country_click_enabled = {	check_variable = { ROOT.marked_states^num > 0 }	}

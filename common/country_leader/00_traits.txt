@@ -6370,7 +6370,15 @@ leader_traits = {
 				build_cost_ic = -0.05
 				reliability = 0.05
 			}
+			dp_artillery_equipment = {
+				build_cost_ic = -0.05
+				reliability = 0.05
+			}
 			pack_artillery_equipment = {
+				build_cost_ic = -0.05
+				reliability = 0.05
+			}
+			anti_tank_equipment_squeeze = {
 				build_cost_ic = -0.05
 				reliability = 0.05
 			}
