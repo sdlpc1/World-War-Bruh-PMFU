@@ -108,6 +108,15 @@ technology_categories = {
 	cat_air_guns
 	cat_air_engine
 	cat_air_bombs
+	year_1918
+	year_1936
+	year_1937
+	year_1938
+	year_1939
+	year_1940
+	year_1941
+	year_1942
+	year_1943
 }
 
 technology_folders = {

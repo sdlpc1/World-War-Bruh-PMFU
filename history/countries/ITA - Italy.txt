@@ -113,17 +113,19 @@ if = {
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "ITA_1936_air_bba"
+		#set_air_oob = "ITA_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
+			nav_1 = 1
+			engines_1 = 1
+			engines_2 = 1
 			early_bombs = 1
 			aircraft_construction = 1
-			#engines_1 = 1
-			#engines_2 = 1
 			iw_small_airframe = 1
-			iw_medium_airframe = 1
 			basic_small_airframe = 1
+			iw_medium_airframe = 1
 			basic_medium_airframe = 1
+			iw_large_airframe = 1
 		}
 	else = {
 		set_air_oob = "ITA_1936_air_legacy"
@@ -660,83 +662,45 @@ if = {
 	}
 }
 if = {
-	limit = { has_dlc = "By Blood Alone" }
-	create_equipment_variant = {
-		name = "CR.32" #
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_iw_1x
-			special_type_slot_1 = empty
-		}
+	limit = {
+		has_dlc = "By Blood Alone"
 	}
 	create_equipment_variant = {
-		name = "Ca.111" #
-		type = small_plane_cas_airframe_0
+		name = "CR.42"
+		type = small_plane_airframe_1
 		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			engine_type_slot = engine_iw_1x
-			special_type_slot_1 = empty
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			special_type_slot_1 = radio_navigation_1
+			engine_type_slot = engine_1_1x
 		}
-		obsolete = yes
-		icon = "GFX_ITA_CAS1_medium"
+		icon = "GFX_ITA_fighter1_medium"
 	}
 	create_equipment_variant = {
-		name = "Ca.101" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			engine_type_slot = engine_iw_3x
-			special_type_slot_1 = lmg_defense_turret
-		}
-		obsolete = yes
-		icon = "GFX_ITA_early_bomber_old_medium"
-	}
-	create_equipment_variant = {
-		name = "Ca.133" #
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay_extra
-			engine_type_slot = engine_iw_3x
-			special_type_slot_1 = lmg_defense_turret_2x
-		}
-		obsolete = yes
-		icon = "GFX_ITA_early_bomber_old_medium"
-	}
-	create_equipment_variant = {
-		name = "SM.81" #
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay_extra
-			engine_type_slot = engine_1_3x
-			special_type_slot_1 = lmg_defense_turret_2x
-		}
-		icon = "GFX_ITA_early_bomber_medium"
-	}
-	create_equipment_variant = {
-		name = "SM.79" #
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			#fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-			fixed_auxiliary_weapon_slot_1 = torpedo_mounting_extra
-			engine_type_slot = engine_1_3x
-			special_type_slot_1 = lmg_defense_turret_2x
-		}
-		icon = "GFX_ITA_naval_bomber1_medium"
-	}
-	create_equipment_variant = {
-		name = "Ba.65" #
+		name = "Ba.65"
 		type = small_plane_cas_airframe_1
 		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+			engine_type_slot = engine_2_1x				
+			special_type_slot_1 = radio_navigation_1
+			special_type_slot_2 = dive_brakes_small
+			
 		}
 		icon = "GFX_ITA_CAS1_medium"
 	}
-
+	
+	create_equipment_variant = {
+		name = "SM.79"
+		type = small_plane_naval_bomber_airframe_1
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = radio_navigation_1
+			special_type_slot_2 = dive_brakes_small
+			
+		}
+		icon = "GFX_ENG_naval_bomber1_medium"
+	}
 }

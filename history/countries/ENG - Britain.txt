@@ -115,19 +115,21 @@ if = {
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "ENG_1936_air_bba"
+		#set_air_oob = "ENG_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
-			#engines_1 = 1
-			#engines_2 = 1
+			nav_1 = 1
+			engines_1 = 1
+			engines_2 = 1
 			early_bombs = 1
 			aircraft_construction = 1
 			iw_small_airframe = 1
-			iw_medium_airframe = 1
-			iw_large_airframe = 1
-			basic_medium_airframe = 1
 			basic_small_airframe = 1
-		}
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			iw_large_airframe = 1
+			photo_reconnaisance = 1
+	}
 	else = {
 		set_air_oob = "ENG_1936_air_legacy"
 		set_technology = {
@@ -945,87 +947,55 @@ if = {
 			has_dlc = "By Blood Alone"
 		}
 		create_equipment_variant = {
-			name = "Hawker Fury" #also covers Gloster Gauntlet, Hawker Demon
-			type = small_plane_airframe_0
-			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-		}
-
-		create_equipment_variant = {
-			name = "Hawker Nimrod" 
-			type = cv_small_plane_airframe_0
-			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-		}
-
-		create_equipment_variant = {
-			name = "Gloster Gladiator" 
-			type = small_plane_airframe_0
+			name = "Hurricane"
+			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = radio_navigation_1
 			}
+			icon = "GFX_ENG_fighter1_medium"
 		}
-
 		create_equipment_variant = {
-			name = "Fairey Gordon" 
-			type = small_plane_cas_airframe_0
+			name = "Hector"
+			type = small_plane_cas_airframe_1
 			modules = {
-				fixed_main_weapon_slot = small_bomb_bay
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+				engine_type_slot = engine_2_1x				
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_small
+				
 			}
-			obsolete = yes
 			icon = "GFX_ENG_CAS1_medium"
 		}
 		create_equipment_variant = {
-			name = "Vickers Vildebeest" 
-			type = small_plane_naval_bomber_airframe_0
+			name = "Swordfish"
+			type = small_plane_naval_bomber_airframe_1
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
-		}
-		create_equipment_variant = {
-			name = "Blackburn Shark" 
-			type = cv_small_plane_naval_bomber_airframe_0
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
+				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_small
+				
 			}
 			icon = "GFX_ENG_naval_bomber1_medium"
 		}
 		create_equipment_variant = {
-			name = "Handley Page Heyford" 
-			type = medium_plane_airframe_0
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				engine_type_slot = engine_1_2x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Bristol Blenheim" 
+			name = "Wellington"
 			type = medium_plane_airframe_1
 			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_main_weapon_slot = Medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = Medium_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = lmg_defense_turret
+				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = engine_2_2x
-				special_type_slot_1 = lmg_defense_turret
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_medium
 			}
-			icon = "GFX_ENG_heavy_fighter1_medium"
+			icon = "GFX_ENG_tactical_bomber1_medium"
 		}
 	}
 
@@ -1217,86 +1187,4 @@ if = {
 				rear_1_custom_slot = empty
 			}
      }
-	create_equipment_variant = {
-		name = "Hawker Fury" #also covers Gloster Gauntlet, Hawker Demon
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_iw_1x
-			special_type_slot_1 = empty
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Hawker Nimrod" 
-		type = cv_small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_iw_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-	}
-
-	create_equipment_variant = {
-		name = "Gloster Gladiator" 
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			engine_type_slot = engine_iw_1x
-			special_type_slot_1 = empty
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Fairey Gordon" 
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = small_bomb_bay
-			engine_type_slot = engine_iw_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-		icon = "GFX_ENG_CAS1_medium"
-	}
-	create_equipment_variant = {
-		name = "Vickers Vildebeest" 
-		type = small_plane_naval_bomber_airframe_0
-		modules = {
-			fixed_main_weapon_slot = torpedo_mounting
-			engine_type_slot = engine_iw_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
-	}
-	create_equipment_variant = {
-		name = "Blackburn Shark" 
-		type = cv_small_plane_naval_bomber_airframe_0
-		modules = {
-			fixed_main_weapon_slot = torpedo_mounting
-			engine_type_slot = engine_iw_1x
-			special_type_slot_1 = empty
-		}
-		icon = "GFX_ENG_naval_bomber1_medium"
-	}
-	create_equipment_variant = {
-		name = "Handley Page Heyford" 
-		type = medium_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			engine_type_slot = engine_iw_2x
-			special_type_slot_1 = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Bristol Blenheim" 
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = lmg_defense_turret
-		}
-		icon = "GFX_ENG_heavy_fighter1_medium"
-	}
 }

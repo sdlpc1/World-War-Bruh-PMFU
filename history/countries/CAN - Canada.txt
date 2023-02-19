@@ -59,19 +59,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-if = {
-	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "CAN_1936_air_bba"
-		set_technology = {
-			aa_lmg = 1
-			#engines_1 = 1
-			iw_small_airframe = 1
-			early_bombs = 1
-		}
-	else = {
-		set_air_oob = "CAN_1936_air_legacy"
-	}
-}
 
 if = { 
 	limit = { NOT = { has_dlc = "Together for Victory" } }

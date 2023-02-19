@@ -51,18 +51,6 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "equipment_designer_small_plane_airframe_late"
-		position = { x=0 y=0 }
-		size = { width=508 height=248 }
-
-		iconType = {
-			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_small_plane_airframe_3"
-			position = { x=0 y=0 }
-		}
-	}
-
-	containerWindowType = {
 		name = "equipment_designer_small_plane_airframe_4"
 		position = { x=0 y=0 }
 		size = { width=508 height=248 }
@@ -114,18 +102,6 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "equipment_designer_cv_small_plane_airframe_3"
-		position = { x=0 y=0 }
-		size = { width=508 height=248 }
-
-		iconType = {
-			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_small_plane_airframe_3"
-			position = { x=0 y=0 }
-		}
-	}
-
-	containerWindowType = {
-		name = "equipment_designer_cv_small_plane_airframe_late"
 		position = { x=0 y=0 }
 		size = { width=508 height=248 }
 
@@ -199,18 +175,6 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "equipment_designer_small_plane_cas_airframe_late"
-		position = { x=0 y=0 }
-		size = { width=508 height=248 }
-
-		iconType = {
-			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_small_plane_cas_airframe_3"
-			position = { x=0 y=0 }
-		}
-	}
-
-	containerWindowType = {
 		name = "equipment_designer_small_plane_cas_airframe_4"
 		position = { x=0 y=0 }
 		size = { width=508 height=248 }
@@ -262,18 +226,6 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "equipment_designer_cv_small_plane_cas_airframe_3"
-		position = { x=0 y=0 }
-		size = { width=508 height=248 }
-
-		iconType = {
-			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_small_plane_cas_airframe_3"
-			position = { x=0 y=0 }
-		}
-	}
-
-	containerWindowType = {
-		name = "equipment_designer_cv_small_plane_cas_airframe_late"
 		position = { x=0 y=0 }
 		size = { width=508 height=248 }
 
@@ -447,18 +399,6 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "equipment_designer_medium_plane_airframe_late"
-		position = { x=0 y=0 }
-		size = { width=508 height=248 }
-
-		iconType = {
-			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_medium_plane_airframe_3"
-			position = { x=0 y=0 }
-		}
-	}
-
-	containerWindowType = {
 		name = "equipment_designer_medium_plane_airframe_4"
 		position = { x=0 y=0 }
 		size = { width=508 height=248 }
@@ -498,18 +438,6 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "equipment_designer_medium_plane_fighter_airframe_3"
-		position = { x=0 y=0 }
-		size = { width=508 height=248 }
-
-		iconType = {
-			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_medium_plane_fighter_airframe_3"
-			position = { x=0 y=0 }
-		}
-	}
-
-	containerWindowType = {
-		name = "equipment_designer_medium_plane_fighter_airframe_late"
 		position = { x=0 y=0 }
 		size = { width=508 height=248 }
 

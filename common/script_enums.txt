@@ -54,6 +54,8 @@ script_enum_equipment_bonus_type = {
 	anti_air_equipment
 	artillery
 	pack_artillery_equipment
+	dp_artillery_equipment
+	anti_tank_equipment_squeeze
 	heavy_anti_air_equipment
 	heavy_anti_tank_equipment
 	heavy_artillery_equipment
