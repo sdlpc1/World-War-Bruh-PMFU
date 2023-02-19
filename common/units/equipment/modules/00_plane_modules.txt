@@ -809,7 +809,7 @@ equipment_modules = {
 		#xp_cost = 2
 		allow_mission_type = {
 			cas
-			attack_logistics
+			# attack_logistics
             naval_bomber
             port_strike
 		}
@@ -865,7 +865,7 @@ equipment_modules = {
 		#xp_cost = 2
 		allow_mission_type = {
 			cas
-			attack_logistics
+			# attack_logistics
 		}
 		mission_type_stats = {
 			limit = {
@@ -911,7 +911,7 @@ equipment_modules = {
 		##xp_cost = 2
 		allow_mission_type = {
 			cas
-			attack_logistics
+			# attack_logistics
 		}
 		mission_type_stats = {
 			limit = {
@@ -1088,7 +1088,7 @@ equipment_modules = {
 		##xp_cost = 2
 		allow_mission_type = {
 			cas
-			attack_logistics
+			# attack_logistics
 		}
        mission_type_stats = {
 			limit = {
@@ -1130,7 +1130,7 @@ equipment_modules = {
 		##xp_cost = 2
 		allow_mission_type = {
 			cas
-            attack_logistics
+            # attack_logistics
 		}
         mission_type_stats = {
 			limit = {
@@ -1167,7 +1167,7 @@ equipment_modules = {
 		#xp_cost = 2
 		allow_mission_type = {
 			cas
-			attack_logistics
+			# attack_logistics
 		}
 		mission_type_stats = {
 			limit = {
