@@ -21,7 +21,7 @@ technologies = {
 		
 		
 		research_cost = 2
-		start_year = 1926
+		start_year = 1933
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 2 }
@@ -69,7 +69,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 5 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
@@ -132,10 +132,10 @@ technologies = {
 				
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1939
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 7 }
+			position = { x = 0 y = 6 }
 		}
 		folder = {
 			name = secret_weapons_folder
@@ -201,13 +201,12 @@ technologies = {
 			leads_to_tech = modern_small_airframe
 			research_cost_coeff = 1
 		}
-		allow={date>1941.1.1}
 		research_cost = 2
-		start_year = 1944
+		start_year = 1942
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 9 }
+			position = { x = 0 y = 8 }
 		}
 		
 		categories = {
@@ -303,8 +302,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
-		start_year = 1926
+		research_cost = 2
+		start_year = 1933
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 2 }
@@ -338,7 +337,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 5 }
+			position = { x = 2 y = 4 }
 		}
 		
 		categories = {
@@ -388,10 +387,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2
-		start_year = 1940
+		start_year = 1939
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 7 }
+			position = { x = 2 y = 6 }
 		}
 		
 		categories = {
@@ -440,12 +439,11 @@ technologies = {
 			leads_to_tech = modern_medium_airframe
 			research_cost_coeff = 1
 		}
-		allow={date>1941.1.1}
 		research_cost = 2
-		start_year = 1944
+		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 9 }
+			position = { x = 2 y = 8 }
 		}
 		
 		categories = {
@@ -523,7 +521,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1926
+		start_year = 1933
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 2 }
@@ -561,11 +559,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 5 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
@@ -600,11 +598,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 3
-		start_year = 1940
+		research_cost = 2
+		start_year = 1939
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 7 }
+			position = { x = 0 y = 6 }
 		}
 		
 		categories = {
@@ -638,12 +636,11 @@ technologies = {
 			leads_to_tech = modern_large_airframe
 			research_cost_coeff = 1
 		}
-		allow={date>1941.1.1}
-		research_cost = 3
-		start_year = 1944
+		research_cost = 2
+		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 9 }
+			position = { x = 0 y = 8 }
 		}
 		
 		categories = {
@@ -674,7 +671,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1950
+		start_year = 1945
 
 		dependencies = {
 			jet_engines = 1
@@ -710,7 +707,7 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1922
+		start_year = 1933
 
 		folder = {
 			name = bba_air_techs_folder
@@ -806,7 +803,7 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -884,7 +881,7 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -923,9 +920,8 @@ technologies = {
 		enable_equipment_modules = {
 			torpedo_mounting3
 		}
-		allow={date>1941.1.1}
 		research_cost = 0.5
-		start_year = 1943
+		start_year = 1942
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1005,7 +1001,7 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1045,19 +1041,15 @@ technologies = {
 		enable_equipment_modules = {
 			guided_anti_ship_missile
 		}
-		allow={date>1941.1.1}
 		research_cost = 0.5
-		start_year = 1943
+		start_year = 1944
 		categories = {
 			year_1943
-		}
-		allow = {
-			date > 1941.1.1
 		}
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 4 y = 8 }
+			position = { x = 4 y = 10 }
 		}
 
 		
@@ -1091,7 +1083,7 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1922
+		start_year = 1933
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1131,7 +1123,7 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1922
+		start_year = 1933
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1227,7 +1219,7 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1277,9 +1269,8 @@ technologies = {
 			ammunition_3
 			rocket_rails
 		}
-		allow={date>1941.6.1}
-		research_cost = 1.25
-		start_year = 1943
+		research_cost = 0.5
+		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 4 y = 8 }
@@ -1325,7 +1316,7 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1922
+		start_year = 1933
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1459,7 +1450,7 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1940
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1521,9 +1512,8 @@ technologies = {
 			fuel_injection2_m	
 			fuel_injection2_l
 		}
-		allow={date>1941.6.1}
-		research_cost = 1.0
-		start_year = 1944
+		research_cost = 0.5
+		start_year = 1942
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1622,8 +1612,8 @@ technologies = {
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 1
-		start_year = 1940
+		research_cost = 0.5
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1653,7 +1643,7 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1933
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1679,7 +1669,7 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 0.5
-		start_year = 1940
+		start_year = 1939
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 1 y = 6 }

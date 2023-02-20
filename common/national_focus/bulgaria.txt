@@ -2427,78 +2427,78 @@ focus_tree = {
 				remove_ideas = BUL_georgi_ivanov_kyoseivanov
 			}
 
-			if = { #Low Stability triggers a Civil War
-				limit = {
-					has_stability < 0.3
-				}
-				set_temp_variable = { BUL_fascist_cw_opposition = party_popularity@neutrality }
-				multiply_temp_variable = { BUL_fascist_cw_opposition = 0.25 }
-				add_to_temp_variable = { BUL_fascist_cw_opposition = party_popularity@democratic }
-				add_to_temp_variable = { BUL_fascist_cw_opposition = party_popularity@communism }
-				set_politics = {
-					ruling_party = fascism
-				}
-				hidden_effect = { #Generates undesired "Politics will change" tooltip
-					every_unit_leader = {
-						limit = {
-							OR = {
-								has_id = 1207 #Asen Nikolov
-								has_id = 1208 #Konstantin Lukash
-							}
-							NOT = { has_trait = trait_BUL_zveno_member }
-						}
-						add_unit_leader_trait = trait_BUL_tsar_loyalist
-					}
+			# if = { #Low Stability triggers a Civil War
+			# 	limit = {
+			# 		has_stability < 0.3
+			# 	}
+			# 	set_temp_variable = { BUL_fascist_cw_opposition = party_popularity@neutrality }
+			# 	multiply_temp_variable = { BUL_fascist_cw_opposition = 0.25 }
+			# 	add_to_temp_variable = { BUL_fascist_cw_opposition = party_popularity@democratic }
+			# 	add_to_temp_variable = { BUL_fascist_cw_opposition = party_popularity@communism }
+			# 	set_politics = {
+			# 		ruling_party = fascism
+			# 	}
+			# 	hidden_effect = { #Generates undesired "Politics will change" tooltip
+			# 		every_unit_leader = {
+			# 			limit = {
+			# 				OR = {
+			# 					has_id = 1207 #Asen Nikolov
+			# 					has_id = 1208 #Konstantin Lukash
+			# 				}
+			# 				NOT = { has_trait = trait_BUL_zveno_member }
+			# 			}
+			# 			add_unit_leader_trait = trait_BUL_tsar_loyalist
+			# 		}
 
-					start_civil_war = {	
-						ideology = neutrality
-						size = BUL_fascist_cw_opposition
-						capital = 48
-						states = { 212 }
-						keep_unit_leaders_trigger = {
-							NOT = {	has_trait = trait_BUL_tsar_loyalist }
-						}
-					}
+			# 		start_civil_war = {	
+			# 			ideology = neutrality
+			# 			size = BUL_fascist_cw_opposition
+			# 			capital = 48
+			# 			states = { 212 }
+			# 			keep_unit_leaders_trigger = {
+			# 				NOT = {	has_trait = trait_BUL_tsar_loyalist }
+			# 			}
+			# 		}
 
-					every_unit_leader = {
-						limit = {
-							has_trait = trait_BUL_tsar_loyalist
-						}
-						random_other_country = {
-							limit = {
-								original_tag = BUL
-								has_government = neutrality
-							}
-							PREV = { set_nationality = PREV }
-						}
-					}
+			# 		every_unit_leader = {
+			# 			limit = {
+			# 				has_trait = trait_BUL_tsar_loyalist
+			# 			}
+			# 			random_other_country = {
+			# 				limit = {
+			# 					original_tag = BUL
+			# 					has_government = neutrality
+			# 				}
+			# 				PREV = { set_nationality = PREV }
+			# 			}
+			# 		}
 
-					#Operatives
-					if = {
-						limit = {
-							has_dlc = "La Resistance"
-						}
-						every_operative = {
-							limit = {
-								has_trait = trait_BUL_tsar_loyalist
-							}
-							retire = yes
-						}
-					}
-				}
-				custom_effect_tooltip = BUL_depose_the_tsar_cw_tt
-				clr_country_flag = BUL_factions_unlocked_flag
-				create_country_leader = {
-					name = "Georgi Kyoseivanov"
-					desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
-					picture = GFX_portrait_bul_georgi_kyoseivanov
-					expire = "1965.1.1"
-					ideology = moderatism
-					traits = {
-						incompetent_leader
-					}
-				}
-			}
+			# 		#Operatives
+			# 		if = {
+			# 			limit = {
+			# 				has_dlc = "La Resistance"
+			# 			}
+			# 			every_operative = {
+			# 				limit = {
+			# 					has_trait = trait_BUL_tsar_loyalist
+			# 				}
+			# 				retire = yes
+			# 			}
+			# 		}
+			# 	}
+			# 	custom_effect_tooltip = BUL_depose_the_tsar_cw_tt
+			# 	clr_country_flag = BUL_factions_unlocked_flag
+			# 	create_country_leader = {
+			# 		name = "Georgi Kyoseivanov"
+			# 		desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
+			# 		picture = GFX_portrait_bul_georgi_kyoseivanov
+			# 		expire = "1965.1.1"
+			# 		ideology = moderatism
+			# 		traits = {
+			# 			incompetent_leader
+			# 		}
+			# 	}
+			# }
 			else = {
 				random_unit_leader = {
 					limit = {
@@ -2540,7 +2540,7 @@ focus_tree = {
 			BUL_bzns_low_loyalty_increase_effect = yes
 			BUL_nsm_low_loyalty_decrease_effect = yes
 
-			custom_effect_tooltip = BUL_potential_civil_war_low_requirement_tt
+			# custom_effect_tooltip = BUL_potential_civil_war_low_requirement_tt
 		}
 	}
 

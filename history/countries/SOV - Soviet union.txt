@@ -1598,17 +1598,17 @@ if = {
 		}
 		icon = "GFX_SOV_fighter1_medium"
 	}
-	create_equipment_variant = {
-		name = "LBsh"
-		type = small_plane_cas_airframe_1
-		modules = {
-			fixed_main_weapon_slot = tank_buster_1
-			engine_type_slot = engine_2_1x
-			special_type_slot_2 = dive_brakes_small
+	# create_equipment_variant = {
+	# 	name = "LBsh"
+	# 	type = small_plane_cas_airframe_1
+	# 	modules = {
+	# 		fixed_main_weapon_slot = tank_buster_1
+	# 		engine_type_slot = engine_2_1x
+	# 		special_type_slot_2 = dive_brakes_small
 			
-		}
-		icon = "GFX_SOV_CAS1_medium"
-	}
+	# 	}
+	# 	icon = "GFX_SOV_CAS1_medium"
+	# }
 	create_equipment_variant = {
 		name = "Il-4"
 		type = small_plane_naval_bomber_airframe_1

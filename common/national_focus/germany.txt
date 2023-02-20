@@ -2330,7 +2330,6 @@ focus_tree = {
 		prerequisite = { focus = GER_rhineland }
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 549999 }
 			NOT = { has_idea = rhineland_challenge_met }
 			date > 1937.1.1
 		}
@@ -2533,7 +2532,6 @@ focus_tree = {
 		available = {
 			
 			is_puppet = no
-			has_army_manpower = { size > 949999 } #100 div		
 			date > 1939.1.1	
 			#Make custom trigger tooltip here
 			85 = {
@@ -3548,8 +3546,7 @@ focus_tree = {
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = FRA
 		available = {
-			is_puppet = no
-			has_army_manpower = { size > 749999 } #80 div		
+			is_puppet = no	
 			NOT = {
 				AND = {
 					CZE = { is_in_faction_with = GER }
@@ -3751,7 +3748,6 @@ focus_tree = {
 		prerequisite = { focus = GER_first_vienna_award }
 		available = { 
 			is_puppet = no
-			has_army_manpower = { size > 749999 }
 			NOT = { has_war_with = CZE }
 		}
 
@@ -3880,7 +3876,6 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			has_government = fascism
-			has_army_manpower = { size > 849999 } #ca 90 div
 			SOV = {
 				NOT = { has_war_with = GER }
 				country_exists = SOV
@@ -3987,7 +3982,6 @@ focus_tree = {
 		}
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 749999 }
 			has_capitulated = no
 		}
 		bypass = {
@@ -6232,7 +6226,6 @@ focus_tree = {
 		available = {
 			is_subject = no
 			controls_state = 16
-			has_army_manpower = { size > 749999 }
 		}
 		will_lead_to_war_with = YUG
 		bypass = {

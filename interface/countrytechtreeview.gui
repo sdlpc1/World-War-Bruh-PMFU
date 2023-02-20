@@ -4179,7 +4179,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1940"
+				text = "1939"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -4192,7 +4192,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1941"
+				text = "1942"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -4205,7 +4205,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1943"
+				text = "1944"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -4276,7 +4276,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1940"
+					text = "1939"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -4286,6 +4286,19 @@ guiTypes = {
 				instantTextBoxType = {
 					name = "airtech_year5"
 					position = { x = 60 y = 580 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1942"
+					maxWidth = 170
+					maxHeight = 32
+					format = right
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "airtech_year6"
+					position = { x = 60 y = 720 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -4513,18 +4526,18 @@ guiTypes = {
 				}
 
 			}
-			instantTextBoxType = {
-					name = "plane_subtitle_medium_research_lock"
-					position = { x = 900 y = 670 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "<-- 1944 Planes research is locked behind 1941"
-					maxWidth = 800
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}	
+			# instantTextBoxType = {
+			# 		name = "plane_subtitle_medium_research_lock"
+			# 		position = { x = 900 y = 670 }
+			# 		textureFile = ""
+			# 		font = "hoi_36header"
+			# 		borderSize = {x = 0 y = 4}
+			# 		text = "<-- 1944 Planes research is locked behind 1941"
+			# 		maxWidth = 800
+			# 		maxHeight = 62
+			# 		format = center
+			# 		Orientation = "UPPER_LEFT"
+			# }	
 			instantTextBoxType = {
 				name = "airtech_year2"
 				position = { x = 30 y = 180 }
@@ -4557,7 +4570,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1940"
+				text = "1939"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -4570,7 +4583,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1944"
+				text = "1942"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -4579,24 +4592,37 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_year6"
-				position = { x = 30 y = 878 }
+				position = { x = 30 y = 720 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1945"
+				text = "1944"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
 
+			# instantTextBoxType = {
+			# 	name = "airtech_year6"
+			# 	position = { x = 30 y = 878 }
+			# 	textureFile = ""
+			# 	font = "hoi_36header"
+			# 	borderSize = {x = 0 y = 4}
+			# 	text = "1945"
+			# 	maxWidth = 170
+			# 	maxHeight = 32
+			# 	format = left
+			# 	Orientation = "UPPER_LEFT"
+			# }
+
 			instantTextBoxType = {
 				name = "airtech_year7"
-				position = { x = 30 y = 998 }
+				position = { x = 30 y = 878 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1950"
+				text = "1945"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -4641,7 +4667,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1940"
+					text = "1939"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -4654,6 +4680,19 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
+					text = "1942"
+					maxWidth = 170
+					maxHeight = 32
+					format = right
+					Orientation = "UPPER_LEFT"
+				}
+	
+				instantTextBoxType = {
+					name = "airtech_year6"
+					position = { x = 60 y = 720 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
 					text = "1944"
 					maxWidth = 170
 					maxHeight = 32
@@ -4661,26 +4700,26 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 
+				# instantTextBoxType = {
+				# 	name = "airtech_year6"
+				# 	position = { x = 60 y = 858 }
+				# 	textureFile = ""
+				# 	font = "hoi_36header"
+				# 	borderSize = {x = 0 y = 4}
+				# 	text = "1945"
+				# 	maxWidth = 170
+				# 	maxHeight = 32
+				# 	format = right
+				# 	Orientation = "UPPER_LEFT"
+				# }
+
 				instantTextBoxType = {
-					name = "airtech_year6"
-					position = { x = 60 y = 858 }
+					name = "airtech_year7"
+					position = { x = 60 y = 878 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
 					text = "1945"
-					maxWidth = 170
-					maxHeight = 32
-					format = right
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "airtech_year7"
-					position = { x = 60 y = 998 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1950"
 					maxWidth = 170
 					maxHeight = 32
 					format = right

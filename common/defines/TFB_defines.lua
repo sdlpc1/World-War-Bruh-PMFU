@@ -67,6 +67,8 @@ NDefines.NCountry.MAX_PROPAGANDA_STABILITY_IMPACT = 0			-- Max total penalty fro
 NDefines.NCountry.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = 0		-- Max total penalty from operative performing the propaganda mission in a country
 NDefines.NCountry.PROPAGANDA_STABILITY_DAILY_DECAY = 0		-- Amount of stability recovered daily from propaganda effort
 NDefines.NCountry.PROPAGANDA_WAR_SUPPORT_DAILY_DECAY = 0		-- Amount of war support recovered daily from war support effort
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 10.0	-- Modifier for army manpower reinforcement delivery speed (travel time)
+NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.4				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
 
 NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1	-- compliance factor that applies when the state controller changes (in between allies compliance is zeroed if it is taken by original country)
 NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.10 -- base compliance grow
