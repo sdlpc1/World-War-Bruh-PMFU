@@ -62,9 +62,9 @@ small_plane_airframe = {
 			required = yes
 			allowed_module_categories = {
 				#recon_camera
-				fighter_weapon
+				fighter_weapon_secondary
 				#cas_weapon
-				#nav_bomber_weapon
+				nav_bomber_weapon
 				#kamikaze_bomber_weapon
 				special_bombs
 			}
@@ -271,7 +271,7 @@ small_plane_airframe_1 = { #Basic
 			required = yes
 			allowed_module_categories = {
 				fighter_weapon
-				#cas_weapon
+				cas_weapon
 				nav_bomber_weapon
 				special_bombs
 				kamikaze_bomber_weapon
@@ -362,6 +362,7 @@ small_plane_airframe_2 = { #Improved
 				recon_camera
 				fighter_weapon_secondary
 				mine_warfare_offense
+				nav_bomber_weapon
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
@@ -372,7 +373,7 @@ small_plane_airframe_2 = { #Improved
 				fighter_weapon_secondary
 				cas_weapon
 				special_bombs
-				nav_bomber_weapon
+				#nav_bomber_weapon
 				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
@@ -485,7 +486,7 @@ small_plane_airframe_3 = { #Advanced
 				recon_camera
 				fighter_weapon_secondary
 				cas_weapon
-				nav_bomber_weapon
+				#nav_bomber_weapon
 				mine_warfare_offense
 				kamikaze_bomber_weapon
 				special_bombs
@@ -2193,8 +2194,8 @@ cv_small_plane_airframe = {
 	fuel_consumption = 0.05
 	build_cost_ic = 45
 	resources = {
-		aluminium = 2
-		rubber = 1
+		aluminium = 30
+		rubber = 5
 	}
 
 	module_slots = {
@@ -2388,8 +2389,8 @@ cv_small_plane_airframe_1 = { #Basic
 	naval_strike_targetting = 1
 	build_cost_ic = 50
 	resources = {
-		aluminium = 3
-		rubber = 1
+		aluminium = 30
+		rubber = 5
 	}
 	module_slots = {
 		fixed_main_weapon_slot = {
@@ -2464,8 +2465,8 @@ cv_small_plane_airframe_2 = { #Improved
 	naval_strike_targetting = 1
 	build_cost_ic = 53
 	resources = {
-		aluminium = 3
-		rubber = 1
+		aluminium = 30
+		rubber = 5
 	}
 	module_slots = {
 		fixed_main_weapon_slot = {
@@ -2567,8 +2568,8 @@ cv_small_plane_airframe_3 = { #Advanced
 	naval_strike_targetting = 1
 	build_cost_ic = 58
 	resources = {
-		aluminium = 4
-		rubber = 1
+		aluminium = 30
+		rubber = 5
 	}
 	module_slots = {
 		fixed_main_weapon_slot = {
@@ -2676,8 +2677,8 @@ cv_small_plane_airframe_4 = { #modern
 	naval_strike_targetting = 1
 	build_cost_ic = 66
 	resources = {
-		aluminium = 4
-		rubber = 1
+		aluminium = 30
+		rubber = 5
 	}
 	module_slots = {
 		fixed_main_weapon_slot = {

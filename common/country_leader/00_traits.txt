@@ -1051,9 +1051,9 @@ leader_traits = {
 			small_plane_airframe = {
 				air_agility = 0.1 maximum_speed = 0.1 air_attack = 0.1
 			}
-			cv_small_plane_airframe = {
-				air_agility = 0.1 maximum_speed = 0.1 air_attack = 0.1
-			}
+			# cv_small_plane_airframe = {
+			# 	air_agility = 0.1 maximum_speed = 0.1 air_attack = 0.1
+			# }
 		}
 		
 		ai_will_do = {
@@ -1726,9 +1726,9 @@ leader_traits = {
 			small_plane_naval_bomber_airframe = {
 				air_range = 0.1 naval_strike_attack = 0.1
 			}
-			cv_small_plane_naval_bomber_airframe = {
-				air_range = 0.1 naval_strike_attack = 0.1
-			}
+			# cv_small_plane_naval_bomber_airframe = {
+			# 	air_range = 0.1 naval_strike_attack = 0.1
+			# }
 		}
 		
 		ai_will_do = {
@@ -5843,13 +5843,13 @@ leader_traits = {
 			small_plane_airframe = {
 				air_range = 0.05
 			}
-			cv_small_plane_airframe = {
-				air_range = 0.05
-			}
+			# cv_small_plane_airframe = {
+			# 	air_range = 0.05
+			# }
 			medium_plane_airframe = {
 				air_range = 0.05
 			}
-			cv_small_plane_naval_bomber_airframe = {
+			small_plane_naval_bomber_airframe = {
 				air_range = 0.05
 			}
 		}
@@ -5865,9 +5865,9 @@ leader_traits = {
 			small_plane_airframe = {
 				air_agility = 0.1 maximum_speed = 0.1
 			}
-			cv_small_plane_airframe = {
-				air_agility = 0.1 maximum_speed = 0.1
-			}
+			# cv_small_plane_airframe = {
+			# 	air_agility = 0.1 maximum_speed = 0.1
+			# }
 		}
 		
 		ai_will_do = {
@@ -5879,20 +5879,20 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			small_plane_airframe = {
-				air_agility = 0.10 maximum_speed = 0.1
-			}
-			cv_small_plane_airframe = {
 				air_agility = 0.20 maximum_speed = 0.1 air_range = 0.35 air_defence = -0.1
 			}
+			# cv_small_plane_airframe = {
+			# 	air_agility = 0.20 maximum_speed = 0.1 air_range = 0.35 air_defence = -0.1
+			# }
 			medium_plane_airframe = {
 				air_agility = 0.05
 			}		
 			small_plane_naval_bomber_airframe = {
 				air_agility = 0.1
 			}		
-			cv_small_plane_naval_bomber_airframe = {
-				air_agility = 0.1
-			}	
+			# cv_small_plane_naval_bomber_airframe = {
+			# 	air_agility = 0.1
+			# }	
 		}
 		
 		ai_will_do = {
@@ -5960,10 +5960,10 @@ leader_traits = {
 	naval_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
-			cv_small_plane_naval_bomber_airframe = {
+			small_plane_naval_bomber_airframe = {
 				air_range = 0.2 naval_strike_attack = 0.1
 			}
-			cv_small_plane_airframe = {
+			small_plane_airframe = {
 				air_range = 0.2 air_agility = 0.1
 			}
 		}

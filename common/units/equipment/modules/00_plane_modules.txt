@@ -1450,7 +1450,7 @@ equipment_modules = {
         }
 		build_cost_resources = {
 			 rubber = 2
-			 aluminium = 3
+			 aluminium = 2
 		}
 		 ##xp_cost = 1
 		 dismantle_cost_ic = 0.5
@@ -1495,7 +1495,7 @@ equipment_modules = {
 			weight = 1        
 		}
 		build_cost_resources = {
-			aluminium = 5
+			aluminium = 3
 		}
 		##xp_cost = 1
 	}
@@ -1609,7 +1609,7 @@ equipment_modules = {
 			air_range = -0.20
 		 }
 		 build_cost_resources = {
-			 rubber = 5
+			 rubber = 3
 			 aluminium = 5
 		 }
 		 dismantle_cost_ic = 1
@@ -1759,8 +1759,8 @@ equipment_modules = {
 			air_range = -0.20
 		 }
 		 build_cost_resources = {
-			rubber = 8
-			aluminium = 10
+			rubber = 5
+			aluminium = 8
 		 }
 		 dismantle_cost_ic = 1.5
 		 ##xp_cost = 1

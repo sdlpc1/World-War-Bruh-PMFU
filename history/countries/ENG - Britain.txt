@@ -115,7 +115,7 @@ if = {
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		#set_air_oob = "ENG_1936_air_bba"
+		set_air_oob = "ENG_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			nav_1 = 1

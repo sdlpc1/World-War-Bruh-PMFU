@@ -775,7 +775,7 @@ if = {
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		#set_air_oob = "SOV_1936_air_bba"
+		set_air_oob = "SOV_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			nav_1=1
@@ -788,6 +788,7 @@ if = {
 			iw_medium_airframe = 1
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
+			tac_1 = 1
 	}
 	else = {
 		set_air_oob = "SOV_1936_air_legacy"
@@ -1598,17 +1599,27 @@ if = {
 		}
 		icon = "GFX_SOV_fighter1_medium"
 	}
-	# create_equipment_variant = {
-	# 	name = "LBsh"
-	# 	type = small_plane_cas_airframe_1
-	# 	modules = {
-	# 		fixed_main_weapon_slot = tank_buster_1
-	# 		engine_type_slot = engine_2_1x
-	# 		special_type_slot_2 = dive_brakes_small
-			
-	# 	}
-	# 	icon = "GFX_SOV_CAS1_medium"
-	# }
+	create_equipment_variant = {
+		name = "I-15"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			engine_type_slot = engine_1_1x
+		}
+		icon = "GFX_SOV_fighter1_medium"
+	}
+	create_equipment_variant = {
+		name = "LBsh"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = tank_buster_1
+			fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+			engine_type_slot = engine_2_1x
+			special_type_slot_2 = dive_brakes_small
+		}
+		icon = "GFX_SOV_CAS1_medium"
+	}
 	create_equipment_variant = {
 		name = "Il-4"
 		type = small_plane_naval_bomber_airframe_1
@@ -1634,6 +1645,16 @@ if = {
 			special_type_slot_2 = dive_brakes_medium
 		}
 		icon = "GFX_SOV_tactical_bomber1_medium"
+	}
+	create_equipment_variant = {
+		name = "TB-3"
+		type = large_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = large_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = lmg_defense_turret
+			engine_type_slot = engine_1_4x
+		}
+		#icon = "GFX_SOV_tactical_bomber1_medium"
 	}
 }
 

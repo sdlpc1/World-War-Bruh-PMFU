@@ -62,11 +62,11 @@ on_actions = {
 					}
 				}
 			}
-			every_country = { 
-				country_event = { 
-					id = startingevent.1001
-				}
-			}
+			# every_country = { 
+			# 	country_event = { 
+			# 		id = startingevent.1001
+			# 	}
+			# }
 		}
 	}
 }

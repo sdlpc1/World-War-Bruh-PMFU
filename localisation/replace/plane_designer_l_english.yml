@@ -182,6 +182,8 @@
  drop_tanks_desc:0 "Small, disposable tanks that hold extra fuel give our fighters some extra range when on offensive missions. Since they are dropped before combat, they don't impede combat performance."
  dive_brakes_small:0 "Dive Brakes"
  dive_brakes_small_desc:0 "A set of spoilers along the trailing edge of the wing deploy when the plane enters a dive, reducing overall speed and allowing the plane to pull out of steep dives without ripping its wings off. this, in turn, allows the plane to attack from a near-vertical dive, drastically increasing accuracy."
+ dive_brakes_medium:0 "Dive Breaks"
+ dive_brakes_medium__desc:0 "A set of spoilers along the trailing edge of the wing deploy when the plane enters a dive, reducing overall speed and allowing the plane to pull out of steep dives without ripping its wings off. this, in turn, allows the plane to attack from a near-vertical dive, drastically increasing accuracy."
  non_strategic_materials_medium:0 "$non_strategic_materials_small$"
  non_strategic_materials_medium_desc:0 "$non_strategic_materials_small_desc$"
  non_strategic_materials_large:0 "$non_strategic_materials_small$"
