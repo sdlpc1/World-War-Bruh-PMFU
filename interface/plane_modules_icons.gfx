@@ -81,17 +81,32 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_torpedo_mounting"
+		name = "GFX_EMI_torpedo_mounting_small"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_torpedo_icon.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_torpedo_mounting2"
+		name = "GFX_EMI_torpedo_mounting2_small"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_torpedo2_icon.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_torpedo_mounting3"
+		name = "GFX_EMI_torpedo_mounting3_small"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_torpedo3_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_torpedo_mounting_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_torpedo_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_torpedo_mounting2_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_torpedo2_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_torpedo_mounting3_medium"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_torpedo3_icon.dds"
 		legacy_lazy_load = no
 	}
@@ -561,6 +576,16 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_cas_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_bomb_lock_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_torpedo_mounting_medium"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_torpedo_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cas_weapon_medium"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_bomb_lock_icon.dds"
 		legacy_lazy_load = no
 	}

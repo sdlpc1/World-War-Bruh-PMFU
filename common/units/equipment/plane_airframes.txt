@@ -59,7 +59,7 @@ small_plane_airframe = {
 		}
 
 		fixed_auxiliary_weapon_slot_1 = { 
-			required = yes
+			required = no
 			allowed_module_categories = {
 				#recon_camera
 				fighter_weapon_secondary
@@ -151,7 +151,7 @@ small_plane_airframe = {
 	}
 
 	module_count_limit = {
-		module = torpedo_mounting
+		module = torpedo_mounting_small
 		count < 2
 	}
 
@@ -280,10 +280,14 @@ small_plane_airframe_1 = { #Basic
 		}
 
 		fixed_auxiliary_weapon_slot_1 = { 
-			required = yes
+			required = no
 			allowed_module_categories = {
 				recon_camera
 				fighter_weapon_secondary
+				#cas_weapon
+				nav_bomber_weapon
+				#kamikaze_bomber_weapon
+				special_bombs
 			}
 		}
 		engine_type_slot = {
@@ -357,7 +361,7 @@ small_plane_airframe_2 = { #Improved
 		}
 
 		fixed_auxiliary_weapon_slot_1 = { 
-			required = yes
+			required = no
 			allowed_module_categories = {
 				recon_camera
 				fighter_weapon_secondary
@@ -745,6 +749,7 @@ medium_plane_airframe = {
 				recon_camera
 				# cas_weapon
 				# nav_bomber_weapon
+				torpedo_mounting_medium
 			}
 		}
 
@@ -756,7 +761,8 @@ medium_plane_airframe = {
 				tac_weapon
 				fighter_weapon
 				cas_weapon
-				nav_bomber_weapon
+				#nav_bomber_weapon
+				torpedo_mounting_medium
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
@@ -766,7 +772,7 @@ medium_plane_airframe = {
 				plane_special_module_defense_turret
 				recon_camera
 				fighter_weapon_secondary
-				nav_bomber_weapon
+				#nav_bomber_weapon
 			}
 		}
 		fixed_auxiliary_weapon_slot_3 = { 
@@ -880,7 +886,7 @@ medium_plane_airframe = {
 	}
 
 	module_count_limit = {
-		module = torpedo_mounting
+		module = torpedo_mounting_medium
 		count < 2
 	}
 
@@ -894,10 +900,10 @@ medium_plane_airframe = {
 		count < 2
 	}
 
-	module_count_limit = {
-		category = nav_bomber_weapon
-		count < 3
-	}
+	# module_count_limit = {
+	# 	category = nav_bomber_weapon
+	# 	count < 3
+	# }
 
 	module_count_limit = {
 		category = plane_special_module_bomb_sights
@@ -995,6 +1001,7 @@ medium_plane_airframe_1 = { #Basic
 				recon_camera
 				# cas_weapon
 				# nav_bomber_weapon
+				torpedo_mounting_medium
 			}
 		}
 
@@ -1005,8 +1012,9 @@ medium_plane_airframe_1 = { #Basic
 				tac_weapon
 				fighter_weapon
 				cas_weapon
-				nav_bomber_weapon
+				#nav_bomber_weapon
 				mine_warfare_offense
+				torpedo_mounting_medium
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
@@ -1015,7 +1023,7 @@ medium_plane_airframe_1 = { #Basic
 				recon_camera
 				fighter_weapon_secondary
 				plane_special_module_defense_turret
-				nav_bomber_weapon
+				#nav_bomber_weapon
 				cas_weapon
 			}
 		}
@@ -1114,6 +1122,7 @@ medium_plane_airframe_2 = { #Improved
 				recon_camera
 				# cas_weapon
 				# nav_bomber_weapon
+				torpedo_mounting_medium
 			}
 		}
 
@@ -1124,15 +1133,16 @@ medium_plane_airframe_2 = { #Improved
 				tac_weapon
 				fighter_weapon
 				cas_weapon
-				nav_bomber_weapon
+				#nav_bomber_weapon
 				mine_warfare_offense
+				torpedo_mounting_medium
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
 			required = no
 			allowed_module_categories = {
 				cas_weapon
-				nav_bomber_weapon
+				#nav_bomber_weapon
 				tac_weapon
 				fighter_weapon_secondary
 				recon_camera
@@ -1246,6 +1256,7 @@ medium_plane_airframe_3 = { #Advanced
 				recon_camera
 				# cas_weapon
 				# nav_bomber_weapon
+				torpedo_mounting_medium
 			}
 		}
 
@@ -1256,8 +1267,9 @@ medium_plane_airframe_3 = { #Advanced
 				fighter_weapon
 				tac_weapon
 				cas_weapon
-				nav_bomber_weapon
+				#nav_bomber_weapon
 				mine_warfare_offense
+				torpedo_mounting_medium
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
@@ -1267,7 +1279,7 @@ medium_plane_airframe_3 = { #Advanced
 				fighter_weapon
 				tac_weapon
 				cas_weapon
-				nav_bomber_weapon
+				#nav_bomber_weapon
 				mine_warfare_offense
 			}
 		}
@@ -1380,6 +1392,7 @@ medium_plane_airframe_4 = { #Modern
 				recon_camera
 				# cas_weapon
 				# nav_bomber_weapon
+				torpedo_mounting_medium
 			}
 		}
 
@@ -1390,7 +1403,7 @@ medium_plane_airframe_4 = { #Modern
 				recon_camera
 				fighter_weapon
 				cas_weapon
-				nav_bomber_weapon
+				#nav_bomber_weapon
 				tac_weapon
 				mine_warfare_offense
 			}
@@ -1401,9 +1414,10 @@ medium_plane_airframe_4 = { #Modern
 				cas_weapon
 				recon_camera
 				fighter_weapon
-				nav_bomber_weapon
+				#nav_bomber_weapon
 				tac_weapon
 				mine_warfare_offense
+				torpedo_mounting_medium
 			}
 		}
 		fixed_auxiliary_weapon_slot_3 = { 

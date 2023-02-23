@@ -28,13 +28,17 @@ ITA_fuel_injection2:0 "Methanol Injection"
 
  ### EQUIPMENT MODULE CATEGORIES ###
  EQ_MOD_CAT_tank_engine_type_TITLE:0 "Engine Type"
+ EQ_MOD_CAT_torpedo_mounting_medium_TITLE:0 "Medium Naval Bomber Weapons"
  
  ### EQUIPMENT MODULE SLOTS ###
  EQ_MOD_SLOT_main_armament_slot_TITLE:0 "Main Armament"
  ### EQUIPMENT MODULES ###
- torpedo_mounting:0 "Basic Torpedo Mountings"
- torpedo_mounting2:0 "Improved Torpedo Mountings"
- torpedo_mounting3:0 "Advanced Torpedo Mountings"
+ torpedo_mounting_small:0 "Basic Small Torpedo Mountings"
+ torpedo_mounting2_small:0 "Improved Small Torpedo Mountings"
+ torpedo_mounting3_small:0 "Advanced Small Torpedo Mountings"
+ torpedo_mounting_medium:0 "Basic Medium Torpedo Mountings"
+ torpedo_mounting2_medium:0 "Improved Medium Torpedo Mountings"
+ torpedo_mounting3_medium:0 "Advanced Medium Torpedo Mountings"
  cluster_bombs:0 "Cluster Bombs"
  large_bomb:0 "Large Bomb"
  

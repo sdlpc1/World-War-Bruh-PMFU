@@ -836,7 +836,8 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		enable_equipment_modules = {
-			torpedo_mounting
+			torpedo_mounting_small
+			torpedo_mounting_medium
 		}
 		
 		research_cost = 0.5
@@ -877,7 +878,8 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		enable_equipment_modules = {
-			torpedo_mounting2
+			torpedo_mounting2_small
+			torpedo_mounting2_medium
 		}
 		
 		research_cost = 0.5
@@ -918,7 +920,8 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		enable_equipment_modules = {
-			torpedo_mounting3
+			torpedo_mounting3_small
+			torpedo_mounting3_medium
 		}
 		research_cost = 0.5
 		start_year = 1942
