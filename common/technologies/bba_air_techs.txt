@@ -1730,4 +1730,21 @@ technologies = {
 		}
 		################
 	}
+
+	amerikabomber = {
+
+		enable_equipments = {
+			amerikabomber_equipment
+		}
+		
+	}
+	
+	hs132 = {
+
+		enable_equipment_modules = {
+			jet_cas_bomb
+			jet_cas_bomb_extra
+		}
+		
+	}
 }

@@ -507,7 +507,7 @@ focus_tree = {
 				bonus = 0.75
 				ahead_reduction = 0.5
 				uses = 1
-				technology = late_war_small_airframe
+				technology = modern_small_airframe
 			}
 		}
 	}
