@@ -83,8 +83,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 200
 			random_list = {
-				99 = { set_cosmetic_tag = BRA_third_republic }
-				1 = { set_cosmetic_tag = BRA_snek_third_republic }
+				90 = { set_cosmetic_tag = BRA_third_republic }
+				10 = { set_cosmetic_tag = BRA_snek_third_republic }
 			}
 		}
 	}

@@ -1132,6 +1132,12 @@
 				uses = 2
 				category = air_doctrine
 			}
+			add_tech_bonus = {
+				name = JAP_lessons
+				bonus = 0.75
+				uses = 1
+				technology = light_air
+			}
 			air_experience = -25
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = JAP_air2_prop
@@ -1154,7 +1160,18 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			add_ideas = GER_fast_bombers 
+			add_tech_bonus = {
+				name = JAP_lessons
+				bonus = 0.50
+				uses = 2
+				category = medium_air
+			}
+			add_tech_bonus = {
+				name = JAP_lessons
+				bonus = 0.50
+				uses = 2
+				category = light_air
+			}
 			air_experience = -25
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = JAP_air2_prop
@@ -2334,6 +2351,112 @@
 				type = annex_everything
 			}
 			hidden_effect = {
+				MAN = {
+					declare_war_on = {
+						target = ENG
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = AST
+						type = annex_everything
+					}
+					if = {
+						limit = {
+							NZL = { exists = yes }
+						}
+						declare_war_on = {
+							target = NZL
+							type = annex_everything
+						}
+					}
+					declare_war_on = {
+						target = RAJ
+						type = annex_everything
+					}
+					create_wargoal = {
+						target = CAN
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = SAF
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = MAL
+						type = annex_everything
+					}
+					if = {
+						limit = {
+							INS = { exists = yes }
+						}
+						declare_war_on = {
+							target = INS
+							type = annex_everything
+						}
+					}
+					random_country = { 
+						limit = { original_tag = HOL  has_government = democratic}
+						JAP = {
+							declare_war_on = {
+								target = PREV
+								type = annex_everything
+							}
+						}	
+					}
+				}
+				SIA = {
+					declare_war_on = {
+						target = ENG
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = AST
+						type = annex_everything
+					}
+					if = {
+						limit = {
+							NZL = { exists = yes }
+						}
+						declare_war_on = {
+							target = NZL
+							type = annex_everything
+						}
+					}
+					declare_war_on = {
+						target = RAJ
+						type = annex_everything
+					}
+					create_wargoal = {
+						target = CAN
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = SAF
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = MAL
+						type = annex_everything
+					}
+					if = {
+						limit = {
+							INS = { exists = yes }
+						}
+						declare_war_on = {
+							target = INS
+							type = annex_everything
+						}
+					}
+					random_country = { 
+						limit = { original_tag = HOL  has_government = democratic}
+						JAP = {
+							declare_war_on = {
+								target = PREV
+								type = annex_everything
+							}
+						}	
+					}
+				}
 				if = {
 					limit = {
 						has_country_flag = JAP_usa1
@@ -2345,6 +2468,26 @@
 					declare_war_on = {
 						target = PHI
 						type = annex_everything 
+					}
+					MAN = {
+						declare_war_on = {
+							target = USA
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = PHI
+							type = annex_everything 
+						}
+					}
+					SIA = {
+						declare_war_on = {
+							target = USA
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = PHI
+							type = annex_everything 
+						}
 					}
 					if = {
 						limit = {
@@ -2589,8 +2732,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect_bba
-			hidden_effect = { set_technology = { suicide_charge = 1 popup = no} }
+			custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
+			hidden_effect = { set_technology = { suicide_craft = 1 } }
 		}
 	}
 	
@@ -3847,12 +3990,12 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			 add_tech_bonus = {
-			 	name = JAP_zero
-			 	bonus = 1
-			 	ahead_reduction = 1.0
-			 	uses = 1
-			 	technology = improved_small_airframe			
+			add_tech_bonus = {
+				name = JAP_zero
+				bonus = 1
+				ahead_reduction = 1.0
+				uses = 1
+				technology = cv_fighter2			
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = mitsubishi
@@ -3893,16 +4036,16 @@
 				name = JAP_bomber_modernization
 				bonus = 0.5
 				uses = 2
-				category = tactical_bomber		
+				category = naval_bomber			
 			}
 			add_tech_bonus = {
 				name = JAP_bomber_modernization
 				bonus = 0.75
 				ahead_reduction = 1.0
 				uses = 1
-				technology = improved_medium_airframe		
-				technology = advanced_medium_airframe	
-				technology = late_war_medium_airframe	
+				technology = naval_bomber2		
+				technology = naval_bomber3	
+				technology = naval_bomber4	
 			}
 		}
 	}
@@ -3937,10 +4080,10 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_strategic_bomber_effort
-				bonus = 0.75
+				bonus = 0.5
 				uses = 2
-				technology = advanced_small_airframe	
-				technology = late_war_small_airframe
+				technology = cv_fighter3	
+				technology = cv_fighter4
 			}
 		}
 	}
@@ -3977,52 +4120,4 @@
 		}
 	}
 
-	focus = {
-		id = JAP_war_with_SOV
-		icon = GFX_goal_anti_comintern_pact
-		prerequisite = { focus = JAP_strike_the_west }
-		x = -3
-		y = 1
-		relative_position_id = JAP_strike_the_west
-
-		cost = 5
-
-		# allow_branch = {
-		# 	has_game_rule = {
-		# 		rule = ussr_war_focus_only
-		# 		option = ENABLED
-		# 	}
-		# }
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-			# singapore
-			336 = { controller = { is_in_faction_with = JAP } }
-			# india
-			RAJ = { has_capitulated = yes }
-			# australia
-			AST = { has_capitulated = yes }
-			# new zealand
-			284 = { controller = { is_in_faction_with = JAP } } # north island
-			723 = { controller = { is_in_faction_with = JAP } } # south island
-			# philipphines
-			327 = { controller = { is_in_faction_with = JAP } } # manila
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			create_wargoal = {
-				target = SOV
-				type = annex_everything
-			}
-		}
-	}
-	
 }

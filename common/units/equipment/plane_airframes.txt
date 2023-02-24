@@ -59,9 +59,9 @@ small_plane_airframe = {
 		}
 
 		fixed_auxiliary_weapon_slot_1 = { 
-			required = no
+			required = yes
 			allowed_module_categories = {
-				#recon_camera
+				recon_camera
 				fighter_weapon_secondary
 				#cas_weapon
 				nav_bomber_weapon
@@ -280,11 +280,11 @@ small_plane_airframe_1 = { #Basic
 		}
 
 		fixed_auxiliary_weapon_slot_1 = { 
-			required = no
+			required = yes
 			allowed_module_categories = {
 				recon_camera
 				fighter_weapon_secondary
-				#cas_weapon
+				cas_weapon
 				nav_bomber_weapon
 				#kamikaze_bomber_weapon
 				special_bombs
@@ -361,12 +361,12 @@ small_plane_airframe_2 = { #Improved
 		}
 
 		fixed_auxiliary_weapon_slot_1 = { 
-			required = no
+			required = yes
 			allowed_module_categories = {
 				recon_camera
 				fighter_weapon_secondary
-				mine_warfare_offense
 				nav_bomber_weapon
+				special_bombs
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
@@ -378,7 +378,6 @@ small_plane_airframe_2 = { #Improved
 				cas_weapon
 				special_bombs
 				#nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
 		}
@@ -474,13 +473,13 @@ small_plane_airframe_3 = { #Advanced
 		}
 
 		fixed_auxiliary_weapon_slot_1 = { 
-			required = no
+			required = yes
 			allowed_module_categories = {
 				recon_camera
 				fighter_weapon_secondary
 				cas_weapon
+				special_bombs
 				nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
 		}
@@ -491,7 +490,6 @@ small_plane_airframe_3 = { #Advanced
 				fighter_weapon_secondary
 				cas_weapon
 				#nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 				special_bombs
 			}
@@ -596,14 +594,14 @@ small_plane_airframe_4 = { #modern
 		}
 
 		fixed_auxiliary_weapon_slot_1 = { 
-			required = no
+			required = yes
 			allowed_module_categories = {
 				recon_camera
 				fighter_weapon_secondary
 				cas_weapon
 				nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
+				special_bombs
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
@@ -619,7 +617,6 @@ small_plane_airframe_4 = { #modern
 				fighter_weapon_secondary
 				cas_weapon
 				nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
 		}
@@ -629,7 +626,6 @@ small_plane_airframe_4 = { #modern
 				recon_camera
 				fighter_weapon_secondary
 				nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
 		}
@@ -756,7 +752,6 @@ medium_plane_airframe = {
 		fixed_auxiliary_weapon_slot_1 = { 
 			required = no
 			allowed_module_categories = {
-				mine_warfare_offense
 				recon_camera
 				tac_weapon
 				fighter_weapon
@@ -795,7 +790,6 @@ medium_plane_airframe = {
 		special_type_slot_1 = {
 			required = no
 			allowed_module_categories = {
-				mine_warfare_defense
 				plane_ammunition
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
@@ -809,7 +803,6 @@ medium_plane_airframe = {
 		special_type_slot_2 = {
 			required = no
 			allowed_module_categories = {
-				mine_warfare_defense
 				plane_ammunition
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
@@ -823,7 +816,6 @@ medium_plane_airframe = {
 		special_type_slot_3 = {
 			required = no
 			allowed_module_categories = {
-				mine_warfare_defense
 				plane_ammunition
 				plane_special_module_bomb_sights
 				plane_special_module_radio_navigation
@@ -1013,7 +1005,6 @@ medium_plane_airframe_1 = { #Basic
 				fighter_weapon
 				cas_weapon
 				#nav_bomber_weapon
-				mine_warfare_offense
 				torpedo_mounting_medium
 			}
 		}
@@ -1053,7 +1044,6 @@ medium_plane_airframe_1 = { #Basic
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}
@@ -1067,7 +1057,6 @@ medium_plane_airframe_1 = { #Basic
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}
@@ -1080,7 +1069,6 @@ medium_plane_airframe_1 = { #Basic
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}
@@ -1134,7 +1122,6 @@ medium_plane_airframe_2 = { #Improved
 				fighter_weapon
 				cas_weapon
 				#nav_bomber_weapon
-				mine_warfare_offense
 				torpedo_mounting_medium
 			}
 		}
@@ -1184,7 +1171,6 @@ medium_plane_airframe_2 = { #Improved
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_medium
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}
@@ -1198,7 +1184,6 @@ medium_plane_airframe_2 = { #Improved
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_medium
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}
@@ -1211,7 +1196,6 @@ medium_plane_airframe_2 = { #Improved
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_medium
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}	
@@ -1268,7 +1252,6 @@ medium_plane_airframe_3 = { #Advanced
 				tac_weapon
 				cas_weapon
 				#nav_bomber_weapon
-				mine_warfare_offense
 				torpedo_mounting_medium
 			}
 		}
@@ -1280,7 +1263,6 @@ medium_plane_airframe_3 = { #Advanced
 				tac_weapon
 				cas_weapon
 				#nav_bomber_weapon
-				mine_warfare_offense
 			}
 		}
 		fixed_auxiliary_weapon_slot_3 = { 
@@ -1320,7 +1302,6 @@ medium_plane_airframe_3 = { #Advanced
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_medium
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}
@@ -1334,7 +1315,6 @@ medium_plane_airframe_3 = { #Advanced
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_medium
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}
@@ -1347,7 +1327,6 @@ medium_plane_airframe_3 = { #Advanced
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_medium
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}
@@ -1405,7 +1384,6 @@ medium_plane_airframe_4 = { #Modern
 				cas_weapon
 				#nav_bomber_weapon
 				tac_weapon
-				mine_warfare_offense
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
@@ -1416,7 +1394,6 @@ medium_plane_airframe_4 = { #Modern
 				fighter_weapon
 				#nav_bomber_weapon
 				tac_weapon
-				mine_warfare_offense
 				torpedo_mounting_medium
 			}
 		}
@@ -1457,7 +1434,6 @@ medium_plane_airframe_4 = { #Modern
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_medium
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}
@@ -1471,7 +1447,6 @@ medium_plane_airframe_4 = { #Modern
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_medium
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}
@@ -1484,7 +1459,6 @@ medium_plane_airframe_4 = { #Modern
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_medium
-				mine_warfare_defense
 				plane_special_module_fuel_injection_m
 			}
 		}
@@ -1591,7 +1565,6 @@ large_plane_airframe = {
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_large
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -1604,7 +1577,6 @@ large_plane_airframe = {
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_large
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -1617,7 +1589,6 @@ large_plane_airframe = {
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
 				plane_special_module_large
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -1808,7 +1779,6 @@ large_plane_airframe_1 = { #Basic
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -1821,7 +1791,6 @@ large_plane_airframe_1 = { #Basic
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -1833,7 +1802,6 @@ large_plane_airframe_1 = { #Basic
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -1917,7 +1885,6 @@ large_plane_airframe_2 = { #Improved
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -1930,7 +1897,6 @@ large_plane_airframe_2 = { #Improved
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -1942,7 +1908,6 @@ large_plane_airframe_2 = { #Improved
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -2026,7 +1991,6 @@ large_plane_airframe_3 = { #Advanced
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -2039,7 +2003,6 @@ large_plane_airframe_3 = { #Advanced
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -2051,7 +2014,6 @@ large_plane_airframe_3 = { #Advanced
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -2135,7 +2097,6 @@ large_plane_airframe_4 = { #Modern
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -2148,7 +2109,6 @@ large_plane_airframe_4 = { #Modern
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -2160,7 +2120,6 @@ large_plane_airframe_4 = { #Modern
 				plane_special_module_radio_navigation
 				plane_special_module_air_ground_radar
 				plane_special_module_air_air_radar
-				mine_warfare_defense
 				plane_special_module_fuel_injection_l
 			}
 		}
@@ -2500,7 +2459,6 @@ cv_small_plane_airframe_2 = { #Improved
 				fighter_weapon
 				cas_weapon
 				nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
 		}
@@ -2511,7 +2469,6 @@ cv_small_plane_airframe_2 = { #Improved
 				fighter_weapon
 				cas_weapon
 				nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
 		}
@@ -2603,7 +2560,6 @@ cv_small_plane_airframe_3 = { #Advanced
 				fighter_weapon
 				cas_weapon
 				nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
 		}
@@ -2614,7 +2570,6 @@ cv_small_plane_airframe_3 = { #Advanced
 				fighter_weapon
 				cas_weapon
 				nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
 		}
@@ -2712,7 +2667,6 @@ cv_small_plane_airframe_4 = { #modern
 				fighter_weapon
 				cas_weapon
 				nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
 		}
@@ -2723,7 +2677,6 @@ cv_small_plane_airframe_4 = { #modern
 				fighter_weapon
 				cas_weapon
 				nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
 		}
@@ -2734,7 +2687,6 @@ cv_small_plane_airframe_4 = { #modern
 				fighter_weapon
 				cas_weapon
 				nav_bomber_weapon
-				mine_warfare_offense
 				kamikaze_bomber_weapon
 			}
 		}
