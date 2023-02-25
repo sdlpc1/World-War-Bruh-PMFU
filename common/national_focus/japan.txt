@@ -4123,4 +4123,52 @@
 		}
 	}
 
+	focus = {
+		id = JAP_war_with_SOV
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = JAP_strike_the_west }
+		x = -3
+		y = 1
+		relative_position_id = JAP_strike_the_west
+
+		cost = 5
+
+		# allow_branch = {
+		# 	has_game_rule = {
+		# 		rule = ussr_war_focus_only
+		# 		option = ENABLED
+		# 	}
+		# }
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			# singapore
+			336 = { controller = { is_in_faction_with = JAP } }
+			# india
+			RAJ = { has_capitulated = yes }
+			# australia
+			AST = { has_capitulated = yes }
+			# new zealand
+			284 = { controller = { is_in_faction_with = JAP } } # north island
+			723 = { controller = { is_in_faction_with = JAP } } # south island
+			# philipphines
+			327 = { controller = { is_in_faction_with = JAP } } # manila
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+	}
+
 }

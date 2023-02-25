@@ -1,9 +1,9 @@
-SPR_historical = {
-	name = "SPR historical plan"
-	desc = "Essentially historical behaviour for SPR"
+PHI_historical = {
+	name = "PHI historical plan"
+	desc = "Essentially historical behaviour for PHI"
 
 	enable = {
-		original_tag = SPR
+		original_tag = PHI
 	}
 
 	ai_national_focuses = {

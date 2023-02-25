@@ -1,9 +1,9 @@
-SPR_historical = {
-	name = "SPR historical plan"
-	desc = "Essentially historical behaviour for SPR"
+GRE_historical = {
+	name = "GRE historical plan"
+	desc = "Essentially historical behaviour for GRE"
 
 	enable = {
-		original_tag = SPR
+		original_tag = GRE
 	}
 
 	ai_national_focuses = {

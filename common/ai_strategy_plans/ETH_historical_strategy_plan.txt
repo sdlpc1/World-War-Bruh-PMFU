@@ -1,9 +1,9 @@
-SPR_historical = {
-	name = "SPR historical plan"
-	desc = "Essentially historical behaviour for SPR"
+ETH_historical = {
+	name = "ETH historical plan"
+	desc = "Essentially historical behaviour for ETH"
 
 	enable = {
-		original_tag = SPR
+		original_tag = ETH
 	}
 
 	ai_national_focuses = {
