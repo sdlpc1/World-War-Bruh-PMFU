@@ -11,10 +11,7 @@ state={
 	history={
 		owner = TUR
 		buildings = {
-			infrastructure = 3
-			1005 = {
-				naval_base = 4
-			}
+			infrastructure = 6
 		}
 		add_core_of = TUR
 		add_extra_state_shared_building_slots = 3
