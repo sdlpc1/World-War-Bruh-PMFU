@@ -1538,10 +1538,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-						name = GER_air_doc
-						cost_reduction = 0.40
-						uses = 3
-						category = cat_battlefield_support
+				name = GER_air_doc
+				cost_reduction = 0.40
+				uses = 3
+				category = cat_battlefield_support
 			}
 		}
 	}
@@ -1583,10 +1583,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-						name = GER_air_doc
-						cost_reduction = 0.40
-						uses = 3
-						category = cat_operational_integrity
+				name = GER_air_doc
+				cost_reduction = 0.40
+				uses = 3
+				category = cat_operational_integrity
 			}
 		}
 	}
@@ -2531,7 +2531,7 @@ focus_tree = {
 		will_lead_to_war_with = POL
 		available = {
 			
-			is_puppet = no
+			is_puppet = no		
 			date > 1939.1.1	
 			#Make custom trigger tooltip here
 			85 = {
@@ -3842,6 +3842,7 @@ focus_tree = {
 					modules = {
 						main_armament_slot = tank_small_gun_1
 						turret_type_slot = tank_light_turret_1
+						suspension_type_slot = tank_bogie_suspension
 						armor_type_slot = tank_riveted_armor
 						engine_type_slot = tank_gasoline_engine
 					}
@@ -3854,6 +3855,7 @@ focus_tree = {
 					modules = {
 						main_armament_slot = tank_small_gun_2
 						turret_type_slot = tank_light_turret_2
+						suspension_type_slot = tank_bogie_suspension
 						armor_type_slot = tank_riveted_armor
 						engine_type_slot = tank_gasoline_engine
 					}

@@ -8,7 +8,7 @@ political_actions = {
 
 		available = {
 			date > 1939.1.1
-			NZL = {is_ai = YES}
+			NZL = {is_ai = yes}
 		}
 
 		ai_will_do = {

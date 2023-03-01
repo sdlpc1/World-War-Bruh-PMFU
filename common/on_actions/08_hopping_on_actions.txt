@@ -360,6 +360,19 @@ on_actions = {
 							}
 						}
 						PACIFIC_COMMONWEALTH_bases_level_down = yes
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = FIN
+								tag = GER
+								tag = HUN
+								tag = ITA
+								tag = ROM
+								tag = SPR
+								tag = YUG
+							}
+						}
 						PACIFIC_COMMONWEALTH_AXIS_bases_level_down = yes
 					}
 				} else = {
@@ -426,6 +439,19 @@ on_actions = {
 							}
 						}
 						PACIFIC_COMMONWEALTH_bases_level_up = yes
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = FIN
+								tag = GER
+								tag = HUN
+								tag = ITA
+								tag = ROM
+								tag = SPR
+								tag = YUG
+							}
+						}
 						PACIFIC_COMMONWEALTH_AXIS_bases_level_up = yes
 					}
 				} else = {

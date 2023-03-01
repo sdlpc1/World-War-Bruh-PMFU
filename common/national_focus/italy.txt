@@ -2728,7 +2728,11 @@
 		}
 		
 		available = {
-			GRE = { has_capitulated = yes }
+			OR = {
+				GRE = { has_capitulated = yes }
+				NOT = {country_exists = GRE}
+			}
+			
 		}
 		
 		completion_reward = {
@@ -3213,7 +3217,7 @@
 		
 		available = {
 			OR = {
-				has_war = NO
+				has_war = no
 				has_war_with = ENG
 				has_war_with = FRA
 				has_war_with = SOV
@@ -5066,7 +5070,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			
+
 			add_doctrine_cost_reduction = {
 				name = GER_air_doc
 				cost_reduction = 0.40
@@ -5097,7 +5101,7 @@
 				name = bomber_bonus
 				bonus = 0.5
 				uses = 2
-				category = cat_strategic_bomber							
+				category = cat_strategic_bomber				
 			}
 		}
 	}

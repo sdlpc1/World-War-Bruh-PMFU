@@ -52,7 +52,7 @@ foreign_politics = {
 
 		available = {
 			MEX = { has_war = yes }
-			BRA = {is_ai = YES}
+			BRA = {is_ai = yes}
 			OR = {
 				ENG = {
 					has_war_with = JAP

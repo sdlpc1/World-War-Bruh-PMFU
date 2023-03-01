@@ -830,7 +830,7 @@ operations = {
 
 		available = {
 			FRA = { has_capitulated = yes }
-			IRE = {is_ai = YES}
+			IRE = {is_ai = yes}
 		}
 
 		ai_will_do = {
@@ -858,7 +858,7 @@ operations = {
 
 		available = {
 			FRA = { has_capitulated = yes }
-			SAF = {is_ai = YES}
+			SAF = {is_ai = yes}
 		}
 
 		ai_will_do = {

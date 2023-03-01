@@ -293,7 +293,7 @@ operations = {
 		}
 
 		available = {
-			MEX = {is_ai = YES}
+			MEX = {is_ai = yes}
 			OR = {
 				JAP = { has_war_with = ENG }
 				GER = { has_war_with = SOV }
@@ -333,7 +333,7 @@ operations = {
 		}
 
 		available = {
-			BRA = {is_ai = YES}
+			BRA = {is_ai = yes}
 			OR = {
 				JAP = { has_war_with = ENG }
 				GER = { has_war_with = SOV }

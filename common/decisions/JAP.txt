@@ -1402,7 +1402,7 @@ political_actions = {
 		available = {
 			date > 1939.1.1
 			NOT = { country_exists = CHI }
-			MAN = {is_ai = YES}
+			MAN = {is_ai = yes}
 		}
 
 		ai_will_do = {
@@ -1434,9 +1434,9 @@ political_actions = {
 		}
 
 		available = {
-			JAP = {is_ai = YES}
-			MAN = {is_ai = YES} 
-			CHI = { is_puppet = YES}
+			JAP = {is_ai = yes}
+			MAN = {is_ai = yes} 
+			CHI = { is_puppet = yes}
 		}
 
 		ai_will_do = {
@@ -1444,7 +1444,7 @@ political_actions = {
 		}
 
 		visible = {
-			JAP = {is_ai = YES}
+			JAP = {is_ai = yes}
 		}
 		fire_only_once = yes
 		complete_effect = {

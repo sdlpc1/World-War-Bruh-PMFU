@@ -170,7 +170,7 @@ foreign_politics = {
 
 		available = {
 			SOV = { has_completed_focus = SOV_claim_bessarabia }
-			MON = {is_ai = YES}
+			MON = {is_ai = yes}
 		}
 
 		ai_will_do = {
@@ -5195,7 +5195,7 @@ SOV_propaganda_campaigns = {
 
 
 
-###################GUA
+###################
 ### MIDDLE EAST ###
 ###################
 

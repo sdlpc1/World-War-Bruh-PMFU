@@ -127,7 +127,7 @@ political_actions = {
 
 		available = {
 			ITA = { has_war_with = ENG }
-			BUL = {is_ai = YES}
+			BUL = {is_ai = yes}
 		}
 
 		ai_will_do = {
