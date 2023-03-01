@@ -243,12 +243,6 @@ technologies = {
 
 				OR = {
 					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 
@@ -1302,12 +1296,6 @@ technologies = {
 
 				OR = {
 					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 			modifier = {
@@ -1969,6 +1957,10 @@ technologies = {
 				defence = 0.05
 				movement = 0.1
 			}
+			max_strength = 1
+		}
+		category_militia= {
+			max_strength = 1
 		}
 		
 		allow = {

@@ -1436,30 +1436,30 @@ leader_traits = {
 			tag = CHI
 			generate_wargoal_tension_against = 0.75
 		}
-		targeted_modifier = {
-			tag = PRC
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = SHX
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = GXC
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = YUN
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = XSM
-			generate_wargoal_tension_against = 0.75
-		}
-		targeted_modifier = {
-			tag = SIK
-			generate_wargoal_tension_against = 0.75
-		}
+		# targeted_modifier = {
+		# 	tag = PRC
+		# 	generate_wargoal_tension_against = 0.75
+		# }
+		# targeted_modifier = {
+		# 	tag = SHX
+		# 	generate_wargoal_tension_against = 0.75
+		# }
+		# targeted_modifier = {
+		# 	tag = GXC
+		# 	generate_wargoal_tension_against = 0.75
+		# }
+		# targeted_modifier = {
+		# 	tag = YUN
+		# 	generate_wargoal_tension_against = 0.75
+		# }
+		# targeted_modifier = {
+		# 	tag = XSM
+		# 	generate_wargoal_tension_against = 0.75
+		# }
+		# targeted_modifier = {
+		# 	tag = SIK
+		# 	generate_wargoal_tension_against = 0.75
+		# }
 
 		ai_will_do = {
 			factor = 1
@@ -2665,7 +2665,7 @@ leader_traits = {
 		random = no
 		production_factory_efficiency_gain_factor = -0.1
 		consumer_goods_factor = 0.05
-		equipment_capture_factor = 0.25
+		# equipment_capture_factor = 0.25
 		neutrality_acceptance = 30
 		
 	}
@@ -2673,7 +2673,7 @@ leader_traits = {
 		random = no
 		production_factory_efficiency_gain_factor = -0.1
 		consumer_goods_factor = 0.05
-		equipment_capture_factor = 0.25
+		# equipment_capture_factor = 0.25
 		neutrality_acceptance = 30
 		stability_factor = 0.05
 		
@@ -2739,7 +2739,7 @@ leader_traits = {
 		random = no
 		production_factory_efficiency_gain_factor = 0
 		consumer_goods_factor = 0.1
-		equipment_capture_factor = 0.25
+		# equipment_capture_factor = 0.25
 		neutrality_acceptance = 30
 		stability_factor = 0.1
 		political_power_factor = 0.1

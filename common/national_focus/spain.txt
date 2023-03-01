@@ -1934,27 +1934,27 @@ focus_tree = {
 		id = SPA_absorb_the_portuguese_empire
 		available = {
 			OR = {
-				AND = {
-					country_exists = MZB
-					MZB = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				AND = {
-					country_exists = ANG
-					ANG = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				AND = {
-					country_exists = GNB
-					GNB = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
+				# AND = {
+				# 	country_exists = MZB
+				# 	MZB = {
+				# 		NOT = { is_subject_of = ROOT }
+				# 		NOT = { is_in_faction_with = ROOT }
+				# 	}
+				# }
+				# AND = {
+				# 	country_exists = ANG
+				# 	ANG = {
+				# 		NOT = { is_subject_of = ROOT }
+				# 		NOT = { is_in_faction_with = ROOT }
+				# 	}
+				# }
+				# AND = {
+				# 	country_exists = GNB
+				# 	GNB = {
+				# 		NOT = { is_subject_of = ROOT }
+				# 		NOT = { is_in_faction_with = ROOT }
+				# 	}
+				# }
 				AND = {
 					country_exists = BRA
 					BRA = {
@@ -1991,48 +1991,48 @@ focus_tree = {
 				    expire = 0
 				}
 			}
-			if = {
-				limit = {
-					country_exists = MZB
-					MZB = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = MZB
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					country_exists = ANG
-					ANG = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = ANG
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					country_exists = GNB
-					GNB = {
-						NOT = { is_subject_of = ROOT }
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = GNB
-				    expire = 0
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		country_exists = MZB
+			# 		MZB = {
+			# 			NOT = { is_subject_of = ROOT }
+			# 			NOT = { is_in_faction_with = ROOT }
+			# 		}
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = MZB
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		country_exists = ANG
+			# 		ANG = {
+			# 			NOT = { is_subject_of = ROOT }
+			# 			NOT = { is_in_faction_with = ROOT }
+			# 		}
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = ANG
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		country_exists = GNB
+			# 		GNB = {
+			# 			NOT = { is_subject_of = ROOT }
+			# 			NOT = { is_in_faction_with = ROOT }
+			# 		}
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = GNB
+			# 	    expire = 0
+			# 	}
+			# }
 		}
 	}
 

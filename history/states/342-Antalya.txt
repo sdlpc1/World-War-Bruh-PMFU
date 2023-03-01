@@ -2,7 +2,7 @@
 state={
 	id=342
 	name="STATE_342" # Antalya
-	manpower = 362689
+	manpower = 1 #362689
 	resources={
 		chromium=350 # was: 46
 	}

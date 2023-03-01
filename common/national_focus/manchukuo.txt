@@ -84,7 +84,7 @@
 			hidden_effect = {
 				every_owned_state = {
 					limit = {
-						is_core_of = PRC
+						is_core_of = CHI
 					}
 					add_compliance = -100
 				}
@@ -1760,12 +1760,12 @@
 		cost = 5
 
 		available = {
-			NOT = { country_exists = PRC }
+			# NOT = { country_exists = PRC }
 			NOT = { country_exists = CHI }
-			NOT = { country_exists = XSM }
-			NOT = { country_exists = GXC }
-			NOT = { country_exists = SHX }
-			NOT = { country_exists = YUN }
+			# NOT = { country_exists = XSM }
+			# NOT = { country_exists = GXC }
+			# NOT = { country_exists = SHX }
+			# NOT = { country_exists = YUN }
 		}	
 
 		cancel_if_invalid = yes
@@ -2046,15 +2046,15 @@
 		cost = 5
 
 		available = {
-			NOT = { country_exists = PRC }
+			# NOT = { country_exists = PRC }
 			NOT = { country_exists = CHI }
-			NOT = { country_exists = XSM }
-			NOT = { country_exists = GXC }
-			NOT = { country_exists = SHX }
-			NOT = { country_exists = YUN }
+			# NOT = { country_exists = XSM }
+			# NOT = { country_exists = GXC }
+			# NOT = { country_exists = SHX }
+			# NOT = { country_exists = YUN }
 			any_state = {
 				is_core_of = CHI
-				NOT = { is_core_of = SIK }
+				#NOT = { is_core_of = SIK }
 				is_coastal = no
 				is_owned_by = MAN
 			}

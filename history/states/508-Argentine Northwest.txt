@@ -2,18 +2,18 @@
 state={
 	id=508
 	name="STATE_508" # Tucuman
-	manpower = 781311
+	manpower = 1 #781311
 	
 	state_category = rural
 
 	history={
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-		}
-		victory_points = {
-			8216 1 
-		}
+		# buildings = {
+		# 	infrastructure = 3
+		# 	industrial_complex = 1
+		# }
+		# victory_points = {
+		# 	8216 1 
+		# }
 
 	}
 

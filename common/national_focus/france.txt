@@ -2477,12 +2477,12 @@
 			add_state_core = 459
 			add_state_core = 460
 			add_state_core = 513
-			if = {
-				limit = {
-					country_exists = ALG
-				}
-				annex_country = { target = ALG }
-			}
+			# if = {
+			# 	limit = {
+			# 		country_exists = ALG
+			# 	}
+			# 	annex_country = { target = ALG }
+			# }
 			FRA_right_wing_riot_effect = yes
 			add_stability = 0.08
 		}

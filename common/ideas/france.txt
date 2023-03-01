@@ -1185,7 +1185,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				equipment_capture = 0.35
+				# equipment_capture = 0.35
 			}
 		}
 		FRA_colonial_recruitment = {

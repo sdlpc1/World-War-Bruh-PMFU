@@ -1116,7 +1116,9 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.10
-			equipment_capture_factor = 0.05
+			max_strength = 5
+			default_morale = 0.1
+			# equipment_capture_factor = 0.05
 		}
 		
 		path = {
@@ -1160,7 +1162,9 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.10
-			equipment_capture_factor = 0.05
+			# equipment_capture_factor = 0.05
+			max_strength = 5
+			default_morale = 0.1
 		}
 		
 		path = {
@@ -1203,7 +1207,9 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.10
-			equipment_capture_factor = 0.05
+			# equipment_capture_factor = 0.05
+			max_strength = 5
+			default_morale = 0.1
 		}
 
 		research_cost = 1.5

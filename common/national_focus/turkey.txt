@@ -589,7 +589,7 @@
 
 		bypass = {
 			AND = {
-				AFG = { exists = no }
+				# AFG = { exists = no }
 				PER = { exists = no }
 				IRQ = { exists = no }
 			}
@@ -597,24 +597,24 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			if = {
-				limit = {
-					AFG = { 
-						exists = yes
-						is_puppet = no 
-					}
-				}
-				AFG = { country_event = { id = bftb_turkey.23 } }
-			}
-			if = {
-				limit = {
-					EGY = { 
-						exists = yes
-						is_puppet = no 
-					}
-				}
-				EGY = { country_event = { id = bftb_turkey.23 } }
-			}
+			# if = {
+			# 	limit = {
+			# 		AFG = { 
+			# 			exists = yes
+			# 			is_puppet = no 
+			# 		}
+			# 	}
+			# 	AFG = { country_event = { id = bftb_turkey.23 } }
+			# }
+			# if = {
+			# 	limit = {
+			# 		EGY = { 
+			# 			exists = yes
+			# 			is_puppet = no 
+			# 		}
+			# 	}
+			# 	EGY = { country_event = { id = bftb_turkey.23 } }
+			# }
 			if = {
 				limit = {
 					PER = { 
@@ -633,15 +633,15 @@
 				}
 				IRQ = { country_event = { id = bftb_turkey.23 } }
 			}
-			if = {
-				limit = {
-					SYR = { 
-						exists = yes
-						is_puppet = no 
-					}
-				}
-				SYR = { country_event = { id = bftb_turkey.23 } }
-			}
+			# if = {
+			# 	limit = {
+			# 		SYR = { 
+			# 			exists = yes
+			# 			is_puppet = no 
+			# 		}
+			# 	}
+			# 	SYR = { country_event = { id = bftb_turkey.23 } }
+			# }
 			add_war_support = 0.05
 		}
 	}
@@ -877,7 +877,7 @@
 			}
 			every_owned_state = {
 				limit = { 
-					is_core_of = KUR
+					# is_core_of = KUR
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -2038,10 +2038,10 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			if = {
-				limit = {
-					GEO = { exists = yes }
-				}
-				GEO = { country_event = { id = bftb_turkey.38 } }
+				# limit = {
+				# 	GEO = { exists = yes }
+				# }
+				# GEO = { country_event = { id = bftb_turkey.38 } }
 			}
 			else = { 
 				SOV = { country_event = { id = bftb_turkey.38 } }
@@ -2632,18 +2632,18 @@
 			custom_trigger_tooltip = { 
 				tooltip = TUR_no_faction_alliance_members_tt
 				AND = {
-					AFG = {
-						NOT = { is_in_faction_with = TUR }
-					}
+					# AFG = {
+					# 	NOT = { is_in_faction_with = TUR }
+					# }
 					PER = {
 						NOT = { is_in_faction_with = TUR }
 					}
 					IRQ = {
 						NOT = { is_in_faction_with = TUR }
 					}
-					SYR = {
-						NOT = { is_in_faction_with = TUR }
-					}
+					# SYR = {
+					# 	NOT = { is_in_faction_with = TUR }
+					# }
 				}
 			}
 		}
@@ -2655,7 +2655,7 @@
 					NOT = { has_completed_focus = TUR_treaty_of_saadabad }
 				}
 				effect_tooltip = {
-					puppet = AFG
+					# puppet = AFG
 					puppet = PER
 					puppet = IRQ
 				}
@@ -2663,14 +2663,14 @@
 			if = { 
 				limit = {
 					has_completed_focus = TUR_treaty_of_saadabad
-					AFG = {
-						AND = {
-							NOT = { is_in_faction_with = TUR }
-							has_country_flag = TUR_saadabad_pact_member
-						}
-					}
+					# AFG = {
+					# 	AND = {
+					# 		NOT = { is_in_faction_with = TUR }
+					# 		has_country_flag = TUR_saadabad_pact_member
+					# 	}
+					# }
 				}
-				effect_tooltip = { TUR = { puppet = AFG } }
+				# effect_tooltip = { TUR = { puppet = AFG } }
 			}
 			if = { 
 				limit = {
@@ -2699,26 +2699,26 @@
 			if = { 
 				limit = {
 					has_completed_focus = TUR_treaty_of_saadabad
-					SYR = {
-						AND = {
-							NOT = { is_in_faction_with = TUR }
-							has_country_flag = TUR_saadabad_pact_member
-						}
-					}
+					# SYR = {
+					# 	AND = {
+					# 		NOT = { is_in_faction_with = TUR }
+					# 		has_country_flag = TUR_saadabad_pact_member
+					# 	}
+					# }
 				}
-				effect_tooltip = { TUR = { puppet = SYR } }
+				# effect_tooltip = { TUR = { puppet = SYR } }
 			}
 			if = { 
 				limit = {
 					has_completed_focus = TUR_treaty_of_saadabad
-					AFG = {
-						AND = {
-							is_in_faction_with = TUR
-							has_country_flag = TUR_saadabad_pact_member
-						}
-					}
+					# AFG = {
+					# 	AND = {
+					# 		is_in_faction_with = TUR
+					# 		has_country_flag = TUR_saadabad_pact_member
+					# 	}
+					# }
 				}
-				TUR = { puppet = AFG }
+				# TUR = { puppet = AFG }
 			}
 			if = { 
 				limit = {
@@ -2747,14 +2747,14 @@
 			if = { 
 				limit = {
 					has_completed_focus = TUR_treaty_of_saadabad
-					SYR = {
-						AND = {
-							is_in_faction_with = TUR
-							has_country_flag = TUR_saadabad_pact_member
-						}
-					}
+					# SYR = {
+					# 	AND = {
+					# 		is_in_faction_with = TUR
+					# 		has_country_flag = TUR_saadabad_pact_member
+					# 	}
+					# }
 				}
-				TUR = { puppet = SYR }
+				# TUR = { puppet = SYR }
 			}
 		}
 	}
@@ -8141,7 +8141,7 @@
 		completion_reward = {
 			effect_tooltip = {
 				every_state = {
-					limit = { is_core_of = KUR }
+					# limit = { is_core_of = KUR }
 					add_core_of = TUR
 				}
 			}
@@ -8306,32 +8306,10 @@
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = SIK
-						is_core_of = XSM
 						is_core_of = MON
-						is_core_of = MEN
-						is_core_of = TAN
 					}
 				}
 				add_claim_by = TUR
-			}
-			if = { 
-				limit = {
-					SIK = { exists = yes }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = SIK
-				}
-			}
-			if = { 
-				limit = {
-					XSM = { exists = yes }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = XSM
-				}
 			}
 			if = { 
 				limit = {
@@ -8342,24 +8320,15 @@
 					target = MON
 				}
 			}
-			if = { 
-				limit = {
-					MEN = { exists = yes }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = MEN
-				}
-			}
-			if = { 
-				limit = {
-					TAN = { exists = yes }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = TAN
-				}
-			}
+			# if = { 
+			# 	limit = {
+			# 		MEN = { exists = yes }
+			# 	}
+			# 	create_wargoal = {
+			# 		type = annex_everything
+			# 		target = MEN
+			# 	}
+			# }
 		}
 	}
 

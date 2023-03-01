@@ -2970,12 +2970,3 @@ soundeffect = {
 	max_audible = 3
 	max_audible_behaviour = fail
 }
-soundeffect = {
-	name = "alert_naval_invasion_sound"
-	volume = 3
-	sounds = {
-		sound = "no_alert_01"
-	}
-	max_audible = 3
-	max_audible_behaviour = fail
-}

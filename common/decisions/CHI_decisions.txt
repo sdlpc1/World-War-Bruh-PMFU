@@ -472,13 +472,13 @@ war_measures = {
 					damage = 3
 				}
 			}
-			random_country = {
-				limit = {
-					PRC_has_low_popular_support = yes
-				}
+			# random_country = {
+			# 	limit = {
+			# 		PRC_has_low_popular_support = yes
+			# 	}
 
-				PRC_low_popular_support_level_down = yes
-			}			
+			# 	PRC_low_popular_support_level_down = yes
+			# }			
 		}
 	}
 
@@ -550,7 +550,7 @@ war_measures = {
 						}
 					}
 					AND = {
-						any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN is_controlled_by = MEN } }
+						any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN } }
 						is_controlled_by = CHI
 					}
 									
@@ -665,7 +665,7 @@ war_measures = {
 						}
 					}
 					AND = {
-						any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN is_controlled_by = MEN } }
+						any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN } }
 						is_controlled_by = CHI
 					}
 					
@@ -775,7 +775,7 @@ war_measures = {
 						}
 					}	
 					AND = {
-						any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN is_controlled_by = MEN } }
+						any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN } }
 						is_controlled_by = CHI
 					}
 					

@@ -2,7 +2,7 @@
 state={
 	id=666
 	name="STATE_666" # Lappland
-	manpower = 415327
+	manpower = 1 #415327
 	resources={
 		tungsten=1100 # was: 70
 		steel= 200 # was: 80

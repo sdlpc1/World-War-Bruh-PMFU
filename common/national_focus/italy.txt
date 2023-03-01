@@ -986,7 +986,13 @@
 			}
 			every_owned_state = {
 				limit = {
-					is_core_of = LBA
+					state = 448
+					state = 661
+					state = 449
+					state = 662
+					state = 450
+					state = 663
+					state = 451
 				}
 				add_compliance = 10
 			}
@@ -1386,7 +1392,9 @@
 			}
 			every_owned_state = {
 				limit = {
-					is_core_of = ETH
+					state = 550
+					state = 271
+					state = 559
 				}
 				add_compliance = 10
 			}
@@ -1491,7 +1499,9 @@
 		completion_reward = {
 			every_owned_state = {
 				limit = {
-					is_core_of = ETH
+					state = 550
+					state = 271
+					state = 559
 				}
 				add_compliance = 40
 			}
@@ -2591,20 +2601,22 @@
 		}
 		
 		completion_reward = {
-			104 = {
-				add_core_of = CRO
-			}
+			# 104 = {
+			# 	add_core_of = CRO
+			# }
 			every_controlled_state = {
 				limit = {
 					is_core_of = YUG
-					NOT = { is_core_of = CRO }
+					NOT = { state = 103 state = 109 state = 104 }
 					NOT = { is_core_of = ITA }
 				}
 				add_dynamic_modifier = { modifier = autonomous_state }
 			}
 			every_controlled_state = {
 				limit = {
-					is_core_of = CRO
+					state = 103
+					state = 109
+					state = 104
 					NOT = { is_core_of = ITA }
 				}
 				add_dynamic_modifier = { modifier = semi_autonomous_state }

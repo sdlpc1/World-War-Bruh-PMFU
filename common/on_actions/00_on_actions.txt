@@ -1050,8 +1050,8 @@ on_actions = {
 			if = {
 				limit = {
 					OR = {
-						original_tag = DDR
-						original_tag = WGR
+						# original_tag = DDR
+						# original_tag = WGR
 						original_tag = GER
 					}
 					has_government = communism
@@ -1078,8 +1078,8 @@ on_actions = {
 			if = {
 				limit = {
 					OR = {
-						original_tag = DDR
-						original_tag = WGR
+						# original_tag = DDR
+						# original_tag = WGR
 						original_tag = GER
 					}
 					has_government = communism
@@ -1267,22 +1267,22 @@ on_actions = {
 					}
 				}
 			}
-			PRC = {
-				if = {
-					limit = {
-						has_dlc = "Waking the Tiger"
-						has_game_rule = {
-							rule = PRC_ai_behavior
-							option = RANDOM
-						}
-					}
-					random_list = {
-						34 = { PRC = { set_country_flag = PRC_AI_RANDOM_HISTORICAL } }
-						33 = { PRC = { set_country_flag = PRC_AI_RANDOM_ALTERNATE_1 } }
-						33 = { PRC = { set_country_flag = PRC_AI_RANDOM_ALTERNATE_2 } }
-					}
-				}
-			}
+			# PRC = {
+			# 	if = {
+			# 		limit = {
+			# 			has_dlc = "Waking the Tiger"
+			# 			has_game_rule = {
+			# 				rule = PRC_ai_behavior
+			# 				option = RANDOM
+			# 			}
+			# 		}
+			# 		random_list = {
+			# 			34 = { PRC = { set_country_flag = PRC_AI_RANDOM_HISTORICAL } }
+			# 			33 = { PRC = { set_country_flag = PRC_AI_RANDOM_ALTERNATE_1 } }
+			# 			33 = { PRC = { set_country_flag = PRC_AI_RANDOM_ALTERNATE_2 } }
+			# 		}
+			# 	}
+			# }
 			SOV = {
 				if = {
 					limit = {

@@ -1291,70 +1291,70 @@ on_actions = {
 		}
 
 		# In case of historical split of N and S Korea try to locate the correct leaders
-		effect = {
-			IF = {
-				limit = {
-					original_tag = KOR
-					has_government = democratic
-					NOT = { 
-						has_country_leader = {
-							name = "Syngman Rhee"
-							ruling_only = no
-						}
-					}
-				}
+		# effect = {
+		# 	IF = {
+		# 		limit = {
+		# 			original_tag = KOR
+		# 			has_government = democratic
+		# 			NOT = { 
+		# 				has_country_leader = {
+		# 					name = "Syngman Rhee"
+		# 					ruling_only = no
+		# 				}
+		# 			}
+		# 		}
 				
-				random_other_country = {
-					limit = {
-						original_tag = KOR
-						has_country_leader = {
-							name = "Syngman Rhee"
-							ruling_only = no
-						}
-						NOT = { has_government = democratic }
-					}
-					every_character = {
-						limit = {
-							has_ideology_group = democratic
-						}
-						set_nationality =  ROOT
-					}	
-				}
-				retire_country_leader = yes
+		# 		random_other_country = {
+		# 			limit = {
+		# 				original_tag = KOR
+		# 				has_country_leader = {
+		# 					name = "Syngman Rhee"
+		# 					ruling_only = no
+		# 				}
+		# 				NOT = { has_government = democratic }
+		# 			}
+		# 			every_character = {
+		# 				limit = {
+		# 					has_ideology_group = democratic
+		# 				}
+		# 				set_nationality =  ROOT
+		# 			}	
+		# 		}
+		# 		retire_country_leader = yes
 				
-			}
-			IF = {
-				limit = {
-					original_tag = KOR
-					has_government = communism
-					NOT = { 
-						has_country_leader = {
-							name = "Kim Il-sung"
-							ruling_only = no
-						}
-					}
-				}
+		# 	}
+		# 	IF = {
+		# 		limit = {
+		# 			original_tag = KOR
+		# 			has_government = communism
+		# 			NOT = { 
+		# 				has_country_leader = {
+		# 					name = "Kim Il-sung"
+		# 					ruling_only = no
+		# 				}
+		# 			}
+		# 		}
 				
-				random_other_country = {
-					limit = {
-						original_tag = KOR
-						has_country_leader = {
-							name = "Kim Il-sung"
-							ruling_only = no
-						}
-						NOT = { has_government = communism }
-					}
-					every_character = {
-						limit = {
-							has_ideology_group = communism
-						}
-						set_nationality =  ROOT
-					}	
-				}
-				retire_country_leader = yes
+		# 		random_other_country = {
+		# 			limit = {
+		# 				original_tag = KOR
+		# 				has_country_leader = {
+		# 					name = "Kim Il-sung"
+		# 					ruling_only = no
+		# 				}
+		# 				NOT = { has_government = communism }
+		# 			}
+		# 			every_character = {
+		# 				limit = {
+		# 					has_ideology_group = communism
+		# 				}
+		# 				set_nationality =  ROOT
+		# 			}	
+		# 		}
+		# 		retire_country_leader = yes
 				
-			}
-		}
+		# 	}
+		# }
 
 		#Italian Confederation -> Add NS to new subjects
 		# effect = {

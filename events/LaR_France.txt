@@ -461,39 +461,46 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.2.a
-		if = {
-			limit = {
-				ALG = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = ALG }
-		}
-		if = {
-			limit = {
-				TUN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = TUN }
-		}
-		if = {
-			limit = {
-				MOR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = MOR }
-		}
+		# if = {
+		# 	limit = {
+		# 		ALG = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = ALG }
+		# }
+		# if = {
+		# 	limit = {
+		# 		TUN = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = TUN }
+		# }
+		# if = {
+		# 	limit = {
+		# 		MOR = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = MOR }
+		# }
 		every_owned_state = {
 			limit = {
 				OR = {
-					is_core_of = ALG
-					is_core_of = TUN
-					is_core_of = MOR
+					state = 699
+					state = 783
+					state = 462
+					state = 461
+					state = 290
+					state = 513
+					state = 459
+					state = 460
+					state = 458
+					state = 665
 				}
 			}
 			add_core_of = ROOT
@@ -510,56 +517,63 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.3.a
-		if = {
-			limit = {
-				ALG = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = ALG
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				TUN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = TUN
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				MOR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = MOR
-					autonomy_state = autonomy_free
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		ALG = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = ALG
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		TUN = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = TUN
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		MOR = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = MOR
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
 		every_owned_state = {
 			limit = {
 				is_controlled_by = ROOT
 				NOT = { is_core_of = ROOT }
 				OR = {
-					is_core_of = ALG
-					is_core_of = TUN
-					is_core_of = MOR
+					state = 699
+					state = 783
+					state = 462
+					state = 461
+					state = 290
+					state = 513
+					state = 459
+					state = 460
+					state = 458
+					state = 665
 				}
 			}
 			add_resistance_target = {
@@ -579,99 +593,105 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.2.a
-		if = {
-			limit = {
-				SEN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = SEN }
-		}
-		if = {
-			limit = {
-				MRT = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = MRT }
-		}
-		if = {
-			limit = {
-				GNA = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = GNA }
-		}
-		if = {
-			limit = {
-				MLI = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = MLI }
-		}
-		if = {
-			limit = {
-				IVO = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = IVO }
-		}
-		if = {
-			limit = {
-				VOL = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = VOL }
-		}
-		if = {
-			limit = {
-				NGR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = NGR }
-		}
-		if = {
-			limit = {
-				DAH = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = DAH }
-		}
-		if = {
-			limit = {
-				TOG = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = TOG }
-		}
+		# if = {
+		# 	limit = {
+		# 		SEN = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = SEN }
+		# }
+		# if = {
+		# 	limit = {
+		# 		MRT = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = MRT }
+		# }
+		# if = {
+		# 	limit = {
+		# 		GNA = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = GNA }
+		# }
+		# if = {
+		# 	limit = {
+		# 		MLI = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = MLI }
+		# }
+		# if = {
+		# 	limit = {
+		# 		IVO = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = IVO }
+		# }
+		# if = {
+		# 	limit = {
+		# 		VOL = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = VOL }
+		# }
+		# if = {
+		# 	limit = {
+		# 		NGR = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = NGR }
+		# }
+		# if = {
+		# 	limit = {
+		# 		DAH = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = DAH }
+		# }
+		# if = {
+		# 	limit = {
+		# 		TOG = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = TOG }
+		# }
 		every_owned_state = {
 			limit = {
 				OR = {
-					is_core_of = SEN
-					is_core_of = MRT
-					is_core_of = GNA
-					is_core_of = MLI
-					is_core_of = IVO
-					is_core_of = VOL
-					is_core_of = NGR
-					is_core_of = DAH
-					is_core_of = TOG
+					state = 557
+					state = 272
+					state = 556
+					state = 780
+					state = 781
+					state = 778
+					state = 779
+					state = 776
+					state = 777
+					state = 774
+					state = 660
+					state = 773
+					state = 539
+					state = 772
+					state = 268
 				}
 			}
 			add_core_of = ROOT
@@ -688,144 +708,150 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.3.a
-		if = {
-			limit = {
-				SEN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = SEN
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				MRT = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = MRT
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				GNA = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = GNA
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				MLI = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = MLI
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				IVO = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = IVO
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				VOL = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = VOL
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				NGR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = NGR
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				DAH = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = DAH
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				TOG = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = TOG
-					autonomy_state = autonomy_free
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		SEN = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = SEN
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		MRT = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = MRT
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		GNA = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = GNA
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		MLI = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = MLI
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		IVO = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = IVO
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		VOL = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = VOL
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		NGR = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = NGR
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		DAH = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = DAH
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		TOG = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = TOG
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
 		every_owned_state = {
 			limit = {
 				OR = {
-					is_core_of = TOG
-					is_core_of = DAH
-					is_core_of = NGR
-					is_core_of = IVO
-					is_core_of = VOL
-					is_core_of = SEN
-					is_core_of = MLI
-					is_core_of = GNA
-					is_core_of = MRT
+					state = 557
+					state = 272
+					state = 556
+					state = 780
+					state = 781
+					state = 778
+					state = 779
+					state = 776
+					state = 777
+					state = 774
+					state = 660
+					state = 773
+					state = 539
+					state = 772
+					state = 268
 				}
 			}
 			add_resistance_target = {
@@ -845,63 +871,63 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.2.a
-		if = {
-			limit = {
-				CHA = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = CHA }
-		}
-		if = {
-			limit = {
-				CMR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = CMR }
-		}
-		if = {
-			limit = {
-				CAR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = CAR }
-		}
-		if = {
-			limit = {
-				RCG = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = RCG }
-		}
-		if = {
-			limit = {
-				GAB = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = GAB }
-		}
-		every_owned_state = {
-			limit = {
-				OR = {
-					is_core_of = CHA
-					is_core_of = CMR
-					is_core_of = CAR
-					is_core_of = RCG
-					is_core_of = GAB
-				}
-			}
-			add_core_of = ROOT
-		}
+		# if = {
+		# 	limit = {
+		# 		CHA = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = CHA }
+		# }
+		# if = {
+		# 	limit = {
+		# 		CMR = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = CMR }
+		# }
+		# if = {
+		# 	limit = {
+		# 		CAR = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = CAR }
+		# }
+		# if = {
+		# 	limit = {
+		# 		RCG = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = RCG }
+		# }
+		# if = {
+		# 	limit = {
+		# 		GAB = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = GAB }
+		# }
+		# every_owned_state = {
+		# 	limit = {
+		# 		OR = {
+		# 			is_core_of = CHA
+		# 			is_core_of = CMR
+		# 			is_core_of = CAR
+		# 			is_core_of = RCG
+		# 			is_core_of = GAB
+		# 		}
+		# 	}
+		# 	add_core_of = ROOT
+		# }
 	}
 }
 
@@ -914,92 +940,92 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.3.a
-		if = {
-			limit = {
-				CHA = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = CHA
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				CMR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = CMR
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				CAR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = CAR
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				RCG = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = RCG
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				GAB = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = GAB
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		every_owned_state = {
-			limit = {
-				is_controlled_by = ROOT
-				OR = {
-					is_core_of = CHA
-					is_core_of = CMR
-					is_core_of = CAR
-					is_core_of = RCG
-					is_core_of = GAB
-				}
-			}
-			add_resistance_target = {
-				amount = 55
-				tooltip = LAR_fra_voted_independence_tt
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		CHA = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = CHA
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		CMR = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = CMR
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		CAR = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = CAR
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		RCG = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = RCG
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		GAB = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = GAB
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# every_owned_state = {
+		# 	limit = {
+		# 		is_controlled_by = ROOT
+		# 		OR = {
+		# 			is_core_of = CHA
+		# 			is_core_of = CMR
+		# 			is_core_of = CAR
+		# 			is_core_of = RCG
+		# 			is_core_of = GAB
+		# 		}
+		# 	}
+		# 	add_resistance_target = {
+		# 		amount = 55
+		# 		tooltip = LAR_fra_voted_independence_tt
+		# 	}
+		# }
 	}
 }
 
@@ -1012,29 +1038,31 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.2.a
-		if = {
-			limit = {
-				SYR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = SYR }
-		}
-		if = {
-			limit = {
-				LEB = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = LEB }
-		}
+		# if = {
+		# 	limit = {
+		# 		SYR = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = SYR }
+		# }
+		# if = {
+		# 	limit = {
+		# 		LEB = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = LEB }
+		# }
 		every_owned_state = {
 			limit = {
-				OR = {
-					is_core_of = SYR
-					is_core_of = LEB
+				OR = { # syria
+					state = 553
+					state = 554
+					state = 680
+					state = 677
 				}
 			}
 			add_core_of = ROOT
@@ -1051,40 +1079,42 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.3.a
-		if = {
-			limit = {
-				SYR = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = SYR
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				LEB = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = LEB
-					autonomy_state = autonomy_free
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		SYR = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = SYR
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		LEB = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = LEB
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
 		every_owned_state = {
 			limit = {
 				is_controlled_by = ROOT
 				OR = {
-					is_core_of = LEB
-					is_core_of = SYR
+					state = 553
+					state = 554
+					state = 680
+					state = 677
 				}
 			}
 			add_resistance_target = {
@@ -1103,39 +1133,40 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.2.a
-		if = {
-			limit = {
-				VIN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = VIN }
-		}
-		if = {
-			limit = {
-				LAO = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = LAO }
-		}
-		if = {
-			limit = {
-				CAM = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = CAM }
-		}
+		# if = {
+		# 	limit = {
+		# 		VIN = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = VIN }
+		# }
+		# if = {
+		# 	limit = {
+		# 		LAO = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = LAO }
+		# }
+		# if = {
+		# 	limit = {
+		# 		CAM = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	annex_country = { target = CAM }
+		# }
 		every_owned_state = {
 			limit = {
 				OR = {
-					is_core_of = VIN
-					is_core_of = LAO
-					is_core_of = CAM
+					state = 741
+					state = 286
+					state = 670
+					state = 671
 				}
 			}
 			add_core_of = ROOT
@@ -1152,55 +1183,56 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = lar_france_french_union.3.a
-		if = {
-			limit = {
-				VIN = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = VIN
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				LAO = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = LAO
-					autonomy_state = autonomy_free
-				}
-			}
-		}
-		if = {
-			limit = {
-				CAM = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = CAM
-					autonomy_state = autonomy_free
-				}
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		VIN = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = VIN
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		LAO = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = LAO
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		CAM = {
+		# 			exists = yes
+		# 			is_subject_of = ROOT
+		# 		}
+		# 	}
+		# 	OVERLORD = {
+		# 		set_autonomy = {
+		# 			target = CAM
+		# 			autonomy_state = autonomy_free
+		# 		}
+		# 	}
+		# }
 		every_owned_state = {
 			limit = {
 				is_controlled_by = ROOT
 				OR = {
-					is_core_of = CAM
-					is_core_of = VIN
-					is_core_of = LAO
+					state = 741
+					state = 286
+					state = 670
+					state = 671
 				}
 			}
 			add_resistance_target = {
@@ -1539,20 +1571,20 @@ country_event = {
 	}
 	option = {
 		name = FRA_central_africa_intervention.1.a
-		every_state = {
-			limit = {
-				OR = {
-					is_core_of = CHA
-					is_core_of = CMR
-					is_core_of = CAR
-					is_core_of = RCG
-					is_core_of = GAB
-				}
-			}
-			event_target:free_france = {
-				transfer_state = PREV
-			}
-		}
+		# every_state = {
+		# 	limit = {
+		# 		OR = {
+		# 			is_core_of = CHA
+		# 			is_core_of = CMR
+		# 			is_core_of = CAR
+		# 			is_core_of = RCG
+		# 			is_core_of = GAB
+		# 		}
+		# 	}
+		# 	event_target:free_france = {
+		# 		transfer_state = PREV
+		# 	}
+		# }
 	}
 }
 
@@ -1567,18 +1599,18 @@ country_event = {
 		name = FRA_central_africa_intervention.1.a
 		effect_tooltip = {
 			every_state = {
-				limit = {
-					OR = {
-						is_core_of = CHA
-						is_core_of = CMR
-						is_core_of = CAR
-						is_core_of = RCG
-						is_core_of = GAB
-					}
-				}
-				event_target:free_france = {
-					transfer_state = PREV
-				}
+				# limit = {
+				# 	OR = {
+				# 		is_core_of = CHA
+				# 		is_core_of = CMR
+				# 		is_core_of = CAR
+				# 		is_core_of = RCG
+				# 		is_core_of = GAB
+				# 	}
+				# }
+				# event_target:free_france = {
+				# 	transfer_state = PREV
+				# }
 			}
 		}
 	}
@@ -3749,17 +3781,17 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
+		# if = {
+		# 	limit = {
+		# 		MAD = {
+		# 			exists = yes
+		# 			is_subject = yes
+		# 			OVERLORD = { original_tag = FRA }
+		# 		}
+		# 	}
+		# 	puppet = MAD
+		# }
 		if = {
-			limit = {
-				MAD = {
-					exists = yes
-					is_subject = yes
-					OVERLORD = { original_tag = FRA }
-				}
-			}
-			puppet = MAD
-		}
-		else_if = {
 			limit = {
 				543 = { CONTROLLER = { original_tag = FRA } }
 			}

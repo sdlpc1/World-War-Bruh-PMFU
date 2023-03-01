@@ -60,7 +60,7 @@ ETH_army_1_dynamic_modifier = { #NATIONAL SPIRIT
 
 	# later stuff
 	cas_damage_reduction = ETH_army_cas_damage_reduction
-	equipment_capture_factor = ETH_army_equipment_capture_factor
+	# equipment_capture_factor = ETH_army_equipment_capture_factor
 
 	modifier_army_sub_unit_irregular_infantry_defence_factor = ETH_modifier_army_sub_unit_irregular_infantry_defence_factor
 	modifier_army_sub_unit_irregular_infantry_speed_factor = ETH_modifier_army_sub_unit_irregular_infantry_speed_factor
@@ -87,7 +87,7 @@ ETH_army_2_dynamic_modifier = { #NATIONAL SPIRIT
 
 	# later stuff
 	cas_damage_reduction = ETH_army_cas_damage_reduction
-	equipment_capture_factor = ETH_army_equipment_capture_factor
+	# equipment_capture_factor = ETH_army_equipment_capture_factor
 
 	modifier_army_sub_unit_irregular_infantry_defence_factor = ETH_modifier_army_sub_unit_irregular_infantry_defence_factor
 	modifier_army_sub_unit_irregular_infantry_speed_factor = ETH_modifier_army_sub_unit_irregular_infantry_speed_factor
@@ -113,7 +113,7 @@ ETH_army_3_dynamic_modifier = { #NATIONAL SPIRIT
 
 	# later stuff
 	cas_damage_reduction = ETH_army_cas_damage_reduction
-	equipment_capture_factor = ETH_army_equipment_capture_factor
+	# equipment_capture_factor = ETH_army_equipment_capture_factor
 
 	modifier_army_sub_unit_irregular_infantry_defence_factor = ETH_modifier_army_sub_unit_irregular_infantry_defence_factor
 	modifier_army_sub_unit_irregular_infantry_speed_factor = ETH_modifier_army_sub_unit_irregular_infantry_speed_factor

@@ -414,8 +414,8 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			equipment_capture_factor = 0.1
-			army_morale_factor = 0.075
+			# equipment_capture_factor = 0.1
+			army_morale_factor = 0.1
 		}
 		
 		one_time_effect = {
@@ -730,7 +730,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			equipment_capture_factor = 0.15
+			# equipment_capture_factor = 0.15
 		}
 		
 		one_time_effect = {

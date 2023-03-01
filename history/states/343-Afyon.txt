@@ -2,7 +2,7 @@
 state={
 	id=343
 	name="STATE_343" # Afyon
-	manpower = 1298543
+	manpower = 1 #1298543
 	resources={
 		chromium=210 # was: 32
 	}

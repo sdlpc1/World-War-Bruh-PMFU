@@ -1761,7 +1761,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			equipment_capture = 0.05
+			no_supply_grace = 120
 		}
 		
 		ai_will_do = {

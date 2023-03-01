@@ -648,7 +648,7 @@ foreign_politics = {
 									AND = {
 										is_subject_of = JAP
 										OR = {
-											tag = MEN
+											# tag = MEN
 											tag = MAN
 										}
 									}
@@ -729,7 +729,7 @@ foreign_politics = {
 									tag = JAP
 									AND = {
 										is_subject_of = JAP
-										tag = MEN
+										# tag = MEN
 									}
 								}
 							}

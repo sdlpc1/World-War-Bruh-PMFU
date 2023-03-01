@@ -2176,27 +2176,27 @@ country_event = {
 				}
 			}
 		}
-		hidden_effect = {
-			random_list = {
-				1 = {
-					if = {
-						limit = {
-							ARG = {
-								is_ai = yes
-							}
-						}
-						ARG = {
-							add_timed_idea = { idea = fascism_drift_ARG days = 1460 }
-							country_event = { id = wtt_germany.1004 days = 1095 random = 365 }
-						}
-					}
-				}
-				1 = {
-					set_global_flag = MTG_flag_955
-				}
-				198 = {}
-			}
-		}
+		# hidden_effect = {
+		# 	random_list = {
+		# 		1 = {
+		# 			if = {
+		# 				limit = {
+		# 					ARG = {
+		# 						is_ai = yes
+		# 					}
+		# 				}
+		# 				ARG = {
+		# 					add_timed_idea = { idea = fascism_drift_ARG days = 1460 }
+		# 					country_event = { id = wtt_germany.1004 days = 1095 random = 365 }
+		# 				}
+		# 			}
+		# 		}
+		# 		1 = {
+		# 			set_global_flag = MTG_flag_955
+		# 		}
+		# 		198 = {}
+		# 	}
+		# }
 	}
 }
 

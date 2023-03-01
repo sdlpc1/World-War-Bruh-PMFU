@@ -2056,7 +2056,7 @@ ideas = {
 				army_core_attack_factor = 0.25
 				army_core_defence_factor = 0.25
 				training_time_factor = -0.5
-				equipment_capture = 0.125
+				# equipment_capture = 0.125
 				consumer_goods_factor = -0.1	
 				conscription_factor = 0.25
 			}			

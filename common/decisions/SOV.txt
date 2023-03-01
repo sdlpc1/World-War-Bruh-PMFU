@@ -52,113 +52,113 @@ debug_decisions = { #TODO_Manu: Comment these out
 		}
 	}
 
-	SOV_TEST_CONTINENTS = {
-		priority = 200
+	# SOV_TEST_CONTINENTS = {
+	# 	priority = 200
 
-		icon = generic_prepare_civil_war
+	# 	icon = generic_prepare_civil_war
 
-		allowed = { 
-			original_tag = SOV
-		}
+	# 	allowed = { 
+	# 		original_tag = SOV
+	# 	}
 
-		available = {
-			always = yes
-		}
+	# 	available = {
+	# 		always = yes
+	# 	}
 
-		visible = {
-			always = yes
-		}
+	# 	visible = {
+	# 		always = yes
+	# 	}
 
-		cost = 0
+	# 	cost = 0
 
-		complete_effect = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				log = "HIDE obsolete focus branches"
-			}
-			else = {
-				log = "SHOW obsolete focus branches"
-			}
-			every_owned_state = {
-				limit = {
-					is_on_continent = asia 
-				}
-				log = "[THIS.GetName]"
-				URG = { transfer_state = PREV }
+	# 	complete_effect = {
+	# 		if = {
+	# 			limit = {
+	# 				has_game_rule = {
+	# 					rule = obsolete_focus_branches_visibility
+	# 					option = HIDE
+	# 				}
+	# 			}
+	# 			log = "HIDE obsolete focus branches"
+	# 		}
+	# 		else = {
+	# 			log = "SHOW obsolete focus branches"
+	# 		}
+	# 		every_owned_state = {
+	# 			limit = {
+	# 				is_on_continent = asia 
+	# 			}
+	# 			log = "[THIS.GetName]"
+	# 			URG = { transfer_state = PREV }
 
-			}
-		}
-	}
-	SOV_TEST_ULTIMATE_CONTINENTS_SHOW = {
-		priority = 200
+	# 		}
+	# 	}
+	# }
+	# SOV_TEST_ULTIMATE_CONTINENTS_SHOW = {
+	# 	priority = 200
 
-		icon = generic_prepare_civil_war
+	# 	icon = generic_prepare_civil_war
 
-		allowed = { 
-			original_tag = SOV
-		}
+	# 	allowed = { 
+	# 		original_tag = SOV
+	# 	}
 
-		available = {
-			always = yes
-		}
+	# 	available = {
+	# 		always = yes
+	# 	}
 
-		visible = {
-			always = yes
-		}
+	# 	visible = {
+	# 		always = yes
+	# 	}
 
-		cost = 0
+	# 	cost = 0
 
-		complete_effect = {
-			log = "WARNING: This takes a while"
-			every_state = {
-				limit = {
-					is_on_continent = asia 
-				}
-				TIB = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = europe 
-				}
-				LUX = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = middle_east 
-				}
-				YEM = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = africa 
-				}
-				ETH = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = australia 
-				}
-				NZL = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = north_america 
-				}
-				CAN = { transfer_state = PREV }
-			}
-			every_state = {
-				limit = {
-					is_on_continent = south_america 
-				}
-				PER = { transfer_state = PREV }
-			}
-		}
-	}
+	# 	complete_effect = {
+	# 		log = "WARNING: This takes a while"
+	# 		every_state = {
+	# 			limit = {
+	# 				is_on_continent = asia 
+	# 			}
+	# 			TIB = { transfer_state = PREV }
+	# 		}
+	# 		every_state = {
+	# 			limit = {
+	# 				is_on_continent = europe 
+	# 			}
+	# 			LUX = { transfer_state = PREV }
+	# 		}
+	# 		every_state = {
+	# 			limit = {
+	# 				is_on_continent = middle_east 
+	# 			}
+	# 			YEM = { transfer_state = PREV }
+	# 		}
+	# 		every_state = {
+	# 			limit = {
+	# 				is_on_continent = africa 
+	# 			}
+	# 			ETH = { transfer_state = PREV }
+	# 		}
+	# 		every_state = {
+	# 			limit = {
+	# 				is_on_continent = australia 
+	# 			}
+	# 			NZL = { transfer_state = PREV }
+	# 		}
+	# 		every_state = {
+	# 			limit = {
+	# 				is_on_continent = north_america 
+	# 			}
+	# 			CAN = { transfer_state = PREV }
+	# 		}
+	# 		every_state = {
+	# 			limit = {
+	# 				is_on_continent = south_america 
+	# 			}
+	# 			PER = { transfer_state = PREV }
+	# 		}
+	# 	}
+	# }
 }
 
 foreign_politics = {
@@ -5195,7 +5195,7 @@ SOV_propaganda_campaigns = {
 
 
 
-###################
+###################GUA
 ### MIDDLE EAST ###
 ###################
 
@@ -8689,7 +8689,7 @@ SOV_great_patriotic_war = {
 			}
 			every_state = {
 				limit = {
-					is_core_of = BLR
+					# is_core_of = BLR
 					is_controlled_by = SOV
 				}
 				damage_building = {
@@ -8737,7 +8737,7 @@ SOV_great_patriotic_war = {
 			}
 			every_state = {
 				limit = {
-					is_core_of = UKR
+					# is_core_of = UKR
 					is_controlled_by = SOV
 				}
 				damage_building = {

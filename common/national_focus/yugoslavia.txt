@@ -237,7 +237,7 @@
 			add_stability = -0.10
 			every_owned_state = {
 				limit = {
-					is_core_of = SER
+					# is_core_of = SER
 				}
 				add_extra_state_shared_building_slots = 1
 			}
@@ -809,9 +809,9 @@
 					is_subject_of = ROOT
 					owns_state = 106
 				}
-				MAC = {
-					is_in_faction_with = ROOT
-				}
+				# MAC = {
+				# 	is_in_faction_with = ROOT
+				# }
 			}
 		}
 
@@ -822,9 +822,9 @@
 					is_subject_of = ROOT
 					owns_state = 106
 				}
-				MAC = {
-					is_in_faction_with = ROOT
-				}
+				# MAC = {
+				# 	is_in_faction_with = ROOT
+				# }
 			}
 		}
 
@@ -856,9 +856,9 @@
 				}
 			}
 			else = {
-				MAC = {
-					add_state_core = 731
-				}
+				# MAC = {
+				# 	add_state_core = 731
+				# }
 			}
 			news_event = { id = news.327 }
 		}

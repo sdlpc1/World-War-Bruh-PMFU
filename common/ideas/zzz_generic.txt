@@ -1455,7 +1455,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1499,7 +1499,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1538,7 +1538,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1577,7 +1577,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN }
 						
 					}
 				}
@@ -1613,7 +1613,7 @@ ideas = {
 						has_dlc = "Waking the Tiger"
 					}
 					NOT = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN}
 					}
 				}
 				NOT = {
@@ -1648,7 +1648,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1722,7 +1722,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1755,7 +1755,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1788,7 +1788,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN }
 						has_dlc = "Waking the Tiger"
 					}
 				}

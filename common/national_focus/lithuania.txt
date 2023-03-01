@@ -4512,7 +4512,7 @@ focus_tree = {
 				tooltip = control_all_ukrainian_states_tt
 				all_state = {
 					OR = {
-						NOT = { is_core_of = UKR }
+						# NOT = { is_core_of = UKR }
 						controls_or_subject_of = yes
 					}
 				}
@@ -4739,8 +4739,8 @@ focus_tree = {
 				limit = {
 					OR = {
 						is_core_of = LIT
-						is_core_of = KSH
-						is_core_of = UKR
+						# is_core_of = KSH
+						# is_core_of = UKR
 						state = 96
 						state = 95
 						state = 94

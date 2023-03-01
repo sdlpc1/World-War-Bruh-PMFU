@@ -243,7 +243,7 @@
  armored_ratio_over_40:0 "Armored ratio > §H90%§!"
  pontoon_bridges_tt:0 "§REngineer battalions will require 10 more Support and Infantry equipment per battalion§!"
  mountain_training_effect:0 "Enables §HMountain Training§!\n§HAll Infantry:\n    Mountain§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
- motti_tactic:0 "Enables §HMotti Tactics§!\n§HAll Infantry:\n    Forest§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
+ motti_tactic:0 "Enables §HMotti Tactics§!\n§HAll Infantry:\n    HP: §G+100%    §!\nForest§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!\n§HMilitia and Garrisons:\n    HP: §G+100%"
 
  MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
 

@@ -836,21 +836,21 @@
 					608 = {
 						NOT = {
 							is_controlled_by = CHI
-							is_controlled_by = PRC
+							#is_controlled_by = PRC
 							is_controlled_by = SHX
 						}
 					}
 					597 = {
 						NOT = {
 							is_controlled_by = CHI
-							is_controlled_by = PRC
+							#is_controlled_by = PRC
 							is_controlled_by = SHX
 						}
 					}
 					614 = {
 						NOT = {
 							is_controlled_by = CHI
-							is_controlled_by = PRC
+							#is_controlled_by = PRC
 							is_controlled_by = SHX
 						}
 					}
@@ -889,34 +889,34 @@
 					country_event = china.1
 				}
 			}
-			if = {
-				limit = {
-					PRC = { #only fires the event for PRC if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
-						AND = {
-							controls_state = 608
-							controls_state = 597
-							controls_state = 614
-						}
-					}
-				}
-				PRC = {
-					country_event = china.1
-				}
-			}
-			if = {
-				limit = {
-					SHX = { #only fires the event for SHX if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
-						AND = {
-							controls_state = 608
-							controls_state = 597
-							controls_state = 614
-						}
-					}
-				}
-				SHX = {
-					country_event = china.1
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		PRC = { #only fires the event for PRC if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
+			# 			AND = {
+			# 				controls_state = 608
+			# 				controls_state = 597
+			# 				controls_state = 614
+			# 			}
+			# 		}
+			# 	}
+			# 	PRC = {
+			# 		country_event = china.1
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		SHX = { #only fires the event for SHX if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
+			# 			AND = {
+			# 				controls_state = 608
+			# 				controls_state = 597
+			# 				controls_state = 614
+			# 			}
+			# 		}
+			# 	}
+			# 	SHX = {
+			# 		country_event = china.1
+			# 	}
+			# }
 			add_named_threat = { threat = 5 name = JAP_intervene_in_china }
 			
 			unlock_decision_tooltip = JAP_china_step_up_war_effort
@@ -1984,7 +1984,13 @@
 				every_state = {
 					limit = {
 						OR = {
-							is_core_of = PHI
+							state = 627
+							state = 628
+							state = 625
+							state = 624
+							state = 626
+							state = 327
+							state = 623
 							is_core_of = INS
 							is_core_of = MAL
 						}
@@ -2555,7 +2561,13 @@
 						}
 						every_state = {
 							limit = {
-								is_core_of = PHI
+								state = 627
+								state = 628
+								state = 625
+								state = 624
+								state = 626
+								state = 327
+								state = 623
 							}
 							damage_building = {
 								type = bunker

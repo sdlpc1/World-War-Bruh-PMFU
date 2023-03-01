@@ -27,9 +27,6 @@ war_measures = {
 
 		visible = {
 			has_defensive_war = yes
-			CSA = {
-				exists = no
-			}
 		}
 
 		complete_effect = {
@@ -516,12 +513,12 @@ USA_war_plans = {
 		available = {
 			OR = {
 				has_war_with = CHI
-				has_war_with = PRC
-				has_war_with = SHX
-				has_war_with = YUN
-				has_war_with = GXC
-				has_war_with = XSM
-				has_war_with = SIK
+				# has_war_with = PRC
+				# has_war_with = SHX
+				# has_war_with = YUN
+				# has_war_with = GXC
+				# has_war_with = XSM
+				# has_war_with = SIK
 
 			}
 		}
@@ -538,36 +535,36 @@ USA_war_plans = {
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
-		targeted_modifier = {
-			tag = PRC
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = SHX
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = YUN
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = XSM
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = GXC
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = SIK
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
+		# targeted_modifier = {
+		# 	tag = PRC
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
+		# targeted_modifier = {
+		# 	tag = SHX
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
+		# targeted_modifier = {
+		# 	tag = YUN
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
+		# targeted_modifier = {
+		# 	tag = XSM
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
+		# targeted_modifier = {
+		# 	tag = GXC
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
+		# targeted_modifier = {
+		# 	tag = SIK
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
 	}
 	USA_execute_war_plan_crimson = {
 		icon = generic_operation
@@ -1545,107 +1542,107 @@ USA_intervention_mandate = {
 		}
 	}
 }
-USA_decolonisation = {
-	USA_freedom_for_Papua = {
-		available = {
-			PNG = {
-				exists = no
-			}
-			controls_state = 523
-			controls_state = 737
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		remove_effect = {
-			PNG = {
-				transfer_state = 523
-				transfer_state = 737 
-			}
-		}
-	}
-	USA_indonesian_liberation = {
-		available = {
-			OR = {
-				controls_state = 669
-				controls_state = 668
-				controls_state = 673
-				controls_state = 334
-				controls_state = 672
-				controls_state = 335
-				controls_state = 667
-				controls_state = 738
-			}
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		remove_effect = {
-			if = {
-				limit = {
-					not = { country_exists = INS }
-				}
-				every_state = {
-					limit = {
-						is_core_of = INS
-						is_controlled_by = ROOT
-					}
-					"INS" = {
-						transfer_state = PREV
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					has_war_with = INS
-				}
-				"INS" = {
-					start_civil_war = {
-						ideology = ROOT
-						size = 1
-					}
-				}
-				random_country = {
-					limit = {
-						original_tag = INS
-						has_government = ROOT
-					}
-					ROOT = {
-						add_to_faction = PREV
-					}
-					every_state = {
-						limit = {
-							OR = {
-								state = 669
-								state = 668
-								state = 673
-								state = 334
-								state = 672
-								state = 335
-								state = 667
-								state = 738
-							}
-							is_controlled_by = ROOT
-						}
-						random_country = {
-							limit = {
-								original_tag = INS
-								has_government = ROOT
-							}
-							transfer_state = PREV
-						}
-					}
-				}
-			}
-		}
-	}
-}
+# USA_decolonisation = {
+	# USA_freedom_for_Papua = {
+	# 	available = {
+	# 		PNG = {
+	# 			exists = no
+	# 		}
+	# 		controls_state = 523
+	# 		controls_state = 737
+	# 	}
+	# 	cost = 25
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	fire_only_once = yes
+	# 	days_remove = 180
+	# 	remove_effect = {
+	# 		PNG = {
+	# 			transfer_state = 523
+	# 			transfer_state = 737 
+	# 		}
+	# 	}
+	# }
+	# USA_indonesian_liberation = {
+	# 	available = {
+	# 		OR = {
+	# 			controls_state = 669
+	# 			controls_state = 668
+	# 			controls_state = 673
+	# 			controls_state = 334
+	# 			controls_state = 672
+	# 			controls_state = 335
+	# 			controls_state = 667
+	# 			controls_state = 738
+	# 		}
+	# 	}
+	# 	cost = 25
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	fire_only_once = yes
+	# 	days_remove = 180
+	# 	remove_effect = {
+	# 		if = {
+	# 			limit = {
+	# 				not = { country_exists = INS }
+	# 			}
+	# 			every_state = {
+	# 				limit = {
+	# 					is_core_of = INS
+	# 					is_controlled_by = ROOT
+	# 				}
+	# 				"INS" = {
+	# 					transfer_state = PREV
+	# 				}
+	# 			}
+	# 		}
+	# 		else_if = {
+	# 			limit = {
+	# 				has_war_with = INS
+	# 			}
+	# 			"INS" = {
+	# 				start_civil_war = {
+	# 					ideology = ROOT
+	# 					size = 1
+	# 				}
+	# 			}
+	# 			random_country = {
+	# 				limit = {
+	# 					original_tag = INS
+	# 					has_government = ROOT
+	# 				}
+	# 				ROOT = {
+	# 					add_to_faction = PREV
+	# 				}
+	# 				every_state = {
+	# 					limit = {
+	# 						OR = {
+	# 							state = 669
+	# 							state = 668
+	# 							state = 673
+	# 							state = 334
+	# 							state = 672
+	# 							state = 335
+	# 							state = 667
+	# 							state = 738
+	# 						}
+	# 						is_controlled_by = ROOT
+	# 					}
+	# 					random_country = {
+	# 						limit = {
+	# 							original_tag = INS
+	# 							has_government = ROOT
+	# 						}
+	# 						transfer_state = PREV
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+# }
 foreign_support = {
 	USA_support_the_anti_fascist_war = {
 
@@ -1665,7 +1662,7 @@ foreign_support = {
 			}
 		}
 
-		targets = { CHI PRC GXC YUN SHX XSM SIK }
+		targets = { CHI }
 		targets_dynamic = yes
 
 		target_root_trigger = {
@@ -1754,7 +1751,7 @@ foreign_support = {
 			}
 		}
 
-		targets = { CHI PRC GXC YUN SHX XSM SIK }
+		targets = { CHI }
 		targets_dynamic = yes
 
 		target_trigger = {

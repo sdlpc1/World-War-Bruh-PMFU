@@ -1722,7 +1722,7 @@ country_event = {
 					}
 				}
 			}
-			SLO = { transfer_state = 70 }
+			# SLO = { transfer_state = 70 }
 		}
 		if = {
 			limit = {
@@ -1733,7 +1733,7 @@ country_event = {
 					}
 				}
 			}
-			SLO = { transfer_state = 71 }
+			# SLO = { transfer_state = 71 }
 		}
 		if = {
 			limit = {
@@ -1757,7 +1757,7 @@ country_event = {
 					}
 				}
 			}
-			SLO = { transfer_state = 73 }
+			# SLO = { transfer_state = 73 }
 		}
 		if = {
 			limit = {
@@ -1768,20 +1768,20 @@ country_event = {
 					}
 				}
 			}
-			SLO = { transfer_state = 664 }
+			# SLO = { transfer_state = 664 }
 		}
 		if = {
 			limit = { country_exists = CZE }
 			annex_country = { target = CZE }
 		}
-		add_to_faction = SLO
-		SLO = {
-			add_ai_strategy = {
-				type = alliance
-				id = "GER"
-				value = 200
-			}
-		}
+		# add_to_faction = SLO
+		# SLO = {
+		# 	add_ai_strategy = {
+		# 		type = alliance
+		# 		id = "GER"
+		# 		value = 200
+		# 	}
+		# }
 		if = {
 			limit = {
 				72 = {
@@ -2886,10 +2886,10 @@ country_event = {
 
 		GER = { country_event = { id = germany.81 days = 1 } }
 		effect_tooltip = {
-			if = {
-				limit = { SLO = { exists = yes } }
-				annex_country = { target = SLO }
-			}
+			# if = {
+			# 	limit = { SLO = { exists = yes } }
+			# 	annex_country = { target = SLO }
+			# }
 			if = {
 				limit = { GER = { owns_state = 70 } }
 				transfer_state = 70
@@ -2963,10 +2963,10 @@ country_event = {
 
 	option = {
 		name = germany.81.a
-		if = {
-			limit = { SLO = { exists = yes } }
-			POL = { annex_country = { target = SLO } }
-		}
+		# if = {
+		# 	limit = { SLO = { exists = yes } }
+		# 	POL = { annex_country = { target = SLO } }
+		# }
 		if = {
 			limit = { owns_state = 70 }
 			POL = { transfer_state = 70 }
@@ -3625,21 +3625,21 @@ country_event = {
 			effect_tooltip = {
 				add_political_power = -25
 				add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
-				CRO = {
-					if = {
-						limit = { YUG = { owns_state = 103 } }
-						transfer_state = 103
-					}
-					if = {
-						limit = { YUG = { owns_state = 104 } }
-						transfer_state = 104
-					}
-					if = {
-						limit = { YUG = { owns_state = 109 } }
-						transfer_state = 109
-					}						
-				}
-				puppet = CRO
+				# CRO = {
+				# 	if = {
+				# 		limit = { YUG = { owns_state = 103 } }
+				# 		transfer_state = 103
+				# 	}
+				# 	if = {
+				# 		limit = { YUG = { owns_state = 104 } }
+				# 		transfer_state = 104
+				# 	}
+				# 	if = {
+				# 		limit = { YUG = { owns_state = 109 } }
+				# 		transfer_state = 109
+				# 	}						
+				# }
+				# puppet = CRO
 				annex_country = { target = YUG transfer_troops = no }
 			}
 		}
@@ -3658,21 +3658,21 @@ country_event = {
 			}
 			add_political_power = -25
 			add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
-			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 103 } }
-					transfer_state = 103
-				}
-				if = {
-					limit = { YUG = { owns_state = 104 } }
-					transfer_state = 104
-				}
-				if = {
-					limit = { YUG = { owns_state = 109 } }
-					transfer_state = 109
-				}
-			}
-			puppet = CRO
+			# CRO = {
+			# 	if = {
+			# 		limit = { YUG = { owns_state = 103 } }
+			# 		transfer_state = 103
+			# 	}
+			# 	if = {
+			# 		limit = { YUG = { owns_state = 104 } }
+			# 		transfer_state = 104
+			# 	}
+			# 	if = {
+			# 		limit = { YUG = { owns_state = 109 } }
+			# 		transfer_state = 109
+			# 	}
+			# }
+			# puppet = CRO
 			annex_country = { target = YUG transfer_troops = no }
 
 			hidden_effect = {
@@ -3702,21 +3702,21 @@ country_event = {
 			effect_tooltip = {
 				add_named_threat = { threat = 2 name = GER_fate_of_yugoslavia }
 				
-				CRO = {
-					if = {
-						limit = { YUG = { owns_state = 103 } }
-						transfer_state = 103
-					}
-					if = {
-						limit = { YUG = { owns_state = 104 } }
-						transfer_state = 104
-					}
-					if = {
-						limit = { YUG = { owns_state = 109 } }
-						transfer_state = 109
-					}						
-				}
-				puppet = CRO
+				# CRO = {
+				# 	if = {
+				# 		limit = { YUG = { owns_state = 103 } }
+				# 		transfer_state = 103
+				# 	}
+				# 	if = {
+				# 		limit = { YUG = { owns_state = 104 } }
+				# 		transfer_state = 104
+				# 	}
+				# 	if = {
+				# 		limit = { YUG = { owns_state = 109 } }
+				# 		transfer_state = 109
+				# 	}						
+				# }
+				# puppet = CRO
 				puppet = YUG
 
 
@@ -3741,21 +3741,21 @@ country_event = {
 			}
 			add_named_threat = { threat = 2 name = GER_fate_of_yugoslavia }
 			
-			CRO = {
-				if = {
-					limit = { YUG = { owns_state = 103 } }
-					transfer_state = 103
-				}
-				if = {
-					limit = { YUG = { owns_state = 104 } }
-					transfer_state = 104
-				}
-				if = {
-					limit = { YUG = { owns_state = 109 } }
-					transfer_state = 109
-				}
-			}
-			puppet = CRO
+			# CRO = {
+			# 	if = {
+			# 		limit = { YUG = { owns_state = 103 } }
+			# 		transfer_state = 103
+			# 	}
+			# 	if = {
+			# 		limit = { YUG = { owns_state = 104 } }
+			# 		transfer_state = 104
+			# 	}
+			# 	if = {
+			# 		limit = { YUG = { owns_state = 109 } }
+			# 		transfer_state = 109
+			# 	}
+			# }
+			# puppet = CRO
 			puppet = YUG
 			hidden_effect = {
 				set_global_flag = GER_fate_of_yugoslavia_puppet_CRO_YUG
@@ -4450,28 +4450,28 @@ country_event = {
 			}
 		}
 		effect_tooltip = {
-			WGR = {
-				add_state_core = 42
-				add_state_core = 50
-				add_state_core = 51
-				add_state_core = 52
-				add_state_core = 53
-				add_state_core = 54
-				add_state_core = 55
-				add_state_core = 56
-				add_state_core = 57
-				add_state_core = 58
-				add_state_core = 59
-			}
-			DDR = {
-				add_state_core = 60
-				add_state_core = 61
-				add_state_core = 62
-				add_state_core = 64
-				add_state_core = 65
-				add_state_core = 66
-				add_state_core = 67
-			}
+			# WGR = {
+			# 	add_state_core = 42
+			# 	add_state_core = 50
+			# 	add_state_core = 51
+			# 	add_state_core = 52
+			# 	add_state_core = 53
+			# 	add_state_core = 54
+			# 	add_state_core = 55
+			# 	add_state_core = 56
+			# 	add_state_core = 57
+			# 	add_state_core = 58
+			# 	add_state_core = 59
+			# }
+			# DDR = {
+			# 	add_state_core = 60
+			# 	add_state_core = 61
+			# 	add_state_core = 62
+			# 	add_state_core = 64
+			# 	add_state_core = 65
+			# 	add_state_core = 66
+			# 	add_state_core = 67
+			# }
 			POL = {
 				add_state_core = 66
 				add_state_core = 67
@@ -4507,28 +4507,28 @@ country_event = {
 
 	option = {
 		name = germany.119.a
-		WGR = {
-			add_state_core = 42
-			add_state_core = 50
-			add_state_core = 51
-			add_state_core = 52
-			add_state_core = 53
-			add_state_core = 54
-			add_state_core = 55
-			add_state_core = 56
-			add_state_core = 57
-			add_state_core = 58
-			add_state_core = 59
-		}
-		DDR = {
-			add_state_core = 60
-			add_state_core = 61
-			add_state_core = 62
-			add_state_core = 64
-			add_state_core = 65
-			add_state_core = 66
-			add_state_core = 67
-		}
+		# WGR = {
+		# 	add_state_core = 42
+		# 	add_state_core = 50
+		# 	add_state_core = 51
+		# 	add_state_core = 52
+		# 	add_state_core = 53
+		# 	add_state_core = 54
+		# 	add_state_core = 55
+		# 	add_state_core = 56
+		# 	add_state_core = 57
+		# 	add_state_core = 58
+		# 	add_state_core = 59
+		# }
+		# DDR = {
+		# 	add_state_core = 60
+		# 	add_state_core = 61
+		# 	add_state_core = 62
+		# 	add_state_core = 64
+		# 	add_state_core = 65
+		# 	add_state_core = 66
+		# 	add_state_core = 67
+		# }
 		POL = {
 			add_state_core = 66
 			add_state_core = 67
@@ -4546,22 +4546,22 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		hidden_effect = {
-			create_wargoal = {
-				type = liberate_wargoal
-				target = DDR
-			}
-		}
+		# hidden_effect = {
+		# 	create_wargoal = {
+		# 		type = liberate_wargoal
+		# 		target = DDR
+		# 	}
+		# }
 		event_target:yalta_origin = {
 			country_event = {
 				id = germany.120
 			}
-			hidden_effect = {
-				create_wargoal = {
-					type = liberate_wargoal
-					target = WGR
-				}
-			}
+			# hidden_effect = {
+			# 	create_wargoal = {
+			# 		type = liberate_wargoal
+			# 		target = WGR
+			# 	}
+			# }
 		}
 	}
 }
@@ -4594,12 +4594,12 @@ country_event = {
 		#Fires for one of the new German states to transfer old German territory.
 		country_exists = GER
 		OR = {
-			country_exists = WGR
-			country_exists = DDR
+			# country_exists = WGR
+			# country_exists = DDR
 		}
 		OR = {
-			tag = WGR
-			tag = DDR
+			# tag = WGR
+			# tag = DDR
 		}
 	}
 
@@ -4642,33 +4642,33 @@ country_event = {
 			}
 		}
 		if = {
-			limit = {
-				country_exists = WGR
-			}
+			# limit = {
+			# 	country_exists = WGR
+			# }
 			#Give WGR their cores
 			every_state = {
 				limit = {
 					is_owned_and_controlled_by = GER
-					is_core_of = WGR
+					# is_core_of = WGR
 				}
-				WGR = {
-					transfer_state = PREV
-				}
+				# WGR = {
+				# 	transfer_state = PREV
+				# }
 			}
 		}
 		if = {
 			limit = {
-				country_exists = DDR
+				# country_exists = DDR
 			}
 			#Give East Germany their cores
 			every_state = {
 				limit = {
 					is_owned_and_controlled_by = GER
-					is_core_of = DDR
+					# is_core_of = DDR
 				}
-				DDR = {
-					transfer_state = PREV
-				}
+				# DDR = {
+				# 	transfer_state = PREV
+				# }
 			}
 			if = {
 				limit = {
@@ -4677,9 +4677,9 @@ country_event = {
 					}
 				}
 				#If SOV decided to puppet GER in peace, they now get DDR instead.
-				SOV = {
-					puppet = DDR
-				}
+				# SOV = {
+				# 	puppet = DDR
+				# }
 			}
 		}
 		if = {
@@ -4689,8 +4689,8 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
+							# is_core_of = DDR
+							# is_core_of = WGR
 							is_core_of = POL
 						}
 					}
@@ -4703,8 +4703,8 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
+							# is_core_of = DDR
+							# is_core_of = WGR
 							is_core_of = POL
 						}
 					}
@@ -4721,8 +4721,8 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
+							# is_core_of = DDR
+							# is_core_of = WGR
 							is_core_of = POL
 						}
 					}
@@ -4735,8 +4735,8 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
+							# is_core_of = DDR
+							# is_core_of = WGR
 							is_core_of = POL
 						}
 					}
@@ -4754,8 +4754,8 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
+							# is_core_of = DDR
+							# is_core_of = WGR
 							is_core_of = POL
 						}
 					}
@@ -4768,8 +4768,8 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
+							# is_core_of = DDR
+							# is_core_of = WGR
 							is_core_of = POL
 						}
 					}
@@ -4789,8 +4789,8 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
+							# is_core_of = DDR
+							# is_core_of = WGR
 							is_core_of = POL
 						}
 					}
@@ -4803,8 +4803,8 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
+							# is_core_of = DDR
+							# is_core_of = WGR
 							is_core_of = POL
 						}
 					}
@@ -4816,11 +4816,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				DDR = {
-					GER = {
-						has_government = PREV
-					}
-				}
+				# DDR = {
+				# 	GER = {
+				# 		has_government = PREV
+				# 	}
+				# }
 			}
 			#If GER has changed government, remaining territory is passed to the corresponding new state (WGR or DDR)
 			every_state = {
@@ -4828,24 +4828,24 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
+							# is_core_of = DDR
+							# is_core_of = WGR
 							is_core_of = POL
 						}
 					}
 				}
-				DDR = {
-					transfer_state = PREV
-				}
+				# DDR = {
+				# 	transfer_state = PREV
+				# }
 			}
 		}
 		if = {
 			limit = {
-				WGR = {
-					GER = {
-						has_government = PREV
-					}
-				}
+				# WGR = {
+				# 	GER = {
+				# 		has_government = PREV
+				# 	}
+				# }
 			}
 			#See above
 			every_state = {
@@ -4853,15 +4853,15 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
+							# is_core_of = DDR
+							# is_core_of = WGR
 							is_core_of = POL
 						}
 					}
 				}
-				WGR = {
-					transfer_state = PREV
-				}
+				# WGR = {
+				# 	transfer_state = PREV
+				# }
 			}
 		}
 		if = {
@@ -4870,8 +4870,8 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = WGR
-							is_core_of = DDR
+							# is_core_of = WGR
+							# is_core_of = DDR
 						}
 					}
 				}
@@ -4882,20 +4882,20 @@ country_event = {
 					is_owned_and_controlled_by = GER
 					NOT = {
 						OR = {
-							is_core_of = WGR
-							is_core_of = DDR
+							# is_core_of = WGR
+							# is_core_of = DDR
 						}
 					}
 				}
-				WGR = {
-					transfer_state = PREV
-				}
+				# WGR = {
+				# 	transfer_state = PREV
+				# }
 			}
 		}
 		if = {
 			limit = {
-				country_exists = WGR
-				country_exists = DDR
+				# country_exists = WGR
+				# country_exists = DDR
 			}
 			#Remove GER cores
 			hidden_effect = {

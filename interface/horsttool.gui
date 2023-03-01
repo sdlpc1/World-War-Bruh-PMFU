@@ -129,9 +129,9 @@ guiTypes = {
 		# }
 		buttonType = {
 			name = "whitepeace"	
-			position = {x=270 y=250}
+			position = {x=275 y=255}
 			spriteType = "GFX_relation_truce"
-            scale = 1.4
+            scale = 1.0
 			pdx_tooltip = "WHITEPEACE"
 			pdx_tooltip_delayed = "WHITEPEACE_DELAYED"
 		}

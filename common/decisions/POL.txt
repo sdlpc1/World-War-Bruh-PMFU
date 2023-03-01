@@ -497,8 +497,8 @@ POL_peasant_strike_category = {
 				random_owned_controlled_state = {
 					limit = {
 						OR = {
-							is_core_of = UKR
-							is_core_of = BLR
+							# is_core_of = UKR
+							# is_core_of = BLR
 							state = 92
 							state = 97
 						}
@@ -578,8 +578,8 @@ POL_peasant_strike_category = {
 				random_owned_controlled_state = {
 					limit = {
 						OR = {
-							is_core_of = UKR
-							is_core_of = BLR
+							# is_core_of = UKR
+							# is_core_of = BLR
 							state = 92
 							state = 97
 						}

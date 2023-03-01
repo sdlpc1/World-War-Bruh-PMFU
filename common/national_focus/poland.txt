@@ -5860,9 +5860,9 @@
 				force_enable_resistance = { 
 					clear = no
 					occupier = POL
-					occupied = DNZ
+					# occupied = DNZ
 				}
-				start_resistance = DNZ
+				# start_resistance = DNZ
 				set_resistance = 40
 				set_compliance = 30
 				add_resistance_target = { 
@@ -5985,7 +5985,7 @@
 						compliance > 80
 						resistance < 50
 					}
-					NOT = { is_core_of = DNZ }
+					# NOT = { is_core_of = DNZ }
 				}
 			}
 		}
@@ -6009,7 +6009,7 @@
 				force_enable_resistance = { 
 					clear = yes
 					occupier = POL
-					occupied = DNZ
+					# occupied = DNZ
 				}
 				POL_remove_danzig_effect = yes
 				set_state_name = "Gdańsk"

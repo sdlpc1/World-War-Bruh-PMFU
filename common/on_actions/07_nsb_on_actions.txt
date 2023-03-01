@@ -64,7 +64,7 @@ on_actions = {
 						ROOT = {
 							OR = {
 								original_tag = GER
-								original_tag = DNZ
+								# original_tag = DNZ
 							}
 						}
 					}
@@ -500,7 +500,7 @@ on_actions = {
 					}
 				}
 				85 = {
-					add_core_of = DNZ
+					# add_core_of = DNZ
 					set_demilitarized_zone = yes
 					add_dynamic_modifier = { modifier =  international_city }
 				}
@@ -518,9 +518,9 @@ on_actions = {
 						force_enable_resistance = { 
 							clear = no
 							occupier = POL
-							occupied = DNZ
+							# occupied = DNZ
 						}
-						start_resistance = DNZ
+						# start_resistance = DNZ
 						set_resistance = 40
 						set_compliance = 30
 					}
@@ -660,7 +660,7 @@ on_actions = {
 						}
 						every_state = {
 							limit = {
-								is_core_of = BLR
+								# is_core_of = BLR
 							}
 							add_core_of = PREV
 						}
@@ -699,7 +699,7 @@ on_actions = {
 					}
 					every_state = {
 						limit = {
-							is_core_of = BLR
+							# is_core_of = BLR
 						}
 						add_core_of = SOV
 					}
@@ -1921,29 +1921,29 @@ on_actions = {
 		}
 
 		#SINKIANG counter
-		effect = {
-			if = {
-				limit = {
-					tag = SIK
-					FROM = { original_tag = SOV }
-				}
-				FROM = { set_country_flag = SOV_sinkiang_joined_comintern_counter_flag }
-			}
-		}
+		# effect = {
+		# 	if = {
+		# 		limit = {
+		# 			tag = SIK
+		# 			FROM = { original_tag = SOV }
+		# 		}
+		# 		FROM = { set_country_flag = SOV_sinkiang_joined_comintern_counter_flag }
+		# 	}
+		# }
 	}
 
 	#FROM is country getting invited.
-	on_offer_join_faction = {
-		effect = {
-			if = {
-				limit = {
-					FROM = { tag = SIK }
-					original_tag = SOV
-				}
-				SOV = { set_country_flag = SOV_sinkiang_joined_comintern_counter_flag }
-			}
-		}
-	}
+	# on_offer_join_faction = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				FROM = { tag = SIK }
+	# 				original_tag = SOV
+	# 			}
+	# 			SOV = { set_country_flag = SOV_sinkiang_joined_comintern_counter_flag }
+	# 		}
+	# 	}
+	# }
 
 	# on_release_as_puppet = { 
 	# 	effect = { 

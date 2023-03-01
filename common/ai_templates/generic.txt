@@ -692,13 +692,6 @@ infantry_generic = {
 		ITA
 		SOV
 		CHI
-		PRC 
-		GXC
-		YUN
-		SHX
-		XSM
-		SIK
-		MEN
 		MAN
 	}
 
@@ -805,13 +798,6 @@ infantry_big_generic = {
 		ITA
 		SOV
 		CHI
-		PRC 
-		GXC
-		YUN
-		SHX
-		XSM
-		SIK
-		MEN
 		MAN
 	}
 

@@ -882,12 +882,12 @@ country_event = {
 				MAN = { is_subject_of = ROOT }
 			}
 			set_autonomy = { target = MAN autonomy_state = autonomy_free }
-			if = {
-				limit = {
-					MEN = { is_subject_of = ROOT }
-				}
-				MAN = { puppet = MEN }
-			}
+			# if = {
+			# 	limit = {
+			# 		MEN = { is_subject_of = ROOT }
+			# 	}
+			# 	MAN = { puppet = MEN }
+			# }
 			MAN = {
 				set_cosmetic_tag = MAN_kwantung_army
 			}
@@ -904,16 +904,16 @@ country_event = {
 			ideology = fascism
 			size = 0.5
 		}
-		if = {
-			limit = {
-				any_state = {
-					is_controlled_by = ROOT
-					is_core_of = KOR
-				}
-			}
-			release = KOR
-			set_autonomy = { target = KOR autonomy_state = autonomy_free }
-		}
+		# if = {
+		# 	limit = {
+		# 		any_state = {
+		# 			is_controlled_by = ROOT
+		# 			is_core_of = KOR
+		# 		}
+		# 	}
+		# 	release = KOR
+		# 	set_autonomy = { target = KOR autonomy_state = autonomy_free }
+		# }
 	}
 }
 
@@ -1277,17 +1277,17 @@ country_event = {
 	option = {
 		name = wtt_japan.126.a
 		effect_tooltip = {
-			if = {
-				limit = {
-					NOT = {
-						MAN = {
-							controls_state = 525
-							controls_state = 527
-						}
-					}
-				}
-				FROM = { release = KOR }
-			}
+			# if = {
+			# 	limit = {
+			# 		NOT = {
+			# 			MAN = {
+			# 				controls_state = 525
+			# 				controls_state = 527
+			# 			}
+			# 		}
+			# 	}
+			# 	# FROM = { release = KOR }
+			# }
 			if = {
 				limit = {
 					524 = {
@@ -1315,10 +1315,10 @@ country_event = {
 							is_controlled_by = PREV
 							OR = {
 								is_owned_by = JAP
-								AND = {
-									is_owned_by = MEN
-									MEN = { is_subject_of = JAP }
-								}
+								# AND = {
+								# 	is_owned_by = MEN
+								# 	MEN = { is_subject_of = JAP }
+								# }
 								AND = {
 									is_owned_by = MAN
 									MAN = { is_subject_of = JAP }
@@ -1351,10 +1351,10 @@ country_event = {
 							is_controlled_by = PREV
 							OR = {
 								is_owned_by = JAP
-								AND = {
-									is_owned_by = MEN
-									MEN = { is_subject_of = JAP }
-								}
+								# AND = {
+								# 	is_owned_by = MEN
+								# 	MEN = { is_subject_of = JAP }
+								# }
 								AND = {
 									is_owned_by = MAN
 									MAN = { is_subject_of = JAP }
@@ -1471,17 +1471,17 @@ country_event = {
 	# They have accepted.
 	option = {
 		name = wtt_japan.127.a
-		if = {
-			limit = {
-				NOT = {
-					MAN = {
-						controls_state = 525
-						controls_state = 527
-					}
-				}
-			}
-			release = KOR
-		}
+		# if = {
+		# 	limit = {
+		# 		NOT = {
+		# 			MAN = {
+		# 				controls_state = 525
+		# 				controls_state = 527
+		# 			}
+		# 		}
+		# 	}
+		# 	# release = KOR
+		# }
 		if = {
 			limit = {
 				524 = {
@@ -1509,10 +1509,10 @@ country_event = {
 						is_controlled_by = PREV
 						OR = {
 							is_owned_by = JAP
-							AND = {
-								is_owned_by = MEN
-								MEN = { is_subject_of = JAP }
-							}
+							# AND = {
+							# 	is_owned_by = MEN
+							# 	MEN = { is_subject_of = JAP }
+							# }
 							AND = {
 								is_owned_by = MAN
 								MAN = { is_subject_of = JAP }
@@ -1541,10 +1541,10 @@ country_event = {
 						is_controlled_by = PREV
 						OR = {
 							is_owned_by = JAP
-							AND = {
-								is_owned_by = MEN
-								MEN = { is_subject_of = JAP }
-							}
+							# AND = {
+							# 	is_owned_by = MEN
+							# 	MEN = { is_subject_of = JAP }
+							# }
 							AND = {
 								is_owned_by = MAN
 								MAN = { is_subject_of = JAP }
@@ -1563,34 +1563,35 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			set_truce = {
-				target = PRC
-				days = 730
-			}
+			# set_truce = {
+			# 	target = PRC
+			# 	days = 730
+			# }
 			set_truce = {
 				target = CHI
 				days = 730
 			}
-			set_truce = {
-				target = XSM
-				days = 730
-			}
-			set_truce = {
-				target = SHX
-				days = 730
-			}
-			set_truce = {
-				target = GXC
-				days = 730
-			}
-			set_truce = {
-				target = YUN
-				days = 730
-			}
-			set_truce = {
-				target = SIK
-				days = 730
-			}
+			# set_truce = {
+			# 	target = XSM
+			# 	days = 730
+			# }
+			# set_truce = {
+			# 	target = SHX
+			# 	days = 730
+			# }
+			# set_truce = {
+			# 	target = GXC
+			# 	days = 730
+			# }
+			# set_truce = {
+			# 	target = YUN
+			# 	days = 730
+			# }
+			# set_truce = {
+			# 	target = SIK
+			# 	days = 730
+			# 
+			# }
 		}
 	}
 }
@@ -1626,18 +1627,18 @@ country_event = {
 			factor = 1
 		}
 		effect_tooltip = {
-			if = {
-				limit = {
-					NOT = {
-						any_country = {
-							is_literally_china = yes
-							controls_state = 525
-							controls_state = 527
-						}
-					}
-				}
-				FROM = { release = KOR }
-			}
+			# if = {
+			# 	limit = {
+			# 		NOT = {
+			# 			any_country = {
+			# 				is_literally_china = yes
+			# 				controls_state = 525
+			# 				controls_state = 527
+			# 			}
+			# 		}
+			# 	}
+			# 	FROM = { release = KOR }
+			# }
 			if = {
 				limit = {
 					524 = {
@@ -1652,10 +1653,10 @@ country_event = {
 						is_controlled_by = PREV
 						OR = {
 							is_owned_by = JAP
-							AND = {
-								is_owned_by = MEN
-								MEN = { is_subject_of = JAP }
-							}
+							# AND = {
+							# 	is_owned_by = MEN
+							# 	MEN = { is_subject_of = JAP }
+							# }
 						}
 						NOT = {
 							state = 525
@@ -1702,18 +1703,18 @@ country_event = {
 	# They have accepted.
 	option = {
 		name = wtt_japan.127.a
-		if = {
-			limit = {
-				NOT = {
-					any_country = {
-						is_literally_china = yes
-						controls_state = 525
-						controls_state = 527
-					}
-				}
-			}
-			release = KOR
-		}
+		# if = {
+		# 	limit = {
+		# 		NOT = {
+		# 			any_country = {
+		# 				is_literally_china = yes
+		# 				controls_state = 525
+		# 				controls_state = 527
+		# 			}
+		# 		}
+		# 	}
+		# 	# release = KOR
+		# }
 		if = {
 			limit = {
 				524 = {
@@ -1728,10 +1729,10 @@ country_event = {
 					is_controlled_by = PREV
 					OR = {
 						is_owned_by = JAP
-						AND = {
-							is_owned_by = MEN
-							MEN = { is_subject_of = JAP }
-						}
+						# AND = {
+						# 	is_owned_by = MEN
+						# 	MEN = { is_subject_of = JAP }
+						# }
 					}
 				}
 				MAN = {

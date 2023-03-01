@@ -18,7 +18,7 @@ state=
 			infrastructure = 4
 		}
 
-		add_core_of = EGY
+		add_core_of = WST
 
 	}
 	provinces={

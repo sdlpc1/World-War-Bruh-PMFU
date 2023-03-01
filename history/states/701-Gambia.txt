@@ -14,7 +14,7 @@ state={
 
 			}
 		}
-		add_core_of = BAS
+		add_core_of = WST
 	}
 
 	provinces={

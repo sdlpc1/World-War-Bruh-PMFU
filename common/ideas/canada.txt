@@ -155,7 +155,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				equipment_capture = 0.25
+				# equipment_capture = 0.25
 				army_core_attack_factor = 0.15
 			}
 		}
