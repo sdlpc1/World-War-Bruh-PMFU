@@ -13,11 +13,6 @@ state={
 		owner = TUR
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
-		}
-		
-		victory_points = {
-			947 1 
 		}
 		add_core_of = TUR
 		add_extra_state_shared_building_slots = 1

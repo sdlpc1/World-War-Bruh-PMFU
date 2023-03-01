@@ -220,8 +220,7 @@
 		}
 
 		available = {
-		YUG = { is_ai = no }
-
+			# YUG = { is_ai = no }
 		}
 
 		bypass = {
@@ -612,6 +611,7 @@
 					has_war_with = YUG
 				}
 			}
+			YUG = { is_ai = no }
 		}
 
 		bypass = {

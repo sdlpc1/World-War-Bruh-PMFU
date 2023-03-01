@@ -26,6 +26,12 @@ YUG_historical_plan = {
 		YUG_friendship_treaty_with_italy
 		YUG_attract_axis_capital
 		YUG_expand_the_split_shipyards
+
+		YUG_evolution
+		YUG_establish_the_banovina_of_croatia
+		YUG_ban_slovene_nationalist_parties
+		YUG_concessions_for_macedonians
+		YUG_invite_german_military_mission
 	}
 
 	research = {

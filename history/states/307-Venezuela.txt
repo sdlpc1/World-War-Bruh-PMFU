@@ -17,9 +17,6 @@ state={
 		owner = VEN
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 5
-			air_base = 2
 			8113 = {
 				naval_base = 3
 			}
@@ -29,9 +26,6 @@ state={
 		}
 		add_core_of = VEN
 		add_extra_state_shared_building_slots = 6
-		victory_points = {
-			8113 5 
-		}
 
 	}
 

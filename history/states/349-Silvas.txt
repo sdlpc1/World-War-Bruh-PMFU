@@ -8,12 +8,8 @@ state={
 
 	history={
 		owner = TUR
-		victory_points = {
-			9777 1 
-		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 		}
 		add_core_of = TUR
 		add_extra_state_shared_building_slots = 1
