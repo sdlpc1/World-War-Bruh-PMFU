@@ -1,0 +1,578 @@
+equipments = {
+	### MEDIUM ###
+
+	eng_medium_tank_equipment_1 = {
+		year = 1936
+
+		archetype = medium_tank_equipment
+		priority = 50
+		visual_level = 0
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 5
+
+		armor_value = 50
+		ap_attack = 45
+
+		defense = 8
+		breakthrough = 44
+		soft_attack = 28
+		hard_attack = 28
+
+		build_cost_ic = 32
+	
+	}
+	
+	eng_medium_tank_equipment_2 = {
+		year = 1938
+
+		archetype = medium_tank_equipment
+		parent = eng_medium_tank_equipment_1
+		priority = 50
+		visual_level = 0
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 5.2
+
+		armor_value = 55
+		ap_attack = 50
+
+		defense = 8
+		breakthrough = 48
+		soft_attack = 32
+		hard_attack = 32
+
+		build_cost_ic = 36
+	}
+	
+	eng_medium_tank_equipment_3 = {
+		year = 1940
+
+		archetype = medium_tank_equipment
+		parent = eng_medium_tank_equipment_2
+		priority = 50
+		visual_level = 0
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 5.5
+
+		armor_value = 60
+		ap_attack = 55
+
+		defense = 9
+		breakthrough = 55
+		soft_attack = 36
+		hard_attack = 34
+
+		build_cost_ic = 40
+	}
+	
+	eng_medium_tank_equipment_4 = {
+		year = 1942
+
+		archetype = medium_tank_equipment
+		parent = eng_medium_tank_equipment_3
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 6.0
+
+		armor_value = 70
+		ap_attack = 65
+
+		defense = 10
+		breakthrough = 65
+		soft_attack = 42
+		hard_attack = 38
+		
+		build_cost_ic = 44
+	}
+	
+	eng_medium_tank_equipment_5 = {
+		year = 1944
+
+		archetype = medium_tank_equipment
+		parent = eng_medium_tank_equipment_4
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		armor_value = 80
+		ap_attack = 75
+
+		defense = 12
+		breakthrough = 70
+		soft_attack = 48
+		hard_attack = 45
+
+		build_cost_ic = 48
+	}
+	
+	eng_medium_tank_equipment_6 = {
+		year = 1945
+
+		archetype = medium_tank_equipment
+		parent = eng_medium_tank_equipment_4
+		priority = 250
+		visual_level = 3
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 7.5
+
+		armor_value = 100
+		ap_attack = 120
+
+		defense = 15
+		breakthrough = 80
+		soft_attack = 60
+		hard_attack = 60
+
+		build_cost_ic = 54
+	}
+
+	eng_medium_td_equipment_1 = {
+		year = 1939
+
+		archetype = medium_tank_destroyer_equipment
+		family = eng_medium_tank_equipment_1
+		priority = 80
+		visual_level = 3
+		can_convert_from = { 
+			eng_medium_tank_equipment_2
+		}
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		ap_attack = 70
+		armor_value = 35
+
+		soft_attack = 6
+		hard_attack = 32
+		
+		build_cost_ic = 28
+			
+	}
+
+	eng_medium_td_equipment_2 = {
+		year = 1941
+
+		archetype = medium_tank_destroyer_equipment
+		family = eng_medium_tank_equipment_1
+		priority = 80
+		visual_level = 3
+		can_convert_from = { 
+			eng_medium_tank_equipment_2
+			eng_medium_tank_equipment_3
+		}
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		ap_attack = 80
+		armor_value = 45
+
+		soft_attack = 6
+		hard_attack = 37
+		
+		build_cost_ic = 32
+			
+	}
+	
+	eng_medium_td_equipment_3 = {
+		year = 1943
+
+		archetype = medium_tank_destroyer_equipment
+		family = eng_medium_tank_equipment_1
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			eng_medium_tank_equipment_2
+			eng_medium_tank_equipment_3
+			eng_medium_tank_equipment_4
+		}
+
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		ap_attack = 90
+		armor_value = 55
+
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 44
+		
+		build_cost_ic = 36
+		
+	}
+	
+	eng_sherman_td_equipment_1 = {
+		year = 1944
+
+		archetype = medium_tank_destroyer_equipment
+		family = eng_medium_tank_equipment_1
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			usa_medium_tank_equipment_3
+			usa_medium_tank_equipment_4
+			usa_medium_tank_equipment_5
+		}
+
+		#Misc Abilities
+		maximum_speed = 7
+
+		ap_attack = 100
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 10
+		hard_attack = 52
+		
+		build_cost_ic = 36
+		
+	}
+	
+	eng_medium_spg_equipment_1 = {
+		year = 1941
+
+		archetype = medium_tank_artillery_equipment
+		family = eng_medium_tank_equipment_1
+		priority = 80
+		visual_level = 2
+		can_convert_from = { 
+			eng_medium_tank_equipment_2
+			eng_medium_tank_equipment_3
+		}
+
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		ap_attack = 10
+		armor_value = 55
+
+		#Offensive Abilities
+		soft_attack = 60
+		hard_attack = 2
+		
+		build_cost_ic = 30
+	}
+	
+	eng_medium_spg_equipment_2 = {
+		year = 1943
+
+		archetype = medium_tank_artillery_equipment
+		family = eng_medium_tank_equipment_1
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			eng_medium_tank_equipment_2
+			eng_medium_tank_equipment_3
+			eng_medium_tank_equipment_4
+		}
+
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		ap_attack = 10
+		armor_value = 60
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 2
+		
+		build_cost_ic = 32
+	}
+	
+	eng_medium_spaa_equipment_1 = {
+		year = 1941
+
+		archetype = medium_tank_aa_equipment
+		family = eng_medium_tank_equipment_2
+		priority = 80
+		visual_level = 0
+		can_convert_from = { 
+			
+			eng_medium_tank_equipment_2
+			eng_medium_tank_equipment_3
+			eng_medium_tank_equipment_4
+		}
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		ap_attack = 50
+		armor_value = 40
+
+		#Offensive Abilities
+		air_attack = 38
+		soft_attack = 4
+		hard_attack = 16
+		
+		build_cost_ic = 30
+
+	}
+	
+	eng_medium_spaa_equipment_2 = {
+		year = 1943
+
+		archetype = medium_tank_aa_equipment
+		parent = eng_medium_spaa_equipment_1
+		family = eng_medium_tank_equipment_2
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			eng_medium_tank_equipment_2
+			eng_medium_tank_equipment_3
+			eng_medium_tank_equipment_4
+		}
+
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		ap_attack = 60
+		armor_value = 50
+
+		#Offensive Abilities
+		air_attack = 42
+		soft_attack = 5
+		hard_attack = 18
+		
+		build_cost_ic = 34
+	}
+	
+	### HEAVY ###
+	
+	eng_heavy_tank_equipment_1 = {
+		year = 1935
+
+		archetype = heavy_tank_equipment
+		priority = 50
+		visual_level = 3
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 4
+
+		armor_value = 50
+		ap_attack = 40
+
+		defense = 8
+		breakthrough = 55
+		soft_attack = 30
+		hard_attack = 25
+
+		build_cost_ic = 55
+	}
+	
+	eng_heavy_tank_equipment_2 = {
+		year = 1938
+
+		archetype = heavy_tank_equipment
+		parent = eng_heavy_tank_equipment_1
+		priority = 50
+		visual_level = 3
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 4.2
+
+		armor_value = 65
+		ap_attack = 60
+
+		defense = 12
+		breakthrough = 60
+		soft_attack = 46
+		hard_attack = 42
+
+		build_cost_ic = 66
+	}
+	
+	eng_heavy_tank_equipment_3 = {
+		year = 1940
+
+		archetype = heavy_tank_equipment
+		parent = eng_heavy_tank_equipment_2
+		priority = 50
+		visual_level = 4
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 4.4
+
+		armor_value = 80
+		ap_attack = 75
+
+		defense = 14
+		breakthrough = 80
+		soft_attack = 52
+		hard_attack = 52
+
+		build_cost_ic = 72
+	}
+	
+	eng_heavy_tank_equipment_4 = {
+		year = 1942
+
+		archetype = heavy_tank_equipment
+		parent = eng_heavy_tank_equipment_3
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 4.6
+
+		armor_value = 90
+		ap_attack = 85
+
+		defense = 16
+		breakthrough = 90
+		soft_attack = 62
+		hard_attack = 62
+
+		build_cost_ic = 79
+	}
+	
+	eng_heavy_tank_equipment_5 = {
+		year = 1944
+
+		archetype = heavy_tank_equipment
+		parent = eng_heavy_tank_equipment_4
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 4.8
+
+		armor_value = 100
+		ap_attack = 95
+
+		defense = 18
+		breakthrough = 100
+		soft_attack = 72
+		hard_attack = 72
+
+		build_cost_ic = 85
+	}
+	
+	eng_heavy_td_equipment_1 = {
+		year = 1942
+
+		archetype = heavy_tank_destroyer_equipment
+		family = eng_heavy_tank_equipment_4
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			eng_heavy_tank_equipment_4
+			eng_heavy_tank_equipment_5
+		}
+	
+		#Misc Abilities
+		maximum_speed = 4.0
+
+		armor_value = 80
+		ap_attack = 100
+
+		soft_attack = 6
+		hard_attack = 70
+
+		build_cost_ic = 68
+	}
+	
+	### ASSAULT GUNS ###
+	
+	eng_assault_gun_equipment_1 = {
+		year = 1940
+
+		archetype = assault_gun_equipment
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			eng_heavy_tank_equipment_2
+			eng_heavy_tank_equipment_3
+		}
+	
+		#Misc Abilities
+		maximum_speed = 3.5
+
+		armor_value = 85
+		ap_attack = 40
+		
+		hardness = 0.95
+
+		soft_attack = 80
+		hard_attack = 8
+		defense = 6
+		breakthrough = 100
+
+		build_cost_ic = 58
+	}
+	
+	eng_assault_gun_equipment_2 = {
+		year = 1942
+
+		archetype = assault_gun_equipment
+		priority = 80
+		visual_level = 1
+		parent = eng_assault_gun_equipment_1
+		can_convert_from = { 
+			eng_heavy_tank_equipment_2
+			eng_heavy_tank_equipment_3
+		}
+	
+		#Misc Abilities
+		maximum_speed = 3.8
+
+		armor_value = 95
+		ap_attack = 45
+		
+		hardness = 0.95
+
+		soft_attack = 90
+		hard_attack = 10
+		defense = 8
+		breakthrough = 110
+
+		build_cost_ic = 62
+	}
+	
+	eng_assault_gun_equipment_3 = {
+		year = 1944
+
+		archetype = assault_gun_equipment
+		priority = 80
+		visual_level = 2
+		parent = eng_assault_gun_equipment_2
+		can_convert_from = { 
+			eng_heavy_tank_equipment_4
+			eng_heavy_tank_equipment_5
+		}
+	
+		#Misc Abilities
+		maximum_speed = 4
+
+		armor_value = 100
+		ap_attack = 50
+		
+		hardness = 0.95
+
+		soft_attack = 100
+		hard_attack = 12
+		defense = 10
+		breakthrough = 120
+
+		build_cost_ic = 66
+	}
+	
+}

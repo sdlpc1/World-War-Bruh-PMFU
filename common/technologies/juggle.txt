@@ -1,0 +1,22 @@
+technologies = {
+	Juggle1 = {
+		research_cost = 0
+		XOR = {
+			Juggle2
+		}
+		folder = {
+			name = industry_folder
+			# position = { x = -3 y = 0 }
+		}
+	}
+	Juggle2 = {
+		XOR = {
+			Juggle1
+		}
+		research_cost = 0
+		folder = {
+			name = industry_folder
+			# position = { x = 2 y = 0 }
+		}
+	}
+}

@@ -1,0 +1,1189 @@
+# All equipment based on medium tank equipment
+equipments = {
+
+	### LIGHT ###
+	
+	ger_light_tank_equipment_1 = {
+		year = 1936
+
+		archetype = light_tank_equipment
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		armor_value = 15
+		ap_attack = 35
+
+		defense = 5
+		breakthrough = 30
+		soft_attack = 18
+		hard_attack = 12
+
+		build_cost_ic = 10
+		
+	}
+	
+	ger_light_tank_equipment_2 = {
+		year = 1938
+
+		archetype = light_tank_equipment
+		parent = ger_light_tank_equipment_1
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 7.0
+
+		armor_value = 20
+		ap_attack = 40
+
+		defense = 6
+		breakthrough = 35
+		soft_attack = 20
+		hard_attack = 14
+
+		build_cost_ic = 12
+			
+	}
+	
+	ger_light_tank_equipment_3 = {
+		year = 1940
+
+		archetype = light_tank_equipment
+		parent = ger_light_tank_equipment_2
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 7.5
+
+		armor_value = 30
+		ap_attack = 45
+
+		defense = 7
+		breakthrough = 40
+		soft_attack = 24
+		hard_attack = 16
+
+		build_cost_ic = 14
+			
+	}
+	
+	ger_light_tank_equipment_4 = {
+		year = 1942
+
+		archetype = light_tank_equipment
+		parent = ger_light_tank_equipment_3
+		priority = 50
+		visual_level = 2
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 8.0
+
+		armor_value = 40
+		ap_attack = 55
+
+		defense = 8
+		breakthrough = 50
+		soft_attack = 28
+		hard_attack = 18
+
+		build_cost_ic = 16
+			
+	}
+	
+	ger_light_td_equipment_1 = {
+		year = 1939
+
+		archetype = light_tank_destroyer_equipment
+		family = ger_light_tank_equipment_1
+		priority = 80
+		visual_level = 0
+		can_convert_from = { 
+			ger_light_tank_equipment_1
+		}
+
+		#Misc Abilities
+		maximum_speed = 7.0
+
+		ap_attack = 70
+		armor_value = 15
+
+		#Offensive Abilities
+		soft_attack = 10
+		hard_attack = 22
+		
+		build_cost_ic = 16
+		
+	}
+	
+	ger_light_td_equipment_2 = {
+		year = 1941
+
+		archetype = light_tank_destroyer_equipment
+		family = ger_light_tank_equipment_2
+		parent = ger_light_td_equipment_1
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			ger_light_tank_equipment_2
+			ger_light_tank_equipment_3
+			ger_light_tank_equipment_4
+		}
+
+		#Misc Abilities
+		maximum_speed = 8.0
+
+		ap_attack = 85
+		armor_value = 15
+
+		#Offensive Abilities
+		soft_attack = 10
+		hard_attack = 32
+		
+		build_cost_ic = 18
+		
+	}
+	
+	ger_light_spg_equipment_1 = {
+		year = 1938
+
+		archetype = light_tank_artillery_equipment
+		family = ger_light_tank_equipment_1
+		priority = 80
+		visual_level = 0
+		can_convert_from = { 
+			ger_light_tank_equipment_1
+		}
+
+		#Misc Abilities
+		maximum_speed = 7.0
+
+		ap_attack = 5
+		armor_value = 15
+
+		#Offensive Abilities
+		soft_attack = 38
+		hard_attack = 2
+		
+		build_cost_ic = 18
+		
+	}
+	
+	ger_light_spg_equipment_2 = {
+		year = 1940
+
+		archetype = light_tank_artillery_equipment
+		family = ger_light_tank_equipment_2
+		parent = ger_light_spg_equipment_1
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			ger_light_tank_equipment_2
+			ger_light_tank_equipment_3
+			ger_light_tank_equipment_4
+		}
+
+		#Misc Abilities
+		maximum_speed = 8.0
+
+		ap_attack = 5
+		armor_value = 15
+
+		#Offensive Abilities
+		soft_attack = 44
+		hard_attack = 2
+		
+		build_cost_ic = 20
+		
+	}
+	
+	ger_light_spaa_equipment_1 = {
+		year = 1939
+
+		archetype = light_tank_aa_equipment
+		family = ger_light_tank_equipment_1
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			ger_light_tank_equipment_1
+		}
+
+		#Misc Abilities
+		maximum_speed = 7.5
+
+		ap_attack = 25
+		armor_value = 10
+
+		#Offensive Abilities
+		soft_attack = 2
+		hard_attack = 8
+		air_attack = 26
+		
+		build_cost_ic = 20
+		
+	}
+	
+	### cze ###
+	
+	ger_cze_tank_equipment_1 = {
+		year = 1935
+
+		archetype = light_tank_equipment
+		priority = 50
+		visual_level = 2
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 7.0
+
+		armor_value = 30
+		ap_attack = 40
+
+		defense = 6
+		breakthrough = 35
+		soft_attack = 18
+		hard_attack = 12
+
+		build_cost_ic = 16
+		
+	}
+	
+	ger_cze_tank_equipment_2 = {
+		year = 1938
+
+		archetype = light_tank_equipment
+		parent = ger_cze_tank_equipment_1
+		priority = 50
+		visual_level = 2
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 7.0
+
+		armor_value = 40
+		ap_attack = 50
+
+		defense = 8
+		breakthrough = 40
+		soft_attack = 20
+		hard_attack = 14
+
+		build_cost_ic = 18
+			
+	}
+	
+	ger_cze_td_equipment_1 = {
+		year = 1940
+
+		archetype = light_tank_destroyer_equipment
+		family = ger_cze_tank_equipment_1
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			ger_cze_tank_equipment_1
+			ger_cze_tank_equipment_2
+		}
+
+		#Misc Abilities
+		maximum_speed = 7.5
+
+		ap_attack = 80
+		armor_value = 10
+
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 30
+		
+		build_cost_ic = 20
+		
+	}
+	
+	ger_cze_td_equipment_2 = {
+		year = 1943
+
+		archetype = light_tank_destroyer_equipment
+		family = ger_cze_tank_equipment_2
+		parent = ger_cze_td_equipment_1
+		priority = 80
+		visual_level = 2
+		can_convert_from = {
+			ger_cze_tank_equipment_1
+			ger_cze_tank_equipment_2
+		}
+
+		#Misc Abilities
+		maximum_speed = 8.0
+
+		ap_attack = 90
+		armor_value = 30
+
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 36
+		
+		build_cost_ic = 22
+		
+	}
+	
+	ger_cze_spg_equipment_1 = {
+		year = 1941
+
+		archetype = light_tank_artillery_equipment
+		family = ger_cze_tank_equipment_1
+		priority = 80
+		visual_level = 2
+		can_convert_from = { 
+			ger_cze_tank_equipment_1
+			ger_cze_tank_equipment_2
+		}
+
+		#Misc Abilities
+		maximum_speed = 8.0
+
+		ap_attack = 5
+		armor_value = 20
+
+		#Offensive Abilities
+		soft_attack = 48
+		hard_attack = 4
+		
+		build_cost_ic = 20
+		
+	}
+	
+	ger_cze_spaa_equipment_1 = {
+		year = 1941
+
+		archetype = light_tank_aa_equipment
+		family = ger_cze_tank_equipment_1
+		priority = 80
+		visual_level = 2
+		can_convert_from = { 
+			ger_cze_tank_equipment_1
+			ger_cze_tank_equipment_2
+		}
+
+		#Misc Abilities
+		maximum_speed = 8.0
+
+		ap_attack = 40
+		armor_value = 25
+
+		#Offensive Abilities
+		soft_attack = 2
+		hard_attack = 10
+		air_attack = 30
+		
+		build_cost_ic = 24
+
+	}
+
+	### MEDIUM ###
+
+	ger_p4_tank_equipment_1 = {
+		year = 1936
+
+		archetype = medium_tank_equipment
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 5
+
+		armor_value = 50
+		ap_attack = 45
+
+		defense = 7
+		breakthrough = 40
+		soft_attack = 32
+		hard_attack = 24
+
+		build_cost_ic = 32
+	
+	}
+	
+	ger_p4_tank_equipment_2 = {
+		year = 1938
+
+		archetype = medium_tank_equipment
+		parent = ger_p4_tank_equipment_1
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 5.2
+
+		armor_value = 55
+		ap_attack = 50
+
+		defense = 8
+		breakthrough = 45
+		soft_attack = 36
+		hard_attack = 28
+
+		build_cost_ic = 36
+	}
+	
+	ger_p4_tank_equipment_3 = {
+		year = 1940
+
+		archetype = medium_tank_equipment
+		parent = ger_p4_tank_equipment_2
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 5.5
+
+		armor_value = 60
+		ap_attack = 55
+
+		defense = 9
+		breakthrough = 50
+		soft_attack = 40
+		hard_attack = 32
+
+		build_cost_ic = 40	
+	}
+	
+	ger_p4_tank_equipment_4 = {
+		year = 1942
+
+		archetype = medium_tank_equipment
+		parent = ger_p4_tank_equipment_3
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 6
+
+		armor_value = 70
+		ap_attack = 65
+
+		defense = 10
+		breakthrough = 60
+		soft_attack = 44
+		hard_attack = 36
+		
+		build_cost_ic = 44
+	}
+	
+	ger_p4_tank_equipment_5 = {
+		year = 1944
+
+		archetype = medium_tank_equipment
+		parent = ger_p4_tank_equipment_4
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		armor_value = 80
+		ap_attack = 75
+
+		defense = 12
+		breakthrough = 70
+		soft_attack = 50
+		hard_attack = 43
+
+		build_cost_ic = 48
+	}
+	
+	ger_p3_tank_equipment_1 = {
+		year = 1936
+
+		archetype = medium_tank_equipment
+		priority = 50
+		visual_level = 0
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 5
+
+		armor_value = 50
+		ap_attack = 45
+
+		defense = 7
+		breakthrough = 40
+		soft_attack = 28
+		hard_attack = 28
+
+		build_cost_ic = 28
+	}
+	
+	ger_p3_tank_equipment_2 = {
+		year = 1938
+
+		archetype = medium_tank_equipment
+		parent = ger_p3_tank_equipment_1
+		priority = 50
+		visual_level = 0
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 5.5
+
+		armor_value = 55
+		ap_attack = 50
+
+		defense = 8
+		breakthrough = 45
+		soft_attack = 30
+		hard_attack = 34
+
+		build_cost_ic = 38
+	}
+	
+	ger_p3_tank_equipment_3 = {
+		year = 1940
+
+		archetype = medium_tank_equipment
+		parent = ger_p3_tank_equipment_2
+		priority = 50
+		visual_level = 0
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 5.5
+
+		armor_value = 60
+		ap_attack = 55
+
+		defense = 9
+		breakthrough = 50
+		soft_attack = 32
+		hard_attack = 38
+
+		build_cost_ic = 40
+	}
+	
+	ger_p3_tank_equipment_4 = {
+		year = 1942
+
+		archetype = medium_tank_equipment
+		parent = ger_p3_tank_equipment_3
+		priority = 50
+		visual_level = 0
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 6
+
+		armor_value = 70
+		ap_attack = 65
+
+		defense = 10
+		breakthrough = 60
+		soft_attack = 36
+		hard_attack = 44
+		
+		build_cost_ic = 44
+	}
+	
+	ger_p5_tank_equipment_1 = {
+		year = 1943
+
+		archetype = medium_tank_equipment
+		parent = ger_p3_tank_equipment_4
+		parent = ger_p4_tank_equipment_4
+		priority = 100
+		visual_level = 2
+		is_convertable = yes
+	
+		#Misc Abilities
+		hardness = 0.925
+		maximum_speed = 5
+
+		armor_value = 85
+		ap_attack = 75
+
+		defense = 12
+		breakthrough = 65
+		soft_attack = 44
+		hard_attack = 50
+
+		build_cost_ic = 54
+	}
+	
+	ger_p5_tank_equipment_2 = {
+		year = 1945
+
+		archetype = medium_tank_equipment
+		parent = ger_p5_tank_equipment_1
+		priority = 100
+		visual_level = 2
+		is_convertable = yes
+						
+		#Misc Abilities
+		hardness = 0.925
+		maximum_speed = 5.5
+
+		armor_value = 95
+		ap_attack = 85
+
+		defense = 14
+		breakthrough = 70
+		soft_attack = 60
+		hard_attack = 60
+
+		build_cost_ic = 58
+	}
+	
+	ger_p3_td_equipment_1 = {
+		year = 1940
+
+		archetype = medium_tank_destroyer_equipment
+		family = ger_p3_tank_equipment_1
+		priority = 20
+		visual_level = 0
+		can_convert_from = { 
+			ger_p3_tank_equipment_1
+			ger_p3_tank_equipment_2
+			ger_p3_tank_equipment_3
+			ger_p3_tank_equipment_4
+		}
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		ap_attack = 75
+		armor_value = 40
+
+		soft_attack = 6
+		hard_attack = 35
+		
+		build_cost_ic = 30
+	}
+	
+	ger_p3_td_equipment_2 = {
+		year = 1941
+
+		archetype = medium_tank_destroyer_equipment
+		parent = ger_p3_td_equipment_1
+		family = ger_p3_tank_equipment_1
+		priority = 40
+		visual_level = 0
+		can_convert_from = { 
+			ger_p3_tank_equipment_1
+			ger_p3_tank_equipment_2
+			ger_p3_tank_equipment_3
+			ger_p3_tank_equipment_4
+		}
+
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		ap_attack = 80
+		armor_value = 45
+
+		soft_attack = 6
+		hard_attack = 39
+		
+		build_cost_ic = 32
+			
+	}
+	
+	ger_p4_td_equipment_1 = {
+		year = 1942
+
+		archetype = medium_tank_destroyer_equipment
+		family = ger_p4_tank_equipment_1
+		priority = 60
+		visual_level = 1
+		can_convert_from = { 
+			ger_p4_tank_equipment_1
+			ger_p4_tank_equipment_2
+			ger_p4_tank_equipment_3
+			ger_p4_tank_equipment_4
+			ger_p4_tank_equipment_5
+		}
+
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		ap_attack = 85
+		armor_value = 50
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 43
+		
+		build_cost_ic = 34
+		
+	}
+	
+	ger_p34_td_equipment_1 = {
+		year = 1943
+
+		archetype = medium_tank_destroyer_equipment
+		parent = ger_p4_td_equipment_1
+		parent = ger_p3_td_equipment_2
+		family = ger_p4_tank_equipment_1
+		priority = 200
+		visual_level = 3
+		can_convert_from = { 
+			ger_p4_tank_equipment_1
+			ger_p4_tank_equipment_2
+			ger_p4_tank_equipment_3
+			ger_p4_tank_equipment_4
+			ger_p4_tank_equipment_5
+			ger_p3_tank_equipment_1
+			ger_p3_tank_equipment_2
+			ger_p3_tank_equipment_3
+			ger_p3_tank_equipment_4
+		}
+
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		ap_attack = 100
+		armor_value = 30
+		
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 48
+		
+		build_cost_ic = 34
+	
+	}
+	
+	ger_p5_td_equipment_1 = {
+		year = 1943
+
+		archetype = medium_tank_destroyer_equipment
+		parent = ger_p4_td_equipment_1
+		parent = ger_p3_td_equipment_2
+		family = ger_p5_tank_equipment_1
+		priority = 200
+		visual_level = 2
+		can_convert_from = { 
+			ger_p5_tank_equipment_1
+		}
+
+		#Misc Abilities
+		maximum_speed = 5
+
+		ap_attack = 105
+		armor_value = 65
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 50
+		
+		build_cost_ic = 36
+	}
+	
+	ger_p4_spaa_equipment_1 = {
+		year = 1941
+
+		archetype = medium_tank_aa_equipment
+		family = ger_p4_tank_equipment_1
+		priority = 80
+		visual_level = 0
+		can_convert_from = { 
+			ger_p4_tank_equipment_1
+			ger_p4_tank_equipment_2
+			ger_p4_tank_equipment_3
+			ger_p4_tank_equipment_4
+			ger_p4_tank_equipment_5
+		}
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		ap_attack = 50
+		armor_value = 40
+
+		#Offensive Abilities
+		air_attack = 38
+		soft_attack = 4
+		hard_attack = 16
+		
+		build_cost_ic = 38
+
+	}
+	
+	ger_p4_spaa_equipment_2 = {
+		year = 1943
+
+		archetype = medium_tank_aa_equipment
+		parent = ger_p4_spaa_equipment_1
+		family = ger_p4_tank_equipment_1
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			ger_p4_tank_equipment_1
+			ger_p4_tank_equipment_2
+			ger_p4_tank_equipment_3
+			ger_p4_tank_equipment_4
+			ger_p4_tank_equipment_5
+		}
+
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		ap_attack = 60
+		armor_value = 50
+
+		#Offensive Abilities
+		air_attack = 42
+		soft_attack = 5
+		hard_attack = 18
+		
+		build_cost_ic = 42
+	}
+	
+	ger_p4_spaa_equipment_3 = {
+		year = 1945
+
+		archetype = medium_tank_aa_equipment
+		parent = ger_p4_spaa_equipment_2
+		family = ger_p4_tank_equipment_1
+		priority = 80
+		visual_level = 2
+		can_convert_from = { 
+			ger_p4_tank_equipment_1
+			ger_p4_tank_equipment_2
+			ger_p4_tank_equipment_3
+			ger_p4_tank_equipment_4
+			ger_p4_tank_equipment_5
+		}
+
+		#Misc Abilities
+		maximum_speed = 7
+
+		ap_attack = 70
+		armor_value = 60
+
+		#Offensive Abilities
+		air_attack = 46
+		soft_attack = 6
+		hard_attack = 22
+		
+		build_cost_ic = 46
+				
+	}
+	
+	ger_p3_spg_equipment_1 = {
+		year = 1939
+
+		archetype = medium_tank_artillery_equipment
+		family = ger_p3_tank_equipment_1
+		priority = 80
+		visual_level = 0
+		can_convert_from = { 
+			ger_p3_tank_equipment_1
+			ger_p3_tank_equipment_2
+			ger_p3_tank_equipment_3
+			ger_p3_tank_equipment_4
+		}
+
+		#Misc Abilities
+		maximum_speed = 5.5
+
+		ap_attack = 10
+		armor_value = 40
+
+		#Offensive Abilities
+		soft_attack = 50
+		hard_attack = 2
+		
+		build_cost_ic = 38
+	}
+	
+	ger_p4_spg_equipment_1 = {
+		year = 1941
+
+		archetype = medium_tank_artillery_equipment
+		family = ger_p4_tank_equipment_1
+		priority = 80
+		visual_level = 2
+		can_convert_from = { 
+			ger_p4_tank_equipment_1
+			ger_p4_tank_equipment_2
+			ger_p4_tank_equipment_3
+			ger_p4_tank_equipment_4
+			ger_p4_tank_equipment_5
+		}
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		ap_attack = 10
+		armor_value = 50
+
+		#Offensive Abilities
+		soft_attack = 60
+		hard_attack = 2
+		
+		build_cost_ic = 42
+	}
+	
+	ger_p4_spg_equipment_2 = {
+		year = 1943
+
+		archetype = medium_tank_artillery_equipment
+		parent = ger_p4_spg_equipment_1
+		family = ger_p4_tank_equipment_1
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			ger_p4_tank_equipment_1
+			ger_p4_tank_equipment_2
+			ger_p4_tank_equipment_3
+			ger_p4_tank_equipment_4
+			ger_p4_tank_equipment_5
+		}
+
+		#Misc Abilities
+		maximum_speed = 6.5
+
+		ap_attack = 10
+		armor_value = 60
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 2
+		
+		build_cost_ic = 36
+	}
+	
+	### HEAVY ###
+	
+	ger_heavy_tank_equipment_0 = {
+		year = 1935
+
+		archetype = heavy_tank_equipment
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 4
+
+		armor_value = 50
+		ap_attack = 40
+
+		defense = 8
+		breakthrough = 50
+		soft_attack = 33
+		hard_attack = 27
+
+		build_cost_ic = 62
+	}
+	
+	ger_heavy_tank_equipment_1 = {
+		year = 1941
+
+		archetype = heavy_tank_equipment
+		parent = ger_heavy_tank_equipment_0
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 4.5
+
+		armor_value = 85
+		ap_attack = 80
+
+		defense = 14
+		breakthrough = 80
+		soft_attack = 50
+		hard_attack = 60
+
+		build_cost_ic = 76
+	}
+	
+	ger_heavy_tank_equipment_2 = {
+		year = 1943
+
+		archetype = heavy_tank_equipment
+		parent = ger_heavy_tank_equipment_1
+		priority = 50
+		visual_level = 2
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 4.8
+
+		armor_value = 95
+		ap_attack = 90
+
+		defense = 16
+		breakthrough = 90
+		soft_attack = 60
+		hard_attack = 70
+
+		build_cost_ic = 82
+	}
+	
+	ger_heavy_tank_equipment_3 = {
+		year = 1945
+
+		archetype = heavy_tank_equipment
+		parent = ger_heavy_tank_equipment_2
+		priority = 50
+		visual_level = 2
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 5.0
+
+		armor_value = 105
+		ap_attack = 100
+
+		defense = 18
+		breakthrough = 100
+		soft_attack = 70
+		hard_attack = 80
+
+		build_cost_ic = 88
+	}
+	
+	ger_heavy_td_equipment_1 = {
+		year = 1942
+
+		archetype = heavy_tank_destroyer_equipment
+		family = ger_heavy_tank_equipment_1
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			ger_heavy_tank_equipment_1
+		}
+	
+		#Misc Abilities
+		maximum_speed = 4.0
+
+		armor_value = 80
+		ap_attack = 100
+
+		soft_attack = 6
+		hard_attack = 70
+
+		build_cost_ic = 68
+	}
+	
+	ger_heavy_td_equipment_2 = {
+		year = 1944
+
+		archetype = heavy_tank_destroyer_equipment
+		family = ger_heavy_tank_equipment_2
+		priority = 80
+		visual_level = 2
+		can_convert_from = { 
+			ger_heavy_tank_equipment_1
+			ger_heavy_tank_equipment_2
+		}
+	
+		#Misc Abilities
+		maximum_speed = 4.5
+
+		armor_value = 100
+		ap_attack = 110
+
+		soft_attack = 6
+		hard_attack = 80
+
+		build_cost_ic = 74
+	}
+	
+	### ASSAULT GUNS ###
+	
+	ger_assault_gun_equipment_1 = {
+		year = 1939
+
+		archetype = assault_gun_equipment
+		priority = 80
+		visual_level = 1
+		can_convert_from = { 
+			ger_p3_tank_equipment_1
+			ger_p3_tank_equipment_2
+			ger_p3_tank_equipment_3
+			ger_p3_tank_equipment_4
+		}
+	
+		#Misc Abilities
+		maximum_speed = 3.5
+
+		armor_value = 60
+		ap_attack = 25
+
+		soft_attack = 50
+		hard_attack = 4
+		defense = 4
+		breakthrough = 60
+
+		build_cost_ic = 32
+	}
+	
+	ger_assault_gun_equipment_2 = {
+		year = 1941
+
+		archetype = assault_gun_equipment
+		priority = 80
+		visual_level = 1
+		parent = ger_assault_gun_equipment_1
+		can_convert_from = { 
+			ger_p3_tank_equipment_1
+			ger_p3_tank_equipment_2
+			ger_p3_tank_equipment_3
+			ger_p3_tank_equipment_4
+		}
+	
+		#Misc Abilities
+		maximum_speed = 3.8
+
+		armor_value = 70
+		ap_attack = 30
+
+		soft_attack = 60
+		hard_attack = 6
+		defense = 6
+		breakthrough = 75
+
+		build_cost_ic = 36
+	}
+	
+	ger_assault_gun_equipment_3 = {
+		year = 1943
+
+		archetype = assault_gun_equipment
+		priority = 80
+		visual_level = 2
+		parent = ger_assault_gun_equipment_2
+		can_convert_from = { 
+			ger_heavy_tank_equipment_1
+		}
+	
+		#Misc Abilities
+		maximum_speed = 3.5
+
+		armor_value = 100
+		ap_attack = 50
+		
+		hardness = 0.95
+
+		soft_attack = 100
+		hard_attack = 10
+		defense = 8
+		breakthrough = 120
+
+		build_cost_ic = 72
+	}
+
+
+}

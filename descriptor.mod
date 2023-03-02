@@ -11,5 +11,7 @@ tags={
 	"Technologies"
 }
 picture="thumbnail.png"
+replace_path="common/ai_equipment"
+replace_path="history/countries"
 name="World War Bruh (PMFU) - Experimental"
 supported_version="1.12.*"

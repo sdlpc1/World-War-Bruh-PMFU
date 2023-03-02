@@ -1,0 +1,51 @@
+technologies = {
+	# Japanese Terrain Buffs
+	adaptable_armor_designs = {
+
+		research_cost = 1
+
+		category_light_tanks = {
+			jungle = {
+				attack = 0.1
+				movement = 0.15
+			}
+			mountain = {
+				attack = 0.05
+				movement = 0.05
+			}
+		}
+		
+	}
+
+		# AST Terrain Buffs
+	jungle_adaptable_armor_designs = {
+
+		research_cost = 1
+
+		category_tanks = {
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+		
+	}
+
+	#Mon Genghis Khan Buffs
+
+	adaptable_cavalry_designs = {
+
+		research_cost = 1
+
+		category_cavalry = {
+			plains = {
+				attack = 0.05
+				movement = 0.05
+			}
+
+		}
+	}
+
+	
+}

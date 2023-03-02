@@ -1,0 +1,830 @@
+technologies = {
+	### LIGHT ###
+	
+	eng_light_tank_1 = {
+
+		enable_equipments = {
+			light_tank_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = eng_light_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = armour_eng_folder
+			position = { x = -8 y = 0 }
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	eng_light_tank_2 = { 
+
+		enable_equipments = {
+			light_tank_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = eng_light_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = armour_eng_folder
+			position = { x = -8 y = 4 }
+		}
+		sub_technologies = {
+			eng_light_td_1
+			eng_light_spg_1
+			eng_light_spaa_1
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	eng_light_tank_3 = { 
+
+		enable_equipments = {
+			light_tank_equipment_3
+		}
+	
+		path = {
+			leads_to_tech = eng_light_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = armour_eng_folder
+			position = { x = -8 y = 8 }
+		}
+		sub_technologies = {
+			eng_light_td_2
+			eng_light_spg_2
+			eng_light_spaa_2
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	eng_light_tank_4 = { 
+
+		enable_equipments = {
+			light_tank_equipment_4
+		}
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = armour_eng_folder
+			position = { x = -8 y = 12 }
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	### MEDIUM ###
+	
+	eng_medium_tank_1 = {
+
+		enable_equipments = {
+			eng_medium_tank_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = eng_medium_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = armour_eng_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	eng_medium_tank_2 = { 
+
+		enable_equipments = {
+			eng_medium_tank_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = eng_medium_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = armour_eng_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		sub_technologies = {
+			eng_medium_td_1
+		}		
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	eng_medium_tank_3 = { 
+
+		enable_equipments = {
+			eng_medium_tank_equipment_3
+		}
+	
+		path = {
+			leads_to_tech = eng_medium_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = armour_eng_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		sub_technologies = {
+			eng_medium_td_2
+			eng_medium_spg_1
+			eng_medium_spaa_1
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	eng_medium_tank_4 = { 
+
+		enable_equipments = {
+			eng_medium_tank_equipment_4
+		}
+	
+		path = {
+			leads_to_tech = eng_medium_tank_5
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = eng_medium_tank_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = armour_eng_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		sub_technologies = {
+			eng_medium_td_3
+			eng_medium_spg_2
+			eng_medium_spaa_2
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	eng_medium_tank_5 = { 
+
+		enable_equipments = {
+			eng_medium_tank_equipment_5
+		}
+	
+		
+		research_cost = 1.5
+		start_year = 1944
+		folder = {
+			name = armour_eng_folder
+			position = { x = -2 y = 16 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_medium_tank_6 = { 
+
+		enable_equipments = {
+			eng_medium_tank_equipment_6
+		}
+	
+		
+		research_cost = 2.0
+		start_year = 1945
+		folder = {
+			name = armour_eng_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_medium_td_1 = { 
+
+		enable_equipments = {
+			eng_medium_td_equipment_1
+		}
+		
+		research_cost = 1.0
+		start_year = 1939
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_medium_td_2 = { 
+
+		enable_equipments = {
+			eng_medium_td_equipment_2
+		}
+		
+		research_cost = 1.0
+		start_year = 1941
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_medium_td_3 = { 
+
+		enable_equipments = {
+			eng_medium_td_equipment_3
+		}
+		
+		research_cost = 1.0
+		start_year = 1943
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	eng_medium_spg_1 = { 
+
+		enable_equipments = {
+			eng_medium_spg_equipment_1
+		}
+		
+		research_cost = 1.0
+		start_year = 1941
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_medium_spg_2 = { 
+
+		enable_equipments = {
+			eng_medium_spg_equipment_2
+		}
+		
+		research_cost = 1.0
+		start_year = 1943
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_medium_spaa_1 = { 
+
+		enable_equipments = {
+			eng_medium_spaa_equipment_1
+		}
+		
+		research_cost = 1.0
+		start_year = 1941
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_medium_spaa_2 = { 
+
+		enable_equipments = {
+			eng_medium_spaa_equipment_2
+		}
+		
+		research_cost = 1.0
+		start_year = 1943
+		
+		sub_tech_index = 2
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_sherman_td_1 = { 
+	
+		allow = {
+			is_in_faction_with = USA
+		}
+
+		enable_equipments = {
+			eng_sherman_td_equipment_1
+		}
+		
+		research_cost = 1.0
+		start_year = 1944
+		folder = {
+			name = armour_eng_folder
+			position = { x = -5 y = 16 }
+		}
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	### HEAVY ###
+	
+	eng_heavy_tank_1 = {
+
+		enable_equipments = {
+			eng_heavy_tank_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = eng_heavy_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		folder = {
+			name = armour_eng_folder
+			position = { x = 5 y = 0 }
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	eng_heavy_tank_2 = { 
+
+		enable_equipments = {
+			eng_heavy_tank_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = eng_heavy_tank_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = eng_assault_gun_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = armour_eng_folder
+			position = { x = 5 y = 4 }
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	eng_heavy_tank_3 = { 
+
+		enable_equipments = {
+			eng_heavy_tank_equipment_3
+		}
+	
+		path = {
+			leads_to_tech = eng_heavy_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = armour_eng_folder
+			position = { x = 5 y = 8 }
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	eng_heavy_tank_4 = { 
+
+		enable_equipments = {
+			eng_heavy_tank_equipment_4
+		}
+	
+		path = {
+			leads_to_tech = eng_heavy_tank_5
+			research_cost_coeff = 1
+		}
+		
+		sub_technologies = {
+			eng_heavy_td_1
+		}
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = armour_eng_folder
+			position = { x = 5 y = 12 }
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	eng_heavy_tank_5 = { 
+
+		enable_equipments = {
+			eng_heavy_tank_equipment_5
+		}
+	
+		path = {
+			leads_to_tech = eng_medium_tank_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = armour_eng_folder
+			position = { x = 5 y = 16 }
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_heavy_td_1 = { 
+
+		enable_equipments = {
+			eng_heavy_td_equipment_1
+		}
+		
+		research_cost = 1.0
+		start_year = 1942
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	### ASSAULT GUN ###
+	
+	eng_assault_gun_1 = { 
+
+		enable_equipments = {
+			eng_assault_gun_equipment_1
+		}
+		
+		research_cost = 2.0
+		start_year = 1940
+		folder = {
+			name = armour_eng_folder
+			position = { x = 8 y = 8 }
+		}
+		path = {
+			leads_to_tech = eng_assault_gun_2
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_assault_gun_2 = { 
+
+		enable_equipments = {
+			eng_assault_gun_equipment_2
+		}
+		
+		research_cost = 2.0
+		start_year = 1942
+		folder = {
+			name = armour_eng_folder
+			position = { x = 8 y = 12 }
+		}
+		path = {
+			leads_to_tech = eng_assault_gun_3
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_assault_gun_3 = { 
+
+		enable_equipments = {
+			eng_assault_gun_equipment_3
+		}
+		
+		research_cost = 2.0
+		start_year = 1944
+		folder = {
+			name = armour_eng_folder
+			position = { x = 8 y = 16 }
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	#### SUBTECHS ####
+	
+	eng_light_td_1 = { 
+
+		enable_equipments = {
+			light_td_equipment_1
+		}
+	
+		research_cost = 1.0
+		start_year = 1939
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_light_td_2 = { 
+
+		enable_equipments = {
+			light_td_equipment_2
+		}
+	
+		research_cost = 1.0
+		start_year = 1941
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_light_spg_1 = { 
+
+		enable_equipments = {
+			light_spg_equipment_1
+		}
+	
+		research_cost = 1.0
+		start_year = 1939
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	eng_light_spg_2 = { 
+
+		enable_equipments = {
+			light_spg_equipment_2
+		}
+	
+		research_cost = 1.0
+		start_year = 1941
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	eng_light_spaa_1 = { 
+
+		enable_equipments = {
+			light_spaa_equipment_1
+		}
+	
+		research_cost = 1.0
+		start_year = 1939
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	eng_light_spaa_2 = { 
+
+		enable_equipments = {
+			light_spaa_equipment_2
+		}
+	
+		research_cost = 1.0
+		start_year = 1941
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
