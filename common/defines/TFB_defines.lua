@@ -337,7 +337,6 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 }
 NDefines.NAir.CARRIER_SIZE_STAT_INCREMENT = 10					-- Each Point of carrier_size state adds capacity for this many planes
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0							-- Days to deploy one air wing
-NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.02					-- Global speed multiplier for airplanes (affects fe.transferring to another base)
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0
 NDefines.NAir.FUEL_COST_MULT = 0.17 --0.35
 NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
