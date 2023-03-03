@@ -66,7 +66,7 @@ small_plane_airframe = {
 				#cas_weapon
 				nav_bomber_weapon
 				#kamikaze_bomber_weapon
-				special_bombs
+				# special_bombs
 			}
 		}
 
@@ -287,7 +287,7 @@ small_plane_airframe_1 = { #Basic
 				# cas_weapon
 				nav_bomber_weapon
 				#kamikaze_bomber_weapon
-				special_bombs
+				# special_bombs
 			}
 		}
 		engine_type_slot = {
@@ -366,7 +366,7 @@ small_plane_airframe_2 = { #Improved
 				recon_camera
 				fighter_weapon_secondary
 				nav_bomber_weapon
-				special_bombs
+				# special_bombs
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
@@ -477,8 +477,8 @@ small_plane_airframe_3 = { #Advanced
 			allowed_module_categories = {
 				recon_camera
 				fighter_weapon_secondary
-				cas_weapon
-				special_bombs
+				# cas_weapon
+				# special_bombs
 				nav_bomber_weapon
 				kamikaze_bomber_weapon
 			}
@@ -602,7 +602,7 @@ small_plane_airframe_4 = { #modern
 				# cas_weapon
 				nav_bomber_weapon
 				kamikaze_bomber_weapon
-				special_bombs
+				# special_bombs
 				jet_cas_weapon_extra
 			}
 		}
@@ -611,6 +611,8 @@ small_plane_airframe_4 = { #modern
 			allowed_module_categories = {
 				fighter_weapon_secondary
 				jet_cas_weapon_extra
+				cas_weapon
+				special_bombs
 			}
 		}
 		fixed_auxiliary_weapon_slot_3 = { 

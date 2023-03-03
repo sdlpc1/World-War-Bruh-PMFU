@@ -786,6 +786,7 @@ focus_tree = {
 				}
 				has_full_control_of_state = 335
 			}
+			is_ai = no
 		}
 		icon = GFX_focus_hol_continue_the_war_in_batavia
 		x = 1
