@@ -15,7 +15,8 @@ state=
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = USA
+		add_core_of = WST
+		set_compliance = 100
 	}
 	provinces={
 		1224 1311 1340 4269 4373 
