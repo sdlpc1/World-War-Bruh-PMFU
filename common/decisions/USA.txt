@@ -156,6 +156,120 @@ USA_aid_britain = {
 }
 
 operations = {
+		USA_phillipines_factories = {
+	
+		icon = generic_tank
+	
+		allowed = {
+			original_tag = USA
+		}
+	
+		fire_only_once = yes
+		days_mission_timeout = 1
+			
+		available = {
+			always = no
+		}
+			
+		timeout_effect = {
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
+			}
+		}
+	}
 	USA_join_the_allies = {
 		icon = generic_operation
 		allowed = {

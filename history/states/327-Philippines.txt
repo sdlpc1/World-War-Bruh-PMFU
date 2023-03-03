@@ -4,11 +4,15 @@ state=
 	name="STATE_327" # Luzon
 	manpower = 3548684
 	
+	resources = {
+		rubber = 200
+	}
+	
 	state_category = town
 	history={
 		set_state_flag = ASN_ALLIES_controls
 		set_state_flag = PACIFIC_COMMONWEALTH_controls
-		owner = PHI
+		owner = USA
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
@@ -24,7 +28,7 @@ state=
 		victory_points = {
 			1221 1 
 		}
-		add_core_of = PHI
+		add_core_of = USA
 	}
 
 	provinces={

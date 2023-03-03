@@ -3423,7 +3423,7 @@ focus_tree = {
 			OR = {
 				NOT = { HOL = { is_in_faction_with = GER } }
 				NOT = { BEL = { is_in_faction_with = GER } }
-				NOT = { LUX = { is_in_faction_with = GER } }
+				# NOT = { LUX = { is_in_faction_with = GER } }
 			}
 		}
 
@@ -3442,13 +3442,13 @@ focus_tree = {
 					has_war_with = ROOT
 				}
 			}
-			LUX = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
+			# LUX = {
+			# 	OR = {
+			# 		exists = no
+			# 		is_in_faction_with = GER
+			# 		has_war_with = ROOT
+			# 	}
+			# }
 		}
 
 		historical_ai = {
@@ -3463,7 +3463,7 @@ focus_tree = {
 		}
 		will_lead_to_war_with = BEL
 		will_lead_to_war_with = HOL
-		will_lead_to_war_with = LUX
+		# will_lead_to_war_with = LUX
 		will_lead_to_war_with = FRA
 		x = 1
 		y = 1
@@ -3493,17 +3493,17 @@ focus_tree = {
 					type = annex_everything
 				}
 			}
-			if = {
-				limit = {
-					country_exists = LUX
-					NOT = { LUX = { is_in_faction_with = GER } }
-					NOT = { has_war_with = LUX }
-				}
-				declare_war_on = {
-					target = LUX
-					type = annex_everything
-				}		
-			}
+			# if = {
+			# 	limit = {
+			# 		# country_exists = LUX
+			# 		NOT = { LUX = { is_in_faction_with = GER } }
+			# 		NOT = { has_war_with = LUX }
+			# 	}
+			# 	declare_war_on = {
+			# 		target = LUX
+			# 		type = annex_everything
+			# 	}		
+			# }
 			hidden_effect = {
 				news_event = { hours = 6 id = news.234 }
 			}
@@ -4172,15 +4172,15 @@ focus_tree = {
 				}
 				owns_state = 28
 			}
-			OR = {
-				LUX = { has_capitulated = yes }
-				NOT = {
-					any_country = {
-						original_tag = LUX
-						exists = yes
-					}
-				}
-			}
+			# OR = {
+			# 	LUX = { has_capitulated = yes }
+			# 	NOT = {
+			# 		any_country = {
+			# 			original_tag = LUX
+			# 			exists = yes
+			# 		}
+			# 	}
+			# }
 		}
 		bypass = {
 		}
@@ -4208,9 +4208,9 @@ focus_tree = {
 			FRA = {
 				country_event = { id = wtt_germany.63 }
 			}
-			LUX = {
-				country_event = { id = wtt_germany.64 }
-			}
+			# LUX = {
+			# 	country_event = { id = wtt_germany.64 }
+			# }
 		}
 	}
 	

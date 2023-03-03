@@ -4,6 +4,10 @@ state={
 	name="STATE_651" # Ufa
 	manpower = 2552075
 
+	resources = {
+		tungsten = 500 #courtest of mikolaj
+	}
+
 	state_category = city
 
 	history={

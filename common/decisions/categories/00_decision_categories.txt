@@ -369,7 +369,7 @@ lar_local_recruitment = {
 			}
 			NOT = {
 				tag = RAJ
-				# tag = PAK
+				# tag = WST
 				# tag = BAN
 				# tag = NEP
 				# tag = BHU
@@ -400,7 +400,7 @@ lar_local_recruitment = {
 			OR = {
 				has_country_flag = india_recruitment_unlocked
 				tag = RAJ
-				# tag = PAK
+				# tag = WST
 				# tag = BAN
 				# tag = NEP
 				# tag = BHU

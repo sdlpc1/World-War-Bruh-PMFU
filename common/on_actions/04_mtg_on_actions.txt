@@ -1051,9 +1051,9 @@ on_actions = {
 					# release = JOR
 				}
 				RAJ = {
-					# release = BRM
+					# release = WST
 					# release = BAN
-					# release = PAK
+					# release = WST
 				}
 				ENG = {
 					set_autonomy = { target = RAJ autonomy_state = autonomy_free }
@@ -1077,10 +1077,10 @@ on_actions = {
 					abandon_colony_tag = yes
 					retire_country_leader = yes
 				}
-				USA = {
-					delete_unit = { state = 327 }
-					set_autonomy = { target = PHI autonomy_state = autonomy_free }
-				}
+				# USA = {
+				# 	delete_unit = { state = 327 }
+				# 	set_autonomy = { target = PHI autonomy_state = autonomy_free }
+				# }
 				FRA = {
 					delete_unit = { state = 553 }
 					delete_unit = { state = 741 }
@@ -1393,8 +1393,8 @@ on_actions = {
 				}
 				RAJ = {
 					# release = BAN
-					# release = PAK
-					# release = BRM
+					# release = WST
+					# release = WST
 				}
 			}
 		}

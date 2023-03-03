@@ -3670,8 +3670,8 @@ news_event = {
 	
 	trigger = {
 		327 = { is_controlled_by = JAP }
-		327 = { is_owned_by = PHI }
-		JAP = { has_war_with = PHI }
+		327 = { is_owned_by = USA }
+		JAP = { has_war_with = USA }
 		NOT = { has_global_flag = fall_of_manila }
 	}
 	
@@ -3688,7 +3688,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = JAP
-				TAG = PHI
+				# TAG = PHI
 				TAG = USA
 			}
 		}
@@ -3701,7 +3701,7 @@ news_event = {
 		name = news.100.c
 		trigger = { 
 			OR = {
-				TAG = PHI 
+				# TAG = PHI 
 				TAG = USA
 			}
 		}
@@ -8890,7 +8890,7 @@ news_event = {
 			OR = {
 				tag = BEL
 				tag = HOL
-				tag = LUX
+				# tag = LUX
 			}
 		}
 	}
@@ -8916,7 +8916,7 @@ news_event = {
 				OR = {
 					tag = BEL
 					tag = HOL
-					tag = LUX
+					# tag = LUX
 				}
 			}
 		}
@@ -8930,7 +8930,7 @@ news_event = {
 					tag = ENG
 					tag = BEL
 					tag = HOL
-					tag = LUX
+					# tag = LUX
 					is_in_faction_with = ENG
 					is_in_faction = yes
 				}
@@ -9513,7 +9513,7 @@ news_event = {
 		trigger = {
 			OR = {
 				tag = BEL
-				tag = LUX
+				# tag = LUX
 			}
 		}
 	}
@@ -9524,7 +9524,7 @@ news_event = {
 			OR = {
 				tag = HOL
 				is_in_faction_with = BEL
-				is_in_faction_with = LUX
+				# is_in_faction_with = LUX
 				is_in_faction_with = HOL
 			}
 			has_war_with = GER
@@ -9538,9 +9538,9 @@ news_event = {
 				OR = {
 					tag = HOL
 					tag = BEL
-					tag = LUX
+					# tag = LUX
 					is_in_faction_with = HOL
-					is_in_faction_with = LUX
+					# is_in_faction_with = LUX
 					is_in_faction_with = BEL
 				}
 			}
@@ -10858,7 +10858,7 @@ news_event = {
 
 }
 
-# News event - PAK free
+# News event - WST free
 news_event = {
 	id = news.285
 	title = news.285.t
@@ -10878,7 +10878,7 @@ news_event = {
 	option = {
 		name = news.285.b
 		# trigger = {
-		# 	TAG = PAK
+		# 	TAG = WST
 		# }
 	}
 	option = {
@@ -10886,7 +10886,7 @@ news_event = {
 		# trigger = { 
 		# 	NOT = {
 		# 		TAG = RAJ
-		# 		TAG = PAK
+		# 		TAG = WST
 		# 	}
 		# }
 	}

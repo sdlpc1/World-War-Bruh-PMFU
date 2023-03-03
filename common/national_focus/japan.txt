@@ -2474,29 +2474,29 @@
 						target = USA
 						type = annex_everything
 					}
-					declare_war_on = {
-						target = PHI
-						type = annex_everything 
-					}
+					# declare_war_on = {
+					# 	target = PHI
+					# 	type = annex_everything 
+					# }
 					MAN = {
 						declare_war_on = {
 							target = USA
 							type = annex_everything
 						}
-						declare_war_on = {
-							target = PHI
-							type = annex_everything 
-						}
+						# declare_war_on = {
+						# 	target = PHI
+						# 	type = annex_everything 
+						# }
 					}
 					SIA = {
 						declare_war_on = {
 							target = USA
 							type = annex_everything
 						}
-						declare_war_on = {
-							target = PHI
-							type = annex_everything 
-						}
+						# declare_war_on = {
+						# 	target = PHI
+						# 	type = annex_everything 
+						# }
 					}
 					if = {
 						limit = {
@@ -2615,10 +2615,10 @@
 						target = HOL
 						value = 0.6
 					}
-					add_collaboration = {
-						target = PHI
-						value = 0.6
-					}
+					# add_collaboration = {
+					# 	target = PHI
+					# 	value = 0.6
+					# }
 				}
 				
 			}

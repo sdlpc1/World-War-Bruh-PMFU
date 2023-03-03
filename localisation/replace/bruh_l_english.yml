@@ -581,7 +581,7 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  bad_terrain_armored_warfare:0 "Adaptable Light Armor Designs"
  slacken_inf_tech:0 "Cheaper Infantry"
  sov_slacken_armor_tech:0 "Cheaper Tanks, Motorized, and Mechanized"
-
+ maintanance_hp_change_1_short_tt:0 "\n§REquipment capture was removed from the game, to compensate HP and recovery rate is now given instead.§!"
  ###ART###
  
  #SOV#

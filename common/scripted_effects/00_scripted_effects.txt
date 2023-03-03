@@ -796,26 +796,26 @@ GER_democratic_nations_ai_strategies = {
 		value = -200
 	}
 	# Luxemburg
-	add_ai_strategy = {
-		type = ignore
-		id = "LUX"
-		value = 200
-	}
-	add_ai_strategy = {
-		type = protect
-		id = "LUX"
-		value = -200
-	}
-	add_ai_strategy = {
-		type = befriend
-		id = "LUX"
-		value = -200
-	}
-	add_ai_strategy = {
-		type = alliance
-		id = "LUX"
-		value = -200
-	}
+	# add_ai_strategy = {
+	# 	type = ignore
+	# 	id = "LUX"
+	# 	value = 200
+	# }
+	# add_ai_strategy = {
+	# 	type = protect
+	# 	id = "LUX"
+	# 	value = -200
+	# }
+	# add_ai_strategy = {
+	# 	type = befriend
+	# 	id = "LUX"
+	# 	value = -200
+	# }
+	# add_ai_strategy = {
+	# 	type = alliance
+	# 	id = "LUX"
+	# 	value = -200
+	# }
 	# Austria
 	add_ai_strategy = {
 		type = ignore

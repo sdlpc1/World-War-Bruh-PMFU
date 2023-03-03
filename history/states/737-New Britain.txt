@@ -2,6 +2,9 @@ state={
 	id=737
 	name="STATE_737"
 
+	resources = {
+		rubber = 100
+	}
 	history={
 		owner = AST
 		add_core_of = WST
@@ -12,10 +15,10 @@ state={
 				naval_base = 5
 
 			}
-			4352 = {
-				naval_base = 1
+			# 4352 = {
+			# 	naval_base = 1
 
-			}
+			# }
 			7339 = {
 				naval_base = 1
 

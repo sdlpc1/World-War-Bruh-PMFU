@@ -70,11 +70,11 @@ GER_threats = {
 		id = BEL
 		value = 50
 	}
-	ai_strategy = {
-		type = prepare_for_war
-		id = LUX
-		value = 20
-	}
+	# ai_strategy = {
+	# 	type = prepare_for_war
+	# 	id = LUX
+	# 	value = 20
+	# }
 }
 GER_threats2 = {
     enable = {

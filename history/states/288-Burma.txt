@@ -7,11 +7,11 @@ state={
 	state_category = town
 	
 	resources={
-		rubber=30 # was: 4
+		rubber=530 # was: 4 ##WAS 30
 	}
 
 	history={
-		add_core_of = BRM
+		add_core_of = WST
 		owner = RAJ
 		set_state_flag = RAJ_controls
 		victory_points = {

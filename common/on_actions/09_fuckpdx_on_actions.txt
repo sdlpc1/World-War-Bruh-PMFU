@@ -35,7 +35,7 @@ on_actions = {
 						VEN = { is_ai = no}
 						POR = { is_ai = no}
 						BEL = { is_ai = no}
-						LUX = { is_ai = no}
+						# LUX = { is_ai = no}
 						SWI = { is_ai = no}
 						AUS = { is_ai = no}
 						CZE = { is_ai = no}
@@ -49,7 +49,7 @@ on_actions = {
 						EST = { is_ai = no}
 						CHI = { is_ai = no}
 						INS = { is_ai = no}						
-						PHI = { is_ai = no}
+						# PHI = { is_ai = no}
 						MAL = { is_ai = no}
 						TUR = { is_ai = no}						
 						IRQ = { is_ai = no}
@@ -67,6 +67,50 @@ on_actions = {
 			# 		id = startingevent.1001
 			# 	}
 			# }
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = HOL
+					HOL = { is_ai = yes }
+				}
+			# weird island near venezuela
+			ENG = { transfer_state = 695 }
+			695 = { set_compliance = 60 }
+			# suriname
+			ENG = { transfer_state = 309 }
+			309 = { set_compliance = 60 }
+
+			# DEI - go to australia
+			AST = { annex_country = { target = INS transfer_troops = yes } }
+			672 = { set_compliance = 60 }
+			334 = { set_compliance = 60 }
+			335 = { set_compliance = 60 }
+			667 = { set_compliance = 60 }
+			673 = { set_compliance = 60 }
+			668 = { set_compliance = 60 }
+			669 = { set_compliance = 60 }
+			738 = { set_compliance = 60 }
+			}	
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = JAP
+					FROM = { OR = { tag = INS tag = AST tag = ENG tag = MAL tag = USA } }
+					FROM.FROM = { OR = { is_core_of = MAL is_core_of = INS state = 327 state = 623 state = 624 state = 625 state = 626 state = 627 state = 628 } }
+					JAP = { has_completed_focus = JAP_late_war_intel_focus }
+				}
+				FROM.FROM = {
+                    set_compliance = 60
+                }
+			}
 		}
 	}
 }

@@ -136,11 +136,11 @@ ENG_trying_to_save_benelux_is_deathtrap = {
 		id = "BEL"
 		value = 100
 	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "LUX"
-		value = 100
-	}
+	# ai_strategy = {
+	# 	type = dont_defend_ally_borders
+	# 	id = "LUX"
+	# 	value = 100
+	# }
 }
 ENG_lifeline_of_the_empire = {
 	allowed = { original_tag = ENG }
@@ -217,11 +217,11 @@ ENG_time_to_ditch_FRA = {
 		id = HOL
 		value = 100
 	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = LUX
-		value = 100
-	}
+	# ai_strategy = {
+	# 	type = dont_defend_ally_borders
+	# 	id = LUX
+	# 	value = 100
+	# }
 }
 
 ENG_gang_up_GER_with_USA = {

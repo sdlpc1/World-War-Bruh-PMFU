@@ -4,6 +4,7 @@ state={
 	resources={
 		steel=500.000
 		oil=100.000
+		tungsten = 500 #courtesy of _xXmikolaj_GamingXx_
 	}
 
 	history={

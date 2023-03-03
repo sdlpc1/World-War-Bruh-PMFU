@@ -1639,7 +1639,7 @@ news_event = {
 	option = {
 		name = mtg_news.44.b
 		# trigger = {
-		# 	original_tag = PAK
+		# 	original_tag = WST
 		# }
 	}
 
@@ -1654,7 +1654,7 @@ news_event = {
 		name = mtg_news.44.d
 		# trigger = { 
 		# 	NOT = { original_tag = RAJ }
-		# 	NOT = { original_tag = PAK }
+		# 	NOT = { original_tag = WST }
 		# 	NOT = { original_tag = ENG }
 		# }
 	}
@@ -1674,7 +1674,7 @@ news_event = {
 	option = {
 		name = mtg_news.45.a
 		# trigger = {
-		# 	original_tag = PAK
+		# 	original_tag = WST
 		# }
 	}
 
@@ -1695,7 +1695,7 @@ news_event = {
 	option = {
 		name = mtg_news.45.d
 		# trigger = { 
-		# 	NOT = { original_tag = PAK }
+		# 	NOT = { original_tag = WST }
 		# 	NOT = { original_tag = BAN }
 		# 	NOT = { original_tag = ENG }
 		# }

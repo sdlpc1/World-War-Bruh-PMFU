@@ -322,6 +322,10 @@ ideas = {
 				navy_intel_to_others = 40.0
 				agency_upgrade_time = 0.15
 			}
+
+			visible = {
+				NOT = { has_idea = russian_closed_eco }			
+			}		
 			
 			allowed_to_remove = {
 				OR = {
@@ -363,6 +367,38 @@ ideas = {
 			cancel_if_invalid = no
 		}
 
+		russian_closed_eco = {
+		
+            picture = russian_closed_eco	
+						
+			cost = 100
+			removal_cost = -1
+			
+			available = {
+                original_tag = SOV
+				has_government = communism
+			}			
+			
+			visible = {
+                original_tag = SOV
+				has_government = communism
+			}
+			
+			modifier = {
+				min_export = 0.0
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.1
+
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   			}
+		}		
+
 		free_trade = {
 						
 			cost = 150
@@ -376,6 +412,10 @@ ideas = {
 					}
 				}
 			}
+
+			visible = {
+				NOT = { has_idea = russian_closed_eco }			
+			}		
 			
 			modifier = {
 				min_export = 0.8
@@ -436,6 +476,9 @@ ideas = {
 				}
 			}
 			
+			visible = {
+				NOT = { has_idea = russian_closed_eco }			
+			}	
 			
 			cost = 150
 			removal_cost = -1
@@ -508,6 +551,10 @@ ideas = {
 					NOT = { has_idea = CHI_nine_power_treaty }
 				}
 			}
+
+			visible = {
+				NOT = { has_idea = russian_closed_eco }			
+			}	
 		
 			cost = 150
 			removal_cost = -1
@@ -571,6 +618,10 @@ ideas = {
 					NOT = { has_idea = CHI_nine_power_treaty }
 				}
 			}
+
+			visible = {
+				NOT = { has_idea = russian_closed_eco }			
+			}	
 			
 			cost = 150
 			removal_cost = -1

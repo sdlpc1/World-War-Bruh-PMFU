@@ -2,6 +2,12 @@ state={
 	id=617
 	name="STATE_617"
 
+	resources = {
+		steel = 250
+		tungsten = 300
+		chromium = 150
+	}
+
 	history={
 		owner = MON
 		# add_core_of = SIK

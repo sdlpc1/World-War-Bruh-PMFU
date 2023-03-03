@@ -93,7 +93,7 @@ country_event = {
 			}
 			# if = {
 			# 	limit = {
-			# 		tag = PAK
+			# 		tag = WST
 			# 		NOT = { is_subject = no }
 			# 		NOT = { has_autonomy_state = autonomy_dominion }
 			# 		has_dlc = "Together for Victory"
@@ -2772,15 +2772,15 @@ country_event = {
 	# We won't back down!
 	option = {
 		name = mtg_britain.73.a
-		# release = PAK
-		# PAK = {
+		# release = WST
+		# WST = {
 		# 	declare_war_on = {
 		# 		target = ROOT
 		# 		type = annex_everything
 		# 	}
 		# }
 		# hidden_effect = {
-		# 	PAK = {
+		# 	WST = {
 		# 		add_equipment_to_stockpile = {
 		# 		    type = infantry_equipment
 		# 		    amount = 15000
@@ -2804,157 +2804,157 @@ country_event = {
 		# 		443 = {
 		# 			create_unit = {
 		# 				division = "name = \"1. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"2. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"3. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 		}
 		# 		# Punjab
 		# 		440 = {
 		# 			create_unit = {
 		# 				division = "name = \"4. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"5. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"6. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 		}
 		# 		# Northern Kashmir
 		# 		787 = {
 		# 			create_unit = {
 		# 				division = "name = \"7. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"8. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"9. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 		}
 		# 		# Peshawar
 		# 		442 = {
 		# 			create_unit = {
 		# 				division = "name = \"10. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"11. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 		}
 		# 		# Baluchistan
 		# 		444 = {
 		# 			create_unit = {
 		# 				division = "name = \"12. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"13. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 		}
 		# 		# Quetta
 		# 		445 = {
 		# 			create_unit = {
 		# 				division = "name = \"14. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"15. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"16. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"17. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"18. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"19. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 		}
 		# 		# East Bengal (Bangladesh)
 		# 		430 = {
 		# 			create_unit = {
 		# 				division = "name = \"20. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"21. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"22. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"23. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"24. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"25. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"26. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"27. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"28. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"29. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"30. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"31. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"32. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"33. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 			create_unit = {
 		# 				division = "name = \"34. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 				owner = PAK
+		# 				owner = WST
 		# 			}
 		# 		}
 		# 	}
@@ -3081,7 +3081,7 @@ country_event = {
 		# 			}
 		# 		}
 		# 	}
-		# 	PAK = {
+		# 	WST = {
 		# 		if = {
 		# 			limit = {
 		# 				strength_ratio = {
@@ -3093,22 +3093,22 @@ country_event = {
 		# 			430 = {
 		# 				create_unit = {
 		# 					division = "name = \"35. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 				create_unit = {
 		# 					division = "name = \"36. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 			# Punjab
 		# 			440 = {
 		# 				create_unit = {
 		# 					division = "name = \"37. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 				create_unit = {
 		# 					division = "name = \"38. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 		}
@@ -3123,22 +3123,22 @@ country_event = {
 		# 			430 = {
 		# 				create_unit = {
 		# 					division = "name = \"39. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 				create_unit = {
 		# 					division = "name = \"40. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 			# Punjab
 		# 			440 = {
 		# 				create_unit = {
 		# 					division = "name = \"41. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 				create_unit = {
 		# 					division = "name = \"42. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 		}
@@ -3153,22 +3153,22 @@ country_event = {
 		# 			430 = {
 		# 				create_unit = {
 		# 					division = "name = \"43. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 				create_unit = {
 		# 					division = "name = \"44. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 			# Punjab
 		# 			440 = {
 		# 				create_unit = {
 		# 					division = "name = \"45. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 				create_unit = {
 		# 					division = "name = \"46. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 		}
@@ -3183,22 +3183,22 @@ country_event = {
 		# 			430 = {
 		# 				create_unit = {
 		# 					division = "name = \"47. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 				create_unit = {
 		# 					division = "name = \"48. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 			# Punjab
 		# 			440 = {
 		# 				create_unit = {
 		# 					division = "name = \"49. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 				create_unit = {
 		# 					division = "name = \"50. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 		}
@@ -3213,18 +3213,18 @@ country_event = {
 		# 			430 = {
 		# 				create_unit = {
 		# 					division = "name = \"51. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 			# Punjab
 		# 			440 = {
 		# 				create_unit = {
 		# 					division = "name = \"52. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 				create_unit = {
 		# 					division = "name = \"53. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 		}
@@ -3239,18 +3239,18 @@ country_event = {
 		# 			430 = {
 		# 				create_unit = {
 		# 					division = "name = \"54. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 			# Punjab
 		# 			440 = {
 		# 				create_unit = {
 		# 					division = "name = \"55. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 				create_unit = {
 		# 					division = "name = \"56. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 		}
@@ -3265,18 +3265,18 @@ country_event = {
 		# 			430 = {
 		# 				create_unit = {
 		# 					division = "name = \"57. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 			# Punjab
 		# 			440 = {
 		# 				create_unit = {
 		# 					division = "name = \"58. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 				create_unit = {
 		# 					division = "name = \"59. Pakistani Liberation Army\" division_template = \"Pakistani Liberation Army\" start_experience_factor = 0.5" 
-		# 					owner = PAK
+		# 					owner = WST
 		# 				}
 		# 			}
 		# 		}
@@ -3309,7 +3309,7 @@ country_event = {
 		# ai_chance = {
 		# 	factor = 0
 		# }
-		# release = PAK
+		# release = WST
 		# hidden_effect = { country_event = { id = mtg_britain.109 days = 5 random_days = 5 } }
 	}
 }
@@ -3353,12 +3353,12 @@ country_event = {
 		# every_country = {
 		# 	limit = {
 		# 		is_in_faction_with = RAJ
-		# 		has_war_with = PAK
+		# 		has_war_with = WST
 		# 	}
-		# 	white_peace = PAK
+		# 	white_peace = WST
 		# }
-		# white_peace = PAK
-		# PAK = { country_event = { id = mtg_britain.75 } }
+		# white_peace = WST
+		# WST = { country_event = { id = mtg_britain.75 } }
 		# effect_tooltip = {
 		# 	delete_unit_template_and_units = {
    		# 		division_template = "Hindu Militia"
@@ -3377,7 +3377,7 @@ country_event = {
 	}
 }
 
-# Event for PAK notifying of white peace
+# Event for WST notifying of white peace
 country_event = {
 	id = mtg_britain.75
 	title = mtg_britain.75.t
@@ -3393,11 +3393,11 @@ country_event = {
 		# 	every_country = {
 		# 		limit = {
 		# 			is_in_faction_with = RAJ
-		# 			has_war_with = PAK
+		# 			has_war_with = WST
 		# 		}
-		# 		white_peace = PAK
+		# 		white_peace = WST
 		# 	}
-		# 	RAJ = { white_peace = PAK }
+		# 	RAJ = { white_peace = WST }
 		# }
 		# delete_unit_template_and_units = {
    		# 	division_template = "Pakistani Liberation Army"
@@ -3412,7 +3412,7 @@ country_event = {
 	}
 }
 
-# Event for PAK starting civil war
+# Event for WST starting civil war
 country_event = {
 	id = mtg_britain.76
 	title = mtg_britain.76.t
@@ -3529,7 +3529,7 @@ country_event = {
 	}
 }
 
-# Event for PAK ending civil war if Bangladesh hasn't been dealt with.
+# Event for WST ending civil war if Bangladesh hasn't been dealt with.
 country_event = {
 	id = mtg_britain.77
 	title = mtg_britain.77.t
@@ -3570,7 +3570,7 @@ country_event = {
 	
 	option = {
 		name = mtg_britain.75.a
-		# effect_tooltip = { BAN = { white_peace = PAK } }
+		# effect_tooltip = { BAN = { white_peace = WST } }
 		# delete_unit_template_and_units = {
    		# 	division_template = "Bangladeshi Liberation Army"
 		# }
@@ -5354,7 +5354,7 @@ country_event = {
 	}
 }
 
-# Event for RAJ giving BRM independence
+# Event for RAJ giving WST independence
 country_event = {
 	id = mtg_britain.109
 	title = mtg_britain.109.t
@@ -5366,7 +5366,7 @@ country_event = {
 	# Ok I guess
 	option = {
 		name = mtg_britain.109.a
-		release = BRM
+		release = WST
 	}
 }
 

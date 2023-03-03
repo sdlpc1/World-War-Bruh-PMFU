@@ -578,7 +578,7 @@ form_united_netherlands_category = {
 			OR = {
 				original_tag = HOL
 				original_tag = BEL
-				original_tag = LUX
+				# original_tag = LUX
 			}
 			has_dlc = "Waking the Tiger"
 		}
@@ -605,7 +605,7 @@ form_united_netherlands_category = {
 			OR = {
 				original_tag = HOL
 				original_tag = BEL
-				original_tag = LUX
+				# original_tag = LUX
 			}
 			NOT = { has_global_flag = form_united_netherlands_flag }
 			NOT = { has_global_flag = HOL_benelux_formed }
@@ -925,7 +925,7 @@ form_european_union_category = {
 			OR = {
 				original_tag = HOL
 				original_tag = BEL
-				original_tag = LUX
+				# original_tag = LUX
 				original_tag = FRA
 				original_tag = ITA
 				original_tag = GER
@@ -1031,7 +1031,7 @@ form_european_union_category = {
 					OR = {
 						original_tag = HOL
 						original_tag = BEL
-						original_tag = LUX
+						# original_tag = LUX
 						original_tag = FRA
 						original_tag = ITA
 						original_tag = GER

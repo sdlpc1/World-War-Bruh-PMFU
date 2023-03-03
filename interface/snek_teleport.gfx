@@ -3,4 +3,9 @@ spriteTypes = {
         name = "GFX_snek_event"
         texturefile = "gfx/events/snek_event.dds"
     }
+
+    spriteType = {
+		name = "GFX_idea_russian_closed_eco"
+		texturefile = "gfx/interface/ideas/idea_russian_closed_eco.dds"
+	}	
 }

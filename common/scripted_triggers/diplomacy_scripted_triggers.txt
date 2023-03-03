@@ -196,7 +196,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = SRL } }
 			NOT = { FROM = { tag = MLD } }
 			NOT = { FROM = { tag = FIJ } }
-			NOT = { FROM = { tag = BRM } }
+			NOT = { FROM = { tag = WST } }
 			NOT = { FROM = { tag = SUD } }
 			NOT = { FROM = { tag = SOM } }
 			NOT = { FROM = { tag = UGA } }
