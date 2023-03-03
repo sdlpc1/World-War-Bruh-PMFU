@@ -284,7 +284,7 @@ small_plane_airframe_1 = { #Basic
 			allowed_module_categories = {
 				recon_camera
 				fighter_weapon_secondary
-				cas_weapon
+				# cas_weapon
 				nav_bomber_weapon
 				#kamikaze_bomber_weapon
 				special_bombs
@@ -599,7 +599,7 @@ small_plane_airframe_4 = { #modern
 			allowed_module_categories = {
 				recon_camera
 				fighter_weapon_secondary
-				cas_weapon
+				# cas_weapon
 				nav_bomber_weapon
 				kamikaze_bomber_weapon
 				special_bombs

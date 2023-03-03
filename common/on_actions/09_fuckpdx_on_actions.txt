@@ -95,6 +95,16 @@ on_actions = {
 			669 = { set_compliance = 60 }
 			738 = { set_compliance = 60 }
 			}	
+
+			if = {
+				limit = {
+					original_tag = ETH
+					NOT = { ITA = { OR = { has_war_with = ENG has_war_with = USA has_war_with = SOV } } }
+				}
+			white_peace = ETH
+			ITA = { transfer_state = 271 }
+			add_named_threat = { threat = 2 name = "Italo-Ethiopian Peace Deal" }
+			}	
 		}
 	}
 

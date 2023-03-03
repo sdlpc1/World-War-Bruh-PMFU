@@ -47,6 +47,7 @@ CZE_historical_strategy_plan = {
 		CZE_trust_in_the_west
 		CZE_favor_czechs_1
 		CZE_favor_czechs_2
+		CZE_favor_czechs_3
 		CZE_sudeten_3
 		CZE_arms_exports_1
 		CZE_arms_exports_2
@@ -55,7 +56,6 @@ CZE_historical_strategy_plan = {
 		CZE_internal_redoubts
 		CZE_hungarian_line
 		CZE_polish_line
-		CZE_favor_czechs_3
 		CZE_beacon_of_liberty
 	}
 
