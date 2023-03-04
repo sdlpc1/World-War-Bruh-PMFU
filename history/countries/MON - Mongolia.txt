@@ -18,6 +18,7 @@ add_ideas = {
 	MON_collectivisation_1
 	MON_nomad_1
 	russian_closed_eco
+	MON_allow_soviet_trade
 }
 
 set_variable = { mon_poster_center_icon_frame = 1 }

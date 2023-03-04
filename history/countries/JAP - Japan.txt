@@ -20,6 +20,7 @@ add_ideas = {
 	JAP_bushido_spirit
 	JAP_gekokoju
 	JAP_island_hopping8
+	volunteer_minimum
 }
 
 if = {

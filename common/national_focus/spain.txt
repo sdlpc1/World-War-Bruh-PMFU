@@ -3786,10 +3786,10 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				add_manpower = 20000
-				POR = {
-					add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
-					add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
-				}
+				# POR = {
+				# 	add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
+				# 	add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
+				# }
 			}
 			custom_effect_tooltip = SPA_the_iberian_pact_tt_2
 			POR = { country_event = { id = lar_spain.22 hours = 12 random_hours = 36 } }
@@ -9694,10 +9694,10 @@ focus_tree = {
 			    ideology = communism
 			    popularity = 0.05
 			}
-			SOV = {
-				add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
-				add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
-			}
+			# SOV = {
+			# 	add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
+			# 	add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
+			# }
 			custom_effect_tooltip = SPR_expand_soviet_aid_tt
 		}
 	}

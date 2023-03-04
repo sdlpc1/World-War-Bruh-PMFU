@@ -4285,6 +4285,24 @@ ideas = {
 
 
 	hidden_ideas = {
+
+		SOV_allow_mongolian_trade = {		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			targeted_modifier = {
+				tag = MON
+				extra_trade_to_target_factor = 1.0
+			}
+		}
+		
 		SOV_non_communism_aversion_ns = {		
 			removal_cost = -1
 			

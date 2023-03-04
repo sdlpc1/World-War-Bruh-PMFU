@@ -54,6 +54,7 @@
  continuous_fuel_desc:0 "We need to focus on fuel production."
  continuous_licensing:0 "License Production"
  continuous_licensing_desc:0 "We need to produce licensed equipment at record speeds."
+ improved_worker_conditions_cancel:0 "Cancel Improved Worker Conditions"
 
  form_mutapa:0 "Unite South Africa"
  form_mutapa_category:0 "Unite South Africa"

@@ -1,0 +1,21 @@
+ideas = {
+
+	country = {
+	    volunteer_minimum = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+
+			modifier = {
+                send_volunteer_size = 6
+
+			}
+		}	
+	}
+
+}

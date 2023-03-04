@@ -70,6 +70,7 @@ if = {
 		POL_sanation_left_opposition_1
 		POL_sanation_right_opposition_1
 		PACIFIC_COMMONWEALTH_controls_original
+		POL_supply_fix
 	}
 }
 

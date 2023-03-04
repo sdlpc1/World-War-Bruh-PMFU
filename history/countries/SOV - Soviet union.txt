@@ -812,6 +812,8 @@ add_ideas = {
 	SOV_bad_rail
 	russian_closed_eco
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
+	SOV_allow_mongolian_trade # fix trade
+	volunteer_minimum
 }
 
 1939.1.1 = {

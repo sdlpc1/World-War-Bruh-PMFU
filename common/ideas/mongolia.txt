@@ -1,5 +1,24 @@
 ideas = {
 
+	hidden_ideas = {
+		MON_allow_soviet_trade = {		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				extra_trade_to_target_factor = 1.0
+			}
+		}
+	}
+
 	country = {
 
 		MON_nomadic_war_idea = {
