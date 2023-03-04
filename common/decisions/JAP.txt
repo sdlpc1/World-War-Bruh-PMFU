@@ -3085,7 +3085,7 @@ JAP_propaganda_campaigns = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 9 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
 			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
-			add_ideas = ENG_air_prod
+			remove_ideas = ENG_air_prod
 		}
 	}	
 

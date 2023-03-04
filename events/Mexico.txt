@@ -1162,17 +1162,6 @@ country_event = {
 		
 		ai_chance = {
 			factor = 0
-			
-			modifier = {
-				add = 100
-				OR = {
-					has_country_flag = MEX_AI_CARDENISMO 
-					has_game_rule = {
-						rule = MEX_ai_behavior
-						option = CARDENISMO
-					}
-				}
-			}
 		}
 	}
 }

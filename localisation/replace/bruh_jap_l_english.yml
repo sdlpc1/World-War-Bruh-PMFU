@@ -175,6 +175,20 @@
   japan.503.b:0 "Leave them out"
   japan.503.b_desc:0 "We will not declare on USA through §YStrike the West§! focus"
 
+  japan.504.t:0 "The Division of China"
+  japan.504.desc:0 "As our victory over the chinese draws near, we must decide what to do with the new territory once we finish mopping up resistance"
+  japan.504.a:0 "This should be decided after victory is achieved"
+  japan.504.a_desc:0 "Ignore a scripted peace deal and trigger the standard §YPeace Conference§!"
+  japan.504.b:0 "Split the land between us and our loyal Manchurian puppet"
+  japan.504.b_desc:0 "§YManchuko§! gains §YOrdos§!, §YNingxia§!, §YJiuquan§!, §YSuiyuan§!, while §YJapan§! gains the rest"
+  japan.504.c:0 "This continent belongs to us!"
+  japan.504.c_desc:0 "§YJapan§! Annexes all of China"
+  japan.504.d:0 "It would best be administered by our puppet"
+  japan.504.d_desc:0 "§YManchuko§! Annexes all of China"
+  japan.504.e:0 "A new puppet would likely help us gain legitamcy"
+  japan.504.e_desc:0 "Japan puppets China"
+  JAP_threat_treaty_of_nanjing:0 "Treaty of Nanjing"
+
   ### IDEAS ###
   JAP_break_mitsubishi_idea:0 "Break up Mitsubishi"
   JAP_break_mitsui_idea:0 "Break up Mitsui"

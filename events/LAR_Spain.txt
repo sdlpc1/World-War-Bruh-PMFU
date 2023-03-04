@@ -114,18 +114,7 @@ country_event = {
 			}
 			hidden_effect = {
 				set_country_flag = SPR_republican_spain_flag
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = spr_fragmentation_status
-							option = SPR_EU4
-						}
-					}
-					set_cosmetic_tag = SPR_republican_castille
-				}
-				else = {
-					set_cosmetic_tag = SPR_republican_spain
-				}
+				set_cosmetic_tag = SPR_republican_spain
 				SPA = {
 					kill_country_leader = yes
 					create_country_leader = {
@@ -654,20 +643,6 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
 									}
 								}
 								NOT = {
@@ -691,20 +666,6 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
 									}
 								}
 								NOT = {
@@ -728,20 +689,6 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
 									}
 								}
 								NOT = {
@@ -765,20 +712,6 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
 									}
 								}
 								NOT = {
@@ -802,20 +735,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -839,20 +759,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -883,20 +790,7 @@ country_event = {
 									limit = {
 										ROOT = {
 											is_ai = yes
-											OR = {
-												AND = {
-													is_historical_focus_on = yes
-													has_game_rule = {
-														rule = SPR_ai_behavior 
-														option = DEFAULT
-													}
-												}
-												has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = NATIONALIST_HISTORICAL
-												}
-											}
+											
 										}
 									}
 									NOT = {
@@ -920,20 +814,7 @@ country_event = {
 									limit = {
 										ROOT = {
 											is_ai = yes
-											OR = {
-												AND = {
-													is_historical_focus_on = yes
-													has_game_rule = {
-														rule = SPR_ai_behavior 
-														option = DEFAULT
-													}
-												}
-												has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = NATIONALIST_HISTORICAL
-												}
-											}
+											
 										}
 									}
 									NOT = {
@@ -957,20 +838,7 @@ country_event = {
 									limit = {
 										ROOT = {
 											is_ai = yes
-											OR = {
-												AND = {
-													is_historical_focus_on = yes
-													has_game_rule = {
-														rule = SPR_ai_behavior 
-														option = DEFAULT
-													}
-												}
-												has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = NATIONALIST_HISTORICAL
-												}
-											}
+											
 										}
 									}
 									NOT = {
@@ -994,20 +862,7 @@ country_event = {
 									limit = {
 										ROOT = {
 											is_ai = yes
-											OR = {
-												AND = {
-													is_historical_focus_on = yes
-													has_game_rule = {
-														rule = SPR_ai_behavior 
-														option = DEFAULT
-													}
-												}
-												has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = NATIONALIST_HISTORICAL
-												}
-											}
+											
 										}
 									}
 									NOT = {
@@ -1184,20 +1039,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1220,20 +1062,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1256,20 +1085,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1299,20 +1115,7 @@ country_event = {
 									limit = {
 										ROOT = {
 											is_ai = yes
-											OR = {
-												AND = {
-													is_historical_focus_on = yes
-													has_game_rule = {
-														rule = SPR_ai_behavior 
-														option = DEFAULT
-													}
-												}
-												has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = NATIONALIST_HISTORICAL
-												}
-											}
+											
 										}
 									}
 									NOT = {
@@ -1335,20 +1138,7 @@ country_event = {
 									limit = {
 										ROOT = {
 											is_ai = yes
-											OR = {
-												AND = {
-													is_historical_focus_on = yes
-													has_game_rule = {
-														rule = SPR_ai_behavior 
-														option = DEFAULT
-													}
-												}
-												has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = NATIONALIST_HISTORICAL
-												}
-											}
+											
 										}
 									}
 									NOT = {
@@ -1599,20 +1389,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1636,20 +1413,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1673,20 +1437,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1710,20 +1461,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1747,20 +1485,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1802,20 +1527,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1839,20 +1551,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1876,20 +1575,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1913,20 +1599,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -1950,20 +1623,7 @@ country_event = {
 								limit = {
 									ROOT = {
 										is_ai = yes
-										OR = {
-											AND = {
-												is_historical_focus_on = yes
-												has_game_rule = {
-													rule = SPR_ai_behavior 
-													option = DEFAULT
-												}
-											}
-											has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-											has_game_rule = {
-												rule = SPR_ai_behavior 
-												option = NATIONALIST_HISTORICAL
-											}
-										}
+
 									}
 								}
 								NOT = {
@@ -2116,18 +1776,7 @@ country_event = {
 					clr_country_flag = SPR_nationalist_spain_flag
 					drop_cosmetic_tag = yes
 					set_country_flag = SPR_republican_spain_flag
-					if = {
-						limit = {
-							has_game_rule = {
-								rule = spr_fragmentation_status
-								option = SPR_EU4
-							}
-						}
-						set_cosmetic_tag = SPR_republican_castille
-					}
-					else = {
-						set_cosmetic_tag = SPR_republican_spain
-					}
+					set_cosmetic_tag = SPR_republican_spain
 					set_politics = {
 						ruling_party = democratic
 					}
@@ -2150,18 +1799,7 @@ country_event = {
 				}
 				# Switch the tag alias for the player's country - the player goes from SPR to SPA
 				set_country_flag = SPR_nationalist_spain_flag
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = spr_fragmentation_status
-							option = SPR_EU4
-						}
-					}
-					set_cosmetic_tag = SPR_nationalist_castille
-				}
-				else = {
-					set_cosmetic_tag = SPR_nationalist_spain
-				}
+				set_cosmetic_tag = SPR_nationalist_spain
 				set_politics = {
 					ruling_party = neutrality
 				}

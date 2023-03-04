@@ -24,13 +24,6 @@ country_event = {
 		name = mtg_britain.1.c
 		ai_chance = {
 			factor = 70
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					rule = ENG_ai_behavior 
-					option = NEUTRALITY
-				}
-			}
 		}
 		add_stability = 0.05
 		set_country_flag = ENG_edward_abdicating

@@ -1098,22 +1098,6 @@ country_event = {
 		name = NSB_poland_royal_election.1.a
 		ai_chance = {
 			base = 10
-			modifier = {
-				factor = 0
-				NOT = {
-					OR = {
-						has_country_flag = POL_AI_RANDOM_COMMONWEALTH
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = COMMONWEALTH
-						}
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = DEFAULT
-						}
-					}
-				}
-			}
 		}
 		set_party_name = { 
 			ideology = neutrality 
@@ -1139,16 +1123,6 @@ country_event = {
 		name = NSB_poland_royal_election.1.b
 		ai_chance = {
 			base = 10
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = POL_AI_RANDOM_COMMONWEALTH
-					has_game_rule = {
-						rule = POL_ai_behavior
-						option = COMMONWEALTH
-					}
-				}
-			}
 		}
 		custom_effect_tooltip = POL_keep_looking_tt
 		hidden_effect = {
@@ -1172,22 +1146,6 @@ country_event = {
 		name = NSB_poland_royal_election.2.a
 		ai_chance = {
 			base = 10
-			modifier = {
-				factor = 0
-				NOT = {
-					OR = {
-						has_country_flag = POL_AI_RANDOM_ROMANIA
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = ROMANIA
-						}
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = DEFAULT
-						}
-					}
-				}
-			}
 		}
 
 		set_party_name = { 
@@ -1214,16 +1172,6 @@ country_event = {
 		name = NSB_poland_royal_election.2.b
 		ai_chance = {
 			base = 10
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = POL_AI_RANDOM_ROMANIA
-					has_game_rule = {
-						rule = POL_ai_behavior
-						option = ROMANIA
-					}
-				}
-			}
 		}
 		custom_effect_tooltip = POL_keep_looking_tt
 		hidden_effect = {
@@ -1247,22 +1195,6 @@ country_event = {
 		name = NSB_poland_royal_election.3.a
 		ai_chance = {
 			base = 10
-			modifier = {
-				factor = 0
-				NOT = {
-					OR = {
-						has_country_flag = POL_AI_RANDOM_BERMONDT
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = BERMONDT
-						}
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = DEFAULT
-						}
-					}
-				}
-			}
 		}
 		add_ruling_to_fas = yes
 		set_politics = {
@@ -1291,16 +1223,6 @@ country_event = {
 		name = NSB_poland_royal_election.3.b
 		ai_chance = {
 			base = 10
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = POL_AI_RANDOM_BERMONDT
-					has_game_rule = {
-						rule = POL_ai_behavior
-						option = BERMONDT
-					}
-				}
-			}
 		}
 		custom_effect_tooltip = POL_keep_looking_tt
 		hidden_effect = {
@@ -1403,22 +1325,6 @@ country_event = {
 		name = NSB_poland_royal_election.5.a
 		ai_chance = {
 			base = 10
-			modifier = {
-				factor = 0
-				NOT = {
-					OR = {
-						has_country_flag = POL_AI_RANDOM_HABSBURG
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = HABSBURG
-						}
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = DEFAULT
-						}
-					}
-				}
-			}
 		}
 		promote_character = POL_karl_albrecht
 		set_party_name = { 
@@ -1440,16 +1346,6 @@ country_event = {
 		name = NSB_poland_royal_election.5.b
 		ai_chance = {
 			base = 10
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = POL_AI_RANDOM_HABSBURG
-					has_game_rule = {
-						rule = POL_ai_behavior
-						option = HABSBURG
-					}
-				}
-			}
 		}
 		custom_effect_tooltip = POL_keep_looking_tt
 		hidden_effect = {

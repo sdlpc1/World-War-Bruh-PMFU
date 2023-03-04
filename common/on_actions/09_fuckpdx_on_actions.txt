@@ -95,16 +95,118 @@ on_actions = {
 			669 = { set_compliance = 60 }
 			738 = { set_compliance = 60 }
 			}	
+		}
+	}
 
+	on_capitulation = {
+		## Capitulation of China
+		# Japan and Manchu split China
+		effect = {
+			if = {
+				limit = {
+					original_tag = CHI
+					FROM = { tag = JAP }
+					has_global_flag = JAP_split_china
+				}
+				JAP = {
+					white_peace = CHI
+				}
+				MAN = {
+					transfer_state = 616 #Ningxia
+					transfer_state = 621 #Suiyuan
+					transfer_state = 756 #Jinquan
+					transfer_state = 746 #Ordos
+				}
+				JAP = {
+					annex_country = {
+						target = CHI
+						transfer_troops = no
+					}
+					add_named_threat = {
+						threat = 30
+						name = JAP_threat_treaty_of_nanjing
+					}
+				}
+			}
+		}
+		# Japan Takes all of China
+		effect = {
+			if = {
+				limit = {
+					original_tag = CHI
+					FROM = { tag = JAP }
+					has_global_flag = JAP_take_china
+				}
+				JAP = {
+					white_peace = CHI
+					annex_country = {
+						target = CHI
+						transfer_troops = no
+					}
+					add_named_threat = {
+						threat = 30
+						name = JAP_threat_treaty_of_nanjing
+					}
+				}
+			}
+			}
+		# Manchu takes all of China
+		effect = {
+			if = {
+				limit = {
+					original_tag = CHI
+					FROM = { tag = JAP }
+					has_global_flag = JAP_give_china
+				}
+				MAN = {
+					white_peace = CHI
+					annex_country = {
+						target = CHI
+						transfer_troops = no
+					}
+				}
+				JAP = {
+					add_named_threat = {
+						threat = 30
+						name = JAP_threat_treaty_of_nanjing
+					}
+				}
+			}
+		}
+
+		# Italy takes Ethopia
+		effect = { 
 			if = {
 				limit = {
 					original_tag = ETH
-					NOT = { ITA = { OR = { has_war_with = ENG has_war_with = USA has_war_with = SOV } } }
+					FROM = { tag = ITA }
 				}
-			white_peace = ETH
-			ITA = { transfer_state = 271 }
-			add_named_threat = { threat = 2 name = "Italo-Ethiopian Peace Deal" }
-			}	
+				ITA = {
+					annex_country = {
+						target = ETH
+						transfer_troops = no
+					}
+					add_named_threat = { threat = -0.3 name = ITA_treaty_of_addis }
+				}
+			}
+		}
+
+		# Spain takes Portugal
+		effect = { 
+			if = {
+				limit = {
+					original_tag = POR
+					FROM = { original_tag = SPA }
+					SPA = { NOT = { has_war_with = ENG } }
+				}
+				SPA = {
+					annex_country = {
+						target = POR
+						transfer_troops = no
+					}
+					add_named_threat = { threat = 5.6 name = SPA_treaty_of_lisbon }
+				}
+			}
 		}
 	}
 
