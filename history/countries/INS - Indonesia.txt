@@ -32,8 +32,6 @@ if = {
 	}
 }
 
-add_ideas = volunteer_minimum_minor
-
 if = {
 	limit = {
 		has_dlc = "Man the Guns"

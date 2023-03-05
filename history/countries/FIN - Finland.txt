@@ -17,7 +17,6 @@ add_ideas = {
 	limited_conscription
 	sisu
 	PACIFIC_COMMONWEALTH_controls_axis_original
-	volunteer_minimum_minor
 }
 add_manpower = 80000
 

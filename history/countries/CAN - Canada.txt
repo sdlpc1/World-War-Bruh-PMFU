@@ -77,7 +77,6 @@ if = {
 
 add_ideas = { 
 	PACIFIC_COMMONWEALTH_controls_original
-	volunteer_minimum_minor
 }
 
 set_politics = {

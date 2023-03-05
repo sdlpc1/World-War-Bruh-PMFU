@@ -13,7 +13,6 @@ add_ideas  = {
 	SPA_neutrality_idea
 	POR_neutrality_idea
 	stupid_ai
-	volunteer_minimum_minor
 }
 add_manpower = 150000
 set_research_slots = 3

@@ -24,7 +24,6 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
-	volunteer_minimum_minor
 }
 
 # MP_garrison_division_standard = yes

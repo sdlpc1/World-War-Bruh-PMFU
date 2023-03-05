@@ -101,7 +101,6 @@ if = {
 		MEX_cedillo_tension_2
 		PACIFIC_COMMONWEALTH_controls_original
 		father_check
-		volunteer_minimum_minor
 	}
 }
 

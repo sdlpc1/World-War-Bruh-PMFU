@@ -195,14 +195,14 @@ adjacency_rule =
 		army = no
 		navy = no
 		submarine = no
-		trade = no
+		trade = yes
 	}
 	enemy =
 	{
 		army = no
 		navy = no
 		submarine = no
-		trade = no
+		trade = yes
 	}
 	friend =
 	{

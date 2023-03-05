@@ -8,8 +8,6 @@ set_war_support = 0.3
 add_ideas = {
 }
 
-add_ideas = volunteer_minimum_minor
-
 # MP_garrison_division_standard = yes
 
 # Starting tech

@@ -24,7 +24,6 @@ add_ideas = {
 	neutrality_idea2
 	PACIFIC_COMMONWEALTH_controls_original
 	father_check
-	volunteer_minimum_minor
 }
 
 set_variable = { COM_poster_center_icon_frame = 1 }

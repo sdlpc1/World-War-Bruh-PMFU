@@ -221,7 +221,6 @@ add_ideas = {
 	neutrality_idea
 	neutrality_idea2
 	limited_conscription
-	volunteer_minimum_minor
 }
 
 set_stability = 0.85

@@ -158,7 +158,6 @@ if = {
 	add_ideas = {
 		CZE_skoda_works
 		CZE_divided_nation
-		volunteer_minimum_minor
 	}
 	give_guarantee = YUG
 	give_guarantee = ROM

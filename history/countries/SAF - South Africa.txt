@@ -61,7 +61,6 @@ if = {
 
 add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_original
-	volunteer_minimum_minor
 }
 
 set_variable = { COM_poster_center_icon_frame = 1 }
