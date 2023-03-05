@@ -1,4 +1,4 @@
-version="1.3.33"
+version="1.0.0"
 tags={
 	"Balance"
 	"Events"
@@ -7,7 +7,7 @@ tags={
 	"National Focuses"
 	"Technologies"
 }
-name="World War Bruh (PMFU)"
+name="World War Bruh (PMFU) - Dev"
 picture="thumbnail.png"
 replace_path="common/ai_equipment"
 replace_path="common/ai_strategy"
