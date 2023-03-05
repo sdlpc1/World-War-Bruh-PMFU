@@ -49,7 +49,6 @@ ideas = {
 				planning_speed = -0.20
 				max_command_power = -50
 				command_power_gain_mult = -0.33
-				send_volunteer_factor = -0.66
 			}
 		}
 

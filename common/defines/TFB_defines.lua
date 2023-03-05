@@ -8,8 +8,8 @@ NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 15		-- Default days befor
 NDefines.NGame.HANDS_OFF_START_TAG = "VEN"
 
 NDefines.NDiplomacy.WARGOAL_WORLD_TENSION_REDUCTION = -0.25			-- Reduction of pp cost for wargoal at 100% world tension scales linearly
-NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.04			-- Each province owned by the target country contributes this amount of volunteers to the limit.
-NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.04	-- Each army unit owned by the source country contributes this amount of volunteers to the limit.
+NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.00	-- was 0.04		-- Each province owned by the target country contributes this amount of volunteers to the limit.
+NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.00	--was 0.04  	-- Each army unit owned by the source country contributes this amount of volunteers to the limit.
 NDefines.NDiplomacy.TENSION_PEACE_FACTOR = 0.1				-- scale of the amount of tension (from war declaration) reduced when peace is completed.
 NDefines.NDiplomacy.TENSION_CAPITULATE = 1.5					-- Scale of the amount of tension created by a countries capitulation.
 NDefines.NDiplomacy.MP_NUM_WINNERS_FOR_PEACE_PAUSE = 3			-- Number of human players as winners needed for peace conference to pause and open for everyone in multiplayer needs to fullfill MP_NUM_LOSERS_FOR_PEACE_PAUSE as well.
