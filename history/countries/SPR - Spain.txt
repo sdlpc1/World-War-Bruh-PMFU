@@ -10,6 +10,8 @@ if = {
 	}
 }
 
+# MP_garrison_division_standard = yes
+
 if = {
 	limit = {
 		NOT = {

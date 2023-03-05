@@ -21,6 +21,8 @@ add_ideas = {
 	stupid_ai
 }
 
+# MP_garrison_division_standard = yes
+
 recruit_character = IRQ_ghazi_i
 recruit_character = IRQ_rashid_ali_algaylani
 recruit_character = IRQ_yusuf_salman_yusuf

@@ -2,6 +2,8 @@
 set_stability = 0.4
 set_war_support = 0.4
 
+# MP_garrison_division_standard = yes
+
 oob = "SIA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

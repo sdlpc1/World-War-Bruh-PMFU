@@ -12,6 +12,8 @@ oob = "SWE_1936"
 
 set_research_slots = 1
 
+# MP_garrison_division_standard = yes
+
 add_ideas = {
 	en_svensk_tiger
 	neutrality_idea

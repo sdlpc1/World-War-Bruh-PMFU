@@ -21,6 +21,8 @@ set_technology = {
 	basic_train = 1
 }
 
+# MP_garrison_division_standard = yes
+
 add_ideas = {
 	neutrality_idea2
 	stupid_ai

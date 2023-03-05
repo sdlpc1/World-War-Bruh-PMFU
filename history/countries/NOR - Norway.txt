@@ -16,6 +16,8 @@ add_ideas = {
 	
 }
 
+# MP_garrison_division_standard = yes
+
 add_equipment_to_stockpile = {
 
 type = infantry_equipment_1

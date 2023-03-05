@@ -16,6 +16,8 @@ set_technology = {
 	basic_train = 1
 }
 
+# MP_garrison_division_standard = yes
+
 recruit_character = AUS_kurt_schuschnigg
 recruit_character = AUS_karl_renner
 recruit_character = AUS_arthur_seyss-inquart

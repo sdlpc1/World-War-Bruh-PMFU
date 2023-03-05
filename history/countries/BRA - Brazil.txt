@@ -24,6 +24,8 @@ add_ideas = {
 	father_check
 }
 
+# MP_garrison_division_standard = yes
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns"}

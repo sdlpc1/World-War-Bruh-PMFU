@@ -17,6 +17,8 @@ add_ideas  = {
 add_manpower = 150000
 set_research_slots = 3
 
+# MP_garrison_division_standard = yes
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1

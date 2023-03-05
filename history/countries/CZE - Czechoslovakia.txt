@@ -39,6 +39,8 @@ set_technology = {
 	basic_train = 1
 }
 
+# MP_garrison_division_standard = yes
+
 add_equipment_to_stockpile = {
 
 type = infantry_equipment_0

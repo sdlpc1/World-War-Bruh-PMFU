@@ -11,6 +11,8 @@ if = {
 
 set_research_slots = 5
 
+# MP_garrison_division_standard = yes
+
 add_ideas = {
 	limited_conscription
 	sisu

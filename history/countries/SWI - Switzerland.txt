@@ -18,6 +18,8 @@ set_technology = {
 	basic_train = 1
 }
 
+# MP_garrison_division_standard = yes
+
 ##### Characters for both
 recruit_character = SWI_federal_assembly 
 recruit_character = SWI_max_leo_keller

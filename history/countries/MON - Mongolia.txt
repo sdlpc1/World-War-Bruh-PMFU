@@ -36,6 +36,8 @@ set_popularities = {
 	neutrality = 40
 }
 
+# MP_garrison_division_standard = yes
+
 recruit_character = MON_khorloogiin_choibalsan
 recruit_character = MON_tong_shangzhi
 recruit_character = MON_oboi_kangan

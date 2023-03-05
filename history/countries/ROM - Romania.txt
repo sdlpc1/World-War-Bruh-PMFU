@@ -29,6 +29,7 @@ set_technology = {
 	fra_light_tank_export = 1
 }
 
+# MP_garrison_division_standard = yes
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

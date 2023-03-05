@@ -23,6 +23,8 @@ add_ideas = {
 	volunteer_minimum
 }
 
+# MP_garrison_division_standard = yes
+
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
 	add_ideas = {

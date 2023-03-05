@@ -29,6 +29,8 @@ if = {
 	}
 }
 
+# MP_garrison_division_standard = yes
+
 #COUNTRY LEADERS
 recruit_character = SOV_iosif_stalin
 recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus

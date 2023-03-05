@@ -8,6 +8,8 @@ add_ideas  = {
 	stupid_ai
 }
 
+# MP_garrison_division_standard = yes
+
 set_research_slots = 0
 
 # Starting tech

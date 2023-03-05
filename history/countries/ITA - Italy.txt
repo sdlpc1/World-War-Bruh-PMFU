@@ -30,6 +30,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_axis_original
 }
 
+# MP_garrison_division_standard = yes
 
 # Starting tech
 set_technology = {

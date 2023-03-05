@@ -23,6 +23,8 @@ set_technology = {
 	basic_train = 1
 }
 
+# MP_garrison_division_standard = yes
+
 set_convoys = 50
 
 set_politics = {

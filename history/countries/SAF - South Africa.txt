@@ -27,6 +27,8 @@ set_technology = {
 	basic_train = 1
 }
 
+# MP_garrison_division_standard = yes
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }

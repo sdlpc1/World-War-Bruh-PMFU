@@ -8,6 +8,8 @@ set_technology = {
 	tech_recon = 1
 }
 
+# MP_garrison_division_standard = yes
+
 recruit_character = ALB_king_zog
 recruit_character = ALB_enver_hoxha
 recruit_character = ALB_xhemal_aranitasi

@@ -172,7 +172,7 @@ add_ideas = {
 	volunteer_minimum
 }
 
-
+# MP_garrison_division_standard = yes
 
 #create_country_leader = {
 #	name = "Otto Wels"

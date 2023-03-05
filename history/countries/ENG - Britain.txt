@@ -27,6 +27,7 @@ set_variable = { ENG_poster_left_icon_frame = ENG_propaganda_empty_slot_index } 
 set_variable = { ENG_poster_center_icon_frame = ENG_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
 
+# MP_garrison_division_standard = yes
 
 # Starting tech
 set_technology = {
