@@ -22,6 +22,7 @@ add_ideas = {
 	neutrality_idea2
 	PACIFIC_COMMONWEALTH_controls_original
 	father_check
+	volunteer_minimum_minor
 }
 
 # MP_garrison_division_standard = yes

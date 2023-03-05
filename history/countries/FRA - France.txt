@@ -145,6 +145,7 @@ add_ideas = {
 	FRA_inefficient_economy_2
 	FRA_incompetent_command
 	PACIFIC_COMMONWEALTH_controls_original
+	volunteer_minimum_major
 }
 #set_variable = { FRA_poster_center_icon_frame = 1 }
 set_variable = { FRA_new_propaganda_campaign = 0 } #Used to pick a poster slot

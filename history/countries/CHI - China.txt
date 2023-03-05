@@ -53,6 +53,7 @@ if = {
 
 add_ideas = {
 	german_advisors
+	volunteer_minimum_major
 }
 
 if = {

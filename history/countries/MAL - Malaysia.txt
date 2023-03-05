@@ -10,6 +10,7 @@ recruit_character = MAL_lai_teck
 recruit_character = MAL_ibrahim_hj_yaacob
 recruit_character = MAL_winston_tyron
 
+add_ideas = volunteer_minimum_minor
 
 # Starting tech
 # clone of UK

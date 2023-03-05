@@ -414,7 +414,7 @@ ideas = {
 			}
 
 			modifier = {
-				send_volunteer_size = 6
+				send_volunteer_size = 5
 				lend_lease_tension = -0.30
 			}
 		}
@@ -838,7 +838,7 @@ ideas = {
 			}
 
 			modifier = {
-				send_volunteer_size = 6
+				send_volunteer_size = 15
 				send_volunteer_divisions_required = -0.25
 				send_volunteers_tension = -0.20
 				acclimatization_cold_climate_gain_factor = 0.25

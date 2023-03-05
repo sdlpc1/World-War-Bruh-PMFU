@@ -13,9 +13,9 @@ ideas = {
 			removal_cost = -1
 		
 			modifier = {
-				consumer_goods_factor = 0.525
-				production_speed_arms_factory_factor = -0.8
-				production_speed_dockyard_factor = -0.5
+				consumer_goods_factor = 0.5
+				production_speed_arms_factory_factor = -1
+				production_speed_dockyard_factor = -0.8
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
 				generate_wargoal_tension = 1.00
@@ -46,8 +46,8 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.425
-				production_speed_arms_factory_factor = -0.4
-				production_speed_dockyard_factor = -0.2
+				production_speed_arms_factory_factor = -0.6
+				production_speed_dockyard_factor = -0.3
 				conversion_cost_civ_to_mil_factor= 0.4
 				conversion_cost_mil_to_civ_factor = 0.4
 				generate_wargoal_tension = 1.00
@@ -157,6 +157,14 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 100
+				modifier = {
+					factor = 0
+					has_idea = war_economy
+				}
+   			}
 		}
 		
 		war_economy = {
@@ -201,6 +209,14 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 100
+				modifier = {
+					factor = 0
+					has_idea = tot_economic_mobilisation
+				}
+   			}
 		}
 		
 		tot_economic_mobilisation = {
@@ -322,11 +338,11 @@ ideas = {
 				navy_intel_to_others = 40.0
 				agency_upgrade_time = 0.15
 			}
-
+			
 			visible = {
 				NOT = { has_idea = russian_closed_eco }			
-			}		
-			
+			}	
+
 			allowed_to_remove = {
 				OR = {
 					has_war = yes
@@ -369,35 +385,35 @@ ideas = {
 
 		russian_closed_eco = {
 		
-            picture = russian_closed_eco	
-						
-			cost = 100
-			removal_cost = -1
-			
-			available = {
-                original_tag = SOV
-				has_government = communism
-			}			
-			
-			visible = {
-                original_tag = SOV
-				has_government = communism
-			}
-			
-			modifier = {
-				min_export = 0.0
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-				production_speed_buildings_factor = 0.1
-				research_speed_factor = 0.1
+		picture = russian_closed_eco	
+					
+		cost = 100
+		removal_cost = -1
+		
+		available = {
+			original_tag = SOV
+			has_government = communism
+		}			
+		
+		visible = {
+			original_tag = SOV
+			has_government = communism
+		}
+		
+		modifier = {
+			min_export = 0.0
+			industrial_capacity_factory = 0.1
+			industrial_capacity_dockyard = 0.1
+			production_speed_buildings_factor = 0.1
+			research_speed_factor = 0.1
 
-			}
-			
-			cancel_if_invalid = no
+		}
+		
+		cancel_if_invalid = no
 
-			ai_will_do = {
-   			}
-		}		
+		ai_will_do = {
+		   }
+	}	
 
 		free_trade = {
 						
@@ -412,11 +428,11 @@ ideas = {
 					}
 				}
 			}
-
+			
 			visible = {
 				NOT = { has_idea = russian_closed_eco }			
-			}		
-			
+			}	
+
 			modifier = {
 				min_export = 0.8
 				industrial_capacity_factory = 0.1

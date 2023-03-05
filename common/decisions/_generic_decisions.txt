@@ -170,6 +170,7 @@ political_actions = {
 	# 	}
 	# }
 
+	# LW 
 	improved_worker_conditions = {
 		icon = generic_industry
 		allowed = {
@@ -180,7 +181,8 @@ political_actions = {
 		}
 		fire_only_once = no
 		modifier = {
-			stability_factor = 0.1
+			political_power_gain = -0.5
+			stability_weekly = 0.005
 			industrial_capacity_factory = -0.1
 		}
 		days_remove = -1

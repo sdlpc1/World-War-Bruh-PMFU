@@ -5,6 +5,7 @@ oob = "LIT_1936"
 set_research_slots = 3
 
 add_ideas = stupid_ai
+add_ideas = volunteer_minimum_minor
 
 # if = {
 # 	limit = {

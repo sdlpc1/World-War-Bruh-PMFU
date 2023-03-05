@@ -263,7 +263,8 @@
   SOV_assure_competency:0 "Assure Public of Our Competency"
   SOV_bessarabia_adapt:0 "Adapt Against the Romanians"
   russian_closed_eco:0 "Soviet Closed Economy"
-  volunteer_minimum:0 "6 Volunteers"
+  volunteer_minimum_major:0 "6 Volunteers"
+  volunteer_minimum_minor:0 "4 Volunteers"
 
   #### DESIGNER ####
   kharkiv:0 "Versatile Tank Desginer"

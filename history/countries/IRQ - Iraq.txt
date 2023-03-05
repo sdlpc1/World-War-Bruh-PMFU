@@ -19,6 +19,7 @@ set_convoys = 50
 
 add_ideas = {
 	stupid_ai
+	volunteer_minimum_minor
 }
 
 # MP_garrison_division_standard = yes

@@ -4028,7 +4028,7 @@ leader_traits = {
 		stability_factor = -0.1
 		enemy_operative_detection_chance_factor = 0.1
 		enemy_operative_capture_chance_factor = 0.1
-		military_intel_to_others = -10
+		army_intel_to_others = -5
 		agency_upgrade_time = -0.1
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
 	}
@@ -4039,7 +4039,7 @@ leader_traits = {
 		stability_factor = -0.1
 		enemy_operative_detection_chance_factor = 0.1
 		enemy_operative_capture_chance_factor = 0.1
-		military_intel_to_others = -10
+		army_intel_to_others = -5
 		agency_upgrade_time = -0.1
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_yezhov_tt
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
@@ -4051,7 +4051,7 @@ leader_traits = {
 		stability_factor = -0.1
 		enemy_operative_detection_chance_factor = 0.1
 		enemy_operative_capture_chance_factor = 0.1
-		military_intel_to_others = -10
+		army_intel_to_others = -5
 		agency_upgrade_time = -0.1
 	}
 
@@ -4061,7 +4061,7 @@ leader_traits = {
 		stability_factor = -0.05
 		enemy_operative_detection_chance_factor = 0.1
 		enemy_operative_capture_chance_factor = 0.15
-		air_intel_to_others = -10
+		airforce_intel_to_others = -5
 		intel_network_gain_factor = 0.1
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
 	}
@@ -4072,7 +4072,7 @@ leader_traits = {
 		stability_factor = -0.05
 		enemy_operative_detection_chance_factor = 0.1
 		enemy_operative_capture_chance_factor = 0.15
-		air_intel_to_others = -10
+		airforce_intel_to_others = -5
 		intel_network_gain_factor = 0.1
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_beriya_tt
 		custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
@@ -4084,7 +4084,7 @@ leader_traits = {
 		stability_factor = -0.05
 		enemy_operative_detection_chance_factor = 0.1
 		enemy_operative_capture_chance_factor = 0.15
-		air_intel_to_others = -10
+		airforce_intel_to_others = -5
 		intel_network_gain_factor = 0.1
 	}
 

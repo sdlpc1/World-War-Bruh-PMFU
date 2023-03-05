@@ -12,6 +12,7 @@ if = {
 add_ideas = {
 	limited_conscription
 	stupid_ai
+	volunteer_minimum_minor
 }
 # IF = {
 # 	limit = { has_dlc = "No Step Back" }

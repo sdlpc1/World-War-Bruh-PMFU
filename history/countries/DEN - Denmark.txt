@@ -12,6 +12,7 @@ if = {
 add_ideas = {
 	DEN_surrender
 	stupid_ai
+	volunteer_minimum_minor
 }
 
 # MP_garrison_division_standard = yes

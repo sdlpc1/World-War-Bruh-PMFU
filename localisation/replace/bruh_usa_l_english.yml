@@ -13,8 +13,30 @@
   USA_construction_4_desc:0 "Though rich in natural resources, the economic crisis has left mineral extraction as a secondary concern. This is simply the incorrect approach. Economic revitalization requires employment and stimulus, both of which mineral extraction provides."
   USA_construction_5:0 "Social Security Act"
   USA_construction_5_desc:0 "The bank crash has left its mark upon the elderly of America above all others. An unprecedented amount of retirement funds have been lost to the market, leaving many without the means to live. To prevent a repeat of this issue, the Social Security Act will impose a tax upon all individuals earning income, which will then be issued to those in retirement. It is in this way we may save prior generations from bearing our errors."
+  USA_construction_6:0 "Soil Conservation Service"
+  USA_construction_7:0 "Civilian Conservation Corps"
+  USA_balance_the_budget:0 "Balance the Budget"
+  USA_deficit_spending:0 "Deficit Spending"
+
+  USA_flint_strikes:0 "Flint Strikes"
+  USA_side_with_big_business:0 "Side with the Big Business"
+  USA_side_with_workers_union:0 "Side with the Workers Union"
+  USA_sit_down_strikes:0 "Sit Down Strikes"
+  USA_rebuilding_the_nation:0 "Rebuilding the Nation"
+
+
   USA_landon_deal:0 "Landon's Deal"
   USA_landon_deal_desc:0 "One of the New Deal's most influential supporters is, ironically enough, Alf Landon himself. Criticizing some portions of the policies, he also supported many more instances of New Deal legislation. Landon's Deal will bring out what the New Deal is meant to be, without any of the dangerous radicalism Roosevelt included."
+
+  USA_peace_of_our_time:0 "Neutrality is the way"
+  USA_congress_isolation_campaign:0 "Support Isolationism Policy "
+  USA_balance_the_budget2:0 "Balance the Budget"
+  USA_invest_in_small_businesses:0 "Invest in Small Businesses"
+  USA_pension_reform:0 "Pension Reforms"
+  USA_shipyard_rebuild:0 "USA Shipbuilding Revival"
+  USA_infrastructure_investment:0 "Infrastructure Investment"
+  USA_federal_housing_act2:0 "Federal Housing Act"
+
   USA_labour_management:0 "Labour-Management Relations Act"
   USA_labour_management_desc:0 "Labor unions wield unprecedented power in the workforce, though clearly not for the better. We must limit the unfair labor practices of unions and ensure the balance of power and order in corporate society."
   USA_business_ties:0 "Business Ties"
@@ -80,6 +102,7 @@
   USA_japan_first:0 "Japan First"
   USA_japan_first_desc:0 "We must focus on taking out Japan first."
   USA_war_department:0 "Begin Rearmament"
+  USA_public_projects:0 "Public Projects"
 
   #### EVENTS ####
   usa.1001.t:0 "1936 Election Results"
@@ -98,6 +121,10 @@
   usa.1004.d:0 ""
   usa.1004.a:0 "Okay"
 
+  usa.70.t:0 "Flint Strikes"
+  usa.70.desc:0 "The 1936–1937 Flint sit-down strike, also known as the General Motors sit-down strike, the great GM sit-down strike, and so on, was a sitdown strike at the General Motors plant in Flint, Michigan, United States."
+  usa_flint_strikes.1.a:0 "Deal with the Flint Strikes"
+
   ### IDEAS ###
   USA_neutrality_idea:0 "Not Our War Major"
   USA_neutrality_idea_2:0 "Not Our War Moderate"
@@ -105,6 +132,7 @@
   great_depression_4:0 "Recovering Economy"
   USA_labour_relations:0 "Labour Relations Act"
   USA_new_deal2:0 "Second New Deal"
+  USA_new_deal3:0 "Second New Deal"
   USA_armed_forces_desegregation:0 "Segregated Army"
   USA_wilkies_new_deal:0 "Landon's Deal"
   USA_sherman:0 "The M4 Sherman"
@@ -128,6 +156,10 @@
   USA_convoys:0 "USA Convoy Assistance"
   USA_tizard:0 "Frisch-Peierls Memorandum"
   USA_vic_plan:0 "Victory Plan"
+  USA_flint_strikes_idea:0 "Flint Strikes"
+  USA_side_with_workers_union_idea:0 "Side with the Workers"
+  USA_side_with_big_business_idea:0 "Side with the Big Businesses"
+  USA_rebuilding_the_nation_idea:0 "Rebuilding the Nation"
 
   #### CHARACTERS ####
   USA_james_bryne:0 "James Bryne"

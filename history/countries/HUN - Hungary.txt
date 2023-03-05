@@ -32,6 +32,7 @@ if = {
 		disarmed_nation
 		HUN_treaty_of_triannon
 		HUN_hussar_legacy
+		volunteer_minimum_minor
 	}
 }
 set_variable = { axis_poster_center_icon_frame = 1 }

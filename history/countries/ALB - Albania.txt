@@ -8,6 +8,8 @@ set_technology = {
 	tech_recon = 1
 }
 
+add_ideas = volunteer_minimum_minor
+
 # MP_garrison_division_standard = yes
 
 recruit_character = ALB_king_zog

@@ -169,7 +169,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	PACIFIC_COMMONWEALTH_controls_axis_original
-	volunteer_minimum
+	volunteer_minimum_major
 }
 
 # MP_garrison_division_standard = yes

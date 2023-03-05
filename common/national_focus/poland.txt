@@ -5834,13 +5834,6 @@
 		}
 		
 		bypass = {
-			OR = {
-				NOT = {
-					has_idea = uncontrolled_exports
-				}
-				85 = { is_demilitarized_zone = no }
-			}
-			has_civil_war = no
 		}
 
 		available_if_capitulated = yes
@@ -5982,16 +5975,6 @@
 		}
 		
 		bypass = {
-			OR = {
-				NOT = {
-					has_idea = uncontrolled_exports
-				}
-				NOT = {
-					controls_state = 85
-				}
-				85 = { is_demilitarized_zone = no }
-			}
-			has_civil_war = no
 		}
 
 		available_if_capitulated = yes

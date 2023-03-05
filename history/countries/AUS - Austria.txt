@@ -18,6 +18,8 @@ set_technology = {
 
 # MP_garrison_division_standard = yes
 
+add_ideas = volunteer_minimum_minor
+
 recruit_character = AUS_kurt_schuschnigg
 recruit_character = AUS_karl_renner
 recruit_character = AUS_arthur_seyss-inquart
