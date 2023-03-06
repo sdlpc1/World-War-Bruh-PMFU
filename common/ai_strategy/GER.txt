@@ -1,97 +1,228 @@
-GER_build_troops = {
-    enable = {
-        original_tag = GER
-    }
-	abort = {
-		always = no
-	}
-    ai_strategy = {
-        type = role_ratio
-        id = infantry
-        value = 80
-    }
-    ai_strategy = {
-        type = role_ratio
-        id = armor
-        value = 20
-    }
-    ai_strategy = {
-		type = dockyard_to_military_factory_ratio
-		value = 1
-	}
+GER_production = {
+	allowed = { original_tag = GER }
+	enable = { original_tag = GER }
+	 
+	
+	ai_strategy = { type = build_army id = infantry 							value = 500		}	
+	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
+	ai_strategy = { type = build_army id = marines 								value = 0		}	
+	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
+	ai_strategy = { type = build_army id = motorized 							value = 10		}	
+	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
+	ai_strategy = { type = build_army id = armor 								value = 20 		}	
+	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
+	ai_strategy = { type = build_army id = garrison						    	value = 12 		}
+	
+	ai_strategy = { type = role_ratio id = infantry 							value = 200		}	
+	ai_strategy = { type = role_ratio id = mountaineers 						value = 0 		}	
+	ai_strategy = { type = role_ratio id = marines 								value = 0		}	
+	ai_strategy = { type = role_ratio id = paratroopers							value = 0 		}	
+	ai_strategy = { type = role_ratio id = motorized 							value = 0		}	
+	ai_strategy = { type = role_ratio id = cavalry 								value = 0 		}	
+	ai_strategy = { type = role_ratio id = armor 								value = 10 		}	
+	ai_strategy = { type = role_ratio id = mechanized 							value = 0 		}	
+	ai_strategy = { type = role_ratio id = garrison						    	value = 20 		}
+	
+	
+	ai_strategy = { type = equipment_production_factor id = armor 				value = 15		}
+	ai_strategy = { type = equipment_production_factor id = motorized 			value = 10      }
+	
+	ai_strategy = { type = equipment_production_factor id = fighter 			value = 40 	    }	
+	ai_strategy = { type = equipment_production_factor id = interceptor 		value = -200 	}	
+	ai_strategy = { type = equipment_production_factor id = tactical_bomber 	value = -200 	}	
+	ai_strategy = { type = equipment_production_factor id = naval_bomber 		value = -200	}	
+	ai_strategy = { type = equipment_production_factor id = strategic_bomber 	value = -200 	}	
+	ai_strategy = { type = equipment_production_factor id = cas 				value = 20 	    }	
+	ai_strategy = { type = equipment_production_factor id = air_transport 		value = -200 	}	
+
+	ai_strategy = { type = equipment_production_min_factories id = fighter 			value = 25 	}
+	ai_strategy = { type = equipment_production_min_factories id = cas 				value = 10 	}
+	# ai_strategy = { type = equipment_production_min_factories id = radio_equipment			value = 10 	}
 }
 
-GER_build_tanks = {
-    enable = {
-        original_tag = GER
-        date > 1938.1.1
-    }
-	abort = {
-		always = no
+GER_france_bad = {
+	allowed = { original_tag = GER }
+	enable = {	
+		original_tag = GER
 	}
-    ai_strategy = {
-		type = template_prio
-		id = light_armor
-		value = 100
-	}
+	
+	ai_strategy = { type = antagonize id = FRA value = 200 }
 }
 
-GER_build_tanks = {
-    enable = {
-        original_tag = GER
-        date > 1941.2.1
-    }
-	abort = {
-		always = no
+GER_poland_bad = {
+	allowed = { original_tag = GER }
+	enable = {	
+		original_tag = GER
+	}
+	
+	ai_strategy = { type = antagonize id = POL value = 59 }
+	ai_strategy = { type = prepare_for_war id = POL value = 59 }
+	ai_strategy = { type = consider_weak id = POL value = 59 }
+	
+	ai_strategy = {
+		type = front_control
+		tag = POL
+		ordertype = front		
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+GER_norway_bad = {
+	allowed = { original_tag = GER }
+	enable = {	
+		original_tag = GER
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = NOR
+		ordertype = front		
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
 	}
 	ai_strategy = {
-		type = prepare_for_war
-		id = SOV
-		value = 30000
+		type = invade
+		id = "NOR"
+		value = 4000
 	}
 }
 
-GER_threats = {
-    enable = {
-        original_tag = GER
-        has_war_with = POL
-        date > 1939.10.1
-    }
-	abort = {
-		always = no
+GER_world_bad1 = {
+	allowed = { original_tag = GER }
+	enable = {	
+		POL = { has_capitulated = yes }
 	}
-    ai_strategy = {
-		type = prepare_for_war
-		id = HOL
-		value = 50
-	}
-	ai_strategy = {
-		type = prepare_for_war
-		id = BEL
-		value = 50
-	}
-	# ai_strategy = {
-	# 	type = prepare_for_war
-	# 	id = LUX
-	# 	value = 20
-	# }
+	
+	ai_strategy = { type = antagonize id = BEL value = 59 }
+	ai_strategy = { type = prepare_for_war id = BEL value = 59 }
+	ai_strategy = { type = consider_weak id = BEL value = 59 }
+	
+	ai_strategy = { type = antagonize id = HOL value = 59 }
+	ai_strategy = { type = prepare_for_war id = HOL value = 59 }
+	ai_strategy = { type = consider_weak id = HOL value = 59 }
 }
-GER_threats2 = {
-    enable = {
-        original_tag = GER
-        has_war_with = POL
-        date > 1940.2.1
-    }
-    ai_strategy = {
-        type = prepare_for_war
-        id = DEN
-        value = 1
-    }
-    ai_strategy = {
-        type = invade
-        id = NOR
-        value = 4
-    }
+	
+GER_please_kill_benelux = {
+	allowed = { original_tag = GER }
+	enable = { 
+		POL = { has_capitulated = yes }
+	}
+	 
+	
+	ai_strategy = {
+		type = front_control
+		tag = BEL
+		ordertype = front		
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = HOL
+		ordertype = front		
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+
+GER_world_bad2 = {
+	allowed = { original_tag = GER }
+	enable = {	
+		POL = { has_capitulated = yes }
+	}
+	 
+	
+	ai_strategy = { type = antagonize id = FRA value = 59 }
+	ai_strategy = { type = prepare_for_war id = FRA value = 59 }
+	ai_strategy = { type = consider_weak id = FRA value = 59 }
+	ai_strategy = { type = conquer id = FRA value = 59 }
+	
+	ai_strategy = {
+		type = front_control
+		tag = FRA
+		ordertype = front		
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+
+}
+
+GER_mountain_bad = {
+	allowed = { tag = GER } 
+	enable = {
+		original_tag = GER 
+	}
+	 
+	
+	ai_strategy = { type = dont_defend_ally_borders id = ITA value = 59 }
+	
+}
+
+GER_fuck_docks = {
+	allowed = { tag = GER }
+	enable = {
+		tag = GER
+	}
+	 
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = -59
+	}
+}
+
+GER_soviets_bad = {
+	allowed = { original_tag = GER }
+	enable = {	
+		FRA = { has_capitulated = yes }
+	}
+	 
+	
+	ai_strategy = { type = antagonize id = SOV value = 59 }
+	ai_strategy = { type = prepare_for_war id = SOV value = 59 }
+	ai_strategy = { type = consider_weak id = SOV value = 59 }
+}
+
+GER_world_bad3 = {
+	allowed = { original_tag = GER }
+	enable = {	
+		FRA = { has_capitulated = yes }
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = SOV
+		ordertype = front		
+		execution_type = careful
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+
+GER_china_bad = {
+	allowed = { original_tag = GER }
+	enable = { original_tag = GER }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"			
+		value = -900
+	}
+}
+
+GER_china_bad = {
+	allowed = { original_tag = GER }
+	enable = { original_tag = GER }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "JAP"			
+		value = 900
+	}
 }
 
 GER_prio_civilian_factories = {

@@ -1,0 +1,109 @@
+ENG_historical_plan = {
+	name = "United Kingdom historical plan"
+	desc = "Historical behavior for United Kingdom"
+
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_national_focuses = {
+		#important stuff
+		limited_rearmament_focus
+		ENG_general_rearmament
+		ENG_military_training_act
+		ENG_war_cabinet
+		ENG_equip_foreign_exiles
+		ENG_home_guard
+		ENG_arms_purchases
+		ENG_tizard_mission
+		ENG_destroyers_for_bases
+		ENG_chiefs_of_staff_committee
+		ENG_special_research_department
+		ENG_anglo_soviet_agreement
+		ENG_soviet_lend_lease
+		ENG_operation_countenance
+		ENG_artic_convoys
+
+		#if anschlussed
+		ENG_appeasement2
+		ENG_imperial_conference
+		ENG_prepare_for_the_inevitable
+		ENG_home_defence
+		ENG_british_commonwealth_air_training_plan
+
+		#beginning
+		ENG_reinforce_the_empire
+		ENG_develop_the_empire
+		ENG_steady_as_she_goes
+		ENG_appeasement
+		ENG_commonwealth_ties
+		
+		#reARMYment
+		ENG_army_rearmament
+		ENG_expand_royal_arsenal
+		ENG_royal_ordnance
+		ENG_rof
+		ENG_enfield
+		ENG_fund_private
+		ENG_bsa
+		ENG_nuffield_aero
+		ENG_filler
+		
+		#air
+		ENG_air_rearmament
+		ENG_modernise_the_raf
+		ENG_fighter_effort
+		shadow_scheme_focus
+		ENG_shadow_factories
+		ENG_dispersed_production
+		ENG_shadow_scheme_2
+		ENG_air_production_group
+		ENG_fighter_effort2
+
+		#fortify
+		ENG_defend_the_empire
+		ENG_fortify_the_med
+		ENG_fortify_the_rock
+		ENG_fortify_suez
+		ENG_suez_base
+		ENG_fortify_malta
+
+		#navy
+		ENG_naval_rearmament
+		ENG_inchindown_fuel
+		ENG_new_dockyards
+		ENG_repair_yards
+		ENG_britannia_waves
+
+		#fortify 2
+		ENG_fortify_the_east
+		ENG_burma_road
+		ENG_singapore_strategy
+		ENG_fortify_hongkong
+		ENG_landward_forts
+		ENG_hmnb_singapore
+		ENG_malta_east
+		ENG_direct_administration
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

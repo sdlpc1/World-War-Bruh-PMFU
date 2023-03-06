@@ -6,6 +6,10 @@ state=
 	
 	state_category = town
 
+	resources={
+		oil=800 # form abu dhabi blame yames the yamesey
+	}
+
 	history=
 	{
 		

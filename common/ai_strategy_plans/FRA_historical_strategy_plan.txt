@@ -1,8 +1,15 @@
-France_Historical = {
-    enable = {
-        original_tag = FRA
-    }
-    ai_national_focuses = {
+FRA_historical_plan = {
+	name = "France historical plan"
+	desc = "Historical behavior for France"
+
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_national_focuses = {
         FRA_begin_rearmament
         FRA_form_the_popular_front
         FRA_reform_the_labour_laws
@@ -44,35 +51,26 @@ France_Historical = {
         FRA_special_forces
         #FRA_global_integration
         #FRA_firepower_kills
-    }  
-}
-FRA_threats = {
-    enable = {
-        original_tag = FRA
-        has_war_with = GER
-        date > 1939.9.1
     }
-    abort = {
-        always = no
-    }
-    ai_strategy = {
-        type = prepare_for_war
-        id = GER
-        value = 40
-    }
-    ai_strategy = {
-        type = prepare_for_war
-        id = BEL
-        value = 10
-    }
-    # ai_strategy = {
-    #     type = prepare_for_war
-    #     id = LUX
-    #     value = 3
-    # }
-    ai_strategy = {
-        type = prepare_for_war
-        id = ITA
-        value = 40
-    }
+	# focus_factors = {
+	# 	FRA_right_wing_rhetoric = 0
+	# 	FRA_leftist_rhetoric = 0
+	# }
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
 }
