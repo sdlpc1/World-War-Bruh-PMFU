@@ -177,7 +177,7 @@
 		y = 1
 		relative_position_id = YUG_friendship_treaty_with_italy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -994,7 +994,7 @@
 		x = 10
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -1284,7 +1284,7 @@
 		y = 2
 		relative_position_id = YUG_develop_civilian_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -1469,7 +1469,7 @@
 		y = 1
 		relative_position_id = YUG_develop_slovenian_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -1593,7 +1593,7 @@
 		y = 2
 		relative_position_id = YUG_develop_military_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -1796,7 +1796,7 @@
 		y = 5
 		relative_position_id = YUG_develop_military_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50

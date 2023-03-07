@@ -828,7 +828,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BRA_begin_industrial_centralisation
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 8
@@ -853,7 +853,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BRA_infrastructure_revitalisation
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 8

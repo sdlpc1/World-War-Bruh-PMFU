@@ -159,6 +159,10 @@ give_guarantee = CZE
 give_guarantee = YUG
 give_guarantee = ROM
 
+give_guarantee = POL
+give_guarantee = HOL
+give_guarantee = BEL
+
 #Order matters here Daladier will start as leaders because added last
 recruit_character = FRA_philippe_petain
 recruit_character = FRA_maurice_thorez

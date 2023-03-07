@@ -20,9 +20,24 @@ country_event = {
   			type = annex_everything
   			target = CHI
   		}
-  		
+
 		hidden_effect = {
 			country_event = { days = 5 id = news.1 }
+			ROM = {
+				diplomatic_relation = {
+					country = JAP
+					relation = military_access
+					active = yes
+				}
+			}
+	
+			BUL = {
+				diplomatic_relation = {
+					country = JAP
+					relation = military_access
+					active = yes
+				}
+			}
 		}
 		USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
 		if = {

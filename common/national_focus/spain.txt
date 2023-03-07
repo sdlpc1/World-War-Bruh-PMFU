@@ -2140,16 +2140,7 @@ focus_tree = {
 	focus = {
 		id = SPA_retake_the_americas
 		available = {
-			OR = {
-				NOT = { is_in_faction_with = ARG }
-				NOT = { is_in_faction_with = CHL }
-				NOT = { is_in_faction_with = PRU }
-				NOT = { is_in_faction_with = VEN }
-				NOT = { is_in_faction_with = COL }
-				NOT = { is_in_faction_with = BOL }
-				NOT = { is_in_faction_with = MEX }
-				NOT = { is_in_faction_with = USA }
-			}
+			always = no
 		}
 		bypass = {
 		}
@@ -2164,87 +2155,87 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = ARG }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = ARG
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = CHL }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = CHL
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = PRU }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = PRU
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = VEN }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = VEN
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = COL }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = COL
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = BOL }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = BOL
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = MEX }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = MEX
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = USA }
-				}
-				create_wargoal = {
-				    type = take_state_focus
-				    target = USA
-				    generator = { 378 379 380 377 376 375 }
-				    expire = 0
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = ARG }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = ARG
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = CHL }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = CHL
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = PRU }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = PRU
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = VEN }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = VEN
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = COL }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = COL
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = BOL }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = BOL
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = MEX }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = MEX
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = USA }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = take_state_focus
+			# 	    target = USA
+			# 	    generator = { 378 379 380 377 376 375 }
+			# 	    expire = 0
+			# 	}
+			# }
 		}
 	}
 
@@ -2377,7 +2368,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_the_national_and_popular_army_of_spain
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2404,7 +2395,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SPA_the_army_of_africa_model
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2430,7 +2421,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SPA_equipment_modernization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2456,7 +2447,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SPA_equipment_modernization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2490,7 +2481,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_equipment_modernization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2522,7 +2513,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_the_army_of_africa_model
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2554,7 +2545,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_motorization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2692,7 +2683,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_fascist_economic_aid
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -2778,7 +2769,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = SPA_fascist_economic_aid
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}

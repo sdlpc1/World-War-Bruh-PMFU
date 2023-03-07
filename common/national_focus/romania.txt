@@ -67,7 +67,7 @@ focus_tree = {
 		x = 3
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -173,7 +173,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -286,7 +286,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -649,7 +649,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -810,7 +810,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1019,7 +1019,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1388,7 +1388,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_fortify_the_borders
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1579,7 +1579,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -1818,7 +1818,7 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 25
+		x = 30
 		y = 0
 
 		cost = 10
@@ -2417,7 +2417,7 @@ focus_tree = {
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 33
+		x = 21.5
 		y = 0
 
 		cost = 5
@@ -3031,7 +3031,7 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 40
+		x = 38
 		y = 0
 
 		cost = 5

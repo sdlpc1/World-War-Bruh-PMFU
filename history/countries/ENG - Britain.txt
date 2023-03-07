@@ -267,6 +267,9 @@ add_to_faction = MAL
 
 #give_guarantee = CZE
 give_guarantee = GRE
+give_guarantee = POL
+give_guarantee = HOL
+give_guarantee = BEL
 # Order matters - here Chamberlain becomes starting leader
 recruit_character = ENG_oswald_mosley
 recruit_character = ENG_stanley_baldwin

@@ -837,21 +837,21 @@
 						NOT = {
 							is_controlled_by = CHI
 							#is_controlled_by = PRC
-							is_controlled_by = SHX
+							# is_controlled_by = SHX
 						}
 					}
 					597 = {
 						NOT = {
 							is_controlled_by = CHI
 							#is_controlled_by = PRC
-							is_controlled_by = SHX
+							# is_controlled_by = SHX
 						}
 					}
 					614 = {
 						NOT = {
 							is_controlled_by = CHI
 							#is_controlled_by = PRC
-							is_controlled_by = SHX
+							# is_controlled_by = SHX
 						}
 					}
 				}
