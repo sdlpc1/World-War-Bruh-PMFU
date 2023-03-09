@@ -23,6 +23,8 @@
   ROM_german_trade:0 "German-Romanian Trade Treaty"
   ROM_undeveloped_export_industry:0 "Undeveloped Oil Export Economy"
 
+  #### TRAITS ####
+  ROM_anti_democrat:0 "Anti-Democrat"
   #### TOOLTIPS ####
   ROM_vanatori_de_munte_unit_tt:0 "\nGain a 30 width §YMountaineer§! unit with §Y12 Mountaineer§! and §Y6 Pack Artillery§! battalions.\n"
   ROM_royal_guards_divisions_tt:0 "Gain a 20 width unit with §Y8 Infantry§! and §Y4 Artillery§! battalions.\n"

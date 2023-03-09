@@ -2249,6 +2249,16 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	ROM_anti_democrat = {
+		random = no
+		democratic_acceptance = -50
+		democratic_drift = -0.02
+		stability_factor = -0.10
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	emergency_powers = {
 		random = no
 		political_power_gain = 0.5

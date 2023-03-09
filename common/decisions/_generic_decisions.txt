@@ -181,7 +181,7 @@ political_actions = {
 		}
 		fire_only_once = no
 		modifier = {
-			political_power_gain = -0.5
+			political_power_gain = -0.35
 			stability_weekly = 0.005
 			industrial_capacity_factory = -0.1
 		}
