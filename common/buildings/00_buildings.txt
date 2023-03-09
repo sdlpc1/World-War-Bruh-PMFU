@@ -46,7 +46,7 @@ buildings = {
 		icon_frame = 5
 		air_base = yes
 		max_level = 10
-		value = 1
+		value = 4
 		damage_factor = 0.5
 		infrastructure_construction_effect = yes
 		allied_build = yes
@@ -65,6 +65,7 @@ buildings = {
 		damage_factor = 0.1
 		allied_build = yes
 		always_shown = yes
+		infrastructure_construction_effect = yes
 	}	
 	
 	rail_way = {
@@ -156,7 +157,8 @@ buildings = {
 		refinery = yes
 		max_level = 3 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 8
+		allied_build = yes
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes
@@ -171,7 +173,8 @@ buildings = {
 		refinery = yes
 		max_level = 3 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 8
+		allied_build = yes
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes
@@ -179,7 +182,7 @@ buildings = {
 	
 	steel_refinery = {
 		show_on_map = 1
-		base_cost = 10000
+		base_cost = 12000
 		icon_frame = 18
 		local_resources_steel = 100
 		local_resources_aluminium = 10
@@ -188,7 +191,8 @@ buildings = {
 		refinery = yes
 		max_level = 3
 		shares_slots = yes
-		value = 5
+		value = 8
+		allied_build = yes
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes
@@ -200,7 +204,8 @@ buildings = {
 		icon_frame = 14
 		#max_level = 1
 		shares_slots = yes
-		value = 5
+		value = 8
+		allied_build = yes
 		infrastructure_construction_effect = yes
 		fuel_silo = yes
 		
@@ -230,6 +235,7 @@ buildings = {
 		max_level = 5
 		shares_slots = yes
 		value = 1
+		allied_build = yes
 		infrastructure_construction_effect = yes
 	}
 

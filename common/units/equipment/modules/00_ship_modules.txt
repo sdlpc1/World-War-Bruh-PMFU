@@ -600,7 +600,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {	
-			lg_attack = 4
+			lg_attack = 3
 			build_cost_ic = 300
 		}
 		multiply_stats = {
@@ -632,7 +632,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {	
-			lg_attack = 8
+			lg_attack = 6
 			build_cost_ic = 350
 		}
 		multiply_stats = {
@@ -672,7 +672,7 @@ equipment_modules = {
 		
 		add_stats = {
 			
-			lg_attack = 12
+			lg_attack = 9
 			build_cost_ic = 375
 		}
 		multiply_stats = {
@@ -711,7 +711,7 @@ equipment_modules = {
 		parent = ship_light_medium_battery_3
 		add_stats = {
 			
-			lg_attack = 16
+			lg_attack = 12
 			
 			build_cost_ic = 425
 		}
@@ -1265,8 +1265,8 @@ equipment_modules = {
 			anti_air_attack = 0.1
 		}
 		add_stats = {
-			naval_light_gun_hit_chance_factor = 0.1
-			naval_heavy_gun_hit_chance_factor = 0.1
+			naval_light_gun_hit_chance_factor = 0.075
+			naval_heavy_gun_hit_chance_factor = 0.075
 			build_cost_ic = 190
 			surface_detection = 18
 			sub_detection = 14
@@ -2360,6 +2360,7 @@ equipment_modules = {
 		category = ship_sonar
 		gfx = ship_sonar_3
 		sfx = sfx_ui_sd_module_sonar
+		parent = ship_sonar_2
 		
 		add_stats = {
 			sub_detection = 14
@@ -2368,6 +2369,22 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = ship_sonar
 			convert_cost_ic = 30
+		}
+	}
+
+	ship_sonar_4 = {
+		category = ship_sonar
+		gfx = ship_sonar_4
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_sonar_3
+		
+		add_stats = {
+			sub_detection = 20
+			build_cost_ic = 100
+		}
+		can_convert_from = {
+			module_category = ship_sonar
+			convert_cost_ic = 35
 		}
 	}
  ##  ###  #   #  ##  ###       ##  ##  #  # ### #   # ###  ## 

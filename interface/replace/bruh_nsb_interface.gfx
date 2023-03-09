@@ -554,10 +554,10 @@ spriteTypes = {
 		name = "GFX_ger_heavy_tank_chassis_p6_b_medium"
 		texturefile = "gfx/interface/technologies/tanks/ger/ger_p6_b_hull.dds"
 	}
-	SpriteType = {
-		name = "GFX_ger_heavy_tank_chassis_p7_medium"
-		texturefile = "gfx/interface/technologies/tanks/ger/ger_p7_hull.dds"
-	}
+	# SpriteType = {
+	# 	name = "GFX_ger_heavy_tank_chassis_p7_medium"
+	# 	texturefile = "gfx/interface/technologies/tanks/ger/ger_p7_hull.dds"
+	# }
 	SpriteType = {
 		name = "GFX_ger_heavy_tank_chassis_e100_medium"
 		texturefile = "gfx/interface/technologies/tanks/ger/ger_e100_hull.dds"
@@ -748,6 +748,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_sov_heavy_tank_5_medium"
 		texturefile = "gfx/interface/technologies/tanks/sov/sov_is_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_heavy_tank_7_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_heavy_tank_turret_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_sov_heavy_tank_7_medium"

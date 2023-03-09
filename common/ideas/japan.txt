@@ -1605,6 +1605,31 @@ ideas = {
 
 		## Post China War Ideas ##
 
+		JAP_early_war_industry_bonus = {
+			allowed = {
+				original_tag = AST
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				production_speed_buildings_factor = -0.20
+			}
+		}
+
 		JAP_mid_war_industry_bonus = {
 			removal_cost = -1
 			picture = generic_central_management

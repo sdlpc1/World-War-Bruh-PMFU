@@ -1236,25 +1236,26 @@
 
 		completion_reward = {
 			set_country_flag = JAP_early_war
-			custom_effect_tooltip = JAP_early_war_industry_tt
-			effect_tooltip = {
-				random_state = {
-					limit = {
-						set_temp_variable = { num_factory = building_level@industrial_complex }
-						check_variable = { num_factory > 1 }
-						is_fully_controlled_by = JAP
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-					remove_building = {
-						type = industrial_complex
-						level = 2
-					}
-				}
-			}
+			add_timed_idea = { idea = JAP_early_war_industry_bonus days = 365 }
+			# custom_effect_tooltip = JAP_early_war_industry_tt
+			# effect_tooltip = {
+			# 	random_state = {
+			# 		limit = {
+			# 			set_temp_variable = { num_factory = building_level@industrial_complex }
+			# 			check_variable = { num_factory > 1 }
+			# 			is_fully_controlled_by = JAP
+			# 		}
+			# 		add_building_construction = {
+			# 			type = arms_factory
+			# 			level = 1
+			# 			instant_build = yes
+			# 		}
+			# 		remove_building = {
+			# 			type = industrial_complex
+			# 			level = 2
+			# 		}
+			# 	}
+			# }
 			custom_effect_tooltip = JAP_early_war_start_tt
 
 		}
@@ -4010,7 +4011,7 @@
 				bonus = 1
 				ahead_reduction = 1.0
 				uses = 1
-				technology = improved_small_airframe			
+				technology = improved_small_airframe					
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = mitsubishi

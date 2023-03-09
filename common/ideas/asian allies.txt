@@ -477,9 +477,9 @@ ideas = {
 				attack_bonus_against = -0.025
 				#defense_bonus_against = -0.025
 			}
-			modifier = {
-				industrial_capacity_factory = -0.0125
-			}
+			# modifier = {
+			# 	industrial_capacity_factory = -0.0125
+			# }
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -533,9 +533,9 @@ ideas = {
 				attack_bonus_against = -0.05
 				#defense_bonus_against = -0.05
 			}
-			modifier = {
-				industrial_capacity_factory = -0.025
-			}
+			# modifier = {
+			# 	industrial_capacity_factory = -0.025
+			# }
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -589,9 +589,9 @@ ideas = {
 				attack_bonus_against = -0.075
 				#defense_bonus_against = -0.075
 			}
-			modifier = {
-				industrial_capacity_factory = -0.0375
-			}
+			# modifier = {
+			# 	industrial_capacity_factory = -0.0375
+			# }
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -646,7 +646,7 @@ ideas = {
 				#defense_bonus_against = -0.10
 			}
 			modifier = {
-				industrial_capacity_factory = -0.05
+				#industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = 0.025
 			}
 			picture = warrior_traditions_idea
@@ -703,7 +703,7 @@ ideas = {
 				#defense_bonus_against = -0.125
 			}
 			modifier = {
-				industrial_capacity_factory = -0.0625
+				#industrial_capacity_factory = -0.0625
 				industrial_capacity_dockyard = 0.025
 			}
 			picture = warrior_traditions_idea
@@ -760,7 +760,7 @@ ideas = {
 				#defense_bonus_against = -0.15
 			}
 			modifier = {
-				industrial_capacity_factory = -0.075
+				#industrial_capacity_factory = -0.075
 				industrial_capacity_dockyard = 0.025
 			}
 			picture = warrior_traditions_idea
@@ -817,7 +817,7 @@ ideas = {
 				#defense_bonus_against = -0.175
 			}
 			modifier = {
-				industrial_capacity_factory = -0.0875
+				#industrial_capacity_factory = -0.0875
 				industrial_capacity_dockyard = 0.025
 			}
 			picture = warrior_traditions_idea
@@ -874,7 +874,7 @@ ideas = {
 				#defense_bonus_against = -0.20
 			}
 			modifier = {
-				industrial_capacity_factory = -0.1
+				#industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = 0.05
 			}
 			picture = warrior_traditions_idea
@@ -931,7 +931,7 @@ ideas = {
 				#defense_bonus_against = -0.225
 			}
 			modifier = {
-				industrial_capacity_factory = -0.1125
+				#industrial_capacity_factory = -0.1125
 				industrial_capacity_dockyard = 0.05
 			}
 			picture = warrior_traditions_idea
@@ -988,7 +988,7 @@ ideas = {
 				#defense_bonus_against = -0.25
 			}
 			modifier = {
-				industrial_capacity_factory = -0.125
+				#industrial_capacity_factory = -0.125
 				industrial_capacity_dockyard = 0.05
 			}
 			picture = warrior_traditions_idea
@@ -1045,7 +1045,7 @@ ideas = {
 				#defense_bonus_against = -0.275
 			}
 			modifier = {
-				industrial_capacity_factory = -0.1375
+				#industrial_capacity_factory = -0.1375
 				industrial_capacity_dockyard = 0.05
 			}
 			picture = warrior_traditions_idea
@@ -1102,7 +1102,7 @@ ideas = {
 				#defense_bonus_against = -0.30
 			}
 			modifier = {
-				industrial_capacity_factory = -0.15
+				#industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = 0.075
 			}
 			picture = warrior_traditions_idea

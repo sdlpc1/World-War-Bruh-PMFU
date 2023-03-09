@@ -23,18 +23,18 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "countrystateview"
-		position = { x=-416 y=-707 }
-		show_position = { x=-6 y =-707 }
+		position = { x=-416 y=-800 }
+		show_position = { x=-6 y =-800 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
 		orientation = lower_left
-		size = { width=436 height=796 }
+		size = { width=436 height=896 }
 		
 		containerWindowType = {
 			name = "state_info_window"
 			position = { x = 0 y = 0 }
-			size = { width=780 height=696 }
+			size = { width=780 height=896 }
 			
 			
 			background = {
@@ -77,7 +77,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "state_shared_slot_building_entries"
 				position = { x = 152 y = 176 }
-				size = { width = 480 height = 90%% }
+				size = { width = 480 height = 100%% }
 				format = "UPPER_LEFT"
 				slotsize = { width = 55 height = 46 }
 				max_slots_horizontal = 5
@@ -273,7 +273,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "province_info_window"
-			position = { x = 5 y = 668 }
+			position = { x = 5 y = 768 }
 			size = { width=480 height=29%% }
 			
 			iconType = {

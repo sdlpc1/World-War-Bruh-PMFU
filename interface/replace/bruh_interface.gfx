@@ -857,10 +857,20 @@ spriteTypes = {
 		name = "GFX_SMI_ship_sonar_3"
 		textureFile = "gfx/interface/technologies/sonar_icn_3.dds"
 	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_sonar_4"
+		textureFile = "gfx/interface/technologies/sonar_icn_4.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_advanced_sonar_medium"
 		texturefile = "gfx/interface/technologies/advanced_sonar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modern_sonar_medium"
+		texturefile = "gfx/interface/technologies/modern_sonar.dds"
 	}
 	
 	spriteType = {
@@ -6395,7 +6405,7 @@ spriteTypes = {
 		name = "GFX_RAJ_armored_car_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/tanks/eng/eng_ac_3.dds"
 	}
-
+	
 	# IDEAS RAJ
 
 	SpriteType = {
@@ -6407,7 +6417,7 @@ spriteTypes = {
 		name = "GFX_idea_RAJ_indian_gurkhas"
 		textureFile = "gfx/interface/ideas/indian_gurkhas.dds"
 	}
-	
+
 	## France ##
 	
 	SpriteType = {
@@ -7536,7 +7546,7 @@ spriteTypes = {
 		name = "GFX_Juggle1_medium"
 		texturefile = "gfx/interface/technologies/industry/juggle.dds"
 	}
-
+	
 	
 	SpriteType = {
 		name = "GFX_goal_continuous_armor_production_shine"

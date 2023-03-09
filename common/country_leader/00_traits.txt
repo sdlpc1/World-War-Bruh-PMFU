@@ -227,7 +227,7 @@ leader_traits = {
 		communism_drift = -0.02
 		democratic_drift = -0.02
 		fascism_acceptance = 35
-		army_core_defence_factor = 0.05
+		#army_core_defence_factor = 0.05
 	}
 
 	divisive_absolute_monarch = {
@@ -1262,8 +1262,8 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			heavy_tank_chassis = {
-                armor_value = 0.05
-                build_cost_ic = -0.05
+                armor_value = 0.10
+                build_cost_ic = -0.10
                 reliability = 0.05
 			}
 		}
@@ -4575,6 +4575,10 @@ leader_traits = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 1.8
+				date < 1939.1.1
+			}
 		}
 	}
 

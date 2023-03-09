@@ -276,16 +276,17 @@ default = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/tanks/ger/ger_sheavy_tank_2.dds"
-			}
-		}
-	}
-	ger_heavy_tank_chassis_p7 = {
-		pool = {
-			icons = {
 				"gfx/interface/technologies/tanks/ger/ger_sheavy_tank_1.dds"
 			}
 		}
 	}
+	# ger_heavy_tank_chassis_p7 = {
+	# 	pool = {
+	# 		icons = {
+	# 			"gfx/interface/technologies/tanks/ger/ger_sheavy_tank_1.dds"
+	# 		}
+	# 	}
+	# }
 	eng_light_tank_chassis_mk6 = {
 		pool = {
 			icons = {
