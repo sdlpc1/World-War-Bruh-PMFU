@@ -3012,7 +3012,13 @@
 		completion_reward = {
 			every_controlled_state = {
 				limit = {
-					is_core_of = EGY
+					state = 453
+					state = 452
+					state = 836
+					state = 447
+					state = 446
+					state = 457
+					state = 456
 				}
 				add_compliance = 5
 			}
@@ -3033,17 +3039,84 @@
 		}
 		
 		available = {
-			any_state = {
-				is_core_of = MOR
-				is_fully_controlled_by = ITA
+			462 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			461 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			459 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			513 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			460 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			458 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			665 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
 			}
 		}
 		
 		completion_reward = {
-			every_controlled_state = {
-				limit = {
-					is_core_of = MOR
-				}
+			462 = {
+				add_compliance = 5
+			}
+			461 = {
+				add_compliance = 5
+			}
+			459 = {
+				add_compliance = 5
+			}
+			513 = {
+				add_compliance = 5
+			}
+			460 = {
+				add_compliance = 5
+			}
+			458 = {
+				add_compliance = 5
+			}
+			665 = {
 				add_compliance = 5
 			}
 		}
@@ -3063,17 +3136,51 @@
 		}
 		
 		available = {
-			any_state = {
-				is_core_of = SYR
-				is_fully_controlled_by = ITA
+			680 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			677 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			554 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			553 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
 			}
 		}
 		
 		completion_reward = {
-			every_controlled_state = {
-				limit = {
-					is_core_of = SYR
-				}
+			680 = {
+				add_compliance = 5
+			}
+			677 = {
+				add_compliance = 5
+			}
+			554 = {
+				add_compliance = 5
+			}
+			553 = {
 				add_compliance = 5
 			}
 		}
