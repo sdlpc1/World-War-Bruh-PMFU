@@ -3010,16 +3010,19 @@
 		}
 		
 		completion_reward = {
-			every_controlled_state = {
-				limit = {
-					state = 453
-					state = 452
-					state = 836
-					state = 447
-					state = 446
-					state = 457
-					state = 456
-				}
+			452 = {
+				add_compliance = 5
+			}
+			453 = {
+				add_compliance = 5
+			}
+			454 = {
+				add_compliance = 5
+			}
+			446 = {
+				add_compliance = 5
+			}
+			447 = {
 				add_compliance = 5
 			}
 		}
