@@ -220,6 +220,10 @@
   soviet.2223.t:0 "Propaganda"
   soviet.2223.d:0 "Sweep Out Scum and Death to Invaders now available as Propaganda Missions"
   soviet.2223.a:0 "Okay"
+  soviet.7878.t:0 "Fate of Iran"
+  soviet.7878.d:0 "We have a though decision ahead of us, to either give Iran to our close ally Mongolia or expand the borders of the Soviet Union"
+  soviet.7878.a:0 "Iran belongs to the USSR"
+  soviet.7878.b:0 "Mongolia should have it"
 
   #### IDEAS ####
   #mikhail_tukhachevsky_1:0 "Mikhail Tukhachevsky"
@@ -309,6 +313,7 @@
   SOV_bessarabia_lessons:0 "Learn From Our Failures"
   SOV_generic_partisans:0 "Coordinate Partisans"
   SOV_organise_partisans:0 "Partisan Coordination"
+  SOV_transfer_iran:0 "Transfer Iran to Mongolia"
 
   #### FLAG ####
   SOV_purge:0 "§RPurge has Begun§!\n"

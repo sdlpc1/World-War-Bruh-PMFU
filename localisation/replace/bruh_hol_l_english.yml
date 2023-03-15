@@ -1,0 +1,17 @@
+﻿l_english:
+
+  #### FOCUSES ####
+  HOL_somedocks:0 "Naval Dockyard Expansion"
+  HOL_defend_our_supply_lines:0 "Destroyer Effort"
+  HOL_atack_enemy_supply_lines:0 "Submarine Effort"
+  HOL_jungle_training:0 "Jungle Training"
+  HOL_expand_colonial_military:0 "Expand The Colonial Military"
+  HOL_some_fort_contruction_bufs:0 "Begin Fortification of The Colonies"
+  HOL_reinforce_sumatra:0 "Reinforce Sumatra"
+  HOL_reinforce_borneo:0 "Reinforce Borneo"
+  HOL_reinforce_islands_home_to:0 "Reinforce Sulawesi and Papua"
+  HOL_finish_western_development:0 "Declare Western Development Complete"
+
+  ## IDEAS ###
+  HOL_colonial_defence:0 "Colonial Defence"
+  HOL_foreign_colonial_investments:0 "Foreign Colonial Investments"

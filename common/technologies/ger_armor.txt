@@ -547,5 +547,4 @@ technologies = {
 			factor = 0
 		}
 	}
-	
 }

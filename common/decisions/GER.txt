@@ -1678,7 +1678,49 @@ special_projects = {
 
 GER_share_tanks = {
 	
-	GER_share_p4 = {
+	GER_share_p4 = { # panzer 3 and 4
+
+		icon = generic_operation
+
+		allowed = {
+			OR = {
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+			}
+		}
+
+		available = {
+			GER = {
+				has_completed_focus = GER_share_tanks
+				has_tech = ger_p3_tank_1
+				has_tech = ger_p4_tank_1
+			}
+		}
+		ai_will_do = {
+			factor = 0 
+		}
+		fire_only_once = yes
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				ROOT = {
+					set_technology = {
+						# ger_p34_tank_2 = 1  # Second Wave Upgrade
+						ger_p4_tank_1 = 1
+						ger_p3_tank_1 = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ger_share_tanks_tt_2
+		}
+	}
+
+	GER_share_p34_upgrade1 = { # upgrade 1 for pzr 3/4
 
 		icon = generic_operation
 
@@ -1703,7 +1745,6 @@ GER_share_tanks = {
 		
 		modifier = {
 			civilian_factory_use = 5
-			industrial_capacity_factory = -0.05
 		}
 
 		remove_effect = {
@@ -1711,16 +1752,57 @@ GER_share_tanks = {
 				ROOT = {
 					set_technology = {
 						ger_p34_tank_2 = 1  # Second Wave Upgrade
-						ger_p4_tank_1 = 1
-						ger_p3_tank_1 = 1
 					}
 				}
 			}
-			custom_effect_tooltip = ger_share_tanks_tt_2
+			custom_effect_tooltip = ger_share_tanks_tt_34_1
 		}
 	}
 
-	GER_share_p5 = {
+	GER_share_p34_upgrade2 = {# upgrade 2 for pzr 3/4
+
+		icon = generic_operation
+
+		allowed = {
+			OR = {
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+			}
+		}
+
+		visible = {
+			GER = { has_tech = ger_p34_tank_3 }
+		}
+
+		available = {
+			GER = {
+				has_completed_focus = GER_share_tanks
+				has_tech = ger_p34_tank_3  # Second Wave Upgrade
+			}
+		}
+		ai_will_do = {
+			factor = 0 
+		}
+		fire_only_once = yes
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				ROOT = {
+					set_technology = {
+						ger_p34_tank_3 = 1  # Second Wave Upgrade
+					}
+				}
+			}
+			custom_effect_tooltip = ger_share_tanks_tt_34_2
+		}
+	}
+
+	GER_share_p5 = {# panther
 
 		icon = generic_operation
 		
@@ -1745,7 +1827,6 @@ GER_share_tanks = {
 		
 		modifier = {
 			civilian_factory_use = 5
-			industrial_capacity_factory = -0.05
 		}
 
 		remove_effect = {
@@ -1760,9 +1841,50 @@ GER_share_tanks = {
 		}
 	}
 	
+	GER_share_p5_2 = {# e50
 
+		icon = generic_operation
+		
+		allowed = {
+			OR = {
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+			}
+		}
+
+		visible = {
+			GER = { has_tech = ger_p5_tank_2 }
+		}
+
+		available = {
+			GER = {
+				has_completed_focus = GER_share_tanks
+				has_tech = ger_p5_tank_2
+			}
+		}
+		ai_will_do = {
+			factor = 0 
+		}
+		fire_only_once = yes
+		
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				ROOT = {
+					set_technology = {
+						ger_p5_tank_2 = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ger_share_tanks_tt_5_2
+		}
+	}
 	
-	GER_share_p6 = {
+	GER_share_p6 = {#  tiger
 
 		icon = generic_operation
 		
@@ -1787,7 +1909,6 @@ GER_share_tanks = {
 		
 		modifier = {
 			civilian_factory_use = 5
-			industrial_capacity_factory = -0.05
 		}
 
 		remove_effect = {
@@ -1799,6 +1920,168 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_3
+		}
+	}
+
+	GER_share_p6_b = {# tiger 2
+
+		icon = generic_operation
+		
+		allowed = {
+			OR = {
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+			}
+		}
+
+		available = {
+			GER = {
+				has_completed_focus = GER_share_tanks
+				has_tech = ger_heavy_tank_2
+			}
+		}
+		ai_will_do = {
+			factor = 0 
+		}
+		fire_only_once = yes
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				ROOT = {
+					set_technology = {
+						ger_heavy_tank_2 = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ger_share_tanks_tt_3_b
+		}
+	}
+
+	GER_share_p6_c = {# e100
+
+		icon = generic_operation
+		
+		allowed = {
+			OR = {
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+			}
+		}
+
+		visible = {
+			GER = { has_tech = ger_heavy_tank_3 }
+		}
+
+		available = {
+			GER = {
+				has_completed_focus = GER_share_tanks
+				has_tech = ger_heavy_tank_3
+			}
+		}
+		ai_will_do = {
+			factor = 0 
+		}
+		fire_only_once = yes
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				ROOT = {
+					set_technology = {
+						ger_heavy_tank_3 = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ger_share_tanks_tt_3_c
+		}
+	}
+
+	GER_share_cze_1 = {# 35(t) and 38(t)
+
+		icon = generic_operation
+		
+		allowed = {
+			OR = {
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+			}
+		}
+
+		available = {
+			GER = {
+				has_completed_focus = GER_share_tanks
+				has_tech = ger_cze_tank_1
+				has_tech = ger_cze_tank_2
+			}
+		}
+		ai_will_do = {
+			factor = 0 
+		}
+		fire_only_once = yes
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				ROOT = {
+					set_technology = {
+						ger_cze_tank_1 = 1
+						ger_cze_tank_2 = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ger_share_tanks_tt_cze_1
+		}
+	}
+
+	GER_share_cze_2 = {# hetzer
+
+		icon = generic_operation
+		
+		allowed = {
+			OR = {
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+			}
+		}
+
+		available = {
+			GER = {
+				has_completed_focus = GER_share_tanks
+				has_tech = ger_cze_tank_3
+			}
+		}
+		ai_will_do = {
+			factor = 0 
+		}
+		fire_only_once = yes
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				ROOT = {
+					set_technology = {
+						ger_cze_tank_3 = 1
+					}
+				}
+			}
+			custom_effect_tooltip = ger_share_tanks_tt_cze_2
 		}
 	}
 }

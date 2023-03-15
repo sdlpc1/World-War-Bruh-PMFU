@@ -8,4 +8,57 @@ spriteTypes = {
 		name = "GFX_idea_russian_closed_eco"
 		texturefile = "gfx/interface/ideas/idea_russian_closed_eco.dds"
 	}	
+
+    spriteType = {
+        name = "GFX_div_templ_71_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_071.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_71_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_071.dds"
+    }
+    spriteType = {
+        name = "GFX_div_templ_72_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_072.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_72_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_072.dds"
+    }
+    spriteType = {
+        name = "GFX_div_templ_73_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_073.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_73_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_073.dds"
+    }
+    spriteType = {
+        name = "GFX_div_templ_74_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_074.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_74_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_074.dds"
+    }
+    spriteType = {
+        name = "GFX_div_templ_75_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_075.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_75_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_075.dds"
+    }
+    spriteType = {
+        name = "GFX_div_templ_76_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_076.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_76_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_076.dds"
+    }
+    spriteType = {
+		name = "GFX_autonomy_wtt_integrated_imperial_protectorate_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_imperial_protectorate.dds"
+	}
 }

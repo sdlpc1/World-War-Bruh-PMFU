@@ -381,5 +381,4 @@ technologies = {
 		start_year = 1942
 		
 	}
-	
 }

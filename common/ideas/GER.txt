@@ -2,6 +2,22 @@ ideas = {
 
 	country = {
 		
+		GER_africa_hp = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			equipment_bonus = {
+				motorized_equipment = {
+					max_strength = 16 instant = yes
+				}
+				mechanized_equipment = {
+					max_strength = 12 instant = yes
+				}
+			}
+		}
+		
 		GER_good_weather_army = {
 		allowed = {
 			original_tag = GER

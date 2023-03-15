@@ -144,7 +144,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 75
@@ -194,10 +194,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = CAN_national_housing_act_IC
@@ -293,6 +293,27 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			469 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			467 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			470 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			build_railway = { #Vancouver - NW Canada
 			path = {
 				1408 1858 10273 4870 10548
@@ -365,6 +386,20 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			276 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			682 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			build_railway = { #Montreal - Halifax
 				path = {
 					4345 4417 10320 7433 1284 12291 4362 7379 4432 1424 7304 7644 7361
@@ -390,7 +425,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 75
@@ -423,10 +458,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_retool_angus_shops_AF
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -454,6 +489,7 @@ focus_tree = {
 	}
 
 	focus = {
+		allow_branch = { always = no}
 		id = CAN_imperial_oil
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = CAN_retool_angus_shops }
@@ -1091,10 +1127,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_alberta_coal_towns_IC
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1830,7 +1866,7 @@ focus_tree = {
 		x = 15
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -1915,7 +1951,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_army_modernization
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -2089,7 +2125,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_army_modernization 
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -2123,7 +2159,7 @@ focus_tree = {
 		id = CAN_1st_canadian_parachute_battalion
 		icon = GFX_goal_generic_special_forces 
 		prerequisite = { focus = CAN_the_plan focus = CAN_a_motorized_army }
-		x = 2
+		x = 3
 		y = 4
 		relative_position_id = CAN_army_modernization 
 
@@ -2320,10 +2356,10 @@ focus_tree = {
 	focus = {
 		id = CAN_strengthen_the_commonwealth_ties
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 21
+		x = 20
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -2450,10 +2486,10 @@ focus_tree = {
 	focus = {
 		id = CAN_montreal_laboratory_collaboration
 		icon = GFX_goal_tfv_generic_tech_sharing
-		prerequisite = { focus = CAN_strengthen_the_commonwealth_ties }
+		prerequisite = { focus = CAN_camp_x }
 		x = 0
 		y = 1
-		relative_position_id = CAN_strengthen_the_commonwealth_ties
+		relative_position_id = CAN_camp_x
 
 		cost = 10
 
@@ -2481,6 +2517,9 @@ focus_tree = {
         			id = commonwealth_research
         			bonus = 0.08  
     			}
+			}
+			completion_reward = {
+				add_research_slot = 1
 			}
 		}
 	}
@@ -2523,9 +2562,9 @@ focus_tree = {
 	focus = {
 		id = CAN_camp_x
 		icon = GFX_goal_generic_intelligence_exchange 
-		prerequisite = { focus = CAN_montreal_laboratory_collaboration }
+		prerequisite = { focus = CAN_strengthen_the_commonwealth_ties }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
 		cost = 5
@@ -2564,10 +2603,10 @@ focus_tree = {
 	focus = {
 		id = CAN_supply_the_empire
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = CAN_the_plan focus = CAN_camp_x }
-		x = -1
-		y = 3
-		relative_position_id = CAN_strengthen_the_commonwealth_ties
+		prerequisite = { focus = CAN_retool_angus_shops }
+		x = 0
+		y = 1
+		relative_position_id = CAN_retool_angus_shops
 
 		cost = 5
 
@@ -2606,11 +2645,11 @@ focus_tree = {
 		id = CAN_aluminium_company_of_canada
 		icon = GFX_goal_generic_positive_trade_relations 
 		prerequisite = { focus = CAN_supply_the_empire }
-		x = -2
-		y = 4
-		relative_position_id = CAN_strengthen_the_commonwealth_ties
+		x = -1
+		y = 1
+		relative_position_id = CAN_supply_the_empire
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2657,11 +2696,11 @@ focus_tree = {
 		id = CAN_turner_valley_oilfield
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = CAN_supply_the_empire }
-		x = 0
-		y = 4
-		relative_position_id = CAN_strengthen_the_commonwealth_ties
+		x = 1
+		y = 1
+		relative_position_id = CAN_supply_the_empire
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2687,6 +2726,25 @@ focus_tree = {
 					amount = 360
 				}
 			}
+		
+			471 = {
+				add_resource = {
+					type = oil
+					amount = 60
+				}
+			}
+			472 = {
+				add_resource = {
+					type = oil
+					amount = 60
+				}
+			}
+			683 = {
+				add_resource = {
+					type = oil
+					amount = 60
+				}
+			}
 		}
 	}
 
@@ -2703,7 +2761,7 @@ focus_tree = {
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 25
+		x = 23
 		y = 0
 
 		cost = 10
@@ -3208,10 +3266,10 @@ focus_tree = {
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 29
+		x = 27
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -3536,7 +3594,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = CAN_halifax_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

@@ -46,6 +46,13 @@ set_technology = {
 	fuel_refining = 1
 }
 
+set_variable = { GER_SS_division_cap = 0 }
+set_variable = { GER_SS_cap_increase = 1 }
+set_variable = { GER_SS_cap_increase_double = 2 }
+
+
+SS_armored_division_standard = yes
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -265,6 +272,7 @@ recruit_character = GER_hugo_sperrle
 recruit_character = GER_erhard_milch
 recruit_character = GER_erich_bey
 recruit_character = GER_viktor_schutze
+recruit_character = GER_marco_winkler
 
 create_equipment_variant = {
 	name = "PzKpfw I A"

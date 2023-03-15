@@ -259,6 +259,9 @@
   GER_weapons:0 "German Weapons Propaganda"
   GER_fast_bombers:0 "Fast Bomber Designs"
   GER_cas:0 "Advanced CAS Designs"
+  GER_africa_hp:0 "Africa Tank HP"
+  africa_hp:0 "Africa Tank HP"
+  africa_hp_off:0 "Africa Tank HP Off"
 
   #### TRAITS ####
   schacht:0 "Reichsbank President"
@@ -270,6 +273,7 @@
   #### CHARACTERS ####
   erich_hartmann:0 "Erich Hartmann"
   GER_herman_goring:0 "Hermann Göring"
+  GER_marco_winkler:0 "Marco Winkler"
 
   #### DECISIONS ####
   GER_share_tanks:0 "Tank Sharing Programme"
@@ -277,6 +281,13 @@
   GER_share_p4:0 "Purchase the Panzer III/IV"
   GER_share_p5:0 "Purchase the Panther"
   GER_share_p6:0 "Purchase the Tiger"
+  GER_share_p34_upgrade1:0 "Purchase First Wave Upgrades"
+  GER_share_p34_upgrade2:0 "Purchase Second Wave Upgrades"
+  GER_share_p5_2:0 "Purchase the E-50"
+  GER_share_p6_b:0 "Purchase the Tiger II"
+  GER_share_p6_c:0 "Purchase the E-100"
+  GER_share_cze_1:0 "Purchase the Panzer 35(t)/38(t)"
+  GER_share_cze_2:0 "Purchase the Hetzer"
   GER_barbarossa_mission_moscow:0 "Capture Moscow"
   GER_barbarossa_mission_lenin:0 "Capture Leningrad"
   GER_barbarossa_mission_kiev:0 "Capture Kiev"
@@ -345,8 +356,15 @@
   #### TOOLTIP FLAG ####
   GER_defend_berlin_tt:0 "Mobilise local reservists in the city, Spawning §Y20 Volksturm Divisions§!"
   ger_share_tanks_tt_2:0 "Gives access to the §YPanzer III/IV§! Technical Package"
-  ger_share_tanks_tt_3:0 "Gives access to the §YTiger§! Technical Package"
+  ger_share_tanks_tt_3:0 "Gives access to the §YTiger I§! Technical Package"
   ger_share_tanks_tt_5:0 "Gives access to the §YPanther§! Technical Package"
+  ger_share_tanks_tt_34_1:0 "Gives access to the §YFirst Wave Upgrades§! Technical Package"
+  ger_share_tanks_tt_34_2:0 "Gives access to the §YSecond Wave Upgrades§! Technical Package"
+  ger_share_tanks_tt_5_2:0 "Gives access to the §YE-50§! Technical Package"
+  ger_share_tanks_tt_3_b:0 "Gives access to the §YTiger II§! Technical Package"
+  ger_share_tanks_tt_3_c:0 "Gives access to the §YE-100§! Technical Package"
+  ger_share_tanks_tt_cze_1:0 "Gives access to the §YPanzer 35(t)/38(t)§! Technical Package"
+  ger_share_tanks_tt_cze_2:0 "Gives access to the §YHetzer§! Technical Package"
   ger_share_tanks_tt_4:0 "§YAllows us to share some of our tank designs with our allies§!"
   GER_trip_research_name:0 "Axis Research Collaboration"
   GER_trip_research_desc:0 "Axis Research Collaboration"
@@ -375,5 +393,6 @@
   GER_waffen_ss_tt:0 "§YAllows for the recruitment of Waffen SS divisions.§!"
   todt_death:0 "Todt has died"
   GER_20_jul_purge:0 "Purged"
-
+  GER_SS_div_cap_1_tt:0 "Increase template cap of §YWaffen-SS Panzer Division§! by §G+1§!."
+  GER_SS_div_cap_2_tt:0 "Increase template cap of §YWaffen-SS Panzer Division§! by §G+2§!."
 

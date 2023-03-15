@@ -161,6 +161,12 @@
   MAN_expand_eastern_railways_desc:0 "The eastern railways are not sufficient to be able to supply our army."
   MAN_japanese_warfare:0 "Embrace Japanese Warfare"
   MAN_japanese_warfare_desc:0 "Only with Japanese warfare we can achive total victory."
+  MAN_increased_conscription:0 "Increased Conscription"
+
+  #### EVENTS ###
+  wtt_manchukou.12.t:0 "Loosening Japanese Grip"
+  wtt_manchukou.12.desc:0 "After the war in China, Japan began to relax its hold on Manchuria. The Imperial Cabinet agreed to grant the region more autonomy and economic freedom, allowing for a more cooperative relationship with the Manchurian government. With Japan's support, the Manchurian economy began to grow, creating new opportunities for trade and cooperation between the two nations."
+  wtt_manchukou.12.a:0 "We are eternally thankful"
 
   #### IDEAS ####
   MAN_puyi:0 "Puyi"
@@ -208,3 +214,4 @@
   MAN_expand_the_imperial_guards_tt:1 "Gain 6 units of §Y30 Width Imperial Guard§!.\n"
   MAN_five_peoples_army_tt:1 "Gain 10 units of §Y20 Width NRA Remnants§!.\n"
   MAN_vassalize_meng_tt:1 "Researching trucks and radios will give more equipment with this focus"
+  MAN_change_subject_tt:1 "§RYour puppet type will be changed"

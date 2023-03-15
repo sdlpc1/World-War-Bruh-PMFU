@@ -4,9 +4,9 @@ state={
 	
 	state_category = pastoral
 
-	resources={
-		rubber=60 # was: 6.000
-	}
+	# resources={
+	# 	rubber=60 # was: 6.000
+	# }
 
 	history={
 		owner = BEL

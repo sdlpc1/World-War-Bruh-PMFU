@@ -1595,6 +1595,29 @@
 	}
 
 	focus = {
+		id = MAN_increased_conscription
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = MAN_army_settlements }
+		x = 0
+		y = 1
+		relative_position_id = MAN_army_settlements
+
+		cost = 5
+
+		available = {
+			has_global_flag = JAP_china_has_capped
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = MAN_increased_conscription
+		}
+	}
+
+	focus = {
 		id = MAN_treaty_with_the_bandits
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = MAN_meeting_of_the_gac }

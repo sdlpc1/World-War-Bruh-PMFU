@@ -6031,3 +6031,320 @@ USA_election_campaigns = {
 		is_good = no
 	}
 }
+
+USA_split_china = {
+	USA_split_china_taiwan = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_taiwan }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_taiwan.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_manchuria = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_manchuria }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_manchuria.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_northern = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_northern }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_northern.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_western = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_western }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_western.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_central = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_central }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_central.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_southern = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_southern }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_southern.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_eastern = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_eastern }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_eastern.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+}

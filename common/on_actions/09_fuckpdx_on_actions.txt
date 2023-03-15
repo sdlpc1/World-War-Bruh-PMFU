@@ -128,6 +128,9 @@ on_actions = {
 						name = JAP_threat_treaty_of_nanjing
 					}
 				}
+				JAP = {
+					set_global_flag = JAP_china_has_capped
+				}
 			}
 		}
 		# Japan Takes all of China
@@ -149,8 +152,11 @@ on_actions = {
 						name = JAP_threat_treaty_of_nanjing
 					}
 				}
+				JAP = {
+					set_global_flag = JAP_china_has_capped
+				}
 			}
-			}
+		}
 		# Manchu takes all of China
 		effect = {
 			if = {
@@ -171,6 +177,9 @@ on_actions = {
 						threat = 30
 						name = JAP_threat_treaty_of_nanjing
 					}
+				}
+				JAP = {
+					set_global_flag = JAP_china_has_capped
 				}
 			}
 		}
@@ -209,6 +218,109 @@ on_actions = {
 				}
 			}
 		}
+
+		# Allies cap japan
+		effect = { 
+			if = {
+				limit = {
+					original_tag = JAP
+					FROM = { OR = { is_in_faction_with = USA is_in_faction_with = ENG } }
+				}
+				# white_peace = JAP
+				# white_peace = MAN
+				USA = {
+					every_state = {
+						limit = {
+							is_core_of = CHI
+						}
+						USA = { transfer_state = PREV }
+					}
+					transfer_state = 527
+					transfer_state = 525
+					every_state = {
+						limit = {
+							is_core_of = JAP
+						}
+						USA = { transfer_state = PREV }
+					}
+					transfer_state = 537
+					transfer_state = 646
+					transfer_state = 647
+					transfer_state = 684
+					transfer_state = 633
+					transfer_state = 648
+				}
+				RAJ = {
+					transfer_state = 671
+					transfer_state = 670
+					transfer_state = 286
+					transfer_state = 741
+					transfer_state = 289
+					transfer_state = 724
+				}
+				USA = { set_global_flag = JAP_has_capped }
+				USA = {
+					add_named_threat = { threat = 40 name = "Treaty of Tokyo" }
+				}
+				USA = {
+					country_event = usa.71
+				}
+			}
+		}
+
+		# Axis cap soviets
+		effect = { 
+			if = {
+				limit = {
+					original_tag = SOV
+					FROM = { is_in_faction_with = GER }
+				}
+				FIN = {
+					annex_country = {
+						target = MON
+						transfer_troops = no
+					}
+					transfer_state = 213
+					transfer_state = 215
+					transfer_state = 216
+					transfer_state = 195
+					transfer_state = 722
+					transfer_state = 147
+					transfer_state = 146
+				}
+				ROM = {
+					transfer_state = 766
+					transfer_state = 78
+					transfer_state = 80
+				}
+				GER = {
+					annex_country = {
+						target = SOV
+						transfer_troops = no
+					}
+					add_named_threat = { threat = 40 name = "Treaty of Moscow" }
+				}
+			}
+		}
+
+		# Iran caps to soviet before iran invasion focus
+		effect = { 
+			if = {
+				limit = {
+					original_tag = PER
+					FROM = { is_in_faction_with = SOV }
+					SOV = { NOT = { has_completed_focus = SOV_preemptive_invasion_of_iran } }
+				}
+				SOV = {
+					annex_country = {
+						target = PER
+						transfer_troops = no
+					}
+					add_named_threat = { threat = 20 name = "Treaty of Tehran" }
+				}
+				set_global_flag = SOV_transfer_iran_2_mongolia_decision
+			}
+		}	
 	}
 
 	on_state_control_changed = {
@@ -226,4 +338,79 @@ on_actions = {
 			}
 		}
 	}
+
+	# on_declare_war = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				OR = {
+	# 					tag = SOV
+	# 					tag = MON
+	# 				}
+	# 				FROM = { tag = PER }
+	# 				# SOV = { NOT = { has_completed_focus = SOV_preemptive_invasion_of_iran } }
+	# 			}
+	# 			SOV = {
+	# 				country_event = soviet.7878
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# on_declare_war = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				OR = {
+	# 					tag = JAP tag = MAN tag = SIA
+	# 				}
+	# 				FROM = { is_in_faction_with = ENG tag = USA }
+	# 			}
+	# 			GER = { set_technology = { africa_hp_off = 1 popup = yes } }
+	# 			ITA = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			ROM = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			HUN = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			BUL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			CAN = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			SAF = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			AST = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			ENG = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			NZL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			IRE = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			MEX = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			BRA = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			SPR = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			RAJ = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			RAJ = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			HOL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 		}
+	# 	}
+	# }
+
+	# on_daily = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				GER = NOT = { { has_idea = GER_africa_hp } }
+	# 			}
+	# 			GER = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			ITA = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			ROM = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			HUN = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			BUL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			CAN = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			SAF = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			AST = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			ENG = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			NZL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			IRE = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			MEX = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			BRA = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			SPR = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			RAJ = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			RAJ = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 			HOL = { set_technology = { africa_hp_off = 1 popup = no } }
+	# 		}
+	# 	}
+	# }
 }

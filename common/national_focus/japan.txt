@@ -12,7 +12,7 @@
 
 	default = no
 
-	continuous_focus_position = { x = 2400 y = 700 }
+	continuous_focus_position = { x = 2500 y = 700 }
 
 	focus = {
 		id = JAP_arrest_the_traitors
@@ -875,6 +875,9 @@
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			MAN = {
+				country_event = wtt_manchukou.12
+			}
 			if = {
 				limit = {
 					CHI = { #if CHI owns one of these states, they get the event
@@ -938,7 +941,7 @@
 		id = JAP_lessons_of_war
 		icon = GFX_goal_japanese_imperialism
 		prerequisite = { focus = JAP_intervene_in_china }
-		x = -6
+		x = -7
 		y = 1
 		cost = 5
 		relative_position_id = JAP_intervene_in_china
@@ -1187,7 +1190,7 @@
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = 0
-		y = 2
+		y = 1
 		cost = 5
 		relative_position_id = JAP_intervene_in_china
 
@@ -1237,6 +1240,8 @@
 		completion_reward = {
 			set_country_flag = JAP_early_war
 			add_timed_idea = { idea = JAP_early_war_industry_bonus days = 365 }
+			MAN = { add_timed_idea = { idea = JAP_early_war_industry_bonus days = 365 } }
+			SIA = { add_timed_idea = { idea = JAP_early_war_industry_bonus days = 365 } }
 			# custom_effect_tooltip = JAP_early_war_industry_tt
 			# effect_tooltip = {
 			# 	random_state = {
@@ -1283,6 +1288,8 @@
 		completion_reward = {
 			set_country_flag = JAP_mid_war
 			add_ideas = JAP_mid_war_industry_bonus
+			MAN = { add_ideas = JAP_mid_war_industry_bonus }
+			SIA = { add_ideas = JAP_mid_war_industry_bonus }
 			custom_effect_tooltip = JAP_mid_war_start_tt
 		}
 	}
@@ -1309,6 +1316,8 @@
 		completion_reward = {
 			set_country_flag = JAP_late_war
 			add_ideas = JAP_late_war_industry_bonus
+			MAN = { add_ideas = JAP_late_war_industry_bonus }
+			SIA = { add_ideas = JAP_late_war_industry_bonus }
 			custom_effect_tooltip = JAP_late_war_start_tt
 		}
 	}
@@ -1398,6 +1407,458 @@
 			}
 			hidden_effect = {
 				JAP = {
+					add_operation_token = {
+						tag = USA
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_navy_japan_small
+					}
+				}
+				MAN = {
+					add_operation_token = {
+						tag = USA
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_navy_japan_small
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_airforce_japan_small
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_army_japan_small
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_civilian_japan_small
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_navy_japan_small
+					}
+				}
+				SIA = {
 					add_operation_token = {
 						tag = USA
 						token = token_airforce_japan_small
@@ -1913,6 +2374,458 @@
 						token = token_navy_japan_big
 					}
 				}
+				MAN = {
+					add_operation_token = {
+						tag = USA
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_navy_japan_big
+					}
+				}
+				SIA = {
+					add_operation_token = {
+						tag = USA
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = USA
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = RAJ
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = AST
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = NZL
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = ENG
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = SAF
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = CAN
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = MEX
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = BRA
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = HOL
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = IRE
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = POL
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = FRA
+						token = token_navy_japan_big
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_airforce_japan_big
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_army_japan_big
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_civilian_japan_big
+					}
+					add_operation_token = {
+						tag = INS
+						token = token_navy_japan_big
+					}
+				}
 			}
 			custom_effect_tooltip = JAP_late_war_collab_tt
 		}
@@ -2018,7 +2931,7 @@
 		id = JAP_strike_south_doctrine
 		icon = GFX_focus_jap_strike_south
 		prerequisite = { focus = JAP_intervene_in_china }
-		x = 8
+		x = 9
 		y = 1
 		cost = 20
 		relative_position_id = JAP_intervene_in_china
@@ -2271,13 +3184,12 @@
 		prerequisite = { focus = JAP_late_war_destruction_focus focus = JAP_mid_war_intel_focus focus = JAP_early_war_military_focus }
 		will_lead_to_war_with = ENG
 		x = 0
-		y = 6
+		y = 5
 		cost = 2
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
 			NOT = { has_war_with = CHI }
-			date > 1940.4.1
 			if = {
 				limit = {
 					has_completed_focus = JAP_early_war_industry_focus
@@ -2621,7 +3533,22 @@
 					# 	value = 0.6
 					# }
 				}
-				
+				GER = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				ITA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				ROM = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				HUN = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				BUL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				CAN = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				SAF = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				AST = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				ENG = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				NZL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				IRE = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				MEX = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				BRA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				SPR = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				RAJ = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				HOL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }	
 			}
 			custom_effect_tooltip = JAP_strike_west_tt
 			if = {

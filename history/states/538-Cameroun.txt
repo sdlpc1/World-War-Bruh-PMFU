@@ -6,7 +6,7 @@ state={
 	
 	state_category = wasteland
 	resources={
-		rubber=80 # was: 5
+		rubber=210 ## WAS 80 BEFORE PMFU # was: 5
 	}
 	history={
 		owner = BEL

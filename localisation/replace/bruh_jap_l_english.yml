@@ -271,6 +271,7 @@
   JAP_early_war:0 "Early War Japan"
   JAP_mid_war:0 "Mid War Japan"
   JAP_late_war:0 "Late War Japan"
+  JAP_china_has_capped:0 "China has capitulated"
 
   #### TOOLTIP ####
   JAP_yamato_tt:0 "Adds two Yamato-Class Battleships to the production queue, at 50% and 30% complete, respectively."

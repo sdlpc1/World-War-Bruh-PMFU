@@ -162,6 +162,43 @@ debug_decisions = { #TODO_Manu: Comment these out
 }
 
 foreign_politics = {
+
+	SOV_transfer_iran = {
+		icon = generic_operation
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			419 = { is_controlled_by = SOV }
+			420 = { is_controlled_by = SOV }
+			421 = { is_controlled_by = SOV }
+			266 = { is_controlled_by = SOV }
+			417 = { is_controlled_by = SOV }
+			416 = { is_controlled_by = SOV }
+			418 = { is_controlled_by = SOV }
+			413 = { is_controlled_by = SOV }
+			414 = { is_controlled_by = SOV }
+			412 = { is_controlled_by = SOV }
+			410 = { is_controlled_by = SOV }
+			has_war = no 
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = PER
+					is_controlled_by = SOV
+				}
+				MON = { transfer_state = PREV }
+			}
+		}
+
+	}
+
 	SOV_annex_mon = {
 
 		allowed = {

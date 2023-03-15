@@ -3082,6 +3082,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		continue_if_invalid = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			random_owned_controlled_state = {

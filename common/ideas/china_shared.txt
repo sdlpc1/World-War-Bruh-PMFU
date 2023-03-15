@@ -171,10 +171,6 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
-
-			available = {
-				controls_state = 613
-			}
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -197,10 +193,6 @@ ideas = {
 					# tag = MEN
 				}
 				has_dlc = "Waking the Tiger"
-			}
-
-			available = {
-				controls_state = 608
 			}
 			
 			research_bonus = {
@@ -229,10 +221,6 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
-
-			available = {
-				controls_state = 615
-			}
 			
 			research_bonus = {
 				artillery = 0.15
@@ -255,10 +243,6 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
-
-			available = {
-				controls_state = 715
-			}
 			
 			research_bonus = {
 				motorized_equipment = 0.15
@@ -279,10 +263,6 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
-
-			available = {
-				controls_state = 620
-			}
 			
 			research_bonus = {
 				infantry_weapons = 0.15
@@ -302,10 +282,6 @@ ideas = {
 					tag = MAN
 				}
 				has_dlc = "Waking the Tiger"
-			}
-
-			available = {
-				controls_state = 716
 			}
 			
 			research_bonus = {
@@ -437,10 +413,6 @@ ideas = {
 		MAN_showa_steel_works = {
 
 			picture = generic_industrial_concern_1			
-			
-			available = {
-				controls_state = 716
-			}
 
 			allowed = {
 				has_dlc = "Waking the Tiger"
@@ -465,10 +437,6 @@ ideas = {
 
 		MAN_western_refinery = {
 			picture = generic_refining_concern_1
-
-			available = {
-				controls_state = 716
-			}
 
 			allowed = {
 				has_DLC = "Waking the Tiger"
@@ -498,7 +466,6 @@ ideas = {
 			picture = stalingrad_tractor_factory
 
 			available = {
-				controls_state = 617
 				NOT = {
 					has_war_with = SOV
 				}
@@ -528,10 +495,6 @@ ideas = {
 		shanghai_electronics = {
 		
 			picture = generic_electronics_concern_1
-
-			available = {
-				controls_state = 613
-			}
 
 			allowed = {
 				has_DLC = "Waking the Tiger"

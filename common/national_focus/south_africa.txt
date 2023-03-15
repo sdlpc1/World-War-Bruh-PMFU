@@ -638,30 +638,79 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
+			541 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+					}	
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
 					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
+			681 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+					}	
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
 					}
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+			}
+			719 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+					}	
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			275 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+					}	
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			541 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+					}	
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			custom_effect_tooltip = available_designer
@@ -945,6 +994,10 @@ focus_tree = {
 					type = steel
 					amount = 320
 				}
+				add_resource = {
+					type = tungsten
+					amount = 300
+				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = steel_refinery
@@ -955,7 +1008,7 @@ focus_tree = {
 			modify_building_resources = {
 				building = steel_refinery
 				resource = tungsten
-				amount = 30
+				amount = 50
 			}
 		}
 	}
@@ -1640,7 +1693,7 @@ focus_tree = {
 		completion_reward = {			
 			add_tech_bonus = {
 				name = SAF_mechanization_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_mechanized_equipment
 			}

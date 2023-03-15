@@ -220,6 +220,22 @@ country_event = {
 		save_global_event_target_as = free_france
 		GER = { country_event = france.14 }
 		custom_effect_tooltip = france.10.b_tt
+		GER = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		ITA = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		ROM = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		HUN = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		BUL = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		CAN = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		SAF = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		AST = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		ENG = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		NZL = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		IRE = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		MEX = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		BRA = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		SPR = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		RAJ = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		HOL = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 	}
 }
 

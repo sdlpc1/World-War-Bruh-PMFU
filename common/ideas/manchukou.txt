@@ -1,6 +1,24 @@
 ideas = {
 	
 	country = {
+		MAN_increased_conscription = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				recruitable_population_factor = 0.1
+			}
+		}
+
 		MAN_banners = {
 			allowed = {
 				always = no

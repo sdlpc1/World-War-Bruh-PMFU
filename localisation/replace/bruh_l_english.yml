@@ -99,9 +99,11 @@
  #### COUNTRIES ####
  OMA_neutrality:0 "British Middle Eastern Protectorate"
  IRQ_neutrality:0 "Protectorate of Iraq"
+ STRATEGICREGION_28:0 "Iraq"
  STRATEGICREGION_229:0 "Sudan"
  STRATEGICREGION_228:0 "Tunisia"
- STRATEGICREGION_126:0 "Libya"
+ STRATEGICREGION_126:0 "Tripoli"
+ STRATEGICREGION_128:0 "Cairo"
  STRATEGICREGION_231:0 "Iwo Jima"
  STRATEGICREGION_232:0 "Saipan Guam"
  STRATEGICREGION_233:0 "Palau"
@@ -109,6 +111,9 @@
  STRATEGICREGION_235:0 "Marcus Island"
  STRATEGICREGION_236:0 "Midway"
  STRATEGICREGION_230:0 "Hawaii"
+ STRATEGICREGION_238:0 "Benghazi"
+ STRATEGICREGION_239:0 "Southern Egypt"
+ STRATEGICREGION_240:0 "Middle East"
  STRATEGICREGION_NAMIBIA: "Namibia"
  STRATEGICREGION_NORTH_MALACCA: "North Malacca"
  OTRANTO_STRAIT:0 "Strait of Otranto"
@@ -135,7 +140,11 @@
  SOV_communism_DEF:0 "the Union of Soviet Socialist Republics"
  MON_communism:0 "Mongolian People's Republic"
  MON_communism_DEF:0 "the Mongolian People's Republic"
+ MAN_JAP_fascism_autonomy_wtt_integrated_imperial_protectorate:0 "Manchukuo"
  MAN_great_qing_fascism:0 "Great Qing"
+ MAN_great_qing_JAP_fascism_autonomy_wtt_integrated_imperial_protectorate:0 "Great Qing"
+ MAN_great_qing_JAP_fascism_autonomy_wtt_integrated_imperial_protectorate_DEF:0 "Great Qing"
+ MAN_great_qing_JAP_fascism_autonomy_wtt_integrated_imperial_protectorate_ADJ:0 "Qing"
  MAN_great_qing_JAP_fascism_autonomy_wtt_imperial_protectorate:0 "Great Qing"
  MAN_great_qing_JAP_fascism_autonomy_wtt_imperial_protectorate_DEF:0 "Great Qing"
  MAN_great_qing_JAP_fascism_autonomy_wtt_imperial_protectorate_ADJ:0 "Qing"
@@ -153,6 +162,8 @@
  #### AUTONOMY ####
  autonomy_protectorate:0 "Colonial Protectorate"
  autonomy_soviet_protectorate:0 "Soviet Protectorate"
+ autonomy_wtt_imperial_protectorate:0 "Imperial Protectorate"
+ autonomy_wtt_integrated_imperial_protectorate:0 "Integrated Imperial Protectorate"
 
  #### IDEAS ####
  air_factory_1:0 "Small Aircraft Factories"

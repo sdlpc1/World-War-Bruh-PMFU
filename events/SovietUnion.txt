@@ -2699,3 +2699,31 @@ country_event = {
 #		name = soviet.73.a
 #	}
 #}
+
+# Soviet event for after declare on iran ifb efore iran invasion focus
+# country_event = {
+# 	id = soviet.7878
+# 	title = soviet.7878.t
+# 	desc = soviet.7878.d
+# 	picture = GFX_report_event_soviet_tanks
+
+# 	fire_only_once = yes
+	
+# 	trigger = {
+# 			SOV = { NOT = { has_completed_focus = SOV_preemptive_invasion_of_iran } }
+# 			OR = {
+# 				SOV = { has_war_with = PER }
+# 				MON = { has_war_with = PER }
+# 			}
+# 	}
+
+# 	option = {
+# 		name = soviet.7878.a
+# 		set_global_flag = SOV_iran_to_soviet
+# 	}
+
+# 	option = {
+# 		name = soviet.7878.b
+# 		set_global_flag = SOV_iran_to_mongolia
+# 	}
+# }
