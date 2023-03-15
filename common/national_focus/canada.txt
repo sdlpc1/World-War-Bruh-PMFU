@@ -2484,82 +2484,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_montreal_laboratory_collaboration
-		icon = GFX_goal_tfv_generic_tech_sharing
-		prerequisite = { focus = CAN_camp_x }
-		x = 0
-		y = 1
-		relative_position_id = CAN_camp_x
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 35
-		}
-
-		available = {
-			is_in_faction_with = ENG
-			is_in_tech_sharing_group = commonwealth_research
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			CAN = {
-   				 modify_tech_sharing_bonus = {
-        			id = commonwealth_research
-        			bonus = 0.08  
-    			}
-			}
-			completion_reward = {
-				add_research_slot = 1
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_the_plan
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = CAN_shadow_factories }
-		x = -2
-		y = 2
-		relative_position_id = CAN_strengthen_the_commonwealth_ties
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 2
-				has_completed_focus = CAN_supply_the_empire
-			}
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = CAN_the_plan
-		}
-	}
-
-	focus = {
 		id = CAN_camp_x
 		icon = GFX_goal_generic_intelligence_exchange 
 		prerequisite = { focus = CAN_strengthen_the_commonwealth_ties }
@@ -2599,6 +2523,121 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = CAN_montreal_laboratory_collaboration
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = CAN_camp_x }
+		x = 0
+		y = 1
+		relative_position_id = CAN_camp_x
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		available = {
+			is_in_faction_with = ENG
+			is_in_tech_sharing_group = commonwealth_research
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			CAN = {
+   				modify_tech_sharing_bonus = {
+        			id = commonwealth_research
+        			bonus = 0.08  
+    			}
+			}
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = CAN_the_plan
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = CAN_shadow_factories }
+		x = -2
+		y = 2
+		relative_position_id = CAN_strengthen_the_commonwealth_ties
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 2
+				has_completed_focus = CAN_supply_the_empire
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = CAN_the_plan
+		}
+	}
+
+	# focus = {
+	# 	id = CAN_camp_x
+	# 	icon = GFX_goal_generic_intelligence_exchange 
+	# 	prerequisite = { focus = CAN_strengthen_the_commonwealth_ties }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = CAN_strengthen_the_commonwealth_ties
+
+	# 	cost = 5
+
+	# 	ai_will_do = {
+	# 		factor = 25
+	# 		modifier = {
+	# 			factor = 2
+	# 			has_completed_focus = CAN_the_plan
+	# 		}
+	# 	}
+
+	# 	available = {
+			
+	# 	}
+		
+	# 	bypass = {
+
+	# 	}
+
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = CAN_camp_x
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			category = electronics
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = CAN_supply_the_empire
