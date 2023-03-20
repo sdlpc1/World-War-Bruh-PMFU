@@ -268,7 +268,9 @@
   SOV_bessarabia_adapt:0 "Adapt Against the Romanians"
   russian_closed_eco:0 "Soviet Closed Economy"
   volunteer_minimum_major:0 "6 Volunteers"
+  volunteer_minimum_major_desc:0 "§R30 division requirement for sending volunteers no longer exists"
   volunteer_minimum_minor:0 "4 Volunteers"
+  volunteer_minimum_minor_desc:0 "§R30 division requirement for sending volunteers no longer exists"
 
   #### DESIGNER ####
   kharkiv:0 "Versatile Tank Desginer"

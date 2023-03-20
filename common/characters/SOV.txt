@@ -1678,6 +1678,9 @@ characters = {
 			  allowed = {
 				  original_tag = SOV
 			  }
+			  available = {
+				always = no
+			  }
 			  traits = {
 				  army_chief_defensive_2
 			  }
