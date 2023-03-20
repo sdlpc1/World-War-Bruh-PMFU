@@ -79,6 +79,43 @@ fatherless_spirit = {
 	}
 }
 
+free_templates = {
+	name = "RULE_FREE_TEMPLATES"
+	group = "RULE_GROUP_TFB"
+	icon = ""
+	default = {
+		name = "DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_FREE_TEMPLATES_DISABLED_DESC"
+	}
+	option = {
+		name = "ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_FREE_TEMPLATES_ENABLED_DESC"
+	}
+}
+
+air_designer = {
+	name = "RULE_AIR_DESIGNER"
+	group = "RULE_GROUP_TFB"
+	icon = ""
+	default = {
+		name = "LW_AIR_DESIGNER"
+		text = "RULE_OPTION_LW_AIR_DESIGNER"
+		desc = "LW_AIR_DESIGNER_DESC"
+	}
+	option = {
+		name = "TFB_AIR_DESIGNER"
+		text = "RULE_OPTION_TFB_AIR_DESIGNER"
+		desc = "TFB_AIR_DESIGNER_DESC"
+	}
+	option = {
+		name = "NO_AIR_DESIGNER"
+		text = "RULE_OPTION_NO_AIR_DESIGNER"
+		desc = "NO_AIR_DESIGNER_DESC"
+	}
+}
+
 horst_host_country = {
 	name = "Select Host"
 	group = "RULE_GROUP_TFB"
@@ -201,7 +238,6 @@ horst_host_country = {
 		desc = ""
 	}
 }
-
 
 ussr_war_focus_only = {
 	name = "RULE_USSR_WAR_FOCUS_ONLY"

@@ -1534,7 +1534,20 @@ technologies = {
 	}
 	
 	jet_engines = {
-	
+		
+		allow_branch = {
+			has_game_rule = {
+				rule = air_designer
+				option = LW_AIR_DESIGNER
+			}
+		}
+		allow = {
+			has_game_rule = {
+				rule = air_designer
+				option = LW_AIR_DESIGNER
+			}
+		}
+		
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 4 }

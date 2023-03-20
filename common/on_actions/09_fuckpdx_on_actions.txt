@@ -68,6 +68,20 @@ on_actions = {
 			# 	}
 			# }
 		}
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = free_templates
+						option = ENABLED
+					}
+				}
+				every_country = {
+					add_ideas = GER_free_templates
+				}
+			}
+		}
 	}
 
 	on_capitulation_immediate = {
