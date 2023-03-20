@@ -262,6 +262,7 @@
   GER_africa_hp:0 "Africa Tank HP"
   africa_hp:0 "Africa Tank HP"
   africa_hp_off:0 "Africa Tank HP Off"
+  GER_greater_german_reich_idea:0 "Greater German Reich"
 
   #### TRAITS ####
   schacht:0 "Reichsbank President"

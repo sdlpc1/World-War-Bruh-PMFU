@@ -2216,7 +2216,7 @@ form_hre_category = {
 	}
 }
 
-form_greater_german_reich_category = {
+form_greater_german_reich_category = { # greater german reich
 
 	form_greater_german_reich = {
 
@@ -2256,6 +2256,9 @@ form_greater_german_reich_category = {
 		}
 
 		complete_effect = {
+			GER = {
+				add_ideas = GER_greater_german_reich_idea
+			}
 			set_cosmetic_tag = GER_greater_german_reich
 			set_province_name = { id = 6521 name = "Germania" }
 			hidden_effect = {
