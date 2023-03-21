@@ -11,28 +11,28 @@ on_actions = {
 				set_variable = { show_background = 3 }
 			}
 			HUN = {
-				set_variable = { show_background = 3 }
+				set_variable = { show_background = 14 }
 			}
 			ITA = {
 				set_variable = { show_background = 4 }
 			}
 			YUG = {
-				set_variable = { show_background = 4 }
+				set_variable = { show_background = 21 }
 			}
 			ROM = {
-				set_variable = { show_background = 4 }
+				set_variable = { show_background = 19 }
 			}
 			BUL = {
-				set_variable = { show_background = 4 }
+				set_variable = { show_background = 11 }
 			}
 			SPR = {
-				set_variable = { show_background = 4 }
+				set_variable = { show_background = 20 }
 			}
 			JAP = {
 				set_variable = { show_background = 5 }
 			}
 			MAN = {
-				set_variable = { show_background = 5 }
+				set_variable = { show_background = 16 }
 			}
 			SIA = {
 				set_variable = { show_background = 5 }
@@ -47,10 +47,10 @@ on_actions = {
 				set_variable = { show_background = 7 }
 			}
 			MEX = {
-				set_variable = { show_background = 7 }
+				set_variable = { show_background = 17 }
 			}
 			BRA = {
-				set_variable = { show_background = 7 }
+				set_variable = { show_background = 10 }
 			}
 			CHI = {
 				set_variable = { show_background = 8 }
@@ -71,13 +71,13 @@ on_actions = {
 				set_variable = { show_background = 9 }
 			}
 			IRE = {
-				set_variable = { show_background = 9 }
+				set_variable = { show_background = 15 }
 			}
 			IRQ = {
 				set_variable = { show_background = 9 }
 			}
 			HOL = {
-				set_variable = { show_background = 9 }
+				set_variable = { show_background = 13 }
 			}
 			INS = {
 				set_variable = { show_background = 9 }
@@ -86,7 +86,10 @@ on_actions = {
 				set_variable = { show_background = 9 }
 			}
 			POL = {
-				set_variable = { show_background = 9 }
+				set_variable = { show_background = 18 }
+			}
+			FIN = {
+				set_variable = { show_background = 12 }
 			}
 		}
 	}
