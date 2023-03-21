@@ -201,10 +201,6 @@ technology_folders = {
 	bba_air_techs_folder = {
 		available = {
 			has_dlc = "By Blood Alone"
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
 		}
 		ledger = air
 	}

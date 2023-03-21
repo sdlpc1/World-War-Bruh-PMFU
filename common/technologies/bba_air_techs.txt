@@ -1,18 +1,7 @@
 technologies = {
 	
 	iw_small_airframe = {
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
+
 		enable_equipments = {
 			small_plane_airframe_0
 			small_plane_cas_airframe_0
@@ -58,19 +47,6 @@ technologies = {
 	
 	
 	basic_small_airframe = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		enable_equipments = {
 			small_plane_airframe_1
@@ -137,19 +113,6 @@ technologies = {
 	
 	
 	improved_small_airframe = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		enable_equipments = {
 			small_plane_airframe_2
@@ -223,19 +186,6 @@ technologies = {
 	
 	advanced_small_airframe = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		enable_equipments = {
 			small_plane_airframe_3
 			small_plane_cas_airframe_3
@@ -297,19 +247,6 @@ technologies = {
 	
 	modern_small_airframe = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		enable_equipments = {
 			small_plane_airframe_4
 			small_plane_cas_airframe_4
@@ -354,19 +291,6 @@ technologies = {
 	
 	iw_medium_airframe = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		enable_equipments = {
 			medium_plane_airframe_0
 			medium_plane_fighter_airframe_0
@@ -396,19 +320,6 @@ technologies = {
 	}
 	
 	basic_medium_airframe = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		enable_equipments = {
 			medium_plane_airframe_1
@@ -465,19 +376,6 @@ technologies = {
 	
 	improved_medium_airframe = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		enable_equipments = {
 			medium_plane_airframe_2
 			medium_plane_fighter_airframe_2
@@ -531,19 +429,6 @@ technologies = {
 	
 	advanced_medium_airframe = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		enable_equipments = {
 			medium_plane_airframe_3
 			medium_plane_fighter_airframe_3
@@ -591,19 +476,6 @@ technologies = {
 	
 	modern_medium_airframe = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		enable_equipments = {
 			medium_plane_airframe_4
 			medium_plane_fighter_airframe_4
@@ -637,19 +509,6 @@ technologies = {
 	}
 
 	iw_large_airframe = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		enable_equipments = {
 			large_plane_airframe_0
@@ -690,19 +549,6 @@ technologies = {
 	
 	basic_large_airframe = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		enable_equipments = {
 			large_plane_airframe_1
 			large_plane_maritime_patrol_plane_airframe_1
@@ -741,19 +587,6 @@ technologies = {
 	}
 	
 	improved_large_airframe = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		enable_equipments = {
 			large_plane_airframe_2
@@ -794,19 +627,6 @@ technologies = {
 	
 	advanced_large_airframe = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		enable_equipments = {
 			large_plane_airframe_3
 			large_plane_maritime_patrol_plane_airframe_3
@@ -845,19 +665,6 @@ technologies = {
 	
 	modern_large_airframe = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		enable_equipments = {
 			large_plane_airframe_4
 			large_plane_maritime_patrol_plane_airframe_4
@@ -893,19 +700,6 @@ technologies = {
 	}
 
 	early_bombs = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		enable_equipment_modules = {
 			bomb_locks
@@ -957,19 +751,6 @@ technologies = {
 	}
 	cas_1 = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1015,19 +796,6 @@ technologies = {
 	
 	cas_2 = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1065,19 +833,6 @@ technologies = {
 	}
 
 	nav_1 = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -1122,19 +877,6 @@ technologies = {
 	}
 	nav_2 = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1178,19 +920,6 @@ technologies = {
 	}
 	nav_3 = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1229,19 +958,6 @@ technologies = {
 	}
 	
 	tac_1 = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -1286,19 +1002,6 @@ technologies = {
 	}
 	tac_2 = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1342,19 +1045,6 @@ technologies = {
 	}
 	tac_3 = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1396,20 +1086,6 @@ technologies = {
 	}
 	photo_reconnaisance = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-			has_dlc = "La Resistance"
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1444,19 +1120,6 @@ technologies = {
 	}
 
 	aa_lmg = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -1505,19 +1168,6 @@ technologies = {
 	}
 
 	aa_hmg = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -1570,19 +1220,6 @@ technologies = {
 
 	aa_cannon_1 = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1634,19 +1271,6 @@ technologies = {
 
 	aa_cannon_2 = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1693,19 +1317,6 @@ technologies = {
 	}
 	
 	engines_1 = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -1782,19 +1393,6 @@ technologies = {
 
 	engines_2 = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1852,19 +1450,6 @@ technologies = {
 	}
 
 	engines_3 = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -1931,19 +1516,6 @@ technologies = {
 	
 	engines_4 = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1998,19 +1570,6 @@ technologies = {
 	}
 
 	range_improvements = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -2069,19 +1628,6 @@ technologies = {
 	}
 	self_sealing_fuel_tanks = {
 
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -2100,19 +1646,6 @@ technologies = {
 		}
 	}
 	aircraft_construction = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -2152,19 +1685,6 @@ technologies = {
 		}
 	}
 	survivability_studies = {
-
-		allow_branch = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
-		allow = {
-			has_game_rule = {
-				rule = air_designer
-				option = LW_AIR_DESIGNER
-			}
-		}
 		
 		xp_research_type = air
 		xp_unlock_cost = 0

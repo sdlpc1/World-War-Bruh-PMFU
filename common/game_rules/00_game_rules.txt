@@ -95,27 +95,6 @@ free_templates = {
 	}
 }
 
-air_designer = {
-	name = "RULE_AIR_DESIGNER"
-	group = "RULE_GROUP_TFB"
-	icon = ""
-	default = {
-		name = "LW_AIR_DESIGNER"
-		text = "RULE_OPTION_LW_AIR_DESIGNER"
-		desc = "LW_AIR_DESIGNER_DESC"
-	}
-	option = {
-		name = "TFB_AIR_DESIGNER"
-		text = "RULE_OPTION_TFB_AIR_DESIGNER"
-		desc = "TFB_AIR_DESIGNER_DESC"
-	}
-	option = {
-		name = "NO_AIR_DESIGNER"
-		text = "RULE_OPTION_NO_AIR_DESIGNER"
-		desc = "NO_AIR_DESIGNER_DESC"
-	}
-}
-
 horst_host_country = {
 	name = "Select Host"
 	group = "RULE_GROUP_TFB"

@@ -1139,7 +1139,3 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  RULE_FREE_TEMPLATES:0 "Free Templates"
  RULE_FREE_TEMPLATES_DISABLED_DESC:0 "Designing free division templates is disabled (default)"
  RULE_FREE_TEMPLATES_ENABLED_DESC:0 "Designing free division templates is enabled"
- RULE_AIR_DESIGNER:0 "DOESNT WORK DONT USE"
- RULE_OPTION_LW_AIR_DESIGNER:0 "LW Air Designer"
- RULE_OPTION_TFB_AIR_DESIGNER:0 "DO NOT USE, DOESNT WORK"
- RULE_OPTION_NO_AIR_DESIGNER:0 "DO NOT USE, DOESNT WORK"
