@@ -284,12 +284,12 @@ upgrades = {
 		}
 
 		level_requirements = {
-			#1 = {
-			#	has_tech = sov_heavy_tank_4 #KV-1 Model 41
-			#}
-			#2 = {
-			#	has_tech = sov_heavy_tank_4 #KV-1 Model 41
-			#}
+			1 = {
+				has_tech = sov_heavy_tank_4 #KV-1 Model 41
+			}
+			2 = {
+				has_tech = sov_heavy_tank_4 #KV-1 Model 41
+			}
 		}
 
 		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative

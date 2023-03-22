@@ -2823,7 +2823,6 @@ ideas = {
 				unit_mot_recon_design_cost_factor = -1
 				unit_light_tank_recon_design_cost_factor = -1
 				unit_armored_car_recon_design_cost_factor = -1
-				unit_rg_hq_company_design_cost_factor = -1
 				unit_signal_company_design_cost_factor = -1
 				unit_hq_company_design_cost_factor = -1
 				unit_light_sp_anti_air_brigade_design_cost_factor = -1

@@ -45,7 +45,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.425
+				consumer_goods_factor = 0.4
 				production_speed_arms_factory_factor = -0.6
 				production_speed_dockyard_factor = -0.3
 				conversion_cost_civ_to_mil_factor= 0.4
@@ -159,12 +159,12 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-   				factor = 100
-				modifier = {
-					factor = 0
-					has_idea = war_economy
-				}
-   			}
+				factor = 100
+			 modifier = {
+				 factor = 0
+				 has_idea = war_economy
+			 }
+			}
 		}
 		
 		war_economy = {
@@ -211,12 +211,12 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-   				factor = 100
-				modifier = {
-					factor = 0
-					has_idea = tot_economic_mobilisation
-				}
-   			}
+				factor = 100
+			 modifier = {
+				 factor = 0
+				 has_idea = tot_economic_mobilisation
+			 }
+			}
 		}
 		
 		tot_economic_mobilisation = {
@@ -385,35 +385,35 @@ ideas = {
 
 		russian_closed_eco = {
 		
-		picture = russian_closed_eco	
-					
-		cost = 100
-		removal_cost = -1
-		
-		available = {
-			original_tag = SOV
-			has_government = communism
-		}			
-		
-		visible = {
-			original_tag = SOV
-			has_government = communism
-		}
-		
-		modifier = {
-			min_export = 0.0
-			industrial_capacity_factory = 0.1
-			industrial_capacity_dockyard = 0.1
-			production_speed_buildings_factor = 0.1
-			research_speed_factor = 0.1
-
-		}
-		
-		cancel_if_invalid = no
-
-		ai_will_do = {
-		   }
-	}	
+			picture = russian_closed_eco	
+						
+			cost = 100
+			removal_cost = -1
+			
+			available = {
+				original_tag = SOV
+				has_government = communism
+			}			
+			
+			visible = {
+				original_tag = SOV
+				has_government = communism
+			}
+			
+			modifier = {
+				min_export = 0.0
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.1
+	
+			}
+			
+			cancel_if_invalid = no
+	
+			ai_will_do = {
+			   }
+		}	
 
 		free_trade = {
 						
@@ -431,7 +431,7 @@ ideas = {
 			
 			visible = {
 				NOT = { has_idea = russian_closed_eco }			
-			}	
+			}
 
 			modifier = {
 				min_export = 0.8

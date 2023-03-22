@@ -10,7 +10,7 @@ SOV_historical_plan = {
 	}
 
 	ai_national_focuses = {
-		SOV_germans_are_coming
+		#SOV_germans_are_coming
 		SOV_frontline_mob
 		SOV_fareast_reserves
 		SOV_defend_moscow
@@ -87,19 +87,27 @@ SOV_historical_plan = {
 		SOV_siberia_1
 		SOV_railway_5
 		SOV_capitals_of_socialism
-		SOV_deep_operations
+		#SOV_deep_operations
 		SOV_tank1
-		SOV_tank2
-		SOV_medium_tank1
-		SOV_medium_tank2
+		#SOV_tank2
+		#SOV_medium_tank1
+		#SOV_medium_tank2
 		SOV_arty1
 		SOV_arty2
-		SOV_arty3
+		#SOV_arty3
 		SOV_infantry1
 		SOV_infantry2
 		SOV_rehabilitated_army
 		SOV_stavka
+		SOV_brilliant_genius
+		SOV_leader_of_the_party_and_the_people
+		SOV_great_commander
+		SOV_father_of_nations
 		SOV_soviet_atomic_bomb_project
+		SOV_popov
+		SOV_ground_support
+		SOV_foster_flying_clubs
+		SOV_the_modern_war_in_the_skies
 	}
 
 	research = {

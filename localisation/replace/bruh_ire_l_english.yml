@@ -84,3 +84,6 @@
   IRE_ira_2:0 "IRA"
   IRE_anglo_trade_war:0 "Anglo-Irish Trade War"
   IRE_repayment:0 "British Repayments"
+
+  ### DESCRIPTION ###
+  IRE_GATHERING_STORM_DESC:0 "In 1936, Ireland was still a dominion of the British Empire, but tensions between Ireland and Britain were high due to a long history of Irish nationalism and demands for independence. The country was also dealing with economic struggles following the Great Depression and political turmoil caused by the rise of fascist and communist ideologies in Europe.The Irish government, led by President Eamon de Valera, had adopted a policy of neutrality in international affairs and were focused on establishing Ireland as an independent and self-sufficient nation. The military was small and ill-equipped, and the country relied heavily on agriculture for its economy."

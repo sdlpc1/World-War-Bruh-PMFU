@@ -690,10 +690,10 @@ spriteTypes = {
 		name = "GFX_sov_heavy_tank_chassis_is_medium"
 		texturefile = "gfx/interface/technologies/tanks/sov/sov_is_hull.dds"
 	}
-	SpriteType = {
-		name = "GFX_sov_heavy_tank_chassis_is3_medium"
-		texturefile = "gfx/interface/technologies/tanks/sov/sov_is3_hull.dds"
-	}
+	# SpriteType = {
+	# 	name = "GFX_sov_heavy_tank_chassis_is3_medium"
+	# 	texturefile = "gfx/interface/technologies/tanks/sov/sov_is3_hull.dds"
+	# }
 	
 	### TECH ###
 	

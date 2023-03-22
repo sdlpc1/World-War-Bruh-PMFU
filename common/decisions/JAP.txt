@@ -1620,6 +1620,10 @@ operations = {
 				has_completed_focus = JAP_support_the_kodoha_faction
 			}
 			NOT = {
+				has_global_flag = border_war_in_progress
+				has_global_flag = border_war_conclusive_winner
+			}
+			NOT = {
 				has_war_with = SOV
 				is_in_faction_with = SOV
 				has_non_aggression_pact_with = SOV	
@@ -1664,6 +1668,7 @@ operations = {
 		days_remove = 30
 		war_with_on_remove = SOV
 		complete_effect = {
+			set_global_flag = border_war_in_progress
 			527 = {
 				save_event_target_as = JAP_SOV_attacker_state
 				set_state_flag = border_incident_active
@@ -1724,6 +1729,13 @@ operations = {
 						bonus = 1.0
 					}
 				}
+				set_global_flag = SOV_border_war_loss
+				SOV_mikhail_tukhachevsky = {
+					SOV_purge_character_effect = yes
+				}
+				SOV_vasily_blyukher = {
+					SOV_purge_character_effect = yes
+				}
 			}
 			hidden_effect = {
 				remove_targeted_decision = { target = JAP decision = JAP_border_conflict_warning_SOV }
@@ -1778,6 +1790,13 @@ operations = {
 						bonus = 1.0
 					}
 				}
+				set_global_flag = SOV_border_war_loss
+				SOV_mikhail_tukhachevsky = {
+					SOV_purge_character_effect = yes
+				}
+				SOV_vasily_blyukher = {
+					SOV_purge_character_effect = yes
+				}
 			}
 		}		
 	}
@@ -1813,6 +1832,7 @@ operations = {
 		is_good = no
 		
 		timeout_effect = {
+			clr_global_flag = border_war_in_progress
 			remove_targeted_decision = { target = SOV decision = JAP_escalate_incident_to_border_conflict_SOV }
 			add_political_power = -100
 			add_war_support = -0.1 #Shameful Display
@@ -1942,6 +1962,7 @@ operations = {
 				attacker = 527
 			}
 			hidden_effect = {
+				clr_global_flag = border_war_in_progress
 				remove_targeted_decision = { target = SOV decision = JAP_border_conflict_escalate_conflict }
 				remove_targeted_decision = { target = JAP decision = JAP_border_conflict_escalate_conflict }
 			}
@@ -2091,6 +2112,7 @@ operations = {
 		war_with_target_on_remove = yes
 
 		complete_effect = {
+			clr_global_flag = border_war_in_progress
 			if = {
 				limit = { original_tag = SOV }
 				408 = { save_event_target_as = their_state }
@@ -2115,6 +2137,7 @@ operations = {
 		}
 
 		remove_effect = {
+			clr_global_flag = border_war_in_progress
 			cancel_border_war = {
 				dont_fire_events = yes
 				defender = 408
@@ -2170,6 +2193,7 @@ operations = {
 		fire_only_once = yes #Reactivation handled in effect
 
 		complete_effect = {
+			clr_global_flag = border_war_in_progress
 			if = {
 				limit = { original_tag = SOV }
 				finalize_border_war = {

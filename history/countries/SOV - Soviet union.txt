@@ -171,7 +171,10 @@ if = {
 
 set_variable = { SOV_RG_division_cap = 0 }
 set_variable = { SOV_RG_cap_increase = 2 }
-set_variable = { SOV_RG_cap_increase_double = 4 }
+set_variable = { SOV_RG_cap_decrease = -2 }
+set_variable = { SOV_RG_cap_increase_medium_double = 4 }
+set_variable = { SOV_RG_cap_increase_light_double = 6 }
+set_variable = { SOV_RG_cap_increase_heavy_double = 2 }
 
 #Initialize character flags Part I (aka who's safe)
 SOV_mikhail_kalinin = {
@@ -210,6 +213,24 @@ SOV_lev_trotsky = { #Not in the country
 SOV_patriarch_sergy = { #Priests are not political enemies at this point
 	set_character_flag = SOV_safe_from_purge_flag
 }
+SOV_georgy_zhukov = {
+	set_character_flag = SOV_safe_from_purge_flag
+} 
+SOV_ivan_konev = {
+	set_character_flag = SOV_safe_from_purge_flag
+} 
+SOV_konstantin_rokossovsky = {
+	set_character_flag = SOV_safe_from_purge_flag
+} 
+SOV_aleksandr_vasilevsky = {
+	set_character_flag = SOV_safe_from_purge_flag
+} 
+SOV_semyon_timoshenko = {
+	set_character_flag = SOV_safe_from_purge_flag
+} 
+SOV_grigory_kulik = {
+	set_character_flag = SOV_safe_from_purge_flag
+} 
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -740,7 +761,8 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	basic_train = 1
 }
 
-RG_armored_division_standard = yes
+set_country_flag = RG_armored_division_medium
+# RG_armored_division_standard = yes
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -813,6 +835,7 @@ add_ideas = {
 	SOV_2_5_plan
 	SOV_bad_rail
 	russian_closed_eco
+	SOV_modernisation_cav_2
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 	SOV_allow_mongolian_trade # fix trade
 	volunteer_minimum_major
