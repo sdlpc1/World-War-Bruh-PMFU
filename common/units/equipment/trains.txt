@@ -42,7 +42,7 @@ equipments = {
 		year = 1940
 
 		archetype = train_equipment
-		parent = train_equipment_1
+		# parent = train_equipment_1
 
 		priority = 20
 
@@ -55,7 +55,7 @@ equipments = {
 	train_equipment_3 = {
 		year = 1936
 		archetype = train_equipment
-		parent = train_equipment_1
+		# parent = train_equipment_1
 
 		armor_value = 250 # HP = BASE_TRAIN_HP + armor_value
 		priority = 30

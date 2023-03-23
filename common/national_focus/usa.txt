@@ -74,7 +74,7 @@ focus_tree = {
 			}
 		}
 		
-		cost = 8
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -100,12 +100,12 @@ focus_tree = {
 	focus = {
 		id = USA_neutrality_act
 		icon = GFX_goal_generic_neutrality_focus
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = USA_continue_the_new_deal
 		prerequisite = { focus = USA_continue_the_new_deal }
 		# prerequisite = { focus = USA_election }
-		cost = 8
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -138,15 +138,33 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_rebuilding_the_nation
-		icon = GFX_focus_usa_recruit_the_free_corps
-		x = 0
+		id = USA_wpa
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = USA_continue_the_new_deal }
+		relative_position_id = USA_continue_the_new_deal
+		x = -1
 		y = 1
-		relative_position_id = USA_neutrality_act
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = USA_office_of_scientific_research_and_development
+		icon = GFX_focus_research
+		x = 0
+		y = 2
+		relative_position_id = USA_continue_the_new_deal
 		prerequisite = { focus = USA_neutrality_act }
 		prerequisite = { focus = USA_wpa }
-		prerequisite = { focus = USA_office_of_scientific_research_and_development }
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -165,127 +183,150 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_ideas = USA_rebuilding_the_nation_idea
+			add_research_slot = 1
 		}
 	}
 
-	#focus = {
-	#	id = USA_suspend_the_presecution
-	#	icon = GFX_focus_generic_diplomatic_treaty
-	#	x = -6
-	#	y = 1
-	#	prerequisite = { focus = USA_continue_the_new_deal }
-	#	relative_position_id = USA_continue_the_new_deal
-	#	cost = 10
-    #
-    #		ai_will_do = {
-    #			factor = 1
-    #		}
-    #		allow_branch = {
-	#		has_dlc = "Man the Guns"
-	#	}
-	#	available = {
-	#	
-	#	}
-	#	
-	#	bypass = {
-	#	
-	#	}
+	# focus = {
+	# 	id = USA_rebuilding_the_nation
+	# 	icon = GFX_focus_usa_recruit_the_free_corps
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = USA_neutrality_act
+	# 	prerequisite = { focus = USA_neutrality_act }
+	# 	prerequisite = { focus = USA_wpa }
+	# 	prerequisite = { focus = USA_office_of_scientific_research_and_development }
+	# 	cost = 5
 
-	#	cancel_if_invalid = yes
-	#	continue_if_invalid = no
-	#	available_if_capitulated = no
-	#	search_filters = {FOCUS_FILTER_POLITICAL}
-	#	completion_reward = {
-	#		add_stability = -0.05
-	#		custom_effect_tooltip = available_political_advisor
-	#	    show_ideas_tooltip = earl_browder
-	#	    if = {
-	#	    	limit = {
-	#	    		is_ai = yes
-	#	    		OR = {
-	#					has_country_flag = USA_AI_RANDOM_COMMUNIST
-	#					has_game_rule = {
-	#						rule = USA_ai_behavior
-	#						option = COMMUNIST
-	#					}
-	#				}
-	#	    	}
-	#	    	add_ideas = earl_browder
-	#	    }
-	#	}
-	#}
-	#focus = {
-	#	id = USA_desegregate_the_armed_forces
-	#	icon = GFX_goal_generic_small_arms
-	#	x = 0
-	#	y = 1
-	#	prerequisite = { focus = USA_suspend_the_presecution }
-	#	relative_position_id = USA_suspend_the_presecution
-	#	cost = 10
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
 
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
+	# 	available = {
 
-	#	available = {
-	#		OR = {
-	#			communism > 0.1
-	#			has_country_leader = { ruling_only = yes name = "Harry S. Truman" }
-	#		}
-	#	}
+	# 	}
 		
-	#	bypass = {
+	# 	bypass = {
 
-	#	}
+	# 	}
 
-	#	cancel_if_invalid = yes
-	#	continue_if_invalid = no
-	#	available_if_capitulated = no
-	#	search_filters = {FOCUS_FILTER_MANPOWER}
-	#	completion_reward = {
-	#		remove_ideas = USA_armed_forces_desegregation
-	#	}
-	#}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = {FOCUS_FILTER_RESEARCH}
+	# 	completion_reward = {
+	# 		add_timed_idea = { idea = USA_rebuilding_the_nation_idea days = 1400 }
+	# 	}
+	# }
+
+	focus = {
+		id = USA_suspend_the_presecution
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 19
+		y = 0
+		cost = 10
+    
+		ai_will_do = {
+			factor = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		available = {
+			has_completed_focus = USA_continue_the_new_deal
+		}
+		
+		bypass = {
+		
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_stability = -0.05
+			custom_effect_tooltip = available_political_advisor
+		    show_ideas_tooltip = earl_browder
+		    if = {
+		    	limit = {
+		    		is_ai = yes
+		    	}
+		    	add_ideas = earl_browder
+		    }
+		}
+	}
+	focus = {
+		id = USA_desegregate_the_armed_forces
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_suspend_the_presecution }
+		relative_position_id = USA_suspend_the_presecution
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				communism > 0.1
+				has_country_leader = { ruling_only = yes name = "Harry S. Truman" }
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			remove_ideas = USA_armed_forces_desegregation
+		}
+	}
 	
-	#focus = {
-	#	id = USA_full_desegregation
-	#	icon = GFX_focus_generic_support_the_left_right
-	#	x = 0
-	#	y = 1
-	#	prerequisite = { focus = USA_desegregate_the_armed_forces }
-	#	relative_position_id = USA_desegregate_the_armed_forces
-	#	cost = 10
+	focus = {
+		id = USA_full_desegregation
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_desegregate_the_armed_forces }
+		relative_position_id = USA_desegregate_the_armed_forces
+		cost = 10
 
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
+		ai_will_do = {
+			factor = 1
+		}
 
-	#	available = {
-	#		OR = {
-	#			communism > 0.2
-	#			has_country_leader = { ruling_only = yes name = "Harry S. Truman" }
-	#		}
-	#	}
+		available = {
+			OR = {
+				communism > 0.2
+				has_country_leader = { ruling_only = yes name = "Harry S. Truman" }
+			}
+		}
 		
-	#	bypass = {
+		bypass = {
 
-	#	}
+		}
 
-	#	cancel_if_invalid = yes
-	#	continue_if_invalid = no
-	#	available_if_capitulated = no
-	#	search_filters = {FOCUS_FILTER_MANPOWER}
-	#	completion_reward = {
-	#		add_ideas = USA_full_desegregation
-	#		if = {
-	#			limit = {
-	#				not = { has_government = communism }
-	#			}
-	#			USA_congress_large_opposition = yes
-	#		}
-	#	}
-	#}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = USA_full_desegregation
+			if = {
+				limit = {
+					not = { has_government = communism }
+				}
+				USA_congress_large_opposition = yes
+			}
+		}
+	}
 
 
 #  # #  # ###  ##  #  #     ###  ### ###  ###  ###  ## ### #  # ###  ##  ### ###  ##  #  # 
@@ -303,8 +344,8 @@ focus_tree = {
 	focus = {
 		id = USA_new_deal_2
 		icon = GFX_focus_usa_guarantee_the_american_dream
-		relative_position_id = USA_rebuilding_the_nation
-		prerequisite = { focus = USA_rebuilding_the_nation }
+		relative_position_id = USA_office_of_scientific_research_and_development
+		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		mutually_exclusive = {
 			focus = USA_landon_deal
 		}
@@ -952,8 +993,8 @@ focus_tree = {
 	focus = {
 		id = USA_landon_deal
 		icon = GFX_focus_spa_the_spanish_miracle
-		prerequisite = { focus = USA_rebuilding_the_nation }
-		relative_position_id = USA_rebuilding_the_nation
+		prerequisite = { focus = USA_office_of_scientific_research_and_development }
+		relative_position_id = USA_office_of_scientific_research_and_development
 		mutually_exclusive = {
 			focus = USA_new_deal_2
 		}
@@ -1063,6 +1104,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
+			add_ideas = USA_tackling_waste_idea
 		}
 	}
 
@@ -1196,7 +1238,7 @@ focus_tree = {
 	focus = {
 		id = USA_invest_in_small_businesses
 		icon = GFX_focus_generic_concessions
-		prerequisite = { focus = USA_congress_isolation_campaign }
+		prerequisite = { focus = USA_balance_the_budget2 }
 		relative_position_id = USA_balance_the_budget2
 		x = 0
 		y = 1
@@ -1643,7 +1685,7 @@ focus_tree = {
 		relative_position_id = USA_labour_management
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1722,43 +1764,13 @@ focus_tree = {
 			set_country_flag = USA_great_depression_cooldown
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+			every_state = {
+				limit = {
+					is_core_of = USA
 				}
-			}
-
-			random_owned_controlled_state = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+					level = 1
 				}
 			}
 		}
@@ -1865,7 +1877,7 @@ focus_tree = {
 		icon = GFX_goal_tripartite_pact
 		mutually_exclusive = { focus = USA_wilkies_deal }
 		prerequisite = { focus = USA_federal_housing_act focus = USA_federal_housing_act2}
-		relative_position_id = USA_rebuilding_the_nation
+		relative_position_id = USA_office_of_scientific_research_and_development
 		x = -2
 		y = 9
 		cost = 5
@@ -1992,7 +2004,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		mutually_exclusive = { focus = USA_fdr_again }
 		prerequisite = { focus = USA_federal_housing_act focus = USA_federal_housing_act2}
-		relative_position_id = USA_rebuilding_the_nation
+		relative_position_id = USA_office_of_scientific_research_and_development
 
 		x = 2
 		y = 9
@@ -2585,24 +2597,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = USA_wpa
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = USA_continue_the_new_deal }
-		relative_position_id = USA_continue_the_new_deal
-		x = -2
-		y = 1
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
 
 	
 	focus = {
@@ -2862,35 +2856,7 @@ focus_tree = {
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 		}
 	}
-	focus = {
-		id = USA_office_of_scientific_research_and_development
-		icon = GFX_focus_research
-		x = 2
-		y = 1
-		relative_position_id = USA_continue_the_new_deal
-		prerequisite = { focus = USA_continue_the_new_deal }
-		cost = 10
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
 
 	# focus = {
 	# 	id = USA_election
@@ -2936,7 +2902,7 @@ focus_tree = {
 		prerequisite = { focus = USA_new_deal_2 focus = USA_landon_deal }
 		x = -1
 		y = 2
-		relative_position_id = USA_rebuilding_the_nation
+		relative_position_id = USA_office_of_scientific_research_and_development
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3067,7 +3033,7 @@ focus_tree = {
 	focus = {
 		id = USA_public_projects
 		icon = GFX_focus_generic_concessions
-		relative_position_id = USA_rebuilding_the_nation
+		relative_position_id = USA_office_of_scientific_research_and_development
 		prerequisite = { focus = USA_new_deal_2 focus = USA_landon_deal }
 		mutually_exclusive = { focus = USA_arsenal_of_democracy }
 		x = 1

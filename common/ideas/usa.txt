@@ -1746,7 +1746,7 @@ ideas = {
 			picture = generic_air_bonus
 			
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				large_plane_airframe = { ##
 					air_range = 0.25 instant = yes
 				}	
 			}

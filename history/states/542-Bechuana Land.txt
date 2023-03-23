@@ -8,6 +8,7 @@ state={
 	
 	resources={
 		chromium=1200 # was: 168
+		tungsten = 570 # moved from raj
 	}
 
 	history={
