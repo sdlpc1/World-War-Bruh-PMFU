@@ -10,7 +10,7 @@ HOL_historical = {
 		HOL_form_new_government
 		HOL_obtain_foreign_colonial_investments
 		HOL_the_crown_jewel_colony
-		HOL_sumatra
+		HOL_sumatra_industry
 		HOL_java
 		HOL_borneo_and_the_grote_oost
 		HOL_curtail_colonial_autonomy
