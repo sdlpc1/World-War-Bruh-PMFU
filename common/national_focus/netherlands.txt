@@ -1023,7 +1023,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HOL_sumatra
+		id = HOL_sumatra_industry
 		available = {
 			OR = {
 				has_full_control_of_state = 672
@@ -1148,7 +1148,7 @@ focus_tree = {
 			INS = { exists = no }
 			owns_state = 335
 		}
-		prerequisite = { focus = HOL_sumatra }
+		prerequisite = { focus = HOL_sumatra_industry }
 		prerequisite = { focus = HOL_java}
 		prerequisite = { focus = HOL_borneo_and_the_grote_oost}
 

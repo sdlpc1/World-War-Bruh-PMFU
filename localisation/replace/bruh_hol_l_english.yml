@@ -21,6 +21,8 @@
   HOL_reinforce_islands_home_to_desc:0 "As the Dutch East Indies face increasing threats from nearby aggressors, it is crucial that we reinforce our hold on the islands of Sulawesi and Papua. With its rich natural resources and strategic location, Sulawesi and Papua are vital to our colonial interests in the region."
   HOL_finish_western_development:0 "Declare Western Development Complete"
   HOL_finish_western_development_desc:0 "It is time to declare the western development complete and focus on strengthening the core of our nation"
+  HOL_sumatra_industry:0 "Sumatra"
+  HOL_sumatra_industry_desc:0 "Though the largest contiguous landmass entirely part of the East Indies, Sumatra, Java's northern neighbour, has fallen well behind in industrialization and infrastructure. We should remedy this at once."
 
   ## IDEAS ###
   HOL_colonial_defence:0 "Colonial Defence"
