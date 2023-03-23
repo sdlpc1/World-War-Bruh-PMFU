@@ -401,7 +401,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = SAF_csir }
 		x = -3
-		y = 3
+		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
 		cost = 5
@@ -468,7 +468,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_saf_secure_interests_in_africa
 		prerequisite = { focus = SAF_desert_equipment }
 		x = -3
-		y = 4
+		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
 		cost = 10
@@ -481,7 +481,48 @@ focus_tree = {
 			NOT = { has_war_with = ENG }
 			ENG = { is_puppet = no }
 			ENG = { has_war = yes }
+		}
+		
+		bypass = {
 
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		completion_reward = {
+		ENG = { custom_effect_tooltip = needs_approval 
+				country_event = tfv_south_africa.1
+				}
+		}
+	}
+
+	focus = {
+		id = SAF_develop_new_lands
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = SAF_secure_interests_in_africa }
+		x = 0
+		y = 1
+		relative_position_id = SAF_secure_interests_in_africa
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			548 = { is_controlled_by = SAF }
+			547 = { is_controlled_by = SAF }
+			546 = { is_controlled_by = SAF }
+			771 = { is_controlled_by = SAF }
+			770 = { is_controlled_by = SAF }
+			545 = { is_controlled_by = SAF }
+			542 = { is_controlled_by = SAF }
+
+			has_global_flag = SAF_ENG_accepted_transfering_africa
 		}
 		
 		bypass = {
@@ -494,9 +535,55 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-		ENG = { custom_effect_tooltip = needs_approval 
-				country_event = tfv_south_africa.1
+			548 = { # uganda
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
+			}
+			547 = { # kenya
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			546 = {
+				add_building_construction = { #tanganyika
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			771 = { # zambia
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			770 = { # malawi
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			545 = { # rhodesia
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			542 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 

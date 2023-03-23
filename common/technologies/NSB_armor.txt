@@ -112,11 +112,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942
+		start_year = 1941
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -4 y = 12 }
+			position = { x = -4 y = 10 }
 		}
 
 		categories = {
@@ -372,10 +372,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -4 y = 12 }
+			position = { x = -4 y = 10 }
 		}
 
 		categories = {
@@ -660,11 +660,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942
+		start_year = 1941
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -2 y = 12 }
+			position = { x = -2 y = 10 }
 		}
 
 		categories = {
@@ -1080,10 +1080,10 @@ technologies = {
 			tank_light_turret_3
 		}
 		research_cost = 2
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -2 y = 12 }
+			position = { x = -2 y = 10 }
 		}
 
 		categories = {

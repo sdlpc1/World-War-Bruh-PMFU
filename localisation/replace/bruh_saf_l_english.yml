@@ -9,9 +9,14 @@
   SAF_anti_tank_guns:0 "Tank Pounders Program"
   SAF_anti_tank_guns_desc:0 "Our infantry needs weapons to country tanks."
   #SAF_old_way:0 "The Old Way" 
+  SAF_develop_new_lands:0 "Develop New Lands"
+  SAF_develop_new_lands_desc:0 "Former British colonies have been left underdeveloped and in poverty, only a greater South Africa can bring an end to this madness!"
 
   ### IDEAS ###
   SAF_heavy_artillery2:0 "Heavy Artillery"
 
   ### DECISIONS ###
   develop_congolese_rubber:0 "Develop Congolese Rubber Plantations"
+
+  ### FLAGS ###
+  SAF_ENG_accepted_transfering_africa:0 "§YUnited Kingdom accepted our request§!"
