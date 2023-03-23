@@ -491,7 +491,7 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 1944
+		start_year = 1943
 
 		path = {
 			leads_to_tech = modern_sonar
@@ -1465,11 +1465,11 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 1940
+		start_year = 1930
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -2 y = 16 }
+			position = {  x = -2 y = 14 }
 		}
 
 		ai_will_do = {
@@ -1545,7 +1545,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 15 }
+			position = {  x = -1 y = 14 }
 		}
 
 		ai_will_do = {

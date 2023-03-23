@@ -262,6 +262,8 @@
   JAP_mid_war_military_bonus:0 "Mid War Naval Bonus"
   JAP_late_war_military_bonus:0 "Late War Naval Bonus"
   JAP_late_war_intel_bonus:0 "Late War Intel Bonus"
+  JAP_no_equipment_capture:0 "No Equipment Capture"
+  JAP_no_equipment_capture_desc:0 "§RBuff to japan due to equipment capture being gone§!"
 
   #### TRAITS ####
   osaka_artillery_arsenal:0 "Osaka Artillery Arsenal"

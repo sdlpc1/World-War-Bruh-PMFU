@@ -2,6 +2,28 @@ ideas = {
 
 	country = {
 	
+		## NO EQ CAPTURE
+		JAP_no_equipment_capture = {
+			name = JAP_no_equipment_capture
+			allowed = {
+				always = no
+			}
+			picture = jap_no_equipment_capture
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				squad_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
 		### HOPPING ###
 	    JAP_island_hopping1 = {
 			name = JAP_island_hopping
@@ -1626,7 +1648,7 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.1
 				industrial_capacity_factory = 0.10
 				industrial_capacity_dockyard = 0.10
-				production_speed_buildings_factor = -0.20
+				production_speed_buildings_factor = -0.10
 			}
 		}
 

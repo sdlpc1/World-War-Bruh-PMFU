@@ -2814,6 +2814,8 @@ focus_tree = {
 			threat > 0.05
 		}
 
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		x = -2
@@ -2885,6 +2887,8 @@ focus_tree = {
 			}
 		}
 
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		x = 2

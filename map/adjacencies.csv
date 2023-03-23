@@ -262,8 +262,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6012;74;impassable;-1;-1;-1;-1;-1;;Finland
 6012;9203;impassable;-1;-1;-1;-1;-1;;Finland
 6012;142;impassable;-1;-1;-1;-1;-1;;Finland
-7216;992;impassable;-1;-1;-1;-1;-1;;El-Alamein
-7216;7148;impassable;-1;-1;-1;-1;-1;;El-Alamein
 5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto
 13052;13255;sea;8908;-1;-1;-1;-1;;Midway
 13047;13256;sea;7247;-1;-1;-1;-1;;Wake North

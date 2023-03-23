@@ -780,9 +780,13 @@ country_event = {
         tag = JAP
         has_war_with = CHI
         CHI = {
-            surrender_progress > 0.80
+            surrender_progress > 0.60
         }
     }
+
+	mean_time_to_happen = {
+		days = 1
+	}
 
     # option = {
     #     name = japan.504.a #Peace Conference
