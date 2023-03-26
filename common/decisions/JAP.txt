@@ -619,6 +619,33 @@ JAP_interservice_rivalry = {
 }
 
 foreign_politics = {
+	JAP_transfer_indochina = {
+		icon = generic_operation
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			670 = { is_controlled_by = JAP }
+			671 = { is_controlled_by = JAP }
+			741 = { is_controlled_by = JAP }
+			286 = { is_controlled_by = JAP }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			SIA = {
+				transfer_state = 670
+				transfer_state = 671
+				transfer_state = 741
+				transfer_state = 286 
+			}
+		}
+
+	}
+
 	JAP_sue_for_peace_CHI = {
 
 		allowed = {

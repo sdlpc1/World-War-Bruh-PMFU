@@ -44,6 +44,9 @@ if = {
 }
 set_convoys = 15
 
+add_ideas = {
+	volunteer_minimum_minor
+}
 
 set_politics = {
 	ruling_party = neutrality

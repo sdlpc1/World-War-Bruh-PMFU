@@ -651,4 +651,9 @@ instant_effect = {
 		efficiency = 50
 	}
 
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 2500
+		producer = POL
+	}
 }
