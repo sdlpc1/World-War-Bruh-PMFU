@@ -280,6 +280,7 @@ NDefines.NMilitary.OUT_OF_FUEL_SPEED_MULT = 0.1					-- speed mult that armies ge
 NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 72             	-- default capacity if not specified
 NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.2				--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015
+NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 0
 
 NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 300
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 300
@@ -421,7 +422,19 @@ NDefines.NNavy.HIT_PROFILE_SPEED_BASE = 5													-- Base value added to hit
 NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO 								= 0.2	-- total sum of fleet's anti air will be multiplied with this ratio and added to calculations anti-air of individual ships while air damage reduction
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE							= 0.58	-- received air damage is calculated using following: 1 - ( (ship_anti_air + fleet_anti_air * SHIP_TO_FLEET_ANTI_AIR_RATIO )^ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE ) * ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE
 NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE 						= 0.02
-
+NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0
+NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_CHANCES = 0
+NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 0
+NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS = 0
+NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS_FACTOR = 0
+NDefines.NNavy.TRAINING_ACCIDENT_ORG_LOSS_FACTOR = 0
+NDefines.NNavy.ACCIDENTS_CHANCE_BALANCE_FACTOR = 0
+NDefines.NNavy.NAVAL_ACCIDENT_CHANCE_REDUCTION_ON_POTF = 0
+NDefines.NNavy.NAVAL_ACCIDENT_CRITICAL_HIT_CHANCE_REDUCTION_POTF = 0
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 0
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_STRENGTH_LOSS = 0
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_ORG_LOSS_FACTOR = 0
 
 NDefines.NTrade.BASE_LAND_TRADE_RANGE = 700
 
