@@ -2029,9 +2029,9 @@
 							hq_company = { x = 0 y = 0 } 
 							engineer = { x = 0 y = 1 }   
 							recon = { x = 0 y = 2 }
-							logistics_company  = { x = 0 y = 3 }
+							# logistics_company  = { x = 0 y = 3 }
 							anti_air = { x = 1 y = 0 }
-							logistics_company_horse = { x = 1 y = 1 }
+							logistics_company_mot = { x = 1 y = 1 }
 						}
 					}
 					219 = {
@@ -2195,9 +2195,9 @@
 							hq_company = { x = 0 y = 0 } 
 							engineer = { x = 0 y = 1 }   
 							recon = { x = 0 y = 2 }
-							logistics_company  = { x = 0 y = 3 }
+							# logistics_company  = { x = 0 y = 3 }
 							anti_air = { x = 1 y = 0 }
-							logistics_company_horse = { x = 1 y = 1 }
+							logistics_company_mot = { x = 1 y = 1 }
 						}
 					}
 					217 = {
@@ -2395,9 +2395,9 @@
 						hq_company = { x = 0 y = 0 } 
 						engineer = { x = 0 y = 1 }   
 						recon = { x = 0 y = 2 }
-						logistics_company  = { x = 0 y = 3 }
+						# logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
-						logistics_company_horse = { x = 1 y = 1 }
+						logistics_company_mot = { x = 1 y = 1 }
 					}
 				}
 				195 = {
@@ -2605,9 +2605,9 @@
 						hq_company = { x = 0 y = 0 } 
 						engineer = { x = 0 y = 1 }   
 						recon = { x = 0 y = 2 }
-						logistics_company  = { x = 0 y = 3 }
+						# logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
-						logistics_company_horse = { x = 1 y = 1 }
+						logistics_company_mot = { x = 1 y = 1 }
 					}
 				}
 				if = {
@@ -2723,9 +2723,9 @@
 						hq_company = { x = 0 y = 0 } 
 						engineer = { x = 0 y = 1 }   
 						recon = { x = 0 y = 2 }
-						logistics_company  = { x = 0 y = 3 }
+						# logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
-						logistics_company_horse = { x = 1 y = 1 }
+						logistics_company_mot = { x = 1 y = 1 }
 					}
 				}
 				if = {
@@ -4955,17 +4955,35 @@
 		will_lead_to_war_with = GER
 		available = { 
 			has_war = no
-			date > 1942.8.1
+			date > 1941.8.1
 		}
 
 		completion_reward = {
 			add_timed_idea = {
 				idea = SOV_invade_germany_idea
-				days = 120
+				days = 180
 			}
-			declare_war_on = {
-				target = GER
-				type = annex_everything
+			MON = {
+				add_timed_idea = {
+					idea = SOV_invade_germany_idea
+					days = 180
+				}
+			}
+			# declare_war_on = {
+			# 	target = GER
+			# 	type = annex_everything
+			# }
+			SOV = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = FIN
+				}
+			}
+			SOV = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = GER
+				}
 			}
 		}
 	}

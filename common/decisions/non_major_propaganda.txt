@@ -1226,7 +1226,7 @@ COM_propaganda_campaigns = {
 			air_home_defence_factor = 0.25
 			army_core_attack_factor = 0.2
 			army_core_defence_factor = 0.2
-			minimum_training_level = -0.2
+			minimum_training_level = -0.1
 		}
 
 		complete_effect = {

@@ -260,6 +260,7 @@
   GER_fast_bombers:0 "Fast Bomber Designs"
   GER_cas:0 "Advanced CAS Designs"
   GER_africa_hp:0 "Africa Tank HP"
+  GER_africa_hp_desc:0 "§RAfrica Tank HP spirit lasts till March 1941 or when Japan goes to war with the west§!"
   africa_hp:0 "Africa Tank HP"
   africa_hp_off:0 "Africa Tank HP Off"
   GER_greater_german_reich_idea:0 "Greater German Reich"

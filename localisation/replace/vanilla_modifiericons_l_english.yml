@@ -236,6 +236,7 @@
  tactical_bomber_research:0 "£research_speed_tacbomber_texticon  Tactical Bomber Research Speed"
  armor_research:2 "£research_speed_tank_texticon  Armor Research Speed"
  artillery_research:2 "£research_speed_artillery_texticon  Artillery Research Speed"
+ heavy_artillery_research:2 "£research_speed_artillery_texticon  Heavy Artillery Research Speed"
  naval_air_research:2 "£research_speed_navbomber_texticon  Naval Aircraft Research Speed"
  naval_mines_research:0 "£research_speed_mines_texticon  Naval Mines Research Speed"
  radar_tech_research:0 "£research_speed_radar_texticon  Radar Research Speed"

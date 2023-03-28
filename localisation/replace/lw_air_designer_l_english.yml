@@ -9,6 +9,8 @@ cas_3:0 "Rocket Rails"
 tac_1:0 "Large Bomb Bay"
 tac_2:0 "Large Bomb"
 tac_3:0 "Guided Anti Ship Missile"
+tac_3_desc:0 "§RCan only be researched after 1st January 1943§!"
+guided_anti_ship_missile_1_short_tt:0 "§RCan only be researched after 1st January 1943§!" #tooltip
 GER_tac_3:0 "Fritz X"
 fuel_injection:0 "Fuel Injection"
 fuel_injection2:0 "Isooctane Fuels"

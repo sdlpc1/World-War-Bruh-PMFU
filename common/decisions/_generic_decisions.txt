@@ -65,6 +65,45 @@ host_decisions = {
 
 	}
 
+	JAP_declare_china = {
+
+		icon = jap_conquer_china
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+            JAP = {
+				NOT = { has_war_with = CHI }
+			}
+			country_exists = CHI
+		}	
+		
+		visible = {
+			JAP = {
+				NOT = { has_war_with = CHI }
+			}
+			country_exists = CHI
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		}
+		
+		complete_effect = {
+			JAP = { add_ideas = JAP_intervene_in_china_5 }
+			MAN = { add_ideas = MAN_intervene_in_china_5 }			
+            JAP = {
+				declare_war_on = {
+			    	target = CHI
+					type = annex_everything
+				}
+			}
+		}
+	}
+
 }
 political_actions = {
 	

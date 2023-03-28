@@ -385,18 +385,18 @@ foreign_politics = {
 		fire_only_once = yes
 		complete_effect = {
 			annex_country = { target = MON transfer_troops = yes }
-			287 = { set_compliance = 60 }
-			329 = { set_compliance = 60 }
-			330 = { set_compliance = 60 }
-			617 = { set_compliance = 60 }
-			618 = { set_compliance = 60 }
-			619 = { set_compliance = 60 }
-			759 = { set_compliance = 60 }
-			760 = { set_compliance = 60 }
-			817 = { set_compliance = 60 }
-			818 = { set_compliance = 60 }
-			819 = { set_compliance = 60 }
-			820 = { set_compliance = 60 }
+			add_state_core = 287
+			add_state_core = 329
+			add_state_core = 330
+			add_state_core = 617
+			add_state_core = 618
+			add_state_core = 619
+			add_state_core = 759
+			add_state_core = 760
+			add_state_core = 817
+			add_state_core = 818
+			add_state_core = 819
+			add_state_core = 820
 		}
 	}
 

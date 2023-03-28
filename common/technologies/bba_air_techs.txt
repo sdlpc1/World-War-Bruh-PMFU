@@ -1058,6 +1058,14 @@ technologies = {
 			year_1943
 		}
 
+		allow = {
+			date > 1943.1.1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = guided_anti_ship_missile_1_short_tt
+		}
+
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 4 y = 10 }
