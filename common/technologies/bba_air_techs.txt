@@ -12,6 +12,9 @@ technologies = {
 			#cv_small_plane_naval_bomber_airframe_0
 			#cv_small_plane_suicide_airframe_0
 		}
+		enable_equipment_modules = {
+			engine_1_1x
+		}
 		
 	
 		path = {
@@ -57,6 +60,9 @@ technologies = {
 			#cv_small_plane_cas_airframe_1
 			#cv_small_plane_naval_bomber_airframe_1
 			#cv_small_plane_suicide_airframe_1
+		}
+		enable_equipment_modules = {
+			engine_2_1x
 		}
 	
 		path = {
@@ -123,6 +129,11 @@ technologies = {
 			#cv_small_plane_cas_airframe_2
 			#cv_small_plane_naval_bomber_airframe_2
 			#cv_small_plane_suicide_airframe_2
+		}
+		enable_equipment_modules = {
+			engine_3_1x
+			fuel_injection_s	
+			radio_navigation_1	
 		}
 	
 		path = {
@@ -195,6 +206,11 @@ technologies = {
 			#cv_small_plane_cas_airframe_3
 			#cv_small_plane_naval_bomber_airframe_3
 			#cv_small_plane_suicide_airframe_3
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+			fuel_injection2_s
+			radio_navigation_2
 		}
 		
 		path = {
@@ -296,6 +312,9 @@ technologies = {
 			medium_plane_fighter_airframe_0
 			medium_plane_scout_plane_airframe_0
 		}
+		enable_equipment_modules = {
+			engine_1_2x
+		}
 
 		path = {
 			leads_to_tech = basic_medium_airframe
@@ -325,6 +344,9 @@ technologies = {
 			medium_plane_airframe_1
 			medium_plane_fighter_airframe_1
 			medium_plane_scout_plane_airframe_1
+		}
+		enable_equipment_modules = {
+			engine_2_2x
 		}
 	
 		path = {
@@ -381,6 +403,11 @@ technologies = {
 			medium_plane_fighter_airframe_2
 			medium_plane_scout_plane_airframe_2
 		}
+		enable_equipment_modules = {
+			engine_3_2x
+			fuel_injection_m		
+			radio_navigation_1	
+		}
 	
 		path = {
 			leads_to_tech = advanced_medium_airframe
@@ -433,6 +460,11 @@ technologies = {
 			medium_plane_airframe_3
 			medium_plane_fighter_airframe_3
 			medium_plane_scout_plane_airframe_3
+		}
+		enable_equipment_modules = {
+			engine_4_2x
+			fuel_injection2_m	
+			radio_navigation_2
 		}
 		
 		path = {

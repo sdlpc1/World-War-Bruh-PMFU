@@ -95,6 +95,22 @@ free_templates = {
 	}
 }
 
+# faster_div_reinforcement = {
+# 	name = "RULE_FASTER_REINFORCEMENT"
+# 	group = "RULE_GROUP_TFB"
+# 	icon = ""
+# 	default = {
+# 		name = "DISABLED"
+# 		text = "RULE_OPTION_DISABLED"
+# 		desc = "RULE_FASTER_REINFORCEMENT_DISABLED_DESC"
+# 	}
+# 	option = {
+# 		name = "ENABLED"
+# 		text = "RULE_OPTION_ENABLED"
+# 		desc = "RULE_FASTER_REINFORCEMENT_ENABLED_DESC"
+# 	}
+# }
+
 horst_host_country = {
 	name = "Select Host"
 	group = "RULE_GROUP_TFB"

@@ -225,6 +225,8 @@ set_popularities = {
 
 create_faction = "Dai Tōa Kyōeiken"
 
+JAP = { add_to_faction = SIA }
+
 
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda

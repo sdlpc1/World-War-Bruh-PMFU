@@ -3169,6 +3169,22 @@ ideas = {
 			}
 		}
 
+		GER_faster_reinforce_rate = {
+			allowed = {
+				
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				land_reinforce_rate = 500
+			}
+		}
+
 		fascism_drift_ARG = {
 
 			allowed = {

@@ -1465,7 +1465,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 1930
+		start_year = 1939
 
 		folder = {
 			name = mtgnavalfolder

@@ -1140,3 +1140,6 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  RULE_FREE_TEMPLATES:0 "Free Templates"
  RULE_FREE_TEMPLATES_DISABLED_DESC:0 "Designing free division templates is disabled (default)"
  RULE_FREE_TEMPLATES_ENABLED_DESC:0 "Designing free division templates is enabled"
+ RULE_FASTER_REINFORCEMENT:0 "Faster Division Reinforcement"
+ RULE_FASTER_REINFORCEMENT_DISABLED_DESC:0 "Manpower and equipment will not reinforce faster (default)"
+ RULE_FASTER_REINFORCEMENT_ENABLED_DESC:0 "Manpower and equipment will reinforce faster"
