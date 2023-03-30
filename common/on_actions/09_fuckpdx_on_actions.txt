@@ -146,6 +146,9 @@ on_actions = {
 				JAP = {
 					set_global_flag = JAP_china_has_capped
 				}
+				CHI = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
 			}
 		}
 		# Japan Takes all of China
@@ -170,6 +173,9 @@ on_actions = {
 				}
 				JAP = {
 					set_global_flag = JAP_china_has_capped
+				}
+				CHI = {
+					news_event = { id = country_capitulated.0 days = 0 }
 				}
 			}
 		}
@@ -199,6 +205,9 @@ on_actions = {
 				JAP = {
 					set_global_flag = JAP_china_has_capped
 				}
+				CHI = {
+					news_event = { id = country_capitulated.0 days = 0 }
+				}
 			}
 		}
 
@@ -215,6 +224,9 @@ on_actions = {
 						transfer_troops = no
 					}
 					add_named_threat = { threat = -0.3 name = ITA_treaty_of_addis }
+				}
+				ETH = {
+					news_event = { id = country_capitulated.0 days = 0 }
 				}
 			}
 		}
@@ -282,6 +294,9 @@ on_actions = {
 				}
 				USA = {
 					country_event = usa.71
+				}
+				JAP = {
+					news_event = { id = country_capitulated.0 days = 0 }
 				}
 			}
 		}
