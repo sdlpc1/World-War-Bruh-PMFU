@@ -204,10 +204,10 @@ add_ideas = {
 
 
 # DIPLOMACY
-set_autonomy = {
-	target = PHI
-	autonomous_state =  autonomy_puppet
-}
+# set_autonomy = {
+# 	target = PHI
+# 	autonomous_state =  autonomy_puppet
+# }
 
 recruit_character = USA_franklin_delano_roosevelt
 recruit_character = USA_william_dudley_pelley
