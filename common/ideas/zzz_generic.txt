@@ -172,10 +172,6 @@ ideas = {
 
 			cancel = {
 				has_war = yes
-				OR = {
-					date > 1939.1.1
-					has_war_with = CHI
-				}
 			}
 
 			removal_cost = -1
