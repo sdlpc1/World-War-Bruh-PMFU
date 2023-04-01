@@ -46,6 +46,7 @@ set_convoys = 15
 
 add_ideas = {
 	volunteer_minimum_minor
+	peace_training
 }
 
 set_politics = {

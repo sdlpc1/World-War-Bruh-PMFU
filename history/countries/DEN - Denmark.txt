@@ -12,6 +12,7 @@ if = {
 add_ideas = {
 	DEN_surrender
 	stupid_ai
+	peace_training
 }
 
 # MP_garrison_division_standard = yes

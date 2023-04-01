@@ -217,6 +217,8 @@
  father_check:0 "No Father?"
  father_check_desc:0 "Some players need some fatherly guidance due to a lack of that in their life"
  rail_way_plural:0 "Railways"
+ peace_training:0 "Peaceful Training"
+ peace_training_desc:0 "§RBe careful to not accidently go over £training_speed_texticon  -100% division training time from propaganda and techs.§!"
 
  #### BUILDINGS ####
  synthetic_rubber_refinery:0 "Synthetic Rubber Refinery"
@@ -1140,6 +1142,6 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  RULE_FREE_TEMPLATES:0 "Free Templates"
  RULE_FREE_TEMPLATES_DISABLED_DESC:0 "Designing free division templates is disabled (default)"
  RULE_FREE_TEMPLATES_ENABLED_DESC:0 "Designing free division templates is enabled"
- RULE_FASTER_REINFORCEMENT:0 "Faster Division Reinforcement"
- RULE_FASTER_REINFORCEMENT_DISABLED_DESC:0 "Manpower and equipment will not reinforce faster (default)"
- RULE_FASTER_REINFORCEMENT_ENABLED_DESC:0 "Manpower and equipment will reinforce faster"
+ RULE_ITALIAN_COSTAL_FORTS_FOCUS:0 "Italian Costal Forts Focus"
+ RULE_ITALIAN_COSTAL_FORTS_FOCUS_DISABLED_DESC:0 "Italian national focus to spawn lvl 5 costal forts on every naval port turned disabled (default)"
+ RULE_ITALIAN_COSTAL_FORTS_FOCUS_ENABLED_DESC:0 "Italian national focus to spawn lvl 5 costal forts on every naval port enabled"

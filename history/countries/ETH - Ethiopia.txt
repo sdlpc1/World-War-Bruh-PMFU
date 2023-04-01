@@ -11,6 +11,8 @@ set_technology = {
 
 # MP_garrison_division_standard = yes
 
+add_ideas = peace_training
+
 set_convoys = 5
 
 1939.1.1 = {

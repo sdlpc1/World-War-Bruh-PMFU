@@ -3524,7 +3524,7 @@
 		id = YUG_coastal_defense
 		icon = GFX_focus_generic_coastal_fort
 		prerequisite = { focus = YUG_expand_the_serbian_shipyards }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = YUG_expand_the_serbian_shipyards
 

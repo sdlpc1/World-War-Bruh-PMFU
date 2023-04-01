@@ -2303,7 +2303,7 @@ focus_tree = {
 		}
 		
 		available = {
-			has_idea = GER_heinrich_himmler
+			# has_idea = GER_heinrich_himmler
 		}
 
 		completion_reward = {

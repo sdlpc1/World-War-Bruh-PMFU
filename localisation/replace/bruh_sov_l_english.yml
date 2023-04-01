@@ -210,7 +210,7 @@
   SOV_tank_riders_desc:0 "The cost for transport is too high, perhaps our infantry can simply ride the tanks instead?"
   SOV_zhukov_deep_battle:0 "Zhukovs Deep Battle"
   SOV_zhukov_deep_battle_desc:0 "We must implement the Deep Battle Doctrine immediately!"
-  SOV_zhukov:0 "Give Zhukov full command"
+  SOV_zhukov:0 "Give Zhukov Full Command"
   SOV_zhukov_desc:0 "We must give Zhukov full authority to reform the STAVKA, or we are finished!"
   SOV_frontline_command:0 "Frontline Command"
   SOV_frontline_command_desc:0 "Rid the army of the dual command system and incentivize frontline commander initiative!"

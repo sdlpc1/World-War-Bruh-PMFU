@@ -72,6 +72,7 @@ if = {
 		POL_sanation_right_opposition_1
 		PACIFIC_COMMONWEALTH_controls_original
 		POL_supply_fix
+		peace_training
 	}
 }
 

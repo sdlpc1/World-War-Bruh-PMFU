@@ -17,6 +17,9 @@ set_technology = {
 	transport = 1
 	fuel_silos = 1
 }
+
+add_ideas = peace_training
+
 #set_variable = { allies_poster_center_icon_frame = 1 }
 if = {
 	limit = {

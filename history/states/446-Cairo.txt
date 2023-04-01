@@ -12,7 +12,7 @@ state=
 
 	history=
 	{
-		
+		set_state_flag = ENG_controls
 		owner = ENG
 		buildings = {
 			infrastructure = 5

@@ -1343,7 +1343,7 @@ focus_tree = {
 		id = SAF_improve_the_three_oh_three
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = SAF_special_service_battalion }
-		mutually_exclusive = { focus = SAF_armor_effort }
+		# mutually_exclusive = { focus = SAF_armor_effort }
 		x = 14
 		y = 2
 
@@ -1420,7 +1420,7 @@ focus_tree = {
 		id = SAF_armor_effort
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SAF_special_service_battalion }
-		mutually_exclusive = { focus = SAF_improve_the_three_oh_three }
+		# mutually_exclusive = { focus = SAF_improve_the_three_oh_three }
 		x = 3
 		y = 2
 		relative_position_id = SAF_special_service_battalion

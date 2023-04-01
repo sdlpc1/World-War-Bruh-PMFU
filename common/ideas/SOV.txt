@@ -146,7 +146,7 @@ ideas = {
 			equipment_bonus = {
 				heavy_artillery_equipment = {
 					soft_attack = 0.15
-					build_cost_ic = 0.15
+					# build_cost_ic = 0.15
 				}
 			}
 
@@ -196,8 +196,8 @@ ideas = {
 				army_attack_speed_factor = 0.1
 				breakthrough_factor = 0.1
 				army_morale_factor = 0.1
-				army_defence_against_minor_factor = 0.1
-				army_strength_factor = -0.075
+				# army_defence_against_minor_factor = 0.1
+				# army_strength_factor = -0.075
 			}
 
 			equipment_bonus = {

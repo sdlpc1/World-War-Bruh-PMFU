@@ -19,6 +19,7 @@ add_ideas = {
 	MON_nomad_1
 	russian_closed_eco
 	MON_allow_soviet_trade
+	peace_training
 }
 
 set_variable = { mon_poster_center_icon_frame = 1 }

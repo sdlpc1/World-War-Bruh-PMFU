@@ -42,6 +42,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = peace_training
+
 set_popularities = {
 	neutrality = 100
 }

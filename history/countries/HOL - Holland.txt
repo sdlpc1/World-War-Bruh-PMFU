@@ -82,6 +82,7 @@ set_variable = { allies_poster_center_icon_frame = 1 }
 add_ideas = {
 	HOL_wilhelmina
 	neutrality_idea2
+	peace_training
 }
 
 if = {

@@ -6890,7 +6890,7 @@
 		}
 	}
 
-	focus = {
+	focus = { #d
 		id = SOV_bravery_rules
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		prerequisite = { focus = SOV_cavalry_tank }

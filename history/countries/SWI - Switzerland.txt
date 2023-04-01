@@ -221,6 +221,7 @@ add_ideas = {
 	neutrality_idea
 	neutrality_idea2
 	limited_conscription
+	peace_training
 }
 
 set_stability = 0.85

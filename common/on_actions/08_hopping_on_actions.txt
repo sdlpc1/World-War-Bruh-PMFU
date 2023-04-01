@@ -463,4 +463,66 @@ on_actions = {
 			}
 		}
 	}
+
+	## STATE OF THE MED
+	on_state_control_changed = {
+			effect = {
+				if = {
+					limit = {
+						FROM = {
+							OR = { 
+								is_in_faction_with = ENG
+								tag = ENG
+							}
+						}
+						ROOT = { 
+							OR = { 
+								is_in_faction_with = ITA
+								tag = ITA
+							} 
+						}
+						FROM.FROM = {
+							has_state_flag = ENG_controls
+						}
+					}
+					FROM.FROM = {  
+						set_state_flag = ITA_controls
+						clr_state_flag = ENG_controls
+					}
+					ITA = {
+						MEDITERRANEAN_AXIS_bases_level_up = yes
+					}
+				}
+			}
+	}
+	on_state_control_changed = {
+			effect = {
+				if = {
+					limit = {
+						FROM = { 
+							OR = { 
+								is_in_faction_with = ITA
+								tag = ITA
+							}
+						}
+						ROOT = {
+							OR = {
+								tag = ENG
+								is_in_faction_with = ENG
+							} 
+						}
+						FROM.FROM = {
+							has_state_flag = ITA_controls
+						}
+					}
+					FROM.FROM = { 
+						set_state_flag = ENG_controls 
+						clr_state_flag = ITA_controls 
+					}
+					ITA = {
+						MEDITERRANEAN_AXIS_bases_level_down = yes
+					}
+				}
+			}
+	}
 }

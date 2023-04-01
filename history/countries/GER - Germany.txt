@@ -176,6 +176,7 @@ add_ideas = {
 	partial_economic_mobilisation
 	PACIFIC_COMMONWEALTH_controls_axis_original
 	volunteer_minimum_major
+	peace_training
 }
 
 # MP_garrison_division_standard = yes

@@ -19,6 +19,7 @@ set_convoys = 50
 
 add_ideas = {
 	stupid_ai
+	peace_training
 }
 
 # MP_garrison_division_standard = yes

@@ -1719,45 +1719,45 @@ news_event = {
 }
 
 # Hindenburg Trigger (HIDDEN)
-news_event = {
-	id = news.51
-	hidden = yes
+# news_event = {
+# 	id = news.51
+# 	hidden = yes
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		date > 1937.5.5
-		date < 1939.5.5
-		country_exists = USA
-		country_exists = GER
-		USA = { has_war = no }
-		GER = { has_war = no }
-		GER = { has_civil_war = no }
-		NOT = { has_global_flag = hindenburg_destroyed }
-		NOT = { has_global_flag = hindenburg_event_in_progress }
-	}
+# 	trigger = {
+# 		date > 1937.5.5
+# 		date < 1939.5.5
+# 		country_exists = USA
+# 		country_exists = GER
+# 		USA = { has_war = no }
+# 		GER = { has_war = no }
+# 		GER = { has_civil_war = no }
+# 		NOT = { has_global_flag = hindenburg_destroyed }
+# 		NOT = { has_global_flag = hindenburg_event_in_progress }
+# 	}
 
-	mean_time_to_happen = {
-		days = 240
-	}
+# 	mean_time_to_happen = {
+# 		days = 240
+# 	}
 	
-	immediate = {
-		random_list = {
-			70 = {
-				modifier = {
-					factor = 0
-					has_global_flag = GER_air_safety_regulations_flag
-				}
-				USA = { news_event = { id = news.42 } }
-			}
-			30 = { USA = { news_event = { id = news.43 } } }
-		}
-	}
+# 	immediate = {
+# 		random_list = {
+# 			70 = {
+# 				modifier = {
+# 					factor = 0
+# 					has_global_flag = GER_air_safety_regulations_flag
+# 				}
+# 				USA = { news_event = { id = news.42 } }
+# 			}
+# 			30 = { USA = { news_event = { id = news.43 } } }
+# 		}
+# 	}
 	
-	option = {
-		name = news.51.a
-	}
-}
+# 	option = {
+# 		name = news.51.a
+# 	}
+# }
 
 # Rudolf Hess Trigger (HIDDEN)
 news_event = {

@@ -1582,6 +1582,26 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					ITA = {
+						has_war = yes
+						date > 1938.1.1
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_0 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_1 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_2 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_3 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_4 }
+						NOT = { has_idea = MEDITERRANEAN_AXIS_controls_idea_5 }
+					}
+				}
+				ITA = {
+					remove_ideas = MEDITERRANEAN_AXIS_controls_original
+					add_ideas = MEDITERRANEAN_AXIS_controls_idea_1
+				}
+			}
+		}
 
 		#SOVIET - If Soviet has "Long Live to Peace" propaganda campaign active, bad shit happens if they enter a war
 		effect = {

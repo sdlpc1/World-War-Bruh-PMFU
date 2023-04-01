@@ -5351,3 +5351,61 @@ country_event = {
 		name = germany.2003.a
 	}
 }
+
+# (Hidden)
+country_event = {
+	id = germany.502
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = GER_atlantik_germany_mission_completed }
+				has_country_flag = GER_auto_atlantic_wall_on
+				NOT = { has_country_flag = GER_atlantik_germany_completed_normal }
+			}
+			set_country_flag = GER_start_atlantik_germany_mission
+			set_country_flag = GER_atlantik_auto_in_progress
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = GER_atlantik_benelux_mission_completed }
+				has_country_flag = GER_auto_atlantic_wall_on
+				NOT = { has_country_flag = GER_atlantik_benelux_completed_normal }
+			}
+			set_country_flag = GER_start_atlantik_benelux_mission
+			set_country_flag = GER_atlantik_auto_in_progress
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = GER_atlantik_north_france_mission_completed }
+				has_country_flag = GER_auto_atlantic_wall_on
+				NOT = { has_country_flag = GER_atlantik_north_france_completed_normal }
+			}
+			set_country_flag = GER_start_atlantik_north_france_mission
+			set_country_flag = GER_atlantik_auto_in_progress
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = GER_atlantik_west_france_mission_completed }
+				has_country_flag = GER_auto_atlantic_wall_on
+				NOT = { has_country_flag = GER_atlantik_west_france_completed_normal }
+			}
+			set_country_flag = GER_start_atlantik_west_france_mission
+			set_country_flag = GER_atlantik_auto_in_progress
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = GER_atlantik_south_france_mission_completed }
+				has_country_flag = GER_auto_atlantic_wall_on
+				NOT = { has_country_flag = GER_atlantik_south_france_completed_normal }
+			}
+			set_country_flag = GER_start_atlantik_south_france_mission
+			set_country_flag = GER_atlantik_auto_in_progress
+			set_country_flag = GER_atlantik_auto_completed
+		}
+	}
+}

@@ -5863,12 +5863,12 @@
 					tooltip = clamp_down_on_danzig_tt
 				}
 			}
-			hidden_effect = {
-				news_event = {
-					id = nsb_news.4
-					days = 1
-				}
-			}
+			# hidden_effect = {
+			# 	news_event = {
+			# 		id = nsb_news.4
+			# 		days = 1
+			# 	}
+			# }
 		}
 	}
 

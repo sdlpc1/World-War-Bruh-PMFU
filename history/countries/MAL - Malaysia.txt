@@ -35,6 +35,8 @@ set_technology = {
 	radio_detection = 1
 }
 
+add_ideas = peace_training
+
 # MP_garrison_division_standard = yes
 
 if = {
