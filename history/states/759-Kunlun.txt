@@ -9,7 +9,7 @@ state={
 	state_category = wasteland
 	history={
 		owner = MON
-		add_core_of = SIK
+		add_core_of = WST
 		buildings = {
 			infrastructure = 3
 

@@ -88,10 +88,7 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_revoke_guarantees
-				option = BLOCKED
-			}
+			always = yes
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_REVOKE_GUARANTEES_BLOCKED_TOOLTIP
@@ -196,7 +193,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = SRL } }
 			NOT = { FROM = { tag = MLD } }
 			NOT = { FROM = { tag = FIJ } }
-			NOT = { FROM = { tag = BRM } }
+			NOT = { FROM = { tag = WST } }
 			NOT = { FROM = { tag = SUD } }
 			NOT = { FROM = { tag = SOM } }
 			NOT = { FROM = { tag = UGA } }

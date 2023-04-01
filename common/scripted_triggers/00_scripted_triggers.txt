@@ -130,46 +130,46 @@ check_has_focus_tree_to_switch_to_democratic = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	NOT = {
-		AND = {
-			tag = YUN
-			has_dlc = "Waking the Tiger"
-			NOT = { has_focus_tree = china_nationalist_focus }
-		}
-	}
-	NOT = {
-		AND = {
-			tag = GXC
-			has_dlc = "Waking the Tiger"
-			NOT = { has_focus_tree = china_nationalist_focus }
-		}
-	}
-	NOT = {
-		AND = {
-			tag = XSM
-			has_dlc = "Waking the Tiger"
-			NOT = { has_focus_tree = china_nationalist_focus }
-		}
-	}
-	NOT = {
-		AND = {
-			tag = SHX
-			has_dlc = "Waking the Tiger"
-			NOT = { has_focus_tree = china_nationalist_focus }
-		}
-	}
-	NOT = {
-		AND = {
-			tag = SIK
-			has_dlc = "Waking the Tiger"
-			NOT = { has_focus_tree = china_nationalist_focus }
-		}
-	}
+	# NOT = {
+	# 	AND = {
+	# 		tag = YUN
+	# 		has_dlc = "Waking the Tiger"
+	# 		NOT = { has_focus_tree = china_nationalist_focus }
+	# 	}
+	# }
+	# NOT = {
+	# 	AND = {
+	# 		tag = GXC
+	# 		has_dlc = "Waking the Tiger"
+	# 		NOT = { has_focus_tree = china_nationalist_focus }
+	# 	}
+	# }
+	# NOT = {
+	# 	AND = {
+	# 		tag = XSM
+	# 		has_dlc = "Waking the Tiger"
+	# 		NOT = { has_focus_tree = china_nationalist_focus }
+	# 	}
+	# }
+	# NOT = {
+	# 	AND = {
+	# 		tag = SHX
+	# 		has_dlc = "Waking the Tiger"
+	# 		NOT = { has_focus_tree = china_nationalist_focus }
+	# 	}
+	# }
+	# NOT = {
+	# 	AND = {
+	# 		tag = SIK
+	# 		has_dlc = "Waking the Tiger"
+	# 		NOT = { has_focus_tree = china_nationalist_focus }
+	# 	}
+	# }
 }
 
 check_has_focus_tree_to_switch_to_communism = {
-	NOT = { tag = PRC }
-	NOT = { tag = SIK }
+	# NOT = { tag = PRC }
+	# NOT = { tag = SIK }
 	NOT = { tag = MAN }
 	NOT = { tag = SOV }
 	NOT = {
@@ -184,30 +184,30 @@ check_has_focus_tree_to_switch_to_communism = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	NOT = {
-		AND = {
-			tag = YUN
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	NOT = {
-		AND = {
-			tag = GXC
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	NOT = {
-		AND = {
-			tag = XSM
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	NOT = {
-		AND = {
-			tag = SHX
-			has_dlc = "Waking the Tiger"
-		}
-	}
+	# NOT = {
+	# 	AND = {
+	# 		tag = YUN
+	# 		has_dlc = "Waking the Tiger"
+	# 	}
+	# }
+	# NOT = {
+	# 	AND = {
+	# 		tag = GXC
+	# 		has_dlc = "Waking the Tiger"
+	# 	}
+	# }
+	# NOT = {
+	# 	AND = {
+	# 		tag = XSM
+	# 		has_dlc = "Waking the Tiger"
+	# 	}
+	# }
+	# NOT = {
+	# 	AND = {
+	# 		tag = SHX
+	# 		has_dlc = "Waking the Tiger"
+	# 	}
+	# }
 	NOT = {
 		AND = {
 			tag = USA
@@ -333,102 +333,24 @@ ai_land_doctrine_tier_2_trigger = {
 
 CHI_is_on_historical_plan_trigger = {
 	has_dlc = "Waking the Tiger"
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = CHI_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = CHI_AI_RANDOM_HISTORICAL
-		has_game_rule = {
-			rule = CHI_ai_behavior
-			option = HISTORICAL
-		}
-	}
+	always = yes
 }
 SOV_is_on_historical_plan_trigger = {
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = SOV_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = SOV_AI_RANDOM_COMMUNIST_HISTORICAL
-		has_game_rule = {
-			rule = SOV_ai_behavior
-			option = HISTORICAL
-		}
-	}
+	always = yes
 }
 USA_is_on_historical_plan_trigger = {
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = USA_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = USA_AI_DEMOCRATIC_HISTORICAL
-		has_game_rule = {
-			rule = USA_ai_behavior
-			option = DEMOCRATIC_HISTORICAL
-		}
-	}
+	always = yes
 }
 ROM_is_on_historical_plan_trigger = {
 	has_dlc = "Death or Dishonor"
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = ROM_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = ROM_AI_RANDOM_FASCIST_HISTORICAL
-		has_game_rule = {
-			rule = ROM_ai_behavior
-			option = FASCIST_HISTORICAL
-		}
-	}
+	always = yes
 }
 HUN_is_on_historical_plan_trigger = {
 	has_dlc = "Death or Dishonor"
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = HUN_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = HUN_AI_RANDOM_FASCIST_HISTORICAL
-		has_game_rule = {
-			rule = HUN_ai_behavior
-			option = FASCIST_HISTORICAL
-		}
-	}
+	always = yes
 }
 ENG_is_on_historical_plan_trigger = {
-	OR = {
-		AND = {
-			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = ENG_ai_behavior
-				option = DEFAULT
-			}
-		}
-		has_country_flag = ENG_AI_DEMOCRATIC_HISTORICAL
-		has_game_rule = {
-			rule = eng_ai_behavior
-			option = DEMOCRATIC_HISTORICAL
-		}
-	}
+	always = yes
 }
 
 SOV_save_pp_for_manpower_trouble = {
@@ -961,53 +883,53 @@ country_can_be_reasonable_target_of_wargoal = { #Expected scopes: Target country
 
 is_unlikely_country_tag = {
 	OR = {
-	    tag = BRI
-	    tag = CAT
-	    tag = NAV
-	    tag = GLC
-	    tag = ADU
-	    tag = BRI
-	    tag = OCC
-	    tag = COR
-	    tag = DNZ
-	    tag = KSH
-	    tag = CKK
-	    tag = FER
-	    tag = YAK
-	    tag = VLA
-	    tag = KKP
-	    tag = YAM
-	    tag = TAY
-	    tag = OVO
-	    tag = NEN
-	    tag = KOM
-	    tag = CHU
-	    tag = MEL
-	    tag = RIF
-	    tag = HAR
-	    tag = TIG
-	    tag = AFA
-	    tag = BEG
-	    tag = GBA
-	    tag = SID
-	    tag = ORO
-	    tag = QEM
-	    tag = LBV
-	    tag = PAP
-	    tag = TOS
-	    tag = SPM
-	    tag = TTS
-		tag = BSK
-		tag = TAT
-		tag = UDM
-		tag = KHA
-		tag = VGE
-		tag = KAL
-		tag = KAR
-		tag = SIL
-		tag = KSH
-		tag = ALT
-		tag = UZB
-		tag = KHI
+	    # tag = BRI
+	    # tag = CAT
+	    # tag = NAV
+	    # tag = GLC
+	    # tag = ADU
+	    # tag = BRI
+	    # tag = OCC
+	    # tag = COR
+	    # tag = DNZ
+	    # tag = KSH
+	    # tag = CKK
+	    # tag = FER
+	    # tag = YAK
+	    # tag = VLA
+	    # tag = KKP
+	    # tag = YAM
+	    # tag = TAY
+	    # tag = OVO
+	    # tag = NEN
+	    # tag = KOM
+	    # tag = CHU
+	    # tag = MEL
+	    # tag = RIF
+	    # tag = HAR
+	    # tag = TIG
+	    # tag = AFA
+	    # tag = BEG
+	    # tag = GBA
+	    # tag = SID
+	    # tag = ORO
+	    # tag = QEM
+	    # tag = LBV
+	    # tag = PAP
+	    # tag = TOS
+	    # tag = SPM
+	    # tag = TTS
+		# tag = BSK
+		# tag = TAT
+		# tag = UDM
+		# tag = KHA
+		# tag = VGE
+		# tag = KAL
+		# tag = KAR
+		# tag = SIL
+		# tag = KSH
+		# tag = ALT
+		# tag = UZB
+		# tag = KHI
 	}
 }

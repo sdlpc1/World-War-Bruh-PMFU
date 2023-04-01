@@ -4,9 +4,9 @@ state={
 	
 	state_category = pastoral
 
-	resources={
-		rubber=60 # was: 6.000
-	}
+	# resources={
+	# 	rubber=60 # was: 6.000
+	# }
 
 	history={
 		owner = BEL
@@ -14,7 +14,7 @@ state={
 			infrastructure = 2
 
 		}
-		add_core_of = ZIM
+		add_core_of = WST
 	}
 
 	provinces={

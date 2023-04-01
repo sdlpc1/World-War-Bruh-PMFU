@@ -241,7 +241,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1787;4856;impassable;-1;-1;-1;-1;-1;;Gobi
 12612;4856;impassable;-1;-1;-1;-1;-1;;Gobi
 12612;4655;impassable;-1;-1;-1;-1;-1;;Gobi
-13228;1048;impassable;-1;-1;-1;-1;-1;;Gibraltar
+13228;1048;impassable;-1;-1;-1;-1;-1;;Gibraltarimage.png
 13228;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
@@ -266,8 +266,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13052;13255;sea;8908;-1;-1;-1;-1;;Midway
 13047;13256;sea;7247;-1;-1;-1;-1;;Wake North
 13257;13258;sea;8264;-1;-1;-1;-1;;Wake South 
-5539;5960;;-1;-1;-1;-1;-1;SINGAPORE_CORRIDOR;Singapore
-2737;2714;;-1;-1;-1;-1;-1;JAVA_STRAIT;Java
 2776;2800;;-1;-1;-1;-1;-1;DJIBOUTI_STRAIT;Djibouti
 2431;2382;;-1;-1;-1;-1;-1;ORESUND_STRAIT;ORESUND
 2431;2408;;-1;-1;-1;-1;-1;THE_BELTS;TheBelts

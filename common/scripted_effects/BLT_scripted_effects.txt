@@ -71,20 +71,6 @@ LIT_iron_wolf_down_effect = {
 		if = { #Easier civil war for AI on historical since we don't want historical Lithuanian AI to join the Axis and so on
 			limit = {
 				is_ai = yes
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = LIT_ai_behavior
-							option = DEFAULT
-						}
-					}
-					has_country_flag = LIT_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = LIT_ai_behavior
-						option = HISTORICAL
-					}
-				}
 			}
 			start_civil_war = {
 				ideology = fascism
@@ -207,20 +193,6 @@ EST_vaps_down_effect = {
 		if = { #Easier civil war for AI on historical since we don't want historical Estonian AI to puppet Finland and form the Fino-Ugra Empire
 			limit = {
 				is_ai = yes
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = EST_ai_behavior
-							option = DEFAULT
-						}
-					}
-					has_country_flag = EST_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = EST_ai_behavior
-						option = HISTORICAL
-					}
-				}
 			}
 			start_civil_war = {
 				ideology = fascism

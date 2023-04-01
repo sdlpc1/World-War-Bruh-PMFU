@@ -106,3 +106,6 @@
   #### FLAGS ####
   FIN_winter_victory:0 "Victory in the Winter War"
   FIN_winter_war_started:0 "Winter War has Started"
+
+  ### DESCRIPTION ###
+  FIN_GATHERING_STORM_DESC:0 "In 1936, Finland was a young and relatively small country located in Northern Europe. It had gained independence from Russia in 1917, and had since then established a parliamentary republic. However, tensions with the Soviet Union had been growing due to Finland's unwillingness to cede territory to the USSR. Despite this, Finland maintained a democratic system and a strong economy based on exports of timber, paper, and other natural resources. The military was primarily focused on defending the country from potential aggression by the Soviet Union, and had built up a network of defensive fortifications along the eastern border."

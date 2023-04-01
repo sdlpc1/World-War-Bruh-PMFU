@@ -1869,42 +1869,42 @@
 			}
 		}
 	}
-	focus = {
-		id = FRA_national_uprising
-		icon = GFX_goal_generic_dangerous_deal
-		x = -1
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_national_council_of_the_resistance
-		}
-		relative_position_id = FRA_national_council_of_the_resistance
+	# focus = {
+	# 	id = FRA_national_uprising
+	# 	icon = GFX_goal_generic_dangerous_deal
+	# 	x = -1
+	# 	y = 1
+	# 	offset = {
+	# 		x = 0
+	# 		y = 0
+	# 	}
+	# 	prerequisite = { 
+	# 		focus = FRA_national_council_of_the_resistance
+	# 	}
+	# 	relative_position_id = FRA_national_council_of_the_resistance
 		
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
 			
-		}
+	# 	}
 		
-		bypass = {
+	# 	bypass = {
 
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			add_timed_idea = { idea = FRA_national_uprising days = 365 }
-		}
-	}
+	# 	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = yes
+	# 	completion_reward = {
+	# 		add_timed_idea = { idea = FRA_national_uprising days = 365 }
+	# 	}
+	# }
 	focus = {
 		id = FRA_french_forces_of_the_interior
 		icon = GFX_focus_prc_infiltration
-		x = 1
+		x = 0
 		y = 1
 		offset = {
 			x = 0

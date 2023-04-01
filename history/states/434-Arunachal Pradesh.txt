@@ -5,9 +5,9 @@ state={
 	manpower = 200000
 	
 	state_category = wasteland
-	resources={
-		tungsten=590 # was: 54
-	}
+	# resources={
+	# 	tungsten=590 # was: 54
+	# }
 
 	history={
 		owner = RAJ

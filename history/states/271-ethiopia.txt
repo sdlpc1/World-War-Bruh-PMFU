@@ -11,6 +11,7 @@ state=
 
 	history=
 	{
+		set_state_flag = ITA_controls
 		owner = ETH
 		buildings = {
 			infrastructure = 3

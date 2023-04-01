@@ -1,0 +1,35 @@
+ideas = {
+
+	country = {
+	    volunteer_minimum_major = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+
+			modifier = {
+                send_volunteer_size = 5
+			}
+		}	
+
+		volunteer_minimum_minor = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+
+			modifier = {
+                send_volunteer_size = 3
+			}
+		}	
+	}
+
+}

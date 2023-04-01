@@ -1067,23 +1067,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = LIT_ai_behavior
-							option = DEFAULT
-						}
-					}
-					has_country_flag = LIT_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = LIT_ai_behavior
-						option = HISTORICAL
-					}
-				}
-			}
 		}
 
 		available = {
@@ -3109,24 +3092,6 @@ focus_tree = {
 					}
 				} #AI should seek an alliance if they are in immediate danger
 			}
-			modifier = { #Don't mess with history (unless ppl are ignoring you)
-				factor = 0
-				date < 1942.1.1
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = LIT_ai_behavior
-							option = DEFAULT
-						}
-					}
-					has_country_flag = LIT_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = LIT_ai_behavior
-						option = HISTORICAL
-					}
-				}
-			}
 		}
 
 		available = {
@@ -3287,18 +3252,6 @@ focus_tree = {
 				OR = {
 					LAT = { is_ai = no }
 					EST = { is_ai = no } #The AI shouldn't try to lead a Baltic faction if one of the Baltic nations is a player. Would lead to the player having to rush the focus.
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = LIT_ai_behavior
-							option = DEFAULT
-						}
-					}
-					has_country_flag = LIT_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = LIT_ai_behavior
-						option = HISTORICAL
-					}
 				}
 			}
 			modifier = {
@@ -4512,7 +4465,7 @@ focus_tree = {
 				tooltip = control_all_ukrainian_states_tt
 				all_state = {
 					OR = {
-						NOT = { is_core_of = UKR }
+						# NOT = { is_core_of = UKR }
 						controls_or_subject_of = yes
 					}
 				}
@@ -4739,8 +4692,8 @@ focus_tree = {
 				limit = {
 					OR = {
 						is_core_of = LIT
-						is_core_of = KSH
-						is_core_of = UKR
+						# is_core_of = KSH
+						# is_core_of = UKR
 						state = 96
 						state = 95
 						state = 94

@@ -13,7 +13,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 12
 			owns_state = 597
 			controls_state = 597
 		}
@@ -34,7 +34,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 13
 		}
 
 		ai_will_do = {
@@ -45,7 +45,7 @@ prospect_for_resources = {
 			597 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 260
 				}
 			}
 		}
@@ -63,7 +63,7 @@ prospect_for_resources = {
 		}
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 8
 			owns_state = 621
 			controls_state = 621
 		}
@@ -84,7 +84,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 9
 		}
 
 		ai_will_do = {
@@ -95,7 +95,7 @@ prospect_for_resources = {
 			621 = {
 				add_resource = {
 					type = steel
-					amount = 80
+					amount = 180
 				}
 			}
 		}
@@ -113,7 +113,7 @@ prospect_for_resources = {
 		}
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 15
 			owns_state = 714
 			controls_state = 714
 		}
@@ -131,10 +131,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 60
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 16
 		}
 
 		ai_will_do = {
@@ -145,7 +145,7 @@ prospect_for_resources = {
 			714 = {
 				add_resource = {
 					type = oil
-					amount = 40
+					amount = 160
 				}
 			}
 		}
@@ -162,7 +162,7 @@ prospect_for_resources = {
 		}
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 25
 			owns_state = 714
 			controls_state = 714
 		}
@@ -181,10 +181,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 120
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 26
 		}
 
 		ai_will_do = {
@@ -195,7 +195,7 @@ prospect_for_resources = {
 			714 = {
 				add_resource = {
 					type = oil
-					amount = 80
+					amount = 260
 				}
 			}
 		}
@@ -210,7 +210,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 12
 			owns_state = 325
 			controls_state = 325
 		}
@@ -234,7 +234,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 13
 		}
 
 		ai_will_do = {
@@ -245,7 +245,7 @@ prospect_for_resources = {
 			325 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 260
 				}
 			}
 		}
@@ -260,7 +260,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 5
 			owns_state = 328
 			controls_state = 328
 		}
@@ -284,7 +284,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 6
 		}
 
 		ai_will_do = {
@@ -310,7 +310,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 12
 			owns_state = 605
 			controls_state = 605
 		}
@@ -334,7 +334,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 13
 		}
 
 		ai_will_do = {
@@ -345,7 +345,7 @@ prospect_for_resources = {
 			605 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 260
 				}
 			}
 		}
@@ -362,7 +362,7 @@ prospect_for_resources = {
 		available = {
 			owns_state = 623
 			controls_state = 623
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 11
 			has_tech = excavation3
 		}
 		highlight_states = {
@@ -382,10 +382,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 60
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 12
 		}
 
 		ai_will_do = {
@@ -396,7 +396,7 @@ prospect_for_resources = {
 			623 = {
 				add_resource = {
 					type = chromium
-					amount = 80
+					amount = 250
 				}
 			}
 		}
@@ -416,7 +416,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 19
 			owns_state = 627
 			controls_state = 627
 		}
@@ -437,7 +437,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 20
 		}
 
 		ai_will_do = {
@@ -448,7 +448,7 @@ prospect_for_resources = {
 			627 = {
 				add_resource = {
 					type = steel
-					amount = 80
+					amount = 400
 				}
 			}
 		}
@@ -464,7 +464,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 14
 			owns_state = 625
 			controls_state = 625
 		}
@@ -489,7 +489,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -501,7 +501,7 @@ prospect_for_resources = {
 			625 = {
 				add_resource = {
 					type = steel
-					amount = 60
+					amount = 300
 				}
 			}
 		}
@@ -517,7 +517,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 14
 			owns_state = 725
 			controls_state = 725
 		}
@@ -542,7 +542,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -558,7 +558,7 @@ prospect_for_resources = {
 			725 = {
 				add_resource = {
 					type = tungsten #standin for phosphates
-					amount = 40
+					amount = 300
 				}
 			}
 		}
@@ -573,7 +573,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 15
 			owns_state = 671
 			controls_state = 671
 		}
@@ -598,7 +598,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 16
 		}
 
 		ai_will_do = {
@@ -610,7 +610,7 @@ prospect_for_resources = {
 			671 = {
 				add_resource = {
 					type = aluminium
-					amount = 60
+					amount = 320
 				}
 			}
 		}
@@ -625,7 +625,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 11
 			owns_state = 336
 			controls_state = 336
 		}
@@ -650,7 +650,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 12
 		}
 
 		ai_will_do = {
@@ -662,7 +662,7 @@ prospect_for_resources = {
 			336 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 240
 				}
 			}
 		}
@@ -672,14 +672,12 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-			NOT = {
-				tag = ITA
-			}
+
 		}
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 39
 			owns_state = 662
 			controls_state = 662
 		}
@@ -701,10 +699,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 60
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 40
 		}
 
 		ai_will_do = {
@@ -718,7 +716,7 @@ prospect_for_resources = {
 			662 = {
 				add_resource = {
 					type = oil
-					amount = 80
+					amount = 400
 				}
 			}
 		}
@@ -735,7 +733,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 39
 			owns_state = 450
 			controls_state = 450
 		}
@@ -758,10 +756,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 60
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 40
 		}
 
 		ai_will_do = {
@@ -775,7 +773,7 @@ prospect_for_resources = {
 			450 = {
 				add_resource = {
 					type = oil
-					amount = 40
+					amount = 400
 				}
 			}
 		}
@@ -790,7 +788,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 10
 			owns_state = 518
 			controls_state = 518
 		}
@@ -812,10 +810,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 11
 		}
 
 		ai_will_do = {
@@ -829,7 +827,7 @@ prospect_for_resources = {
 			518 = {
 				add_resource = {
 					type = aluminium
-					amount = 80
+					amount = 220
 				}
 			}
 		}
@@ -844,7 +842,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 10
 			owns_state = 556
 			controls_state = 556
 		}
@@ -866,10 +864,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 11
 		}
 
 		ai_will_do = {
@@ -883,7 +881,7 @@ prospect_for_resources = {
 			556 = {
 				add_resource = {
 					type = aluminium
-					amount = 80
+					amount = 220
 				}
 			}
 		}
@@ -898,7 +896,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 14
 			owns_state = 556
 			controls_state = 556
 		}
@@ -924,10 +922,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -941,7 +939,7 @@ prospect_for_resources = {
 			556 = {
 				add_resource = {
 					type = aluminium
-					amount = 40
+					amount = 300
 				}
 			}
 		}
@@ -957,7 +955,7 @@ prospect_for_resources = {
 		available = {
 			owns_state = 543
 			controls_state = 543
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 3
 		}
 
 		highlight_states = {
@@ -977,10 +975,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 180
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 4
 		}
 
 		remove_effect = {
@@ -1010,7 +1008,7 @@ prospect_for_resources = {
 		available = {
 			owns_state = 543
 			controls_state = 543
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 3
 		}
 
 		highlight_states = {
@@ -1033,10 +1031,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 180
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 4
 		}
 
 		ai_will_do = {
@@ -1066,7 +1064,7 @@ prospect_for_resources = {
 		available = {
 			owns_state = 558
 			controls_state = 558
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 4
 		}
 
 		highlight_states = {
@@ -1086,10 +1084,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 180
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 5
 		}
 
 		ai_will_do = {
@@ -1128,7 +1126,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 17
 			owns_state = 56
 			controls_state = 56
 		}
@@ -1147,10 +1145,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 120
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 18
 		}
 
 		ai_will_do = {
@@ -1164,7 +1162,7 @@ prospect_for_resources = {
 			56 = {
 				add_resource = {
 					type = oil
-					amount = 60
+					amount = 180
 				}
 			}
 		}
@@ -1180,7 +1178,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 21
 			owns_state = 4
 			controls_state = 4
 		}
@@ -1203,10 +1201,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 120
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 22
 		}
 
 		ai_will_do = {
@@ -1220,7 +1218,7 @@ prospect_for_resources = {
 			4 = {
 				add_resource = {
 					type = oil
-					amount = 40
+					amount = 220
 				}
 			}
 		}
@@ -1239,7 +1237,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 17
 			owns_state = 36
 			controls_state = 36
 		}
@@ -1258,10 +1256,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 120
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 18
 		}
 
 		ai_will_do = {
@@ -1272,7 +1270,7 @@ prospect_for_resources = {
 			36 = {
 				add_resource = {
 					type = oil
-					amount = 60
+					amount = 180
 				}
 
 			}
@@ -1292,7 +1290,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 5
 			owns_state = 347
 			controls_state = 347
 		}
@@ -1310,10 +1308,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 6
 		}
 
 		remove_effect = {
@@ -1344,7 +1342,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 9
 			owns_state = 331
 			controls_state = 331
 		}
@@ -1362,10 +1360,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 10
 		}
 
 		ai_will_do = {
@@ -1383,7 +1381,7 @@ prospect_for_resources = {
 			331 = {
 				add_resource = {
 					type = steel
-					amount = 120
+					amount = 200
 				}
 			}
 		}
@@ -1398,7 +1396,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 10
 			466 = {
 				infrastructure > 2
 			}
@@ -1422,10 +1420,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 11
 		}
 		remove_effect = {
 			466 = {
@@ -1434,7 +1432,7 @@ prospect_for_resources = {
 			466 = {
 				add_resource = {
 					type = steel
-					amount = 120
+					amount = 220
 				}
 			}
 		}
@@ -1513,7 +1511,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 6
 			owns_state = 372
 			controls_state = 372
 		}
@@ -1532,15 +1530,15 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_arkansas_aluminium_duration?30
+		days_remove = USA_arkansas_aluminium_duration?60
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 7
 		}
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_arkansas_aluminium_duration value = 30 }
+			add_to_variable = { var = USA_arkansas_aluminium_duration value = 60 }
 			372 = {
 				if = {
 					limit = {
@@ -1563,7 +1561,7 @@ prospect_for_resources = {
 			372 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 150
 				}
 			}
 		}
@@ -1579,9 +1577,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_arkansas_aluminium_duration value = 30 compare = less_than }
+					check_variable = { var = USA_arkansas_aluminium_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = USA_arkansas_aluminium_duration value = 30 }
+				set_variable = { var = USA_arkansas_aluminium_duration value = 60 }
 			}
 		}
 	}
@@ -1597,7 +1595,7 @@ prospect_for_resources = {
 		}
 		available = {
 			has_tech = construction2
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 6
 			owns_state = 358
 			controls_state = 358
 		}
@@ -1616,10 +1614,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_new_york_aluminium_duration?30
+		days_remove = USA_new_york_aluminium_duration?60
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 7
 		}
 
 		ai_will_do = {
@@ -1632,7 +1630,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_new_york_aluminium_duration value = 30 }
+			add_to_variable = { var = USA_new_york_aluminium_duration value = 60 }
 			358 = {
 				if = {
 					limit = {
@@ -1655,7 +1653,7 @@ prospect_for_resources = {
 			358 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 150
 				}
 			}
 		}
@@ -1663,9 +1661,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_new_york_aluminium_duration value = 30 compare = less_than }
+					check_variable = { var = USA_new_york_aluminium_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = USA_new_york_aluminium_duration value = 30 }
+				set_variable = { var = USA_new_york_aluminium_duration value = 60 }
 			}
 		}
 	}
@@ -1681,7 +1679,7 @@ prospect_for_resources = {
 			has_tech = construction2
 			owns_state = 368
 			controls_state = 368
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 6
 		}
 
 		highlight_states = {
@@ -1702,10 +1700,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_tennessee_aluminium_duration?30
+		days_remove = USA_tennessee_aluminium_duration?60
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 7
 		}
 
 		ai_will_do = {
@@ -1718,7 +1716,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_tennessee_aluminium_duration value = 30 }
+			add_to_variable = { var = USA_tennessee_aluminium_duration value = 60 }
 			368 = {
 				if = {
 					limit = {
@@ -1741,7 +1739,7 @@ prospect_for_resources = {
 			368 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 150
 				}
 			}
 		}
@@ -1749,9 +1747,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_tennessee_aluminium_duration value = 30 compare = less_than }
+					check_variable = { var = USA_tennessee_aluminium_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = USA_tennessee_aluminium_duration value = 30 }
+				set_variable = { var = USA_tennessee_aluminium_duration value = 60 }
 			}
 		}
 	}
@@ -1767,7 +1765,7 @@ prospect_for_resources = {
 			has_tech = construction2
 			owns_state = 386
 			controls_state = 386
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 6
 		}
 
 		highlight_states = {
@@ -1788,10 +1786,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_washington_aluminium_duration?30
+		days_remove = USA_washington_aluminium_duration?60
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 7
 		}
 
 		ai_will_do = {
@@ -1804,7 +1802,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_washington_aluminium_duration value = 30 }
+			add_to_variable = { var = USA_washington_aluminium_duration value = 60 }
 			386 = {
 				if = {
 					limit = {
@@ -1827,7 +1825,7 @@ prospect_for_resources = {
 			386 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 150
 				}
 			}
 		}
@@ -1835,9 +1833,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_washington_aluminium_duration value = 30 compare = less_than }
+					check_variable = { var = USA_washington_aluminium_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = USA_washington_aluminium_duration value = 30 }
+				set_variable = { var = USA_washington_aluminium_duration value = 60 }
 			}
 		}
 	}
@@ -1855,7 +1853,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 5
 			owns_state = 387
 			controls_state = 387
 		}
@@ -1874,10 +1872,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_idaho_tungsten_duration?30
+		days_remove = USA_idaho_tungsten_duration?60
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 6
 		}
 
 		ai_will_do = {
@@ -1890,7 +1888,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_idaho_tungsten_duration value = 30 }
+			add_to_variable = { var = USA_idaho_tungsten_duration value = 60 }
 			387 = {
 				if = {
 					limit = {
@@ -1913,7 +1911,7 @@ prospect_for_resources = {
 			387 = {
 				add_resource = {
 					type = tungsten
-					amount = 60
+					amount = 120
 				}
 			}
 		}
@@ -1921,9 +1919,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_idaho_tungsten_duration value = 30 compare = less_than }
+					check_variable = { var = USA_idaho_tungsten_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = USA_idaho_tungsten_duration value = 30 }
+				set_variable = { var = USA_idaho_tungsten_duration value = 60 }
 			}
 		}
 	}
@@ -1941,7 +1939,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 5
 			owns_state = 378
 			controls_state = 378
 		}
@@ -1960,10 +1958,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_california_tungsten_duration?30
+		days_remove = USA_california_tungsten_duration?60
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 6
 		}
 
 		ai_will_do = {
@@ -1976,7 +1974,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_california_tungsten_duration value = 30 }
+			add_to_variable = { var = USA_california_tungsten_duration value = 60 }
 			378 = {
 				if = {
 					limit = {
@@ -1999,7 +1997,7 @@ prospect_for_resources = {
 			378 = {
 				add_resource = {
 					type = tungsten
-					amount = 60
+					amount = 120
 				}
 			}
 		}
@@ -2007,9 +2005,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_california_tungsten_duration value = 30 compare = less_than }
+					check_variable = { var = USA_california_tungsten_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = USA_california_tungsten_duration value = 30 }
+				set_variable = { var = USA_california_tungsten_duration value = 60 }
 			}
 		}
 	}
@@ -2023,7 +2021,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 6
 			owns_state = 391
 			controls_state = 391
 		}
@@ -2046,10 +2044,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_minnesota_steel_duration?30
+		days_remove = USA_minnesota_steel_duration?60
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 7
 		}
 
 		ai_will_do = {
@@ -2062,7 +2060,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_minnesota_steel_duration value = 30 }
+			add_to_variable = { var = USA_minnesota_steel_duration value = 60 }
 			391 = {
 				if = {
 					limit = {
@@ -2085,7 +2083,7 @@ prospect_for_resources = {
 			391 = {
 				add_resource = {
 					type = steel
-					amount = 120
+					amount = 150
 				}
 			}
 		}
@@ -2093,9 +2091,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_minnesota_steel_duration value = 30 compare = less_than }
+					check_variable = { var = USA_minnesota_steel_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = USA_minnesota_steel_duration value = 30 }
+				set_variable = { var = USA_minnesota_steel_duration value = 60 }
 			}
 		}
 	}
@@ -2113,7 +2111,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 6
 			owns_state = 360
 			controls_state = 360
 		}
@@ -2132,10 +2130,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_pennsylvania_steel_duration?30
+		days_remove = USA_pennsylvania_steel_duration?60
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 7
 		}
 
 		ai_will_do = {
@@ -2148,7 +2146,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_pennsylvania_steel_duration value = 30 }
+			add_to_variable = { var = USA_pennsylvania_steel_duration value = 60 }
 			360 = {
 				if = {
 					limit = {
@@ -2171,7 +2169,7 @@ prospect_for_resources = {
 			360 = {
 				add_resource = {
 					type = steel
-					amount = 120
+					amount = 150
 				}
 			}
 		}
@@ -2179,9 +2177,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_pennsylvania_steel_duration value = 30 compare = less_than }
+					check_variable = { var = USA_pennsylvania_steel_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = USA_pennsylvania_steel_duration value = 30 }
+				set_variable = { var = USA_pennsylvania_steel_duration value = 60 }
 			}
 		}
 	}
@@ -2196,7 +2194,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 6
 			owns_state = 261
 			controls_state = 261
 		}
@@ -2219,10 +2217,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_ohio_steel_duration?30
+		days_remove = USA_ohio_steel_duration?60
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 7
 		}
 
 		ai_will_do = {
@@ -2235,7 +2233,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_ohio_steel_duration value = 30 }
+			add_to_variable = { var = USA_ohio_steel_duration value = 60 }
 			261 = {
 				if = {
 					limit = {
@@ -2258,7 +2256,7 @@ prospect_for_resources = {
 			261 = {
 				add_resource = {
 					type = steel
-					amount = 120
+					amount = 150
 				}
 			}
 		}
@@ -2266,9 +2264,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_ohio_steel_duration value = 30 compare = less_than }
+					check_variable = { var = USA_ohio_steel_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = USA_ohio_steel_duration value = 30 }
+				set_variable = { var = USA_ohio_steel_duration value = 60 }
 			}
 		}
 	}
@@ -2286,7 +2284,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 6
 			owns_state = 396
 			controls_state = 396
 		}
@@ -2305,10 +2303,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_indiana_steel_duration?30
+		days_remove = USA_indiana_steel_duration?60
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 7
 		}
 
 		ai_will_do = {
@@ -2321,7 +2319,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_indiana_steel_duration value = 30 }
+			add_to_variable = { var = USA_indiana_steel_duration value = 60 }
 			396 = {
 				if = {
 					limit = {
@@ -2344,7 +2342,7 @@ prospect_for_resources = {
 			396 = {
 				add_resource = {
 					type = steel
-					amount = 120
+					amount = 150
 				}
 			}
 		}
@@ -2352,9 +2350,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_indiana_steel_duration value = 30 compare = less_than }
+					check_variable = { var = USA_indiana_steel_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = USA_indiana_steel_duration value = 30 }
+				set_variable = { var = USA_indiana_steel_duration value = 60 }
 			}
 		}
 	}
@@ -2373,7 +2371,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 4
 			owns_state = 388
 			controls_state = 388
 		}
@@ -2393,10 +2391,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_montana_chromium_duration?30
+		days_remove = USA_montana_chromium_duration?90
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 5
 		}
 
 		ai_will_do = {
@@ -2409,7 +2407,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_montana_chromium_duration value = 30 }
+			add_to_variable = { var = USA_montana_chromium_duration value = 90 }
 			388 = {
 				if = {
 					limit = {
@@ -2432,7 +2430,7 @@ prospect_for_resources = {
 			388 = {
 				add_resource = {
 					type = chromium
-					amount = 60
+					amount = 100
 				}
 			}
 		}
@@ -2440,9 +2438,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_montana_chromium_duration value = 30 compare = less_than }
+					check_variable = { var = USA_montana_chromium_duration value = 90 compare = less_than }
 				}
-				set_variable = { var = USA_montana_chromium_duration value = 30 }
+				set_variable = { var = USA_montana_chromium_duration value = 90 }
 			}
 		}
 	}
@@ -2461,7 +2459,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 4
 			owns_state = 378
 			controls_state = 378
 		}
@@ -2481,10 +2479,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = USA_california_chromium_duration?30
+		days_remove = USA_california_chromium_duration?90
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 5
 		}
 
 		ai_will_do = {
@@ -2497,7 +2495,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_california_chromium_duration value = 30 }
+			add_to_variable = { var = USA_california_chromium_duration value = 90 }
 			378 = {
 				if = {
 					limit = {
@@ -2520,7 +2518,7 @@ prospect_for_resources = {
 			378 = {
 				add_resource = {
 					type = chromium
-					amount = 60
+					amount = 100
 				}
 			}
 		}
@@ -2528,9 +2526,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = USA_california_chromium_duration value = 30 compare = less_than }
+					check_variable = { var = USA_california_chromium_duration value = 90 compare = less_than }
 				}
-				set_variable = { var = USA_california_chromium_duration value = 30 }
+				set_variable = { var = USA_california_chromium_duration value = 90 }
 			}
 		}
 	}
@@ -2548,7 +2546,7 @@ prospect_for_resources = {
 
 		available = {
 			has_full_control_of_state = 537
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 15
 			has_tech = excavation3
 			controls_state = 537
 		}
@@ -2561,10 +2559,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 60
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 16
 		}
 
 		ai_will_do = {
@@ -2575,7 +2573,7 @@ prospect_for_resources = {
 			537 = {
 				add_resource = {
 					type = oil
-					amount = 80
+					amount = 160
 				}
 				set_state_flag = sakhalin_oil_developed
 			}
@@ -2595,7 +2593,7 @@ prospect_for_resources = {
 
 		available = {
 			has_full_control_of_state = 647
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 8
 			has_tech = excavation2
 			controls_state = 647
 		}
@@ -2611,7 +2609,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 9
 		}
 
 		ai_will_do = {
@@ -2622,7 +2620,7 @@ prospect_for_resources = {
 			647 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 180
 				}
 				set_state_flag = palau_aluminium_developed
 			}
@@ -2638,7 +2636,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 8
 			owns_state = 123
 			controls_state = 123
 		}
@@ -2663,7 +2661,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 9
 		}
 
 		ai_will_do = {
@@ -2680,7 +2678,7 @@ prospect_for_resources = {
 			123 = {
 				add_resource = {
 					type = tungsten
-					amount = 40
+					amount = 180
 				}
 			}
 		}
@@ -2695,7 +2693,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 9
 			owns_state = 123
 			controls_state = 123
 		}
@@ -2718,10 +2716,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 10
 		}
 
 		ai_will_do = {
@@ -2733,7 +2731,7 @@ prospect_for_resources = {
 			123 = {
 				add_resource = {
 					type = tungsten
-					amount = 60
+					amount = 200
 				}
 			}
 		}
@@ -2751,7 +2749,7 @@ prospect_for_resources = {
 
 		available = {
 			has_full_control_of_state = 195
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 8
 			has_tech = excavation2
 			controls_state = 195
 		}
@@ -2767,7 +2765,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 9
 		}
 
 		ai_will_do = {
@@ -2778,7 +2776,7 @@ prospect_for_resources = {
 			195 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 180
 				}
 				set_state_flag = leningrad_aluminium_developed				
 			}
@@ -2797,7 +2795,7 @@ prospect_for_resources = {
 
 		available = {
 			has_full_control_of_state = 653
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 8
 			has_tech = excavation2
 			controls_state = 653
 		}
@@ -2813,7 +2811,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 9
 		}
 
 		ai_will_do = {
@@ -2824,7 +2822,7 @@ prospect_for_resources = {
 			653 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 180
 				}
 				set_state_flag = kamensk_aluminium_developed
 			}
@@ -2843,7 +2841,7 @@ prospect_for_resources = {
 
 		available = {
 			has_full_control_of_state = 217
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 15
 			has_tech = excavation4
 			controls_state = 217
 		}
@@ -2859,7 +2857,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 16
 		}
 
 		ai_will_do = {
@@ -2876,7 +2874,7 @@ prospect_for_resources = {
 			217 = {
 				add_resource = {
 					type = aluminium
-					amount = 120
+					amount = 320
 				}
 				set_state_flag = stalingrad_aluminium_developed
 			}
@@ -2892,7 +2890,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 10
 			owns_state = 233
 			controls_state = 233
 		}
@@ -2917,7 +2915,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 11
 		}
 
 		ai_will_do = {
@@ -2935,7 +2933,7 @@ prospect_for_resources = {
 			233 = {
 				add_resource = {
 					type = tungsten
-					amount = 60
+					amount = 220
 				}
 			}
 		}
@@ -2950,7 +2948,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 16
 			owns_state = 233
 			controls_state = 233
 		}
@@ -2973,10 +2971,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 17
 		}
 
 		ai_will_do = {
@@ -2994,7 +2992,7 @@ prospect_for_resources = {
 			233 = {
 				add_resource = {
 					type = tungsten
-					amount = 100
+					amount = 340
 				}
 			}
 		}
@@ -3009,7 +3007,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 15
 			owns_state = 404
 			controls_state = 404
 		}
@@ -3032,10 +3030,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 60
+		days_remove = 30
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 16
 		}
 
 		ai_will_do = {
@@ -3053,7 +3051,7 @@ prospect_for_resources = {
 			404 = {
 				add_resource = {
 					type = tungsten
-					amount = 80
+					amount = 320
 				}
 			}
 		}
@@ -3068,7 +3066,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction4
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 13
 			owns_state = 572
 			controls_state = 572
 			has_tech = construction3
@@ -3095,10 +3093,10 @@ prospect_for_resources = {
 
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 14
 		}
 
 		ai_will_do = {
@@ -3134,7 +3132,7 @@ prospect_for_resources = {
 			572 = {
 				add_resource = {
 					type = steel
-					amount = 200
+					amount = 280
 				}
 			}
 		}
@@ -3149,7 +3147,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 9
 			owns_state = 573
 			controls_state = 573
 		}
@@ -3174,7 +3172,7 @@ prospect_for_resources = {
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 10
 		}
 
 		ai_will_do = {
@@ -3192,7 +3190,7 @@ prospect_for_resources = {
 			573 = {
 				add_resource = {
 					type = steel
-					amount = 100
+					amount = 200
 				}
 			}
 		}
@@ -3207,7 +3205,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction4
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 13
 			owns_state = 573
 			controls_state = 573
 		}
@@ -3230,10 +3228,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 14
 		}
 
 		ai_will_do = {
@@ -3251,7 +3249,7 @@ prospect_for_resources = {
 			573 = {
 				add_resource = {
 					type = steel
-					amount = 200
+					amount = 280
 				}
 			}
 		}
@@ -3270,7 +3268,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 7
 			owns_state = 220
 			controls_state = 220
 		}
@@ -3289,10 +3287,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_kursk_steel_duration?30
+		days_remove = SOV_kursk_steel_duration?60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 8
 		}
 
 		ai_will_do = {
@@ -3306,7 +3304,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = SOV_kursk_steel_duration value = 30 }
+			add_to_variable = { var = SOV_kursk_steel_duration value = 60 }
 			220 = {
 				if = {
 					limit = {
@@ -3329,7 +3327,7 @@ prospect_for_resources = {
 			220 = {
 				add_resource = {
 					type = steel
-					amount = 220
+					amount = 180
 				}
 			}
 		}
@@ -3337,9 +3335,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = SOV_kursk_steel_duration value = 30 compare = less_than }
+					check_variable = { var = SOV_kursk_steel_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = SOV_kursk_steel_duration value = 30 }
+				set_variable = { var = SOV_kursk_steel_duration value = 60 }
 			}
 		}
 	}
@@ -3357,7 +3355,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 11
 			owns_state = 220
 			controls_state = 220
 		}
@@ -3380,10 +3378,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_kursk_steel_duration_2?30
+		days_remove = SOV_kursk_steel_duration_2?60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 12
 		}
 
 		ai_will_do = {
@@ -3397,7 +3395,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = SOV_kursk_steel_duration_2 value = 30 }
+			add_to_variable = { var = SOV_kursk_steel_duration_2 value = 60 }
 			220 = {
 				if = {
 					limit = {
@@ -3420,7 +3418,7 @@ prospect_for_resources = {
 			220 = {
 				add_resource = {
 					type = steel
-					amount = 220
+					amount = 240
 				}
 			}
 		}
@@ -3428,9 +3426,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = SOV_kursk_steel_duration_2 value = 30 compare = less_than }
+					check_variable = { var = SOV_kursk_steel_duration_2 value = 60 compare = less_than }
 				}
-				set_variable = { var = SOV_kursk_steel_duration_2 value = 30 }
+				set_variable = { var = SOV_kursk_steel_duration_2 value = 60 }
 			}
 		}
 	}
@@ -3448,7 +3446,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 13
 			owns_state = 220
 			controls_state = 220
 		}
@@ -3471,10 +3469,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_kursk_steel_duration_3?30
+		days_remove = SOV_kursk_steel_duration_3?60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 14
 		}
 
 		ai_will_do = {
@@ -3488,7 +3486,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = SOV_kursk_steel_duration_3 value = 30 }
+			add_to_variable = { var = SOV_kursk_steel_duration_3 value = 60 }
 			220 = {
 				if = {
 					limit = {
@@ -3511,7 +3509,7 @@ prospect_for_resources = {
 			220 = {
 				add_resource = {
 					type = steel
-					amount = 220
+					amount = 280
 				}
 			}
 		}
@@ -3519,9 +3517,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = SOV_kursk_steel_duration_3 value = 30 compare = less_than }
+					check_variable = { var = SOV_kursk_steel_duration_3 value = 60 compare = less_than }
 				}
-				set_variable = { var = SOV_kursk_steel_duration_3 value = 30 }
+				set_variable = { var = SOV_kursk_steel_duration_3 value = 60 }
 			}
 		}
 	}
@@ -3539,7 +3537,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 8
 			owns_state = 240
 			controls_state = 240
 		}
@@ -3558,10 +3556,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_Belgorod_steel_duration?30
+		days_remove = SOV_Belgorod_steel_duration?60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 9
 		}
 
 		ai_will_do = {
@@ -3575,7 +3573,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = SOV_Belgorod_steel_duration value = 30 }
+			add_to_variable = { var = SOV_Belgorod_steel_duration value = 60 }
 			240 = {
 				if = {
 					limit = {
@@ -3598,7 +3596,7 @@ prospect_for_resources = {
 			240 = {
 				add_resource = {
 					type = steel
-					amount = 120
+					amount = 180
 				}
 			}
 		}
@@ -3606,9 +3604,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = SOV_Belgorod_steel_duration value = 30 compare = less_than }
+					check_variable = { var = SOV_Belgorod_steel_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = SOV_Belgorod_steel_duration value = 30 }
+				set_variable = { var = SOV_Belgorod_steel_duration value = 60 }
 			}
 		}
 	}
@@ -3626,7 +3624,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 11
 			owns_state = 240
 			controls_state = 240
 		}
@@ -3649,10 +3647,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_Belgorod_steel_duration_2?30
+		days_remove = SOV_Belgorod_steel_duration_2?60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 12
 		}
 
 		ai_will_do = {
@@ -3666,7 +3664,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = SOV_Belgorod_steel_duration_2 value = 30 }
+			add_to_variable = { var = SOV_Belgorod_steel_duration_2 value = 60 }
 			240 = {
 				if = {
 					limit = {
@@ -3689,7 +3687,7 @@ prospect_for_resources = {
 			240 = {
 				add_resource = {
 					type = steel
-					amount = 220
+					amount = 240
 				}
 			}
 		}
@@ -3697,9 +3695,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = SOV_Belgorod_steel_duration_2 value = 30 compare = less_than }
+					check_variable = { var = SOV_Belgorod_steel_duration_2 value = 60 compare = less_than }
 				}
-				set_variable = { var = SOV_Belgorod_steel_duration_2 value = 30 }
+				set_variable = { var = SOV_Belgorod_steel_duration_2 value = 60 }
 			}
 		}
 	}
@@ -3717,7 +3715,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 14
 			owns_state = 240
 			controls_state = 240
 		}
@@ -3740,10 +3738,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = SOV_Belgorod_steel_duration_3?30
+		days_remove = SOV_Belgorod_steel_duration_3?60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -3757,7 +3755,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = SOV_Belgorod_steel_duration_3 value = 30 }
+			add_to_variable = { var = SOV_Belgorod_steel_duration_3 value = 60 }
 			240 = {
 				if = {
 					limit = {
@@ -3780,7 +3778,7 @@ prospect_for_resources = {
 			240 = {
 				add_resource = {
 					type = steel
-					amount = 190
+					amount = 300
 				}
 			}
 		}
@@ -3788,9 +3786,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = SOV_Belgorod_steel_duration_3 value = 30 compare = less_than }
+					check_variable = { var = SOV_Belgorod_steel_duration_3 value = 60 compare = less_than }
 				}
-				set_variable = { var = SOV_Belgorod_steel_duration_3 value = 30 }
+				set_variable = { var = SOV_Belgorod_steel_duration_3 value = 60 }
 			}
 		}
 	}
@@ -3804,7 +3802,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 12
 			owns_state = 407
 			controls_state = 407
 		}
@@ -3826,10 +3824,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 60
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 13
 		}
 
 		ai_will_do = {
@@ -3847,7 +3845,7 @@ prospect_for_resources = {
 			407 = {
 				add_resource = {
 					type = chromium
-					amount = 180
+					amount = 260
 				}
 			}
 		}
@@ -3864,7 +3862,7 @@ prospect_for_resources = {
 			has_tech = excavation5
 			owns_state = 407
 			controls_state = 407
-			num_of_civilian_factories_available_for_projects > 8
+			num_of_civilian_factories_available_for_projects > 17
 		}
 
 		highlight_states = {
@@ -3888,7 +3886,7 @@ prospect_for_resources = {
 		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 9
+			civilian_factory_use = 18
 		}
 
 		ai_will_do = {
@@ -3906,7 +3904,7 @@ prospect_for_resources = {
 			407 = {
 				add_resource = {
 					type = chromium
-					amount = 250
+					amount = 360
 				}
 			}
 		}
@@ -3925,7 +3923,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 10
 			has_tech = excavation1
 			owns_state = 716
 			controls_state = 716
@@ -3947,7 +3945,7 @@ prospect_for_resources = {
 		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 11
 		}
 
 		remove_effect = {
@@ -3955,7 +3953,7 @@ prospect_for_resources = {
 			716 = {
 				add_resource = {
 					type = steel
-					amount = 160
+					amount = 200
 				}
 			}
 		}
@@ -3979,7 +3977,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 5
 			owns_state = 527
 			controls_state = 527
 		}
@@ -3998,10 +3996,10 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = chosin_tungsten_duration?30
+		days_remove = chosin_tungsten_duration?60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 6
 		}
 
 		ai_will_do = {
@@ -4009,7 +4007,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = chosin_tungsten_duration value = 30 }
+			add_to_variable = { var = chosin_tungsten_duration value = 60 }
 			527 = {
 				if = {
 					limit = {
@@ -4032,7 +4030,7 @@ prospect_for_resources = {
 			527 = {
 				add_resource = {
 					type = tungsten
-					amount = 60
+					amount = 120
 				}
 			}
 		}
@@ -4040,9 +4038,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = chosin_tungsten_duration value = 30 compare = less_than }
+					check_variable = { var = chosin_tungsten_duration value = 60 compare = less_than }
 				}
-				set_variable = { var = chosin_tungsten_duration value = 30 }
+				set_variable = { var = chosin_tungsten_duration value = 60 }
 			}
 		}
 	}
@@ -4061,7 +4059,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 6
+			num_of_civilian_factories_available_for_projects > 39
 			owns_state = 658
 			controls_state = 658
 		}
@@ -4080,10 +4078,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 120
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 9
+			civilian_factory_use = 40
 		}
 
 		ai_will_do = {
@@ -4097,7 +4095,7 @@ prospect_for_resources = {
 			658 = {
 				add_resource = {
 					type = oil
-					amount = 80
+					amount = 400
 				}
 			}
 		}
@@ -4114,7 +4112,7 @@ prospect_for_resources = {
 			has_tech = excavation5
 			owns_state = 656
 			controls_state = 656
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 39
 		}
 
 		highlight_states = {
@@ -4136,9 +4134,9 @@ prospect_for_resources = {
 		}
 
 		cost = 25
-		days_remove = kuwait_oil_duration?30
+		days_remove = kuwait_oil_duration?90
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 40
 		}
 
 		ai_will_do = {
@@ -4146,7 +4144,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			add_to_variable = { var = kuwait_oil_duration value = 30 }
+			add_to_variable = { var = kuwait_oil_duration value = 90 }
 			656 = {
 				if = {
 					limit = {
@@ -4169,7 +4167,7 @@ prospect_for_resources = {
 			656 = {
 				add_resource = {
 					type = oil
-					amount = 180
+					amount = 400
 				}
 			}
 		}
@@ -4177,9 +4175,9 @@ prospect_for_resources = {
 		complete_effect = {
 			if = {
 				limit = {
-					check_variable = { var = kuwait_oil_duration value = 30 compare = less_than }
+					check_variable = { var = kuwait_oil_duration value = 90 compare = less_than }
 				}
-				set_variable = { var = kuwait_oil_duration value = 60 }
+				set_variable = { var = kuwait_oil_duration value = 90 }
 			}
 		}
 	}
@@ -4197,7 +4195,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 8
+			num_of_civilian_factories_available_for_projects > 29
 			owns_state = 413
 			controls_state = 413
 		}
@@ -4216,10 +4214,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 180
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 9
+			civilian_factory_use = 30
 		}
 
 		ai_will_do = {
@@ -4233,7 +4231,7 @@ prospect_for_resources = {
 			413 = {
 				add_resource = {
 					type = oil
-					amount = 160
+					amount = 300
 				}
 			}
 		}
@@ -4252,7 +4250,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 29
 			owns_state = 412
 			controls_state = 412
 		}
@@ -4271,10 +4269,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 120
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 30
 		}
 
 		ai_will_do = {
@@ -4288,7 +4286,7 @@ prospect_for_resources = {
 			412 = {
 				add_resource = {
 					type = oil
-					amount = 60
+					amount = 300
 				}
 			}
 		}
@@ -4307,7 +4305,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 39
 			owns_state = 291
 			controls_state = 291
 		}
@@ -4329,11 +4327,11 @@ prospect_for_resources = {
 		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 40
 		}
 
 		ai_will_do = {
-			factor = 10
+			factor = 1000
 		}
 
 		remove_effect = {
@@ -4343,7 +4341,7 @@ prospect_for_resources = {
 			291 = {
 				add_resource = {
 					type = oil
-					amount = 180
+					amount = 400
 				}
 			}
 		}
@@ -4361,7 +4359,7 @@ prospect_for_resources = {
 		}
 
 		available = {
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 27
 			owns_state = 676
 			controls_state = 676
 		}
@@ -4380,14 +4378,14 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 180
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 15
+			civilian_factory_use = 28
 		}
 
 		ai_will_do = {
-			factor = 10
+			factor = 1000
 		}
 
 		remove_effect = {
@@ -4497,7 +4495,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 19
 			owns_state = 457
 			controls_state = 457
 		}
@@ -4516,10 +4514,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 60
+		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 20
 		}
 
 		ai_will_do = {
@@ -4533,7 +4531,7 @@ prospect_for_resources = {
 			457 = {
 				add_resource = {
 					type = oil
-					amount = 60
+					amount = 200
 				}
 			}
 		}
@@ -4552,7 +4550,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 5
+			num_of_civilian_factories_available_for_projects > 29
 			owns_state = 765
 			controls_state = 765
 		}
@@ -4574,7 +4572,7 @@ prospect_for_resources = {
 		days_remove = 90
 
 		modifier = {
-			civilian_factory_use = 6
+			civilian_factory_use = 30
 		}
 
 		ai_will_do = {
@@ -4588,7 +4586,7 @@ prospect_for_resources = {
 			765 = {
 				add_resource = {
 					type = oil
-					amount = 80
+					amount = 300
 				}
 			}
 		}
@@ -4600,7 +4598,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 19
 			owns_state = 771
 			controls_state = 771
 		}
@@ -4618,10 +4616,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 20
 		}
 
 		ai_will_do = {
@@ -4634,7 +4632,7 @@ prospect_for_resources = {
 			771 = {
 				add_resource = {
 					type = tungsten
-					amount = 250
+					amount = 400
 				}
 			}
 		}
@@ -4648,7 +4646,7 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 11
 			owns_state = 545
 			controls_state = 545
 		}
@@ -4666,10 +4664,10 @@ prospect_for_resources = {
 		fire_only_once = yes
 
 		cost = 25
-		days_remove = 90
+		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 12
 		}
 
 		ai_will_do = {
@@ -4683,7 +4681,54 @@ prospect_for_resources = {
 			545 = {
 				add_resource = {
 					type = steel
-					amount = 150
+					amount = 250
+				}
+			}
+		}
+
+
+	}
+
+	develop_congolese_rubber = { #771
+
+		icon = rubber
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 8
+			owns_state = 538
+			controls_state = 538
+		}
+
+		highlight_states = {
+			state = 538
+		}
+
+		visible = {
+			owns_state = 538
+			controls_state = 538
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 9
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			
+			538 = {
+				add_resource = {
+					type = rubber
+					amount = 180
 				}
 			}
 		}

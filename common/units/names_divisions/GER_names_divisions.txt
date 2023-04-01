@@ -1010,7 +1010,7 @@ GER_MONINF_01 =
 		}
 	}
 
-	division_types = { "infantry" "mechanized" "mountaineers" "paratrooper" "marine" }
+	division_types = { "infantry" "mechanized" "mountaineers" "paratrooper" "marine" "medium_armor" }
 
 	fallback_name = "%d. Division"
 

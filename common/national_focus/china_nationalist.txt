@@ -652,6 +652,8 @@
 
 		available = {
 			NOT = { is_in_faction_with = JAP }
+			surrender_progress > 0.35
+			has_defensive_war = yes
 		}
 
 		cancel_if_invalid = yes

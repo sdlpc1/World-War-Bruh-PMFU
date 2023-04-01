@@ -3,13 +3,6 @@ infantry_CHI = {
 
 	available_for = {
 		CHI
-		PRC 
-		GXC
-		YUN
-		SHX
-		XSM
-		SIK
-		MEN
 		MAN
 	}
 
@@ -83,10 +76,9 @@ infantry_CHI = {
 			weight = 0.9
 			match_value = 3000.0
 			
-			support = {
-				engineer = 1
-				artillery = 1
-			}
+			# support = {
+			# 	engineer = 1
+			# }
 			
 			regiments = {
 				infantry = 10
@@ -99,10 +91,6 @@ infantry_CHI = {
 			recon
 			field_hospital
 			logistics_company
-			anti_tank
-			artillery
-			rocket_artillery
-			artillery_brigade
 		}
 	}
 
@@ -165,12 +153,10 @@ infantry_CHI = {
 			
 			support = {
 				engineer = 1
-				artillery = 1
 			}
 			
 			regiments = {
 				infantry = 7
-				artillery_brigade = 2
 			}
 		}
 		
@@ -180,10 +166,6 @@ infantry_CHI = {
 			recon
 			field_hospital
 			logistics_company
-			anti_tank
-			artillery
-			rocket_artillery
-			artillery_brigade
 		}
 	}
 	

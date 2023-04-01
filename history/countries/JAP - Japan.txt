@@ -20,7 +20,12 @@ add_ideas = {
 	JAP_bushido_spirit
 	JAP_gekokoju
 	JAP_island_hopping8
+	volunteer_minimum_major
+	JAP_no_equipment_capture
+	peace_training
 }
+
+# MP_garrison_division_standard = yes
 
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
@@ -137,8 +142,8 @@ if = {
 	else = {
 		set_air_oob = "JAP_1936_air_legacy"
 		set_technology = {
-			cv_early_fighter = 1
-			cv_CAS1 = 1
+			#cv_early_fighter = 1
+			#cv_CAS1 = 1
 			#cv_naval_bomber1 = 1
 			early_fighter = 1
 			naval_bomber1 = 1
@@ -199,11 +204,11 @@ if = {
 	}
 	# set_autonomy = {
 	# 	target = MEN
-	# 	autonomous_state = autonomy_wtt_imperial_protectorate
+	# 	autonomous_state = autonomy_wtt_integrated_imperial_protectorate
 	# }
 	set_autonomy = {
 		target = MAN
-		autonomous_state = autonomy_wtt_imperial_protectorate
+		autonomous_state = autonomy_wtt_integrated_imperial_protectorate
 	}
 }
 
@@ -220,6 +225,8 @@ set_popularities = {
 }
 
 create_faction = "Dai Tōa Kyōeiken"
+
+JAP = { add_to_faction = SIA }
 
 
 recruit_character = JAP_tetsu_katayama
@@ -1125,3 +1132,228 @@ if = {
 		}	
 	}
 	
+	# AXIS
+
+			# GER
+			add_operation_token = {
+				tag = GER
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = GER
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = GER
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = GER
+				token = token_navy_friendly
+			}
+			# ITA
+			add_operation_token = {
+				tag = ITA
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = ITA
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = ITA
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = ITA
+				token = token_navy_friendly
+			}
+			# HUN
+			add_operation_token = {
+				tag = HUN
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = HUN
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = HUN
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = HUN
+				token = token_navy_friendly
+			}
+			# ROM
+			add_operation_token = {
+				tag = ROM
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = ROM
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = ROM
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = ROM
+				token = token_navy_friendly
+			}
+			# BUL
+			add_operation_token = {
+				tag = BUL
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = BUL
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = BUL
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = BUL
+				token = token_navy_friendly
+			}
+			# SPR
+			add_operation_token = {
+				tag = SPR
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = SPR
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = SPR
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = SPR
+				token = token_navy_friendly
+			}
+			# FIN
+			add_operation_token = {
+				tag = FIN
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = FIN
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = FIN
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = FIN
+				token = token_navy_friendly
+			}
+			#AOI
+			add_operation_token = {
+				tag = AOI
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = AOI
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = AOI
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = AOI
+				token = token_navy_friendly
+			}
+			# YUG
+			add_operation_token = {
+				tag = YUG
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = YUG
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = YUG
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = YUG
+				token = token_navy_friendly
+			}
+			# ALB
+			add_operation_token = {
+				tag = ALB
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = ALB
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = ALB
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = ALB
+				token = token_navy_friendly
+			}
+			# AUS
+			add_operation_token = {
+				tag = AUS
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = AUS
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = AUS
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = AUS
+				token = token_navy_friendly
+			}
+
+			# COPRO
+			# MAN
+			add_operation_token = {
+				tag = MAN
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = MAN
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = MAN
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = MAN
+				token = token_navy_friendly
+			}
+			# SIA
+			add_operation_token = {
+				tag = SIA
+				token = token_airforce_friendly
+			}
+			add_operation_token = {
+				tag = SIA
+				token = token_army_friendly
+			}
+			add_operation_token = {
+				tag = SIA
+				token = token_civilian_friendly
+			}
+			add_operation_token = {
+				tag = SIA
+				token = token_navy_friendly
+			}

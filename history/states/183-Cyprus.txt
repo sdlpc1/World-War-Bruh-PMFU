@@ -23,7 +23,7 @@ state= {
 				naval_base = 2
 			}
 		}
-		add_core_of = EGY
+		add_core_of = WST
 	}
 	provinces= { 7193 11984 }
 }

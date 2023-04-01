@@ -18,7 +18,7 @@ state={
 		victory_points = {
 			4440 3
 		}
-		add_core_of = EGY
+		add_core_of = WST
 	}
 
 	provinces={

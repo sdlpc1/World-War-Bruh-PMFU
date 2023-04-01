@@ -1638,25 +1638,25 @@ news_event = {
 
 	option = {
 		name = mtg_news.44.b
-		trigger = {
-			original_tag = PAK
-		}
+		# trigger = {
+		# 	original_tag = WST
+		# }
 	}
 
 	option = {
 		name = mtg_news.44.c
-		trigger = {
-			original_tag = ENG
-		}
+		# trigger = {
+		# 	original_tag = ENG
+		# }
 	}
 
 	option = {
 		name = mtg_news.44.d
-		trigger = { 
-			NOT = { original_tag = RAJ }
-			NOT = { original_tag = PAK }
-			NOT = { original_tag = ENG }
-		}
+		# trigger = { 
+		# 	NOT = { original_tag = RAJ }
+		# 	NOT = { original_tag = WST }
+		# 	NOT = { original_tag = ENG }
+		# }
 	}
 }
 
@@ -1673,32 +1673,32 @@ news_event = {
 	
 	option = {
 		name = mtg_news.45.a
-		trigger = {
-			original_tag = PAK
-		}
+		# trigger = {
+		# 	original_tag = WST
+		# }
 	}
 
 	option = {
 		name = mtg_news.45.b
-		trigger = {
-			original_tag = BAN
-		}
+		# trigger = {
+		# 	original_tag = BAN
+		# }
 	}
 
 	option = {
 		name = mtg_news.44.c
-		trigger = {
-			original_tag = ENG
-		}
+		# trigger = {
+		# 	original_tag = ENG
+		# }
 	}
 
 	option = {
 		name = mtg_news.45.d
-		trigger = { 
-			NOT = { original_tag = PAK }
-			NOT = { original_tag = BAN }
-			NOT = { original_tag = ENG }
-		}
+		# trigger = { 
+		# 	NOT = { original_tag = WST }
+		# 	NOT = { original_tag = BAN }
+		# 	NOT = { original_tag = ENG }
+		# }
 	}
 }
 

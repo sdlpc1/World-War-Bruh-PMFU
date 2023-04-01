@@ -6,9 +6,13 @@ state=
 	
 	state_category = rural
 	
+	resources = {
+		rubber = 50
+	}
+	
 	history=
 	{
-		owner = PHI
+		owner = USA
 		buildings = {
 			infrastructure = 3
 			12118 = {
@@ -19,7 +23,8 @@ state=
 		victory_points = {
 			12118 1 
 		}
-		add_core_of = PHI
+		add_core_of = WST
+		set_compliance = 100
 	}
 
 	provinces={

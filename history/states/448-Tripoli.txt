@@ -15,11 +15,12 @@ state={
 		buildings = {
 			infrastructure = 3
 			air_base = 6
+			industrial_complex = 6
 			1149 = {
 				naval_base = 5
 			}
 		}
-		add_core_of = LBA
+		add_core_of = WST
 	}
 
 	provinces={

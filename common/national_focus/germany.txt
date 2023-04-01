@@ -1538,10 +1538,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-						name = GER_air_doc
-						cost_reduction = 0.40
-						uses = 3
-						category = cat_battlefield_support
+				name = GER_air_doc
+				cost_reduction = 0.40
+				uses = 3
+				category = cat_battlefield_support
 			}
 		}
 	}
@@ -1583,10 +1583,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-						name = GER_air_doc
-						cost_reduction = 0.40
-						uses = 3
-						category = cat_operational_integrity
+				name = GER_air_doc
+				cost_reduction = 0.40
+				uses = 3
+				category = cat_operational_integrity
 			}
 		}
 	}
@@ -1635,50 +1635,50 @@ focus_tree = {
 		}
 	}
 	
-	#focus = {
-	#	id = GER_strategic_air_effort2
-	#	icon = GFX_Bombs_Away
-	#	prerequisite = { focus = GER_strategic_air_effort }
-	#	x = 0
-	#	y = 2
-	#	relative_position_id = GER_strategic_air_effort
-	#	cost = 5
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
+	focus = {
+		id = GER_strategic_air_effort2
+		icon = GFX_Bombs_Away
+		prerequisite = { focus = GER_strategic_air_effort }
+		x = 0
+		y = 2
+		relative_position_id = GER_strategic_air_effort
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
 
-	#	available_if_capitulated = yes
+		available_if_capitulated = yes
 
-	#	completion_reward = {
-	#		set_technology = {
-	#			amerikabomber = 1
-	#		}
-	#	}
-	#}
+		completion_reward = {
+			set_technology = {
+				amerikabomber = 1
+			}
+		}
+	}
 	
-	#focus = {
-	#	id = GER_air_doc
-	#	icon = GFX_goal_luftwaffe
-	#	prerequisite = { focus = GER_tactical_air_effort focus = GER_cas_air_effort }
-	#	x = -1
-	#	y = 1
-	#	relative_position_id = GER_tactical_air_effort
-	#	cost = 5
-	#	ai_will_do = {
-	#		factor = 0.1
-	#	}
+	focus = {
+		id = GER_air_doc
+		icon = GFX_goal_luftwaffe
+		prerequisite = { focus = GER_tactical_air_effort focus = GER_cas_air_effort }
+		x = -1
+		y = 1
+		relative_position_id = GER_tactical_air_effort
+		cost = 5
+		ai_will_do = {
+			factor = 0.1
+		}
 
-	#	available_if_capitulated = yes
+		available_if_capitulated = yes
 
-	#	completion_reward = {
-	#		add_doctrine_cost_reduction = {
-	#			name = GER_air_doc
-	#			cost_reduction = 0.40
-	#			uses = 3
-	#			category = cat_battlefield_support
-	#		}
-	#	}
-	#}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = GER_air_doc
+				cost_reduction = 0.40
+				uses = 3
+				category = cat_battlefield_support
+			}
+		}
+	}
 
 	focus = {
 		id = GER_luft_2
@@ -2303,7 +2303,7 @@ focus_tree = {
 		}
 		
 		available = {
-			has_idea = GER_heinrich_himmler
+			# has_idea = GER_heinrich_himmler
 		}
 
 		completion_reward = {
@@ -2531,8 +2531,8 @@ focus_tree = {
 		will_lead_to_war_with = POL
 		available = {
 			
-			is_puppet = no
-			date > 1939.1.1	
+			is_puppet = no	
+			date > 1939.1.1		
 			#Make custom trigger tooltip here
 			85 = {
 				owner = {
@@ -2828,15 +2828,15 @@ focus_tree = {
 		prerequisite = { focus = GER_danzig_or_war }
 		
 		available = {
-			controls_state = 98
-			controls_state = 86
-			controls_state = 85
-			controls_state = 87
-			controls_state = 88
-			controls_state = 90
-			controls_state = 92
-			controls_state = 763
-			controls_state = 5
+			98 = { controller = { is_in_faction_with = GER } } 
+			86 = { controller = { is_in_faction_with = GER } } 
+			85 = { controller = { is_in_faction_with = GER } } 
+			87 = { controller = { is_in_faction_with = GER } } 
+			88 = { controller = { is_in_faction_with = GER } } 
+			90 = { controller = { is_in_faction_with = GER } } 
+			92 = { controller = { is_in_faction_with = GER } } 
+			763 = { controller = { is_in_faction_with = GER } } 
+			5 = { controller = { is_in_faction_with = GER } } 
 		}
 		
 		x = -7
@@ -2932,7 +2932,7 @@ focus_tree = {
 		prerequisite = { focus = GER_prepare_barb }
 		
 		available = {
-			has_army_manpower = { size > 1199999 }
+			# has_army_manpower = { size > 1199999 }
 			OR = {
 				AND = {
 					date > 1941.3.1
@@ -2975,6 +2975,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_prepare_barb
+		cancel_if_invalid = no
+		available_if_capitulated = no
+		continue_if_invalid = yes
 		cost = 2
 		completion_reward = {
 			declare_war_on = {
@@ -3423,7 +3426,7 @@ focus_tree = {
 			OR = {
 				NOT = { HOL = { is_in_faction_with = GER } }
 				NOT = { BEL = { is_in_faction_with = GER } }
-				NOT = { LUX = { is_in_faction_with = GER } }
+				# NOT = { LUX = { is_in_faction_with = GER } }
 			}
 		}
 
@@ -3442,13 +3445,13 @@ focus_tree = {
 					has_war_with = ROOT
 				}
 			}
-			LUX = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
+			# LUX = {
+			# 	OR = {
+			# 		exists = no
+			# 		is_in_faction_with = GER
+			# 		has_war_with = ROOT
+			# 	}
+			# }
 		}
 
 		historical_ai = {
@@ -3463,7 +3466,7 @@ focus_tree = {
 		}
 		will_lead_to_war_with = BEL
 		will_lead_to_war_with = HOL
-		will_lead_to_war_with = LUX
+		# will_lead_to_war_with = LUX
 		will_lead_to_war_with = FRA
 		x = 1
 		y = 1
@@ -3493,17 +3496,17 @@ focus_tree = {
 					type = annex_everything
 				}
 			}
-			if = {
-				limit = {
-					country_exists = LUX
-					NOT = { LUX = { is_in_faction_with = GER } }
-					NOT = { has_war_with = LUX }
-				}
-				declare_war_on = {
-					target = LUX
-					type = annex_everything
-				}		
-			}
+			# if = {
+			# 	limit = {
+			# 		# country_exists = LUX
+			# 		NOT = { LUX = { is_in_faction_with = GER } }
+			# 		NOT = { has_war_with = LUX }
+			# 	}
+			# 	declare_war_on = {
+			# 		target = LUX
+			# 		type = annex_everything
+			# 	}		
+			# }
 			hidden_effect = {
 				news_event = { hours = 6 id = news.234 }
 			}
@@ -3546,7 +3549,7 @@ focus_tree = {
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = FRA
 		available = {
-			is_puppet = no	
+			is_puppet = no
 			NOT = {
 				AND = {
 					CZE = { is_in_faction_with = GER }
@@ -3842,6 +3845,7 @@ focus_tree = {
 					modules = {
 						main_armament_slot = tank_small_gun_1
 						turret_type_slot = tank_light_turret_1
+						suspension_type_slot = tank_bogie_suspension
 						armor_type_slot = tank_riveted_armor
 						engine_type_slot = tank_gasoline_engine
 					}
@@ -3854,6 +3858,7 @@ focus_tree = {
 					modules = {
 						main_armament_slot = tank_small_gun_2
 						turret_type_slot = tank_light_turret_2
+						suspension_type_slot = tank_bogie_suspension
 						armor_type_slot = tank_riveted_armor
 						engine_type_slot = tank_gasoline_engine
 					}
@@ -3942,7 +3947,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_mol_rib_pact
-		cost = 4
+		cost = 2
 		ai_will_do = {
 			factor = 10
 		}	
@@ -4170,15 +4175,15 @@ focus_tree = {
 				}
 				owns_state = 28
 			}
-			OR = {
-				LUX = { has_capitulated = yes }
-				NOT = {
-					any_country = {
-						original_tag = LUX
-						exists = yes
-					}
-				}
-			}
+			# OR = {
+			# 	LUX = { has_capitulated = yes }
+			# 	NOT = {
+			# 		any_country = {
+			# 			original_tag = LUX
+			# 			exists = yes
+			# 		}
+			# 	}
+			# }
 		}
 		bypass = {
 		}
@@ -4206,9 +4211,9 @@ focus_tree = {
 			FRA = {
 				country_event = { id = wtt_germany.63 }
 			}
-			LUX = {
-				country_event = { id = wtt_germany.64 }
-			}
+			# LUX = {
+			# 	country_event = { id = wtt_germany.64 }
+			# }
 		}
 	}
 	
@@ -5704,9 +5709,9 @@ focus_tree = {
 						hq_company = { x = 0 y = 0 } 
 						engineer = { x = 0 y = 1 }   
 						recon = { x = 0 y = 2 }
-						logistics_company  = { x = 0 y = 3 }
+						logistics_company_mot  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
-						logistics_company_horse = { x = 1 y = 1 }
+						# logistics_company_horse = { x = 1 y = 1 }
 					}
 				}
 				random_owned_controlled_state = {

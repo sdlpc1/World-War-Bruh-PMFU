@@ -137,14 +137,23 @@
   JAP_asw_train_desc:0 "Submarines are a great threat to our logistics, we must improve detecting and destroying them."
 
   JAP_early_war_industry_focus:0 "Quick War Industry"
+  JAP_early_war_industry_focus_desc:0 "We are committed to expanding our empire through military conquest and domination. To achieve this goal, we must have a small but quick war industry that can produce the necessary equipment and supplies in a short amount of time to support our military operations."
   JAP_early_war_military_focus:0 "Quickly Planned Attacks"
+  JAP_early_war_military_focus_desc:0 "The Imperial General Headquarters has set a deadline for striking the west and we need to plan our attacks in a short time."
   JAP_mid_war_industry_focus:0 "Intermediate War Industry"
+  JAP_mid_war_industry_focus_desc:0 "We are committed to expanding our empire through military conquest and domination. To achieve this goal, we must have a intermediate war industry that can produce the necessary equipment and supplies to support our military operations."
   JAP_mid_war_military_focus:0 "Better Planned Attacks"
+  JAP_mid_war_military_focus_desc:0 "The Imperial General Headquarters has set a deadline for striking the west and we need to plan our attacks well but in a medium amount of time"
   JAP_mid_war_intel_focus:0 "Intelligence Networks"
+  JAP_mid_war_intel_focus_desc:0 "Strong and powerful intelligence networks win wars."
   JAP_late_war_industry_focus:0 "Long War Industry"
+  JAP_late_war_industry_focus_desc:0 "We are committed to expanding our empire through military conquest and domination. To achieve this goal, we must have a big and powerful industry that can produce the necessary equipment and supplies to support our military operations."
   JAP_late_war_military_focus:0 "Well Planned Attacks"
+  JAP_late_war_military_focus_desc:0 "The Imperial General Headquarters has set a deadline for striking the west and we need draw up a thought through plan."
   JAP_late_war_intel_focus:0 "Intelligence and Collaboration Networks"
+  JAP_late_war_intel_focus_desc:0 "Building large and powerful intelligence and collaboration networks in our enemy countries will lead us to an easier victory!"
   JAP_late_war_destruction_focus:0 "Surgical Strikes"
+  JAP_late_war_destruction_focus_desc:0 "As Japan seeks to expand its empire, we must develop new strategies and tactics to ensure swift and decisive victories over our enemies. We need to train and equip specialized units of commandos and elite forces to conduct lightning-fast strikes against enemy targets, disrupting their ability to resist and striking fear into their hearts."
 
   JAP_war_with_SOV:0 "Operation Kantokuen"
   JAP_war_with_SOV_desc:0 "Kantōgun Tokushu Enshū is a plan created by the General Staff of the Imperial Japanese Army for an invasion and occupation of the Russian Far East."
@@ -174,6 +183,20 @@
   japan.503.a_desc:0 "Will declare on the USA and Phillipines through the §YStrike the West§! focus and will gain §YTora Tora Tora§! for 6 months"
   japan.503.b:0 "Leave them out"
   japan.503.b_desc:0 "We will not declare on USA through §YStrike the West§! focus"
+
+  japan.504.t:0 "The Division of China"
+  japan.504.desc:0 "As our victory over the chinese draws near, we must decide what to do with the new territory once we finish mopping up resistance"
+  japan.504.a:0 "This should be decided after victory is achieved"
+  japan.504.a_desc:0 "Ignore a scripted peace deal and trigger the standard §YPeace Conference§!"
+  japan.504.b:0 "Split the land between us and our loyal Manchurian puppet"
+  japan.504.b_desc:0 "§YManchuko§! gains §YOrdos§!, §YNingxia§!, §YJiuquan§!, §YSuiyuan§!, while §YJapan§! gains the rest"
+  japan.504.c:0 "This continent belongs to us!"
+  japan.504.c_desc:0 "§YJapan§! Annexes all of China"
+  japan.504.d:0 "It would best be administered by our puppet"
+  japan.504.d_desc:0 "§YManchuko§! Annexes all of China"
+  japan.504.e:0 "A new puppet would likely help us gain legitamcy"
+  japan.504.e_desc:0 "Japan puppets China"
+  JAP_threat_treaty_of_nanjing:0 "Treaty of Nanjing"
 
   ### IDEAS ###
   JAP_break_mitsubishi_idea:0 "Break up Mitsubishi"
@@ -233,11 +256,14 @@
   JAP_man_prop:0 "EACPS Propaganda"
   JAP_asw_training:0 "ASW Training"
   JAP_early_war_industry:0 "Early War Industry"
+  JAP_early_war_industry_bonus:0 "Early War Industry"
   JAP_mid_war_industry_bonus:0 "Mid War Industry"
   JAP_late_war_industry_bonus:0 "Late War Industry"
   JAP_mid_war_military_bonus:0 "Mid War Naval Bonus"
   JAP_late_war_military_bonus:0 "Late War Naval Bonus"
   JAP_late_war_intel_bonus:0 "Late War Intel Bonus"
+  JAP_no_equipment_capture:0 "No Equipment Capture"
+  JAP_no_equipment_capture_desc:0 "§RBuff to japan due to equipment capture being gone§!"
 
   #### TRAITS ####
   osaka_artillery_arsenal:0 "Osaka Artillery Arsenal"
@@ -251,11 +277,13 @@
   JAP_rivalry_cooldown_desc:0 "Cooldown before next Service Decision is available"
   JAP_factory_conversion_early_war:0 "Industry Canalization"
   JAP_factory_conversion_early_war_desc:0 "Due to our rapid attempts to join the war, we need to cannibalize our Civilian Industry for the war effort"
+  JAP_transfer_indochina:0 "Transfer Indochina to Siam"
 
   #### FLAGS ####
   JAP_early_war:0 "Early War Japan"
   JAP_mid_war:0 "Mid War Japan"
   JAP_late_war:0 "Late War Japan"
+  JAP_china_has_capped:0 "China has capitulated"
 
   #### TOOLTIP ####
   JAP_yamato_tt:0 "Adds two Yamato-Class Battleships to the production queue, at 50% and 30% complete, respectively."

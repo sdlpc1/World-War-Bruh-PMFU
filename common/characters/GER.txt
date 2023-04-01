@@ -1597,4 +1597,23 @@ characters={
 			}
 		}
 	}
+	GER_marco_winkler={
+		name=GER_marco_winkler
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_GER_marco_winkler.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Marco_Winkler.dds"
+			}
+		}
+		navy_leader={
+			traits={ career_officer naval_lineage superior_tactician }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+		}
+	}
 }

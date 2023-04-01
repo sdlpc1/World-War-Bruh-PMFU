@@ -428,3 +428,5 @@
  small_plane_cas_airframe_design_cost_factor:0 "Small CAS Airframe Design Cost"
  cv_small_plane_cas_airframe_design_cost_factor:0 "Small CAS Carrier Airframe Design Cost"
  medium_plane_airframe_design_cost_factor:0 "Medium Airframe Design Cost"
+
+ hs132:1 "Jet Cas Bomb and Jet Cas Bomb Extra"

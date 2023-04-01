@@ -27,6 +27,7 @@ set_variable = { ENG_poster_left_icon_frame = ENG_propaganda_empty_slot_index } 
 set_variable = { ENG_poster_center_icon_frame = ENG_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
 
+# MP_garrison_division_standard = yes
 
 # Starting tech
 set_technology = {
@@ -134,7 +135,7 @@ if = {
 		set_air_oob = "ENG_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
-			cv_early_fighter = 1
+			#cv_early_fighter = 1
 			#cv_naval_bomber1 = 1
 			naval_bomber1 = 1
 			early_bomber = 1
@@ -152,6 +153,8 @@ add_ideas = {
 	ENG_great_depression_1
 	ENG_the_sun_never_sets_idea_1
 	PACIFIC_COMMONWEALTH_controls_original
+	volunteer_minimum_major
+	peace_training
 }
 	
 
@@ -265,11 +268,14 @@ add_to_faction = MAL
 
 #give_guarantee = CZE
 give_guarantee = GRE
+give_guarantee = POL
+give_guarantee = HOL
+give_guarantee = BEL
 # Order matters - here Chamberlain becomes starting leader
 recruit_character = ENG_oswald_mosley
 recruit_character = ENG_stanley_baldwin
 recruit_character = ENG_winston_churchill
-recruit_character = ENG_harry_pollitt
+# recruit_character = ENG_harry_pollitt
 recruit_character = ENG_alan_brooke
 recruit_character = ENG_bernard_montgomery
 recruit_character = ENG_claude_auchinleck
@@ -305,7 +311,7 @@ recruit_character = ENG_arthur_power
 recruit_character = ENG_john_vereker_lord_gort
 recruit_character = ENG_max_grant
 recruit_character = ENG_clement_attlee
-recruit_character = ENG_john_beckett
+# recruit_character = ENG_john_beckett
 recruit_character = ENG_philip_kerr
 recruit_character = ENG_nevile_henderson
 recruit_character = ENG_maxwell_aitken
@@ -999,192 +1005,450 @@ if = {
 		}
 	}
 
-1939.1.1 = {
-	if = {
-		limit = {
-			not = { has_dlc = "Man the Guns" }
-		}
-		create_equipment_variant = {
-			name = "Tribal Class"
-			type = destroyer_2
-			upgrades = {
-				ship_torpedo_upgrade = 2
-				destroyer_engine_upgrade = 2
-				ship_ASW_upgrade = 2
-				ship_anti_air_upgrade = 2
-			}
-		}
-		create_equipment_variant = {
-			name = "Edinburgh Class"
-			type = light_cruiser_2
-			upgrades = {
-				ship_reliability_upgrade = 3
-				ship_engine_upgrade = 3
-				ship_gun_upgrade = 3
-				ship_anti_air_upgrade = 3
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		
-		create_equipment_variant = {
-			name = "Illustrious Class"
-			type = ship_hull_carrier_2
-			name_group = ENG_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_2
-				fixed_ship_secondaries_slot = dp_ship_secondaries_2
-				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = ship_armor_carrier_deck
-			}
-		}
-		create_equipment_variant = {
-			name = "Dido Class"
-			type = ship_hull_cruiser_2
-			name_group = ENG_CLAA_HISTORICAL
-			parent_version = 1
-			modules = {
-				fixed_ship_battery_slot = dp_light_battery_3
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_1
-				fixed_ship_secondaries_slot = dp_ship_secondaries_3
-				front_1_custom_slot = empty
-				mid_1_custom_slot = ship_anti_air_1
-				mid_2_custom_slot = ship_torpedo_1
-				rear_1_custom_slot = dp_light_battery_3
-			}
-		}
-		create_equipment_variant = {
-			name = "Crown Colony Class"
-			type = ship_hull_cruiser_3
-			name_group = ENG_CL_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_2
-				front_1_custom_slot = ship_anti_air_1
-				mid_1_custom_slot = ship_torpedo_1
-				mid_2_custom_slot = dp_ship_secondaries_2
-				rear_1_custom_slot = empty
-				rear_2_custom_slot = ship_anti_air_1
-			}
-		}
-		create_equipment_variant = {
-			name = "Tribal Class"
-			type = ship_hull_light_2
-			name_group = ENG_DD_HISTORICAL
-			modules = {
-				fixed_ship_battery_slot = dp_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = ship_sonar_2
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_light_battery_2
-				rear_1_custom_slot = ship_depth_charge_2
-			}
-		}
-		create_equipment_variant = {
-			name = "J/K/N Class"
-			type = ship_hull_light_3
-			name_group = ENG_DD_HISTORICAL
-			modules = {
-				fixed_ship_battery_slot = dp_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = ship_sonar_2
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				front_1_custom_slot = empty
-				mid_1_custom_slot = ship_torpedo_2
-				rear_1_custom_slot = ship_depth_charge_2
-			}
-		}
-		create_equipment_variant = {
-			name = "King George V Class"
-			type = ship_hull_heavy_2
-			name_group = ENG_BB_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-				fixed_ship_radar_slot = ship_radar_2
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = dp_ship_secondaries_3
-				fixed_ship_armor_slot = ship_armor_bb_2
-				front_1_custom_slot = ship_anti_air_2
-				mid_1_custom_slot = ship_airplane_launcher_1
-				mid_2_custom_slot = dp_ship_secondaries_3
-				rear_1_custom_slot = ship_heavy_battery_2
-			}
-		}
-		create_equipment_variant = {
-			name = "Lion Class" # 1938 variant
-			type = ship_hull_heavy_2
-			name_group = ENG_BB_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_3
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = dp_ship_secondaries_3
-				fixed_ship_armor_slot = ship_armor_bb_2
-				front_1_custom_slot = ship_anti_air_1
-				mid_1_custom_slot = ship_airplane_launcher_1
-				mid_2_custom_slot = dp_ship_secondaries_3
-				rear_1_custom_slot = ship_heavy_battery_3
-			}
-		}
-		create_equipment_variant = {
-			name = "T Class"
-			type = ship_hull_submarine_2
-			name_group = ENG_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = empty
-			}
-		}
-		create_equipment_variant = {
-			name = "Grampus Class"
-			type = ship_hull_submarine_2
-			name_group = ENG_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = empty
-				#rear_1_custom_slot = ship_mine_layer_sub
-			}
-		}
-		create_equipment_variant = {
-			name = "U Class"
-			type = ship_hull_submarine_1
-			name_group = ENG_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = empty
-			}
-     }
+# ALLIES
+
+# USA
+add_operation_token = {
+	tag = USA
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = USA
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = USA
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = USA
+	token = token_navy_friendly
+}
+# FRA
+add_operation_token = {
+	tag = FRA
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = FRA
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = FRA
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = FRA
+	token = token_navy_friendly
+}
+# POL
+add_operation_token = {
+	tag = POL
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = POL
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = POL
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = POL
+	token = token_navy_friendly
+}
+# CAN
+add_operation_token = {
+	tag = CAN
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = CAN
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = CAN
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = CAN
+	token = token_navy_friendly
+}
+# MEX
+add_operation_token = {
+	tag = MEX
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = MEX
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = MEX
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = MEX
+	token = token_navy_friendly
+}
+# BRA
+add_operation_token = {
+	tag = BRA
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = BRA
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = BRA
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = BRA
+	token = token_navy_friendly
+}
+# IRE
+add_operation_token = {
+	tag = IRE
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = IRE
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = IRE
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = IRE
+	token = token_navy_friendly
+}
+# POR
+add_operation_token = {
+	tag = POR
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = POR
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = POR
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = POR
+	token = token_navy_friendly
+}
+# HOL
+add_operation_token = {
+	tag = HOL
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = HOL
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = HOL
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = HOL
+	token = token_navy_friendly
+}
+# BEL
+add_operation_token = {
+	tag = BEL
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = BEL
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = BEL
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = BEL
+	token = token_navy_friendly
+}
+# LUX
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_navy_friendly
+# }
+# DEN
+add_operation_token = {
+	tag = DEN
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = DEN
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = DEN
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = DEN
+	token = token_navy_friendly
+}
+# NOR
+add_operation_token = {
+	tag = NOR
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = NOR
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = NOR
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = NOR
+	token = token_navy_friendly
+}
+# CZE
+add_operation_token = {
+	tag = CZE
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = CZE
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = CZE
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = CZE
+	token = token_navy_friendly
+}
+# GRE
+add_operation_token = {
+	tag = GRE
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = GRE
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = GRE
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = GRE
+	token = token_navy_friendly
+}
+# IRQ
+add_operation_token = {
+	tag = IRQ
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = IRQ
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = IRQ
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = IRQ
+	token = token_navy_friendly
+}
+# SAF
+add_operation_token = {
+	tag = SAF
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = SAF
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = SAF
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = SAF
+	token = token_navy_friendly
+}
+# RAJ
+add_operation_token = {
+	tag = RAJ
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = RAJ
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = RAJ
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = RAJ
+	token = token_navy_friendly
+}
+# CHI
+add_operation_token = {
+	tag = CHI
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = CHI
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = CHI
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = CHI
+	token = token_navy_friendly
+}
+# MAL
+add_operation_token = {
+	tag = MAL
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = MAL
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = MAL
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = MAL
+	token = token_navy_friendly
+}
+# INS
+add_operation_token = {
+	tag = INS
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = INS
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = INS
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = INS
+	token = token_navy_friendly
+}
+# PHI
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_navy_friendly
+# }
+# AST
+add_operation_token = {
+	tag = AST
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = AST
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = AST
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = AST
+	token = token_navy_friendly
+}
+# NZL
+add_operation_token = {
+	tag = NZL
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = NZL
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = NZL
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = NZL
+	token = token_navy_friendly
+}
+
+# COMINTERN
+
+# SOV
+add_operation_token = {
+	tag = SOV
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = SOV
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = SOV
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = SOV
+	token = token_navy_friendly
+}
+# MON
+add_operation_token = {
+	tag = MON
+	token = token_airforce_friendly
+}
+add_operation_token = {
+	tag = MON
+	token = token_army_friendly
+}
+add_operation_token = {
+	tag = MON
+	token = token_civilian_friendly
+}
+add_operation_token = {
+	tag = MON
+	token = token_navy_friendly
 }

@@ -729,7 +729,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				equipment_capture_factor = 0.4
+				# equipment_capture_factor = 0.4
 			}
 		}
 
@@ -1350,6 +1350,7 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.2
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -1379,6 +1380,7 @@ ideas = {
 
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 
 			traits = { artillery_manufacturer }
@@ -1468,6 +1470,7 @@ ideas = {
 			}
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			equipment_bonus = {
@@ -1566,7 +1569,7 @@ ideas = {
 
 			modifier = {
 				equipment_conversion_speed = 0.15
-				equipment_capture_factor = 0.15
+				# equipment_capture_factor = 0.15
 				land_equipment_upgrade_xp_cost = -0.1
 			}
 		}

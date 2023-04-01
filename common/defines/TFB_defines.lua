@@ -8,8 +8,10 @@ NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 15		-- Default days befor
 NDefines.NGame.HANDS_OFF_START_TAG = "VEN"
 
 NDefines.NDiplomacy.WARGOAL_WORLD_TENSION_REDUCTION = -0.25			-- Reduction of pp cost for wargoal at 100% world tension scales linearly
-NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.04			-- Each province owned by the target country contributes this amount of volunteers to the limit.
-NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.04	-- Each army unit owned by the source country contributes this amount of volunteers to the limit.
+NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.00	-- was 0.04		-- Each province owned by the target country contributes this amount of volunteers to the limit.
+NDefines.NDiplomacy.OLUNTEERS_DIVISIONS_REQUIRED = 0					--	This many divisions are required for the country to be able to send volunteers.
+NDefines.NDiplomacy.VOLUNTEERS_RETURN_EQUIPMENT = 1					--	Returning volunteers keep this much equipment
+NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.00	--was 0.04  	-- Each army unit owned by the source country contributes this amount of volunteers to the limit.
 NDefines.NDiplomacy.TENSION_PEACE_FACTOR = 0.1				-- scale of the amount of tension (from war declaration) reduced when peace is completed.
 NDefines.NDiplomacy.TENSION_CAPITULATE = 1.5					-- Scale of the amount of tension created by a countries capitulation.
 NDefines.NDiplomacy.MP_NUM_WINNERS_FOR_PEACE_PAUSE = 3			-- Number of human players as winners needed for peace conference to pause and open for everyone in multiplayer needs to fullfill MP_NUM_LOSERS_FOR_PEACE_PAUSE as well.
@@ -26,6 +28,7 @@ NDefines.NDiplomacy.CAPITAL_CAPITULATE_BONUS_SCORE	= 300			-- extra bonus when d
 NDefines.NDiplomacy.VICTORY_POINT_WORTH_FACTOR_WARSCORE = 0.5		-- multiplier for each victory points when calculating province worth for warscore
 NDefines.NDiplomacy.EMBARGO_COST = 6000		-- make it so you cant embargo anyone
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 10000		--AI automatically accepts attache
+NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0 			-- originally 30
 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 40						-- Events are checked every X day per country or state (1 is ideal but CPU heavy)
 NDefines.NCountry.BASE_RESEARCH_SLOTS = 4						-- Base number of research slots per country.
@@ -67,8 +70,14 @@ NDefines.NCountry.MAX_PROPAGANDA_STABILITY_IMPACT = 0			-- Max total penalty fro
 NDefines.NCountry.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = 0		-- Max total penalty from operative performing the propaganda mission in a country
 NDefines.NCountry.PROPAGANDA_STABILITY_DAILY_DECAY = 0		-- Amount of stability recovered daily from propaganda effort
 NDefines.NCountry.PROPAGANDA_WAR_SUPPORT_DAILY_DECAY = 0		-- Amount of war support recovered daily from war support effort
-NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 10.0	-- Modifier for army manpower reinforcement delivery speed (travel time)
-NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.4				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0 --10.0	-- Modifier for army manpower reinforcement delivery speed (travel time)
+NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.1 --0.4				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
+NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0				-- Weight of the country score.
+NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0					-- Based on number of armies.
+NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0					-- Based on number of navies.
+NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (which is typically a lot).
+NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
+NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
 
 NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1	-- compliance factor that applies when the state controller changes (in between allies compliance is zeroed if it is taken by original country)
 NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.10 -- base compliance grow
@@ -81,15 +90,18 @@ NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 5 	-- Max number of differen
 NDefines.NProduction.EFFICIENCY_LOSS_PER_UNUSED_DAY = 0.5		-- Daily loss of efficiency for unused factory slots ( efficiency is tracked per factory slot in the production line )
 NDefines.NProduction.BASE_FACTORY_SPEED = 3 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 15	-- Base start efficiency for factories expressed in %.
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 200
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.50	-- How much fuel will be transferred on annexation
 NDefines.NProduction.ANNEX_CONVOYS_RATIO = 0.25			-- How many convoys will be transferred on annexation
-NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 0.65	-- Ratio which % of army in field can be trained
-NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 0.5 		-- Building in a state with higher infrastructure will reduce the cost of shared buildings.
+NDefines.NProduction.MIN_FIELD_TO_TRAINING_MANPOWER_RATIO = 100	-- Ratio which % of army in field can be trained
+NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000 -- 		How many deployment lines minimum can be training
+NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 1 		-- Building in a state with higher infrastructure will reduce the cost of shared buildings.
 NDefines.NProduction.PRODUCTION_RESOURCE_LACK_PENALTY = -0.01			-- Penalty decrease while lack of resource per factory
-NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0.25					-- IC cost equipment for every year of equipment after 1936
+NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 0				-- 	Min days for license to be active
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0 			-- 	Base IC cost for lended license
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0					-- IC cost equipment for every year of equipment after 1936
 NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = -0.20				-- base MIC speed modifier for licensed equipment
 NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_MAX_YEARS = 3			-- Maximum years for MIC speed modifier
 NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = -0.20		-- MIC speed modifier for licensed equipment for not being in faction
@@ -100,6 +112,9 @@ NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.2		-- Fr
 NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0.05	-- Minimum fraction of a naval equipment's strategic resource cost that any conversion will cost.
 NDefines.NProduction.BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.2		-- Fraction of the chassis industry cost which is always included in the conversion cost.
 NDefines.NProduction.MIN_LAND_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0.05		-- Minimum fraction of a land equipment's strategic resource cost that any conversion will cost.
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 20 			--(from originally 10)
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150 				--(from originally 15)
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 20 				--(from originally 5)
 
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 75.0		-- Base amount of research points a country can save per slot.
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 6.0		-- Base year ahead penalty
@@ -118,12 +133,12 @@ NDefines.NBuildings.RADAR_RANGE_MIN = 50				-- Radar range (from state center to
 NDefines.NBuildings.RADAR_RANGE_MAX = 250				-- Range is interpolated between building levels 1-15.
 NDefines.NBuildings.BASE_FACTORY_REPAIR_FACTOR = 2.5	-- Factory speed modifier when repairing.
 NDefines.NBuildings.SUPPLY_PORT_LEVEL_THROUGHPUT = 4   -- supply throughput per level of naval base
-NDefines.NBuildings.MAX_SHARED_SLOTS = 40				-- Max slots shared by factories
-NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.03 -- multiplactive resource bonus for each level of (non damaged) infrastructure
+NDefines.NBuildings.MAX_SHARED_SLOTS = 50				-- Max slots shared by factories
+NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.06 -- multiplactive resource bonus for each level of (non damaged) infrastructure
 NDefines.NBuildings.SUPPLY_ROUTE_RESOURCE_BONUS = 0.05   -- multiplicative resource bonus for having a railway/naval connection to the capital
 
 NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.5		-- speed impact at 0 org.
-NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.01	-- speed penalty per infrastucture below maximum.
+NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.03	-- speed penalty per infrastucture below maximum.
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 40			-- how many divisions a corps commander is limited to. 0 = inf < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 40			-- how many divisions a field marshall is limited to. 0 = inf < 0 = blocked
 NDefines.NMilitary.RECON_SKILL_IMPACT = 4 -- how many skillpoints is a recon advantage worth when picking a tactic.
@@ -131,12 +146,12 @@ NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 4		-- Max height of regiments i
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 5
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2			-- Max width of support in division designer.
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 4		-- Max height of support in division designer.
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 8 	--Base cost to unlock a regiment slot
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 2	--Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 4 	--Base cost to unlock a support slot
-NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999			--Max army experience a country can store
-NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999			--Max navy experience a country can store
-NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999				--Max air experience a country can store
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999			--Max army experience a country can store
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999			--Max navy experience a country can store
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999				--Max air experience a country can store
 NDefines.NMilitary.MIN_SUPPLY_CONSUMPTION = 0.1					-- minimum value of supply consumption that a unit can get
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.05        -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.05        -- global damage modifier
@@ -163,7 +178,7 @@ NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.08			-- Balancing value to 
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.002				-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 NDefines.NMilitary.ENCIRCLED_PENALTY = -0.35                      -- penalty when completely encircled
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 4
-NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 4
 NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 80.0
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 2
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.2, 0.3, 0.4, 0.55, 0.7, 0.9 }		-- Experience needed to progress to the next level
@@ -183,7 +198,7 @@ NDefines.NMilitary.PARACHUTE_DISRUPTED_STR_DIV = 2			   -- When the transport pl
 NDefines.NMilitary.PARACHUTE_PENALTY_RANDOMNESS = 0.05			   -- Random factor for strmanpowereq penalties.
 NDefines.NMilitary.PARACHUTE_DISRUPTED_AA_PENALTY = 0.8            -- How much the Air defence in the state (from AA buildings level * air_defence) is scaled to affect overall disruption (equipmentmanpowerstr).
 NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.4				   -- Organisation value (in %) after unit being dropped regardless if failed disrupted or successful.
-NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.9                 -- percentage of experienced solders who die when manpower is removed
+NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.8                 -- percentage of experienced solders who die when manpower is removed
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.8	 	   -- % of equipment lost to strength ratio in combat so some % is returned if below 1
 NDefines.NMilitary.OUT_OF_SUPPLY_ATTRITION = 0.3                 -- max attrition when out of supply
 NDefines.NMilitary.OUT_OF_SUPPLY_SPEED = -0.4                    -- max speed reduction from supply
@@ -224,15 +239,29 @@ NDefines.NMilitary.STRATEGIC_SPEED_RAIL_BASE = 10
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.75			-- Division experience drop if unit has different batalion
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.25			                -- how to weight in highest armor & pen vs the division average
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.35
+NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
+		1.00,
+		0.8,
+		0.6,
+		0.4,
+		0.0, --there isn't much point setting this higher than 0
+	}
+NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		1.00,
+		0.70,
+		0.50,
+		0.30,
+		0.10,
+	}
 NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 15					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
 NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 15					
 NDefines.NMilitary.AIR_EQUIPMENT_BASE_COST = 45
 NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 10
 NDefines.NMilitary.SLOWER_ORG_REGAIN_LEVEL = 0.75
 NDefines.NMilitary.DISBAND_MANPOWER_LOSS = 0.7
-NDefines.NMilitary.MIN_DIVISION_DEPLOYMENT_TRAINING = 0.4			-- Min level of division training
+NDefines.NMilitary.MIN_DIVISION_DEPLOYMENT_TRAINING = 0.2			-- Min level of division training
 NDefines.NMilitary.FRONT_MIN_PATH_TO_REDEPLOY = 6					-- If a units path is at least this long to reach its front location it will strategically redeploy.
-NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.025				-- after a successful land combat ratio of the equipments that are being captured/salvaged from enemy's lost equipment
+NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0 			-- after a successful land combat ratio of the equipments that are being captured/salvaged from enemy's lost equipment
 NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 100.0					-- cost of promoting a leader
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.25					-- xp gain ratio for army group leaders
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0			-- armies gets increased cap when they are garrisoned
@@ -250,6 +279,8 @@ NDefines.NMilitary.OUT_OF_FUEL_EQUIPMENT_MULT = 0.25				-- ratio of the stats th
 NDefines.NMilitary.OUT_OF_FUEL_SPEED_MULT = 0.1					-- speed mult that armies get when out of fuel
 NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 72             	-- default capacity if not specified
 NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.2				--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015
+NDefines.NMilitary.COST_INCREASE_PER_ACTIVE_MEDAL = 0				-- Additional cost factor per active medal.
 
 NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 300
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 300
@@ -282,7 +313,6 @@ NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.70	-- Maximum damage 
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 500			-- Min cap for planes that can join naval combat
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.112	-- How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 10.0							-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
-NDefines.NAir.FUEL_COST_MULT = 0.7 -- fuel multiplier for all air missions
 NDefines.NAir.BOMBING_TARGETING_RANDOM_FACTOR = 0.30							-- % of picking the wrong target
 NDefines.NAir.BOMBING_INFRA_PRIO_SCALE = 0.7									-- Scale of the selected priority for infastryctyre
 NDefines.NAir.NON_CORE_STRATEGIC_IMPACT = 0.25                                -- multiplier for strategic impact of non-core bombing	
@@ -331,8 +361,11 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 0.0, -- MISSION_RECON
 }
 NDefines.NAir.CARRIER_SIZE_STAT_INCREMENT = 10					-- Each Point of carrier_size state adds capacity for this many planes
-NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1							-- Days to deploy one air wing
-NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.02					-- Global speed multiplier for airplanes (affects fe.transferring to another base)
+NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0							-- Days to deploy one air wing
+NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0
+NDefines.NAir.FUEL_COST_MULT = 0.17 --0.35
+NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
+NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
 
 NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.20								-- random factor in damage. So if max damage is fe. 10 and randomness is 30% then damage will be between 7-10.
 NDefines.NNavy.COMBAT_MAX_GROUPS = 2										-- Max amount of "Fire Exchange" groups (FEX).
@@ -386,7 +419,22 @@ NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 3
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0.01 													-- multiplies supply usage
 NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR = 1.0												-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult)
 NDefines.NNavy.HIT_PROFILE_SPEED_BASE = 5													-- Base value added to hitprofile speed calulation
-
+NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO 								= 0.2	-- total sum of fleet's anti air will be multiplied with this ratio and added to calculations anti-air of individual ships while air damage reduction
+NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE							= 0.58	-- received air damage is calculated using following: 1 - ( (ship_anti_air + fleet_anti_air * SHIP_TO_FLEET_ANTI_AIR_RATIO )^ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE ) * ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE
+NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE 						= 0.02
+NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0
+NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_CHANCES = 0
+NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 0
+NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS = 0
+NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS_FACTOR = 0
+NDefines.NNavy.TRAINING_ACCIDENT_ORG_LOSS_FACTOR = 0
+NDefines.NNavy.ACCIDENTS_CHANCE_BALANCE_FACTOR = 0
+NDefines.NNavy.NAVAL_ACCIDENT_CHANCE_REDUCTION_ON_POTF = 0
+NDefines.NNavy.NAVAL_ACCIDENT_CRITICAL_HIT_CHANCE_REDUCTION_POTF = 0
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 0
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_STRENGTH_LOSS = 0
+NDefines.NNavy.NAVAL_MINES_ACCIDENT_ORG_LOSS_FACTOR = 0
 
 NDefines.NTrade.BASE_LAND_TRADE_RANGE = 700
 
@@ -472,6 +520,9 @@ NDefines.NSupply.BASE_TRUCK_HP = 300.0
 NDefines.NSupply.BASE_TRAIN_HP = 500.0
 NDefines.NSupply.RIVER_RAILWAY_LEVEL = 1
 NDefines.NSupply.VP_TO_SUPPLY_BASE = 0.7
+NDefines.NSupply.COOLDOWN_DAYS_AFTER_MOVING_SUPPLY_CAPITAL = 3 -- cooldown for moving supply again after last move
+NDefines.NSupply.DAYS_TO_START_GIVING_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL = 3  -- the country will start gaining supply after this many days moving its capital
+NDefines.NSupply.DAYS_TO_START_GIVING_FULL_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL =  10 -- the country will reach max supply after this many days moving its capital
 -- defines that are used for supply reach for floating harbors
 NDefines.NSupply.FLOATING_HARBOR_INITIAL_SUPPLY_FLOW = 3.0
 NDefines.NSupply.FLOATING_HARBOR_STARTING_PENALTY_PER_PROVINCE = 0.6

@@ -1185,7 +1185,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				equipment_capture = 0.35
+				# equipment_capture = 0.35
 			}
 		}
 		FRA_colonial_recruitment = {
@@ -2063,6 +2063,7 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

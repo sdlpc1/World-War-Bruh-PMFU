@@ -278,6 +278,12 @@
   ITA_esploratori_desc:0 "The designation "esploratori", meaning "scouts", was originally given to a class of Italian warship that were between the then current destroyers and cruisers, in terms of size and firepower."
   ITA_defend_empire:0 "Defend the Empire"
   ITA_defend_empire_desc:0 "The Empire is a source of great pride to our people. We should prepare our defences to ensure our future enemies will not prevail should they attack."
+  ITA_build_naval_facilities:0 "Build Naval Facilities"
+  ITA_mobilize_naval_workers:0 "Mobilize Naval Workers"
+  ITA_develop_advanced_radar:0 "Develop Advanced Radar"
+  ITA_expand_naval_dockyards:0 "Expand Naval Dockyard Facilities"
+  ITA_fortify_the_coast:0 "Fortify the Coast"
+  ITA_fortify_the_coast_desc:0 "The Allies have taken control of the Northern Africa, if we do not act, an invasion is Inevatible."
 
   #### EVENTS ####
   italy.500.t:0 "Italian Steel Purchases"
@@ -374,6 +380,7 @@
   ITA_idea_esploratori:0 "Esploratori"
   ITA_german_occupation:0 "German Occupation"
   ITA_military_construction:0 "Italian Military Construction"
+  ITA_mobilized_naval_workers:0 "Mobilized Naval Workers"
 
   #### DECISIONS ####
   ITA_search_for_oil:0 "Search for Oil"
@@ -398,6 +405,8 @@
   ITA_blackshirts_tt:0 "Spawns in §Y10 Blackshirt divisions§! in Rome"
   ITA_arditi_tt:0 "§GAllows for the recruitment of Arditi, elite shock troopers§!"
   ITA_italianisation_tt:0 "We will face increased resistance for a period of 2 years after which compliance will increase rapidly"
+  ITA_treaty_of_addis:0 "Treaty of Addis Ababa"
+  italy_desperate_measure_tt:0 "Build level §Y5§! §CCoastal§! §Yforts§! on §Gall ports§! in mainland §GItaly§!"
 
   #### FLAGS ####
   ITA_yug_italy:0 "Has completed focus §Y$ITA_start_italianisation_yug$§!"

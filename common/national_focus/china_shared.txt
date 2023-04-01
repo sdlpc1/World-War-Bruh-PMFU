@@ -40,13 +40,13 @@ shared_focus = {
 	icon = GFX_focus_generic_concessions
 	x = 40
 	y = 0
-	offset = {
-		x = -6
-		y = 0
-		trigger = {
-			tag = PRC
-		}
-	}
+	# offset = {
+	# 	x = -6
+	# 	y = 0
+	# 	trigger = {
+	# 		tag = PRC
+	# 	}
+	# }
 	offset = {
 		x = -16
 		y = 0
@@ -306,10 +306,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = PRC
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC
+		# }
 		modifier = {
 			factor = 4
 			tag = CHI
@@ -347,10 +347,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = PRC
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC
+		# }
 		modifier = {
 			factor = 4
 			tag = CHI
@@ -485,10 +485,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = PRC
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC
+		# }
 		modifier = {
 			factor = 4
 			tag = CHI
@@ -609,10 +609,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = PRC
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC
+		# }
 	}
 
 	available = {
@@ -653,10 +653,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = PRC
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC
+		# }
 	}
 
 	available = {
@@ -695,10 +695,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = PRC
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC
+		# }
 	}
 
 	available = {
@@ -730,10 +730,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = PRC
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC
+		# }
 		modifier = {
 			factor = 4
 			tag = CHI
@@ -836,10 +836,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = PRC
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC
+		# }
 		modifier = {
 			factor = 4
 			tag = CHI
@@ -891,10 +891,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = PRC
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC
+		# }
 		modifier = {
 			factor = 4
 			tag = CHI
@@ -1038,10 +1038,10 @@ shared_focus = {
 				has_tech = tech_mountaineers # Wait for the full benefit
 			}
 		}
-		modifier = {
-			factor = 4
-			tag = PRC
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC
+		# }
 	}
 
 	available = {
@@ -1105,10 +1105,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = PRC
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC
+		# }
 	}
 
 	available = {
@@ -1436,10 +1436,10 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = PRC			
-		}
+		# modifier = {
+		# 	factor = 4
+		# 	tag = PRC			
+		# }
 	}
 
 	available = {

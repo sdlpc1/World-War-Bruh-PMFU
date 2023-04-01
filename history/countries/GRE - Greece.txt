@@ -24,6 +24,7 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
+	peace_training
 }
 
 set_technology = {
@@ -165,9 +166,9 @@ set_stability = 0.75
 
 if = { 
 	limit = { has_dlc = "Battle for the Bosporus" }
-	recruit_character = GRE_konstantinos_demertzis
-	recruit_character = GRE_nikos_zachariadis
-	recruit_character = GRE_george_mercouris
+	#recruit_character = GRE_konstantinos_demertzis
+	#recruit_character = GRE_nikos_zachariadis
+	#recruit_character = GRE_george_mercouris
 	recruit_character = GRE_alexandros_papagos
 	recruit_character = GRE_charalambos_katsimitros
 	recruit_character = GRE_markos_drakos

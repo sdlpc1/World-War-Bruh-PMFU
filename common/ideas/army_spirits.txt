@@ -313,7 +313,7 @@ ideas = {
 				tactic_infantry_charge_preferred_weight_factor = 1
 				intel_from_combat_factor = 0.25
 				recon_factor = 0.25
-				equipment_capture_factor = 0.05
+				# equipment_capture_factor = 0.05
 			}
 			ai_will_do = {
 				factor = 1

@@ -9,8 +9,9 @@ state={
 	resources={
 		oil=310 # was: 22
 	}
-
+	
 	history={
+		set_state_flag = ENG_controls
 		owner = IRQ
 		victory_points = {
 			2097 15

@@ -78,6 +78,7 @@
  CHEAT13:0  "25 Air XP"
  CHEAT14:0  "25 Naval XP"
  CHEAT15:0  "Schizophrenic Meltdown"
+ CHEAT16:0  "Fix Intel Sharing"
 
  PAUSE_SELECT:0 "Pause Settings"
  PAUSE1:0 "Everyone"
@@ -96,6 +97,7 @@
  host_decisions_desc:0 "Host decisions are used for the sake of keeping the game alive. §RDO NOT ABUSE THESE DECISIONS.§!"
  end_spanish_civil_war:0 "End Spanish Civil War"
  end_sino_japanese_war:0 "End Sino-Japanese War"
+ JAP_declare_china:0 "Start Sino-Japanese War"
  spirit_of_bozo_spain:0 "Ruby Spain Build Moment."
  spirit_of_bozo_spain_desc:0 "You're gonna get the UNTrusted Spain Player role after this LMAO."
  spirit_of_bozo_japan:0 "Chezloc Japan Build Moment."

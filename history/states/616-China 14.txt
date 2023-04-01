@@ -3,6 +3,7 @@ state={
 	name="STATE_616"
 	impassable = yes
 	history={
+		set_state_flag = USA_split_china_region_state_northern
 		owner = CHI
 		add_core_of = CHI
 		buildings = {

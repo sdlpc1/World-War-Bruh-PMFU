@@ -962,7 +962,11 @@ country_event = {
 			every_character = {
 				limit = {
 					has_army_ledger = yes
-					has_character_flag = SOV_targeted_for_purge_flag
+					OR = {
+						has_character_flag = SOV_targeted_for_purge_flag
+						has_character_flag = SOV_tukhachevsky_targeted_for_purge_flag
+					}
+					
 				}
 				SOV_purge_character_effect = yes	
 				#log = "Hey I am [THIS.GetName] I am in the Event!"
@@ -975,10 +979,38 @@ country_event = {
 						is_field_marshal = yes
 						is_corps_commander = yes
 					}
-					has_character_flag = SOV_targeted_for_purge_flag
+					OR = {
+						has_character_flag = SOV_targeted_for_purge_flag
+						has_character_flag = SOV_tukhachevsky_targeted_for_purge_flag
+					}
 				}
 				SOV_purge_character_effect = yes	
 				#log = "Hey I am [THIS.GetName] I am in the Event!"
+			}
+
+			if = {
+				limit = {
+					has_global_flag = SOV_border_war_loss
+				}
+				every_army_leader = {
+					limit = {
+						OR = {
+							is_field_marshal = yes
+							is_corps_commander = yes
+						}
+						has_character_flag = SOV_blyukher_targeted_for_purge_flag
+					}
+					SOV_purge_character_effect = yes	
+					#log = "Hey I am [THIS.GetName] I am in the Event!"
+				}
+			}
+
+			# Yegerov may come in left side
+			every_character = {
+				limit = {
+					has_character_flag = SOV_POSSIBLE_targeted_for_purge_flag2			
+				}
+				set_character_flag = SOV_exiled_flag
 			}
 		}
 
@@ -990,9 +1022,23 @@ country_event = {
 		custom_effect_tooltip = SOV_characters_will_be_purged_tt
 		character_list_tooltip = {
 			limit = {
-				has_character_flag = SOV_targeted_for_purge_flag
+				OR = {
+					has_character_flag = SOV_targeted_for_purge_flag
+					has_character_flag = SOV_tukhachevsky_targeted_for_purge_flag
+				}
 			}
 		}
+		if = {
+			limit = {
+				has_global_flag = SOV_border_war_loss
+			}
+			character_list_tooltip = {
+				limit = {
+					has_character_flag = SOV_blyukher_targeted_for_purge_flag
+				}
+			}
+		}
+
 
 		#RANDOM GENERALS COWED
 		SOV_paranoia_daunt_generals_effect = yes
@@ -1035,17 +1081,88 @@ country_event = {
 		}
 
 		trigger = {
-			NOT = { has_political_power < SOV_purge_event_pp_to_avoid_great }
-			NOT = { has_country_flag = SOV_purge_event_unavoidable_flag } #Used for historical purges triggered via focus
+			NOT = { has_global_flag = SOV_border_war_loss }
 		}
 
-		add_political_power = SOV_purge_event_pp_to_avoid_great_pay
+		hidden_effect = {
+			#Purge any Advisors
+			every_character = {
+				limit = {
+					has_army_ledger = yes
+					has_character_flag = SOV_targeted_for_purge_flag
+				}
+				SOV_purge_character_effect = yes	
+				#log = "Hey I am [THIS.GetName] I am in the Event!"
+			}
 
-		#PARANOIA INCREASES
-		SOV_paranoia_very_high_increase_effect = yes
+			#Purge any Marshals/Generals #This is a duplicate as a workaround for tooltip purposes
+			every_army_leader = {
+				limit = {
+					OR = {
+						is_field_marshal = yes
+						is_corps_commander = yes
+					}
+					has_character_flag = SOV_targeted_for_purge_flag
+				}
+				SOV_purge_character_effect = yes	
+				#log = "Hey I am [THIS.GetName] I am in the Event!"
+			}
 
-		#CLEAN EVERYTHING THANKS
-		SOV_clean_purge_targets_effect = yes
+
+			# Yegerov, Tukchevsky and Bluker may come in
+			every_character = {
+				limit = {
+					OR = {
+						has_character_flag = SOV_tukhachevsky_targeted_for_purge_flag
+						has_character_flag = SOV_blyukher_targeted_for_purge_flag
+						has_character_flag = SOV_POSSIBLE_targeted_for_purge_flag2
+					}				
+				}
+				set_character_flag = SOV_exiled_flag
+			}
+
+		}
+
+		#Update purged portraits in UI
+		hidden_effect = {
+			SOV_paranoia_update_portraits_ui = yes
+		}
+
+		custom_effect_tooltip = SOV_spare_tukhachevsky_tt
+
+		add_stability = -0.1
+
+		custom_effect_tooltip = SOV_characters_will_be_purged_tt
+		character_list_tooltip = {
+			limit = {
+				has_character_flag = SOV_targeted_for_purge_flag
+			}
+		}
+
+		#RANDOM GENERALS COWED
+		SOV_paranoia_daunt_generals_effect = yes
+
+		#PARANOIA decreases
+		SOV_paranoia_very_high_decrease_effect = yes
+
+		# if = {
+		# 	limit = {
+		# 		has_country_flag = SOV_purge_event_unavoidable_flag
+		# 	}
+		# 	custom_effect_tooltip = SOV_purge_event_unavoidable_purge_great_tt
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		has_political_power < SOV_purge_event_pp_to_avoid_great
+		# 	}
+		# 	custom_effect_tooltip = SOV_purge_event_not_enough_pp_to_avoid_great_tt
+		# }
+
+		#Clear flags forbidding the "avoid purge" option from showing up
+		SOV_clear_unavoidable_purge_flags_effect = yes
+
+		# # Increase opposition Army Support 
+		# SOV_increase_opposition_army_support_small = yes 
 	}
 }
 
@@ -10883,370 +11000,370 @@ country_event = {
 
 
 # Dispatcher event for uprisings 
-country_event = {
-	id = NSB_soviet_nationalist.000
-	title = NSB_soviet_nationalist.000.t
-	desc = NSB_soviet_nationalist.000.desc
-	picture =  GFX_report_event_SOV_purge_navy
-	hidden = yes 
-	is_triggered_only = yes
+# country_event = {
+# 	id = NSB_soviet_nationalist.000
+# 	title = NSB_soviet_nationalist.000.t
+# 	desc = NSB_soviet_nationalist.000.desc
+# 	picture =  GFX_report_event_SOV_purge_navy
+# 	hidden = yes 
+# 	is_triggered_only = yes
 
-	option = {
-		name = NSB_soviet_nationalist.000.a	
-		IF = {
-			limit = { has_global_flag =  SOV_soviet_civil_war } # No point in kicking off if war has ended already
-			random_list = {
-				35 = { } # Nothing happens 
-				# the "Western" Front
-				6 = { # Ukrainian uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 1.5 # To keep a ukrainian uprising always slightly more likely than the others
-						always = yes
-					}
-					modifier = {
-						factor = 0
-						OR = { 
-							has_country_flag = ukr_uprising_flag
-							UKR = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = UKR }
-					set_country_flag = ukr_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				2 = { # Belarussan uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = blr_uprising_flag
-							BLR = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = BLR }
-					set_country_flag = blr_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				1 = { # CRI uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0.25
-						any_state = {
-							is_core_of = CRI
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = CRI_uprising_flag
-							CRI = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = CRI }
-					set_country_flag = CRI_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				1 = { # KAR uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0.25
-						any_state = {
-							is_core_of = KAR
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = KAR_uprising_flag
-							KAR = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = KAR }
-					set_country_flag = KAR_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				# The Caucasus 
-				3 = { # Georgian uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 1.5 # To keep a georgian uprising always slightly more likely than the others
-						always = yes
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = geo_uprising_flag
-							GEO = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = GEO }
-					set_country_flag = geo_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				2 = { # Armenian uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = arm_uprising_flag
-							ARM = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = ARM }
-					set_country_flag = arm_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				2 = { # Azer uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = azr_uprising_flag
-							AZR = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = AZR }
-					set_country_flag = azr_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				1 = { # DAG uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0.25
-						any_state = {
-							is_core_of = DAG
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = DAG_uprising_flag
-							DAG = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = DAG }
-					set_country_flag = DAG_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				1 = { # CIN uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0.25
-						any_state = {
-							is_core_of = CIN
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = CIN_uprising_flag
-							CIN = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = CIN }
-					set_country_flag = CIN_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
+# 	option = {
+# 		name = NSB_soviet_nationalist.000.a	
+# 		IF = {
+# 			limit = { has_global_flag =  SOV_soviet_civil_war } # No point in kicking off if war has ended already
+# 			random_list = {
+# 				35 = { } # Nothing happens 
+# 				# the "Western" Front
+# 				6 = { # Ukrainian uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 1.5 # To keep a ukrainian uprising always slightly more likely than the others
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = { 
+# 							has_country_flag = ukr_uprising_flag
+# 							UKR = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = UKR }
+# 					set_country_flag = ukr_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				2 = { # Belarussan uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = blr_uprising_flag
+# 							BLR = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = BLR }
+# 					set_country_flag = blr_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				1 = { # CRI uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0.25
+# 						any_state = {
+# 							is_core_of = CRI
+# 							is_controlled_by = SOV
+# 						}
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = CRI_uprising_flag
+# 							CRI = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = CRI }
+# 					set_country_flag = CRI_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				1 = { # KAR uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0.25
+# 						any_state = {
+# 							is_core_of = KAR
+# 							is_controlled_by = SOV
+# 						}
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = KAR_uprising_flag
+# 							KAR = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = KAR }
+# 					set_country_flag = KAR_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				# The Caucasus 
+# 				3 = { # Georgian uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 1.5 # To keep a georgian uprising always slightly more likely than the others
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = geo_uprising_flag
+# 							GEO = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = GEO }
+# 					set_country_flag = geo_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				2 = { # Armenian uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = arm_uprising_flag
+# 							ARM = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = ARM }
+# 					set_country_flag = arm_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				2 = { # Azer uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = azr_uprising_flag
+# 							AZR = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = AZR }
+# 					set_country_flag = azr_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				1 = { # DAG uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0.25
+# 						any_state = {
+# 							is_core_of = DAG
+# 							is_controlled_by = SOV
+# 						}
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = DAG_uprising_flag
+# 							DAG = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = DAG }
+# 					set_country_flag = DAG_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				1 = { # CIN uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0.25
+# 						any_state = {
+# 							is_core_of = CIN
+# 							is_controlled_by = SOV
+# 						}
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = CIN_uprising_flag
+# 							CIN = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = CIN }
+# 					set_country_flag = CIN_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
 
-				# Central Asia
-				1 = { # Khivan uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0.25
-						any_state = {
-							is_core_of = KHI
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = khi_uprising_flag
-							KHI = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = KHI }
-					set_country_flag = khi_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				1 = { # Bukharan uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0.25
-						any_state = {
-							is_core_of = BUK
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = buk_uprising_flag
-							BUK = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = BUK }
-					set_country_flag = buk_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				1 = { # Kazakh uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0
-						any_state = {
-							is_core_of = KAZ
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = kaz_uprising_flag
-							KAZ = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = KAZ }
-					set_country_flag = kaz_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				1 = { # UZB uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0
-						any_state = {
-							is_core_of = UZB
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = uzb_uprising_flag
-							UZB = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = UZB }
-					set_country_flag = uzb_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				1 = { # KKP uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0.25
-						any_state = {
-							is_core_of = KKP
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = kkp_uprising_flag
-							KKP = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = KKP }
-					set_country_flag = kkp_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				1 = { # TMS uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0.25
-						any_state = {
-							is_core_of = TMS
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = tms_uprising_flag
-							TMS = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = TMS }
-					set_country_flag = tms_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
-				1 = { # KYR uprising
-					modifier = {
-						add = SOV_civil_war_months
-						always = yes
-					}
-					modifier = {
-						factor = 0.25
-						any_state = {
-							is_core_of = KYR
-							is_controlled_by = SOV
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							has_country_flag = KYR_uprising_flag
-							KYR = { exists = yes }
-						}
-					}
-					set_variable = { SOV_nationalist_country = KYR }
-					set_country_flag = KYR_uprising_flag
-					SOV = { country_event = NSB_soviet_nationalist.001 }
-				}
+# 				# Central Asia
+# 				1 = { # Khivan uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0.25
+# 						any_state = {
+# 							is_core_of = KHI
+# 							is_controlled_by = SOV
+# 						}
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = khi_uprising_flag
+# 							KHI = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = KHI }
+# 					set_country_flag = khi_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				1 = { # Bukharan uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0.25
+# 						any_state = {
+# 							is_core_of = BUK
+# 							is_controlled_by = SOV
+# 						}
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = buk_uprising_flag
+# 							BUK = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = BUK }
+# 					set_country_flag = buk_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				1 = { # Kazakh uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						any_state = {
+# 							is_core_of = KAZ
+# 							is_controlled_by = SOV
+# 						}
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = kaz_uprising_flag
+# 							KAZ = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = KAZ }
+# 					set_country_flag = kaz_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				1 = { # UZB uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						any_state = {
+# 							is_core_of = UZB
+# 							is_controlled_by = SOV
+# 						}
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = uzb_uprising_flag
+# 							UZB = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = UZB }
+# 					set_country_flag = uzb_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				1 = { # KKP uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0.25
+# 						any_state = {
+# 							is_core_of = KKP
+# 							is_controlled_by = SOV
+# 						}
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = kkp_uprising_flag
+# 							KKP = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = KKP }
+# 					set_country_flag = kkp_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				1 = { # TMS uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0.25
+# 						any_state = {
+# 							is_core_of = TMS
+# 							is_controlled_by = SOV
+# 						}
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = tms_uprising_flag
+# 							TMS = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = TMS }
+# 					set_country_flag = tms_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
+# 				1 = { # KYR uprising
+# 					modifier = {
+# 						add = SOV_civil_war_months
+# 						always = yes
+# 					}
+# 					modifier = {
+# 						factor = 0.25
+# 						any_state = {
+# 							is_core_of = KYR
+# 							is_controlled_by = SOV
+# 						}
+# 					}
+# 					modifier = {
+# 						factor = 0
+# 						OR = {
+# 							has_country_flag = KYR_uprising_flag
+# 							KYR = { exists = yes }
+# 						}
+# 					}
+# 					set_variable = { SOV_nationalist_country = KYR }
+# 					set_country_flag = KYR_uprising_flag
+# 					SOV = { country_event = NSB_soviet_nationalist.001 }
+# 				}
 
-			}
-		}
-	}
-}
+# 			}
+# 		}
+# 	}
+# }
 
 # Nationalist Revolt
 country_event = {
@@ -12502,6 +12619,156 @@ country_event = {
 	#picture = GFX_ind
 
 	is_triggered_only = yes
+	
+	option = {
+		name = soviet.2222.a
+	}
+}
+
+# Dance of the Marshals
+news_event = {
+	id = soviet.2999
+	title = soviet.2999.t
+	desc = soviet.2999.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = soviet.2222.a
+	}
+}
+
+# Grigory Khulik
+news_event = {
+	id = soviet.3000
+	title = soviet.3000.t
+	desc = soviet.3000.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = soviet.2222.a
+	}
+}
+
+# Killment Voroshilov
+news_event = {
+	id = soviet.3001
+	title = soviet.3001.t
+	desc = soviet.3001.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = soviet.2222.a
+	}
+}
+
+# Semyon Timoshenko
+news_event = {
+	id = soviet.3002
+	title = soviet.3002.t
+	desc = soviet.3002.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = soviet.2222.a
+	}
+}
+
+# Vasily Blyukher
+news_event = {
+	id = soviet.3003
+	title = soviet.3003.t
+	desc = soviet.3003.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = soviet.2222.a
+	}
+}
+
+# Semyon Budyonny
+news_event = {
+	id = soviet.3004
+	title = soviet.3004.t
+	desc = soviet.3004.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = soviet.2222.a
+	}
+}
+
+# Alexander Yegorov
+news_event = {
+	id = soviet.3005
+	title = soviet.3005.t
+	desc = soviet.3005.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = soviet.2222.a
+	}
+}
+
+# Mikhail Tukhachevsky
+news_event = {
+	id = soviet.3006
+	title = soviet.3006.t
+	desc = soviet.3006.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = soviet.2222.a
+	}
+}
+
+# Explaining Builds
+news_event = {
+	id = soviet.3007
+	title = soviet.3007.t
+	desc = soviet.3007.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = soviet.2222.a
+	}
+}
+
+# Losing the Winter WAr
+news_event = {
+	id = soviet.3008
+	title = soviet.3008.t
+	desc = soviet.3008.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
 	
 	option = {
 		name = soviet.2222.a

@@ -1,4 +1,4 @@
-version="1.3.21"
+version="1.0.0"
 tags={
 	"Balance"
 	"Events"
@@ -7,7 +7,7 @@ tags={
 	"National Focuses"
 	"Technologies"
 }
-name="World War Bruh (PMFU)"
+name="World War Bruh (PMFU) - Dev"
 picture="thumbnail.png"
 replace_path="common/ai_equipment"
 replace_path="common/ai_strategy"
@@ -15,6 +15,7 @@ replace_path="common/ai_strategy_plans"
 replace_path="map"
 replace_path="map/strategicregions"
 replace_path="history/states"
+replace_path="history/countries"
 replace_path="gfx/interface/equipmentdesigner/tanks/designer"
 supported_version="1.12.*"
 remote_file_id="2913293016"

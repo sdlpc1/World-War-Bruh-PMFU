@@ -6,6 +6,7 @@ state={
 	state_category = town
 
 	history={
+		set_state_flag = USA_split_china_region_state_eastern
 		owner = CHI
 		add_core_of = CHI
 		buildings = {

@@ -20,5 +20,41 @@ operations = {
 		}
 	}
 
+	SWE_cancel_tank_hp = {
+
+		icon = generic_tank
+
+		allowed = {
+			original_tag = SWE
+		}
+
+		fire_only_once = yes
+		days_mission_timeout = 1915
+		
+		available = {
+			always = no
+		}
+		
+		timeout_effect = {
+			GER = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			ITA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			ROM = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			HUN = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			BUL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			CAN = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			SAF = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			AST = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			ENG = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			NZL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			IRE = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			MEX = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			BRA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			SPR = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			RAJ = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+			HOL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }	
+			
+		}
+	}
+
 }
 

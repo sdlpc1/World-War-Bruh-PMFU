@@ -65,11 +65,11 @@ FRA_threats = {
         id = BEL
         value = 10
     }
-    ai_strategy = {
-        type = prepare_for_war
-        id = LUX
-        value = 3
-    }
+    # ai_strategy = {
+    #     type = prepare_for_war
+    #     id = LUX
+    #     value = 3
+    # }
     ai_strategy = {
         type = prepare_for_war
         id = ITA

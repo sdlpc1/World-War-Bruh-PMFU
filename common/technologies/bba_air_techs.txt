@@ -1,7 +1,7 @@
 technologies = {
 	
 	iw_small_airframe = {
-		allow_branch={NOT={tag=EFR} }
+
 		enable_equipments = {
 			small_plane_airframe_0
 			small_plane_cas_airframe_0
@@ -11,6 +11,9 @@ technologies = {
 			#cv_small_plane_cas_airframe_0
 			#cv_small_plane_naval_bomber_airframe_0
 			#cv_small_plane_suicide_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_1_1x
 		}
 		
 	
@@ -57,6 +60,9 @@ technologies = {
 			#cv_small_plane_cas_airframe_1
 			#cv_small_plane_naval_bomber_airframe_1
 			#cv_small_plane_suicide_airframe_1
+		}
+		enable_equipment_modules = {
+			engine_2_1x
 		}
 	
 		path = {
@@ -123,6 +129,11 @@ technologies = {
 			#cv_small_plane_cas_airframe_2
 			#cv_small_plane_naval_bomber_airframe_2
 			#cv_small_plane_suicide_airframe_2
+		}
+		enable_equipment_modules = {
+			engine_3_1x
+			fuel_injection_s	
+			radio_navigation_1	
 		}
 	
 		path = {
@@ -195,6 +206,11 @@ technologies = {
 			#cv_small_plane_cas_airframe_3
 			#cv_small_plane_naval_bomber_airframe_3
 			#cv_small_plane_suicide_airframe_3
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+			fuel_injection2_s
+			radio_navigation_2
 		}
 		
 		path = {
@@ -296,6 +312,9 @@ technologies = {
 			medium_plane_fighter_airframe_0
 			medium_plane_scout_plane_airframe_0
 		}
+		enable_equipment_modules = {
+			engine_1_2x
+		}
 
 		path = {
 			leads_to_tech = basic_medium_airframe
@@ -325,6 +344,9 @@ technologies = {
 			medium_plane_airframe_1
 			medium_plane_fighter_airframe_1
 			medium_plane_scout_plane_airframe_1
+		}
+		enable_equipment_modules = {
+			engine_2_2x
 		}
 	
 		path = {
@@ -381,6 +403,11 @@ technologies = {
 			medium_plane_fighter_airframe_2
 			medium_plane_scout_plane_airframe_2
 		}
+		enable_equipment_modules = {
+			engine_3_2x
+			fuel_injection_m		
+			radio_navigation_1	
+		}
 	
 		path = {
 			leads_to_tech = advanced_medium_airframe
@@ -433,6 +460,11 @@ technologies = {
 			medium_plane_airframe_3
 			medium_plane_fighter_airframe_3
 			medium_plane_scout_plane_airframe_3
+		}
+		enable_equipment_modules = {
+			engine_4_2x
+			fuel_injection2_m	
+			radio_navigation_2
 		}
 		
 		path = {
@@ -750,6 +782,7 @@ technologies = {
 		}
 	}
 	cas_1 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -794,6 +827,7 @@ technologies = {
 	}
 	
 	cas_2 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -831,6 +865,7 @@ technologies = {
 	}
 
 	nav_1 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -873,6 +908,7 @@ technologies = {
 		}
 	}
 	nav_2 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -915,6 +951,7 @@ technologies = {
 		}
 	}
 	nav_3 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -953,6 +990,7 @@ technologies = {
 	}
 	
 	tac_1 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -995,6 +1033,7 @@ technologies = {
 		}
 	}
 	tac_2 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1037,6 +1076,7 @@ technologies = {
 		}
 	}
 	tac_3 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1044,10 +1084,18 @@ technologies = {
 		enable_equipment_modules = {
 			guided_anti_ship_missile
 		}
-		research_cost = 0.5
+		research_cost = 2.0
 		start_year = 1944
 		categories = {
 			year_1943
+		}
+
+		allow = {
+			date > 1943.1.1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = guided_anti_ship_missile_1_short_tt
 		}
 
 		folder = {
@@ -1077,6 +1125,7 @@ technologies = {
 		}
 	}
 	photo_reconnaisance = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1092,8 +1141,6 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 4 y = 2 }
 		}
-
-		allow_branch = { has_dlc = "La Resistance" }
 		
 		categories = {
 			air_equipment
@@ -1113,6 +1160,7 @@ technologies = {
 	}
 
 	aa_lmg = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1160,6 +1208,7 @@ technologies = {
 	}
 
 	aa_hmg = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1210,6 +1259,7 @@ technologies = {
 	}
 
 	aa_cannon_1 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1260,6 +1310,7 @@ technologies = {
 	}
 
 	aa_cannon_2 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1306,6 +1357,7 @@ technologies = {
 	}
 	
 	engines_1 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1380,6 +1432,7 @@ technologies = {
 	}
 
 	engines_2 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1437,6 +1490,7 @@ technologies = {
 	}
 
 	engines_3 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1501,6 +1555,7 @@ technologies = {
 	}
 	
 	engines_4 = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1555,6 +1610,7 @@ technologies = {
 	}
 
 	range_improvements = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1611,6 +1667,7 @@ technologies = {
 		}
 	}
 	self_sealing_fuel_tanks = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1629,6 +1686,7 @@ technologies = {
 		}
 	}
 	aircraft_construction = {
+
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1667,6 +1725,7 @@ technologies = {
 		}
 	}
 	survivability_studies = {
+		
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
@@ -1729,5 +1788,22 @@ technologies = {
 			factor = 0
 		}
 		################
+	}
+
+	amerikabomber = {
+
+		enable_equipments = {
+			amerikabomber_equipment
+		}
+		
+	}
+	
+	hs132 = {
+
+		enable_equipment_modules = {
+			jet_cas_bomb
+			jet_cas_bomb_extra
+		}
+		
 	}
 }

@@ -204,7 +204,7 @@ ideas = {
 			picture = ast_naval_auxiliary_patrol
 			
 			modifier = {
-				production_speed_coastal_bunker_factor = 0.75
+				production_speed_coastal_bunker_factor = 0.40
 				army_core_defence_factor = 0.1			
 			}
 		}
@@ -559,6 +559,30 @@ ideas = {
 				agency_upgrade_time = -0.25
 				decryption_factor = 0.25
 				foreign_subversive_activites = -0.5
+			}
+		}
+
+		AST_no_nzl_annex = {
+			allowed = {
+				original_tag = AST
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 

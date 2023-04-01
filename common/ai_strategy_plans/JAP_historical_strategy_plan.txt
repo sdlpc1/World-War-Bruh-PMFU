@@ -70,18 +70,8 @@ Japanese_Historical = {
 		value = 100
 	}
     ai_strategy = {
-		type = prepare_for_war
-		id = PRC
-		value = 100
-	}
-    ai_strategy = {
         type = consider_weak
         id = "CHI"
-        value = 20
-    }
-    ai_strategy = {
-        type = consider_weak
-        id = "PRC"
         value = 20
     }
     ai_strategy = {
@@ -96,11 +86,6 @@ Japanese_Historical = {
     ai_strategy = {
 		type = invade
 		id = CHI
-		value = 50
-	}
-    ai_strategy = {
-		type = invade
-		id = PRC
 		value = 50
 	}
 

@@ -491,11 +491,16 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1943
+
+		path = {
+			leads_to_tech = modern_sonar
+			research_cost_coeff = 1
+		}
 		
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 2 y = 13 }
+			position = { x = 2 y = 23 }
 		}
 		
 		ai_will_do = {
@@ -518,6 +523,43 @@ technologies = {
 			ship_modules_tech
 		}
 	}
+
+	# modern_sonar = {
+	# 	enable_equipment_modules = { 
+	# 		ship_sonar_4
+	# 	}
+	# 	on_research_complete = {
+	# 		custom_effect_tooltip = sonar_advice_tt
+	# 	}
+	# 	research_cost = 1
+
+	# 	start_year = 1942
+		
+	# 	folder = {
+	# 		name = mtgnavalfolder
+	# 		position = { x = 2 y = 19 }
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 2
+			
+	# 		modifier = {
+	# 			factor = 4
+	# 			has_war_with = GER
+	# 		}
+	# 		modifier = {
+	# 			factor = 2
+	# 			anti_submarine_strategy_required_trigger = yes
+	# 		}
+	# 	}
+		
+	# 	categories = {
+	# 		naval_equipment
+	# 		dd_tech
+	# 		asw_tech
+	# 		ship_modules_tech
+	# 	}
+	# }
 
  ##  ###  #  # ###  ## ### ###   ##
 #  # #  # #  #  #  #   #   #  # #
@@ -1448,6 +1490,43 @@ early_ship_hull_carrier = {
 		}
 	}
 
+	# advanced_ship_hull_submarine = {
+
+	# 	enable_equipments = {
+	# 		ship_hull_submarine_4
+	# 	}
+	# 	enable_equipment_modules = {
+	# 		ship_torpedo_sub_4
+	# 		sub_ship_engine_4
+	# 	}
+
+	# 	research_cost = 2.0
+
+	# 	start_year = 1944
+
+	# 	folder = {
+	# 		name = mtgnavalfolder
+	# 		position = {  x = -2 y = 24 }
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 1
+
+	# 		modifier = {
+	# 			factor = 7
+	# 			OR = {
+	# 				tag = GER
+	# 				tag = USA
+	# 			}
+	# 		}
+	# 	}
+
+	# 	categories = {
+	# 		naval_equipment
+	# 		ss_tech
+	# 	}
+	# }
+
 	basic_submarine_snorkel = {
 
 		enable_equipment_modules = {
@@ -1462,11 +1541,11 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 13 }
+			position = {  x = -1 y = 14 }
 		}
 
 		ai_will_do = {
@@ -1514,11 +1593,11 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2
 
-		start_year = 1942
+		start_year = 1944
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 19 }
+			position = {  x = -1 y = 23 }
 		}
 
 		ai_will_do = {

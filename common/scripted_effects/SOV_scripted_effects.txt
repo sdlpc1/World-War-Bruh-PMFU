@@ -778,6 +778,7 @@ SOV_paranoia_daunt_generals_effect = {
 		}
 		random_army_leader = {
 			limit = {
+				is_field_marshal = no
 				NOT = { has_character_flag = SOV_targeted_for_purge_flag }
 				NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 			}
@@ -2008,6 +2009,7 @@ SOV_great_purge_army_trial_of_the_generals_effect = {
 						}
 						has_character_flag = SOV_targeted_for_purge_flag
 						SOV_character_can_be_purged = yes
+						NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 					}
 					PREV = { add_to_temp_variable = { temp_targets_index = 1 } }
 				}
@@ -2040,88 +2042,88 @@ SOV_great_purge_army_trial_of_the_generals_effect = {
 
 			# PICK 1 FIELD MARSHAL
 			hidden_effect = {
-				if = { # Pick an already-targeted Marshal, if any
-					limit = {
-						any_army_leader = {
-							is_field_marshal = yes
-							has_character_flag = SOV_potential_target_flag
-							SOV_character_can_be_purged = yes
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-					}
-					random_army_leader = {
-						limit = {
-							is_field_marshal = yes
-							has_character_flag = SOV_potential_target_flag
-							SOV_character_can_be_purged = yes
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-						set_character_flag = SOV_targeted_for_purge_flag
-						clr_character_flag = SOV_potential_target_flag
-						#ROOT = { log = "Chosen Marshal - Prioritized - [PREV.GetName]" } #Debug
-					}
-					add_to_temp_variable = { temp_targets_index = 1 }
-				}
-				else_if = { # Pick an already-targeted Army advisor, if any
-					limit = {
-						any_character = {
-							has_army_ledger = yes
-							has_character_flag = SOV_potential_target_flag
-							SOV_character_can_be_purged = yes
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-					}
-					random_character = {
-						limit = {
-							has_army_ledger = yes
-							has_character_flag = SOV_potential_target_flag
-							SOV_character_can_be_purged = yes
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-						set_character_flag = SOV_targeted_for_purge_flag
-						clr_character_flag = SOV_potential_target_flag
-						#ROOT = { log = "Chosen Advisor - Prioritized - [PREV.GetName]" } Debug
-					}
-					add_to_temp_variable = { temp_targets_index = 1 }
-				}
-				else_if = { # Pick a random marshal
-					limit = {
-						any_army_leader = {
-							is_field_marshal = yes
-							SOV_character_can_be_purged = yes
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-					}
-					random_army_leader = {
-						limit = {
-							is_field_marshal = yes
-							SOV_character_can_be_purged = yes
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-						set_character_flag = SOV_targeted_for_purge_flag
-						#ROOT = { log = "Chosen Marshal - Random - [PREV.GetName]" } #Debug
-					}
-					add_to_temp_variable = { temp_targets_index = 1 }
-				}
-				else_if = { # Pick a random army advisor
-					limit = {
-						any_character = {
-							has_army_ledger = yes
-							SOV_character_can_be_purged = yes
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-					}
-					random_character = {
-						limit = {
-							has_army_ledger = yes
-							SOV_character_can_be_purged = yes
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-						set_character_flag = SOV_targeted_for_purge_flag
-						#ROOT = { log = "Chosen Advisor - Random - [PREV.GetName]" } #Debug
-					}
-					add_to_temp_variable = { temp_targets_index = 1 }
-				}
+				# if = { # Pick an already-targeted Marshal, if any
+				# 	limit = {
+				# 		any_army_leader = {
+				# 			is_field_marshal = yes
+				# 			has_character_flag = SOV_potential_target_flag
+				# 			SOV_character_can_be_purged = yes
+				# 			NOT = { has_trait = trait_SOV_stalinist }
+				# 		}
+				# 	}
+				# 	random_army_leader = {
+				# 		limit = {
+				# 			is_field_marshal = yes
+				# 			has_character_flag = SOV_potential_target_flag
+				# 			SOV_character_can_be_purged = yes
+				# 			NOT = { has_trait = trait_SOV_stalinist }
+				# 		}
+				# 		set_character_flag = SOV_targeted_for_purge_flag
+				# 		clr_character_flag = SOV_potential_target_flag
+				# 		#ROOT = { log = "Chosen Marshal - Prioritized - [PREV.GetName]" } #Debug
+				# 	}
+				# 	add_to_temp_variable = { temp_targets_index = 1 }
+				# }
+				# else_if = { # Pick an already-targeted Army advisor, if any
+				# 	limit = {
+				# 		any_character = {
+				# 			has_army_ledger = yes
+				# 			has_character_flag = SOV_potential_target_flag
+				# 			SOV_character_can_be_purged = yes
+				# 			NOT = { has_trait = trait_SOV_stalinist }
+				# 		}
+				# 	}
+				# 	random_character = {
+				# 		limit = {
+				# 			has_army_ledger = yes
+				# 			has_character_flag = SOV_potential_target_flag
+				# 			SOV_character_can_be_purged = yes
+				# 			NOT = { has_trait = trait_SOV_stalinist }
+				# 		}
+				# 		set_character_flag = SOV_targeted_for_purge_flag
+				# 		clr_character_flag = SOV_potential_target_flag
+				# 		#ROOT = { log = "Chosen Advisor - Prioritized - [PREV.GetName]" } Debug
+				# 	}
+				# 	add_to_temp_variable = { temp_targets_index = 1 }
+				# }
+				# else_if = { # Pick a random marshal
+				# 	limit = {
+				# 		any_army_leader = {
+				# 			is_field_marshal = yes
+				# 			SOV_character_can_be_purged = yes
+				# 			NOT = { has_trait = trait_SOV_stalinist }
+				# 		}
+				# 	}
+				# 	random_army_leader = {
+				# 		limit = {
+				# 			is_field_marshal = yes
+				# 			SOV_character_can_be_purged = yes
+				# 			NOT = { has_trait = trait_SOV_stalinist }
+				# 		}
+				# 		set_character_flag = SOV_targeted_for_purge_flag
+				# 		#ROOT = { log = "Chosen Marshal - Random - [PREV.GetName]" } #Debug
+				# 	}
+				# 	add_to_temp_variable = { temp_targets_index = 1 }
+				# }
+				# else_if = { # Pick a random army advisor
+				# 	limit = {
+				# 		any_character = {
+				# 			has_army_ledger = yes
+				# 			SOV_character_can_be_purged = yes
+				# 			NOT = { has_trait = trait_SOV_stalinist }
+				# 		}
+				# 	}
+				# 	random_character = {
+				# 		limit = {
+				# 			has_army_ledger = yes
+				# 			SOV_character_can_be_purged = yes
+				# 			NOT = { has_trait = trait_SOV_stalinist }
+				# 		}
+				# 		set_character_flag = SOV_targeted_for_purge_flag
+				# 		#ROOT = { log = "Chosen Advisor - Random - [PREV.GetName]" } #Debug
+				# 	}
+				# 	add_to_temp_variable = { temp_targets_index = 1 }
+				# }
 
 				while_loop_effect = {
 					limit = {
@@ -2134,6 +2136,7 @@ SOV_great_purge_army_trial_of_the_generals_effect = {
 								has_character_flag = SOV_potential_target_flag
 								SOV_character_can_be_purged = yes
 								NOT = { has_trait = trait_SOV_stalinist }
+								NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 							}
 						}
 						#log = "Prioritized General" #Debug
@@ -2143,6 +2146,7 @@ SOV_great_purge_army_trial_of_the_generals_effect = {
 								has_character_flag = SOV_potential_target_flag
 								SOV_character_can_be_purged = yes
 								NOT = { has_trait = trait_SOV_stalinist }
+								NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 							}
 							set_character_flag = SOV_targeted_for_purge_flag
 							clr_character_flag = SOV_potential_target_flag
@@ -2161,6 +2165,7 @@ SOV_great_purge_army_trial_of_the_generals_effect = {
 								has_character_flag = SOV_potential_target_flag
 								SOV_character_can_be_purged = yes
 								NOT = { has_trait = trait_SOV_stalinist }
+								NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 							}
 						}
 						random_character = {
@@ -2172,6 +2177,7 @@ SOV_great_purge_army_trial_of_the_generals_effect = {
 								has_character_flag = SOV_potential_target_flag
 								SOV_character_can_be_purged = yes
 								NOT = { has_trait = trait_SOV_stalinist }
+								NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 							}
 							set_character_flag = SOV_targeted_for_purge_flag
 							clr_character_flag = SOV_potential_target_flag
@@ -2187,6 +2193,7 @@ SOV_great_purge_army_trial_of_the_generals_effect = {
 								NOT = { has_character_flag = SOV_targeted_for_purge_flag }
 								SOV_character_can_be_purged = yes
 								NOT = { has_trait = trait_SOV_stalinist }
+								NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 							}
 						}
 						random_army_leader = {
@@ -2195,6 +2202,7 @@ SOV_great_purge_army_trial_of_the_generals_effect = {
 								NOT = { has_character_flag = SOV_targeted_for_purge_flag }
 								SOV_character_can_be_purged = yes
 								NOT = { has_trait = trait_SOV_stalinist }
+								NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 							}
 							set_character_flag = SOV_targeted_for_purge_flag
 
@@ -2212,6 +2220,7 @@ SOV_great_purge_army_trial_of_the_generals_effect = {
 								NOT = { has_character_flag = SOV_targeted_for_purge_flag }
 								SOV_character_can_be_purged = yes
 								NOT = { has_trait = trait_SOV_stalinist }
+								NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 							}
 						}
 						random_army_leader = {
@@ -2223,6 +2232,7 @@ SOV_great_purge_army_trial_of_the_generals_effect = {
 								NOT = { has_character_flag = SOV_targeted_for_purge_flag }
 								SOV_character_can_be_purged = yes
 								NOT = { has_trait = trait_SOV_stalinist }
+								NOT = { has_trait = trait_SOV_cowed_by_stalin_army }
 							}
 							set_character_flag = SOV_targeted_for_purge_flag
 
@@ -3018,148 +3028,148 @@ SOV_foreign_politics_decision_cost_reduction_effect = { #Add more diplomacy vars
 	round_variable = SOV_sinkiang_proposal_cost
 }
 
-SOV_approach_sinkiang_diplomacy_effect = {
-	add_ai_strategy = {
-		type = befriend
-		id = SIK			
-		value = 15
-	}
-	add_ai_strategy = {
-		type = alliance
-		id = SIK		
-		value = 15
-	}
-	SIK = {
-		add_ai_strategy = {
-			type = befriend
-			id = SOV			
-			value = 10
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = CHI		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = PRC		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = XSM		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = SHX		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = YUN		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = GXC		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = MEN		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = MAN		
-			value = -5
-		}
-	}
-}
+# SOV_approach_sinkiang_diplomacy_effect = {
+# 	add_ai_strategy = {
+# 		type = befriend
+# 		id = SIK			
+# 		value = 15
+# 	}
+# 	add_ai_strategy = {
+# 		type = alliance
+# 		id = SIK		
+# 		value = 15
+# 	}
+# 	SIK = {
+# 		add_ai_strategy = {
+# 			type = befriend
+# 			id = SOV			
+# 			value = 10
+# 		}
+# 		add_ai_strategy = {
+# 			type = alliance
+# 			id = CHI		
+# 			value = -5
+# 		}
+# 		add_ai_strategy = {
+# 			type = alliance
+# 			id = PRC		
+# 			value = -5
+# 		}
+# 		add_ai_strategy = {
+# 			type = alliance
+# 			id = XSM		
+# 			value = -5
+# 		}
+# 		add_ai_strategy = {
+# 			type = alliance
+# 			id = SHX		
+# 			value = -5
+# 		}
+# 		add_ai_strategy = {
+# 			type = alliance
+# 			id = YUN		
+# 			value = -5
+# 		}
+# 		add_ai_strategy = {
+# 			type = alliance
+# 			id = GXC		
+# 			value = -5
+# 		}
+# 		add_ai_strategy = {
+# 			type = alliance
+# 			id = MEN		
+# 			value = -5
+# 		}
+# 		add_ai_strategy = {
+# 			type = alliance
+# 			id = MAN		
+# 			value = -5
+# 		}
+# 	}
+# }
 
 SOV_set_appropriate_national_academy_of_sciences_flag_effect = {
 	#log = "ROOT is [ROOT.GetName]"
 	#log = "FROM is [FROM.GetName]"
+	# if = {
+	# 	limit = {
+	# 		FROM = { tag = BLR }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_BLR_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = UKR }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_UKR_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = KAZ }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_KAZ_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = GEO }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_GEO_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = ARM }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_ARM_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = AZR }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_AZR_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = UZB }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_UZB_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = TMS }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_TMS_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = KYR }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_KYR_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = TAJ }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_TAJ_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = TAN }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_TAN_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = DON }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_DON_flag }
+	# }
+	# else_if = {
+	# 	limit = {
+	# 		FROM = { tag = KUB }
+	# 	}
+	# 	ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_KUB_flag }
+	# }
 	if = {
-		limit = {
-			FROM = { tag = BLR }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_BLR_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = UKR }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_UKR_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = KAZ }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_KAZ_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = GEO }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_GEO_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = ARM }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_ARM_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = AZR }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_AZR_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = UZB }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_UZB_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = TMS }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_TMS_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = KYR }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_KYR_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = TAJ }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_TAJ_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = TAN }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_TAN_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = DON }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_DON_flag }
-	}
-	else_if = {
-		limit = {
-			FROM = { tag = KUB }
-		}
-		ROOT = { set_country_flag = SOV_national_academy_of_sciences_built_KUB_flag }
-	}
-	else_if = {
 		limit = {
 			FROM = { tag = EST }
 		}

@@ -237,19 +237,34 @@
 		air_defence = 20
 	}
 	
-# 	amerikabomber_equipment = {
-# 		year = 1945
+	amerikabomber_equipment = {
+		year = 1945
 
-# 		archetype = strat_bomber_equipment
-# 		priority = 140
+		upgrades = {
+			plane_bomb_upgrade
+			plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+
+		allowed_types = {
+			strategic_bomber
+			maritime_patrol_plane
+		}
+
+		allow_mission_type = training
+		allow_mission_type = strategic_bomber
 		
-# 		air_range = 10000
-# 		maximum_speed = 300
-# 		air_agility = 5
-# 		air_attack = 30
-# 		air_defence = 20
-# 		air_bombing = 20
+		archetype = large_plane_airframe
+		priority = 140
 		
-# 		build_cost_ic = 360
-# 	}
+		air_range = 10000
+		maximum_speed = 300
+		air_agility = 5
+		air_attack = 30
+		air_defence = 20
+		air_bombing = 20
+		
+		build_cost_ic = 360
+	}
 }

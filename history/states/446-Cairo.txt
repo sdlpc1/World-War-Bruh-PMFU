@@ -6,9 +6,13 @@ state=
 	
 	state_category = town
 
+	resources={
+		oil=800 # form abu dhabi blame yames the yamesey
+	}
+
 	history=
 	{
-		
+		set_state_flag = ENG_controls
 		owner = ENG
 		buildings = {
 			infrastructure = 5
@@ -32,7 +36,7 @@ state=
 			4073 3
 		}
 
-		add_core_of = EGY
+		add_core_of = WST
 
 	}
 

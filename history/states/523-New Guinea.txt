@@ -2,9 +2,13 @@ state={
 	id=523
 	name="STATE_523"
 
+	resources = {
+		rubber = 200
+	}
+
 	history={
 		owner = AST
-		add_core_of = BAS
+		add_core_of = WST
 		set_state_flag = ASN_ALLIES_controls
 		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		buildings = {
@@ -15,18 +19,20 @@ state={
 				naval_base = 3
 
 			}
-			12237 = {
-				naval_base = 2
-
-			}
-			12154 = {
-				naval_base = 1
-
-			}
 			12240 = {
-				naval_base = 1
-
+				naval_base = 2
 			}
+			# 12237 = {
+			# 	naval_base = 2
+
+			# }
+			# 12154 = {
+			# 	naval_base = 1
+
+			# }
+			# 12240 = {
+			# 	naval_base = 1
+			# }
 
 		}
 		victory_points = {

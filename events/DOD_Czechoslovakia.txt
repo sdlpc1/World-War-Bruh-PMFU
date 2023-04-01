@@ -338,40 +338,40 @@ country_event = {
 		#		states = { 70 71 664 73 }
 		#	}
 
-		SLO = {
-			transfer_state = 70
-			transfer_state = 71
-			transfer_state = 73
-			if = {
-				limit = {
-					CZE = {
-						owns_state = 664
-					}
-				}
-				transfer_state = 664
-			}
+		# SLO = {
+		# 	transfer_state = 70
+		# 	transfer_state = 71
+		# 	transfer_state = 73
+		# 	if = {
+		# 		limit = {
+		# 			CZE = {
+		# 				owns_state = 664
+		# 			}
+		# 		}
+		# 		transfer_state = 664
+		# 	}
 			
-		}
-		declare_war_on = {
-			target = SLO
-			type = annex_everything
-		}
-		every_state = {
-			limit = { is_owned_by = SLO }
-			add_core_of = SLO
-		}
-		if = {
-			limit = {
-				664 = { NOT = { is_owned_by = SLO } }
-			}
-			SLO = { add_state_claim = 664 }
-		}
+		# }
+		# declare_war_on = {
+		# 	target = SLO
+		# 	type = annex_everything
+		# }
+		# every_state = {
+		# 	limit = { is_owned_by = SLO }
+		# 	add_core_of = SLO
+		# }
+		# if = {
+		# 	limit = {
+		# 		664 = { NOT = { is_owned_by = SLO } }
+		# 	}
+		# 	SLO = { add_state_claim = 664 }
+		# }
 		
-		hidden_effect = {
-			SLO = {
-				load_oob = "SLO_independence"
-			}
-		}
+		# hidden_effect = {
+		# 	SLO = {
+		# 		load_oob = "SLO_independence"
+		# 	}
+		# }
 	}
 }
 # Excluding the slovaks

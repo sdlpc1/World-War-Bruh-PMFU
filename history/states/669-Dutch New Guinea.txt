@@ -3,6 +3,9 @@ state={
 	name="STATE_669"
 	manpower = 314300
 
+	resources = {
+		rubber = 400
+	}
 	state_category = pastoral
 
 	history= {
@@ -13,8 +16,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
-			12371 = {
-				naval_base = 2
+			4509 = {
+				naval_base = 1
 			}
 		}
 	}

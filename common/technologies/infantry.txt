@@ -243,12 +243,6 @@ technologies = {
 
 				OR = {
 					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 
@@ -874,7 +868,8 @@ technologies = {
 		}
 
 		category_special_forces = {
-			max_organisation = 5
+			max_organisation = 10
+			max_strength = 1
 			soft_attack = 0.05
 			hard_attack = 0.05
 		}
@@ -943,6 +938,8 @@ technologies = {
 		category_special_forces = {
 			acclimatization_hot_climate_gain_factor = 0.50
 			acclimatization_cold_climate_gain_factor = 0.50
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 		
 		special_forces_no_supply_grace = 48
@@ -1302,12 +1299,6 @@ technologies = {
 
 				OR = {
 					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 			modifier = {
@@ -1969,6 +1960,10 @@ technologies = {
 				defence = 0.05
 				movement = 0.1
 			}
+			max_strength = 1
+		}
+		category_militia= {
+			max_strength = 1
 		}
 		
 		allow = {
@@ -2008,14 +2003,41 @@ technologies = {
 			need = {
 				infantry_equipment = -15
 			}
-		}		
-
+		}			
 		allow = {
 			always = no
 		}
 
 		research_cost = 2.0
 		start_year = 1942
+	}
+
+	tank_riders = {
+
+		mechanized = {
+			default_morale = 0.2
+			casualty_trickleback = -0.25
+			need = {
+				mechanized_equipment = -20
+			 	motorized_equipment = -10
+		 	}
+		}
+
+		motorized = {
+			default_morale = 0.2
+			casualty_trickleback = -0.25
+			need = {				
+			 	motorized_equipment = -20
+		 	}
+		}
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+		
 	}
 	
 	militia_tech = {
@@ -2102,6 +2124,44 @@ technologies = {
 				defence = 0.05
 				movement = 0.05
 			}
+		}
+	}
+
+	africa_hp = {
+
+		allow = {
+			always = no
+		}
+
+		start_year = 1942
+
+		research_cost = 1
+
+		motorized = {
+			max_strength = 16
+		}
+	
+		mechanized = {
+			max_strength = 12
+		}
+	}
+
+	africa_hp_off = {
+
+		allow = {
+			always = no
+		}
+
+		start_year = 1942
+
+		research_cost = 1
+
+		motorized = {
+			max_strength = -16
+		}
+
+		mechanized = {
+			max_strength = -12
 		}
 	}
 	

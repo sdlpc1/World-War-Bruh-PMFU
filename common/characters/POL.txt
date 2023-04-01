@@ -346,16 +346,6 @@ characters = {
 			}
 			ai_will_do = {
 				factor = 0.000
-				modifier = {
-					add = 100.000
-					OR = {
-						has_country_flag = POL_AI_RANDOM_FASCIST 
-						has_game_rule = {
-							rule = POL_ai_behavior 
-							option = FASCIST 
-						}
-					}
-				}
 			}
 		}
 		

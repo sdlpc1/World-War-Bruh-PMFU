@@ -3,15 +3,15 @@ state={
 	id=658
 	name="STATE_658"
 	manpower = 170200
-	resources={
-		oil=800 # was: 6
-	}
+	# resources={
+	# 	oil=800 # was: 6
+	# }
 	
 	state_category = pastoral
 
 
 	history={
-		add_core_of = OMA
+		add_core_of = WST
 		owner = ENG
 		victory_points = {
 			7960 1 

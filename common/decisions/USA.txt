@@ -27,9 +27,6 @@ war_measures = {
 
 		visible = {
 			has_defensive_war = yes
-			CSA = {
-				exists = no
-			}
 		}
 
 		complete_effect = {
@@ -159,6 +156,120 @@ USA_aid_britain = {
 }
 
 operations = {
+		USA_phillipines_factories = {
+	
+		icon = generic_tank
+	
+		allowed = {
+			original_tag = USA
+		}
+	
+		fire_only_once = yes
+		days_mission_timeout = 1
+			
+		available = {
+			always = no
+		}
+			
+		timeout_effect = {
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				prioritize = {
+					327
+					623
+					624
+					625
+					626
+					627
+					628
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
+			}
+		}
+	}
 	USA_join_the_allies = {
 		icon = generic_operation
 		allowed = {
@@ -296,7 +407,7 @@ operations = {
 		}
 
 		available = {
-			MEX = {is_ai = YES}
+			MEX = {is_ai = yes}
 			OR = {
 				JAP = { has_war_with = ENG }
 				GER = { has_war_with = SOV }
@@ -314,19 +425,19 @@ operations = {
 		fire_only_once = yes
 		complete_effect = {
 			annex_country = { target = MEX transfer_troops = yes }
-			484 = { set_compliance = 60 }
-			483 = { set_compliance = 60 }
-			482 = { set_compliance = 60 }
-			481 = { set_compliance = 60 }
-			479 = { set_compliance = 60 }
-			478 = { set_compliance = 60 }
-			485 = { set_compliance = 60 }
-			277 = { set_compliance = 60 }
-			477 = { set_compliance = 60 }
-			480 = { set_compliance = 60 }
-			476 = { set_compliance = 60 }
-			475 = { set_compliance = 60 }
-			474 = { set_compliance = 60 }
+			add_state_core = 484
+			add_state_core = 483
+			add_state_core = 482
+			add_state_core = 481
+			add_state_core = 479
+			add_state_core = 478
+			add_state_core = 485
+			add_state_core = 277
+			add_state_core = 477
+			add_state_core = 480
+			add_state_core = 476
+			add_state_core = 475
+			add_state_core = 474
 		}
 	}
 	USA_annex_bra = {
@@ -336,7 +447,7 @@ operations = {
 		}
 
 		available = {
-			BRA = {is_ai = YES}
+			BRA = {is_ai = yes}
 			OR = {
 				JAP = { has_war_with = ENG }
 				GER = { has_war_with = SOV }
@@ -354,18 +465,18 @@ operations = {
 		fire_only_once = yes
 		complete_effect = {
 			annex_country = { target = BRA transfer_troops = yes }
-			495 = { set_compliance = 60 }
-			497 = { set_compliance = 60 }
-			498 = { set_compliance = 60 }
-			505 = { set_compliance = 60 }
-			499 = { set_compliance = 60 }
-			504 = { set_compliance = 60 }
-			501 = { set_compliance = 60 }
-			500 = { set_compliance = 60 }
-			503 = { set_compliance = 60 }
-			502 = { set_compliance = 60 }
-			280 = { set_compliance = 60 }
-			496 = { set_compliance = 60 }
+			add_state_core = 495
+			add_state_core = 497
+			add_state_core = 498
+			add_state_core = 505
+			add_state_core = 499
+			add_state_core = 504
+			add_state_core = 501
+			add_state_core = 500
+			add_state_core = 503
+			add_state_core = 502
+			add_state_core = 280
+			add_state_core = 496
 		}
 	}
 }
@@ -516,12 +627,12 @@ USA_war_plans = {
 		available = {
 			OR = {
 				has_war_with = CHI
-				has_war_with = PRC
-				has_war_with = SHX
-				has_war_with = YUN
-				has_war_with = GXC
-				has_war_with = XSM
-				has_war_with = SIK
+				# has_war_with = PRC
+				# has_war_with = SHX
+				# has_war_with = YUN
+				# has_war_with = GXC
+				# has_war_with = XSM
+				# has_war_with = SIK
 
 			}
 		}
@@ -538,36 +649,36 @@ USA_war_plans = {
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
-		targeted_modifier = {
-			tag = PRC
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = SHX
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = YUN
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = XSM
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = GXC
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = SIK
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
+		# targeted_modifier = {
+		# 	tag = PRC
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
+		# targeted_modifier = {
+		# 	tag = SHX
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
+		# targeted_modifier = {
+		# 	tag = YUN
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
+		# targeted_modifier = {
+		# 	tag = XSM
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
+		# targeted_modifier = {
+		# 	tag = GXC
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
+		# targeted_modifier = {
+		# 	tag = SIK
+		# 	attack_bonus_against = 0.1
+		# 	defense_bonus_against = 0.1
+		# }
 	}
 	USA_execute_war_plan_crimson = {
 		icon = generic_operation
@@ -1545,107 +1656,107 @@ USA_intervention_mandate = {
 		}
 	}
 }
-USA_decolonisation = {
-	USA_freedom_for_Papua = {
-		available = {
-			PNG = {
-				exists = no
-			}
-			controls_state = 523
-			controls_state = 737
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		remove_effect = {
-			PNG = {
-				transfer_state = 523
-				transfer_state = 737 
-			}
-		}
-	}
-	USA_indonesian_liberation = {
-		available = {
-			OR = {
-				controls_state = 669
-				controls_state = 668
-				controls_state = 673
-				controls_state = 334
-				controls_state = 672
-				controls_state = 335
-				controls_state = 667
-				controls_state = 738
-			}
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 180
-		remove_effect = {
-			if = {
-				limit = {
-					not = { country_exists = INS }
-				}
-				every_state = {
-					limit = {
-						is_core_of = INS
-						is_controlled_by = ROOT
-					}
-					"INS" = {
-						transfer_state = PREV
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					has_war_with = INS
-				}
-				"INS" = {
-					start_civil_war = {
-						ideology = ROOT
-						size = 1
-					}
-				}
-				random_country = {
-					limit = {
-						original_tag = INS
-						has_government = ROOT
-					}
-					ROOT = {
-						add_to_faction = PREV
-					}
-					every_state = {
-						limit = {
-							OR = {
-								state = 669
-								state = 668
-								state = 673
-								state = 334
-								state = 672
-								state = 335
-								state = 667
-								state = 738
-							}
-							is_controlled_by = ROOT
-						}
-						random_country = {
-							limit = {
-								original_tag = INS
-								has_government = ROOT
-							}
-							transfer_state = PREV
-						}
-					}
-				}
-			}
-		}
-	}
-}
+# USA_decolonisation = {
+	# USA_freedom_for_Papua = {
+	# 	available = {
+	# 		PNG = {
+	# 			exists = no
+	# 		}
+	# 		controls_state = 523
+	# 		controls_state = 737
+	# 	}
+	# 	cost = 25
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	fire_only_once = yes
+	# 	days_remove = 180
+	# 	remove_effect = {
+	# 		PNG = {
+	# 			transfer_state = 523
+	# 			transfer_state = 737 
+	# 		}
+	# 	}
+	# }
+	# USA_indonesian_liberation = {
+	# 	available = {
+	# 		OR = {
+	# 			controls_state = 669
+	# 			controls_state = 668
+	# 			controls_state = 673
+	# 			controls_state = 334
+	# 			controls_state = 672
+	# 			controls_state = 335
+	# 			controls_state = 667
+	# 			controls_state = 738
+	# 		}
+	# 	}
+	# 	cost = 25
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	fire_only_once = yes
+	# 	days_remove = 180
+	# 	remove_effect = {
+	# 		if = {
+	# 			limit = {
+	# 				not = { country_exists = INS }
+	# 			}
+	# 			every_state = {
+	# 				limit = {
+	# 					is_core_of = INS
+	# 					is_controlled_by = ROOT
+	# 				}
+	# 				"INS" = {
+	# 					transfer_state = PREV
+	# 				}
+	# 			}
+	# 		}
+	# 		else_if = {
+	# 			limit = {
+	# 				has_war_with = INS
+	# 			}
+	# 			"INS" = {
+	# 				start_civil_war = {
+	# 					ideology = ROOT
+	# 					size = 1
+	# 				}
+	# 			}
+	# 			random_country = {
+	# 				limit = {
+	# 					original_tag = INS
+	# 					has_government = ROOT
+	# 				}
+	# 				ROOT = {
+	# 					add_to_faction = PREV
+	# 				}
+	# 				every_state = {
+	# 					limit = {
+	# 						OR = {
+	# 							state = 669
+	# 							state = 668
+	# 							state = 673
+	# 							state = 334
+	# 							state = 672
+	# 							state = 335
+	# 							state = 667
+	# 							state = 738
+	# 						}
+	# 						is_controlled_by = ROOT
+	# 					}
+	# 					random_country = {
+	# 						limit = {
+	# 							original_tag = INS
+	# 							has_government = ROOT
+	# 						}
+	# 						transfer_state = PREV
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+# }
 foreign_support = {
 	USA_support_the_anti_fascist_war = {
 
@@ -1665,7 +1776,7 @@ foreign_support = {
 			}
 		}
 
-		targets = { CHI PRC GXC YUN SHX XSM SIK }
+		targets = { CHI }
 		targets_dynamic = yes
 
 		target_root_trigger = {
@@ -1754,7 +1865,7 @@ foreign_support = {
 			}
 		}
 
-		targets = { CHI PRC GXC YUN SHX XSM SIK }
+		targets = { CHI }
 		targets_dynamic = yes
 
 		target_trigger = {
@@ -5918,5 +6029,322 @@ USA_election_campaigns = {
 		}
 
 		is_good = no
+	}
+}
+
+USA_split_china = {
+	USA_split_china_taiwan = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_taiwan }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_taiwan.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_manchuria = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_manchuria }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_manchuria.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_northern = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_northern }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_northern.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_western = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_western }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_western.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_central = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_central }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_central.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_southern = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_southern }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_southern.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
+	}
+
+	USA_split_china_eastern = {
+
+		icon = infiltrate_state
+
+		available = {
+			original_tag = USA	
+			NOT = { has_country_flag = USA_split_china_decision_in_progress }
+		}
+
+		visible = {	
+			# original_tag = USA
+			has_global_flag = JAP_has_capped
+			FROM = { has_state_flag = USA_split_china_region_state_eastern }
+		}
+
+		priority = 1000
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT 
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = USA
+		}
+
+		cancel_if_not_visible = no
+
+		complete_effect = {
+			USA = { country_event = usa.split_china_eastern.1 }
+			set_country_flag = USA_split_china_decision_in_progress 
+		}
 	}
 }

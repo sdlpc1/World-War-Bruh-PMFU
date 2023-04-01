@@ -1719,45 +1719,45 @@ news_event = {
 }
 
 # Hindenburg Trigger (HIDDEN)
-news_event = {
-	id = news.51
-	hidden = yes
+# news_event = {
+# 	id = news.51
+# 	hidden = yes
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		date > 1937.5.5
-		date < 1939.5.5
-		country_exists = USA
-		country_exists = GER
-		USA = { has_war = no }
-		GER = { has_war = no }
-		GER = { has_civil_war = no }
-		NOT = { has_global_flag = hindenburg_destroyed }
-		NOT = { has_global_flag = hindenburg_event_in_progress }
-	}
+# 	trigger = {
+# 		date > 1937.5.5
+# 		date < 1939.5.5
+# 		country_exists = USA
+# 		country_exists = GER
+# 		USA = { has_war = no }
+# 		GER = { has_war = no }
+# 		GER = { has_civil_war = no }
+# 		NOT = { has_global_flag = hindenburg_destroyed }
+# 		NOT = { has_global_flag = hindenburg_event_in_progress }
+# 	}
 
-	mean_time_to_happen = {
-		days = 240
-	}
+# 	mean_time_to_happen = {
+# 		days = 240
+# 	}
 	
-	immediate = {
-		random_list = {
-			70 = {
-				modifier = {
-					factor = 0
-					has_global_flag = GER_air_safety_regulations_flag
-				}
-				USA = { news_event = { id = news.42 } }
-			}
-			30 = { USA = { news_event = { id = news.43 } } }
-		}
-	}
+# 	immediate = {
+# 		random_list = {
+# 			70 = {
+# 				modifier = {
+# 					factor = 0
+# 					has_global_flag = GER_air_safety_regulations_flag
+# 				}
+# 				USA = { news_event = { id = news.42 } }
+# 			}
+# 			30 = { USA = { news_event = { id = news.43 } } }
+# 		}
+# 	}
 	
-	option = {
-		name = news.51.a
-	}
-}
+# 	option = {
+# 		name = news.51.a
+# 	}
+# }
 
 # Rudolf Hess Trigger (HIDDEN)
 news_event = {
@@ -3670,8 +3670,8 @@ news_event = {
 	
 	trigger = {
 		327 = { is_controlled_by = JAP }
-		327 = { is_owned_by = PHI }
-		JAP = { has_war_with = PHI }
+		327 = { is_owned_by = USA }
+		JAP = { has_war_with = USA }
 		NOT = { has_global_flag = fall_of_manila }
 	}
 	
@@ -3688,7 +3688,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = JAP
-				TAG = PHI
+				# TAG = PHI
 				TAG = USA
 			}
 		}
@@ -3701,7 +3701,7 @@ news_event = {
 		name = news.100.c
 		trigger = { 
 			OR = {
-				TAG = PHI 
+				# TAG = PHI 
 				TAG = USA
 			}
 		}
@@ -8890,7 +8890,7 @@ news_event = {
 			OR = {
 				tag = BEL
 				tag = HOL
-				tag = LUX
+				# tag = LUX
 			}
 		}
 	}
@@ -8916,7 +8916,7 @@ news_event = {
 				OR = {
 					tag = BEL
 					tag = HOL
-					tag = LUX
+					# tag = LUX
 				}
 			}
 		}
@@ -8930,7 +8930,7 @@ news_event = {
 					tag = ENG
 					tag = BEL
 					tag = HOL
-					tag = LUX
+					# tag = LUX
 					is_in_faction_with = ENG
 					is_in_faction = yes
 				}
@@ -9513,7 +9513,7 @@ news_event = {
 		trigger = {
 			OR = {
 				tag = BEL
-				tag = LUX
+				# tag = LUX
 			}
 		}
 	}
@@ -9524,7 +9524,7 @@ news_event = {
 			OR = {
 				tag = HOL
 				is_in_faction_with = BEL
-				is_in_faction_with = LUX
+				# is_in_faction_with = LUX
 				is_in_faction_with = HOL
 			}
 			has_war_with = GER
@@ -9538,9 +9538,9 @@ news_event = {
 				OR = {
 					tag = HOL
 					tag = BEL
-					tag = LUX
+					# tag = LUX
 					is_in_faction_with = HOL
-					is_in_faction_with = LUX
+					# is_in_faction_with = LUX
 					is_in_faction_with = BEL
 				}
 			}
@@ -10858,7 +10858,7 @@ news_event = {
 
 }
 
-# News event - PAK free
+# News event - WST free
 news_event = {
 	id = news.285
 	title = news.285.t
@@ -10871,24 +10871,24 @@ news_event = {
 	
 	option = {
 		name = news.285.a
-		trigger = {
-			TAG = RAJ
-		}
+		# trigger = {
+		# 	TAG = RAJ
+		# }
 	}
 	option = {
 		name = news.285.b
-		trigger = {
-			TAG = PAK
-		}
+		# trigger = {
+		# 	TAG = WST
+		# }
 	}
 	option = {
 		name = news.285.c
-		trigger = { 
-			NOT = {
-				TAG = RAJ
-				TAG = PAK
-			}
-		}
+		# trigger = { 
+		# 	NOT = {
+		# 		TAG = RAJ
+		# 		TAG = WST
+		# 	}
+		# }
 	}
 	
 
@@ -10990,7 +10990,7 @@ news_event = {
 		trigger = {
 			OR = {
 				TAG = CHI
-				TAG = PRC
+				# TAG = PRC
 			}
 		}
 	}
@@ -10999,7 +10999,7 @@ news_event = {
 		trigger = { 
 			NOT = {
 				TAG = CHI
-				TAG = PRC
+				# TAG = PRC
 			}
 			OR = {
 				TAG = JAP
@@ -11011,7 +11011,7 @@ news_event = {
 		name = news.288.c
 		trigger = { 
 			NOT = { 
-				TAG = PRC 
+				# TAG = PRC 
 				TAG = CHI
 				TAG = JAP
 				is_in_faction_with = JAP
@@ -11839,19 +11839,19 @@ news_event = {
 		text = news.309.desc.a
 		trigger = { 
 			OR = {
-				NOT = { country_exists = SLO }
-				AND = {
-					country_exists = SLO
-					SLO = { is_subject = yes }
-				}
+				# NOT = { country_exists = SLO }
+				# AND = {
+				# 	country_exists = SLO
+				# 	SLO = { is_subject = yes }
+				# }
 			}
 		}
 	}
 	desc = {
 		text = news.309.desc.b
 		trigger = { 
-			country_exists = SLO
-			SLO = { is_subject = no }
+			# country_exists = SLO
+			# SLO = { is_subject = no }
 		}
 	}
 	picture = GFX_news_event_hungary_refused
@@ -11871,11 +11871,11 @@ news_event = {
 		trigger = { 
 			TAG = CZE
 			OR = {
-				NOT = { country_exists = SLO }
-				AND = {
-					country_exists = SLO
-					SLO = { is_subject = yes }
-				}
+				# NOT = { country_exists = SLO }
+				# AND = {
+				# 	country_exists = SLO
+				# 	SLO = { is_subject = yes }
+				# }
 			}
 		}
 	}
@@ -11883,8 +11883,8 @@ news_event = {
 		name = news.309.c
 		trigger = { 
 			AND = {
-				TAG = SLO
-				SLO = { is_subject = no }
+				# TAG = SLO
+				# SLO = { is_subject = no }
 			}
 		}
 	}
@@ -11895,8 +11895,8 @@ news_event = {
 				TAG = HUN
 				TAG = CZE
 				AND = {
-					TAG = SLO
-					SLO = { is_subject = yes }
+					# TAG = SLO
+					# SLO = { is_subject = yes }
 				}
 			}
 		}
@@ -11911,19 +11911,19 @@ news_event = {
 		text = news.310.desc.a
 		trigger = { 
 			OR = {
-				NOT = { country_exists = SLO }
-				AND = {
-					country_exists = SLO
-					SLO = { is_subject = yes }
-				}
+				# NOT = { country_exists = SLO }
+				# AND = {
+				# 	country_exists = SLO
+				# 	SLO = { is_subject = yes }
+				# }
 			}
 		}
 	}
 	desc = {
 		text = news.310.desc.b
 		trigger = { 
-			country_exists = SLO
-			SLO = { is_subject = no }
+			# country_exists = SLO
+			# SLO = { is_subject = no }
 		}
 	}
 	picture = GFX_news_event_generic_sign_treaty1
@@ -11963,20 +11963,20 @@ news_event = {
 		text = news.311.desc.a
 		trigger = { 
 			OR = {
-				NOT = { country_exists = SLO }
-				AND = {
-					country_exists = SLO
-					SLO = { is_subject = yes }
-				}
+				# NOT = { country_exists = SLO }
+				# AND = {
+				# 	country_exists = SLO
+				# 	SLO = { is_subject = yes }
+				# }
 			}
 		}
 	}
 	desc = {
 		text = news.311.desc.b
-		trigger = { 
-			country_exists = SLO
-			SLO = { is_subject = no }
-		}
+		# trigger = { 
+		# 	country_exists = SLO
+		# 	SLO = { is_subject = no }
+		# }
 	}
 	picture = GFX_news_event_hungarian_soldiers
 	
@@ -11995,7 +11995,7 @@ news_event = {
 		trigger = { 
 			OR = {
 				TAG = CZE
-				TAG = SLO
+				# TAG = SLO
 			}
 		}
 	}
@@ -12005,7 +12005,7 @@ news_event = {
 			NOT = {
 				TAG = HUN
 				TAG = CZE
-				TAG = SLO
+				# TAG = SLO
 			}
 		}
 	}
@@ -12666,16 +12666,16 @@ news_event = {
 	}
 	option = {
 		name = news.326.b
-		trigger = {
-			TAG = CRO
-		}
+		# trigger = {
+		# 	TAG = CRO
+		# }
 	}
 	option = {
 		name = news.326.c
 		trigger = { 
 			NOT = {
 				TAG = YUG
-				TAG = CRO
+				# TAG = CRO
 			}
 		}
 	}

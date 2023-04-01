@@ -17,7 +17,7 @@ state={
 		victory_points = {
 			12885 1 
 		}
-		add_core_of = MAD
+		add_core_of = WST
 	}
 
 	provinces={

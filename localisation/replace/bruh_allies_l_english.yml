@@ -62,7 +62,7 @@
 
   ### DYNAMIC SPIRITS ###
   PACIFIC_COMMONWEALTH_controls:0 "The State of the Pacific"
-  PACIFIC_COMMONWEALTH_axis_controls:0 "The State of the Pacific"
+  PACIFIC_COMMONWEALTH_controls_axis:0 "The State of the Pacific"
   PACIFIC_COMMONWEALTH_controls_desc:0 "Bases Mechanic: losing Pacific strong holds will provide a debuff in Europe. Starts after 2 locations lost.\n§GFrom West to East§!\n§YDehli\nCeylon\nSingapore\nSumatra\nJava\nKalimantan(Dutch Borneo)\nSulawesi\nManilla\nPaupau (Australian New Guinea)\nGuadalcanal\nCanberra\nNew Caledonia\nWellington\n\n§GLocations that EACPS starts with§!\nBangkok\nTaiwan\nNanjing" 
   PACIFIC_COMMONWEALTH_controls_desc:0 "Bases Mechanic: losing Pacific strong holds will provide a debuff in Europe. Starts after 2 locations lost.\n§GFrom West to East§!\n§YDehli\nCeylon\nSingapore\nSumatra\nJava\nKalimantan(Dutch Borneo)\nSulawesi\nManilla\nPaupau (Australian New Guinea)\nGuadalcanal\nCanberra\nNew Caledonia\nWellington\n\n§GLocations that EACPS starts with§!\nBangkok\nTaiwan\nNanjing" 
   PACIFIC_COMMONWEALTH_controls_original:0 "The State of the Pacific (Inactive)"

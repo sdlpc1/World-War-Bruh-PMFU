@@ -251,6 +251,7 @@ upgrades = {
 			1 = {
 				OR = {
 					has_tech = sov_medium_tank_5 #T-44 Model 46
+					has_tech = sov_heavy_tank_7 #IS3 Upgrade
 				}
 			}
 		}
@@ -283,12 +284,12 @@ upgrades = {
 		}
 
 		level_requirements = {
-			#1 = {
-			#	has_tech = sov_heavy_tank_4 #KV-1 Model 41
-			#}
-			#2 = {
-			#	has_tech = sov_heavy_tank_4 #KV-1 Model 41
-			#}
+			1 = {
+				has_tech = sov_heavy_tank_4 #KV-1 Model 41
+			}
+			2 = {
+				has_tech = sov_heavy_tank_4 #KV-1 Model 41
+			}
 		}
 
 		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
@@ -309,6 +310,43 @@ upgrades = {
 			breakthrough = 2.5
 			armor_value = 5
 			build_cost_ic = 1
+		}
+	}
+
+	tank_nsb_heavy_armor_2_upgrade = {
+		abbreviation = "arm"
+		max_level = 3 #each level represents ~10mm of armor 
+		cost = land
+
+		linear_cost = {
+			cost_by_level = 1
+			cost_by_level_for_licensed_equipment = 2
+		}
+
+		level_requirements = {
+			1 = {
+				has_tech = sov_heavy_tank_7
+			}	
+		}
+
+		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
+			1 = {
+				steel = 2
+			}
+			2 = {
+				steel = 4
+			}
+			3 = {
+				steel = 5
+			}
+		}
+
+		maximum_speed = -0.02
+		reliability = -0.02
+		add_stats = {
+			breakthrough = 2
+			armor_value = 7
+			build_cost_ic = 2
 		}
 	}
 

@@ -429,109 +429,109 @@ technologies = {
 		recon = {
 			recon = 2
 			forest = {
-				movement = 0.02
+				movement = 0.015
 			}
 			hills = {
-				movement = 0.02
+				movement = 0.015
 			}
 			mountain = {
-				movement = 0.02
+				movement = 0.015
 			}
 			jungle = {
-				movement = 0.02
+				movement = 0.015
 			}
 			marsh = {
-				movement = 0.02
+				movement = 0.015
 			}
 			plains = {
-				movement = 0.02
+				movement = 0.015
 			}
 			desert = {
-				movement = 0.02
+				movement = 0.015
 			}
 			river = {
-				movement = 0.02
+				movement = 0.015
 			}
 		}
 		mot_recon = {
 			recon = 2
 			forest = {
-				movement = 0.02
+				movement = 0.015
 			}
 			hills = {
-				movement = 0.02
+				movement = 0.015
 			}
 			mountain = {
-				movement = 0.02
+				movement = 0.015
 			}
 			jungle = {
-				movement = 0.02
+				movement = 0.015
 			}
 			marsh = {
-				movement = 0.02
+				movement = 0.015
 			}
 			plains = {
-				movement = 0.02
+				movement = 0.015
 			}
 			desert = {
-				movement = 0.02
+				movement = 0.015
 			}
 			river = {
-				movement = 0.02
+				movement = 0.015
 			}
 		}
 		light_tank_recon = {
 			recon = 2
 			forest = {
-				movement = 0.02
+				movement = 0.015
 			}
 			hills = {
-				movement = 0.02
+				movement = 0.015
 			}
 			mountain = {
-				movement = 0.02
+				movement = 0.015
 			}
 			jungle = {
-				movement = 0.02
+				movement = 0.015
 			}
 			marsh = {
-				movement = 0.02
+				movement = 0.015
 			}
 			plains = {
-				movement = 0.02
+				movement = 0.015
 			}
 			desert = {
-				movement = 0.02
+				movement = 0.015
 			}
 			river = {
-				movement = 0.02
+				movement = 0.015
 			}
 		}
 		armored_car_recon = {
 			recon = 2
 			forest = {
-				movement = 0.02
+				movement = 0.015
 			}
 			hills = {
-				movement = 0.02
+				movement = 0.015
 			}
 			mountain = {
-				movement = 0.02
+				movement = 0.015
 			}
 			jungle = {
-				movement = 0.02
+				movement = 0.015
 			}
 			marsh = {
-				movement = 0.02
+				movement = 0.015
 			}
 			plains = {
-				movement = 0.02
+				movement = 0.015
 			}
 			desert = {
-				movement = 0.02
+				movement = 0.015
 			}
 			river = {
-				movement = 0.02
+				movement = 0.015
 			}
 		}
 		
@@ -581,28 +581,28 @@ technologies = {
 		recon = {
 			recon = 2
 			forest = {
-				movement = 0.02
+				movement = 0.015
 			}
 			hills = {
-				movement = 0.02
+				movement = 0.015
 			}
 			mountain = {
-				movement = 0.02
+				movement = 0.015
 			}
 			jungle = {
-				movement = 0.02
+				movement = 0.015
 			}
 			marsh = {
-				movement = 0.02
+				movement = 0.015
 			}
 			plains = {
-				movement = 0.02
+				movement = 0.015
 			}
 			desert = {
-				movement = 0.02
+				movement = 0.015
 			}
 			river = {
-				movement = 0.02
+				movement = 0.015
 			}
 		}
 		mot_recon = {
@@ -689,28 +689,28 @@ technologies = {
 		armored_car_recon = {
 			recon = 2
 			forest = {
-				movement = 0.02
+				movement = 0.015
 			}
 			hills = {
-				movement = 0.02
+				movement = 0.015
 			}
 			mountain = {
-				movement = 0.02
+				movement = 0.015
 			}
 			jungle = {
-				movement = 0.02
+				movement = 0.015
 			}
 			marsh = {
-				movement = 0.02
+				movement = 0.015
 			}
 			plains = {
-				movement = 0.02
+				movement = 0.015
 			}
 			desert = {
-				movement = 0.02
+				movement = 0.015
 			}
 			river = {
-				movement = 0.02
+				movement = 0.015
 			}
 		}
 		
@@ -755,109 +755,109 @@ technologies = {
 		recon = {
 			recon = 2
 			forest = {
-				movement = 0.02
+				movement = 0.015
 			}
 			hills = {
-				movement = 0.02
+				movement = 0.015
 			}
 			mountain = {
-				movement = 0.02
+				movement = 0.015
 			}
 			jungle = {
-				movement = 0.02
+				movement = 0.015
 			}
 			marsh = {
-				movement = 0.02
+				movement = 0.015
 			}
 			plains = {
-				movement = 0.02
+				movement = 0.015
 			}
 			desert = {
-				movement = 0.02
+				movement = 0.015
 			}
 			river = {
-				movement = 0.02
+				movement = 0.015
 			}
 		}
 		mot_recon = {
 			recon = 2
 			forest = {
-				movement = 0.02
+				movement = 0.015
 			}
 			hills = {
-				movement = 0.02
+				movement = 0.015
 			}
 			mountain = {
-				movement = 0.02
+				movement = 0.015
 			}
 			jungle = {
-				movement = 0.02
+				movement = 0.015
 			}
 			marsh = {
-				movement = 0.02
+				movement = 0.015
 			}
 			plains = {
-				movement = 0.02
+				movement = 0.015
 			}
 			desert = {
-				movement = 0.02
+				movement = 0.015
 			}
 			river = {
-				movement = 0.02
+				movement = 0.015
 			}
 		}
 		light_tank_recon = {
 			recon = 2
 			forest = {
-				movement = 0.02
+				movement = 0.015
 			}
 			hills = {
-				movement = 0.02
+				movement = 0.015
 			}
 			mountain = {
-				movement = 0.02
+				movement = 0.015
 			}
 			jungle = {
-				movement = 0.02
+				movement = 0.015
 			}
 			marsh = {
-				movement = 0.02
+				movement = 0.015
 			}
 			plains = {
-				movement = 0.02
+				movement = 0.015
 			}
 			desert = {
-				movement = 0.02
+				movement = 0.015
 			}
 			river = {
-				movement = 0.02
+				movement = 0.015
 			}
 		}
 		armored_car_recon = {
 			recon = 2
 			forest = {
-				movement = 0.02
+				movement = 0.015
 			}
 			hills = {
-				movement = 0.02
+				movement = 0.015
 			}
 			mountain = {
-				movement = 0.02
+				movement = 0.015
 			}
 			jungle = {
-				movement = 0.02
+				movement = 0.015
 			}
 			marsh = {
-				movement = 0.02
+				movement = 0.015
 			}
 			plains = {
-				movement = 0.02
+				movement = 0.015
 			}
 			desert = {
-				movement = 0.02
+				movement = 0.015
 			}
 			river = {
-				movement = 0.02
+				movement = 0.015
 			}
 		}
 
@@ -1092,6 +1092,10 @@ technologies = {
 			maintenance_company_tech
 		}
 		
+		on_research_complete = {
+			custom_effect_tooltip = maintanance_hp_change_1_short_tt
+		}
+		
 		ai_will_do = {
 			factor = 1
 			
@@ -1116,7 +1120,9 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.10
-			equipment_capture_factor = 0.05
+			max_strength = 5
+			default_morale = 0.1
+			# equipment_capture_factor = 0.05
 		}
 		
 		path = {
@@ -1134,6 +1140,14 @@ technologies = {
 		categories = {
 			support_tech
 			maintenance_company_tech
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = maintanance_hp_change_1_short_tt
+		}
+
+		enable_equipment_modules = {
+			easy_maintenance
 		}
 		
 		ai_will_do = {
@@ -1160,7 +1174,9 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.10
-			equipment_capture_factor = 0.05
+			# equipment_capture_factor = 0.05
+			max_strength = 5
+			default_morale = 0.1
 		}
 		
 		path = {
@@ -1180,6 +1196,10 @@ technologies = {
 			maintenance_company_tech
 		}
 		
+		on_research_complete = {
+			custom_effect_tooltip = maintanance_hp_change_1_short_tt
+		}
+
 		ai_will_do = {
 			factor = 1
 			
@@ -1203,7 +1223,9 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.10
-			equipment_capture_factor = 0.05
+			# equipment_capture_factor = 0.05
+			max_strength = 5
+			default_morale = 0.1
 		}
 
 		research_cost = 1.5
@@ -1216,6 +1238,10 @@ technologies = {
 		categories = {
 			support_tech
 			maintenance_company_tech
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = maintanance_hp_change_1_short_tt
 		}
 		
 		ai_will_do = {
@@ -1290,7 +1316,7 @@ technologies = {
 
 		field_hospital = {
 			casualty_trickleback = 0.15
-			experience_loss_factor = -0.10
+			experience_loss_factor = -0.15
 		}
 		
 		path = {
@@ -1335,7 +1361,7 @@ technologies = {
 
 		field_hospital = {
 			casualty_trickleback = 0.15
-			experience_loss_factor = -0.10
+			experience_loss_factor = -0.15
 		}
 		path = {
 			leads_to_tech = tech_field_hospital4
@@ -1378,7 +1404,7 @@ technologies = {
 
 		field_hospital = {
 			casualty_trickleback = 0.15
-			experience_loss_factor = -0.10
+			experience_loss_factor = -0.15
 		}
 
 		research_cost = 1.5
@@ -1428,7 +1454,6 @@ technologies = {
 		enable_subunits = {
 			logistics_company
 			logistics_company_mot
-			logistics_company_horse
 		}
 		
 		path = {
@@ -1487,10 +1512,6 @@ technologies = {
 			supply_consumption_factor = -0.05
 			fuel_consumption_factor = -0.05
 		}
-		logistics_company_horse = {
-			supply_consumption_factor = -0.02
-			fuel_consumption_factor = -0.05
-		}
 		
 		path = {
 			leads_to_tech = tech_logistics_company3
@@ -1545,10 +1566,6 @@ technologies = {
 			supply_consumption_factor = -0.05
 			fuel_consumption_factor = -0.05
 		}
-		logistics_company_horse = {
-			supply_consumption_factor = -0.02
-			fuel_consumption_factor = -0.05
-		}
 		
 		path = {
 			leads_to_tech = tech_logistics_company4
@@ -1595,10 +1612,6 @@ technologies = {
 		}
 		logistics_company_mot = {
 			supply_consumption_factor = -0.05
-			fuel_consumption_factor = -0.05
-		}
-		logistics_company_horse = {
-			supply_consumption_factor = -0.02
 			fuel_consumption_factor = -0.05
 		}
 

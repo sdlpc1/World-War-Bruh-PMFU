@@ -177,7 +177,7 @@
 		y = 1
 		relative_position_id = YUG_friendship_treaty_with_italy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -220,8 +220,7 @@
 		}
 
 		available = {
-		YUG = { is_ai = no }
-
+			# YUG = { is_ai = no }
 		}
 
 		bypass = {
@@ -237,7 +236,7 @@
 			add_stability = -0.10
 			every_owned_state = {
 				limit = {
-					is_core_of = SER
+					# is_core_of = SER
 				}
 				add_extra_state_shared_building_slots = 1
 			}
@@ -612,6 +611,7 @@
 					has_war_with = YUG
 				}
 			}
+			YUG = { is_ai = no }
 		}
 
 		bypass = {
@@ -809,9 +809,9 @@
 					is_subject_of = ROOT
 					owns_state = 106
 				}
-				MAC = {
-					is_in_faction_with = ROOT
-				}
+				# MAC = {
+				# 	is_in_faction_with = ROOT
+				# }
 			}
 		}
 
@@ -822,9 +822,9 @@
 					is_subject_of = ROOT
 					owns_state = 106
 				}
-				MAC = {
-					is_in_faction_with = ROOT
-				}
+				# MAC = {
+				# 	is_in_faction_with = ROOT
+				# }
 			}
 		}
 
@@ -856,9 +856,9 @@
 				}
 			}
 			else = {
-				MAC = {
-					add_state_core = 731
-				}
+				# MAC = {
+				# 	add_state_core = 731
+				# }
 			}
 			news_event = { id = news.327 }
 		}
@@ -994,7 +994,7 @@
 		x = 10
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -1284,7 +1284,7 @@
 		y = 2
 		relative_position_id = YUG_develop_civilian_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -1469,7 +1469,7 @@
 		y = 1
 		relative_position_id = YUG_develop_slovenian_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -1593,7 +1593,7 @@
 		y = 2
 		relative_position_id = YUG_develop_military_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -1796,7 +1796,7 @@
 		y = 5
 		relative_position_id = YUG_develop_military_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -3524,7 +3524,7 @@
 		id = YUG_coastal_defense
 		icon = GFX_focus_generic_coastal_fort
 		prerequisite = { focus = YUG_expand_the_serbian_shipyards }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = YUG_expand_the_serbian_shipyards
 

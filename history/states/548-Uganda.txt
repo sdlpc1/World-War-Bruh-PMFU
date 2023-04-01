@@ -3,9 +3,9 @@ state={
 	name="STATE_548"
 
 	state_category = rural
-	resources={
-		rubber=50 # was: 4
-	}
+	# resources={
+	# 	rubber=50 # was: 4
+	# }
 	history={
 		owner = ENG
 		buildings = {
@@ -15,7 +15,7 @@ state={
 		victory_points = {
 			12989 1
 		}
-		add_core_of = ZIM
+		add_core_of = WST
 	}
 
 	provinces={

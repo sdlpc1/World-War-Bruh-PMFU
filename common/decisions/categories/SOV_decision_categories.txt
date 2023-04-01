@@ -4,6 +4,22 @@
 
 ####### NO STEP BACK! #######
 
+SOV_marshal_system = {
+
+	priority = 102
+
+	icon = SOV_paranoia
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+	}
+
+	visible_when_empty = yes
+}
+
 SOV_paranoia_system = {
 
 	priority = 101

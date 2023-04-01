@@ -507,7 +507,7 @@ focus_tree = {
 				bonus = 0.75
 				ahead_reduction = 0.5
 				uses = 1
-				technology = late_war_small_airframe
+				technology = modern_small_airframe
 			}
 		}
 	}
@@ -1816,10 +1816,10 @@ focus_tree = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
 				country_event = britain.4
 			}
-			YUN = {
-				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
-				country_event = britain.5
-			}
+			# YUN = {
+			# 	add_opinion_modifier = { target = ENG modifier = burma_road_good } 
+			# 	country_event = britain.5
+			# }
 			JAP = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_bad } 
 			} 
@@ -2814,6 +2814,8 @@ focus_tree = {
 			threat > 0.05
 		}
 
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		x = -2
@@ -2885,6 +2887,8 @@ focus_tree = {
 			}
 		}
 
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		x = 2

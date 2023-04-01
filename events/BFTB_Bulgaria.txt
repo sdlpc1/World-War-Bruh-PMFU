@@ -5194,7 +5194,7 @@ country_event = {
 				limit = { has_dlc = "Man the Guns" }
 				if = {
 					limit = {
-						FROM.FROM = { has_tech = advanced_ship_hull_submarine }
+						# FROM.FROM = { has_tech = advanced_ship_hull_submarine }
 					}
 					FROM.FROM = { #LVL4
 						create_equipment_variant = {

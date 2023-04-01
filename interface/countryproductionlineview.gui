@@ -2561,12 +2561,12 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 
-		iconType = {
-			name = "prod_line_glow"
-			position = { x = 315 y = 31 }
-			spriteType = "GFX_prod_line_glow"
-			alwaystransparent = yes
-		}
+		# iconType = {
+		# 	name = "prod_line_glow"
+		# 	position = { x = 315 y = 31 }
+		# 	spriteType = "GFX_prod_line_glow"
+		# 	alwaystransparent = yes
+		# }
 
 		buttonType = {
 			name = "increase_priority"

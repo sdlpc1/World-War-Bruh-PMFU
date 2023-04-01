@@ -1,5 +1,24 @@
 ideas = {
 
+	hidden_ideas = {
+		POL_supply_fix = {
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			modifier = {
+				supply_consumption_factor = -0.5
+			}
+		}
+	}
+
 country = {
 
 	POL_new_military_academy_idea = {
@@ -2163,6 +2182,7 @@ country = {
 
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 
 			traits = { artillery_manufacturer }

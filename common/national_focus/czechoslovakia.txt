@@ -61,7 +61,7 @@ focus_tree = {
 		x = 3
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 200			
@@ -136,7 +136,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_fortification_studies
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -290,7 +290,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_sudeten_1
 
-		cost = 12
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -444,7 +444,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_sudeten_1
 
-		cost = 13
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -702,7 +702,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_fortification_studies
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -752,7 +752,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CZE_fortification_studies
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -800,8 +800,8 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 75 }
+			CZE = { controls_state = 70 }
+			CZE = { controls_state = 71 }
 		}
 
 		bypass = {
@@ -814,7 +814,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			9 = {
+			70 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -822,7 +822,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			75 = {
+			71 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -848,8 +848,8 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 75 }
+			CZE = { controls_state = 70 }
+			CZE = { controls_state = 71 }
 		}
 
 		bypass = {
@@ -862,7 +862,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			9 = {
+			70 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -870,7 +870,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			75 = {
+			71 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -896,8 +896,8 @@ focus_tree = {
 		}
 
 		available = {
-			CZE = { controls_state = 9 }
-			CZE = { controls_state = 75 }
+			CZE = { controls_state = 70 }
+			CZE = { controls_state = 71 }
 		}
 
 		bypass = {
@@ -910,7 +910,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			9 = {
+			70 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -918,7 +918,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			75 = {
+			71 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1253,7 +1253,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CZE_industrial_legacy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -1572,7 +1572,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CZE_democratic_bastion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -1961,7 +1961,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CZE_political_direction
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -2135,7 +2135,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -2198,7 +2198,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_trust_in_the_west
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -2592,7 +2592,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60

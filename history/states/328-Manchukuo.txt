@@ -11,6 +11,7 @@ state={
 	}
 
 	history={
+		set_state_flag = USA_split_china_region_state_manchuria
 		owner = MAN
 		add_core_of = CHI
 		add_core_of = MAN

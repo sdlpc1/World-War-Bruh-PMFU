@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		add_core_of = BRM
+		add_core_of = WST
 		owner = RAJ
 		victory_points = {
 			1296 1 

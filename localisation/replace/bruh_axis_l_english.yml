@@ -9,3 +9,10 @@
   AXIS_research_prop:0 "Invest in Research"
   AXIS_construction_prop:0 "Hire Construction Specialists"
   AXIS_running_prop:0 "Running Propaganda Campaign"
+
+  ### DYNAMIC SPIRITS ###
+  MEDITERRANEAN_AXIS_controls:0 "The State of the Mediterranean"
+  MEDITERRANEAN_AXIS_controls_desc:0 "Bases Mechanic: capturing Mediterranean strong holds will provide a buff to production efficiency cap. \n§GFrom West to East§!\n§YGibraltar\nCairo\nPalestine\nBaghdad\n\n§GLocations that AXIS starts with§!\nEthiopia" 
+
+  MEDITERRANEAN_AXIS_controls_original:0 "The State of the Mediterranean (Inactive)"
+  MEDITERRANEAN_AXIS_controls_original_desc:0 "Bases Mechanic: capturing Mediterranean strong holds will provide a buff to production efficiency cap.\n§RNOTE: Idea won't update till Italy is at war§!\n§GFrom West to East§!\n§YGibraltar\nCairo\nPalestine\nBaghdad\n\n§GLocations that AXIS starts with§!\nEthiopia"

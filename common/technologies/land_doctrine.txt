@@ -1919,7 +1919,7 @@ technologies = {
 		
 		land_reinforce_rate = 0.05
 		
-		minimum_training_level = -0.20
+		minimum_training_level = -0.10
 
 		doctrine = yes	
 		research_cost = 0

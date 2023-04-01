@@ -20,9 +20,24 @@ country_event = {
   			type = annex_everything
   			target = CHI
   		}
-  		
+
 		hidden_effect = {
 			country_event = { days = 5 id = news.1 }
+			ROM = {
+				diplomatic_relation = {
+					country = JAP
+					relation = military_access
+					active = yes
+				}
+			}
+	
+			BUL = {
+				diplomatic_relation = {
+					country = JAP
+					relation = military_access
+					active = yes
+				}
+			}
 		}
 		USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
 		if = {
@@ -744,4 +759,62 @@ country_event = {
 		custom_effect_tooltip = japan.503.a_desc
 		
 	}
+	option = {
+		set_country_flag = JAP_usa2
+		name = japan.503.b
+		custom_effect_tooltip = japan.503.b_desc
+		
+	}
+}
+
+# Divide up China - 29.2 Threat generated
+country_event = {
+    id = japan.504
+    title = japan.504.t
+    desc = japan.504.desc
+    picture = GFX_report_event_generic_sign_treaty2
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = JAP
+        has_war_with = CHI
+        CHI = {
+            surrender_progress > 0.60
+        }
+    }
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+    # option = {
+    #     name = japan.504.a #Peace Conference
+    #     ai_chance = { factor = 0 }
+	# 	custom_effect_tooltip = japan.504.a_desc
+    # }
+    option = {
+        name = japan.504.b #Manchu gets some, Japan gets the rest
+        ai_chance = { factor = 100 }
+		set_global_flag = JAP_split_china
+		custom_effect_tooltip = japan.504.b_desc
+    }
+    option = {
+        name = japan.504.c #Japan Takes All
+        ai_chance = { factor = 0 }
+		set_global_flag = JAP_take_china
+		custom_effect_tooltip = japan.504.c_desc
+    }
+	option = {
+        name = japan.504.d #Manchu Takes All
+        ai_chance = { factor = 0 }
+		set_global_flag = JAP_give_china
+		custom_effect_tooltip = japan.504.d_desc
+    }
+	#option = {
+    #    name = japan.504.e #Japan puppets China
+    #    ai_chance = { factor = 0 }
+	#	set_global_flag = JAP_puppet_china
+	#	custom_effect_tooltip = japan.504.e_desc
+    #}
 }

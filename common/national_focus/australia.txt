@@ -1753,7 +1753,7 @@ focus_tree = {
 		x = 19
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -1827,7 +1827,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1865,7 +1865,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -2224,7 +2224,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2484,10 +2484,11 @@ focus_tree = {
 	focus = {
 		id = AST_army_inventions_directorate
 		icon = GFX_focus_research
-		prerequisite = { focus = AST_national_security_act }
-		x = -2
-		y = 2
-		relative_position_id = AST_establish_advisory_war_council
+		prerequisite = { focus = AST_industries_assistance_corporation }
+		prerequisite = { focus = AST_standard_gauge_railway }
+		x = 1.5
+		y = 1
+		relative_position_id = AST_industries_assistance_corporation
 
 		cost = 10
 

@@ -296,7 +296,7 @@ on_actions = {
 				limit = {
 					AND = {
 						TAG = CZE
-						SLO = { exists = yes }
+						# SLO = { exists = yes }
 					}
 				}
 				CZE = { set_cosmetic_tag = CZE_ONLY } #cosmetic tag for CZE if Slovakia exists
@@ -398,7 +398,7 @@ on_actions = {
 				limit = {
 					AND = {
 						TAG = CZE
-						SLO = { exists = yes }
+						# SLO = { exists = yes }
 					}
 				}
 				CZE = { set_cosmetic_tag = CZE_ONLY } #cosmetic tag for CZE if Slovakia exists
@@ -461,7 +461,7 @@ on_actions = {
 				limit = {
 					AND = {
 						TAG = CZE
-						SLO = { exists = yes }
+						# SLO = { exists = yes }
 					}
 				}
 				CZE = { set_cosmetic_tag = CZE_ONLY } #cosmetic tag for CZE if Slovakia exists

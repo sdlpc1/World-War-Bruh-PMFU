@@ -83,8 +83,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 200
 			random_list = {
-				90 = { set_cosmetic_tag = BRA_third_republic }
-				10 = { set_cosmetic_tag = BRA_snek_third_republic }
+				95 = { set_cosmetic_tag = BRA_third_republic }
+				5 = { set_cosmetic_tag = BRA_snek_third_republic }
 			}
 		}
 	}
@@ -828,7 +828,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BRA_begin_industrial_centralisation
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 8
@@ -853,7 +853,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BRA_infrastructure_revitalisation
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 8

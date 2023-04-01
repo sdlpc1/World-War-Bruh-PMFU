@@ -65,6 +65,45 @@ host_decisions = {
 
 	}
 
+	JAP_declare_china = {
+
+		icon = jap_conquer_china
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+            JAP = {
+				NOT = { has_war_with = CHI }
+			}
+			country_exists = CHI
+		}	
+		
+		visible = {
+			JAP = {
+				NOT = { has_war_with = CHI }
+			}
+			country_exists = CHI
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		}
+		
+		complete_effect = {
+			JAP = { add_ideas = JAP_intervene_in_china_5 }
+			MAN = { add_ideas = MAN_intervene_in_china_5 }			
+            JAP = {
+				declare_war_on = {
+			    	target = CHI
+					type = annex_everything
+				}
+			}
+		}
+	}
+
 }
 political_actions = {
 	
@@ -129,55 +168,87 @@ political_actions = {
 		}
 	}
 
+	# improved_worker_conditions = {  ## OLD WORKERS
+
+	# 	icon = generic_industry
+
+	# 	available = {
+	# 		has_stability < 1.0
+	# 		if = {
+	# 			limit = {
+	# 				tag = SPR
+	# 			}
+	# 			NOT = {
+	# 				has_idea = SPR_political_violence
+	# 			}
+	# 		}
+	# 	}
+
+	# 	visible = {
+	# 		always = yes
+	# 	}
+
+	# 	fire_only_once = no
+
+	# 	modifier = {
+	# 		stability_weekly = 0.005
+	# 		consumer_goods_factor = 0.05
+	# 		industrial_capacity_factory = -0.1
+	# 	}
+
+	# 	days_remove = 180
+	# 	days_re_enable = 540
+
+	# 	cost = 100
+
+	# 	complete_effect = {
+	# 	}
+
+	# 	ai_will_do = {
+	# 		base = 0
+	# 	}
+	# }
+
+	# LW 
 	improved_worker_conditions = {
-
 		icon = generic_industry
-
-		available = {
-			has_stability < 1.0
-			if = {
-				limit = {
-					tag = SPR
-				}
-				NOT = {
-					has_idea = SPR_political_violence
-				}
-			}
+		allowed = {
+			always = yes
 		}
-
 		visible = {
 			always = yes
 		}
-
 		fire_only_once = no
-
 		modifier = {
+			political_power_gain = -0.35
 			stability_weekly = 0.005
-			consumer_goods_factor = 0.05
 			industrial_capacity_factory = -0.1
 		}
-
-		days_remove = 180
-		days_re_enable = 540
-
-		cost = 100
-
+		days_remove = -1
+		cost = 0
 		complete_effect = {
-
 		}
-
 		ai_will_do = {
 			base = 0
-			modifier = {
-				add = 1
-				has_stability < 0.6
-			}
-			modifier = {
-				factor = 0
-				original_tag = SPR
-				NOT = { has_global_flag = spanish_civil_war }
-			}
 		}
+	}
+
+	improved_worker_conditions_cancel = {
+		icon = generic_industry
+		allowed = {
+			always = yes
+		}
+		available = {
+		}
+		visible = {
+			has_decision = improved_worker_conditions
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			remove_decision = improved_worker_conditions
+		}
+		
 	}
 
 	promises_of_peace = {

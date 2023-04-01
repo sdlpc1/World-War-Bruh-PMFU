@@ -21,7 +21,7 @@ state={
 		victory_points = {
 			2050 15
 		}
-		add_core_of = GHA
+		add_core_of = WST
 	}
 
 	provinces={

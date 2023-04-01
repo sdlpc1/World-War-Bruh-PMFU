@@ -7005,7 +7005,7 @@ prospect_for_resources = {
 			212 = {
 				add_resource = {
 					type = chromium
-					amount = 50
+					amount = 80
 				}
 			}
 		}

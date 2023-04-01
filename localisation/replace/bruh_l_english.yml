@@ -54,6 +54,7 @@
  continuous_fuel_desc:0 "We need to focus on fuel production."
  continuous_licensing:0 "License Production"
  continuous_licensing_desc:0 "We need to produce licensed equipment at record speeds."
+ improved_worker_conditions_cancel:0 "Cancel Improved Worker Conditions"
 
  form_mutapa:0 "Unite South Africa"
  form_mutapa_category:0 "Unite South Africa"
@@ -98,9 +99,11 @@
  #### COUNTRIES ####
  OMA_neutrality:0 "British Middle Eastern Protectorate"
  IRQ_neutrality:0 "Protectorate of Iraq"
+ STRATEGICREGION_28:0 "Iraq"
  STRATEGICREGION_229:0 "Sudan"
  STRATEGICREGION_228:0 "Tunisia"
- STRATEGICREGION_126:0 "Libya"
+ STRATEGICREGION_126:0 "Tripoli"
+ STRATEGICREGION_128:0 "Cairo"
  STRATEGICREGION_231:0 "Iwo Jima"
  STRATEGICREGION_232:0 "Saipan Guam"
  STRATEGICREGION_233:0 "Palau"
@@ -108,6 +111,10 @@
  STRATEGICREGION_235:0 "Marcus Island"
  STRATEGICREGION_236:0 "Midway"
  STRATEGICREGION_230:0 "Hawaii"
+ STRATEGICREGION_238:0 "Benghazi"
+ STRATEGICREGION_239:0 "Southern Egypt"
+ STRATEGICREGION_240:0 "Middle East"
+ STRATEGICREGION_241:0 "Southern Arabia"
  STRATEGICREGION_NAMIBIA: "Namibia"
  STRATEGICREGION_NORTH_MALACCA: "North Malacca"
  OTRANTO_STRAIT:0 "Strait of Otranto"
@@ -134,7 +141,11 @@
  SOV_communism_DEF:0 "the Union of Soviet Socialist Republics"
  MON_communism:0 "Mongolian People's Republic"
  MON_communism_DEF:0 "the Mongolian People's Republic"
+ MAN_JAP_fascism_autonomy_wtt_integrated_imperial_protectorate:0 "Manchukuo"
  MAN_great_qing_fascism:0 "Great Qing"
+ MAN_great_qing_JAP_fascism_autonomy_wtt_integrated_imperial_protectorate:0 "Great Qing"
+ MAN_great_qing_JAP_fascism_autonomy_wtt_integrated_imperial_protectorate_DEF:0 "Great Qing"
+ MAN_great_qing_JAP_fascism_autonomy_wtt_integrated_imperial_protectorate_ADJ:0 "Qing"
  MAN_great_qing_JAP_fascism_autonomy_wtt_imperial_protectorate:0 "Great Qing"
  MAN_great_qing_JAP_fascism_autonomy_wtt_imperial_protectorate_DEF:0 "Great Qing"
  MAN_great_qing_JAP_fascism_autonomy_wtt_imperial_protectorate_ADJ:0 "Qing"
@@ -146,10 +157,14 @@
  MAN_great_qing_JAP_fascism_autonomy_wtt_imperial_associate_ADF:0 "Qing"
  SAF_union:0 "South African Union"
  AST_annex_nz:0 "Annex New Zealand"
+ AST_core_papau:0 "Core Papau"
+ AST_no_nzl_annex:0 "No New Zealand Annex Compensation"
  ITA_ISR_fascism:0 "Italian Social Republic"
  #### AUTONOMY ####
  autonomy_protectorate:0 "Colonial Protectorate"
  autonomy_soviet_protectorate:0 "Soviet Protectorate"
+ autonomy_wtt_imperial_protectorate:0 "Imperial Protectorate"
+ autonomy_wtt_integrated_imperial_protectorate:0 "Integrated Imperial Protectorate"
 
  #### IDEAS ####
  air_factory_1:0 "Small Aircraft Factories"
@@ -202,6 +217,8 @@
  father_check:0 "No Father?"
  father_check_desc:0 "Some players need some fatherly guidance due to a lack of that in their life"
  rail_way_plural:0 "Railways"
+ peace_training:0 "Peaceful Training"
+ peace_training_desc:0 "§RBe careful to not accidently go over £training_speed_texticon  -100% division training time from propaganda and techs.§!"
 
  #### BUILDINGS ####
  synthetic_rubber_refinery:0 "Synthetic Rubber Refinery"
@@ -243,7 +260,7 @@
  armored_ratio_over_40:0 "Armored ratio > §H90%§!"
  pontoon_bridges_tt:0 "§REngineer battalions will require 10 more Support and Infantry equipment per battalion§!"
  mountain_training_effect:0 "Enables §HMountain Training§!\n§HAll Infantry:\n    Mountain§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
- motti_tactic:0 "Enables §HMotti Tactics§!\n§HAll Infantry:\n    Forest§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
+ motti_tactic:0 "Enables §HMotti Tactics§!\n§HAll Infantry:\n    HP: §G+100%    §!\nForest§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!\n§HMilitia and Garrisons:\n    HP: §G+100%"
 
  MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
 
@@ -291,7 +308,9 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  flying_boat:0 "Flying Boat"
  flying_boat_equipment:0 "Flying Boat"
  advanced_sonar:0 "Sonobuoys"
+ modern_sonar:0 "Towed Array Sonar"
  ship_sonar_3:0 "Sonobuoys"
+ ship_sonar_4:0 "Towed Array Sonar"
  group_artillery_title:0 "Artillery"
  ss_infantry:0 "SS-Grenadierabteilung"
  ss_motorized:0 "SS-Motorisierteabteilung"
@@ -388,7 +407,7 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  ship_hull_light_3:0 "1939 Destroyer Hull"
  ship_hull_light_4:0 "1942 Destroyer Hull"
  ship_hull_submarine_3:0 "1939 Submarine Hull"
- ship_hull_submarine_4:0 "1942 Submarine Hull"
+ ship_hull_submarine_4:0 "1944 Submarine Hull"
  ship_hull_carrier_2:0 "1939 Carrier Hull"
  ship_hull_carrier_3:0 "1942 Carrier Hull"
  ship_hull_cruiser_3:0 "1939 Cruiser Hull"
@@ -580,8 +599,8 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  water_methanol:0 "Water Methanol Injection - MW50"
  bad_terrain_armored_warfare:0 "Adaptable Light Armor Designs"
  slacken_inf_tech:0 "Cheaper Infantry"
- sov_slacken_armor_tech:0 "Cheaper Tanks, Motorized, and Mechanized"
-
+ sov_slacken_armor_tech:0 "Cheaper Tanks"
+ maintanance_hp_change_1_short_tt:0 "\n§REquipment capture was removed from the game, to compensate HP and recovery rate is now given instead.§!"
  ###ART###
  
  #SOV#
@@ -1120,3 +1139,9 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  RULE_USSR_WAR_FOCUS_ONLY_DISABLED_DESC:0 "War with USSR is possible in all ways"
  RULE_USSR_WAR_FOCUS_ONLY_ENABLED:0 "Enabled"
  RULE_USSR_WAR_FOCUS_ONLY_ENABLED_DESC:0 "War with USSR is focuses only"
+ RULE_FREE_TEMPLATES:0 "Free Templates"
+ RULE_FREE_TEMPLATES_DISABLED_DESC:0 "Designing free division templates is disabled (default)"
+ RULE_FREE_TEMPLATES_ENABLED_DESC:0 "Designing free division templates is enabled"
+ RULE_ITALIAN_COSTAL_FORTS_FOCUS:0 "Italian Costal Forts Focus"
+ RULE_ITALIAN_COSTAL_FORTS_FOCUS_DISABLED_DESC:0 "Italian national focus to spawn lvl 5 costal forts on every naval port turned disabled (default)"
+ RULE_ITALIAN_COSTAL_FORTS_FOCUS_ENABLED_DESC:0 "Italian national focus to spawn lvl 5 costal forts on every naval port enabled"

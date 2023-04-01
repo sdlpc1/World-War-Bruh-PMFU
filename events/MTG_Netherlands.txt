@@ -490,7 +490,7 @@ country_event = {
 	option = {
 		name = mtg_netherlands.15.a
 		BEL = { country_event = { id = mtg_netherlands.18 } }
-		LUX = { country_event = { id = mtg_netherlands.18 } }
+		# LUX = { country_event = { id = mtg_netherlands.18 } }
 		FROM = { country_event = { id = mtg_netherlands.16 days = 1 random_days = 3 } }
 	}
 
@@ -524,15 +524,15 @@ country_event = {
 		    transfer_troops = yes
 		}
 		#ENG = { end_exile = BEL }
-		LUX = {
-			every_unit_leader = {
-				set_nationality = ROOT
-			}
-		}
-		annex_country = {
-		    target = LUX
-		    transfer_troops = yes
-		}
+		# LUX = {
+		# 	every_unit_leader = {
+		# 		set_nationality = ROOT
+		# 	}
+		# }
+		# annex_country = {
+		#     target = LUX
+		#     transfer_troops = yes
+		# }
 		#ENG = { end_exile = LUX }
 		hidden_effect = { news_event = { id = mtg_news.51 days = 1 } }
 	}
@@ -3091,24 +3091,24 @@ country_event = {
 					set_nationality = ROOT
 				}
 			}
-			LUX = {
-				every_unit_leader = {
-					set_nationality = ROOT
-				}
-			}
+			# LUX = {
+			# 	every_unit_leader = {
+			# 		set_nationality = ROOT
+			# 	}
+			# }
 			annex_country = {
 			    target = BEL
 			    transfer_troops = yes
 			}
-			annex_country = {
-			    target = LUX
-			    transfer_troops = yes
-			}
+			# annex_country = {
+			#     target = LUX
+			#     transfer_troops = yes
+			# }
 			every_state = {
 				limit = {
 					OR = {
 						is_core_of = BEL
-						is_core_of = LUX
+						# is_core_of = LUX
 					}
 				}
 				add_core_of = ROOT

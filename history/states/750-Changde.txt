@@ -8,6 +8,7 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = town
 	history={
+		set_state_flag = USA_split_china_region_state_central
 		owner = CHI
 		add_core_of = CHI
 		buildings = {

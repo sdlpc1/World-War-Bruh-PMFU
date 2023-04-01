@@ -276,16 +276,17 @@ default = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/tanks/ger/ger_sheavy_tank_2.dds"
-			}
-		}
-	}
-	ger_heavy_tank_chassis_p7 = {
-		pool = {
-			icons = {
 				"gfx/interface/technologies/tanks/ger/ger_sheavy_tank_1.dds"
 			}
 		}
 	}
+	# ger_heavy_tank_chassis_p7 = {
+	# 	pool = {
+	# 		icons = {
+	# 			"gfx/interface/technologies/tanks/ger/ger_sheavy_tank_1.dds"
+	# 		}
+	# 	}
+	# }
 	eng_light_tank_chassis_mk6 = {
 		pool = {
 			icons = {
@@ -923,15 +924,15 @@ default = {
 			}
 		}
 	}
-	sov_heavy_tank_chassis_is3 = {
-		pool = {
-			icons = {
-				"gfx/interface/technologies/tanks/sov/sov_heavy_tank_5.dds"
-				"gfx/interface/technologies/tanks/sov/sov_heavy_td_1.dds"
-				"gfx/interface/technologies/tanks/sov/sov_assault_gun_3.dds"
-			}
-		}
-	}
+	# sov_heavy_tank_chassis_is3 = {
+	# 	pool = {
+	# 		icons = {
+	# 			"gfx/interface/technologies/tanks/sov/sov_heavy_tank_5.dds"
+	# 			"gfx/interface/technologies/tanks/sov/sov_heavy_td_1.dds"
+	# 			"gfx/interface/technologies/tanks/sov/sov_assault_gun_3.dds"
+	# 		}
+	# 	}
+	# }
 	usa_light_tank_chassis_lm2 = {
 		pool = {
 			icons = {

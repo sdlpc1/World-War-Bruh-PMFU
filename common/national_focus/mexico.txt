@@ -4703,12 +4703,12 @@
 							owns_state = 310
 							has_full_control_of_state = 310
 						}
-						CAY = {
-							is_subject_of = PREV
-						}
-						GDL = {
-							is_subject_of = PREV
-						}
+						# CAY = {
+						# 	is_subject_of = PREV
+						# }
+						# GDL = {
+						# 	is_subject_of = PREV
+						# }
 					}
 				}
 				country_event = { id = mexico.54 hours = 6 }
@@ -4721,9 +4721,9 @@
 							owns_state = 686
 							has_full_control_of_state = 686
 						}
-						PUE = {
-							is_subject_of = PREV
-						}
+						# PUE = {
+						# 	is_subject_of = PREV
+						# }
 					}
 				}
 				country_event = { id = mexico.54 hours = 6 }
@@ -4740,12 +4740,12 @@
 							owns_state = 153
 							has_full_control_of_state = 153
 						}
-						SUR = {
-							is_subject_of = PREV
-						}
-						CRC = {
-							is_subject_of = PREV
-						}
+						# SUR = {
+						# 	is_subject_of = PREV
+						# }
+						# CRC = {
+						# 	is_subject_of = PREV
+						# }
 					}
 				}
 				country_event = { id = mexico.54 hours = 6 }
@@ -4782,24 +4782,24 @@
 							owns_state = 311 #belize
 							has_full_control_of_state = 311
 						}																		
-						BLZ = {
-							is_subject_of = PREV
-						}
-						GYA = {
-							is_subject_of = PREV
-						}
-						TRI = {
-							is_subject_of = PREV
-						}
-						BAS = {
-							is_subject_of = PREV
-						}
-						BAH = {
-							is_subject_of = PREV
-						}
-						JAM = {
-							is_subject_of = PREV
-						}																								
+						# BLZ = {
+						# 	is_subject_of = PREV
+						# }
+						# GYA = {
+						# 	is_subject_of = PREV
+						# }
+						# TRI = {
+						# 	is_subject_of = PREV
+						# }
+						# BAS = {
+						# 	is_subject_of = PREV
+						# }
+						# BAH = {
+						# 	is_subject_of = PREV
+						# }
+						# JAM = {
+						# 	is_subject_of = PREV
+						# }																								
 					}
 				}
 				country_event = { id = mexico.54 hours = 6 }
@@ -4976,9 +4976,9 @@
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = GUA
-						is_core_of = HON
-						is_core_of = ELS
+						# is_core_of = GUA
+						# is_core_of = HON
+						# is_core_of = ELS
 						state = 311 # British Honduras
 					}
 					NOT = {
@@ -4987,62 +4987,63 @@
 				}
 				add_claim_by = ROOT
 			}
-            if = {
-            	limit = {
-            		GUA = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = GUA
-                }
-            }
-            if = {
-            	limit = {
-            		HON = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = HON
-                }
-            }
-            if = {
-            	limit = {
-            		ELS = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = ELS
-                }
-            }
-		}
-		will_lead_to_war_with = GUA
-		will_lead_to_war_with = HON
-		will_lead_to_war_with = ELS
+            # if = {
+            # 	limit = {
+            # 		# GUA = {
+			# 		# 	exists = yes
+            # 		# 	NOT = {
+            # 		# 		OR = {
+            # 		# 			is_in_faction_with = ROOT
+            #         #         	is_subject_of = ROOT
+            # 		# 		}
+            # 		# 	}
+            # 		# }
+            # 	}
+            # 	# create_wargoal = {
+            #     #     type = annex_everything
+            #     #     target = GUA
+            #     # }
+            # }
+        #     if = {
+        #     	limit = {
+        #     		HON = {
+		# 				exists = yes
+        #     			NOT = {
+        #     				OR = {
+        #     					is_in_faction_with = ROOT
+        #                     	is_subject_of = ROOT
+        #     				}
+        #     			}
+        #     		}
+        #     	}
+        #     	create_wargoal = {
+        #             type = annex_everything
+        #             target = HON
+        #         }
+        #     }
+        #     if = {
+        #     	limit = {
+        #     		ELS = {
+		# 				exists = yes
+        #     			NOT = {
+        #     				OR = {
+        #     					is_in_faction_with = ROOT
+        #                     	is_subject_of = ROOT
+        #     				}
+        #     			}
+        #     		}
+        #     	}
+        #     	create_wargoal = {
+        #             type = annex_everything
+        #             target = ELS
+        #         }
+        #     }
+		# }
+		# will_lead_to_war_with = GUA
+		# will_lead_to_war_with = HON
+		# will_lead_to_war_with = ELS
 	}
+}
 	
 	focus = {
 		id = MEX_focus_unify_centroamerica
@@ -5078,9 +5079,9 @@
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = NIC
-						is_core_of = COS
-						is_core_of = PAN
+						# is_core_of = NIC
+						# is_core_of = COS
+						# is_core_of = PAN
 						state = 685 # Panama Canal
 					}
 					NOT = {
@@ -5089,61 +5090,61 @@
 				}
 				add_claim_by = ROOT
 			}
-            if = {
-            	limit = {
-            		NIC = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = NIC
-                }
-            }
-            if = {
-            	limit = {
-            		COS = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = COS
-                }
-            }
-            if = {
-            	limit = {
-            		PAN = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = PAN
-                }
-            }
+            # if = {
+            # 	limit = {
+            # 		NIC = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = NIC
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		COS = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = COS
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		PAN = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = PAN
+            #     }
+            # }
 		}
-		will_lead_to_war_with = NIC
-		will_lead_to_war_with = COS
-		will_lead_to_war_with = PAN
+		# will_lead_to_war_with = NIC
+		# will_lead_to_war_with = COS
+		# will_lead_to_war_with = PAN
 	}
 	
 	focus = {
@@ -5173,205 +5174,205 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_named_threat = {
-				threat = 1
-				name = threat_mexico_pressure_the_caribbean
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = CUB
-						is_core_of = DOM
-						is_core_of = HAI
-					}
-					NOT = {
-						is_core_of = ROOT
-					}
-				}
-				add_claim_by = ROOT
-			}
-            if = {
-            	limit = {
-            		CUB = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = CUB
-                }
-            }
-            if = {
-            	limit = {
-            		DOM = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = DOM
-                }
-            }
-            if = {
-            	limit = {
-            		HAI = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = HAI
-                }
-            }
-            if = {
-            	limit = {
-            		BAH = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = BAH
-                }
-            }
-            if = {
-            	limit = {
-            		BAS = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = BAS
-                }
-            }
-            if = {
-            	limit = {
-            		JAM = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = JAM
-                }
-            }
-            if = {
-            	limit = {
-            		PUE = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = PUE
-                }
-            }
-            if = {
-            	limit = {
-            		CRC = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = CRC
-                }
-            }
-            if = {
-            	limit = {
-            		TRI = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = TRI
-                }
-            }
-            if = {
-            	limit = {
-            		GDL = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = GDL
-                }
-            }
+			# add_named_threat = {
+			# 	threat = 1
+			# 	name = threat_mexico_pressure_the_caribbean
+			# }
+			# every_state = {
+			# 	limit = {
+			# 		OR = {
+			# 			# is_core_of = CUB
+			# 			# is_core_of = DOM
+			# 			# is_core_of = HAI
+			# 		}
+			# 		NOT = {
+			# 			is_core_of = ROOT
+			# 		}
+			# 	}
+			# 	add_claim_by = ROOT
+			# }
+            # if = {
+            # 	limit = {
+            # 		CUB = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = CUB
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		DOM = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = DOM
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		HAI = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = HAI
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		BAH = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = BAH
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		BAS = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = BAS
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		JAM = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = JAM
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		PUE = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = PUE
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		CRC = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = CRC
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		TRI = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = TRI
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		GDL = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = GDL
+            #     }
+            # }
 		}
 
-		will_lead_to_war_with = CUB
-		will_lead_to_war_with = DOM
-		will_lead_to_war_with = HAI
-	    will_lead_to_war_with = BAH
-	    will_lead_to_war_with = BAS
-	    will_lead_to_war_with = JAM
-	    will_lead_to_war_with = PUE
-	    will_lead_to_war_with = CRC
-	    will_lead_to_war_with = TRI
-	    will_lead_to_war_with = GDL		
+		# will_lead_to_war_with = CUB
+		# will_lead_to_war_with = DOM
+		# will_lead_to_war_with = HAI
+	    # will_lead_to_war_with = BAH
+	    # will_lead_to_war_with = BAS
+	    # will_lead_to_war_with = JAM
+	    # will_lead_to_war_with = PUE
+	    # will_lead_to_war_with = CRC
+	    # will_lead_to_war_with = TRI
+	    # will_lead_to_war_with = GDL		
 	}
 	
 	focus = {
@@ -5405,9 +5406,9 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = MEX_decision_integrate_cuba
-			unlock_decision_tooltip = MEX_decision_integrate_haiti
-			unlock_decision_tooltip = MEX_decision_integrate_the_dominican_republic			
+			# unlock_decision_tooltip = MEX_decision_integrate_cuba
+			# unlock_decision_tooltip = MEX_decision_integrate_haiti
+			# unlock_decision_tooltip = MEX_decision_integrate_the_dominican_republic			
 		}
 	}
 	
@@ -5445,8 +5446,8 @@
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = COL
-						is_core_of = ECU
+						# is_core_of = COL
+						# is_core_of = ECU
 						is_core_of = VEN
 					}
 					NOT = {
@@ -5455,40 +5456,40 @@
 				}
 				add_claim_by = ROOT
 			}
-            if = {
-            	limit = {
-            		COL = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = COL
-                }
-            }
-            if = {
-            	limit = {
-            		ECU = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = ECU
-                }
-            }
+            # if = {
+            # 	limit = {
+            # 		COL = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = COL
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		ECU = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = ECU
+            #     }
+            # }
             if = {
             	limit = {
             		VEN = {
@@ -5507,8 +5508,8 @@
                 }
             } 
 		}
-		will_lead_to_war_with = COL
-		will_lead_to_war_with = ECU
+		# will_lead_to_war_with = COL
+		# will_lead_to_war_with = ECU
 		will_lead_to_war_with = VEN
 	}
 
@@ -5546,12 +5547,12 @@
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = PRU
-						is_core_of = BOL
-						is_core_of = PAR
-						is_core_of = URG
-						is_core_of = CHL
-						is_core_of = ARG						
+						# is_core_of = PRU
+						# is_core_of = BOL
+						# is_core_of = PAR
+						# is_core_of = URG
+						# is_core_of = CHL
+						# is_core_of = ARG						
 					}
 					NOT = {
 						is_core_of = ROOT
@@ -5559,115 +5560,115 @@
 				}
 				add_claim_by = ROOT
 			}
-            if = {
-            	limit = {
-            		ARG = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = ARG
-                }
-            }
-            if = {
-            	limit = {
-            		CHL = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = CHL
-                }
-            }
-            if = {
-            	limit = {
-            		URG = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = URG
-                }
-            }
-            if = {
-            	limit = {
-            		PAR = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = PAR
-                }
-            }
-            if = {
-            	limit = {
-            		BOL = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = BOL
-                }
-            }
-            if = {
-            	limit = {
-            		PRU = {
-						exists = yes
-            			NOT = {
-            				OR = {
-            					is_in_faction_with = ROOT
-                            	is_subject_of = ROOT
-            				}
-            			}
-            		}
-            	}
-            	create_wargoal = {
-                    type = annex_everything
-                    target = PRU
-                }
-            }
+            # if = {
+            # 	limit = {
+            # 		ARG = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = ARG
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		CHL = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = CHL
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		URG = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = URG
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		PAR = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = PAR
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		BOL = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = BOL
+            #     }
+            # }
+            # if = {
+            # 	limit = {
+            # 		PRU = {
+			# 			exists = yes
+            # 			NOT = {
+            # 				OR = {
+            # 					is_in_faction_with = ROOT
+            #                 	is_subject_of = ROOT
+            # 				}
+            # 			}
+            # 		}
+            # 	}
+            # 	create_wargoal = {
+            #         type = annex_everything
+            #         target = PRU
+            #     }
+            # }
 		}
-		will_lead_to_war_with = PRU
-		will_lead_to_war_with = BOL
-		will_lead_to_war_with = PAR
-		will_lead_to_war_with = URG
-		will_lead_to_war_with = CHL
-		will_lead_to_war_with = ARG
+		# will_lead_to_war_with = PRU
+		# will_lead_to_war_with = BOL
+		# will_lead_to_war_with = PAR
+		# will_lead_to_war_with = URG
+		# will_lead_to_war_with = CHL
+		# will_lead_to_war_with = ARG
 	}	
 
 	focus = {
@@ -5706,7 +5707,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = MEX_decision_operation_just_cause
+			# unlock_decision_tooltip = MEX_decision_operation_just_cause
 		}
 		will_lead_to_war_with = USA
 	}
@@ -5747,14 +5748,14 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = MEX_decision_integrate_guatamala
-			unlock_decision_tooltip = MEX_decision_integrate_honduras
-			unlock_decision_tooltip = MEX_decision_integrate_el_salvador
-			unlock_decision_tooltip = MEX_decision_integrate_nicaragua
-			unlock_decision_tooltip = MEX_decision_integrate_costa_rica
-			unlock_decision_tooltip = MEX_decision_integrate_panama
-			unlock_decision_tooltip = MEX_decision_integrate_panama_canal
-			unlock_decision_tooltip = MEX_decision_integrate_belize
+			# unlock_decision_tooltip = MEX_decision_integrate_guatamala
+			# unlock_decision_tooltip = MEX_decision_integrate_honduras
+			# unlock_decision_tooltip = MEX_decision_integrate_el_salvador
+			# unlock_decision_tooltip = MEX_decision_integrate_nicaragua
+			# unlock_decision_tooltip = MEX_decision_integrate_costa_rica
+			# unlock_decision_tooltip = MEX_decision_integrate_panama
+			# unlock_decision_tooltip = MEX_decision_integrate_panama_canal
+			# unlock_decision_tooltip = MEX_decision_integrate_belize
 		}
 	}
 	

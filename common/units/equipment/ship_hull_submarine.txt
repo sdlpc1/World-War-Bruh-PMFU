@@ -81,7 +81,7 @@ equipments = {
 
 		fuel_consumption = 2
 		
-		build_cost_ic = 220
+		build_cost_ic = 260
 		resources = {
 			#oil = 1
 			steel = 20
@@ -136,7 +136,7 @@ equipments = {
 		
 
 		
-		build_cost_ic = 250
+		build_cost_ic = 300
 		resources = {
 			#oil = 1
 			steel = 20
@@ -186,7 +186,7 @@ equipments = {
 
 
 		
-		build_cost_ic = 320
+		build_cost_ic = 380
 		resources = {
 			steel = 20
 		}
@@ -234,7 +234,7 @@ equipments = {
 		
 
 		
-		build_cost_ic = 450
+		build_cost_ic = 530
 		resources = {
 			steel = 20
 			chromium = 10
