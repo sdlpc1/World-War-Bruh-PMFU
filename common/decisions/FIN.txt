@@ -95,6 +95,24 @@ operations = {
 				MON = {
 					remove_ideas = MON_brothers_war
 				}
+				if = {
+					limit = {
+						NOT = { FIN = { has_idea = peace_training } }
+					}
+					FIN = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SOV = { has_idea = peace_training } }
+					}
+					SOV = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MON = { has_idea = peace_training } }
+					}
+					MON = { add_ideas = peace_training }
+				}
 			}
 		}
 		ai_will_do = {
@@ -148,6 +166,24 @@ operations = {
 						mission = SOV_winter_war
 						days = -300
 					}
+				}
+				if = {
+					limit = {
+						NOT = { FIN = { has_idea = peace_training } }
+					}
+					FIN = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SOV = { has_idea = peace_training } }
+					}
+					SOV = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MON = { has_idea = peace_training } }
+					}
+					MON = { add_ideas = peace_training }
 				}
 			}
 			effect_tooltip = {

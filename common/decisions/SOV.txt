@@ -10158,6 +10158,24 @@ operations = {
 				MON = {
 					remove_ideas = MON_brothers_war
 				}
+				if = {
+					limit = {
+						NOT = { FIN = { has_idea = peace_training } }
+					}
+					FIN = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SOV = { has_idea = peace_training } }
+					}
+					SOV = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MON = { has_idea = peace_training } }
+					}
+					MON = { add_ideas = peace_training }
+				}
 			}
 		}
 
@@ -10251,6 +10269,24 @@ operations = {
 			hidden_effect = {
 				MON = {
 					remove_ideas = MON_brothers_war
+				}
+				if = {
+					limit = {
+						NOT = { FIN = { has_idea = peace_training } }
+					}
+					FIN = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SOV = { has_idea = peace_training } }
+					}
+					SOV = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MON = { has_idea = peace_training } }
+					}
+					MON = { add_ideas = peace_training }
 				}
 			}
 		}
