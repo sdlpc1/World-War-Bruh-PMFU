@@ -4,14 +4,12 @@ oob = "JAP_1936"
 
 set_stability = 0.5
 set_war_support = 0.8
-
 set_research_slots = 6
 set_fuel_ratio = 1.0
 add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-
 	JAP_hirohito
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
@@ -1130,6 +1128,10 @@ if = {
 				}
 			}
 		}	
+	}
+
+	1936.1.1.13 = {
+		set_global_flag = NO_ASIA
 	}
 	
 	# AXIS

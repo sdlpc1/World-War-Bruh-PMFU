@@ -14,8 +14,8 @@ state={
 			industrial_complex = 1
 		}
 
-		1938.10.25 = {
-			controller = JAP
+		1936.1.1.13 = {
+			owner = WST	
 		}
 	}
 

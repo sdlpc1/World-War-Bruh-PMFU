@@ -6,7 +6,8 @@ state={
 	
 	history=
 	{
-		owner = MAL
+				owner = MAL
+
 		buildings = {
 			infrastructure = 3
 			13002 = {

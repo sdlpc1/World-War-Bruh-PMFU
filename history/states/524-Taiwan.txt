@@ -8,7 +8,10 @@ state=
 	history=
 	{
 		set_state_flag = USA_split_china_region_state_taiwan
-		owner = JAP
+				owner = JAP
+        1936.1.1.13 = {
+            owner = WST 	
+		}	
 		add_core_of = CHI
 		set_state_flag = NOT_PACIFIC_COMMONWEALTH_controls
 		buildings = {

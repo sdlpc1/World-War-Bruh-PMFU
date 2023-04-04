@@ -8,7 +8,9 @@ state={
 
 	history={
 		add_core_of = WST
-		owner = RAJ
+				owner = RAJ      1936.1.1.13 = {
+            owner = WST 	
+		}	
 		set_state_flag = RAJ_controls
 		buildings = {
 			infrastructure = 3

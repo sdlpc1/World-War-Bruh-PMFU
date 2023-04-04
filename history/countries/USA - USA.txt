@@ -1,5 +1,7 @@
 ﻿capital = 361
-
+1936.1.1.13 = {
+	set_oob = "USA_1936_NA"
+}
 oob = "USA_1936"
 
 starting_train_buffer = 5

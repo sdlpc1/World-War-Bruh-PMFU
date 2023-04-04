@@ -168,6 +168,17 @@ on_actions = {
 					MAN = { add_ideas = peace_training }
 				}
 			}
+		}		
+		effect = {
+			if = {
+				limit = {
+					original_tag = ETH
+					FROM = { tag = ITA }
+					has_government = neutrality
+					has_global_flag = NO_ASIA
+				}
+				activate_mission = demilitarize_ethiopia
+			}
 		}
 		# Japan Takes all of China
 		effect = {
@@ -453,8 +464,16 @@ on_actions = {
 				white_peace = BUL
 				white_peace = YUG
 				white_peace = VIC
-				white_peace = FIN
+        white_peace = FIN
 				white_peace = SPR
+				remove_from_faction = HUN
+				remove_from_faction = ROM
+				remove_from_faction = BUL
+				remove_from_faction = ITA
+				remove_from_faction = YUG
+				remove_from_faction = FIN
+				remove_from_faction = VIC
+				remove_from_faction = FIN
 				USA = {
 					add_named_threat = { threat = 60 name = "Treaty of Berlin" }
 					annex_country = {
@@ -896,15 +915,6 @@ on_actions = {
 					}
 					transfer_state = 559
 					transfer_state = 550
-				}
-				SOV = {
-					transfer_state = 58
-					transfer_state = 59
-					transfer_state = 56
-					transfer_state = 57
-					transfer_state = 51
-					transfer_state = 42
-					transfer_state = 50
 				}
 			}
 

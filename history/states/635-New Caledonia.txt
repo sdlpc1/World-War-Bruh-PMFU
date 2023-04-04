@@ -10,6 +10,9 @@ state={
 
 	history={
 		owner = FRA
+		1936.1.1.13 = {
+			owner = WST
+		}
 		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		victory_points = {
 			4268 1 

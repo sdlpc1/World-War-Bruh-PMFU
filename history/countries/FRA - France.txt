@@ -1,5 +1,7 @@
 ﻿capital = 16
-
+1936.1.1.13 = {
+	set_oob = "FRA_1936_NA"
+}
 oob = "FRA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

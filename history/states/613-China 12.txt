@@ -32,8 +32,8 @@ state={
 			10076 3
 		}
 
-		1938.10.25 = {
-			controller = JAP
+		1936.1.1.13 = {
+			owner = WST	
 		}
 	}
 
