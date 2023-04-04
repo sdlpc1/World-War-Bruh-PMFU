@@ -375,7 +375,6 @@ on_actions = {
 				white_peace = BUL
 				white_peace = YUG
 				white_peace = VIC
-				white_peace = FIN
 				white_peace = SPR
 				white_peace = FIN
 				remove_from_faction = HUN

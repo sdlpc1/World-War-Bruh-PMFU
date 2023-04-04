@@ -12,7 +12,9 @@ state={
 			arms_factory = 2
 			industrial_complex = 4
 		}
-
+        1936.1.1.13 = {
+            owner = WST 	
+		}
 	}
 
 	provinces={

@@ -17,6 +17,9 @@ state={
 			arms_factory = 2
 
 
+		}		
+		1936.1.1.13 = {
+			owner = WST	
 		}
 
 

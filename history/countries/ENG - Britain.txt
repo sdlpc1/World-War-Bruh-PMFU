@@ -1,5 +1,7 @@
 ﻿capital = 126
-
+1936.1.1.13 = {
+	set_oob = "ENG_1936_NA"
+}
 set_oob = "ENG_1936"
 if = {
 	limit = {

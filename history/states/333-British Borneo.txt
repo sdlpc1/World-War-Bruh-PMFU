@@ -12,7 +12,10 @@ state=
 
 	history=
 	{
-		owner = MAL
+				owner = MAL
+		1936.1.1.13 = {
+			owner = WST
+		}
 		victory_points = {
 			7371 1
 		}

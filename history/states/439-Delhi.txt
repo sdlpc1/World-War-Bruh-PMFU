@@ -7,7 +7,9 @@ state={
 	state_category = metropolis
 	
 	history={
-		owner = RAJ
+				owner = RAJ      1936.1.1.13 = {
+            owner = WST 	
+		}	
 		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		buildings = {
 			infrastructure = 6

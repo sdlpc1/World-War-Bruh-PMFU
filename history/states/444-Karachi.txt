@@ -10,7 +10,9 @@ state={
 		victory_points = {
 			8066 1
 		}
-		owner = RAJ
+				owner = RAJ      1936.1.1.13 = {
+            owner = WST 	
+		}	
 		buildings = {
 			infrastructure = 2
 		}

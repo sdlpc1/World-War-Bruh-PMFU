@@ -3,7 +3,11 @@ state={
 	name="STATE_738"
 
 	history={
-		owner = INS
+						owner = INS
+        1936.1.1.13 = {
+			owner = WST
+		}
+
 		add_core_of = INS
 		buildings = {
 			infrastructure = 1

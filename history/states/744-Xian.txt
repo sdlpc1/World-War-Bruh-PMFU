@@ -16,7 +16,9 @@ state={
 			arms_factory = 2
 			industrial_complex = 1
 		}
-
+		1936.1.1.13 = {
+			owner = WST	
+		}
 	}
 	manpower=9000000
 	buildings_max_level_factor=1.000
