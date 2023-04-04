@@ -2,10 +2,12 @@
 state={
 	id=504
 	name="STATE_504"
+	1936.1.1.13 = {
+
 	resources={
-		steel=3000
-		oil=1000
-	}	
+
+	}
+}	
 	state_category = rural
 	history={
 		owner = BRA
