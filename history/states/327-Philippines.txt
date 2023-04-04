@@ -12,7 +12,10 @@ state=
 	history={
 		set_state_flag = ASN_ALLIES_controls
 		set_state_flag = PACIFIC_COMMONWEALTH_controls
-		owner = USA
+				owner = USA
+		1936.1.1.13 = {
+			owner = WST
+		}
 		1936.1.1.13 = {
 			owner = WST
 		}

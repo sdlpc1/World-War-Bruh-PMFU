@@ -1880,6 +1880,18 @@
 		}
 
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				is_subject = no
+				NOT = {
+					has_war_with = USA
+				}
+                date > 1941.1.1
+			}
+			else = {
 			is_subject = no
 			NOT = {
 				has_war_with = USA
@@ -1887,6 +1899,7 @@
 			USA = {
 				is_in_faction = yes
 			}
+		}
 		}
 
 		bypass = {
@@ -1981,12 +1994,27 @@
 		}
 
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				is_subject = no
+				NOT = {
+					has_war_with = USA
+				}
+                date > 1941.1.6
+			}
+			else = {
+			is_subject = no
 			NOT = {
 				has_war_with = USA
 			}
 			USA = {
 				has_war = yes
 			}
+		}			
+
 		}
 
 		bypass = {

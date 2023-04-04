@@ -1678,11 +1678,23 @@ focus_tree = {
 		id = ENG_burma_road
 		prerequisite = { focus = ENG_fortify_the_east } 
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				CHI = { 
+					NOT = { has_war_with = ENG }
+				}
+				JAP = { NOT = { is_in_faction_with = ENG } }	
+			}
+			else ={
 			CHI = { 
 				has_war_with = JAP 
 				NOT = { has_war_with = ENG }
 			}
 			JAP = { NOT = { is_in_faction_with = ENG } }
+		}
 		}
 
 		bypass = {
@@ -3315,7 +3327,23 @@ focus_tree = {
 		id = ENG_tizard_mission
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = ENG_arms_purchases }
-		available = {				
+		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				has_government = democratic
+				any_other_country = {
+					has_war_with = ROOT
+					NOT = { has_government = democratic }
+					num_of_factories > 30
+				}
+				NOT = {
+					has_war_with = USA
+				}
+			}	
+			else = {			
 			has_government = democratic
 			any_other_country = {
 				has_war_with = ROOT
@@ -3335,6 +3363,7 @@ focus_tree = {
 					}
 				}
 			}
+		}
 		} 
 		x = 0
 		y = 1

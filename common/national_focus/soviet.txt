@@ -1588,6 +1588,25 @@
 		cost = 5
 		
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				OR = {
+					has_war_with = GER
+					has_war_with = ITA
+					has_war_with = JAP
+				}
+				ENG = {
+					OR = {
+						has_war_with = GER
+						has_war_with = ITA
+						has_war_with = JAP
+					}	
+				}	
+			}
+			else = {
 			OR = {
 				has_war_with = GER
 				has_war_with = ITA
@@ -1600,6 +1619,7 @@
 					has_war_with = JAP
 				}
 			}
+		}
 		}
 
 		completion_reward = {

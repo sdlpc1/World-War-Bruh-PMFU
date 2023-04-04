@@ -5,7 +5,13 @@ state={
 	manpower = 1255094
 	
 	state_category = rural
-	
+	resources={
+		steel=3000
+		tungsten=1600
+		oil=4000
+		aluminium=1000
+		chromium=200
+	}
 	history={
 		owner = MEX
 		buildings = {

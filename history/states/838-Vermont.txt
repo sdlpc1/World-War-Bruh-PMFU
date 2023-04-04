@@ -5,7 +5,10 @@ state={
 		4445 7629 9675 
 	}
 	history={
-		owner = USA
+				owner = USA
+		1936.1.1.13 = {
+			owner = WST
+		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1

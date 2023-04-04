@@ -7,7 +7,10 @@ state={
 	state_category = large_city
 	
 	resources={
-		steel=800
+		steel=1800
+		tungsten=1000
+		oil=3000
+		aluminium=2800
 	}
 	
 	history={
