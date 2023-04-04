@@ -177,7 +177,10 @@ on_actions = {
 					has_government = neutrality
 					has_global_flag = NO_ASIA
 				}
-				activate_mission = demilitarize_ethiopia
+				ITA = {
+					activate_mission = demilitarize_ethiopia
+
+				}
 			}
 		}
 		# Japan Takes all of China
