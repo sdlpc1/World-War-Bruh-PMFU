@@ -7,9 +7,9 @@ state=
 	history=
 	{
 		owner = ENG
-		1936.1.1.13 = {
-			owner = WST
-		}
+		# 1936.1.1.13 = {
+		# 	owner = WST
+		# }
 		add_core_of = ENG
 		add_core_of = CHI
 		victory_points = {

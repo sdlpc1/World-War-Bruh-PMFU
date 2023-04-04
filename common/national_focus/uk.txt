@@ -2607,12 +2607,12 @@ focus_tree = {
 			SAF = {
 				exists = no
 			}
-			# RAJ = {
-			# 	OR = {
-			# 		exists = no
-			# 		NOT = { is_subject_of = ENG }
-			# 	}
-			# }
+			RAJ = {
+				OR = {
+					exists = no
+					NOT = { is_subject_of = ENG }
+				}
+			}
 			AST = {
 				exists = no
 			}
@@ -2828,6 +2828,9 @@ focus_tree = {
 				is_in_faction_with = ROOT
 			}
 		} 
+		bypass = {
+			NOT = { country_exists = RAJ }
+		}
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 2
 		y = 1

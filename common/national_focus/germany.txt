@@ -6417,10 +6417,11 @@ focus_tree = {
 				}
 			}
 			else = {
-			AND = {
-				country_exists = JAP
-				JAP = { is_puppet = no }
-				NOT = { has_war_with = JAP }
+				AND = {
+					country_exists = JAP
+					JAP = { is_puppet = no }
+					NOT = { has_war_with = JAP }
+				}
 			}
 		}
 		prerequisite = { focus = GER_japan_friend }
