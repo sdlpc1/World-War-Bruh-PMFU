@@ -19,3 +19,10 @@ set_popularities = {
 	fascism = 60
 	communism = 20
 }
+
+add_ideas = {
+	stupid_ai
+	neutrality_idea
+	neutrality_idea2
+	russian_closed_eco
+}
