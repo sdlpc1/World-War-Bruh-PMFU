@@ -3807,7 +3807,16 @@ focus_tree = {
 		relative_position_id = CAN_american_licenses
 
 		available = {
-		is_in_faction_with = USA
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				date > 1941.1.1
+			}
+			else = {
+				is_in_faction_with = USA
+			}	
 		}
 		
 		bypass = {
@@ -3836,9 +3845,18 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = CAN_american_licenses
-
+		
 		available = {
-		is_in_faction_with = USA
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				date > 1941.1.1
+			}
+			else = {
+				is_in_faction_with = USA
+			}	
 		}
 		
 		bypass = {

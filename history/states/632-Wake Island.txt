@@ -7,7 +7,10 @@ state={
 
 	history={
 		set_state_flag = USA_controls
-		owner = USA
+				owner = USA
+		1936.1.1.13 = {
+			owner = WST
+		}
 		1936.1.1.13 = {
 			owner = WST
 		}

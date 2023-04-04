@@ -360,7 +360,16 @@ shared_focus = {
 	cost = 5
 	
 	available = {
-		is_in_faction_with = USA
+		if = {
+			limit = {
+				has_global_flag = NO_ASIA
+
+			}
+			date > 1941.1.1
+		}
+		else = {
+			is_in_faction_with = USA
+		}	
 	}
 
 	offset = {

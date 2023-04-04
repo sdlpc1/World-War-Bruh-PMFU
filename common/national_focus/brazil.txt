@@ -172,9 +172,17 @@ focus_tree = {
 		cost = 10
 		
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+			}
+			else = {
 			USA = {
 				has_completed_focus = USA_neutrality_act
 			}
+		}
 		}
 
 		ai_will_do = {
@@ -219,14 +227,12 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			OR = {
+
 				ENG = {
-					has_war_with = JAP
-				}
-				USA = {
 					has_war_with = GER
 				}
-			}
+
+			
 		}
 
 		ai_will_do = {
@@ -630,9 +636,18 @@ focus_tree = {
 		cost = 10
 		
 		available = {
+            if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+                date > 1937.1.1
+			}
+			else = {
 			USA = {
 				NOT = { has_idea = great_depression }
 			}
+		}
 		}
 
 		ai_will_do = {
@@ -669,10 +684,19 @@ focus_tree = {
 		cost = 10
 		
 		available = {
+            if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+                date > 1938.1.1
+			}
+            else = {
 			USA = {
 				NOT = { has_idea = great_depression_2 }
 				NOT = { has_idea = great_depression }
 			}
+		}
 		}
 
 		ai_will_do = {
@@ -709,11 +733,22 @@ focus_tree = {
 		cost = 10
 		
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+                ENG = {
+					has_war_with = GER
+				}
+			}
+			else = {
 			USA = {
 				NOT = { has_idea = great_depression_3 }
 				NOT = { has_idea = great_depression_2 }
 				NOT = { has_idea = great_depression }
 			}
+		}
 		}
 
 		ai_will_do = {
@@ -750,6 +785,15 @@ focus_tree = {
 		cost = 10
 		
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				is_in_faction_with = ENG
+			}	
+            else = {
+					
 			USA = {
 				NOT = { has_idea = great_depression_4 }
 				NOT = { has_idea = great_depression_3 }
@@ -757,6 +801,7 @@ focus_tree = {
 				NOT = { has_idea = great_depression }
 			}
 			is_in_faction_with = USA
+		}
 		}
 
 		ai_will_do = {
@@ -779,7 +824,16 @@ focus_tree = {
 		cost = 10
 		
 		available = {
-			is_in_faction_with = USA
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				is_in_faction_with = ENG
+			}
+			else = {
+				is_in_faction_with = USA
+			}	
 		}
 
 		ai_will_do = {
@@ -932,7 +986,16 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			is_in_faction_with = USA
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				is_in_faction_with = ENG
+			}
+			else = {
+				is_in_faction_with = USA
+			}	
 		}
 
 		ai_will_do = {
@@ -1168,8 +1231,18 @@ focus_tree = {
 		relative_position_id = BRA_motorisation_effort
 
 		available = {
-			is_in_faction_with = USA
-			has_war = yes
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				is_in_faction_with = ENG
+				has_war = yes
+			}
+			else = {
+				is_in_faction_with = USA
+				has_war = yes
+			}	
 		}
 
 		ai_will_do = {
@@ -1252,8 +1325,18 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			is_in_faction_with = USA
-			has_war = yes
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				is_in_faction_with = ENG
+				has_war = yes
+			}
+			else = {
+				is_in_faction_with = USA
+				has_war = yes
+			}	
 		}
 
 		ai_will_do = {
@@ -1351,14 +1434,12 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 50
-			add_to_tech_sharing_group = us_research
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.40
 				uses = 2
 				category = land_doctrine
 			}
-			add_ideas = BRA_usa_license
 			
 		}
 	}
