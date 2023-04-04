@@ -149,6 +149,24 @@ on_actions = {
 				CHI = {
 					news_event = { id = country_capitulated.0 days = 0 }
 				}
+				if = {
+					limit = {
+						NOT = { JAP = { has_idea = peace_training } }
+					}
+					JAP = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SIA = { has_idea = peace_training } }
+					}
+					SIA = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MAN = { has_idea = peace_training } }
+					}
+					MAN = { add_ideas = peace_training }
+				}
 			}
 		}		
 		effect = {
@@ -188,6 +206,24 @@ on_actions = {
 				CHI = {
 					news_event = { id = country_capitulated.0 days = 0 }
 				}
+				if = {
+					limit = {
+						NOT = { JAP = { has_idea = peace_training } }
+					}
+					JAP = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SIA = { has_idea = peace_training } }
+					}
+					SIA = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MAN = { has_idea = peace_training } }
+					}
+					MAN = { add_ideas = peace_training }
+				}
 			}
 		}
 		# Manchu takes all of China
@@ -219,6 +255,24 @@ on_actions = {
 				CHI = {
 					news_event = { id = country_capitulated.0 days = 0 }
 				}
+				if = {
+					limit = {
+						NOT = { JAP = { has_idea = peace_training } }
+					}
+					JAP = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SIA = { has_idea = peace_training } }
+					}
+					SIA = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MAN = { has_idea = peace_training } }
+					}
+					MAN = { add_ideas = peace_training }
+				}
 			}
 		}
 
@@ -239,6 +293,12 @@ on_actions = {
 				ETH = {
 					news_event = { id = country_capitulated.0 days = 0 }
 				}
+				if = {
+					limit = {
+						NOT = { ITA= { has_idea = peace_training } }
+					}
+					ITA = { add_ideas = peace_training }
+				}
 			}
 		}
 
@@ -256,6 +316,12 @@ on_actions = {
 						transfer_troops = no
 					}
 					add_named_threat = { threat = 5.6 name = SPA_treaty_of_lisbon }
+				}
+				if = {
+					limit = {
+						NOT = { SPA = { has_idea = peace_training } }
+					}
+					SPA = { add_ideas = peace_training }
 				}
 			}
 		}
@@ -363,6 +429,18 @@ on_actions = {
 					add_named_threat = { threat = 20 name = "Treaty of Tehran" }
 				}
 				set_global_flag = SOV_transfer_iran_2_mongolia_decision
+				if = {
+					limit = {
+						NOT = { MON = { has_idea = peace_training } }
+					}
+					MON = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SOV = { has_idea = peace_training } }
+					}
+					SOV = { add_ideas = peace_training }
+				}
 			}
 		}	
 

@@ -172,10 +172,6 @@ ideas = {
 
 			cancel = {
 				has_war = yes
-				OR = {
-					date > 1939.1.1
-					has_war_with = CHI
-				}
 			}
 
 			removal_cost = -1
@@ -184,8 +180,8 @@ ideas = {
 			
 			modifier = {
 				training_time_army_factor = -0.75
-				# air_training_xp_gain_factor = 10
-				# experience_gain_navy_unit_factor = 10
+				air_training_xp_gain_factor = 10
+				experience_gain_navy_unit_factor = 10
 			}
 		}
 

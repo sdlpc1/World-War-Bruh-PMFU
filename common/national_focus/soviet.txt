@@ -6383,7 +6383,7 @@
 		}
 
 		completion_reward = {
-			add_ideas = SOV_zhukov_promotions
+			# add_ideas = SOV_zhukov_promotions
 			SOV_georgy_zhukov = { 
 				promote_leader = yes 
 			}
