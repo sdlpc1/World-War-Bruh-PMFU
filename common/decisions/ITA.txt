@@ -141,6 +141,20 @@ political_actions = {
 		complete_effect = {
 
 
+		}		
+		timeout_effect = {
+            559 = {
+				set_demilitarized_zone = yes
+
+			}     
+            550 = {
+				set_demilitarized_zone = yes
+
+			}          
+			271 = {
+				set_demilitarized_zone = yes
+
+			}
 		}
 	}	
 	
