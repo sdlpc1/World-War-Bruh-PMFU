@@ -1616,7 +1616,7 @@
 	
 	focus = {
 		id = ITA_develop_advanced_radar
-		# icon = 
+		icon = GFX_goal_ITA_advanced_radar
 		prerequisite = { focus = ITA_build_naval_facilities }
 		x = 2
 		y = 1
@@ -1642,7 +1642,7 @@
 	
 	focus = {
 		id = ITA_mobilize_naval_workers
-		# icon = 
+		icon = GFX_goal_ITA_mobilize_nav_workers
 		prerequisite = { focus = ITA_build_naval_facilities }
 		x = 0
 		y = 1

@@ -17,6 +17,14 @@ spriteTypes = {
 		name = "GFX_goal_ITA_expand_naval_dockyards"
 		texturefile = "gfx/interface/goals/ita/ITA_expand_naval_dockyards.dds"
 	}	
+    spriteType = {
+		name = "GFX_goal_ITA_mobilize_nav_workers"
+		texturefile = "gfx/interface/goals/ita/ITA_mobilize_nav_workers.dds"
+	}	
+    spriteType = {
+		name = "GFX_goal_ITA_advanced_radar"
+		texturefile = "gfx/interface/goals/ita/ITA_advanced_radar.dds"
+	}	
 
     SpriteType = {
 		name = "GFX_ITA_fortify_the_coast"

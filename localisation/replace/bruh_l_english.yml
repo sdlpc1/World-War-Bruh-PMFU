@@ -1114,6 +1114,12 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  navy_chief_anti_submarine_2:0 "Anti-Submarine\n(Expert)"
  navy_chief_anti_submarine_3:0 "Anti-Submarine\n(Genius)"
 
+# STARTING DATES
+ NORMAL_GAME_NAME:0 "Normal game"
+ NORMAL_GAME_DESC:0 "Normal game with asia"
+ NO_ASIA_NAME:0 "No Asia DO NOT USE"
+ NO_ASIA_DESC:0 "A game without Asia DO NOT USE DO NOT USE DO NOT USE DO NOT USE DO NOT USE DO NOT USE DO NOT USE DO NOT USE DO NOT USE"
+
 # GAME RULES
  RULE_GROUP_TFB:0 "Custom TFB Game Rules"
  RULE_OPTION_ENABLED:0 "Enabled"
