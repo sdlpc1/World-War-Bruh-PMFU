@@ -2523,7 +2523,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ENG_imperial_conference
+		id = ENG_imperial_conference ## IMPERIAL CONFERENCE
 		prerequisite = { focus = ENG_commonwealth_ties }
 
 		available = {
@@ -2633,11 +2633,40 @@ focus_tree = {
 		cost = 5
 		search_filters = {FOCUS_FILTER_POLITICAL}	
 		completion_reward = {
-			add_political_power = 120
+			# add_political_power = 120
+			# every_country = {
+			# 	limit = {
+			# 		OR = {
+			# 			tag = ENG
+			# 			AND = {
+			# 				is_subject_of = ENG
+			# 				tag = CAN
+			# 			}
+			# 			AND = {
+			# 				is_subject_of = ENG
+			# 				tag = SAF
+			# 			}
+			# 			AND = {
+			# 				is_subject_of = ENG
+			# 				tag = RAJ
+			# 			}
+			# 			AND = {
+			# 				is_subject_of = ENG
+			# 				tag = AST
+			# 			}
+			# 			AND = {
+			# 				is_subject_of = ENG
+			# 				tag = NZL
+			# 			}
+			# 		}
+			# 	}
+			# 	country_event = { id = mtg_britain.82 hours = 6 }
+			# }
+
+			# appeasement
 			every_country = {
 				limit = {
 					OR = {
-						tag = ENG
 						AND = {
 							is_subject_of = ENG
 							tag = CAN
@@ -2660,8 +2689,73 @@ focus_tree = {
 						}
 					}
 				}
-				country_event = { id = mtg_britain.82 hours = 6 }
+				add_political_power = -25
+				add_war_support = 0.05
 			}
+			add_war_support = 0.10
+
+			# defense
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							tag = CAN
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = SAF
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = RAJ
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = AST
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = NZL
+						}
+					}
+				}
+				add_political_power = -25
+				add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
+			}
+			add_timed_idea = { idea = ENG_imperial_conference_defense_5 days = 365 }
+
+			# imperial eco
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							tag = CAN
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = SAF
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = RAJ
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = AST
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = NZL
+						}
+					}
+				}
+				add_political_power = -25
+				add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
+			}
+			add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
+
 			hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
 			custom_effect_tooltip = ENG_imperial_conference_tt
 		}

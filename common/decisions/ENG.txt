@@ -86,7 +86,7 @@ ENG_imperial_conference_decision = {
 		}
 
 		complete_effect = {
-			country_event = { id = mtg_britain.95 hours = 2 }
+			country_event = { id = mtg_britain.95 hours = 2 } ##
 			set_country_flag = ENG_imperial_conference_discussion_in_progress
 			effect_tooltip = { 
 				add_war_support = 0.10
