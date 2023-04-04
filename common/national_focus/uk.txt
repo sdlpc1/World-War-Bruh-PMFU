@@ -2607,12 +2607,12 @@ focus_tree = {
 			SAF = {
 				exists = no
 			}
-			#RAJ = {
-			#	OR = {
-			#		exists = no
-			#		NOT = { is_subject_of = ENG }
-			#	}
-			#}
+			RAJ = {
+				OR = {
+					exists = no
+					NOT = { is_subject_of = ENG }
+				}
+			}
 			AST = {
 				exists = no
 			}
