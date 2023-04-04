@@ -3701,34 +3701,34 @@ country_event = {
 		}
 		activate_mission = ENG_imperial_conference_decision
 		set_country_flag = { flag = ENG_imperial_conference_timer_flag value = 1 days = 60 }
-		every_country = {
-			limit = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						tag = CAN
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
-					}
-				}
-			}
-			add_opinion_modifier = { target = ROOT modifier = ENG_imperial_conference_opinion }
-			custom_effect_tooltip = mtg_britain.82_tt
-		}
+		# every_country = {
+		# 	limit = {
+		# 		OR = {
+		# 			AND = {
+		# 				is_subject_of = ENG
+		# 				tag = CAN
+		# 			}
+		# 			AND = {
+		# 				is_subject_of = ENG
+		# 				tag = SAF
+		# 			}
+		# 			AND = {
+		# 				is_subject_of = ENG
+		# 				tag = RAJ
+		# 			}
+		# 			AND = {
+		# 				is_subject_of = ENG
+		# 				tag = AST
+		# 			}
+		# 			AND = {
+		# 				is_subject_of = ENG
+		# 				tag = NZL
+		# 			}
+		# 		}
+		# 	}
+		# 	add_opinion_modifier = { target = ROOT modifier = ENG_imperial_conference_opinion }
+		# 	custom_effect_tooltip = mtg_britain.82_tt
+		# }
 	}
 
 	# Ok
@@ -3917,7 +3917,7 @@ country_event = {
 
 # Event for ENG telling FROM voted yes on Imperial Defense
 country_event = {
-	id = mtg_britain.85
+	id = mtg_britain.85 #
 	title = mtg_britain.85.t
 	desc = mtg_britain.85.d
 	picture = GFX_report_event_generic_read_write
