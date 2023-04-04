@@ -1,8 +1,6 @@
 ﻿l_english:
 
   #### FOCUSES ####
-  demilitarize_ethiopia:0 "Demilitarize Ethiopia"
-  demilitarize_ethiopia_desc:0 "No asia means that there is no Raj to take out Ethiopia, to avoid exploiting this ,Italy a.k.a you, will notneed to get out wwithth your units within 90 days"
   ITA_denounce_the_sanctions:0 "Denounce the Sanctions"
   ITA_denounce_the_sanctions_desc:0 "What the League of Nations fails to realize is that we are simply carving out our own place in the sun. Ethiopia shall be ours."
   ITA_increase_trade:0 "Increase Foreign Trade"
@@ -401,6 +399,8 @@
   ITA_go_to_war_with_france:0 "War with France"
   ITA_go_to_war_with_france2:0 "Preemptive British Strike"
   ITA_go_to_war_with_france_event:0 "French War Event Trigger"
+  demilitarize_ethiopia:0 "Demilitarize Ethiopia"
+  demilitarize_ethiopia_desc:0 "No asia means that there is no Raj to take out Ethiopia, to avoid exploiting this ,Italy will need to get out with its units within 90 days"
 
   #### TOOLTIP ####
   ITA_oil_extraction_tt:0 "§GProvides Oil in Libya increasing with each completed search for oil§!"
