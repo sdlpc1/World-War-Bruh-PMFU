@@ -11,9 +11,7 @@ state= {
 
 	history= {
 						owner = INS
-        1936.1.1.13 = {
-			owner = WST
-		}
+
 
 		add_core_of = INS
 		set_state_flag = PACIFIC_COMMONWEALTH_controls

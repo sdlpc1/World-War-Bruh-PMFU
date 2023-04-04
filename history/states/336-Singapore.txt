@@ -17,9 +17,7 @@ state={
 		set_state_flag = RAJ_controls
 		set_state_flag = PACIFIC_COMMONWEALTH_controls
 				owner = MAL
-		1936.1.1.13 = {
-			owner = WST
-		}
+
 		victory_points = {
 			12299 10
 		}
