@@ -44,7 +44,6 @@ equipments = {
 		}
 		
 		fuel_consumption = 4.0
-		fuel_capacity = 660
 	}
 
 	# ~1941

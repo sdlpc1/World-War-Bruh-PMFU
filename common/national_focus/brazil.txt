@@ -228,12 +228,12 @@ focus_tree = {
 		
 		available = {
 
-				ENG = {
-					has_war_with = GER
-				}
+			ENG = {
+				has_war_with = GER
+			}
 
-			
-		}
+		
+	}
 
 		ai_will_do = {
 			factor = 0
@@ -1434,12 +1434,14 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 50
+			add_to_tech_sharing_group = us_research
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.40
 				uses = 2
 				category = land_doctrine
 			}
+			add_ideas = BRA_usa_license
 			
 		}
 	}

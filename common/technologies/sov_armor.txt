@@ -23,6 +23,7 @@ technologies = {
 			tank_interleaved_suspension
 			tank_horstmann_suspension
 			tank_torsion_bar_suspension
+			expanded_fuel_tank
 		}
 	
 		path = {
@@ -606,7 +607,7 @@ technologies = {
 	sov_heavy_tank_turret = { 
 
 		enable_equipment_modules = {
-			tank_super_heavy_turret
+			tank_heavy_turret_3
 		}
 
 		research_cost = 2.0
@@ -633,7 +634,7 @@ technologies = {
 		# }
 
 		# enable_equipment_modules = {
-		# 	tank_super_heavy_turret
+		# 	tank_heavy_turret_3
 		# }
 		show_effect_as_desc = yes
 		on_research_complete = {

@@ -5775,117 +5775,6 @@
 		}
 	}
 	
-	focus = {
-		id = SOV_political_industry
-		icon = GFX_SOV_operation_luna
-		prerequisite = { focus = SOV_new_corps focus = SOV_new_corps2 focus = SOV_new_corps3 focus = SOV_new_corps4 focus = SOV_new_corps5 }
-		x = 0
-		y = 2
-		cost = 3
-		relative_position_id = SOV_new_corps3
-		
-		available = {
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = land_doctrine
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_tank1
-		icon = GFX_SOV_armour_development
-		prerequisite = { focus = SOV_political_industry }
-		x = -3
-		y = 1
-		cost = 3
-		relative_position_id = SOV_political_industry
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = SOV_designer_patronage_tt
-			custom_effect_tooltip = SOV_tank_designer_patronage_far_left_tt
-			custom_effect_tooltip = SOV_tank_designer_patronage_middle_left_tt
-			custom_effect_tooltip = SOV_tank_designer_patronage_middle_tt
-			custom_effect_tooltip = SOV_tank_designer_patronage_middle_right_tt
-			custom_effect_tooltip = SOV_tank_designer_patronage_far_right_tt
-			if = {
-				limit = { NOT = { has_completed_focus = SOV_lessons_of_war } }
-
-			}
-			else_if = {
-				limit = { has_idea = SOV_modernisation_mech_2 }
-				# show_ideas_tooltip = SOV_kirov
-				add_ideas = SOV_kirov
-				add_tech_bonus = {
-					name = doc_bonus
-					bonus = 0.75
-					uses = 1
-					category = cat_medium_armor
-				}
-			}
-			else_if = {
-				limit = { has_idea = SOV_modernisation_mech_1 }
-				# show_ideas_tooltip = SOV_morozov_design_bureau
-				add_ideas = SOV_morozov_design_bureau
-				add_tech_bonus = {
-					name = doc_bonus
-					bonus = 0.75
-					uses = 1
-					category = cat_medium_armor
-				}
-			}
-			else_if = {
-				limit = { has_idea = SOV_modernisation_bal }
-				# show_ideas_tooltip = SOV_astrov_design_bureau
-				add_ideas = SOV_astrov_design_bureau
-			}
-			else_if = {
-				limit = { has_idea = SOV_modernisation_cav_1 }
-				# show_ideas_tooltip = SOV_okmo
-				add_ideas = SOV_okmo
-				add_tech_bonus = {
-					name = doc_bonus
-					bonus = 0.75
-					uses = 1
-					category = cat_heavy_armor
-				}
-			}
-			else_if = {
-				limit = { has_idea = SOV_modernisation_cav_2 }
-				# show_ideas_tooltip = SOV_mytishchy_machine_building_plant
-				add_ideas = SOV_mytishchy_machine_building_plant
-				add_tech_bonus = {
-					name = doc_bonus
-					bonus = 0.75
-					uses = 1
-					category = cat_light_armor
-				}
-			}
-		}
-	}
-	
 #	focus = {
 #		id = SOV_tank2
 #		icon = GFX_SOV_modernize_the_cavalry
@@ -6017,173 +5906,6 @@
 #		}
 #	}
 #	
-	focus = {
-		id = SOV_arty1
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = SOV_political_industry }
-		x = -1
-		y = 1
-		cost = 3
-		relative_position_id = SOV_political_industry
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = SOV_designer_patronage_tt
-			custom_effect_tooltip = SOV_equipment_designer_patronage_far_left_tt
-			custom_effect_tooltip = SOV_equipment_designer_patronage_middle_left_tt
-			custom_effect_tooltip = SOV_equipment_designer_patronage_middle_tt
-			custom_effect_tooltip = SOV_equipment_designer_patronage_middle_right_tt
-			custom_effect_tooltip = SOV_equipment_designer_patronage_far_right_tt
-			if = {
-				limit = { NOT = { has_completed_focus = SOV_lessons_of_war } }
-
-			}
-			else_if = {
-				limit = { has_idea = SOV_modernisation_mech_2 }
-				#show_ideas_tooltip = SOV_gaz
-				add_ideas = SOV_gaz
-				add_tech_bonus = {
-					name = doc_bonus
-					bonus = 0.75
-					uses = 2
-					category = cat_mechanized_equipment
-				}
-			}
-			else_if = {
-				limit = { has_idea = SOV_modernisation_mech_1 }
-				#show_ideas_tooltip = SOV_gaz
-				add_ideas = SOV_gaz
-				add_tech_bonus = {
-					name = doc_bonus
-					bonus = 0.5
-					uses = 1
-					category = cat_mechanized_equipment
-				}
-				add_tech_bonus = {
-					name = katyusha
-					bonus = 0.5
-					uses = 1
-					category = rocketry
-				}
-			}
-			else_if = {
-				limit = { has_idea = SOV_modernisation_bal }
-				#show_ideas_tooltip = SOV_tula_arms_plant
-				add_ideas = SOV_tula_arms_plant
-				add_tech_bonus = {
-					name = doc_bonus
-					bonus = 0.5
-					uses = 3
-					category = support_tech
-				}
-			}
-			else_if = {
-				limit = { has_idea = SOV_modernisation_cav_1 }
-				#show_ideas_tooltip = SOV_grabin_design_bureau
-				add_ideas = SOV_grabin_design_bureau
-				add_tech_bonus = {
-					name = doc_bonus
-					bonus = 0.5
-					uses = 3
-					category = artillery
-				}
-			}
-			else_if = {
-				limit = { has_idea = SOV_modernisation_cav_2 }
-				#show_ideas_tooltip = SOV_grabin_design_bureau
-				add_ideas = SOV_grabin_design_bureau
-				add_tech_bonus = {
-					name = doc_bonus
-					bonus = 0.5
-					uses = 3
-					category = infantry_weapons
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_arty2
-		icon = GFX_SOV_artillery_development
-		prerequisite = { focus = SOV_political_industry }
-		x = 1
-		y = 1
-		cost = 3
-		relative_position_id = SOV_political_industry
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = art_bonus
-				bonus = 0.5
-				uses = 2
-				category = cat_anti_tank
-			}
-		}
-	}
-	
-#	focus = {
-#		id = SOV_arty3
-#		icon = GFX_SOV_stalins_hammer
-#		prerequisite = { focus = SOV_arty2 }
-#		x = 0
-#		y = 2
-#		cost = 3
-#		relative_position_id = SOV_arty2
-#		ai_will_do = {
-#			factor = 5
-#		}
-#
-#		available_if_capitulated = yes
-#
-#		bypass = {
-#		}
-#
-#		completion_reward = {
-#			add_ideas = SOV_massed_arty
-#		}
-#	}
-	
-	focus = {
-		id = SOV_infantry1
-		icon = GFX_SOV_ppsh_hand_angry
-		prerequisite = { focus = SOV_political_industry }
-		x = 3
-		y = 1
-		cost = 3
-		relative_position_id = SOV_political_industry
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = doc_bonus
-				bonus = 0.50
-				uses = 2
-				category = infantry_weapons
-			}	
-		}
-	}
 	
 	focus = {
 		id = SOV_infantry2
@@ -6207,109 +5929,6 @@
 			add_to_variable = { SOV_the_red_army_max_dig_in = 1 }
 			add_to_variable = { SOV_the_red_army_dig_in_speed_factor = 0.05 }
 			custom_effect_tooltip = SOV_experts_in_camouflage_ns_tt
-		}
-	}
-	
-	focus = {
-		id = SOV_nkvd_divisions
-		icon = GFX_focus_SOV_organization_centralization_discipline
-		prerequisite = { focus = SOV_new_corps5 focus = SOV_new_corps4 focus = SOV_new_corps3 }
-		mutually_exclusive = { focus = SOV_rehabilitated_army }
-		x = 2
-		y = 1
-		cost = 3
-		relative_position_id = SOV_new_corps5
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_ideas = SOV_nkvd
-			custom_effect_tooltip = SOV_nkvd_upgrade_tooltip
-			hidden_effect = {
-				set_technology = {
-					nkvd_tech = 1
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_dual_command
-		icon = GFX_focus_SOV_organization_centralization_discipline
-		prerequisite = { focus = SOV_nkvd_divisions }
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = SOV_nkvd_divisions
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = SOV_nkvd_dual_command
-				remove_idea = SOV_nkvd
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_rehabilitated_army
-		icon = GFX_focus_SOV_builder_of_the_red_army
-		prerequisite = { focus = SOV_new_corps focus = SOV_new_corps2 focus = SOV_new_corps3 }
-		mutually_exclusive = { focus = SOV_nkvd_divisions }
-		x = -2
-		y = 1
-		cost = 3
-		relative_position_id = SOV_new_corps
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_ideas = SOV_rehabilitated_military_focus_1
-		}
-
-	}
-
-	focus = {
-		id = SOV_frontline_command
-		icon = GFX_focus_SOV_builder_of_the_red_army
-		prerequisite = { focus = SOV_rehabilitated_army }
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = SOV_rehabilitated_army
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = SOV_rehabilitated_military_focus_2
-				remove_idea = SOV_rehabilitated_military_focus_1
-			}	
 		}
 	}
 	
@@ -6482,6 +6101,9 @@
 		available = {
 			has_global_flag = SOV_winter_war_loss
 			NOT = { has_global_flag = SOV_border_war_loss}
+			SOV_vasily_blyukher = {
+				NOT = {has_character_flag = SOV_character_purged_flag }
+			}
 		}
 
 		available_if_capitulated = yes
@@ -6702,37 +6324,6 @@
 	}
 	
 	focus = {
-		id = SOV_new_corps
-		icon = GFX_SOV_new_officer_academies
-		prerequisite = { focus = SOV_combined_arms focus = SOV_study_blitzkrieg }
-		x = 1
-		y = 1
-		cost = 3
-		relative_position_id = SOV_combined_arms
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			every_army_leader = {
-				add_attack = 2
-				add_planning = 1
-				
-			}
-			swap_ideas = {
-				remove_idea = SOV_modernisation_bal
-				add_idea = SOV_modernisation_mech_2
-			}
-			add_ideas = SOV_new_officers
-		}
-	}
-	
-	focus = {
 		id = SOV_timoshenko1
 		icon = GFX_goal_timoshenkofocus
 		prerequisite = { focus = SOV_dance_of_the_marshals }
@@ -6889,395 +6480,6 @@
 	}
 
 	focus = {
-		id = SOV_cavalry_tank
-		icon = GFX_SOV_mechanized_wave
-		prerequisite = { focus = SOV_budyonny2 }
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = SOV_budyonny2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_ideas = SOV_voroshilov_budyonny_1
-		}
-	}
-
-	focus = { #d
-		id = SOV_bravery_rules
-		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
-		prerequisite = { focus = SOV_cavalry_tank }
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = SOV_cavalry_tank
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = SOV_voroshilov_budyonny_2
-				remove_idea = SOV_voroshilov_budyonny_1
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_massed_artillery_charge
-		icon = GFX_SOV_breakthrough_priority
-		prerequisite = { focus = SOV_kulik2 }
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = SOV_kulik2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_ideas = SOV_voroshilov_kulik_1
-		}
-	}
-
-	focus = {
-		id = SOV_convert_naval_guns
-		icon = GFX_SOV_stalins_hammer
-		prerequisite = { focus = SOV_massed_artillery_charge }
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = SOV_massed_artillery_charge
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = SOV_voroshilov_kulik_2
-				remove_idea = SOV_voroshilov_kulik_1
-			}
-		}
-	}
-
-
-	focus = {
-		id = SOV_nkvd_status_quo
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = SOV_voroshilov2 focus = SOV_timoshenko_voroshilov }
-		x = 1
-		y = 1
-		cost = 3
-		relative_position_id = SOV_timoshenko_voroshilov
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_ideas = SOV_nkvd_status_quo_1
-		}
-	}
-
-	focus = {
-		id = SOV_passive_command
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = SOV_nkvd_status_quo }
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = SOV_nkvd_status_quo
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = SOV_nkvd_status_quo_2
-				remove_idea = SOV_nkvd_status_quo_1
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_wargames
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = SOV_land_air_coordination }
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = SOV_land_air_coordination
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = SOV_timoshenko_shaposhnikov_2
-				remove_idea = SOV_timoshenko_shaposhnikov_1
-			}
-			army_experience = 50
-		}
-	}
-	
-	focus = {
-		id = SOV_blucher2
-		icon = GFX_goal_blucherfocus
-		prerequisite = { focus = SOV_timoshenko1 }
-		x = 2
-		y = 1
-		cost = 3
-		relative_position_id = SOV_timoshenko1
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-			has_global_flag = SOV_border_war_win
-			SOV_vasily_blyukher = {
-				NOT = {has_character_flag = SOV_character_purged_flag }
-			}
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = SOV_blucher_reinstated_tt
-			SOV_vasily_blyukher = { 
-				clr_character_flag = SOV_exiled_flag
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_stalins_sledgehammer
-		icon = GFX_SOV_stalins_hammer
-		prerequisite = { focus = SOV_blucher2 }
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = SOV_blucher2
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			add_ideas = SOV_timoshenko_blucher_1
-		}
-	}
-	
-	focus = {
-		id = SOV_combined_arms2
-		icon = GFX_focus_generic_combined_arms
-		prerequisite = { focus = SOV_stalins_sledgehammer }
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = SOV_stalins_sledgehammer
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = SOV_timoshenko_blucher_2
-				remove_idea = SOV_timoshenko_blucher_1
-			}	
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_battlefield_support 
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_new_corps2
-		icon = GFX_SOV_new_officer_academies
-		prerequisite = { focus = SOV_wargames }
-		#focus = SOV_combined_arms2
-		x = 1
-		y = 1
-		cost = 3
-		relative_position_id = SOV_wargames
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			every_army_leader = {
-				add_logistics = 2
-				add_defense = 1
-			}
-			swap_ideas = {
-				remove_idea = SOV_modernisation_bal
-				add_idea = SOV_modernisation_mech_1
-			}
-			add_ideas = SOV_new_officers
-		}
-	}
-
-	focus = {
-		id = SOV_new_corps3
-		icon = GFX_SOV_new_officer_academies
-		prerequisite = { focus = SOV_passive_command }
-		x = 0
-		y = 1
-		cost = 3
-		relative_position_id = SOV_passive_command
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			every_army_leader = {
-				add_defense = 2
-				add_attack = 1
-				
-			}
-			add_ideas = SOV_new_officers
-			custom_effect_tooltip = SOV_lessons_of_war_cowed_trait_tt
-			hidden_effect = {
-				every_army_leader = {
-					limit = {
-						has_trait = trait_SOV_cowed_by_stalin_army
-					}
-					remove_unit_leader_trait =  trait_SOV_cowed_by_stalin_army
-				}
-				every_navy_leader = {
-					limit = {
-						has_trait = trait_SOV_cowed_by_stalin_navy
-					}
-					remove_unit_leader_trait =  trait_SOV_cowed_by_stalin_navy
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_new_corps4
-		icon = GFX_SOV_new_officer_academies
-		prerequisite = { focus = SOV_bravery_rules focus = SOV_convert_naval_guns }
-		x = -1
-		y = 1
-		cost = 3
-		relative_position_id = SOV_bravery_rules
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			every_army_leader = {
-				add_planning = 2
-				add_logistics = 1
-				
-			}
-			swap_ideas = {
-				remove_idea = SOV_modernisation_bal
-				add_idea = SOV_modernisation_cav_1
-			}
-			add_ideas = SOV_new_officers
-		}
-	}
-
-	focus = {
-		id = SOV_new_corps5
-		icon = GFX_SOV_new_officer_academies
-		prerequisite = { focus = SOV_tank_hunters focus = SOV_harassment_tactics }
-		x = -1
-		y = 1
-		cost = 3
-		relative_position_id = SOV_tank_hunters
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			every_army_leader = {
-				add_logistics = 2
-				add_defense = 1
-			}
-			swap_ideas = {
-				remove_idea = SOV_modernisation_bal
-				add_idea = SOV_modernisation_cav_2
-			}
-			add_ideas = SOV_new_officers
-		}
-	}
-
-	
-
-	focus = {
 		id = SOV_voroshilov1
 		icon = GFX_goal_voroshilovfocus
 		prerequisite = { focus = SOV_dance_of_the_marshals }
@@ -7357,51 +6559,7 @@
 			}
 			SOV_semyon_budyonny = { 
 				promote_leader = yes 
-				}
-		}
-	}
-
-	focus = {
-		id = SOV_kulik2
-		icon = GFX_goal_kulikfocus
-		prerequisite = { focus = SOV_voroshilov1 }
-		mutually_exclusive = { focus = SOV_timoshenko_voroshilov }
-		mutually_exclusive = { focus = SOV_budyonny2 }
-		x = -2
-		y = 1
-		cost = 3
-		relative_position_id = SOV_voroshilov1
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = SOV_kulik2_tt
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.4
-				uses = 1
-				category = cat_superior_firepower
 			}
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.4
-				uses = 3
-				technology = intergrated_support
-				technology = regimental_combat_teams
-				technology = centralized_fire_control
-				technology = forward_observers
-				technology = advanced_firebases
-				technology = shock_and_awe
-			}
-			SOV_grigory_kulik = { 
-				promote_leader = yes 
-				}
 		}
 	}
 
@@ -7530,6 +6688,257 @@
 			}
 		}
 	}
+
+	focus = {
+		id = SOV_cavalry_tank
+		icon = GFX_SOV_mechanized_wave
+		prerequisite = { focus = SOV_budyonny2 }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = SOV_budyonny2
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SOV_voroshilov_budyonny_1
+		}
+	}
+
+	focus = {
+		id = SOV_bravery_rules
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		prerequisite = { focus = SOV_cavalry_tank }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = SOV_cavalry_tank
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_voroshilov_budyonny_2
+				remove_idea = SOV_voroshilov_budyonny_1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_kulik2
+		icon = GFX_goal_kulikfocus
+		prerequisite = { focus = SOV_voroshilov1 }
+		mutually_exclusive = { focus = SOV_timoshenko_voroshilov }
+		mutually_exclusive = { focus = SOV_budyonny2 }
+		x = -2
+		y = 1
+		cost = 3
+		relative_position_id = SOV_voroshilov1
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+	}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_kulik2_tt
+			add_doctrine_cost_reduction = {
+				name = doc_bonus
+				cost_reduction = 0.4
+				uses = 1
+				category = cat_superior_firepower
+			}
+			add_doctrine_cost_reduction = {
+				name = doc_bonus
+				cost_reduction = 0.4
+				uses = 3
+				technology = intergrated_support
+				technology = regimental_combat_teams
+				technology = centralized_fire_control
+				technology = forward_observers
+				technology = advanced_firebases
+				technology = shock_and_awe
+			}
+			SOV_grigory_kulik = { 
+				promote_leader = yes 
+				}
+		}
+	}
+
+	focus = {
+		id = SOV_massed_artillery_charge
+		icon = GFX_SOV_breakthrough_priority
+		prerequisite = { focus = SOV_kulik2 }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = SOV_kulik2
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SOV_voroshilov_kulik_1
+		}
+	}
+
+	focus = {
+		id = SOV_convert_naval_guns
+		icon = GFX_SOV_stalins_hammer
+		prerequisite = { focus = SOV_massed_artillery_charge }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = SOV_massed_artillery_charge
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_voroshilov_kulik_2
+				remove_idea = SOV_voroshilov_kulik_1
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_wargames
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = SOV_land_air_coordination }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = SOV_land_air_coordination
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_timoshenko_shaposhnikov_2
+				remove_idea = SOV_timoshenko_shaposhnikov_1
+			}
+			army_experience = 50
+		}
+	}
+	
+	focus = {
+		id = SOV_blucher2
+		icon = GFX_goal_blucherfocus
+		prerequisite = { focus = SOV_timoshenko1 }
+		x = 2
+		y = 1
+		cost = 3
+		relative_position_id = SOV_timoshenko1
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			has_global_flag = SOV_border_war_win
+			SOV_vasily_blyukher = {
+				NOT = {has_character_flag = SOV_character_purged_flag }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_blucher_reinstated_tt
+			SOV_vasily_blyukher = { 
+				clr_character_flag = SOV_exiled_flag
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_stalins_sledgehammer
+		icon = GFX_SOV_stalins_hammer
+		prerequisite = { focus = SOV_blucher2 }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = SOV_blucher2
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SOV_timoshenko_blucher_1
+		}
+	}
+	
+	focus = {
+		id = SOV_combined_arms2
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = SOV_stalins_sledgehammer }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = SOV_stalins_sledgehammer
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_timoshenko_blucher_2
+				remove_idea = SOV_timoshenko_blucher_1
+			}	
+			add_doctrine_cost_reduction = {
+				name = doc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = cat_battlefield_support 
+			}
+		}
+	}
+	
+	
 
 	focus = {
 		id = SOV_td_tactics
@@ -7667,6 +7076,600 @@
 			swap_ideas = {
 				add_idea = SOV_kulik_budyonny_2
 				remove_idea = SOV_kulik_budyonny_1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_nkvd_status_quo
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = SOV_voroshilov2 focus = SOV_timoshenko_voroshilov }
+		x = 1
+		y = 1
+		cost = 3
+		relative_position_id = SOV_timoshenko_voroshilov
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SOV_nkvd_status_quo_1
+		}
+	}
+
+	focus = {
+		id = SOV_passive_command
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = SOV_nkvd_status_quo }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = SOV_nkvd_status_quo
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_nkvd_status_quo_2
+				remove_idea = SOV_nkvd_status_quo_1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_new_corps
+		icon = GFX_SOV_new_officer_academies
+		prerequisite = { focus = SOV_combined_arms focus = SOV_study_blitzkrieg }
+		x = 1
+		y = 1
+		cost = 3
+		relative_position_id = SOV_combined_arms
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			every_army_leader = {
+				add_attack = 2
+				add_planning = 1
+				
+			}
+			swap_ideas = {
+				remove_idea = SOV_modernisation_bal
+				add_idea = SOV_modernisation_mech_2
+			}
+			add_ideas = SOV_new_officers
+		}
+	}
+	
+	focus = {
+		id = SOV_new_corps2
+		icon = GFX_SOV_new_officer_academies
+		prerequisite = { focus = SOV_wargames }
+		#focus = SOV_combined_arms2
+		x = 1
+		y = 1
+		cost = 3
+		relative_position_id = SOV_wargames
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			every_army_leader = {
+				add_logistics = 2
+				add_defense = 1
+			}
+			swap_ideas = {
+				remove_idea = SOV_modernisation_bal
+				add_idea = SOV_modernisation_mech_1
+			}
+			add_ideas = SOV_new_officers
+		}
+	}
+
+	focus = {
+		id = SOV_new_corps3
+		icon = GFX_SOV_new_officer_academies
+		prerequisite = { focus = SOV_passive_command }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = SOV_passive_command
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			every_army_leader = {
+				add_defense = 2
+				add_attack = 1
+				
+			}
+			add_ideas = SOV_new_officers
+			custom_effect_tooltip = SOV_lessons_of_war_cowed_trait_tt
+			hidden_effect = {
+				every_army_leader = {
+					limit = {
+						has_trait = trait_SOV_cowed_by_stalin_army
+					}
+					remove_unit_leader_trait =  trait_SOV_cowed_by_stalin_army
+				}
+				every_navy_leader = {
+					limit = {
+						has_trait = trait_SOV_cowed_by_stalin_navy
+					}
+					remove_unit_leader_trait =  trait_SOV_cowed_by_stalin_navy
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_new_corps4
+		icon = GFX_SOV_new_officer_academies
+		prerequisite = { focus = SOV_bravery_rules focus = SOV_convert_naval_guns }
+		x = -1
+		y = 1
+		cost = 3
+		relative_position_id = SOV_bravery_rules
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			every_army_leader = {
+				add_planning = 2
+				add_logistics = 1
+				
+			}
+			swap_ideas = {
+				remove_idea = SOV_modernisation_bal
+				add_idea = SOV_modernisation_cav_1
+			}
+			add_ideas = SOV_new_officers
+		}
+	}
+
+	focus = {
+		id = SOV_new_corps5
+		icon = GFX_SOV_new_officer_academies
+		prerequisite = { focus = SOV_tank_hunters focus = SOV_harassment_tactics }
+		x = -1
+		y = 1
+		cost = 3
+		relative_position_id = SOV_tank_hunters
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			every_army_leader = {
+				add_logistics = 2
+				add_defense = 1
+			}
+			swap_ideas = {
+				remove_idea = SOV_modernisation_bal
+				add_idea = SOV_modernisation_cav_2
+			}
+			add_ideas = SOV_new_officers
+		}
+	}
+
+	focus = {
+		id = SOV_nkvd_divisions
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		prerequisite = { focus = SOV_new_corps5 focus = SOV_new_corps4 focus = SOV_new_corps3 }
+		mutually_exclusive = { focus = SOV_rehabilitated_army }
+		x = 2
+		y = 1
+		cost = 3
+		relative_position_id = SOV_new_corps5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SOV_nkvd
+			custom_effect_tooltip = SOV_nkvd_upgrade_tooltip
+			hidden_effect = {
+				set_technology = {
+					nkvd_tech = 1
+			}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_dual_command
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		prerequisite = { focus = SOV_nkvd_divisions }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = SOV_nkvd_divisions
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_nkvd_dual_command
+				remove_idea = SOV_nkvd
+				}
+		}
+	}
+
+	focus = {
+		id = SOV_rehabilitated_army
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		prerequisite = { focus = SOV_new_corps focus = SOV_new_corps2 focus = SOV_new_corps3 }
+		mutually_exclusive = { focus = SOV_nkvd_divisions }
+		x = -2
+		y = 1
+		cost = 3
+		relative_position_id = SOV_new_corps
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SOV_rehabilitated_military_focus_1
+		}
+
+	}
+
+	focus = {
+		id = SOV_frontline_command
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		prerequisite = { focus = SOV_rehabilitated_army }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = SOV_rehabilitated_army
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_rehabilitated_military_focus_2
+				remove_idea = SOV_rehabilitated_military_focus_1
+				}
+		}
+	}
+
+	focus = {
+		id = SOV_political_industry
+		icon = GFX_SOV_operation_luna
+		prerequisite = { focus = SOV_new_corps focus = SOV_new_corps2 focus = SOV_new_corps3 focus = SOV_new_corps4 focus = SOV_new_corps5 }
+		x = 0
+		y = 2
+		cost = 3
+		relative_position_id = SOV_new_corps3
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = doc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_tank1
+		icon = GFX_SOV_armour_development
+		prerequisite = { focus = SOV_political_industry }
+		x = -3
+		y = 1
+		cost = 3
+		relative_position_id = SOV_political_industry
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_designer_patronage_tt
+			custom_effect_tooltip = SOV_tank_designer_patronage_far_left_tt
+			custom_effect_tooltip = SOV_tank_designer_patronage_middle_left_tt
+			custom_effect_tooltip = SOV_tank_designer_patronage_middle_tt
+			custom_effect_tooltip = SOV_tank_designer_patronage_middle_right_tt
+			custom_effect_tooltip = SOV_tank_designer_patronage_far_right_tt
+			if = {
+				limit = { NOT = { has_completed_focus = SOV_lessons_of_war } }
+
+			}
+			else_if = {
+				limit = { has_idea = SOV_modernisation_mech_2 }
+				# show_ideas_tooltip = SOV_kirov
+				add_ideas = SOV_kirov
+				add_tech_bonus = {
+				name = doc_bonus
+					bonus = 0.75
+				uses = 1
+					category = cat_medium_armor
+			}
+			}
+			else_if = {
+				limit = { has_idea = SOV_modernisation_mech_1 }
+				# show_ideas_tooltip = SOV_morozov_design_bureau
+				add_ideas = SOV_morozov_design_bureau
+				add_tech_bonus = {
+				name = doc_bonus
+					bonus = 0.75
+					uses = 1
+					category = cat_medium_armor
+			}
+			}
+			else_if = {
+				limit = { has_idea = SOV_modernisation_bal }
+				# show_ideas_tooltip = SOV_astrov_design_bureau
+				add_ideas = SOV_astrov_design_bureau
+			}
+			else_if = {
+				limit = { has_idea = SOV_modernisation_cav_1 }
+				# show_ideas_tooltip = SOV_okmo
+				add_ideas = SOV_okmo
+				add_tech_bonus = {
+					name = doc_bonus
+					bonus = 0.75
+					uses = 1
+					category = cat_heavy_armor
+		}
+	}
+			else_if = {
+				limit = { has_idea = SOV_modernisation_cav_2 }
+				# show_ideas_tooltip = SOV_mytishchy_machine_building_plant
+				add_ideas = SOV_mytishchy_machine_building_plant
+				add_tech_bonus = {
+					name = doc_bonus
+					bonus = 0.75
+					uses = 1
+					category = cat_light_armor
+		}
+		}
+		}
+	}
+
+	focus = {
+		id = SOV_arty1
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = SOV_political_industry }
+		x = -1
+		y = 1
+		cost = 3
+		relative_position_id = SOV_political_industry
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_designer_patronage_tt
+			custom_effect_tooltip = SOV_equipment_designer_patronage_far_left_tt
+			custom_effect_tooltip = SOV_equipment_designer_patronage_middle_left_tt
+			custom_effect_tooltip = SOV_equipment_designer_patronage_middle_tt
+			custom_effect_tooltip = SOV_equipment_designer_patronage_middle_right_tt
+			custom_effect_tooltip = SOV_equipment_designer_patronage_far_right_tt
+			if = {
+				limit = { NOT = { has_completed_focus = SOV_lessons_of_war } }
+
+			}
+			else_if = {
+				limit = { has_idea = SOV_modernisation_mech_2 }
+				#show_ideas_tooltip = SOV_gaz
+				add_ideas = SOV_gaz
+				add_tech_bonus = {
+					name = doc_bonus
+					bonus = 0.75
+					uses = 2
+					category = cat_mechanized_equipment
+				}
+			}
+			else_if = {
+				limit = { has_idea = SOV_modernisation_mech_1 }
+				#show_ideas_tooltip = SOV_gaz
+				add_ideas = SOV_gaz
+				add_tech_bonus = {
+					name = doc_bonus
+					bonus = 0.5
+					uses = 1
+					category = cat_mechanized_equipment
+			}
+				add_tech_bonus = {
+					name = katyusha
+					bonus = 0.5
+					uses = 1
+					category = rocketry
+		}
+	}
+			else_if = {
+				limit = { has_idea = SOV_modernisation_bal }
+				#show_ideas_tooltip = SOV_tula_arms_plant
+				add_ideas = SOV_tula_arms_plant
+				add_tech_bonus = {
+					name = doc_bonus
+					bonus = 0.5
+					uses = 3
+					category = support_tech
+		}
+		}
+			else_if = {
+				limit = { has_idea = SOV_modernisation_cav_1 }
+				#show_ideas_tooltip = SOV_grabin_design_bureau
+				add_ideas = SOV_grabin_design_bureau
+				add_tech_bonus = {
+				name = doc_bonus
+					bonus = 0.5
+					uses = 3
+					category = artillery
+			}
+			}
+			else_if = {
+				limit = { has_idea = SOV_modernisation_cav_2 }
+				#show_ideas_tooltip = SOV_grabin_design_bureau
+				add_ideas = SOV_grabin_design_bureau
+				add_tech_bonus = {
+				name = doc_bonus
+					bonus = 0.5
+				uses = 3
+					category = infantry_weapons
+			}
+				}
+		}
+	}
+
+	focus = {
+		id = SOV_arty2
+		icon = GFX_SOV_artillery_development
+		prerequisite = { focus = SOV_political_industry }
+		x = 1
+		y = 1
+		cost = 3
+		relative_position_id = SOV_political_industry
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = art_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_anti_tank
+			}
+		}
+	}
+
+#	focus = {
+#		id = SOV_arty3
+#		icon = GFX_SOV_stalins_hammer
+#		prerequisite = { focus = SOV_arty2 }
+#		x = 0
+#		y = 2
+#		cost = 3
+#		relative_position_id = SOV_arty2
+#		ai_will_do = {
+#			factor = 5
+#		}
+#
+#		available_if_capitulated = yes
+#
+#		bypass = {
+#		}
+#
+#		completion_reward = {
+#			add_ideas = SOV_massed_arty
+#		}
+#	}
+	
+	focus = {
+		id = SOV_infantry1
+		icon = GFX_SOV_ppsh_hand_angry
+		prerequisite = { focus = SOV_political_industry }
+		x = 3
+		y = 1
+		cost = 3
+		relative_position_id = SOV_political_industry
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doc_bonus
+				bonus = 0.50
+				uses = 2
+				category = infantry_weapons
 			}
 		}
 	}
@@ -8176,7 +8179,7 @@
 
 		completion_reward = {
 			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
-			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.05 } 
+			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.1 } 
 			custom_effect_tooltip = SOV_the_modern_war_in_the_skies_ns_tt
 
 			air_experience = 50

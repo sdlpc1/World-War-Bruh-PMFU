@@ -957,6 +957,10 @@ country_event = {
 			base = 10
 		}
 
+		trigger = {
+			NOT = { has_global_flag = SOV_border_war_loss }
+		}
+
 		hidden_effect = {
 			#Purge any Advisors
 			every_character = {
@@ -964,6 +968,7 @@ country_event = {
 					has_army_ledger = yes
 					OR = {
 						has_character_flag = SOV_targeted_for_purge_flag
+						has_character_flag = SOV_blyukher_targeted_for_purge_flag
 						has_character_flag = SOV_tukhachevsky_targeted_for_purge_flag
 					}
 					
@@ -981,6 +986,7 @@ country_event = {
 					}
 					OR = {
 						has_character_flag = SOV_targeted_for_purge_flag
+						has_character_flag = SOV_blyukher_targeted_for_purge_flag
 						has_character_flag = SOV_tukhachevsky_targeted_for_purge_flag
 					}
 				}
@@ -1025,15 +1031,6 @@ country_event = {
 				OR = {
 					has_character_flag = SOV_targeted_for_purge_flag
 					has_character_flag = SOV_tukhachevsky_targeted_for_purge_flag
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_global_flag = SOV_border_war_loss
-			}
-			character_list_tooltip = {
-				limit = {
 					has_character_flag = SOV_blyukher_targeted_for_purge_flag
 				}
 			}
@@ -1066,8 +1063,116 @@ country_event = {
 		SOV_increase_opposition_army_support_small = yes  
 	}
 
-	option = { #NO WAIT! Let's Think about it
+	option = { #Save Blukyhr Only
 		name = NSB_soviet_paranoia_system_events.29.b
+		ai_chance = {
+			base = 1
+			modifier = { #Don't go to negative PP please
+				factor = 0
+				has_political_power < SOV_purge_event_pp_to_avoid_great_pay
+			}
+			modifier = { #Don't risk starting CW too early
+				factor = 0
+				SOV_is_opposition = yes 
+			}
+		}
+
+		trigger = {
+			NOT = { has_global_flag = SOV_border_war_loss }
+		}
+
+		hidden_effect = {
+			#Purge any Advisors
+			every_character = {
+				limit = {
+					has_army_ledger = yes
+					OR = {
+						has_character_flag = SOV_targeted_for_purge_flag
+						has_character_flag = SOV_tukhachevsky_targeted_for_purge_flag
+					}
+				}
+				SOV_purge_character_effect = yes	
+				#log = "Hey I am [THIS.GetName] I am in the Event!"
+			}
+
+			#Purge any Marshals/Generals #This is a duplicate as a workaround for tooltip purposes
+			every_army_leader = {
+				limit = {
+					OR = {
+						is_field_marshal = yes
+						is_corps_commander = yes
+					}
+					OR = {
+						has_character_flag = SOV_targeted_for_purge_flag
+						has_character_flag = SOV_tukhachevsky_targeted_for_purge_flag
+					}
+
+				}
+				SOV_purge_character_effect = yes	
+				#log = "Hey I am [THIS.GetName] I am in the Event!"
+			}
+
+
+			# Yegerov and Bluker may come in
+			every_character = {
+				limit = {
+					OR = {
+						has_character_flag = SOV_blyukher_targeted_for_purge_flag
+						has_character_flag = SOV_POSSIBLE_targeted_for_purge_flag2
+					}				
+				}
+				set_character_flag = SOV_exiled_flag
+			}
+
+		}
+
+		#Update purged portraits in UI
+		hidden_effect = {
+			SOV_paranoia_update_portraits_ui = yes
+		}
+
+		custom_effect_tooltip = SOV_spare_bluker_tt
+
+		add_stability = -0.05
+
+		custom_effect_tooltip = SOV_characters_will_be_purged_tt
+		character_list_tooltip = {
+			limit = {
+				OR = {
+					has_character_flag = SOV_targeted_for_purge_flag
+					has_character_flag = SOV_tukhachevsky_targeted_for_purge_flag
+				}			
+			}
+		}
+
+		#RANDOM GENERALS COWED
+		SOV_paranoia_daunt_generals_effect = yes
+
+		#PARANOIA decreases
+		SOV_paranoia_very_high_decrease_effect = yes
+
+		# if = {
+		# 	limit = {
+		# 		has_country_flag = SOV_purge_event_unavoidable_flag
+		# 	}
+		# 	custom_effect_tooltip = SOV_purge_event_unavoidable_purge_great_tt
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		has_political_power < SOV_purge_event_pp_to_avoid_great
+		# 	}
+		# 	custom_effect_tooltip = SOV_purge_event_not_enough_pp_to_avoid_great_tt
+		# }
+
+		#Clear flags forbidding the "avoid purge" option from showing up
+		SOV_clear_unavoidable_purge_flags_effect = yes
+
+		# # Increase opposition Army Support 
+		# SOV_increase_opposition_army_support_small = yes 
+	}
+
+	option = { #Save Blukyr and Tuhka
+		name = NSB_soviet_paranoia_system_events.29.c
 		ai_chance = {
 			base = 1
 			modifier = { #Don't go to negative PP please

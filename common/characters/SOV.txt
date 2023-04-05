@@ -456,7 +456,7 @@ characters = {
 				  factor = 1.000
 			  }
 		  }
-
+		  
 		  corps_commander = {
 			  traits = { career_officer cavalry_officer politically_connected }
 			  skill = 3
@@ -1721,6 +1721,14 @@ characters = {
 			  allowed = {
 				  original_tag = SOV
 			  }
+			  available = {
+				if = {
+					limit = {
+						has_character_flag = SOV_exiled_flag
+					}
+					NOT = { has_character_flag = SOV_exiled_flag }
+				}
+			}
 			  traits = {
 				  army_chief_maneuver_2
 			  }

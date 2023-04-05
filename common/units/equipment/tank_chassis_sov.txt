@@ -1,6 +1,8 @@
 equipments = {
 
-   # Light Tanks
+  # Light Tanks
+
+	# T26
 	sov_light_tank_chassis_t26 = {
 		abbreviation = "t26"
 		visual_level = 0
@@ -12,7 +14,8 @@ equipments = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
 				}
 			}
 			suspension_type_slot = inherit
@@ -27,11 +30,11 @@ equipments = {
 		build_cost_ic = 9
 		reliability = 0.85
 		armor_value = 10
-		hardness = 0.7
 		defense = 4
 		breakthrough = 20
 	}
 
+	# BT5
 	sov_light_tank_chassis_bt5 = {
 		abbreviation = "bt5"
 		visual_level = 1
@@ -43,7 +46,8 @@ equipments = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
 				}
 			}
 			suspension_type_slot = inherit
@@ -52,14 +56,14 @@ equipments = {
 			special_type_slot_2 = inherit
 		}
 		maximum_speed = 7
-		build_cost_ic = 10
+		build_cost_ic = 102
 		reliability = 0.85
 		armor_value = 20
-		hardness = 0.7
 		defense = 4
 		breakthrough = 20
 	}
 
+	# BT7
 	sov_light_tank_chassis_bt7 = {
 		abbreviation = "bt7"
 		visual_level = 1
@@ -71,7 +75,8 @@ equipments = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
 				}
 			}
 			suspension_type_slot = inherit
@@ -83,11 +88,11 @@ equipments = {
 		build_cost_ic = 12
 		reliability = 0.85
 		armor_value = 30
-		hardness = 0.7
 		defense = 4
 		breakthrough = 25
 	}
 
+	# T50
 	sov_light_tank_chassis_t50 = {
 		abbreviation = "t50"
 		visual_level = 2
@@ -99,10 +104,11 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
-					tank_light_turret_type_3
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -114,12 +120,12 @@ equipments = {
 		maximum_speed = 6.5
 		build_cost_ic = 12
 		reliability = 0.85
-		hardness = 0.7
 		armor_value = 40
 		defense = 6
 		breakthrough = 30
 	}
 
+	# T70
 	sov_light_tank_chassis_t70 = {
 		abbreviation = "t70"
 		visual_level = 2
@@ -131,11 +137,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
 				}
 			}
 			suspension_type_slot = inherit
@@ -153,6 +160,7 @@ equipments = {
 		breakthrough = 40
 	}
 
+	# ZIS30
 	sov_light_tank_chassis_zis30 = {
 		abbreviation = "zis"
 		visual_level = 0
@@ -162,13 +170,9 @@ equipments = {
 		module_slots = {
 			main_armament_slot = {
 				required = yes
-				allowed_module_categories = {
-					tank_armament_tier_1
-					tank_armament_tier_2
-					tank_armament_tier_3
-					tank_armament_tier_4
-					tank_armament_tier_5
-					tank_armament_tier_6
+				allowed_module_categories = {					
+					tank_armament_tier_light_td
+					tank_armament_tier_aa
 				}
 			}
 			turret_type_slot = {
@@ -193,7 +197,9 @@ equipments = {
 		breakthrough = 5
 	}
 
-   # Medium Tanks
+  # Medium Tanks
+
+	# T28
 	sov_medium_tank_chassis_t28 = {
 		abbreviation = "t28"
 		visual_level = 0
@@ -204,8 +210,9 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_1
-					tank_armament_tier_2
+					tank_armament_tier_light_1
+					tank_armament_tier_light_2
+					tank_armament_tier_light_3
 				}
 			}
 			turret_type_slot = {
@@ -233,11 +240,11 @@ equipments = {
 		build_cost_ic = 20
 		reliability = 0.75
 		armor_value = 25
-		hardness = 0.75
 		defense = 6
 		breakthrough = 40
 	}
-	
+
+	# T34
 	sov_medium_tank_chassis_t34 = {
 		abbreviation = "t34"
 		visual_level = 1
@@ -249,12 +256,13 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
-					tank_medium_turret_type_5
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
+					tank_medium_turret_type_large_casemate
 					tank_modern_turret_type
 				}
 			}
@@ -267,17 +275,16 @@ equipments = {
 		}
 		upgrades = {
 			tank_nsb_med_armor_2_upgrade
-			tank_nsb_medium_hardness_1_upgrade
 		}
 		maximum_speed = 5.5
 		build_cost_ic = 20
 		reliability = 0.75
-		hardness = 0.7
 		armor_value = 60
 		defense = 8
 		breakthrough = 45
 	}
 
+	# T44
 	sov_medium_tank_chassis_t44 = {
 		abbreviation = "t44"
 		visual_level = 2
@@ -289,11 +296,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 					tank_modern_turret_type
 
 				}
@@ -314,10 +322,12 @@ equipments = {
 		reliability = 0.8
 		armor_value = 90
 		defense = 8
-		breakthrough = 55
+		breakthrough = 60
 	}
 	
-   # Heavy Tanks
+  # Heavy Tanks
+
+	# T35
 	sov_heavy_tank_chassis_t35 = {
 		abbreviation = "t35"
 		visual_level = 0
@@ -328,7 +338,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_1
+					tank_armament_tier_tiny_1
 				}
 			}
 			turret_type_slot = {
@@ -359,11 +369,11 @@ equipments = {
 		build_cost_ic = 30
 		reliability = 0.7
 		armor_value = 30
-		hardness = 0.85
 		defense = 8
 		breakthrough = 50
 	}
 
+	# T100
 	sov_heavy_tank_chassis_t100 = {
 		abbreviation = "t10"
 		visual_level = 0
@@ -374,15 +384,16 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_1
-					tank_armament_tier_2
-					tank_armament_tier_3
+					tank_armament_tier_tiny_1
+					tank_armament_tier_tiny_2
+					tank_armament_tier_light_1
 				}
 			}
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
 				}
 			}
 			suspension_type_slot = inherit
@@ -399,13 +410,14 @@ equipments = {
 			special_type_slot_4 = inherit
 		}
 		maximum_speed = 4.5
-		build_cost_ic = 38
+		build_cost_ic = 34
 		reliability = 0.7
 		armor_value = 40
 		defense = 10
 		breakthrough = 60
 	}
 
+	# KV1
 	sov_heavy_tank_chassis_kv1 = {
 		year = 1940
 		archetype = heavy_tank_chassis
@@ -427,6 +439,7 @@ equipments = {
 					tank_heavy_turret_type
 					tank_heavy_turret_type_0
 					tank_heavy_turret_type_1
+					tank_heavy_turret_type_casemate
 				}
 			}
 			suspension_type_slot = inherit
@@ -435,7 +448,6 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
-			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			#tank_nsb_med_engine_1_upgrade
@@ -449,6 +461,7 @@ equipments = {
 		breakthrough = 65
 	}
 
+	# IS
 	sov_heavy_tank_chassis_is = {
 		abbreviation = "is1"
 		visual_level = 2
@@ -460,9 +473,10 @@ equipments = {
 			turret_type_slot = 	{
 				required = yes		
 				allowed_module_categories = {
-					tank_heavy_turret_type
-					tank_super_heavy_turret_type
 					tank_heavy_turret_type_1
+					tank_heavy_turret_type_2
+					tank_heavy_turret_type_3
+					tank_heavy_turret_type_casemate
 				}
 			}
 			suspension_type_slot = inherit
@@ -472,7 +486,7 @@ equipments = {
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
 			special_type_slot_4 = inherit
-			#special_type_slot_5 = inherit
+			special_type_slot_5 = inherit
 		}
 		upgrades = {
 			tank_nsb_heavy_armor_2_upgrade
@@ -482,7 +496,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 95
 		defense = 12
-		breakthrough = 75
+		breakthrough = 80
 	}
 
 	# sov_heavy_tank_chassis_is3 = {
@@ -496,8 +510,8 @@ equipments = {
 	# 		turret_type_slot = 	{
 	# 			required = yes		
 	# 			allowed_module_categories = {
-	# 				tank_super_heavy_turret_type
-	# 				tank_heavy_turret_type_1
+	# 				tank_heavy_turret_type_3
+	# 				tank_heavy_turret_type_casemate
 	# 			}
 	# 		}
 	# 		suspension_type_slot = inherit

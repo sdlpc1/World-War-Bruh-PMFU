@@ -7398,7 +7398,7 @@ SOV_merge_designers_dec_cat = {
 
 			add_resource = {
 				type = aluminium
-				amount = 3
+				amount = 180
 				state = 219
 			}
 		}

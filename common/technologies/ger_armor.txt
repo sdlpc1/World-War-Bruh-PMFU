@@ -28,6 +28,7 @@ technologies = {
 			tank_interleaved_suspension
 			tank_horstmann_suspension
 			tank_torsion_bar_suspension
+			expanded_fuel_tank
 		}
 	
 		path = {
@@ -466,7 +467,7 @@ technologies = {
 	# 		ger_heavy_tank_chassis_p7
 	# 	}
 	# 	enable_equipment_modules = {
-	# 		tank_super_heavy_turret
+	# 		tank_heavy_turret_3
 	# 	}
 		
 	# 	path = {
@@ -528,7 +529,7 @@ technologies = {
 			ger_heavy_tank_chassis_e100
 		}
 		enable_equipment_modules = {
-			tank_super_heavy_turret
+			tank_heavy_turret_3
 		}
 		
 		research_cost = 2.0
@@ -547,4 +548,5 @@ technologies = {
 			factor = 0
 		}
 	}
+	
 }

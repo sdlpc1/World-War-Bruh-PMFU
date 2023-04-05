@@ -13,7 +13,10 @@ technologies = {
 		}
 		
 		
-		category_all_armor = {
+		category_tanks = {
+			breakthrough = 0.05
+		}
+		category_assault_gun = {
 			breakthrough = 0.05
 		}
 		category_army = {
@@ -548,11 +551,15 @@ technologies = {
 	
 	modern_blitzkrieg = {
 		
-		
+		category_assault_gun = {
+			breakthrough = 0.20
+		}
+		category_tanks = {
+			breakthrough = 0.20
+		}		
 		category_all_armor = {
 			default_morale = 0.2
-			max_organisation = 3
-			breakthrough = 0.20
+			max_organisation = 3			
 		}
 		org_loss_when_moving = -0.15
 		air_cas_present_factor = 0.05
@@ -976,9 +983,14 @@ technologies = {
 	
 	sup_mechanized_offensive = {
 
-		category_all_armor = {
+		category_all_armor = {			
+			max_strength = 2
+		}
+		category_assault_gun = {
 			breakthrough = 0.10
-			max_strength = 0.5
+		}
+		category_tanks = {
+			breakthrough = 0.10
 		}
 		
 		enable_tactic = tactic_blitz

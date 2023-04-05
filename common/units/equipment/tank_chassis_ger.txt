@@ -1,6 +1,8 @@
 equipments = {
 
-   # Light Tanks
+  # Light Tanks
+
+	# Panzer 1
 	ger_light_tank_chassis_p1 = {
 		abbreviation = "pz1"
 		visual_level = 0
@@ -12,10 +14,11 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
-					tank_light_turret_type_3
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -28,11 +31,11 @@ equipments = {
 		build_cost_ic = 10
 		reliability = 0.85
 		armor_value = 10
-		hardness = 0.7
 		defense = 4
 		breakthrough = 20
 	}
 
+	# Panzer 2
 	ger_light_tank_chassis_p2 = {
 		abbreviation = "pz2"
 		visual_level = 1
@@ -44,10 +47,11 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
-					tank_light_turret_type_3
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -60,11 +64,11 @@ equipments = {
 		build_cost_ic = 11
 		reliability = 0.85
 		armor_value = 15
-		hardness = 0.7
 		defense = 5
 		breakthrough = 25
 	}
 
+	# Panzer 35(t)
 	ger_light_tank_chassis_p35 = {
 		abbreviation = "p35"
 		visual_level = 4
@@ -76,10 +80,11 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
-					tank_light_turret_type_3
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -92,11 +97,11 @@ equipments = {
 		build_cost_ic = 12
 		reliability = 0.85
 		armor_value = 20
-		hardness = 0.7
 		defense = 4
 		breakthrough = 20
 	}
 
+	# Panzer 38(t)
 	ger_light_tank_chassis_p38 = {
 		abbreviation = "p38"
 		visual_level = 5
@@ -108,10 +113,11 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
-					tank_light_turret_type_3
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -124,11 +130,11 @@ equipments = {
 		build_cost_ic = 14
 		reliability = 0.85
 		armor_value = 30
-		hardness = 0.7
 		defense = 5
 		breakthrough = 30
 	}
 
+	# Hezter
 	ger_light_tank_chassis_hetzer = {
 		abbreviation = "p38"
 		visual_level = 4
@@ -139,18 +145,14 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_1
-					tank_armament_tier_2
-					tank_armament_tier_3
-					tank_armament_tier_4
-					tank_armament_tier_5
-					tank_armament_tier_6
+					tank_armament_tier_tiny_1
+					tank_armament_tier_medium_td
 				}
 			}
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type_2
+					tank_light_turret_type_casemate
 				}
 			}
 			suspension_type_slot = inherit
@@ -168,6 +170,7 @@ equipments = {
 		breakthrough = 45
 	}
 	
+	# Luchs
 	ger_light_tank_chassis_luchs = {
 		abbreviation = "luc"
 		visual_level = 2
@@ -179,11 +182,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
 				}
 			}
 			suspension_type_slot = inherit
@@ -201,47 +205,9 @@ equipments = {
 		breakthrough = 40
 	}
 
-   # Medium Tanks
-	ger_medium_tank_chassis_p4 = {
-		abbreviation = "pz4"
-		visual_level = 1
-		year = 1936
-		archetype = medium_tank_chassis
-		priority = 2000
-		module_slots = {
-			main_armament_slot = inherit
-			turret_type_slot = 	{		
-				required = yes
-				allowed_module_categories = {
-					tank_medium_turret_type
-					#tank_medium_turret_type_1
-					tank_medium_turret_type_2
-					tank_medium_turret_type_3
-					tank_medium_turret_type_4
-				}
-			}
-			suspension_type_slot = inherit
-			armor_type_slot = inherit
-			engine_type_slot = inherit
-			special_type_slot_1 = inherit
-			special_type_slot_2 = inherit
-			special_type_slot_3 = inherit
-			
-			
-		}
-		upgrades = {			
-			tank_nsb_med_armor_1_upgrade
-			tank_nsb_medium_hardness_1_upgrade
-		}
-		maximum_speed = 5.5
-		build_cost_ic = 18
-		reliability = 0.8
-		armor_value = 35
-		hardness = 0.75
-		defense = 8
-		breakthrough = 40
-	}
+  # Medium Tanks
 
+	# Panzer 3
 	ger_medium_tank_chassis_p3 = {
 		abbreviation = "pz3"
 		visual_level = 0
@@ -253,10 +219,11 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
-					#tank_medium_turret_type_1
-					tank_medium_turret_type_2
-					tank_medium_turret_type_3
+					tank_medium_turret_type_1
+					#tank_medium_turret_type_2
+					#tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
 				}
 			}
 			suspension_type_slot = inherit
@@ -268,15 +235,55 @@ equipments = {
 		}
 		upgrades = {			
 			tank_nsb_med_armor_1_upgrade
-			tank_nsb_medium_hardness_1_upgrade
+			tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 6
 		build_cost_ic = 14
 		reliability = 0.8
 		armor_value = 30
-		hardness = 0.75
 		defense = 6
 		breakthrough = 35
+	}
+
+	# Panzer 4
+	ger_medium_tank_chassis_p4 = {
+		abbreviation = "pz4"
+		visual_level = 1
+		year = 1936
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{		
+				required = yes
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					#tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
+				}
+			}
+			suspension_type_slot = inherit
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			
+			
+		}
+		upgrades = {			
+			tank_nsb_med_armor_1_upgrade
+			tank_nsb_med_engine_1_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 18
+		reliability = 0.8
+		armor_value = 35
+		defense = 8
+		breakthrough = 40
 	}
 
 	# ger_medium_tank_chassis_p4_2 = {
@@ -291,10 +298,10 @@ equipments = {
 	# 			required = yes
 	# 			allowed_module_categories = {
 	# 				tank_medium_turret_type
-	# 				#tank_medium_turret_type_1
-	# 				tank_medium_turret_type_2
-	# 				tank_medium_turret_type_3
-	# 				tank_medium_turret_type_4
+	# 				#tank_medium_turret_type_3
+	# 				tank_medium_turret_type_open
+	# 				tank_medium_turret_type_casemate
+	# 				tank_medium_turret_type_open_superstructure
 	# 			}
 	# 		}
 	# 		suspension_type_slot = inherit
@@ -330,9 +337,9 @@ equipments = {
 	# 			required = yes
 	# 			allowed_module_categories = {
 	# 				tank_medium_turret_type
-	# 				#tank_medium_turret_type_1
-	# 				tank_medium_turret_type_2
-	# 				tank_medium_turret_type_3
+	# 				#tank_medium_turret_type_3
+	# 				tank_medium_turret_type_open
+	# 				tank_medium_turret_type_casemate
 	# 			}
 	# 		}
 	# 		suspension_type_slot = inherit
@@ -365,12 +372,13 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
-					tank_medium_turret_type_5
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
+					tank_medium_turret_type_large_casemate
 					tank_modern_turret_type
 				}
 			}
@@ -382,14 +390,15 @@ equipments = {
 			special_type_slot_3 = inherit
 			special_type_slot_4 = inherit
 		}
-		maximum_speed = 5.25
-		build_cost_ic = 34
+		maximum_speed = 6
+		build_cost_ic = 32
 		reliability = 0.8
 		armor_value = 80
 		defense = 8
-		breakthrough = 55
+		breakthrough = 60
 	}
 	
+	# E50
 	ger_medium_tank_chassis_e50 = {
 		abbreviation = "e50"
 		visual_level = 2
@@ -400,14 +409,9 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_1
-					tank_armament_tier_2
-					tank_armament_tier_3
-					tank_armament_tier_4
-					tank_armament_tier_5
-					tank_armament_tier_6
-					tank_armament_tier_7
-					tank_armament_tier_8		
+					tank_armament_tier_light_1		
+					tank_armament_tier_light_2		
+					tank_armament_tier_light_3		
 				}
 			}
 			turret_type_slot = 	{	
@@ -424,15 +428,17 @@ equipments = {
 			special_type_slot_3 = inherit
 			special_type_slot_4 = inherit
 		}
-		maximum_speed = 5.75
-		build_cost_ic = 40
+		maximum_speed = 6
+		build_cost_ic = 38
 		reliability = 0.8
 		armor_value = 100
 		defense = 10
-		breakthrough = 60
+		breakthrough = 65
 	}
 	
-   # Heavy Tanks	
+  # Heavy Tanks
+	
+	# Neubaufahrzeug
 	ger_heavy_tank_chassis_neub = {
 		abbreviation = "nbf"
 		visual_level = 0
@@ -443,7 +449,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_1
+					tank_armament_tier_tiny_1
 				}
 			}
 			turret_type_slot = {
@@ -469,7 +475,6 @@ equipments = {
 		build_cost_ic = 25
 		reliability = 0.7
 		armor_value = 15
-		hardness = 0.85
 		defense = 6
 		breakthrough = 50
 	}
@@ -503,7 +508,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 100
 		defense = 12
-		breakthrough = 80
+		breakthrough = 85
 	}
 
 	# Lowe
@@ -518,8 +523,8 @@ equipments = {
 	# 		turret_type_slot = 	{
 	# 			required = yes		
 	# 			allowed_module_categories = {
-	# 				tank_super_heavy_turret_type
-	# 				tank_heavy_turret_type_1
+	# 				tank_heavy_turret_type_3
+	# 				tank_heavy_turret_type_casemate
 	# 			}
 	# 		}
 	# 		suspension_type_slot = inherit
@@ -539,6 +544,7 @@ equipments = {
 	# 	breakthrough = 85
 	# }
 
+	# E100
 	ger_heavy_tank_chassis_e100 = {
 		abbreviation = "e10"
 		visual_level = 2
@@ -549,7 +555,7 @@ equipments = {
 			main_armament_slot = inherit
 			turret_type_slot = 	{		
 				allowed_module_categories = {
-					tank_super_heavy_turret_type
+					tank_heavy_turret_type_3
 				}
 			}
 			suspension_type_slot = inherit
@@ -561,11 +567,12 @@ equipments = {
 			special_type_slot_4 = inherit
 			special_type_slot_5 = inherit
 		}
-		maximum_speed = 5.5
+		maximum_speed = 5.75
 		build_cost_ic = 50
 		reliability = 0.75
 		armor_value = 120
 		defense = 14
-		breakthrough = 90
+		breakthrough = 95
 	}
+
 }

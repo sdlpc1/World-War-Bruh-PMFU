@@ -1,5 +1,7 @@
 equipments = {
 
+  # French Tanks
+	# French FT17
 	fra_light_tank_chassis_ft = {
 		abbreviation = "rft"
 		visual_level = 0
@@ -11,7 +13,8 @@ equipments = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
 				}
 			}
 			suspension_type_slot = inherit
@@ -23,11 +26,11 @@ equipments = {
 		build_cost_ic = 10
 		reliability = 0.75
 		armor_value = 15
-		hardness = 0.7
 		defense = 4
 		breakthrough = 10
 	}
 
+	# French H35
 	fra_light_tank_chassis_h35 = {
 		abbreviation = "h35"
 		visual_level = 1
@@ -39,11 +42,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
 				}
 			}
 			suspension_type_slot = inherit
@@ -59,11 +63,11 @@ equipments = {
 		build_cost_ic = 12
 		reliability = 0.85
 		armor_value = 30
-		hardness = 0.7
 		defense = 5
 		breakthrough = 20
 	}
 
+	# French R35
 	fra_light_tank_chassis_r35 = {
 		abbreviation = "r35"
 		visual_level = 1
@@ -75,11 +79,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
 				}
 			}
 			suspension_type_slot = inherit
@@ -95,11 +100,11 @@ equipments = {
 		build_cost_ic = 12
 		reliability = 0.85
 		armor_value = 35
-		hardness = 0.7
 		defense = 5
 		breakthrough = 25
 	}
 
+	# French AMX12
 	fra_light_tank_chassis_x13 = {
 		abbreviation = "x13"
 		visual_level = 2
@@ -111,7 +116,7 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type_alt
+					tank_light_turret_type_3
 				}
 			}
 			suspension_type_slot = inherit
@@ -129,6 +134,7 @@ equipments = {
 		breakthrough = 50
 	}
 
+	# French S35
 	fra_medium_tank_chassis_s35 = {
 		abbreviation = "s35"
 		visual_level = 1
@@ -140,10 +146,11 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
-					#tank_medium_turret_type_1
+					tank_medium_turret_type_1
 					tank_medium_turret_type_2
-					tank_medium_turret_type_3
+					#tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
 				}
 			}
 			suspension_type_slot = inherit
@@ -156,11 +163,11 @@ equipments = {
 		build_cost_ic = 22
 		reliability = 0.8
 		armor_value = 45
-		hardness = 0.75
 		defense = 6
 		breakthrough = 40
 	}
 
+	# French S40
 	fra_medium_tank_chassis_s40 = {
 		abbreviation = "s40"
 		visual_level = 2
@@ -172,11 +179,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -194,6 +202,7 @@ equipments = {
 		breakthrough = 45
 	}
 
+	# French SARL42
 	fra_medium_tank_chassis_s42 = {
 		abbreviation = "s42"
 		visual_level = 2
@@ -205,11 +214,12 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -225,9 +235,10 @@ equipments = {
 		reliability = 0.8
 		armor_value = 60
 		defense = 8
-		breakthrough = 50
+		breakthrough = 55
 	}
 
+	# French AMX4
 	fra_medium_tank_chassis_x4 = {
 		abbreviation = "am4"
 		visual_level = 2
@@ -255,9 +266,10 @@ equipments = {
 		reliability = 0.85
 		armor_value = 60
 		defense = 8
-		breakthrough = 60
+		breakthrough = 65
 	}
 
+	# French B1 Biss
 	fra_heavy_tank_chassis_b1 = {
 		abbreviation = "fb1"
 		visual_level = 0
@@ -268,7 +280,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_1
+					tank_armament_tier_tiny_1
 				}
 			}
 			turret_type_slot = {
@@ -294,26 +306,27 @@ equipments = {
 		build_cost_ic = 26
 		reliability = 0.7
 		armor_value = 65
-		hardness = 0.85
 		defense = 8
 		breakthrough = 50
 	}
 
+	# French ARL 44
 	fra_heavy_tank_chassis_arl = {
 		abbreviation = "arl"
 		visual_level = 0
-		year = 1944
+		year = 1942
 		archetype = heavy_tank_chassis
 		priority = 2000
 		module_slots = inherit
-		maximum_speed = 5.0
+		maximum_speed = 5.5
 		build_cost_ic = 36
 		reliability = 0.75
 		armor_value = 75
 		defense = 8
 		breakthrough = 70
 	}
-	
+
+	# French AMX50
 	fra_heavy_tank_chassis_x50 = {
 		abbreviation = "a50"
 		visual_level = 0
@@ -329,6 +342,7 @@ equipments = {
 		breakthrough = 85
 	}
 
+	# French Char 2C
 	fra_heavy_tank_chassis_2c = {
 		abbreviation = "f2c"
 		visual_level = 0
@@ -339,14 +353,15 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_1
+					tank_armament_tier_tiny_1
 				}
 			}
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
 				}
 			}
 			suspension_type_slot = inherit
@@ -371,11 +386,13 @@ equipments = {
 		build_cost_ic = 38
 		reliability = 0.6
 		armor_value = 40
-		hardness = 0.85
 		defense = 8
 		breakthrough = 55
 	}
 
+  # Italian Tanks
+
+	# Italian L3/33
 	ita_light_tank_chassis_cv33 = {
 		abbreviation = "c33"
 		visual_level = 0
@@ -398,11 +415,11 @@ equipments = {
 		build_cost_ic = 7
 		reliability = 0.85
 		armor_value = 5
-		hardness = 0.7
 		defense = 4
 		breakthrough = 15
 	}
 
+	# Italian L6/40
 	ita_light_tank_chassis_l6 = {
 		abbreviation = "l6t"
 		visual_level = 1
@@ -414,11 +431,12 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
 				}
 			}
 			suspension_type_slot = inherit
@@ -435,6 +453,7 @@ equipments = {
 		breakthrough = 30
 	}
 
+	# Italian M11/39
 	ita_medium_tank_chassis_m11 = {
 		abbreviation = "m11"
 		visual_level = 0
@@ -446,10 +465,11 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
-					#tank_medium_turret_type_1
+					tank_medium_turret_type_1
 					tank_medium_turret_type_2
-					tank_medium_turret_type_3
+					#tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
 					
 				}
 			}
@@ -464,11 +484,11 @@ equipments = {
 		build_cost_ic = 14
 		reliability = 0.75
 		armor_value = 25
-		hardness = 0.75
 		defense = 5
 		breakthrough = 35
 	}
 
+	# Italian M13/40
 	ita_medium_tank_chassis_m13 = {
 		abbreviation = "m13"
 		visual_level = 1
@@ -480,10 +500,11 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
 					
 				}
 			}
@@ -501,7 +522,8 @@ equipments = {
 		defense = 6
 		breakthrough = 40
 	}
-	
+
+	# Italian M15/42
 	ita_medium_tank_chassis_m15 = {
 		abbreviation = "m15"
 		visual_level = 1
@@ -513,10 +535,11 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
 					
 				}
 			}
@@ -536,6 +559,7 @@ equipments = {
 		breakthrough = 45
 	}
 
+	# Italian P26/40
 	ita_medium_tank_chassis_p26 = {
 		abbreviation = "p26"
 		visual_level = 2
@@ -547,11 +571,12 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -570,6 +595,7 @@ equipments = {
 		breakthrough = 50
 	}
 
+	# Italian P30/43
 	ita_heavy_tank_chassis_p43 = {
 		abbreviation = "p43"
 		visual_level = 0
@@ -585,6 +611,9 @@ equipments = {
 		breakthrough = 70
 	}
 
+  # Hungarian Tanks
+
+	# Hungarian 38M
 	hun_light_tank_chassis_38m = {
 		abbreviation = "38m"
 		visual_level = 1
@@ -596,11 +625,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
 				}
 			}
 			suspension_type_slot = inherit
@@ -616,11 +646,11 @@ equipments = {
 		build_cost_ic = 14
 		reliability = 0.85
 		armor_value = 20
-		hardness = 0.7
 		defense = 5
 		breakthrough = 30
 	}
 
+	# Hungarian 40M
 	hun_medium_tank_chassis_40m = {
 		abbreviation = "40m"
 		visual_level = 1
@@ -632,11 +662,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
-					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					#tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -654,6 +685,7 @@ equipments = {
 		breakthrough = 45
 	}
 
+	# Hungarian 44M
 	hun_medium_tank_chassis_44m = {
 		abbreviation = "44m"
 		visual_level = 2
@@ -665,11 +697,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 					tank_modern_turret_type
 				}
 			}
@@ -681,14 +714,17 @@ equipments = {
 			special_type_slot_3 = inherit
 			special_type_slot_4 = inherit
 		}
-		maximum_speed = 5.5
+		maximum_speed = 6
 		build_cost_ic = 32
 		reliability = 0.8
 		armor_value = 90
 		defense = 8
-		breakthrough = 55
+		breakthrough = 60
 	}
 
+  # Japanese Tanks
+
+	# Japanese T95 Ha-Go
 	jap_light_tank_chassis_t95 = {
 		abbreviation = "t95"
 		visual_level = 0
@@ -700,10 +736,11 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
-					tank_light_turret_type_3
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -716,11 +753,11 @@ equipments = {
 		build_cost_ic = 10
 		reliability = 0.85
 		armor_value = 10
-		hardness = 0.7
 		defense = 5
 		breakthrough = 15
 	}
 
+	# Japanese T98 Ke-Ni
 	jap_light_tank_chassis_t98 = {
 		abbreviation = "t98"
 		visual_level = 1
@@ -732,11 +769,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
 				}
 			}
 			suspension_type_slot = inherit
@@ -753,7 +791,8 @@ equipments = {
 		defense = 6
 		breakthrough = 35
 	}
-	
+
+	# Japanese T89 Chi-Ro
 	jap_medium_tank_chassis_t89 = {
 		abbreviation = "t89"
 		visual_level = 0
@@ -765,10 +804,11 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
-					# tank_medium_turret_type_1
-					tank_medium_turret_type_2
-					tank_medium_turret_type_3
+					tank_medium_turret_type_1
+					# tank_medium_turret_type_2
+					# tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
 				}
 			}
 			suspension_type_slot = inherit
@@ -782,11 +822,11 @@ equipments = {
 		build_cost_ic = 12
 		reliability = 0.8
 		armor_value = 15
-		hardness = 0.75
 		defense = 5
 		breakthrough = 35
 	}
 
+	# Japanese T97 Chi-Ha
 	jap_medium_tank_chassis_t97 = {
 		abbreviation = "t97"
 		visual_level = 0
@@ -798,11 +838,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
-					#tank_medium_turret_type_1
+					tank_medium_turret_type_1
 					tank_medium_turret_type_2
-					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					#tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -816,11 +857,11 @@ equipments = {
 		build_cost_ic = 14
 		reliability = 0.8
 		armor_value = 20
-		hardness = 0.75
 		defense = 6
 		breakthrough = 40
 	}
 
+	# Japanese T01 Chi-He
 	jap_medium_tank_chassis_t01 = {
 		abbreviation = "t01"
 		visual_level = 1
@@ -832,11 +873,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -854,6 +896,7 @@ equipments = {
 		breakthrough = 45
 	}
 	
+	# Japanese T03 Chi-Nu
 	jap_medium_tank_chassis_t03 = {
 		abbreviation = "t03"
 		visual_level = 2
@@ -865,11 +908,12 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -885,9 +929,10 @@ equipments = {
 		reliability = 0.8
 		armor_value = 50
 		defense = 6
-		breakthrough = 50
+		breakthrough = 55
 	}
 
+	# Japanese T04 Chi-To
 	jap_medium_tank_chassis_t04 = {
 		abbreviation = "t03"
 		visual_level = 2
@@ -899,11 +944,12 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 					tank_modern_turret_type
 				}
 			}
@@ -920,6 +966,6 @@ equipments = {
 		reliability = 0.8
 		armor_value = 75
 		defense = 8
-		breakthrough = 55
+		breakthrough = 60
 	}
 }

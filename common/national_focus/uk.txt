@@ -789,7 +789,7 @@ focus_tree = {
 				uses = 2
 				technology = antitank2
 				technology = antitank3
-				technology = antitank5
+				technology = antitank4
 				#technology = antitank6
 			}
 			add_tech_bonus = {
@@ -797,7 +797,7 @@ focus_tree = {
 				bonus = 0.75
 				uses = 1
 				technology = antiair2
-				technology = antiair5
+				technology = antiair3
 			}
 		}
 	}
@@ -2535,7 +2535,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ENG_imperial_conference ## IMPERIAL CONFERENCE
+		id = ENG_imperial_conference
 		prerequisite = { focus = ENG_commonwealth_ties }
 
 		available = {

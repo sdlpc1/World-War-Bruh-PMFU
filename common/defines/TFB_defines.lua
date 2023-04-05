@@ -241,16 +241,24 @@ NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.25			                -- how to weight in
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.35
 NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
 		1.00,
+		0.9,
 		0.8,
+		0.7,
 		0.6,
+		0.5,
 		0.4,
+		0.3,
 		0.0, --there isn't much point setting this higher than 0
 	}
 NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
 		1.00,
+		0.85,
 		0.70,
+		0.60,
 		0.50,
+		0.40,
 		0.30,
+		0.20,
 		0.10,
 	}
 NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 15					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
@@ -277,7 +285,7 @@ NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.75						-- fuel cost multiplier for a
 NDefines.NMilitary.ARMY_COMBAT_FUEL_MULT =   2.0					-- fuel consumption ratio in combat (plus ARMY_MOVEMENT_FUEL_MULT if you are also moving. ie offensive combat)
 NDefines.NMilitary.OUT_OF_FUEL_EQUIPMENT_MULT = 0.25				-- ratio of the stats that you get from equipments that uses fuel and you lack it
 NDefines.NMilitary.OUT_OF_FUEL_SPEED_MULT = 0.1					-- speed mult that armies get when out of fuel
-NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 72             	-- default capacity if not specified
+NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 168             	-- default capacity if not specified
 NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.2				--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015
 NDefines.NMilitary.COST_INCREASE_PER_ACTIVE_MEDAL = 0				-- Additional cost factor per active medal.
