@@ -1559,7 +1559,30 @@ on_actions = {
 						type = oil
 						amount = 1000
 						state = 504
-					}	
+					}			
+					add_resource = {
+						type = rubber
+						amount = 250
+						state = 454
+					}					
+					
+					add_resource = {
+						type = rubber
+						amount = 280
+						state = 446
+					}					
+					add_resource = {
+						type = rubber
+						amount = 265
+						state = 551
+					}					
+					add_resource = {
+						type = rubber
+						amount = 265
+						state = 765
+					}
+						
+						
 					
 				}
 			}
