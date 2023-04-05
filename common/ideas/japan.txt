@@ -8,7 +8,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = jap_no_equipment_capture
+			picture = GFX_idea_jap_no_eq_capture
 			removal_cost = -1
 
 			equipment_bonus = {

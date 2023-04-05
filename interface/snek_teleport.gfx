@@ -11,6 +11,22 @@ spriteTypes = {
 		name = "GFX_idea_russian_closed_eco"
 		texturefile = "gfx/interface/ideas/idea_russian_closed_eco.dds"
 	}	
+	spriteType = {
+		name = "GFX_idea_ger_greater_german_reich"
+		texturefile = "gfx/interface/ideas/idea_ger_greater_german_reich.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ita_state_med"
+		texturefile = "gfx/interface/ideas/idea_ita_state_med.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_jap_no_eq_capture"
+		texturefile = "gfx/interface/ideas/idea_jap_no_eq_capture.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ITA_mob_nav_workers"
+		texturefile = "gfx/interface/ideas/idea_ITA_mob_nav_workers.dds"
+	}
 
     ## FOCUS ICONS
     spriteType = {
@@ -24,6 +40,14 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_goal_ITA_advanced_radar"
 		texturefile = "gfx/interface/goals/ita/ITA_advanced_radar.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_HOL_reinforce_borneo"
+		texturefile = "gfx/interface/goals/hol/HOL_reinforce_borneo.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_HOL_reinforce_papua"
+		texturefile = "gfx/interface/goals/hol/HOL_reinforce_papua.dds"
 	}	
 
     SpriteType = {

@@ -273,7 +273,7 @@ technologies = {
 	armored_spearhead = { #Branch focused on Tanks 
 	
 		dependencies = {
-			mot_radio2 = 1
+			mot_radio1 = 1
 		}
 		
 		category_all_armor = {
@@ -460,7 +460,11 @@ technologies = {
 	}
 	
 	firebrigades = { #Branch focused on mobile warfares
-	
+		
+		dependencies = {
+			mot_radio2 = 1
+		}
+
 		category_all_infantry = {
 			max_strength = 2
 		}
