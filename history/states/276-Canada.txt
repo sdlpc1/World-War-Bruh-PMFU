@@ -5,13 +5,12 @@ state={
 	manpower = 3117017
 	
 	state_category = large_city
-	
+	1936.1.1.13 = {
+
 	resources={
-		steel=1800
-		tungsten=1000
-		oil=3000
-		aluminium=2800
+        steel = 800
 	}
+}
 	
 	history={
 		owner = CAN
