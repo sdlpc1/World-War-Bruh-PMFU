@@ -7144,7 +7144,8 @@
 	focus = {
 		id = SOV_new_corps2
 		icon = GFX_SOV_new_officer_academies
-		prerequisite = { focus = SOV_combined_arms2 focus = SOV_wargames }
+		prerequisite = { focus = SOV_wargames }
+		#focus = SOV_combined_arms2
 		x = 1
 		y = 1
 		cost = 3
