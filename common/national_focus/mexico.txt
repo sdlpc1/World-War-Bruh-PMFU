@@ -17,289 +17,6 @@ focus_tree = {
 	continuous_focus_position = { x = 950 y = 1500 }
 
     focus = {
-        id = MEX_focus_television_innovators
-            icon = GFX_focus_research
-            prerequisite = { focus = MEX_focus_oil_field_expansion }
-            relative_position_id = MEX_focus_oil_field_expansion
-                x = 0
-                y = 1
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-                add_research_slot = 1
-				add_tech_bonus = {
-					name = electronics
-					bonus = 0.5
-					uses = 1
-					category = electronics
-				}
-            }
-    }
-    
-    focus = {
-        id = MEX_focus_law_on_industrial_promotion
-            icon = GFX_goal_generic_construct_civ_factory
-            prerequisite = { focus = MEX_focus_abolish_capital_punishment focus = MEX_focus_caudillo_private_armies }
-            relative_position_id = MEX_focus_state_education
-                x = 2
-                y = 1
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-                every_state = {
-                    limit = {
-                        OR = {
-                            state = 277
-                            state = 478
-                        }
-                    }
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = industrial_complex
-                        level = 2
-                        instant_build = yes
-                    }
-                } 
-            }
-    }
-
-    focus = {
-        id = MEX_focus_nafinsa
-            icon = GFX_goal_generic_construct_mil_factory
-            prerequisite = { focus = MEX_focus_law_on_industrial_promotion }
-            relative_position_id = MEX_focus_law_on_industrial_promotion
-                x = 0
-                y = 1
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-                if = {
-                    limit = {
-                        has_tech = synth_oil_experiments
-                    }
-                    every_state = {
-                        limit = {
-                            OR = {
-                                state = 277
-                                state = 485
-                            }
-                        }
-                        add_extra_state_shared_building_slots = 2
-                        add_building_construction = {
-                            type = synthetic_refinery
-                            level = 2
-                            instant_build = yes
-                        }
-                    }
-                    else = {
-                        every_state = {
-                            limit = {
-                                OR = {
-                                    state = 277
-                                    state = 485
-                                }
-                            }
-                            add_extra_state_shared_building_slots = 2
-                            add_building_construction = {
-                                type = arms_factory
-                                level = 2
-                                instant_build = yes
-                            }
-                        }
-                    }
-                }
-            }
-    }
-
-    focus = {
-        id = MEX_focus_caudillo_private_armies
-            icon = GFX_focus_mex_caudillo_private_armies
-            prerequisite = { focus = MEX_focus_support_general_cedillo }
-			prerequisite = { focus = MEX_focus_privatization}
-            relative_position_id = MEX_focus_support_general_cedillo
-                x = 1
-                y = 3
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-                add_ideas = MEX_caudillo_private_armies
-            }
-    }
-    
-    focus = {
-        id = MEX_focus_nationalize_the_oil_fields
-            icon = GFX_focus_eng_concessions_to_the_trade_unions
-            prerequisite = { focus = MEX_focus_caudillo_private_armies }
-			prerequisite = { focus = MEX_focus_oil_field_expansion }
-            relative_position_id = MEX_focus_caudillo_private_armies
-                x = 2
-                y = 3
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-                USA = {
-					remove_resource_rights = 479
-					remove_resource_rights = 480
-				}
-				ENG = {
-					remove_resource_rights = 477
-					remove_resource_rights = 476
-				}
-				custom_effect_tooltip = available_industrial_concern
-
-				show_ideas_tooltip = MEX_pemex
-            }
-    }
-
-    focus = {
-        id = MEX_focus_liberty_and_justice_for_all  
-            icon = GFX_focus_chi_mission_to_the_us
-            prerequisite = { focus = MEX_focus_nationalize_the_oil_fields }
-            relative_position_id = MEX_focus_nationalize_the_oil_fields
-                x = 0
-                y = 1
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                OR = {
-					ENG = {
-						has_war_with = JAP
-					}
-					USA = {
-						has_war_with = GER
-					}
-				}
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-
-				if = {
-					limit = {
-						ENG = { is_faction_leader = yes }
-					}
-					ENG = {
-						country_event = {
-							id = mexico.8
-							days = 1
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						ENG = {
-							is_in_faction = yes
-						}
-					}
-					random_other_country = {
-						limit = {
-							is_faction_leader = yes
-							is_in_faction_with = ENG
-						}
-						country_event = generic.2
-					}
-				}
-				else = {
-					create_faction = MEX_focus_community_of_nations
-					ENG = {
-						country_event = generic.5
-					}
-				}
-            }
-    }
-
-    focus = {
         id = MEX_focus_oil_drilling
             icon = GFX_goal_generic_oil_refinery
             prerequisite = { focus = MEX_focus_abolish_capital_punishment }
@@ -872,6 +589,146 @@ focus_tree = {
             }
     }
 
+	focus = {
+        id = MEX_focus_caudillo_private_armies
+            icon = GFX_focus_mex_caudillo_private_armies
+            prerequisite = { focus = MEX_focus_support_general_cedillo }
+			prerequisite = { focus = MEX_focus_privatization}
+            relative_position_id = MEX_focus_support_general_cedillo
+                x = 1
+                y = 3
+            cost = 5
+        
+            ai_will_do = {
+                factor = 100
+            }
+    
+            available = {
+                
+            }
+    
+            bypass = {
+                
+            }
+    
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+    
+            completion_reward = {
+                add_ideas = MEX_caudillo_private_armies
+            }
+    }
+    
+    focus = {
+        id = MEX_focus_nationalize_the_oil_fields
+            icon = GFX_focus_eng_concessions_to_the_trade_unions
+            prerequisite = { focus = MEX_focus_caudillo_private_armies }
+			prerequisite = { focus = MEX_focus_oil_field_expansion }
+            relative_position_id = MEX_focus_caudillo_private_armies
+                x = 2
+                y = 3
+            cost = 5
+        
+            ai_will_do = {
+                factor = 100
+            }
+    
+            available = {
+                
+            }
+    
+            bypass = {
+                
+            }
+    
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+    
+            completion_reward = {
+                USA = {
+					remove_resource_rights = 479
+					remove_resource_rights = 480
+				}
+				ENG = {
+					remove_resource_rights = 477
+					remove_resource_rights = 476
+				}
+				custom_effect_tooltip = available_industrial_concern
+
+				show_ideas_tooltip = MEX_pemex
+            }
+    }
+
+    focus = {
+        id = MEX_focus_liberty_and_justice_for_all  
+            icon = GFX_focus_chi_mission_to_the_us
+            prerequisite = { focus = MEX_focus_nationalize_the_oil_fields }
+            relative_position_id = MEX_focus_nationalize_the_oil_fields
+                x = 0
+                y = 1
+            cost = 5
+        
+            ai_will_do = {
+                factor = 100
+            }
+    
+            available = {
+                OR = {
+					ENG = {
+						has_war_with = JAP
+					}
+					USA = {
+						has_war_with = GER
+					}
+				}
+            }
+    
+            bypass = {
+                
+            }
+    
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+    
+            completion_reward = {
+
+				if = {
+					limit = {
+						ENG = { is_faction_leader = yes }
+					}
+					ENG = {
+						country_event = {
+							id = mexico.8
+							days = 1
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						ENG = {
+							is_in_faction = yes
+						}
+					}
+					random_other_country = {
+						limit = {
+							is_faction_leader = yes
+							is_in_faction_with = ENG
+						}
+						country_event = generic.2
+					}
+				}
+				else = {
+					create_faction = MEX_focus_community_of_nations
+					ENG = {
+						country_event = generic.5
+					}
+				}
+            }
+    }
+
     focus = {
         id = MEX_focus_control_the_army
             icon = GFX_focus_generic_military_mission
@@ -1156,6 +1013,113 @@ focus_tree = {
                     bonus = 0.5
                     uses = 1
                     category = electronics
+                }
+            }
+    }
+
+	focus = {
+        id = MEX_focus_law_on_industrial_promotion
+            icon = GFX_goal_generic_construct_civ_factory
+            prerequisite = { focus = MEX_focus_abolish_capital_punishment focus = MEX_focus_caudillo_private_armies }
+            relative_position_id = MEX_focus_state_education
+                x = 2
+                y = 1
+            cost = 5
+        
+            ai_will_do = {
+                factor = 100
+            }
+    
+            available = {
+                
+            }
+    
+            bypass = {
+                
+            }
+    
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+    
+            completion_reward = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 277
+                            state = 478
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                } 
+            }
+    }
+
+    focus = {
+        id = MEX_focus_nafinsa
+            icon = GFX_goal_generic_construct_mil_factory
+            prerequisite = { focus = MEX_focus_law_on_industrial_promotion }
+            relative_position_id = MEX_focus_law_on_industrial_promotion
+                x = 0
+                y = 1
+            cost = 5
+        
+            ai_will_do = {
+                factor = 100
+            }
+    
+            available = {
+                
+            }
+    
+            bypass = {
+                
+            }
+    
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+    
+            completion_reward = {
+                if = {
+                    limit = {
+                        has_tech = synth_oil_experiments
+                    }
+                    every_state = {
+                        limit = {
+                            OR = {
+                                state = 277
+                                state = 485
+                            }
+                        }
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                            type = synthetic_refinery
+                            level = 2
+                            instant_build = yes
+                        }
+                    }
+                    else = {
+                        every_state = {
+                            limit = {
+                                OR = {
+                                    state = 277
+                                    state = 485
+                                }
+                            }
+                            add_extra_state_shared_building_slots = 2
+                            add_building_construction = {
+                                type = arms_factory
+                                level = 2
+                                instant_build = yes
+                            }
+                        }
+                    }
                 }
             }
     }
@@ -1726,6 +1690,42 @@ focus_tree = {
                         amount = 100
                     }
                 }
+            }
+    }
+
+	focus = {
+        id = MEX_focus_television_innovators
+            icon = GFX_focus_research
+            prerequisite = { focus = MEX_focus_oil_field_expansion }
+            relative_position_id = MEX_focus_oil_field_expansion
+                x = 0
+                y = 1
+            cost = 5
+        
+            ai_will_do = {
+                factor = 100
+            }
+    
+            available = {
+                
+            }
+    
+            bypass = {
+                
+            }
+    
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+    
+            completion_reward = {
+                add_research_slot = 1
+				add_tech_bonus = {
+					name = electronics
+					bonus = 0.5
+					uses = 1
+					category = electronics
+				}
             }
     }
 
@@ -3954,7 +3954,7 @@ focus_tree = {
 				add_tech_bonus = {
 					name = anti_tank
 					bonus = 0.5
-					ahead_reduction =  = 1
+					ahead_reduction = 1
 					uses = 1
 					category = artillery
 					category = support_tech
