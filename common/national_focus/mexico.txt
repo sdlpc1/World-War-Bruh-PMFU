@@ -2205,7 +2205,7 @@ focus_tree = {
 				add_doctrine_cost_reduction = {
 					cost_reduction = 0.40
 					uses = 2
-					category = startegic_bombing
+					category = heavy_air
 				}
 			}
 	}
@@ -2434,7 +2434,7 @@ focus_tree = {
 
 			available = {
 				has_army_experience > 50
-				has_naval_experience > 50
+				has_navy_experience > 50
 			}
 
 			bypass = {
@@ -2612,11 +2612,9 @@ focus_tree = {
 			}
 
 			available = {
-				limit = {
-					END = {
-						   has_completed_focus = ENG_british_commonwealth_air_training_plan
-					}
-			   }
+				ENG = {
+					has_completed_focus = ENG_british_commonwealth_air_training_plan
+				}
 			}
 
 			bypass = {
@@ -2715,7 +2713,7 @@ focus_tree = {
 					category = ss_tech
 				}
 				add_doctrine_cost_reduction = {
-					name = naval_doctrine
+					name = MEX_focus_Based_Navy_1
 					cost_reduction = 0.5
 					uses = 1
 					category = naval_doctrine

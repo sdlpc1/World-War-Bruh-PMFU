@@ -694,7 +694,7 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				infantry_weapons = {
+				infantry_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -716,7 +716,7 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				infantry_weapons = {
+				infantry_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 					soft_attack = 0.2
@@ -742,7 +742,7 @@ ideas = {
 					hardness = 0.1 
 					instant = yes
 				}
-				cat_mechanized_equipment = {
+				mechanized_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 					hardness = 0.1 
@@ -762,7 +762,7 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				heavy_artillery = {
+				heavy_artillery_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 					hard_attack = 0.2
@@ -784,9 +784,8 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				armor_equipment = {
+				armor = {
 					hard_attack = 0.2
-					instant = yes
 					soft_attack = 0.1
 					instant = yes
 				}

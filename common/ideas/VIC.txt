@@ -274,36 +274,6 @@ ideas = {
 			}
 		}
 
-		VIC_shifted_production = {
-
-			picture = generic_economic_increase
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			equipment_bonus = {
-				armor = {
-					build_cost_ic = 0.30
-					instant = yes
-				}
-				infantry_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-			}
-
-			modifier = {
-				industrial_capacity_factory = 0.10
-			}
-		}
-
 		VIC_rebuilding_france = {
 
 			picture = generic_economic_increase
