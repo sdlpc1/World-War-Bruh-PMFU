@@ -16,256 +16,6 @@ focus_tree = {
 
 	continuous_focus_position = { x = 950 y = 1500 }
 
-    focus = {
-        id = MEX_focus_oil_drilling
-            icon = GFX_goal_generic_oil_refinery
-            prerequisite = { focus = MEX_focus_abolish_capital_punishment }
-			prerequisite = { focus = MEX_focus_oil_field_expansion }
-            relative_position_id = MEX_focus_abolish_capital_punishment
-                x = 1
-                y = 4
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-                random_owned_controlled_state = {
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 2
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 2
-						instant_build = yes
-					}
-				}
-            }
-    }
-
-    focus = {
-        id = MEX_focus_rubber_refineries
-            icon = GFX_focus_generic_rubber
-            prerequisite = { focus = MEX_focus_oil_drilling }
-            relative_position_id = MEX_focus_oil_drilling
-                x = 0
-                y = 2
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-            	modify_building_resources = {
-					building = synthetic_rubber_refinery
-					resource = rubber
-					amount = 10
-        		}
-            }
-    }
-
-    focus = {
-        id = MEX_focus_oil_refineries
-            icon = GFX_goal_generic_oil_refinery
-            prerequisite = { focus = MEX_focus_oil_drilling }
-            relative_position_id = MEX_focus_oil_drilling
-                x = -1
-                y = 1
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-                modify_building_resources = {
-					building = synthetic_refinery
-					resource = oil
-					amount = 10
-        		}
-            }
-    }
-
-    focus = {
-        id = MEX_focus_oil_revenue_reinvestment
-            icon = GFX_goal_generic_construct_civilian
-            prerequisite = { focus =  MEX_focus_oil_drilling focus = MEX_focus_nationalize_the_oil_fields }
-            relative_position_id = MEX_focus_nationalize_the_oil_fields
-                x = -3
-                y = 1
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-                every_state = {
-                    limit = {
-                        OR = {
-                            state = 477
-                            state = 479
-                        }
-                    }
-                    add_extra_state_shared_building_slots = 1
-                    add_building_construction = {
-                        type = industrial_complex
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-            }
-    }
-
-    focus = {
-		id = MEX_focus_capital_reserves
-            icon = GFX_focus_generic_license_production
-            prerequisite = { focus = MEX_focus_oil_revenue_reinvestment }
-            relative_position_id = MEX_focus_oil_revenue_reinvestment
-            x = 0
-            y = 1
-
-            cost = 10
-
-            ai_will_do = {
-                factor = 1
-            }
-
-            available = {
-                
-            }
-
-            bypass = {
-                
-            }
-
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-
-            completion_reward = {
-                if = {
-                    limit = {
-                        has_dlc = "Death or Dishonor"
-                    }
-                    add_ideas = MEX_capital_reserves
-                }
-                if = {
-                    limit = {
-                        NOT = { has_dlc = "Death or Dishonor" }
-                    }
-                    add_political_power = 150
-                }
-            }
-	}
-
-    focus = {
-        id = MEX_focus_aztec_eagles
-            icon = GFX_focus_chi_flying_tigers
-            prerequisite = { focus = MEX_focus_liberty_and_justice_for_all focus = MEX_focus_oil_drilling }
-            relative_position_id = MEX_focus_oil_drilling
-                x = 1
-                y = 3
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-                set_rule = { can_send_volunteers = yes }
-                add_tech_bonus = {
-                    name = air_equipment
-                    bonus = 0.5
-                    uses = 1
-                    category = air_equipment
-                }
-                add_doctrine_cost_reduction = {
-                    name = air_doctrine
-                    cost_reduction = 0.25
-                    uses = 1
-                    category = air_doctrine
-                }
-                add_opinion_modifier = {
-                    target = USA
-                    modifier = aztec_eagles_opinion
-                }
-                USA = {
-                    add_opinion_modifier = {
-                        target = ROOT
-                        modifier = aztec_eagles_opinion
-                    }
-                }
-
-            }
-    }
-
 	focus = {
 		id = MEX_focus_national_bank
 			icon = GFX_focus_usa_reestablish_the_gold_standard
@@ -823,6 +573,256 @@ focus_tree = {
     }
 
 	focus = {
+        id = MEX_focus_oil_drilling
+            icon = GFX_goal_generic_oil_refinery
+            prerequisite = { focus = MEX_focus_abolish_capital_punishment }
+			prerequisite = { focus = MEX_focus_oil_field_expansion }
+            relative_position_id = MEX_focus_abolish_capital_punishment
+                x = 1
+                y = 4
+            cost = 5
+        
+            ai_will_do = {
+                factor = 100
+            }
+    
+            available = {
+                
+            }
+    
+            bypass = {
+                
+            }
+    
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+    
+            completion_reward = {
+                random_owned_controlled_state = {
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+					}
+				}
+            }
+    }
+
+	focus = {
+        id = MEX_focus_aztec_eagles
+            icon = GFX_focus_chi_flying_tigers
+            prerequisite = { focus = MEX_focus_liberty_and_justice_for_all focus = MEX_focus_oil_drilling }
+            relative_position_id = MEX_focus_oil_drilling
+                x = 1
+                y = 3
+            cost = 5
+        
+            ai_will_do = {
+                factor = 100
+            }
+    
+            available = {
+                
+            }
+    
+            bypass = {
+                
+            }
+    
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+    
+            completion_reward = {
+                set_rule = { can_send_volunteers = yes }
+                add_tech_bonus = {
+                    name = air_equipment
+                    bonus = 0.5
+                    uses = 1
+                    category = air_equipment
+                }
+                add_doctrine_cost_reduction = {
+                    name = air_doctrine
+                    cost_reduction = 0.25
+                    uses = 1
+                    category = air_doctrine
+                }
+                add_opinion_modifier = {
+                    target = USA
+                    modifier = aztec_eagles_opinion
+                }
+                USA = {
+                    add_opinion_modifier = {
+                        target = ROOT
+                        modifier = aztec_eagles_opinion
+                    }
+                }
+
+            }
+    }
+
+    focus = {
+        id = MEX_focus_rubber_refineries
+            icon = GFX_focus_generic_rubber
+            prerequisite = { focus = MEX_focus_oil_drilling }
+            relative_position_id = MEX_focus_oil_drilling
+                x = 0
+                y = 2
+            cost = 5
+        
+            ai_will_do = {
+                factor = 100
+            }
+    
+            available = {
+                
+            }
+    
+            bypass = {
+                
+            }
+    
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+    
+            completion_reward = {
+            	modify_building_resources = {
+					building = synthetic_rubber_refinery
+					resource = rubber
+					amount = 10
+        		}
+            }
+    }
+
+    focus = {
+        id = MEX_focus_oil_refineries
+            icon = GFX_goal_generic_oil_refinery
+            prerequisite = { focus = MEX_focus_oil_drilling }
+            relative_position_id = MEX_focus_oil_drilling
+                x = -1
+                y = 1
+            cost = 5
+        
+            ai_will_do = {
+                factor = 100
+            }
+    
+            available = {
+                
+            }
+    
+            bypass = {
+                
+            }
+    
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+    
+            completion_reward = {
+                modify_building_resources = {
+					building = synthetic_refinery
+					resource = oil
+					amount = 10
+        		}
+            }
+    }
+
+    focus = {
+        id = MEX_focus_oil_revenue_reinvestment
+            icon = GFX_goal_generic_construct_civilian
+            prerequisite = { focus =  MEX_focus_oil_drilling focus = MEX_focus_nationalize_the_oil_fields }
+            relative_position_id = MEX_focus_nationalize_the_oil_fields
+                x = -3
+                y = 1
+            cost = 5
+        
+            ai_will_do = {
+                factor = 100
+            }
+    
+            available = {
+                
+            }
+    
+            bypass = {
+                
+            }
+    
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+    
+            completion_reward = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 477
+                            state = 479
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+    }
+
+    focus = {
+		id = MEX_focus_capital_reserves
+            icon = GFX_focus_generic_license_production
+            prerequisite = { focus = MEX_focus_oil_revenue_reinvestment }
+            relative_position_id = MEX_focus_oil_revenue_reinvestment
+            x = 0
+            y = 1
+
+            cost = 10
+
+            ai_will_do = {
+                factor = 1
+            }
+
+            available = {
+                
+            }
+
+            bypass = {
+                
+            }
+
+            cancel_if_invalid = yes
+            continue_if_invalid = no
+            available_if_capitulated = yes
+
+            completion_reward = {
+                if = {
+                    limit = {
+                        has_dlc = "Death or Dishonor"
+                    }
+                    add_ideas = MEX_capital_reserves
+                }
+                if = {
+                    limit = {
+                        NOT = { has_dlc = "Death or Dishonor" }
+                    }
+                    add_political_power = 150
+                }
+            }
+	}
+
+	focus = {
         id = MEX_focus_enforce_the_calles_law
             icon = GFX_goal_generic_forceful_treaty
             prerequisite = { focus = MEX_focus_support_general_cedillo }
@@ -1007,7 +1007,7 @@ focus_tree = {
     
             completion_reward = {
                 custom_effect_tooltip = available_industrial_concern
-			    how_ideas_tooltip = MEX_escuela_de_ingeneria_electrica
+			    show_ideas_tooltip = MEX_escuela_de_ingeneria_electrica
                 add_tech_bonus = {
                     name = electronics
                     bonus = 0.5
@@ -1728,175 +1728,6 @@ focus_tree = {
 				}
             }
     }
-
-	focus = {
-		id = MEX_focus_Army_Industry
-			icon = GFX_focus_generic_tungsten
-			mutually_exclusive = { focus = MEX_focus_Naval_Industry focus = MEX_focus_Aerial_Industry }
-			prerequisite = { focus = MEX_focus_rebuilding_the_army }
-			prerequisite = { focus = MEX_focus_improve_steel_plants }
-			relative_position_id = MEX_focus_rebuilding_the_army
-			x = 1
-			y = 9
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				485 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                	}
-				}
-                478 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-				modify_building_resources = {
-					building = steel_refinery
-					resource = steel
-					amount = 100
-        		}
-				modify_building_resources = {
-					building = steel_refinery
-					resource = tungsten
-					amount = 50
-        		}
-			}
-	}
-
-	focus = {
-		id = MEX_focus_Naval_Industry
-			icon = GFX_focus_generic_steel
-			mutually_exclusive = { focus = MEX_focus_Army_Industry focus = MEX_focus_Aerial_Industry }
-			prerequisite = { focus = MEX_focus_Better_then_the_KRIEGSMARINE }
-			prerequisite = { focus = MEX_focus_improve_steel_plants }
-			relative_position_id = MEX_focus_Better_then_the_KRIEGSMARINE
-			x = 1
-			y = 9
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				485 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                	}
-				}
-                478 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-				modify_building_resources = {
-					building = steel_refinery
-					resource = steel
-					amount = 120
-        		}
-				modify_building_resources = {
-					building = steel_refinery
-					resource = chromium
-					amount = 50
-        		}
-			}
-	}
-
-	focus = {
-		id = MEX_focus_Aerial_Industry
-			icon = GFX_focus_generic_aluminum
-			mutually_exclusive = { focus = MEX_focus_Army_Industry focus = MEX_focus_Naval_Industry }
-			prerequisite = { focus = MEX_focus_Copy_the_Wright_Brothers }
-			prerequisite = { focus = MEX_focus_improve_steel_plants }
-			relative_position_id = MEX_focus_Copy_the_Wright_Brothers
-			x = 2
-			y = 9
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				485 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                	}
-				}
-                478 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-				modify_building_resources = {
-					building = steel_refinery
-					resource = aluminium
-					amount = 240
-        		}
-			}
-	}
 
 	### Military ###
 
@@ -2915,7 +2746,8 @@ focus_tree = {
 						province = 12810
 						level = 2
 						instant_build = yes
-					}				
+					}	
+				}			
 				add_doctrine_cost_reduction = {
 					name = naval_doctrine
 					cost_reduction = 0.5
@@ -2937,7 +2769,6 @@ focus_tree = {
 					}
 				}
 			}
-		}
 	}
 
     focus = {
@@ -3267,6 +3098,175 @@ focus_tree = {
 				}
 				custom_effect_tooltip = available_theorist
 				show_ideas_tooltip = MEX_manuel_perez_trevino
+			}
+	}
+
+	focus = {
+		id = MEX_focus_Army_Industry
+			icon = GFX_focus_generic_tungsten
+			mutually_exclusive = { focus = MEX_focus_Naval_Industry focus = MEX_focus_Aerial_Industry }
+			prerequisite = { focus = MEX_focus_rebuilding_the_army }
+			prerequisite = { focus = MEX_focus_improve_steel_plants }
+			relative_position_id = MEX_focus_rebuilding_the_army
+			x = 1
+			y = 9
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				485 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = steel_refinery
+                        level = 1
+                        instant_build = yes
+                	}
+				}
+                478 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = steel_refinery
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+				modify_building_resources = {
+					building = steel_refinery
+					resource = steel
+					amount = 100
+        		}
+				modify_building_resources = {
+					building = steel_refinery
+					resource = tungsten
+					amount = 50
+        		}
+			}
+	}
+
+	focus = {
+		id = MEX_focus_Naval_Industry
+			icon = GFX_focus_generic_steel
+			mutually_exclusive = { focus = MEX_focus_Army_Industry focus = MEX_focus_Aerial_Industry }
+			prerequisite = { focus = MEX_focus_Better_then_the_KRIEGSMARINE }
+			prerequisite = { focus = MEX_focus_improve_steel_plants }
+			relative_position_id = MEX_focus_Better_then_the_KRIEGSMARINE
+			x = 1
+			y = 9
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				485 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = steel_refinery
+                        level = 1
+                        instant_build = yes
+                	}
+				}
+                478 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = steel_refinery
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+				modify_building_resources = {
+					building = steel_refinery
+					resource = steel
+					amount = 120
+        		}
+				modify_building_resources = {
+					building = steel_refinery
+					resource = chromium
+					amount = 50
+        		}
+			}
+	}
+
+	focus = {
+		id = MEX_focus_Aerial_Industry
+			icon = GFX_focus_generic_aluminum
+			mutually_exclusive = { focus = MEX_focus_Army_Industry focus = MEX_focus_Naval_Industry }
+			prerequisite = { focus = MEX_focus_Copy_the_Wright_Brothers }
+			prerequisite = { focus = MEX_focus_improve_steel_plants }
+			relative_position_id = MEX_focus_Copy_the_Wright_Brothers
+			x = 2
+			y = 9
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				485 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = steel_refinery
+                        level = 1
+                        instant_build = yes
+                	}
+				}
+                478 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = steel_refinery
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+				modify_building_resources = {
+					building = steel_refinery
+					resource = aluminium
+					amount = 240
+        		}
 			}
 	}
 
