@@ -26,7 +26,7 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = GFX_idea_ger_greater_german_reich
+			picture = ger_greater_german_reich
 			
 			modifier = {
 				industrial_capacity_factory = 0.05
@@ -3151,6 +3151,12 @@ ideas = {
 				module_add_on_rockets_design_cost_factor = -1
 				module_sloped_armor_design_cost_factor = -1
 				module_apcr_round_design_cost_factor = -1
+				module_tank_light_td_1_design_cost_factor = -1
+				module_tank_light_td_2_design_cost_factor = -1
+				module_tank_medium_td_1_design_cost_factor = -1
+				module_tank_medium_td_2_design_cost_factor = -1
+				module_expanded_fuel_tank_design_cost_factor = -1
+				module_tank_heavy_turret_3_design_cost_factor = -1
 				# module__design_cost_factor = -1
 				# module__design_cost_factor = -1
 				# module__design_cost_factor = -1

@@ -23,7 +23,7 @@ st_country_powers = {
 	}	
 	effects = {
 		observer_click = {
-			owner = { set_temp_variable = { ROOT.marks = this}	WST = {change_tag_from =var:marks}	}			
+			owner = { set_temp_variable = { ROOT.marks = this}	HST = {change_tag_from =var:marks}	}			
 		}
 		change_host_nation_click = {
 			ROOT = { clr_country_flag = host }

@@ -1849,7 +1849,7 @@ country_event = {
 	id = generic.28
 	title = generic.26.t
 	desc = generic.26.d
-	
+
 	picture = GFX_report_event_czech_soldiers_01
 
 	is_triggered_only = yes

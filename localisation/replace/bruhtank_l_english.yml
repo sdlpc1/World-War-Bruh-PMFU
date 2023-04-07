@@ -50,6 +50,7 @@
  EQ_MOD_CAT_tank_armament_tier_heavy_3_TITLE:0 "§6Advanced§! §RHeavy§! Armaments"
  EQ_MOD_CAT_tank_armament_tier_light_td_TITLE:0 "§YLight§! §1TD§! Armaments"
  EQ_MOD_CAT_tank_armament_tier_medium_td_TITLE:0 "§OMedium§! §1TD§! Armaments"
+ EQ_MOD_CAT_tank_armament_tier_heavy_td_TITLE:0 "§OHeavy§! §1TD§! Armaments"
  EQ_MOD_CAT_tank_armament_tier_aa_TITLE:0 "§0AA§! Armaments"
  EQ_MOD_CAT_tank_armament_tier_heavy_aa_TITLE:0 "§RHeavy§! §0AA§! Armaments"
  EQ_MOD_CAT_tank_armament_tier_arty_TITLE:0 "§7Artillery§! Armaments"

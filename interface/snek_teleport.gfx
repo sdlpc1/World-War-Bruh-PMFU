@@ -7,7 +7,7 @@ spriteTypes = {
     }
     
     ## IDEAS
-    spriteType = {
+    spriteType = { #
 		name = "GFX_idea_russian_closed_eco"
 		texturefile = "gfx/interface/ideas/idea_russian_closed_eco.dds"
 	}	

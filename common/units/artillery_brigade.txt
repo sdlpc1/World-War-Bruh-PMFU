@@ -282,7 +282,7 @@ sub_units = {
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.5
-		supply_consumption = 0.4
+		supply_consumption = 0.3
 		supply_consumption_factor = 0.06
 		
 		maximum_speed = -0.5

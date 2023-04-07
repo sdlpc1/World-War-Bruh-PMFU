@@ -80,7 +80,6 @@ operations = {
 		}
 
 		remove_effect = {
-			set_global_flag = SOV_winter_war_win
 			SOV = {
 				white_peace = FIN
 				transfer_state = 146
@@ -156,7 +155,6 @@ operations = {
 		}
 		days_remove = 7
 		remove_effect = {
-			set_global_flag = SOV_winter_war_loss
 			hidden_effect = {
 				MON = {
 					remove_ideas = MON_brothers_war

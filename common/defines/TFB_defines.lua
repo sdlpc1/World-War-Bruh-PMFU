@@ -498,6 +498,26 @@ NDefines.NOperatives.PROPAGANDA_SUB_NETWORK_STRENGTH_FACTOR = 0				-- Multiplied
 NDefines.NOperatives.PROPAGANDA_DEFENSE_FACTOR = 0					-- Multiplied to the target's defense before being subtracted from the Stability/WarSupport drift caused by an operative
 NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0				-- Multiplied to the Stability/WarSupport drift values of each operative after the one with the greatest values. The process is done separatly for Stability and WarSupport
 NDefines.NOperatives.PROPAGANDA_DAILY_XP_GAIN = 0
+NDefines.NOperatives.OPERATIVE_MISSION_DETECTION_CHANCE_FACTOR = 	{ 				-- Factor multiplied to the detection chance of an agent on mission before the offsets:
+	0.0, --NoMission
+	0.0, --BuildIntelNetwork
+	0.0, --QuietIntelNetwork
+	0.0, --CounterIntelligence
+	0.0, --RootOutResistance
+	0.0, --BoostIdeology
+	0.0, --ControlTrade
+	0.0, --DiplomaticPressure
+	0.0  --Propaganda
+	}
+NDefines.NOperatives.INTEL_NETWORK_MIN_SUB_NETWORK_SIZE_FOR_DETECTION = 100
+NDefines.NOperatives.INTEL_NETWORK_MIN_NATIONAL_COVERAGE_FOR_DETECTION = 1
+NDefines.NOperatives.INTEL_NETWORK_MIN_SUB_NETWORK_NATIONAL_COVERAGE_FOR_DETECTION = 1
+NDefines.NOperatives.INTEL_NETWORK_MIN_SUB_NETWORK_STRENGTH_FOR_DETECTION = 1
+NDefines.NOperatives.INTEL_NETWORK_INTELLIGENCE_AGENCY_DEFENSE_TO_DETECTION_FACTOR = 0
+NDefines.NOperatives.INTEL_NETWORK_NATIONAL_COVERAGE_TO_DETECTION_CHANCE_FACTOR = 0
+NDefines.NOperatives.INTEL_NETWORK_SUB_NETWORK_STRENGTH_TO_DETECTION_CHANCE_FACTOR = 0
+NDefines.NOperatives.INTEL_NETWORK_SUB_NETWORK_NATIONAL_COVERAGE_TO_DETECTION_CHANCE_ = 0
+NDefines.NOperatives.INTEL_NETWORK_DETECTION_GLOBAL_FACTOR = 0
 
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_FOCUS_TREE = 0.7 -- min required intel to focus tree with taken focuses
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4  -- min required intel to show currently focus

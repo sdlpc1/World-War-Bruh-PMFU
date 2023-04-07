@@ -237,7 +237,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 4
 		
-		build_cost_ic = 26
+		build_cost_ic = 16
 		resources = {
 			tungsten = 10
 			steel = 30
@@ -264,7 +264,7 @@ equipments = {
 		breakthrough = 5
 		soft_attack = 30
 		
-		build_cost_ic = 28
+		build_cost_ic = 18
 	}
 	
 	heavy_artillery_equipment_3 = {
@@ -279,7 +279,7 @@ equipments = {
 		breakthrough = 6
 		soft_attack = 34
 		
-		build_cost_ic = 30
+		build_cost_ic = 20
 	}
 	
 	heavy_artillery_equipment_4 = {
@@ -294,7 +294,7 @@ equipments = {
 		breakthrough = 7
 		soft_attack = 40
 		
-		build_cost_ic = 32
+		build_cost_ic = 22
 	}
 
 	# Nebelwerfers!

@@ -7,7 +7,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 			
-			picture = GFX_idea_ITA_mob_nav_workers
+			picture = ITA_mob_nav_workers
 			
 			removal_cost = -1
 			

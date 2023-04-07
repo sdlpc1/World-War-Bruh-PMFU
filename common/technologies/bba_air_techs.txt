@@ -788,7 +788,7 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_type = air
 		xp_unlock_cost = 0
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			small_bomb_bay
 		}
@@ -831,7 +831,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			cluster_bombs
 		}
@@ -869,7 +869,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			torpedo_mounting_small
 			torpedo_mounting_medium
@@ -912,7 +912,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			torpedo_mounting2_small
 			torpedo_mounting2_medium
@@ -955,7 +955,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			torpedo_mounting3_small
 			torpedo_mounting3_medium
@@ -994,7 +994,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			large_bomb_bay
 		}
@@ -1037,7 +1037,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			large_bomb
 		}
@@ -1080,7 +1080,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			guided_anti_ship_missile
 		}
@@ -1129,7 +1129,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 0.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			recon_camera
 		}
@@ -1164,7 +1164,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			light_mg_2x
 			light_mg_4x
@@ -1212,7 +1212,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			heavy_mg_2x
 			heavy_mg_4x
@@ -1263,7 +1263,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			aircraft_cannon_1_1x
 			aircraft_cannon_1_2x
@@ -1314,7 +1314,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			aircraft_cannon_2_1x
 			aircraft_cannon_2_2x
@@ -1323,7 +1323,7 @@ technologies = {
 			ammunition_3
 			rocket_rails
 		}
-		research_cost = 0.5
+		research_cost = 1.5
 		start_year = 1942
 		folder = {
 			name = bba_air_techs_folder
@@ -1361,7 +1361,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			engine_1_1x
 			engine_1_2x
@@ -1436,7 +1436,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			engine_2_1x
 			engine_2_2x
@@ -1494,7 +1494,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			engine_3_1x
 			engine_3_2x
@@ -1559,7 +1559,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			engine_4_1x
 			engine_4_2x
@@ -1614,7 +1614,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		enable_equipment_modules = {
 			drop_tanks
 		}
@@ -1671,7 +1671,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		research_cost = 0.5
 		start_year = 1939
 
@@ -1690,7 +1690,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		
 		enable_equipment_modules = {
 			dive_brakes_small
@@ -1729,7 +1729,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.50
+		xp_research_bonus = 0.75
 		research_cost = 0.5
 		start_year = 1939
 		folder = {

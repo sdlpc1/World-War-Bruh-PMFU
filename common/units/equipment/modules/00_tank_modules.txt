@@ -1094,6 +1094,7 @@ equipment_modules = {
 				tank_armament_tier_heavy_1
 				tank_armament_tier_heavy_2
 				tank_armament_tier_heavy_3
+				tank_armament_tier_heavy_td
 			}
 		}
 		
@@ -1124,6 +1125,7 @@ equipment_modules = {
 				tank_armament_tier_heavy_1
 				tank_armament_tier_heavy_2
 				tank_armament_tier_heavy_3
+				tank_armament_tier_heavy_td
 				tank_armament_tier_heavy_aa
 			}
 		}
@@ -1198,6 +1200,7 @@ equipment_modules = {
 		abbreviation = "hmg"
 		category = tank_armament_tier_tiny_1
 		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_tank
 
 		add_stats = {
 			soft_attack = 8
@@ -1842,8 +1845,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 14
-			hard_attack = 36
+			soft_attack = 4
+			hard_attack = 27
 			ap_attack = 55
 			build_cost_ic = 6.6
 		}
@@ -1864,8 +1867,8 @@ equipment_modules = {
 		parent = tank_light_td_1
 
 		add_stats = {
-			soft_attack = 16
-			hard_attack = 42
+			soft_attack = 6
+			hard_attack = 32
 			ap_attack = 77
 			build_cost_ic = 9
 		}
@@ -1887,8 +1890,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 20
-			hard_attack = 46
+			soft_attack = 5
+			hard_attack = 35
 			ap_attack = 81
 			build_cost_ic = 10
 		}
@@ -1912,8 +1915,8 @@ equipment_modules = {
 		parent = tank_medium_td_1
 
 		add_stats = {
-			soft_attack = 22
-			hard_attack = 58
+			soft_attack = 7
+			hard_attack = 44
 			ap_attack = 104
 			build_cost_ic = 9.2
 		}
@@ -2056,7 +2059,7 @@ equipment_modules = {
 		abbreviation = "hv1"
 		category = tank_armament_tier_heavy_1
 		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = anti_tank
+		# allow_equipment_type = anti_tank
 		forbid_equipment_type = amphibious 
 
 		add_stats = {
@@ -2079,7 +2082,7 @@ equipment_modules = {
 		abbreviation = "hv2"
 		category = tank_armament_tier_heavy_3
 		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = anti_tank
+		# allow_equipment_type = anti_tank
 		forbid_equipment_type = amphibious 
 		parent = tank_heavy_gun_1
 
@@ -2127,15 +2130,16 @@ equipment_modules = {
 
 	tank_heavy_hv_gun_1 = { ###8
 		abbreviation = "hh1"
-		category = tank_armament_tier_heavy_2
+		category = tank_armament_tier_heavy_td
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
-		forbid_equipment_type = amphibious 
+		# forbid_equipment_type = amphibious 
+		forbid_equipment_type_exact_match = armor
 		parent = tank_heavy_gun_1
 
 		add_stats = {
-			soft_attack = 44
-			hard_attack = 66
+			soft_attack = 11
+			hard_attack = 50
 			ap_attack = 99
 			breakthrough = -10
 			build_cost_ic = 15
@@ -2153,15 +2157,16 @@ equipment_modules = {
 
 	tank_heavy_hv_gun_2 = { ###9
 		abbreviation = "hh2"
-		category = tank_armament_tier_heavy_3
+		category = tank_armament_tier_heavy_td
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
-		forbid_equipment_type = amphibious 
+		# forbid_equipment_type = amphibious 
+		forbid_equipment_type_exact_match = armor
 		parent = tank_heavy_hv_gun_1
 
 		add_stats = {
-			soft_attack = 56
-			hard_attack = 78
+			soft_attack = 14
+			hard_attack = 59
 			ap_attack = 121
 			breakthrough = -10
 			build_cost_ic = 18
@@ -2443,6 +2448,7 @@ equipment_modules = {
 		abbreviation = "thmg"
 		category = tank_secondary_turret
 		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_tank
 
 		add_stats = {
 			soft_attack = 6
@@ -2577,6 +2583,7 @@ equipment_modules = {
 		abbreviation = "mg"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_tank
 
 		add_stats = {
 			soft_attack = 4
@@ -2591,6 +2598,7 @@ equipment_modules = {
 		abbreviation = "mg"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_tank
 
 		add_stats = {
 			soft_attack = 6
@@ -2607,6 +2615,7 @@ equipment_modules = {
 		abbreviation = "hfl"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_tank
 
 		add_stats = {
 			soft_attack = 10
@@ -2636,6 +2645,7 @@ equipment_modules = {
 		abbreviation = "rok"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_tank
 
 		add_stats = {
 			soft_attack = 6
