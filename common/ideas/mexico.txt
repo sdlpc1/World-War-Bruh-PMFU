@@ -518,7 +518,7 @@ ideas = {
 		# 		air_mission_xp_gain_factor = 0.2
 		# 		air_training_xp_gain_factor = 0.25
 		# 	}
-		}
+		# }
 		
 		MEX_Invest_in_submarine_warfare = {
 		
