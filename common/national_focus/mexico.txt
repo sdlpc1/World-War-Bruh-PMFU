@@ -1995,7 +1995,12 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_leg_day }
+				NOT = { has_completed_focus = MEX_focus_play_their_game }
+				NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
+				NOT = { has_completed_focus = MEX_focus_lets_start_hiking }
+				NOT = { has_completed_focus = MEX_focus_cold_shower }
+				NOT = { has_completed_focus = MEX_focus_Beginning_of_the_Chungus }
 			}
 
 			bypass = {
@@ -2126,7 +2131,7 @@ focus_tree = {
     focus = {
 		id = MEX_focus_Start_the_Bombing
 			icon = GFX_focus_generic_multi_role_aircraft
-			mutually_exclusive = { focus = MEX_focus_Support_the_ground_forces focus = MEX_focus_Based_Navy_1 }
+			mutually_exclusive = { focus = MEX_focus_Support_the_ground_forces }
 			prerequisite = { focus = MEX_focus_Copy_the_Wright_Brothers } 
 			relative_position_id = MEX_focus_Copy_the_Wright_Brothers
 			x = -3
@@ -2179,7 +2184,12 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_leg_day }
+				NOT = { has_completed_focus = MEX_focus_play_their_game }
+				NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
+				NOT = { has_completed_focus = MEX_focus_lets_start_hiking }
+				NOT = { has_completed_focus = MEX_focus_cold_shower }
+				NOT = { has_completed_focus = MEX_focus_Beginning_of_the_Chungus }
 			}
 
 			bypass = {
@@ -2423,7 +2433,8 @@ focus_tree = {
 			}
 
 			available = {
-				
+				has_army_experience > 50
+				has_naval_experience > 50
 			}
 
 			bypass = {
@@ -2435,9 +2446,11 @@ focus_tree = {
 			available_if_capitulated = yes
 
 			completion_reward = {
-				add_ideas = MEX_naval_aviation_cooperation # Cost: 50 Air and Naval XP
+				add_ideas = MEX_naval_aviation_cooperation
+				army_experience = -50
+				navy_experience = -50
 			}
-	}
+	} 
 
     focus = {
 		id = MEX_focus_Air_innovation
@@ -2486,7 +2499,12 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_leg_day }
+				NOT = { has_completed_focus = MEX_focus_play_their_game }
+				NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
+				NOT = { has_completed_focus = MEX_focus_lets_start_hiking }
+				NOT = { has_completed_focus = MEX_focus_cold_shower }
+				NOT = { has_completed_focus = MEX_focus_Beginning_of_the_Chungus }
 			}
 
 			bypass = {
@@ -2594,7 +2612,11 @@ focus_tree = {
 			}
 
 			available = {
-				
+				limit = {
+					END = {
+						   has_completed_focus = ENG_british_commonwealth_air_training_plan
+					}
+			   }
 			}
 
 			bypass = {
@@ -2662,7 +2684,6 @@ focus_tree = {
     focus = {
 		id = MEX_focus_Based_Navy_1
 			icon = GFX_goal_generic_amphibious_assault
-        	mutually_exclusive = { focus = MEX_focus_Start_the_Bombing }
 			prerequisite = { focus = MEX_focus_Better_then_the_KRIEGSMARINE }
 			relative_position_id = MEX_focus_Better_then_the_KRIEGSMARINE
 			x = 0
@@ -2937,7 +2958,11 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_leg_day }
+				NOT = { has_completed_focus = MEX_focus_play_their_game }
+				NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
+				NOT = { has_completed_focus = MEX_focus_Aviation_College }
+				NOT = { has_completed_focus = MEX_focus_CAS_practise }
 			}
 
 			bypass = {
@@ -2969,7 +2994,11 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_leg_day }
+				NOT = { has_completed_focus = MEX_focus_play_their_game }
+				NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
+				NOT = { has_completed_focus = MEX_focus_Aviation_College }
+				NOT = { has_completed_focus = MEX_focus_CAS_practise }
 			}
 
 			bypass = {
@@ -3091,7 +3120,9 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_leg_day }
+				NOT = { has_completed_focus = MEX_focus_play_their_game }
+				NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
 			}
 
 			bypass = {
@@ -3245,6 +3276,7 @@ focus_tree = {
 		id = MEX_focus_Preparation_for_new_Year
 			icon = GFX_focus_secret_rearmament
 			prerequisite = { focus = MEX_focus_rebuilding_the_army }
+			prerequisite = { focus = MEX_focus_Better_then_the_KRIEGSMARINE }
 			relative_position_id = MEX_focus_rebuilding_the_army
 			x = 4
 			y = 1
@@ -3256,7 +3288,7 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_Copy_the_Wright_Brothers }
 			}
 
 			bypass = {
@@ -3420,7 +3452,8 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_Copy_the_Wright_Brothers }
+				NOT = { has_completed_focus = MEX_focus_Floating_Airfield }
 			}
 
 			bypass = {
@@ -3552,7 +3585,9 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_Beginning_of_the_Chungus }
+				NOT = { has_completed_focus = MEX_focus_Floating_Airfield }
+				NOT = { has_completed_focus = MEX_focus_Copy_the_Wright_Brothers }
 			}
 
 			bypass = {
@@ -3668,7 +3703,6 @@ focus_tree = {
 					technology = heavy_artillery4
 					technology = heavy_artillery5
 					technology = heavy_artillery6
-					technology = heavy_artillery7
 				}
 				add_ideas = MEX_better_hv_arty
 			}
@@ -3690,7 +3724,7 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_Better_then_the_KRIEGSMARINE }
 			}
 
 			bypass = {
@@ -3706,13 +3740,13 @@ focus_tree = {
 					name = artillery
 					bonus = 0.5
 					uses = 1
-					technology = artillery
+					category = artillery
 				}
 				add_tech_bonus = {
 					name = infantry_weapons
 					bonus = 0.5
 					uses = 1
-					technology = infantry_weapons
+					category = infantry_weapons
 				}
 				create_corps_commander = {
 					name = "Muro de Hierro"
@@ -3759,14 +3793,14 @@ focus_tree = {
 					name = infantry_weapons
 					bonus = 0.5
 					uses = 1
-					technology = infantry_weapons
+					category = infantry_weapons
 				}
 				add_tech_bonus = {
 					name = infantry_weapons
 					bonus = 0.5
 					ahead = 1
 					uses = 1
-					technology = infantry_weapons
+					category = infantry_weapons
 				}
 			}
 	}
@@ -3802,7 +3836,7 @@ focus_tree = {
 					name = support_tech
 					bonus = 0.5
 					uses = 2
-					technology = support_tech
+					category = support_tech
 				}
 				set_technology = { inf_radio1 = 1 }
 			}
@@ -3840,7 +3874,7 @@ focus_tree = {
 					name = artillery
 					bonus = 0.5
 					uses = 1
-					technology = artillery
+					category = artillery
 				}
 				add_ideas = MEX_reinforce_the_army
 			}
@@ -3878,7 +3912,7 @@ focus_tree = {
 					name = infantry_weapons
 					bonus = 0.5
 					uses = 1
-					technology = infantry_weapons
+					category = infantry_weapons
 				}
 				add_ideas = MEX_defence_effort
 			}
@@ -3900,7 +3934,7 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_Better_then_the_KRIEGSMARINE }
 			}
 
 			bypass = {
@@ -3913,17 +3947,19 @@ focus_tree = {
 
 			completion_reward = {
 				add_tech_bonus = {
-					name = motorized_equipment
-					bonus = 0.75
+					name = cat_mechanized_equipment
 					uses = 1
-					technology = motorized_equipment
+					ahead_reduction = 1
+					bonus = 1
+					category = cat_mechanized_equipment
 				}
 				add_tech_bonus = {
-					name = cat_anti_tank
+					name = anti_tank
 					bonus = 0.5
-					ahead = 1
+					ahead_reduction =  = 1
 					uses = 1
-					technology = cat_anti_tank
+					category = artillery
+					category = support_tech
 				}
 			}
 	}
@@ -4016,7 +4052,7 @@ focus_tree = {
 			}
 
 			available = {
-				
+				NOT = { has_completed_focus = MEX_focus_Better_then_the_KRIEGSMARINE }
 			}
 
 			bypass = {
@@ -4032,7 +4068,7 @@ focus_tree = {
 					name = armor
 					bonus = 0.5
 					uses = 2
-					technology = armor
+					category = armor
 				}
 				create_corps_commander = {
 					name = "Cascara de Patata"
@@ -4079,7 +4115,7 @@ focus_tree = {
 					bonus = 0.5
 					ahead = 1
 					uses = 1
-					technology = armor
+					category = armor
 				}
 				custom_effect_tooltip = available_designer
 				show_ideas_tooltip = MEX_tga
