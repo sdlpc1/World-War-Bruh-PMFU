@@ -491,33 +491,33 @@ ideas = {
 			}
 		}
 
-		ENG_british_commonwealth_air_training_plan = {
+		# ENG_british_commonwealth_air_training_plan = {
 
-			picture = generic_air_bonus
+		# 	picture = generic_air_bonus
 		
-			allowed = {
-				always = no
-			}
+		# 	allowed = {
+		# 		always = no
+		# 	}
 
-			available = {
-				OR = {
-					tag = ENG
-					is_subject_of = ENG
-				}
-			}
+		# 	available = {
+		# 		OR = {
+		# 			tag = ENG
+		# 			is_subject_of = ENG
+		# 		}
+		# 	}
 
-			allowed_civil_war = {
-				always = yes
-			}
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
 			
-			removal_cost = -1
+		# 	removal_cost = -1
 
-			modifier = {
-				experience_gain_air = 0.1
-				experience_gain_air_factor = 0.2
-				air_mission_xp_gain_factor = 0.2
-				air_training_xp_gain_factor = 0.25
-			}
+		# 	modifier = {
+		# 		experience_gain_air = 0.1
+		# 		experience_gain_air_factor = 0.2
+		# 		air_mission_xp_gain_factor = 0.2
+		# 		air_training_xp_gain_factor = 0.25
+		# 	}
 		}
 		
 		MEX_Invest_in_submarine_warfare = {
