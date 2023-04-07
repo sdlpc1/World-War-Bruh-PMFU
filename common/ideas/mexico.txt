@@ -16,6 +16,33 @@ ideas = {
 			}
 		}
 		
+		Industrial_Development = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+
+		}
+
+		More_Rescources = {
+
+			picture = ast_all_in
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+
 		synarchist_support_surge = {
 			
 			allowed = {
@@ -337,6 +364,46 @@ ideas = {
 				}
 				heavy_artillery_equipment = {
 					soft_attack = 0.1
+					instant = yes
+				}
+			}
+		}
+
+		mex_combined_bomber_offensive = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			equipment_bonus = {
+				strat_bomber_equipment = {
+					ground_attack = 0.25
+					instant = yes
+				}	
+			}
+		}
+
+		MEX_cas_artillery = {
+		
+			picture = strategic_bombing_focus
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				cas_bomber = {
+					air_ground_attack = 0.15
 					instant = yes
 				}
 			}
@@ -1035,6 +1102,29 @@ ideas = {
 			}
 		}
 		
+		mex_heavy_aircraft_manufacturer = {
+
+			name = mex_heavy_aircraft_manufacturer
+			
+			allowed = {
+				original_tag = MEX
+			}
+
+			available = {
+				has_completed_focus = MEX_focus_School_for_Bombing
+			}
+
+			picture = generic_air_manufacturer_2
+			
+			cost = 150
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+
 		MEX_douglas_aircraft_company = {
 		
 			name = douglas_aircraft_company
@@ -1055,6 +1145,7 @@ ideas = {
 
 			traits = { CAS_manufacturer }
 		}
+
 	}
 
 	industrial_concern = {
@@ -1210,7 +1301,6 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
-				heavy_artillery = 0.15
 			}
 			
 			equipment_bonus = {
