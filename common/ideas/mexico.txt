@@ -697,7 +697,7 @@ ideas = {
 			}
 
 			modifier = {
-				max_dig_in = 5
+				max_dig_in = 2
 			}
 		}
 
@@ -1398,7 +1398,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = MEX_focus_gulf_coast_naval_yards
+				# has_completed_focus = MEX_focus_gulf_coast_naval_yards
 			}
 			
 			research_bonus = {
@@ -1419,7 +1419,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = MEX_focus_pacific_coast_naval_yards
+				# has_completed_focus = MEX_focus_pacific_coast_naval_yards
 			}
 			
 			research_bonus = {
@@ -1445,7 +1445,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = MEX_focus_aviation_workshops
+				# has_completed_focus = MEX_focus_aviation_workshops
 			}
 			
 			research_bonus = {
@@ -1523,7 +1523,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = MEX_focus_royal_dutch_shell
+				# has_completed_focus = MEX_focus_royal_dutch_shell
 			}
 			
 			research_bonus = {

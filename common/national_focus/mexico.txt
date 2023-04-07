@@ -17,39 +17,9 @@ focus_tree = {
 	continuous_focus_position = { x = 950 y = 1500 }
 
 	focus = {
-		id = MEX_focus_national_bank
-			icon = GFX_focus_usa_reestablish_the_gold_standard
-				x = 1
-				y = 2
-			cost = 5
-
-			ai_will_do = {
-				factor = 100
-			}
-
-			available = {
-				
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				custom_effect_tooltip = available_industrial_concern
-				show_ideas_tooltip = MEX_banco_de_mexico		
-			}
-
-	}
-
-	focus = {
         id = MEX_focus_plan_of_agua_prieta
             icon = GFX_focus_hol_the_foundations_of_defense
-            relative_position_id = MEX_focus_national_bank
+            # relative_position_id = MEX_focus_national_bank
                 x = -6
                 y = 0
             cost = 5
@@ -74,6 +44,37 @@ focus_tree = {
                 add_stability = 0.05
             }
     }
+
+	focus = {
+		id = MEX_focus_national_bank
+			icon = GFX_focus_usa_reestablish_the_gold_standard
+				x = 6
+				y = 2
+			cost = 5
+			relative_position_id = MEX_focus_plan_of_agua_prieta
+
+			ai_will_do = {
+				factor = 100
+			}
+
+			available = {
+				
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				custom_effect_tooltip = available_industrial_concern
+				show_ideas_tooltip = MEX_banco_de_mexico		
+			}
+
+	}
 
 	focus = {
         id = MEX_focus_exile_calles
@@ -137,7 +138,8 @@ focus_tree = {
                 add_stability = 0.1
                     if = {
                         limit = {
-                            has_completed_focus = MEX_focus_professional_army
+                            # has_completed_focus = MEX_focus_professional_army
+							always = no
                         }
                         create_corps_commander = {
                             name = "José Gonzalo Escobar"
@@ -230,7 +232,8 @@ focus_tree = {
             completion_reward = {
                 if = {
                     limit = {
-                        has_completed_focus = MEX_focus_professional_army
+                        # has_completed_focus = MEX_focus_professional_army
+						always = no
                     }
                     create_field_marshal = {
                         name = "Plutarco E. Calles"
@@ -306,7 +309,8 @@ focus_tree = {
                 custom_effect_tooltip = tooltip_mexico_cedillo_will_be_placated
                 if = {
                     limit = {
-                        has_completed_focus = MEX_focus_professional_army
+                        # has_completed_focus = MEX_focus_professional_army
+						always = no
                     }
                     create_field_marshal = {
                         name = "Saturnino Cedillo Martínez"
@@ -622,7 +626,7 @@ focus_tree = {
             prerequisite = { focus = MEX_focus_liberty_and_justice_for_all focus = MEX_focus_oil_drilling }
             relative_position_id = MEX_focus_oil_drilling
                 x = 1
-                y = 3
+                y = 2
             cost = 5
         
             ai_will_do = {
@@ -675,7 +679,7 @@ focus_tree = {
             prerequisite = { focus = MEX_focus_oil_drilling }
             relative_position_id = MEX_focus_oil_drilling
                 x = 0
-                y = 2
+                y = 1
             cost = 5
         
             ai_will_do = {
@@ -708,7 +712,7 @@ focus_tree = {
             icon = GFX_goal_generic_oil_refinery
             prerequisite = { focus = MEX_focus_oil_drilling }
             relative_position_id = MEX_focus_oil_drilling
-                x = -1
+                x = -2
                 y = 1
             cost = 5
         
@@ -882,7 +886,8 @@ focus_tree = {
             completion_reward = {
                 if = {
                     limit = {
-                        has_completed_focus = MEX_focus_professional_army
+                        # has_completed_focus = MEX_focus_professional_army
+						always = no
                     }
                     create_corps_commander = {
                         name = "Pablo González Garza"
@@ -1129,7 +1134,7 @@ focus_tree = {
 			icon = GFX_goal_generic_consumer_goods
 			prerequisite = { focus = MEX_focus_national_bank }
 			relative_position_id = MEX_focus_national_bank
-				x = -2
+				x = -1.5
 				y = 1
 			cost = 5
 
@@ -1153,6 +1158,22 @@ focus_tree = {
 				custom_effect_tooltip = available_political_advisor
 				show_ideas_tooltip = MEX_luis_montes_de_oca
 				MEX_decrease_cedillo_tension = yes
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 	}
 
@@ -1183,76 +1204,79 @@ focus_tree = {
 	
 			completion_reward = {
 				add_ideas = MEX_strike_breaking
-			}
-
-	}
-
-	focus = {
-		id = MEX_focus_industrial_development
-			icon = GFX_focus_generic_industry_2
-			prerequisite = { focus = MEX_focus_strike_breaking }
-			relative_position_id = MEX_focus_strike_breaking
-				x = 0
-				y = 1
-			cost = 5
-	
-			ai_will_do = {
-				factor = 100
-			}
-
-			available = {
-				
-			}
-	
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
 				add_ideas = Industrial_Development
+				add_stability = -0.05
+			    add_political_power = 200
 			}
+
 	}
 
-    focus = {
-        id = MEX_focus_end_land_reform
-            icon = GFX_goal_generic_forceful_treaty
-            prerequisite = { focus = MEX_focus_industrial_development }
-            relative_position_id = MEX_focus_industrial_development
-                x = 0
-                y = 1
-            cost = 5
+	# focus = {
+	# 	id = MEX_focus_industrial_development
+	# 		icon = GFX_focus_generic_industry_2
+	# 		prerequisite = { focus = MEX_focus_strike_breaking }
+	# 		relative_position_id = MEX_focus_strike_breaking
+	# 			x = 0
+	# 			y = 1
+	# 		cost = 5
+	
+	# 		ai_will_do = {
+	# 			factor = 100
+	# 		}
+
+	# 		available = {
+				
+	# 		}
+	
+	# 		bypass = {
+				
+	# 		}
+
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
+
+	# 		completion_reward = {
+	# 			add_ideas = Industrial_Development
+	# 		}
+	# }
+
+    # focus = {
+    #     id = MEX_focus_end_land_reform
+    #         icon = GFX_goal_generic_forceful_treaty
+    #         prerequisite = { focus = MEX_focus_industrial_development }
+    #         relative_position_id = MEX_focus_industrial_development
+    #             x = 0
+    #             y = 1
+    #         cost = 5
         
-            ai_will_do = {
-                factor = 100
-            }
+    #         ai_will_do = {
+    #             factor = 100
+    #         }
 
-            available = {
+    #         available = {
                 
-            }
+    #         }
     
-            bypass = {
+    #         bypass = {
                 
-            }
+    #         }
 
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
+    #         cancel_if_invalid = yes
+    #         continue_if_invalid = no
+    #         available_if_capitulated = yes
 
-            completion_reward = {
-                add_stability = -0.05
-			    add_political_power = 200
-            }
-    }
+    #         completion_reward = {
+    #             add_stability = -0.05
+	# 		    add_political_power = 200
+    #         }
+    # }
 
     focus = {
         id = MEX_focus_privatization
             icon = GFX_focus_mex_privatisation
-            prerequisite = { focus = MEX_focus_end_land_reform }
-            relative_position_id = MEX_focus_end_land_reform
+            prerequisite = { focus = MEX_focus_strike_breaking }
+            relative_position_id = MEX_focus_strike_breaking
                 x = 0
                 y = 1
             cost = 5
@@ -1287,6 +1311,22 @@ focus_tree = {
                     }
                     add_extra_state_shared_building_slots = 1
                 }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
             }
     }
 
@@ -1295,7 +1335,7 @@ focus_tree = {
             icon = GFX_goal_generic_construct_civilian
             prerequisite = { focus = MEX_focus_national_bank }
             relative_position_id = MEX_focus_national_bank
-                x = 1
+                x = 1.5
                 y = 1
             cost = 5
         
@@ -1366,36 +1406,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-            }
-    }
-
-    focus = {
-        id = MEX_focus_peripheral_infrastructure
-            icon = GFX_goal_generic_construct_infrastructure
-            prerequisite = { focus = MEX_focus_rural_infrastructure }
-            relative_position_id = MEX_focus_rural_infrastructure
-                x = 0
-                y = 1
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-                every_state = {
+				every_state = {
                     limit = {
                         is_owned_by = ROOT
                         is_controlled_by = ROOT
@@ -1414,36 +1425,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-            }
-    }
-
-    focus = {
-        id = MEX_focus_urban_development
-            icon = GFX_goal_generic_construct_infrastructure
-            prerequisite = { focus = MEX_focus_peripheral_infrastructure }
-            relative_position_id = MEX_focus_peripheral_infrastructure
-                x = 0
-                y = 1
-            cost = 5
-        
-            ai_will_do = {
-                factor = 100
-            }
-    
-            available = {
-                
-            }
-    
-            bypass = {
-                
-            }
-    
-            cancel_if_invalid = yes
-            continue_if_invalid = no
-            available_if_capitulated = yes
-    
-            completion_reward = {
-                277 = {
+				277 = {
                     add_building_construction = {
                         type = infrastructure
                         level = 2
@@ -1471,14 +1453,135 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
             }
     }
+
+    # focus = {
+    #     id = MEX_focus_peripheral_infrastructure
+    #         icon = GFX_goal_generic_construct_infrastructure
+    #         prerequisite = { focus = MEX_focus_rural_infrastructure }
+    #         relative_position_id = MEX_focus_rural_infrastructure
+    #             x = 0
+    #             y = 1
+    #         cost = 5
+        
+    #         ai_will_do = {
+    #             factor = 100
+    #         }
+    
+    #         available = {
+                
+    #         }
+    
+    #         bypass = {
+                
+    #         }
+    
+    #         cancel_if_invalid = yes
+    #         continue_if_invalid = no
+    #         available_if_capitulated = yes
+    
+    #         completion_reward = {
+    #             every_state = {
+    #                 limit = {
+    #                     is_owned_by = ROOT
+    #                     is_controlled_by = ROOT
+    #                     OR = {
+    #                         state = 476
+    #                         state = 475
+    #                         state = 474
+    #                         state = 484
+    #                         state = 482
+    #                         state = 483
+    #                     }
+    #                 }
+    #                 add_building_construction = {
+    #                     type = infrastructure
+    #                     level = 1
+    #                     instant_build = yes
+    #                 }
+    #             }
+    #         }
+    # }
+
+    # focus = {
+    #     id = MEX_focus_urban_development
+    #         icon = GFX_goal_generic_construct_infrastructure
+    #         prerequisite = { focus = MEX_focus_peripheral_infrastructure }
+    #         relative_position_id = MEX_focus_peripheral_infrastructure
+    #             x = 0
+    #             y = 1
+    #         cost = 5
+        
+    #         ai_will_do = {
+    #             factor = 100
+    #         }
+    
+    #         available = {
+                
+    #         }
+    
+    #         bypass = {
+                
+    #         }
+    
+    #         cancel_if_invalid = yes
+    #         continue_if_invalid = no
+    #         available_if_capitulated = yes
+    
+    #         completion_reward = {
+    #             277 = {
+    #                 add_building_construction = {
+    #                     type = infrastructure
+    #                     level = 2
+    #                     instant_build = yes
+    #                 }
+    #             }
+    #             477 = {
+    #                 add_building_construction = {
+    #                     type = infrastructure
+    #                     level = 1
+    #                     instant_build = yes
+    #                 }
+    #             }
+    #             478 = {
+    #                 add_building_construction = {
+    #                     type = infrastructure
+    #                     level = 1
+    #                     instant_build = yes
+    #                 }
+    #             }
+    #             485 = {
+    #                 add_building_construction = {
+    #                     type = infrastructure
+    #                     level = 1
+    #                     instant_build = yes
+    #                 }
+    #             }
+    #         }
+    # }
 
     focus = {
         id = MEX_focus_improved_resource_gain
             icon = GFX_goal_generic_construction2
-            prerequisite = { focus = MEX_focus_urban_development }
-            relative_position_id = MEX_focus_urban_development
+            prerequisite = { focus = MEX_focus_rural_infrastructure }
+            relative_position_id = MEX_focus_rural_infrastructure
                 x = 0
                 y = 1
             cost = 5
@@ -1500,7 +1603,23 @@ focus_tree = {
             available_if_capitulated = yes
     
             completion_reward = {
-
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				
 				add_ideas = More_Rescources
 
                 add_tech_bonus = {
@@ -3102,12 +3221,146 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MEX_focus_leg_day
+			icon = GFX_goal_generic_allies_build_infantry
+			mutually_exclusive = { focus = MEX_focus_lets_start_rolling focus = MEX_focus_play_their_game }
+			prerequisite = { focus = MEX_focus_rebuilding_the_army }
+			relative_position_id = MEX_focus_rebuilding_the_army
+			x = -2
+			y = 1
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				NOT = { has_completed_focus = MEX_focus_Better_then_the_KRIEGSMARINE }
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_tech_bonus = {
+					name = artillery
+					bonus = 0.5
+					uses = 1
+					category = artillery
+				}
+				add_tech_bonus = {
+					name = infantry_weapons
+					bonus = 0.5
+					uses = 1
+					category = infantry_weapons
+				}
+				create_corps_commander = {
+					name = "Muro de Hierro"
+					gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
+					traits = { infantry_leader inflexible_strategist trait_cautious engineer_officer }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 2
+				}
+				add_ideas = MEX_conscription_campaign
+			}
+	}
+
+    focus = {
+		id = MEX_focus_better_weapons
+			icon = GFX_goal_generic_allies_build_infantry
+			prerequisite = { focus = MEX_focus_leg_day }
+			relative_position_id = MEX_focus_leg_day
+			x = 0
+			y = 1
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_tech_bonus = {
+					name = infantry_weapons
+					bonus = 0.5
+					uses = 1
+					category = infantry_weapons
+				}
+				add_tech_bonus = {
+					name = infantry_weapons
+					bonus = 0.5
+					ahead_reduction  = 1
+					uses = 1
+					category = infantry_weapons
+				}
+			}
+	}
+
+	focus = {
+		id = MEX_focus_better_support
+			icon = GFX_goal_generic_allies_build_infantry
+			prerequisite = { focus = MEX_focus_better_weapons }
+			relative_position_id = MEX_focus_better_weapons
+			x = 0
+			y = 1
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_tech_bonus = {
+					name = support_tech
+					bonus = 0.5
+					uses = 2
+					category = support_tech
+				}
+				set_technology = { inf_radio1 = 1 }
+			}
+	}
+
+	focus = {
 		id = MEX_depoliticised_army
 			icon = GFX_goal_generic_army_tanks
 			prerequisite = { focus = MEX_focus_Happy_New_Year focus = MEX_focus_army_expansion_programm focus = MEX_focus_better_support focus = MEX_focus_on_top_of_the_world}
 			relative_position_id = MEX_focus_better_support 
 			x = 3
-			y = 3
+			y = 1
 
 			cost = 5
 
@@ -3183,12 +3436,12 @@ focus_tree = {
 				modify_building_resources = {
 					building = steel_refinery
 					resource = steel
-					amount = 100
+					amount = 30
         		}
 				modify_building_resources = {
 					building = steel_refinery
 					resource = tungsten
-					amount = 50
+					amount = 20
         		}
 			}
 	}
@@ -3241,12 +3494,12 @@ focus_tree = {
 				modify_building_resources = {
 					building = steel_refinery
 					resource = steel
-					amount = 120
+					amount = 40
         		}
 				modify_building_resources = {
 					building = steel_refinery
 					resource = chromium
-					amount = 50
+					amount = 30
         		}
 			}
 	}
@@ -3299,7 +3552,7 @@ focus_tree = {
 				modify_building_resources = {
 					building = steel_refinery
 					resource = aluminium
-					amount = 240
+					amount = 40
         		}
 			}
 	}
@@ -3560,10 +3813,10 @@ focus_tree = {
 
 			completion_reward = {
 				add_tech_bonus = {
-					name = cat_special_forces_generic
+					name = MEX_focus_my_first_arm_floats
 					bonus = 0.5
 					uses = 2
-					technology = cat_special_forces_generic
+					category = cat_special_forces_generic
 				}
 				add_ideas = MEX_cheap_sfeq
 			}
@@ -3638,15 +3891,12 @@ focus_tree = {
 					technology = heavy_artillery2
 					technology = heavy_artillery3 
 					technology = heavy_artillery4
-					technology = heavy_artillery5
-					technology = heavy_artillery6
-					technology = heavy_artillery7
 				}
 				add_tech_bonus = {
 					name = mountaineers_tech
 					bonus = 0.75
 					uses = 2
-					technology = mountaineers_tech
+					category = mountaineers_tech
 				}
 				create_corps_commander = {
 					name = "Dólar de Montañismo"
@@ -3689,10 +3939,10 @@ focus_tree = {
 
 			completion_reward = {
 				add_tech_bonus = {
-					name = cat_special_forces_generic
+					name = MEX_focus_interessting_rocks
 					bonus = 0.5
 					uses = 2
-					technology = cat_special_forces_generic
+					category = cat_special_forces_generic
 				}
 				add_ideas = MEX_cheap_sfeq
 			}
@@ -3733,144 +3983,8 @@ focus_tree = {
 					technology = heavy_artillery2
 					technology = heavy_artillery3 
 					technology = heavy_artillery4
-					technology = heavy_artillery5
-					technology = heavy_artillery6
 				}
 				add_ideas = MEX_better_hv_arty
-			}
-	}
-
-    focus = {
-		id = MEX_focus_leg_day
-			icon = GFX_goal_generic_allies_build_infantry
-			mutually_exclusive = { focus = MEX_focus_lets_start_rolling focus = MEX_focus_play_their_game }
-			prerequisite = { focus = MEX_focus_rebuilding_the_army }
-			relative_position_id = MEX_focus_rebuilding_the_army
-			x = -2
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				NOT = { has_completed_focus = MEX_focus_Better_then_the_KRIEGSMARINE }
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				add_tech_bonus = {
-					name = artillery
-					bonus = 0.5
-					uses = 1
-					category = artillery
-				}
-				add_tech_bonus = {
-					name = infantry_weapons
-					bonus = 0.5
-					uses = 1
-					category = infantry_weapons
-				}
-				create_corps_commander = {
-					name = "Muro de Hierro"
-					gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
-					traits = { infantry_leader inflexible_strategist trait_cautious engineer_officer }
-					skill = 4
-					attack_skill = 2
-					defense_skill = 4
-					planning_skill = 3
-					logistics_skill = 2
-				}
-				add_ideas = MEX_conscription_campaign
-			}
-	}
-
-    focus = {
-		id = MEX_focus_better_weapons
-			icon = GFX_goal_generic_allies_build_infantry
-			prerequisite = { focus = MEX_focus_leg_day }
-			relative_position_id = MEX_focus_leg_day
-			x = 0
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				add_tech_bonus = {
-					name = infantry_weapons
-					bonus = 0.5
-					uses = 1
-					category = infantry_weapons
-				}
-				add_tech_bonus = {
-					name = infantry_weapons
-					bonus = 0.5
-					ahead_reduction  = 1
-					uses = 1
-					category = infantry_weapons
-				}
-			}
-	}
-
-    focus = {
-		id = MEX_focus_better_support
-			icon = GFX_goal_generic_allies_build_infantry
-			prerequisite = { focus = MEX_focus_better_weapons }
-			relative_position_id = MEX_focus_better_weapons
-			x = 0
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				add_tech_bonus = {
-					name = support_tech
-					bonus = 0.5
-					uses = 2
-					category = support_tech
-				}
-				set_technology = { inf_radio1 = 1 }
 			}
 	}
 

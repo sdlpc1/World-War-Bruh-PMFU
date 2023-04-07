@@ -1,6 +1,4 @@
-﻿### Vichy ###
-
-focus_tree = {
+﻿focus_tree = {
 	id = vichy_french_focus
 	
 	country = {
@@ -11,10 +9,33 @@ focus_tree = {
 			tag = FRA
 		}
 	}
-
-    continuous_focus_position = { x = 0 y = 1225 }
 	
 	default = no
+	focus = {
+		id = VIC_bugifx
+		x = 25
+		y = 1
+		
+		cost = 9999
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
 
 	focus = {
 		id = VIC_Establishing_Vichy
@@ -800,7 +821,39 @@ focus_tree = {
     
         completion_reward = {
             add_ideas = VIC_defensive_generals
-            recruit_character = VIC_maxime_giroux
+            create_corps_commander = {
+                    name="Maxime Giroux"
+                    # advisor={
+                    # 	slot = high_command
+                    # 	idea_token = courtney_hodges
+                    # 	ledger = army 
+                    # 	allowed = {
+                    # 		original_tag  = USA
+                    # 	}
+                    # 	traits  = {
+                    # 		army_commando_2 
+                    # 	}
+                    # 	cost = 100
+                    # 	ai_will_do  = {
+                    # 		factor  = 1.000
+                    # 	}
+                    # }
+                    # portraits={
+                    # 	army={
+                    # 		small="GFX_idea_courtney_hodges"
+                    # 	}
+                    # 	army={
+                    # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+                    # 	}
+                    # }
+                        traits={ armor_officer inflexible_strategist old_guard urban_assault_specialist ambusher }
+                        skill=3
+                        attack_skill=3
+                        defense_skill=4
+                        planning_skill=3
+                        logistics_skill=4
+                        legacy_id=-1
+            }
             every_army_leader = {
 				add_defense = 1
 			}
@@ -875,7 +928,39 @@ focus_tree = {
     
         completion_reward = {
             add_ideas = VIC_offensive_generals
-            recruit_character = VIC_serge_beauchene
+            create_corps_commander = {
+                    name="Serge Beauchêne"
+                    # advisor={
+                    # 	slot = high_command
+                    # 	idea_token = courtney_hodges
+                    # 	ledger = army 
+                    # 	allowed = {
+                    # 		original_tag  = USA
+                    # 	}
+                    # 	traits  = {
+                    # 		army_commando_2 
+                    # 	}
+                    # 	cost = 100
+                    # 	ai_will_do  = {
+                    # 		factor  = 1.000
+                    # 	}
+                    # }
+                    # portraits={
+                    # 	army={
+                    # 		small="GFX_idea_courtney_hodges"
+                    # 	}
+                    # 	army={
+                    # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+                    # 	}
+                    # }
+                        traits={ armor_officer desert_fox brilliant_strategist trickster }
+                        skill=3
+                        attack_skill=4
+                        defense_skill=3
+                        planning_skill=3
+                        logistics_skill=4
+                        legacy_id=-1
+            }
             every_army_leader = {
 				add_attack = 1
 			}
@@ -982,7 +1067,39 @@ focus_tree = {
     
         completion_reward = {
             add_ideas = VIC_logistics_generals
-            recruit_character = VIC_arnaude_archambault
+            create_corps_commander = {
+                    name="Arnaude Archambault"
+                    # advisor={
+                    # 	slot = high_command
+                    # 	idea_token = courtney_hodges
+                    # 	ledger = army 
+                    # 	allowed = {
+                    # 		original_tag  = USA
+                    # 	}
+                    # 	traits  = {
+                    # 		army_commando_2 
+                    # 	}
+                    # 	cost = 100
+                    # 	ai_will_do  = {
+                    # 		factor  = 1.000
+                    # 	}
+                    # }
+                    # portraits={
+                    # 	army={
+                    # 		small="GFX_idea_courtney_hodges"
+                    # 	}
+                    # 	army={
+                    # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+                    # 	}
+                    # }
+                        traits={ armor_officer winter_specialist ranger fortress_buster }
+                        skill=3
+                        attack_skill=3
+                        defense_skill=3
+                        planning_skill=3
+                        logistics_skill=5
+                        legacy_id=-1
+            }
             every_army_leader = {
 				add_logistics = 1
 			}
@@ -1602,8 +1719,72 @@ focus_tree = {
     
         completion_reward = {
             add_ideas = VIC_axis_generals
-            recruit_character = VIC_elodie_deforest
-            recruit_character = VIC_fernand_clement
+            create_corps_commander = {
+                    name="Élodie Deforest"
+                    # advisor={
+                    # 	slot = high_command
+                    # 	idea_token = courtney_hodges
+                    # 	ledger = army 
+                    # 	allowed = {
+                    # 		original_tag  = USA
+                    # 	}
+                    # 	traits  = {
+                    # 		army_commando_2 
+                    # 	}
+                    # 	cost = 100
+                    # 	ai_will_do  = {
+                    # 		factor  = 1.000
+                    # 	}
+                    # }
+                    # portraits={
+                    # 	army={
+                    # 		small="GFX_idea_courtney_hodges"
+                    # 	}
+                    # 	army={
+                    # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+                    # 	}
+                    # }
+                        traits={ infantry_leader trickster skilled_staffer old_guard }
+                        skill=4
+                        attack_skill=6
+                        defense_skill=4
+                        planning_skill=6
+                        logistics_skill=4
+                        legacy_id=-1
+            }
+            create_corps_commander = {
+                    name="Fernand Clément"
+                    # advisor={
+                    # 	slot = high_command
+                    # 	idea_token = courtney_hodges
+                    # 	ledger = army 
+                    # 	allowed = {
+                    # 		original_tag  = USA
+                    # 	}
+                    # 	traits  = {
+                    # 		army_commando_2 
+                    # 	}
+                    # 	cost = 100
+                    # 	ai_will_do  = {
+                    # 		factor  = 1.000
+                    # 	}
+                    # }
+                    # portraits={
+                    # 	army={
+                    # 		small="GFX_idea_courtney_hodges"
+                    # 	}
+                    # 	army={
+                    # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+                    # 	}
+                    # }
+                        traits={ infantry_leader war_hero inflexible_strategist old_guard trait_cautious organizer }
+                        skill=4
+                        attack_skill=7
+                        defense_skill=5
+                        planning_skill=4
+                        logistics_skill=5
+                        legacy_id=-1
+            }
             every_army_leader = {
 				add_defense = 1
                 add_attack = 1

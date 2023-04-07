@@ -195,10 +195,10 @@ MEX_category_military_issues = {
 			
 			OR = { # Domestic violence or antagonised world powers
 				has_completed_focus = MEX_focus_triumph_over_the_cristeros
-				has_completed_focus = MEX_focus_the_red_shirts
-				has_completed_focus = MEX_focus_international_proletarianism
-				has_completed_focus = MEX_focus_ejido_worker_militias
-				has_completed_focus = MEX_focus_bolivarian_alliance
+				# has_completed_focus = MEX_focus_the_red_shirts
+				# has_completed_focus = MEX_focus_international_proletarianism
+				# has_completed_focus = MEX_focus_ejido_worker_militias
+				# has_completed_focus = MEX_focus_bolivarian_alliance
 			}
 		}
 
@@ -239,10 +239,10 @@ MEX_category_military_issues = {
 			
 			OR = { # Domestic violence or antagonised world powers
 				has_completed_focus = MEX_focus_triumph_over_the_cristeros
-				has_completed_focus = MEX_focus_the_red_shirts
-				has_completed_focus = MEX_focus_international_proletarianism
-				has_completed_focus = MEX_focus_ejido_worker_militias
-				has_completed_focus = MEX_focus_bolivarian_alliance
+				# has_completed_focus = MEX_focus_the_red_shirts
+				# has_completed_focus = MEX_focus_international_proletarianism
+				# has_completed_focus = MEX_focus_ejido_worker_militias
+				# has_completed_focus = MEX_focus_bolivarian_alliance
 			}
 		}
 
@@ -258,10 +258,10 @@ MEX_category_military_issues = {
 				NOT = {
 					OR = {
 						has_completed_focus = MEX_focus_triumph_over_the_cristeros
-						has_completed_focus = MEX_focus_the_red_shirts
-						has_completed_focus = MEX_focus_international_proletarianism
-						has_completed_focus = MEX_focus_ejido_worker_militias
-						has_completed_focus = MEX_focus_bolivarian_alliance
+						# has_completed_focus = MEX_focus_the_red_shirts
+						# has_completed_focus = MEX_focus_international_proletarianism
+						# has_completed_focus = MEX_focus_ejido_worker_militias
+						# has_completed_focus = MEX_focus_bolivarian_alliance
 					}
 				}
 				has_stability > 0.6
@@ -318,10 +318,10 @@ MEX_category_military_issues = {
 
 			OR = { # Dissent from the people or elite
 				has_completed_focus = MEX_focus_purge_the_bureaucracy
-				has_completed_focus = MEX_focus_womens_suffrage
-				has_completed_focus = MEX_focus_end_land_reform
-				has_completed_focus = MEX_focus_royal_dutch_shell
-				has_completed_focus = MEX_focus_reform_the_cristero_guard
+				# has_completed_focus = MEX_focus_womens_suffrage
+				has_completed_focus = MEX_focus_rural_infrastructure
+				# has_completed_focus = MEX_focus_royal_dutch_shell
+				# has_completed_focus = MEX_focus_reform_the_cristero_guard
 			}
 		}
 
@@ -362,10 +362,10 @@ MEX_category_military_issues = {
 
 			OR = { # Dissent from the people or elite
 				has_completed_focus = MEX_focus_purge_the_bureaucracy
-				has_completed_focus = MEX_focus_womens_suffrage
-				has_completed_focus = MEX_focus_end_land_reform
-				has_completed_focus = MEX_focus_royal_dutch_shell
-				has_completed_focus = MEX_focus_reform_the_cristero_guard
+				# has_completed_focus = MEX_focus_womens_suffrage
+				has_completed_focus = MEX_focus_rural_infrastructure
+				# has_completed_focus = MEX_focus_royal_dutch_shell
+				# has_completed_focus = MEX_focus_reform_the_cristero_guard
 			}
 		}
 
@@ -381,10 +381,10 @@ MEX_category_military_issues = {
 				NOT = {
 					OR = {
 						has_completed_focus = MEX_focus_purge_the_bureaucracy
-						has_completed_focus = MEX_focus_womens_suffrage
-						has_completed_focus = MEX_focus_end_land_reform
-						has_completed_focus = MEX_focus_royal_dutch_shell
-						has_completed_focus = MEX_focus_reform_the_cristero_guard
+						# has_completed_focus = MEX_focus_womens_suffrage
+						has_completed_focus = MEX_focus_rural_infrastructure
+						# has_completed_focus = MEX_focus_royal_dutch_shell
+						# has_completed_focus = MEX_focus_reform_the_cristero_guard
 					}
 				}
 				has_stability > 0.6
@@ -537,9 +537,7 @@ MEX_category_military_issues = {
 		visible = {
 			is_subject = no
 
-			has_completed_focus = MEX_focus_spanish_civil_war_refugees
-
-			NOT = { has_completed_focus = MEX_focus_falangist_veterans }
+			always = no
 
 			FROM = {
 				OR = {
@@ -566,7 +564,6 @@ MEX_category_military_issues = {
 		}
 		
 		available = {
-			has_completed_focus = MEX_focus_support_spains_loyalists
 
 			has_equipment = {
 				convoy > 2
@@ -635,9 +632,7 @@ MEX_category_military_issues = {
 		visible = {
 			is_subject = no
 
-			has_completed_focus = MEX_focus_spanish_civil_war_refugees
-
-			NOT = { has_completed_focus = MEX_focus_support_spains_loyalists }
+			always = no
 
 			FROM = {
 				has_government = fascism
@@ -658,7 +653,6 @@ MEX_category_military_issues = {
 		}
 
 		available = {
-			has_completed_focus = MEX_focus_falangist_veterans
 
 			has_equipment = {
 				convoy > 2
@@ -717,7 +711,8 @@ MEX_category_military_issues = {
 		}
 		
 		visible = {
-			has_completed_focus = MEX_focus_interior_defence_plan
+			# has_completed_focus = MEX_focus_interior_defence_plan
+			always = no
 		}
 		
 		ai_will_do = {
@@ -744,7 +739,8 @@ MEX_category_military_issues = {
 		}
 		
 		visible = {
-			has_completed_focus = MEX_focus_coastal_defence_plan
+			# has_completed_focus = MEX_focus_coastal_defence_plan
+			always = no
 		}
 		
 		ai_will_do = {
@@ -1289,7 +1285,7 @@ MEX_category_church_power = {
 		}
 		
 		available = {
-			has_completed_focus = MEX_focus_antidisestablishmentarianism
+			# has_completed_focus = MEX_focus_antidisestablishmentarianism
 			NOT = { has_idea = MEX_church_power_5 }
 
 		}
@@ -1356,7 +1352,7 @@ MEX_category_church_power = {
 		
 		available = {
 			has_war_support < 0.95
-			has_completed_focus = MEX_focus_rewrite_the_constitution
+			# has_completed_focus = MEX_focus_rewrite_the_constitution
 			OR = {
 				has_idea = MEX_church_power_4
 				has_idea = MEX_church_power_5
@@ -1431,7 +1427,7 @@ MEX_category_church_power = {
 		
 		available = {
 			has_stability < 0.95
-			has_completed_focus = MEX_focus_rewrite_the_constitution
+			# has_completed_focus = MEX_focus_rewrite_the_constitution
 			OR = {
 				has_idea = MEX_church_power_4
 				has_idea = MEX_church_power_5
@@ -1589,10 +1585,11 @@ MEX_category_hispanic_solidarity = {
 		}
 		
 		target_root_trigger = {
-			OR = {
-				has_completed_focus = MEX_focus_hispanic_alliance
-				has_completed_focus = MEX_focus_bolivarian_alliance
-			}
+			# OR = {
+			# 	has_completed_focus = MEX_focus_hispanic_alliance
+			# 	has_completed_focus = MEX_focus_bolivarian_alliance
+			# }
+			always = no
 		}
 
 		target_trigger = {
@@ -1627,7 +1624,7 @@ MEX_category_hispanic_solidarity = {
 						original_tag = BRA
 					}
 				}
-				has_completed_focus = MEX_focus_invite_brazil
+				# has_completed_focus = MEX_focus_invite_brazil
 			}
 		}
 
