@@ -821,8 +821,8 @@ ideas = {
 			}
 			
 			modifier = {
-				military_leader_cost_factor = 0.5
-				planning_speed = -0.1
+				military_leader_cost_factor = -0.2
+				planning_speed = 0.2
 			}
 		}
 		

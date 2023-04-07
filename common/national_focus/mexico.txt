@@ -3102,10 +3102,44 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MEX_depoliticised_army
+			icon = GFX_goal_generic_army_tanks
+			prerequisite = { focus = MEX_focus_Happy_New_Year focus = MEX_focus_army_expansion_programm focus = MEX_focus_better_support focus = MEX_focus_on_top_of_the_world}
+			relative_position_id = MEX_focus_better_support 
+			x = 3
+			y = 3
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = MEX_politicised_army
+					add_idea = MEX_politicised_army_2
+				}
+			}
+	}
+
+	focus = {
 		id = MEX_focus_Army_Industry
 			icon = GFX_focus_generic_tungsten
 			mutually_exclusive = { focus = MEX_focus_Naval_Industry focus = MEX_focus_Aerial_Industry }
-			prerequisite = { focus = MEX_focus_rebuilding_the_army }
+			prerequisite = { focus = MEX_depoliticised_army }
 			prerequisite = { focus = MEX_focus_improve_steel_plants }
 			relative_position_id = MEX_focus_rebuilding_the_army
 			x = 1
