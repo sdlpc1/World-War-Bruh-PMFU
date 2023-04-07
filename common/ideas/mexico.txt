@@ -598,7 +598,6 @@ ideas = {
 			
 			modifier = {
 				naval_invasion_prep_speed = 0.2
-				instant = yes
 			}
 		}
 
@@ -614,7 +613,6 @@ ideas = {
 			
 			modifier = {
 				invasion_preparation = -0.3
-				instant = yes
 			}
 		}
 
@@ -630,7 +628,6 @@ ideas = {
 			
 			modifier = {
 				shore_bombardment_bonus = 0.3
-				instant = yes
 			}
 		}
 
@@ -646,7 +643,6 @@ ideas = {
 			
 			modifier = {
 				naval_invasion_capacity = 10
-				instant = yes
 			}
 		}
 
