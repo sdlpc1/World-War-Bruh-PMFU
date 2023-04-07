@@ -12,7 +12,7 @@ focus_tree = {
 		}
 	}
 
-    continuous_focus_position = { x = 950 y = 150 }
+    continuous_focus_position = { x = 0 y = 1225 }
 	
 	default = no
 
@@ -40,6 +40,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+            add_political_power = 300
+            add_stability = 0.1
 			# 300pp
             # 10% stability
 		}
@@ -51,7 +53,7 @@ focus_tree = {
         mutually_exclusive = { focus = VIC_Beginning_of_Reunification }
         prerequisite = { focus = VIC_Establishing_Vichy }
         relative_position_id = VIC_Establishing_Vichy
-		x = -1
+		x = -2
 		y = 1
 		
 		cost = 5
@@ -72,6 +74,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+            add_political_power = 150
 			# 150 pp
 		}
 	}
@@ -81,7 +84,7 @@ focus_tree = {
         icon = GFX_goal_generic_demand_territory
         prerequisite = { focus = VIC_Accept_Axis_Claims }
         relative_position_id = VIC_Accept_Axis_Claims
-        x = 0
+        x = 1
         y = 1
         
         cost = 5
@@ -102,6 +105,8 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            reduce_occupation_cost_effect = yes
+            reduce_occupation_cost_effect = yes
             # Occupation cost -10% consumer goods
         }
     }
@@ -132,6 +137,39 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_converted_dockyards_for_civilians
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
             #-100% construction speed for dockyards
             # -90% dockyard output
             # + 4 civs
@@ -143,36 +181,6 @@ focus_tree = {
         icon = GFX_goal_generic_demand_territory
         prerequisite = { focus = VIC_Reduce_the_costs_of_Occupation }
         relative_position_id = VIC_Reduce_the_costs_of_Occupation
-        x = 0
-        y = 1
-        
-        cost = 5
-    
-        ai_will_do = {
-            factor = 1
-        }
-        
-        available = {
-    
-        }
-        
-        bypass = {
-    
-        }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-    
-        completion_reward = {
-            # Remove occupations cost
-        }
-    }
-
-    focus = {
-        id = VIC_Adjust_the_Industry
-        icon = GFX_goal_generic_demand_territory
-        prerequisite = { focus = VIC_End_the_payments focus = VIC_Reduce_Occupation }
-        relative_position_id = VIC_End_the_payments
         x = 1
         y = 1
         
@@ -194,21 +202,17 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
-            #10% civ/mil construction
-            # +2 civs
-            # +1 steel ref
-            # add partial mob
+            # Remove occupations cost
+            remove_occupation_cost_effect = yes
         }
     }
 
     focus = {
-        id = VIC_Strengthen_the_Industry
+        id = VIC_Adjust_the_Industry
         icon = GFX_goal_generic_demand_territory
-        prerequisite = { focus = VIC_Adjust_the_Industry }
-        prerequisite = { focus = VIC_End_the_payments }
-        prerequisite = { focus = VIC_Convert_Dockyards_for_Civilians }
-        relative_position_id = VIC_Adjust_the_Industry
-        x = -1
+        prerequisite = { focus = VIC_End_the_payments focus = VIC_Reduce_Occupation }
+        relative_position_id = VIC_End_the_payments
+        x = 0.5
         y = 1
         
         cost = 5
@@ -229,13 +233,114 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_adjusting_the_industry
+            add_ideas = partial_economic_mobilisation
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = steel_refinery
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = steel_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+            #10% civ/mil construction
+            # +2 civs
+            # +1 steel ref
+            # add partial mob
+        }
+    }
+
+    focus = {
+        id = VIC_Strengthen_the_Industry
+        icon = GFX_goal_generic_demand_territory
+        prerequisite = { focus = VIC_Adjust_the_Industry }
+        prerequisite = { focus = VIC_End_the_payments }
+        prerequisite = { focus = VIC_Convert_Dockyards_for_Civilians }
+        relative_position_id = VIC_Adjust_the_Industry
+        x = -1.5
+        y = 1
+        
+        cost = 5
+    
+        ai_will_do = {
+            factor = 1
+        }
+        
+        available = {
+    
+        }
+        
+        bypass = {
+    
+        }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+    
+        completion_reward = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
             # +2 civs
             # +2 mils
         }
     }
 
     focus = {
-        id = VIC_Rally_for_Support
+        id = VIC_Improved_Production_Effort
         icon = GFX_goal_generic_demand_territory
         prerequisite = { focus = VIC_Strengthen_the_Industry }
         relative_position_id = VIC_Strengthen_the_Industry
@@ -260,17 +365,21 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_stability = 0.10
+            add_war_support = 0.10
+            add_ideas = VIC_improved_production_effort
             # 10% Stability
             # 10% war support
-            # become independent
+            # 10% factory output
+            # 10% mil construction
         }
     }
 
     focus = {
         id = VIC_Protection_from_the_Sky
         icon = GFX_goal_generic_demand_territory
-        prerequisite = { focus = VIC_Rally_for_Support }
-        relative_position_id = VIC_Rally_for_Support
+        prerequisite = { focus = VIC_Improved_Production_Effort }
+        relative_position_id = VIC_Improved_Production_Effort
         x = 0
         y = 1
         
@@ -292,6 +401,28 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            every_state = {
+				limit = {
+					is_core_of = VIC
+                    is_controlled_by = VIC
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+            every_state = {
+				limit = {
+					is_core_of = VIC
+                    is_controlled_by = VIC
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
             # +2 state aa in mainland france
             # +2 airports in mainland france
         }
@@ -323,6 +454,48 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            VIC = {
+                transfer_units_fraction = {
+                    target = GER
+                    size = 1
+                    stockpile_ratio = 0
+                    army_ratio = 0
+                    navy_ratio = 1.0
+                    air_ratio = 0
+                }
+            }
             # +4 civs
             # germany gets vichy navy
         }
@@ -336,7 +509,7 @@ focus_tree = {
         prerequisite = { focus = VIC_Protection_from_the_Sky focus = VIC_Protect_the_French_People }
         relative_position_id = VIC_Hand_over_the_Navy
         x = 0
-        y = 6
+        y = 4
         
         cost = 5
     
@@ -356,6 +529,20 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            every_state = {
+                limit = {
+                    naval_base > 0
+                    is_controlled_by = ROOT
+                }
+                set_building_level  = {
+                    type = coastal_bunker
+                    province = {
+                        all_provinces = yes
+                    }
+                    level = 2
+                    instant_build = yes
+                }
+            }
             # +2 coastal fort in Every owned state with port
         }
     }
@@ -386,6 +573,7 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            army_experience = 50
             # 50 army XP
         }
     }
@@ -416,6 +604,7 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_concentrate_on_tanks
             # 10% research bonus Tanks
             # 10% reliability 
             # 10% speed
@@ -450,6 +639,17 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            army_experience = 100
+            add_tech_bonus = {
+				name = VIC_Produce_our_own_Tanks
+				bonus = 0.75
+                ahead_reduction = 0.5
+				uses = 1
+				category = armor
+			}
+            custom_effect_tooltip = available_designer
+			show_ideas_tooltip = VIC_renault
+            add_ideas = VIC_renault
             # 100 army XP
             # 0.5 year ahead of time 75% bonus armor
             # HV Tank designer
@@ -483,6 +683,22 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            army_experience = 50
+            add_tech_bonus = {
+				name = VIC_Learn_from_the_germans
+				bonus = 0.50
+				uses = 1
+				category = armor
+			}
+            add_relation_modifier = {
+				target = GER
+				modifier = ROM_license_german_equipment
+			}
+            country_event = vichy.1
+			add_to_tech_sharing_group = axis_research
+            custom_effect_tooltip = vic_unlock_tank_share_tt
+            set_country_flag = VIC_join_tank_sharing
+            # Join axis research program
             # 50 army XP
             # 20% license production speed of germany
             # become part of the german tank sharing
@@ -517,6 +733,39 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_ramped_up_prodution
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = steel_refinery
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = steel_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
             # 10% factory output
             # +2 mils
             # +1 steel ref
@@ -529,7 +778,7 @@ focus_tree = {
         mutually_exclusive = { focus = VIC_Support_in_Africa focus = VIC_Prepare_for_the_Eastern_Front }
         prerequisite = { focus = VIC_Ramp_up_the_Production }
         relative_position_id = VIC_Ramp_up_the_Production
-        x = -1
+        x = -2
         y = 1
         
         cost = 5
@@ -550,6 +799,11 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_defensive_generals
+            recruit_character = VIC_maxime_giroux
+            every_army_leader = {
+				add_defense = 1
+			}
             # All and new generals gain +1 defense
             # New general:
                 #• Armor officer
@@ -586,6 +840,7 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_better_protection
             # 10% defense
             # 20% planing speed
             # 10% speed
@@ -598,7 +853,7 @@ focus_tree = {
         mutually_exclusive = { focus = VIC_Protect_the_Mainland focus = VIC_Prepare_for_the_Eastern_Front }
         prerequisite = { focus = VIC_Ramp_up_the_Production }
         relative_position_id = VIC_Ramp_up_the_Production
-        x = 0
+        x = 2
         y = 1
         
         cost = 5
@@ -619,6 +874,11 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_offensive_generals
+            recruit_character = VIC_serge_beauchene
+            every_army_leader = {
+				add_attack = 1
+			}
             # All and new generals gain +1 attack
             # New general:
                 # • Armor officer
@@ -685,6 +945,11 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_equipment_to_stockpile = {
+                type = convoy
+                amount = 150
+                producer = VIC
+            }
             # Gain 150 convoys
         }
     }
@@ -695,7 +960,7 @@ focus_tree = {
         mutually_exclusive = { focus = VIC_Support_in_Africa focus = VIC_Protect_the_Mainland }
         prerequisite = { focus = VIC_Ramp_up_the_Production }
         relative_position_id = VIC_Ramp_up_the_Production
-        x = 1
+        x = 0
         y = 1
         
         cost = 5
@@ -716,6 +981,11 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_logistics_generals
+            recruit_character = VIC_arnaude_archambault
+            every_army_leader = {
+				add_logistics = 1
+			}
             # All and new generals gain +1 logistic
             # New general:
                # • Armor officer
@@ -751,6 +1021,7 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_tanks_prepared_for_barb
             # Less cold attrition
             # -10% supply consumption
         }
@@ -762,37 +1033,6 @@ focus_tree = {
         prerequisite = { focus = VIC_Upgrade_tanks_for_Barb focus = VIC_Better_Protection }
         relative_position_id = VIC_Upgrade_tanks_for_Barb
         x = -1
-        y = -2
-        
-        cost = 5
-    
-        ai_will_do = {
-            factor = 1
-        }
-        
-        available = {
-    
-        }
-        
-        bypass = {
-    
-        }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-    
-        completion_reward = {
-            # add 30 trains
-        }
-    }
-
-    focus = {
-        id = VIC_Beginning_of_Reunification
-        icon = GFX_goal_generic_demand_territory
-        mutually_exclusive = { focus = VIC_Accept_Axis_Claims }
-        prerequisite = { focus = VIC_Establishing_Vichy }
-        relative_position_id = VIC_Establishing_Vichy
-        x = 1
         y = 1
         
         cost = 5
@@ -813,6 +1053,46 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_equipment_to_stockpile = {
+                type = train_equipment_1
+                amount = 150
+                producer = VIC
+            }
+            # add 30 trains
+        }
+    }
+
+    focus = {
+        id = VIC_Beginning_of_Reunification
+        icon = GFX_goal_generic_demand_territory
+        mutually_exclusive = { focus = VIC_Accept_Axis_Claims }
+        prerequisite = { focus = VIC_Establishing_Vichy }
+        relative_position_id = VIC_Establishing_Vichy
+        x = 2
+        y = 1
+        
+        cost = 5
+    
+        ai_will_do = {
+            factor = 1
+        }
+        
+        available = {
+    
+        }
+        
+        bypass = {
+    
+        }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+    
+        completion_reward = {
+            add_political_power = 100
+            GER = {
+                country_event = vichy.2
+            }
             # 100pp
             # unlocks decision to gain some french states reducing independence from germany
         }
@@ -844,6 +1124,10 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_political_power  = 100
+            GER = {
+                country_event = vichy.3
+            }
             # 100pp
             # unlocks decision to gain the rest of french states reducing independence from germany
         }
@@ -875,6 +1159,8 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            reduce_occupation_cost_effect = yes
+            reduce_occupation_cost_effect = yes
             # Occupation cost -10% consumer goods
         }
     }
@@ -905,6 +1191,7 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            remove_occupation_cost_effect = yes
             # Remove occupations cost
         }
     }
@@ -935,6 +1222,17 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            every_state = {
+                limit = {
+                    is_controlled_by = VIC
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            add_ideas = VIC_rebuilding_france
             # 1 infra in every owned state
             # +10% infra construction speed
         }
@@ -966,6 +1264,39 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            add_ideas = VIC_civilian_infrastructure_construction
             # +4 civs
             # +10% civ construction speed
         }
@@ -997,8 +1328,24 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_protect_the_french_people
+            every_state = {
+                limit = {
+                    naval_base > 0
+                    is_controlled_by = ROOT
+                }
+                set_building_level  = {
+                    type = coastal_bunker
+                    province = {
+                        all_provinces = yes
+                        limit_to_naval_base = yes
+                    }
+                    level = 1
+                    instant_build = yes
+                }
+            }
             # +1 coastal forts next to every port
-            # +10% coastal fort construction speed
+            # +25% coastal fort construction speed
         }
     }
 
@@ -1029,6 +1376,18 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            every_state = {
+				limit = {
+					is_core_of = VIC
+                    is_controlled_by = VIC
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+            add_ideas = VIC_build_up_the_airfields
             # +2 airports in mainland france
             # +10% airport construction speed
         }
@@ -1039,7 +1398,7 @@ focus_tree = {
         icon = GFX_goal_generic_demand_territory
         prerequisite = { focus = VIC_Beginning_of_Reunification }
         relative_position_id = VIC_Beginning_of_Reunification
-        x = 1
+        x = 2
         y = 2
         
         cost = 5
@@ -1060,6 +1419,39 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            army_experience = 50
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
             #50 army XP
             # +4 mils
         }
@@ -1091,6 +1483,19 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            army_experience = 35
+            add_tech_bonus = {
+				name = VIC_Army_innovation
+				bonus = 0.100
+				uses = 2
+				category = support_tech
+			}
+            add_tech_bonus = {
+				name = VIC_Army_innovation
+				bonus = 0.100
+				uses = 2
+				category = infantry_weapons
+			}
             # 35 army XP
             # 2x research bonus for inf eq
             # 2x research bonus for support companies
@@ -1123,6 +1528,7 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_shifted_production
             # 10% factory out put
             # -10% inf eq production cost
             # 30% tank production cost
@@ -1136,7 +1542,7 @@ focus_tree = {
         prerequisite = { focus = VIC_Cave_to_the_Germans }
         relative_position_id = VIC_Shift_the_Prduction
         x = 0
-        y = 2
+        y = 1
         
         cost = 5
     
@@ -1156,6 +1562,14 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_to_tech_sharing_group = axis_research
+            add_tech_bonus = {
+				name = VIC_Join_the_Axis_Research
+				bonus = 0.50
+				uses = 2
+				category = artillery
+                category = heavy_artillery
+			}
             # Join axis research program
             # 2x 50% research bonus arty
         }
@@ -1187,6 +1601,13 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_axis_generals
+            recruit_character = VIC_elodie_deforest
+            recruit_character = VIC_fernand_clement
+            every_army_leader = {
+				add_defense = 1
+                add_attack = 1
+			}
             # All generals and new gain + 1 attack and defense
             # new general
                # • infantry leader
@@ -1229,6 +1650,8 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_war_support = 0.10
+            add_ideas = VIC_installed_patriotism
             # 10% war support
             # 2% rec pop
         }
@@ -1261,6 +1684,18 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            every_state = {
+				limit = {
+					is_core_of = VIC
+                    is_controlled_by = VIC
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+            add_ideas = VIC_protection_from_the_air_raids
             # +2 state aa in mainland france
             # +10% state aa construction speed
         }
@@ -1292,6 +1727,40 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            navy_experience = 50
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+            add_ideas = VIC_rebuilding_the_navy
             # 50 naval XP
             # +4 dockyards
             # +10% dockyard construction speed
@@ -1324,6 +1793,49 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            swap_ideas = {
+                remove_idea = VIC_rebuilding_the_navy
+                add_idea = VIC_rebuilding_the_navy2
+            }
+            navy_experience = 50
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+            add_tech_bonus = {
+				name = VIC_Fund_the_Navy
+				bonus = 0.75
+				uses = 2
+				category = naval_equipment
+			}
             # 50 naval XP
             # +4 dockyards
             # 10% dockyard output
@@ -1338,7 +1850,7 @@ focus_tree = {
         prerequisite = { focus = VIC_Fund_the_Navy }
         relative_position_id = VIC_Fund_the_Navy
         x = 0
-        y = 7
+        y = 5
         
         cost = 5
     
@@ -1363,14 +1875,14 @@ focus_tree = {
     }
 
     focus = {
-        id = VIC_Core_it_all
+        id = VIC_Defend_Core_Land
         icon = GFX_goal_generic_demand_territory
         prerequisite = { focus = VIC_Retake_the_French_Navy focus = VIC_Building_up_the_coastal_defence }
         prerequisite = { focus = VIC_Build_up_the_airfields }
         prerequisite = { focus = VIC_Protection_from_the_air_raids }
         relative_position_id = VIC_Build_up_the_airfields
         x = 1
-        y = 4
+        y = 2
         
         cost = 5
     
@@ -1390,6 +1902,7 @@ focus_tree = {
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_defend_core_land
             # 5% Defense bonus on core
         }
     }

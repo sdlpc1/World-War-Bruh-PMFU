@@ -1933,7 +1933,7 @@ ideas = {
 			picture = renault
 						
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 			}
 						
 			research_bonus = {
@@ -1953,7 +1953,7 @@ ideas = {
 			}
 						
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 			}
 						
 			research_bonus = {
@@ -1972,7 +1972,7 @@ ideas = {
 			}
 						
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 			}
 						
 			research_bonus = {
@@ -1992,7 +1992,7 @@ ideas = {
 			}
 						
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 			}
 						
 			research_bonus = {
@@ -2011,7 +2011,7 @@ ideas = {
 
 						
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 				has_dlc = "La Resistance"
 			}
 						

@@ -1,0 +1,390 @@
+###########################
+# Vichy Events
+###########################
+
+add_namespace = vichy
+
+# Amelia Eartharts wants to join the USAAC
+country_event = {
+	id = vichy.1
+	title = vichy.1.t
+	desc = vichy.1.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { # man - medium tank
+		name = vichy.1.a
+		custom_effect_tooltip = available_designer
+		show_ideas_tooltip = VIC_renault
+		set_global_flag = VIC_chose_MAN
+	}
+	option = { # porsche - light tank
+		name = vichy.1.b
+		custom_effect_tooltip = available_designer
+		show_ideas_tooltip = VIC_renault
+		set_global_flag = VIC_chose_PORSCHE
+	}
+}
+
+country_event = {
+	id = vichy.2
+	title = vichy.2.t
+	desc = vichy.2.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = vichy.2.a
+		GER = {
+			set_autonomy = {
+				target = VIC
+				autonomy_state = autonomy_puppet
+			}
+		}
+		if = {
+			limit = {
+				33 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 33
+			}
+		}
+		if = {
+			limit = {
+				25 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 25
+			}
+		}
+		if = {
+			limit = {
+				31 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 31
+			}
+		}
+		if = {
+			limit = {
+				26 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 26
+			}
+		}
+		if = {
+			limit = {
+				22 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 22
+			}
+		}
+		if = {
+			limit = {
+				20 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 20
+			}
+		}
+		if = {
+			limit = {
+				806 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 806
+			}
+		}
+		if = {
+			limit = {
+				19 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 19
+			}
+		}
+		if = {
+			limit = {
+				23 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 23
+			}
+		}
+		if = {
+			limit = {
+				14 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 14
+			}
+		}
+		if = {
+			limit = {
+				30 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 30
+			}
+		}
+		if = {
+			limit = {
+				15 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 15
+			}
+		}
+		if = {
+			limit = {
+				24 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 24
+			}
+		}
+		if = {
+			limit = {
+				16 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 16
+			}
+		}
+		if = {
+			limit = {
+				29 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 29
+			}
+		}
+		if = {
+			limit = {
+				785 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 785
+			}
+		}
+		if = {
+			limit = {
+				18 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 18
+			}
+		}
+		if = {
+			limit = {
+				27 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 27
+			}
+		}
+		if = {
+			limit = {
+				17 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 17
+			}
+		}
+	}
+	option = {
+		name = vichy.2.b
+	}
+}
+
+country_event = {
+	id = vichy.3
+	title = vichy.3.t
+	desc = vichy.3.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = vichy.3.a
+		GER = {
+			set_autonomy = {
+				target = VIC
+				autonomy_state = autonomy_reichsprotectorate
+			}
+		}
+		if = {
+			limit = {
+				33 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 33
+			}
+		}
+		if = {
+			limit = {
+				25 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 25
+			}
+		}
+		if = {
+			limit = {
+				31 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 31
+			}
+		}
+		if = {
+			limit = {
+				26 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 26
+			}
+		}
+		if = {
+			limit = {
+				22 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 22
+			}
+		}
+		if = {
+			limit = {
+				20 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 20
+			}
+		}
+		if = {
+			limit = {
+				806 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 806
+			}
+		}
+		if = {
+			limit = {
+				19 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 19
+			}
+		}
+		if = {
+			limit = {
+				23 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 23
+			}
+		}
+		if = {
+			limit = {
+				14 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 14
+			}
+		}
+		if = {
+			limit = {
+				30 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 30
+			}
+		}
+		if = {
+			limit = {
+				15 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 15
+			}
+		}
+		if = {
+			limit = {
+				24 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 24
+			}
+		}
+		if = {
+			limit = {
+				16 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 16
+			}
+		}
+		if = {
+			limit = {
+				29 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 29
+			}
+		}
+		if = {
+			limit = {
+				785 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 785
+			}
+		}
+		if = {
+			limit = {
+				18 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 18
+			}
+		}
+		if = {
+			limit = {
+				27 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 27
+			}
+		}
+		if = {
+			limit = {
+				17 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 17
+			}
+		}
+		if = {
+			limit = {
+				28 = { is_controlled_by = { is_in_faction_with = GER } }
+			}
+			VIC = {
+				transfer_state = 28
+			}
+		}
+	}
+	option = {
+		name = vichy.3.b
+	}
+}

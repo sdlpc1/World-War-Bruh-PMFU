@@ -2448,8 +2448,18 @@ ideas = {
 			
 			allowed = {
 				original_tag = GER
+				tag = VIC
 			}
 			
+			available = {
+				if = {
+					limit = {
+						tag = VIC
+					}
+					has_global_flag = VIC_chose_PORSCHE
+				}
+			}
+
 			research_bonus = {
 				armor = 0.2
 			}
@@ -2486,6 +2496,16 @@ ideas = {
 			
 			allowed = {
 				original_tag = GER
+				tag = VIC
+			}
+
+			available = {
+				if = {
+					limit = {
+						tag = VIC
+					}
+					has_global_flag = VIC_chose_MAN
+				}
 			}
 			
 			research_bonus = {

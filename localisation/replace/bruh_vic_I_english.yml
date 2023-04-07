@@ -1,0 +1,29 @@
+﻿l_english:
+
+ ### FOCUSES ###
+  
+ 
+ ### IDEAS ###
+ 
+ 
+ 
+ ### DECISIONS ###
+ 
+ 
+ 
+ ### EVENTS ###
+ vichy.1.t:0 "A Tank Designer Dilemma"
+ vichy.1.d:0 "The Wehrmacht has extended us an offer we can not refuse, and have given us a rare opportunity to learn from either the great works of Ferdinand Porsche, or from the genius machining of Ludwig Sander"
+ vichy.1.a:0 "MAN (Medium Tank & Assault Gun Designer)"
+ vichy.1.b:0 "Porsche (Light Tank Designer)"
+ vichy.2.t:0 "Vichy's Plea for Assistance"
+ vichy.2.d:0 "The Vichy regime, led by Marshal Philippe Pétain, has sent a desperate plea for assistance to Germany. In the request, Vichy asks for the return of mainland France, excluding Alsace-Lorraine, to German control, and proposes to become a puppet state of Germany in return. This proposal has created a dilemma for the German government, as it could have significant political and economic consequences for both countries."
+ vichy.2.a:0 "A toast to a prosperous future for us both!"
+ vichy.2.b:0 "Nein! That fool has gotten overconfident!"
+ vichy.3.t:0 "Pétain's Deal"
+ vichy.3.d:0 "In response to Germany's acceptance of their previous request, Pétain has made a new request for the return of Alsace-Lorraine to French control, with Vichy becoming a Reichsprotektorat of Germany. This proposal has proven most unpopular in the inner circles of the Nazi party, as Alsace-Lorraine is believed to be rightful German territory."
+ vichy.3.a:0 "Do not disappoint us, we expect great things from the French people."
+ vichy.3.b:0 "We have been more than generous enough, Marshal."
+ 
+ ### TOOLTIP ###
+ vic_unlock_tank_share_tt:0 "§YAllows us buy German tank designs§!"

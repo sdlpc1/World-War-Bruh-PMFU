@@ -2268,6 +2268,7 @@ GER_share_tanks = {
 		allowed = {
 			OR = {
 				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+				has_country_flag = VIC_join_tank_sharing
 			}
 		}
 
@@ -2310,6 +2311,7 @@ GER_share_tanks = {
 		allowed = {
 			OR = {
 				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+				has_country_flag = VIC_join_tank_sharing
 			}
 		}
 
@@ -2349,6 +2351,7 @@ GER_share_tanks = {
 		allowed = {
 			OR = {
 				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+				has_country_flag = VIC_join_tank_sharing
 			}
 		}
 
@@ -2392,6 +2395,7 @@ GER_share_tanks = {
 		allowed = {
 			OR = {
 				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+				has_country_flag = VIC_join_tank_sharing
 			}
 		}
 
@@ -2431,6 +2435,7 @@ GER_share_tanks = {
 		allowed = {
 			OR = {
 				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+				has_country_flag = VIC_join_tank_sharing
 			}
 		}
 
@@ -2474,6 +2479,7 @@ GER_share_tanks = {
 		allowed = {
 			OR = {
 				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+				has_country_flag = VIC_join_tank_sharing
 			}
 		}
 
@@ -2513,6 +2519,7 @@ GER_share_tanks = {
 		allowed = {
 			OR = {
 				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+				has_country_flag = VIC_join_tank_sharing
 			}
 		}
 
@@ -2552,6 +2559,7 @@ GER_share_tanks = {
 		allowed = {
 			OR = {
 				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+				has_country_flag = VIC_join_tank_sharing
 			}
 		}
 
@@ -2595,6 +2603,7 @@ GER_share_tanks = {
 		allowed = {
 			OR = {
 				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+				has_country_flag = VIC_join_tank_sharing
 			}
 		}
 
@@ -2636,6 +2645,7 @@ GER_share_tanks = {
 		allowed = {
 			OR = {
 				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG
+				has_country_flag = VIC_join_tank_sharing
 			}
 		}
 
