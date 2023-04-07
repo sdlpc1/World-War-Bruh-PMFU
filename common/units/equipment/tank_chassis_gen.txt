@@ -1,5 +1,8 @@
 equipments = {
 
+  # Light Tanks
+
+    # Basic Light Tank
 	light_tank_chassis_1 = {
 		abbreviation = "lt1"
 		visual_level = 0
@@ -11,10 +14,11 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
-					tank_light_turret_type_3
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -27,11 +31,11 @@ equipments = {
 		build_cost_ic = 12
 		reliability = 0.8
 		armor_value = 15
-		hardness = 0.7
 		defense = 5
 		breakthrough = 15
 	}
 
+	# Improved Light Tank
 	light_tank_chassis_2 = {
 		abbreviation = "lt2"
 		visual_level = 1
@@ -43,10 +47,11 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
-					tank_light_turret_type_3
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -59,11 +64,11 @@ equipments = {
 		build_cost_ic = 14
 		reliability = 0.8
 		armor_value = 30
-		hardness = 0.7
 		defense = 5
 		breakthrough = 25
 	}
 	
+	# Advanced Light Tank
 	light_tank_chassis_3 = {
 		abbreviation = "lt3"
 		visual_level = 2
@@ -75,11 +80,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
 				}
 			}
 			suspension_type_slot = inherit
@@ -98,6 +104,9 @@ equipments = {
 		breakthrough = 35
 	}
 
+  # Medium Tanks
+
+	# Basic Light Tank
 	medium_tank_chassis_1 = {
 		abbreviation = "md1"
 		visual_level = 0
@@ -109,11 +118,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
-					#tank_medium_turret_type_1
+					tank_medium_turret_type_1
 					tank_medium_turret_type_2
-					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					#tank_medium_turret_type_3
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -127,11 +137,11 @@ equipments = {
 		build_cost_ic = 16
 		reliability = 0.75
 		armor_value = 30
-		hardness = 0.75
 		defense = 6
 		breakthrough = 35
 	}
 
+	# Improved Light Tank
 	medium_tank_chassis_2 = {
 		abbreviation = "md2"
 		visual_level = 1
@@ -143,11 +153,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -163,9 +174,10 @@ equipments = {
 		reliability = 0.75
 		armor_value = 45
 		defense = 7
-		breakthrough = 45
+		breakthrough = 50
 	}
 
+	# Advanced Light Tank
 	medium_tank_chassis_3 = {
 		abbreviation = "md3"
 		visual_level = 2
@@ -177,11 +189,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 					tank_modern_turret_type
 				}
 			}
@@ -198,11 +211,11 @@ equipments = {
 		reliability = 0.75
 		armor_value = 75
 		defense = 8
-		breakthrough = 50
+		breakthrough = 55
 	}
 	
 
-
+  # Other tanks
 
 	# Are these even used?
 

@@ -19,5 +19,6 @@ sub_unit_categories = {
 	category_strat_bomber
 	category_scout_plane
 	category_light_tanks
+	category_assault_gun
 	category_recon
 }

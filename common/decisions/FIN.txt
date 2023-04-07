@@ -80,7 +80,6 @@ operations = {
 		}
 
 		remove_effect = {
-			set_global_flag = SOV_winter_war_win
 			SOV = {
 				white_peace = FIN
 				transfer_state = 146
@@ -94,6 +93,24 @@ operations = {
 			hidden_effect = {
 				MON = {
 					remove_ideas = MON_brothers_war
+				}
+				if = {
+					limit = {
+						NOT = { FIN = { has_idea = peace_training } }
+					}
+					FIN = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SOV = { has_idea = peace_training } }
+					}
+					SOV = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MON = { has_idea = peace_training } }
+					}
+					MON = { add_ideas = peace_training }
 				}
 			}
 		}
@@ -138,7 +155,6 @@ operations = {
 		}
 		days_remove = 7
 		remove_effect = {
-			set_global_flag = SOV_winter_war_loss
 			hidden_effect = {
 				MON = {
 					remove_ideas = MON_brothers_war
@@ -148,6 +164,24 @@ operations = {
 						mission = SOV_winter_war
 						days = -300
 					}
+				}
+				if = {
+					limit = {
+						NOT = { FIN = { has_idea = peace_training } }
+					}
+					FIN = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SOV = { has_idea = peace_training } }
+					}
+					SOV = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MON = { has_idea = peace_training } }
+					}
+					MON = { add_ideas = peace_training }
 				}
 			}
 			effect_tooltip = {

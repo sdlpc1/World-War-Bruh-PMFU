@@ -341,7 +341,7 @@ ideas = {
 			
 			visible = {
 				NOT = { has_idea = russian_closed_eco }			
-			}	
+			}
 
 			allowed_to_remove = {
 				OR = {
@@ -494,7 +494,7 @@ ideas = {
 			
 			visible = {
 				NOT = { has_idea = russian_closed_eco }			
-			}	
+			}
 			
 			cost = 150
 			removal_cost = -1
@@ -567,11 +567,11 @@ ideas = {
 					NOT = { has_idea = CHI_nine_power_treaty }
 				}
 			}
-
+		
 			visible = {
 				NOT = { has_idea = russian_closed_eco }			
-			}	
-		
+			}
+
 			cost = 150
 			removal_cost = -1
 			
@@ -634,11 +634,11 @@ ideas = {
 					NOT = { has_idea = CHI_nine_power_treaty }
 				}
 			}
-
+			
 			visible = {
 				NOT = { has_idea = russian_closed_eco }			
 			}	
-			
+
 			cost = 150
 			removal_cost = -1
 			
@@ -668,6 +668,29 @@ ideas = {
 					has_war = no
 				}
    			}
+		}
+
+		wasteland_economy = {
+			
+			
+			available = {
+				original_tag = WST
+			}
+			
+			visible = {
+				has_idea = wasteland_economy
+			}	
+
+			cost = 1500000
+			removal_cost = -1
+			
+			
+			modifier = {
+				min_export = 0.0
+			}
+			
+			cancel_if_invalid = no
+
 		}
 	}
 }

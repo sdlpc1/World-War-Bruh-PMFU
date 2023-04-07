@@ -1829,6 +1829,91 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = generic.27
+	title = generic.26.t
+	desc = generic.26.d
+	
+	picture = GFX_report_event_czech_soldiers_01
+
+	is_triggered_only = yes
+    hidden = yes
+
+	option = {
+		name = generic.26.a
+		add_threat = 15.8
+	}
+}
+
+country_event = {
+	id = generic.28
+	title = generic.26.t
+	desc = generic.26.d
+
+	picture = GFX_report_event_czech_soldiers_01
+
+	is_triggered_only = yes
+    hidden = yes
+	option = {
+		name = generic.26.a
+		add_threat = 15
+
+	}
+}
+
+country_event = {
+	id = generic.29
+	title = generic.26.t
+	desc = generic.26.d
+	
+	picture = GFX_report_event_czech_soldiers_01
+
+	is_triggered_only = yes
+    hidden = yes
+
+	option = {
+		name = generic.26.a
+		add_threat = 50
+
+	}
+}
+
+country_event = {
+	id = generic.30
+	title = generic.26.t
+	desc = generic.26.d
+	
+	picture = GFX_report_event_czech_soldiers_01
+
+	is_triggered_only = yes
+    hidden = yes
+
+	option = {
+		name = generic.26.a
+		add_resource = {
+			type = tungsten
+			amount = 2200
+			state = 481
+		}	
+		add_resource = {
+			type = aluminium
+			amount = 2800
+			state = 276
+		}	
+		add_resource = {
+			type = chromium
+			amount = 500
+			state = 276
+		}		
+		add_resource = {
+			type = chromium
+			amount = 500
+			state = 504
+		}
+
+	}
+}
+
 add_namespace = horsttool
 news_event = {
 	id = horsttool.1

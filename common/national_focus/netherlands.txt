@@ -764,7 +764,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = HOL_some_fort_contruction_bufs }
-		icon = GFX_HOL_sumatra
+		icon = GFX_goal_HOL_reinforce_borneo
 		x = 1
 		y = 1
 		relative_position_id = HOL_some_fort_contruction_bufs
@@ -852,7 +852,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = HOL_some_fort_contruction_bufs }
-		icon = GFX_HOL_sumatra
+		icon = GFX_goal_HOL_reinforce_papua
 		x = 3
 		y = 1
 		relative_position_id = HOL_some_fort_contruction_bufs

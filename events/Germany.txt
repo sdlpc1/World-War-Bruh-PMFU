@@ -5310,12 +5310,12 @@ country_event = {
 	picture = GFX_report_event_airplane_crash
 	
 	mean_time_to_happen = {
-		days = 60
+		days = 1
 	}
 
 	trigger = {
 		tag = GER
-		has_war_with = SOV
+		# has_war_with = SOV
 		date > 1942.1.1
 	}
 	

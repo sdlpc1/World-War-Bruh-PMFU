@@ -11,7 +11,13 @@ state={
 	}
 	
 	history={
-		owner = USA
+				owner = USA
+		1936.1.1.13 = {
+			owner = WST
+		}
+		1936.1.1.13 = {
+			owner = WST
+		}
 		buildings = {
 			infrastructure = 3
 			4241 = {

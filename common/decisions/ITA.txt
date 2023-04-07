@@ -119,6 +119,45 @@ prospect_for_resources = {
 
 political_actions = {
 
+	demilitarize_ethiopia = {
+        days_mission_timeout = 90
+		allowed = {
+			always = no
+  		}
+
+		available = {
+			always = no
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+
+
+		}		
+		timeout_effect = {
+            559 = {
+				set_demilitarized_zone = yes
+
+			}     
+            550 = {
+				set_demilitarized_zone = yes
+
+			}          
+			271 = {
+				set_demilitarized_zone = yes
+
+			}
+		}
+	}	
+	
 	ITA_annex_bul = {
 
 		allowed = {

@@ -7,7 +7,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 			
-			# picture = 
+			picture = ITA_mob_nav_workers
 			
 			removal_cost = -1
 			

@@ -14,12 +14,8 @@ state={
 		victory_points = {
 			1010 3
 		}
-		1939.1.1 = {
-			buildings = {
-				infrastructure = 4
-				air_base = 1
-				
-			}
+		1936.1.1.13 = {
+			owner = WST	
 		}
 	}
 	manpower=1500000

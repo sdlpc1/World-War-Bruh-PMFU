@@ -11,403 +11,6 @@ ideas = {
 
 	country= {
 
-		SOV_kulik_budyonny_1 = {
-		
-			removal_cost = -1
-		
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				cavalry_attack_factor = 0.15
-				cavalry_defence_factor = 0.15
-			}
-		
-		}
-
-		SOV_kulik_budyonny_2 = {
-		
-			removal_cost = -1
-		
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-			
-			modifier = {
-				cavalry_attack_factor = 0.15
-				cavalry_defence_factor = 0.15
-				army_speed_factor = 0.1
-				land_night_attack = 0.1
-			}
-		
-		}
-
-		SOV_kulik_yegorov_1 = {
-		
-			removal_cost = -1
-	
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-				
-			equipment_bonus = {
-				light_tank_destroyer_chassis = {
-					defense = 0.2
-					hard_attack = 0.05
-				}
-				medium_tank_destroyer_chassis = {
-					defense = 0.2
-					hard_attack = 0.05
-				}
-				heavy_tank_destroyer_chassis = {
-					defense = 0.2
-					hard_attack = 0.05
-				}
-			}
-
-				
-		}
-
-		SOV_kulik_yegorov_2 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			equipment_bonus = {
-				light_tank_destroyer_chassis = {
-					defense = 0.2
-					hard_attack = 0.05
-				}
-				medium_tank_destroyer_chassis = {
-					defense = 0.2
-					hard_attack = 0.05
-				}
-				heavy_tank_destroyer_chassis = {
-					defense = 0.2
-					hard_attack = 0.05
-				}
-				anti_tank_equipment = {
-					hard_attack = 0.05
-					ap_attack = 0.05
-				}
-			}
-
-		}
-
-		SOV_voroshilov_kulik_1 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				army_org_factor = 0.1
-				coordination_bonus = -0.1
-				max_planning_factor = 0.15
-			}
-
-			equipment_bonus = {
-			}
-
-		}
-
-		SOV_voroshilov_kulik_2 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				army_org_factor = 0.1
-				coordination_bonus = -0.1
-				max_planning_factor = 0.15
-			}
-
-			equipment_bonus = {
-				heavy_artillery_equipment = {
-					soft_attack = 0.15
-					# build_cost_ic = 0.15
-				}
-			}
-
-		}
-		
-		SOV_voroshilov_budyonny_1 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				army_attack_speed_factor = 0.10
-			}
-
-			equipment_bonus = {
-				light_tank_artillery_chassis = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				light_tank_destroyer_chassis = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				light_tank_aa_chassis = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				light_assault_gun_chassis = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-
-		SOV_voroshilov_budyonny_2 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				army_attack_speed_factor = 0.1
-				breakthrough_factor = 0.1
-				army_morale_factor = 0.1
-				# army_defence_against_minor_factor = 0.1
-				# army_strength_factor = -0.075
-			}
-
-			equipment_bonus = {
-				light_tank_artillery_chassis = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				light_tank_destroyer_chassis = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				light_tank_aa_chassis = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				light_assault_gun_chassis = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-
-		}
-
-		SOV_nkvd_status_quo_1 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				coordination_bonus = -0.05
-				army_morale_factor = 0.1
-			}
-
-		}
-
-		SOV_nkvd_status_quo_2 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				coordination_bonus = -0.05
-				army_morale_factor = 0.1
-				max_dig_in = 3
-				planning_speed = -0.2
-				land_reinforce_rate = -0.05
-			}
-
-		}
-
-		SOV_timoshenko_shaposhnikov_1 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				mobilization_speed = 0.1
-				training_time_factor = -0.1
-				no_supply_grace = 30
-				army_org_factor = 0.1
-			}
-
-		}
-
-		SOV_timoshenko_shaposhnikov_2 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				mobilization_speed = 0.1
-				training_time_factor = -0.1
-				army_morale_factor = 0.05
-				no_supply_grace = 30
-				army_org_factor = 0.1
-			}
-
-		}
-
-		SOV_timoshenko_blucher_1 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				coordination_bonus = 0.05
-			}
-
-			research_bonus = {
-			}
-		}
-
-		SOV_timoshenko_blucher_2 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				air_superiority_bonus_in_combat = 0.2
-				coordination_bonus = 0.05
-				intel_from_combat_factor = 0.2
-			}
-
-			research_bonus = {
-			}
-		}
-
-		SOV_blucher_timoshenko_1 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			modifier = {
-				motorized_attack_factor = 0.1
-				motorized_defence_factor = 0.1
-				mechanized_attack_factor = 0.1
-				mechanized_defence_factor = 0.1
-			}	
-
-			picture = sov_mech_2
-
-		}
-
-		SOV_blucher_timoshenko_2 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			modifier = {
-				motorized_attack_factor = 0.1
-				motorized_defence_factor = 0.1
-				mechanized_attack_factor = 0.1
-				mechanized_defence_factor = 0.1
-				air_superiority_bonus_in_combat = 0.15
-			}	
-
-			picture = sov_mech_2
-
-		}
-
-		SOV_blucher_tukachevsky_1 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-			land_reinforce_rate = 0.01
-			org_loss_when_moving = -0.15
-			}
-
-		}
-
-		SOV_blucher_tukachevsky_2 = {
-		
-			removal_cost = -1
-
-			allowed = {
-			always = no # Added via focus
-			}
-
-			picture = sov_mech_2
-
-			modifier = {
-				land_reinforce_rate = 0.02
-				org_loss_when_moving = -0.25
-				army_armor_speed_factor = 0.05
-				army_fuel_capacity_factor = 0.15
-				}
-
-		}
-
-		
-
 
 		SOV_modernisation_mech_2 = {
 		
@@ -443,11 +46,9 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.15
-				coordination_bonus = -0.1
 				planning_speed = -0.20
 				max_command_power = -50
 				command_power_gain_mult = -0.33
-				send_volunteer_factor = -0.66
 			}
 		}
 
@@ -869,9 +470,9 @@ ideas = {
 			picture = generic_democratic_opposition
 			
 			modifier = {
-				political_power_factor = -0.10
-				production_speed_buildings_factor = -0.10
-				political_advisor_cost_factor = 0.25
+				# political_power_factor = -0.10
+				# production_speed_buildings_factor = -0.10
+				# political_advisor_cost_factor = 0.25
 			}
 		}
 
@@ -3240,10 +2841,8 @@ ideas = {
 
 		}
 
-		SOV_nkvd = {
+		nkvd = {
 			removal_cost = -1
-
-			picture = nkvd_2
 			
 			allowed = {
 				always = no # Added via focus
@@ -3258,39 +2857,11 @@ ideas = {
 				land_reinforce_rate = 0.05
 				operative_slot = 1
 				resistance_damage_to_garrison = -0.25
-			}
-		}
-
-		SOV_nkvd_dual_command = {
-			removal_cost = -1
-
-			picture = nkvd_2
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				subversive_activites_upkeep = -0.25
-				land_reinforce_rate = 0.05
-				operative_slot = 1
-				resistance_damage_to_garrison = -0.25
-				pocket_penalty = -0.15
-				initiative_factor = -0.1
-				army_core_defence_factor = 0.1
-				planning_speed = -0.2
-				max_planning_factor = 0.15
 			}
 		}
 
 		nkvd_2 = {
 			removal_cost = -1
-
-			picture = nkvd_2
 			
 			allowed = {
 				always = no # Added via focus
@@ -3307,7 +2878,7 @@ ideas = {
 			}
 		}
 
-		SOV_rehabilitated_military_focus_1 = {
+		rehabilitated_military_focus = {
 			removal_cost = -1
 			
 			allowed = {
@@ -3325,29 +2896,6 @@ ideas = {
 				army_morale_factor = 0.10
 				experience_gain_factor = 0.25
 				training_time_army_factor = -0.1
-			}
-		}
-
-		SOV_rehabilitated_military_focus_2 = {
-			removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = generic_morale_bonus
-			
-			
-			modifier = {
-				army_morale_factor = 0.10
-				experience_gain_factor = 0.3
-				training_time_army_factor = -0.1
-				out_of_supply_factor = -0.1
-				org_loss_when_moving = -0.2
 			}
 		}
 
@@ -4504,7 +4052,7 @@ ideas = {
 				land_doctrine_cost_factor = 0.2
 				naval_doctrine_cost_factor = 0.2
 				air_doctrine_cost_factor = 0.2
-				promote_cost_factor = 5
+
 				drift_defence_factor = 0.1
 				army_core_defence_factor = 0.03
 			}
@@ -4530,7 +4078,7 @@ ideas = {
 				land_doctrine_cost_factor = 0.2
 				naval_doctrine_cost_factor = 0.2
 				air_doctrine_cost_factor = 0.2
-				promote_cost_factor = 5
+
 				drift_defence_factor = 0.1
 				army_core_defence_factor = 0.03
 				conscription = -0.03
@@ -4558,7 +4106,7 @@ ideas = {
 				army_core_defence_factor = 0.03
 				army_core_attack_factor = 0.03
 				max_command_power = 50
-				promote_cost_factor = 5
+
 				army_org_factor = 0.05
 				army_morale_factor = -0.1
 			}
@@ -4585,7 +4133,7 @@ ideas = {
 				army_core_defence_factor = 0.03
 				army_core_attack_factor = 0.03
 				max_command_power = 50
-				promote_cost_factor = 5
+
 				army_org_factor = 0.05
 				army_morale_factor = -0.1
 				conscription = -0.03
@@ -4610,7 +4158,7 @@ ideas = {
 				drift_defence_factor = 0.1
 				army_core_defence_factor = 0.03
 				command_power_gain_mult = 0.1
-				promote_cost_factor = 5
+
 				army_org_factor = -0.05
 				army_morale_factor = 0.1
 			}
@@ -4635,7 +4183,7 @@ ideas = {
 				drift_defence_factor = 0.1
 				army_core_defence_factor = 0.03
 				command_power_gain_mult = 0.1
-				promote_cost_factor = 5
+
 				army_org_factor = -0.05
 				army_morale_factor = 0.1
 				conscription = -0.03
@@ -4659,24 +4207,9 @@ ideas = {
 				drift_defence_factor = 0.15
 				army_core_defence_factor = 0.05
 				army_core_attack_factor = 0.05
-				promote_cost_factor = 5
+
 				army_org_factor = 0.05
 				army_morale_factor = -0.1
-			}
-		}
-
-		SOV_zhukov_promotions = {
-
-			picture = generic_reserve_divisions
-
-			removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			modifier = {
-				promote_cost_factor = -5
 			}
 		}
 
@@ -4769,25 +4302,6 @@ ideas = {
 			}
 		}
 		
-		SOV_slacken_armor = {
-			equipment_bonus = {
-				armor = {
-				 reliability = -0.1 
-				}
-			}
-		}
-
-		SOV_slacken_infantry = {
-			equipment_bonus = {
-				infantry_equipment = {					
-					reliability = -0.10
-				}
-				squad_equipment = {					
-					reliability = -0.10
-				}
-			}
-		}
-
 		SOV_non_communism_aversion_ns = {		
 			removal_cost = -1
 			
@@ -5889,14 +5403,7 @@ ideas = {
 					limit = {
 						tag = SOV
 					}
-					OR = {
-						has_completed_focus = SOV_depoliticize_industry
-						AND = {
-							has_completed_focus = SOV_tank1
-							has_completed_focus = SOV_new_corps2
-						}
-					}
-
+					has_completed_focus = SOV_medium_tank2
 				}
 				if = {
 					limit = {
@@ -5944,16 +5451,6 @@ ideas = {
 					NOT = { has_country_flag = SOV_merge_tank_astrov_1_flag }
 					NOT = { has_country_flag = SOV_merge_tank_astrov_2_flag }
 					NOT = { has_country_flag = SOV_merge_tank_astrov_3_flag }
-				}
-			}
-
-			available = {
-				OR = {
-					has_completed_focus = SOV_depoliticize_industry
-					AND = {
-						has_completed_focus = SOV_tank1
-						has_completed_focus = SOV_new_corps3
-					}
 				}
 			}
 			
@@ -6207,13 +5704,7 @@ ideas = {
 				
 			}
 			available = {
-				OR = {
-					has_completed_focus = SOV_depoliticize_industry
-					AND = {
-						has_completed_focus = SOV_tank1
-						has_completed_focus = SOV_new_corps4
-					}
-				}
+				has_completed_focus = SOV_heavy_tank2
 			}
 			
 			research_bonus = {
@@ -6253,10 +5744,6 @@ ideas = {
 					NOT = { has_country_flag = SOV_merge_tank_mytishchy_2_flag }
 					NOT = { has_country_flag = SOV_merge_tank_mytishchy_3_flag }
 				}
-			}
-
-			available = {
-				#has_completed_focus = SOV_depoliticize_industry
 			}
 			
 			research_bonus = {
@@ -6556,13 +6043,7 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					has_completed_focus = SOV_depoliticize_industry
-					AND = {
-						has_completed_focus = SOV_tank1
-						has_completed_focus = SOV_new_corps
-					}		
-				}
+				has_completed_focus = SOV_combined_arms
 			}
 			
 			research_bonus = {

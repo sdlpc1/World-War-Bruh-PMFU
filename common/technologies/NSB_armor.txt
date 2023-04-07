@@ -36,6 +36,7 @@ technologies = {
 			tank_interleaved_suspension
 			tank_horstmann_suspension
 			tank_torsion_bar_suspension
+			expanded_fuel_tank
 		}
 
 		path = {
@@ -267,6 +268,7 @@ technologies = {
 			tank_interleaved_suspension
 			tank_horstmann_suspension
 			tank_torsion_bar_suspension
+			expanded_fuel_tank
 		}
 	}
 
@@ -300,6 +302,7 @@ technologies = {
 			tank_interleaved_suspension
 			tank_horstmann_suspension
 			tank_torsion_bar_suspension
+			expanded_fuel_tank
 		}
 
 		path = {
@@ -597,6 +600,7 @@ technologies = {
 			tank_interleaved_suspension
 			tank_horstmann_suspension
 			tank_torsion_bar_suspension
+			expanded_fuel_tank
 		}
 
 		path = {
@@ -842,6 +846,7 @@ technologies = {
 			tank_interleaved_suspension
 			tank_horstmann_suspension
 			tank_torsion_bar_suspension
+			expanded_fuel_tank
 		}
 
 		path = {
@@ -914,7 +919,8 @@ technologies = {
 			tank_bogie_suspension
 			tank_interleaved_suspension
 			tank_horstmann_suspension
-			tank_torsion_bar_suspension			
+			tank_torsion_bar_suspension		
+			expanded_fuel_tank	
 		}
 		
 		path = {
@@ -1017,6 +1023,7 @@ technologies = {
 			tank_interleaved_suspension
 			tank_horstmann_suspension
 			tank_torsion_bar_suspension
+			expanded_fuel_tank
 		}
 
 		path = {

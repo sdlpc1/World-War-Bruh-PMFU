@@ -55,11 +55,11 @@ division_template = {
 		medium_tank_destroyer_brigade = { x = 4 y = 1 }
 
 	}
-	support = {
+	support = { #
 		logistics_company = { x = 0 y = 0 }
 		logistics_company_mot = { x = 0 y = 1 }
 		light_tank_recon  = { x = 0 y = 2 }
-		light_sp_anti_air_brigade  = { x = 0 y = 3 }
+		mot_anti_air_brigade  = { x = 0 y = 3 }
 
 		ss_hq_company = { x = 1 y = 0 }
 		assault_engineer = { x = 1 y = 1 }

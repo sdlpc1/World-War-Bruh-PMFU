@@ -1,5 +1,8 @@
 equipments = {
 
+  # Light Tanks
+
+	# Light M2
 	usa_light_tank_chassis_lm2 = {
 		abbreviation = "lm2"
 		visual_level = 0
@@ -11,10 +14,11 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
-					tank_light_turret_type_3
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 				}
 			}
 			suspension_type_slot = inherit
@@ -27,11 +31,11 @@ equipments = {
 		build_cost_ic = 10.5
 		reliability = 0.85
 		armor_value = 15
-		hardness = 0.7
 		defense = 4
 		breakthrough = 20
 	}
 
+	# Light M3 Stuart
 	usa_light_tank_chassis_lm3 = {
 		abbreviation = "lm3"
 		visual_level = 1
@@ -43,11 +47,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
 				}
 			}
 			suspension_type_slot = inherit
@@ -65,6 +70,7 @@ equipments = {
 		breakthrough = 35
 	}
 
+	# Light M5 Stuart
 	usa_light_tank_chassis_lm5 = {
 		abbreviation = "lm5"
 		visual_level = 1
@@ -76,11 +82,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
 				}
 			}
 			suspension_type_slot = inherit
@@ -98,6 +105,7 @@ equipments = {
 		breakthrough = 40
 	}
 
+	# Light M24 Chaffee
 	usa_light_tank_chassis_m24 = {
 		abbreviation = "m24"
 		visual_level = 2
@@ -108,19 +116,17 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_1
-					tank_armament_tier_2
-					tank_armament_tier_3
-					tank_armament_tier_4
+					tank_armament_tier_tiny_1
+					tank_armament_tier_medium_1
 				}
 			}
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type_1
-					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
 				}
 			}
 			suspension_type_slot = inherit
@@ -138,6 +144,7 @@ equipments = {
 		breakthrough = 50
 	}
 
+	# Light M18 Hellcat
 	usa_light_tank_chassis_m18 = {
 		abbreviation = "m18"
 		visual_level = 2
@@ -149,12 +156,13 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_open
+					tank_light_turret_type_casemate
+					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
-					tank_light_turret_type_5
+					tank_light_turret_type_open_large
 				}
 			}
 			suspension_type_slot = inherit
@@ -172,6 +180,9 @@ equipments = {
 		breakthrough = 45
 	}
 
+  # Medium Tanks
+
+	# Medium M2
 	usa_medium_tank_chassis_mm2 = {
 		abbreviation = "mm2"
 		visual_level = 0
@@ -182,7 +193,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_1
+					tank_armament_tier_tiny_1
 				}
 			}
 			turret_type_slot = {
@@ -203,11 +214,11 @@ equipments = {
 		build_cost_ic = 14
 		reliability = 0.75
 		armor_value = 35
-		hardness = 0.75
 		defense = 6
 		breakthrough = 35
 	}
 
+	# Medium M3 Lee
 	usa_medium_tank_chassis_mm3 = {
 		abbreviation = "mm3"
 		visual_level = 0
@@ -218,7 +229,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_1
+					tank_armament_tier_tiny_1
 				}
 			}
 			turret_type_slot = {
@@ -248,6 +259,7 @@ equipments = {
 		breakthrough = 40
 	}
 
+	# Medium M4 Sherman
 	usa_medium_tank_chassis_mm4 = {
 		abbreviation = "mm4"
 		visual_level = 1
@@ -259,11 +271,12 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 					tank_modern_turret_type
 				}
 			}
@@ -278,14 +291,15 @@ equipments = {
 		upgrades = {
 			tank_nsb_med_armor_1_upgrade
 		}
-		maximum_speed = 5.5
+		maximum_speed = 6
 		build_cost_ic = 28
 		reliability = 0.8
 		armor_value = 65
 		defense = 8
-		breakthrough = 50
+		breakthrough = 55
 	}
 
+	# Medium M26 Pershing
 	usa_medium_tank_chassis_m26 = {
 		abbreviation = "m26"
 		visual_level = 2
@@ -297,11 +311,12 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_open
+					tank_medium_turret_type_casemate
+					tank_medium_turret_type_open_superstructure
 					tank_modern_turret_type
 				}
 			}
@@ -316,14 +331,17 @@ equipments = {
 		upgrades = {
 			tank_nsb_med_armor_2_upgrade
 		}
-		maximum_speed = 5.5
+		maximum_speed = 6
 		build_cost_ic = 36
 		reliability = 0.8
 		armor_value = 100
 		defense = 10
-		breakthrough = 60
+		breakthrough = 65
 	}
 
+  # Heavy Tanks
+	
+  	# Heavy M6
 	usa_heavy_tank_chassis_hm6 = {
 		abbreviation = "hm6"
 		visual_level = 1
@@ -349,7 +367,8 @@ equipments = {
 		defense = 10
 		breakthrough = 65
 	}
-	
+
+	# Heavy T29
 	usa_heavy_tank_chassis_t29 = {
 		abbreviation = "t29"
 		visual_level = 2
@@ -361,7 +380,7 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_super_heavy_turret_type
+					tank_heavy_turret_type_3
 				}
 			}
 			suspension_type_slot = inherit
@@ -378,9 +397,10 @@ equipments = {
 		reliability = 0.75
 		armor_value = 115
 		defense = 12
-		breakthrough = 85
+		breakthrough = 90
 	}
 
+	# Super Heavy T28
 	usa_heavy_tank_chassis_t28 = {
 		abbreviation = "t28"
 		visual_level = 2
@@ -392,7 +412,7 @@ equipments = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_heavy_turret_type_1
+					tank_heavy_turret_type_casemate
 				}
 			}
 			suspension_type_slot = inherit
@@ -404,7 +424,7 @@ equipments = {
 			special_type_slot_4 = inherit
 			special_type_slot_5 = inherit
 		}
-		maximum_speed = 3.5
+		maximum_speed = 4.25
 		build_cost_ic = 54
 		reliability = 0.8
 		armor_value = 135
