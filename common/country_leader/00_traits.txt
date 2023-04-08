@@ -1273,6 +1273,22 @@ leader_traits = {
 		}
 	}
 
+	VIC_renault_trait = {
+		random = no
+		equipment_bonus = {
+			heavy_tank_chassis = {
+                armor_value = 0.10
+                build_cost_ic = -0.05
+				maximum_speed = 0.10
+				breakthrough = 0.10
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	cope_trait = {
 		random = no
 		equipment_bonus = {

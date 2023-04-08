@@ -199,7 +199,7 @@ characters={
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus = MEX_focus_heroic_military_college
+					# has_completed_focus = MEX_focus_heroic_military_college
 				}
 			}
 			traits = {
@@ -281,7 +281,7 @@ characters={
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus = MEX_focus_military_budget_review 
+					# has_completed_focus = MEX_focus_military_budget_review 
 				}
 			}
 			traits = {
@@ -795,7 +795,7 @@ characters={
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus = MEX_focus_confederation_of_mexican_workers 
+					# has_completed_focus = MEX_focus_confederation_of_mexican_workers 
 				}
 				if = {
 					limit = {
@@ -830,7 +830,7 @@ characters={
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus = MEX_focus_the_gold_shirts 
+					# has_completed_focus = MEX_focus_the_gold_shirts 
 				}
 				if = {
 					limit = {

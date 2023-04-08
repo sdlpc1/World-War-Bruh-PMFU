@@ -2447,9 +2447,26 @@ ideas = {
 
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = FRA
+				}
 			}
 			
+			available = {
+				OR = {
+					has_country_flag = VIC_chose_PORSCHE
+					original_tag = GER
+				}
+			}
+
+			visible = {
+				OR = {
+					tag = GER
+					tag = VIC
+				}
+			}
+
 			research_bonus = {
 				armor = 0.2
 			}
@@ -2485,7 +2502,24 @@ ideas = {
 			picture = GER_MAN
 			
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = FRA
+				}
+			}
+
+			available = {
+				OR = {
+					has_country_flag = VIC_chose_MAN
+					original_tag = GER
+				}
+			}
+
+			visible = {
+				OR = {
+					tag = GER
+					tag = VIC
+				}
 			}
 			
 			research_bonus = {

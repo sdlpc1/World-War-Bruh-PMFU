@@ -275,6 +275,12 @@ category_test_decisions = {
 						air_ratio = 1.0
 					}
 				}
+				random_country = {
+					limit = {
+						has_focus_tree = vichy_french_focus
+					}
+					set_country_flag = VIC_vichy_france_confirmed
+				}
 				change_tag_from = FRA
 			}
 		}
@@ -882,142 +888,142 @@ economy_decisions = {
 political_actions = {
 
 }
-VIC_concessions_to_the_germans = {
-	VIC_basing_rights = {
-		available = {
+# VIC_concessions_to_the_germans = {
+# 	VIC_basing_rights = {
+# 		available = {
 
-		}
-		visible = {
-			has_any_occupation_cost_trigger = yes
-		}
+# 		}
+# 		visible = {
+# 			has_any_occupation_cost_trigger = yes
+# 		}
 
-		cost = 25
+# 		cost = 25
 
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_idea = FRA_occupation_costs_4
-				factor = 5
-			}
-			modifier = {
-				has_idea = FRA_occupation_costs_3
-				factor = 2
-			}
-			modifier = {
-				has_idea = FRA_occupation_costs_2
-				factor = 1.5
-			}
-		}
-		complete_effect = {
-			give_military_access = GER
-			reduce_occupation_cost_effect = yes
-		}
-	}
+# 		fire_only_once = yes
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				has_idea = FRA_occupation_costs_4
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_idea = FRA_occupation_costs_3
+# 				factor = 2
+# 			}
+# 			modifier = {
+# 				has_idea = FRA_occupation_costs_2
+# 				factor = 1.5
+# 			}
+# 		}
+# 		complete_effect = {
+# 			give_military_access = GER
+# 			reduce_occupation_cost_effect = yes
+# 		}
+# 	}
 
-	VIC_produce_aircraft_parts = {
-		available = {}
+# 	VIC_produce_aircraft_parts = {
+# 		available = {}
 
-		visible = {
-			has_any_occupation_cost_trigger = yes
-		}
+# 		visible = {
+# 			has_any_occupation_cost_trigger = yes
+# 		}
 
-		cost = 25
+# 		cost = 25
 
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_idea = FRA_occupation_costs_4
-				factor = 5
-			}
-			modifier = {
-				has_idea = FRA_occupation_costs_3
-				factor = 2
-			}
-			modifier = {
-				has_idea = FRA_occupation_costs_2
-				factor = 1.5
-			}
-		}
-		complete_effect = {
-			add_ideas = VIC_produce_aircraft_parts
-			GER = { add_ideas = VIC_aircraft_parts }
-			reduce_occupation_cost_effect = yes
-		}
-	}
-	VIC_send_guest_workers = {
-		available = {
+# 		fire_only_once = yes
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				has_idea = FRA_occupation_costs_4
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_idea = FRA_occupation_costs_3
+# 				factor = 2
+# 			}
+# 			modifier = {
+# 				has_idea = FRA_occupation_costs_2
+# 				factor = 1.5
+# 			}
+# 		}
+# 		complete_effect = {
+# 			add_ideas = VIC_produce_aircraft_parts
+# 			GER = { add_ideas = VIC_aircraft_parts }
+# 			reduce_occupation_cost_effect = yes
+# 		}
+# 	}
+# 	VIC_send_guest_workers = {
+# 		available = {
 			
-		}
-		visible = { has_any_occupation_cost_trigger = yes }
-		cancel_trigger = {
-			not = { has_country_flag = VIC_send_guest_workers }
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_idea = FRA_occupation_costs_4
-				factor = 5
-			}
-			modifier = {
-				has_idea = FRA_occupation_costs_3
-				factor = 2
-			}
-			modifier = {
-				has_idea = FRA_occupation_costs_2
-				factor = 1.5
-			}
-		}
-		fire_only_once = yes
-		days_remove = -1
-		modifier = {
-			conscription_factor = -0.25
-		}
-		complete_effect = {
-			GER = { add_ideas = VIC_guest_workers }
-			reduce_occupation_cost_effect = yes
-			set_country_flag = VIC_send_guest_workers
-		}
-	}
-	VIC_recall_guest_workers = {
-		available = {
-			has_country_flag = VIC_send_guest_workers
-		}
-		visible = { 
-		 	has_country_flag = VIC_send_guest_workers
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				controls_state = 16
-				add = 10
-			}
-		}
-		fire_only_once = yes
-		complete_effect = {
-			GER = { remove_ideas = VIC_guest_workers }
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 16
-					}
-				}
-				increase_occupation_cost_effect = yes
-			}
-			if = {
-				limit = {
-					controls_state = 16
-					has_idea = FRA_mandatory_work_service
-				}
-				remove_ideas = FRA_mandatory_work_service
-			}
-			clr_country_flag = VIC_send_guest_workers
-		}
-	}	
-}
+# 		}
+# 		visible = { has_any_occupation_cost_trigger = yes }
+# 		cancel_trigger = {
+# 			not = { has_country_flag = VIC_send_guest_workers }
+# 		}
+# 		cost = 25
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				has_idea = FRA_occupation_costs_4
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_idea = FRA_occupation_costs_3
+# 				factor = 2
+# 			}
+# 			modifier = {
+# 				has_idea = FRA_occupation_costs_2
+# 				factor = 1.5
+# 			}
+# 		}
+# 		fire_only_once = yes
+# 		days_remove = -1
+# 		modifier = {
+# 			conscription_factor = -0.25
+# 		}
+# 		complete_effect = {
+# 			GER = { add_ideas = VIC_guest_workers }
+# 			reduce_occupation_cost_effect = yes
+# 			set_country_flag = VIC_send_guest_workers
+# 		}
+# 	}
+# 	VIC_recall_guest_workers = {
+# 		available = {
+# 			has_country_flag = VIC_send_guest_workers
+# 		}
+# 		visible = { 
+# 		 	has_country_flag = VIC_send_guest_workers
+# 		}
+# 		cost = 0
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				controls_state = 16
+# 				add = 10
+# 			}
+# 		}
+# 		fire_only_once = yes
+# 		complete_effect = {
+# 			GER = { remove_ideas = VIC_guest_workers }
+# 			if = {
+# 				limit = {
+# 					NOT = {
+# 						controls_state = 16
+# 					}
+# 				}
+# 				increase_occupation_cost_effect = yes
+# 			}
+# 			if = {
+# 				limit = {
+# 					controls_state = 16
+# 					has_idea = FRA_mandatory_work_service
+# 				}
+# 				remove_ideas = FRA_mandatory_work_service
+# 			}
+# 			clr_country_flag = VIC_send_guest_workers
+# 		}
+# 	}	
+# }
 FRA_intervention_in_overseas_territories = {
 	FRA_promise_independence_to_north_africa = {
 		available = { 

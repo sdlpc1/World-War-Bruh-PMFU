@@ -523,6 +523,7 @@ country_event = {
 			limit = {
 				has_focus_tree = vichy_french_focus
 			}
+			set_country_flag = VIC_vichy_france_confirmed
 			GER = {
 				give_guarantee = PREV
 			}
