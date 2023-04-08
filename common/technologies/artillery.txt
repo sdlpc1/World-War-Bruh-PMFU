@@ -112,11 +112,11 @@ technologies = {
 		}
 		
 		research_cost = 2.0
-		start_year = 1939
+		start_year = 1938
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -10 y = 6 }
+			position = { x = -10 y = 4 }
 		}
 
 		categories = {
@@ -135,11 +135,11 @@ technologies = {
 		}
 		
 		research_cost = 2.0
-		start_year = 1939
+		start_year = 1938
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -6 y = 6 }
+			position = { x = -6 y = 4 }
 		}
 
 		categories = {
@@ -333,6 +333,7 @@ technologies = {
 		}
 		enable_equipment_modules = { 
 			tank_med_hv_gun_1
+			tank_medium_td_1
 		}
 		
 		research_cost = 2.0
@@ -547,7 +548,7 @@ technologies = {
 			tank_med_gun_squeeze
 			tank_med_hv_gun_2
 			apcr_round
-			tank_medium_td_1
+			tank_medium_td_2
 		}
 		
 		research_cost = 2.0
@@ -663,7 +664,6 @@ technologies = {
 		enable_equipment_modules = {
 			tank_med_gun_squeeze2
 			tank_med_hv_gun_3
-			tank_medium_td_2
 		}
 		research_cost = 2.0
 

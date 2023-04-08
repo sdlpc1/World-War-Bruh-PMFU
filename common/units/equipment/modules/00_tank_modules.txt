@@ -2060,7 +2060,7 @@ equipment_modules = {
 		category = tank_armament_tier_heavy_1
 		sfx = sfx_ui_sd_module_turret
 		# allow_equipment_type = anti_tank
-		forbid_equipment_type = amphibious 
+		# forbid_equipment_type = amphibious 
 
 		add_stats = {
 			soft_attack = 50
@@ -2083,7 +2083,7 @@ equipment_modules = {
 		category = tank_armament_tier_heavy_3
 		sfx = sfx_ui_sd_module_turret
 		# allow_equipment_type = anti_tank
-		forbid_equipment_type = amphibious 
+		# forbid_equipment_type = amphibious 
 		parent = tank_heavy_gun_1
 
 		add_stats = {
@@ -2133,7 +2133,7 @@ equipment_modules = {
 		category = tank_armament_tier_heavy_td
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
-		# forbid_equipment_type = amphibious 
+		forbid_equipment_type = amphibious 
 		forbid_equipment_type_exact_match = armor
 		parent = tank_heavy_gun_1
 
@@ -2160,7 +2160,7 @@ equipment_modules = {
 		category = tank_armament_tier_heavy_td
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
-		# forbid_equipment_type = amphibious 
+		forbid_equipment_type = amphibious 
 		forbid_equipment_type_exact_match = armor
 		parent = tank_heavy_hv_gun_1
 
@@ -2680,6 +2680,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			ap_attack = 0.1
+			hard_attack = 0.05
 		}
 		dismantle_cost_ic = 1
 	}
