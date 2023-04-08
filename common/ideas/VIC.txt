@@ -141,7 +141,7 @@ ideas = {
 
 			modifier = {
 				acclimatization_cold_climate_gain_factor = 0.15
-				supply_consumption_factor = -0.10
+				supply_consumption_factor = -0.05
 			}
 		}
 
@@ -240,7 +240,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_core_defence_factor = 0.05
+				army_core_defence_factor = 0.10
 			}
 		}
 
@@ -308,6 +308,25 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+
+		VIC_protect_the_french_people = {
+
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
 				production_speed_coastal_bunker_factor = 0.25
 			}
 		}
@@ -347,7 +366,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				recruitable_population = 2
+				conscription = 0.02
 			}
 		}
 
@@ -438,11 +457,11 @@ ideas = {
 			picture = renault
 			
 			allowed = {
-				tag = VIC			
+				original_tag = FRA		
 			}
 
 			visible = {
-				
+				tag = VIC
 			}
 			available = {
 				has_completed_focus = VIC_Produce_our_own_Tanks

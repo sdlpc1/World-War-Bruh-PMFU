@@ -4,7 +4,6 @@
 
 add_namespace = vichy
 
-# Amelia Eartharts wants to join the USAAC
 country_event = {
 	id = vichy.1
 	title = vichy.1.t
@@ -18,14 +17,16 @@ country_event = {
 	option = { # man - medium tank
 		name = vichy.1.a
 		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = VIC_renault
-		set_global_flag = VIC_chose_MAN
+		show_ideas_tooltip = GER_MAN
+		add_ideas = GER_MAN
+		set_country_flag = VIC_chose_MAN
 	}
 	option = { # porsche - light tank
 		name = vichy.1.b
 		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = VIC_renault
-		set_global_flag = VIC_chose_PORSCHE
+		show_ideas_tooltip = porsche
+		add_ideas = porsche
+		set_country_flag = VIC_chose_PORSCHE
 	}
 }
 
@@ -86,12 +87,12 @@ country_event = {
 	
 	option = {
 		name = vichy.3.a
-		GER = {
-			set_autonomy = {
-				target = VIC
-				autonomy_state = autonomy_reichsprotectorate
-			}
-		}
+		# GER = {
+		# 	set_autonomy = {
+		# 		target = VIC
+		# 		autonomy_state = autonomy_reichsprotectorate
+		# 	}
+		# }
 		transfer_state = 806
 		transfer_state = 19
 		transfer_state = 31

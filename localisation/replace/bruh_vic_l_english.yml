@@ -1,6 +1,6 @@
 ﻿l_english:
 
- ### FOCUSES ###
+  ### FOCUSES ###
   
  
  ### IDEAS ###
@@ -21,9 +21,17 @@
  vichy.2.a:0 "A toast to a prosperous future for us both!"
  vichy.2.b:0 "Nein! That fool has gotten overconfident!"
  vichy.3.t:0 "Pétain's Deal"
- vichy.3.d:0 "In response to Germany's acceptance of their previous request, Pétain has made a new request for the return of Alsace-Lorraine to French control, with Vichy becoming a Reichsprotektorat of Germany. This proposal has proven most unpopular in the inner circles of the Nazi party, as Alsace-Lorraine is believed to be rightful German territory."
+ vichy.3.d:0 "In response to Germany's acceptance of their previous request, Pétain has made a new request for the return of Alsace-Lorraine to French control, with Vichy staying as a puppet of Germany. This proposal has proven most unpopular in the inner circles of the Nazi party, as Alsace-Lorraine is believed to be rightful German territory."
  vichy.3.a:0 "Do not disappoint us, we expect great things from the French people."
  vichy.3.b:0 "We have been more than generous enough, Marshal."
  
  ### TOOLTIP ###
- vic_unlock_tank_share_tt:0 "§YAllows us buy German tank designs§!"
+ vic_hand_over_navy_tt:0 "§YHands over Vichy fleet to the German Reich§!"
+ 
+ ### FLAGS ### 
+ VIC_chose_PORSCHE:0 "Chose Porsche"
+ VIC_chose_MAN:0 "Chose MAN"
+ 
+ ### DESIGNERS ###
+ VIC_renault:0 "Renault"
+ VIC_renault_trait:0 "Heavy Tank Designer"

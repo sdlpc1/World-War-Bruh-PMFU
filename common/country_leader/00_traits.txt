@@ -1278,7 +1278,7 @@ leader_traits = {
 		equipment_bonus = {
 			heavy_tank_chassis = {
                 armor_value = 0.10
-                build_cost_ic = -0.10
+                build_cost_ic = -0.05
 				maximum_speed = 0.10
 				breakthrough = 0.10
 			}

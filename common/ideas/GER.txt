@@ -2447,16 +2447,23 @@ ideas = {
 
 			
 			allowed = {
-				original_tag = GER
-				tag = VIC
+				OR = {
+					original_tag = GER
+					original_tag = FRA
+				}
 			}
 			
 			available = {
-				if = {
-					limit = {
-						tag = VIC
-					}
-					has_global_flag = VIC_chose_PORSCHE
+				OR = {
+					has_country_flag = VIC_chose_PORSCHE
+					original_tag = GER
+				}
+			}
+
+			visible = {
+				OR = {
+					tag = GER
+					tag = VIC
 				}
 			}
 
@@ -2495,16 +2502,23 @@ ideas = {
 			picture = GER_MAN
 			
 			allowed = {
-				original_tag = GER
-				tag = VIC
+				OR = {
+					original_tag = GER
+					original_tag = FRA
+				}
 			}
 
 			available = {
-				if = {
-					limit = {
-						tag = VIC
-					}
-					has_global_flag = VIC_chose_MAN
+				OR = {
+					has_country_flag = VIC_chose_MAN
+					original_tag = GER
+				}
+			}
+
+			visible = {
+				OR = {
+					tag = GER
+					tag = VIC
 				}
 			}
 			

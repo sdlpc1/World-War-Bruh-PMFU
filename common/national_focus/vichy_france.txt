@@ -11,10 +11,14 @@
 	}
 	
 	default = no
+
+    continuous_focus_position = { x = 0 y = 1200 }
+
+
 	focus = {
 		id = VIC_bugifx
-		x = 25
-		y = 1
+		x = 24
+		y = 0
 		
 		cost = 9999
 
@@ -40,8 +44,9 @@
 	focus = {
 		id = VIC_Establishing_Vichy
 		icon = GFX_goal_generic_demand_territory
-		x = 1
+		x = -16
 		y = 0
+        relative_position_id = VIC_bugifx
 		
 		cost = 5
 
@@ -433,14 +438,17 @@
 					instant_build = yes
 				}
 			}
-            every_state = {
-				limit = {
-					is_core_of = VIC
-                    is_controlled_by = VIC
-				}
+            460 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 10
+					instant_build = yes
+				}
+			}
+            26 = {
+				add_building_construction = {
+					type = air_base
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -475,48 +483,52 @@
         available_if_capitulated = no
     
         completion_reward = {
-            random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-            random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-            VIC = {
-                transfer_units_fraction = {
-                    target = GER
-                    size = 1
-                    stockpile_ratio = 0
-                    army_ratio = 0
-                    navy_ratio = 1.0
-                    air_ratio = 0
+            hidden_effect = {
+                VIC = {
+                    transfer_units_fraction = {
+                        target = GER
+                        size = 1
+                        stockpile_ratio = 0
+                        army_ratio = 0
+                        navy_ratio = 1.0
+                        air_ratio = 0
+                    }
                 }
             }
+            custom_effect_tooltip = vic_hand_over_navy_tt
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            
             # +4 civs
             # germany gets vichy navy
         }
@@ -525,7 +537,7 @@
     focus = {
         id = VIC_Building_up_the_coastal_defence
         icon = GFX_goal_generic_demand_territory
-        mutually_exclusive = { focus = VIC_Retake_the_French_Navy }
+        mutually_exclusive = { focus = VIC_Finish_Old_Ships }
         prerequisite = { focus = VIC_Hand_over_the_Navy }
         prerequisite = { focus = VIC_Protection_from_the_Sky focus = VIC_Protect_the_French_People }
         relative_position_id = VIC_Hand_over_the_Navy
@@ -559,6 +571,7 @@
                     type = coastal_bunker
                     province = {
                         all_provinces = yes
+                        limit_to_naval_base = yes
                     }
                     level = 2
                     instant_build = yes
@@ -717,7 +730,7 @@
 			}
             country_event = vichy.1
 			add_to_tech_sharing_group = axis_research
-            custom_effect_tooltip = vic_unlock_tank_share_tt
+            # custom_effect_tooltip = vic_unlock_tank_share_tt
             set_country_flag = VIC_join_tank_sharing
             # Join axis research program
             # 50 army XP
@@ -999,6 +1012,7 @@
         available_if_capitulated = no
     
         completion_reward = {
+            add_ideas = VIC_developed_desert_trucks
             # Less heat attrition
             # 15% speed
         }
@@ -1339,13 +1353,38 @@
         available_if_capitulated = no
     
         completion_reward = {
-            every_state = {
-                limit = {
-                    is_controlled_by = VIC
-                }
+            785 = {
                 add_building_construction = {
                     type = infrastructure
-                    level = 1
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            17 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            32 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 4
+                    instant_build = yes
+                }
+            }
+            22 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 4
+                    instant_build = yes
+                }
+            }
+            21 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 4
                     instant_build = yes
                 }
             }
@@ -1493,14 +1532,17 @@
         available_if_capitulated = no
     
         completion_reward = {
-            every_state = {
-				limit = {
-					is_core_of = VIC
-                    is_controlled_by = VIC
-				}
+            24 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 10
+					instant_build = yes
+				}
+			}
+            23 = {
+				add_building_construction = {
+					type = air_base
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -1603,13 +1645,13 @@
             army_experience = 35
             add_tech_bonus = {
 				name = VIC_Army_innovation
-				bonus = 0.100
+				bonus = 1.00
 				uses = 2
 				category = support_tech
 			}
             add_tech_bonus = {
 				name = VIC_Army_innovation
-				bonus = 0.100
+				bonus = 1.00
 				uses = 2
 				category = infantry_weapons
 			}
@@ -2025,7 +2067,7 @@
     }
 
     focus = {
-        id = VIC_Retake_the_French_Navy
+        id = VIC_Finish_Old_Ships
         icon = GFX_goal_generic_demand_territory
         mutually_exclusive = { focus = VIC_Building_up_the_coastal_defence } 
         prerequisite = { focus = VIC_Fund_the_Navy }
@@ -2051,6 +2093,78 @@
         available_if_capitulated = no
     
         completion_reward = {
+            hidden_effect = {
+                set_technology = {
+                    improved_ship_hull_heavy = 1
+                    basic_heavy_armor_scheme = 1
+                    basic_battery = 1
+                    basic_heavy_battery = 1
+                    basic_heavy_shell = 1
+                    improved_heavy_battery = 1
+                    improved_heavy_shell = 1
+                    advanced_heavy_battery = 1
+                    damage_control_1 = 1
+                    damage_control_2 = 1
+                    damage_control_3 = 1
+                    fire_control_methods_1 = 1
+                    fire_control_methods_2 = 1
+                    fire_control_methods_3 = 1
+                    radio_detection = 1
+                    decimetric_radar = 1
+                    improved_decimetric_radar = 1
+                    centimetric_radar = 1
+                    basic_fire_control_system = 1
+                    improved_fire_control_system = 1
+                    advanced_fire_control_system = 1
+                    antiair_research1 = 1
+                    antiair2 = 1
+                }
+            }
+            create_equipment_variant = {
+                name = "Richelieu Class"
+                type = ship_hull_heavy_3
+                name_group = FRA_BB_HISTORICAL
+                parent_version = 0
+                modules = {
+                    fixed_ship_battery_slot = ship_heavy_battery_4
+			        fixed_ship_anti_air_slot = ship_anti_air_3
+			        fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			        fixed_ship_radar_slot = ship_radar_3
+			        fixed_ship_engine_slot = heavy_ship_engine_3
+			        fixed_ship_secondaries_slot = dp_ship_secondaries_3
+			        fixed_ship_armor_slot = ship_armor_bc_1
+			        front_1_custom_slot = ship_heavy_battery_4
+			        mid_1_custom_slot = ship_secondaries_2
+			        mid_2_custom_slot = ship_secondaries_2
+			        mid_3_custom_slot = ship_secondaries_2
+			        rear_1_custom_slot = ship_heavy_battery_4
+                }
+                obsolete = no
+            }
+
+			#Line Production
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = "FRA"
+					version_name = "Richelieu Class"
+				}
+				# name = "Dunkerque"
+				requested_factories = 5
+				progress = 0.90
+				amount = 1
+			}
+            add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_3
+					creator = "FRA"
+					version_name = "Richelieu Class"
+				}
+				# name = "Dunkerque"
+				requested_factories = 5
+				progress = 0.90
+				amount = 1
+			}
             # Gain a portion of the french navy if not blown up
         }
     }
@@ -2058,7 +2172,7 @@
     focus = {
         id = VIC_Defend_Core_Land
         icon = GFX_goal_generic_demand_territory
-        prerequisite = { focus = VIC_Retake_the_French_Navy focus = VIC_Building_up_the_coastal_defence }
+        prerequisite = { focus = VIC_Finish_Old_Ships focus = VIC_Building_up_the_coastal_defence }
         prerequisite = { focus = VIC_Build_up_the_airfields }
         prerequisite = { focus = VIC_Protection_from_the_air_raids }
         relative_position_id = VIC_Build_up_the_airfields
