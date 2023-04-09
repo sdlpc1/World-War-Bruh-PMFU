@@ -655,7 +655,7 @@ ideas = {
 			
 			equipment_bonus = {
 				sf_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 					instant = yes
 				}
 			}
@@ -742,7 +742,7 @@ ideas = {
 			}
 		}
 
-		MEX_better_hv_arty = {
+		MEX_better_pack_arty = {
 		
 			picture = generic_production_bonus
 		
@@ -753,7 +753,7 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				heavy_artillery_equipment = {
+				pack_artillery_equipment = {
 					build_cost_ic = -0.05
 					soft_attack = 0.1
 					instant = yes

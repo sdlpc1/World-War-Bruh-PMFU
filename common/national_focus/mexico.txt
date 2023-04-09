@@ -4098,11 +4098,9 @@ focus_tree = {
 					bonus = 0.75
 					ahead_reduction  = 0.5
 					uses = 1
-					technology = heavy_artillery2
-					technology = heavy_artillery3 
-					technology = heavy_artillery4
+					technology = pack_artillery_2
 				}
-				add_ideas = MEX_better_hv_arty
+				add_ideas = MEX_better_pack_arty
 			}
 	}
 
