@@ -92,6 +92,10 @@ script_enum_equipment_bonus_type = {
 	medium_assault_gun_chassis
 	heavy_assault_gun_chassis
 
+	light_tank_amphibious_chassis
+	medium_tank_amphibious_chassis
+	heavy_tank_amphibious_chassis
+
 	## Sea
 	ship_hull_light
 	ship_hull_heavy

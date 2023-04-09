@@ -78,6 +78,7 @@ NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0					-- Based on number of navies.
 NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (which is typically a lot).
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
+NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.00016			-- num convoys needed per fuel land lease
 
 NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1	-- compliance factor that applies when the state controller changes (in between allies compliance is zeroed if it is taken by original country)
 NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.10 -- base compliance grow
