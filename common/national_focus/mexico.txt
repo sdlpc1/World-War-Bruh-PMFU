@@ -610,7 +610,7 @@ focus_tree = {
 
 	focus = {
         id = MEX_focus_community_of_nations
-            icon = GFX_goal_generic_neutrality_focus
+            icon = GFX_focus_eng_unite_the_anglosphere
             prerequisite = { focus = MEX_focus_abolish_capital_punishment }
             relative_position_id = MEX_focus_abolish_capital_punishment
                 x = -1
@@ -695,6 +695,9 @@ focus_tree = {
             available_if_capitulated = yes
     
             completion_reward = {
+				set_technology = {
+					synth_oil_experiments = 1
+				}
                 random_owned_controlled_state = {
 					add_building_construction = {
 						type = synthetic_refinery
@@ -838,7 +841,7 @@ focus_tree = {
             icon = GFX_goal_generic_construct_civilian
             prerequisite = { focus =  MEX_focus_oil_drilling focus = MEX_focus_nationalize_the_oil_fields }
             relative_position_id = MEX_focus_nationalize_the_oil_fields
-                x = -3
+                x = -4
                 y = 1
             cost = 5
         
@@ -1760,7 +1763,7 @@ focus_tree = {
             relative_position_id = MEX_focus_cientifico_camarilla
                 x = 1.5
                 y = 1
-            cost = 5
+            cost = 10
         
             ai_will_do = {
                 factor = 100
@@ -1823,7 +1826,7 @@ focus_tree = {
             relative_position_id = MEX_focus_northern_steel_plants
                 x = 0
                 y = 1
-            cost = 5
+            cost = 10
         
             ai_will_do = {
                 factor = 100
@@ -1944,317 +1947,317 @@ focus_tree = {
 
 	### AIR ###
 
-	focus = {
-		id = MEX_focus_Copy_the_Wright_Brothers
-			icon = GFX_goal_continuous_air_production
-			relative_position_id = MEX_focus_plan_of_agua_prieta
-			x = 30
-			y = 0
+	# focus = {
+	# 	id = MEX_focus_Copy_the_Wright_Brothers
+	# 		icon = GFX_goal_continuous_air_production
+	# 		relative_position_id = MEX_focus_plan_of_agua_prieta
+	# 		x = 30
+	# 		y = 0
 
-			cost = 5
+	# 		cost = 5
 
-			allow_branch = {
-				always = no
-			}
+	# 		allow_branch = {
+	# 			always = no
+	# 		}
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				air_experience = 50
-				random_owned_controlled_state = {
-					add_building_construction = {
-						type = air_base
-						level = 5
-						instant_build = yes
-					}
-				}
-			}		
-	}
+	# 		completion_reward = {
+	# 			air_experience = 50
+	# 			random_owned_controlled_state = {
+	# 				add_building_construction = {
+	# 					type = air_base
+	# 					level = 5
+	# 					instant_build = yes
+	# 				}
+	# 			}
+	# 		}		
+	# }
 
-	focus = {
-		id = MEX_focus_Support_the_ground_forces
-			icon = GFX_goal_generic_CAS
-			mutually_exclusive = { focus = MEX_focus_Start_the_Bombing }
-			prerequisite = { focus = MEX_focus_Copy_the_Wright_Brothers }
-			relative_position_id = MEX_focus_Copy_the_Wright_Brothers
-			x = 1
-			y = 1
+	# focus = {
+	# 	id = MEX_focus_Support_the_ground_forces
+	# 		icon = GFX_goal_generic_CAS
+	# 		mutually_exclusive = { focus = MEX_focus_Start_the_Bombing }
+	# 		prerequisite = { focus = MEX_focus_Copy_the_Wright_Brothers }
+	# 		relative_position_id = MEX_focus_Copy_the_Wright_Brothers
+	# 		x = 1
+	# 		y = 1
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				air_experience = 50
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 0.75
-					uses = 1
-					technology = improved_small_airframe
-					technology = basic_small_airframe
-				}
-			}		
-	}
+	# 		completion_reward = {
+	# 			air_experience = 50
+	# 			add_tech_bonus = {
+	# 				name = fighter_bonus
+	# 				bonus = 0.75
+	# 				uses = 1
+	# 				technology = improved_small_airframe
+	# 				technology = basic_small_airframe
+	# 			}
+	# 		}		
+	# }
 
-	focus = {
-		id = MEX_focus_CAS_practise
-			icon = GFX_goal_generic_air_fighter2
-			prerequisite = { focus = MEX_focus_Support_the_ground_forces }
-			prerequisite = { focus = MEX_focus_Air_innovation }
-			mutually_exclusive = { focus = MEX_focus_Bombing_test_flight }
-			relative_position_id = MEX_focus_Support_the_ground_forces
-			x = 0
-			y = 2
+	# focus = {
+	# 	id = MEX_focus_CAS_practise
+	# 		icon = GFX_goal_generic_air_fighter2
+	# 		prerequisite = { focus = MEX_focus_Support_the_ground_forces }
+	# 		prerequisite = { focus = MEX_focus_Air_innovation }
+	# 		mutually_exclusive = { focus = MEX_focus_Bombing_test_flight }
+	# 		relative_position_id = MEX_focus_Support_the_ground_forces
+	# 		x = 0
+	# 		y = 2
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
-				# NOT = { has_completed_focus = MEX_focus_leg_day }
-				# NOT = { has_completed_focus = MEX_focus_play_their_game }
-				# NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
-				# NOT = { has_completed_focus = MEX_focus_lets_start_hiking }
-				# NOT = { has_completed_focus = MEX_focus_cold_shower }
-				# NOT = { has_completed_focus = MEX_focus_Beginning_of_the_Chungus }
-			}
+	# 		available = {
+	# 			# NOT = { has_completed_focus = MEX_focus_leg_day }
+	# 			# NOT = { has_completed_focus = MEX_focus_play_their_game }
+	# 			# NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
+	# 			# NOT = { has_completed_focus = MEX_focus_lets_start_hiking }
+	# 			# NOT = { has_completed_focus = MEX_focus_cold_shower }
+	# 			# NOT = { has_completed_focus = MEX_focus_Beginning_of_the_Chungus }
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				air_experience = 50
-				add_doctrine_cost_reduction = {
-					name = MEX_air_doc
-					cost_reduction = 0.40
-					uses = 2
-					category = cat_battlefield_support
-				}
-			}
-	}
+	# 		completion_reward = {
+	# 			air_experience = 50
+	# 			add_doctrine_cost_reduction = {
+	# 				name = MEX_air_doc
+	# 				cost_reduction = 0.40
+	# 				uses = 2
+	# 				category = cat_battlefield_support
+	# 			}
+	# 		}
+	# }
 
-	focus = {
-		id = MEX_focus_School_for_Ground_Support
-			icon = GFX_focus_generic_tank_air_support
-			prerequisite = { focus = MEX_focus_CAS_practise}
-			relative_position_id = MEX_focus_CAS_practise
-			x = 0
-			y = 1
+	# focus = {
+	# 	id = MEX_focus_School_for_Ground_Support
+	# 		icon = GFX_focus_generic_tank_air_support
+	# 		prerequisite = { focus = MEX_focus_CAS_practise}
+	# 		relative_position_id = MEX_focus_CAS_practise
+	# 		x = 0
+	# 		y = 1
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				custom_effect_tooltip = available_designer
-                show_ideas_tooltip = MEX_douglas_aircraft_company
-				add_doctrine_cost_reduction = {
-					name = MEX_air_doc
-					cost_reduction = 0.40
-					uses = 2
-					category = cat_battlefield_support
-				}
-			}
-	}
+	# 		completion_reward = {
+	# 			custom_effect_tooltip = available_designer
+    #             show_ideas_tooltip = MEX_douglas_aircraft_company
+	# 			add_doctrine_cost_reduction = {
+	# 				name = MEX_air_doc
+	# 				cost_reduction = 0.40
+	# 				uses = 2
+	# 				category = cat_battlefield_support
+	# 			}
+	# 		}
+	# }
 
-	focus = {
-		id = MEX_focus_Further_CAS_Training
-			icon = GFX_goal_generic_build_airforce
-			prerequisite = { focus = MEX_focus_School_for_Ground_Support }
-			relative_position_id = MEX_focus_School_for_Ground_Support
-			x = 0
-			y = 1
+	# focus = {
+	# 	id = MEX_focus_Further_CAS_Training
+	# 		icon = GFX_goal_generic_build_airforce
+	# 		prerequisite = { focus = MEX_focus_School_for_Ground_Support }
+	# 		relative_position_id = MEX_focus_School_for_Ground_Support
+	# 		x = 0
+	# 		y = 1
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				air_experience = 50
-				add_doctrine_cost_reduction = {
-					name = MEX_air_doc
-					cost_reduction = 0.40
-					uses = 2
-					category = cat_battlefield_support
-				}
-			}
-	}
+	# 		completion_reward = {
+	# 			air_experience = 50
+	# 			add_doctrine_cost_reduction = {
+	# 				name = MEX_air_doc
+	# 				cost_reduction = 0.40
+	# 				uses = 2
+	# 				category = cat_battlefield_support
+	# 			}
+	# 		}
+	# }
 
-	focus = {
-		id = MEX_focus_Raging_Havoc
-			icon = GFX_goal_generic_occupy_start_war
-			prerequisite = { focus = MEX_focus_Further_CAS_Training }
-			relative_position_id = MEX_focus_Further_CAS_Training
-			x = 0
-			y = 1
+	# focus = {
+	# 	id = MEX_focus_Raging_Havoc
+	# 		icon = GFX_goal_generic_occupy_start_war
+	# 		prerequisite = { focus = MEX_focus_Further_CAS_Training }
+	# 		relative_position_id = MEX_focus_Further_CAS_Training
+	# 		x = 0
+	# 		y = 1
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				add_ideas = MEX_cas_artillery
-			}
-	}
+	# 		completion_reward = {
+	# 			add_ideas = MEX_cas_artillery
+	# 		}
+	# }
 
-    focus = {
-		id = MEX_focus_Start_the_Bombing
-			icon = GFX_focus_generic_multi_role_aircraft
-			mutually_exclusive = { focus = MEX_focus_Support_the_ground_forces }
-			prerequisite = { focus = MEX_focus_Copy_the_Wright_Brothers } 
-			relative_position_id = MEX_focus_Copy_the_Wright_Brothers
-			x = -1
-			y = 1
+    # focus = {
+	# 	id = MEX_focus_Start_the_Bombing
+	# 		icon = GFX_focus_generic_multi_role_aircraft
+	# 		mutually_exclusive = { focus = MEX_focus_Support_the_ground_forces }
+	# 		prerequisite = { focus = MEX_focus_Copy_the_Wright_Brothers } 
+	# 		relative_position_id = MEX_focus_Copy_the_Wright_Brothers
+	# 		x = -1
+	# 		y = 1
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				air_experience = 50
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 0.75
-					uses = 1
-					technology = basic_large_airframe
-					technology = basic_medium_airframe 
-				}
-			}
-	}
+	# 		completion_reward = {
+	# 			air_experience = 50
+	# 			add_tech_bonus = {
+	# 				name = fighter_bonus
+	# 				bonus = 0.75
+	# 				uses = 1
+	# 				technology = basic_large_airframe
+	# 				technology = basic_medium_airframe 
+	# 			}
+	# 		}
+	# }
 
-    focus = {
-		id = MEX_focus_Bombing_test_flight
-			icon = GFX_focus_generic_long_range_aircraft
-			mutually_exclusive = { focus = MEX_focus_CAS_practise }
-			prerequisite = { focus = MEX_focus_Start_the_Bombing }
-            prerequisite = { focus = MEX_focus_Air_innovation }
-			relative_position_id = MEX_focus_Start_the_Bombing
-			x = 0
-			y = 2
+    # focus = {
+	# 	id = MEX_focus_Bombing_test_flight
+	# 		icon = GFX_focus_generic_long_range_aircraft
+	# 		mutually_exclusive = { focus = MEX_focus_CAS_practise }
+	# 		prerequisite = { focus = MEX_focus_Start_the_Bombing }
+    #         prerequisite = { focus = MEX_focus_Air_innovation }
+	# 		relative_position_id = MEX_focus_Start_the_Bombing
+	# 		x = 0
+	# 		y = 2
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
-				# NOT = { has_completed_focus = MEX_focus_leg_day }
-				# NOT = { has_completed_focus = MEX_focus_play_their_game }
-				# NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
-				# NOT = { has_completed_focus = MEX_focus_lets_start_hiking }
-				# NOT = { has_completed_focus = MEX_focus_cold_shower }
-				# NOT = { has_completed_focus = MEX_focus_Beginning_of_the_Chungus }
-			}
+	# 		available = {
+	# 			# NOT = { has_completed_focus = MEX_focus_leg_day }
+	# 			# NOT = { has_completed_focus = MEX_focus_play_their_game }
+	# 			# NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
+	# 			# NOT = { has_completed_focus = MEX_focus_lets_start_hiking }
+	# 			# NOT = { has_completed_focus = MEX_focus_cold_shower }
+	# 			# NOT = { has_completed_focus = MEX_focus_Beginning_of_the_Chungus }
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				air_experience = 50
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.40
-					uses = 2
-					category = air_doctrine
-				}
-			}
-	}
+	# 		completion_reward = {
+	# 			air_experience = 50
+	# 			add_doctrine_cost_reduction = {
+	# 				cost_reduction = 0.40
+	# 				uses = 2
+	# 				category = air_doctrine
+	# 			}
+	# 		}
+	# }
 
     # focus = {
 	# 	id = MEX_focus_School_for_Bombing
@@ -2362,73 +2365,73 @@ focus_tree = {
 	# 		}
 	# }
 
-    focus = {
-		id = MEX_focus_School_for_Naval_aviation 
-			icon = GFX_goal_generic_air_bomber
-			# mutually_exclusive = { focus = MEX_focus_School_for_Bombing }
-			prerequisite = { focus = MEX_focus_Bombing_test_flight }
-			relative_position_id = MEX_focus_Bombing_test_flight
-			x = 0
-			y = 1
+    # focus = {
+	# 	id = MEX_focus_School_for_Naval_aviation 
+	# 		icon = GFX_goal_generic_air_bomber
+	# 		# mutually_exclusive = { focus = MEX_focus_School_for_Bombing }
+	# 		prerequisite = { focus = MEX_focus_Bombing_test_flight }
+	# 		relative_position_id = MEX_focus_Bombing_test_flight
+	# 		x = 0
+	# 		y = 1
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				# NavBomber designer
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.5
-					uses = 2
-					category = air_doctrine
-				}
-			}
-	}
+	# 		completion_reward = {
+	# 			# NavBomber designer
+	# 			add_doctrine_cost_reduction = {
+	# 				cost_reduction = 0.5
+	# 				uses = 2
+	# 				category = air_doctrine
+	# 			}
+	# 		}
+	# }
 
-    focus = {
-		id = MEX_focus_Air_innovation
-			icon = GFX_focus_generic_air_defense
-			prerequisite = { focus = MEX_focus_Start_the_Bombing focus = MEX_focus_Copy_the_Wright_Brothers focus = MEX_focus_Support_the_ground_forces }
-			relative_position_id = MEX_focus_Copy_the_Wright_Brothers
-			x = 0
-			y = 2
+    # focus = {
+	# 	id = MEX_focus_Air_innovation
+	# 		icon = GFX_focus_generic_air_defense
+	# 		prerequisite = { focus = MEX_focus_Start_the_Bombing focus = MEX_focus_Copy_the_Wright_Brothers focus = MEX_focus_Support_the_ground_forces }
+	# 		relative_position_id = MEX_focus_Copy_the_Wright_Brothers
+	# 		x = 0
+	# 		y = 2
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				air_experience = 75
-			}
-	}
+	# 		completion_reward = {
+	# 			air_experience = 75
+	# 		}
+	# }
 
     # focus = {
 	# 	id = MEX_focus_Aviation_College
@@ -2584,7 +2587,7 @@ focus_tree = {
 		id = MEX_focus_Better_then_the_KRIEGSMARINE
 			icon = GFX_goal_generic_navy_doctrines_tactics
 			relative_position_id = MEX_focus_plan_of_agua_prieta
-			x = 18
+			x = 20
 			y = 0
 
 			cost = 5
@@ -2607,11 +2610,11 @@ focus_tree = {
 
 			completion_reward = {
 				navy_experience = 35
-				add_tech_bonus = {
-					name = MEX_def_convoy
-					bonus = 0.75
+				add_doctrine_cost_reduction = {
+					name = naval_doctrine
+					cost_reduction = 0.75
 					uses = 2
-					category = convoy_defense_tree
+					category = naval_doctrine
 				}
 				random_owned_controlled_state = {
 					add_extra_state_shared_building_slots = 4
@@ -2631,7 +2634,7 @@ focus_tree = {
 			icon = GFX_goal_generic_amphibious_assault
 			prerequisite = { focus = MEX_focus_Better_then_the_KRIEGSMARINE }
 			relative_position_id = MEX_focus_Better_then_the_KRIEGSMARINE
-			x = 1
+			x = -1
 			y = 1
 
 			cost = 5
@@ -2761,7 +2764,7 @@ focus_tree = {
 			icon = GFX_goal_generic_construct_naval_dockyard
 			prerequisite = { focus = MEX_focus_Better_then_the_KRIEGSMARINE }
 			relative_position_id = MEX_focus_Better_then_the_KRIEGSMARINE
-			x = 4
+			x = 1
 			y = 1
 
 			cost = 5
@@ -2785,8 +2788,8 @@ focus_tree = {
 			completion_reward = {
 				add_tech_bonus = {
 					name = tooltip_escort_ships
-					bonus = 0.75
-					uses = 2
+					bonus = 1.00
+					uses = 1
 					category = dd_tech
 					category = cl_tech
 				}
@@ -3288,7 +3291,7 @@ focus_tree = {
 			x = 6
 			y = 0
 
-			cost = 5
+			cost = 10
 
 			ai_will_do = {
 				factor = 1
@@ -3321,7 +3324,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_leg_day
 			icon = GFX_goal_generic_allies_build_infantry
-			mutually_exclusive = { focus = MEX_focus_lets_start_rolling focus = MEX_focus_play_their_game }
+			mutually_exclusive = { focus = MEX_focus_play_their_game }
 			prerequisite = { focus = MEX_focus_rebuilding_the_army }
 			relative_position_id = MEX_focus_rebuilding_the_army
 			x = 1
@@ -3348,27 +3351,29 @@ focus_tree = {
 			completion_reward = {
 				add_tech_bonus = {
 					name = infantry_weapons
-					bonus = 0.75
+					bonus = 1.00
 					uses = 1
 					category = infantry_weapons
 				}
 				add_tech_bonus = {
 					name = anti_tank
 					bonus = 0.75
-					ahead_reduction = 0.5
-					uses = 1
+					uses = 2
 					category = artillery
 					category = support_tech
 				}
-				create_corps_commander = {
-					name = "Muro de Hierro"
-					gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
-					traits = { infantry_leader inflexible_strategist trait_cautious engineer_officer }
-					skill = 4
-					attack_skill = 2
-					defense_skill = 4
-					planning_skill = 3
-					logistics_skill = 2
+				custom_effect_tooltip = general_muro_de_hierro_tt
+				hidden_effect = {
+					create_corps_commander = {
+						name = "Muro de Hierro"
+						gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
+						traits = { infantry_leader inflexible_strategist trait_cautious engineer_officer }
+						skill = 4
+						attack_skill = 5
+						defense_skill = 4
+						planning_skill = 3
+						logistics_skill = 4
+					}
 				}
 				add_ideas = MEX_conscription_campaign
 			}
@@ -3404,13 +3409,6 @@ focus_tree = {
 				add_tech_bonus = {
 					name = infantry_weapons
 					bonus = 0.75
-					uses = 1
-					category = infantry_weapons
-				}
-				add_tech_bonus = {
-					name = infantry_weapons
-					bonus = 0.75
-					ahead_reduction  = 0.5
 					uses = 1
 					category = infantry_weapons
 				}
@@ -3647,6 +3645,95 @@ focus_tree = {
 	# 		}
 	# }
 
+	
+	focus = {
+		id = MEX_focus_It_evolves
+			icon = GFX_goal_generic_allies_build_infantry
+			prerequisite = { focus = MEX_focus_leg_day }
+			relative_position_id = MEX_focus_leg_day
+			x = 3
+			y = 1
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				army_experience = 50
+			}
+	}
+	
+	focus = {
+		id = MEX_focus_cold_shower
+			icon = GFX_goal_generic_allies_build_infantry
+			prerequisite = { focus = MEX_focus_It_evolves }
+			relative_position_id = MEX_focus_It_evolves
+			x = 2
+			y = 1
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				# NOT = { has_completed_focus = MEX_focus_Copy_the_Wright_Brothers }
+				# NOT = { has_completed_focus = MEX_focus_Floating_Airfield }
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_tech_bonus = {
+					name = MEX_marine_upgrades
+					bonus = 0.75
+					uses = 2
+					technology = marines2
+					technology = marines3
+				}
+				add_tech_bonus = {
+					name = MEX_rocket_upgrades
+					bonus = 0.75
+					uses = 2
+					technology = rocket_artillery
+				}
+				custom_effect_tooltip = general_rata_de_aqua_tt
+				hidden_effect = {
+					create_corps_commander = {
+						name = "Rata de Aqua"
+						gfx = "GFX_RAJ_kodendera_subayya_thimayya"
+						traits = { naval_invader trait_reckless infantry_leader commando }
+						skill = 4
+						attack_skill = 5
+						defense_skill = 3
+						planning_skill = 4
+						logistics_skill = 4
+					}
+				}
+			}
+	}
+
     focus = {
 		id = MEX_focus_Preparation_for_new_Year
 			icon = GFX_focus_secret_rearmament
@@ -3752,7 +3839,7 @@ focus_tree = {
 		id = MEX_focus_combined_invasion
 			icon = GFX_focus_generic_coastal_fort
 			prerequisite = { focus = MEX_focus_speed_up_the_invasion }
-            prerequisite = { focus = MEX_focus_Beginning_of_the_Chungus }
+            # prerequisite = { focus = MEX_focus_Beginning_of_the_Chungus }
 			relative_position_id = MEX_focus_speed_up_the_invasion
 			x = -1
 			y = 1
@@ -3808,69 +3895,6 @@ focus_tree = {
 
 			completion_reward = {
 				add_ideas = MEX_support_offshore
-			}
-	}
-
-    focus = {
-		id = MEX_focus_cold_shower
-			icon = GFX_goal_generic_allies_build_infantry
-			prerequisite = { focus = MEX_focus_It_evolves }
-			relative_position_id = MEX_focus_It_evolves
-			x = 2
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				# NOT = { has_completed_focus = MEX_focus_Copy_the_Wright_Brothers }
-				# NOT = { has_completed_focus = MEX_focus_Floating_Airfield }
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				add_tech_bonus = {
-					name = MEX_marine_upgrades
-					bonus = 0.75
-					uses = 2
-					technology = marines2
-					technology = marines3
-				}
-				add_tech_bonus = {
-					name = MEX_rocket_upgrades
-					bonus = 0.75
-					uses = 1
-					technology = rocket_artillery
-				}
-				# 50% research bonus rocket artillery
-				add_tech_bonus = {
-					name = MEX_rocket_upgrades_again
-					bonus = 0.75
-					ahead_reduction  = 0.5
-					uses = 1
-					technology = rocket_artillery
-				}
-				# 50% research bonus rocket artillery 1 year ahead of time
-				create_corps_commander = {
-					name = "Rata de Aqua"
-					gfx = "GFX_RAJ_kodendera_subayya_thimayya"
-					traits = { naval_invader trait_reckless infantry_leader commando }
-					skill = 4
-					attack_skill = 5
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 3
-				}
 			}
 	}
 
@@ -3942,37 +3966,6 @@ focus_tree = {
 			}
 	}
 
-	focus = {
-		id = MEX_focus_It_evolves
-			icon = GFX_goal_generic_allies_build_infantry
-			prerequisite = { focus = MEX_focus_leg_day }
-			relative_position_id = MEX_focus_leg_day
-			x = 3
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				army_experience = 50
-			}
-	}
-
     focus = {
 		id = MEX_focus_lets_start_hiking
 			icon = GFX_focus_GRE_a_land_of_mountains
@@ -4016,15 +4009,18 @@ focus_tree = {
 					uses = 2
 					category = mountaineers_tech
 				}
-				create_corps_commander = {
-					name = "Dólar de Montañismo"
-					gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
-					traits = { infantry_leader trickster trait_mountaineer brilliant_strategist }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 2
+				custom_effect_tooltip = general_dolar_de_montanismo_tt
+				hidden_effect = {
+					create_corps_commander = {
+						name = "Dólar de Montañismo"
+						gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
+						traits = { infantry_leader trickster trait_mountaineer brilliant_strategist }
+						skill = 4
+						attack_skill = 4
+						defense_skill = 3
+						planning_skill = 5
+						logistics_skill = 5
+					}
 				}
 			}
 	}
@@ -4074,7 +4070,7 @@ focus_tree = {
 			x = 0
 			y = 1
 
-			cost = 5
+			cost = 10
 
 			ai_will_do = {
 				factor = 1
@@ -4095,7 +4091,7 @@ focus_tree = {
 			completion_reward = {
 				add_tech_bonus = {
 					name = mountaineers_tech
-					bonus = 0.75
+					bonus = 0.50
 					ahead_reduction  = 0.5
 					uses = 1
 					technology = pack_artillery_2
@@ -4113,7 +4109,7 @@ focus_tree = {
 			x = 1
 			y = 1
 
-			cost = 5
+			cost = 10
 
 			ai_will_do = {
 				factor = 1
@@ -4151,7 +4147,7 @@ focus_tree = {
 			x = -1
 			y = 1
 
-			cost = 5
+			cost = 10
 
 			ai_will_do = {
 				factor = 1
@@ -4180,6 +4176,58 @@ focus_tree = {
 			}
 	}
 
+	
+    focus = {
+		id = MEX_focus_play_their_game
+			icon = GFX_SOV_armour_development
+			mutually_exclusive = { focus = MEX_focus_leg_day }
+			prerequisite = { focus = MEX_focus_rebuilding_the_army }
+			relative_position_id = MEX_focus_rebuilding_the_army
+			x = -1
+			y = 1
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				# NOT = { has_completed_focus = MEX_focus_Better_then_the_KRIEGSMARINE }
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				army_experience = 50
+				add_tech_bonus = {
+					name = armor
+					bonus = 0.75
+					uses = 2
+					category = armor
+				}
+				custom_effect_tooltip = general_cascar_de_patata_tt
+				hidden_effect = {
+					create_corps_commander = {
+						name = "Cascara de Patata"
+						gfx = "GFX_RAJ_kodandera_madappa_cariappa"
+						traits = { panzer_leader brilliant_strategist fortress_buster }
+						skill = 4
+						attack_skill = 6
+						defense_skill = 3
+						planning_skill = 4
+						logistics_skill = 5
+					}
+				}
+			}
+	}
+
     focus = {
 		id = MEX_focus_lets_start_rolling
 			icon = GFX_goal_generic_army_motorized
@@ -4188,7 +4236,7 @@ focus_tree = {
 			x = -2
 			y = 1
 
-			cost = 5
+			cost = 10
 
 			ai_will_do = {
 				factor = 1
@@ -4216,7 +4264,6 @@ focus_tree = {
 				add_tech_bonus = {
 					name = cat_mechanized_equipment
 					uses = 1
-					ahead_reduction = 0.5
 					bonus = 0.75
 					category = cat_mechanized_equipment
 				}
@@ -4296,54 +4343,6 @@ focus_tree = {
 	}
 
     focus = {
-		id = MEX_focus_play_their_game
-			icon = GFX_SOV_armour_development
-			mutually_exclusive = { focus = MEX_focus_leg_day }
-			prerequisite = { focus = MEX_focus_rebuilding_the_army }
-			relative_position_id = MEX_focus_rebuilding_the_army
-			x = -1
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				# NOT = { has_completed_focus = MEX_focus_Better_then_the_KRIEGSMARINE }
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				army_experience = 50
-				add_tech_bonus = {
-					name = armor
-					bonus = 0.75
-					uses = 2
-					category = armor
-				}
-				create_corps_commander = {
-					name = "Cascara de Patata"
-					gfx = "GFX_RAJ_kodandera_madappa_cariappa"
-					traits = { panzer_leader brilliant_strategist fortress_buster }
-					skill = 3
-					attack_skill = 5
-					defense_skill = 2
-					planning_skill = 3
-					logistics_skill = 4
-				}
-			}
-	}
-
-    focus = {
 		id = MEX_focus_tank_workshops
 			icon = GFX_goal_generic_build_tank
 			prerequisite = { focus = MEX_focus_play_their_game }
@@ -4351,7 +4350,7 @@ focus_tree = {
 			x = 0
 			y = 1
 
-			cost = 5
+			cost = 10
 
 			ai_will_do = {
 				factor = 1
@@ -4372,8 +4371,7 @@ focus_tree = {
 			completion_reward = {
 				add_tech_bonus = {
 					name = armor
-					bonus = 0.75
-					ahead_reduction = 0.5
+					bonus = 1.00
 					uses = 1
 					category = armor
 				}

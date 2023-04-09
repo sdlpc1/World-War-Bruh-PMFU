@@ -624,7 +624,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				shore_bombardment_bonus = 0.1
+				shore_bombardment_bonus = 0.20
 			}
 		}
 
@@ -639,7 +639,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				naval_invasion_capacity = 4
+				naval_invasion_capacity = 5
 			}
 		}
 
@@ -688,7 +688,7 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 					instant = yes
 				}
 			}
@@ -710,7 +710,7 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 					instant = yes
 					soft_attack = 0.2
 					instant = yes
@@ -1522,7 +1522,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = MEX_focus_aztec_eagles
+				has_completed_focus = MEX_focus_oil_drilling
 			}
 
 			picture = douglas_aircraft_company

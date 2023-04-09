@@ -44,7 +44,7 @@
  VIC_Adjust_the_Industry:0 "Industrial Adjustment"
  VIC_End_the_payments:0 "Settle our Debts"
  VIC_Hand_over_the_Navy:0 "Hand over the Navy"
- VIC_bugfix:0 "Bugfix"
+ VIC_bugifx:0 "Bugfix"
 
  ### IDEAS ###
  VIC_converted_dockyards_for_civilians:0 "Deserted Navy"
@@ -93,15 +93,15 @@
  ### TOOLTIP ###
  vic_hand_over_navy_tt:0 "§YHands over Vichy fleet to the German Reich§!"
 
- general_maxime_giroux_tt:0 "§YMaxime Giroux becomes a skill 3 General with 3 attack, 4 defense, 3 planning, 4 logistics, and Armour Officer, Inflexible Strategist, Old Guard, Urban Assault Specialist and Ambusher§!"
+ general_maxime_giroux_tt:0 "§OMaxime Giroux§! §Ybecomes a skill 3 General with 3 attack, 4 defense, 3 planning, 4 logistics, and Armour Officer, Inflexible Strategist, Old Guard, Urban Assault Specialist and Ambusher§!"
 
- general_arnaude_archambault_tt:0 "§YArnaude Archambault becomes a skill 3 General with 3 attack, 3 defense, 3 planning, 5 logistics, and Armour Officer, Winter Specialist, Ranger and Fortress Buster§!"
+ general_arnaude_archambault_tt:0 "§OArnaude Archambault§! §Ybecomes a skill 3 General with 3 attack, 3 defense, 3 planning, 5 logistics, and Armour Officer, Winter Specialist, Ranger and Fortress Buster§!"
 
- general_serge_beauchene_tt:0 "§YSerge Beauchêne becomes a skill 3 General with 4 attack, 3 defense, 3 planning, 4 logistics, and Armour Officer, Desert Fox, Brilliant Strategist and Trickster§!"
+ general_serge_beauchene_tt:0 "§OSerge Beauchêne§! §Ybecomes a skill 3 General with 4 attack, 3 defense, 3 planning, 4 logistics, and Armour Officer, Desert Fox, Brilliant Strategist and Trickster§!"
 
- general_elodie_deforest_tt:0 "§YÉlodie Deforest becomes a skill 4 General with 6 attack, 4 defense, 6 planning, 4 logistics, and Infantry Leader, Trickster, Skilled Staffer and Old Guard§!"
+ general_elodie_deforest_tt:0 "§OÉlodie Deforest§! §Ybecomes a skill 4 General with 6 attack, 4 defense, 6 planning, 4 logistics, and Infantry Leader, Trickster, Skilled Staffer and Old Guard§!"
 
- general_fernand_clement_tt:0 "§YFernand Clément becomes a skill 4 General with 7 attack, 5 defense, 4 planning, 5 logistics, and Infantry Leader, War Hero Inflexible Strategist, Old Guard, Cautious and Organizer§!"
+ general_fernand_clement_tt:0 "§OFernand Clément§! §Ybecomes a skill 4 General with 7 attack, 5 defense, 4 planning, 5 logistics, and Infantry Leader, War Hero Inflexible Strategist, Old Guard, Cautious and Organizer§!"
  
  ### FLAGS ### 
  VIC_chose_PORSCHE:0 "Chose Porsche"

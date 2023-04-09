@@ -20,11 +20,11 @@
 		x = 24
 		y = 0
 		
-		cost = 9999
+		cost = 1
 
 		ai_will_do = {
-			factor = 1
-		}
+            factor = 0
+        }
 
 		available = {
 
@@ -82,7 +82,7 @@
 		x = -2
 		y = 1
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -114,7 +114,7 @@
         x = 1
         y = 1
         
-        cost = 5
+        cost = 10
     
         ai_will_do = {
             factor = 1
@@ -788,7 +788,7 @@
         x = 0
         y = 1
         
-        cost = 5
+        cost = 10
     
         ai_will_do = {
             factor = 1
@@ -1371,7 +1371,7 @@
         x = 2
         y = 1
         
-        cost = 5
+        cost = 10
     
         ai_will_do = {
             factor = 1
@@ -1407,7 +1407,7 @@
         x = 0
         y = 1
         
-        cost = 5
+        cost = 10
     
         ai_will_do = {
             factor = 1
@@ -2248,7 +2248,7 @@
         x = 0
         y = 5
         
-        cost = 5
+        cost = 10
     
         ai_will_do = {
             factor = 1

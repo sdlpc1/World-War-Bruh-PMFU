@@ -1477,11 +1477,10 @@ MEX_category_church_power = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 300
 			modifier = {
-				add = 1
-				has_stability < 0.6
-				date > 1940.1.1
+				add = -300
+				has_stability > 0.6
 			}
 		}
 	}

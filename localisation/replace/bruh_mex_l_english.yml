@@ -260,8 +260,7 @@
  MEX_focus_redeem_aztlan_desc:1 "The Mexican people living in the liberated regions of the United States have a dream of a government which does not oppress them for their ancestry, place of birth or the language they speak at home. That dream has become a reality."
  MEX_focus_rebuilding_the_army:0 "Rebuilding the Army"
 
-
-### CRINGE ###
+ ### CUSTOM ###
  MEX_focus_play_their_game:0 "Armor Effort"
  MEX_focus_tank_workshops:0 "Tank Workshops"
  MEX_focus_army_expansion_programm:0 "Army Expansion Program"
@@ -307,27 +306,36 @@
  MEX_focus_improve_steel_plants:0 "Improved Steel Plants"
  MEX_focus_improved_resource_gain:0 "Mining Permits"
 
-### IDEAS ###
-MEX_conscription_campaign:0 "Conscription Campaign"
-MEX_preperation_for_the_new_year:0 "Beach Exercises"
-MEX_brown_water_navy:0 "Brown Water Navy"
-MEX_improvement_of_armor:0 "Armor Improvement"
-MEX_improvement_of_motorization:0 "Motorized Army"
-MEX_defence_effort:0 "Defense Effort"
-MEX_reinforce_the_army:0 "Offense Effort"
-MEX_cheap_sfeq:0 "Mexican Special Forces"
-MEX_better_pack_arty:0 "Mountain Flatteners"
-MEX_bigger_landings:0 "Bigger Landings"
-MEX_faster_planning:0 "Planning Corps"
-MEX_politicised_army:0 "Politicised Army"
-MEX_politicised_army_2:0 "Depoliticised Army"
-MEX_better_naval_prep_invasion:0 "Preparation for Landing"
-MEX_support_offshore:0 "Offshore Support"
-MEX_Battleship_focus:0 "Mexican Dreadnoughts"
-MEX_proper_destroyers:0 "Proper Destroyers"
-MEX_Invest_in_submarine_warfare:0 "Submarine Warfare"
-MEX_naval_aviation:0 "Naval Aviation"
-MEX_naval_aviation_cooperation:0 "Cooperation Between Navy and Air"
-More_Rescources:0 "Mining Permits"
-Industrial_Development:0 "Industrial Development"
-MEX_escort_fleet:0 "Convoy Protector"
+ ### IDEAS ###
+ MEX_conscription_campaign:0 "Conscription Campaign"
+ MEX_preperation_for_the_new_year:0 "Beach Exercises"
+ MEX_brown_water_navy:0 "Brown Water Navy"
+ MEX_improvement_of_armor:0 "Armor Improvement"
+ MEX_improvement_of_motorization:0 "Motorized Army"
+ MEX_defence_effort:0 "Defense Effort"
+ MEX_reinforce_the_army:0 "Offense Effort"
+ MEX_cheap_sfeq:0 "Mexican Special Forces"
+ MEX_better_pack_arty:0 "Mountain Flatteners"
+ MEX_bigger_landings:0 "Bigger Landings"
+ MEX_faster_planning:0 "Planning Corps"
+ MEX_politicised_army:0 "Politicised Army"
+ MEX_politicised_army_2:0 "Depoliticised Army"
+ MEX_better_naval_prep_invasion:0 "Preparation for Landing"
+ MEX_support_offshore:0 "Offshore Support"
+ MEX_Battleship_focus:0 "Mexican Dreadnoughts"
+ MEX_proper_destroyers:0 "Proper Destroyers"
+ MEX_Invest_in_submarine_warfare:0 "Submarine Warfare"
+ MEX_naval_aviation:0 "Naval Aviation"
+ MEX_naval_aviation_cooperation:0 "Cooperation Between Navy and Air"
+ More_Rescources:0 "Mining Permits"
+ Industrial_Development:0 "Industrial Development"
+ MEX_escort_fleet:0 "Convoy Protector"
+
+ ### TOOLTIP ###
+ general_cascar_de_patata_tt:0 "§OCascara de Patata§! §Ybecomes a skill 4 General with 6 attack, 3 defense, 4 planning, 5 logistics, and Panzer Leader, Brilliant Strategist and Fortress Buster§!"
+ 
+ general_muro_de_hierro_tt:0 "§OMuro de Hierro§! §Ybecomes a skill 4 General with 5 attack, 4 defense, 3 planning, 4 logistics, and Infantry Leader, Inflexible Strategist, Cautious and Engineer Officer§!"
+
+ general_dolar_de_montanismo_tt:0 "§ODólar de Montañismo§! §Ybecomes a skill 4 General with 4 attack, 3 defense, 5 planning, 5 logistics, and Infantry Leader, Trickster, Mountaineer and Brilliant Strategist§!"
+ 
+ general_rata_de_aqua_tt:0 "§ORata de Aqua§! §Ybecomes a skill 4 General with 5 attack, 3 defense, 4 planning, 4 logistics, and Naval Invader, Reckless, Infantry Leader and Commando§!"
