@@ -194,6 +194,8 @@
  tank_medium_td_1_desc:0 "§OMedium§! §1TD§! Armament"
  tank_medium_td_2:0 "Medium Tank Destroyer Cannon 2"
  tank_medium_td_2_desc:0 "§OMedium§! §1TD§! Armament"
+ tank_medium_td_3:0 "Medium Tank Destroyer Cannon 3"
+ tank_medium_td_3_desc:0 "§OMedium§! §1TD§! Armament"
 
  # Armored Car Weapons
  tank_car_auto_cannon:0 "Auto Cannon"
@@ -314,6 +316,7 @@
  ger_medium_tank_chassis_e50:0 "E-50 Chassis"
  ger_heavy_tank_chassis_neub:0 "Neubaufahrzeug Chassis"
  ger_heavy_tank_chassis_p6:0 "Tiger Chassis"
+ ger_heavy_tank_1_upgrade:0 "Tiger First Wave Upgrades"
  ger_heavy_tank_chassis_p6_b:0 "Tiger II Chassis"
  ger_heavy_tank_chassis_p7:0 "Löwe Chassis"
  ger_heavy_tank_chassis_e100:0 "E-100 Chassis"

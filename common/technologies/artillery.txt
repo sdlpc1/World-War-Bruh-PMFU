@@ -664,6 +664,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_med_gun_squeeze2
 			tank_med_hv_gun_3
+			tank_medium_td_3
 		}
 		research_cost = 2.0
 

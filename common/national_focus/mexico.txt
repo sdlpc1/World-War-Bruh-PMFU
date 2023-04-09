@@ -14,7 +14,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 1200 y = 1100 }
+	continuous_focus_position = { x = 1425 y = 700 }
 
 	focus = {
         id = MEX_focus_plan_of_agua_prieta
@@ -418,9 +418,9 @@ focus_tree = {
     focus = {
         id = MEX_focus_liberty_and_justice_for_all  
             icon = GFX_focus_chi_mission_to_the_us
-            prerequisite = { focus = MEX_focus_nationalize_the_oil_fields }
+            prerequisite = { focus = MEX_focus_nationalize_the_oil_fields focus = MEX_focus_oil_drilling }
             relative_position_id = MEX_focus_nationalize_the_oil_fields
-                x = 0
+                x = -5
                 y = 1
             cost = 5
         
@@ -1190,22 +1190,22 @@ focus_tree = {
 				custom_effect_tooltip = available_political_advisor
 				show_ideas_tooltip = MEX_luis_montes_de_oca
 				MEX_decrease_cedillo_tension = yes
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 2
-							include_locked = yes
-						}
-						is_core_of = ROOT
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
+				# random_owned_controlled_state = {
+				# 	limit = {
+				# 		free_building_slots = {
+				# 			building = industrial_complex
+				# 			size > 2
+				# 			include_locked = yes
+				# 		}
+				# 		is_core_of = ROOT
+				# 	}
+				# 	add_extra_state_shared_building_slots = 2
+				# 	add_building_construction = {
+				# 		type = industrial_complex
+				# 		level = 2
+				# 		instant_build = yes
+				# 	}
+				# }
 			}
 	}
 
@@ -1343,22 +1343,22 @@ focus_tree = {
                     }
                     add_extra_state_shared_building_slots = 1
                 }
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 2
-							include_locked = yes
-						}
-						is_core_of = ROOT
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
+				# random_owned_controlled_state = {
+				# 	limit = {
+				# 		free_building_slots = {
+				# 			building = industrial_complex
+				# 			size > 2
+				# 			include_locked = yes
+				# 		}
+				# 		is_core_of = ROOT
+				# 	}
+				# 	add_extra_state_shared_building_slots = 2
+				# 	add_building_construction = {
+				# 		type = industrial_complex
+				# 		level = 2
+				# 		instant_build = yes
+				# 	}
+				# }
             }
     }
 
@@ -1485,22 +1485,22 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 2
-							include_locked = yes
-						}
-						is_core_of = ROOT
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
+				# random_owned_controlled_state = {
+				# 	limit = {
+				# 		free_building_slots = {
+				# 			building = industrial_complex
+				# 			size > 2
+				# 			include_locked = yes
+				# 		}
+				# 		is_core_of = ROOT
+				# 	}
+				# 	add_extra_state_shared_building_slots = 2
+				# 	add_building_construction = {
+				# 		type = industrial_complex
+				# 		level = 2
+				# 		instant_build = yes
+				# 	}
+				# }
             }
     }
 
@@ -1635,22 +1635,22 @@ focus_tree = {
             available_if_capitulated = yes
     
             completion_reward = {
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 2
-							include_locked = yes
-						}
-						is_core_of = ROOT
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
+				# random_owned_controlled_state = {
+				# 	limit = {
+				# 		free_building_slots = {
+				# 			building = industrial_complex
+				# 			size > 2
+				# 			include_locked = yes
+				# 		}
+				# 		is_core_of = ROOT
+				# 	}
+				# 	add_extra_state_shared_building_slots = 2
+				# 	add_building_construction = {
+				# 		type = industrial_complex
+				# 		level = 2
+				# 		instant_build = yes
+				# 	}
+				# }
 				
 				add_ideas = More_Rescources
 
@@ -1892,6 +1892,10 @@ focus_tree = {
 			y = 0
 
 			cost = 5
+
+			allow_branch = {
+				always = no
+			}
 
 			ai_will_do = {
 				factor = 1
@@ -2300,7 +2304,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_School_for_Naval_aviation 
-			icon = GFX_goal_generic_air_naval_bomber
+			icon = GFX_goal_generic_air_bomber
 			# mutually_exclusive = { focus = MEX_focus_School_for_Bombing }
 			prerequisite = { focus = MEX_focus_Bombing_test_flight }
 			relative_position_id = MEX_focus_Bombing_test_flight
@@ -2334,105 +2338,6 @@ focus_tree = {
 				}
 			}
 	}
-
-    focus = {
-		id = MEX_focus_Naval_aviation
-			icon = GFX_goal_generic_air_naval_bomber
-			prerequisite = { focus = MEX_focus_School_for_Naval_aviation }
-            prerequisite = { focus = MEX_focus_Floating_Airfield }
-			relative_position_id = MEX_focus_School_for_Naval_aviation
-			x = 0
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				air_experience = 50
-			}
-	}
-
-    focus = {
-		id = MEX_focus_The_first_Sortier
-			icon = GFX_goal_generic_air_naval_bomber
-			prerequisite = { focus = MEX_focus_Naval_aviation }
-			relative_position_id = MEX_focus_Naval_aviation
-			x = 0
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				air_experience = 50
-				add_ideas = MEX_naval_aviation
-			}
-	}
-
-    focus = {
-		id = MEX_focus_Sortier_Pendechos
-			icon = GFX_goal_generic_navy_carrier
-			prerequisite = { focus = MEX_focus_The_first_Sortier }
-            prerequisite = { focus = MEX_focus_It_is_an_island }
-			relative_position_id = MEX_focus_The_first_Sortier
-			x = -1
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			available = {
-				# has_army_experience > 50
-				has_navy_experience > 50
-			}
-
-			bypass = {
-				
-			}
-
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-
-			completion_reward = {
-				add_ideas = MEX_naval_aviation_cooperation
-				# army_experience = -50
-				navy_experience = -50
-			}
-	} 
 
     focus = {
 		id = MEX_focus_Air_innovation
@@ -2618,8 +2523,8 @@ focus_tree = {
     focus = {
 		id = MEX_focus_Better_then_the_KRIEGSMARINE
 			icon = GFX_goal_generic_navy_doctrines_tactics
-			relative_position_id = MEX_focus_Copy_the_Wright_Brothers
-			x = -6
+			relative_position_id = MEX_focus_plan_of_agua_prieta
+			x = 24
 			y = 0
 
 			cost = 5
@@ -2707,7 +2612,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_Based_Navy_2
-			icon = GFX_goal_generic_amphibious_assault
+			icon = GFX_goal_generic_navy_cruiser
 			prerequisite = { focus = MEX_focus_Based_Navy_1 }
 			relative_position_id = MEX_focus_Based_Navy_1
 			x = 0
@@ -2750,7 +2655,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_Based_Navy_3
-			icon = GFX_goal_generic_amphibious_assault
+			icon = GFX_goal_generic_navy_submarine
 			prerequisite = { focus = MEX_focus_Based_Navy_2 }
 			relative_position_id = MEX_focus_Based_Navy_2
 			x = 1
@@ -2859,7 +2764,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_Improved_nut_shells
-			icon = GFX_goal_generic_construct_naval_dockyard
+			icon = GFX_goal_generic_build_navy
             mutually_exclusive = { focus = MEX_focus_air_matress }
 			prerequisite = { focus = MEX_focus_Light_nut_shells }
 			relative_position_id = MEX_focus_Light_nut_shells
@@ -3131,12 +3036,111 @@ focus_tree = {
 			}
 	}
 
+	focus = {
+		id = MEX_focus_Naval_aviation
+			icon = GFX_goal_generic_air_naval_bomber
+			# prerequisite = { focus = MEX_focus_School_for_Naval_aviation }
+            prerequisite = { focus = MEX_focus_Floating_Airfield }
+			relative_position_id = MEX_focus_Floating_Airfield
+			x = 1
+			y = 1
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				air_experience = 50
+			}
+	}
+
+    focus = {
+		id = MEX_focus_The_first_Sortier
+			icon = GFX_goal_generic_air_fighter2
+			prerequisite = { focus = MEX_focus_Naval_aviation }
+			relative_position_id = MEX_focus_Naval_aviation
+			x = 0
+			y = 1
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				air_experience = 50
+				add_ideas = MEX_naval_aviation
+			}
+	}
+
+	focus = {
+		id = MEX_focus_Sortier_Pendechos
+			icon = GFX_goal_generic_amphibious_assault
+			prerequisite = { focus = MEX_focus_The_first_Sortier }
+            prerequisite = { focus = MEX_focus_It_is_an_island }
+			relative_position_id = MEX_focus_The_first_Sortier
+			x = -1
+			y = 1
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				# has_army_experience > 50
+				has_navy_experience > 50
+			}
+
+			bypass = {
+				
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_ideas = MEX_naval_aviation_cooperation
+				# army_experience = -50
+				navy_experience = -50
+			}
+	} 
+
     focus = {
 		id = MEX_focus_Is_it_an_island
-			icon = GFX_goal_generic_navy_carrier
+			icon = GFX_goal_generic_occupy_states_coastal
 			prerequisite = { focus = MEX_focus_Floating_Airfield }
 			relative_position_id = MEX_focus_Floating_Airfield
-			x = 0
+			x = -1
 			y = 1
 
 			cost = 5
@@ -3281,12 +3285,6 @@ focus_tree = {
 
 			completion_reward = {
 				add_tech_bonus = {
-					name = artillery
-					bonus = 0.75
-					uses = 1
-					category = artillery
-				}
-				add_tech_bonus = {
 					name = infantry_weapons
 					bonus = 0.75
 					uses = 1
@@ -3316,7 +3314,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_better_weapons
-			icon = GFX_goal_generic_allies_build_infantry
+			icon = GFX_goal_generic_small_arms
 			prerequisite = { focus = MEX_focus_leg_day }
 			relative_position_id = MEX_focus_leg_day
 			x = 0
@@ -3359,7 +3357,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_focus_better_support
-			icon = GFX_goal_generic_allies_build_infantry
+			icon = GFX_goal_generic_army_artillery
 			prerequisite = { focus = MEX_focus_better_weapons }
 			relative_position_id = MEX_focus_better_weapons
 			x = 0
@@ -3428,164 +3426,164 @@ focus_tree = {
 			}
 	}
 
-	focus = {
-		id = MEX_focus_Army_Industry
-			icon = GFX_focus_generic_tungsten
-			mutually_exclusive = { focus = MEX_focus_Naval_Industry focus = MEX_focus_Aerial_Industry }
-			prerequisite = { focus = MEX_depoliticised_army }
-			prerequisite = { focus = MEX_focus_improve_steel_plants }
-			relative_position_id = MEX_focus_rebuilding_the_army
-			x = 1
-			y = 8
+	# focus = {
+	# 	id = MEX_focus_Army_Industry
+	# 		icon = GFX_focus_generic_tungsten
+	# 		mutually_exclusive = { focus = MEX_focus_Naval_Industry focus = MEX_focus_Aerial_Industry }
+	# 		prerequisite = { focus = MEX_depoliticised_army }
+	# 		prerequisite = { focus = MEX_focus_improve_steel_plants }
+	# 		relative_position_id = MEX_focus_rebuilding_the_army
+	# 		x = 1
+	# 		y = 8
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				485 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                	}
-				}
-                478 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-				modify_building_resources = {
-					building = steel_refinery
-					resource = tungsten
-					amount = 20
-        		}
-			}
-	}
+	# 		completion_reward = {
+	# 			485 = {
+    #                 add_extra_state_shared_building_slots = 2
+    #                 add_building_construction = {
+    #                     type = steel_refinery
+    #                     level = 1
+    #                     instant_build = yes
+    #             	}
+	# 			}
+    #             478 = {
+    #                 add_extra_state_shared_building_slots = 2
+    #                 add_building_construction = {
+    #                     type = steel_refinery
+    #                     level = 1
+    #                     instant_build = yes
+    #                 }
+    #             }
+	# 			modify_building_resources = {
+	# 				building = steel_refinery
+	# 				resource = tungsten
+	# 				amount = 20
+    #     		}
+	# 		}
+	# }
 
-	focus = {
-		id = MEX_focus_Naval_Industry
-			icon = GFX_focus_generic_steel
-			mutually_exclusive = { focus = MEX_focus_Army_Industry focus = MEX_focus_Aerial_Industry }
-			prerequisite = { focus = MEX_focus_Better_then_the_KRIEGSMARINE }
-			prerequisite = { focus = MEX_focus_improve_steel_plants }
-			relative_position_id = MEX_focus_Better_then_the_KRIEGSMARINE
-			x = 2
-			y = 8
+	# focus = {
+	# 	id = MEX_focus_Naval_Industry
+	# 		icon = GFX_focus_generic_steel
+	# 		mutually_exclusive = { focus = MEX_focus_Army_Industry focus = MEX_focus_Aerial_Industry }
+	# 		prerequisite = { focus = MEX_focus_Better_then_the_KRIEGSMARINE }
+	# 		prerequisite = { focus = MEX_focus_improve_steel_plants }
+	# 		relative_position_id = MEX_focus_Better_then_the_KRIEGSMARINE
+	# 		x = 2
+	# 		y = 8
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				485 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                	}
-				}
-                478 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-				modify_building_resources = {
-					building = steel_refinery
-					resource = chromium
-					amount = 15
-        		}
-			}
-	}
+	# 		completion_reward = {
+	# 			485 = {
+    #                 add_extra_state_shared_building_slots = 2
+    #                 add_building_construction = {
+    #                     type = steel_refinery
+    #                     level = 1
+    #                     instant_build = yes
+    #             	}
+	# 			}
+    #             478 = {
+    #                 add_extra_state_shared_building_slots = 2
+    #                 add_building_construction = {
+    #                     type = steel_refinery
+    #                     level = 1
+    #                     instant_build = yes
+    #                 }
+    #             }
+	# 			modify_building_resources = {
+	# 				building = steel_refinery
+	# 				resource = chromium
+	# 				amount = 15
+    #     		}
+	# 		}
+	# }
 
-	focus = {
-		id = MEX_focus_Aerial_Industry
-			icon = GFX_focus_generic_aluminum
-			mutually_exclusive = { focus = MEX_focus_Army_Industry focus = MEX_focus_Naval_Industry }
-			prerequisite = { focus = MEX_focus_Copy_the_Wright_Brothers }
-			prerequisite = { focus = MEX_focus_improve_steel_plants }
-			relative_position_id = MEX_focus_Copy_the_Wright_Brothers
-			x = 2
-			y = 8
+	# focus = {
+	# 	id = MEX_focus_Aerial_Industry
+	# 		icon = GFX_focus_generic_aluminum
+	# 		mutually_exclusive = { focus = MEX_focus_Army_Industry focus = MEX_focus_Naval_Industry }
+	# 		prerequisite = { focus = MEX_focus_Copy_the_Wright_Brothers }
+	# 		prerequisite = { focus = MEX_focus_improve_steel_plants }
+	# 		relative_position_id = MEX_focus_Copy_the_Wright_Brothers
+	# 		x = 2
+	# 		y = 8
 
-			cost = 5
+	# 		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 
-			bypass = {
+	# 		bypass = {
 				
-			}
+	# 		}
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+	# 		cancel_if_invalid = yes
+	# 		continue_if_invalid = no
+	# 		available_if_capitulated = yes
 
-			completion_reward = {
-				485 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                	}
-				}
-                478 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = steel_refinery
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-				modify_building_resources = {
-					building = steel_refinery
-					resource = aluminium
-					amount = 20
-        		}
-			}
-	}
+	# 		completion_reward = {
+	# 			485 = {
+    #                 add_extra_state_shared_building_slots = 2
+    #                 add_building_construction = {
+    #                     type = steel_refinery
+    #                     level = 1
+    #                     instant_build = yes
+    #             	}
+	# 			}
+    #             478 = {
+    #                 add_extra_state_shared_building_slots = 2
+    #                 add_building_construction = {
+    #                     type = steel_refinery
+    #                     level = 1
+    #                     instant_build = yes
+    #                 }
+    #             }
+	# 			modify_building_resources = {
+	# 				building = steel_refinery
+	# 				resource = aluminium
+	# 				amount = 20
+    #     		}
+	# 		}
+	# }
 
     focus = {
 		id = MEX_focus_Preparation_for_new_Year
@@ -3723,7 +3721,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_Bunker_Buster
-			icon = GFX_focus_generic_coastal_fort
+		icon = GFX_goal_generic_navy_battleship
 			prerequisite = { focus = MEX_focus_combined_invasion }
 			relative_position_id = MEX_focus_combined_invasion
 			x = 0
@@ -3944,7 +3942,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_interessting_rocks
-			icon = GFX_focus_GRE_a_land_of_mountains
+			icon = GFX_goal_generic_special_forces
 			prerequisite = { focus = MEX_focus_lets_start_hiking }
 			relative_position_id = MEX_focus_lets_start_hiking
 			x = 0
@@ -3981,7 +3979,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_on_top_of_the_world
-			icon = GFX_focus_GRE_a_land_of_mountains
+			icon = GFX_SOV_artillery_development
 			prerequisite = { focus = MEX_focus_interessting_rocks }
 			relative_position_id = MEX_focus_interessting_rocks
 			x = 0
@@ -4021,7 +4019,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_offense_is_better
-			icon = GFX_goal_generic_allies_build_infantry
+			icon = GFX_goal_generic_position_armies
 			prerequisite = { focus = MEX_focus_better_support }
     		mutually_exclusive = { focus = MEX_focus_safety_first }
 			relative_position_id = MEX_focus_better_support
@@ -4124,6 +4122,12 @@ focus_tree = {
 
 			completion_reward = {
 				add_tech_bonus = {
+					name = artillery
+					bonus = 0.75
+					uses = 1
+					technology = motorized_rocket_unit
+				}
+				add_tech_bonus = {
 					name = cat_mechanized_equipment
 					uses = 1
 					ahead_reduction = 0.5
@@ -4135,7 +4139,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_Radios_for_trucks
-			icon = GFX_goal_generic_army_motorized
+			icon = GFX_focus_generic_combined_arms
 			prerequisite = { focus = MEX_focus_lets_start_rolling }
 			relative_position_id = MEX_focus_lets_start_rolling
 			x = 0
@@ -4166,7 +4170,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_New_General
-			icon = GFX_goal_generic_army_motorized
+			icon = GFX_goal_generic_cavalry
 			prerequisite = { focus = MEX_focus_Radios_for_trucks }
 			relative_position_id = MEX_focus_Radios_for_trucks
 			x = 0
@@ -4207,7 +4211,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_play_their_game
-			icon = GFX_goal_generic_army_tanks
+			icon = GFX_SOV_armour_development
 			mutually_exclusive = { focus = MEX_focus_lets_start_rolling focus = MEX_focus_leg_day }
 			prerequisite = { focus = MEX_focus_rebuilding_the_army }
 			relative_position_id = MEX_focus_rebuilding_the_army
@@ -4254,7 +4258,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_tank_workshops
-			icon = GFX_goal_generic_army_tanks
+			icon = GFX_goal_generic_build_tank
 			prerequisite = { focus = MEX_focus_play_their_game }
 			relative_position_id = MEX_focus_play_their_game 
 			x = 0
@@ -4293,7 +4297,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_army_expansion_programm
-			icon = GFX_goal_generic_army_tanks
+			icon = GFX_doctrine_tank_warfare
 			prerequisite = { focus = MEX_focus_tank_workshops }
 			relative_position_id = MEX_focus_tank_workshops 
 			x = 0

@@ -248,6 +248,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/medium_td_2.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_medium_td_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/medium_td_3.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_med_cs_gun_1"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_cs_gun_1.dds"
 	}
@@ -637,6 +641,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ger_heavy_tank_chassis_p6_medium"
 		texturefile = "gfx/interface/technologies/tanks/ger/ger_p6_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_ger_heavy_tank_1_upgrade_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_ger_heavy_tank_chassis_p6_b_medium"

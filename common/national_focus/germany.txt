@@ -4246,9 +4246,9 @@ focus_tree = {
 		icon = GFX_GER_exploit_and_plunder
 		prerequisite = { focus = GER_avenge_versailles }
 		available = {
-			has_full_control_of_state = 16
-			has_full_control_of_state = 7
-			has_full_control_of_state = 6
+			16 = { controller = { is_in_faction_with = GER } } 
+			7 = { controller = { is_in_faction_with = GER } } 
+			6 = { controller = { is_in_faction_with = GER } } 
 		}
 		bypass = {
 		}

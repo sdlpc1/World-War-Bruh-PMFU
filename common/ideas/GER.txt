@@ -3189,6 +3189,7 @@ ideas = {
 				module_tank_light_td_2_design_cost_factor = -1
 				module_tank_medium_td_1_design_cost_factor = -1
 				module_tank_medium_td_2_design_cost_factor = -1
+				module_tank_medium_td_3_design_cost_factor = -1
 				module_expanded_fuel_tank_design_cost_factor = -1
 				module_tank_heavy_turret_3_design_cost_factor = -1
 				# module__design_cost_factor = -1
