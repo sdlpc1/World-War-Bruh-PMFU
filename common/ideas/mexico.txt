@@ -594,7 +594,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				naval_invasion_prep_speed = 0.2
+				naval_invasion_prep_speed = 0.1
 			}
 		}
 
@@ -609,7 +609,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				invasion_preparation = -0.3
+				invasion_preparation = -0.15
 			}
 		}
 
@@ -624,7 +624,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				shore_bombardment_bonus = 0.3
+				shore_bombardment_bonus = 0.1
 			}
 		}
 
@@ -639,7 +639,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				naval_invasion_capacity = 10
+				naval_invasion_capacity = 4
 			}
 		}
 
@@ -655,7 +655,7 @@ ideas = {
 			
 			equipment_bonus = {
 				sf_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 					instant = yes
 				}
 			}
@@ -1396,6 +1396,25 @@ ideas = {
 	naval_manufacturer = { 
 	
 		designer = yes
+
+		MEX_escort_fleet = {
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+		}
 		
 		MEX_astimar_gulf = {
 			
