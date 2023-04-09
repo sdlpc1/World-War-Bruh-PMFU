@@ -2847,7 +2847,7 @@ focus_tree = {
 				NOT = { has_completed_focus = MEX_focus_play_their_game }
 				NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
 				# NOT = { has_completed_focus = MEX_focus_Aviation_College }
-				NOT = { has_completed_focus = MEX_focus_CAS_practise }
+				# NOT = { has_completed_focus = MEX_focus_CAS_practise }
 			}
 
 			bypass = {
@@ -2883,7 +2883,7 @@ focus_tree = {
 				NOT = { has_completed_focus = MEX_focus_play_their_game }
 				NOT = { has_completed_focus = MEX_focus_lets_start_rolling }
 				# NOT = { has_completed_focus = MEX_focus_Aviation_College }
-				NOT = { has_completed_focus = MEX_focus_CAS_practise }
+				# NOT = { has_completed_focus = MEX_focus_CAS_practise }
 			}
 
 			bypass = {
@@ -3601,7 +3601,7 @@ focus_tree = {
 			}
 
 			available = {
-				NOT = { has_completed_focus = MEX_focus_Copy_the_Wright_Brothers }
+				# NOT = { has_completed_focus = MEX_focus_Copy_the_Wright_Brothers }
 			}
 
 			bypass = {
@@ -3766,7 +3766,7 @@ focus_tree = {
 			}
 
 			available = {
-				NOT = { has_completed_focus = MEX_focus_Copy_the_Wright_Brothers }
+				# NOT = { has_completed_focus = MEX_focus_Copy_the_Wright_Brothers }
 				NOT = { has_completed_focus = MEX_focus_Floating_Airfield }
 			}
 
@@ -3901,7 +3901,7 @@ focus_tree = {
 			available = {
 				NOT = { has_completed_focus = MEX_focus_Beginning_of_the_Chungus }
 				NOT = { has_completed_focus = MEX_focus_Floating_Airfield }
-				NOT = { has_completed_focus = MEX_focus_Copy_the_Wright_Brothers }
+				# NOT = { has_completed_focus = MEX_focus_Copy_the_Wright_Brothers }
 			}
 
 			bypass = {
