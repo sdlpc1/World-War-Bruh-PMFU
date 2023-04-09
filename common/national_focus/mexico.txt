@@ -429,6 +429,14 @@ focus_tree = {
             }
     
             available = {
+				if = {
+					limit = {
+						has_global_flag = NO_ASIA
+		
+					}
+					date > 1941.1.1
+				}
+                else = {
                 OR = {
 					ENG = {
 						has_war_with = JAP
@@ -437,6 +445,7 @@ focus_tree = {
 						has_war_with = GER
 					}
 				}
+			}
             }
     
             bypass = {
