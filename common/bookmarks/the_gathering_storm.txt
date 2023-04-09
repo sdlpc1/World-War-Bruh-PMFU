@@ -227,7 +227,7 @@ bookmarks = {
 			}
 			focuses = {
 				MEX_focus_aztec_eagles
-				MEX_focus_Sortier_Pendechos
+				MEX_focus_northern_steel_plants
 				MEX_depoliticised_army
 			}
 		}
