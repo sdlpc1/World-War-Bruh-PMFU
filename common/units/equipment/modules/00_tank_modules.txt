@@ -910,6 +910,7 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_armament_tier_heavy_1
+				tank_armament_tier_heavy_2
 			}
 		}
 		

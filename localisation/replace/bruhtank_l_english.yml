@@ -262,7 +262,7 @@
  tank_medium_superstructure:0 "Fixed Medium Casemate"
  tank_medium_superstructure_desc:0 "Enables §9Assault Gun§! Armaments\nEnables §YLight§! §1TD§! Armaments\nEnables §OMedium§! §1TD§! Armaments"
  tank_large_medium_superstructure:0 "Fixed Medium Large Casemate"
- tank_large_medium_superstructure_desc:0 "Enables §CImproved§! §RHeavy§! Armaments"
+ tank_large_medium_superstructure_desc:0 "Enables §3Basic§! §RHeavy§! Armaments\nEnables §CImproved§! §RHeavy§! Armaments"
  tank_medium_open_superstructure:0 "Medium Open Superstructure"
  tank_medium_open_superstructure_desc:0 "Enables §7Artillery§! Armaments\nEnables §0AA§! Armaments\nEnables §RHeavy§! §0AA§! Armaments\nEnables §YLight§! §1TD§! Armaments\nEnables §OMedium§! §1TD§! Armaments"
  #tank_medium_superstructure_navy:0 "Gun Platform"

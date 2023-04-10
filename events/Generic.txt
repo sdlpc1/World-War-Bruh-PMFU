@@ -1841,7 +1841,10 @@ country_event = {
 
 	option = {
 		name = generic.26.a
-		add_threat = 15.8
+		JAP = {
+			add_named_threat = { threat = 15.8 name = "Marco Polo Bridge Incident" }
+		}
+		# add_threat = 15.8
 	}
 }
 
@@ -1856,8 +1859,10 @@ country_event = {
     hidden = yes
 	option = {
 		name = generic.26.a
-		add_threat = 15
-
+		JAP = {
+			add_named_threat = { threat = 15 name = "Secure China" }
+		}
+		# add_threat = 15
 	}
 }
 
@@ -1873,8 +1878,11 @@ country_event = {
 
 	option = {
 		name = generic.26.a
-		add_threat = 50
-
+		JAP = {
+			add_named_threat = { threat = 50 name = "Republic of China capitulated" }
+		}
+		# add_named_threat = { threat = 50 name = "Republic of China capitulated" }
+		# add_threat = 50
 	}
 }
 
