@@ -1496,6 +1496,16 @@ on_actions = {
 			}
 		}
 	}	
+
+	on_startup = {
+		effect = {
+			hidden_effect = {
+				GER = {
+					country_event = { id = generic.31 days = 1825 } #1825 days
+				}
+			}
+		}
+	}	
 	
 	on_startup = {
 		effect = {

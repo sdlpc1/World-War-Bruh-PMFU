@@ -345,6 +345,9 @@
   GER_share_generals:0 "Massed Recruitment Campaign"
   GER_wunder_maus:0 "Develop Super Heavy Armor Designs"
   GER_good_weather_army:0 "Good Weather Army"
+  GER_turkey_allied_embargo_axis:0 "Allies and Comintern - Turkish Embargo"
+  GER_turkey_allied_embargo_allies:0 "Allies and Comintern - Turkish Embargo Breaking"
+  GER_sweden_allied_embargo_allies:0 "Allies and Comintern - Swedish Embargo Breaking"
 
   #### PROPAGANDA ####
   GER_propaganda_campaigns:0 "Reichsministerium für Volksaufklärung"

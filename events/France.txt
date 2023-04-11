@@ -220,6 +220,26 @@ country_event = {
 		save_global_event_target_as = free_france
 		GER = { country_event = france.14 }
 		custom_effect_tooltip = france.10.b_tt
+		SPR = {
+			# COMINTERN
+			send_embargo = SOV
+			send_embargo = MON
+
+			# ALLIES
+			send_embargo = CAN
+			send_embargo = USA
+			send_embargo = MEX
+			send_embargo = BRA
+			send_embargo = IRE
+			send_embargo = ENG
+			send_embargo = FRA
+			send_embargo = HOL
+			send_embargo = POL
+			send_embargo = RAJ
+			send_embargo = AST
+			send_embargo = NZL
+			send_embargo = SAF
+		}
 		GER = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		ITA = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		ROM = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
@@ -368,6 +388,9 @@ country_event = {
 		}
 		trigger = {
 			has_government = fascism
+		}
+		GER = {
+			set_country_flag = GER_start_turkey_allied_embargo_axis_mission_first_time
 		}
 		FRA = { 
 			set_cosmetic_tag = FRA_FREE 

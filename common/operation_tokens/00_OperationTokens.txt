@@ -102,7 +102,7 @@ token_airforce_japan_small = {
 	text_icon = GFX_text_infiltrate_air_token
 	
 	intel_source = airforce
-	intel_gain = 15
+	intel_gain = 20
 }
 
 token_army_japan_small = {
@@ -112,7 +112,7 @@ token_army_japan_small = {
 	text_icon = GFX_text_infiltrate_army_token
 	
 	intel_source = army
-	intel_gain = 15
+	intel_gain = 20
 }
 
 token_civilian_japan_small = {
@@ -122,7 +122,7 @@ token_civilian_japan_small = {
 	text_icon = GFX_text_infiltrate_civilian_token
 	
 	intel_source = civilian
-	intel_gain = 15
+	intel_gain = 20
 }
 
 token_navy_japan_small = {
@@ -132,7 +132,7 @@ token_navy_japan_small = {
 	text_icon = GFX_text_infiltrate_navy_token
 	
 	intel_source = navy
-	intel_gain = 15
+	intel_gain = 20
 }
 
 # Friendly nation intel #

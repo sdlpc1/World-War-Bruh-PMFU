@@ -2778,6 +2778,25 @@ focus_tree = {
 					target = GER
 					modifier = ENG_imperial_trade
 				}
+
+				# COMINTERN
+				send_embargo = SOV
+				send_embargo = MON
+	
+				# ALLIES
+				send_embargo = CAN
+				send_embargo = USA
+				send_embargo = MEX
+				send_embargo = BRA
+				send_embargo = IRE
+				send_embargo = ENG
+				send_embargo = FRA
+				send_embargo = HOL
+				send_embargo = POL
+				send_embargo = RAJ
+				send_embargo = AST
+				send_embargo = NZL
+				send_embargo = SAF
 			}
 		}
 	}
@@ -5318,10 +5337,10 @@ focus_tree = {
 	focus = {
 		id = GER_share_tanks
 		icon = GFX_goal_share_tanks
-		prerequisite = { focus = GER_avenge_versailles }
-		x = 2
+		prerequisite = { focus = GER_panzer }
+		x = -2
 		y = 1
-		relative_position_id = GER_avenge_versailles
+		relative_position_id = GER_panzer
 		cost = 1
 		ai_will_do = {
 			factor = 1

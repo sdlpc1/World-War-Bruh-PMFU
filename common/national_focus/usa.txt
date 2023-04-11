@@ -806,7 +806,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = chromium
-					amount = 2000
+					amount = 1000
 				}
 			}
 		}

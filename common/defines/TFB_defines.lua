@@ -27,6 +27,8 @@ NDefines.NDiplomacy.PEACE_ACTION_MAX_COST = 500					-- Max value for a peace act
 NDefines.NDiplomacy.CAPITAL_CAPITULATE_BONUS_SCORE	= 300			-- extra bonus when deciding who to capitulate to (applied to capital holder)
 NDefines.NDiplomacy.VICTORY_POINT_WORTH_FACTOR_WARSCORE = 0.5		-- multiplier for each victory points when calculating province worth for warscore
 NDefines.NDiplomacy.EMBARGO_COST = 6000		-- make it so you cant embargo anyone
+NDefines.NDiplomacy.REVOKE_EMBARGO_COST = 6000		-- make it so you cant revoke embargo
+NDefines.NDiplomacy.EMBARGO_THREAT_THRESHOLD = 0 	
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 10000		--AI automatically accepts attache
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0 			-- originally 30
 
