@@ -1395,7 +1395,7 @@
 		completion_reward = {
 			custom_effect_tooltip = JAP_early_war_military_emperor_tt
 			custom_effect_tooltip = JAP_early_war_military_tora_tt
-			custom_effect_tooltip = JAP_early_war_military_usa_tt
+			# custom_effect_tooltip = JAP_early_war_military_usa_tt
 		}
 	}
 

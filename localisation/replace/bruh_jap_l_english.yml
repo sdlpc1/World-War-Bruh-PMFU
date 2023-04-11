@@ -317,7 +317,7 @@
   JAP_early_war_military_emperor_tt:0 "§YFor the Emperor§! Spirit will last for §Y90§! days"
   JAP_early_war_military_tora_tt:0 "§YTora Tora Tora§! will last for §Y120§! days instead of §Y180§! days"
   JAP_early_war_military_usa_tt:0 "If you don't attack the USA, they will stay out for §Y90§! days instead of §Y60§! days"
-  JAP_mid_war_intel_tt:0 "We will recieve §Y25 Civilian, Army, Navy, and Air intel§! on all of the Allies.\n§RExample:§!"
+  JAP_mid_war_intel_tt:0 "We will recieve §Y20 Civilian, Army, Navy, and Air intel§! on all of the Allies.\n§RExample:§!"
   JAP_late_war_intel_tt:0 "We will recieve §Y20 Civilian, Army, Navy, and Air intel§! on all of the Allies\n§RExample:§!"
   JAP_late_war_collab_tt:0 "\nWe will recieve  §Y60% Collaboration§! in the Dutch East Indies, Malaya, and the Philippines when the war begins."
   JAP_late_war_destruction_tt:0 "§GAt the outbreak of the war our carefully planned sabotage and air strikes will cripple enemy defenses. Note that Attacks against the US and Philippines only occur if you go to war with them.§!"
