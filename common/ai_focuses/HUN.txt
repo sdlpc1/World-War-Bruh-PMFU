@@ -17,7 +17,7 @@ ai_historical_focus_list_HUN = {
         HUN_announce_the_gyor_program
         HUN_domestic_arms_industry
         HUN_renounce_the_treaty_of_trianon
-        HUN_reaffirm_territorial_claims
+        # HUN_reaffirm_territorial_claims
         HUN_proclaim_greater_hungary
         #HUN_trade_deal_with_germany
         HUN_joint_aluminum_mining_company

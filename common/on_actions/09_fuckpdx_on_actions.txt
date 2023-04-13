@@ -127,6 +127,16 @@ on_actions = {
 					white_peace = CHI
 					remove_ideas = JAP_no_equipment_capture
 				}
+				CHI = {
+                    transfer_units_fraction = {
+                        target = JAP
+                        size = 1
+                        stockpile_ratio = 0
+                        army_ratio = 0
+                        navy_ratio = 1.0
+                        air_ratio = 0
+                    }
+                }
 				MAN = {
 					transfer_state = 616 #Ningxia
 					transfer_state = 621 #Suiyuan
@@ -191,6 +201,16 @@ on_actions = {
 					FROM = { is_in_faction_with = JAP }
 					has_global_flag = JAP_take_china
 				}
+				CHI = {
+                    transfer_units_fraction = {
+                        target = JAP
+                        size = 1
+                        stockpile_ratio = 0
+                        army_ratio = 0
+                        navy_ratio = 1.0
+                        air_ratio = 0
+                    }
+                }
 				JAP = {
 					remove_ideas = JAP_no_equipment_capture
 					white_peace = CHI
@@ -237,6 +257,16 @@ on_actions = {
 					FROM = { is_in_faction_with = JAP }
 					has_global_flag = JAP_give_china
 				}
+				CHI = {
+                    transfer_units_fraction = {
+                        target = JAP
+                        size = 1
+                        stockpile_ratio = 0
+                        army_ratio = 0
+                        navy_ratio = 1.0
+                        air_ratio = 0
+                    }
+                }
 				MAN = {
 					white_peace = CHI
 					annex_country = {

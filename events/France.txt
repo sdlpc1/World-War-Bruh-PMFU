@@ -550,13 +550,13 @@ country_event = {
 			GER = {
 				give_guarantee = PREV
 			}
-			GER = { add_to_faction = PREV }
-			VIC = {
-				declare_war_on = {
-					target = ENG
-					type = annex_everything
-				}
-			}
+			# GER = { add_to_faction = PREV }
+			# VIC = {
+			# 	declare_war_on = {
+			# 		target = ENG
+			# 		type = annex_everything
+			# 	}
+			# }
 			every_unit_leader = {
 				limit = {
 					has_id = 101 #de Gaulle

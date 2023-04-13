@@ -748,37 +748,43 @@
         }
     }
 
-    # focus = {
-    #     id = VIC_Join_The_Axis
-    #     icon = GFX_goal_support_fascism
-    #     prerequisite = { focus = VIC_Accept_Axis_Claims }
-    #     relative_position_id = VIC_Accept_Axis_Claims
-    #     x = -1
-    #     y = 1
+    focus = {
+        id = VIC_Join_The_Axis
+        icon = GFX_goal_support_fascism
+        prerequisite = { focus = VIC_Accept_Axis_Claims }
+        relative_position_id = VIC_Accept_Axis_Claims
+        x = -1
+        y = 1
         
-    #     cost = 5
+        cost = 1
     
-    #     ai_will_do = {
-    #         factor = 1
-    #     }
+        ai_will_do = {
+            factor = 1
+        }
         
-    #     available = {
-    
-    #     }
+        available = {
+            OR = {
+                date > 1940.8.1
+                FRA = {
+                    has_completed_focus = FRA_form_the_national_committee
+                    has_completed_focus = FRA_refus_absurde
+                }
+            }
+        }
         
-    #     bypass = {
-    #         is_in_faction_with = GER
-    #     }
-    #     cancel_if_invalid = yes
-    #     continue_if_invalid = no
-    #     available_if_capitulated = no
+        bypass = {
+            is_in_faction_with = GER
+        }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
     
-    #     completion_reward = {
-    #         GER = {
-	# 			country_event = generic.2
-	# 		}
-    #     }
-    # }
+        completion_reward = {
+            GER = {
+				country_event = generic.2
+			}
+        }
+    }
 
     focus = {
         id = VIC_Concentrate_on_tanks
