@@ -3537,3 +3537,31 @@ country_event = {
 		}
 	}
 }
+
+### SS
+country_event = {
+	id = wtt_germany.1005
+	title = wtt_germany.1005.t
+	desc = wtt_germany.1005.d
+	picture = GFX_report_event_japan_europe_pact
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_germany.1005.a
+	}
+	
+	option = {
+		name = wtt_germany.1005.b
+		SS_armored_division_light = yes
+		GER_swap_SS_medium_light = yes
+		GER_refresh_SS_cap_light = yes
+	}
+
+	option = {
+		name = wtt_germany.1005.c	
+		SS_armored_division_heavy = yes
+		GER_swap_SS_medium_heavy = yes
+		GER_refresh_SS_cap_heavy = yes
+	}
+}

@@ -186,6 +186,28 @@ ideas = {
 			}
 		}
 
+		NO_ASIA_attache_idea = { # LW tyvm
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				GER = {
+					has_completed_focus = GER_danzig_or_war
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				experience_gain_army = 0.3
+				war_support_factor = 0.1
+			}
+		}
+
 		tank_hunter_teams = {
 			picture = generic_local_self_management
 			removal_cost = -1	

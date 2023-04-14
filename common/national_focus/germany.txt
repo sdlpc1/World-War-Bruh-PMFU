@@ -2297,7 +2297,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = GER_rhineland
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 8
 		}
@@ -2307,6 +2307,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			GER = {
+				country_event = wtt_germany.1005
+			}
 			custom_effect_tooltip = GER_waffen_ss_tt
 			hidden_effect = {
 				GER = {

@@ -55,6 +55,7 @@
  continuous_licensing:0 "License Production"
  continuous_licensing_desc:0 "We need to produce licensed equipment at record speeds."
  improved_worker_conditions_cancel:0 "Cancel Improved Worker Conditions"
+ NO_ASIA_attache:0 "Attache to the Sino-Japanese War."
 
  form_mutapa:0 "Unite South Africa"
  form_mutapa_category:0 "Unite South Africa"
@@ -213,6 +214,7 @@
  POL_morale:0 "Polish Morale"
  POL_morale_desc:0 "The Polish are a proud people, but eventually their spirit will break when they realize that help is not coming."
  POL_war_decisions:0 "Polish War Descsions"
+ NO_ASIA_attache_idea:0 "Attache to the Sino-Japanese War."
 
  father_check:0 "No Father?"
  father_check_desc:0 "Some players need some fatherly guidance due to a lack of that in their life"
@@ -331,6 +333,9 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  ss_mot_artillery_brigade:0 "Leichte SS-Artillerieabteilung"
  ss_heavy_artillery_brigade:0 "Schwere SS-Artillerieabteilung"
  ss_hq_company:0 "SS-Divisionsstab"
+ ss_hq_company_light:0 "SS-Divisionsstab"
+ ss_hq_company_medium:0 "SS-Divisionsstab"
+ ss_hq_company_medium:0 "SS-Divisionsstab"
  modern_heavy_battery:0 "Modern Heavy Battery"
  modifier_experience_gain_carrier_submarine_training_factor:0 "Carrier"
  modifier_experience_gain_carrier_submarine_combat_factor:0 "Poop"

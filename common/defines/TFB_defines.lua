@@ -293,6 +293,11 @@ NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.2				--% of damage dealt to 
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015
 NDefines.NMilitary.COST_INCREASE_PER_ACTIVE_MEDAL = 0				-- Additional cost factor per active medal.
 
+NDefines.NAir.ACCIDENT_CHANCE_BASE = 2.0
+NDefines.NAir.ACCIDENT_CHANCE_CARRIER_MULT = 2.0
+NDefines.NAir.ACCIDENT_CHANCE_BALANCE_MULT = 0.5
+NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 300
+NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 3.0
 NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 300
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 300
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 300
@@ -378,6 +383,7 @@ NDefines.NAir.FUEL_COST_MULT = 0.17 --0.35
 NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 1.6 -- How much aircrafts in region improves air detection (up to effective count).
+NDefines.NAir.ESCORT_FACTOR = 4  		-- cas enters battle earlier
 
 NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.20								-- random factor in damage. So if max damage is fe. 10 and randomness is 30% then damage will be between 7-10.
 NDefines.NNavy.COMBAT_MAX_GROUPS = 2										-- Max amount of "Fire Exchange" groups (FEX).

@@ -206,6 +206,7 @@ foreign_politics = {
 		}
 
 		available = {
+			country_exists = MON
 			419 = { is_controlled_by = SOV }
 			420 = { is_controlled_by = SOV }
 			421 = { is_controlled_by = SOV }

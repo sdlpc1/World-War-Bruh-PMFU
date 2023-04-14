@@ -30,7 +30,16 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			GER_increase_SS_cap = yes
+			if = {
+				limit = { has_country_flag = SS_armored_division_medium }
+				GER_increase_SS_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_light }
+				GER_increase_SS_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_heavy }
+				GER_increase_SS_cap_heavy = yes
+			}
 		}
 	}
 	SS_recruitment_norway = {
@@ -80,7 +89,16 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			GER_increase_SS_cap_double = yes
+			if = {
+				limit = { has_country_flag = SS_armored_division_medium }
+				GER_increase_SS_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_light }
+				GER_increase_SS_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_heavy }
+				GER_increase_SS_cap_heavy_double = yes
+			}
 		}
 	}
 	SS_recruitment_netherlands = {
@@ -124,7 +142,16 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			GER_increase_SS_cap = yes
+			if = {
+				limit = { has_country_flag = SS_armored_division_medium }
+				GER_increase_SS_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_light }
+				GER_increase_SS_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_heavy }
+				GER_increase_SS_cap_heavy = yes
+			}
 		}
 	}
 	SS_recruitment_belgium = {
@@ -158,7 +185,16 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			GER_increase_SS_cap = yes
+			if = {
+				limit = { has_country_flag = SS_armored_division_medium }
+				GER_increase_SS_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_light }
+				GER_increase_SS_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_heavy }
+				GER_increase_SS_cap_heavy = yes
+			}
 		}
 	}
 	SS_recruitment_france = {
@@ -208,7 +244,16 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			GER_increase_SS_cap_double = yes
+			if = {
+				limit = { has_country_flag = SS_armored_division_medium }
+				GER_increase_SS_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_light }
+				GER_increase_SS_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_heavy }
+				GER_increase_SS_cap_heavy_double = yes
+			}
 		}
 	}
 	SS_recruitment_estonia = {
@@ -242,7 +287,16 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			GER_increase_SS_cap = yes
+			if = {
+				limit = { has_country_flag = SS_armored_division_medium }
+				GER_increase_SS_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_light }
+				GER_increase_SS_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_heavy }
+				GER_increase_SS_cap_heavy = yes
+			}
 		}
 	}
 	SS_recruitment_latvia = {
@@ -276,7 +330,16 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			GER_increase_SS_cap = yes
+			if = {
+				limit = { has_country_flag = SS_armored_division_medium }
+				GER_increase_SS_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_light }
+				GER_increase_SS_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_heavy }
+				GER_increase_SS_cap_heavy = yes
+			}
 		}
 	}
 	SS_recruitment_lithuania = {
@@ -310,7 +373,16 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			GER_increase_SS_cap = yes
+			if = {
+				limit = { has_country_flag = SS_armored_division_medium }
+				GER_increase_SS_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_light }
+				GER_increase_SS_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_heavy }
+				GER_increase_SS_cap_heavy = yes
+			}
 		}
 	}
 	SS_recruitment_himmler = {
@@ -323,7 +395,7 @@ SS_recruitment = {
 		visible = {
 			has_country_leader = {
 				name = "Heinrich Himmler"
-				ruling_only = yes
+				ruling_only = yes 
 			}
 		}
 
@@ -333,7 +405,16 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			GER_increase_SS_cap = yes
+			if = {
+				limit = { has_country_flag = SS_armored_division_medium }
+				GER_increase_SS_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_light }
+				GER_increase_SS_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = SS_armored_division_heavy }
+				GER_increase_SS_cap_heavy = yes
+			}
 		}
 	}
 }

@@ -12480,6 +12480,34 @@ country_event = {
 	}
 }
 
+### RED GUARDS
+country_event = {
+	id = soviet.1112
+	title = soviet.1112.t
+	desc = soviet.1112.d
+	picture = GFX_report_event_japan_europe_pact
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.1112.a
+	}
+	
+	option = {
+		name = soviet.1112.b
+		RG_armored_division_light = yes
+		SOV_swap_RG_medium_light = yes
+		SOV_refresh_RG_cap_light = yes
+	}
+
+	option = {
+		name = soviet.1112.c	
+		RG_armored_division_heavy = yes
+		SOV_swap_RG_medium_heavy = yes
+		SOV_refresh_RG_cap_heavy = yes
+	}
+}
+
 
 #####Notifications#####
 country_event = {

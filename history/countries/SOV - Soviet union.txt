@@ -171,7 +171,10 @@ if = {
 
 set_variable = { SOV_RG_division_cap = 0 }
 set_variable = { SOV_RG_cap_increase = 2 }
-set_variable = { SOV_RG_cap_increase_double = 4 }
+set_variable = { SOV_RG_cap_decrease = -2 }
+set_variable = { SOV_RG_cap_increase_medium_double = 4 }
+set_variable = { SOV_RG_cap_increase_light_double = 6 }
+set_variable = { SOV_RG_cap_increase_heavy_double = 2 }
 
 #Initialize character flags Part I (aka who's safe)
 SOV_mikhail_kalinin = {
@@ -741,6 +744,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 }
 
 # RG_armored_division_standard = yes
+set_country_flag = RG_armored_division_medium
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

@@ -1898,6 +1898,9 @@ country_event = {
 
 	option = {
 		name = generic.26.a
+		# every_country = {
+		# 	add_war_support = 0.1
+		# }
 		add_resource = {
 			type = tungsten
 			amount = 2200
