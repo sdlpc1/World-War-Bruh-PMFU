@@ -1969,6 +1969,179 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = generic.32
+	title = generic.26.t
+	desc = generic.26.d
+	
+	picture = GFX_report_event_czech_soldiers_01
+
+	is_triggered_only = yes
+    hidden = yes
+
+	immediate = {
+		add_resource = {
+			type = steel
+			amount = 1000
+			state = 276
+		}					
+		add_resource = {
+			type = aluminium
+			amount = 2800
+			state = 276
+		}					
+		add_resource = {
+			type = oil
+			amount = 3000
+			state = 276
+		}					
+		add_resource = {
+			type = tungsten
+			amount = 1000
+			state = 276
+		}						
+		add_resource = {
+			type = steel
+			amount = 3000
+			state = 481
+		}					
+		add_resource = {
+			type = aluminium
+			amount = 1000
+			state = 481
+		}					
+		add_resource = {
+			type = oil
+			amount = 4000
+			state = 481
+		}					
+		add_resource = {
+			type = tungsten
+			amount = 1600
+			state = 481
+		}						
+		add_resource = {
+			type = chromium
+			amount = 200
+			state = 481
+		}						
+		add_resource = {
+			type = steel
+			amount = 3000
+			state = 504
+		}						
+		add_resource = {
+			type = oil
+			amount = 1000
+			state = 504
+		}			
+		add_resource = {
+			type = rubber
+			amount = 250
+			state = 454
+		}					
+		
+		add_resource = {
+			type = rubber
+			amount = 280
+			state = 446
+		}					
+		add_resource = {
+			type = rubber
+			amount = 265
+			state = 551
+		}					
+		add_resource = {
+			type = rubber
+			amount = 265
+			state = 765
+		}
+	}
+	# option = {
+	# 	name = generic.26.a
+	# 	# every_country = {
+	# 	# 	add_war_support = 0.1
+	# 	# }
+	# 	add_resource = {
+	# 		type = steel
+	# 		amount = 1000
+	# 		state = 276
+	# 	}					
+	# 	add_resource = {
+	# 		type = aluminium
+	# 		amount = 2800
+	# 		state = 276
+	# 	}					
+	# 	add_resource = {
+	# 		type = oil
+	# 		amount = 3000
+	# 		state = 276
+	# 	}					
+	# 	add_resource = {
+	# 		type = tungsten
+	# 		amount = 1000
+	# 		state = 276
+	# 	}						
+	# 	add_resource = {
+	# 		type = steel
+	# 		amount = 3000
+	# 		state = 481
+	# 	}					
+	# 	add_resource = {
+	# 		type = aluminium
+	# 		amount = 1000
+	# 		state = 481
+	# 	}					
+	# 	add_resource = {
+	# 		type = oil
+	# 		amount = 4000
+	# 		state = 481
+	# 	}					
+	# 	add_resource = {
+	# 		type = tungsten
+	# 		amount = 1600
+	# 		state = 481
+	# 	}						
+	# 	add_resource = {
+	# 		type = chromium
+	# 		amount = 200
+	# 		state = 481
+	# 	}						
+	# 	add_resource = {
+	# 		type = steel
+	# 		amount = 3000
+	# 		state = 504
+	# 	}						
+	# 	add_resource = {
+	# 		type = oil
+	# 		amount = 1000
+	# 		state = 504
+	# 	}			
+	# 	add_resource = {
+	# 		type = rubber
+	# 		amount = 250
+	# 		state = 454
+	# 	}					
+		
+	# 	add_resource = {
+	# 		type = rubber
+	# 		amount = 280
+	# 		state = 446
+	# 	}					
+	# 	add_resource = {
+	# 		type = rubber
+	# 		amount = 265
+	# 		state = 551
+	# 	}					
+	# 	add_resource = {
+	# 		type = rubber
+	# 		amount = 265
+	# 		state = 765
+	# 	}
+
+	# }
+}
+
 add_namespace = horsttool
 news_event = {
 	id = horsttool.1

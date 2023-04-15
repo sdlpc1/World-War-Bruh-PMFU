@@ -2825,7 +2825,8 @@ focus_tree = {
 
 		completion_reward = {
 			set_technology = {
-				mountain_arty = 1
+				# mountain_arty = 1
+				pack_artillery_3 = 1
 			}
 			add_tech_bonus = {
 				name = ROM_modern_at_guns

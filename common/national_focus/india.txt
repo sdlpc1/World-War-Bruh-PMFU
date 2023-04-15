@@ -1455,7 +1455,8 @@ focus_tree = {
 				category = artillery
 			}
 			set_technology = {
-				mountain_arty = 1
+				# mountain_arty = 1
+				pack_artillery_3 = 1
 			}
 		}
 	}

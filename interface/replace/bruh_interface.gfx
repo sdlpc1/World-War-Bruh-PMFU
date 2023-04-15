@@ -7937,12 +7937,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/dual_purpose_arty.dds"
 	}
 	SpriteType = {
+		name = "GFX_dp_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/dual_purpose_arty_2.dds"
+	}
+	SpriteType = {
 		name = "GFX_pack_artillery_1_medium"
 		texturefile = "gfx/interface/technologies/pack_arty_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_pack_artillery_2_medium"
 		texturefile = "gfx/interface/technologies/pack_arty_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pack_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/com_arty_3.dds"
 	}
 	
 	### GENERIC EQUIPMENT ###	
@@ -7970,6 +7978,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_dp_artillery_equipment_medium"
 		texturefile = "gfx/interface/technologies/dual_purpose_arty.dds"
+	}
+	SpriteType = {
+		name = "GFX_dp_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/dual_purpose_arty_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_pack_artillery_equipment_1_medium"
