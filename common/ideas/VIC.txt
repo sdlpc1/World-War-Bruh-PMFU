@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		VIC_concentrate_on_tanks = {
 
-			picture = generic_economic_increase
+			picture = generic_acquire_tanks
 
 			allowed = {
 				always = no
@@ -106,7 +106,7 @@ ideas = {
 
 		VIC_better_protection = {
 
-			picture = generic_economic_increase
+			picture = general_staff_2
 
 			allowed = {
 				always = no
@@ -127,7 +127,7 @@ ideas = {
 		
 		VIC_tanks_prepared_for_barb = {
 
-			picture = generic_economic_increase
+			picture = SOV_the_road_of_life
 
 			allowed = {
 				always = no
@@ -147,7 +147,7 @@ ideas = {
 
 		VIC_developed_desert_trucks = {
 
-			picture = generic_economic_increase
+			picture = SOV_the_road_of_life
 
 			allowed = {
 				always = no
@@ -167,7 +167,7 @@ ideas = {
 
 		VIC_converted_dockyards_for_civilians = {
 
-			picture = generic_economic_increase
+			picture = generic_local_self_management
 
 			allowed = {
 				always = no
@@ -187,7 +187,7 @@ ideas = {
 
 		VIC_adjusting_the_industry = {
 
-			picture = generic_economic_increase
+			picture = man_five_year_plan_industry
 
 			allowed = {
 				always = no
@@ -200,8 +200,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.10
-				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.15
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -221,13 +221,13 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = 0.10
-				production_speed_arms_factory_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 
 		VIC_defend_core_land = {
 
-			picture = generic_economic_increase
+			picture = generic_reserve_divisions
 
 			allowed = {
 				always = no
@@ -246,7 +246,7 @@ ideas = {
 
 		VIC_shifted_production = {
 
-			picture = generic_economic_increase
+			picture = generic_manpower_bonus
 
 			allowed = {
 				always = no
@@ -276,7 +276,7 @@ ideas = {
 
 		VIC_rebuilding_france = {
 
-			picture = generic_economic_increase
+			picture = generic_goods_red_bonus
 
 			allowed = {
 				always = no
@@ -295,7 +295,7 @@ ideas = {
 
 		VIC_civilian_infrastructure_construction = {
 
-			picture = generic_economic_increase
+			picture = generic_agrarian_reform
 
 			allowed = {
 				always = no
@@ -314,7 +314,7 @@ ideas = {
 
 		VIC_protect_the_french_people = {
 
-			picture = generic_economic_increase
+			picture = generic_fortify_the_borders
 
 			allowed = {
 				always = no
@@ -353,7 +353,7 @@ ideas = {
 
 		VIC_installed_patriotism = {
 
-			picture = generic_economic_increase
+			picture = generic_reserve_divisions
 
 			allowed = {
 				always = no
@@ -372,7 +372,7 @@ ideas = {
 
 		VIC_build_up_the_airfields = {
 
-			picture = generic_economic_increase
+			picture = generic_fortify_the_borders
 
 			allowed = {
 				always = no
@@ -391,7 +391,7 @@ ideas = {
 
 		VIC_protection_from_the_air_raids = {
 
-			picture = generic_economic_increase
+			picture = generic_fortify_the_borders
 
 			allowed = {
 				always = no
@@ -410,7 +410,7 @@ ideas = {
 
 		VIC_rebuilding_the_navy = {
 
-			picture = generic_economic_increase
+			picture = generic_navy_bonus
 
 			allowed = {
 				always = no
@@ -429,7 +429,7 @@ ideas = {
 
 		VIC_rebuilding_the_navy2 = {
 
-			picture = generic_economic_increase
+			picture = generic_navy_bonus
 
 			allowed = {
 				always = no

@@ -105,13 +105,41 @@ equipments = {
 		priority = 100
 		visual_level = 2
 		
-		defense = 8
+		defense = 6
 		breakthrough = 4
 		soft_attack = 20
-		hard_attack = 8
+		hard_attack = 10
 		ap_attack = 45
 		
+		build_cost_ic = 10
+
+		resources = {
+			tungsten = 10
+			steel = 20
+		}
+	}
+
+	dp_artillery_equipment_2 = {
+		year = 1942
+
+		archetype = artillery_equipment
+		parent = dp_artillery_equipment
+		priority = 100
+		visual_level = 2
+		
+		defense = 8
+		breakthrough = 6
+		soft_attack = 22
+		hard_attack = 12
+		ap_attack = 60
+		reliability = 0.8
+		
 		build_cost_ic = 12
+
+		resources = {
+			tungsten = 10
+			steel = 20
+		}
 	}
 	
 	pack_artillery_equipment = {

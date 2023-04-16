@@ -766,6 +766,35 @@ propaganda_efforts = {
 }
 
 operations = {
+	NO_ASIA_attache = {
+        cost = 100
+
+        fire_only_once = yes
+
+        available = {
+			command_power > 49
+			CHI = {
+				has_war = yes
+			}
+			NOT = {
+				GER = {
+					has_completed_focus = GER_danzig_or_war
+				}
+			}
+        }
+
+        visible = {
+        	has_global_flag = NO_ASIA
+		}
+
+        complete_effect = {
+			add_command_power = -50
+			add_ideas = NO_ASIA_attache_idea
+		}
+		ai_will_do = {
+			factor = 999
+		}
+	}
 	#MTG_TEST_NAVAL_MIXED_VS_MIXED_EARLY = { #MTG_TODO_GABRIEL: remove before launch (no seriously do not ship with this (hehe get it don't SHIP with it)) 
 #
 	#	icon = generic

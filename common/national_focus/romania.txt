@@ -1411,8 +1411,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -2825,7 +2825,8 @@ focus_tree = {
 
 		completion_reward = {
 			set_technology = {
-				mountain_arty = 1
+				# mountain_arty = 1
+				pack_artillery_3 = 1
 			}
 			add_tech_bonus = {
 				name = ROM_modern_at_guns

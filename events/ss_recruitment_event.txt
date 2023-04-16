@@ -19,7 +19,7 @@ country_event = {
 	option = { 
 		name = ss_recruitment_event.1.a #historical
 		hidden_effect = {
-			GER_increase_SS_cap_double = yes
+			# GER_increase_SS_cap_double = yes
 		}
 	}
 }
@@ -38,7 +38,7 @@ country_event = {
 	option = {
 		name = ss_recruitment_event.1.a #historical
 		hidden_effect = {
-			GER_increase_SS_cap_double = yes
+			# GER_increase_SS_cap_double = yes
 		}
 	}
 }
@@ -55,7 +55,7 @@ country_event = {
 	option = {
 		name = ss_recruitment_event.1.a #historical
 		hidden_effect = {
-			GER_increase_SS_cap_double = yes
+			# GER_increase_SS_cap_double = yes
 		}
 	}
 }
@@ -74,7 +74,7 @@ country_event = {
 	option = {
 		name = ss_recruitment_event.1.a #historical
 		hidden_effect = {
-			GER_increase_SS_cap_double = yes
+			# GER_increase_SS_cap_double = yes
 		}
 	}
 }
@@ -91,7 +91,7 @@ country_event = {
 	option = {
 		name = ss_recruitment_event.1.a #historical
 		hidden_effect = {
-			GER_increase_SS_cap_double = yes
+			# GER_increase_SS_cap_double = yes
 		}
 	}
 }
@@ -108,7 +108,7 @@ country_event = {
 	option = {
 		name = ss_recruitment_event.1.a #historical
 		hidden_effect = {
-			GER_increase_SS_cap_double = yes
+			# GER_increase_SS_cap_double = yes
 		}
 	}
 }
@@ -125,7 +125,7 @@ country_event = {
 	option = {
 		name = ss_recruitment_event.1.a #historical
 		hidden_effect = {
-			GER_increase_SS_cap_double = yes
+			# GER_increase_SS_cap_double = yes
 		}
 	}
 }
@@ -144,7 +144,7 @@ country_event = {
 	option = {
 		name = ss_recruitment_event.1.a #historical
 		hidden_effect = {
-			GER_increase_SS_cap_double = yes
+			# GER_increase_SS_cap_double = yes
 		}
 	}
 }
@@ -160,7 +160,7 @@ country_event = {
 	option = {
 		name = ss_recruitment_event.1.a #historical
 		hidden_effect = {
-			GER_increase_SS_cap_double = yes
+			# GER_increase_SS_cap_double = yes
 		}
 	}
 }

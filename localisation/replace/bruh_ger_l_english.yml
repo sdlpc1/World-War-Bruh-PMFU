@@ -224,6 +224,11 @@
   germany.2003.t:0 "Spanish Gold Trade"
   germany.2003.d:0 "We now get 33% more resources per civ given to Spain."
   germany.2003.a:0 "Excellent!"
+  wtt_germany.1005.t:0 "Establishment of the Waffen-SS Panzer Divison"
+  wtt_germany.1005.d:0 ""
+  wtt_germany.1005.a:0 "A combination of armour and speed"
+  wtt_germany.1005.b:0 "Fast and Mobile is the Way"
+  wtt_germany.1005.c:0 "High Firepower and Armour"
 
   #### IDEAS ####
   german_cooperation_focus:0 "German Advisors"
@@ -283,6 +288,7 @@
   GER_share_p4:0 "Purchase the Panzer III/IV"
   GER_share_p5:0 "Purchase the Panther"
   GER_share_p6:0 "Purchase the Tiger"
+  GER_share_p6_upgrd:0 "Purchase Tiger First Wave Upgrades"
   GER_share_p34_upgrade1:0 "Purchase First Wave Upgrades"
   GER_share_p34_upgrade2:0 "Purchase Second Wave Upgrades"
   GER_share_p5_2:0 "Purchase the E-50"
@@ -345,6 +351,9 @@
   GER_share_generals:0 "Massed Recruitment Campaign"
   GER_wunder_maus:0 "Develop Super Heavy Armor Designs"
   GER_good_weather_army:0 "Good Weather Army"
+  GER_turkey_allied_embargo_axis:0 "Allies and Comintern - Turkish Embargo"
+  GER_turkey_allied_embargo_allies:0 "Allies and Comintern - Turkish Embargo Breaking"
+  GER_sweden_allied_embargo_allies:0 "Allies and Comintern - Swedish Embargo Breaking"
 
   #### PROPAGANDA ####
   GER_propaganda_campaigns:0 "Reichsministerium für Volksaufklärung"
@@ -366,6 +375,7 @@
   GER_defend_berlin_tt:0 "Mobilise local reservists in the city, Spawning §Y20 Volksturm Divisions§!"
   ger_share_tanks_tt_2:0 "Gives access to the §YPanzer III/IV§! Technical Package"
   ger_share_tanks_tt_3:0 "Gives access to the §YTiger I§! Technical Package"
+  ger_share_tanks_tt_3_upgrd:0 "Gives access to the §YTiger First Wave Upgrades§! Technical Package"
   ger_share_tanks_tt_5:0 "Gives access to the §YPanther§! Technical Package"
   ger_share_tanks_tt_34_1:0 "Gives access to the §YFirst Wave Upgrades§! Technical Package"
   ger_share_tanks_tt_34_2:0 "Gives access to the §YSecond Wave Upgrades§! Technical Package"
@@ -411,3 +421,9 @@
   GER_start_atlantik_south_france_mission:0 "Started (Automatic) Atlantikwall Construction in Bordeaux"
   GER_start_atlantik_germany_mission:0 "Started (Automatic) Atlantikwall Construction in Germany"
   GER_start_atlantik_benelux_mission:0 "Started (Automatic) Atlantikwall Construction in Benelux"
+  GER_SS_div_cap_2_tt:0 "Increase template cap of §YWaffen-SS Panzer Division§! by §G+2§!."
+  GER_SS_div_cap_4_tt:0 "Increase template cap of §YWaffen-SS Panzer Division§! by §G+4§!."
+  GER_SS_div_cap_6_tt:0 "Increase template cap of §YWaffen-SS Panzer Division§! by §G+6§!."
+  GER_ss_template_light_tt:0 "This will set the §RWaffen-SS Panzer Division§! to §YLight Tanks§!"
+  GER_ss_template_medium_tt:0 "This will keep the §RWaffen-SS Panzer Division§! as §YMedium Tanks§!"
+  GER_ss_template_heavy_tt:0 "This will set the §RWaffen-SS Panzer Division§! to §YHeavy Tanks§!"

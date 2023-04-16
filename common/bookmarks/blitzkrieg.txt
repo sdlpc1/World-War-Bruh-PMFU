@@ -198,7 +198,7 @@ bookmarks = {
 				MEX_oil_concessions
 			}
 			focuses = {
-				MEX_focus_aztec_eagles
+				MEX_focus_cold_shower
 				MEX_focus_northern_steel_plants
 				MEX_depoliticised_army
 			}

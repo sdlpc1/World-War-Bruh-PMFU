@@ -224,6 +224,11 @@
   soviet.7878.d:0 "We have a though decision ahead of us, to either give Iran to our close ally Mongolia or expand the borders of the Soviet Union"
   soviet.7878.a:0 "Iran belongs to the USSR"
   soviet.7878.b:0 "Mongolia should have it"
+  soviet.1112.t:0 "Establishment of the Red Guard"
+  soviet.1112.d:0 ""
+  soviet.1112.a:0 "A combination of armour and speed"
+  soviet.1112.b:0 "Fast and Mobile is the Way"
+  soviet.1112.c:0 "High Firepower and Armour"
 
   #### IDEAS ####
   #mikhail_tukhachevsky_1:0 "Mikhail Tukhachevsky"
@@ -342,11 +347,20 @@
   sov_ural_move:0 "Our Industry has been prepared for evacuation"
   SOV_frontline_mob_tt:0 "Creates §Y4 Infantry Divsions§! in every frontline state"
   SOV_frontline_mob_tt2:0 "Creates §Y3 Infantry Divsions§! in every frontline state"
-  SOV_propaganda_more_metal_tt:0 "Providing §G+10§! §Y$state_resource_aluminium$§!, §Y$state_resource_tungsten$§!, §Y$state_resource_steel$§! or §Y$state_resource_chromium$§! for each state producing any of those resources."
+  SOV_propaganda_more_metal_tt:0 "Providing §G+5§! §Y$state_resource_aluminium$§!, §Y$state_resource_tungsten$§!, §Y$state_resource_steel$§! or §Y$state_resource_chromium$§! for each state producing any of those resources §Rpermanently§!."
   SOV_CONQ_TT:0 "Gives 80% Compliance on all controlled Molotov States that will decrease during Barbarossa"
   SOV_cowed_by_stalin_trait_tt:0 "This Trait will be removed upon completion of the focus §Y$SOV_order_270$§!."
   SOV_dismantle_surrender_tt:0 "§RTaking this path will increase the Surrender Progress Threshold for some focuses, to compensate for gaining a large number of VP's cored.§!"
   SOV_RG_div_cap_2_tt:0 "Increase template cap of §YRed Guards Tanks§! by §G+2§!."
   SOV_RG_div_cap_4_tt:0 "Increase template cap of §YRed Guards Tanks§! by §G+4§!."
+  SOV_RG_div_cap_6_tt:0 "Increase template cap of §YRed Guards Tanks§! by §G+6§!."
+  SOV_red_guard_template_light_tt:0 "This will set the §RRed Guard Template§! to §YLight Tanks§!"
+  SOV_red_guard_template_medium_tt:0 "This will keep the §RRed Guard Template§! as §YMedium Tanks§!"
+  SOV_red_guard_template_heavy_tt:0 "This will set the §RRed Guard Template§! to §YHeavy Tanks§!"
   SOV_pc_of_mortar_armament_ns_tt:0 "$SOV_modify_defense_industry_ns_intro$ \nArtillery Defense: §G+5.0%§! \n\n"
   SOV_industry_relocation_complete_effect_tt:0 "Up to §Y10 Military or Civilian Factories§! will be removed from §Y[FROM.GetName]§!.\n"
+
+  ### UNITS ###
+  rg_hq_company_heavy:0 "Red Guards HQ Company"
+  rg_hq_company_medium:0 "Red Guards HQ Company"
+  rg_hq_company_light:0 "Red Guards HQ Company"

@@ -522,6 +522,10 @@ technologies = {
 		enable_equipment_modules = {
 			tank_med_gun_2
 		}
+		path = {
+			leads_to_tech = pack_artillery_3
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2.0
 		start_year = 1941
@@ -550,6 +554,11 @@ technologies = {
 			apcr_round
 			tank_medium_td_2
 		}
+
+		path = {
+			leads_to_tech = dp_artillery_2
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2.0
 		start_year = 1941
@@ -562,6 +571,47 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+		}
+	}
+
+	# Pack Artillery 3
+	pack_artillery_3 = { 
+
+		enable_equipments = {
+			mountain_artillery_gun
+		}
+		
+		research_cost = 2.0
+		start_year = 1942
+
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = 12 }
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+
+	# Dual Purpose Artillery 2
+	dp_artillery_2 = {
+	
+		enable_equipments = {
+			dp_artillery_equipment_2
+		}
+		
+		research_cost = 2.0
+
+		start_year = 1942
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		categories = {
+			artillery
 		}
 	}
 
@@ -664,6 +714,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_med_gun_squeeze2
 			tank_med_hv_gun_3
+			tank_medium_td_3
 		}
 		research_cost = 2.0
 

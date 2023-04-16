@@ -585,7 +585,7 @@ ideas = {
 		
 		MEX_faster_planning = {
 		
-			picture = ast_abandon_the_westminster_system
+			picture = escort_effort_focus
 		
 			allowed = {
 				always = no
@@ -594,13 +594,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				naval_invasion_prep_speed = 0.2
+				naval_invasion_prep_speed = 0.1
 			}
 		}
 
 		MEX_better_naval_prep_invasion = {
 		
-			picture = ast_abandon_the_westminster_system
+			picture = escort_effort_focus
 		
 			allowed = {
 				always = no
@@ -609,13 +609,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				invasion_preparation = -0.3
+				invasion_preparation = -0.15
 			}
 		}
 
 		MEX_support_offshore = {
 		
-			picture = ast_abandon_the_westminster_system
+			picture = generic_navy_bonus
 		
 			allowed = {
 				always = no
@@ -624,13 +624,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				shore_bombardment_bonus = 0.3
+				shore_bombardment_bonus = 0.20
 			}
 		}
 
 		MEX_bigger_landings = {
 		
-			picture = ast_abandon_the_westminster_system
+			picture = escort_effort_focus
 		
 			allowed = {
 				always = no
@@ -639,13 +639,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				naval_invasion_capacity = 10
+				naval_invasion_capacity = 5
 			}
 		}
 
 		MEX_cheap_sfeq = {
 		
-			picture = ast_all_in
+			picture = eng_special_air_service
 		
 			allowed = {
 				always = no
@@ -663,7 +663,7 @@ ideas = {
 
 		MEX_conscription_campaign = {
 		
-			picture = ast_abandon_the_westminster_system
+			picture = chi_army_corruption3
 		
 			allowed = {
 				always = no
@@ -688,7 +688,7 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 					instant = yes
 				}
 			}
@@ -700,7 +700,7 @@ ideas = {
 
 		MEX_reinforce_the_army = {
 		
-			picture = ast_abandon_the_westminster_system
+			picture = MEX_politicised_army
 		
 			allowed = {
 				always = no
@@ -710,7 +710,7 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 					instant = yes
 					soft_attack = 0.2
 					instant = yes
@@ -720,7 +720,7 @@ ideas = {
 
 		MEX_improvement_of_motorization = {
 		
-			picture = ast_abandon_the_westminster_system
+			picture = FRA_motorized_focus
 		
 			allowed = {
 				always = no
@@ -742,9 +742,9 @@ ideas = {
 			}
 		}
 
-		MEX_better_hv_arty = {
+		MEX_better_pack_arty = {
 		
-			picture = ast_abandon_the_westminster_system
+			picture = generic_production_bonus
 		
 			allowed = {
 				always = no
@@ -753,7 +753,7 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				heavy_artillery_equipment = {
+				pack_artillery_equipment = {
 					build_cost_ic = -0.05
 					soft_attack = 0.1
 					instant = yes
@@ -763,7 +763,7 @@ ideas = {
 
 		MEX_preperation_for_the_new_year = {
 		
-			picture = ast_abandon_the_westminster_system
+			picture = eng_special_air_service
 		
 			allowed = {
 				always = no
@@ -778,7 +778,7 @@ ideas = {
 
 		MEX_improvement_of_armor = {
 		
-			picture = ast_abandon_the_westminster_system
+			picture = generic_acquire_tanks
 		
 			allowed = {
 				always = no
@@ -1396,6 +1396,25 @@ ideas = {
 	naval_manufacturer = { 
 	
 		designer = yes
+
+		MEX_escort_fleet = {
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+		}
 		
 		MEX_astimar_gulf = {
 			
@@ -1503,7 +1522,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = MEX_focus_aztec_eagles
+				has_completed_focus = MEX_focus_oil_drilling
 			}
 
 			picture = douglas_aircraft_company

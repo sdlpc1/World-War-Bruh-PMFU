@@ -127,6 +127,16 @@ on_actions = {
 					white_peace = CHI
 					remove_ideas = JAP_no_equipment_capture
 				}
+				CHI = {
+                    transfer_units_fraction = {
+                        target = JAP
+                        size = 1
+                        stockpile_ratio = 0
+                        army_ratio = 0
+                        navy_ratio = 1.0
+                        air_ratio = 0
+                    }
+                }
 				MAN = {
 					transfer_state = 616 #Ningxia
 					transfer_state = 621 #Suiyuan
@@ -191,6 +201,16 @@ on_actions = {
 					FROM = { is_in_faction_with = JAP }
 					has_global_flag = JAP_take_china
 				}
+				CHI = {
+                    transfer_units_fraction = {
+                        target = JAP
+                        size = 1
+                        stockpile_ratio = 0
+                        army_ratio = 0
+                        navy_ratio = 1.0
+                        air_ratio = 0
+                    }
+                }
 				JAP = {
 					remove_ideas = JAP_no_equipment_capture
 					white_peace = CHI
@@ -237,6 +257,16 @@ on_actions = {
 					FROM = { is_in_faction_with = JAP }
 					has_global_flag = JAP_give_china
 				}
+				CHI = {
+                    transfer_units_fraction = {
+                        target = JAP
+                        size = 1
+                        stockpile_ratio = 0
+                        army_ratio = 0
+                        navy_ratio = 1.0
+                        air_ratio = 0
+                    }
+                }
 				MAN = {
 					white_peace = CHI
 					annex_country = {
@@ -1255,6 +1285,80 @@ on_actions = {
 				FROM.FROM = {
                     set_compliance = 60
                 }
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 677 }
+				}
+				FROM.FROM = {
+                    if = {
+						limit = {
+							CONTROLLER = {
+								OR = {
+									tag = ENG
+									is_subject_of = ENG
+									is_in_faction_with = ENG
+									tag = SOV
+									is_subject_of = SOV
+									is_in_faction_with = SOV
+								}
+							}
+						}
+						GER = {
+							set_country_flag = GER_start_turkey_allied_embargo_allies_mission
+						}
+					}
+
+					if = {
+						limit = {
+							CONTROLLER = {
+								OR = {
+									tag = GER
+									is_subject_of = GER
+									is_in_faction_with = GER
+									tag = JAP
+									is_subject_of = JAP
+									is_in_faction_with = JAP
+								}
+							}
+						}
+						GER = {
+							set_country_flag = GER_start_turkey_allied_embargo_axis_mission
+						}
+					}
+                }
+
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 110 }
+				}
+				FROM.FROM = {
+                    if = {
+						limit = {
+							CONTROLLER = {
+								OR = {
+									tag = ENG
+									is_subject_of = ENG
+									is_in_faction_with = ENG
+									tag = SOV
+									is_subject_of = SOV
+									is_in_faction_with = SOV
+								}
+							}
+						}
+						GER = {
+							set_country_flag = GER_start_sweden_allied_embargo_allies_mission
+						}
+					}
+                }
+
 			}
 		}
 	}

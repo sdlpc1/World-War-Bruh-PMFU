@@ -2,6 +2,30 @@ ideas = {
 
 	country = {
 
+		SIA_trade_treaty_with_jap = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = JAP
+				extra_trade_to_target_factor = 1.0
+			}
+		}
+
         SIA_golden_era = {
 
 			picture = SPR_seize_the_gold_reserves

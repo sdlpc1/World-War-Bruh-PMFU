@@ -84,7 +84,19 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			add_threat = 1.2
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				JAP = {
+					add_named_threat = { threat = 1.2 name = "Japanese Volunteers" }
+					add_named_threat = { threat = 2 name = "Japan left the naval treaty" }
+				}
+			}
+			# JAP = {
+			# 	add_named_threat = { threat = 1.2 name = "Japanese Volunteers" }
+			# 	add_named_threat = { threat = 2 name = "Japan left the naval treaty" }
+			# }
 			every_owned_state = {
 				limit = {
 					is_core_of = ROOT

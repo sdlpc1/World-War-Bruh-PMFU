@@ -206,6 +206,7 @@ foreign_politics = {
 		}
 
 		available = {
+			country_exists = MON
 			419 = { is_controlled_by = SOV }
 			420 = { is_controlled_by = SOV }
 			421 = { is_controlled_by = SOV }
@@ -2597,7 +2598,7 @@ SOV_propaganda_campaigns = {
 					}
 					add_resource = {
 						type = steel
-						amount = 10
+						amount = 5
 					}
 				}
 
@@ -2610,7 +2611,7 @@ SOV_propaganda_campaigns = {
 					}
 					add_resource = {
 						type = aluminium
-						amount = 10
+						amount = 5
 					}
 				}
 
@@ -2623,7 +2624,7 @@ SOV_propaganda_campaigns = {
 					}
 					add_resource = {
 						type = chromium
-						amount = 10
+						amount = 5
 					}
 				}
 
@@ -2636,7 +2637,7 @@ SOV_propaganda_campaigns = {
 					}
 					add_resource = {
 						type = tungsten
-						amount = 10
+						amount = 5
 					}
 				}
 			}

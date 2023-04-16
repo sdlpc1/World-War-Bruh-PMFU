@@ -1163,7 +1163,16 @@
 				add_idea = SOV_3_5_plan_ger
 			}
 
-			SOV_increase_RG_cap = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy = yes
+			}
 		}
 	}
 	focus = {
@@ -1380,7 +1389,16 @@
 			add_ideas = tot_economic_mobilisation
 			add_ideas = SOV_war_mob
 
-			SOV_increase_RG_cap = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy = yes
+			}
 
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_treacherous_enemy
@@ -1451,7 +1469,16 @@
 				sov_zis30_tech = 1
 			}
 
-			SOV_increase_RG_cap = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy = yes
+			}
 
 			add_ideas = SOV_tankograd_idea
 		}
@@ -1492,7 +1519,16 @@
 		completion_reward = {
 			add_ideas = SOV_guards_ideas
 
-			SOV_increase_RG_cap_double = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+			}
 		}
 	}
 	
@@ -2607,7 +2643,16 @@
 			}
 			custom_effect_tooltip = SOV_frontline_mob_tt
 
-			SOV_increase_RG_cap = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy = yes
+			}
 		}
 	}
 
@@ -4205,42 +4250,42 @@
 		}
 	}
 
-	focus = {
-		id = SOV_operation_zet
-		icon = GFX_SOV_protect_the_east
-		prerequisite = { focus = SOV_far_east_fortification }
-		continue_if_invalid = yes
-		bypass = {
-			CHI = {
-				OR = {
-					exists = no
-					is_puppet = yes
-				}
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_far_east_fortification
-		cost = 2
-		completion_reward = {
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe_0
-					amount = 200
-					producer = SOV
-				}
-			}
-		}
-	}
+	# focus = {
+	# 	id = SOV_operation_zet
+	# 	icon = GFX_SOV_protect_the_east
+	# 	prerequisite = { focus = SOV_far_east_fortification }
+	# 	continue_if_invalid = yes
+	# 	bypass = {
+	# 		CHI = {
+	# 			OR = {
+	# 				exists = no
+	# 				is_puppet = yes
+	# 			}
+	# 		}
+	# 	}
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = SOV_far_east_fortification
+	# 	cost = 2
+	# 	completion_reward = {
+	# 		CHI = {
+	# 			add_equipment_to_stockpile = {
+	# 				type = small_plane_airframe
+	# 				amount = 200
+	# 				producer = SOV
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = SOV_war_with_japan
 		icon = GFX_focus_attack_japan
-		prerequisite = { focus = SOV_operation_zet }
+		prerequisite = { focus = SOV_far_east_fortification }
 		mutually_exclusive = { focus = SOV_japan_peace }
 		x = 1
 		y = 1
-		relative_position_id = SOV_operation_zet
+		relative_position_id = SOV_far_east_fortification
 		available = {
 			country_exists = JAP
 			date > 1942.8.1
@@ -4268,10 +4313,10 @@
 	focus = {
 		id = SOV_japan_peace
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = SOV_operation_zet }
+		prerequisite = { focus = SOV_far_east_fortification }
 		x = -1
 		y = 1
-		relative_position_id = SOV_operation_zet
+		relative_position_id = SOV_far_east_fortification
 		mutually_exclusive = { focus = SOV_war_with_japan }
 		available = {
 			OR = {
@@ -5630,6 +5675,9 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			# SOV = {
+			# 	country_event = soviet.1112
+			# }
 			army_experience = 50
 			SOV_modernisation_towards_mech = yes
 		}
@@ -5666,7 +5714,19 @@
 			add_to_variable = { SOV_the_red_army_terrain_penalty_reduction = 0.05 }
 			custom_effect_tooltip = SOV_an_adaptable_army_ns_tt
 
-			SOV_increase_RG_cap_double = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+			}
+			SOV = {
+				country_event = soviet.1112
+			}
 		}
 	}
 	

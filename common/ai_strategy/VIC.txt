@@ -1,5 +1,5 @@
-MEX_prio_military_factories = {
-	allowed = { original_tag = MEX }
+VIC_prio_military_factories = {
+	allowed = { tag = VIC }
 	enable = {
 		always = yes
 	}	

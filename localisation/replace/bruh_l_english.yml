@@ -55,6 +55,7 @@
  continuous_licensing:0 "License Production"
  continuous_licensing_desc:0 "We need to produce licensed equipment at record speeds."
  improved_worker_conditions_cancel:0 "Cancel Improved Worker Conditions"
+ NO_ASIA_attache:0 "Attache to the Sino-Japanese War."
 
  form_mutapa:0 "Unite South Africa"
  form_mutapa_category:0 "Unite South Africa"
@@ -213,6 +214,7 @@
  POL_morale:0 "Polish Morale"
  POL_morale_desc:0 "The Polish are a proud people, but eventually their spirit will break when they realize that help is not coming."
  POL_war_decisions:0 "Polish War Descsions"
+ NO_ASIA_attache_idea:0 "Attache to the Sino-Japanese War."
 
  father_check:0 "No Father?"
  father_check_desc:0 "Some players need some fatherly guidance due to a lack of that in their life"
@@ -265,7 +267,7 @@
  MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
 
 officer_training_flag:0 "Officer Training in Progress"
-superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General the trait §Y"Engineer"§!"
+superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General with §Y"Engineer Officer"§! the trait §Y"Engineer"§!"
 mobile_warfare_academy_spirit_tt:1 "New Officers: §G50% chance§! to begin with §Y"Panzer Officer"§! trait.\n\nEnables §YArmy Armoured Academy§! which will give a random §YSkill 3§! or lower General with the trait §Y"Armour Officer"§! the trait §Y"Armour Leader"§!"
 theatre_training_academy_spirit_tt:0 "§G50% chance§! that new officers are created with the §Y"Brilliant Strategist"§! or §Y"Inflexible Strategist"§! trait.\n\nEnables §YColonial Training Academy§! which will give a random §YSkill 2§! or lower General a §Y"Terrain Trait"§!"
 bold_attack_spirit_tt:2 "Enables §YArmy Elan Academy§! which will give a random General with §Y2 Attack§! or less §Y1 Attack§!"
@@ -283,7 +285,7 @@ off_meticulous_tt:0 "A random General with §Y2 Planning§! or less will gain §
 off_theatre_tt:0 "A random §YSkill 2§! or lower General will gain a §Y"Terrain Trait"§!"
 off_mass_tt:0 "A random §YSkill 3§! or lower General with the trait §Y"Infantry Officer"§! will gain §Y"Infantry Leader"§!"
 off_mobile_tt:0 "A random §YSkill 3§! or lower General with the trait §Y"Armour Officer"§! will gain §Y"Armour Leader"§!"
-off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Engineer"§!"
+off_superior_tt:0 "A random §YSkill 3§! or lower General with §Y"Engineer Officer"§! will gain §Y"Engineer"§!"
 
  #### UNITS ####
  mountaineers:0 "Light Infantry"
@@ -331,6 +333,9 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  ss_mot_artillery_brigade:0 "Leichte SS-Artillerieabteilung"
  ss_heavy_artillery_brigade:0 "Schwere SS-Artillerieabteilung"
  ss_hq_company:0 "SS-Divisionsstab"
+ ss_hq_company_light:0 "SS-Divisionsstab"
+ ss_hq_company_medium:0 "SS-Divisionsstab"
+ ss_hq_company_medium:0 "SS-Divisionsstab"
  modern_heavy_battery:0 "Modern Heavy Battery"
  modifier_experience_gain_carrier_submarine_training_factor:0 "Carrier"
  modifier_experience_gain_carrier_submarine_combat_factor:0 "Poop"
@@ -391,6 +396,7 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  rocket_artillery_equipment_1:0 "Rocket Artillery I"
  rocket_artillery_equipment_2:0 "Rocket Artillery II"
  dp_artillery_equipment:0 "Dual Purpose Artillery"
+ dp_artillery_equipment_2:0 "Dual Purpose Artillery II"
  siege_artillery_equipment:0 "Siege Artillery"
  railway_gun_equipment_1:0 "Siege Artillery Battery"
  railway_gun_equipment_2:0 "Railway Artillery Gun"
@@ -591,8 +597,9 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  apcbc_1:0 "APCBC Shells"
  apcr_1:0 "APCR Shells"
  apcr_2:0 "APDS Shells"
- mountain_arty:0 "Mountain Artillery Gun"
- mountain_artillery_gun:0 "Mountain Artillery Gun"
+ pack_artillery_3:0 "Pack Artillery III"
+ mountain_arty:0 "Pack Artillery III"
+ mountain_artillery_gun:0 "Pack Artillery III"
  aviation_fuel:0 "Aviation Fuel - 85 Octane"
  aviation_fuel2:0 "Aviation Fuel 2 - 90 Octane"
  aviation_fuel3:0 "Aviation Fuel 3 - 100 Octane"

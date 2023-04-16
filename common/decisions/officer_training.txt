@@ -486,7 +486,7 @@ officer_training = {
 		}
 	}
 
-	officer_superior_firepower_academy = {
+	officer_superior_firepower_academy = { 
 
 		icon = ger_military_buildup
 
@@ -518,6 +518,7 @@ officer_training = {
 			}
 			random_army_leader = {
 				limit = {
+					has_trait = engineer_officer
 					skill < 4
 				}
 				set_character_flag = officer_superior_firepower_academy_flag

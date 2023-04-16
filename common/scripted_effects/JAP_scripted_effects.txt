@@ -135,6 +135,44 @@ JAP_intervene_in_china_remove = {
 	}	
 }
 
+JAP_emperors_economy_upgrade = {
+	# if = {
+	# 	limit = { has_idea = JAP_zaibatsus_challenged3_5 }
+	# 	swap_ideas = {
+	# 		remove_idea = JAP_zaibatsus_challenged3_5
+	# 		add_idea = JAP_zaibatsus_challenged3_6
+	# 	}
+	# }
+	if = {
+		limit = { has_idea = JAP_zaibatsus_challenged3_4 }
+		swap_ideas = {
+			remove_idea = JAP_zaibatsus_challenged3_4
+			add_idea = JAP_zaibatsus_challenged3_5
+		}
+	}
+	if = {
+		limit = { has_idea = JAP_zaibatsus_challenged3_3 }
+		swap_ideas = {
+			remove_idea = JAP_zaibatsus_challenged3_3
+			add_idea = JAP_zaibatsus_challenged3_4
+		}
+	}
+	if = {
+		limit = { has_idea = JAP_zaibatsus_challenged3_2 }
+		swap_ideas = {
+			remove_idea = JAP_zaibatsus_challenged3_2
+			add_idea = JAP_zaibatsus_challenged3_3
+		}
+	}
+	if = {
+		limit = { has_idea = JAP_zaibatsus_challenged3 }
+		swap_ideas = {
+			remove_idea = JAP_zaibatsus_challenged3
+			add_idea = JAP_zaibatsus_challenged3_2
+		}
+	}	
+}
+
 
 #Important to put HIGHEST first
 JAP_island_hopping_level_up = {

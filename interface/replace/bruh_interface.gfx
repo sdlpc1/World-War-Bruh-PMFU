@@ -642,8 +642,12 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_ss_heavy_tank_destroyer_brigade_icon_medium"		textureFile = "gfx/interface/counters/divisions_large/unit_ss_heavy_armor_at_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_ss_medium_armor_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_ss_medium_armor.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_ss_heavy_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_ss_heavy_armor.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_ss_hq_company_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_ss.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_rg_hq_company_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_rg.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_hq_company_light_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_ss.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_hq_company_medium_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_ss.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_hq_company_heavy_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_ss.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_rg_hq_company_light_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_rg.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_rg_hq_company_medium_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_rg.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_rg_hq_company_heavy_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_rg.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_motorised_anti_air_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/support_unit_mot_aa.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_pack_antitank_brigade_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_at_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_mot_anti_tank_brigade_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_mot_at_icon.dds" noOfFrames = 2 }
@@ -7933,12 +7937,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/dual_purpose_arty.dds"
 	}
 	SpriteType = {
+		name = "GFX_dp_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/dual_purpose_arty_2.dds"
+	}
+	SpriteType = {
 		name = "GFX_pack_artillery_1_medium"
 		texturefile = "gfx/interface/technologies/pack_arty_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_pack_artillery_2_medium"
 		texturefile = "gfx/interface/technologies/pack_arty_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pack_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/com_arty_3.dds"
 	}
 	
 	### GENERIC EQUIPMENT ###	
@@ -7966,6 +7978,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_dp_artillery_equipment_medium"
 		texturefile = "gfx/interface/technologies/dual_purpose_arty.dds"
+	}
+	SpriteType = {
+		name = "GFX_dp_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/dual_purpose_arty_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_pack_artillery_equipment_1_medium"
