@@ -812,6 +812,7 @@ ideas = {
 				trade_laws_cost_factor = -0.05
 				production_speed_arms_factory_factor = 0.04
 				production_speed_dockyard_factor = 0.04
+				consumer_goods_factor = 0.04
 			}
 		}
 
@@ -835,6 +836,7 @@ ideas = {
 				trade_laws_cost_factor = -0.10
 				production_speed_arms_factory_factor = 0.08
 				production_speed_dockyard_factor = 0.08
+				consumer_goods_factor = 0.03
 			}
 		}
 
@@ -858,6 +860,7 @@ ideas = {
 				trade_laws_cost_factor = -0.15
 				production_speed_arms_factory_factor = 0.12
 				production_speed_dockyard_factor = 0.12
+				consumer_goods_factor = 0.02
 			}
 		}
 
@@ -881,6 +884,7 @@ ideas = {
 				trade_laws_cost_factor = -0.20
 				production_speed_arms_factory_factor = 0.16
 				production_speed_dockyard_factor = 0.16
+				consumer_goods_factor = 0.01
 			}
 		}
 

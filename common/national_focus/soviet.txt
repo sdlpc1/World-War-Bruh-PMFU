@@ -4250,42 +4250,42 @@
 		}
 	}
 
-	focus = {
-		id = SOV_operation_zet
-		icon = GFX_SOV_protect_the_east
-		prerequisite = { focus = SOV_far_east_fortification }
-		continue_if_invalid = yes
-		bypass = {
-			CHI = {
-				OR = {
-					exists = no
-					is_puppet = yes
-				}
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_far_east_fortification
-		cost = 2
-		completion_reward = {
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe_0
-					amount = 200
-					producer = SOV
-				}
-			}
-		}
-	}
+	# focus = {
+	# 	id = SOV_operation_zet
+	# 	icon = GFX_SOV_protect_the_east
+	# 	prerequisite = { focus = SOV_far_east_fortification }
+	# 	continue_if_invalid = yes
+	# 	bypass = {
+	# 		CHI = {
+	# 			OR = {
+	# 				exists = no
+	# 				is_puppet = yes
+	# 			}
+	# 		}
+	# 	}
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = SOV_far_east_fortification
+	# 	cost = 2
+	# 	completion_reward = {
+	# 		CHI = {
+	# 			add_equipment_to_stockpile = {
+	# 				type = small_plane_airframe
+	# 				amount = 200
+	# 				producer = SOV
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = SOV_war_with_japan
 		icon = GFX_focus_attack_japan
-		prerequisite = { focus = SOV_operation_zet }
+		prerequisite = { focus = SOV_far_east_fortification }
 		mutually_exclusive = { focus = SOV_japan_peace }
 		x = 1
 		y = 1
-		relative_position_id = SOV_operation_zet
+		relative_position_id = SOV_far_east_fortification
 		available = {
 			country_exists = JAP
 			date > 1942.8.1
@@ -4313,10 +4313,10 @@
 	focus = {
 		id = SOV_japan_peace
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = SOV_operation_zet }
+		prerequisite = { focus = SOV_far_east_fortification }
 		x = -1
 		y = 1
-		relative_position_id = SOV_operation_zet
+		relative_position_id = SOV_far_east_fortification
 		mutually_exclusive = { focus = SOV_war_with_japan }
 		available = {
 			OR = {

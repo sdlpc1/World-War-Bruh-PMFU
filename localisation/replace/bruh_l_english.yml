@@ -267,7 +267,7 @@
  MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
 
 officer_training_flag:0 "Officer Training in Progress"
-superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General the trait §Y"Engineer"§!"
+superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General with §Y"Engineer Officer"§! the trait §Y"Engineer"§!"
 mobile_warfare_academy_spirit_tt:1 "New Officers: §G50% chance§! to begin with §Y"Panzer Officer"§! trait.\n\nEnables §YArmy Armoured Academy§! which will give a random §YSkill 3§! or lower General with the trait §Y"Armour Officer"§! the trait §Y"Armour Leader"§!"
 theatre_training_academy_spirit_tt:0 "§G50% chance§! that new officers are created with the §Y"Brilliant Strategist"§! or §Y"Inflexible Strategist"§! trait.\n\nEnables §YColonial Training Academy§! which will give a random §YSkill 2§! or lower General a §Y"Terrain Trait"§!"
 bold_attack_spirit_tt:2 "Enables §YArmy Elan Academy§! which will give a random General with §Y2 Attack§! or less §Y1 Attack§!"
@@ -285,7 +285,7 @@ off_meticulous_tt:0 "A random General with §Y2 Planning§! or less will gain §
 off_theatre_tt:0 "A random §YSkill 2§! or lower General will gain a §Y"Terrain Trait"§!"
 off_mass_tt:0 "A random §YSkill 3§! or lower General with the trait §Y"Infantry Officer"§! will gain §Y"Infantry Leader"§!"
 off_mobile_tt:0 "A random §YSkill 3§! or lower General with the trait §Y"Armour Officer"§! will gain §Y"Armour Leader"§!"
-off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Engineer"§!"
+off_superior_tt:0 "A random §YSkill 3§! or lower General with §Y"Engineer Officer"§! will gain §Y"Engineer"§!"
 
  #### UNITS ####
  mountaineers:0 "Light Infantry"
@@ -597,9 +597,9 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  apcbc_1:0 "APCBC Shells"
  apcr_1:0 "APCR Shells"
  apcr_2:0 "APDS Shells"
- pack_artillery_3:0 "Mountain Artillery Gun"
- mountain_arty:0 "Mountain Artillery Gun"
- mountain_artillery_gun:0 "Mountain Artillery Gun"
+ pack_artillery_3:0 "Pack Artillery III"
+ mountain_arty:0 "Pack Artillery III"
+ mountain_artillery_gun:0 "Pack Artillery III"
  aviation_fuel:0 "Aviation Fuel - 85 Octane"
  aviation_fuel2:0 "Aviation Fuel 2 - 90 Octane"
  aviation_fuel3:0 "Aviation Fuel 3 - 100 Octane"

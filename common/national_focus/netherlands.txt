@@ -1893,8 +1893,8 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = HOL_philips_focus
-				bonus = 0.5
-				ahead_reduction = 2
+				bonus = 0.75
+				ahead_reduction = 0.5
 				uses = 1
 				category = electronics
 			}
@@ -1942,9 +1942,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HOL_the_zuiderzee_works
-				bonus = 0.5
+				bonus = 0.75
 				ahead_reduction = 0.5
-				uses = 2
+				uses = 1
 				category = industry
 			}
 			7 = {
@@ -3716,9 +3716,9 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HOL_modernize_the_cruiser_fleet
-				bonus = 1
-				ahead_reduction = 2
-				uses = 2
+				bonus = 1.5
+				ahead_reduction = 0.5
+				uses = 1
 				category = cl_tech
 				category = ca_tech
 			}
@@ -3817,9 +3817,9 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HOL_escorts_for_the_new_fleet
-				bonus = 1
-				ahead_reduction = 2
-				uses = 2
+				bonus = 1.5
+				ahead_reduction = 0.5
+				uses = 1
 				category = dd_tech
 			}
 		}

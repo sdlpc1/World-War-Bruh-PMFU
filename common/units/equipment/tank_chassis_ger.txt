@@ -480,7 +480,7 @@ equipments = {
 	}
 
 	# Tiger
-	ger_heavy_tank_chassis_p6 = {
+	ger_heavy_tank_chassis_p6 = { 
 		abbreviation = "pz6"
 		visual_level = 1
 		year = 1941
@@ -495,7 +495,6 @@ equipments = {
 					tank_armament_tier_2
 					tank_armament_tier_3
 					tank_armament_tier_4
-					tank_armament_tier_heavy_1
 				}
 			}
 			turret_type_slot = {
@@ -505,7 +504,6 @@ equipments = {
 					tank_heavy_turret_type
 					tank_heavy_turret_type_0
 					tank_heavy_turret_type_1
-					tank_heavy_turret_type_2
 					tank_heavy_turret_type_casemate
 				}
 			}
