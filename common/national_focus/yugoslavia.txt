@@ -1127,166 +1127,127 @@
 	}
 	
 	focus = {
-		id = YUG_crush_the_ustasa
-		icon = GFX_goal_generic_political_pressure
+		id = YUG_establish_the_banovina_of_croatia
+		icon = GFX_focus_YUG_banovina_of_croatia
 		prerequisite = { focus = YUG_evolution }
-		relative_position_id = YUG_evolution
+		mutually_exclusive = { focus = YUG_crush_the_ustasa }
 		x = 0
 		y = 1
-	
-		cost = 5
-	
+		relative_position_id = YUG_evolution
+
+		cost = 10
+
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
-	
+
 		available = {
-			ITA = {
-				NOT = { has_war_with = ROOT }
-				exists = yes
-				has_capitulated = no
-			}
+			controls_state = 109
+			controls_state = 103
 		}
-	
+
 		bypass = {
-	
+
 		}
-	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	
-		complete_tooltip = {
-	
-		}
-	
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
 		completion_reward = {
-			activate_mission = YUG_ustasa_uprising
-			activate_mission = YUG_ustasa_crushed_mission
+			remove_ideas = YUG_idea_croatian_opposition
+			add_timed_idea = {
+				idea = YUG_idea_croats_suppressed
+				days = 730
+			}
 		}
 	}
 	
 	focus = {
-		id = YUG_slovenia_for_support
-		icon = GFX_focus_chi_mission_to_germany
-		prerequisite = { focus = YUG_crush_the_ustasa }
-		relative_position_id = YUG_crush_the_ustasa
+		id = YUG_ban_slovene_nationalist_parties
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = YUG_crush_the_ustasa focus = YUG_establish_the_banovina_of_croatia }
+		mutually_exclusive = { focus = YUG_slovenia_for_support }
 		x = 0
 		y = 1
-	
-		cost = 7
-	
+		relative_position_id = YUG_establish_the_banovina_of_croatia
+
+		cost = 10
+
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
-	
+
 		available = {
-	
+
 		}
-	
+
 		bypass = {
-	
+
 		}
-	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
-	
+
 		complete_tooltip = {
-	
+
 		}
-	
+
 		completion_reward = {
 			remove_ideas = YUG_idea_slovene_nationalism
-			if = { #if Italy has made a puppet of Slovenia, it should go to them instead
-				limit = {
-					any_other_country = {
-						is_subject_of = ITA
-						102 = {
-							is_core_of = PREV
-						}
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_subject_of = ITA
-						102 = {
-							is_core_of = PREV
-						}
-					}
-					transfer_state = 102
-				}
-			}
-			else = {
-				ITA = {
-					transfer_state = 102
-				}
+			add_timed_idea = {
+				idea = YUG_idea_slovene_nationalism_2
+				days = 730
 			}
 			ITA = {
 				add_opinion_modifier = { 
-					target = ROOT
-					modifier = YUG_gave_away_slovenia
+						target = ROOT
+						modifier = small_increase
 				}
-			}
-			hidden_effect = {
-				add_opinion_modifier = { 
-					target = ITA
-					modifier = YUG_gave_away_slovenia
-				}
-			}
-			102 = {
-				remove_core_of = ROOT
 			}
 		}
 	}
 	
 	focus = {
-		id = YUG_surrender_macedonia
-		icon = GFX_focus_CZE_german_puppet
-		prerequisite = { focus = YUG_slovenia_for_support }
-		relative_position_id = YUG_slovenia_for_support
+		id = YUG_concessions_for_macedonians
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = YUG_slovenia_for_support focus = YUG_ban_slovene_nationalist_parties }
+		mutually_exclusive = { focus = YUG_surrender_macedonia }
 		x = 0
 		y = 1
-	
-		cost = 7
-	
+		relative_position_id = YUG_ban_slovene_nationalist_parties
+
+		cost = 10
+
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
-	
+
 		available = {
 			BUL = {
 				NOT = { has_war_with = ROOT }
 				exists = yes
 				has_capitulated = no
 			}
-			owns_state = 106
-			owns_state = 803
 		}
-	
+
 		bypass = {
-	
+
 		}
-	
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
-	
+
 		completion_reward = {
 			remove_ideas = YUG_idea_macedonian_opposition
-			BUL = {
-				add_opinion_modifier = { 
-					target = ROOT
-					modifier = huge_increase
-				}
-				transfer_state = 106
-				transfer_state = 803
-			}
-			106 = {
-				remove_core_of = ROOT
+			add_timed_idea = {
+				idea = YUG_idea_macedonian_opposition_1
+				days = 730
 			}
 		}
 	}
@@ -1294,8 +1255,8 @@
 	focus = {
 		id = YUG_invite_german_military_mission
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = YUG_surrender_macedonia }
-		relative_position_id = YUG_surrender_macedonia
+		prerequisite = { focus = YUG_concessions_for_macedonians }
+		relative_position_id = YUG_concessions_for_macedonians
 		x = -1
 		y = 1
 	
@@ -1334,8 +1295,8 @@
 	focus = {
 		id = YUG_Under_New_Regime
 		icon = GFX_
-		prerequisite = { focus = YUG_invite_german_military_mission }
-		relative_position_id = YUG_invite_german_military_mission
+		prerequisite = { focus = A }
+		relative_position_id = A
 		x = 0
 		y = 1
 	
@@ -1374,8 +1335,8 @@
 	focus = {
 		id = YUG_relinquish_southern_claims
 		icon = GFX_
-		prerequisite = { focus = YUG_surrender_macedonia }
-		relative_position_id = YUG_surrender_macedonia
+		prerequisite = { focus = A }
+		relative_position_id = A
 		x = 1
 		y = 1
 	

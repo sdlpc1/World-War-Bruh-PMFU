@@ -107,7 +107,18 @@
  ### FLAGS ### 
  VIC_chose_PORSCHE:0 "Chose Porsche"
  VIC_chose_MAN:0 "Chose MAN"
+ VIC_france_capped:0 "France capitulated"
  
  ### DESIGNERS ###
  VIC_renault:0 "Renault"
  VIC_renault_trait:0 "Heavy Tank Designer"
+
+ ### COUNTRY NAME ###
+ VIC_fascism:0 "Vichy France"
+ VIC_fascism_DEF:0 "Vichy France"
+ VIC_neutrality:0 "Vichy France"
+ VIC_neutrality_DEF:0 "Vichy France"
+ VIC_democratic:0 "Vichy France"
+ VIC_democratic_DEF:0 "Vichy France"
+ VIC_communism:0 "Vichy France"
+ VIC_communsim_DEF:0 "Vichy France"

@@ -1,4 +1,4 @@
-characters={
+characters={ 
 	FRA_pierre_laval={ #Democratic Leader
 		name=FRA_pierre_laval
 		portraits={

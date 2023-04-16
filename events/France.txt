@@ -373,7 +373,7 @@ country_event = {
 }
 
 # France wants Armistice (Germany)
-country_event = {
+country_event = { 
 	id = france.14
 	title = france.14.t
 	desc = france.14.d
@@ -419,9 +419,11 @@ country_event = {
 		}
 		custom_effect_tooltip = establishing_vichy_tt
 		hidden_effect = {
-			create_dynamic_country = {
-				original_tag = FRA
-				save_event_target_as = vichy_france
+			# create_dynamic_country = {
+			# 	original_tag = FRA
+			# 	save_event_target_as = vichy_france
+			VIC = {
+				set_country_flag = VIC_france_capped
 				every_state = { #transfer French colonial empire
 					limit = {
 						is_controlled_by = FRA
@@ -438,7 +440,7 @@ country_event = {
 							state = 553
 						}
 					}
-					event_target:vichy_france = { transfer_state = PREV }
+					VIC = { transfer_state = PREV }
 				}
 				every_state = {
 					limit = { #set up Vichy continental holdings
@@ -462,13 +464,13 @@ country_event = {
 						} #failsafe for weird shit (tm)
 					}
 					add_core_of = PREV
-					event_target:vichy_france = { transfer_state = PREV }
+					VIC = { transfer_state = PREV }
 				}
 				every_state = { #set up cores for French cores
 					limit = {
 						is_core_of = FRA
 						NOT = {
-							is_controlled_by = event_target:vichy_france
+							is_controlled_by = VIC
 						}
 					}
 					add_core_of = PREV
@@ -497,7 +499,7 @@ country_event = {
 					
 				}
 				set_rule = { 
-					can_join_factions = yes 
+					can_join_factions = no 
 					can_create_factions = no
 					can_not_declare_war = no
 				}
@@ -512,23 +514,23 @@ country_event = {
 					neutrality = 30
 					communism = 2
 				}
-				set_cosmetic_tag = FRA_VICHY
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-					picture = "Portrait_France_Philippe_Petain.dds"
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
+				# set_cosmetic_tag = FRA_VICHY
+				# create_country_leader = {
+				# 	name = "Philippe Pétain"
+				# 	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+				# 	picture = "Portrait_France_Philippe_Petain.dds"
+				# 	expire = "1965.1.1"
+				# 	ideology = fascism_ideology
+				# 	traits = {
 						
-					}
-				}
+				# 	}
+				# }
 				
 				add_ideas = FRA_occupation_costs_4
-				load_focus_tree = vichy_french_focus
+				# load_focus_tree = vichy_french_focus
 				FRA = {
 					transfer_units_fraction = {
-						target = event_target:vichy_france
+						target = VIC
 						size = 0.95
 						stockpile_ratio = 0.8
 						army_ratio = 0.8
@@ -544,7 +546,7 @@ country_event = {
 		}
 		random_country = {
 			limit = {
-				has_focus_tree = vichy_french_focus
+				tag = VIC
 			}
 			set_country_flag = VIC_vichy_france_confirmed
 			GER = {
@@ -563,158 +565,158 @@ country_event = {
 				}
 				set_nationality = FRA
 			}
-			generate_character = {
-				token_base = generic_fascist_demagogue # token will be TAG_token_base
-				advisor = {
-					slot = political_advisor
-					traits = { fascist_demagogue }
-					available = {
-						if = {
-							limit = { has_dlc = "Man the Guns" }	
-							NOT = { has_autonomy_state = autonomy_supervised_state }
-						}				
-					}
-					ai_will_do = {
-						factor = 0
-					}
-				}
-				portraits = { 
-					army = { small = GFX_idea_generic_fascist_demagogue }
-				}
-			}
-			generate_character = {
-				token_base = generic_paramilitary_leader # token will be TAG_token_base
-				advisor = {
-					slot = political_advisor
-					traits = { paramilitary_leader }
-				}
-				portraits = { 
-					army = { small = GFX_idea_viktor_schutze }
-				}
-			}
-			generate_character = {
-				token_base = generic_reorganiser # token will be TAG_token_base
-				advisor = {
-					slot = political_advisor
-					traits = { reorganiser }
-				}
-				portraits = { 
-					army = { small = GFX_idea_viktor_schutze }
-				}
-			}
-			generate_character = {
-				token_base = generic_silent_workhorse # token will be TAG_token_base
-				advisor = {
-					slot = political_advisor
-					traits = { silent_workhorse }
-				}
-				portraits = { 
-					army = { small = GFX_idea_heisenberg }
-				}
-			}
-			generate_character = {
-				token_base = generic_prince_of_terror # token will be TAG_token_base
-				advisor = {
-					slot = political_advisor
-					traits = { prince_of_terror }
-				}
-				portraits = { 
-					army = { small = GFX_idea_viktor_schutze }
-				}
-			}
-			generate_character = {
-				token_base = generic_popular_figurehead # token will be TAG_token_base
-				advisor = {
-					slot = political_advisor
-					traits = { popular_figurehead }
-				}
-				portraits = { 
-					army = { small = GFX_idea_martial_valin }
-				}
-			}
-			generate_character = {
-				token_base = generic_army_art # token will be TAG_token_base
-				advisor = {
-					slot = high_command
-					traits = { army_artillery_1 }
-				}
-				portraits = { 
-					army = { small = GFX_idea_martial_valin }
-				}
-			}
-			generate_character = {
-				token_base = generic_navy_fleet_log # token will be TAG_token_base
-				advisor = {
-					slot = high_command
-					traits = { navy_fleet_logistics_1 }
-				}
-				portraits = { 
-					army = { small = GFX_idea_viktor_schutze }
-				}
-			}
-			generate_character = {
-				token_base = generic_air_air_combat_trainer # token will be TAG_token_base
-				advisor = {
-					slot = high_command
-					traits = { air_air_combat_training_2 }
-					cost = 100
-				}
-				portraits = { 
-					army = { small = GFX_idea_dudley_pound }
-				}
-			}
-			generate_character = {
-				token_base = generic_air_close_air_sup # token will be TAG_token_base
-				advisor = {
-					slot = air_chief
-					traits = { air_close_air_support_2 }
-					cost = 100
-				}
-				portraits = { 
-					army = { small = GFX_idea_viktor_schutze }
-				}
-			}
-			generate_character = {
-				token_base = generic_air_chief_all_weather # token will be TAG_token_base
-				advisor = {
-					slot = air_chief
-					traits = { air_chief_all_weather_2 }
-					cost = 100
-				}
-				portraits = { 
-					army = { small = GFX_idea_viktor_schutze }
-				}
-			}
-			generate_character = {
-				token_base = generic_military_theorist # token will be TAG_token_base
-				advisor = {
-					slot = theorist
-					traits = { military_theorist }
-				}
-				portraits = { 
-					army = { small = GFX_idea_martial_valin }
-				}
-			}
-			generate_character = {
-				token_base = generic_naval_theorist # token will be TAG_token_base
-				advisor = {
-					slot = theorist
-					traits = { naval_theorist }
-				}
-				portraits = { 
-					army = { small = GFX_idea_heisenberg }
-				}
-			}
-			generate_character = {
-				token_base = generic_air_warfare_theorist # token will be TAG_token_base
-				advisor = {
-					slot = theorist
-					traits = { air_warfare_theorist }
-				}
-				portraits = { 
-					army = { small = GFX_idea_viktor_schutze }
-				}
-			}
+			# generate_character = {
+			# 	token_base = generic_fascist_demagogue # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = political_advisor
+			# 		traits = { fascist_demagogue }
+			# 		available = {
+			# 			if = {
+			# 				limit = { has_dlc = "Man the Guns" }	
+			# 				NOT = { has_autonomy_state = autonomy_supervised_state }
+			# 			}				
+			# 		}
+			# 		ai_will_do = {
+			# 			factor = 0
+			# 		}
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_generic_fascist_demagogue }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_paramilitary_leader # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = political_advisor
+			# 		traits = { paramilitary_leader }
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_viktor_schutze }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_reorganiser # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = political_advisor
+			# 		traits = { reorganiser }
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_viktor_schutze }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_silent_workhorse # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = political_advisor
+			# 		traits = { silent_workhorse }
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_heisenberg }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_prince_of_terror # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = political_advisor
+			# 		traits = { prince_of_terror }
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_viktor_schutze }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_popular_figurehead # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = political_advisor
+			# 		traits = { popular_figurehead }
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_martial_valin }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_army_art # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = high_command
+			# 		traits = { army_artillery_1 }
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_martial_valin }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_navy_fleet_log # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = high_command
+			# 		traits = { navy_fleet_logistics_1 }
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_viktor_schutze }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_air_air_combat_trainer # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = high_command
+			# 		traits = { air_air_combat_training_2 }
+			# 		cost = 100
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_dudley_pound }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_air_close_air_sup # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = air_chief
+			# 		traits = { air_close_air_support_2 }
+			# 		cost = 100
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_viktor_schutze }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_air_chief_all_weather # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = air_chief
+			# 		traits = { air_chief_all_weather_2 }
+			# 		cost = 100
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_viktor_schutze }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_military_theorist # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = theorist
+			# 		traits = { military_theorist }
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_martial_valin }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_naval_theorist # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = theorist
+			# 		traits = { naval_theorist }
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_heisenberg }
+			# 	}
+			# }
+			# generate_character = {
+			# 	token_base = generic_air_warfare_theorist # token will be TAG_token_base
+			# 	advisor = {
+			# 		slot = theorist
+			# 		traits = { air_warfare_theorist }
+			# 	}
+			# 	portraits = { 
+			# 		army = { small = GFX_idea_viktor_schutze }
+			# 	}
+			# }
 			every_army_leader = {
 				limit = {
 					NOT = { has_trait = old_guard }
@@ -728,15 +730,23 @@ country_event = {
 							has_trait = old_guard
 							has_trait = old_guard_navy
 						}
+						NOT = {
+							has_trait = spotter
+							has_trait = superior_tactician
+							has_trait = army_logistics_1
+							has_trait = army_chief_defensive_2
+							has_trait = army_chief_maneuver_1
+							has_trait = army_chief_offensive_2
+						}
 					}
 					set_nationality = PREV.PREV
 				}
-				every_navy_leader = {
-					limit = {
-						has_id = 102 #Darlan
-					}
-					set_nationality = PREV.PREV
-				}
+				# every_navy_leader = {
+				# 	limit = {
+				# 		has_id = 102 #Darlan
+				# 	}
+				# 	set_nationality = PREV.PREV
+				# }
 			}
 		}
 	}

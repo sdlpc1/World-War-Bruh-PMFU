@@ -71,11 +71,11 @@ SPD = {
 	}
 }
 
-VIC = {
-	original_tag = FRA
-	# has_focus_tree = vichy_french_focus
-	has_country_flag = VIC_vichy_france_confirmed
-}
+# VIC = {
+# 	original_tag = FRA
+# 	# has_focus_tree = vichy_french_focus
+# 	has_country_flag = VIC_vichy_france_confirmed
+# }
 
 BUZ = {
 	original_tag = BUL

@@ -5,8 +5,8 @@
 		factor = 0
 		
 		modifier = {
-			add = 1
-			tag = FRA
+			add = 10
+			tag = VIC
 		}
 	}
 	
@@ -48,14 +48,14 @@
 		y = 0
         relative_position_id = VIC_bugifx
 		
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+            has_country_flag = VIC_france_capped
 		}
 		
 		bypass = {
