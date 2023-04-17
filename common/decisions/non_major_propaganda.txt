@@ -13,7 +13,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
@@ -60,7 +60,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
@@ -108,7 +108,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
@@ -160,7 +160,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
@@ -207,7 +207,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
@@ -253,7 +253,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
