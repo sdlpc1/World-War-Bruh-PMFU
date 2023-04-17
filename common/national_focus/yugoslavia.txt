@@ -1130,7 +1130,6 @@
 		id = YUG_establish_the_banovina_of_croatia
 		icon = GFX_focus_YUG_banovina_of_croatia
 		prerequisite = { focus = YUG_evolution }
-		mutually_exclusive = { focus = YUG_crush_the_ustasa }
 		x = 0
 		y = 1
 		relative_position_id = YUG_evolution
@@ -1167,8 +1166,7 @@
 	focus = {
 		id = YUG_ban_slovene_nationalist_parties
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = YUG_crush_the_ustasa focus = YUG_establish_the_banovina_of_croatia }
-		mutually_exclusive = { focus = YUG_slovenia_for_support }
+		prerequisite = { focus = YUG_establish_the_banovina_of_croatia }
 		x = 0
 		y = 1
 		relative_position_id = YUG_establish_the_banovina_of_croatia
@@ -1214,8 +1212,7 @@
 	focus = {
 		id = YUG_concessions_for_macedonians
 		icon = GFX_focus_generic_concessions
-		prerequisite = { focus = YUG_slovenia_for_support focus = YUG_ban_slovene_nationalist_parties }
-		mutually_exclusive = { focus = YUG_surrender_macedonia }
+		prerequisite = { focus = YUG_ban_slovene_nationalist_parties }
 		x = 0
 		y = 1
 		relative_position_id = YUG_ban_slovene_nationalist_parties
@@ -1257,7 +1254,7 @@
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = YUG_concessions_for_macedonians }
 		relative_position_id = YUG_concessions_for_macedonians
-		x = -1
+		x = 0
 		y = 1
 	
 		cost = 5
@@ -1293,10 +1290,83 @@
 	}
 
 	focus = {
-		id = YUG_Under_New_Regime
+		id = YUG_join_axis
+		icon = GFX_goal_support_fascism
+		relative_position_id = YUG_western_focus
+		x = -3
+		y = 0
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 100
+		}
+	
+		available = {
+			is_ai = no
+		}
+	
+		bypass = {
+			is_in_faction_with = GER
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			GER = {
+				country_event = generic.2
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_surrender_macedonia
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = YUG_join_axis }
+		x = -1
+		y = 1
+		relative_position_id = YUG_join_axis
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			BUL = {
+				transfer_state = 106
+				transfer_state = 803
+			}
+			106 = {
+				remove_core_of = ROOT
+			}
+			803 = {
+				remove_core_of = ROOT
+			}
+			# give bulgaria its land
+		}
+	}
+
+	focus = {
+		id = YUG_surrender_hungarian_claims
 		icon = GFX_
-		prerequisite = { focus = A }
-		relative_position_id = A
+		prerequisite = { focus = YUG_surrender_macedonia }
+		relative_position_id = YUG_surrender_macedonia
 		x = 0
 		y = 1
 	
@@ -1307,15 +1377,10 @@
 		}
 	
 		available = {
-			GER = {
-				NOT = { has_war_with = ROOT }
-				exists = yes
-				has_capitulated = no
-			}
 		}
 	
 		bypass = {
-	
+
 		}
 	
 		cancel_if_invalid = yes
@@ -1323,20 +1388,26 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	
-		complete_tooltip = {
-			# change name to croatia but germany has to be at war with allies
-		}
-	
 		completion_reward = {
-
+			HUN = {
+				transfer_state = 45
+				transfer_state = 764
+			}
+			45 = {
+				remove_core_of = ROOT
+			}
+			764 = {
+				remove_core_of = ROOT
+			}
+			# give hungary its land
 		}
 	}
 
 	focus = {
 		id = YUG_relinquish_southern_claims
 		icon = GFX_
-		prerequisite = { focus = A }
-		relative_position_id = A
+		prerequisite = { focus = YUG_join_axis }
+		relative_position_id = YUG_join_axis
 		x = 1
 		y = 1
 	
@@ -1362,6 +1433,24 @@
 		}
 	
 		completion_reward = {
+			ITA = {
+				transfer_state = 105
+				transfer_state = 802
+				transfer_state = 108
+				transfer_state = 107
+			}
+			105 = {
+				remove_core_of = ROOT
+			}
+			802 = {
+				remove_core_of = ROOT
+			}
+			108 = {
+				remove_core_of = ROOT
+			}
+			107 = {
+				remove_core_of = ROOT
+			}
 			# give up Kosovo, Morava, Serbia, Montenegro
 		}
 	}
@@ -1381,29 +1470,9 @@
 		}
 	
 		available = {
-			OR = {
-				GER = {
-					NOT = { has_war_with = ROOT }
-					has_government = fascism
-					has_capitulated = no
-					is_faction_leader = yes
-				}
-				any_other_country = {
-					is_major = yes
-					has_government = fascism
-					is_faction_leader = yes
-				}
-			}
-			NOT = {
-				any_other_country = {
-					is_in_faction_with = GER
-					has_war_with = YUG
-				}
-			}
 		}
 	
 		bypass = {
-			is_in_faction_with = GER
 		}
 	
 		cancel_if_invalid = yes
@@ -1414,66 +1483,29 @@
 		completion_reward = {
 			163 = { remove_core_of = ROOT }
 			736 = { remove_core_of = ROOT }
-			if = {
-				limit = {
-					GER = {
-						exists = yes
-						has_capitulated = no
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-				GER = { country_event = generic.2 }
-			}
-			else = {
-				get_best_alliance_match_fascism_effect = yes
-				var:best_leader = {
-					country_event = generic.2
-				}
-			}
+			# give italy its claims
 		}
 	}
-	
+
 	focus = {
-		id = YUG_join_axis
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = YUG_surrender_italian_claims }
-		prerequisite = { focus = YUG_Under_New_Regime }
-		relative_position_id = YUG_surrender_italian_claims
-		x = -1
+		id = YUG_Under_New_Regime
+		icon = GFX_
+		prerequisite = { focus = YUG_surrender_hungarian_claims focus = YUG_surrender_italian_claims }
+		relative_position_id = YUG_surrender_hungarian_claims
+		x = 1
 		y = 1
 	
-		cost = 7
+		cost = 5
 	
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 	
 		available = {
-			OR = {
-				GER = {
-					NOT = { has_war_with = ROOT }
-					has_government = fascism
-					has_capitulated = no
-					is_faction_leader = yes
-				}
-				any_other_country = {
-					is_major = yes
-					has_government = fascism
-					is_faction_leader = yes
-				}
-			}
-			NOT = {
-				any_other_country = {
-					is_in_faction_with = GER
-					has_war_with = YUG
-				}
-			}
-			YUG = { is_ai = no }
 		}
 	
 		bypass = {
-			is_in_faction_with = GER
+	
 		}
 	
 		cancel_if_invalid = yes
@@ -1482,58 +1514,127 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	
 		completion_reward = {
-			hidden_effect = {
-				if = {
-					limit = {
-						GER = {
-							exists = yes
-							has_capitulated = no
-							has_government = fascism
-							is_faction_leader = yes
-						}
-					}
-					GER = { country_event = DOD_yugoslavia.70 }
-				}
-				else = {
-					get_best_alliance_match_fascism_effect = yes
-					var:best_leader = {
-						country_event = DOD_yugoslavia.70
-					}
-				}
+			set_cosmetic_tag = YUG_croatia
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
 			}
-			effect_tooltip = {
-				if = {
-					limit = {
-						GER = {
-							exists = yes
-							has_capitulated = no
-							has_government = fascism
-							is_faction_leader = yes
-						}
-					}
-					GER = {
-						add_opinion_modifier = { target = YUG modifier = tripartite_pact_opinion }
-						reverse_add_opinion_modifier = { target = YUG modifier = tripartite_pact_opinion }
-					}
-				}
-				else = {
-					get_best_alliance_match_fascism_effect = yes
-					var:best_leader = {
-						add_opinion_modifier = { target = YUG modifier = tripartite_pact_opinion }
-						reverse_add_opinion_modifier = { target = YUG modifier = tripartite_pact_opinion }
-					}
-				}
+			set_popularities = {
+				democratic = 3
+				neutrality = 15
+				fascism = 80
+				communism = 2
 			}
-			create_country_leader = {
-				name = "Prince Paul"
-				desc = "POLITICS_PRINCE_PAUL_DESC"
-				picture = "Portrait_Yugoslavia_Prince_Paul.dds"
-				expire = "1965.1.1"
-				ideology = fascism_ideology
-				traits = {
-					#
-				}
+			# change name, colour and flag to croatia
+		}
+	}
+
+	focus = {
+		id = YUG_invite_italian_naval_experts
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = { focus = YUG_Under_New_Regime }
+		x = -1
+		y = 1
+		relative_position_id = YUG_Under_New_Regime
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			ITA = {
+				is_in_faction_with = ROOT
+				NOT = { has_war_with = ROOT }
+				exists = yes
+				has_capitulated = no
 			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_to_tech_sharing_group = YUG_naval_research_group
+			ITA = {
+				add_to_tech_sharing_group = YUG_naval_research_group
+			}
+			navy_experience = 50
+		}
+	}
+
+	focus = {
+		id = YUG_all_yugoslavian_regiments
+		icon = GFX_goal_rhineland
+		prerequisite = { focus = YUG_Under_New_Regime }
+		x = 1
+		y = 1
+		relative_position_id = YUG_Under_New_Regime
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = YUG_idea_all_yugoslavian_regiments
+		}
+	}
+
+	focus = {
+		id = YUG_axis_research
+		icon = GFX_
+		prerequisite = { focus = YUG_invite_italian_naval_experts focus = YUG_all_yugoslavian_regiments }
+		relative_position_id = YUG_all_yugoslavian_regiments
+		x = -1
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 0
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_to_tech_sharing_group = axis_research
 		}
 	}
 
@@ -3802,6 +3903,7 @@
 		}
 
 		completion_reward = {
+			army_experience = 50
             # 50 army XP
 		}
 	}
@@ -3918,6 +4020,13 @@
         }
 
         completion_reward = {
+			add_ideas = YUG_improved_logistics
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = logistics_tech
+				category = hospital_tech
+			}
             # -10% supply consumption
             # 100% Research bonus for: Field Hospitals and Logistics Company
         }
@@ -4035,6 +4144,46 @@
         }
 
         completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = YUG_light_tank_designer
+			add_ideas = YUG_light_tank_designer
+
+			hidden_effect = {
+                create_corps_commander = {
+                    name="Vinko Žganec"
+                    # advisor={
+                    # 	slot = high_command
+                    # 	idea_token = courtney_hodges
+                    # 	ledger = army 
+                    # 	allowed = {
+                    # 		original_tag  = USA
+                    # 	}
+                    # 	traits  = {
+                    # 		army_commando_2 
+                    # 	}
+                    # 	cost = 100
+                    # 	ai_will_do  = {
+                    # 		factor  = 1.000
+                    # 	}
+                    # }
+                    # portraits={
+                    # 	army={
+                    # 		small="GFX_idea_courtney_hodges"
+                    # 	}
+                    # 	army={
+                    # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+                    # 	}
+                    # }
+                        traits={ hill_fighter ranger trait_reckless panzer_leader }
+                        skill=4
+                        attack_skill=6
+                        defense_skill=3
+                        planning_skill=4
+                        logistics_skill=5
+                        legacy_id=-1
+            	}
+            }
+            custom_effect_tooltip = general_vinko_zganec_tt
             # light tank designer
                 # -10% Production cost
                 # 10% breakthrough
@@ -4078,6 +4227,14 @@
         }
 
         completion_reward = {
+			add_ideas = YUG_terrain_training
+			add_tech_bonus = {
+				name = YUG_light_tank
+				bonus = 0.50
+				ahead_reduction = 1
+				uses = 1
+				category = cat_light_armor
+			}
             # reduce bad terrain penalty
             # 50% 1 year ahead of time Research bonus for: light tank
         }
@@ -4115,6 +4272,46 @@
         }
 
         completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = YUG_medium_tank_designer
+			add_ideas = YUG_medium_tank_designer
+
+			hidden_effect = {
+                create_corps_commander = {
+                    name="Robert Glasnović"
+                    # advisor={
+                    # 	slot = high_command
+                    # 	idea_token = courtney_hodges
+                    # 	ledger = army 
+                    # 	allowed = {
+                    # 		original_tag  = USA
+                    # 	}
+                    # 	traits  = {
+                    # 		army_commando_2 
+                    # 	}
+                    # 	cost = 100
+                    # 	ai_will_do  = {
+                    # 		factor  = 1.000
+                    # 	}
+                    # }
+                    # portraits={
+                    # 	army={
+                    # 		small="GFX_idea_courtney_hodges"
+                    # 	}
+                    # 	army={
+                    # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
+                    # 	}
+                    # }
+                        traits={ desert_fox brilliant_strategist panzer_leader }
+                        skill=4
+                        attack_skill=5
+                        defense_skill=4
+                        planning_skill=7
+                        logistics_skill=5
+                        legacy_id=-1
+            	}
+            }
+            custom_effect_tooltip = general_robert_glasnovic_tt
             # medium tank designer
                 # -10% Production cost
                 # 10% armor
@@ -4157,6 +4354,14 @@
         }
 
         completion_reward = {
+			add_ideas = YUG_heat_training
+			add_tech_bonus = {
+				name = YUG_light_tank
+				bonus = 0.50
+				ahead_reduction = 1
+				uses = 1
+				category = cat_medium_armor
+			}
             # reduce heat attrition
             # 50% 1 year ahead of time Research bonus for: medium tank
         }
@@ -4194,6 +4399,7 @@
         }
 
         completion_reward = {
+			add_ideas = YUG_anti_personel_tank
             # 10% Soft attack
             # 15% Defense
         }
@@ -4231,6 +4437,26 @@
         }
 
         completion_reward = {
+			custom_effect_tooltip = general_upgrade_urban_assault_tt
+			YUG = {
+				random_army_leader = {
+					limit = {
+						has_trait = hill_fighter
+						has_trait = ranger
+						has_trait = trait_reckless
+						has_trait = panzer_leader
+					}
+					add_unit_leader_trait = urban_assault_specialist
+				}
+				random_army_leader = {
+					limit = {
+						has_trait = desert_fox
+						has_trait = brilliant_strategist
+						has_trait = panzer_leader
+					}
+					add_unit_leader_trait = urban_assault_specialist
+				}
+			}
             # General from before gains the following
                 # urban assault
         }
@@ -4268,6 +4494,7 @@
         }
 
         completion_reward = {
+			add_ideas = YUG_anti_tank_tank
             # 10% piercing
             # 10% Hard attack
         }
@@ -4304,6 +4531,11 @@
         }
 
         completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
             # 2x 50% Research bonus for: Land Doctrine
         }
     }
@@ -4339,6 +4571,7 @@
         }
 
         completion_reward = {
+			add_ideas = german_cooperation_focus
             # look BUL_german_cooperation
         }
     }
@@ -4374,6 +4607,11 @@
         }
 
         completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
             # 2x research bonus for land doctrine
         }
     }
@@ -4409,6 +4647,12 @@
         }
 
         completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+				category = heavy_artillery
+			}
             # 2x 50% Research bonus for: Artillery
         }
     }
@@ -4444,6 +4688,13 @@
         }
 
         completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				ahead_reduction = 1
+				category = artillery
+				category = heavy_artillery
+			}
             # 75% 1 year ahead of time Research bonus for: artillery
         }
     }

@@ -14,6 +14,11 @@ RAJ_UK = {
 	color_ui = rgb { 200  10  10 }
 }
 
+YUG_croatia = {
+	color = rgb { 230  70  180 }
+	color_ui = rgb { 230 255 122 }
+}
+
 INS_HOL = {
     color = rgb { 203 138 74 }
     color_ui = rgb { 203 138 74 }
