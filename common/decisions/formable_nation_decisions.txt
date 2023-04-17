@@ -2896,7 +2896,7 @@ form_greater_yugo_category = {
 
 		visible = {
 			original_tag = YUG
-			has_completed_focus = YUG_greater_yugoslavia
+			always = no
 			NOT = { has_global_flag = form_greater_yug_flag }
 		}
 

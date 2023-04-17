@@ -337,8 +337,8 @@ bookmarks = {
 			}
 			focuses = {
 				YUG_establish_the_banovina_of_croatia
-				YUG_zmaj
-				YUG_greater_yugoslavia
+				YUG_Under_New_Regime
+				YUG_Anti_Personal
 			}
 		}
 

@@ -743,734 +743,734 @@
 
 
 
-YUG_crush_ustasa = {
+# YUG_crush_ustasa = {
 	
-	# The uprising itself
+# 	# The uprising itself
 
-	YUG_ustasa_uprising = {
+# 	YUG_ustasa_uprising = {
 
-		priority = 10
+# 		priority = 10
 
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 
-		days_mission_timeout = 130
+# 		days_mission_timeout = 130
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		activation = {
-			has_completed_focus = YUG_crush_the_ustasa
-			NOT = { has_global_flag = ustasa_crushed }
-		}
+# 		activation = {
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 		}
 
-		visible = {
-			tag = YUG
-			has_completed_focus = YUG_crush_the_ustasa
-			NOT = { has_global_flag = ustasa_crushed }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		is_good = no
+# 		is_good = no
 
-		timeout_effect = {
-			swap_ideas = {
-				remove_idea = YUG_idea_croatian_opposition
-				add_idea = YUG_idea_croats_suppressed
-			}
-		}
-	}
-	#the crushing
-	YUG_ustasa_crushed_mission = {
+# 		timeout_effect = {
+# 			swap_ideas = {
+# 				remove_idea = YUG_idea_croatian_opposition
+# 				add_idea = YUG_idea_croats_suppressed
+# 			}
+# 		}
+# 	}
+# 	#the crushing
+# 	YUG_ustasa_crushed_mission = {
 
-		priority = 10
+# 		priority = 10
 
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 
-		days_mission_timeout = 200
+# 		days_mission_timeout = 200
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		activation = {
-			has_completed_focus = YUG_crush_the_ustasa
-			NOT = { has_global_flag = ustasa_crushed }
-		}
+# 		activation = {
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 		}
 
-		visible = {
-			tag = YUG
-			has_completed_focus = YUG_crush_the_ustasa
-			NOT = { has_global_flag = ustasa_crushed }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		is_good = yes
+# 		is_good = yes
 
-		timeout_effect = {
-			set_global_flag = ustasa_crushed
-			remove_ideas = {
-				YUG_idea_croatian_opposition
-				YUG_idea_croats_suppressed
-			}
-		}
-	}
-}
+# 		timeout_effect = {
+# 			set_global_flag = ustasa_crushed
+# 			remove_ideas = {
+# 				YUG_idea_croatian_opposition
+# 				YUG_idea_croats_suppressed
+# 			}
+# 		}
+# 	}
+# }
 
-YUG_delay_ustasa_uprising = {
+# YUG_delay_ustasa_uprising = {
 	
-	# Things to slow down the uprising
+# 	# Things to slow down the uprising
 	
 
-	YUG_croat_concessions = {
+# 	YUG_croat_concessions = {
 
-		icon = eng_propaganda_campaigns
+# 		icon = eng_propaganda_campaigns
 
-		allowed = {
-			tag = YUG
-		}
+# 		allowed = {
+# 			tag = YUG
+# 		}
 
-		available = {
-			NOT = {
-				has_country_flag = YUG_croat_concession_flag
-				has_country_flag = YUG_something_in_progress_flag
-			}
-		}
+# 		available = {
+# 			NOT = {
+# 				has_country_flag = YUG_croat_concession_flag
+# 				has_country_flag = YUG_something_in_progress_flag
+# 			}
+# 		}
 
-		cost = 15
+# 		cost = 15
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		ai_will_do = {
-			base = 200
-		}
+# 		ai_will_do = {
+# 			base = 200
+# 		}
 
-		days_remove = 20
+# 		days_remove = 20
 
-		modifier = {
+# 		modifier = {
 			
-		}
+# 		}
 
-		visible = {
-			tag = YUG
-			has_active_mission = YUG_ustasa_uprising
-			NOT = { has_global_flag = ustasa_crushed }
-			NOT = { has_country_flag = YUG_croat_concession_flag }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_active_mission = YUG_ustasa_uprising
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 			NOT = { has_country_flag = YUG_croat_concession_flag }
+# 		}
 
-		complete_effect = {
-			set_country_flag = YUG_something_in_progress_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = YUG_something_in_progress_flag
+# 		}
 
-		remove_effect = {
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_uprising
-				days = 35
-			}
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_crushed_mission
-				days = 45
-			}
-			clr_country_flag = YUG_something_in_progress_flag
-			set_country_flag = YUG_croat_concession_flag
-		}
-	}
+# 		remove_effect = {
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_uprising
+# 				days = 35
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_crushed_mission
+# 				days = 45
+# 			}
+# 			clr_country_flag = YUG_something_in_progress_flag
+# 			set_country_flag = YUG_croat_concession_flag
+# 		}
+# 	}
 	
-	YUG_positive_discrimination_croat = {
+# 	YUG_positive_discrimination_croat = {
 
-		icon = eng_propaganda_campaigns
+# 		icon = eng_propaganda_campaigns
 
-		allowed = {
-			tag = YUG
-		}
+# 		allowed = {
+# 			tag = YUG
+# 		}
 
-		available = {
-			NOT = {
-				has_country_flag = YUG_croat_positive_dis_flag
-				has_country_flag = YUG_something_in_progress_flag
-			}
-		}
+# 		available = {
+# 			NOT = {
+# 				has_country_flag = YUG_croat_positive_dis_flag
+# 				has_country_flag = YUG_something_in_progress_flag
+# 			}
+# 		}
 
-		cost = 15
+# 		cost = 15
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		ai_will_do = {
-			base = 200
-		}
+# 		ai_will_do = {
+# 			base = 200
+# 		}
 
-		days_remove = 10
+# 		days_remove = 10
 
-		modifier = {
-			stability_weekly = -0.01
-		}
+# 		modifier = {
+# 			stability_weekly = -0.01
+# 		}
 
-		visible = {
-			tag = YUG
-			has_active_mission = YUG_ustasa_uprising
-			NOT = { has_global_flag = ustasa_crushed }
-			NOT = { has_country_flag = YUG_croat_positive_dis_flag }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_active_mission = YUG_ustasa_uprising
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 			NOT = { has_country_flag = YUG_croat_positive_dis_flag }
+# 		}
 
-		complete_effect = {
-			set_country_flag = YUG_something_in_progress_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = YUG_something_in_progress_flag
+# 		}
 
-		remove_effect = {
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_uprising
-				days = 35
-			}
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_crushed_mission
-				days = 45
-			}
-			clr_country_flag = YUG_something_in_progress_flag
-			set_country_flag = YUG_croat_positive_dis_flag
-		}
-	}
+# 		remove_effect = {
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_uprising
+# 				days = 35
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_crushed_mission
+# 				days = 45
+# 			}
+# 			clr_country_flag = YUG_something_in_progress_flag
+# 			set_country_flag = YUG_croat_positive_dis_flag
+# 		}
+# 	}
 	
-	YUG_listening_posts_croatia = {
+# 	YUG_listening_posts_croatia = {
 
-		icon = eng_propaganda_campaigns
+# 		icon = eng_propaganda_campaigns
 
-		allowed = {
-			tag = YUG
-		}
+# 		allowed = {
+# 			tag = YUG
+# 		}
 
-		available = {
-			NOT = {
-				has_country_flag = YUG_listening_post_flag
-				has_country_flag = YUG_something_in_progress_flag
-			}
-		}
+# 		available = {
+# 			NOT = {
+# 				has_country_flag = YUG_listening_post_flag
+# 				has_country_flag = YUG_something_in_progress_flag
+# 			}
+# 		}
 
-		cost = 15
+# 		cost = 15
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		ai_will_do = {
-			base = 200
-		}
+# 		ai_will_do = {
+# 			base = 200
+# 		}
 
-		days_remove = 20
+# 		days_remove = 20
 
-		modifier = {
-			consumer_goods_factor = 0.2
-		}
+# 		modifier = {
+# 			consumer_goods_factor = 0.2
+# 		}
 
-		visible = {
-			tag = YUG
-			has_active_mission = YUG_ustasa_uprising
-			NOT = { has_global_flag = ustasa_crushed }
-			NOT = { has_country_flag = YUG_listening_post_flag }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_active_mission = YUG_ustasa_uprising
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 			NOT = { has_country_flag = YUG_listening_post_flag }
+# 		}
 
-		complete_effect = {
-			set_country_flag = YUG_something_in_progress_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = YUG_something_in_progress_flag
+# 		}
 
-		remove_effect = {
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_uprising
-				days = 35
-			}
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_crushed_mission
-				days = 45
-			}
-			clr_country_flag = YUG_something_in_progress_flag
-			set_country_flag = YUG_listening_post_flag
-		}
-	}
+# 		remove_effect = {
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_uprising
+# 				days = 35
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_crushed_mission
+# 				days = 45
+# 			}
+# 			clr_country_flag = YUG_something_in_progress_flag
+# 			set_country_flag = YUG_listening_post_flag
+# 		}
+# 	}
 	
-	#cooldown missions
-	YUG_croat_concessions_cooldown = {
+# 	#cooldown missions
+# 	YUG_croat_concessions_cooldown = {
 
-		priority = 10
+# 		priority = 10
 
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 
-		days_mission_timeout = 70
+# 		days_mission_timeout = 70
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		activation = {
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_croat_concession_flag
-		}
+# 		activation = {
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_croat_concession_flag
+# 		}
 
-		visible = {
-			tag = YUG
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_croat_concession_flag
-			NOT = { has_global_flag = ustasa_crushed }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_croat_concession_flag
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		is_good = yes
+# 		is_good = yes
 
-		timeout_effect = {
-			clr_country_flag = YUG_croat_concession_flag
-		}
-	}
-	YUG_positive_discrimination_croat_cooldown = {
+# 		timeout_effect = {
+# 			clr_country_flag = YUG_croat_concession_flag
+# 		}
+# 	}
+# 	YUG_positive_discrimination_croat_cooldown = {
 
-		priority = 10
+# 		priority = 10
 
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 
-		days_mission_timeout = 70
+# 		days_mission_timeout = 70
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		activation = {
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_croat_positive_dis_flag
-		}
+# 		activation = {
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_croat_positive_dis_flag
+# 		}
 
-		visible = {
-			tag = YUG
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_croat_positive_dis_flag
-			NOT = { has_global_flag = ustasa_crushed }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_croat_positive_dis_flag
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		is_good = yes
+# 		is_good = yes
 
-		timeout_effect = {
-			clr_country_flag = YUG_croat_positive_dis_flag
-		}
-	}
-	YUG_listening_posts_cooldown = {
+# 		timeout_effect = {
+# 			clr_country_flag = YUG_croat_positive_dis_flag
+# 		}
+# 	}
+# 	YUG_listening_posts_cooldown = {
 
-		priority = 10
+# 		priority = 10
 
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 
-		days_mission_timeout = 70
+# 		days_mission_timeout = 70
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		activation = {
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_listening_post_flag
-		}
+# 		activation = {
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_listening_post_flag
+# 		}
 
-		visible = {
-			tag = YUG
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_listening_post_flag
-			NOT = { has_global_flag = ustasa_crushed }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_listening_post_flag
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		is_good = yes
+# 		is_good = yes
 
-		timeout_effect = {
-			clr_country_flag = YUG_listening_post_flag
-		}
-	}
-}
+# 		timeout_effect = {
+# 			clr_country_flag = YUG_listening_post_flag
+# 		}
+# 	}
+# }
 
-YUG_progress_crushing_decisions = {
+# YUG_progress_crushing_decisions = {
 
-# Things to actively crush the Ustasa
+# # Things to actively crush the Ustasa
 	
 
-	YUG_raid_croat_villages = {
+# 	YUG_raid_croat_villages = {
 
-		icon = eng_propaganda_campaigns
+# 		icon = eng_propaganda_campaigns
 
-		allowed = {
-			tag = YUG
-		}
+# 		allowed = {
+# 			tag = YUG
+# 		}
 
-		available = {
-			NOT = {
-				has_country_flag = YUG_raid_villages_flag
-				has_country_flag = YUG_something_in_progress_flag
-			}
-		}
+# 		available = {
+# 			NOT = {
+# 				has_country_flag = YUG_raid_villages_flag
+# 				has_country_flag = YUG_something_in_progress_flag
+# 			}
+# 		}
 
-		cost = 15
+# 		cost = 15
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		ai_will_do = {
-			base = 200
-		}
+# 		ai_will_do = {
+# 			base = 200
+# 		}
 
-		days_remove = 20
+# 		days_remove = 20
 
-		modifier = {
-			neutrality_drift = -0.05
-		}
+# 		modifier = {
+# 			neutrality_drift = -0.05
+# 		}
 
-		visible = {
-			tag = YUG
-			has_active_mission = YUG_ustasa_uprising
-			NOT = { has_global_flag = ustasa_crushed }
-			NOT = { has_country_flag = YUG_raid_villages_flag }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_active_mission = YUG_ustasa_uprising
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 			NOT = { has_country_flag = YUG_raid_villages_flag }
+# 		}
 
-		complete_effect = {
-			set_country_flag = YUG_something_in_progress_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = YUG_something_in_progress_flag
+# 		}
 
-		remove_effect = {
-			add_popularity = {
-			    ideology = fascism
-			    popularity = 0.05
-			}
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_uprising
-				days = -15
-			}
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_crushed_mission
-				days = -35
-			}
-			clr_country_flag = YUG_something_in_progress_flag
-			set_country_flag = YUG_raid_villages_flag
-		}
-	}
+# 		remove_effect = {
+# 			add_popularity = {
+# 			    ideology = fascism
+# 			    popularity = 0.05
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_uprising
+# 				days = -15
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_crushed_mission
+# 				days = -35
+# 			}
+# 			clr_country_flag = YUG_something_in_progress_flag
+# 			set_country_flag = YUG_raid_villages_flag
+# 		}
+# 	}
 
-	YUG_shut_down_recruitment_centers = {
+# 	YUG_shut_down_recruitment_centers = {
 
-		icon = eng_propaganda_campaigns
+# 		icon = eng_propaganda_campaigns
 
-		allowed = {
-			tag = YUG
-		}
+# 		allowed = {
+# 			tag = YUG
+# 		}
 
-		available = {
-			NOT = {
-				has_country_flag = YUG_end_recruitment_flag
-				has_country_flag = YUG_something_in_progress_flag
-			}
-		}
+# 		available = {
+# 			NOT = {
+# 				has_country_flag = YUG_end_recruitment_flag
+# 				has_country_flag = YUG_something_in_progress_flag
+# 			}
+# 		}
 
-		cost = 15
+# 		cost = 15
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		ai_will_do = {
-			base = 200
-		}
+# 		ai_will_do = {
+# 			base = 200
+# 		}
 
-		days_remove = 20
+# 		days_remove = 20
 
-		modifier = {
-			war_support_weekly = -0.01
-			stability_weekly = -0.01
-		}
+# 		modifier = {
+# 			war_support_weekly = -0.01
+# 			stability_weekly = -0.01
+# 		}
 
-		visible = {
-			tag = YUG
-			has_active_mission = YUG_ustasa_uprising
-			NOT = { has_global_flag = ustasa_crushed }
-			NOT = { has_country_flag = YUG_end_recruitment_flag }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_active_mission = YUG_ustasa_uprising
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 			NOT = { has_country_flag = YUG_end_recruitment_flag }
+# 		}
 
-		complete_effect = {
-			set_country_flag = YUG_something_in_progress_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = YUG_something_in_progress_flag
+# 		}
 
-		remove_effect = {
-			add_popularity = {
-			    ideology = fascism
-			    popularity = 0.05
-			}
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_uprising
-				days = -15
-			}
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_crushed_mission
-				days = -35
-			}
-			clr_country_flag = YUG_something_in_progress_flag
-			set_country_flag = YUG_end_recruitment_flag
-		}
-	}
+# 		remove_effect = {
+# 			add_popularity = {
+# 			    ideology = fascism
+# 			    popularity = 0.05
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_uprising
+# 				days = -15
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_crushed_mission
+# 				days = -35
+# 			}
+# 			clr_country_flag = YUG_something_in_progress_flag
+# 			set_country_flag = YUG_end_recruitment_flag
+# 		}
+# 	}
 
-	YUG_arrest_ustasa_leaders = {
+# 	YUG_arrest_ustasa_leaders = {
 
-		icon = eng_propaganda_campaigns
+# 		icon = eng_propaganda_campaigns
 
-		allowed = {
-			tag = YUG
-		}
+# 		allowed = {
+# 			tag = YUG
+# 		}
 
-		available = {
-			NOT = {
-				has_country_flag = YUG_arrest_ustasa_flag
-				has_country_flag = YUG_something_in_progress_flag
-			}
-			command_power > 20
-		}
+# 		available = {
+# 			NOT = {
+# 				has_country_flag = YUG_arrest_ustasa_flag
+# 				has_country_flag = YUG_something_in_progress_flag
+# 			}
+# 			command_power > 20
+# 		}
 
-		cost = 15
+# 		cost = 15
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		ai_will_do = {
-			base = 200
-		}
+# 		ai_will_do = {
+# 			base = 200
+# 		}
 
-		days_remove = 20
+# 		days_remove = 20
 
-		modifier = {
-			command_power_gain = -0.5
-		}
+# 		modifier = {
+# 			command_power_gain = -0.5
+# 		}
 
-		visible = {
-			tag = YUG
-			has_active_mission = YUG_ustasa_uprising
-			NOT = { has_global_flag = ustasa_crushed }
-			NOT = { has_country_flag = YUG_arrest_ustasa_flag }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_active_mission = YUG_ustasa_uprising
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 			NOT = { has_country_flag = YUG_arrest_ustasa_flag }
+# 		}
 
-		complete_effect = {
-			add_command_power = -20
-			set_country_flag = YUG_something_in_progress_flag
-		}
+# 		complete_effect = {
+# 			add_command_power = -20
+# 			set_country_flag = YUG_something_in_progress_flag
+# 		}
 
-		remove_effect = {
-			add_popularity = {
-			    ideology = fascism
-			    popularity = 0.05
-			}
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_uprising
-				days = -10
-			}
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_crushed_mission
-				days = -45
-			}
-			clr_country_flag = YUG_something_in_progress_flag
-			set_country_flag = YUG_arrest_ustasa_flag
-		}
-	}
+# 		remove_effect = {
+# 			add_popularity = {
+# 			    ideology = fascism
+# 			    popularity = 0.05
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_uprising
+# 				days = -10
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_crushed_mission
+# 				days = -45
+# 			}
+# 			clr_country_flag = YUG_something_in_progress_flag
+# 			set_country_flag = YUG_arrest_ustasa_flag
+# 		}
+# 	}
 
-	YUG_croatian_recruitment = {
+# 	YUG_croatian_recruitment = {
 
-		icon = eng_propaganda_campaigns
+# 		icon = eng_propaganda_campaigns
 
-		allowed = {
-			tag = YUG
-		}
+# 		allowed = {
+# 			tag = YUG
+# 		}
 
-		available = {
-			NOT = {
-				has_country_flag = YUG_recruitment_flag
-				has_country_flag = YUG_something_in_progress_flag
-			}
-			has_army_experience > 10
-		}
+# 		available = {
+# 			NOT = {
+# 				has_country_flag = YUG_recruitment_flag
+# 				has_country_flag = YUG_something_in_progress_flag
+# 			}
+# 			has_army_experience > 10
+# 		}
 
-		cost = 15
+# 		cost = 15
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		ai_will_do = {
-			base = 200
-		}
+# 		ai_will_do = {
+# 			base = 200
+# 		}
 
-		days_remove = 20
+# 		days_remove = 20
 
-		modifier = {
-			experience_gain_army = -0.5
-		}
+# 		modifier = {
+# 			experience_gain_army = -0.5
+# 		}
 
-		visible = {
-			tag = YUG
-			has_active_mission = YUG_ustasa_uprising
-			NOT = { has_global_flag = ustasa_crushed }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_active_mission = YUG_ustasa_uprising
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 		}
 
-		complete_effect = {
-			set_country_flag = YUG_recruitment_flag
-			set_country_flag = YUG_something_in_progress_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = YUG_recruitment_flag
+# 			set_country_flag = YUG_something_in_progress_flag
+# 		}
 
-		remove_effect = {
-			add_popularity = {
-			    ideology = fascism
-			    popularity = 0.05
-			}
-			division_template = {
-				name = "Croatian Militia"
-				priority = 1
-				division_names_group = YUG_INF_01
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
+# 		remove_effect = {
+# 			add_popularity = {
+# 			    ideology = fascism
+# 			    popularity = 0.05
+# 			}
+# 			division_template = {
+# 				name = "Croatian Militia"
+# 				priority = 1
+# 				division_names_group = YUG_INF_01
+# 				regiments = {
+# 					infantry = { x = 0 y = 0 }
+# 					infantry = { x = 0 y = 1 }
+# 					infantry = { x = 0 y = 2 }
 		
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-				}
-			}
-			103 = {
-				if = {
-					limit = { PREV = { has_full_control_of_state = PREV } }
-				}
-				create_unit = {
-					division = "name = \"Croatian Militia\" division_template = \"Croatian Militia\" start_experience_factor = 0.5" 
-					owner = PREV
-				}
-			}
-			109 = {
-				if = {
-					limit = { PREV = { has_full_control_of_state = PREV } }
-				}
-				create_unit = {
-					division = "name = \"Croatian Militia\" division_template = \"Croatian Militia\" start_experience_factor = 0.5" 
-					owner = PREV
-				}
-			}
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_uprising
-				days = -25
-			}
-			add_days_mission_timeout = {
-				mission = YUG_ustasa_crushed_mission
-				days = -40
-			}
-			clr_country_flag = YUG_something_in_progress_flag
-		}
-	}
+# 					infantry = { x = 1 y = 0 }
+# 					infantry = { x = 1 y = 1 }
+# 				}
+# 			}
+# 			103 = {
+# 				if = {
+# 					limit = { PREV = { has_full_control_of_state = PREV } }
+# 				}
+# 				create_unit = {
+# 					division = "name = \"Croatian Militia\" division_template = \"Croatian Militia\" start_experience_factor = 0.5" 
+# 					owner = PREV
+# 				}
+# 			}
+# 			109 = {
+# 				if = {
+# 					limit = { PREV = { has_full_control_of_state = PREV } }
+# 				}
+# 				create_unit = {
+# 					division = "name = \"Croatian Militia\" division_template = \"Croatian Militia\" start_experience_factor = 0.5" 
+# 					owner = PREV
+# 				}
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_uprising
+# 				days = -25
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = YUG_ustasa_crushed_mission
+# 				days = -40
+# 			}
+# 			clr_country_flag = YUG_something_in_progress_flag
+# 		}
+# 	}
 	
-	#cooldown missions
-	YUG_croat_raid_cooldown = {
+# 	#cooldown missions
+# 	YUG_croat_raid_cooldown = {
 
-		priority = 10
+# 		priority = 10
 
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 
-		days_mission_timeout = 70
+# 		days_mission_timeout = 70
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		activation = {
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_raid_villages_flag
-		}
+# 		activation = {
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_raid_villages_flag
+# 		}
 
-		visible = {
-			tag = YUG
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_raid_villages_flag
-			NOT = { has_global_flag = ustasa_crushed }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_raid_villages_flag
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		is_good = yes
+# 		is_good = yes
 
-		timeout_effect = {
-			clr_country_flag = YUG_raid_villages_flag
-		}
-	}
-	YUG_shut_down_recruitment_centers_cooldown = {
+# 		timeout_effect = {
+# 			clr_country_flag = YUG_raid_villages_flag
+# 		}
+# 	}
+# 	YUG_shut_down_recruitment_centers_cooldown = {
 
-		priority = 10
+# 		priority = 10
 
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 
-		days_mission_timeout = 70
+# 		days_mission_timeout = 70
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		activation = {
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_end_recruitment_flag
-		}
+# 		activation = {
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_end_recruitment_flag
+# 		}
 
-		visible = {
-			tag = YUG
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_end_recruitment_flag
-			NOT = { has_global_flag = ustasa_crushed }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_end_recruitment_flag
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		is_good = yes
+# 		is_good = yes
 
-		timeout_effect = {
-			clr_country_flag = YUG_end_recruitment_flag
-		}
-	}
-	YUG_arrest_ustasa_leaders_cooldown = {
+# 		timeout_effect = {
+# 			clr_country_flag = YUG_end_recruitment_flag
+# 		}
+# 	}
+# 	YUG_arrest_ustasa_leaders_cooldown = {
 
-		priority = 10
+# 		priority = 10
 
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 
-		days_mission_timeout = 70
+# 		days_mission_timeout = 70
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		activation = {
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_arrest_ustasa_flag
-		}
+# 		activation = {
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_arrest_ustasa_flag
+# 		}
 
-		visible = {
-			tag = YUG
-			has_completed_focus = YUG_crush_the_ustasa
-			has_country_flag = YUG_arrest_ustasa_flag
-			NOT = { has_global_flag = ustasa_crushed }
-		}
+# 		visible = {
+# 			tag = YUG
+# 			has_completed_focus = YUG_crush_the_ustasa
+# 			has_country_flag = YUG_arrest_ustasa_flag
+# 			NOT = { has_global_flag = ustasa_crushed }
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		is_good = yes
+# 		is_good = yes
 
-		timeout_effect = {
-			clr_country_flag = YUG_arrest_ustasa_flag
-		}
-	}
+# 		timeout_effect = {
+# 			clr_country_flag = YUG_arrest_ustasa_flag
+# 		}
+# 	}
 
-}
+# }
 
 operations = {
 	Yug_integrate_greece = {
@@ -1485,7 +1485,7 @@ operations = {
 		}
 
 		visible = {
-		has_completed_focus = YUG_greater_yugoslavia
+		always = no
 		}
 
 		available = {

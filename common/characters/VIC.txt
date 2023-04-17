@@ -265,7 +265,7 @@ characters = {
 		}
 	}
 
-	VIC_charles_huntziger={
+	VIC_fra_charles_huntziger={
 		name=FRA_charles_huntziger
 		portraits={
 			army={
@@ -302,7 +302,7 @@ characters = {
 		}
 	}
 
-	VIC_maxime_weygand={
+	VIC_fra_maxime_weygand={
 		name=FRA_maxime_weygand
 		portraits={
 			army={

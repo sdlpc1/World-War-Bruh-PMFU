@@ -155,8 +155,8 @@ recruit_character = VIC_naval_theorist
 recruit_character = VIC_air_warfare_theorist
 recruit_character = VIC_francois_darlan
 recruit_character = VIC_rene_emile_godfroy
-recruit_character = VIC_charles_huntziger
-recruit_character = VIC_maxime_weygand
+recruit_character = VIC_fra_charles_huntziger
+recruit_character = VIC_fra_maxime_weygand
 recruit_character = VIC_alphonse_georges
 recruit_character = VIC_maurice_gamelin
 

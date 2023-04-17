@@ -9,8 +9,8 @@ air_wings = {
 			amount = 100
 			version_name = "Bf 109 D"
 		}
-		start_experience_factor = 1
 		name = "Jagdgeschwader 232"
+		start_experience_factor = 1
 	}
 
 	### II. Luftkreiskommando -- Berlin ###
@@ -21,7 +21,6 @@ air_wings = {
 			amount = 100
 			version_name = "Bf 109 D"
 		}
-		start_experience_factor = 1
 		name = "Jagdgeschwader 132"
 		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
 			modifier="fighter_genius"
@@ -30,6 +29,7 @@ air_wings = {
 			callsign="Bubi"
 			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
 		}
+		start_experience_factor = 1
 	}
 	64 = { 
 		# Kampfgeschwader 153		
@@ -46,8 +46,8 @@ air_wings = {
 			amount = 100
 			version_name = "He 111"
 		}
-		start_experience_factor = 1
 		name = "Kampfgeschwader 153"
+		start_experience_factor = 1
 	}
 	64 = { 
 		# TODO: REMOVE THIS LATER ???
@@ -65,8 +65,8 @@ air_wings = {
 			amount = 100
 			version_name = "He 111"
 		}
-		start_experience_factor = 1
 		name = "Kampfgeschwader 253"
+		start_experience_factor = 1
 	}
 	64 = { 
 		medium_plane_airframe_1 = {		# He 45 or Do 23 ?
@@ -91,8 +91,8 @@ air_wings = {
 			amount = 100
 			version_name = "Ju 87"
 		}
-		start_experience_factor = 1
 		name = "Sturzkampfgeschwader 162"	
+		start_experience_factor = 1
 	}
 
 	### IV. Luftkreiskommando -- Kassel ###
@@ -103,8 +103,8 @@ air_wings = {
 			amount = 100
 			version_name = "Bf 109 D"
 		}
-		start_experience_factor = 1
 		name = "Jagdgeschwader 134"
+		start_experience_factor = 1
 	}
 	64 = { 
 		small_plane_airframe_1 =  {		# He 51 # Ar 68
@@ -121,8 +121,8 @@ air_wings = {
 			amount = 100
 			version_name = "He 111"
 		}
-		start_experience_factor = 1
 		name = "Kampfgeschwader 152"
+		start_experience_factor = 1
 	}
 	64 = { 
 		# Kampfgeschwader 155	
@@ -131,8 +131,8 @@ air_wings = {
 			amount = 100
 			version_name = "He 111"
 		}
-		start_experience_factor = 1
 		name = "Kampfgeschwader 155"
+		start_experience_factor = 1
 	}
 
 	### V. Luftkreiskommando -- Munich ###
@@ -143,8 +143,8 @@ air_wings = {
 			amount = 100
 			version_name = "Bf 109 D"
 		}
-		start_experience_factor = 1
 		name = "Jagdgeschwader 136"
+		start_experience_factor = 1
 	}
 	64 = { 
 		# Kampfgeschwader 154	
@@ -153,8 +153,8 @@ air_wings = {
 			amount = 100
 			version_name = "He 111"
 		}
-		start_experience_factor = 1
 		name = "Kampfgeschwader 154"
+		start_experience_factor = 1
 	}
 
 	### VI. Luftkreiskommando -- Kiel ###
@@ -165,8 +165,8 @@ air_wings = {
 			amount = 100
 			version_name = "Do 22"
 		}
-		start_experience_factor = 1
 		name = "Küstenfliegergruppe 106"
+		start_experience_factor = 1
 		# Küstenfliegergruppe 206
 	}
 
