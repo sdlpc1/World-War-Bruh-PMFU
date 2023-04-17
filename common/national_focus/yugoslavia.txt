@@ -292,7 +292,7 @@
 	# 	mutually_exclusive = { focus = YUG_crush_the_ustasa }
 	# 	x = 1
 	# 	y = 1
-	# 	relative_position_id = YUG_evolution
+	# 	relative_position_id = YUG_evolution 
 
 	# 	cost = 10
 
@@ -990,7 +990,7 @@
 		x = 4
 		y = 0
 	
-		cost = 10
+		cost = 7
 	
 		ai_will_do = {
 			factor = 200
@@ -1024,7 +1024,7 @@
 		x = 0
 		y = 1
 	
-		cost = 7
+		cost = 5
 	
 		ai_will_do = {
 			factor = 80
@@ -1096,7 +1096,7 @@
 		x = 0
 		y = 1
 	
-		cost = 7
+		cost = 8
 	
 		ai_will_do = {
 			factor = 40
@@ -1134,7 +1134,7 @@
 		y = 1
 		relative_position_id = YUG_evolution
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -1171,7 +1171,7 @@
 		y = 1
 		relative_position_id = YUG_establish_the_banovina_of_croatia
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -1217,7 +1217,7 @@
 		y = 1
 		relative_position_id = YUG_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -1296,7 +1296,7 @@
 		x = -3
 		y = 0
 	
-		cost = 7
+		cost = 10
 	
 		ai_will_do = {
 			factor = 100
@@ -1304,6 +1304,10 @@
 	
 		available = {
 			is_ai = no
+			GER = {
+				has_war_with = ENG
+			}
+			has_completed_focus = YUG_invite_german_military_mission
 		}
 	
 		bypass = {
@@ -1324,13 +1328,13 @@
 
 	focus = {
 		id = YUG_surrender_macedonia
-		icon = GFX_focus_CZE_german_puppet
+		icon = GFX_focus_generic_befriend_bulgaria
 		prerequisite = { focus = YUG_join_axis }
 		x = -1
 		y = 1
 		relative_position_id = YUG_join_axis
 
-		cost = 10
+		cost = 6
 
 		ai_will_do = {
 			factor = 0
@@ -1364,13 +1368,13 @@
 
 	focus = {
 		id = YUG_surrender_hungarian_claims
-		icon = GFX_
+		icon = GFX_goal_ita_hungary
 		prerequisite = { focus = YUG_surrender_macedonia }
 		relative_position_id = YUG_surrender_macedonia
 		x = 0
 		y = 1
 	
-		cost = 5
+		cost = 6
 	
 		ai_will_do = {
 			factor = 0
@@ -1405,13 +1409,13 @@
 
 	focus = {
 		id = YUG_relinquish_southern_claims
-		icon = GFX_
+		icon = GFX_focus_befriend_italy
 		prerequisite = { focus = YUG_join_axis }
 		relative_position_id = YUG_join_axis
 		x = 1
 		y = 1
 	
-		cost = 5
+		cost = 6
 	
 		ai_will_do = {
 			factor = 80
@@ -1457,13 +1461,13 @@
 
 	focus = {
 		id = YUG_surrender_italian_claims
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_befriend_italy
 		prerequisite = { focus = YUG_relinquish_southern_claims }
 		relative_position_id = YUG_relinquish_southern_claims
 		x = 0
 		y = 1
 	
-		cost = 5
+		cost = 6
 	
 		ai_will_do = {
 			factor = 0
@@ -1489,13 +1493,13 @@
 
 	focus = {
 		id = YUG_Under_New_Regime
-		icon = GFX_
+		icon = GFX_focus_YUG_banovina_of_croatia
 		prerequisite = { focus = YUG_surrender_hungarian_claims focus = YUG_surrender_italian_claims }
 		relative_position_id = YUG_surrender_hungarian_claims
 		x = 1
 		y = 1
 	
-		cost = 5
+		cost = 10
 	
 		ai_will_do = {
 			factor = 0
@@ -1609,13 +1613,13 @@
 
 	focus = {
 		id = YUG_axis_research
-		icon = GFX_
+		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = YUG_invite_italian_naval_experts focus = YUG_all_yugoslavian_regiments }
 		relative_position_id = YUG_all_yugoslavian_regiments
 		x = -1
 		y = 1
 	
-		cost = 5
+		cost = 8
 	
 		ai_will_do = {
 			factor = 0
@@ -1687,7 +1691,7 @@
 		y = 1
 		relative_position_id = YUG_industrialization_program
 
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
@@ -1722,7 +1726,7 @@
 		y = 1
 		relative_position_id = YUG_expand_the_mining_industry
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 60
@@ -1755,7 +1759,7 @@
 				105 = {
 					add_resource = {
 						type = tungsten
-						amount = 80
+						amount = 180
 					}
 				}
 			}
@@ -1812,7 +1816,7 @@
 				45 = {
 					add_resource = {
 						type = oil
-						amount = 80
+						amount = 120
 					}
 				}
 			}
@@ -1900,7 +1904,7 @@
 		y = 3
 		relative_position_id = YUG_industrialization_program
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 100
@@ -2122,7 +2126,7 @@
 		y = 1
 		relative_position_id = YUG_develop_slovenian_industry
 
-		cost = 5
+		cost = 6
 
 		ai_will_do = {
 			factor = 60
@@ -2157,7 +2161,7 @@
 		y = 1
 		relative_position_id = YUG_develop_slovenian_industry
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 100
@@ -2372,7 +2376,7 @@
 		y = 3
 		relative_position_id = YUG_develop_military_industry
 
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -2412,7 +2416,7 @@
 		y = 4
 		relative_position_id = YUG_develop_military_industry
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 100
@@ -2447,7 +2451,7 @@
 		y = 5
 		relative_position_id = YUG_develop_military_industry
 
-		cost = 5
+		cost = 6
 
 		ai_will_do = {
 			factor = 50
@@ -3876,11 +3880,11 @@
 
 	focus = {
 		id = YUG_army_modernization
-		icon = GFX_
+		icon = GFX_goal_generic_army_doctrines
 		x = 18
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3910,13 +3914,13 @@
 
 	focus = {
 		id = YUG_motorize_the_cavalry
-		icon = GFX_
+		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = YUG_army_modernization }
 		relative_position_id = YUG_army_modernization
 		x = -2
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3949,13 +3953,13 @@
 
     focus = {
         id = YUG_motorized_logistics
-        icon = GFX_
+        icon = GFX_goal_generic_army_motorized
         prerequisite = { focus = YUG_motorize_the_cavalry }
         relative_position_id = YUG_motorize_the_cavalry
         x = -2
         y = 1
 
-        cost = 10
+        cost = 7
 
         ai_will_do = {
             factor = 1
@@ -3991,7 +3995,7 @@
 
     focus = {
         id = YUG_Improved_Logistics
-        icon = GFX_
+        icon = GFX_focus_SOV_the_road_of_life
         prerequisite = { focus = YUG_motorized_logistics }
         relative_position_id = YUG_motorized_logistics
         x = 0
@@ -4034,13 +4038,13 @@
 
     focus = {
         id = YUG_armored_cavalry
-        icon = GFX_
+        icon = GFX_ger_hanomag
         prerequisite = { focus = YUG_motorize_the_cavalry }
         relative_position_id = YUG_motorize_the_cavalry
         x = 0
         y = 1
 
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -4074,13 +4078,13 @@
 
     focus = {
         id = YUG_Invest_in_Armored_Research
-        icon = GFX_
+        icon = GFX_goal_generic_army_tanks
         prerequisite = { focus = YUG_armored_cavalry }
         relative_position_id = YUG_armored_cavalry
         x = 0
         y = 1
 
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -4114,7 +4118,7 @@
 
     focus = {
         id = YUG_Train_in_Home_terrain
-        icon = GFX_
+        icon = GFX_focus_generic_military_mission
         prerequisite = { focus = YUG_Invest_in_Armored_Research }
         mutually_exclusive = { focus = YUG_Prepare_for_the_Desert }
         relative_position_id = YUG_Invest_in_Armored_Research
@@ -4198,7 +4202,7 @@
 
     focus = {
         id = YUG_Tank_adaptation_for_uneven_terrain
-        icon = GFX_
+        icon = GFX_focus_GRE_a_land_of_mountains
         prerequisite = { focus = YUG_Train_in_Home_terrain }
         relative_position_id = YUG_Train_in_Home_terrain
         x = 0
@@ -4242,7 +4246,7 @@
 
     focus = {
         id = YUG_Prepare_for_the_Desert
-        icon = GFX_
+        icon = GFX_superior_tactics
         prerequisite = { focus = YUG_Invest_in_Armored_Research }
         mutually_exclusive = { focus = YUG_Train_in_Home_terrain }
         relative_position_id = YUG_Invest_in_Armored_Research
@@ -4325,7 +4329,7 @@
 
     focus = {
         id = YUG_Addaptation_to_the_Desert
-        icon = GFX_
+        icon = GFX_doctrine_tank_warfare
         prerequisite = { focus = YUG_Prepare_for_the_Desert }
         relative_position_id = YUG_Prepare_for_the_Desert
         x = 0
@@ -4369,7 +4373,7 @@
 
     focus = {
         id = YUG_Anti_Personal
-        icon = GFX_
+        icon = GFX_focus_generic_combined_arms
         prerequisite = { focus = YUG_Tank_adaptation_for_uneven_terrain }
         mutually_exclusive = { focus = YUG_Urban_assault focus = YUG_Anti_Tank }
         relative_position_id = YUG_Tank_adaptation_for_uneven_terrain
@@ -4407,7 +4411,7 @@
 
     focus = {
         id = YUG_Urban_assault
-        icon = GFX_
+        icon = GFX_goal_generic_special_forces
         prerequisite = { focus = YUG_Tank_adaptation_for_uneven_terrain focus = YUG_Addaptation_to_the_Desert }
         mutually_exclusive = { focus = YUG_Anti_Personal focus = YUG_Anti_Tank }
         relative_position_id = YUG_Tank_adaptation_for_uneven_terrain
@@ -4464,7 +4468,7 @@
 
     focus = {
         id = YUG_Anti_Tank
-        icon = GFX_
+        icon = GFX_goal_generic_army_artillery
         prerequisite = { focus = YUG_Addaptation_to_the_Desert }
         mutually_exclusive = { focus = YUG_Urban_assault focus = YUG_Anti_Personal }
         relative_position_id = YUG_Addaptation_to_the_Desert
@@ -4502,13 +4506,13 @@
 
     focus = {
         id = YUG_army_maneuvers
-        icon = GFX_
+        icon = GFX_SOV_armour_development
         prerequisite = { focus = YUG_army_modernization }
         relative_position_id = YUG_army_modernization
         x = 0
         y = 1
 
-        cost = 10
+        cost = 7
 
         ai_will_do = {
             factor = 1
@@ -4542,7 +4546,7 @@
 
     focus = {
         id = YUG_German_Cooperation
-        icon = GFX_
+        icon = GFX_focus_ger_oppose_hitler
         prerequisite = { focus = YUG_army_maneuvers }
         relative_position_id = YUG_army_maneuvers
         x = 0
@@ -4578,13 +4582,13 @@
 
     focus = {
         id = YUG_German_Experts
-        icon = GFX_
+        icon = GFX_goal_generic_axis_build_infantry
         prerequisite = { focus = YUG_German_Cooperation }
         relative_position_id = YUG_German_Cooperation
         x = 0
         y = 1
 
-        cost = 10
+        cost = 7
 
         ai_will_do = {
             factor = 1
@@ -4618,13 +4622,13 @@
 
     focus = {
         id = YUG_New_Artillery
-        icon = GFX_
+        icon = GFX_SOV_artillery_development
         prerequisite = { focus = YUG_army_maneuvers }
         relative_position_id = YUG_army_maneuvers
         x = 2
         y = 1
 
-        cost = 10
+        cost = 7
 
         ai_will_do = {
             factor = 1
@@ -4659,7 +4663,7 @@
 
     focus = {
         id = YUG_Improved_Artillery
-        icon = GFX_
+        icon = GFX_goal_generic_army_artillery2
         prerequisite = { focus = YUG_New_Artillery }
         relative_position_id = YUG_New_Artillery
         x = 0
@@ -4710,7 +4714,7 @@
 		x = 23
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -4752,7 +4756,7 @@
 		y = 1
 		relative_position_id = YUG_expand_the_split_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -4794,7 +4798,7 @@
 		y = 2
 		relative_position_id = YUG_expand_the_split_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -4836,7 +4840,7 @@
 		y = 2
 		relative_position_id = YUG_expand_the_split_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -4878,7 +4882,7 @@
 		y = 3
 		relative_position_id = YUG_expand_the_split_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -4920,7 +4924,7 @@
 		y = 3
 		relative_position_id = YUG_expand_the_split_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -4962,7 +4966,7 @@
 		y = 0
 		relative_position_id = YUG_expand_the_split_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -5004,7 +5008,7 @@
 		y = 1
 		relative_position_id = YUG_expand_the_serbian_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -5097,7 +5101,7 @@
 		y = 2
 		relative_position_id = YUG_expand_the_serbian_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20

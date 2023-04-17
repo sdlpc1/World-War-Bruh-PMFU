@@ -968,7 +968,7 @@ ideas = {
 		YUG_light_tank_designer = {
 			name = yugos_light_tank_designer
 
-			picture = generic_tank_manufacturer_3
+			picture = CZE_skoda_works_2
 
 			allowed = {
 				original_tag = YUG

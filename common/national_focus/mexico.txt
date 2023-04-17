@@ -1,4 +1,4 @@
-﻿### Mexico Politics/Industry ###
+﻿### Mexico Politics/Industry ### 
 
 focus_tree = {
 	id = mexico_focus_tree
