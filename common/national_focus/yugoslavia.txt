@@ -4710,7 +4710,6 @@
 	focus = {
 		id = YUG_expand_the_split_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		mutually_exclusive = { focus = YUG_expand_the_serbian_shipyards }
 		x = 23
 		y = 0
 
@@ -4737,6 +4736,7 @@
 		}
 
 		completion_reward = {
+			navy_experience = 35
 			103 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -4752,7 +4752,7 @@
 		id = YUG_contest_the_adriatic
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = YUG_expand_the_split_shipyards }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = YUG_expand_the_split_shipyards
 
@@ -4790,181 +4790,181 @@
 		}
 	}
 
-	focus = {
-		id = YUG_replace_the_dalmacija
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = YUG_contest_the_adriatic }
-		x = -1
-		y = 2
-		relative_position_id = YUG_expand_the_split_shipyards
+	# focus = {
+	# 	id = YUG_replace_the_dalmacija
+	# 	icon = GFX_goal_generic_navy_cruiser
+	# 	prerequisite = { focus = YUG_contest_the_adriatic }
+	# 	x = -1
+	# 	y = 2
+	# 	relative_position_id = YUG_expand_the_split_shipyards
 
-		cost = 5
+	# 	cost = 5
 
-		ai_will_do = {
-			factor = 20
-		}
+	# 	ai_will_do = {
+	# 		factor = 20
+	# 	}
 
-		available = {
-			any_owned_state = {
-				is_coastal = yes
-			}
-		}
+	# 	available = {
+	# 		any_owned_state = {
+	# 			is_coastal = yes
+	# 		}
+	# 	}
 
-		bypass = {
+	# 	bypass = {
 
-		}
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		complete_tooltip = {
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	complete_tooltip = {
 
-		}
+	# 	}
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = YUG_replace_the_dalmacija
-				bonus = 0.50
-				uses = 1
-				category = cl_tech
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = YUG_replace_the_dalmacija
+	# 			bonus = 0.50
+	# 			uses = 1
+	# 			category = cl_tech
+	# 		}
+	# 	}
+	# }
 
-	focus = {
-		id = YUG_naval_bombers
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = YUG_contest_the_adriatic focus = YUG_coastal_defense }
-		x = 1
-		y = 2
-		relative_position_id = YUG_expand_the_split_shipyards
+	# focus = {
+	# 	id = YUG_naval_bombers
+	# 	icon = GFX_goal_generic_air_naval_bomber
+	# 	prerequisite = { focus = YUG_contest_the_adriatic focus = YUG_coastal_defense }
+	# 	x = 1
+	# 	y = 2
+	# 	relative_position_id = YUG_expand_the_split_shipyards
 
-		cost = 5
+	# 	cost = 5
 
-		ai_will_do = {
-			factor = 30
-		}
+	# 	ai_will_do = {
+	# 		factor = 30
+	# 	}
 
-		available = {
-			any_owned_state = {
-				is_coastal = yes
-			}
-		}
+	# 	available = {
+	# 		any_owned_state = {
+	# 			is_coastal = yes
+	# 		}
+	# 	}
 
-		bypass = {
+	# 	bypass = {
 
-		}
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		complete_tooltip = {
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	complete_tooltip = {
 
-		}
+	# 	}
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = YUG_naval_bombers
-				bonus = 0.50
-				uses = 1
-				category = naval_bomber
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = YUG_naval_bombers
+	# 			bonus = 0.50
+	# 			uses = 1
+	# 			category = naval_bomber
+	# 		}
+	# 	}
+	# }
 
-	focus = {
-		id = YUG_heavy_cruiser_project
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = YUG_replace_the_dalmacija }
-		x = -1
-		y = 3
-		relative_position_id = YUG_expand_the_split_shipyards
+	# focus = {
+	# 	id = YUG_heavy_cruiser_project
+	# 	icon = GFX_goal_generic_navy_battleship
+	# 	prerequisite = { focus = YUG_replace_the_dalmacija }
+	# 	x = -1
+	# 	y = 3
+	# 	relative_position_id = YUG_expand_the_split_shipyards
 
-		cost = 5
+	# 	cost = 5
 
-		ai_will_do = {
-			factor = 20
-		}
+	# 	ai_will_do = {
+	# 		factor = 20
+	# 	}
 
-		available = {
-			any_owned_state = {
-				is_coastal = yes
-			}
-		}
+	# 	available = {
+	# 		any_owned_state = {
+	# 			is_coastal = yes
+	# 		}
+	# 	}
 
-		bypass = {
+	# 	bypass = {
 
-		}
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		complete_tooltip = {
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	complete_tooltip = {
 
-		}
+	# 	}
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = YUG_heavy_cruiser_project
-				bonus = 0.50
-				uses = 1
-				category = ca_tech
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = YUG_heavy_cruiser_project
+	# 			bonus = 0.50
+	# 			uses = 1
+	# 			category = ca_tech
+	# 		}
+	# 	}
+	# }
 
-	focus = {
-		id = YUG_modern_destroyers
-		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = YUG_naval_bombers }
-		x = 1
-		y = 3
-		relative_position_id = YUG_expand_the_split_shipyards
+	# focus = {
+	# 	id = YUG_modern_destroyers
+	# 	icon = GFX_goal_generic_navy_anti_submarine
+	# 	prerequisite = { focus = YUG_naval_bombers }
+	# 	x = 1
+	# 	y = 3
+	# 	relative_position_id = YUG_expand_the_split_shipyards
 
-		cost = 5
+	# 	cost = 5
 
-		ai_will_do = {
-			factor = 20
-		}
+	# 	ai_will_do = {
+	# 		factor = 20
+	# 	}
 
-		available = {
-			any_owned_state = {
-				is_coastal = yes
-			}
-		}
+	# 	available = {
+	# 		any_owned_state = {
+	# 			is_coastal = yes
+	# 		}
+	# 	}
 
-		bypass = {
+	# 	bypass = {
 
-		}
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		complete_tooltip = {
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	complete_tooltip = {
 
-		}
+	# 	}
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = YUG_modern_destroyers
-				bonus = 0.50
-				uses = 1
-				category = dd_tech
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = YUG_modern_destroyers
+	# 			bonus = 0.50
+	# 			uses = 1
+	# 			category = dd_tech
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = YUG_expand_the_serbian_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		mutually_exclusive = { focus = YUG_expand_the_split_shipyards }
-		x = 3
-		y = 0
+		prerequisite = { focus = YUG_expand_the_split_shipyards }
 		relative_position_id = YUG_expand_the_split_shipyards
+		x = 1
+		y = 1
 
 		cost = 5
 
@@ -4989,7 +4989,7 @@
 		}
 
 		completion_reward = {
-			105 = {
+			103 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -5001,12 +5001,49 @@
 	}
 
 	focus = {
+		id = YUG_Adriatic_Raiders
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = YUG_expand_the_submarine_fleet }
+		prerequisite = { focus = YUG_coastal_defense}
+		relative_position_id = YUG_expand_the_submarine_fleet
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		available = {
+			has_full_control_of_state = 105
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			navy_experience = 50
+			add_ideas = YUG_Adriatic_Raiders
+		}
+	}
+
+	focus = {
 		id = YUG_coastal_defense
 		icon = GFX_focus_generic_coastal_fort
-		prerequisite = { focus = YUG_expand_the_serbian_shipyards }
-		x = 0
-		y = 1
+		prerequisite = { focus = YUG_contest_the_adriatic }
 		relative_position_id = YUG_expand_the_serbian_shipyards
+		x = -2
+		y = 1
 
 		cost = 5
 
@@ -5096,10 +5133,10 @@
 	focus = {
 		id = YUG_expand_the_submarine_fleet
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = YUG_coastal_defense }
-		x = 0
-		y = 2
+		prerequisite = { focus = YUG_expand_the_serbian_shipyards }
 		relative_position_id = YUG_expand_the_serbian_shipyards
+		x = 0
+		y = 1
 
 		cost = 5
 
