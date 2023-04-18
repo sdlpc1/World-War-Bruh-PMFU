@@ -957,26 +957,24 @@ ideas = {
 				}
 			}
 		}
-	}
 
-	YUG_Adriatic_Raiders = {
+		YUG_Adriatic_Raiders = {
 		
-		picture = the_long_lance
-	
-		allowed = {
-			always = no
-		}
+			picture = the_long_lance
 		
-		removal_cost = -1
-		
-		equipment_bonus = {
-			submarine = {
-				build_cost_ic = -0.1
-				instant = yes
-				naval_range = 0.25
-				instant = yes
-				torpedo_attack = 0.2
-				instant = yes
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.1
+					naval_range = 0.25
+					torpedo_attack = 0.2
+					instant = yes
+				}
 			}
 		}
 	}

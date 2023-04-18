@@ -1613,10 +1613,41 @@
 
 	focus = {
 		id = YUG_axis_research
-		icon = GFX_focus_generic_license_production
+		icon = GFX_focus_chi_mission_to_germany
 		prerequisite = { focus = YUG_invite_italian_naval_experts focus = YUG_all_yugoslavian_regiments }
 		relative_position_id = YUG_all_yugoslavian_regiments
 		x = -1
+		y = 1
+	
+		cost = 8
+	
+		ai_will_do = {
+			factor = 0
+		}
+	
+		available = {
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			add_to_tech_sharing_group = axis_research
+		}
+	}
+
+	focus = {
+		id = YUG_license_german_equipment
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = YUG_axis_research }
+		relative_position_id = YUG_axis_research
+		x = 0
 		y = 1
 	
 		cost = 8
@@ -4960,7 +4991,7 @@
 
 	focus = {
 		id = YUG_expand_the_serbian_shipyards
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = YUG_expand_the_split_shipyards }
 		relative_position_id = YUG_expand_the_split_shipyards
 		x = 1
@@ -4973,7 +5004,7 @@
 		}
 
 		available = {
-			has_full_control_of_state = 105
+			has_full_control_of_state = 103
 		}
 
 		bypass = {
@@ -4997,43 +5028,6 @@
 					instant_build = yes
 				}
 			}
-		}
-	}
-
-	focus = {
-		id = YUG_Adriatic_Raiders
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = YUG_expand_the_submarine_fleet }
-		prerequisite = { focus = YUG_coastal_defense}
-		relative_position_id = YUG_expand_the_submarine_fleet
-		x = -1
-		y = 1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 40
-		}
-
-		available = {
-			has_full_control_of_state = 105
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			navy_experience = 50
-			add_ideas = YUG_Adriatic_Raiders
 		}
 	}
 
@@ -5172,4 +5166,40 @@
 		}
 	}
 
+	focus = {
+		id = YUG_Adriatic_Raiders
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = YUG_expand_the_submarine_fleet }
+		prerequisite = { focus = YUG_coastal_defense}
+		relative_position_id = YUG_expand_the_submarine_fleet
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		available = {
+			has_full_control_of_state = 103
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			navy_experience = 50
+			add_ideas = YUG_Adriatic_Raiders
+		}
+	}
 }
