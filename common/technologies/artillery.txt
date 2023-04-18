@@ -271,6 +271,7 @@ technologies = {
 			hard_attack = 0.05
 		}
 		enable_equipment_modules = {
+			tank_med_gun_1
 			tank_art_gun_1
 		}		
 		path = {
@@ -307,7 +308,7 @@ technologies = {
 			artillery_equipment_2
 		}
 		enable_equipment_modules = {
-			tank_med_gun_1
+			
 		}
 		
 		research_cost = 2.0

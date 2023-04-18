@@ -357,19 +357,19 @@ create_equipment_variant = {
 	}
 	icon = "gfx/interface/technologies/tanks/eng/eng_light_tank_2.dds"
 }
-create_equipment_variant = {
-	name = "Tank, Cruiser, Mk II"
-	type = eng_medium_tank_chassis_a10
-	parent_version = 0
-	modules = {
-		main_armament_slot = tank_small_gun_2
-		turret_type_slot = tank_medium_turret_1
-		suspension_type_slot = tank_bogie_suspension
-		armor_type_slot = tank_riveted_armor
-		engine_type_slot = tank_gasoline_engine
-	}
-	icon = "gfx/interface/technologies/tanks/eng/eng_medium_tank_1.dds"
-}
+# create_equipment_variant = {
+# 	name = "Tank, Cruiser, Mk II"
+# 	type = eng_medium_tank_chassis_a10
+# 	parent_version = 0
+# 	modules = {
+# 		main_armament_slot = tank_small_gun_2
+# 		turret_type_slot = tank_medium_turret_1
+# 		suspension_type_slot = tank_bogie_suspension
+# 		armor_type_slot = tank_riveted_armor
+# 		engine_type_slot = tank_gasoline_engine
+# 	}
+# 	icon = "gfx/interface/technologies/tanks/eng/eng_medium_tank_1.dds"
+# }
 create_equipment_variant = {
 	name = "Tank, Infantry, Mk I, Matilda I"
 	type = eng_heavy_tank_chassis_a11

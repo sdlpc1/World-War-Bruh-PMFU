@@ -31,6 +31,7 @@ add_ideas = {
 }
 set_variable = { axis_poster_center_icon_frame = 1 }
 set_technology = {
+	hq_1 = 1
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
@@ -224,7 +225,7 @@ recruit_character = YUG_slobodan_jovanovic
 recruit_character = YUG_milovan_djilas
 recruit_character = YUG_milan_nedic
 recruit_character = YUG_ivan_ribar
-recruit_character = YUG_dimitrije_ljotic
+# recruit_character = YUG_dimitrije_ljotic
 recruit_character = YUG_ivo_lola_ribar
 
 create_equipment_variant = {

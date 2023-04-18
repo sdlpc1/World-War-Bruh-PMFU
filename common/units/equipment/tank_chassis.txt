@@ -169,11 +169,11 @@ equipments = {
 		module_slots = {
 			main_armament_slot = {
 				required = yes
-				allowed_module_categories = {
-					tank_armament_tier_light_1
-					tank_armament_tier_light_2
-					tank_armament_tier_light_3
-				}
+				# allowed_module_categories = {
+				# 	tank_armament_tier_light_1
+				# 	tank_armament_tier_light_2
+				# 	tank_armament_tier_light_3
+				# }
 			}
 			turret_type_slot = {
 				required = yes

@@ -347,7 +347,7 @@
   sov_ural_move:0 "Our Industry has been prepared for evacuation"
   SOV_frontline_mob_tt:0 "Creates §Y4 Infantry Divsions§! in every frontline state"
   SOV_frontline_mob_tt2:0 "Creates §Y3 Infantry Divsions§! in every frontline state"
-  SOV_propaganda_more_metal_tt:0 "Providing §G+5§! §Y$state_resource_aluminium$§!, §Y$state_resource_tungsten$§!, §Y$state_resource_steel$§! or §Y$state_resource_chromium$§! for each state producing any of those resources §Rpermanently§!."
+  SOV_propaganda_more_metal_tt:0 "Providing §G+10§! §Y$state_resource_aluminium$§!, §Y$state_resource_tungsten$§!, §Y$state_resource_steel$§! or §Y$state_resource_chromium$§! for each state producing any of those resources.\n§RNO LONGER PERMANENT§!"
   SOV_CONQ_TT:0 "Gives 80% Compliance on all controlled Molotov States that will decrease during Barbarossa"
   SOV_cowed_by_stalin_trait_tt:0 "This Trait will be removed upon completion of the focus §Y$SOV_order_270$§!."
   SOV_dismantle_surrender_tt:0 "§RTaking this path will increase the Surrender Progress Threshold for some focuses, to compensate for gaining a large number of VP's cored.§!"

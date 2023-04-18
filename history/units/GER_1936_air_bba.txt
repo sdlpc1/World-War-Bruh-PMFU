@@ -12,7 +12,6 @@ air_wings = {
 		name = "Jagdgeschwader 232"
 		start_experience_factor = 1
 	}
-
 	### II. Luftkreiskommando -- Berlin ###
 	64 = { 
 		# Jagdgeschwader 132 'Richtofen'		
@@ -56,7 +55,6 @@ air_wings = {
 			amount = 10
 		}
 	}
-
 	### III. Luftkreiskommando -- Breslau ###
 	64 = { 
 		# Kampfgeschwader 253 'General Wever'		
@@ -78,7 +76,7 @@ air_wings = {
 	}
 	64 = { 
 		# Sturzkampfgeschwader 162		
-		small_plane_cas_airframe_1 =  {			# Hs 123
+		small_plane_cas_airframe_1 = {			# Hs 123
 			owner = "GER" 
 			amount = 100
 			version_name = "Ju 87"
@@ -86,7 +84,7 @@ air_wings = {
 		start_experience_factor = 1
 	}
 	64 = { 
-		small_plane_cas_airframe_1 =  {			# Hs 123
+		small_plane_cas_airframe_1 = {			# Hs 123
 			owner = "GER" 
 			amount = 100
 			version_name = "Ju 87"
@@ -94,11 +92,10 @@ air_wings = {
 		name = "Sturzkampfgeschwader 162"	
 		start_experience_factor = 1
 	}
-
 	### IV. Luftkreiskommando -- Kassel ###
 	64 = { 
 		# Jagdgeschwader 134 'Horst Wessel'		
-		small_plane_airframe_1 =  {		# He 51 # Ar 68
+		small_plane_airframe_1 = {		# He 51 # Ar 68
 			owner = "GER" 
 			amount = 100
 			version_name = "Bf 109 D"
@@ -107,7 +104,7 @@ air_wings = {
 		start_experience_factor = 1
 	}
 	64 = { 
-		small_plane_airframe_1 =  {		# He 51 # Ar 68
+		small_plane_airframe_1 = {		# He 51 # Ar 68
 			owner = "GER" 
 			amount = 100
 			version_name = "Bf 109 D"
@@ -134,7 +131,6 @@ air_wings = {
 		name = "Kampfgeschwader 155"
 		start_experience_factor = 1
 	}
-
 	### V. Luftkreiskommando -- Munich ###
 	64 = { 
 		# Jagdgeschwader 136		
@@ -156,11 +152,10 @@ air_wings = {
 		name = "Kampfgeschwader 154"
 		start_experience_factor = 1
 	}
-
 	### VI. Luftkreiskommando -- Kiel ###
 	64 = { 
 		# Küstenfliegergruppe 106		
-		small_plane_naval_bomber_airframe_1 =  {		# He 59, Do 18
+		small_plane_naval_bomber_airframe_1 = {		# He 59, Do 18
 			owner = "GER" 
 			amount = 100
 			version_name = "Do 22"
@@ -169,10 +164,9 @@ air_wings = {
 		start_experience_factor = 1
 		# Küstenfliegergruppe 206
 	}
-
 	### AXIS ALLIED PLANES
 	64 = { 		
-		small_plane_airframe_1 =  {
+		small_plane_airframe_1 = {
 			owner = "GER" 
 			amount = 100
 			version_name = "Bf 109 D"
@@ -180,7 +174,7 @@ air_wings = {
 		start_experience_factor = 1
 	}
 	64 = { 	
-		small_plane_airframe_1 =  {
+		small_plane_airframe_1 = {
 			owner = "GER" 
 			amount = 48
 			version_name = "Bf 109 D"

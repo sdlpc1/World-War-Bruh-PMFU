@@ -15,7 +15,7 @@
 
 	continuous_focus_position = { x = 2000 y = 600 }
 
-#	focus = {
+#	focus = { 
 #		id = YUG_
 #		icon = GFX_
 #		prerequisite = { focus = }
@@ -1015,46 +1015,7 @@
 			add_ideas = king_peter_1
 		}
 	}
-	
-	focus = {
-		id = YUG_attract_axis_capital
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = YUG_western_focus }
-		relative_position_id = YUG_western_focus
-		x = 0
-		y = 1
-	
-		cost = 5
-	
-		ai_will_do = {
-			factor = 80
-		}
-	
-		available = {
-			OR = {
-				GER = {
-					NOT = { has_war_with = ROOT }
-				}
-				ITA = {
-					NOT = { has_war_with = ROOT }
-				}
-			}
-		}
-	
-		bypass = {
-	
-		}
-	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	
-	
-		completion_reward = {
-			add_ideas = YUG_idea_axis_capital
-		}
-	}
+
 	
 	focus = {
 		id = YUG_local_militias
@@ -1091,8 +1052,8 @@
 	focus = {
 		id = YUG_evolution
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = YUG_attract_axis_capital }
-		relative_position_id = YUG_attract_axis_capital
+		prerequisite = { focus = YUG_western_focus }
+		relative_position_id = YUG_western_focus
 		x = 0
 		y = 1
 	
@@ -1248,12 +1209,52 @@
 			}
 		}
 	}
+
+	focus = {
+		id = YUG_attract_axis_capital
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = YUG_concessions_for_macedonians }
+		relative_position_id = YUG_concessions_for_macedonians
+		x = 0
+		y = 1
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 80
+		}
+	
+		available = {
+			OR = {
+				GER = {
+					NOT = { has_war_with = ROOT }
+				}
+				ITA = {
+					NOT = { has_war_with = ROOT }
+				}
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	
+	
+		completion_reward = {
+			add_ideas = YUG_idea_axis_capital
+		}
+	}
 	
 	focus = {
 		id = YUG_invite_german_military_mission
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = YUG_concessions_for_macedonians }
-		relative_position_id = YUG_concessions_for_macedonians
+		prerequisite = { focus = YUG_attract_axis_capital }
+		relative_position_id = YUG_attract_axis_capital
 		x = 0
 		y = 1
 	
@@ -1296,7 +1297,7 @@
 		x = -3
 		y = 0
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 100
@@ -1311,7 +1312,6 @@
 		}
 	
 		bypass = {
-			is_in_faction_with = GER
 		}
 	
 		cancel_if_invalid = yes
@@ -1321,8 +1321,12 @@
 	
 		completion_reward = {
 			GER = {
-				country_event = generic.2
+				give_guarantee = YUG
 			}
+			ITA = {
+				give_guarantee = YUG
+			}
+			add_political_power = 150
 		}
 	}
 
@@ -1330,11 +1334,11 @@
 		id = YUG_surrender_macedonia
 		icon = GFX_focus_generic_befriend_bulgaria
 		prerequisite = { focus = YUG_join_axis }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = YUG_join_axis
 
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
 			factor = 0
@@ -1356,66 +1360,25 @@
 				transfer_state = 106
 				transfer_state = 803
 			}
-			106 = {
-				remove_core_of = ROOT
-			}
-			803 = {
-				remove_core_of = ROOT
-			}
+			# 106 = {
+			# 	remove_core_of = ROOT
+			# }
+			# 803 = {
+			# 	remove_core_of = ROOT
+			# }
 			# give bulgaria its land
-		}
-	}
-
-	focus = {
-		id = YUG_surrender_hungarian_claims
-		icon = GFX_goal_ita_hungary
-		prerequisite = { focus = YUG_surrender_macedonia }
-		relative_position_id = YUG_surrender_macedonia
-		x = 0
-		y = 1
-	
-		cost = 6
-	
-		ai_will_do = {
-			factor = 0
-		}
-	
-		available = {
-		}
-	
-		bypass = {
-
-		}
-	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	
-		completion_reward = {
-			HUN = {
-				transfer_state = 45
-				transfer_state = 764
-			}
-			45 = {
-				remove_core_of = ROOT
-			}
-			764 = {
-				remove_core_of = ROOT
-			}
-			# give hungary its land
 		}
 	}
 
 	focus = {
 		id = YUG_relinquish_southern_claims
 		icon = GFX_focus_befriend_italy
-		prerequisite = { focus = YUG_join_axis }
-		relative_position_id = YUG_join_axis
-		x = 1
+		prerequisite = { focus = YUG_surrender_macedonia }
+		relative_position_id = YUG_surrender_macedonia
+		x = 0
 		y = 1
 	
-		cost = 6
+		cost = 5
 	
 		ai_will_do = {
 			factor = 80
@@ -1443,31 +1406,31 @@
 				transfer_state = 108
 				transfer_state = 107
 			}
-			105 = {
-				remove_core_of = ROOT
-			}
-			802 = {
-				remove_core_of = ROOT
-			}
-			108 = {
-				remove_core_of = ROOT
-			}
-			107 = {
-				remove_core_of = ROOT
-			}
+			# 105 = {
+			# 	remove_core_of = ROOT
+			# }
+			# 802 = {
+			# 	remove_core_of = ROOT
+			# }
+			# 108 = {
+			# 	remove_core_of = ROOT
+			# }
+			# 107 = {
+			# 	remove_core_of = ROOT
+			# }
 			# give up Kosovo, Morava, Serbia, Montenegro
 		}
 	}
 
 	focus = {
-		id = YUG_surrender_italian_claims
-		icon = GFX_focus_befriend_italy
+		id = YUG_surrender_hungarian_claims
+		icon = GFX_goal_ita_hungary
 		prerequisite = { focus = YUG_relinquish_southern_claims }
 		relative_position_id = YUG_relinquish_southern_claims
 		x = 0
 		y = 1
 	
-		cost = 6
+		cost = 5
 	
 		ai_will_do = {
 			factor = 0
@@ -1477,6 +1440,7 @@
 		}
 	
 		bypass = {
+
 		}
 	
 		cancel_if_invalid = yes
@@ -1485,21 +1449,61 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	
 		completion_reward = {
-			163 = { remove_core_of = ROOT }
-			736 = { remove_core_of = ROOT }
-			# give italy its claims
+			HUN = {
+				transfer_state = 45
+				transfer_state = 764
+			}
+			# 45 = {
+			# 	remove_core_of = ROOT
+			# }
+			# 764 = {
+			# 	remove_core_of = ROOT
+			# }
+			# give hungary its land
 		}
 	}
+
+	# focus = {
+	# 	id = YUG_surrender_italian_claims
+	# 	icon = GFX_focus_befriend_italy
+	# 	prerequisite = { focus = YUG_relinquish_southern_claims }
+	# 	relative_position_id = YUG_relinquish_southern_claims
+	# 	x = 0
+	# 	y = 1
+	
+	# 	cost = 5
+	
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	
+	# 	available = {
+	# 	}
+	
+	# 	bypass = {
+	# 	}
+	
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_POLITICAL }
+	
+	# 	completion_reward = {
+	# 		163 = { remove_core_of = ROOT }
+	# 		736 = { remove_core_of = ROOT }
+	# 		# give italy its claims
+	# 	}
+	# }
 
 	focus = {
 		id = YUG_Under_New_Regime
 		icon = GFX_focus_YUG_banovina_of_croatia
-		prerequisite = { focus = YUG_surrender_hungarian_claims focus = YUG_surrender_italian_claims }
+		prerequisite = { focus = YUG_surrender_hungarian_claims }
 		relative_position_id = YUG_surrender_hungarian_claims
-		x = 1
+		x = 0
 		y = 1
 	
-		cost = 10
+		cost = 5
 	
 		ai_will_do = {
 			factor = 0
@@ -1518,7 +1522,13 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	
 		completion_reward = {
-			set_cosmetic_tag = YUG_croatia
+			GER = {
+				country_event = generic.2
+			}
+			custom_effect_tooltip = yugo_into_croatia_tt
+			hidden_effect = {
+				set_cosmetic_tag = YUG_croatia
+			}
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
@@ -1669,7 +1679,10 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	
 		completion_reward = {
-			add_to_tech_sharing_group = axis_research
+			add_relation_modifier = {
+				target = GER
+				modifier = ROM_license_german_equipment
+			}
 		}
 	}
 
@@ -1787,7 +1800,7 @@
 				limit = {
 					has_full_control_of_state = 804
 				}
-				105 = {
+				109 = {
 					add_resource = {
 						type = tungsten
 						amount = 180
@@ -1802,8 +1815,49 @@
 				109 = {
 					add_resource = {
 						type = chromium
-						amount = 80
+						amount = 100
 					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_steel_refineries
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = YUG_rare_minerals_exploitation }
+		x = 0
+		y = 1
+		relative_position_id = YUG_rare_minerals_exploitation
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			109 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = steel_refinery
+					level = 3
+					instant_build = yes
 				}
 			}
 		}
@@ -1812,10 +1866,10 @@
 	focus = {
 		id = YUG_exploit_the_pannonian_deposits
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = YUG_rare_minerals_exploitation }
+		prerequisite = { focus = YUG_steel_refineries }
 		x = 0
 		y = 1
-		relative_position_id = YUG_rare_minerals_exploitation
+		relative_position_id = YUG_steel_refineries
 
 		cost = 10
 
@@ -1844,7 +1898,7 @@
 				limit = {
 					has_full_control_of_state = 104
 				}
-				45 = {
+				104 = {
 					add_resource = {
 						type = oil
 						amount = 120
@@ -1885,41 +1939,27 @@
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 102 }
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_extra_state_shared_building_slots = 1
+			106 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-
-			random_owned_controlled_state = {
-				prioritize = { 103 }
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_extra_state_shared_building_slots = 1
+			108 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-
-			random_owned_controlled_state = {
-				prioritize = { 109 }
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_extra_state_shared_building_slots = 1
+			107 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2070,28 +2110,19 @@
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 104 }
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_extra_state_shared_building_slots = 1
+			104 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-
-			random_owned_controlled_state = {
-				prioritize = { 804 }
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_extra_state_shared_building_slots = 1
+			764 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2129,20 +2160,16 @@
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 109 }
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_extra_state_shared_building_slots = 3
+			102 = {
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2150,7 +2177,7 @@
 	}
 
 	focus = {
-		id = YUG_local_self_management
+		id = YUG_local_self_management1
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = YUG_develop_slovenian_industry }
 		x = 0
@@ -2180,7 +2207,8 @@
 		}
 
 		completion_reward = {
-			add_ideas = YUG_idea_local_self_management
+			add_timed_idea = { idea = YUG_idea_local_self_management days = 365 }
+			add_ideas = YUG_idea_local_self_management_long
 		}
 	}
 
@@ -2256,11 +2284,7 @@
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 109 }
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
+			107 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
@@ -2414,7 +2438,7 @@
 		}
 
 		available = {
-			has_full_control_of_state = 104
+			has_full_control_of_state = 103
 		}
 
 		bypass = {
@@ -2430,10 +2454,10 @@
 		}
 
 		completion_reward = {
-			104 = {
+			103 = {
 				add_resource = {
 					type = steel
-					amount = 160
+					amount = 200
 				}
 			}
 		}
@@ -2512,10 +2536,10 @@
 	focus = {
 		id = YUG_expand_the_sarajevo_arsenals
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = YUG_local_self_management focus = YUG_central_management }
+		prerequisite = { focus = YUG_local_self_management1 focus = YUG_central_management }
 		x = 1
 		y = 1
-		relative_position_id = YUG_local_self_management
+		relative_position_id = YUG_local_self_management1
 
 		cost = 7
 
@@ -2541,10 +2565,10 @@
 
 		completion_reward = {
 			104 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -4100,7 +4124,7 @@
         completion_reward = {
             add_tech_bonus = {
 				name = YUG_armored_cavalry
-				bonus = 0.50
+				bonus = 0.75
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -4156,7 +4180,7 @@
         x = -1
         y = 1
 
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -4266,7 +4290,7 @@
 			add_tech_bonus = {
 				name = YUG_light_tank
 				bonus = 0.50
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				uses = 1
 				category = cat_light_armor
 			}
@@ -4284,7 +4308,7 @@
         x = 1
         y = 1
 
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -4393,7 +4417,7 @@
 			add_tech_bonus = {
 				name = YUG_light_tank
 				bonus = 0.50
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				uses = 1
 				category = cat_medium_armor
 			}
@@ -4700,7 +4724,7 @@
         x = 0
         y = 1
 
-        cost = 10
+        cost = 7
 
         ai_will_do = {
             factor = 1
@@ -4726,7 +4750,7 @@
 			add_tech_bonus = {
 				bonus = 0.75
 				uses = 1
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				category = artillery
 				category = heavy_artillery
 			}

@@ -844,7 +844,7 @@ equipment_modules = {
 				tank_armament_tier_arty
 				tank_armament_tier_aa
 				tank_armament_tier_heavy_aa
-				tank_armament_tier_light_td
+				# tank_armament_tier_light_td
 				tank_armament_tier_medium_td
 			}
 		}
@@ -880,7 +880,7 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_armament_tier_assault
-				tank_armament_tier_light_td
+				# tank_armament_tier_light_td
 				tank_armament_tier_medium_td
 			}
 		}
@@ -941,7 +941,7 @@ equipment_modules = {
 				tank_armament_tier_arty
 				tank_armament_tier_aa
 				tank_armament_tier_heavy_aa
-				tank_armament_tier_light_td
+				# tank_armament_tier_light_td
 				tank_armament_tier_medium_td
 			}
 		}
@@ -2089,8 +2089,8 @@ equipment_modules = {
 		# forbid_equipment_type = amphibious 
 
 		add_stats = {
-			soft_attack = 50
-			hard_attack = 54
+			soft_attack = 44
+			hard_attack = 49
 			ap_attack = 90
 			build_cost_ic = 12
 		}

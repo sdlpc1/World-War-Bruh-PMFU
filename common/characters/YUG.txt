@@ -100,12 +100,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ urban_assault_specialist }
-			skill=3
-			attack_skill=3
+			traits={ urban_assault_specialist combined_arms_expert cavalry_leader }
+			skill=4
+			attack_skill=4
 			defense_skill=2
 			planning_skill=2
-			logistics_skill=3
+			logistics_skill=6
 			legacy_id=-1
 		}
 	}
@@ -167,25 +167,14 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=2
-			attack_skill=1
+			skill=3
+			attack_skill=3
 			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=-1
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = YUG_petar_kosic
-			allowed = {
-				original_tag = YUG
-			}
 			traits = {
-				navy_chief_decisive_battle_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+				cavalry_officer
 			}
 		}
 	}
@@ -421,21 +410,11 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = YUG_milovan_djilas
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
 			allowed  = {
 				original_tag  = YUG
 			}
 			traits  = {
-				democratic_reformer 
+				war_industrialist 
 			}
 		}
 		name=YUG_milovan_djilas
@@ -481,34 +460,34 @@ characters={
 			}
 		}
 	}
-	YUG_dimitrije_ljotic={
-		advisor={
-			slot = political_advisor
-			idea_token = YUG_dimitrije_ljotic
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			allowed  = {
-				original_tag  = YUG
-			}
-			traits  = {
-				fascist_demagogue 
-			}
-		}
-		name=YUG_dimitrije_ljotic
-		portraits={
-			army={
-				small="GFX_idea_YUG_dimitrije_ljotic"
-			}
-		}
-	}
+	# YUG_dimitrije_ljotic={
+	# 	advisor={
+	# 		slot = political_advisor
+	# 		idea_token = YUG_dimitrije_ljotic
+	# 		available  = {
+	# 			if  = {
+	# 				limit  = {
+	# 					has_dlc = "Man the Guns"
+	# 				}
+	# 				not  = {
+	# 					has_autonomy_state  = autonomy_supervised_state
+	# 				}
+	# 			}
+	# 		}
+	# 		allowed  = {
+	# 			original_tag  = YUG
+	# 		}
+	# 		traits  = {
+	# 			fascist_demagogue 
+	# 		}
+	# 	}
+	# 	name=YUG_dimitrije_ljotic
+	# 	portraits={
+	# 		army={
+	# 			small="GFX_idea_YUG_dimitrije_ljotic"
+	# 		}
+	# 	}
+	# }
 	YUG_ivo_lola_ribar={
 		advisor={
 			slot = political_advisor

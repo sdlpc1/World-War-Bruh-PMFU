@@ -216,6 +216,26 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		YUG_idea_local_self_management_long = {
+			
+			picture = generic_local_self_management
+
+			allowed = {
+				original_tag = YUG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
 				production_speed_buildings_factor = 0.05
 			}
 		}
@@ -857,7 +877,7 @@ ideas = {
 		
 		YUG_improved_logistics = {
 		
-			# picture = 
+			picture = SOV_the_road_of_life
 			
 			allowed = {
 				always = no
@@ -876,7 +896,7 @@ ideas = {
 
 		YUG_terrain_training = {
 		
-			# picture = 
+			picture = eng_special_air_service
 			
 			allowed = {
 				always = no
@@ -895,7 +915,7 @@ ideas = {
 
 		YUG_heat_training = {
 		
-			# picture = 
+			picture = eng_special_air_service
 			
 			allowed = {
 				always = no
@@ -908,13 +928,14 @@ ideas = {
 			}
 			
 			modifier = {
-				heat_attrition_factor = -0.10
+				heat_attrition_factor = -0.25
+				acclimatization_hot_climate_gain_factor = 0.50
 			}
 		}
 
 		YUG_anti_personel_tank = {
 		
-			# picture = 
+			picture = generic_acquire_tanks
 			
 			allowed = {
 				always = no
@@ -937,7 +958,7 @@ ideas = {
 
 		YUG_anti_tank_tank = {
 		
-			# picture = 
+			picture = generic_acquire_tanks
 			
 			allowed = {
 				always = no

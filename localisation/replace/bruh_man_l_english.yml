@@ -162,6 +162,8 @@
   MAN_japanese_warfare:0 "Embrace Japanese Warfare"
   MAN_japanese_warfare_desc:0 "Only with Japanese warfare we can achive total victory."
   MAN_increased_conscription:0 "Increased Conscription"
+  MAN_armor_effort:0 "Armor Effort"
+  MAN_artillery_effort:0 "Artillery Effort"
 
   #### EVENTS ###
   wtt_manchukou.12.t:0 "Loosening Japanese Grip"

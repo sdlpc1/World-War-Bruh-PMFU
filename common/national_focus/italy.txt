@@ -2483,6 +2483,10 @@
 
 		bypass = {
 			NOT = { country_exists = YUG }
+			105 = { CONTROLLER = { tag = ITA} }
+			802 = { CONTROLLER = { tag = ITA} }
+			108 = { CONTROLLER = { tag = ITA} }
+			107 = { CONTROLLER = { tag = ITA} }
 		}
 
 		completion_reward = {

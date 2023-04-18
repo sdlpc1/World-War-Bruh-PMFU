@@ -2596,10 +2596,7 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					add_resource = {
-						type = steel
-						amount = 5
-					}
+					capital_scope = { add_to_variable = { SOV_steel_bonus = 10 } }
 				}
 
 				every_controlled_state = {
@@ -2609,10 +2606,7 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					add_resource = {
-						type = aluminium
-						amount = 5
-					}
+					capital_scope = { add_to_variable = { SOV_aluminium_bonus = 10 } }
 				}
 
 				every_controlled_state = {
@@ -2622,10 +2616,7 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					add_resource = {
-						type = chromium
-						amount = 5
-					}
+					capital_scope = { add_to_variable = { SOV_chromium_bonus = 10 } }
 				}
 
 				every_controlled_state = {
@@ -2635,24 +2626,21 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					add_resource = {
-						type = tungsten
-						amount = 5
-					}
+					capital_scope = { add_to_variable = { SOV_tungsten_bonus = 10 } }
 				}
 			}
 
-			# capital_scope = {
-			# 	add_dynamic_modifier = { modifier = SOV_increased_metals_production }
-			# }
+			capital_scope = {
+				add_dynamic_modifier = { modifier = SOV_increased_metals_production }
+			}
 
 			custom_effect_tooltip = SOV_propaganda_more_metal_tt
 		}
 
 		remove_effect = {
-			# capital_scope = {
-			# 	remove_dynamic_modifier = { modifier = SOV_increased_metals_production }
-			# }
+			capital_scope = {
+				remove_dynamic_modifier = { modifier = SOV_increased_metals_production }
+			}
 
 			set_variable = { SOV_propaganda_campaign_to_remove = 10 }
 			SOV_reset_propaganda_campaign_slot_effect = yes

@@ -13,7 +13,7 @@
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1200 }
+	continuous_focus_position = { x = 20 y = 560 }
 
 #	focus = {
 #		id = CHI_
@@ -54,7 +54,7 @@
 	focus = {
 		id = MAN_meeting_of_the_gac
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		x = 6
+		x = 20
 		y = 0
 
 		cost = 10
@@ -207,6 +207,53 @@
 		amount = 200
 		producer = MAN
 		}
+		}
+	}
+
+	focus = {
+		id = MAN_armor_effort
+		icon = GFX_SOV_armour_development
+		prerequisite = { focus = MAN_alliance_with_kwantung }
+		x = -4
+		y = 1
+		relative_position_id = MAN_alliance_with_kwantung
+
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = MAN_artillery_effort
+		icon = GFX_SOV_artillery_development
+		prerequisite = { focus = MAN_alliance_with_kwantung }
+		x = -6
+		y = 1
+		relative_position_id = MAN_alliance_with_kwantung
+
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = artillery
+				category = heavy_artillery
+			}
 		}
 	}
 	
