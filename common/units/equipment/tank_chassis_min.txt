@@ -326,7 +326,7 @@ equipments = {
 		breakthrough = 70
 	}
 
-	# French AMX50
+	# French AMX50 
 	fra_heavy_tank_chassis_x50 = {
 		abbreviation = "a50"
 		visual_level = 0
@@ -359,9 +359,7 @@ equipments = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type_1
-					tank_medium_turret_type_2
-					tank_medium_turret_type_3
+					tank_light_turret_type_multi
 				}
 			}
 			suspension_type_slot = inherit

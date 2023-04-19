@@ -96,7 +96,7 @@ FRA_vichy_france = {
 	FRA_demand_unification_with_vichy = {
 		available = {
 			any_other_country = {
-				tag = VIC #tag alias, does not work as proper scope? TODO_GABRIEL recheck
+				tag = VIC #tag alias, does not work as proper scope? TODO_GABRIEL recheck 
 				exists = yes
 				NOT = {
 					has_war_with = ROOT
@@ -104,6 +104,9 @@ FRA_vichy_france = {
 			}
 			controls_state = 16 #Paris
 			NOT = { has_idea = FRA_defeatism }
+			VIC = {
+				has_country_flag = VIC_france_capped
+			}
 		}
 
 		visible = {

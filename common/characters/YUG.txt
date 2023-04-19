@@ -100,7 +100,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ urban_assault_specialist combined_arms_expert cavalry_leader }
+			traits={ combined_arms_expert cavalry_leader } # urban_assault_specialist
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -460,34 +460,27 @@ characters={
 			}
 		}
 	}
-	# YUG_dimitrije_ljotic={
-	# 	advisor={
-	# 		slot = political_advisor
-	# 		idea_token = YUG_dimitrije_ljotic
-	# 		available  = {
-	# 			if  = {
-	# 				limit  = {
-	# 					has_dlc = "Man the Guns"
-	# 				}
-	# 				not  = {
-	# 					has_autonomy_state  = autonomy_supervised_state
-	# 				}
-	# 			}
-	# 		}
-	# 		allowed  = {
-	# 			original_tag  = YUG
-	# 		}
-	# 		traits  = {
-	# 			fascist_demagogue 
-	# 		}
-	# 	}
-	# 	name=YUG_dimitrije_ljotic
-	# 	portraits={
-	# 		army={
-	# 			small="GFX_idea_YUG_dimitrije_ljotic"
-	# 		}
-	# 	}
-	# }
+	YUG_dimitrije_ljotic={
+		advisor={
+			slot = political_advisor
+			idea_token = YUG_dimitrije_ljotic
+			available  = {
+				always = no
+			}
+			allowed  = {
+				original_tag  = YUG
+			}
+			traits  = {
+				fascist_demagogue 
+			}
+		}
+		name=YUG_dimitrije_ljotic
+		portraits={
+			army={
+				small="GFX_idea_YUG_dimitrije_ljotic"
+			}
+		}
+	}
 	YUG_ivo_lola_ribar={
 		advisor={
 			slot = political_advisor
@@ -496,14 +489,7 @@ characters={
 				original_tag  = YUG
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
+				always = no
 			}
 			traits  = {
 				communist_revolutionary 
