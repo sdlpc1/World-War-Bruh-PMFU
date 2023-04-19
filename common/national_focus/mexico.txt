@@ -159,10 +159,10 @@ focus_tree = {
                                 gfx = "GFX_portrait_mex_jose_gonzalo_escobar"
                                 traits = { cavalry_leader  } # Cavalry commander
                                 skill = 3
-                                attack_skill = 4
-                                defense_skill = 2
-                                planning_skill = 2
-                                logistics_skill = 2
+                                attack_skill = 5
+                                defense_skill = 3
+                                planning_skill = 4
+                                logistics_skill = 5
                             }
                         }
                     }
@@ -1012,9 +1012,9 @@ focus_tree = {
                             traits = { harsh_leader } # Prince of terror, led assassination of Pancho Villa
                             skill = 3
                             attack_skill = 3
-                            defense_skill = 2
-                            planning_skill = 4
-                            logistics_skill = 1
+                            defense_skill = 3
+                            planning_skill = 6
+                            logistics_skill = 5
                         }
                     }
                 }
@@ -1262,22 +1262,22 @@ focus_tree = {
 				custom_effect_tooltip = available_political_advisor
 				show_ideas_tooltip = MEX_luis_montes_de_oca
 				MEX_decrease_cedillo_tension = yes
-				# random_owned_controlled_state = {
-				# 	limit = {
-				# 		free_building_slots = {
-				# 			building = industrial_complex
-				# 			size > 2
-				# 			include_locked = yes
-				# 		}
-				# 		is_core_of = ROOT
-				# 	}
-				# 	add_extra_state_shared_building_slots = 2
-				# 	add_building_construction = {
-				# 		type = industrial_complex
-				# 		level = 2
-				# 		instant_build = yes
-				# 	}
-				# }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
 	}
 
@@ -1415,22 +1415,22 @@ focus_tree = {
                     }
                     add_extra_state_shared_building_slots = 1
                 }
-				# random_owned_controlled_state = {
-				# 	limit = {
-				# 		free_building_slots = {
-				# 			building = industrial_complex
-				# 			size > 2
-				# 			include_locked = yes
-				# 		}
-				# 		is_core_of = ROOT
-				# 	}
-				# 	add_extra_state_shared_building_slots = 2
-				# 	add_building_construction = {
-				# 		type = industrial_complex
-				# 		level = 2
-				# 		instant_build = yes
-				# 	}
-				# }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
             }
     }
 
@@ -1557,22 +1557,22 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-				# random_owned_controlled_state = {
-				# 	limit = {
-				# 		free_building_slots = {
-				# 			building = industrial_complex
-				# 			size > 2
-				# 			include_locked = yes
-				# 		}
-				# 		is_core_of = ROOT
-				# 	}
-				# 	add_extra_state_shared_building_slots = 2
-				# 	add_building_construction = {
-				# 		type = industrial_complex
-				# 		level = 2
-				# 		instant_build = yes
-				# 	}
-				# }
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
             }
     }
 
@@ -3380,8 +3380,8 @@ focus_tree = {
 						skill = 4
 						attack_skill = 5
 						defense_skill = 4
-						planning_skill = 3
-						logistics_skill = 4
+						planning_skill = 4
+						logistics_skill = 5
 					}
 				}
 				add_ideas = MEX_conscription_campaign
@@ -3734,10 +3734,10 @@ focus_tree = {
 						gfx = "GFX_RAJ_kodendera_subayya_thimayya"
 						traits = { naval_invader trait_reckless infantry_leader commando }
 						skill = 4
-						attack_skill = 5
+						attack_skill = 7
 						defense_skill = 3
 						planning_skill = 4
-						logistics_skill = 4
+						logistics_skill = 5
 					}
 				}
 			}
@@ -4025,10 +4025,10 @@ focus_tree = {
 						gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
 						traits = { infantry_leader trickster trait_mountaineer brilliant_strategist }
 						skill = 4
-						attack_skill = 4
+						attack_skill = 5
 						defense_skill = 3
-						planning_skill = 5
-						logistics_skill = 5
+						planning_skill = 6
+						logistics_skill = 7
 					}
 				}
 			}
@@ -4230,8 +4230,8 @@ focus_tree = {
 						skill = 4
 						attack_skill = 6
 						defense_skill = 3
-						planning_skill = 4
-						logistics_skill = 5
+						planning_skill = 6
+						logistics_skill = 6
 					}
 				}
 			}
@@ -4342,10 +4342,10 @@ focus_tree = {
 					gfx = "GFX_RAJ_kodandera_madappa_cariappa"
 					traits = { cavalry_leader trickster engineer_officer trait_reckless }
 					skill = 4
-					attack_skill = 4
-					defense_skill = 2
-					planning_skill = 3
-					logistics_skill = 5
+					attack_skill = 6
+					defense_skill = 4
+					planning_skill = 4
+					logistics_skill = 6
 				}
 				add_ideas = MEX_improvement_of_motorization
 			}
