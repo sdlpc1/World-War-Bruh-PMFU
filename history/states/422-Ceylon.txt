@@ -30,7 +30,7 @@ state=
 				coastal_bunker = 3
 			}
 		}
-		add_core_of = SRL
+		add_core_of = WST
 	}
 	
 	provinces={

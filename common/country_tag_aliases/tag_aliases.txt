@@ -45,6 +45,10 @@
 #	# ...
 #}
 
+CRO = {
+	original_tag = YUG
+}
+
 SPA = {
 	original_tag = SPR
 	OR = {

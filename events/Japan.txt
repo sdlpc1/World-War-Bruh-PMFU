@@ -759,12 +759,12 @@ country_event = {
 		custom_effect_tooltip = japan.503.a_desc
 		
 	}
-	option = {
-		set_country_flag = JAP_usa2
-		name = japan.503.b
-		custom_effect_tooltip = japan.503.b_desc
+	# option = {
+	# 	set_country_flag = JAP_usa2
+	# 	name = japan.503.b
+	# 	custom_effect_tooltip = japan.503.b_desc
 		
-	}
+	# }
 }
 
 # Divide up China - 29.2 Threat generated

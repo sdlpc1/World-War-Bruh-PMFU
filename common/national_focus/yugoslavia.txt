@@ -4208,7 +4208,7 @@
 			add_ideas = YUG_light_tank_designer
 
 			hidden_effect = {
-                create_corps_commander = {
+                create_field_marshal = {
                     name="Vinko Žganec"
                     # advisor={
                     # 	slot = high_command
@@ -4336,7 +4336,7 @@
 			add_ideas = YUG_medium_tank_designer
 
 			hidden_effect = {
-                create_corps_commander = {
+                create_field_marshal = {
                     name="Robert Glasnović"
                     # advisor={
                     # 	slot = high_command

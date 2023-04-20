@@ -294,6 +294,8 @@
  apcr_round:0 "APCR Rounds"
  tank_horstmann_suspension:0 "Horstmann Suspension"
  tank_horstmann_suspension_desc:0 "Similar to the Christie suspension, the Horstmann Suspension distributes weight on multiple wheels allowing mounting of heavier equipment without fear of breakdowns."
+ tank_hydropneumatic_suspension:0 "Hydropneumatic Suspension"
+ tank_hydropneumatic_suspension_desc:0 "A cheaper alternative to other suspensions however it comes with poor reliablity, furthermore the Pneumatic chambers make the tank less capable of withstanding even small arms fire"
  
  armored_car_chassis:0 "Armored Car Chassis"
  gw_armored_car_chassis:0 "Armored Car Chassis I"

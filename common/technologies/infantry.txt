@@ -1439,7 +1439,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_wheeled_suspension
+			tank_hydropneumatic_suspension
 		}
 
 		on_research_complete_limit = {

@@ -289,6 +289,7 @@
   JAP_factory_conversion_early_war:0 "Industry Canalization"
   JAP_factory_conversion_early_war_desc:0 "Due to our rapid attempts to join the war, we need to cannibalize our Civilian Industry for the war effort"
   JAP_transfer_indochina:0 "Transfer Indochina to Siam"
+  JAP_transfer_manchu_cores:0 "Transfer Manchukuoan Cores to Manchukuo"
 
   #### FLAGS ####
   JAP_early_war:0 "Early War Japan"

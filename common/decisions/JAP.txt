@@ -646,6 +646,36 @@ foreign_politics = {
 
 	}
 
+	JAP_transfer_manchu_cores = {
+		icon = generic_operation
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			any_state = {
+				is_core_of = MAN
+				is_controlled_by = JAP
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = MAN
+					is_controlled_by = JAP
+				}
+				MAN = {
+					transfer_state = PREV
+				}
+			}
+		}
+
+	}
+
 	JAP_sue_for_peace_CHI = {
 
 		allowed = {
