@@ -159,6 +159,10 @@ recruit_character = VIC_fra_charles_huntziger
 recruit_character = VIC_fra_maxime_weygand
 recruit_character = VIC_alphonse_georges
 recruit_character = VIC_maurice_gamelin
+recruit_character = VIC_communist_revolutionary
+recruit_character = VIC_democratic_reformer
+#
+#
 
 create_equipment_variant = {
 	name = "Renault R35"

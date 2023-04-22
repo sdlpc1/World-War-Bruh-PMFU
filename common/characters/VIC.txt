@@ -23,12 +23,53 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
+			idea_token = vic_fascista_demogoga
 			traits = { fascist_demagogue }
 			available = {
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	VIC_communist_revolutionary={ 
+		name = "Jules Bugeaud"
+		portraits={
+			army={
+				small="GFX_idea_generic_fascist_demagogue_western_european_2d"
+			}
+		}
+		advisor = {
+			idea_token = vic_commie_revolut
+			slot = political_advisor
+			traits = { communist_revolutionary }
+			available = {
+				always = no				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	VIC_democratic_reformer={ 
+		name = "Jules Bugeaud"
+		portraits={
+			army={
+				small="GFX_idea_generic_fascist_demagogue_western_european_2d"
+			}
+		}
+		advisor = {
+			idea_token = dem_reformer
+			slot = political_advisor
+			traits = { democratic_reformer }
+			available = {
+				always = no				
 			}
 			ai_will_do = {
 				factor = 0
@@ -44,6 +85,7 @@ characters = {
 			}
 		}
 		advisor = {
+			idea_token = vic_paramil_leader
 			slot = political_advisor
 			traits = { paramilitary_leader }
 		}
@@ -57,6 +99,7 @@ characters = {
 			}
 		}
 		advisor = {
+			idea_token = vic_reorganizer
 			slot = political_advisor
 			traits = { reorganiser }
 		}
@@ -70,6 +113,7 @@ characters = {
 			}
 		}
 		advisor = {
+			idea_token = vic_silent_workhor
 			slot = political_advisor
 			traits = { silent_workhorse }
 		}
@@ -83,6 +127,7 @@ characters = {
 			}
 		}
 		advisor = {
+			idea_token = vichy_prince_of_terror
 			slot = political_advisor
 			traits = { prince_of_terror }
 		}
@@ -96,6 +141,7 @@ characters = {
 			}
 		}
 		advisor = {
+			idea_token = vic_populare_figureheado
 			slot = political_advisor
 			traits = { popular_figurehead }
 		}
@@ -107,6 +153,7 @@ characters = {
 			army = { small = GFX_idea_martial_valin }
 		}
 		advisor = {
+			idea_token = arty_advisor_vichy
 			slot = high_command
 			traits = { army_artillery_1 }
 		}
@@ -118,6 +165,7 @@ characters = {
 			army = { small = GFX_idea_viktor_schutze }
 		}
 		advisor = {
+			idea_token = fleet_logi_advisor_vic
 			slot = high_command
 			traits = { navy_fleet_logistics_1 }
 		}
@@ -129,6 +177,7 @@ characters = {
 			army = { small = GFX_idea_dudley_pound }
 		}
 		advisor = {
+			idea_token = air_air_combat_training_advisr_vic
 			slot = high_command
 			traits = { air_air_combat_training_2 }
 			cost = 100
@@ -141,6 +190,7 @@ characters = {
 			army = { small = GFX_idea_viktor_schutze }
 		}
 		advisor = {
+			idea_token = air_close_air_support_advsr_vic
 			slot = air_chief
 			traits = { air_close_air_support_2 }
 			cost = 100
@@ -153,6 +203,7 @@ characters = {
 			army = { small = GFX_idea_viktor_schutze }
 		}
 		advisor = {
+			idea_token = vic_all_weather_advisor
 			slot = air_chief
 			traits = { air_chief_all_weather_2 }
 			cost = 100
@@ -165,6 +216,7 @@ characters = {
 			army = { small = GFX_idea_martial_valin }
 		}
 		advisor = {
+			idea_token = vic_mil_theo1
 			slot = theorist
 			traits = { military_theorist }
 		}
@@ -176,6 +228,7 @@ characters = {
 			army = { small = GFX_idea_heisenberg }
 		}
 		advisor = {
+			idea_token = vic_nav_theo1
 			slot = theorist
 			traits = { naval_theorist }
 		}
@@ -187,6 +240,7 @@ characters = {
 			army = { small = GFX_idea_viktor_schutze }
 		}
 		advisor = {
+			idea_token = vic_air_theo_1
 			slot = theorist
 			traits = { air_warfare_theorist }
 		}
