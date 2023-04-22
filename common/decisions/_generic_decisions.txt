@@ -773,9 +773,7 @@ operations = {
 
         available = {
 			command_power > 49
-			CHI = {
-				has_war = yes
-			}
+			date > 1938.1.1
 			NOT = {
 				GER = {
 					has_completed_focus = GER_danzig_or_war
