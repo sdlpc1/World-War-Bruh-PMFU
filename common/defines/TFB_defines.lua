@@ -30,6 +30,7 @@ NDefines.NDiplomacy.EMBARGO_COST = 6000		-- make it so you cant embargo anyone
 NDefines.NDiplomacy.REVOKE_EMBARGO_COST = 6000		-- make it so you cant revoke embargo
 NDefines.NDiplomacy.EMBARGO_THREAT_THRESHOLD = 0 	
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 10000		--AI automatically accepts attache
+NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0 			-- originally 30
 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 40						-- Events are checked every X day per country or state (1 is ideal but CPU heavy)
@@ -81,6 +82,7 @@ NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (whi
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.00016			-- num convoys needed per fuel land lease
+-- NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0
 
 NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1	-- compliance factor that applies when the state controller changes (in between allies compliance is zeroed if it is taken by original country)
 NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.10 -- base compliance grow
@@ -385,6 +387,8 @@ NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 1.6 -- How much aircrafts in region improves air detection (up to effective count).
 NDefines.NAir.ESCORT_FACTOR = 4  		-- cas enters battle earlier, fucks a lot of shit up
+NDefines.NAir.COMBAT_BETTER_AGILITY_DAMAGE_REDUCTION = 0.60
+NDefines.NAir.COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.60
 
 NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.20								-- random factor in damage. So if max damage is fe. 10 and randomness is 30% then damage will be between 7-10.
 NDefines.NNavy.COMBAT_MAX_GROUPS = 2										-- Max amount of "Fire Exchange" groups (FEX).
@@ -596,15 +600,15 @@ NDefines.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 200
 NDefines.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE_STRATEGIC = 0
 
 NDefines.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
-	0.0/360.0, 1.0, 0.75,	--red
-	10.0/360.0, 1.0, 0.75,	--orange
-	60.0/360.0, 1.0, 0.75,	--yellow
-	120.0/360.0, 0.85, 0.75,	--green
-	155.0/360.0, 1.0, 0.75,	--greenish
-	180.0/360.0, 1.0, 0.75,	--turq
-	220.0/360.0, 1.0, 0.75,	--blue
-	260.0/360.0, 1.0, 0.85,	--dark purple
-	330.0/360.0, 0, 0.75		--white
+	0.0/360.0, 1.0, 1.0,	--red
+	10.0/360.0, 1.0, 1.0,	--orange
+	60.0/360.0, 1.0, 1.0,	--yellow
+	120.0/360.0, 0.75, 1.0,	--green
+	180.0/360.0, 1.0, 1.0,	--turq
+	235.0/360.0, 1.0, 1.0,	--blue
+	260.0/360.0, 1.0, 1.0,	--dark purple
+	300.0/360.0, 1.0, 1.0,	--light purple
+	330.0/360.0, 0, 1.0		--white
 }
 
 NDefines.NGraphics.CAMERA_ZOOM_SPEED_DISTANCE_MULT = 20
