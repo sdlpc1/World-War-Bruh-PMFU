@@ -776,6 +776,11 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_ita_medium_tank_equipment_2_5_medium"
+		texturefile = "gfx/interface/technologies/tanks/ita/ita_medium_tank_3.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_ita_medium_tank_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/tanks/ita/ita_medium_tank_3.dds"
 	}
@@ -1122,6 +1127,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ita_medium_tank_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/tanks/ita/ita_medium_tank_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ita_medium_tank_equipment_2_4_medium"
+		texturefile = "gfx/interface/technologies/tanks/ita/ita_medium_tank_3.dds"
 	}
 	
 	SpriteType = {

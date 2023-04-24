@@ -1727,11 +1727,12 @@ equipment_modules = {
 			soft_attack = 40
 			hard_attack = 30
 			ap_attack = 70
-			breakthrough = -10
+			# breakthrough = -10
 			build_cost_ic = 7
 		}
 		multiply_stats = { 
 			maximum_speed = -0.10
+			breakthrough = -0.10
 		 }
 		
 		build_cost_resources = {
@@ -1752,11 +1753,12 @@ equipment_modules = {
 			soft_attack = 46
 			hard_attack = 34
 			ap_attack = 90
-			breakthrough = -10
+			# breakthrough = -10
 			build_cost_ic = 8
 		}
 		multiply_stats = { 
 			maximum_speed = -0.15
+			breakthrough = -0.10
 		 }
 		
 		build_cost_resources = {
@@ -1823,11 +1825,12 @@ equipment_modules = {
 			soft_attack = 30
 			hard_attack = 39
 			ap_attack = 77
-			breakthrough = -10
+			# breakthrough = -10
 			build_cost_ic = 8
 		}
 		multiply_stats = { 
 			maximum_speed = -0.10
+			breakthrough = -0.10
 		}
 		
 		build_cost_resources = {
@@ -1848,11 +1851,12 @@ equipment_modules = {
 			soft_attack = 34
 			hard_attack = 44
 			ap_attack = 99
-			breakthrough = -10
+			# breakthrough = -10
 			build_cost_ic = 9
 		}
 		multiply_stats = { 
 			maximum_speed = -0.15
+			breakthrough = -0.10
 		}
 		
 		build_cost_resources = {
@@ -2139,11 +2143,12 @@ equipment_modules = {
 			soft_attack = 64
 			hard_attack = 60
 			ap_attack = 110
-			breakthrough = -10
+			# breakthrough = -10
 			build_cost_ic = 14
 		}
 		multiply_stats = {
 			maximum_speed = -0.25
+			breakthrough = -0.10
 		}
 		build_cost_resources = {
 			tungsten = 15
@@ -2190,11 +2195,12 @@ equipment_modules = {
 			soft_attack = 11
 			hard_attack = 50
 			ap_attack = 99
-			breakthrough = -10
+			# breakthrough = -10
 			build_cost_ic = 15
 		}
 		multiply_stats = {
 			maximum_speed = -0.15
+			breakthrough = -0.10
 		}
 		build_cost_resources = {
 			tungsten = 20
@@ -2217,11 +2223,12 @@ equipment_modules = {
 			soft_attack = 14
 			hard_attack = 59
 			ap_attack = 121
-			breakthrough = -10
+			# breakthrough = -10
 			build_cost_ic = 18
 		}
 		multiply_stats = {
 			maximum_speed = -0.25
+			breakthrough = -0.10
 		}
 		build_cost_resources = {
 			tungsten = 20
@@ -2315,11 +2322,12 @@ equipment_modules = {
 			soft_attack = 70
 			hard_attack = 10
 			ap_attack = 60
-			breakthrough = -10
+			# breakthrough = -10
 			build_cost_ic = 14
 		}
 		multiply_stats = {
 			maximum_speed = -0.15
+			breakthrough = -0.10
 		}
 		build_cost_resources = {
 			steel = 15
@@ -2359,11 +2367,12 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 48
-			breakthrough = -10
+			# breakthrough = -10
 			build_cost_ic = 14
 		}
 		multiply_stats = {
 			maximum_speed = -0.15
+			breakthrough = -0.10
 		}
 		build_cost_resources = {
 			steel = 15
@@ -2383,11 +2392,12 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 20
-			breakthrough = -10
+			# breakthrough = -10
 			build_cost_ic = 4
 		}
 		multiply_stats = {
 			maximum_speed = -0.10
+			breakthrough = -0.10
 		}
 		build_cost_resources = {
 			steel = 5

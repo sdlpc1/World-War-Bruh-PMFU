@@ -60,6 +60,20 @@ host_decisions = {
 					target = CHI
 					transfer_troops = no
 				}
+				add_named_threat = {
+					threat = 30
+					name = JAP_threat_treaty_of_nanjing
+				}
+			}
+			CHI = {
+				transfer_units_fraction = {
+					target = JAP
+					size = 1
+					stockpile_ratio = 0
+					army_ratio = 0
+					navy_ratio = 1.0
+					air_ratio = 0
+				}
 			}
 		}
 

@@ -266,6 +266,7 @@ country_event = {
 						CONTROLLER = {
 							OR = {
 								original_tag = FRA
+								original_tag = VIC
 								is_subject_of = FRA
 								is_subject_of = VIC
 							}
@@ -280,6 +281,7 @@ country_event = {
 						CONTROLLER = {
 							OR = {
 								original_tag = FRA
+								original_tag = VIC
 								is_subject_of = FRA
 								is_subject_of = VIC
 							}
@@ -294,6 +296,7 @@ country_event = {
 						CONTROLLER = {
 							OR = {
 								original_tag = FRA
+								original_tag = VIC
 								is_subject_of = FRA
 								is_subject_of = VIC
 							}
@@ -308,6 +311,7 @@ country_event = {
 						CONTROLLER = {
 							OR = {
 								original_tag = FRA
+								original_tag = VIC
 								is_subject_of = FRA
 								is_subject_of = VIC
 							}
@@ -322,6 +326,7 @@ country_event = {
 						CONTROLLER = {
 							OR = {
 								original_tag = FRA
+								original_tag = VIC
 								is_subject_of = FRA
 								is_subject_of = VIC
 							}

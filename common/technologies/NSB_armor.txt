@@ -616,7 +616,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -2 }
 		}
 		
 		allow_branch = {
@@ -695,10 +695,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1939
+		start_year = 1936
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = 6 }
+			position = { x = 2 y = 0 }
 		}
 
 		categories = {
@@ -713,6 +713,33 @@ technologies = {
 			ita_medium_tank_chassis_m13
 		}
 		
+		
+		path = {
+			leads_to_tech = ita_medium_tank_2_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
+	ita_medium_tank_2_5 = {
+
+		enable_equipments = {
+			ita_medium_tank_chassis_m14
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_2
+		}
 		
 		path = {
 			leads_to_tech = ita_medium_tank_3
@@ -743,7 +770,7 @@ technologies = {
 			ita_medium_tank_chassis_m15
 		}
 		enable_equipment_modules = {
-			tank_medium_turret_2
+			tank_medium_turret_3
 		}
 		
 		path = {
@@ -768,9 +795,6 @@ technologies = {
 
 		enable_equipments = {
 			ita_medium_tank_chassis_p26
-		}
-		enable_equipment_modules = {
-			tank_medium_turret_3
 		}
 
 		research_cost = 2

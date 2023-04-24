@@ -3272,7 +3272,33 @@
 
 		available = {
 			NOT = { has_war_with = CHI }
-			date > 1941.1.1
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = japan_strike_the_west
+						option = JANUARY_1_1941
+					}
+				}
+				date > 1941.1.1
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = japan_strike_the_west
+						option = SEPTEMBER_1_1940
+					}
+				}
+				date > 1940.9.1
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = japan_strike_the_west
+						option = JUNE_1_1940
+					}
+				}
+				date > 1940.6.1
+			}
 		}
 
 		completion_reward = {

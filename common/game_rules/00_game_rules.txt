@@ -95,6 +95,27 @@ free_templates = {
 	}
 }
 
+japan_strike_the_west = {
+	name = "RULE_JAPAN_STRIKE_THE_WEST"
+	group = "RULE_GROUP_TFB"
+	icon = ""
+	default = {
+		name = "JANUARY_1_1941"
+		text = "RULE_JANUARY_1_1941"
+		desc = "RULE_JAPAN_STRIKE_THE_WEST_JANUARY_1_1941_DESC"
+	}
+	option = {
+		name = "SEPTEMBER_1_1940"
+		text = "RULE_SEPTEMBER_1_1940"
+		desc = "RULE_JAPAN_STRIKE_THE_WEST_SEPTEMBER_1_1940_DESC"
+	}
+	option = {
+		name = "JUNE_1_1940"
+		text = "RULE_JUNE_1_1940"
+		desc = "RULE_JAPAN_STRIKE_THE_WEST_JUNE_1_1940_DESC"
+	}
+}
+
 italian_costal_forts_focus = {
 	name = "RULE_ITALIAN_COSTAL_FORTS_FOCUS"
 	group = "RULE_GROUP_TFB"

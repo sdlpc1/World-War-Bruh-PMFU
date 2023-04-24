@@ -3400,6 +3400,7 @@ focus_tree = {
 
 		completion_reward = {
 			activate_mission = SPA_save_the_alcazar_mission
+			custom_effect_tooltip = SPA_save_the_alcazar_mission_tt
 		}
 	}
 

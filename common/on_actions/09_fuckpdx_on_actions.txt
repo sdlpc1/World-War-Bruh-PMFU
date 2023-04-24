@@ -179,20 +179,6 @@ on_actions = {
 				}
 			}
 		}		
-		effect = {
-			if = {
-				limit = {
-					original_tag = ETH
-					FROM = { tag = ITA }
-					has_government = neutrality
-					has_global_flag = NO_ASIA
-				}
-				ITA = {
-					activate_mission = demilitarize_ethiopia
-
-				}
-			}
-		}
 		# Japan Takes all of China
 		effect = {
 			if = {
@@ -309,6 +295,21 @@ on_actions = {
 			}
 		}
 
+		effect = {
+			if = {
+				limit = {
+					original_tag = ETH
+					FROM = { tag = ITA }
+					has_government = neutrality
+					has_global_flag = NO_ASIA
+				}
+				ITA = {
+					activate_mission = demilitarize_ethiopia
+
+				}
+			}
+		}
+		
 		# Italy takes Ethopia
 		effect = { 
 			if = {

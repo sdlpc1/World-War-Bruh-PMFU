@@ -1160,6 +1160,13 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General with §Y"Engineer Off
  RULE_ITALIAN_COSTAL_FORTS_FOCUS:0 "Italian Costal Forts Focus"
  RULE_ITALIAN_COSTAL_FORTS_FOCUS_DISABLED_DESC:0 "Italian national focus to spawn lvl 5 costal forts on every naval port turned disabled (default)"
  RULE_ITALIAN_COSTAL_FORTS_FOCUS_ENABLED_DESC:0 "Italian national focus to spawn lvl 5 costal forts on every naval port enabled"
+ RULE_JAPAN_STRIKE_THE_WEST:0 "Strike the West"
+ RULE_JANUARY_1_1941:0 "January 1st 1941"
+ RULE_JAPAN_STRIKE_THE_WEST_JANUARY_1_1941_DESC:0 "Allows Japan to Strike the West after January 1st 1941"
+ RULE_SEPTEMBER_1_1940:0 "September 1st 1940"
+ RULE_JAPAN_STRIKE_THE_WEST_SEPTEMBER_1_1940_DESC:0 "Allows Japan to Strike the West after September 1st 1940"
+ RULE_JUNE_1_1940:0 "June 1st 1940"
+ RULE_JAPAN_STRIKE_THE_WEST_JUNE_1_1940_DESC:0 "Allows Japan to Strike the West after June 1st 1940"
 
  ### FREE TEMPLATES ###
  free_templates:0 "Free Templates"

@@ -18,6 +18,7 @@
   SPA_has_not_national_recovery_tt:0 "Does not have National Recovery"
   SPA_recovering_tt:0 "§GThis focus will remove any Recovering From Civil War debuffs§!"
   SPA_treaty_of_lisbon:0 "Treaty of Lisbon"
+  SPA_save_the_alcazar_mission_tt:0 "§YWhich gives £war_support_modifiericons_texticon 20%  War Support, £stability_texticon  20% Stability, £political_power_texticon  100 Political Power and completes the focus "Caudillo of Spain"§!"
 
   #### IDEAS ####
   SPA_neutrality_idea:0 "Iberian Neutrality"

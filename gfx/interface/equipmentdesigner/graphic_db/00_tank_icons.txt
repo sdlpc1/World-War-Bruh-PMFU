@@ -659,6 +659,19 @@ default = {
 			}
 		}
 	}
+	ita_medium_tank_chassis_m14 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ita/ita_medium_tank_3.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_3.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_ass_1.dds"
+			}
+		}
+	}
 	ita_medium_tank_chassis_m15 = {
 		pool = {
 			icons = {
