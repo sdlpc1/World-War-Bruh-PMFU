@@ -472,15 +472,15 @@
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -489,15 +489,15 @@
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
-							size > 1
+							size > 2
 							include_locked = yes
 						}
 						is_core_of = HUN
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -2514,7 +2514,7 @@
 					OR = {
 						tag = GER
 						AND = {
-							original_tag = FRA
+							original_tag = VIC
 							has_government = fascism
 						}
 						is_subject_of = GER
@@ -2528,7 +2528,7 @@
 						OR = {
 							tag = GER
 							AND = {
-								original_tag = FRA
+								original_tag = VIC
 								has_government = fascism
 							}
 							is_subject_of = GER
@@ -2540,7 +2540,7 @@
 						OR = {
 							tag = GER
 							AND = {
-								original_tag = FRA
+								original_tag = VIC
 								has_government = fascism
 							}
 							is_subject_of = GER
@@ -2552,7 +2552,7 @@
 						OR = {
 							tag = GER
 							AND = {
-								original_tag = FRA
+								original_tag = VIC
 								has_government = fascism
 							}
 							is_subject_of = GER
@@ -2564,7 +2564,7 @@
 						OR = {
 							tag = GER
 							AND = {
-								original_tag = FRA
+								original_tag = VIC
 								has_government = fascism
 							}
 							is_subject_of = GER

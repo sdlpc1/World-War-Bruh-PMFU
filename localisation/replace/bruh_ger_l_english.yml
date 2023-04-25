@@ -285,6 +285,8 @@
   #### DECISIONS ####
   GER_share_tanks:0 "Tank Sharing Programme"
   GER_share_tanks_desc:0 "We have great tank designs and we should share them with our allies."
+  GER_share_p2:0 "Purchase the Panzer II"
+  GER_share_luchs:0 "Purchase the Luchs"
   GER_share_p4:0 "Purchase the Panzer III/IV"
   GER_share_p5:0 "Purchase the Panther"
   GER_share_p6:0 "Purchase the Tiger"
@@ -373,7 +375,9 @@
 
   #### TOOLTIP FLAG ####
   GER_defend_berlin_tt:0 "Mobilise local reservists in the city, Spawning §Y20 Volksturm Divisions§!"
+  ger_share_tanks_tt_pzr_2:0 "Gives access to the §YPanzer II§! Technical Package"
   ger_share_tanks_tt_2:0 "Gives access to the §YPanzer III/IV§! Technical Package"
+  ger_share_tanks_tt_luchs:0 "Gives access to the §YLuchs§! Technical Package"
   ger_share_tanks_tt_3:0 "Gives access to the §YTiger I§! Technical Package"
   ger_share_tanks_tt_3_upgrd:0 "Gives access to the §YTiger First Wave Upgrades§! Technical Package"
   ger_share_tanks_tt_5:0 "Gives access to the §YPanther§! Technical Package"

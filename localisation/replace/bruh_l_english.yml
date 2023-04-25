@@ -237,6 +237,8 @@
  town_desc:0 ""
  rock:0 "The Rock"
  rock_desc:0 ""
+ islands_home_of:0 "§RI S L A N D S, HOME TO ADVANCED CIVILIZATIONS, ANCIENT MYSTERIES, LEGENDS FROM MILLENNIA AGO...§!"
+ islands_home_of_desc:0 ""
 
 # Annexation Choices
  ENG_annex_ire:0 "Annex Ireland"

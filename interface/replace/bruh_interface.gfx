@@ -509,6 +509,11 @@ spriteTypes = {
 		name = "GFX_terrain_rock"
 		textureFile = "gfx/interface/terrains/terrain_rock.dds"
 	}
+
+	spriteType = {
+		name = "GFX_terrain_islands_home_of"
+		textureFile = "gfx/interface/terrains/terrain_islands_home_of.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_terrain_dense_urban"
