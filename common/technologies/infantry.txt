@@ -823,9 +823,10 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.05
 		}
 		special_forces_cap = 0.05
+		special_forces_min = 44
 		
 		#dependencies = {
-		#	OR = {
+		#	OR = { 
 		#		marines = 1
 		#		paratrooper = 1
 		#		mountaineer = 1
@@ -872,9 +873,11 @@ technologies = {
 			max_strength = 1
 			soft_attack = 0.05
 			hard_attack = 0.05
+			defense = 0.075
 		}
 
 		special_forces_training_time_factor = 0.1
+		special_forces_min = 44
 		
 		path = {
 			leads_to_tech = extreme_environment_training
@@ -905,8 +908,14 @@ technologies = {
 			advanced_special_forces
 		}
 
+		category_special_forces = {
+			breakthrough = 0.05
+			max_organisation = 5
+		}
+
 		special_forces_cap = 0.05
 		special_forces_training_time_factor = -0.2
+		special_forces_min = 44
 		
 		path = {
 			leads_to_tech = survival_training
@@ -940,10 +949,13 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.50
 			soft_attack = 0.05
 			hard_attack = 0.05
+			breakthrough = 0.05
+			supply_consumption_factor = -0.01
 		}
 		
 		special_forces_no_supply_grace = 48
 		special_forces_training_time_factor = 0.1
+		special_forces_min = 44
 		
 		path = {
 			leads_to_tech = elite_forces
@@ -977,7 +989,8 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.20
 		}
 		
-		special_forces_out_of_supply_factor = -0.1
+		special_forces_out_of_supply_factor = -0.2
+		special_forces_min = 44
 		
 		path = {
 			leads_to_tech = elite_forces
@@ -1014,6 +1027,7 @@ technologies = {
 		}
 		
 		special_forces_no_supply_grace = 48
+		special_forces_min = 55
 
 		research_cost = 2
 		start_year = 1944
