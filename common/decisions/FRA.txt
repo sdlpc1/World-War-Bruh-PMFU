@@ -599,29 +599,29 @@ FRA_spanish_intervention_category = {
 }
 economy_decisions = {
 
-	#FRA_revoke_the_matignon_agreements = {
-		#visible = { has_completed_focus = FRA_reform_the_labour_laws }
+	FRA_revoke_the_matignon_agreements = {
+		visible = { has_idea = FRA_matignon_agreements }
 
-		#cost = 50
+		cost = 50
 
-		#ai_will_do = {
-		#	factor = 10
-		#	modifier = {
-		#		has_war = no
-		#		factor = 0
-		#	}
-		#}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
 
-		#complete_effect = {
-		#	remove_ideas = FRA_matignon_agreements
-		#	if = {
-		#		limit = {
-		#			communism > 0.25
-		#		}
-		#		country_event = lar_france_political_violence.2
-		#	}
-		#}
-	#}
+		complete_effect = {
+			remove_ideas = FRA_matignon_agreements
+			if = {
+				limit = {
+					communism > 0.25
+				}
+				country_event = lar_france_political_violence.2
+			}
+		}
+	}
 
 	FRA_reorganize_aviation_industry_north = {
 		available = {  }

@@ -1208,7 +1208,7 @@ ideas = {
 			}
 		}
 
-		FRA_special_forces_spirit = {
+		FRA_special_forces = {
 			picture = generic_manpower_bonus
 			allowed = {
 				original_tag = FRA 
@@ -1710,6 +1710,26 @@ ideas = {
 				industrial_capacity_dockyard = -0.9
 				stability_factor = -0.1
 				war_support_factor = -0.1
+			}
+		}
+
+		FRA_matignon_agreements = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				stability_factor = 0.1
+				consumer_goods_factor = 0.05
 			}
 		}
 

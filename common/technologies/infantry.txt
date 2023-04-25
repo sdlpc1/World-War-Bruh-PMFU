@@ -1722,7 +1722,7 @@ technologies = {
 			amphibious_drive
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1942
 		folder = {
 			name = infantry_folder

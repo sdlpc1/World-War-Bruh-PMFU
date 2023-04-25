@@ -334,7 +334,6 @@ country_event = {
 		original_tag = FRA
 		NOT = {
 			has_completed_focus = FRA_ban_the_leagues
-			has_completed_focus = FRA_break_up_the_league
 		}
 		not = { has_idea = FRA_political_violence }
 		has_stability < 0.5
