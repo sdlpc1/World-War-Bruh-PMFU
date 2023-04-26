@@ -13,6 +13,10 @@ if = {
 	}
 }
 
+create_intelligence_agency = {
+    name = "MI6"
+}
+
 load_oob = "ENG_Motorized"
 
 set_research_slots = 6

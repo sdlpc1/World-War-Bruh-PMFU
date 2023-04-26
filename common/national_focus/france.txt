@@ -2945,44 +2945,44 @@
 			ENG = { country_event = { id = britain.13 } }
 		}
 	}
-	focus = {
-		id = FRA_arms_purchases_in_the_us
-		icon = GFX_goal_generic_build_tank
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = FRA_go_with_britain
-		}
-		relative_position_id = FRA_go_with_britain
-		cost = 6
+	# focus = {
+	# 	id = FRA_arms_purchases_in_the_us
+	# 	icon = GFX_goal_generic_build_tank
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = FRA_go_with_britain
+	# 	}
+	# 	relative_position_id = FRA_go_with_britain
+	# 	cost = 6
 
-		ai_will_do = {
-			factor = 1
-		}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
 
-		available = {
-			country_exists = USA
-			USA = {
-				OR = {
-					NOT = { has_completed_focus = USA_neutrality_act }
-					has_completed_focus = USA_lend_lease_act
-				}
-			}
-		}
+	# 	available = {
+	# 		country_exists = USA
+	# 		USA = {
+	# 			OR = {
+	# 				NOT = { has_completed_focus = USA_neutrality_act }
+	# 				has_completed_focus = USA_lend_lease_act
+	# 			}
+	# 		}
+	# 	}
 		
-		bypass = {
+	# 	bypass = {
 
-		}
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
 
-		completion_reward = {
-			USA = { country_event = lar_arms_purchases.1 }
-			unlock_decision_category_tooltip = FRA_weapons_purchases_category
-		}
-	}
+	# 	completion_reward = {
+	# 		USA = { country_event = lar_arms_purchases.1 }
+	# 		unlock_decision_category_tooltip = FRA_weapons_purchases_category
+	# 	}
+	# }
 	focus = {
 		id = FRA_france_leads
 		icon = GFX_goal_generic_demand_territory
@@ -3163,7 +3163,7 @@
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 32
 		y = 0
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3213,7 +3213,7 @@
 		x = -2
 		y = 1
 		relative_position_id = FRA_naval_rearmament
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3276,7 +3276,7 @@
 		x = 0
 		y = 1
 		relative_position_id = FRA_colonial_naval_bases
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3325,7 +3325,7 @@
 		x = 1
 		y = 1
 		relative_position_id = FRA_naval_rearmament
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3354,7 +3354,7 @@
 		x = -1
 		y = 1
 		relative_position_id = FRA_the_old_school
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3377,7 +3377,7 @@
 		x = 1
 		y = 1
 		relative_position_id = FRA_the_old_school
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3399,7 +3399,7 @@
 		x = -1
 		y = 1
 		relative_position_id = FRA_carrier_focus
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3421,7 +3421,7 @@
 		x = 0
 		y = 2
 		relative_position_id = FRA_capital_ship_focus
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -3481,7 +3481,7 @@
 		x = 0
 		y = 2
 		relative_position_id = FRA_carrier_focus
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -3541,7 +3541,7 @@
 		x = 0
 		y = 1
 		relative_position_id = FRA_develop_colonial_dockyards
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3585,7 +3585,7 @@
 		icon = GFX_goal_generic_build_airforce
 		x = 31
 		y = 5
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3671,7 +3671,7 @@
 		x = -1
 		y = 1
 		relative_position_id = FRA_air_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3692,7 +3692,7 @@
 		x = -1
 		y = 1
 		relative_position_id = FRA_fighter_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3714,7 +3714,7 @@
 		x = 1
 		y = 1
 		relative_position_id = FRA_air_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3738,7 +3738,7 @@
 		x = 1
 		y = 1
 		relative_position_id = FRA_fighter_focus
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 
@@ -3761,7 +3761,7 @@
 		x = 1
 		y = 1
 		relative_position_id = FRA_bomber_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3782,7 +3782,7 @@
 		x = 3
 		y = 1
 		relative_position_id = FRA_bomber_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 

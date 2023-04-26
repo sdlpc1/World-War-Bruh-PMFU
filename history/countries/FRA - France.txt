@@ -11,6 +11,10 @@ if = {
 	}
 }
 
+create_intelligence_agency = {
+    name = "Deuxième Bureau"
+}
+
 set_research_slots = 5
 set_stability = 0.5
 set_war_support = 0.1

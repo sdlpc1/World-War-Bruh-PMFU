@@ -23,6 +23,10 @@ add_ideas = {
 	peace_training
 }
 
+create_intelligence_agency = {
+    name = "G-2 Department"
+}
+
 # MP_garrison_division_standard = yes
 
 if = {

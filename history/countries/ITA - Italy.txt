@@ -16,6 +16,10 @@ set_variable = { ITA_poster_center_icon_frame = ITA_propaganda_empty_slot_index 
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
 set_variable = { ITA_re_unit_camelry_design_cost_factor = 0 }
 
+create_intelligence_agency = {
+    name = "Servizio Informazioni Militare"
+}
+
 add_ideas = {
 	vittorio_emanuele
 	vittoria_mutilata

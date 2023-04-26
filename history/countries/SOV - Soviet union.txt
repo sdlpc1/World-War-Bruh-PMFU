@@ -29,6 +29,10 @@ if = {
 	}
 }
 
+create_intelligence_agency = {
+    name = "NKVD"
+}
+
 # MP_garrison_division_standard = yes
 
 #COUNTRY LEADERS

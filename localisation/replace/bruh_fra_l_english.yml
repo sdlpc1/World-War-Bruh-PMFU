@@ -90,6 +90,7 @@
   FRA_trees_bonus:0 "Enables §HBrush Training§!\n§HAll Units:\n    Jungle, Forests, Marshes §!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
   FRA_flat_bonus:0 "Enables §HOpen Terrain Training§!\n§HAll Units:\n    Plains, Deserts§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
   FRA_elevated_bonus:0 "Enables §HElevated Training§!\n§HAll Units:\n    Hills, Mountains§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
+  FRA_remove_pre_cap_buffs:0 "§YRemoves pre-capitulation buffs§!"
 
   #### DECISIONS ####
   FRA_move_capital:0 "Move Capital to Central Africa"

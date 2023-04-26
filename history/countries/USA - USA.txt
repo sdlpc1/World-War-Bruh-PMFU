@@ -8,6 +8,10 @@ starting_train_buffer = 5
 
 # MP_garrison_division_standard = yes
 
+create_intelligence_agency = {
+    name = "Office of Strategic Services"
+}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"

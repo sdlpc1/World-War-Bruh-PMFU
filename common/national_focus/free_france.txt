@@ -1705,44 +1705,44 @@
 			add_ideas = FRA_communist_cooperation_2
 		}
 	}
-	# focus = {
-	# 	id = FRA_arms_purchases_in_the_us
-	# 	icon = GFX_goal_generic_build_tank
-	# 	x = 0
-	# 	y = 1
-	# 	prerequisite = {
-	# 		focus = FRA_cooperation_with_the_communists
-	# 	}
-	# 	relative_position_id = FRA_cooperation_with_the_communists
-	# 	cost = 6
+	focus = {
+		id = FRA_arms_purchases_in_the_us
+		icon = GFX_goal_generic_build_tank
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_cooperation_with_the_communists
+		}
+		relative_position_id = FRA_cooperation_with_the_communists
+		cost = 6
 
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 	}
+		ai_will_do = {
+			factor = 1
+		}
 
-	# 	available = {
-	# 		country_exists = USA
-	# 		USA = {
-	# 			OR = {
-	# 				NOT = { has_completed_focus = USA_neutrality_act }
-	# 				has_completed_focus = USA_lend_lease_act
-	# 			}
-	# 		}
-	# 	}
+		available = {
+			country_exists = USA
+			USA = {
+				OR = {
+					NOT = { has_completed_focus = USA_neutrality_act }
+					has_completed_focus = USA_lend_lease_act
+				}
+			}
+		}
 		
-	# 	bypass = {
+		bypass = {
 
-	# 	}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
 
-	# 	completion_reward = {
-	# 		USA = { country_event = lar_arms_purchases.1 }
-	# 		unlock_decision_category_tooltip = FRA_weapons_purchases_category
-	# 	}
-	# }
+		completion_reward = {
+			USA = { country_event = lar_arms_purchases.1 }
+			unlock_decision_category_tooltip = FRA_weapons_purchases_category
+		}
+	}
 	focus = {
 		id = FRA_connections_to_industrialists
 		icon = GFX_goal_generic_intelligence_exchange
