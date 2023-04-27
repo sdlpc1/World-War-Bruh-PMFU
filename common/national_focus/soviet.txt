@@ -1155,7 +1155,16 @@
 		y = 1
 		available = { 
 			has_war = no
-			date > 1941.8.1
+			OR = {
+				date > 1941.8.1
+				NOT = {
+					126 = {
+						CONTROLLER = {
+							tag = ENG
+						}
+					} 
+				}
+			}
 		}
 		completion_reward = {
 			swap_ideas = {

@@ -9,6 +9,7 @@ sub_units = {
 		
 		type = {
 			infantry
+			artillery # added
 			anti_tank
 		}
 		
@@ -81,6 +82,7 @@ sub_units = {
 		
 		type = {
 			motorized
+			artillery # added
 			anti_tank
 		}
 		
@@ -156,6 +158,7 @@ sub_units = {
 		
 		type = {
 			motorized
+			artillery # added
 			anti_tank
 		}
 		
@@ -231,6 +234,7 @@ sub_units = {
 		
 		type = {
 			infantry
+			artillery # added
 			anti_tank
 		}
 

@@ -930,7 +930,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = { special_forces }
+			add_ideas = { FRA_special_forces_idea }
 		}
 	}
 	focus = {
@@ -1220,7 +1220,7 @@
 			add_tech_bonus = {
 				name = FRA_artillery_focus
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = artillery
 			}
 			add_tech_bonus = {
@@ -1315,6 +1315,14 @@
 
 		completion_reward = {
 			add_ideas = HUN_assault_gun_idea
+			add_tech_bonus = {
+					name = FRA_upgrade_tanks
+					bonus = 0.75
+					ahead_reduction = 0.5
+					uses = 1
+					category = cat_heavy_armor
+					category = cat_medium_armor
+				}
 		}
 	}
 
