@@ -1,5 +1,28 @@
 free_templates = {
 
+	hide_free_templates = {
+
+		# icon = generic_naval
+
+		available = {
+			NOT = { has_country_flag = free_template_decisions_off }
+		}
+
+		fire_only_once = yes
+		
+		visible = {
+			has_game_rule = {
+				rule = free_templates
+				option = ENABLED
+			}
+			NOT = { has_country_flag = free_template_decisions_off }
+		}
+
+		complete_effect = {
+			set_country_flag = free_template_decisions_off
+		}		
+	}
+
 	free_template_xp = {
 
 		# icon = generic_naval

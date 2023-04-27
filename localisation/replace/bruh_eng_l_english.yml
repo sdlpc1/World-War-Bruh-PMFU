@@ -214,6 +214,10 @@
   britain.504.t:0 "Preemptive Strike"
   britain.504.d:0 "We have received Intelligence that Italy will soon join the German side. We have the casus belli and the capability to strike them now, and should take advantage of it."
   britain.504.a:0 "Ok"
+  mtg_britain.1001.t:0 "Establishment of the Home Guard"
+  mtg_britain.1001.d:0 "With war breaking out in Europe, the British coast needs to be protected at all cost"
+  mtg_britain.1001.a:0 "40 20 Width Divisions"
+  mtg_britain.1001.b:0 "28 30 Width Divisions"
 
   ### IDEAS ###
   enfield:0 "Small Arms Experts"
@@ -283,7 +287,8 @@
   ENG_war_savings_prop:0 "Back The Great Attack"
 
   #### TOOLTIP ####
-  ENG_home_guard_tt:0 "Create the Home Guard, Spawning §Y28 30 Width Garrison Divisions§! across the UK.\n§RIf we don't control all the states we won't get all 28 divisions§!"
+  ENG_home_guard_30w_tt:0 "Create the Home Guard, Spawning §Y28 30 Width Garrison Divisions§! across the UK.\n§RIf we don't control all the states we won't get all 28 divisions§!"
+  ENG_home_guard_20w_tt:0 "Create the Home Guard, Spawning §Y40 20 Width Garrison Divisions§! across the UK.\n§RIf we don't control all the states we won't get all 40 divisions§!"
   ENG_commandos_tt:0 "Enables §HCommando Improvements§!\n§HAll Marines:\n    Ampibious§!\n        £attack_texticon Attack: §G+10%§!\n        £movement_texticon Movement: §G+10%§!\n   £land_night_attack_texticon Land Night Attack: §G+20%§!\n   £specops_texticon  Special Forces Equipment Required: §R+5§!\n   £training_speed_texticon Training Time: §R20§!"
   ENG_special_tech_unlock:0 "§YUnlocks decisions to fund special research projects.§!"
   ENG_equip_foreign_exiles_tt:0 "Create Foreign Exile Brigades, Spawning §Y12 30 Width Divisions§! in Southern England"

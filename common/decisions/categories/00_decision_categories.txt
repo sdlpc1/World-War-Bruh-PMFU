@@ -21,6 +21,7 @@ free_templates = {
 			rule = free_templates
 			option = ENABLED
 		}
+		NOT = { has_country_flag = free_template_decisions_off }
 	}
 
 	priority = 30

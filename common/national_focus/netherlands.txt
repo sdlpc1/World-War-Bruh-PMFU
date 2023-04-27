@@ -459,6 +459,7 @@ focus_tree = {
 		}
 		bypass = {
 			INS = { exists = no }
+			HOL = { has_capitulated = yes }
 		}
 		icon = GFX_focus_hol_continue_the_war_in_batavia
 		x = 3

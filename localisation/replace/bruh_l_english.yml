@@ -56,6 +56,7 @@
  continuous_licensing_desc:0 "We need to produce licensed equipment at record speeds."
  improved_worker_conditions_cancel:0 "Cancel Improved Worker Conditions"
  NO_ASIA_attache:0 "Attache to the Sino-Japanese War."
+ hide_free_templates:0 "Hide Free Templates"
 
  form_mutapa:0 "Unite South Africa"
  form_mutapa_category:0 "Unite South Africa"
@@ -268,6 +269,7 @@
 
  MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
 
+free_template_decisions_off:0 "Free Templates Hidden"
 officer_training_flag:0 "Officer Training in Progress"
 superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General with §Y"Engineer Officer"§! the trait §Y"Engineer"§!"
 mobile_warfare_academy_spirit_tt:1 "New Officers: §G50% chance§! to begin with §Y"Panzer Officer"§! trait.\n\nEnables §YArmy Armoured Academy§! which will give a random §YSkill 3§! or lower General with the trait §Y"Armour Officer"§! the trait §Y"Armour Leader"§!"
