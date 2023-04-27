@@ -292,6 +292,7 @@ equipments = {
 					tank_light_turret_type_casemate
 					tank_light_turret_type_open_superstructure
 					tank_light_turret_type_3
+					tank_heavy_turret_type_0
 				}
 			}
 			suspension_type_slot = inherit
@@ -303,9 +304,9 @@ equipments = {
 			special_type_slot_4 = inherit
 		}
 		maximum_speed = 4.5
-		build_cost_ic = 26
+		build_cost_ic = 24
 		reliability = 0.7
-		armor_value = 65
+		armor_value = 55
 		defense = 8
 		breakthrough = 50
 	}
@@ -360,6 +361,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_light_turret_type_1
+					tank_heavy_turret_type_0
 					# tank_light_turret_type_2
 					# tank_light_turret_type_open
 					# tank_light_turret_type_casemate
@@ -376,11 +378,11 @@ equipments = {
 			special_type_slot_4 = inherit
 		}
 		maximum_speed = 4.0
-		build_cost_ic = 38
+		build_cost_ic = 20
 		reliability = 0.6
 		armor_value = 40
 		defense = 8
-		breakthrough = 55
+		breakthrough = 40
 	}
 
   # Italian Tanks

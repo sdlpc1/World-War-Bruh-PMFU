@@ -528,6 +528,10 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
 			}
 
 			modifier = {
@@ -1205,6 +1209,24 @@ ideas = {
 				non_core_manpower = 0.2
 				experience_gain_army_unit_factor = 0.25
 				#training_time_army_factor = -0.33
+			}
+		}
+
+		FRA_special_forces_idea = {
+			picture = generic_manpower_bonus
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_cap = 0.05
 			}
 		}
 

@@ -294,6 +294,7 @@ technologies = {
 			tank_medium_turret_open
 			tank_medium_superstructure
 			tank_medium_open_superstructure
+			tank_heavy_turret_early
 			interleaf_suspension
 			boogie_suspension
 			christie_suspension
@@ -513,20 +514,20 @@ technologies = {
 		enable_equipments = {
 			fra_heavy_tank_chassis_b1
 		}
-		enable_equipment_modules = {
-			tank_multi_turret_1
-			tank_multi_turret_2
-		}
+		# enable_equipment_modules = {
+		# 	tank_multi_turret_1
+		# 	tank_multi_turret_2
+		# }
 		path = {
 			leads_to_tech = fra_heavy_tank_2
 			research_cost_coeff = 1
 		}
 
 		research_cost = 2
-		start_year = 1937
+		start_year = 1938
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 4 y = 2 }
+			position = { x = 4 y = 4 }
 		}
 
 		categories = {
