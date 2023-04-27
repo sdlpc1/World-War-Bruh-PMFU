@@ -14,7 +14,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 14250 y = 700 }
+	continuous_focus_position = { x = 1425 y = 800 }
 
 	focus = {
         id = MEX_focus_plan_of_agua_prieta
@@ -3663,7 +3663,7 @@ focus_tree = {
 			x = 3
 			y = 1
 
-			cost = 10
+			cost = 7
 
 			ai_will_do = {
 				factor = 1
@@ -4008,9 +4008,8 @@ focus_tree = {
 					name = mountaineers_tech
 					bonus = 0.75
 					uses = 1
-					technology = heavy_artillery2
-					technology = heavy_artillery3 
-					technology = heavy_artillery4
+					technology = pack_artillery_2
+					technology = pack_artillery_3
 				}
 				add_tech_bonus = {
 					name = mountaineers_tech
@@ -4103,7 +4102,7 @@ focus_tree = {
 					bonus = 0.50
 					ahead_reduction  = 0.5
 					uses = 1
-					technology = pack_artillery_2
+					technology = pack_artillery_3
 				}
 				add_ideas = MEX_better_pack_arty
 			}
