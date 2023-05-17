@@ -51,7 +51,7 @@ small_plane_airframe = {
 			allowed_module_categories = {
 				motor_cannon
 				fighter_weapon
-				cas_weapon
+				# cas_weapon
 				nav_bomber_weapon
 				kamikaze_bomber_weapon
 				tank_buster_weapon

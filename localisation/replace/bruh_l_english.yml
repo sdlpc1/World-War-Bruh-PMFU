@@ -55,7 +55,7 @@
  continuous_licensing:0 "License Production"
  continuous_licensing_desc:0 "We need to produce licensed equipment at record speeds."
  improved_worker_conditions_cancel:0 "Cancel Improved Worker Conditions"
- NO_ASIA_attache:0 "Attache to the Sino-Japanese War."
+ NO_ASIA_attache:0 "Attache to the Sino-Japanese War"
  hide_free_templates:0 "Hide Free Templates"
 
  form_mutapa:0 "Unite South Africa"
@@ -216,6 +216,9 @@
  POL_morale_desc:0 "The Polish are a proud people, but eventually their spirit will break when they realize that help is not coming."
  POL_war_decisions:0 "Polish War Descsions"
  NO_ASIA_attache_idea:0 "Attache to the Sino-Japanese War."
+ cat_armored_car:0 "Armored Cars"
+ no_grinding:0 "No Grinding"
+ no_grinding_desc:0 "§RNo grinding before Poland has capitulated. This is done because there are pregrinded generals in the game now.§!"
 
  father_check:0 "No Father?"
  father_check_desc:0 "Some players need some fatherly guidance due to a lack of that in their life"
@@ -351,6 +354,9 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General with §Y"Engineer Off
  med_anti_tank_brigade:0 "Medium Anti-Tank"
  mot_med_anti_tank_brigade:0 "Motorised Medium Anti-Tank"
  rg_hq_company:0 "Red Guard HQ"
+ Royal_Commandos_hq_company:0 "Royal Commandos"
+ US_Airborne_hq_company:0 "US Airborne"
+ Marine_Corps_hq_company:0 "USMC"
  #### EQUIPMENT ####
  artillery_equipment:0 "Towed Artillery"
  artillery_equipment_short:0 "Artillery"
@@ -402,6 +408,8 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General with §Y"Engineer Off
  dp_artillery_equipment:0 "Dual Purpose Artillery"
  dp_artillery_equipment_2:0 "Dual Purpose Artillery II"
  siege_artillery_equipment:0 "Siege Artillery"
+ siege_artillery_equipment_1:0 "Basic Siege Artillery"
+ siege_artillery_equipment_2:0 "Improved Siege Artillery"
  railway_gun_equipment_1:0 "Siege Artillery Battery"
  railway_gun_equipment_2:0 "Railway Artillery Gun"
  railway_gun_equipment_3:0 "Karl-Gerät"
@@ -1132,7 +1140,19 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General with §Y"Engineer Off
  NORMAL_GAME_DESC:0 "Normal game with asia"
  NO_ASIA_NAME:0 "No Asia"
  NO_ASIA_DESC:0 "A game without Asia, made for small player count lobbies"
+ 
+ ### STATES ###
+ STATE_843:0 "South Khartoum"
 
+ ### UNITS ###
+ jaegers:0"Jäger I"
+ jaegers_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+ jaegers2:0"Jäger II"
+ jaegers2_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+ jaegers3:0"Jäger III"
+ jaegers3_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train." 
+ jaeger:0 "Jägers"
+ 
 # GAME RULES
  RULE_GROUP_TFB:0 "Custom TFB Game Rules"
  RULE_OPTION_ENABLED:0 "Enabled"

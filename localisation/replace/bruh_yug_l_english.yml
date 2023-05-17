@@ -79,10 +79,12 @@
   YUG_anti_personel_tank:0 "Anti-Personnel Squads"
   YUG_Adriatic_Raiders:0 "Adriatic Raiders"
   YUG_terrain_training:0 "High Altitude Training"
+  no_brothers_war:0 "War Beetween Slavic Brothers"
   
   #### DECISIONS ####
   form_greater_yugo_category:0 "Form Greater Yugoslavia"
   form_greater_yugo:0 "Form Greater Yugoslavia"
+  YUG_impending_german_coup:0 "Impending German Coup"
 
   #### TAG ####
   YUG_greater:0 "Greater Yugoslavia"

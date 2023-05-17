@@ -9025,6 +9025,140 @@ SOV_great_patriotic_war = {
 			factor = 1
 		}
 	}
+
+	##########################
+	###### Move Capital# #####
+	##########################
+
+	SOV_move_capital_kazan = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+			219 = {
+				is_capital = no
+			}
+		}
+
+		visible = {
+			249 = {
+				is_capital = no
+			}
+
+		}
+		
+		complete_effect = {
+			set_capital =  { state = 249 }
+		}
+	}
+
+	SOV_move_capital_chelyabinsh = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+			219 = {
+				is_capital = no
+			}
+		}
+
+		visible = {
+			572 = {
+				is_capital = no
+			}
+
+		}
+		
+		complete_effect = {
+			set_capital =  { state = 572 }
+		}
+	}
+
+	SOV_move_capital_omsk = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+			219 = {
+				is_capital = no
+			}
+		}
+
+		visible = {
+			571 = {
+				is_capital = no
+			}
+
+		}
+		
+		complete_effect = {
+			set_capital =  { state = 571 }
+		}
+	}
+
+	SOV_move_capital_baku = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+			219 = {
+				is_capital = no
+			}
+		}
+
+		visible = {
+			229 = {
+				is_capital = no
+			}
+
+		}
+		
+		complete_effect = {
+			set_capital =  { state = 229 }
+		}
+	}
+
+	SOV_move_capital_vladivostok = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = SOV
+		}
+		
+		available = {
+			219 = {
+				is_capital = no
+			}
+		}
+
+		visible = {
+			408 = {
+				is_capital = no
+			}
+
+		}
+		
+		complete_effect = {
+			set_capital =  { state = 408 }
+		}
+	}
 }
 
 ################################################################################
@@ -9290,10 +9424,10 @@ operations = {
 		timeout_effect = {
 			add_war_support = -0.15
 			add_stability = -0.15
-			add_timed_idea = {
-				idea = SOV_assure_competency
-				days = 150
-			}
+			# add_timed_idea = {
+			# 	idea = SOV_assure_competency
+			# 	days = 150
+			# }
 			diplomatic_relation = {
 				country = FIN
 				relation = non_aggression_pact

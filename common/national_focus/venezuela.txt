@@ -14,6 +14,48 @@ focus_tree = {
 	reset_on_civilwar = no
 
 	focus = {
+		id = yames_yames
+		icon = GFX_goal_generic_consumer_goods
+		x = 10
+		y = 0
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+		}
+
+		available_if_capitulated = yes
+		completion_reward = {
+			every_country={
+				remove_ideas = starting_cap
+			}
+		}
+	}
+
+	focus = {
+		id = beefy_beefy
+		icon = GFX_goal_generic_consumer_goods
+		x = 12
+		y = 0
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+			POL = { has_capitulated = yes }
+		}
+
+		available_if_capitulated = yes
+		completion_reward = {
+			# every_country={
+			# 	remove_ideas = no_grinding
+			# }
+		}
+	}
+
+	focus = {
 		id = infrastructure_effort_ven
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 0
@@ -21,7 +63,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 200
+			factor = 1
 		}
 		bypass = {
 			custom_trigger_tooltip = {
@@ -115,7 +157,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 50
+			factor = 1
 		}
 		bypass = {
 			custom_trigger_tooltip = {

@@ -2699,7 +2699,13 @@ FRA_propaganda_campaigns = {
 				has_capitulated = yes
 			}
 			NOT = { has_government = fascism }
-			VIC = { has_war = yes }
+			if = {
+				limit = {
+					country_exists = VIC
+				}
+				VIC = { has_war = yes }
+			}
+			# VIC = { has_war = yes }
 		}
 
 		days_remove = 365

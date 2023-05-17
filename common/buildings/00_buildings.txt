@@ -46,7 +46,7 @@ buildings = {
 		icon_frame = 5
 		air_base = yes
 		max_level = 10
-		value = 4
+		value = 28
 		damage_factor = 0.5
 		infrastructure_construction_effect = yes
 		allied_build = yes
@@ -153,7 +153,7 @@ buildings = {
 
 	synthetic_refinery = {
 		show_on_map = 1
-		base_cost = 12000
+		base_cost = 10000
 		icon_frame = 10
 		refinery = yes
 		max_level = 3 # This is the max unlock level
@@ -168,7 +168,7 @@ buildings = {
 	
 	synthetic_rubber_refinery = {
 		show_on_map = 1
-		base_cost = 12000
+		base_cost = 10000
 		icon_frame = 17
 		local_resources_rubber = 30
 		refinery = yes
@@ -183,7 +183,7 @@ buildings = {
 	
 	steel_refinery = {
 		show_on_map = 1
-		base_cost = 10000
+		base_cost = 8000
 		icon_frame = 18
 		local_resources_steel = 100
 		local_resources_aluminium = 10

@@ -84,6 +84,21 @@ on_actions = {
 		}
 	}
 
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					tag = GER
+					FROM = { tag = POL }
+					YUG = { is_ai = no }
+				}
+				YUG = {
+					activate_mission = YUG_impending_german_coup
+				}
+			}
+		}
+	}
+
 	on_capitulation_immediate = {
 		effect = {
 			if = {

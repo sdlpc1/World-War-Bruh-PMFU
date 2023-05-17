@@ -1,4 +1,16 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+﻿#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -897,11 +909,11 @@ focus_tree = {
 	focus = {
 		id = SPA_the_condor_legion
 		available = {
-			NOT = { has_global_flag = scw_over }
-			has_volunteers_amount_from = {
-				tag = GER
-				count > 0
-			}
+			# NOT = { has_global_flag = scw_over }
+			# has_volunteers_amount_from = {
+			# 	tag = GER
+			# 	count > 0
+			# }
 		}
 		bypass = {
 		}
@@ -959,17 +971,17 @@ focus_tree = {
 	focus = {
 		id = SPA_equipment_shipments
 		available = {
-			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
+			# NOT = { has_global_flag = scw_over }
+			# OR = {
+			# 	has_volunteers_amount_from = {
+			# 		tag = ITA
+			# 		count > 0
+			# 	}
+			# 	has_volunteers_amount_from = {
+			# 		tag = GER
+			# 		count > 0
+			# 	}
+			# }
 		}
 		bypass = {
 		}
@@ -999,17 +1011,17 @@ focus_tree = {
 	focus = {
 		id = SPA_obtain_training_staff
 		available = {
-			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
+			# NOT = { has_global_flag = scw_over }
+			# OR = {
+			# 	has_volunteers_amount_from = {
+			# 		tag = ITA
+			# 		count > 0
+			# 	}
+			# 	has_volunteers_amount_from = {
+			# 		tag = GER
+			# 		count > 0
+			# 	}
+			# }
 		}
 		bypass = {
 		}
@@ -1032,17 +1044,17 @@ focus_tree = {
 	focus = {
 		id = SPA_doctrinal_advancements
 		available = {
-			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
+			# NOT = { has_global_flag = scw_over }
+			# OR = {
+			# 	has_volunteers_amount_from = {
+			# 		tag = ITA
+			# 		count > 0
+			# 	}
+			# 	has_volunteers_amount_from = {
+			# 		tag = GER
+			# 		count > 0
+			# 	}
+			# }
 		}
 		bypass = {
 		}
@@ -13053,6 +13065,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_collaboration = {
+				target = POR
+				value = 0.8
+			}
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = POR

@@ -35,7 +35,7 @@
 
   explain_ww_conditions:0 "Winter War (Conditions)"
   newPlayer.12.t:0 "Winter War (Conditions)"
-  newPlayer.12.d:0 "In order for Finland to win they must do one of the following:\n1) Deal 350k Casualties to the soviets\n2) Survive 7 months\n3) Take Leningrad\n\nFinland has a decision to surrender which they can click if one of:\n1) They have taken 65k casualties\n2) They have 20% surrender Progress\n3) They have lost control of Viipuri (The city in the state of Karjalla)\n\nThe Soviets can force a peace deal (via decision) on Finland if one of:\n1) Dealt 100k casualties to the finns\n2) Get the Finns above 30% Surrender Progress"
+  newPlayer.12.d:0 "In order for Finland to win they must do one of the following:\n1) Deal 350k Casualties to the soviets\n2) Survive 7 months\n3) Take Leningrad\n\nFinland has a decision to surrender which they can click if one of:\n1) They have taken 65k casualties\n2) They have 20% surrender Progress\n3) They have lost control of Viipuri (The city in the state of Karjalla)\n\nThe Soviets can force a peace deal (via decision) on Finland if one of:\n1) Dealt 85k casualties to the finns\n2) Get the Finns above 27% Surrender Progress"
 
   explain_ww_soviets:0 "Winter War (Soviets)"
   newPlayer.7.t:0 "Winter War (Soviets)"

@@ -34,6 +34,7 @@ if = {
 		HUN_hussar_legacy
 		volunteer_minimum_minor
 		peace_training
+		minors_no_air
 	}
 }
 set_variable = { axis_poster_center_icon_frame = 1 }

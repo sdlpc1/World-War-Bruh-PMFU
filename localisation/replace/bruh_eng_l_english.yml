@@ -218,6 +218,9 @@
   mtg_britain.1001.d:0 "With war breaking out in Europe, the British coast needs to be protected at all cost"
   mtg_britain.1001.a:0 "40 20 Width Divisions"
   mtg_britain.1001.b:0 "28 30 Width Divisions"
+  mtg_britain.1002.t:0 "A fleet from the shadows"
+  mtg_britain.1002.d:0 "At exactly 06:00 AM today, a large fleet appeared from the shadows..."
+  mtg_britain.1002.a:0 "To victory!"
 
   ### IDEAS ###
   enfield:0 "Small Arms Experts"
@@ -293,6 +296,8 @@
   ENG_special_tech_unlock:0 "§YUnlocks decisions to fund special research projects.§!"
   ENG_equip_foreign_exiles_tt:0 "Create Foreign Exile Brigades, Spawning §Y12 30 Width Divisions§! in Southern England"
   ENG_mil_arms_purchases_tt:0 "Unlocks decisions to §YBuy Equipment§! for our army"
+  Royal_Commandos_increase_tt:0 "Increase template cap of §YRoyal Commandos§! by §G+1§!."
+  Royal_Commandos_increase_double_tt:0 "Increase template cap of §YRoyal Commandos§! by §G+2§!."
 
   #### FLAGS ####
   ENG_seize_col:0 "Has Seized Portugese Colonies"

@@ -51,7 +51,7 @@ raid_trotskys_villa = { ### 1/50
 	outcome_potential = {
 		custom_effect_tooltip = raid_trotskys_villa_outcome_tt
 	}
-	risk_chance = 0.35
+	risk_chance = 0
 	experience = 5
 	# outcome is an effect that runs when the operation has completed
 	outcome_execute = { # SCOPE_OPERATION
@@ -164,7 +164,7 @@ murder_trotsky = { ### 1/50
 	outcome_potential = {
 		custom_effect_tooltip = murder_trotsky_outcome_tt
 	}
-	risk_chance = 0.25
+	risk_chance = 0
 	experience = 5
 	# outcome is an effect that runs when the operation has completed
 	outcome_execute = { # SCOPE_OPERATION
@@ -242,7 +242,7 @@ nuclear_espionage = { ### 1/50
 	outcome_potential = {
 		custom_effect_tooltip = nuclear_espionage_outcome_tt
 	}
-	risk_chance = 0.25
+	risk_chance = 0
 	experience = 5
 	# outcome is an effect that runs when the operation has completed
 	outcome_execute = { # SCOPE_OPERATION

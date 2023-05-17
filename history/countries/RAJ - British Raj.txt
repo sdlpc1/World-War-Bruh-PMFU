@@ -55,6 +55,7 @@ if = {
 		RAJ_the_sun_never_sets_idea_1
 		PACIFIC_COMMONWEALTH_controls_original
 		peace_training
+		minors_no_air
 	}
 
 	add_to_tech_sharing_group = commonwealth_research

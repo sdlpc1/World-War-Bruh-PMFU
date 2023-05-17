@@ -41,6 +41,7 @@ add_ideas = { #DLC
 	BUL_imro_01
 	PACIFIC_COMMONWEALTH_controls_axis_original
 	peace_training
+	minors_no_air
 }
 
 #SET FLAGS AND VARIABLES

@@ -11,10 +11,10 @@
 		infantry_mot = { x = 1 y = 2 }
         infantry_mot = { x = 2 y = 0 }
 		infantry_mot = { x = 2 y = 1 }
-		infantry_mot = { x = 2 y = 2 }
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
-		artillery_brigade = { x = 3 y = 2 }
+		anti_tank_brigade = { x = 4 y = 0 }
+		anti_tank_brigade = { x = 4 y = 1 }
 	}
 	support = {
 		hq_company = { x = 0 y = 0 } 
@@ -23,6 +23,50 @@
 		logistics_company  = { x = 0 y = 3 }
 	}
 }
+# division_template = {
+# 	name = "Royal Commandos" 		# 1st, 2nd Marine Brigades, precursors to 1st, 2nd USMC Divisions
+
+# 	division_names_group = ENG_MAR_01
+# 	is_locked = no
+# 	force_allow_recruiting = yes
+# 	regiments = {
+# 		marine = { x = 0 y = 0 }
+# 		marine = { x = 0 y = 1 }
+# 		marine = { x = 0 y = 2 }
+# 		marine = { x = 0 y = 3 }
+		
+# 		marine = { x = 1 y = 0 }
+# 		marine = { x = 1 y = 1 }
+# 		marine = { x = 1 y = 2 }
+# 		marine = { x = 1 y = 3 }
+		
+# 		marine = { x = 2 y = 0 }
+# 		marine = { x = 2 y = 1 }
+# 		marine = { x = 2 y = 2 }
+		
+# 		artillery_brigade = { x = 3 y = 0 }
+# 		artillery_brigade = { x = 3 y = 1 }
+# 		artillery_brigade = { x = 3 y = 2 }
+# 		artillery_brigade = { x = 3 y = 3 }
+		
+# 		artillery_brigade = { x = 4 y = 0 }
+# 		artillery_brigade = { x = 4 y = 1 }
+# 		artillery_brigade = { x = 4 y = 2 }
+# 		artillery_brigade = { x = 4 y = 3 }
+# 	}
+# 	support = { 
+# 		assault_engineer = { x = 0 y = 0 }
+# 		signal_company = { x = 0 y = 1 }   
+# 		recon = { x = 0 y = 2 }
+# 		logistics_company_mot  = { x = 0 y = 3 }
+# 		Royal_Commandos_hq_company = { x = 1 y = 0 }
+# 		anti_air = { x = 1 y = 1 }
+# 		field_hospital = { x = 1 y = 2 }
+# 		military_police = { x = 1 y = 3 }
+# 	}
+# 	priority = 2
+# 	division_cap = 0 
+# }
 division_template = {
 	name = "Cavalry Brigade"
 	division_names_group = ENG_CAV_02
@@ -57,11 +101,14 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		artillery_brigade = { x = 2 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
 	}
 	priority = 0
 	support = {
@@ -136,7 +183,7 @@ units = {
 		location = 3273
 		division_template = "Light Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	# "52nd 'Lowland' Infantry Division"
@@ -147,7 +194,7 @@ units = {
 		location = 9392
 		division_template = "Light Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	#Northern Command
@@ -156,7 +203,7 @@ units = {
 		location = 11297
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	# "5th Infantry Division"
@@ -176,7 +223,7 @@ units = {
 		location = 9397
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	# "49th 'West Riding' Infantry Division"
@@ -187,7 +234,7 @@ units = {
 		location = 11218
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	
@@ -196,7 +243,7 @@ units = {
 		location = 11297
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	# "5th Infantry Division"
@@ -216,7 +263,7 @@ units = {
 		location = 9397
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	# "49th 'West Riding' Infantry Division"
@@ -227,7 +274,7 @@ units = {
 		location = 11218
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	#Eastern Command
@@ -248,7 +295,7 @@ units = {
 		location = 11221
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	# "54th 'East Anglia' Infantry Division"
@@ -259,7 +306,7 @@ units = {
 		location = 3287
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	#Western Command	
@@ -268,7 +315,7 @@ units = {
 		location = 407
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	# "42nd 'East Lancashire' Infantry Division"
@@ -279,7 +326,7 @@ units = {
 		location = 6318
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	# "53rd 'Welsh' Infantry Division"
@@ -290,7 +337,7 @@ units = {
 		location = 311
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	# "55th 'West Lancashire' Infantry Division"
@@ -301,7 +348,7 @@ units = {
 		location = 6384
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	#Southern Command
@@ -328,7 +375,7 @@ units = {
 		location = 3369
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	# "48th 'South Midland' Infantry Division"
@@ -339,7 +386,7 @@ units = {
 		location = 6351
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	
@@ -351,7 +398,7 @@ units = {
 		division_template = "Light Infantry"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
+		
 
 	}
 	#Palestine & Transjordan
@@ -361,7 +408,7 @@ units = {
 		division_template = "Light Infantry"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		
 
 	}
 	#Aden
@@ -371,7 +418,7 @@ units = {
 		division_template = "Light Infantry"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		
 
 	}
 	#Egypt
@@ -380,7 +427,7 @@ units = {
 		location = 7011
 		division_template = "Light Infantry"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	
@@ -388,7 +435,7 @@ units = {
 		location = 1155
 		division_template = "Light Infantry"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	
@@ -396,7 +443,7 @@ units = {
 		location = 4076
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		
 
 	}
 	#Gibraltar
@@ -405,7 +452,7 @@ units = {
 		location = 4135
 		division_template = "Light Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	
@@ -415,7 +462,7 @@ units = {
 		location = 12003
 		division_template = "Light Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	
@@ -425,7 +472,7 @@ units = {
 		location = 1939
 		division_template = "Light Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		
 
 	}
 	division= {	  
@@ -433,7 +480,7 @@ units = {
 		location = 12911
 		division_template = "Light Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		
 
 	}
 	division= {	
@@ -441,7 +488,7 @@ units = {
 		location = 1939
 		division_template = "Light Infantry"			# Colonial militia (lowest equipment and experience)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_equipment_factor = 0.7
+		
 
 	}
 
@@ -451,7 +498,7 @@ units = {
 		location = 2050
 		division_template = "Light Infantry"			# Colonial militia (lowest equipment and experience)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_equipment_factor = 0.5
+		 
 
 	}
 	division= {	  
@@ -459,7 +506,7 @@ units = {
 		location = 10862 
 		division_template = "Light Infantry"			# Colonial militia (lowest equipment and experience)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
-		start_equipment_factor = 0.5
+		 
 
 	}
 	
@@ -470,7 +517,7 @@ units = {
 		location = 10062
 		division_template = "Light Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		
 
 	}
 	###Malaya
@@ -479,7 +526,7 @@ units = {
 		location = 12299
 		division_template = "Light Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		
 
 	}
 	division= {	
@@ -487,7 +534,7 @@ units = {
 		location = 12215
 		division_template = "Light Infantry"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		 
 
 	}
 	###Ceylon
@@ -497,10 +544,11 @@ units = {
 		division_template = "Light Infantry"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		 
 
 	}
 }
+
 
 
 # air_wings = {

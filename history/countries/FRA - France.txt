@@ -41,6 +41,7 @@ set_technology = {
 	gw_artillery = 1
 	fra_light_tank_1 = 1
 	fra_medium_tank_1 = 1
+	jaegers = 1
 	
 
 	armor_tech_1 = 1

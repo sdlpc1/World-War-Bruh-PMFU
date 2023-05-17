@@ -24,7 +24,28 @@ ideas = {
 			}
 		}
 		
-		
+		no_brothers_war = {
+			
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				original_tag = YUG
+				always = no
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+		}
 		
 		king_peter_1 = {
 			

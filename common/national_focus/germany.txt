@@ -1,3 +1,15 @@
+#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
 focus_tree = {
 	id = german_focus
 	
@@ -3506,6 +3518,9 @@ focus_tree = {
 					target = BEL
 					type = annex_everything
 				}
+				hidden_effect = {
+					ENG = { add_to_faction = BEL }					
+				}
 			}
 			if =  {
 				limit = {
@@ -3516,6 +3531,9 @@ focus_tree = {
 				declare_war_on = {
 					target = HOL
 					type = annex_everything
+				}
+				hidden_effect = {
+					ENG = { add_to_faction = HOL }					
 				}
 			}
 			# if = {
@@ -3528,6 +3546,9 @@ focus_tree = {
 			# 		target = LUX
 			# 		type = annex_everything
 			# 	}		
+			# 	hidden_effect = {
+			# 		ENG = { add_to_faction = LUX }					
+			#    	}
 			# }
 			hidden_effect = {
 				news_event = { hours = 6 id = news.234 }

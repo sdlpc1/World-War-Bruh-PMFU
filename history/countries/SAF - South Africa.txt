@@ -62,6 +62,7 @@ if = {
 add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_original
 	peace_training
+	minors_no_air
 }
 
 set_variable = { COM_poster_center_icon_frame = 1 }

@@ -467,9 +467,9 @@ ideas = {
 				has_completed_focus = VIC_Produce_our_own_Tanks
 			}
 			
-			# research_bonus = {
-			# 	armor = 0.15
-			# }
+			research_bonus = {
+				armor = 0.15
+			}
 			
 			traits = { VIC_renault_trait }
 			

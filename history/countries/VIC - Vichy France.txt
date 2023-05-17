@@ -134,6 +134,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_axis_original
 	volunteer_minimum_minor
 	peace_training
+	minors_no_air
 }
 
 #Order matters here Daladier will start as leaders because added last

@@ -93,7 +93,7 @@ USA_congress = {
 			#	factor = 0
 			#}
 		}
-		days_re_enable = 270
+		days_re_enable = 210
 		complete_effect = {
 			USA_congress_small_support = yes
 		}

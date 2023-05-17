@@ -104,6 +104,7 @@ if = {
 		PACIFIC_COMMONWEALTH_controls_original
 		father_check
 		peace_training
+		minors_no_air
 	}
 }
 

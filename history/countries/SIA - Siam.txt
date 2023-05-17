@@ -49,6 +49,7 @@ add_ideas = {
 	volunteer_minimum_minor
 	peace_training
 	SIA_trade_treaty_with_jap
+	minors_no_air
 }
 
 set_politics = {

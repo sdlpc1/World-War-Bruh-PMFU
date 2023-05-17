@@ -23,6 +23,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_original
 	father_check
 	peace_training
+	minors_no_air
 }
 
 # MP_garrison_division_standard = yes

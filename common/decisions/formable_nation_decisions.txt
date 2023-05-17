@@ -1190,6 +1190,16 @@ form_mutapa_category = {
 			545 = { add_core_of = ROOT }
 			771 = { add_core_of = ROOT }
 			770 = { add_core_of = ROOT }
+			add_resource = {
+				type = chromium
+				amount = 400
+				state = 542
+			}
+			add_resource = {
+				type = chromium
+				amount = 150
+				state = 771
+			}
 			hidden_effect = {
 				news_event = { id = wtt_news.63 hours = 6 }
 				set_global_flag = form_mutapa_flag

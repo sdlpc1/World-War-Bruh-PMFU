@@ -925,6 +925,9 @@ default = {
 				"gfx/interface/technologies/tanks/sov/sov_assault_gun_2.dds"
 				"gfx/interface/technologies/tanks/sov/sov_assault_gun_4.dds"
 			}
+			models = {
+				"SOV_heavy_armor_entity"
+			}
 		}
 	}
 	sov_heavy_tank_chassis_is = {

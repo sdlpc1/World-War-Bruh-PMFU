@@ -1,5 +1,21 @@
 spriteTypes = {	
 
+	### TECH ###
+	SpriteType = {
+		name = "GFX_jaegers3_medium"
+		texturefile = "gfx/interface/technologies/jaegers3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_jaegers2_medium"
+		texturefile = "gfx/interface/technologies/jaegers2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_jaegers_medium"
+		texturefile = "gfx/interface/technologies/jaegers.dds"
+	}
+
     ## EVENTS
     spriteType = {
         name = "GFX_snek_event"
@@ -27,7 +43,10 @@ spriteTypes = {
 		name = "GFX_idea_ITA_mob_nav_workers"
 		texturefile = "gfx/interface/ideas/idea_ITA_mob_nav_workers.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_generic_rubber_refining"
+		texturefile = "gfx/interface/ideas/idea_generic_rubber_refining_idea.dds"
+	}
     ## FOCUS ICONS
     spriteType = {
 		name = "GFX_goal_ITA_expand_naval_dockyards"
@@ -48,39 +67,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_HOL_reinforce_papua"
 		texturefile = "gfx/interface/goals/hol/HOL_reinforce_papua.dds"
-	}	
-
-    SpriteType = {
-		name = "GFX_ITA_fortify_the_coast"
-		texturefile = "gfx/interface/goals/ITA_fortify_the_coast.dds"
-				effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA_fortify_the_coast.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA_fortify_the_coast.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}	
+	}		
 
     ## DIV ICONS
     spriteType = { ## 139 and up to use
@@ -123,8 +110,261 @@ spriteTypes = {
         name = "GFX_div_templ_143_small"
         textureFile = "gfx/interface/counters/division_templates_small/custom_template_fire.dds"
     }
+	spriteType = { 
+        name = "GFX_div_templ_065_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_065.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_065_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_065.dds"
+    }
+	spriteType = { 
+        name = "GFX_div_templ_066_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_066.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_066_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_066.dds"
+    }
+	spriteType = { 
+        name = "GFX_div_templ_067_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_067.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_067_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_067.dds"
+    }
+	spriteType = { 
+        name = "GFX_div_templ_068_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_068.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_068_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_068.dds"
+    }
+	spriteType = { 
+        name = "GFX_div_templ_069_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_069.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_069_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_069.dds"
+    }
+
+	spriteType = { name = "GFX_unit_jaeger_icon_medium"	textureFile = "gfx/interface/counters/divisions_large/unit_jaeger_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_jaeger_icon_medium_white"	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_jaeger_icon.dds" noOfFrames = 2}
+
+
+	### AUTONOMY ###
     spriteType = {
 		name = "GFX_autonomy_wtt_integrated_imperial_protectorate_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_imperial_protectorate.dds"
+	}
+
+	### TEXTICONS ###
+	spriteType = {
+		name = "GFX_nato_unit_jaeger_icon_small"
+		texturefile = "gfx/texticons/nato_unit_jaegers_icon_small.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_unit_jaeger_icon_small"
+		texturefile = "gfx/texticons/unit_jaegers_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	### SHINE ###
+	SpriteType = {
+		name = "GFX_goal_ITA_mobilize_nav_workers_shine"
+		texturefile = "gfx/interface/goals/ita/ITA_mobilize_nav_workers.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ita/ITA_mobilize_nav_workers.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ita/ITA_mobilize_nav_workers.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ITA_expand_naval_dockyards_shine"
+		texturefile = "gfx/interface/goals/ita/ITA_expand_naval_dockyards.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ita/ITA_expand_naval_dockyards.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ita/ITA_expand_naval_dockyards.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ITA_advanced_radar_shine"
+		texturefile = "gfx/interface/goals/ita/ITA_advanced_radar.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ita/ITA_advanced_radar.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ita/ITA_advanced_radar.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_HOL_reinforce_borneo_shine"
+		texturefile = "gfx/interface/goals/hol/HOL_reinforce_borneo.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/hol/HOL_reinforce_borneo.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/hol/HOL_reinforce_borneo.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_HOL_reinforce_papua_shine"
+		texturefile = "gfx/interface/goals/hol/HOL_reinforce_papua.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/hol/HOL_reinforce_papua.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/hol/HOL_reinforce_papua.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_fortify_the_coast"
+		texturefile = "gfx/interface/goals/ITA_fortify_the_coast.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA_fortify_the_coast.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA_fortify_the_coast.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
 	}
 }

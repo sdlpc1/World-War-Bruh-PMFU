@@ -1112,6 +1112,7 @@ technologies = {
 	
 		categories = {
 			rocketry
+			artillery
 		}
 	}
 
@@ -1145,6 +1146,7 @@ technologies = {
 
 		categories = {
 			rocketry
+			artillery
 		}
 	}
 	
@@ -1174,6 +1176,7 @@ technologies = {
 	
 		categories = {
 			rocketry
+			artillery
 		}
 	}
 
@@ -1198,6 +1201,7 @@ technologies = {
 
 		categories = {
 			rocketry
+			artillery
 		}
 	}
 

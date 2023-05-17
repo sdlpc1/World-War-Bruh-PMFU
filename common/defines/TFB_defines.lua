@@ -1,7 +1,7 @@
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 60				-- Days of client lag for decrease of gamespeed
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60				-- Days of client lag for pause of gamespeed.
-NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.15, 0.05, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.25, 0.15, 0.05, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 NDefines.NGame.EVENT_TIMEOUT_DEFAULT = 15						-- Default days before an event times out if not scripted
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 15		-- Default days before a mission is removed from the interface after having failed or completed
@@ -82,6 +82,7 @@ NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (whi
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.00016			-- num convoys needed per fuel land lease
+NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 1 --was 0.3  	-- 	Multiplied to the difference between a country intel and the maximum value in the alliance to compute the amount of intel that flows from the alliance to that country.
 -- NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0
 
 NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1	-- compliance factor that applies when the state controller changes (in between allies compliance is zeroed if it is taken by original country)
@@ -120,6 +121,7 @@ NDefines.NProduction.MIN_LAND_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0.05		
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 20 			--(from originally 10)
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150 				--(from originally 15)
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 20 				--(from originally 5)
+NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 10			-- (from originally 5)
 
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 75.0		-- Base amount of research points a country can save per slot.
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 6.0		-- Base year ahead penalty
@@ -542,6 +544,8 @@ NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 0					-- Number of political pow
 NDefines.NOperatives.BECOME_SPYMASTER_MIN_UPGRADES = 0			-- Number of agency upgrades you need before becoming Spy Master
 NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999						-- Number of days needed to create an intelligence agency
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
+NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 1				-- The minimum value of the highest VP in a state to consider the state as a valid target to start building an intel network
+NDefines.NOperatives.INTEL_NETWORK_MIN_STRENGTH_TO_TARGET = 1		-- 	The minimum value of the intel network in a state to consider it a valid target to deploy an operative in
 
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_FOCUS_TREE = 0.7 -- min required intel to focus tree with taken focuses
 NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.4  -- min required intel to show currently focus
@@ -556,6 +560,7 @@ NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_ABSOLUTE_MAXIMUMS =	{25, 25, 25, 
 NDefines.NIntel.RECON_PLANE_INTEL_BASE = 0.04 				-- intel base amount for a strategic area per plane
 NDefines.NIntel.RECON_PLANE_LAND_DISTRIBUTION = { 15.0, 10.0, 0.0, 10.0 }    -- controls for land and sea zones how much of each intel typee is given (civ, army, navy, air)
 NDefines.NIntel.RECON_PLANE_SEA_DISTRIBUTION = { 0.0, 0.0, 15.0, 0.0 }
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.1 			-- max combat bonus that will apply when intel is high enough
 
 NDefines.NSupply.CAPITAL_SUPPLY_CIVILIAN_FACTORIES = 0.2 -- supply from one civilian factory
 NDefines.NSupply.CAPITAL_SUPPLY_MILITARY_FACTORIES = 0.3 -- supply from one military factory

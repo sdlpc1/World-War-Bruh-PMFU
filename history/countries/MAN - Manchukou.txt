@@ -28,6 +28,7 @@ if = {
 	add_ideas = MAN_yamato-damashii
 	add_ideas = volunteer_minimum_minor
 	add_ideas = peace_training
+	add_ideas = minors_no_air
 }
 
 set_convoys = 5

@@ -79,6 +79,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_original
 	home_of_the_free_can
 	peace_training
+	minors_no_air
 }
 
 set_politics = {

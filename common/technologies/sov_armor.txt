@@ -779,6 +779,16 @@ technologies = {
 				medium_tank_aa_chassis = -4
 			}
 		}
+		light_tank_recon = {
+			need = {
+				light_tank_chassis = -8
+			}
+		}
+		armored_car_recon = {
+			need = {
+				armored_car_chassis = -8
+			}
+		}
 		# motorized = {			
 		# 	need = {
 		# 		motorized_equipment = -16

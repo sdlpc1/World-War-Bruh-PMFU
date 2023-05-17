@@ -159,6 +159,7 @@ if = {
 		CZE_skoda_works
 		CZE_divided_nation
 		peace_training
+		minors_no_air
 	}
 	give_guarantee = YUG
 	give_guarantee = ROM

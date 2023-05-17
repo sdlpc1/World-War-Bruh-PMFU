@@ -817,6 +817,82 @@ technologies = {
 		}
 	}
 
+	jaegers = {
+		enable_subunits = {
+			jaeger
+		}
+		# on_research_complete = {
+		# 	if = {
+		# 		limit = {
+		# 			NOT = {
+		# 				has_template_containing_unit = jaeger
+		# 			}
+		# 		}
+		# 		hidden_effect = {
+		# 			load_oob = "unlock_jaegers"
+		# 		}
+		# 		custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		# 	}
+		# }
+		path = {
+			leads_to_tech = jaegers2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1936
+		categories = {
+			year_1936
+			cat_special_forces_generic
+			jaeger_tech
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1936 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jaegers2 = {
+		jaeger = {
+			max_organisation = 5
+			# soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = jaegers3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+		start_year = 1939
+		categories = {
+			year_1939
+			cat_special_forces_generic
+			jaeger_tech
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1940 }
+		}
+	}
+
+	jaegers3 = {
+		jaeger = {
+			max_organisation = 5
+		}
+		research_cost = 2.0
+		start_year = 1942
+		categories = {
+			year_1942
+			cat_special_forces_generic
+			jaeger_tech
+		}
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = @1943 }
+		}
+	}
+
 	tech_special_forces = {
 		category_special_forces = {
 			acclimatization_hot_climate_gain_factor = 0.05
@@ -1830,6 +1906,7 @@ technologies = {
 		categories = {
 			motorized_equipment
 			armor
+			cat_armored_car
 		}
 		
 	}
@@ -1863,6 +1940,7 @@ technologies = {
 		categories = {
 			motorized_equipment
 			armor
+			cat_armored_car
 		}
 		
 	}
@@ -1892,6 +1970,7 @@ technologies = {
 		categories = {
 			motorized_equipment
 			armor
+			cat_armored_car
 		}
 
 	}

@@ -83,6 +83,7 @@ add_ideas = {
 	HOL_wilhelmina
 	neutrality_idea2
 	peace_training
+	minors_no_air
 }
 
 if = {

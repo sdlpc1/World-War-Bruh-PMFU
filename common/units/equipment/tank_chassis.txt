@@ -111,6 +111,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = extra_ammo_storage
+			count < 2
+		}
+		module_count_limit = {
 			module = auto_loader
 			count < 2
 		}
@@ -265,6 +269,10 @@ equipments = {
 
 		module_count_limit = {
 			module = easy_maintenance
+			count < 2
+		}
+		module_count_limit = {
+			module = extra_ammo_storage
 			count < 2
 		}
 		module_count_limit = {
@@ -563,6 +571,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = extra_ammo_storage
+			count < 2
+		}
+		module_count_limit = {
 			module = auto_loader
 			count < 2
 		}
@@ -704,6 +716,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = auto_loader
+			count < 2
+		}
+		module_count_limit = {
+			module = extra_ammo_storage
 			count < 2
 		}
 		module_count_limit = {
@@ -867,6 +883,10 @@ equipments = {
 
 		module_count_limit = {
 			module = easy_maintenance
+			count < 2
+		}
+		module_count_limit = {
+			module = extra_ammo_storage
 			count < 2
 		}
 		module_count_limit = {

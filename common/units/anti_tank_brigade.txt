@@ -33,6 +33,7 @@ sub_units = {
 		max_strength = 1
 		training_time = 120
 		weight = 0.5
+		maximum_speed = 0.25
 
 		supply_consumption = 0.08
 		supply_consumption_factor = 0.02
@@ -110,7 +111,7 @@ sub_units = {
 		supply_consumption = 0.08
 		supply_consumption_factor = 0.02
 		
-		maximum_speed = -0.125
+		# maximum_speed = -0.125
 
 		forest = {
 			attack = -0.1

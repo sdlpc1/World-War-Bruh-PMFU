@@ -117,6 +117,8 @@ technology_categories = {
 	year_1941
 	year_1942
 	year_1943
+	jaeger_tech
+	cat_armored_car
 }
 
 technology_folders = {

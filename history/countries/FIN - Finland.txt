@@ -18,6 +18,8 @@ add_ideas = {
 	sisu
 	PACIFIC_COMMONWEALTH_controls_axis_original
 	peace_training
+	minors_no_air
+	FIN_counter_intel
 }
 add_manpower = 80000
 

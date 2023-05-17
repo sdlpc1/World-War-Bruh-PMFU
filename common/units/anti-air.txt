@@ -40,6 +40,7 @@ sub_units = {
 		default_morale = 0.1
 		manpower = 300
 		weight = 0.1
+		maximum_speed = 0.25
 		
         supply_consumption = 0.1
 		
@@ -71,7 +72,7 @@ sub_units = {
 		combat_width = 0
 		training_time = 120
 		
-		maximum_speed = -0.25
+		# maximum_speed = -0.25
 
 		need = {
 			anti_air_equipment = 20

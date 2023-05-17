@@ -1849,7 +1849,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = support_folder
-			position = { x = -14 y = 21 }
+			position = { x = -14 y = 17 }
 		}
 
 		path = {
@@ -1858,9 +1858,14 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = armored_train
+			leads_to_tech = railway_gun
 			research_cost_coeff = 1
 		}
+
+		# path = {
+		# 	leads_to_tech = armored_train
+		# 	research_cost_coeff = 1
+		# }
 		
 		categories = {
 			train_tech
@@ -1936,7 +1941,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = -10 y = 23 }
+			position = { x = -14 y = 21 }
 		}
 		
 		categories = {
@@ -1967,62 +1972,62 @@ technologies = {
 		}
 	}
 
-	armored_train = {
-		enable_equipments = {
-			train_equipment_3
-		}
+	# armored_train = {
+	# 	enable_equipments = {
+	# 		train_equipment_3
+	# 	}
 
-		allow_branch = {
-			has_dlc = "No Step Back"
-		}
+	# 	allow_branch = {
+	# 		has_dlc = "No Step Back"
+	# 	}
 
-		path = {
-			leads_to_tech = railway_gun
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = railway_gun
+	# 		research_cost_coeff = 1
+	# 	}
 		
-		allow_branch = {
-			has_dlc = "No Step Back"
-		}
+	# 	allow_branch = {
+	# 		has_dlc = "No Step Back"
+	# 	}
 		
-		research_cost = 1.5
-		start_year = 1936
-		folder = {
-			name = support_folder
-			position = { x = -12 y = 20 }
-		}
+	# 	research_cost = 1.5
+	# 	start_year = 1936
+	# 	folder = {
+	# 		name = support_folder
+	# 		position = { x = -12 y = 20 }
+	# 	}
 		
-		categories = {
-			train_tech
-		}
+	# 	categories = {
+	# 		train_tech
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
+	# 	ai_will_do = {
+	# 		factor = 1
 			
-			modifier = {
-				has_war = yes
-				factor = 20
-			}
-			modifier = {
-				tag = GER
-				factor = 5
-			}
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 20
+	# 		}
+	# 		modifier = {
+	# 			tag = GER
+	# 			factor = 5
+	# 		}
+	# 		modifier = {
+	# 			factor = 1.2
+	# 			date > "1938.1.1"
+	# 		}
 			
-			modifier = {
-				factor = 1.2
-				date > "1939.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 1.2
+	# 			date > "1939.1.1"
+	# 		}
 			
-			modifier = {
-				factor = 1.2
-				date > "1940.1.1"
-			}
-		}
-	}
+	# 		modifier = {
+	# 			factor = 1.2
+	# 			date > "1940.1.1"
+	# 		}
+	# 	}
+	# }
 
 	railway_gun_2 = {
 		enable_equipments = {

@@ -22,7 +22,10 @@ host_decisions = {
 						days = 365
 					}
 				}
-
+				SOV = {
+					add_offsite_building = { type = arms_factory level = 10 }
+					army_experience = 50
+				}
 			}
 			every_other_country = {
 				limit = { original_tag = SPR }
@@ -54,7 +57,10 @@ host_decisions = {
 						days = 365
 					}
 				}			
-			}
+			}		
+			USA = {
+				add_offsite_building = { type = arms_factory level = 10 }
+			}	
 			JAP = {
 				annex_country = {
 					target = CHI

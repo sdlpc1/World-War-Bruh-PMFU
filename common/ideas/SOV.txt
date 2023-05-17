@@ -4292,6 +4292,12 @@ ideas = {
 				always = no # Added via event
 			}
 
+			cancel = {
+				MON = {
+					is_ai = yes
+				}
+			}
+
 			allowed_civil_war = {
 				has_government = communism
 			}
@@ -8127,7 +8133,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				medium_plane_airframe = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.1
 				}
 			}
@@ -8230,7 +8236,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				medium_plane_airframe = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.10
 				}
 			}
@@ -8269,7 +8275,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				medium_plane_airframe = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.10
 				}
 			}
@@ -8343,7 +8349,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				medium_plane_airframe = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.10
 				}
 			}

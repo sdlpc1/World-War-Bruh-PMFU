@@ -204,6 +204,13 @@
   SOV_caucasus_mines_desc:0 "The demands of the war economy require more and more rare materials. We should expand our mining facilities wherever possible"
   SOV_partisan_organisation:0 "Organise the Partisans"
   SOV_partisan_organisation_desc:0 "We must organize partisan movements in occupied territories to disrupt enemy logistics and cause chaos in the enemy's rear."
+  SOV_fighter_effort:0 "The LaGG-3"
+  SOV_fighter_effort2:0 "The Yak-3"
+  SOV_rubber_refining:0 "Rubber Refining"
+  SOV_synthetic_rubber_advancements:0 "Advancements in Synthetic Rubber"
+  SOV_winter_offensive:0 "Winter Offensive"
+  SOV_operation_uranus:0 "Operation Uranus"
+  SOV_operation_bagration:0 "Operation Bagration"
 
   #### EVENTS ####
   soviet.26.c1:0 "Zhukov and Tukhachevsky's Deep Battle ideas must be overturned."
@@ -276,6 +283,10 @@
   volunteer_minimum_major_desc:0 "§R30 division requirement for sending volunteers no longer exists"
   volunteer_minimum_minor:0 "4 Volunteers"
   volunteer_minimum_minor_desc:0 "§R30 division requirement for sending volunteers no longer exists"
+  SOV_rubber_refining:0 "Rubber Refining"
+  SOV_winter_offensive:0 "Winter Offensive"
+  SOV_uranus:0 "Operation Uranus"
+  SOV_bagration:0 "Operation Bagration"
 
   #### DESIGNER ####
   kharkiv:0 "Versatile Tank Desginer"
@@ -313,6 +324,10 @@
   SOV_move_capital_stalingrad:0 "Move Capital to Stalingrad"
   SOV_move_capital_moscow:0 "Return Capital to Moscow"
   SOV_move_capital_leningrad:0 "Move Capital to Leningrad"
+   SOV_move_capital_chelyabinsh:0 "Move Capital to Chelyabinsh"
+  SOV_move_capital_omsk:0 "Move Capital to Omsk"
+  SOV_move_capital_baku:0 "Move Capital to Baku"
+  SOV_move_capital_vladivostok:0 "Move Capital to Vladivostok"
   SOV_winter_war:0 "Subdue the Fins"
   SOV_winter_war_victory:0 "Force Finland to Accept Terms"
   SOV_winter_war_lessons:0 "Learn From Our Failures"
