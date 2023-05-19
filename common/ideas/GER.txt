@@ -2870,11 +2870,11 @@ ideas = {
 				unit_light_tank_destroyer_brigade_design_cost_factor = -1
 				unit_medium_tank_destroyer_brigade_design_cost_factor = -1
 				unit_heavy_tank_destroyer_brigade_design_cost_factor = -1
-				# unit_UNIT_design_cost_factor = 0
-				# unit_UNIT_design_cost_factor = 0
-				# unit_UNIT_design_cost_factor = 0
-				# unit_UNIT_design_cost_factor = 0
-				# unit_UNIT_design_cost_factor = 0
+				unit_jaeger_design_cost_factor = -1
+				# unit_UNIT_design_cost_factor = -1
+				# unit_UNIT_design_cost_factor = -1
+				# unit_UNIT_design_cost_factor = -1
+				# unit_UNIT_design_cost_factor = -1
 
 				## FREE SHIP AND AIR AND TANK DESIGNS
 				# air

@@ -1145,13 +1145,13 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General with §Y"Engineer Off
  STATE_843:0 "South Khartoum"
 
  ### UNITS ###
- jaegers:0"Jäger I"
- jaegers_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
- jaegers2:0"Jäger II"
- jaegers2_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
- jaegers3:0"Jäger III"
- jaegers3_desc:0"Jägers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train." 
- jaeger:0 "Jägers"
+ jaegers:0"Ranger I"
+ jaegers_desc:0"Rangers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+ jaegers2:0"Ranger II"
+ jaegers2_desc:0"Rangers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
+ jaegers3:0"Ranger III"
+ jaegers3_desc:0"Rangers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train." 
+ jaeger:0 "Rangers"
  
 # GAME RULES
  RULE_GROUP_TFB:0 "Custom TFB Game Rules"

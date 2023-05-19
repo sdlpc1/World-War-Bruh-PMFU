@@ -1363,6 +1363,9 @@ focus_tree = {
 		}
 
 		bypass = {
+			BUL = {
+				exists = no
+			}
 		}
 
 		cancel_if_invalid = yes
