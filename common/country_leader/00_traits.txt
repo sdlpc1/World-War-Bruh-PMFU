@@ -6522,7 +6522,7 @@ leader_traits = {
 				surface_visibility = -0.1 naval_speed = 0.1 hg_attack = -0.1
 			}
 			screen_ship = {
-				surface_visibility = -0.1 naval_speed = 0.1
+				surface_visibility = -0.05 naval_speed = 0.1
 			}
 			submarine = {
 				sub_visibility = -0.1 surface_visibility = -0.1 naval_speed = 0.1
