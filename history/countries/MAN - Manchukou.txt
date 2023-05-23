@@ -10,7 +10,7 @@ set_technology = {
 	gw_artillery = 1
 	support_weapons = 1
 	basic_train = 1
-	
+	hq_1 = 1
 }
 
 set_research_slots = 5
@@ -26,6 +26,10 @@ if = {
 	add_ideas = MAN_low_legitimacy_5
 	add_ideas = MAN_opium_plantations
 	add_ideas = MAN_yamato-damashii
+	add_ideas = volunteer_minimum_minor
+	add_ideas = peace_training
+	add_ideas = minors_no_air
+	add_ideas = no_grinding
 }
 
 set_convoys = 5
@@ -40,10 +44,12 @@ set_popularities = {
 	neutrality = 20
 }
 
-recruit_character = MAN_zhang_jinghui
+# MP_garrison_division_standard = yes
+
+# recruit_character = MAN_zhang_jinghui
 recruit_character = MAN_zhang_haipeng
-recruit_character = MAN_aisin_gioro_xiqia
-recruit_character = MAN_yoshiko_kawashima
+# recruit_character = MAN_aisin_gioro_xiqia
+# recruit_character = MAN_yoshiko_kawashima
 recruit_character = MAN_tong_xingde
 recruit_character = MAN_sonin_shangzhi
 recruit_character = MAN_megata_toshiro
@@ -60,6 +66,11 @@ recruit_character = MAN_hesehn_tiemei
 recruit_character = MAN_hung_zhehuang
 recruit_character = MAN_xian_yuan
 recruit_character = MAN_deng_linge
+# recruit_character = MAN_um_lai_tung
+recruit_character = MAN_sum_ting_wong
+recruit_character = MAN_ho_lee_fuk
+recruit_character = MAN_hu_ren_sun
+recruit_character = MAN_kam_in_mie
 
 1939.1.1 = {
 }

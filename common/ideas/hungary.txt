@@ -1,7 +1,27 @@
 ideas = {
 
 	country = {
-	
+		
+		axis_trade_treaty = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
 		HUN_ger_air_advisors = {
 
 			allowed = {

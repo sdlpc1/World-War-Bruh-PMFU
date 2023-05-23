@@ -1,3 +1,15 @@
+#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
 focus_tree = {
 	id = finland_focus
 	
@@ -877,14 +889,14 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = medium_plane_airframe
-				amount = 100
+				amount = 200
 				producer = GER
 			}
-			add_equipment_to_stockpile = {
-				type = large_plane_airframe
-				amount = 100
-				producer = GER
-			}
+			# add_equipment_to_stockpile = {
+			# 	type = large_plane_airframe
+			# 	amount = 100
+			# 	producer = GER
+			# }
 		}
 	}
 	

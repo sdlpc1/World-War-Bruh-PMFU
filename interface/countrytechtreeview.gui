@@ -533,8 +533,15 @@ guiTypes = {
 			}
 
 			gridboxtype = {
+				name = "jaegers_tree"
+				position = { x = 1840 y = 300 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
 				name = "tech_special_forces_tree"
-				position = { x = 1840 y = 450 }
+				position = { x = 1940 y = 450 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
@@ -649,7 +656,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_subtitle_trains"
-					position = { x = 1545 y = 100 }
+					position = { x = 1415 y = 100 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -4580,21 +4587,21 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 	
-				# instantTextBoxType = {
-				# 	name = "airtech_year6"
-				# 	position = { x = 60 y = 858 }
-				# 	textureFile = ""
-				# 	font = "hoi_36header"
-				# 	borderSize = {x = 0 y = 4}
-				# 	text = "1945"
-				# 	maxWidth = 170
-				# 	maxHeight = 32
-				# 	format = right
-				# 	Orientation = "UPPER_LEFT"
-				# }
-	
 				instantTextBoxType = {
 					name = "airtech_year7"
+					position = { x = 60 y = 858 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1945"
+					maxWidth = 170
+					maxHeight = 32
+					format = right
+					Orientation = "UPPER_LEFT"
+				}
+	
+				instantTextBoxType = {
+					name = "airtech_year8"
 					position = { x = 60 y = 998 }
 					textureFile = ""
 					font = "hoi_36header"

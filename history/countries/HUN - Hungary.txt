@@ -20,6 +20,8 @@ set_technology = {
 	basic_train = 1
 }
 
+# MP_garrison_division_standard = yes
+
 add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
 
 if = {
@@ -30,6 +32,10 @@ if = {
 		disarmed_nation
 		HUN_treaty_of_triannon
 		HUN_hussar_legacy
+		volunteer_minimum_minor
+		peace_training
+		minors_no_air
+		no_grinding
 	}
 }
 set_variable = { axis_poster_center_icon_frame = 1 }
@@ -115,6 +121,7 @@ recruit_character = HUN_jeno_ratz
 recruit_character = HUN_henrik_werth
 recruit_character = HUN_shvoy_kalman
 recruit_character = HUN_gyorgy_jendrassik
+recruit_character = HUN_laszlo_hollosy_kuthy
 
 1939.1.1 = {
 	if = {

@@ -4,14 +4,12 @@ oob = "JAP_1936"
 
 set_stability = 0.5
 set_war_support = 0.8
-
 set_research_slots = 6
 set_fuel_ratio = 1.0
 add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-
 	JAP_hirohito
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
@@ -20,7 +18,17 @@ add_ideas = {
 	JAP_bushido_spirit
 	JAP_gekokoju
 	JAP_island_hopping8
+	volunteer_minimum_major
+	JAP_no_equipment_capture
+	peace_training
+	no_grinding
 }
+
+create_intelligence_agency = {
+    name = "G-2 Department"
+}
+
+# MP_garrison_division_standard = yes
 
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
@@ -199,11 +207,11 @@ if = {
 	}
 	# set_autonomy = {
 	# 	target = MEN
-	# 	autonomous_state = autonomy_wtt_imperial_protectorate
+	# 	autonomous_state = autonomy_wtt_integrated_imperial_protectorate
 	# }
 	set_autonomy = {
 		target = MAN
-		autonomous_state = autonomy_wtt_imperial_protectorate
+		autonomous_state = autonomy_wtt_integrated_imperial_protectorate
 	}
 }
 
@@ -221,6 +229,8 @@ set_popularities = {
 
 create_faction = "Dai Tōa Kyōeiken"
 
+JAP = { add_to_faction = SIA }
+
 
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda
@@ -233,24 +243,24 @@ recruit_character = JAP_shizuichi_tanaka
 recruit_character = JAP_yasuji_okamura
 recruit_character = JAP_toshizo_nishio
 recruit_character = JAP_rikichi_ando
-recruit_character = JAP_naruhiko_higashikuni
+# recruit_character = JAP_naruhiko_higashikuni
 recruit_character = JAP_seishiro_itagaki
-recruit_character = JAP_takashi_sakai
+# recruit_character = JAP_takashi_sakai
 recruit_character = JAP_kenji_doihara
 recruit_character = JAP_kenkichi_ueda
 recruit_character = JAP_shigeru_honjo
-recruit_character = JAP_otozo_yamada
+# recruit_character = JAP_otozo_yamada
 recruit_character = JAP_hatazo_adachi
-recruit_character = JAP_iwane_matsui
-recruit_character = JAP_sadao_araki
+# recruit_character = JAP_iwane_matsui
+# recruit_character = JAP_sadao_araki
 recruit_character = JAP_keisuke_fujie
-recruit_character = JAP_kiichiro_higuchi
-recruit_character = JAP_masaharu_homma
-recruit_character = JAP_harukichi_hyakutake
-recruit_character = JAP_jo_iimura
+# recruit_character = JAP_kiichiro_higuchi
+# recruit_character = JAP_masaharu_homma
+# recruit_character = JAP_harukichi_hyakutake
+# recruit_character = JAP_jo_iimura
 recruit_character = JAP_hitoshi_imamura
-recruit_character = JAP_masatane_kanda
-recruit_character = JAP_kuniaki_koiso
+# recruit_character = JAP_masatane_kanda
+# recruit_character = JAP_kuniaki_koiso
 recruit_character = JAP_isoroku_yamamoto
 recruit_character = JAP_mineichi_koga
 recruit_character = JAP_kiyoshi_hasegawa
@@ -290,6 +300,7 @@ recruit_character = JAP_yoshitoshi_tokugawa
 recruit_character = JAP_hino_kumazo
 recruit_character = JAP_yoshio_nishina
 recruit_character = JAP_hideo_itokawa
+# recruit_character = JAP_yoshijiro_umezu
 
 if = {
 	limit = {
@@ -1093,6 +1104,10 @@ if = {
 				}
 			}
 		}	
+	}
+
+	1936.1.1.13 = {
+		set_global_flag = NO_ASIA
 	}
 	
 	# AXIS

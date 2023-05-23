@@ -1,3 +1,15 @@
+#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
 focus_tree = {
 	id = siam_focus
 	
@@ -102,12 +114,12 @@ focus_tree = {
             create_field_marshal = {
                 name = "Phraya Songsuradet"
                 portrait_path = "gfx/leaders/SIA/Phraya_Sonsuradet.dds"
-                traits = { trickster jungle_rat }
-                skill = 3
-                attack_skill = 4
-                defense_skill = 2
+                traits = { trickster jungle_rat organizer }
+                skill = 4
+                attack_skill = 5
+                defense_skill = 3
                 planning_skill = 2
-                logistics_skill = 3
+                logistics_skill = 4
             }
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = SIA_songsuradet
@@ -207,6 +219,7 @@ focus_tree = {
                 CONTROLLER = { 					
                         OR = {
                             tag = JAP 
+							tag = SIA
                             is_subject_of = JAP
                             }
                         }
@@ -217,6 +230,7 @@ focus_tree = {
                 CONTROLLER = { 					
                             OR = {
                                 tag = JAP 
+								tag = SIA
                                 is_subject_of = JAP
                           }
                 }

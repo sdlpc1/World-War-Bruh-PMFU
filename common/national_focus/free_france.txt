@@ -1,4 +1,16 @@
-﻿focus_tree = {
+﻿#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
+focus_tree = {
 	id = free_french_focus
 	
 	country = {
@@ -29,10 +41,6 @@
 			factor = 1
 		}
 		
-		available = {
-			has_completed_focus = FRA_refus_absurde
-		}
-
 		bypass = {
 
 		}
@@ -85,8 +93,12 @@
 					amount = 280
 			}
 			add_equipment_to_stockpile = {
-				type = train_equipment_1
-				amount = 25
+				type = train_equipment
+				amount = 50
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 250
 			}
 		}
 	}
@@ -488,18 +500,7 @@
 			factor = 1
 		}
 		available = {
-			if = {
-				limit = {
-					has_global_flag = FRA_mainland
-				}
-			date > 1940.1.1
-			}
-			# if = {
-			# 	limit = {
-			# 		has_global_flag = FRA_mainland_2
-			# 	}
-			# date > 1941.1.1
-			# }
+			
 		}
 		
 		bypass = {
@@ -568,7 +569,7 @@
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 250
+				amount = 50
 			}
 			create_navy_leader = {
 				name = "Emilie Muselier"
@@ -804,7 +805,7 @@
 				}
 
 			}			
-			custom_effect_tooltip = FRA_increase_armor_tech_tt
+			custom_effect_tooltip = FRA_increase_armor_tt
 		}
 	}
 	focus = {
@@ -860,7 +861,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = { FRA_special_forces_spirit }
+			add_ideas = { FRA_special_forces }
 		}
 	}
 	focus = {

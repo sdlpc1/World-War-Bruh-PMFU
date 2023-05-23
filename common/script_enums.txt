@@ -55,10 +55,12 @@ script_enum_equipment_bonus_type = {
 	artillery
 	pack_artillery_equipment
 	dp_artillery_equipment
+	dp_artillery_equipment_2
 	anti_tank_equipment_squeeze
 	heavy_anti_air_equipment
 	heavy_anti_tank_equipment
 	heavy_artillery_equipment
+    special_forces
 
 	amphibious_mechanized_equipment
 	armored_car_equipment
@@ -82,7 +84,7 @@ script_enum_equipment_bonus_type = {
 	heavy_tank_artillery_equipment
 
 	light_tank_destroyer_equipment
-	medium_tank_destroyer_equipment
+	medium_tank_artillery_equipment
 	heavy_tank_destroyer_equipment
 
 	light_tank_aa_equipment
@@ -129,7 +131,7 @@ script_enum_equipment_bonus_type = {
 	medium_tank_aa_chassis 
 	heavy_tank_chassis 
 	heavy_tank_destroyer_chassis 
-	heavy_tank_artillery_chassis 
+	heavy_tank_artillery_chassis
 
 	## Sea
 	ship_hull_light

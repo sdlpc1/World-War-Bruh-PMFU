@@ -17,6 +17,9 @@ set_technology = {
 	transport = 1
 	fuel_silos = 1
 }
+
+add_ideas = peace_training
+
 #set_variable = { allies_poster_center_icon_frame = 1 }
 if = {
 	limit = {
@@ -45,6 +48,8 @@ if = {
 		basic_battery = 1
 	}
 }
+
+# MP_garrison_division_standard = yes
 
 set_convoys = 25
 set_popularities = {
@@ -307,22 +312,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # LUX
-add_operation_token = {
-	tag = LUX
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_navy_friendly
+# }
 # DEN
 add_operation_token = {
 	tag = DEN
@@ -477,22 +482,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # PHI
-add_operation_token = {
-	tag = PHI
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_navy_friendly
+# }
 # AST
 add_operation_token = {
 	tag = AST

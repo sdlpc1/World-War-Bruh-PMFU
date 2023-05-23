@@ -1,8 +1,16 @@
 ﻿capital = 361
-
+1936.1.1.13 = {
+	set_oob = "USA_1936_NA"
+}
 oob = "USA_1936"
 
 starting_train_buffer = 5
+
+# MP_garrison_division_standard = yes
+
+create_intelligence_agency = {
+    name = "Office of Strategic Services"
+}
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -71,6 +79,17 @@ set_variable = { USA_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLO
 set_variable = { USA_poster_left_icon_frame = USA_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
 set_variable = { USA_poster_center_icon_frame = USA_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+set_variable = { USA_Marine_Corps_division_cap = 0 }
+set_variable = { USA_Marine_Corps_increase = 1 }
+set_variable = { USA_Marine_Corps_increase_double = 2 }
+set_variable = { US_Airborne_division_cap = 0 }
+set_variable = { US_Airborne_increase = 1 }
+set_variable = { US_Airborne_increase_double = 2 }
+
+
+set_country_flag = USA_Marine_Corps_division_standard
+set_country_flag = US_Airborne_division_standard
+
 USA_recalc_congress_icon_frames = yes
 # USA = {
 # 	country_event = { id = usa.50 days = 2 }
@@ -92,6 +111,7 @@ set_technology = {
 	tech_signal_company = 1
 	usa_light_tank_1 = 1
 	gw_artillery = 1
+	jaegers = 1
 	
 	
 	superior_firepower = 1
@@ -197,14 +217,16 @@ add_ideas = {
 	new_deal
 	USA_armed_forces_desegregation
 	bureau_of_ordnance_spirit
+	peace_training
+	no_grinding
 }
 
 
 # DIPLOMACY
-set_autonomy = {
-	target = PHI
-	autonomous_state =  autonomy_puppet
-}
+# set_autonomy = {
+# 	target = PHI
+# 	autonomous_state =  autonomy_puppet
+# }
 
 recruit_character = USA_franklin_delano_roosevelt
 recruit_character = USA_william_dudley_pelley
@@ -214,25 +236,25 @@ recruit_character = USA_geoffrey_keyes
 recruit_character = USA_lucian_truscott
 recruit_character = USA_mark_clark
 recruit_character = USA_douglas_macarthur
-recruit_character = USA_walter_krueger
-recruit_character = USA_lloyd_fredendall
+# recruit_character = USA_walter_krueger
+# recruit_character = USA_lloyd_fredendall
 recruit_character = USA_leslie_mcnair
-recruit_character = USA_jonathan_wainwright
-recruit_character = USA_russell_hartle
+# recruit_character = USA_jonathan_wainwright
+# recruit_character = USA_russell_hartle
 recruit_character = USA_leonard_gerow
 recruit_character = USA_edward_brooks
 recruit_character = USA_clarence_huebner
 recruit_character = USA_alexander_patch
 recruit_character = USA_william_simpson
 recruit_character = USA_courtney_hodges
-recruit_character = USA_joseph_stilwell
-recruit_character = USA_oscar_griswold
-recruit_character = USA_maurice_rose
+# recruit_character = USA_joseph_stilwell
+# recruit_character = USA_oscar_griswold
+# recruit_character = USA_maurice_rose
 recruit_character = USA_ernest_king
 recruit_character = USA_frank_jack_fletcher
 recruit_character = USA_harold_rainsford_stark
 recruit_character = USA_arleigh_burke
-recruit_character = USA_george_s._patton
+# recruit_character = USA_george_s._patton
 recruit_character = USA_dwight_d._eisenhower
 recruit_character = USA_j._lawton_collins
 recruit_character = USA_chester_w._nimitz
@@ -1039,22 +1061,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # LUX
-add_operation_token = {
-	tag = LUX
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_navy_friendly
+# }
 # DEN
 add_operation_token = {
 	tag = DEN
@@ -1226,22 +1248,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # PHI
-add_operation_token = {
-	tag = PHI
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_navy_friendly
+# }
 # AST
 add_operation_token = {
 	tag = AST

@@ -2,6 +2,8 @@
 set_stability = 0.4
 set_war_support = 0.4
 
+# MP_garrison_division_standard = yes
+
 oob = "SIA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -20,6 +22,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	basic_train = 1
+	hq_1 = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -42,6 +45,13 @@ if = {
 }
 set_convoys = 15
 
+add_ideas = {
+	volunteer_minimum_minor
+	peace_training
+	SIA_trade_treaty_with_jap
+	minors_no_air
+	no_grinding
+}
 
 set_politics = {
 	ruling_party = neutrality
@@ -76,6 +86,7 @@ recruit_character = SIA_decisive_battle
 recruit_character = SIA_all_weather
 recruit_character = SIA_wichit_wichitwathakarn
 recruit_character = SIA_army_regrouping
+recruit_character = SIA_chao_phraya_surasakmontri
 
 1939.1.1 = {
 	set_politics = {

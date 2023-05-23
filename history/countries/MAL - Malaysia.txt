@@ -10,7 +10,6 @@ recruit_character = MAL_lai_teck
 recruit_character = MAL_ibrahim_hj_yaacob
 recruit_character = MAL_winston_tyron
 
-
 # Starting tech
 # clone of UK
 set_technology = {
@@ -35,6 +34,10 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	radio_detection = 1
 }
+
+add_ideas = peace_training
+
+# MP_garrison_division_standard = yes
 
 if = {
 	limit = {
@@ -317,22 +320,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # LUX
-add_operation_token = {
-	tag = LUX
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_navy_friendly
+# }
 # DEN
 add_operation_token = {
 	tag = DEN
@@ -487,22 +490,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # PHI
-add_operation_token = {
-	tag = PHI
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_navy_friendly
+# }
 # AST
 add_operation_token = {
 	tag = AST

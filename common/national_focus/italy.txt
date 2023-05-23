@@ -1,4 +1,16 @@
-﻿focus_tree = {
+﻿#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
+focus_tree = {
 	id = italian_focus
 
 	country = {
@@ -31,7 +43,8 @@
 		}
 
 		completion_reward = {
-			add_political_power = 150
+			# add_political_power = 150
+			add_ideas = war_economy
 		}
 	}
 
@@ -472,15 +485,15 @@
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -489,15 +502,15 @@
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
-							size > 1
+							size > 2
 							include_locked = yes
 						}
 						is_core_of = HUN
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -538,7 +551,32 @@
 					instant_build = yes
 				}
 			}
-			BUL = {
+			if = {
+				limit = {
+					BUL = {
+						exists = yes
+					}
+				}
+				BUL = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 2
+								include_locked = yes
+							}
+							is_core_of = BUL
+						}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			else = {
 				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
@@ -680,7 +718,7 @@
 			162 = {
 				add_resource = {
 					type = steel
-					amount = 350
+					amount = 500
 				}
 			}
 		}
@@ -842,6 +880,14 @@
 					}
 				}
 			}
+			663 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
 		}
 
 		available_if_capitulated = yes
@@ -886,6 +932,28 @@
 					type = naval_base
 					level = 3
 					province = 12991
+					instant_build = yes
+				}
+			}
+			# airports
+			663 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			451 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			450 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -961,6 +1029,14 @@
 					}
 				}
 			}
+			449 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
 		}
 
 		available_if_capitulated = yes
@@ -969,18 +1045,26 @@
 
 		completion_reward = {
 			448  = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			450  = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
+					instant_build = yes
+				}
+			}
+			449  = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1085,64 +1169,64 @@
 			663  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			449  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			451  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			661  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			662  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			448  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 
-			build_railway = {
-				path = { 1149 4194 7209 9980 1118 1041 4047 10046 10117 12088 4057 }
-			}
-			build_railway = {
-				path = { 4057 1198 1127 4120 }
-			}
-			build_railway = {
-				path = { 11954 4120 1062 4063 }
-			}
-			build_railway = {
-				path = { 4063 1204 7082 9992 1130 }
-			}
-			build_railway = {
-				path = { 4063 1204 7082 9992 1130 }
-			}
-			build_railway = {
-				path = { 1130 4136 10120 }
-			}
+			# build_railway = {
+			# 	path = { 1149 4194 7209 9980 1118 1041 4047 10046 10117 12088 4057 }
+			# }
+			# build_railway = {
+			# 	path = { 4057 1198 1127 4120 }
+			# }
+			# build_railway = {
+			# 	path = { 11954 4120 1062 4063 }
+			# }
+			# build_railway = {
+			# 	path = { 4063 1204 7082 9992 1130 }
+			# }
+			# build_railway = {
+			# 	path = { 4063 1204 7082 9992 1130 }
+			# }
+			# build_railway = {
+			# 	path = { 1130 4136 10120 }
+			# }
 		}
 	}
 	
@@ -1517,10 +1601,10 @@
 	}
 	
 	focus = {
-		id = ITA_synthetic_oil
-		icon = GFX_goal_generic_construct_civilian
+		id = ITA_build_naval_facilities
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = ITA_economic_independence }
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = ITA_economic_independence
 		cost = 5
@@ -1528,86 +1612,100 @@
 			factor = 1
 		}
 
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ITA_develop_advanced_radar
+		icon = GFX_goal_ITA_advanced_radar
+		prerequisite = { focus = ITA_build_naval_facilities }
+		x = 2
+		y = 1
+		relative_position_id = ITA_build_naval_facilities
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = ITA_autarky
+				name = ITA_develop_advanced_radar
 				bonus = 0.75
-				uses = 1
-				category = synth_resources
+				uses = 2
+				category = radar_tech
 			}
 		}
 	}
 	
 	focus = {
-		id = ITA_coal_liquification
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = ITA_synthetic_oil }
-		x = -1
+		id = ITA_mobilize_naval_workers
+		icon = GFX_goal_ITA_mobilize_nav_workers
+		prerequisite = { focus = ITA_build_naval_facilities }
+		x = 0
 		y = 1
-		relative_position_id = ITA_synthetic_oil
+		relative_position_id = ITA_build_naval_facilities
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = ITA_autarky
-				bonus = 0.5
-				uses = 2
-				technology = oil_processing
-				technology = improved_oil_processing
-				technology = advanced_oil_processing
-				technology = modern_oil_processing
-			}
+			add_ideas = ITA_mobilized_naval_workers
 		}
 	}
 	
 	focus = {
-		id = ITA_synthetic_rubber
-		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = ITA_synthetic_oil }
-		x = 1
+		id = ITA_expand_naval_dockyards
+		icon = GFX_goal_ITA_expand_naval_dockyards
+		prerequisite = { focus = ITA_mobilize_naval_workers }
+		x = 0
 		y = 1
-		relative_position_id = ITA_synthetic_oil
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = ITA_autarky
-				bonus = 0.5
-				uses = 2
-				technology = rubber_processing
-				technology = improved_rubber_processing
-				technology = advanced_rubber_processing
-				technology = modern_rubber_processing
-			}
-		}
-	}
-	
-	focus = {
-		id = ITA_refinery_construction
-		icon = GFX_goal_generic_oil_factory
-		prerequisite = { focus = ITA_synthetic_rubber }
-		prerequisite = { focus = ITA_coal_liquification }
-		x = -1
-		y = 1
-		relative_position_id = ITA_synthetic_rubber
+		relative_position_id = ITA_mobilize_naval_workers
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1621,7 +1719,7 @@
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
-						building = industrial_complex
+						building = dockyard
 						size > 2
 						include_locked = yes
 					}
@@ -1629,7 +1727,7 @@
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = synthetic_refinery
+					type = dockyard
 					level = 2
 					instant_build = yes
 				}
@@ -1637,7 +1735,7 @@
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
-						building = industrial_complex
+						building = dockyard
 						size > 2
 						include_locked = yes
 					}
@@ -1645,23 +1743,7 @@
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = synthetic_rubber_refinery
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = synthetic_rubber_refinery
+					type = dockyard
 					level = 2
 					instant_build = yes
 				}
@@ -1744,91 +1826,91 @@
 			158 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			159 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			39 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			160 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			161 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			162 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			157 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			2 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			117 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			156 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			115 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			114 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			736 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1940,91 +2022,91 @@
 			158 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			159 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			39 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			160 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			161 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			162 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			157 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			2 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			117 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			156 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			115 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			114 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			736 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2275,6 +2357,7 @@
 					}
 				}
 			}
+			date > 1936.5.1
 		}
 
 		available_if_capitulated = yes
@@ -2388,6 +2471,9 @@
 		completion_reward = {
 			remove_ideas = ITA_neutrality_idea
 			add_to_tech_sharing_group = axis_research
+			GER = {
+				country_event = generic.2
+			}
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = ITA_vincere_prop
 		}
@@ -2439,6 +2525,10 @@
 
 		bypass = {
 			NOT = { country_exists = YUG }
+			105 = { CONTROLLER = { tag = ITA} }
+			802 = { CONTROLLER = { tag = ITA} }
+			108 = { CONTROLLER = { tag = ITA} }
+			107 = { CONTROLLER = { tag = ITA} }
 		}
 
 		completion_reward = {
@@ -2466,7 +2556,7 @@
 					OR = {
 						tag = GER
 						AND = {
-							original_tag = FRA
+							original_tag = VIC
 							has_government = fascism
 						}
 						is_subject_of = GER
@@ -2480,7 +2570,7 @@
 						OR = {
 							tag = GER
 							AND = {
-								original_tag = FRA
+								original_tag = VIC
 								has_government = fascism
 							}
 							is_subject_of = GER
@@ -2492,7 +2582,7 @@
 						OR = {
 							tag = GER
 							AND = {
-								original_tag = FRA
+								original_tag = VIC
 								has_government = fascism
 							}
 							is_subject_of = GER
@@ -2504,7 +2594,7 @@
 						OR = {
 							tag = GER
 							AND = {
-								original_tag = FRA
+								original_tag = VIC
 								has_government = fascism
 							}
 							is_subject_of = GER
@@ -2516,7 +2606,7 @@
 						OR = {
 							tag = GER
 							AND = {
-								original_tag = FRA
+								original_tag = VIC
 								has_government = fascism
 							}
 							is_subject_of = GER
@@ -3010,10 +3100,19 @@
 		}
 		
 		completion_reward = {
-			every_controlled_state = {
-				limit = {
-					is_core_of = EGY
-				}
+			452 = {
+				add_compliance = 5
+			}
+			453 = {
+				add_compliance = 5
+			}
+			454 = {
+				add_compliance = 5
+			}
+			446 = {
+				add_compliance = 5
+			}
+			447 = {
 				add_compliance = 5
 			}
 		}
@@ -3033,17 +3132,84 @@
 		}
 		
 		available = {
-			any_state = {
-				is_core_of = MOR
-				is_fully_controlled_by = ITA
+			462 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			461 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			459 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			513 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			460 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			458 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			665 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
 			}
 		}
 		
 		completion_reward = {
-			every_controlled_state = {
-				limit = {
-					is_core_of = MOR
-				}
+			462 = {
+				add_compliance = 5
+			}
+			461 = {
+				add_compliance = 5
+			}
+			459 = {
+				add_compliance = 5
+			}
+			513 = {
+				add_compliance = 5
+			}
+			460 = {
+				add_compliance = 5
+			}
+			458 = {
+				add_compliance = 5
+			}
+			665 = {
 				add_compliance = 5
 			}
 		}
@@ -3063,17 +3229,51 @@
 		}
 		
 		available = {
-			any_state = {
-				is_core_of = SYR
-				is_fully_controlled_by = ITA
+			680 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			677 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			554 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
+			}
+			553 = {
+				CONTROLLER = {
+					OR = {
+						tag = ITA
+						is_subject_of = ITA
+					}
+				}
 			}
 		}
 		
 		completion_reward = {
-			every_controlled_state = {
-				limit = {
-					is_core_of = SYR
-				}
+			680 = {
+				add_compliance = 5
+			}
+			677 = {
+				add_compliance = 5
+			}
+			554 = {
+				add_compliance = 5
+			}
+			553 = {
 				add_compliance = 5
 			}
 		}
@@ -3222,6 +3422,7 @@
 				has_war_with = FRA
 				has_war_with = SOV
 			}
+			date > 1936.5.1
 		}
 
 		available_if_capitulated = yes
@@ -3349,6 +3550,13 @@
 
 		completion_reward = {
 			add_ideas = ITA_shock_tactics
+			hidden_effect = {
+				every_army_leader={
+					add_trait = {
+     					trait = five_terrain_penalty_reduction
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -3561,7 +3769,7 @@
 		}
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 		}
 
 		available_if_capitulated = yes
@@ -3573,10 +3781,10 @@
 				add_idea = ITA_old_guard_ino_1
 				remove_idea = ITA_old_guard_base
 			}
-			add_timed_idea = {
-				idea = ITA_reforming
-				days = 180
-			}
+			# add_timed_idea = {
+			# 	idea = ITA_reforming
+			# 	days = 180
+			# }
 			every_army_leader = {
 				limit = {				
 					has_trait = old_guard
@@ -3601,7 +3809,7 @@
 		available_if_capitulated = yes
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3611,10 +3819,10 @@
 				remove_idea = ITA_old_guard_ino_1
 				add_idea = ITA_old_guard_ino_2
 			}
-			add_timed_idea = {
-				idea = ITA_reforming
-				days = 180
-			}
+			# add_timed_idea = {
+			# 	idea = ITA_reforming
+			# 	days = 180
+			# }
 		}
 	}
 	
@@ -3633,7 +3841,7 @@
 		available_if_capitulated = yes
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 			is_in_faction_with = GER
 		}
 
@@ -3641,10 +3849,10 @@
 
 		completion_reward = {
 			add_ideas = ITA_general_staff_idea
-			add_timed_idea = {
-				idea = ITA_reforming
-				days = 180
-			}
+			# add_timed_idea = {
+			# 	idea = ITA_reforming
+			# 	days = 180
+			# }
 		}
 	}
 	
@@ -3663,23 +3871,23 @@
 		available_if_capitulated = yes
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			remove_ideas = ITA_incompetent_officers
-			add_timed_idea = {
-				idea = ITA_reforming
-				days = 180
-			}
+			# add_timed_idea = {
+			# 	idea = ITA_reforming
+			# 	days = 180
+			# }
 		}
 	}
 	
 	focus = {
 		id = ITA_promote_messe
-		icon = GFX_goal_ita_tankini_messe
+		icon = GFX_goal_ita_tankini_mario
 		prerequisite = { focus = ITA_new_ncos }
 		x = 0
 		y = 1
@@ -3692,18 +3900,18 @@
 		available_if_capitulated = yes
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = ITA_giovanni_messe2
-			add_timed_idea = {
-				idea = ITA_reforming
-				days = 180
-			}
+			show_ideas_tooltip = ITA_mario_federico2
+			# add_timed_idea = {
+			# 	idea = ITA_reforming
+			# 	days = 180
+			# }
 		}
 	}
 	
@@ -3723,7 +3931,7 @@
 		available_if_capitulated = yes
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -4821,99 +5029,70 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
+			164 = { #rhodes
+				# limit = {
+				# 	free_building_slots = {
+				# 		building = air_base
+				# 		size > 4
+				# 		include_locked = yes
+				# 	}
+				# }
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
+			448 = { #tripoli
+				# limit = {
+				# 	free_building_slots = {
+				# 		building = air_base
+				# 		size > 4
+				# 		include_locked = yes
+				# 	}
+				# }
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
+			114 = { #sardinia
+				# limit = {
+				# 	free_building_slots = {
+				# 		building = air_base
+				# 		size > 4
+				# 		include_locked = yes
+				# 	}
+				# }
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
+			156 = { #calabria
+				# limit = {
+				# 	free_building_slots = {
+				# 		building = air_base
+				# 		size > 4
+				# 		include_locked = yes
+				# 	}
+				# }
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
+			158 = { #piedmont
+				# limit = {
+				# 	free_building_slots = {
+				# 		building = air_base
+				# 		size > 2
+				# 		include_locked = yes
+				# 	}
+				# }
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -5160,6 +5339,7 @@
 						size > 3
 						include_locked = yes
 					}
+					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -5175,6 +5355,7 @@
 						size > 3
 						include_locked = yes
 					}
+					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -5183,6 +5364,293 @@
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = ITA_fortify_the_coast
+		icon = GFX_ITA_fortify_the_coast
+		x = 1
+		y = 2
+		relative_position_id = ITA_focus_mil_expansion
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_INDUSTRY}
+
+        available = {
+		    any_enemy_country = {
+			    has_full_control_of_state = 450
+			}	
+		}
+
+		allow_branch = {
+			has_game_rule = {
+				rule = italian_costal_forts_focus
+				option = ENABLED
+			}
+		}
+       
+		completion_reward = {
+		    custom_effect_tooltip = italy_desperate_measure_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = ITA
+								is_in_faction_with = ITA
+							}
+							has_full_control_of_state = 2
+						}
+					}
+					2 = {
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 5
+							instant_build = yes
+						}
+					}
+				}				
+				
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = ITA
+								is_in_faction_with = ITA
+							}
+							has_full_control_of_state = 117
+						}
+					}
+					117 = {
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = ITA
+								is_in_faction_with = ITA
+							}
+							has_full_control_of_state = 156
+						}
+					}
+					156 = {
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 5
+							instant_build = yes
+						}
+					}
+				}				
+				
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = ITA
+								is_in_faction_with = ITA
+							}
+							has_full_control_of_state = 115
+						}
+					}
+					115 = {
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 5
+							instant_build = yes
+						}
+					}
+				}				
+				
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = ITA
+								is_in_faction_with = ITA
+							}
+							has_full_control_of_state = 157
+						}
+					}
+					157 = {
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 5
+							instant_build = yes
+						}
+					}
+				}				
+				
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = ITA
+								is_in_faction_with = ITA
+							}
+							has_full_control_of_state = 158
+						}
+					}
+					158 = {
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 5
+							instant_build = yes
+						}
+					}
+				}				
+				
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = ITA
+								is_in_faction_with = ITA
+							}
+							has_full_control_of_state = 162
+						}
+					}
+					162 = {
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 5
+							instant_build = yes
+						}
+					}
+				}				
+				
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = ITA
+								is_in_faction_with = ITA
+							}
+							has_full_control_of_state = 160
+						}
+					}
+					160 = {
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 5
+							instant_build = yes
+						}
+					}
+				}				
+				
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = ITA
+								is_in_faction_with = ITA
+							}
+							has_full_control_of_state = 161
+						}
+					}
+					161 = {
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 5
+							instant_build = yes
+						}
+					}
+				}				
+				
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = ITA
+								is_in_faction_with = ITA
+							}
+							has_full_control_of_state = 736
+						}
+					}
+					736 = {
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 5
+							instant_build = yes
+						}
+					}
+				}				
+				
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = ITA
+								is_in_faction_with = ITA
+							}
+							has_full_control_of_state = 735
+						}
+					}
+					735 = {
+						set_building_level  = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+			}	
 		}
 	}
 

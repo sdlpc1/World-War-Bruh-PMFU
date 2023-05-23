@@ -18,6 +18,8 @@ set_technology = {
 	basic_train = 1
 }
 
+# MP_garrison_division_standard = yes
+
 ##### Characters for both
 recruit_character = SWI_federal_assembly 
 recruit_character = SWI_max_leo_keller
@@ -219,6 +221,7 @@ add_ideas = {
 	neutrality_idea
 	neutrality_idea2
 	limited_conscription
+	peace_training
 }
 
 set_stability = 0.85

@@ -24,6 +24,8 @@ add_ideas = stupid_ai
 # 	value = 100
 # }
 
+# MP_garrison_division_standard = yes
+
 recruit_character = LIT_antanas_smetona
 recruit_character = LIT_antanas_snieckus
 recruit_character = LIT_kazys_grinius

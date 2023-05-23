@@ -22,7 +22,12 @@ add_ideas = {
 	neutrality_idea2
 	PACIFIC_COMMONWEALTH_controls_original
 	father_check
+	peace_training
+	minors_no_air
+	no_grinding
 }
+
+# MP_garrison_division_standard = yes
 
 if = {
 	limit = {
@@ -94,6 +99,7 @@ recruit_character = BRA_washington_luis_pereira
 recruit_character = BRA_osvaldo_aranha
 recruit_character = BRA_newton_cavalcanti
 recruit_character = BRA_capy_bara
+recruit_character = BRA_oswaldo_cordeiro_de_farias
 
 
 set_convoys = 40
@@ -371,22 +377,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # LUX
-add_operation_token = {
-	tag = LUX
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_navy_friendly
+# }
 # DEN
 add_operation_token = {
 	tag = DEN
@@ -558,22 +564,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # PHI
-add_operation_token = {
-	tag = PHI
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_navy_friendly
+# }
 # AST
 add_operation_token = {
 	tag = AST

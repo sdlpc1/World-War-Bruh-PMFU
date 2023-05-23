@@ -24,9 +24,14 @@ add_ideas = {
 	neutrality_idea2
 	PACIFIC_COMMONWEALTH_controls_original
 	father_check
+	peace_training
+	minors_no_air
+	no_grinding
 }
 
 set_variable = { COM_poster_center_icon_frame = 1 }
+
+# MP_garrison_division_standard = yes
 
 set_stability = 0.4
 set_war_support = 0.1
@@ -52,6 +57,10 @@ recruit_character = IRE_john_byrne
 recruit_character = IRE_sean_lemass
 recruit_character = IRE_douglas_hyde
 recruit_character = IRE_sean_ceallaigh
+recruit_character = IRE_sean_mccann
+recruit_character = IRE_jacob_kilroy
+recruit_character = IRE_tadhg_powell
+recruit_character = IRE_william_fox
 
 1939.1.1 = {
 
@@ -292,22 +301,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # LUX
-add_operation_token = {
-	tag = LUX
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_navy_friendly
+# }
 # DEN
 add_operation_token = {
 	tag = DEN
@@ -479,22 +488,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # PHI
-add_operation_token = {
-	tag = PHI
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_navy_friendly
+# }
 # AST
 add_operation_token = {
 	tag = AST

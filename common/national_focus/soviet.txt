@@ -1,4 +1,16 @@
-﻿focus_tree = {
+﻿#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+
+focus_tree = {
 	id = soviet_focus
 
 	country = {
@@ -19,7 +31,7 @@
 		icon = GFX_focus_generic_soviet_politics_1
 		x = 1
 		y = 0
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 5
 		}
@@ -43,7 +55,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_socialist_realism
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 5
 		}
@@ -53,18 +65,18 @@
 
 		completion_reward = {
 			651 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
 			398 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -101,12 +113,12 @@
 
 	focus = {
 		id = SOV_railway_2
-		icon = GFX_goal_generic_soviet_infrastructure
+		icon = GFX_focus_SOV_improve_railway
 		prerequisite = { focus = SOV_heavy_industry_expansion }
 		x = 1
 		y = 1
 		relative_position_id = SOV_heavy_industry_expansion
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -125,77 +137,77 @@
 			579 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			580 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			581 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			262 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			397 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			402 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			653 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			572 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			573 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			582 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			583 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -209,7 +221,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_railway_2
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -233,84 +245,84 @@
 			409 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			657 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			561 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			563 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			564 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			566 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			567 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			568 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			569 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			570 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			571 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			403 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -319,12 +331,12 @@
 
 	focus = {
 		id = SOV_railway_3
-		icon = GFX_goal_generic_soviet_infrastructure
+		icon = GFX_focus_SOV_infrastructrure_effort
 		prerequisite = { focus = SOV_heavy_industry_expansion }
 		x = -1
 		y = 1
 		relative_position_id = SOV_heavy_industry_expansion
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -343,112 +355,112 @@
 			213 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			215 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			214 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			351 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			399 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			406 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			407 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			216 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			204 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			244 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			248 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			247 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			246 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			400 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			263 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			195 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -501,7 +513,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_railway_3
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -518,175 +530,175 @@
 			229 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			230 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			231 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			236 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			232 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			233 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			235 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			234 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			137 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			238 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			237 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			217 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			401 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			239 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			245 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			218 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			265 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			196 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			200 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			227 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			228 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			260 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			258 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			257 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			254 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -752,18 +764,18 @@
 
 		completion_reward = {
 			264 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
 			247 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -787,26 +799,26 @@
 
 		completion_reward = {
 			249 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
 			251 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
 			252 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -830,26 +842,26 @@
 
 		completion_reward = {
 			217 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
 			219 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
 			195 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -858,7 +870,7 @@
 	
 	focus = {
 		id = SOV_tolkach
-		icon = GFX_SOV_quotas_must_be_fulfilled
+		icon = GFX_focus_SOV_workers_culture
 		prerequisite = { focus = SOV_society_urbanisation }
 		x = 0
 		y = 1
@@ -875,6 +887,28 @@
 			add_ideas = SOV_tolkach
 		}
 	}
+
+	focus = {
+		id = SOV_synthetic_rubber_advancements
+		icon = GFX_rubber_2
+		prerequisite = { focus = SOV_tolkach }
+		x = 0
+		y = 1
+		relative_position_id = SOV_tolkach
+		cost = 3
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+        	modify_building_resources = {
+        	   building = synthetic_rubber_refinery
+        	   resource = rubber
+        	   amount = 10
+        	}
+		}
+	}
+	
 	
 	focus = {
 		id = SOV_steel
@@ -883,7 +917,7 @@
 		x = -3
 		y = 1
 		relative_position_id = SOV_heavy_industry_expansion
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -926,7 +960,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_steel
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -965,7 +999,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_petrochemical
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -1003,7 +1037,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_rare_metal
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -1029,6 +1063,84 @@
 			}
 		}
 	}
+	focus = {
+		id = SOV_rubber_refining
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = SOV_aluminium }
+		x = 0
+		y = 1
+		relative_position_id = SOV_aluminium
+		cost = 3
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_ideas = SOV_rubber_refining
+			add_tech_bonus = {
+				name = "Rubber Refining"
+				bonus = 1
+				uses = 2
+				technology = improved_rubber_processing
+				technology = advanced_rubber_processing
+				technology = modern_rubber_processing
+			}
+			random_owned_controlled_state = {
+				prioritize = { 583 }
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 402 }
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 588 }
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_rubber_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = SOV_seize_assets
@@ -1037,7 +1149,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_railway_5
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 5
 		}
@@ -1073,6 +1185,30 @@
 		}
 
 		completion_reward = {
+			824 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			589 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			831 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 			custom_effect_tooltip = SOV_2_plan_tt
 			remove_ideas = SOV_2_5_plan
 			if = {
@@ -1131,7 +1267,7 @@
 	}
 	focus = {
 		id = SOV_germans_are_coming
-		icon = GFX_focus_SOV_the_supreme_soviet
+		icon = GFX_focus_SOV_production_effort
 		prerequisite = { focus = SOV_pcdi	}
 		cost = 2
 		relative_position_id = SOV_pcdi
@@ -1139,7 +1275,16 @@
 		y = 1
 		available = { 
 			has_war = no
-			date > 1941.8.1
+			OR = {
+				date > 1941.8.1
+				NOT = {
+					126 = {
+						CONTROLLER = {
+							tag = ENG
+						}
+					} 
+				}
+			}
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -1147,7 +1292,16 @@
 				add_idea = SOV_3_5_plan_ger
 			}
 
-			SOV_increase_RG_cap = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy = yes
+			}
 		}
 	}
 	focus = {
@@ -1157,7 +1311,7 @@
 		x = 3
 		y = 1
 		relative_position_id = SOV_start_3_plan
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 5
 		}
@@ -1172,7 +1326,7 @@
 
 		completion_reward = {
 			add_ideas =	{
-				 SOV_women_idea
+				SOV_women_idea
 			} 
 		}
 	}
@@ -1219,6 +1373,38 @@
 					instant_build = yes
 				}
 			}
+			# 217 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
+			# 218 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
+			# 265 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
+			# 245 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
 		}
 	}
 	
@@ -1264,6 +1450,39 @@
 					instant_build = yes
 				}
 			}
+
+			# 247 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
+			# 248 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
+			# 254 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
+			# 219 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
 		}
 	}
 	
@@ -1293,6 +1512,22 @@
 					instant_build = yes
 				}
 			}
+			# 582 = {
+			# 	add_extra_state_shared_building_slots = 6
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 6
+			# 		instant_build = yes
+			# 	}
+			# }
+			# 573 = {
+			# 	add_extra_state_shared_building_slots = 6
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 6
+			# 		instant_build = yes
+			# 	}
+			# }
 			set_country_flag = sov_ural_move
 			custom_effect_tooltip = SOV_ural_move_tt
 		}
@@ -1325,6 +1560,22 @@
 					instant_build = yes
 				}
 			}
+			# 572 = {
+			# 	add_extra_state_shared_building_slots = 6
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 6
+			# 		instant_build = yes
+			# 	}
+			# }
+			# 653 = {
+			# 	add_extra_state_shared_building_slots = 6
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 6
+			# 		instant_build = yes
+			# 	}
+			# }
 		}
 	}
 	
@@ -1364,7 +1615,16 @@
 			add_ideas = tot_economic_mobilisation
 			add_ideas = SOV_war_mob
 
-			SOV_increase_RG_cap = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy = yes
+			}
 
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_treacherous_enemy
@@ -1396,6 +1656,98 @@
 					add_dynamic_modifier = { modifier = SOV_armored_battery_35 scope = SOV }
 					add_dynamic_modifier = { modifier = SOV_defend_city }
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_winter_offensive
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = SOV_war_mobilisation }
+		
+		available = {
+			date > 1941.11.01
+			date < 1942.03.1
+		}
+
+		bypass = {
+			date > 1942.03.1
+		}
+
+		x = -5
+		y = 1
+		relative_position_id = SOV_war_mobilisation
+		cancel_if_invalid = yes
+		available_if_capitulated = no
+		continue_if_invalid = no
+		cost = 1
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_faction_with = SOV
+				}
+				add_timed_idea = { idea = SOV_winter_offensive days = 60 }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_operation_uranus
+		icon = GFX_SOV_protect_the_east
+		prerequisite = { focus = SOV_winter_offensive }
+
+		available = {
+			date > 1942.08.1
+			date < 1943.01.1
+		}
+
+		bypass = {
+			date > 1943.01.1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = SOV_winter_offensive
+		cancel_if_invalid = yes
+		available_if_capitulated = no
+		continue_if_invalid = no
+		cost = 1
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_faction_with = SOV
+				}
+				add_timed_idea = { idea = SOV_uranus days = 60 }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_operation_bagration
+		icon = GFX_SOV_red_army
+		prerequisite = { focus = SOV_operation_uranus }
+
+		available = {
+			NOT = { has_idea = SOV_uranus }
+			date > 1943.08.01
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = SOV_operation_uranus
+		cancel_if_invalid = yes
+		available_if_capitulated = no
+		continue_if_invalid = no
+		cost = 1
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_faction_with = SOV
+				}
+				add_timed_idea= { idea= SOV_bagration days = 60 }
 			}
 		}
 	}
@@ -1435,7 +1787,16 @@
 			# 	sov_zis30_tech = 1
 			# }
 
-			SOV_increase_RG_cap = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy = yes
+			}
 
 			add_ideas = SOV_tankograd_idea
 		}
@@ -1476,7 +1837,16 @@
 		completion_reward = {
 			add_ideas = SOV_guards_ideas
 
-			SOV_increase_RG_cap_double = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+			}
 		}
 	}
 	
@@ -1490,6 +1860,25 @@
 		cost = 5
 		
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				OR = {
+					has_war_with = GER
+					has_war_with = ITA
+					has_war_with = JAP
+				}
+				ENG = {
+					OR = {
+						has_war_with = GER
+						has_war_with = ITA
+						has_war_with = JAP
+					}	
+				}	
+			}
+			else = {
 			OR = {
 				has_war_with = GER
 				has_war_with = ITA
@@ -1502,6 +1891,7 @@
 					has_war_with = JAP
 				}
 			}
+		}
 		}
 
 		completion_reward = {
@@ -1550,18 +1940,19 @@
 			NOT = { has_war_with = PER }
 			is_subject = no
 			any_enemy_country = { is_major = yes }
-			291 = {
-				controller = {
-				is_in_faction_with = eng
+			OR = {
+				291 = {
+					controller = {
+					is_in_faction_with = eng
+					}
+					
 				}
-				
-			}
-
-			444 = {
-				controller = {
-				is_in_faction_with = eng
+				444 = {
+					controller = {
+					is_in_faction_with = eng
+					}
+					
 				}
-				
 			}
 		}
 		
@@ -1931,9 +2322,9 @@
 							hq_company = { x = 0 y = 0 } 
 							engineer = { x = 0 y = 1 }   
 							recon = { x = 0 y = 2 }
-							logistics_company  = { x = 0 y = 3 }
+							# logistics_company  = { x = 0 y = 3 }
 							anti_air = { x = 1 y = 0 }
-							logistics_company_horse = { x = 1 y = 1 }
+							logistics_company_mot = { x = 1 y = 1 }
 						}
 					}
 					219 = {
@@ -1988,7 +2379,7 @@
 	
 	focus = {
 		id = SOV_defend_stalingrad
-		icon = GFX_SOV_defend_city
+		icon = GFX_focus_SOV_defense_of_stalingrad
 		prerequisite = { focus = SOV_war_mobilisation }
 		x = 3
 		y = 2
@@ -2097,9 +2488,9 @@
 							hq_company = { x = 0 y = 0 } 
 							engineer = { x = 0 y = 1 }   
 							recon = { x = 0 y = 2 }
-							logistics_company  = { x = 0 y = 3 }
+							# logistics_company  = { x = 0 y = 3 }
 							anti_air = { x = 1 y = 0 }
-							logistics_company_horse = { x = 1 y = 1 }
+							logistics_company_mot = { x = 1 y = 1 }
 						}
 					}
 					217 = {
@@ -2297,9 +2688,9 @@
 						hq_company = { x = 0 y = 0 } 
 						engineer = { x = 0 y = 1 }   
 						recon = { x = 0 y = 2 }
-						logistics_company  = { x = 0 y = 3 }
+						# logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
-						logistics_company_horse = { x = 1 y = 1 }
+						logistics_company_mot = { x = 1 y = 1 }
 					}
 				}
 				195 = {
@@ -2507,9 +2898,9 @@
 						hq_company = { x = 0 y = 0 } 
 						engineer = { x = 0 y = 1 }   
 						recon = { x = 0 y = 2 }
-						logistics_company  = { x = 0 y = 3 }
+						# logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
-						logistics_company_horse = { x = 1 y = 1 }
+						logistics_company_mot = { x = 1 y = 1 }
 					}
 				}
 				if = {
@@ -2571,7 +2962,16 @@
 			}
 			custom_effect_tooltip = SOV_frontline_mob_tt
 
-			SOV_increase_RG_cap = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy = yes
+			}
 		}
 	}
 
@@ -2616,9 +3016,9 @@
 						hq_company = { x = 0 y = 0 } 
 						engineer = { x = 0 y = 1 }   
 						recon = { x = 0 y = 2 }
-						logistics_company  = { x = 0 y = 3 }
+						# logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
-						logistics_company_horse = { x = 1 y = 1 }
+						logistics_company_mot = { x = 1 y = 1 }
 					}
 				}
 				if = {
@@ -2709,10 +3109,6 @@
 		mutually_exclusive = { focus = SOV_swap_to_political_advisors  }
 
 		allow_branch = {
-			NOT = {
-				has_government = fascism
-				has_government = neutrality
-			}
 		}
 
 		available = {
@@ -2899,32 +3295,32 @@
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
 		x = 16
 		y = 0
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				#has_completed_focus = SOV_beaten_but_not_defeated
-				always = no
-			}
-		}
+		# offset = {
+		# 	x = -8
+		# 	y = 0
+		# 	trigger = {
+		# 		has_game_rule = {
+		# 			rule = obsolete_focus_branches_visibility
+		# 			option = HIDE
+		# 		}
+		# 		#has_completed_focus = SOV_beaten_but_not_defeated
+		# 		always = no
+		# 	}
+		# }
 		cost = 1
 
 
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				#NOT = { has_completed_focus = SOV_the_hands_do }
-			}
-		}
+		# allow_branch = {
+		# 	if = {
+		# 		limit = {
+		# 			has_game_rule = {
+		# 				rule = obsolete_focus_branches_visibility
+		# 				option = HIDE
+		# 			}
+		# 		}
+		# 		#NOT = { has_completed_focus = SOV_the_hands_do }
+		# 	}
+		# }
 
 		available = {
 			
@@ -2952,46 +3348,46 @@
 		offset = {
 			x = 8
 			y = 1
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				#has_completed_focus = SOV_beaten_but_not_defeated
-				always = no
-				#NOT = { has_completed_focus = SOV_the_hands_do }
-			}
+			# trigger = {
+			# 	has_game_rule = {
+			# 		rule = obsolete_focus_branches_visibility
+			# 		option = HIDE
+			# 	}
+			# 	#has_completed_focus = SOV_beaten_but_not_defeated
+			# 	always = no
+			# 	#NOT = { has_completed_focus = SOV_the_hands_do }
+			# }
 		}
 		relative_position_id = SOV_the_path_of_marxism_leninism
 		cost = 2
 
 		
 
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					always = no
-					# AND = {
-					# 	has_completed_focus = SOV_the_left_opposition
-					# 	has_completed_focus = SOV_left_opposition_coup
-					# }
-					# AND = {
-					# 	has_completed_focus = SOV_the_right_opposition
-					# 	has_completed_focus = SOV_coup_detat
-					# }
-					# AND = {
-					# 	has_completed_focus = SOV_beaten_but_not_defeated
-					# 	has_completed_focus = SOV_the_hands_do
-					# }
-				}
-			}
-		}
+		# allow_branch = {
+		# 	if = {
+		# 		limit = {
+		# 			has_game_rule = {
+		# 				rule = obsolete_focus_branches_visibility
+		# 				option = HIDE
+		# 			}
+		# 		}
+		# 		NOT = {
+		# 			always = no
+		# 			# AND = {
+		# 			# 	has_completed_focus = SOV_the_left_opposition
+		# 			# 	has_completed_focus = SOV_left_opposition_coup
+		# 			# }
+		# 			# AND = {
+		# 			# 	has_completed_focus = SOV_the_right_opposition
+		# 			# 	has_completed_focus = SOV_coup_detat
+		# 			# }
+		# 			# AND = {
+		# 			# 	has_completed_focus = SOV_beaten_but_not_defeated
+		# 			# 	has_completed_focus = SOV_the_hands_do
+		# 			# }
+		# 		}
+		# 	}
+		# }
 
 		available = {
 			has_country_flag = SOV_purge 
@@ -3207,7 +3603,7 @@
 		x = 0
 		y = 3
 		relative_position_id = SOV_socialism_in_one_country
-		cost = 3
+		cost = 2
 
 		available = {
 
@@ -3564,41 +3960,41 @@
 			}
 			#NOT-SO-HISTORICAL
 			#Yegorov
-			if = {
-				limit = {
-					has_character = SOV_aleksandr_yegorov
-				}
-				SOV_aleksandr_yegorov = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# if = {
+			# 	limit = {
+			# 		has_character = SOV_aleksandr_yegorov
+			# 	}
+			# 	SOV_aleksandr_yegorov = {
+			# 		set_character_flag = SOV_targeted_for_purge_flag
+			# 	}
+			# }
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#Blyukher
-			if = {
-				limit = {
-					has_character = SOV_vasily_blyukher
-				}
-				SOV_vasily_blyukher = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# if = {
+			# 	limit = {
+			# 		has_character = SOV_vasily_blyukher
+			# 	}
+			# 	SOV_vasily_blyukher = {
+			# 		set_character_flag = SOV_targeted_for_purge_flag
+			# 	}
+			# }
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#Primakov
-			if = {
-				limit = {
-					has_character = SOV_vitaly_primakov
-				}
-				SOV_vitaly_primakov = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}			
+			# if = {
+			# 	limit = {
+			# 		has_character = SOV_vitaly_primakov
+			# 	}
+			# 	SOV_vitaly_primakov = {
+			# 		set_character_flag = SOV_targeted_for_purge_flag
+			# 	}
+			# }
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }			
 
 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
 			hidden_effect = {
@@ -3762,7 +4158,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_the_bloc_of_rights_and_trotskyites
-		cost = 5
+		cost = 4
 
 		available = {
 			has_country_flag = {
@@ -3823,7 +4219,7 @@
 
 	focus = {
 		id = SOV_brilliant_genius
-		icon = GFX_focus_generic_socialist_science
+		icon = GFX_focus_SOV_progress_cult
 		prerequisite = { focus = SOV_inheritor_of_the_mantle_of_lenin }
 		x = -1
 		y = 1
@@ -4122,7 +4518,7 @@
 				add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_fascists }
 			}
 				custom_effect_tooltip = unlock_propaganda_campaign_tt
-				unlock_decision_tooltip = SOV_propaganda_anti_fascism
+				# unlock_decision_tooltip = SOV_propaganda_anti_fascism
 				custom_effect_tooltip = propaganda_campaign_requirement_tt
 		}
 	}
@@ -4173,42 +4569,42 @@
 		}
 	}
 
-	focus = {
-		id = SOV_operation_zet
-		icon = GFX_SOV_protect_the_east
-		prerequisite = { focus = SOV_far_east_fortification }
-		continue_if_invalid = yes
-		bypass = {
-			CHI = {
-				OR = {
-					exists = no
-					is_puppet = yes
-				}
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_far_east_fortification
-		cost = 2
-		completion_reward = {
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe_0
-					amount = 200
-					producer = SOV
-				}
-			}
-		}
-	}
+	# focus = {
+	# 	id = SOV_operation_zet
+	# 	icon = GFX_SOV_protect_the_east
+	# 	prerequisite = { focus = SOV_far_east_fortification }
+	# 	continue_if_invalid = yes
+	# 	bypass = {
+	# 		CHI = {
+	# 			OR = {
+	# 				exists = no
+	# 				is_puppet = yes
+	# 			}
+	# 		}
+	# 	}
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = SOV_far_east_fortification
+	# 	cost = 2
+	# 	completion_reward = {
+	# 		CHI = {
+	# 			add_equipment_to_stockpile = {
+	# 				type = small_plane_airframe
+	# 				amount = 200
+	# 				producer = SOV
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = SOV_war_with_japan
 		icon = GFX_focus_attack_japan
-		prerequisite = { focus = SOV_operation_zet }
+		prerequisite = { focus = SOV_far_east_fortification }
 		mutually_exclusive = { focus = SOV_japan_peace }
 		x = 1
 		y = 1
-		relative_position_id = SOV_operation_zet
+		relative_position_id = SOV_far_east_fortification
 		available = {
 			country_exists = JAP
 			date > 1942.8.1
@@ -4236,10 +4632,10 @@
 	focus = {
 		id = SOV_japan_peace
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = SOV_operation_zet }
+		prerequisite = { focus = SOV_far_east_fortification }
 		x = -1
 		y = 1
-		relative_position_id = SOV_operation_zet
+		relative_position_id = SOV_far_east_fortification
 		mutually_exclusive = { focus = SOV_war_with_japan }
 		available = {
 			OR = {
@@ -4626,7 +5022,7 @@
 		x = 0
 		y = 4
 		relative_position_id = SOV_claim_bessarabia
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -4849,16 +5245,38 @@
 		cost = 1
 
 		available_if_capitulated = yes
-		
+		will_lead_to_war_with = GER
 		available = { 
 			has_war = no
-			date > 1942.8.1
+			date > 1941.8.1
 		}
 
 		completion_reward = {
 			add_timed_idea = {
 				idea = SOV_invade_germany_idea
-				days = 120
+				days = 180
+			}
+			MON = {
+				add_timed_idea = {
+					idea = SOV_invade_germany_idea
+					days = 180
+				}
+			}
+			# declare_war_on = {
+			# 	target = GER
+			# 	type = annex_everything
+			# }
+			SOV = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = FIN
+				}
+			}
+			SOV = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = GER
+				}
 			}
 		}
 	}
@@ -5284,7 +5702,7 @@
 		x = 4
 		y = 1
 		relative_position_id = SOV_the_path_of_marxism_leninism
-		cost = 5
+		cost = 4
 
 		available = {
 			has_completed_focus = SOV_the_bloc_of_rights_and_trotskyites
@@ -5308,13 +5726,13 @@
 
 	focus = {
 		id = SOV_collectivist_propaganda
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_SOV_worker_cluture
 		prerequisite = { focus = SOV_expand_the_agitprop }
 		mutually_exclusive = { focus = SOV_positive_heroism }
 		x = -1
 		y = 1
 		relative_position_id = SOV_expand_the_agitprop
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -5333,12 +5751,12 @@
 
 	focus = {
 		id = SOV_militarized_schools
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_SOV_militarized_schools
 		prerequisite = { focus = SOV_collectivist_propaganda }
 		x = 0
 		y = 2
 		relative_position_id = SOV_collectivist_propaganda
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -5358,7 +5776,7 @@
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_agitprop
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -5381,7 +5799,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_positive_heroism
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -5395,12 +5813,12 @@
 	
 	focus = {
 		id = SOV_socialist_science
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_SOV_socialist_science
 		prerequisite = { focus = SOV_stakhanovite }
 		x = 0
 		y = 1
 		relative_position_id = SOV_stakhanovite
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -5428,6 +5846,14 @@
 
 		completion_reward = {
 			add_ideas = progress_cult_focus
+			add_tech_bonus = {
+				name = CAN_cmp_truck
+				ahead_reduction = 0.5
+				bonus = 0.75
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+			
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_knowledge
 			unlock_decision_tooltip = SOV_propaganda_builders_of_communism
@@ -5553,7 +5979,7 @@
 
 	focus = {
 		id = SOV_lessons_of_war
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_SOV_lessons
 		available = {
 			OR = {
 				has_country_flag = SOV_war_since_purge
@@ -5568,6 +5994,9 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			# SOV = {
+			# 	country_event = soviet.1112
+			# }
 			army_experience = 50
 			SOV_modernisation_towards_mech = yes
 		}
@@ -5604,7 +6033,19 @@
 			add_to_variable = { SOV_the_red_army_terrain_penalty_reduction = 0.05 }
 			custom_effect_tooltip = SOV_an_adaptable_army_ns_tt
 
-			SOV_increase_RG_cap_double = yes
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+			}
+			SOV = {
+				country_event = soviet.1112
+			}
 		}
 	}
 	
@@ -5615,7 +6056,7 @@
 		mutually_exclusive = { focus = SOV_new_ideas }
 		x = -5
 		y = 1
-		cost = 5
+		cost = 3
 		relative_position_id = SOV_red_army
 		
 		available = {
@@ -5941,7 +6382,7 @@
 	
 	focus = {
 		id = SOV_nkvd_divisions
-		icon = GFX_focus_SOV_organization_centralization_discipline
+		icon = GFX_focus_SOV_nkvd_divisions
 		prerequisite = { focus = SOV_infantry2 }
 		mutually_exclusive = { focus = SOV_rehabilitated_army }
 		x = -1
@@ -5970,7 +6411,7 @@
 	
 	focus = {
 		id = SOV_rehabilitated_army
-		icon = GFX_focus_SOV_builder_of_the_red_army
+		icon = GFX_focus_SOV_military_reoganization #GFX_focus_SOV_builder_of_the_red_army
 		prerequisite = { focus = SOV_infantry2 }
 		mutually_exclusive = { focus = SOV_nkvd_divisions }
 		x = 1
@@ -6023,7 +6464,7 @@
 		mutually_exclusive = { focus = SOV_deep_operations }
 		x = 5
 		y = 1
-		cost = 5
+		cost = 3
 		relative_position_id = SOV_red_army
 		
 		available = {
@@ -6500,10 +6941,10 @@
 	focus = {
 		id = SOV_transpolar_flights
 
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_focus_SOV_transpolar_flights
 		x = 46
 		y = 0
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -6516,9 +6957,96 @@
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 75
 		}
 	}
+
+	focus = {
+		id = SOV_fighter_effort
+
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SOV_transpolar_flights }
+		x = -4
+		y = 1
+		relative_position_id = SOV_transpolar_flights
+		cost = 3
+
+		available = {
+
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.75
+				uses = 1
+				technology = improved_small_airframe
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_fighter_effort2
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = SOV_fighter_effort }
+		x = 0
+		y = 1
+		relative_position_id = SOV_fighter_effort
+		cost = 3
+		ai_will_do = {
+			factor = 0.25
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	
+	# focus = {
+	# 	id = SOV_fighter_effort3
+	# 	icon = GFX_goal_ar
+	# 	prerequisite = { focus = SOV_fighter_effort2 }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = SOV_fighter_effort2
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 0.25
+	# 	}
+
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = fighter_bonus
+	# 			bonus = 1.0
+	# 			ahead_reduction = 0.5
+	# 			uses = 2
+	# 			category = jet_technology
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = SOV_expand_the_aircraft_industry
@@ -6528,7 +7056,7 @@
 		x = -1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 5
+		cost = 3
 
 		available = {
 			any_owned_state = {
@@ -6597,7 +7125,7 @@
 		x = -1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -6621,7 +7149,7 @@
 		x = -1
 		y = 2
 		relative_position_id = SOV_modernize_aircraft_facilities
-		cost = 5
+		cost = 3
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -6643,7 +7171,7 @@
 		x = 0
 		y = 2
 		relative_position_id = SOV_merge_aircraft_plants
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -6669,7 +7197,7 @@
 		x = 0
 		y = 2
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_intensify_pilot_training_program }
 
@@ -6704,12 +7232,12 @@
 
 			custom_effect_tooltip = SOV_increase_aircraft_production_ns_tt
 
-			add_tech_bonus = {
-				name = SOV_increase_aircraft_production
-				bonus = 1.0
-				uses = 2
-				category = light_air
-			}
+			# add_tech_bonus = {
+			# 	name = SOV_increase_aircraft_production
+			# 	bonus = 1.0
+			# 	uses = 2
+			# 	category = light_air
+			# }
 		}
 	}
 
@@ -6721,7 +7249,7 @@
 		x = 1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -6748,7 +7276,7 @@
 		x = 1
 		y = 1
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 5
+		cost = 3
 
 		available = {
 			OR = {
@@ -6781,7 +7309,7 @@
 		x = 1
 		y = 1
 		relative_position_id = SOV_women_in_aviation
-		cost = 5
+		cost = 3
 
 		available = {
 			any_enemy_country = {
@@ -6816,12 +7344,12 @@
 	focus = {
 		id = SOV_intensify_pilot_training_program
 
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_focus_SOV_aviation_cult
 		prerequisite = { focus = SOV_foster_flying_clubs }
 		x = 0
 		y = 2
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_increase_aircraft_production }
 
@@ -6852,7 +7380,7 @@
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -6866,18 +7394,25 @@
 			add_to_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = 0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.15 }
 			custom_effect_tooltip = SOV_expand_aviation_institutes_ns_tt
+
+			add_doctrine_cost_reduction = {
+				name = SOV_air_doc
+				cost_reduction = 0.40
+				uses = 3
+				category = air_doctrine
+			}
 		}
 	}
 
 	focus = {
 		id = SOV_ground_support
 
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_focus_SOV_cas
 		prerequisite = { focus = SOV_increase_aircraft_production focus = SOV_intensify_pilot_training_program }
 		x = 0
 		y = 1
 		relative_position_id = SOV_increase_aircraft_production
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_long_range_aircraft }
 
@@ -6888,16 +7423,16 @@
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_air_cas_present_factor = 0.1 }
+			add_to_variable = { SOV_soviet_airforce_air_cas_present_factor = 0.15 }
 			custom_effect_tooltip = SOV_ground_support_ns_tt
 
-			add_tech_bonus = {
-				name = SOV_ground_support
-				bonus = 0.50
-				uses = 2
-				category = light_fighter
-				category = cas_bomber
-			}
+			# add_tech_bonus = {
+			# 	name = SOV_ground_support
+			# 	bonus = 0.50
+			# 	uses = 2
+			# 	category = light_fighter
+			# 	category = cas_bomber
+			# }
 		}
 	}
 
@@ -6909,7 +7444,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_intensify_pilot_training_program
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_ground_support }
 
@@ -6923,14 +7458,14 @@
 			add_to_variable = { SOV_soviet_airforce_strategic_bomb_visibility = -0.1 }
 			custom_effect_tooltip = SOV_long_range_aircraft_ns_tt
 
-			add_tech_bonus = {
-				name = SOV_long_range_aircraft
-				bonus = 0.50
-				uses = 2
-				category = cat_heavy_fighter
-				category = tactical_bomber
-				category = cat_strategic_bomber
-			}
+			# add_tech_bonus = {
+			# 	name = SOV_long_range_aircraft
+			# 	bonus = 0.50
+			# 	uses = 2
+			# 	category = cat_heavy_fighter
+			# 	category = tactical_bomber
+			# 	category = cat_strategic_bomber
+			# }
 		}
 	}
 
@@ -6942,7 +7477,7 @@
 		x = 1
 		y = 1
 		relative_position_id = SOV_ground_support
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -6953,9 +7488,10 @@
 		completion_reward = {
 			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
 			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.1 } 
+			add_to_variable = { SOV_soviet_airforce_air_cas_present_factor = 0.05 }
 			custom_effect_tooltip = SOV_the_modern_war_in_the_skies_ns_tt
 
-			air_experience = 50
+			air_experience = 100
 		}
 	}
 	
@@ -6966,7 +7502,7 @@
 		x = 6
 		y = 0
 		relative_position_id = SOV_transpolar_flights
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -7013,7 +7549,7 @@
 		x = -3
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 3
 
 		available = {
 			195 = { #LENINGRAD
@@ -7157,7 +7693,7 @@
 		x = -1
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 3
 
 		available = {
 			OR = {
@@ -7246,7 +7782,7 @@
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 3
 
 		available = {
 			OR = {
@@ -7373,7 +7909,7 @@
 		x = 3
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 3
 
 		available = {
 			OR = {
@@ -7460,7 +7996,7 @@
 		x = 1
 		y = 1
 		relative_position_id = SOV_reinforce_northern_naval_bases
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -7517,7 +8053,7 @@
 		x = -1
 		y = 2
 		relative_position_id = SOV_expand_shipbuilding_plants
-		cost = 5
+		cost = 3
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -7539,7 +8075,7 @@
 		x = 4
 		y = 2
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -7592,7 +8128,7 @@
 		x = -2
 		y = 1
 		relative_position_id = SOV_pc_of_the_ussr_navy
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_submarine_warfare }
 
@@ -7641,7 +8177,7 @@
 		x = 2
 		y = 1
 		relative_position_id = SOV_pc_of_the_ussr_navy
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_surface_warfare }
 
@@ -7691,7 +8227,7 @@
 		x = -1
 		y = 1
 		relative_position_id = SOV_surface_warfare
-		cost = 5
+		cost = 3
 
 		available = {
 			if = {
@@ -7808,7 +8344,7 @@
 		x = 1
 		y = 1
 		relative_position_id = SOV_surface_warfare
-		cost = 5
+		cost = 3
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -7950,7 +8486,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_submarine_warfare
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -8102,7 +8638,7 @@
 		x = 0
 		y = 3
 		relative_position_id = SOV_expand_shipbuilding_plants
-		cost = 5
+		cost = 3
 
 		available = {
 		}
@@ -8129,7 +8665,7 @@
 		x = -2
 		y = 1
 		relative_position_id = SOV_advanced_maneuvers
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -8374,7 +8910,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_advanced_maneuvers
-		cost = 5
+		cost = 3
 
 		available = {
 

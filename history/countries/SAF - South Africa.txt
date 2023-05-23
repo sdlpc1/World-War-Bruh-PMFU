@@ -27,6 +27,8 @@ set_technology = {
 	basic_train = 1
 }
 
+# MP_garrison_division_standard = yes
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -59,6 +61,9 @@ if = {
 
 add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_original
+	peace_training
+	minors_no_air
+	no_grinding
 }
 
 set_variable = { COM_poster_center_icon_frame = 1 }
@@ -100,6 +105,7 @@ recruit_character = SAF_robert_palmer
 recruit_character = SAF_leonard_beyers
 recruit_character = SAF_c_de_weenburg_du_toit
 recruit_character = SAF_james_mitchell_baker
+recruit_character = SAF_jacobus_herculaas_de_la_rey
 
 # Adding this line since you need a newline otherwise recruit character won't work, and it's liable to get removed if I just have an empty line
 
@@ -290,22 +296,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # LUX
-add_operation_token = {
-	tag = LUX
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_navy_friendly
+# }
 # DEN
 add_operation_token = {
 	tag = DEN
@@ -460,22 +466,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # PHI
-add_operation_token = {
-	tag = PHI
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_navy_friendly
+# }
 # AST
 add_operation_token = {
 	tag = AST

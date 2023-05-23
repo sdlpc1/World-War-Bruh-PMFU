@@ -24,7 +24,49 @@ division_template = {
 		logistics_company  = { x = 0 y = 3 }
 	}
 }
+division_template = {
+		name = "Red Guards Tanks"
+		priority = 2
+		division_names_group = SOV_GTC_01
+		is_locked = yes
+		force_allow_recruiting = yes
+		template_counter = 69
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
 
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mechanized = { x = 3 y = 3 }
+
+		medium_tank_destroyer_brigade = { x = 4 y = 0 }
+		medium_tank_destroyer_brigade = { x = 4 y = 1 }
+
+	}
+	support = {
+		logistics_company = { x = 0 y = 0 }
+		logistics_company_mot = { x = 0 y = 1 }
+		light_tank_recon  = { x = 0 y = 2 }
+		light_sp_anti_air_brigade  = { x = 0 y = 3 }
+
+		rg_hq_company_medium = { x = 1 y = 0 }
+		assault_engineer = { x = 1 y = 1 }
+		signal_company = { x = 1 y = 2 }
+		maintenance_company = { x = 1 y = 3 }
+	}
+	division_cap = 0 
+}
 division_template = {
 	name = "Gornostrelkovaya Diviziya"		# Mountain Division
 	division_names_group = SOV_MNT_01
@@ -1085,140 +1127,140 @@ units = {
 		start_equipment_factor = 0.5
 	}		
 	division= {	
-		location = 11437
+		location = 3578
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 3578
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}		
 	division= {	
-		location = 11437
+		location = 3578
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 3578
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 487
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 487
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 487
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 3529
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 3529
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 3529
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 3529
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 3529
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 3529
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 3529
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 3529
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 11504
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 11504
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 11504
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 11504
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}	
 	division= {	
-		location = 11437
+		location = 11504
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1319,7 +1361,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 11437
+		location = 3578
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
@@ -1330,7 +1372,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 11437
+		location = 498
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90

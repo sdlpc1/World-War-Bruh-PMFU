@@ -1,5 +1,7 @@
 ﻿capital = 126
-
+1936.1.1.13 = {
+	set_oob = "ENG_1936_NA"
+}
 set_oob = "ENG_1936"
 if = {
 	limit = {
@@ -9,6 +11,14 @@ if = {
 	else = {
 		set_naval_oob = "ENG_1936_Naval_Legacy"
 	}
+}
+
+set_rule = { 
+	can_send_volunteers = yes
+}
+
+create_intelligence_agency = {
+    name = "MI6"
 }
 
 load_oob = "ENG_Motorized"
@@ -26,7 +36,14 @@ set_variable = { ENG_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLO
 set_variable = { ENG_poster_left_icon_frame = ENG_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
 set_variable = { ENG_poster_center_icon_frame = ENG_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+set_variable = { Royal_Commandos_division_cap = 0 }
+set_variable = { Royal_Commandos_increase = 1 }
+set_variable = { Royal_Commandos_increase_double = 2 }
 
+
+set_country_flag = Royal_Commandos_division_standard
+
+# MP_garrison_division_standard = yes
 
 # Starting tech
 set_technology = {
@@ -48,6 +65,7 @@ set_technology = {
 	eng_medium_tank_1 = 1
 	eng_heavy_tank_1 = 1
 	gw_artillery = 1
+	jaegers = 1
 		
 	trench_warfare = 1
 
@@ -152,28 +170,30 @@ add_ideas = {
 	ENG_great_depression_1
 	ENG_the_sun_never_sets_idea_1
 	PACIFIC_COMMONWEALTH_controls_original
+	volunteer_minimum_major
+	peace_training
+	MEDITERRANEAN_ALLIES_controls_original
+	ENG_tension_vol
+	no_grinding
 }
 	
 
 add_equipment_to_stockpile = {
-
-type = anti_tank_equipment
-amount = 500
-producer = ENG
+	type = anti_tank_equipment
+	amount = 500
+	producer = ENG
 }
 
 add_equipment_to_stockpile = {
-
-type = infantry_equipment_0
-amount = 5000
-producer = ENG
+	type = infantry_equipment_0
+	amount = 5000
+	producer = ENG
 }
 
 add_equipment_to_stockpile = {
-
-type = squad_equipment
-amount = 1000
-producer = ENG
+	type = squad_equipment
+	amount = 1000
+	producer = ENG
 }
 
 set_convoys = 800
@@ -265,11 +285,14 @@ add_to_faction = MAL
 
 #give_guarantee = CZE
 give_guarantee = GRE
+give_guarantee = POL
+give_guarantee = HOL
+give_guarantee = BEL
 # Order matters - here Chamberlain becomes starting leader
 recruit_character = ENG_oswald_mosley
 recruit_character = ENG_stanley_baldwin
 recruit_character = ENG_winston_churchill
-recruit_character = ENG_harry_pollitt
+# recruit_character = ENG_harry_pollitt
 recruit_character = ENG_alan_brooke
 recruit_character = ENG_bernard_montgomery
 recruit_character = ENG_claude_auchinleck
@@ -277,19 +300,19 @@ recruit_character = ENG_neil_ritchie
 recruit_character = ENG_alan_cunningham
 recruit_character = ENG_william_slim
 recruit_character = ENG_richard_oconnor
-recruit_character = ENG_william_platt
-recruit_character = ENG_george_giffard
+# recruit_character = ENG_william_platt
+# recruit_character = ENG_george_giffard
 recruit_character = ENG_harold_alexander
-recruit_character = ENG_jackie_smyth
-recruit_character = ENG_thomas_jacomb_hutton
+# recruit_character = ENG_jackie_smyth
+# recruit_character = ENG_thomas_jacomb_hutton
 recruit_character = ENG_arthur_percival
-recruit_character = ENG_merton_beckwithsmith
-recruit_character = ENG_henry_pownall
-recruit_character = ENG_henry_wilson
-recruit_character = ENG_william_gott
-recruit_character = ENG_jock_campbell
+# recruit_character = ENG_merton_beckwithsmith
+# recruit_character = ENG_henry_pownall
+# recruit_character = ENG_henry_wilson
+# recruit_character = ENG_william_gott
+# recruit_character = ENG_jock_campbell
 recruit_character = ENG_oliver_leese
-recruit_character = ENG_miles_dempsey
+# recruit_character = ENG_miles_dempsey
 recruit_character = ENG_brian_horrocks
 recruit_character = ENG_archibald_wavell
 recruit_character = ENG_james_fownes_somerville
@@ -302,10 +325,10 @@ recruit_character = ENG_john_cunningham
 recruit_character = ENG_charles_forbes
 recruit_character = ENG_algernon_willis
 recruit_character = ENG_arthur_power
-recruit_character = ENG_john_vereker_lord_gort
+# recruit_character = ENG_john_vereker_lord_gort
 recruit_character = ENG_max_grant
 recruit_character = ENG_clement_attlee
-recruit_character = ENG_john_beckett
+# recruit_character = ENG_john_beckett
 recruit_character = ENG_philip_kerr
 recruit_character = ENG_nevile_henderson
 recruit_character = ENG_maxwell_aitken
@@ -897,19 +920,6 @@ if = {
 				front_1_custom_slot = ship_deck_space
 			}
 		}
-	create_equipment_variant = {
-		name = "M Class"
-		type = ship_hull_monitor_submarine
-		name_group = ENG_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_2
-			front_1_custom_slot = ship_torpedo_sub_1
-			front_2_custom_slot = ship_torpedo_sub_1
-			rear_1_custom_slot = ship_anti_air_1
-		}
-		}
 	}
 	if = {
 		limit = {
@@ -1141,22 +1151,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # LUX
-add_operation_token = {
-	tag = LUX
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_navy_friendly
+# }
 # DEN
 add_operation_token = {
 	tag = DEN
@@ -1328,22 +1338,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # PHI
-add_operation_token = {
-	tag = PHI
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_navy_friendly
+# }
 # AST
 add_operation_token = {
 	tag = AST

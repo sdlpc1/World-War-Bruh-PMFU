@@ -121,13 +121,19 @@ CHI_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = 35
+		value = 50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = 10
 	}
 	
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 25
+		value = 0
 	}
 	
 	ai_strategy = {
@@ -144,7 +150,7 @@ CHI_unit_production = {
 	ai_strategy = {
 		type = building_target
 		id = arms_factory
-		value = 500
+		value = 999
 	}
 	
 }
@@ -180,7 +186,7 @@ CHI_prio_military_even_at_peace = {
 	
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
-		value = 50
+		value = 500
 	}
 	
 }

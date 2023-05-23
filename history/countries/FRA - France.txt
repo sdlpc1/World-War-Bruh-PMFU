@@ -1,5 +1,7 @@
 ﻿capital = 16
-
+1936.1.1.13 = {
+	set_oob = "FRA_1936_NA"
+}
 oob = "FRA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -9,9 +11,15 @@ if = {
 	}
 }
 
+create_intelligence_agency = {
+    name = "Deuxième Bureau"
+}
+
 set_research_slots = 5
 set_stability = 0.5
 set_war_support = 0.1
+
+# MP_garrison_division_standard = yes
 
 # Starting tech
 set_technology = {
@@ -34,6 +42,7 @@ set_technology = {
 	light_tank_1 = 1
 	medium_tank_1 = 1
 	heavy_tank_1 = 1
+	jaegers = 1
 	
 
 	trench_warfare = 1
@@ -142,6 +151,9 @@ add_ideas = {
 	FRA_inefficient_economy_2
 	FRA_incompetent_command
 	PACIFIC_COMMONWEALTH_controls_original
+	volunteer_minimum_major
+	peace_training
+	no_grinding
 }
 #set_variable = { FRA_poster_center_icon_frame = 1 }
 set_variable = { FRA_new_propaganda_campaign = 0 } #Used to pick a poster slot
@@ -155,6 +167,10 @@ give_guarantee = CZE
 give_guarantee = YUG
 give_guarantee = ROM
 
+give_guarantee = POL
+give_guarantee = HOL
+give_guarantee = BEL
+
 #Order matters here Daladier will start as leaders because added last
 recruit_character = FRA_philippe_petain
 recruit_character = FRA_maurice_thorez
@@ -165,7 +181,7 @@ recruit_character = FRA_alphonse_juin
 recruit_character = FRA_maurice_gamelin
 recruit_character = FRA_maxime_weygand
 recruit_character = FRA_alphonse_georges
-recruit_character = FRA_antoinemariebenoit_besson
+# recruit_character = FRA_antoinemariebenoit_besson
 recruit_character = FRA_charles_de_gaulle
 recruit_character = FRA_philippe_leclerc
 recruit_character = FRA_henri_giraud
@@ -197,7 +213,7 @@ recruit_character = FRA_alfred_heurtaux
 recruit_character = FRA_rene_prioux
 recruit_character = FRA_pierre_alombert_goget
 recruit_character = FRA_gaston_henry_haye
-#recruit_character = FRA_georges_bonnet
+recruit_character = FRA_georges_bonnet
 recruit_character = FRA_paul_reynaud
 recruit_character = FRA_pierre_pucheu
 recruit_character = FRA_charles_tillon
@@ -210,6 +226,7 @@ recruit_character = FRA_felix_gouin
 recruit_character = FRA_paul_baudouin
 recruit_character = FRA_maurice_gauche
 recruit_character = FRA_jacques_duclos
+recruit_character = FRA_antoinemariebenoît_besson
 
 if = {
 	limit = { has_dlc = "La Resistance" }
@@ -883,22 +900,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # LUX
-add_operation_token = {
-	tag = LUX
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_navy_friendly
+# }
 # DEN
 add_operation_token = {
 	tag = DEN
@@ -1070,22 +1087,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # PHI
-add_operation_token = {
-	tag = PHI
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_navy_friendly
+# }
 # AST
 add_operation_token = {
 	tag = AST

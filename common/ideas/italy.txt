@@ -1,6 +1,21 @@
 ideas = {
 	country = {
-	
+		
+		ITA_mobilized_naval_workers = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = ITA_mob_nav_workers
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
 		ITA_german_occupation = {			
 			
 			allowed = {
@@ -900,6 +915,7 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

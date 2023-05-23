@@ -528,6 +528,10 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
 			}
 
 			modifier = {
@@ -643,7 +647,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			name = FRA_occupation_costs_1
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -661,7 +665,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			name = FRA_occupation_costs_1
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -679,7 +683,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			name = FRA_occupation_costs_1
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -696,7 +700,7 @@ ideas = {
 		FRA_occupation_costs_1 = {
 			picture = generic_goods_red_bonus
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -713,7 +717,7 @@ ideas = {
 		FRA_mandatory_work_service = {
 			picture = ast_all_in
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -837,7 +841,7 @@ ideas = {
 		FRA_national_bureau_of_statistics = {
 			picture = SOV_scientist_defect
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -854,7 +858,7 @@ ideas = {
 		FRA_legionary_service_order = {
 			picture = ast_volunteer_defence_corps
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -871,7 +875,7 @@ ideas = {
 		FRA_milice = {
 			picture = generic_war_preparation
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -888,7 +892,7 @@ ideas = {
 		FRA_anti_bolshevist_volunteers = {
 			picture = generic_manpower_bonus
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -912,7 +916,7 @@ ideas = {
 		FRA_rebuild_the_military = {
 			picture = generic_infantry_bonus
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -931,7 +935,7 @@ ideas = {
 		FRA_hidden_materials = {
 			picture = HUN_secret_rearmament
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -948,7 +952,7 @@ ideas = {
 		FRA_buy_from_the_enemy = {
 			picture = generic_license_production
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = VIC #should probably be VIC
 				always = no
 			}
 
@@ -1208,7 +1212,25 @@ ideas = {
 			}
 		}
 
-		FRA_special_forces_spirit = {
+		FRA_special_forces_idea = {
+			picture = generic_manpower_bonus
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_cap = 0.05
+			}
+		}
+
+		FRA_special_forces = {
 			picture = generic_manpower_bonus
 			allowed = {
 				original_tag = FRA 
@@ -1486,6 +1508,7 @@ ideas = {
 				planning_speed = -0.25
 				lend_lease_tension = 1000
 				conversion_cost_civ_to_mil_factor = 10
+				# production_speed_naval_base_factor = -0.99
 			}
 		}
 
@@ -1713,6 +1736,26 @@ ideas = {
 			}
 		}
 
+		FRA_matignon_agreements = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				stability_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
 		FRA_matignon_agreements_1 = {
 			picture = generic_production_bonus
 			allowed = {
@@ -1933,7 +1976,7 @@ ideas = {
 			picture = renault
 						
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 			}
 						
 			research_bonus = {
@@ -1953,7 +1996,7 @@ ideas = {
 			}
 						
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 			}
 						
 			research_bonus = {
@@ -1972,7 +2015,7 @@ ideas = {
 			}
 						
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 			}
 						
 			research_bonus = {
@@ -1992,7 +2035,7 @@ ideas = {
 			}
 						
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 			}
 						
 			research_bonus = {
@@ -2011,7 +2054,7 @@ ideas = {
 
 						
 			allowed = {
-				original_tag = FRA
+				tag = FRA
 				has_dlc = "La Resistance"
 			}
 						
@@ -2063,6 +2106,7 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

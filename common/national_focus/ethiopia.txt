@@ -1,3 +1,15 @@
+#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
 ### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1644,37 +1656,37 @@ focus_tree = {
 
 		completion_reward = {
 			# Connect Addis with the North if Addis is capital
-			IF = {
-				limit = {
-					271 = { is_capital = yes }
-				}
-				build_railway = {
-					level = 1
-					build_only_on_allied = yes
-					fallback = yes
-					start_province = 5010
-					target_province = 13237
-				}
-			}
-			# Otherwise, connect new capital with Addis as that's the central rail hub
-			ELSE = {
-				random_owned_state = {
-					limit = {
-						is_capital = yes 
-					}
-					ROOT = {
-						build_railway = {
-							level = 1
-							build_only_on_allied = yes
-							fallback = yes
-							start_state = PREV
-							target_state = 271
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = ETH_cie
+			# IF = {
+			# 	limit = {
+			# 		271 = { is_capital = yes }
+			# 	}
+			# 	build_railway = {
+			# 		level = 1
+			# 		build_only_on_allied = yes
+			# 		fallback = yes
+			# 		start_province = 5010
+			# 		target_province = 13237
+			# 	}
+			# }
+			# # Otherwise, connect new capital with Addis as that's the central rail hub
+			# ELSE = {
+			# 	random_owned_state = {
+			# 		limit = {
+			# 			is_capital = yes 
+			# 		}
+			# 		ROOT = {
+			# 			build_railway = {
+			# 				level = 1
+			# 				build_only_on_allied = yes
+			# 				fallback = yes
+			# 				start_state = PREV
+			# 				target_state = 271
+			# 			}
+			# 		}
+			# 	}
+			# }
+			# custom_effect_tooltip = available_industrial_concern
+			# show_ideas_tooltip = ETH_cie
 		}
 	}
 	focus = {
@@ -2849,17 +2861,17 @@ focus_tree = {
 							infantry = { x = 0 y = 3 }
 						}
 					}
-					IF = {
-						limit = { 838 = { is_controlled_by_ROOT_or_ally = yes } }
-						838 = {
-							create_unit = {
-								division = "division_template = \"Congolese Mercenaries\" start_experience_factor = 0.3 start_equipment_factor = 1"
-								owner = ETH
-								count = 3
-								prioritize_location = 13244
-							}
-						}
-					}
+					# IF = {
+					# 	limit = { 838 = { is_controlled_by_ROOT_or_ally = yes } }
+					# 	838 = {
+					# 		create_unit = {
+					# 			division = "division_template = \"Congolese Mercenaries\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					# 			owner = ETH
+					# 			count = 3
+					# 			prioritize_location = 13244
+					# 		}
+					# 	}
+					# }
 					ELSE = {
 						837 = {
 							create_unit = {
@@ -2908,16 +2920,6 @@ focus_tree = {
 						}
 
 					}
-					ELSE = {
-						843 = {
-							create_unit = {
-								division = "division_template = \"Arab Mercenaries\" start_experience_factor = 0.35 start_equipment_factor = 1"
-								owner = ETH
-								count = 2
-								prioritize_location = 13240 
-							}
-						}
-					}
 	 			}
 	 		}
 
@@ -2947,10 +2949,10 @@ focus_tree = {
 				state = 838 
 				remember_old_capital = no
 			}
-			add_victory_points = {
-				province = 13244
-				value = 3
-			}
+			# add_victory_points = {
+			# 	province = 13244
+			# 	value = 3
+			# }
 			838 = {
 				add_dynamic_modifier = {
 					modifier = ETH_state_last_stand_modifier
@@ -3858,7 +3860,7 @@ focus_tree = {
 				# hidden_effect = {
 				# 	create_equipment_variant = {
 				# 		name = "L3/35"
-				# 		type = light_tank_equipment_1
+				# 		type = light_tank_chassis_1
 				# 		parent_version = 0
 				# 		modules = {
 				# 			main_armament_slot = tank_heavy_machine_gun
@@ -5217,22 +5219,22 @@ focus_tree = {
 				# IF = {
 				# 	limit = {
 				# 		OR = {
-				# 			NOT = { has_tech = gwtank_equipment }
-				# 			NOT = { has_tech = basic_light_tank_equipment }
+				# 			NOT = { has_tech = gwtank_chassis }
+				# 			NOT = { has_tech = basic_light_tank_chassis }
 				# 		}
 				# 	}
 				# 	set_technology = { 
-				# 		gwtank_equipment = 1
+				# 		gwtank_chassis = 1
 				# 		popup = no
 				# 	}
 				# 	set_technology = { 
-				# 		basic_light_tank_equipment = 1
+				# 		basic_light_tank_chassis = 1
 				# 		popup = no
 				# 	}					
 				# }
 				# create_equipment_variant = {
 				# 	name = "Panzer I Ausf. A"
-				# 	type = light_tank_equipment_1
+				# 	type = light_tank_chassis_1
 				# 	parent_version = 0
 				# 	modules = {
 				# 		main_armament_slot = tank_heavy_machine_gun
@@ -5249,18 +5251,18 @@ focus_tree = {
 				# 	icon = "GFX_GER_basic_light_tank_medium"
 				# 	obsolete = yes
 				# }
-				add_equipment_to_stockpile = { 
-					type = light_tank_equipment_1
-					amount = 250
-					producer = GER
-					variant_name = "Panzer I Ausf. A"
-				}
+				# add_equipment_to_stockpile = { 
+				# 	type = light_tank_chassis_1
+				# 	amount = 250
+				# 	producer = GER
+				# 	variant_name = "Panzer I Ausf. A"
+				# }
 					
 			}
 			# ELSE = {
 			# 	IF = {
 			# 		limit = {
-			# 			NOT = { has_tech = basic_light_tank_equipment }
+			# 			NOT = { has_tech = basic_light_tank_chassis }
 			# 		}
 			# 		# set_technology = { 
 			# 		# 	gwtank = 1
@@ -6328,15 +6330,11 @@ focus_tree = {
 					has_full_control_of_state = 271
 					has_full_control_of_state = 837
 				}
-				build_railway = {
-					#level = 1
-					path = { 7980 13240 5041 13236 13238 }
-				}
-				build_railway = {
-					#level = 1
-					start_province = 5010 
-					target_province = 13237
-				}
+				# build_railway = {
+				# 	#level = 1
+				# 	start_province = 5010 
+				# 	target_province = 13237
+				# }
 				build_railway = {
 					#level = 1
 					start_province = 5010 
@@ -6350,14 +6348,14 @@ focus_tree = {
 						instant_build = yes
 					}
 				}	
-				842 = {
-					add_building_construction = {
-						type = supply_node
-						province = 13237
-						level = 1
-						instant_build = yes
-					}
-				}					
+				# 842 = {
+				# 	add_building_construction = {
+				# 		type = supply_node
+				# 		province = 13237
+				# 		level = 1
+				# 		instant_build = yes
+				# 	}
+				# }					
 			}
 		}
 	}

@@ -459,7 +459,6 @@ technologies = {
 		category_all_armor = {
 			breakthrough = 0.05
 			defense = 0.05
-			max_organisation = 5
 			default_morale = 0.05
 			need = {
 			    radio_equipment = 6
@@ -500,7 +499,6 @@ technologies = {
 		category_all_armor = {
 			breakthrough = 0.05
 			defense = 0.05
-			max_organisation = 5
 			default_morale = 0.05
 			need = {
 			    radio_equipment = 8
@@ -1536,7 +1534,7 @@ technologies = {
 	}
 	
 	jet_engines = {
-	
+		
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 4 }
@@ -1547,7 +1545,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -1 y = 12 }
+			position = { x = -1 y = 11 }
 		}
 		
 		desc = "JET_ENGINES_SPECIAL"

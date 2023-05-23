@@ -1,3 +1,15 @@
+#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
 ### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -734,7 +746,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_lessons_of_the_great_war
 		icon = GFX_goal_generic_small_arms
-		x = 20
+		x = 19
 		y = 0
 
 		cost = 10
@@ -932,9 +944,9 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Kodandera Madappa Cariappa"
 					gfx = "GFX_RAJ_kodandera_madappa_cariappa"
-					traits = { old_guard cavalry_officer cavalry_leader trickster }
+					traits = { trickster cavalry_leader expert_improviser }
 					skill = 4
-					attack_skill = 1
+					attack_skill = 2
 					defense_skill = 5
 					planning_skill = 3
 					logistics_skill = 5
@@ -942,12 +954,12 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Kodandera Subayya Thimayya"
 					gfx = "GFX_RAJ_kodendera_subayya_thimayya"
-					traits = { jungle_rat trait_reckless infantry_leader  trickster }
+					traits = { jungle_rat infantry_leader trickster }
 					skill = 4
 					attack_skill = 5
-					defense_skill = 1
+					defense_skill = 2
 					planning_skill = 1
-					logistics_skill = 1
+					logistics_skill = 2
 				}
 				create_corps_commander = {
 					name = "Jayanto Nath Chaudhuri"
@@ -956,8 +968,8 @@ focus_tree = {
 					skill = 4
 					attack_skill = 5
 					defense_skill = 2
-					planning_skill = 3
-					logistics_skill = 1
+					planning_skill = 2
+					logistics_skill = 2
 				}
 			}
 		}
@@ -1208,10 +1220,10 @@ focus_tree = {
 			create_corps_commander = {
 				name = "Orde Wingate"
 				gfx = "GFX_RAJ_orde_wingate"
-				traits = { jungle_rat }
+				traits = { jungle_rat naval_invader commando }
 				skill = 3
 				attack_skill = 3
-				defense_skill = 2
+				defense_skill = 3
 				planning_skill = 2
 				logistics_skill = 3
 				}
@@ -1455,7 +1467,8 @@ focus_tree = {
 				category = artillery
 			}
 			set_technology = {
-				mountain_arty = 1
+				# mountain_arty = 1
+				pack_artillery_3 = 1
 			}
 		}
 	}
@@ -1592,6 +1605,10 @@ focus_tree = {
 		relative_position_id = RAJ_lessons_of_the_great_war
 
 		cost = 5
+
+		allow_branch = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 20
@@ -1832,53 +1849,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RAJ_the_smiling_buddha
-		icon = GFX_focus_smiling_buddha
-		prerequisite = { focus = RAJ_royal_indian_air_force }
-		prerequisite = { focus = RAJ_institute_of_fundamental_research }
-		x = 1
-		y = 4
-		relative_position_id = RAJ_british_pilot_training
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-			if = {
-				limit = { NOT = { has_government = fascism } }
-				compare_autonomy_state > autonomy_colony
-			}
-			if = {
-				limit = { has_government = fascism }
-				compare_autonomy_state > autonomy_reichsprotectorate
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_the_smiling_buddha
-				bonus = 0.75
-				uses = 1
-				category = nuclear
-			}
-		}
-	}
-
-
-
 	############################
 	######### INDUSTRY #########
 	############################
@@ -1886,10 +1856,10 @@ focus_tree = {
 	focus = {
 		id = RAJ_great_indian_peninsula_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 31
+		x = 27
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -2228,6 +2198,50 @@ focus_tree = {
 				uses = 2
 				category = nuclear
 				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_the_smiling_buddha
+		icon = GFX_focus_smiling_buddha
+		prerequisite = { focus = RAJ_institute_of_fundamental_research }
+		x = 0
+		y = 1
+		relative_position_id = RAJ_institute_of_fundamental_research
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			if = {
+				limit = { NOT = { has_government = fascism } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_government = fascism }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_the_smiling_buddha
+				bonus = 0.75
+				uses = 1
+				category = nuclear
 			}
 		}
 	}
@@ -2759,7 +2773,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

@@ -1,4 +1,16 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+﻿#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -897,11 +909,11 @@ focus_tree = {
 	focus = {
 		id = SPA_the_condor_legion
 		available = {
-			NOT = { has_global_flag = scw_over }
-			has_volunteers_amount_from = {
-				tag = GER
-				count > 0
-			}
+			# NOT = { has_global_flag = scw_over }
+			# has_volunteers_amount_from = {
+			# 	tag = GER
+			# 	count > 0
+			# }
 		}
 		bypass = {
 		}
@@ -959,17 +971,17 @@ focus_tree = {
 	focus = {
 		id = SPA_equipment_shipments
 		available = {
-			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
+			# NOT = { has_global_flag = scw_over }
+			# OR = {
+			# 	has_volunteers_amount_from = {
+			# 		tag = ITA
+			# 		count > 0
+			# 	}
+			# 	has_volunteers_amount_from = {
+			# 		tag = GER
+			# 		count > 0
+			# 	}
+			# }
 		}
 		bypass = {
 		}
@@ -999,17 +1011,17 @@ focus_tree = {
 	focus = {
 		id = SPA_obtain_training_staff
 		available = {
-			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
+			# NOT = { has_global_flag = scw_over }
+			# OR = {
+			# 	has_volunteers_amount_from = {
+			# 		tag = ITA
+			# 		count > 0
+			# 	}
+			# 	has_volunteers_amount_from = {
+			# 		tag = GER
+			# 		count > 0
+			# 	}
+			# }
 		}
 		bypass = {
 		}
@@ -1032,17 +1044,17 @@ focus_tree = {
 	focus = {
 		id = SPA_doctrinal_advancements
 		available = {
-			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
+			# NOT = { has_global_flag = scw_over }
+			# OR = {
+			# 	has_volunteers_amount_from = {
+			# 		tag = ITA
+			# 		count > 0
+			# 	}
+			# 	has_volunteers_amount_from = {
+			# 		tag = GER
+			# 		count > 0
+			# 	}
+			# }
 		}
 		bypass = {
 		}
@@ -2140,16 +2152,7 @@ focus_tree = {
 	focus = {
 		id = SPA_retake_the_americas
 		available = {
-			OR = {
-				NOT = { is_in_faction_with = ARG }
-				NOT = { is_in_faction_with = CHL }
-				NOT = { is_in_faction_with = PRU }
-				NOT = { is_in_faction_with = VEN }
-				NOT = { is_in_faction_with = COL }
-				NOT = { is_in_faction_with = BOL }
-				NOT = { is_in_faction_with = MEX }
-				NOT = { is_in_faction_with = USA }
-			}
+			always = no
 		}
 		bypass = {
 		}
@@ -2164,87 +2167,87 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = ARG }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = ARG
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = CHL }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = CHL
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = PRU }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = PRU
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = VEN }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = VEN
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = COL }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = COL
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = BOL }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = BOL
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = MEX }
-				}
-				create_wargoal = {
-				    type = annex_everything
-				    target = MEX
-				    expire = 0
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = USA }
-				}
-				create_wargoal = {
-				    type = take_state_focus
-				    target = USA
-				    generator = { 378 379 380 377 376 375 }
-				    expire = 0
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = ARG }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = ARG
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = CHL }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = CHL
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = PRU }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = PRU
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = VEN }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = VEN
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = COL }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = COL
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = BOL }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = BOL
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = MEX }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = annex_everything
+			# 	    target = MEX
+			# 	    expire = 0
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_in_faction_with = USA }
+			# 	}
+			# 	create_wargoal = {
+			# 	    type = take_state_focus
+			# 	    target = USA
+			# 	    generator = { 378 379 380 377 376 375 }
+			# 	    expire = 0
+			# 	}
+			# }
 		}
 	}
 
@@ -2377,7 +2380,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_the_national_and_popular_army_of_spain
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2404,7 +2407,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SPA_the_army_of_africa_model
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2430,7 +2433,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SPA_equipment_modernization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2456,7 +2459,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SPA_equipment_modernization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2490,7 +2493,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_equipment_modernization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2522,7 +2525,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_the_army_of_africa_model
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2554,7 +2557,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_motorization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2692,7 +2695,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_fascist_economic_aid
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -2778,7 +2781,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = SPA_fascist_economic_aid
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -3409,6 +3412,7 @@ focus_tree = {
 
 		completion_reward = {
 			activate_mission = SPA_save_the_alcazar_mission
+			custom_effect_tooltip = SPA_save_the_alcazar_mission_tt
 		}
 	}
 
@@ -3786,10 +3790,10 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				add_manpower = 20000
-				POR = {
-					add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
-					add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
-				}
+				# POR = {
+				# 	add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
+				# 	add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
+				# }
 			}
 			custom_effect_tooltip = SPA_the_iberian_pact_tt_2
 			POR = { country_event = { id = lar_spain.22 hours = 12 random_hours = 36 } }
@@ -4578,6 +4582,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 165
+						state = 171
+						state = 792
+					}
+				}
+				remove_dynamic_modifier = { modifier = autonomous_state }
+			}
 			add_popularity = {
 			    ideology = fascism
 			    popularity = 0.1
@@ -6585,11 +6599,11 @@ focus_tree = {
 			    target = BEL
 			    expire = 0
 			}
-			create_wargoal = {
-			    type = annex_everything
-			    target = LUX
-			    expire = 0
-			}
+			# create_wargoal = {
+			#     type = annex_everything
+			#     target = LUX
+			#     expire = 0
+			# }
 		}
 	}
 
@@ -6638,16 +6652,16 @@ focus_tree = {
 			    generator = { 378 379 380 377 376 375 }
 			    expire = 0
 			}
-			create_wargoal = {
-			    type = puppet_wargoal_focus
-			    target = PHI
-			    expire = 0
-			}
-			create_wargoal = {
-			    type = annex_everything
-			    target = CUB
-			    expire = 0
-			}
+			# create_wargoal = {
+			#     type = puppet_wargoal_focus
+			#     target = PHI
+			#     expire = 0
+			# }
+			# create_wargoal = {
+			#     type = annex_everything
+			#     target = CUB
+			#     expire = 0
+			# }
 		}
 	}
 
@@ -9694,10 +9708,10 @@ focus_tree = {
 			    ideology = communism
 			    popularity = 0.05
 			}
-			SOV = {
-				add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
-				add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
-			}
+			# SOV = {
+			# 	add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
+			# 	add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
+			# }
 			custom_effect_tooltip = SPR_expand_soviet_aid_tt
 		}
 	}
@@ -11448,7 +11462,7 @@ focus_tree = {
 			effect_tooltip = {
 				add_war_support = 0.15
 				FRA = {
-					add_timed_idea = { idea = SPR_equipment_shipments days = 730 }
+					add_ideas = SPR_equipment_shipments
 					add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
 				}
 			}
@@ -13051,6 +13065,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_collaboration = {
+				target = POR
+				value = 0.8
+			}
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = POR
@@ -13090,16 +13108,16 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			set_rule = { can_send_volunteers = yes }
-			every_owned_state = {
-				limit = {
-					OR = {
-						state = 165
-						state = 171
-						state = 792
-					}
-				}
-				remove_dynamic_modifier = { modifier = autonomous_state }
-			}
+			# every_owned_state = {
+			# 	limit = {
+			# 		OR = {
+			# 			state = 165
+			# 			state = 171
+			# 			state = 792
+			# 		}
+			# 	}
+			# 	remove_dynamic_modifier = { modifier = autonomous_state }
+			# }
 		}
 	}
 

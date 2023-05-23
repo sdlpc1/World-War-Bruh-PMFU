@@ -759,24 +759,6 @@ focus_tree = {
 					}
 				} #AI should seek an alliance if they are in immediate danger
 			}
-			modifier = { #Don't mess with history (unless ppl are ignoring you)
-				factor = 0
-				date < 1942.1.1
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = LAT_ai_behavior
-							option = DEFAULT
-						}
-					}
-					has_country_flag = LAT_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = LAT_ai_behavior
-						option = HISTORICAL
-					}
-				}
-			}
 		}
 
 		available = {
@@ -937,18 +919,6 @@ focus_tree = {
 				OR = {
 					LIT = { is_ai = no }
 					EST = { is_ai = no } #The AI shouldn't try to lead a Baltic faction if one of the Baltic nations is a player. Would lead to the player having to rush the focus.
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = LAT_ai_behavior
-							option = DEFAULT
-						}
-					}
-					has_country_flag = LAT_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = LAT_ai_behavior
-						option = HISTORICAL
-					}
 				}
 			}
 			modifier = {
@@ -2828,23 +2798,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = LAT_ai_behavior
-							option = DEFAULT
-						}
-					}
-					has_country_flag = LAT_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = LAT_ai_behavior
-						option = HISTORICAL
-					}
-				}
-			}
 		}
 
 		available = {

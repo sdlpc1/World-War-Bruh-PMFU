@@ -1,3 +1,15 @@
+#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
 focus_tree = {
 	id = mongolia_focus
 	
@@ -265,20 +277,35 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			build_railway = {
-				level = 2
-				path = { 4801 12605 7717 1762 }
+			329 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+					}	
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
-			
-
-			build_railway = {
-				level = 2
-				path = { 4801 4732 1798 10623 4697 7799 4777 10669 7773 1877 10627}
-			}
-
-			build_railway = {
-				level = 2
-				path = { 10627 4680 7731 12628 4818 12691 }
+			330 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+					}	
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 		}
 	}
@@ -1679,9 +1706,9 @@ focus_tree = {
 				character = MON_khan
 				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer }
 				skill = 4
-				attack_skill = 4
+				attack_skill = 3
 				defense_skill = 4
-				planning_skill = 6
+				planning_skill = 5
 				logistics_skill = 6
 			}
 		}

@@ -464,18 +464,6 @@ focus_tree = {
 				OR = {
 					LIT = { is_ai = no }
 					LAT = { is_ai = no } #The AI shouldn't try to lead a Baltic faction if one of the Baltic nations is a player. Would lead to the player having to rush the focus.
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = EST_ai_behavior
-							option = DEFAULT
-						}
-					}
-					has_country_flag = EST_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = EST_ai_behavior
-						option = HISTORICAL
-					}
 				}
 			}
 			modifier = {
@@ -605,24 +593,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = { #Don't mess with history (unless ppl are ignoring you)
-				factor = 0
-				date < 1942.1.1
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = EST_ai_behavior
-							option = DEFAULT
-						}
-					}
-					has_country_flag = EST_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = EST_ai_behavior
-						option = HISTORICAL
-					}
-				}
-			}
 		}
 
 		available = {
@@ -1074,23 +1044,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = EST_ai_behavior
-							option = DEFAULT
-						}
-					}
-					has_country_flag = EST_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = EST_ai_behavior
-						option = HISTORICAL
-					}
-				}
-			}
 		}
 
 		available = {

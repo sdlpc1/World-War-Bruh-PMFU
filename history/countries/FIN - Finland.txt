@@ -11,10 +11,16 @@ if = {
 
 set_research_slots = 5
 
+# MP_garrison_division_standard = yes
+
 add_ideas = {
 	limited_conscription
 	sisu
 	PACIFIC_COMMONWEALTH_controls_axis_original
+	peace_training
+	minors_no_air
+	no_grinding
+	FIN_counter_intel
 }
 add_manpower = 80000
 
@@ -30,6 +36,7 @@ set_technology = {
 	hq_1 = 1
 	motorised_infantry = 1
 	basic_train = 1
+	jaegers = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -160,6 +167,7 @@ recruit_character = FIN_harald_ohquist
 recruit_character = FIN_eero_rahola
 recruit_character = FIN_ake_henrik_gartz
 recruit_character = FIN_lauri_tiainen
+# recruit_character = FIN_harry_alfthan
 
 ### VARIANTS ###
 # 1936 Start #

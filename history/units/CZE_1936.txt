@@ -417,7 +417,7 @@ instant_effect = {
 		producer = CZE
 	}
 	add_equipment_to_stockpile = {
-		type = ger_cze_tank_equipment_2
+		type = ger_cze_tank_equipment_2 
 		amount = 500
 		producer = CZE
 	}

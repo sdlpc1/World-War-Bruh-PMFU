@@ -1,38 +1,50 @@
-﻿shared_focus = {
+﻿#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
+shared_focus = {
 	id = COM_commonwealth_command
 	icon = GFX_focus_eng_unite_the_anglosphere
 	x = 40
 	y = 0
 	offset = {
-		x = -4
+		x = -10
 		y = 0
 		trigger = {
 			tag = CAN
 		}
 	}
 	offset = {
-		x = 0
+		x = -6
 		y = 0
 		trigger = {
 			tag = AST
 		}
 	}
 	offset = {
-		x = -5
+		x = -10
 		y = 0
 		trigger = {
 			tag = NZL
 		}
 	}
 	offset = {
-		x = -5
+		x = -9
 		y = 0
 		trigger = {
 			tag = SAF
 		}
 	}
 	offset = {
-		x = 3
+		x = -1
 		y = 0
 		trigger = {
 			tag = RAJ
@@ -46,7 +58,7 @@
 		}
 	}
 	offset = {
-		x = -16
+		x = -18
 		y = 0
 		trigger = {
 			tag = IRE
@@ -63,8 +75,8 @@
 		
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -94,8 +106,8 @@ shared_focus = {
 		has_capitulated = yes
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -119,8 +131,8 @@ shared_focus = {
 		has_capitulated = yes
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -143,8 +155,8 @@ shared_focus = {
 		has_capitulated = yes
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -167,8 +179,8 @@ shared_focus = {
 		has_capitulated = yes
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -190,8 +202,8 @@ shared_focus = {
 		has_capitulated = yes
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -214,8 +226,8 @@ shared_focus = {
 		has_capitulated = yes
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -244,8 +256,8 @@ shared_focus = {
 		}
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -271,8 +283,8 @@ shared_focus = {
 		}
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -293,8 +305,8 @@ shared_focus = {
 	available = {
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -316,8 +328,8 @@ shared_focus = {
 	available = {
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -339,8 +351,8 @@ shared_focus = {
 	available = {
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -360,7 +372,16 @@ shared_focus = {
 	cost = 5
 	
 	available = {
-		is_in_faction_with = USA
+		if = {
+			limit = {
+				has_global_flag = NO_ASIA
+
+			}
+			date > 1941.1.1
+		}
+		else = {
+			is_in_faction_with = USA
+		}	
 	}
 
 	offset = {
@@ -371,8 +392,8 @@ shared_focus = {
 		}
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -393,8 +414,8 @@ shared_focus = {
 	available = {
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {
@@ -415,8 +436,8 @@ shared_focus = {
 	available = {
 	}
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
+	cancel_if_invalid = no
+	continue_if_invalid = yes
 	available_if_capitulated = yes
 
 	completion_reward = {

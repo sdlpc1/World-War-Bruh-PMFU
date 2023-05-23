@@ -1,3 +1,15 @@
+#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
 focus_tree = {
 	id = australian_focus
 	
@@ -19,7 +31,7 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 50 y = 850 }
+	continuous_focus_position = { x = 50 y = 950 }
 	
 	shared_focus = COM_commonwealth_command
 
@@ -110,6 +122,14 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				has_global_flag = NO_ASIA
+			}
+		}
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_cruiser
@@ -165,12 +185,64 @@ focus_tree = {
 	}
 
 	focus = {
+		id = AST_revive_the_screw_guns
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = AST_royal_australian_artillery }
+		x = 0
+		y = 1
+		relative_position_id = AST_royal_australian_artillery
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			has_tech = pack_artillery_2
+		}
+
+		bypass = {
+
+		}
+
+		allow_branch = {
+			has_global_flag = NO_ASIA
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_indian_armor
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+			set_technology = {
+				# mountain_arty = 1
+				pack_artillery_3 = 1
+			}
+		}
+	}
+
+	focus = {
 		id = AST_promote_reservists
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = AST_hmas_assault focus = AST_cruiser_tanks}
 		x = 0
 		y = 3
 		relative_position_id = AST_additional_militia_training
+
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				has_global_flag = NO_ASIA
+			}
+		}
 
 		cost = 5
 
@@ -204,12 +276,12 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Iven Mackay"
 					gfx = "GFX_AST_iven_mackay"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 3
+					traits = { commando hill_fighter trait_mountaineer }
+					skill = 5
+					attack_skill = 6
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 4
 				}
 			}
 		}
@@ -260,6 +332,14 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = AST_additional_militia_training
+
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				has_global_flag = NO_ASIA
+			}
+		}
 
 		cost = 5
 
@@ -713,7 +793,16 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction_with = USA
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				date > 1941.1.1
+			}
+			else = {
+				is_in_faction_with = USA
+			}	
 		}
 		
 		bypass = {
@@ -761,6 +850,10 @@ focus_tree = {
 		
 		bypass = {
 
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		cancel_if_invalid = yes
@@ -1353,7 +1446,7 @@ focus_tree = {
 	focus = {
 		id = AST_cockatoo_island_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 16
+		x = 11
 		y = 0
 
 		cost = 5
@@ -1751,10 +1844,10 @@ focus_tree = {
 	focus = {
 		id = AST_standard_gauge_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 19
+		x = 14
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -1828,7 +1921,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1866,7 +1959,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -2225,7 +2318,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2356,7 +2449,7 @@ focus_tree = {
 	focus = {
 		id = AST_establish_advisory_war_council
 		icon = GFX_goal_generic_demand_territory
-		x = 27
+		x = 22
 		y = 0
 
 		cost = 10
@@ -2485,10 +2578,11 @@ focus_tree = {
 	focus = {
 		id = AST_army_inventions_directorate
 		icon = GFX_focus_research
-		prerequisite = { focus = AST_national_security_act }
-		x = -2
-		y = 2
-		relative_position_id = AST_establish_advisory_war_council
+		prerequisite = { focus = AST_industries_assistance_corporation }
+		prerequisite = { focus = AST_standard_gauge_railway }
+		x = 1.5
+		y = 1
+		relative_position_id = AST_industries_assistance_corporation
 
 		cost = 10
 
@@ -2893,7 +2987,7 @@ focus_tree = {
 	focus = {
 		id = AST_support_the_policy_of_appeasement
 		icon = GFX_goal_generic_improve_relations
-		x = 32
+		x = 27
 		y = 0
 
 		cost = 10

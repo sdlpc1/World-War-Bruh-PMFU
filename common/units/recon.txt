@@ -366,28 +366,30 @@ sub_units = {
 		}
 
 		forest = {
-			movement = 0.12
+			movement = 0.10
 		}
 		hills = {
-			movement = 0.12
+			movement = 0.10
 		}
 		mountain = {
-			movement = 0.12
+			movement = 0.10
 		}
 		jungle = {
-			movement = 0.12
+			movement = 0.10
 		}
 		marsh = {
-			movement = 0.12
+			movement = 0.10
 		}
 		plains = {
-			movement = 0.12
+			movement = 0.10
 		}
 		desert = {
-			movement = 0.12
+			movement = 0.10
+			attack = 0.10
+			defence = 0.10
 		}
 		river = {
-			movement = 0.12
+			movement = 0.10
 		}
 		
 		same_support_type = recon

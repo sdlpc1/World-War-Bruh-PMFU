@@ -14,7 +14,10 @@ set_technology = {
 
 add_ideas  = {
 	stupid_ai
+	peace_training
 }
+
+# MP_garrison_division_standard = yes
 
 recruit_character = PER_reza_shah_pahlavi
 recruit_character = PER_soleyman_mirza_eskandari

@@ -23,6 +23,8 @@ set_technology = {
 	basic_train = 1
 }
 
+# MP_garrison_division_standard = yes
+
 set_convoys = 50
 
 set_politics = {
@@ -38,6 +40,9 @@ add_ideas = { #DLC
 	BUL_army_restrictions
 	BUL_imro_01
 	PACIFIC_COMMONWEALTH_controls_axis_original
+	peace_training
+	minors_no_air
+	no_grinding
 }
 
 #SET FLAGS AND VARIABLES
@@ -166,16 +171,16 @@ recruit_character = BUL_nikola_mushanov
 recruit_character = BUL_hristo_lukov
 recruit_character = BUL_atanas_shalapatov
 recruit_character = BUL_georgi_popov
-recruit_character = BUL_ivan_markov
-recruit_character = BUL_georgi_markov
-recruit_character = BUL_asen_nikolov
-recruit_character = BUL_nikola_stoychev
-recruit_character = BUL_damian_velchev
-recruit_character = BUL_angel_dotsev
-recruit_character = BUL_konstantin_lukash
-recruit_character = BUL_nikola_mihailov_mihov
+# recruit_character = BUL_ivan_markov
+# recruit_character = BUL_georgi_markov
+# recruit_character = BUL_asen_nikolov
+# recruit_character = BUL_nikola_stoychev
+# recruit_character = BUL_damian_velchev
+# recruit_character = BUL_angel_dotsev
+# recruit_character = BUL_konstantin_lukash
+# recruit_character = BUL_nikola_mihailov_mihov
 recruit_character = BUL_nikola_hadzhipetkov
-recruit_character = BUL_vasil_tenev_boydev
+# recruit_character = BUL_vasil_tenev_boydev
 recruit_character = BUL_stefan_nedev
 recruit_character = BUL_nikola_petkov
 recruit_character = BUL_dimitrana_ivanova
@@ -222,6 +227,8 @@ recruit_character = BUL_blagoi_ivanov
 recruit_character = BUL_kiril_dimitrov_yanchule
 recruit_character = BUL_atanas_pavlov_zhilkov
 recruit_character = BUL_atanas_pavlov_zhilkov_bftb
+recruit_character = BUL_konstantin_ivanov_bekyarov
+recruit_character = BUL_dobri_terpeshev
 #New Line
 
 # AXIS

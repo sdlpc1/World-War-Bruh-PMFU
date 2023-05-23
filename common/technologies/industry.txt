@@ -360,6 +360,10 @@ technologies = {
 			name = industry_folder
 			position = { x = 4 y = 4 }
 		}
+
+		enable_equipment_modules = {
+			tank_cast_armor
+		}
 		
 		categories = {
 			industry
@@ -401,10 +405,6 @@ technologies = {
 		categories = {
 			industry
 			concentrated_industry_category
-		}
-
-		enable_equipment_modules = {
-			tank_cast_armor
 		}
 		
 		ai_will_do = {
@@ -575,6 +575,10 @@ technologies = {
 			industry
 			dispersed_industry_category
 		}
+
+		enable_equipment_modules = {
+			tank_cast_armor
+		}
 		
 		ai_research_weights = {
 			defensive = -1.0
@@ -615,10 +619,6 @@ technologies = {
 		categories = {
 			industry
 			dispersed_industry_category
-		}
-
-		enable_equipment_modules = {
-			tank_cast_armor
 		}
 		
 		ai_research_weights = {
@@ -2822,4 +2822,10 @@ technologies = {
 			}
 		}
 	}			
+	naval_base_construction = {
+		enable_building = {
+			building = naval_base
+			level = 10
+		}
+	}
 }

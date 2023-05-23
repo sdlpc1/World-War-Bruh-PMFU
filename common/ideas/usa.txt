@@ -2,6 +2,104 @@ ideas = {
 
 	country = {
 
+		USA_tackling_waste_idea = {
+
+			picture = generic_disjointed_gov			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.05
+			}
+		}
+
+		USA_side_with_big_business_idea = {
+
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		USA_side_with_workers_union_idea = {
+
+			picture = eng_tackle_capitalism
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		USA_rebuilding_the_nation_idea = {
+
+			picture = generic_goods_red_bonus
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.025
+			}
+		}
+
+		USA_flint_strikes_idea = {
+
+			picture = FRA_factory_strikes			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = 1   instant = yes
+				} 
+			}
+		}
+
 		USA_tizard = {
 			removal_cost = -1
 			allowed = {
@@ -210,9 +308,9 @@ ideas = {
 				medium_plane_fighter_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				cv_small_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
-				}
+				# cv_fighter_equipment = {
+				# 	build_cost_ic = -0.1 instant = yes
+				# }
 			}
 		}
 	
@@ -1331,7 +1429,7 @@ ideas = {
 				always = no
 			}
 			
-			picture = spr_anti_fascist_crusade
+			picture = SPR_anti_fascist_crusade
 
 			allowed_civil_war = {
 				has_government = democratic
@@ -1424,6 +1522,27 @@ ideas = {
 			}
 		}
 
+		USA_new_deal3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = new_deal
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.50
+				production_speed_industrial_complex_factor = 0.30
+				stability_factor = 0.10
+			}
+		}
+
 		USA_wilkies_new_deal = {
 			
 			allowed = {
@@ -1456,7 +1575,8 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.2
 				stability_factor = 0.2
-				production_speed_industrial_complex_factor = 0.25
+				production_speed_industrial_complex_factor = 0.4
+				production_speed_arms_factory_factor = -0.3
 			}
 		}
 		full_employment = {
@@ -1626,7 +1746,7 @@ ideas = {
 			picture = generic_air_bonus
 			
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				large_plane_airframe = { ##
 					air_range = 0.25 instant = yes
 				}	
 			}
@@ -1766,9 +1886,9 @@ ideas = {
 				medium_plane_fighter_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				cv_small_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
-				}
+				# cv_fighter_equipment = {
+				# 	build_cost_ic = -0.1 instant = yes
+				# }
 			}
 		}
 
@@ -1788,13 +1908,10 @@ ideas = {
 				small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				cv_small_plane_naval_bomber_airframe = {
+				medium_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 				small_plane_cas_airframe = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				cv_small_plane_cas_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -1819,8 +1936,6 @@ ideas = {
 				medium_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				
-				
 			}
 		}
 
@@ -2126,7 +2241,31 @@ ideas = {
 					hard_attack = 0.1
 					build_cost_ic = -0.1
 				}
+				medium_tank_artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+				medium_tank_artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+				medium_tank_aa_equipment = {
+					build_cost_ic = -0.1
+				}
+				assault_gun_equipment = {
+					build_cost_ic = -0.1
+				}
+				amphibious_tank_equipment = {
+					build_cost_ic = -0.1
+				}
 				light_tank_equipment = {
+					build_cost_ic = -0.15
+				}
+				light_tank_artillery_equipment = {
+					build_cost_ic = -0.15
+				}
+				light_tank_destroyer_equipment = {
+					build_cost_ic = -0.15
+				}
+				light_tank_aa_equipment = {
 					build_cost_ic = -0.15
 				}
 			}
@@ -2163,7 +2302,7 @@ ideas = {
 					ap_attack = 0.1
 					hard_attack = 0.1
 				}
-				heavy_tank_destroyer_equipment = {
+				heavy_tank_destroyer_chassis = {
 					build_cost_ic = -0.1
 					ap_attack = 0.1
 					hard_attack = 0.1
@@ -2450,6 +2589,7 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

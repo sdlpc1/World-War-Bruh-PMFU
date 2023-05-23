@@ -1,3 +1,15 @@
+#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
 focus_tree = {
 	id = romanian_focus
 	
@@ -67,7 +79,7 @@ focus_tree = {
 		x = 3
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -173,7 +185,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -286,7 +298,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -649,7 +661,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -699,8 +711,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
@@ -810,7 +822,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1019,7 +1031,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1388,7 +1400,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_fortify_the_borders
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1411,8 +1423,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1579,7 +1591,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -1700,9 +1712,10 @@ focus_tree = {
 		id = ROM_iron_guard
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ROM_appoint_german_friendly_government }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ROM_appoint_german_friendly_government
+		mutually_exclusive = { focus = ROM_national_christian_party }
 
 		cost = 10
 
@@ -1738,9 +1751,79 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ROM_national_christian_party
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ROM_appoint_german_friendly_government }
+		x = 1
+		y = 1
+		relative_position_id = ROM_appoint_german_friendly_government
+		mutually_exclusive = { focus = ROM_iron_guard }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			ROM_octavian_goga = {
+				promote_character = {
+					ideology = fascism_ideology
+				}
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = ROM_fascism_party2_long
+				name = ROM_fascism_party2
+			}
+			if = {
+				limit = { has_idea = ROM_the_sentinel_of_the_motherland }
+				swap_ideas = {
+					add_idea = ROM_national_christian_party_in_power
+					remove_idea = ROM_the_sentinel_of_the_motherland
+				}
+				else = {
+					remove_ideas = ROM_the_sentinel_of_the_motherland
+					add_ideas = ROM_national_christian_party_in_power
+				}
+			}
+			#Remove ideas or display tooltip warning that it will happen
+			if = {
+				limit = {
+					has_idea = ROM_securitate
+				}
+				remove_ideas = ROM_securitate
+				else = {
+					if = {
+						limit = {
+							has_idea = ROM_constitutional_guarantees
+						}
+						remove_ideas = ROM_constitutional_guarantees
+						else = {
+							custom_effect_tooltip = ROM_appoint_german_friendly_government_tooltip_ncp
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = ROM_force_abdication
 		icon = GFX_focus_rom_abdicate
-		prerequisite = { focus = ROM_iron_guard }
+		prerequisite = { focus = ROM_iron_guard focus = ROM_national_christian_party }
 		x = 0
 		y = 2
 		relative_position_id = ROM_appoint_german_friendly_government
@@ -1779,6 +1862,7 @@ focus_tree = {
 			if = {
 				limit = {
 					fascism > 0.35
+					has_completed_focus = ROM_iron_guard
 				}
 				set_politics = {
 					ruling_party = fascism
@@ -1796,6 +1880,16 @@ focus_tree = {
 					}
 					remove_advisor_role = { slot = army_chief }
 					remove_unit_leader_role = yes
+				}
+			}
+			if = {
+				limit = {
+					fascism > 0.35
+					has_completed_focus = ROM_national_christian_party
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
 				}
 			}
 			swap_ideas = {
@@ -1818,13 +1912,17 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 25
+		x = 30
 		y = 0
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 5
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		available = {
@@ -2417,7 +2515,7 @@ focus_tree = {
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 33
+		x = 21.5
 		y = 0
 
 		cost = 5
@@ -2743,7 +2841,8 @@ focus_tree = {
 
 		completion_reward = {
 			set_technology = {
-				mountain_arty = 1
+				# mountain_arty = 1
+				pack_artillery_3 = 1
 			}
 			add_tech_bonus = {
 				name = ROM_modern_at_guns
@@ -2796,7 +2895,7 @@ focus_tree = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 3 }				
+							infantry = { x = 0 y = 3 }				
 		    	   		 	infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
@@ -2821,7 +2920,7 @@ focus_tree = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
-								infantry = { x = 1 y = 3 }				
+								infantry = { x = 0 y = 3 }				
 								infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
@@ -3031,7 +3130,7 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 40
+		x = 29
 		y = 0
 
 		cost = 5

@@ -2,7 +2,7 @@
 
 oob = "ITA_1936"
 
-set_research_slots = 6
+set_research_slots = 7
 set_stability = 0.6
 set_war_support = 0.65
 
@@ -16,20 +16,30 @@ set_variable = { ITA_poster_center_icon_frame = ITA_propaganda_empty_slot_index 
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
 set_variable = { ITA_re_unit_camelry_design_cost_factor = 0 }
 
+create_intelligence_agency = {
+    name = "Servizio Informazioni Militare"
+}
+
+army_experience = 50
+
 add_ideas = {
 	vittorio_emanuele
 	vittoria_mutilata
 	export_focus
 	limited_conscription
-	partial_economic_mobilisation
+	partial_economic_mobilisation #war_economy
 	ITA_inflexible_economy
 	ITA_neutrality_idea
 	ITA_old_guard_base
 	ITA_incompetent_officers
 	ITA_outdated_industry
 	PACIFIC_COMMONWEALTH_controls_axis_original
+	MEDITERRANEAN_AXIS_controls_original
+	peace_training
+	no_grinding
 }
 
+# MP_garrison_division_standard = yes
 
 # Starting tech
 set_technology = {
@@ -49,6 +59,8 @@ set_technology = {
 	motorised_infantry = 1
 	ita_light_tank_1 = 1
 	gw_artillery = 1
+	jaegers = 1
+	marines = 1
 	
 	# early_fighter = 1
 	# early_bomber = 1
@@ -144,10 +156,10 @@ if = {
 		has_start_date < 1936.01.02
 	}
 
-	declare_war_on = {
-		target = ETH
-		type = annex_everything
-	}
+	# declare_war_on = {
+	# 	target = ETH
+	# 	type = annex_everything
+	# }
 	give_guarantee = ALB
 }
 
@@ -183,8 +195,8 @@ recruit_character = ITA_giuseppe_fioravanzo
 recruit_character = ITA_carlo_bergamini
 recruit_character = ITA_angelo_iachino
 recruit_character = ITA_giulio_presbitero
-recruit_character = ITA_amadeo_bordiga
-recruit_character = ITA_ivanoe_bonomi
+# recruit_character = ITA_amadeo_bordiga
+# recruit_character = ITA_ivanoe_bonomi
 recruit_character = ITA_carlo_scorza
 recruit_character = ITA_giovanni_marinelli
 recruit_character = ITA_gian_galeazzo_ciano
@@ -210,6 +222,9 @@ recruit_character = ITA_guiseppe_fioravanzo
 recruit_character = ITA_amedeo_mecozzi
 recruit_character = ITA_renato_sandalli
 recruit_character = ITA_gaetano_crocco
+recruit_character = ITA_angelo_di_maria
+recruit_character = ITA_mario_fama
+recruit_character = ITA_mario_federico
 
 
 ### VARIANTS ###
@@ -577,7 +592,7 @@ if = {
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_3
+				fixed_ship_engine_slot = heavy_ship_engine_2
 				fixed_ship_secondaries_slot = ship_secondaries_2
 				fixed_ship_armor_slot = ship_armor_bb_2
 				front_1_custom_slot = ship_heavy_battery_2

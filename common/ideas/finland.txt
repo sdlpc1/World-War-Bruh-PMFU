@@ -20,6 +20,25 @@ ideas = {
 
 	}
 	country = {
+		FIN_counter_intel = {
+			
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				has_war = yes
+			}
+
+			picture = generic_secret_police
+			
+			removal_cost = -1
+			
+			modifier = {
+				intelligence_agency_defense = 5
+			}
+		}
+
 		FIN_victorious_idea = {
 			
 			allowed = {

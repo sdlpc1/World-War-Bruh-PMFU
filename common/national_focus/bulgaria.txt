@@ -1,3 +1,15 @@
+#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
+#!gfx:interface\replace\bruh_interface.gfx
+#!gfx:interface\replace\bruh_bra_interface.gfx
+#!gfx:interface\replace\bruh_eng_interface.gfx
+#!gfx:interface\replace\bruh_ger_interface.gfx
+#!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_ita_interface.gfx
+#!gfx:interface\replace\bruh_jap_interface.gfx
+#!gfx:interface\replace\bruh_nsb_interface.gfx
+#!gfx:interface\replace\bruh_sov_interface.gfx
+
 ### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -30,7 +42,7 @@ focus_tree = {
 		x = 0
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 8
@@ -365,10 +377,10 @@ focus_tree = {
 	focus = {
 		id = BUL_armed_forces
 		icon = GFX_focus_generic_military_mission
-		x = 24
+		x = 22
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 8
@@ -385,7 +397,7 @@ focus_tree = {
 		id = BUL_royal_army
 		icon = GFX_focus_generic_monarchy_2
 		prerequisite = { focus = BUL_armed_forces }
-		x = -4
+		x = -2
 		y = 1
 		relative_position_id = BUL_armed_forces
 
@@ -409,7 +421,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_royal_army
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -433,7 +445,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_new_rifles
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -457,7 +469,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_royal_army
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -481,7 +493,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_motorisation
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -506,7 +518,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_armour
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 27
@@ -652,6 +664,10 @@ focus_tree = {
 
 		cost = 10
 
+		allow_branch = {
+			always = no
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -720,7 +736,7 @@ focus_tree = {
 		id = BUL_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = BUL_armed_forces }
-		x = 4
+		x = 2
 		y = 1
 		relative_position_id = BUL_armed_forces
 
@@ -1576,6 +1592,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_ideas = BUL_liberal_trade_policies
+			add_ideas = axis_trade_treaty
 		}
 	}
 
@@ -2884,6 +2901,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
+			add_ideas = axis_trade_treaty
 			add_opinion_modifier = { 
 				target = GER
 				modifier = BUL_strengthened_relations_with_us

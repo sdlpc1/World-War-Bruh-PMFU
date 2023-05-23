@@ -163,6 +163,124 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
+
+		no_grinding = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = stavka
+			
+			modifier = {
+				experience_gain_factor = -1
+			}
+		}
+
+		peace_training = { # LW tyvm
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				has_war = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				training_time_army_factor = -0.29
+				air_training_xp_gain_factor = 5
+				experience_gain_navy_unit_factor = 10
+				experience_gain_army_unit_factor = 2.5
+			}
+		}
+
+		minors_no_air = {
+
+			allowed = {
+				always = no
+			}
+
+			name = "Minors No Air"
+
+			removal_cost = -1
+
+			picture = generic_air_research
+			
+			equipment_bonus = {
+				medium_plane_fighter_airframe = {
+					build_cost_ic = 100 instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = 100 instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = 100 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = 100 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = 100 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = 100 instant = yes
+				}
+				medium_plane_scout_plane_airframe = {
+					build_cost_ic = 100 instant = yes
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					build_cost_ic = 100 instant = yes
+				}
+			}
+		}
+
+		NO_ASIA_attache_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				GER = {
+					has_completed_focus = GER_danzig_or_war
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				experience_gain_army = 0.3
+				war_support_factor = 0.1
+			}
+		}
+
+		tank_hunter_teams = {
+			picture = generic_local_self_management
+			removal_cost = -1	
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			equipment_bonus = {
+				squad_equipment = {
+					build_cost_ic = 0.05
+					hard_attack = 0.50
+					ap_attack = 0.35			
+				}
+			}
+		}
 	
 		TO_chose_neutrality = {
 
@@ -205,7 +323,7 @@ ideas = {
 				communism_acceptance = -15
 			}
 		}
-
+		
 		fix_production_idea = { modifier = { production_factory_start_efficiency_factor = 1.3 } }
 
 		spirit_of_bozo_spain = {
@@ -241,7 +359,7 @@ ideas = {
 				# war_support_factor = -0.15
 			}
 		}
-		
+
 		father_check = {	
 
 			picture = eng_tackle_capitalism
@@ -1805,6 +1923,7 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

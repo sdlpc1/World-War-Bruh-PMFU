@@ -2,6 +2,28 @@ ideas = {
 
 	country = {
 	
+		## NO EQ CAPTURE
+		JAP_no_equipment_capture = {
+			name = JAP_no_equipment_capture
+			allowed = {
+				always = no
+			}
+			picture = jap_no_eq_capture
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				squad_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
 		### HOPPING ###
 	    JAP_island_hopping1 = {
 			name = JAP_island_hopping
@@ -785,13 +807,132 @@ ideas = {
 			picture = jap_zaibatsu_control
 			
 			modifier = {
+				stability_factor = -0.01
+				economy_cost_factor = -0.05
+				trade_laws_cost_factor = -0.05
+				production_speed_arms_factory_factor = 0.04
+				production_speed_dockyard_factor = 0.04
+				consumer_goods_factor = 0.04
+			}
+		}
+
+		JAP_zaibatsus_challenged3_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_control
+			
+			modifier = {
+				stability_factor = -0.02
+				economy_cost_factor = -0.10
+				trade_laws_cost_factor = -0.10
+				production_speed_arms_factory_factor = 0.08
+				production_speed_dockyard_factor = 0.08
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		JAP_zaibatsus_challenged3_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_control
+			
+			modifier = {
+				stability_factor = -0.03
+				economy_cost_factor = -0.15
+				trade_laws_cost_factor = -0.15
+				production_speed_arms_factory_factor = 0.12
+				production_speed_dockyard_factor = 0.12
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		JAP_zaibatsus_challenged3_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_control
+			
+			modifier = {
+				stability_factor = -0.04
+				economy_cost_factor = -0.20
+				trade_laws_cost_factor = -0.20
+				production_speed_arms_factory_factor = 0.16
+				production_speed_dockyard_factor = 0.16
+				consumer_goods_factor = 0.01
+			}
+		}
+
+		JAP_zaibatsus_challenged3_5 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_control
+			
+			modifier = {
 				stability_factor = -0.05
 				economy_cost_factor = -0.25
 				trade_laws_cost_factor = -0.25
-				production_speed_arms_factory_factor = 0.2
-				production_speed_dockyard_factor = 0.2
+				production_speed_arms_factory_factor = 0.20
+				production_speed_dockyard_factor = 0.20
 			}
 		}
+
+		# JAP_zaibatsus_challenged3_6 = {
+
+		# 	allowed = {
+		# 		always = no
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+			
+		# 	removal_cost = -1
+
+		# 	picture = jap_zaibatsu_control
+			
+		# 	modifier = {
+		# 		stability_factor = -0.06
+		# 		economy_cost_factor = -0.30
+		# 		trade_laws_cost_factor = -0.30
+		# 		production_speed_arms_factory_factor = 0.24
+		# 		production_speed_dockyard_factor = 0.24
+		# 	}
+		# }
 
 		JAP_duplicate_research_efforts = {
 			allowed = {
@@ -1605,6 +1746,71 @@ ideas = {
 
 		## Post China War Ideas ##
 
+		JAP_early_war_industry_bonus = {
+			allowed = {
+				original_tag = AST
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.10
+				production_speed_bunker_factor = 0.25
+
+				production_speed_dockyard_factor = -0.25
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+
+		JAP_early_war_industry_bonus2 = {
+			allowed = {
+				original_tag = AST
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_speed_dockyard_factor = -0.25
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+
+		JAP_indochina_terrain_training = {
+			allowed = {
+				original_tag = AST
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = eng_special_air_service
+	
+			modifier = {
+				terrain_penalty_reduction = 0.05
+			}
+		}
+
 		JAP_mid_war_industry_bonus = {
 			removal_cost = -1
 			picture = generic_central_management
@@ -1614,9 +1820,28 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.10
-				production_speed_bunker_factor = 0.05
-				production_speed_coastal_bunker_factor = 0.05
+				industrial_capacity_dockyard = 0.15
+				production_speed_dockyard_factor = 0.10
+				refit_speed = 0.10
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+
+				industrial_capacity_factory = -0.10
+				production_speed_arms_factory_factor = -0.15
+			}
+		}
+
+		JAP_mid_war_industry_bonus2 = {
+			removal_cost = -1
+			picture = generic_central_management
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.10
+				production_speed_arms_factory_factor = -0.15
 			}
 		}
 
@@ -1632,6 +1857,7 @@ ideas = {
 				naval_invasion_capacity = 10
 				invasion_preparation = -0.1
 				amphibious_invasion = 0.1
+				extra_marine_supply_grace = 72
 			}
 		}
 
@@ -1644,10 +1870,30 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.15
-				production_speed_dockyard_factor = 0.1
-				production_speed_bunker_factor = 0.1
-				production_speed_coastal_bunker_factor = 0.1
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.20
+				production_speed_anti_air_building_factor = 0.20
+
+				production_speed_air_base_factor = 0.2
+				production_speed_naval_base_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
+
+		JAP_late_war_industry_bonus2 = {
+			removal_cost = -1
+			picture = generic_central_management
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_air_base_factor = 0.2
+				production_speed_naval_base_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
 			}
 		}
 
@@ -1660,9 +1906,21 @@ ideas = {
 			}
 
 			modifier = {
-				naval_invasion_capacity = 20
-				invasion_preparation = -0.25
-				amphibious_invasion = 0.25
+				supply_consumption_factor = -0.05
+				no_supply_grace = 48
+			}
+		}
+
+		JAP_late_war_intel = {
+			removal_cost = -1
+			picture = generic_japanese_conflict
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_radar_station_factor = 0.25
 			}
 		}
 	}
@@ -1871,6 +2129,7 @@ ideas = {
 				
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

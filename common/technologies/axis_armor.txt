@@ -1546,10 +1546,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1939
+		start_year = 1936
 		folder = {
 			name = armour_axis_folder
-			position = { x = -5 y = 6 }
+			position = { x = -5 y = 0 }
 		}
 		
 		sub_technologies = {
@@ -1584,10 +1584,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1941
+		start_year = 1940
 		folder = {
 			name = armour_axis_folder
-			position = { x = -5 y = 10 }
+			position = { x = -5 y = 8 }
 		}
 		
 		sub_technologies = {

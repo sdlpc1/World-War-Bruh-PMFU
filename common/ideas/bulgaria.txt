@@ -2206,6 +2206,7 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.1
+				heavy_artillery = 0.1
 			}
 			
 			traits = { artillery_manufacturer }

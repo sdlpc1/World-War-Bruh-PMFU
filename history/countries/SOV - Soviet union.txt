@@ -29,6 +29,12 @@ if = {
 	}
 }
 
+create_intelligence_agency = {
+    name = "NKVD"
+}
+
+# MP_garrison_division_standard = yes
+
 #COUNTRY LEADERS
 recruit_character = SOV_iosif_stalin
 recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
@@ -72,10 +78,10 @@ recruit_character = SOV_konstantin_rodzayevsky
 
 recruit_character = SOV_aleksandr_vasilevsky
 recruit_character = SOV_aleksandr_golovanov
-recruit_character = SOV_aleksandr_gorbatov
+# recruit_character = SOV_aleksandr_gorbatov
 recruit_character = SOV_aleksandr_novikov
-recruit_character = SOV_aleksandr_yegorov
-recruit_character = SOV_andrey_grechko
+# recruit_character = SOV_aleksandr_yegorov
+# recruit_character = SOV_andrey_grechko
 recruit_character = SOV_andrey_vlasov
 recruit_character = SOV_andrey_yeryomenko
 recruit_character = SOV_arseny_golovko
@@ -84,7 +90,7 @@ recruit_character = SOV_dmitry_lelyushenko
 recruit_character = SOV_filipp_golikov
 recruit_character = SOV_filipp_oktyabrsky
 
-recruit_character = SOV_georgy_zakharov
+# recruit_character = SOV_georgy_zakharov
 recruit_character = SOV_georgy_zhukov
 recruit_character = SOV_gordey_levchenko
 recruit_character = SOV_grigory_kulik
@@ -103,14 +109,14 @@ recruit_character = SOV_kuzma_galitsky
 recruit_character = SOV_leonid_govorov
 recruit_character = SOV_maksim_purkayev
 recruit_character = SOV_markian_popov
-recruit_character = SOV_maks_reyter
+# recruit_character = SOV_maks_reyter
 recruit_character = SOV_mikhail_frinovsky
 
 recruit_character = SOV_mikhail_tukhachevsky
 recruit_character = SOV_nikandr_chibisov
 
-recruit_character = SOV_nikolay_berzarin
-recruit_character = SOV_nikolay_vatutin
+# recruit_character = SOV_nikolay_berzarin
+# recruit_character = SOV_nikolay_vatutin
 
 recruit_character = SOV_nikolay_kuznetsov
 
@@ -125,16 +131,23 @@ recruit_character = SOV_sergey_korolyov
 recruit_character = SOV_sergey_rudenko
 recruit_character = SOV_sergey_gorshkov
 recruit_character = SOV_stepan_krasovsky
-recruit_character = SOV_vasily_blyukher
-recruit_character = SOV_vasily_chuykov
+# recruit_character = SOV_vasily_blyukher
+# recruit_character = SOV_vasily_chuykov
 recruit_character = SOV_vasily_kuznetsov
 recruit_character = SOV_vladimir_kasatonov
 recruit_character = SOV_vladimir_tributs
 
 recruit_character = SOV_yakov_cherevichenko
 recruit_character = SOV_yakov_smushkevich
+recruit_character = SOV_nikolai_vatutin
+recruit_character = SOV_georgiy_zakharov
+recruit_character = SOV_max_reyter
+recruit_character = SOV_nikolai_berzarin
+recruit_character = SOV_alexander_gorbatov
+recruit_character = SOV_andrei_grechko
+recruit_character = SOV_vasily_chuikov
 
-recruit_character = SOV_vitaly_primakov
+# recruit_character = SOV_vitaly_primakov
 #Not available at game start
 #recruit_character = SOV_vasily_korzh
 #recruit_character = SOV_sidor_kovpak
@@ -169,9 +182,15 @@ if = {
 
 set_variable = { SOV_RG_division_cap = 0 }
 set_variable = { SOV_RG_cap_increase = 2 }
-set_variable = { SOV_RG_cap_increase_double = 4 }
+set_variable = { SOV_RG_cap_decrease = -2 }
+set_variable = { SOV_RG_cap_increase_medium_double = 4 }
+set_variable = { SOV_RG_cap_increase_light_double = 6 }
+set_variable = { SOV_RG_cap_increase_heavy_double = 2 }
 
 #Initialize character flags Part I (aka who's safe)
+SOV_nikolay_voznesensky = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
 SOV_mikhail_kalinin = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
@@ -700,7 +719,7 @@ if = {
 	}
 }
 
-set_research_slots = 5
+set_research_slots = 6
 set_stability = 0.4
 set_war_support = 0.45
 # Starting tech
@@ -722,11 +741,14 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
+	jaegers = 1
+	rubber_processing = 1
 
 	sov_light_tank_1 = 1
 	sov_bt_tank_1 = 1
 	sov_bt_tank_2 = 1
 	sov_heavy_tank_1 = 1
+	sov_medium_tank_1 = 1
 	
 	electronic_mechanical_engineering = 1
 	radio = 1
@@ -738,7 +760,8 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	basic_train = 1
 }
 
-RG_armored_division_standard = yes
+# RG_armored_division_standard = yes
+set_country_flag = RG_armored_division_medium
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -810,8 +833,12 @@ add_ideas = {
 	SOV_politicized_military
 	SOV_2_5_plan
 	SOV_bad_rail
-
+	russian_closed_eco
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
+	SOV_allow_mongolian_trade # fix trade
+	volunteer_minimum_major
+	peace_training
+	no_grinding
 }
 
 1939.1.1 = {
@@ -907,9 +934,9 @@ add_ideas = {
 		SOV_nikolay_ustryalov = { SOV_purge_character_effect = yes }
 	}
 	SOV_mikhail_tukhachevsky = { SOV_purge_character_effect = yes }
-	SOV_aleksandr_yegorov = { SOV_purge_character_effect = yes }
-	SOV_vasily_blyukher = { SOV_purge_character_effect = yes }
-	SOV_vitaly_primakov = { SOV_purge_character_effect = yes }
+	# SOV_aleksandr_yegorov = { SOV_purge_character_effect = yes }
+	# SOV_vasily_blyukher = { SOV_purge_character_effect = yes }
+	# SOV_vitaly_primakov = { SOV_purge_character_effect = yes }
 	SOV_nikolay_bukharin = { SOV_purge_character_effect = yes }
 	SOV_aleksey_rykov = { SOV_purge_character_effect = yes }
 	SOV_mikhail_tomsky = { SOV_purge_character_effect = yes }
@@ -1864,22 +1891,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # LUX
-add_operation_token = {
-	tag = LUX
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = LUX
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = LUX
+# 	token = token_navy_friendly
+# }
 # DEN
 add_operation_token = {
 	tag = DEN
@@ -2051,22 +2078,22 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 # PHI
-add_operation_token = {
-	tag = PHI
-	token = token_airforce_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_army_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_civilian_friendly
-}
-add_operation_token = {
-	tag = PHI
-	token = token_navy_friendly
-}
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_airforce_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_army_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_civilian_friendly
+# }
+# add_operation_token = {
+# 	tag = PHI
+# 	token = token_navy_friendly
+# }
 # AST
 add_operation_token = {
 	tag = AST
