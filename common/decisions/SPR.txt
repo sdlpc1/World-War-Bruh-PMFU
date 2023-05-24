@@ -26,7 +26,7 @@ operations = {
 		# visible = {
 		# }
 
-		days_mission_timeout  = 30
+		days_mission_timeout  = 45
 		
 		complete_effect = {
 			# nothing ig
@@ -124,7 +124,7 @@ operations = {
 		# visible = {
 		# }
 
-		days_mission_timeout  = 360
+		days_mission_timeout  = 180
 		
 		complete_effect = {
 			# good effect
