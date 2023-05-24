@@ -371,7 +371,7 @@ ideas = {
 				max_planning = -0.1
 				planning_speed = -0.25
 				max_dig_in = -2.5
-				experience_gain_factor = -0.4
+				# experience_gain_factor = -0.4
 			}
 		}
 	
@@ -388,7 +388,7 @@ ideas = {
 				max_planning = -0.25
 				planning_speed = -0.5
 				max_dig_in = -5
-				experience_gain_factor = -0.5
+				# experience_gain_factor = -0.5
 			}
 		}
 		
@@ -1372,7 +1372,7 @@ ideas = {
 			picture = jap_intervene_in_china
 			
 			modifier = {
-				experience_gain_factor = -0.1
+				# experience_gain_factor = -0.1
 			}
 			
 			targeted_modifier = {
@@ -1405,7 +1405,7 @@ ideas = {
 			picture = jap_intervene_in_china
 			
 			modifier = {
-				experience_gain_factor = -0.2
+				# experience_gain_factor = -0.2
 			}
 			
 			targeted_modifier = {
@@ -1438,7 +1438,7 @@ ideas = {
 			picture = jap_intervene_in_china
 			
 			modifier = {
-				experience_gain_factor = -0.3
+				# experience_gain_factor = -0.3
 			}
 			
 			targeted_modifier = {
@@ -1471,7 +1471,7 @@ ideas = {
 			picture = jap_intervene_in_china
 			
 			modifier = {
-				experience_gain_factor = -0.4
+				# experience_gain_factor = -0.4
 			}
 			
 			targeted_modifier = {
@@ -1504,7 +1504,7 @@ ideas = {
 			picture = jap_intervene_in_china
 			
 			modifier = {
-				experience_gain_factor = -0.5
+				# experience_gain_factor = -0.5
 			}
 			
 			
