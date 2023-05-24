@@ -1770,6 +1770,7 @@ ENG_develop_the_empire = {
 		}
 		remove_effect = { 
 			add_to_variable= { ENG.shadow_civs1 = 2 }
+			random_owned_controlled_state= {
 				limit= {
 					is_core_of = ENG
 				}
