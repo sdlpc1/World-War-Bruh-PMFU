@@ -49,6 +49,11 @@ Manchuko_Historical = {
 		MAN_japanese_warfare
 	}
 
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
+	
     ai_strategy = {
 		type = prepare_for_war
 		id = CHI

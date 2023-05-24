@@ -1043,7 +1043,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_proclaim_greater_hungary
-		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+		icon = GFX_focus_GER_Greater_Hungary
 		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
 		x = -1
 		y = 1
@@ -1957,7 +1957,7 @@ focus_tree = {
 	focus = {
 		id = HUN_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 24
+		x = 20
 		y = 0
 
 		cost = 5
@@ -2093,6 +2093,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 50
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		available = {
@@ -2580,7 +2584,7 @@ focus_tree = {
 		id = HUN_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = HUN_war_games }
-		x = 4
+		x = 0
 		y = 1
 		relative_position_id = HUN_war_games
 
@@ -3134,7 +3138,7 @@ focus_tree = {
 		id = HUN_naval_warfare
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = HUN_secret_rearmament }
-		x = 12
+		x = 7
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 

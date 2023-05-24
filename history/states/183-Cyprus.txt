@@ -9,6 +9,7 @@ state= {
 	}
 
 	history={
+		set_state_flag = ENG_controls
 		owner = ENG
 		victory_points = {
 			11984 5

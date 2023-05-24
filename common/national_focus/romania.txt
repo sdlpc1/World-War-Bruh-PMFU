@@ -1921,6 +1921,10 @@ focus_tree = {
 			factor = 5
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 
 		}
@@ -3126,7 +3130,7 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 38
+		x = 29
 		y = 0
 
 		cost = 5

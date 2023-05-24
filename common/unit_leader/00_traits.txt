@@ -1120,9 +1120,9 @@ leader_traits = {
 		modifier = {
 			planning_speed = 0.2
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		slot = high_command
 		specialist_advisor_trait = army_regrouping_1
@@ -1154,12 +1154,12 @@ leader_traits = {
 			motorized_attack_factor = 0.075
 			mechanized_attack_factor = 0.075
 		}
-		corps_commander_modifier = {
-			max_commander_army_size = -16
-		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# corps_commander_modifier = {
+		# 	max_commander_army_size = -16
+		# }
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		slot = high_command
 		specialist_advisor_trait = army_cavalry_1
@@ -1186,9 +1186,9 @@ leader_traits = {
 		modifier = {
 			army_infantry_defence_factor = 0.1
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		slot = high_command
 		specialist_advisor_trait = army_infantry_1
@@ -1219,9 +1219,9 @@ leader_traits = {
 		corps_commander_modifier = {
 			max_commander_army_size = 10
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1249,9 +1249,9 @@ leader_traits = {
 		modifier = {
 			recon_factor = 0.25
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1270,9 +1270,9 @@ leader_traits = {
 		modifier = {
 			winter_attrition_factor = -0.5
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1289,7 +1289,6 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			terrain_penalty_reduction = 0.1
 			acclimatization_cold_climate_gain_factor = 0.2
 			acclimatization_hot_climate_gain_factor = 0.2
 		}
@@ -1354,9 +1353,9 @@ leader_traits = {
                 attack = 0.1
             }
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		slot = high_command
 		specialist_advisor_trait = army_entrenchment_1
 		expert_advisor_trait = army_entrenchment_2
@@ -1383,12 +1382,12 @@ leader_traits = {
 			army_armor_speed_factor = 0.05 
 			army_armor_attack_factor = 0.05
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
-		corps_commander_modifier = {
-			max_commander_army_size = -16
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
+		# corps_commander_modifier = {
+		# 	max_commander_army_size = -16
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1418,9 +1417,9 @@ leader_traits = {
 		modifier = {
 			out_of_supply_factor = -0.25
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1446,9 +1445,9 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1470,9 +1469,9 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1494,9 +1493,9 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1518,9 +1517,9 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1542,9 +1541,9 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1566,9 +1565,9 @@ leader_traits = {
 				defence = 0.1
 			}
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1598,9 +1597,9 @@ leader_traits = {
 				defence = 0.2
 			}
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -1620,9 +1619,9 @@ leader_traits = {
 			amphibious_invasion = 0.5 # 30% faster invasions
 			invasion_preparation = -0.3
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.1
+		# }
 		slot = high_command
 		specialist_advisor_trait = navy_amphibious_assault_1
 		expert_advisor_trait = navy_amphibious_assault_2
@@ -1842,6 +1841,7 @@ leader_traits = {
 		cost = 500
 		modifier = {
 			shore_bombardment_bonus = 0.3
+			naval_invasion_penalty = -0.05
 		}
 		
 		ai_will_do = {
@@ -2264,7 +2264,7 @@ leader_traits = {
 			destroyer = {
 				naval_damage_factor = 0.1
 				naval_torpedo_hit_chance_factor = 0.1
-				navy_visibility = -0.1
+				navy_visibility = -0.05
 			}
 		}	
 		ai_will_do = {
@@ -3680,4 +3680,17 @@ leader_traits = {
 		}
 	}
 
+	five_terrain_penalty_reduction = {
+		type = corps_commander
+
+		trait_type = personality_trait
+
+		corps_commander_modifier = {
+			terrain_penalty_reduction = 0.05		
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 }

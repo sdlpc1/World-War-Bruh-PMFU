@@ -185,6 +185,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_axis_original
 	volunteer_minimum_major
 	peace_training
+	no_grinding
 }
 
 # MP_garrison_division_standard = yes
@@ -223,21 +224,21 @@ recruit_character = GER_erwin_rommel
 recruit_character = GER_erich_von_manstein
 recruit_character = GER_heinz_guderian
 recruit_character = GER_wilhelm_list
-recruit_character = GER_ewald_von_kleist
+# recruit_character = GER_ewald_von_kleist
 recruit_character = GER_fedor_von_bock
 recruit_character = GER_walter_model
 recruit_character = GER_maximilian_von_weichs
 recruit_character = GER_wilhelm_ritter_von_leeb
-recruit_character = GER_georghans_reinhardt
+# recruit_character = GER_georghans_reinhardt
 recruit_character = GER_kurt_student
-recruit_character = GER_erwin_von_witzleben
-recruit_character = GER_hermann_hoth
+# recruit_character = GER_erwin_von_witzleben
+# recruit_character = GER_hermann_hoth
 recruit_character = GER_johannes_blaskowitz
-recruit_character = GER_paul_hausser
-recruit_character = GER_friedrich_schulz
+# recruit_character = GER_paul_hausser
+# recruit_character = GER_friedrich_schulz
 recruit_character = GER_alfred_jodl
 recruit_character = GER_sepp_dietrich
-recruit_character = GER_hasso_von_manteuffel
+# recruit_character = GER_hasso_von_manteuffel
 recruit_character = GER_albert_kesselring
 recruit_character = GER_gotthard_heinrici
 recruit_character = GER_ernsteberhard_hell
@@ -245,8 +246,8 @@ recruit_character = GER_felix_steiner
 recruit_character = GER_erich_raeder
 recruit_character = GER_hermann_boehm
 recruit_character = GER_wilhelm_marschall
-recruit_character = GER_günther_von_kluge
-recruit_character = GER_walter_krüger
+# recruit_character = GER_günther_von_kluge
+# recruit_character = GER_walter_krüger
 recruit_character = GER_georg_von_küchler
 recruit_character = GER_karl_dönitz
 recruit_character = GER_alfred_saalwächter
@@ -334,6 +335,32 @@ create_equipment_variant = {
 		engine_type_slot = tank_gasoline_engine
 	}
 	icon = "gfx/interface/technologies/tanks/ger/ger_p4_tank_1.dds"
+}
+create_equipment_variant = {
+	name = "Placeholder TD to fix bug with special templates"
+	type = medium_tank_destroyer_chassisger_medium_tank_chassis_p4
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_medium_td_placeholder
+		turret_type_slot = tank_medium_superstructure
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Placeholder SPAA to fix bug with special templates"
+	type = light_tank_aa_chassisger_light_tank_chassis_p1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_anti_air_gun_placeholder
+		turret_type_slot = tank_light_turret_open
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+	}
+	obsolete = yes
 }
 
 if = {

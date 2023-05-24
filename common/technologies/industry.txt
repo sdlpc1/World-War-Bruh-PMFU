@@ -2822,4 +2822,17 @@ technologies = {
 			}
 		}
 	}			
+	naval_base_construction = {
+		enable_building = {
+			building = naval_base
+			level = 10
+		}
+	}
+
+	air_base_construction = {
+		enable_building = {
+			building =air_base
+			level = 10
+		}
+	}
 }

@@ -28,4 +28,9 @@ Mongolia_Historical = {
         MON_mobilise_the_workers
         #AI does whatever, army tree
 	}
+
+    ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
 }

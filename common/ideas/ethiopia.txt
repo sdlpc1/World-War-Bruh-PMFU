@@ -1793,6 +1793,8 @@ ideas = {
 				has_completed_focus = ETH_soviet-ethiopian_trade_agreement
 			}
 
+			cost = 150
+
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -1823,6 +1825,7 @@ ideas = {
 					NOT = {has_war_with = ENG}
 				}
 			}
+			cost = 150
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -1849,6 +1852,7 @@ ideas = {
 					NOT = {has_war_with = JAP}
 				}
 			}
+			cost = 150
 			research_bonus = {
 				naval_equipment = 0.15
 			}

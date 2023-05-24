@@ -5,6 +5,7 @@ state=
 	manpower = 241621
 	state_category = small_island
 	history= {
+		set_state_flag = ENG_controls
 		set_state_flag = UK_controls
 		owner = ENG
 		victory_points = {

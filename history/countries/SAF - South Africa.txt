@@ -63,6 +63,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_original
 	peace_training
 	minors_no_air
+	no_grinding
 }
 
 set_variable = { COM_poster_center_icon_frame = 1 }
@@ -104,6 +105,7 @@ recruit_character = SAF_robert_palmer
 recruit_character = SAF_leonard_beyers
 recruit_character = SAF_c_de_weenburg_du_toit
 recruit_character = SAF_james_mitchell_baker
+recruit_character = SAF_jacobus_herculaas_de_la_rey
 
 # Adding this line since you need a newline otherwise recruit character won't work, and it's liable to get removed if I just have an empty line
 

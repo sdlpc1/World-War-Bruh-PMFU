@@ -2977,9 +2977,9 @@ focus = {
 				add_field_marshal_role = {
 					character = "HOL_henri_winkelman"
 						traits = { 
-							defensive_doctrine 
+							inflexible_strategist 
 							trait_cautious 
-							unyielding_defender 
+							swamp_fox 
 						}
 						skill = 4
 						attack_skill = 2

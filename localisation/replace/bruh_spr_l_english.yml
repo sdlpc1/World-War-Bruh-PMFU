@@ -13,6 +13,10 @@
 
   #### DECISIONS ####
   SPA_civil_war:0 "The Start of the Spanish Civil War"
+  SPA_SCW_republican_spirit_dwindling:0 "Republican Spirit Dwindling"
+  SPA_SCW_axis_victory:0 "Spanish Civil War - Axis Victory"
+  SPA_SCW_status_quo:0 "Spanish Civil War - Status Quo"
+  SPA_SCW_comintern_victory:0 "Spanish Civil War - Comintern Victory"
 
   #### TOOLTIPS ####
   SPA_has_not_national_recovery_tt:0 "Does not have National Recovery"
@@ -25,6 +29,8 @@
   POR_neutrality_idea:0 "Not Our War"
   SPR_subjugate_por:0 "Subjugate Portugal"
   SPA_axis_coop:0 "Axis Cooperation"
+  SPA_death_before_surrender_rep:0 "Death Before Surrender"
+  SPA_SCW_axis_victory:0 "Spanish Civil War - Total Axis Victory"
 
   #### EVENTS ####
   lar_spain.39.t:0 "[From.GetNameDefCap] Demands North Africa"

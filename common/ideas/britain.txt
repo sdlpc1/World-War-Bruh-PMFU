@@ -1,482 +1,18 @@
 ideas = {
 
 	hidden_ideas = {
-		# ENG_friendly_intel = {
-		# 	allowed = {
-		# 		always = no
-		# 	}
-
-		# 	removal_cost = -1
-
-		# 	allowed_civil_war = {
-		# 		always = yes
-		# 	}
-
-		# 	# ALLIES
-
-		# 	# ENG
-		# 	add_operation_token = {
-		# 		tag = ENG
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = ENG
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = ENG
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = ENG
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# USA
-		# 	add_operation_token = {
-		# 		tag = USA
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = USA
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = USA
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = USA
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# FRA
-		# 	add_operation_token = {
-		# 		tag = FRA
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = FRA
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = FRA
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = FRA
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# POL
-		# 	add_operation_token = {
-		# 		tag = POL
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = POL
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = POL
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = POL
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# CAN
-		# 	add_operation_token = {
-		# 		tag = CAN
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = CAN
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = CAN
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = CAN
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# MEX
-		# 	add_operation_token = {
-		# 		tag = MEX
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = MEX
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = MEX
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = MEX
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# BRA
-		# 	add_operation_token = {
-		# 		tag = BRA
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = BRA
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = BRA
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = BRA
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# IRE
-		# 	add_operation_token = {
-		# 		tag = IRE
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = IRE
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = IRE
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = IRE
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# POR
-		# 	add_operation_token = {
-		# 		tag = POR
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = POR
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = POR
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = POR
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# HOL
-		# 	add_operation_token = {
-		# 		tag = HOL
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = HOL
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = HOL
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = HOL
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# BEL
-		# 	add_operation_token = {
-		# 		tag = BEL
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = BEL
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = BEL
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = BEL
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# LUX
-		# 	add_operation_token = {
-		# 		tag = LUX
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = LUX
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = LUX
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = LUX
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# DEN
-		# 	add_operation_token = {
-		# 		tag = DEN
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = DEN
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = DEN
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = DEN
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# NOR
-		# 	add_operation_token = {
-		# 		tag = NOR
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = NOR
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = NOR
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = NOR
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# CZE
-		# 	add_operation_token = {
-		# 		tag = CZE
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = CZE
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = CZE
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = CZE
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# GRE
-		# 	add_operation_token = {
-		# 		tag = GRE
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = GRE
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = GRE
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = GRE
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# IRQ
-		# 	add_operation_token = {
-		# 		tag = IRQ
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = IRQ
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = IRQ
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = IRQ
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# SAF
-		# 	add_operation_token = {
-		# 		tag = SAF
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = SAF
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = SAF
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = SAF
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# RAJ
-		# 	add_operation_token = {
-		# 		tag = RAJ
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = RAJ
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = RAJ
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = RAJ
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# CHI
-		# 	add_operation_token = {
-		# 		tag = CHI
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = CHI
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = CHI
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = CHI
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# MAL
-		# 	add_operation_token = {
-		# 		tag = MAL
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = MAL
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = MAL
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = MAL
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# INS
-		# 	add_operation_token = {
-		# 		tag = INS
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = INS
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = INS
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = INS
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# PHI
-		# 	add_operation_token = {
-		# 		tag = PHI
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = PHI
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = PHI
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = PHI
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# AST
-		# 	add_operation_token = {
-		# 		tag = AST
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = AST
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = AST
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = AST
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# NZL
-		# 	add_operation_token = {
-		# 		tag = NZL
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = NZL
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = NZL
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = NZL
-		# 		token = token_navy_friendly
-		# 	}
-
-		# 	# COMINTERN
+		ENG_tension_vol = {
 			
-		# 	# SOV
-		# 	add_operation_token = {
-		# 		tag = SOV
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = SOV
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = SOV
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = SOV
-		# 		token = token_navy_friendly
-		# 	}
-		# 	# MON
-		# 	add_operation_token = {
-		# 		tag = MON
-		# 		token = token_airforce_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = MON
-		# 		token = token_army_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = MON
-		# 		token = token_civilian_friendly
-		# 	}
-		# 	add_operation_token = {
-		# 		tag = MON
-		# 		token = token_navy_friendly
-		# 	}
-		# }
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				send_volunteers_tension = -0.9
+			}
+		}	
 	}
 
 	country = {
@@ -2653,6 +2189,9 @@ ideas = {
 			
 			traits = { convoy_escort_naval_manufacturer }
 
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 		
 		harland_wolff = {
@@ -2661,13 +2200,15 @@ ideas = {
 				original_TAG = ENG
 			}
 			
-
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		cammell_laird = {
@@ -2676,7 +2217,7 @@ ideas = {
 				original_TAG = ENG
 			}
 			
-
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -2684,8 +2225,7 @@ ideas = {
 			
 			traits = { atlantic_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}	
 	}
 	
@@ -2707,8 +2247,7 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		hawker = {
@@ -2725,8 +2264,7 @@ ideas = {
 			
 			traits = { CAS_manufacturer } 
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}	
 		de_havilland = {
 			
@@ -2742,8 +2280,7 @@ ideas = {
 			
 			traits = { medium_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		avro = {
@@ -2760,8 +2297,7 @@ ideas = {
 			
 			traits = { heavy_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		fairey_aviation = {
@@ -2778,8 +2314,7 @@ ideas = {
 			
 			traits = { naval_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}			
 	}
 	
@@ -2826,6 +2361,21 @@ ideas = {
 			
 			modifier = {
 			}
+		}
+
+		bedford_behicles = {
+			
+			picture = ford_motor_company
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
 		}
 	}
 	industrial_concern = {
@@ -2892,8 +2442,7 @@ ideas = {
 			
 			traits = { medium_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		vauxhall = {
 			
@@ -2908,8 +2457,7 @@ ideas = {
 			traits = { medium_tank_manufacturer }
 			traits = { vauxhall_trait }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 	

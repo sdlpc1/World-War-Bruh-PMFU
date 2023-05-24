@@ -120,22 +120,25 @@ ideas = {
 		#		ship_hull_submarine_design_cost_factor = -0.6
 		#	}
 		#}
-		flexible_contracts_spirit = {
-			ledger = navy
-			modifier = {
-				naval_manufacturer_cost_factor = -0.8
-				ship_hull_cruiser_design_cost_factor = -0.6
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# flexible_contracts_spirit = { # gone for now
+		# 	ledger = navy
+		# 	modifier = {
+		# 		naval_manufacturer_cost_factor = -0.8
+		# 		ship_hull_cruiser_design_cost_factor = -0.6
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 		integrated_designers_spirit = {
 			ledger = navy
 			visible = { has_dlc = "Man the Guns" }
 			research_bonus = {
 				ship_modules_tech = 0.20
 				naval_equipment = 0.20
+			}
+			modifier = {
+				ship_hull_cruiser_design_cost_factor = -0.6 # flexible contracts gone
 			}
 			ai_will_do = {
 				factor = 1

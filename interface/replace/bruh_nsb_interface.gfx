@@ -186,6 +186,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/light_td_2.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_anti_air_gun_placeholder"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/aa_gun_1.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_anti_air_gun_1"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/aa_gun_1.dds"
 	}
@@ -238,6 +242,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_med_hv_gun_3"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tier_3_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_td_placeholder"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_td_1.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_medium_td_1"
@@ -761,6 +769,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_sov_medium_tank_chassis_t28_medium"
 		texturefile = "gfx/interface/technologies/tanks/sov/sov_t28_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_medium_tank_chassis_t34_placeholder_medium"
+		texturefile = "gfx/interface/technologies/tanks/sov/sov_t34_hull.dds"
 	}
 	SpriteType = {
 		name = "GFX_sov_medium_tank_chassis_t34_medium"

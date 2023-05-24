@@ -88,6 +88,7 @@ recruit_character = NZL_h_e_horan
 recruit_character = NZL_h_d_mcgregor
 recruit_character = NZL_w_h_stratton
 recruit_character = NZL_peter_fraser
+recruit_character = NZL_dan_the_man
 
 add_ideas = {
 	ASN_ALLIES_the_sun_never_sets_idea_1
@@ -95,6 +96,7 @@ add_ideas = {
 	father_check
 	peace_training
 	minors_no_air
+	no_grinding
 }
 
 set_variable = { COM_poster_center_icon_frame = 1 }

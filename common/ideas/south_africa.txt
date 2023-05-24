@@ -597,6 +597,8 @@ ideas = {
 			traits = {
 				cope_trait
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 	

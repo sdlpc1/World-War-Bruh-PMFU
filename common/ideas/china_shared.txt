@@ -175,11 +175,14 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			# riverine warfare weak on open waters
 						
 			traits = { coastal_defence_naval_manufacturer }
 			
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 		dagu_shipyard = {
@@ -194,6 +197,8 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
+
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -203,6 +208,7 @@ ideas = {
 						
 			traits = { raiding_fleet_naval_manufacturer }
 			
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 	}
 

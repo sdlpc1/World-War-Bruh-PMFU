@@ -22,6 +22,7 @@ add_ideas = {
 	MON_allow_soviet_trade
 	peace_training
 	minors_no_air
+	no_grinding
 }
 
 set_variable = { mon_poster_center_icon_frame = 1 }

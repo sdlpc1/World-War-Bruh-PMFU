@@ -1051,6 +1051,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		MAN_mamc_medium = {
 
@@ -1072,6 +1074,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		MAN_mamc_heavy = {
 
@@ -1093,6 +1097,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 	}
@@ -1157,6 +1163,8 @@ ideas = {
 					}
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 

@@ -21,4 +21,9 @@ vichy_historical = {
 		VIC_Defend_Core_Land
 		# random army focuses after
 	}
+
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
 }

@@ -1,6 +1,4 @@
-﻿#!gfx:interface\lw_goals.gfx
-#!gfx:interface\snek_teleport.gfx
-#!gfx:interface\replace\bruh_interface.gfx
+﻿#!gfx:interface\replace\bruh_interface.gfx
 #!gfx:interface\replace\bruh_bra_interface.gfx
 #!gfx:interface\replace\bruh_eng_interface.gfx
 #!gfx:interface\replace\bruh_ger_interface.gfx
@@ -9,6 +7,8 @@
 #!gfx:interface\replace\bruh_jap_interface.gfx
 #!gfx:interface\replace\bruh_nsb_interface.gfx
 #!gfx:interface\replace\bruh_sov_interface.gfx
+#!gfx:interface\lw_goals.gfx
+#!gfx:interface\snek_teleport.gfx
 
 ### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
@@ -78,13 +78,13 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		x = 10
 		y = 0
-		offset = {
-			x = -12
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
+		# offset = {
+		# 	x = -12
+		# 	y = 0
+		# 	trigger = {
+		# 		not = { has_dlc = "Man the Guns" }
+		# 	}
+		# }
 		
 		cost = 10
 
@@ -813,12 +813,34 @@ focus_tree = {
 					amount = 2200
 				}
 				add_resource = {
-					type = aluminium
-					amount = 2800
-				}
-				add_resource = {
 					type = chromium
 					amount = 1000
+				}
+			}
+		}
+	}
+	focus = {
+		id = USA_construction_4_1
+		icon = GFX_focus_generic_aluminum
+		prerequisite = { focus = USA_construction_4 }
+		relative_position_id = USA_construction_4
+		x = 0
+		y = 1
+		cost = 5
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		available = {
+			date > 1940.7.1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			379 = {
+				add_resource = {
+					type = aluminium
+					amount = 2800
 				}
 			}
 		}
@@ -2193,7 +2215,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_lend_lease_act
-		icon = GFX_focus_generic_treaty
+		icon = GFX_USA_lend_lease_act_2
 		x = 2
 		y = 1
 		prerequisite = { focus = USA_wilkies_deal focus = USA_fdr_again }
@@ -2438,7 +2460,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_american_caesar
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_USA_appoint_mcaurther_as_commander
 		prerequisite = { focus = USA_mobilise_the_nation }
 		relative_position_id = USA_mobilise_the_nation
 		x = 0
@@ -3158,7 +3180,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_the_giant_wakes
-		icon = GFX_focus_generic_the_giant_wakes
+		icon = GFX_USA_our_america_our_problems
 		prerequisite = { focus = USA_arsenal_of_democracy focus = USA_public_projects }
 		available = {
 			OR = {
@@ -3208,7 +3230,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_wartime_industry
-		icon = GFX_focus_generic_tank_production
+		icon = GFX_USA_arsenal_of_democracy_icon
 		prerequisite = { focus = USA_the_giant_wakes }
 		x = 0
 		y = 1
@@ -3363,7 +3385,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_race_for_rubber
-		icon = GFX_focus_generic_rubber
+		icon = GFX_focus_GER_synthetic_rubber
 		prerequisite = { focus = USA_rubber_reserve_company }
 		available = { has_war_with = JAP }
 		x = 0
@@ -3501,7 +3523,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_japan_first
-		icon = GFX_focus_usa_focus_on_asia
+		icon = GFX_USA_the_island_hopping_campaign
 		prerequisite = { focus = USA_casablanca_conference }
 		mutually_exclusive = { focus = USA_germany_first }
 		x = -1
@@ -3550,7 +3572,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_germany_first
-		icon = GFX_focus_usa_focus_on_europe
+		icon = GFX_USA_fight_fascist_with_fire
 		prerequisite = { focus = USA_casablanca_conference }
 		mutually_exclusive = { focus = USA_japan_first }
 		x = 1
@@ -3677,13 +3699,13 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = 23
 		y = 0
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
+		# offset = {
+		# 	x = -26
+		# 	y = 0
+		# 	trigger = {
+		# 		not = { has_dlc = "Man the Guns" }
+		# 	}
+		# }
 		
 		allow_branch = {
 			always = no
@@ -4018,7 +4040,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_destroyers_for_bases
-		icon = GFX_goal_generic_navy_cruiser
+		icon = GFX_USA_bases_in_anzac
 		prerequisite = { focus = USA_intervention_in_europe }
 		available = {
 			country_exists = GER
@@ -4484,6 +4506,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
+			# USA_Marine_Corps_increase_double = yes
 			custom_effect_tooltip = USA_congress_focus_support2_tt
 			if = {
 				limit = {
@@ -4515,6 +4538,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			# US_Airborne_increase_double = yes
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 0.75
@@ -4593,6 +4617,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			# US_Airborne_increase_double = yes
 			add_ideas = USA_airborne_divisions
 		}
 	}
@@ -5307,7 +5332,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_liberty_ships
-		icon = GFX_goal_generic_amphibious_assault
+		icon = GFX_focus_USA_liberty_ships
 		prerequisite = { focus = USA_maritime_commission }
 		x = -3
 		y = 2
@@ -5450,7 +5475,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_carrier_primacy
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_USA_lay_down_new_carriers
 		prerequisite = { focus = USA_bureau_of_ships }
 		mutually_exclusive = { focus = USA_battleship_primacy }
 		x = -1
@@ -5693,6 +5718,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			# USA_Marine_Corps_increase_double = yes
 			add_tech_bonus = {
 				name = USA_expand_the_USMC
 				bonus = 0.5
@@ -5729,6 +5755,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			# USA_Marine_Corps_increase_double = yes
 			add_tech_bonus = {
 				name = USA_amphibious_operations
 				bonus = 0.5

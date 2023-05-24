@@ -196,6 +196,10 @@
   ENG_equip_foreign_exiles:0 "Equip Foreign Exiles"
   ENG_equip_foreign_exiles_desc:0 "Soldiers from France have managed to be evacuated to our territory. We should hastily equip these men and get them back in to the fight!"
   ENG_commonwealth_ties_desc:0 "Developing the Commonwealth will lead to stronger allies across the British Empire."
+  shadow_scheme_focus_conv_tt:1 "Grants §G1§! Building Slot and §Y1 Military Factory§! for every §Y2 Civilian Factories§! built.\nThe maximum number of §YMilitary Factories§! we can cover up is §Y15§!. "
+  ENG_build_up_airfields:0 "Build Up Airfields"
+  ENG_air_defenses:0 "Mainland Air Defenses"
+  ENG_fortify_the_coast:0 "Fortify the Coast" 
 
   #### EVENTS ####
   britain.500.t:0 "Anglo-Soviet Agreement"
@@ -244,6 +248,7 @@
   ENG_air_prod:0 "Propaganda Air Production" 
   ENG_tallboys:0 "Tallboys"
   ENG_vickers_armstrong_eng:0 "Nuffield Mech and Aeri"
+  bedford_behicles:0 "Bedford Vehicles"
 
   #### TRAITS ####
   nuffield_trait:0 "Cruiser Tank Manufacturer"

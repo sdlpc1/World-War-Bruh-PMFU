@@ -32,4 +32,9 @@ Brazil_Historical = {
         BRA_join_the_allies
         #AI does whatever, army tree or navy
 	}
+
+    ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
 }

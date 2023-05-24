@@ -377,7 +377,7 @@ focus_tree = {
 	focus = {
 		id = BUL_armed_forces
 		icon = GFX_focus_generic_military_mission
-		x = 24
+		x = 22
 		y = 0
 
 		cost = 5
@@ -397,7 +397,7 @@ focus_tree = {
 		id = BUL_royal_army
 		icon = GFX_focus_generic_monarchy_2
 		prerequisite = { focus = BUL_armed_forces }
-		x = -4
+		x = -2
 		y = 1
 		relative_position_id = BUL_armed_forces
 
@@ -664,6 +664,10 @@ focus_tree = {
 
 		cost = 10
 
+		allow_branch = {
+			always = no
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -732,7 +736,7 @@ focus_tree = {
 		id = BUL_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = BUL_armed_forces }
-		x = 4
+		x = 2
 		y = 1
 		relative_position_id = BUL_armed_forces
 

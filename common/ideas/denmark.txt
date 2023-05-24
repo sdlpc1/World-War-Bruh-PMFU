@@ -50,6 +50,7 @@ ideas = {
 			
 			picture = generic_naval_manufacturer_1
 
+			cost = 150
 			
 			allowed = {
 				original_tag = DEN

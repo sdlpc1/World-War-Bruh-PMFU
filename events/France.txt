@@ -220,6 +220,32 @@ country_event = {
 		save_global_event_target_as = free_france
 		GER = { country_event = france.14 }
 		custom_effect_tooltip = france.10.b_tt
+		USA = {
+			375 = {
+				add_resource = {
+					type = aluminium
+					amount = 800
+				}
+			}
+			376 = {
+				add_resource = {
+					type = aluminium
+					amount = 450
+				}
+			}
+			377 = {
+				add_resource = {
+					type = aluminium
+					amount = 350
+				}
+			}
+			378 = {
+				add_resource = {
+					type = aluminium
+					amount = 270
+				}
+			}
+		}
 		SPR = {
 			# COMINTERN
 			send_embargo = SOV
@@ -256,6 +282,8 @@ country_event = {
 		SPR = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		RAJ = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		HOL = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		# enable ports on francce
+		FRA = { set_technology = { naval_base_construction = 1 popup = no } }
 	}
 }
 
@@ -541,6 +569,10 @@ country_event = {
 				if = {
 					limit = { FRA = { has_country_flag = become_vichy } }
 					change_tag_from = FRA
+				}
+				ITA = {
+					transfer_state = 458
+					transfer_state = 665
 				}
 			}
 		}

@@ -1508,6 +1508,7 @@ ideas = {
 				planning_speed = -0.25
 				lend_lease_tension = 1000
 				conversion_cost_civ_to_mil_factor = 10
+				# production_speed_naval_base_factor = -0.99
 			}
 		}
 
@@ -1982,8 +1983,9 @@ ideas = {
 				armor = 0.15
 			}
 			
-
 			traits = { heavy_tank_manufacturer }
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	
 		FRA_AMX = {
@@ -2002,6 +2004,7 @@ ideas = {
 				armor = 0.15
 			}
 			
+			modifier = { tank_manufacturer_cost_factor = -1 }
 
 			traits = { fast_tank_manufacturer }
 		}
@@ -2021,6 +2024,7 @@ ideas = {
 				armor = 0.15
 			}
 			
+			modifier = { tank_manufacturer_cost_factor = -1 }
 
 			traits = { infantry_tank_manufacturer }
 		}
@@ -2041,6 +2045,7 @@ ideas = {
 				armor = 0.15
 			}
 			
+			modifier = { tank_manufacturer_cost_factor = -1 }
 
 			traits = { medium_tank_manufacturer }
 		}
@@ -2050,8 +2055,7 @@ ideas = {
 			available = {
 				
 			}
-
-						
+	
 			allowed = {
 				tag = FRA
 				has_dlc = "La Resistance"
@@ -2061,6 +2065,7 @@ ideas = {
 				armor = 0.15
 			}
 			
+			modifier = { tank_manufacturer_cost_factor = -1 }
 
 			traits = { armored_car_manufacturer }
 		}
@@ -2127,6 +2132,8 @@ ideas = {
 			}
 			
 			traits = { light_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		bloch = {
@@ -2140,6 +2147,8 @@ ideas = {
 			}
 			
 			traits = { medium_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		amiot = {
@@ -2153,6 +2162,8 @@ ideas = {
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		levasseur = {
@@ -2166,6 +2177,8 @@ ideas = {
 			}
 			
 			traits = { naval_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		SNCAN = {
 			picture = FRA_sncan		
@@ -2179,6 +2192,8 @@ ideas = {
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		SNCAO = {
 			picture = FRA_sncao			
@@ -2192,6 +2207,8 @@ ideas = {
 			}
 			
 			traits = { medium_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		SNCASE = {
 			picture = FRA_sncase		
@@ -2205,6 +2222,8 @@ ideas = {
 			}
 			
 			traits = { light_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		SNCASO = {
 			picture = FRA_sncaso		
@@ -2218,6 +2237,8 @@ ideas = {
 			}
 			
 			traits = { naval_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		SNCAC = {
 			picture = FRA_sncac			
@@ -2231,6 +2252,8 @@ ideas = {
 			}
 			
 			traits = { aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 	}
@@ -2243,36 +2266,48 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
+
+			cost = 150
 						
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 			
 			traits = { mediterranean_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		aeb = {
 			picture = FRA_aeb		
 			allowed = {
 				original_tag = FRA
 			}
+
+			cost = 150
 						
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 			
 			traits = { convoy_escort_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		acl = {
 			picture = FRA_acl	
 			allowed = {
 				original_tag = FRA
 			}
+
+			cost = 150
 						
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 			
 			traits = { atlantic_fleet_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		acf = {
 			picture = FRA_acf			
@@ -2283,8 +2318,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { raiding_fleet_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 	}
 	

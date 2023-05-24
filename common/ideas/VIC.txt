@@ -473,8 +473,7 @@ ideas = {
 			
 			traits = { VIC_renault_trait }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 }

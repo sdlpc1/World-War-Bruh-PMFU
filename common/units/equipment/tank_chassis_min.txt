@@ -984,7 +984,7 @@ equipments = {
 			special_type_slot_3 = inherit
 			special_type_slot_4 = inherit
 		}
-		maximum_speed = 5.5
+		maximum_speed = 6
 		build_cost_ic = 32
 		reliability = 0.8
 		armor_value = 75

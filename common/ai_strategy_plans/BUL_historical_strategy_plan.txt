@@ -37,4 +37,9 @@ Bulgaria_Historical = {
 		id = SPR
 		value = 100000
 	}
+
+    ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
 }

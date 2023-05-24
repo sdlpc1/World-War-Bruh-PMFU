@@ -103,6 +103,8 @@ German_historical = {
 
 	ideas = {
 		hjalmar_schacht = 10
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
 	}
 
 	traits = {

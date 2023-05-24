@@ -604,9 +604,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { convoy_escort_naval_manufacturer }
 
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		garden_reach_shipbuilders = {
@@ -621,8 +624,11 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-			
+
+			cost = 150
 			traits = { pacific_fleet_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		scindia_shipyard = {
@@ -637,9 +643,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { atlantic_fleet_naval_manufacturer }
 			
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 	}
@@ -663,8 +672,7 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 					
 	}

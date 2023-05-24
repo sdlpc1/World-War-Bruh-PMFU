@@ -1656,37 +1656,37 @@ focus_tree = {
 
 		completion_reward = {
 			# Connect Addis with the North if Addis is capital
-			IF = {
-				limit = {
-					271 = { is_capital = yes }
-				}
-				build_railway = {
-					level = 1
-					build_only_on_allied = yes
-					fallback = yes
-					start_province = 5010
-					target_province = 13237
-				}
-			}
-			# Otherwise, connect new capital with Addis as that's the central rail hub
-			ELSE = {
-				random_owned_state = {
-					limit = {
-						is_capital = yes 
-					}
-					ROOT = {
-						build_railway = {
-							level = 1
-							build_only_on_allied = yes
-							fallback = yes
-							start_state = PREV
-							target_state = 271
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = ETH_cie
+			# IF = {
+			# 	limit = {
+			# 		271 = { is_capital = yes }
+			# 	}
+			# 	build_railway = {
+			# 		level = 1
+			# 		build_only_on_allied = yes
+			# 		fallback = yes
+			# 		start_province = 5010
+			# 		target_province = 13237
+			# 	}
+			# }
+			# # Otherwise, connect new capital with Addis as that's the central rail hub
+			# ELSE = {
+			# 	random_owned_state = {
+			# 		limit = {
+			# 			is_capital = yes 
+			# 		}
+			# 		ROOT = {
+			# 			build_railway = {
+			# 				level = 1
+			# 				build_only_on_allied = yes
+			# 				fallback = yes
+			# 				start_state = PREV
+			# 				target_state = 271
+			# 			}
+			# 		}
+			# 	}
+			# }
+			# custom_effect_tooltip = available_industrial_concern
+			# show_ideas_tooltip = ETH_cie
 		}
 	}
 	focus = {
@@ -2861,17 +2861,17 @@ focus_tree = {
 							infantry = { x = 0 y = 3 }
 						}
 					}
-					IF = {
-						limit = { 838 = { is_controlled_by_ROOT_or_ally = yes } }
-						838 = {
-							create_unit = {
-								division = "division_template = \"Congolese Mercenaries\" start_experience_factor = 0.3 start_equipment_factor = 1"
-								owner = ETH
-								count = 3
-								prioritize_location = 13244
-							}
-						}
-					}
+					# IF = {
+					# 	limit = { 838 = { is_controlled_by_ROOT_or_ally = yes } }
+					# 	838 = {
+					# 		create_unit = {
+					# 			division = "division_template = \"Congolese Mercenaries\" start_experience_factor = 0.3 start_equipment_factor = 1"
+					# 			owner = ETH
+					# 			count = 3
+					# 			prioritize_location = 13244
+					# 		}
+					# 	}
+					# }
 					ELSE = {
 						837 = {
 							create_unit = {
@@ -2920,16 +2920,6 @@ focus_tree = {
 						}
 
 					}
-					ELSE = {
-						843 = {
-							create_unit = {
-								division = "division_template = \"Arab Mercenaries\" start_experience_factor = 0.35 start_equipment_factor = 1"
-								owner = ETH
-								count = 2
-								prioritize_location = 13240 
-							}
-						}
-					}
 	 			}
 	 		}
 
@@ -2959,10 +2949,10 @@ focus_tree = {
 				state = 838 
 				remember_old_capital = no
 			}
-			add_victory_points = {
-				province = 13244
-				value = 3
-			}
+			# add_victory_points = {
+			# 	province = 13244
+			# 	value = 3
+			# }
 			838 = {
 				add_dynamic_modifier = {
 					modifier = ETH_state_last_stand_modifier
@@ -6340,15 +6330,11 @@ focus_tree = {
 					has_full_control_of_state = 271
 					has_full_control_of_state = 837
 				}
-				build_railway = {
-					#level = 1
-					path = { 7980 13240 5041 13236 13238 }
-				}
-				build_railway = {
-					#level = 1
-					start_province = 5010 
-					target_province = 13237
-				}
+				# build_railway = {
+				# 	#level = 1
+				# 	start_province = 5010 
+				# 	target_province = 13237
+				# }
 				build_railway = {
 					#level = 1
 					start_province = 5010 
@@ -6362,14 +6348,14 @@ focus_tree = {
 						instant_build = yes
 					}
 				}	
-				842 = {
-					add_building_construction = {
-						type = supply_node
-						province = 13237
-						level = 1
-						instant_build = yes
-					}
-				}					
+				# 842 = {
+				# 	add_building_construction = {
+				# 		type = supply_node
+				# 		province = 13237
+				# 		level = 1
+				# 		instant_build = yes
+				# 	}
+				# }					
 			}
 		}
 	}

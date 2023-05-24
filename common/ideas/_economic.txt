@@ -613,6 +613,16 @@ ideas = {
 			
 			
 			available = {
+				# if = {
+				# 	limit = {
+				# 		tag = ITA
+				# 		date < 1936.06.1
+				# 	}
+				# 	date < 1936.06.1
+				# }
+				# else = {
+				# 	has_war = yes
+				# }
 				has_war = yes
 				# OR = { 
 				# 	has_government = fascism

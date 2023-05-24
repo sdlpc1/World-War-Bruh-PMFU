@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = NZL_transfer_the_new_zealand_division
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 13
+		x = 12
 		y = 0
 
 		cost = 10
@@ -168,7 +168,7 @@ focus_tree = {
 		id = NZL_expand_devonport_naval_base
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = NZL_form_the_rnzn }
-		x = -1
+		x = 0
 		y = 2
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
@@ -239,7 +239,7 @@ focus_tree = {
 		id = NZL_coastal_defense
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = NZL_form_the_rnzn }
-		x = 1
+		x = -2
 		y = 2
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
@@ -312,7 +312,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = NZL_expand_devonport_naval_base }
 		mutually_exclusive = { focus = NZL_submarine_effort }
-		x = -2
+		x = -1
 		y = 3
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
@@ -351,7 +351,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = NZL_expand_devonport_naval_base }
 		mutually_exclusive = { focus = NZL_destroyer_effort }
-		x = 0
+		x = 1
 		y = 3
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
@@ -389,7 +389,7 @@ focus_tree = {
 		id = NZL_light_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = NZL_destroyer_effort focus = NZL_submarine_effort }
-		x = -2
+		x = -1
 		y = 4
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
@@ -427,7 +427,7 @@ focus_tree = {
 		id = NZL_capital_ship_effort
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = NZL_destroyer_effort focus = NZL_submarine_effort }
-		x = 0
+		x = 1
 		y = 4
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
@@ -477,6 +477,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 2
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		available = {
@@ -680,6 +684,10 @@ focus_tree = {
 			factor = 25
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 
 		}
@@ -788,7 +796,7 @@ focus_tree = {
 	focus = {
 		id = NZL_national_roads_board
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 22
+		x = 17
 		y = 0
 
 		cost = 5
@@ -1300,7 +1308,7 @@ focus_tree = {
 	focus = {
 		id = NZL_army_reforms
 		icon = GFX_goal_generic_army_doctrines
-		x = 28
+		x = 23
 		y = 0
 
 		cost = 5
@@ -1338,7 +1346,7 @@ focus_tree = {
     focus = {
 		id = NZL_project_seal
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = NZL_heavy_bombers focus = NZL_modern_fighters }
+		# prerequisite = { focus = NZL_heavy_bombers focus = NZL_modern_fighters }
 		prerequisite = { focus = NZL_department_of_scientific_and_industrial_research }
 		x = -8
 		y = 4
@@ -1741,7 +1749,7 @@ focus_tree = {
 		id = NZL_ratana_alliance
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = NZL_the_first_labor_government }
-		x = -7
+		x = -5
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
@@ -1921,7 +1929,7 @@ focus_tree = {
 		id = NZL_national_defense_institute
 		icon = GFX_focus_research
 		prerequisite = { focus = NZL_social_security_act }
-		x = 1
+		x = 2
 		y = 2
 		relative_position_id = NZL_ratana_alliance
 
@@ -1958,7 +1966,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = NZL_social_security_act focus = NZL_maori_affairs_act }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = NZL_ratana_alliance
 
 		cost = 10
@@ -1990,7 +1998,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = NZL_waitangi_tribunal }
 		x = -2
-		y = 4
+		y = 3
 		relative_position_id = NZL_ratana_alliance
 
 		cost = 10
@@ -2036,7 +2044,7 @@ focus_tree = {
 		prerequisite = { focus = NZL_amend_the_maori_affairs_act }
 		prerequisite = { focus = NZL_the_manpower_act }
 		x = -1
-		y = 5
+		y = 4
 		relative_position_id = NZL_ratana_alliance
 
 		cost = 5
@@ -2071,8 +2079,8 @@ focus_tree = {
 		id = NZL_maori_volunteers
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = NZL_maori_conscription }
-		x = 0
-		y = 6
+		x = -1
+		y = 5
 		relative_position_id = NZL_ratana_alliance
 
 		cost = 5

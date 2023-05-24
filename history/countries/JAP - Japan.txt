@@ -21,6 +21,7 @@ add_ideas = {
 	volunteer_minimum_major
 	JAP_no_equipment_capture
 	peace_training
+	no_grinding
 }
 
 create_intelligence_agency = {
@@ -67,7 +68,6 @@ set_technology = {
 	marines  = 1
 	jap_light_tank_1 = 1
 	gw_artillery = 1
-	jaegers = 1
 	basic_train = 1
 	trench_warfare = 1
 	base_strike = 1
@@ -243,24 +243,24 @@ recruit_character = JAP_shizuichi_tanaka
 recruit_character = JAP_yasuji_okamura
 recruit_character = JAP_toshizo_nishio
 recruit_character = JAP_rikichi_ando
-recruit_character = JAP_naruhiko_higashikuni
+# recruit_character = JAP_naruhiko_higashikuni
 recruit_character = JAP_seishiro_itagaki
-recruit_character = JAP_takashi_sakai
+# recruit_character = JAP_takashi_sakai
 recruit_character = JAP_kenji_doihara
 recruit_character = JAP_kenkichi_ueda
 recruit_character = JAP_shigeru_honjo
-recruit_character = JAP_otozo_yamada
+# recruit_character = JAP_otozo_yamada
 recruit_character = JAP_hatazo_adachi
-recruit_character = JAP_iwane_matsui
-recruit_character = JAP_sadao_araki
+# recruit_character = JAP_iwane_matsui
+# recruit_character = JAP_sadao_araki
 recruit_character = JAP_keisuke_fujie
-recruit_character = JAP_kiichiro_higuchi
-recruit_character = JAP_masaharu_homma
-recruit_character = JAP_harukichi_hyakutake
-recruit_character = JAP_jo_iimura
+# recruit_character = JAP_kiichiro_higuchi
+# recruit_character = JAP_masaharu_homma
+# recruit_character = JAP_harukichi_hyakutake
+# recruit_character = JAP_jo_iimura
 recruit_character = JAP_hitoshi_imamura
-recruit_character = JAP_masatane_kanda
-recruit_character = JAP_kuniaki_koiso
+# recruit_character = JAP_masatane_kanda
+# recruit_character = JAP_kuniaki_koiso
 recruit_character = JAP_isoroku_yamamoto
 recruit_character = JAP_mineichi_koga
 recruit_character = JAP_kiyoshi_hasegawa
@@ -300,6 +300,7 @@ recruit_character = JAP_yoshitoshi_tokugawa
 recruit_character = JAP_hino_kumazo
 recruit_character = JAP_yoshio_nishina
 recruit_character = JAP_hideo_itokawa
+# recruit_character = JAP_yoshijiro_umezu
 
 
 

@@ -49,9 +49,9 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
-			# every_country={
-			# 	remove_ideas = no_grinding
-			# }
+			every_country={
+				remove_ideas = no_grinding
+			}
 		}
 	}
 

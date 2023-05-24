@@ -1,7 +1,29 @@
 ideas = {
 
 	country = {
-	
+		
+		SPA_SCW_axis_victory = {
+
+			picture = generic_morale_bonus
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = { 
+				consumer_goods_factor = -0.025
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.025
+			}
+		
+		}
+
 		SPR_subjugate_por = {
 
 			picture = SPR_nationalist_remnants

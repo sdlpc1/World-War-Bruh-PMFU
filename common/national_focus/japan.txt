@@ -887,6 +887,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			hidden_effect = {
+				ENG = {
+					set_rule = { 
+						can_send_volunteers = no
+					}
+				}
+			}
 			MAN = {
 				country_event = wtt_manchukou.12
 			}
@@ -1199,7 +1206,7 @@ focus_tree = {
 	## Post China War Tree
 	focus = {
 		id = JAP_secure_china
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_goal_JAP_secure_china
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = 0
 		y = 1
@@ -1232,12 +1239,12 @@ focus_tree = {
 
 	focus = {
 		id = JAP_early_war_industry_focus
-		icon = GFX_focus_SOV_merge_plants
+		icon = GFX_goal_JAP_IJA_takeover
 		prerequisite = { focus = JAP_secure_china }
 		mutually_exclusive = { focus = JAP_mid_war_industry_focus focus = JAP_late_war_industry_focus}
 		x = 2
 		y = 1
-		cost = 2
+		cost = 3
 		relative_position_id = JAP_secure_china
 
 		available = {
@@ -1299,7 +1306,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_mid_war_industry_focus
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_JAP_IJN_takeover
 		prerequisite = { focus = JAP_secure_china }
 		mutually_exclusive = { focus = JAP_early_war_industry_focus focus = JAP_late_war_industry_focus}
 		x = 0
@@ -1345,12 +1352,12 @@ focus_tree = {
 
 	focus = {
 		id = JAP_late_war_industry_focus
-		icon = GFX_focus_generic_tank_production
+		icon = GFX_goal_JAP_adaptive_war_industry
 		prerequisite = { focus = JAP_secure_china }
 		mutually_exclusive = { focus = JAP_early_war_industry_focus focus = JAP_mid_war_industry_focus}
 		x = -2
 		y = 1
-		cost = 4
+		cost = 3
 		relative_position_id = JAP_secure_china
 
 		available = {
@@ -1389,11 +1396,11 @@ focus_tree = {
 
 	focus = {
 		id = JAP_early_war_military_focus
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_goal_JAP_ija_battle_plans
 		prerequisite = { focus = JAP_early_war_industry_focus }
 		x = 0
 		y = 1
-		cost = 2
+		cost = 3
 		relative_position_id = JAP_early_war_industry_focus
 
 		available = {
@@ -1417,7 +1424,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_early_war_military_focus }
 		x = 0
 		y = 1
-		cost = 2
+		cost = 3
 		relative_position_id = JAP_early_war_military_focus
 
 		available = {
@@ -1430,12 +1437,39 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = JAP_indochina_terrain_training
+			hidden_effect = {
+				every_army_leader={
+					add_trait = {
+     					trait = five_terrain_penalty_reduction
+					}
+				}
+			}
+			MAN = {
+				add_ideas = JAP_indochina_terrain_training
+				hidden_effect = {
+					every_army_leader={
+						add_trait = {
+     						trait = five_terrain_penalty_reduction
+						}
+					}
+				}
+			}
+			SIA = {
+				add_ideas = JAP_indochina_terrain_training
+				hidden_effect = {
+					every_army_leader={
+						add_trait = {
+     						trait = five_terrain_penalty_reduction
+						}
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = JAP_mid_war_military_focus
-		icon = GFX_goal_generic_occupy_states_coastal
+		icon = GFX_goal_JAP_preparing_invasions
 		prerequisite = { focus = JAP_mid_war_industry_focus }
 		x = 0
 		y = 1
@@ -2177,11 +2211,11 @@ focus_tree = {
 
 	focus = {
 		id = JAP_late_war_military_focus
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_goal_JAP_reorganized_supply_networks
 		prerequisite = { focus = JAP_late_war_industry_focus }
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		relative_position_id = JAP_late_war_industry_focus
 
 		available = {
@@ -2203,7 +2237,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_late_war_military_focus }
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		relative_position_id = JAP_late_war_military_focus
 
 		available = {
@@ -3720,7 +3754,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_oceanic_collaborators
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_JAP_oceanic_collab
 		prerequisite = { focus = JAP_strike_the_west }
 		x = 1
 		y = 1
@@ -5282,7 +5316,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_war_with_SOV
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_focus_generic_attack_communists
 		prerequisite = { focus = JAP_strike_the_west }
 		x = -3
 		y = 1

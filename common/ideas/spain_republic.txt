@@ -37,6 +37,317 @@ ideas = {
 	}
 
 	country = {
+		SCW_republican_spirit_dwindling = {
+
+			name = "Republican Spirit High"
+
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				surrender_limit = 1
+				max_surrender_limit_offset = 0.10
+			}
+		}
+
+		SCW_republican_spirit_dwindling_2 = {
+
+			name = "Republican Spirit High"
+
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.09
+				army_core_defence_factor = 0.01
+				surrender_limit = 0.85
+				max_surrender_limit_offset = 0.10
+			}
+		}
+
+		SCW_republican_spirit_dwindling_3 = {
+			
+			name = "Republican Spirit High"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.08
+				army_core_defence_factor = 0.02
+				surrender_limit = 0.7
+				max_surrender_limit_offset = 0.10
+			}
+		}
+
+		SCW_republican_spirit_dwindling_4 = {
+			
+			name = "Republican Spirit High"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.07
+				army_core_defence_factor = 0.03
+				surrender_limit = 0.55
+				max_surrender_limit_offset = 0.10
+			}
+		}
+
+		SCW_republican_spirit_dwindling_5 = {
+			
+			name = "Republican Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.06
+				army_core_defence_factor = 0.04
+				surrender_limit = 0.4
+				max_surrender_limit_offset = 0.10
+			}
+		}
+
+		SCW_republican_spirit_dwindling_6 = {
+			
+			name = "Republican Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				surrender_limit = 0.25
+				max_surrender_limit_offset = 0.10
+			}
+		}
+
+		SCW_republican_spirit_dwindling_7 = {
+			
+			name = "Republican Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.04
+				army_core_defence_factor = 0.06
+				surrender_limit = 0.1
+				max_surrender_limit_offset = 0.10
+			}
+		}
+
+		SCW_republican_spirit_dwindling_8 = {
+			
+			name = "Republican Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.03
+				army_core_defence_factor = 0.07
+				surrender_limit = -0.05
+			}
+		}
+
+		SCW_republican_spirit_dwindling_9 = {
+			
+			name = "Republican Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.02
+				army_core_defence_factor = 0.08
+				surrender_limit = -0.20
+			}
+		}
+
+		SCW_republican_spirit_dwindling_10 = {
+			
+			name = "Republican Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.01
+				army_core_defence_factor = 0.09
+				surrender_limit = -0.35
+			}
+		}
+
+		SCW_republican_spirit_dwindling_11 = {
+			
+			name = "Republican Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				surrender_limit = -0.50
+			}
+		}
+
+		SCW_republican_spirit_dwindling_12 = {
+			
+			name = "Republican Spirit Low"
+			
+			picture = SPA_maquis
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_defence_factor = 0.06
+				surrender_limit = -0.65
+			}
+		}
+
+		SCW_republican_spirit_dwindling_13 = {
+			
+			name = "Republican Spirit Low"
+			
+			picture = SPA_maquis
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_defence_factor = 0.02
+				surrender_limit = -0.80
+			}
+		}
+
+		SCW_republican_spirit_dwindling_14 = {
+			
+			name = "Republican Spirit Low"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.95
+			}
+		}
+
+		SPA_death_before_surrender_rep = {
+
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
 
 		SPR_death_before_surrender = {
 
@@ -1759,9 +2070,9 @@ ideas = {
 			
 			traits = { naval_manufacturer }
 			
-			modifier = {
-				# Weak defence vs air
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 
 		### La Resistance ###
@@ -1786,9 +2097,9 @@ ideas = {
 			
 			traits = { atlantic_fleet_naval_manufacturer }
 			
-			modifier = {
-				# Weak defence vs air
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 
 		SPR_euskalduna = {
@@ -1821,9 +2132,9 @@ ideas = {
 			
 			traits = { raiding_fleet_naval_manufacturer }
 			
-			modifier = {
-				# Weak defence vs air
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 	}
 	
@@ -1858,6 +2169,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		### La Resistance ###
@@ -1895,6 +2208,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		SPR_hispano_aviacion = {
@@ -1930,6 +2245,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 	}
 

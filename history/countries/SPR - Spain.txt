@@ -251,6 +251,7 @@ set_research_slots = 5
 add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
 add_ideas = peace_training
 add_ideas = minors_no_air
+add_ideas = no_grinding
 
 set_technology = {
 	#early_bomber = 1	

@@ -1,24 +1,4 @@
 characters={
-	HUN_lajos_veress={
-		name="Lajos Veress"
-		portraits={
-			army={
-				small="GFX_Portrait_hungary_lajos_veress_small"
-			}
-			army={
-				large="GFX_Portrait_hungary_lajos_veress"
-			}
-		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
 	HUN_ferenc_feketehalmyczeydner={
 		name="Ferenc Feketehalmy-Czeydner"
 		portraits={
@@ -30,11 +10,12 @@ characters={
 			}
 		}
 		field_marshal={
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
+			traits={ organizer brilliant_strategist }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -103,11 +84,12 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=3
-			attack_skill=3
-			defense_skill=2
+			traits={ infantry_leader commando hill_fighter }
+			skill=4
+			attack_skill=4
+			defense_skill=4
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -122,13 +104,28 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ war_hero trickster }
+			traits={ trickster urban_assault_specialist panzer_leader }
 			skill=4
-			attack_skill=3
+			attack_skill=5
 			defense_skill=4
-			planning_skill=2
-			logistics_skill=4
+			planning_skill=4
+			logistics_skill=5
 			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = HUN_iván_hindy
+			ledger = army
+			allowed  = {
+				original_tag = HUN
+			}
+			traits  = {
+				army_armored_3 
+			}
+			ai_will_do = {
+				factor = 0.2
+			}
+			cost = 150
 		}
 	}
 	HUN_károly_beregfy={
@@ -142,11 +139,67 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			traits={ trait_engineer trickster cavalry_leader }
+			skill=3
+			attack_skill=5
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = HUN_károly_beregfy
+			ledger = army
+			allowed  = {
+				original_tag = HUN
+			}
+			traits  = {
+				army_CombinedArms_2
+			}
+			ai_will_do = {
+				factor = 0.2
+			}
+			cost = 100
+		}
+	}
+	HUN_lajos_veress={
+		name="Lajos Veress"
+		portraits={
+			army={
+				small="GFX_Portrait_hungary_lajos_veress_small"
+			}
+			army={
+				large="GFX_Portrait_hungary_lajos_veress"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader ranger }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	HUN_laszlo_hollosy_kuthy={
+		name="Laszlo Hollosy-Kuthy"
+		portraits={
+			army={
+				small="GFX_Portrait_hungary_geza_lakatos_small"
+			}
+			army={
+				large="GFX_Portrait_hungary_geza_lakatos"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery infantry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}

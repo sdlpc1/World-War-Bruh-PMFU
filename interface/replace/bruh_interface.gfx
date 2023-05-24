@@ -1251,6 +1251,26 @@ spriteTypes = {
 		name = "GFX_radio_equipment_medium"
 		texturefile = "gfx/interface/technologies/radio_equipment.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_siege_artillery1_medium"
+		texturefile = "gfx/interface/technologies/gen_siege_arty_eq_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_siege_artillery2_medium"
+		texturefile = "gfx/interface/technologies/gen_siege_arty_eq_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_siege_artillery_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/gen_siege_arty_eq_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_siege_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/gen_siege_arty_eq_2.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_railway_gun_medium"

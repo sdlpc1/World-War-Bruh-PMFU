@@ -56,6 +56,7 @@ if = {
 		PACIFIC_COMMONWEALTH_controls_original
 		peace_training
 		minors_no_air
+		no_grinding
 	}
 
 	add_to_tech_sharing_group = commonwealth_research

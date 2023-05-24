@@ -103,6 +103,7 @@
   USA_japan_first_desc:0 "We must focus on taking out Japan first."
   USA_war_department:0 "Begin Rearmament"
   USA_public_projects:0 "Public Projects"
+  USA_construction_4_1:0 "Expand the Aluminium Production"
 
   #### EVENTS ####
   usa.1001.t:0 "1936 Election Results"

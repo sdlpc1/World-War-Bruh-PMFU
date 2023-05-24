@@ -276,12 +276,12 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Iven Mackay"
 					gfx = "GFX_AST_iven_mackay"
-					traits = { }
-					skill = 3
-					attack_skill = 3
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 3
+					traits = { commando hill_fighter trait_mountaineer }
+					skill = 5
+					attack_skill = 6
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 4
 				}
 			}
 		}
@@ -340,7 +340,7 @@ focus_tree = {
 				has_global_flag = NO_ASIA
 			}
 		}
-		
+
 		cost = 5
 
 		ai_will_do = {
@@ -849,6 +849,10 @@ focus_tree = {
 		
 		bypass = {
 
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		cancel_if_invalid = yes
@@ -1441,7 +1445,7 @@ focus_tree = {
 	focus = {
 		id = AST_cockatoo_island_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 16
+		x = 11
 		y = 0
 
 		cost = 5
@@ -1839,7 +1843,7 @@ focus_tree = {
 	focus = {
 		id = AST_standard_gauge_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 19
+		x = 14
 		y = 0
 
 		cost = 5
@@ -2444,7 +2448,7 @@ focus_tree = {
 	focus = {
 		id = AST_establish_advisory_war_council
 		icon = GFX_goal_generic_demand_territory
-		x = 27
+		x = 22
 		y = 0
 
 		cost = 10
@@ -2982,7 +2986,7 @@ focus_tree = {
 	focus = {
 		id = AST_support_the_policy_of_appeasement
 		icon = GFX_goal_generic_improve_relations
-		x = 32
+		x = 27
 		y = 0
 
 		cost = 10

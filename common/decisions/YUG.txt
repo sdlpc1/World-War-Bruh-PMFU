@@ -1508,7 +1508,7 @@ operations = {
 			add_war_support = -0.1
 		}
 	}
-	
+
 	Yug_integrate_greece = {
 
 		priority = 10

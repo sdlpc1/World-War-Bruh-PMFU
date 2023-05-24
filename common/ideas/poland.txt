@@ -2431,6 +2431,8 @@ country = {
 
 			modifier = {
 			}
+
+			cost = 150
 		}
 	}
 

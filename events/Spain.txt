@@ -89,7 +89,7 @@ country_event = {
 					ideology = democratic
 					popularity = 0.40
 				}
-				add_ideas = SPR_death_before_surrender
+				# add_ideas = SPR_death_before_surrender
 				add_ideas = SPR_disbanded_army_1
 				remove_ideas = SPR_political_violence
 				remove_ideas = SPR_national_strikes_3

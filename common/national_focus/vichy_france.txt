@@ -1178,7 +1178,7 @@ focus_tree = {
 
     focus = {
         id = VIC_Develop_Desert_Tracks
-        icon = GFX_goal_generic_army_motorized
+        icon = GFX_goal_JAP_reorganized_supply_networks
         prerequisite = { focus = VIC_Support_in_Africa }
         relative_position_id = VIC_Support_in_Africa
         x = 0
@@ -2155,7 +2155,7 @@ focus_tree = {
 						size > 2
 						include_locked = yes
 					}
-                    is_coastal = yes
+					is_coastal = yes
 					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 2
@@ -2172,7 +2172,7 @@ focus_tree = {
 						size > 2
 						include_locked = yes
 					}
-                    is_coastal = yes
+					is_coastal = yes
 					is_core_of = ROOT
 				}
 				add_extra_state_shared_building_slots = 2
@@ -2228,7 +2228,7 @@ focus_tree = {
 						include_locked = yes
 					}
 					is_core_of = ROOT
-                     is_coastal = yes
+                    is_coastal = yes
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2245,7 +2245,7 @@ focus_tree = {
 						include_locked = yes
 					}
 					is_core_of = ROOT
-                     is_coastal = yes
+                    is_coastal = yes
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {

@@ -2197,8 +2197,7 @@ ideas = {
 			
 			traits = { fast_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		
 		chrysler = {
@@ -2216,8 +2215,7 @@ ideas = {
 			
 			traits = { medium_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		detroit_arsenal = {
 			
@@ -2276,9 +2274,7 @@ ideas = {
 				}
 			}
 
-			modifier = {
-
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		tank_destroyer_board = {
 			
@@ -2315,9 +2311,7 @@ ideas = {
 				}
 			}
 
-			modifier = {
-
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		
 		army_ordnance_department = {
@@ -2335,8 +2329,7 @@ ideas = {
 			
 			traits = { heavy_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}	
 	}
 	
@@ -2351,7 +2344,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -2359,8 +2352,7 @@ ideas = {
 			
 			traits = { raiding_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		brooklyn_naval_yard = {
@@ -2369,8 +2361,8 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
 
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -2378,8 +2370,7 @@ ideas = {
 			
 			traits = { atlantic_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		newport_news_shipbuilding = {
@@ -2389,7 +2380,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -2397,8 +2388,7 @@ ideas = {
 			
 			traits = { pacific_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 	}
 	
@@ -2421,8 +2411,7 @@ ideas = {
 			
 			traits = { messerschmitt_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		#bell = {
@@ -2459,8 +2448,7 @@ ideas = {
 			
 			traits = { lockheed_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		douglas_aircraft_company = {
@@ -2478,8 +2466,7 @@ ideas = {
 			
 			traits = { CAS_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		boeing = {
@@ -2497,8 +2484,7 @@ ideas = {
 			
 			traits = { heavy_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		#consolidated_aircraft = {
@@ -2534,8 +2520,7 @@ ideas = {
 			
 			traits = { naval_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}		
 	}
 	

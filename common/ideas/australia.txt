@@ -652,8 +652,7 @@ ideas = {
 			
 			traits = { fast_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 	}
@@ -677,6 +676,9 @@ ideas = {
 			
 			traits = { convoy_escort_naval_manufacturer }
 
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 		
 		evans_deakin_co = {
@@ -688,16 +690,16 @@ ideas = {
 				has_dlc = "Together for Victory"
 			}
 			
-
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
-		
-		
 	}
 
 	materiel_manufacturer = {
@@ -784,6 +786,8 @@ ideas = {
 					air_ground_attack = 0.05
 				}
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			
 			ai_will_do = {
 				factor = 1

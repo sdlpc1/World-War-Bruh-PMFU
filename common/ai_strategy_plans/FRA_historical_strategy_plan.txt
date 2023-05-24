@@ -43,6 +43,11 @@ France_Historical = {
         FRA_global_integration
         FRA_firepower_kills
     }  
+
+    ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
 }
 FRA_threats = {
     enable = {

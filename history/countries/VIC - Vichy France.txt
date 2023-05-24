@@ -135,6 +135,7 @@ add_ideas = {
 	volunteer_minimum_minor
 	peace_training
 	minors_no_air
+	no_grinding
 }
 
 #Order matters here Daladier will start as leaders because added last
@@ -691,7 +692,7 @@ if = {
 		name = "F.222"
 		type = large_plane_airframe_0
 		modules = {
-			fixed_main_weapon_slot = large_bomb_bay
+			fixed_main_weapon_slot = early_large_bomb_bay
 			fixed_auxiliary_weapon_slot_2 = lmg_defense_turret
 			engine_type_slot = engine_1_4x
 		}

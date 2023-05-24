@@ -7,12 +7,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_leader }
-			skill=3
+			traits={ cavalry_leader trickster expert_improviser }
+			skill=4
 			attack_skill=4
-			defense_skill=2
+			defense_skill=3
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=4
 			legacy_id=-1
 		}
 		country_leader={

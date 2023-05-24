@@ -60,8 +60,8 @@ script_enum_equipment_bonus_type = {
 	heavy_anti_air_equipment
 	heavy_anti_tank_equipment
 	heavy_artillery_equipment
-	special_forces
-	
+    special_forces
+
 	amphibious_mechanized_equipment
 	armored_car_equipment
 	mechanized_equipment

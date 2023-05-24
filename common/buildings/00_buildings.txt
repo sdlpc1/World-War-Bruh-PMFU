@@ -45,11 +45,11 @@ buildings = {
 		base_cost = 1500
 		icon_frame = 5
 		air_base = yes
-		max_level = 10
+		max_level = 20
 		value = 28
-		damage_factor = 0.5
 		infrastructure_construction_effect = yes
 		allied_build = yes
+		damage_factor = 0.40
 	}
 
 	supply_node = {
@@ -75,7 +75,7 @@ buildings = {
 		disabled_in_dmz = yes
 		icon_frame = 16
 		max_level = 1
-		
+		infrastructure_construction_effect = yes
 	}
 	
 	naval_base = {
@@ -90,6 +90,7 @@ buildings = {
 		max_level = 10
 		value = 1
 		allied_build = yes
+		infrastructure_construction_effect = yes
 	}
 
 	bunker = {
@@ -102,7 +103,8 @@ buildings = {
 		icon_frame = 7
 		land_fort = 1
 		max_level = 10
-		value = 1
+		value = 5
+		damage_factor = 0.4
 		allied_build = yes
 	}
 
@@ -117,7 +119,8 @@ buildings = {
 		icon_frame = 8
 		naval_fort = 1
 		max_level = 10
-		value = 1
+		value = 5
+		damage_factor = 0.4
 		allied_build = yes
 	}
 
@@ -157,10 +160,11 @@ buildings = {
 		icon_frame = 10
 		refinery = yes
 		max_level = 3 # This is the max unlock level
-		shares_slots = yes
+		shares_slots = no
 		value = 8
 		allied_build = yes
 		infrastructure_construction_effect = yes
+		damage_factor = 0.20
 		
 		show_modifier = yes
 		fuel_gain_from_states = 5.0 
@@ -173,10 +177,11 @@ buildings = {
 		local_resources_rubber = 30
 		refinery = yes
 		max_level = 3 # This is the max unlock level
-		shares_slots = yes
+		shares_slots = no
 		value = 8
 		allied_build = yes
 		infrastructure_construction_effect = yes
+		damage_factor = 0.20
 		
 		show_modifier = yes
 	}
@@ -191,10 +196,11 @@ buildings = {
         local_resources_tungsten = 5
 		refinery = yes
 		max_level = 3
-		shares_slots = yes
+		shares_slots = no
 		value = 8
 		allied_build = yes
 		infrastructure_construction_effect = yes
+		damage_factor = 0.20
 		
 		show_modifier = yes
 	}
@@ -203,12 +209,13 @@ buildings = {
 		show_on_map = 1
 		base_cost = 4000
 		icon_frame = 14
-		#max_level = 1
-		shares_slots = yes
+		max_level = 3
+		shares_slots = no
 		value = 999
 		allied_build = yes
 		infrastructure_construction_effect = yes
 		fuel_silo = yes
+		damage_factor = -0.5
 		
 		show_modifier = yes
 		max_fuel_building = 250.0 #k
@@ -234,7 +241,7 @@ buildings = {
 		rocket_production = 5
 		rocket_launch_capacity = 1
 		max_level = 5
-		shares_slots = yes
+		shares_slots = no
 		value = 1
 		allied_build = yes
 		infrastructure_construction_effect = yes
@@ -247,7 +254,7 @@ buildings = {
 		nuclear_reactor = yes
 		nuclear_production_factor = 1
 		max_level = 1 # This is the max unlock level
-		shares_slots = yes
+		shares_slots = no
 		value = 10
 		infrastructure_construction_effect = yes
 	}

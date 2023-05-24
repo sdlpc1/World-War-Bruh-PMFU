@@ -13,11 +13,14 @@ state=
 		owner = ENG
 		buildings = {
 			infrastructure = 1
+			12002 = {
+				naval_base = 5
+			}
 		}
 
 		add_core_of = WST
 	}
 	provinces={
-		1080 4068 4910 5069 7156 9957 10126 12002 12889 
+		1080 4068 4910 5069 7156 9957 10126 12002 12889 13299 10127
 	}
 }

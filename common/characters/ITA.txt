@@ -56,272 +56,360 @@ characters={
 	}
 
 	ITA_pietro_badoglio={
-		name=ITA_pietro_badoglio
+		name="Pietro Badoglio"
+		advisor={
+			slot = army_chief
+			idea_token = pietro_badoglio
+			allowed  = {
+					original_tag  = ITA 
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+				cost = 100
+		}
 		portraits={
 			army={
 				small="GFX_idea_pietro_badoglio"
 			}
 			army={
-				large=GFX_portrait_ITA_pietro_badoglio
+				large="gfx/leaders/ITA/Portrait_Italy_Pietro_Badoglio.dds"
 			}
 		}
-		advisor={
-			slot = army_chief
-			idea_token = ITA_pietro_badoglio
-			allowed = {
-				original_tag = ITA
-			}
-			traits  = {
-				army_chief_morale_1 
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-
 		field_marshal={
-			traits={ old_guard inflexible_strategist politically_connected defensive_doctrine }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
+			traits={ infantry_leader commando defensive_doctrine }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
 		}
 	}
-
 	ITA_emilio_de_bono={
-		name=ITA_emilio_de_bono
+		name="Emilio De Bono"
+		advisor={
+			slot = army_chief
+			idea_token = emilio_de_bono
+			allowed  = {
+					original_tag  = ITA 
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+				cost = 100
+		}
 		portraits={
 			army={
 				small="GFX_idea_emilio_de_bono"
 			}
 			army={
-				large=GFX_portrait_ITA_emilio_de_bono
+				large="gfx/leaders/ITA/portrait_italy_emilio_de_bono.dds"
 			}
 		}
-		advisor={
-			slot = army_chief
-			idea_token = ITA_emilio_de_bono
-			allowed = {
-				original_tag = ITA
-			}
-			traits = {
-				army_chief_defensive_1
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		
 		field_marshal={
-			traits={ old_guard trait_cautious politically_connected defensive_doctrine }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
+			traits={ infantry_leader inflexible_strategist trait_cautious }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 		}
 	}
 
 	ITA_ugo_cavallero={
-		name=ITA_ugo_cavallero
+		name="Ugo Cavallero"
+		advisor={
+			slot = high_command
+			idea_token = ugo_cavallero
+			allowed  = {
+					original_tag  = ITA 
+				}
+				traits  = {
+					army_infantry_2
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+				cost = 100
+		}
 		portraits={
 			army={
 				small="GFX_idea_ugo_cavallero"
 			}
 			army={
-				large=GFX_portrait_ITA_ugo_cavallero
+				large="gfx/leaders/ITA/Portrait_Italy_Ugo_Cavallero.dds"
 			}
 		}
-		advisor={
-			slot = army_chief
-			idea_token = ITA_ugo_cavallero
-			allowed = {
-				original_tag = ITA
-			}
-			traits  = {
-				army_chief_maneuver_1 
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		
 		corps_commander={
-			traits={ old_guard career_officer trait_cautious }
-			skill=2
-			attack_skill=1
-			defense_skill=1
+			traits={ old_guard infantry_leader desert_fox }
+			skill=4
+			attack_skill=4
+			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=0
+			legacy_id=-1
 		}
 	}
-
 	ITA_giovanni_messe={
-		name=ITA_giovanni_messe
+		name="Giovanni Messe"
+		# advisor={
+		# 	slot = theorist
+		# 	idea_token = giovanni_messe
+		# 	ledger  = army 
+		# 		allowed  = {
+		# 			original_tag  = ITA 
+		# 		}
+		# 		modifier  = {
+		# 			naval_manufacturer_cost_factor  = -1.000
+		# 		}
+		# 		cost  = 150.000
+		# 		research_bonus  = {
+		# 			cat_mobile_warfare  = 0.150
+		# 		}
+		# 		traits  = {
+		# 			mobile_warfare_expert 
+		# 		}
+		# }
+
+		### REAL WORKING
+		# advisor={
+		# 	slot = theorist
+		# 	idea_token = ITA_giovanni_messe2
+		# 	ledger  = army 
+		# 		allowed  = {
+		# 			original_tag  = ITA 
+		# 		}
+		# 		modifier  = {
+		# 			naval_manufacturer_cost_factor  = -1.000
+		# 		}
+		# 		cost  = 150.000
+		# 		# research_bonus  = {
+		# 		# 	cat_mobile_warfare  = 0.150
+		# 		# }
+		# 		available = {
+		# 			has_completed_focus = ITA_promote_messe
+		# 		}
+		# 		traits  = {
+		# 			mobile_warfare_expert 
+		# 		}
+		# }
 		portraits={
 			army={
 				small="GFX_idea_giovanni_messe"
 			}
 			army={
-				large=GFX_portrait_ITA_giovanni_messe
+				large="gfx/leaders/ITA/Portrait_Italy_Giovanni_Messe.dds"
 			}
 		}
 		corps_commander={
-			traits={ armor_officer war_hero }
-			skill=4
+			traits={ panzer_leader desert_fox panzer_expert }
+			skill=5
 			attack_skill=4
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=4
 			legacy_id=-1
 		}
-		advisor={
-			slot = high_command
-			idea_token = ITA_giovanni_messe2
-			ledger = army
-			cost = 75
-			allowed = {
-				original_tag = ITA
-			}
-			available = {
-				has_completed_focus = ITA_promote_messe
-			}
-			traits  = {
-				army_armored_3 
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		advisor={
-			slot = theorist
-			idea_token = ITA_giovanni_messe
-			ledger = army
-			cost = 250
-			allowed = {
-				original_tag = ITA
-			}
-			traits  = {
-				mobile_warfare_expert 
-			}
-			ai_will_do = {
-				factor = 3
-			}
-		}
 	}
-
 	ITA_sebastiano_visconti_prasca={
-		name=ITA_sebastiano_visconti_prasca
+		name="Sebastiano Visconti Prasca"
 		portraits={
 			army={
-				large=GFX_portrait_ITA_sebastiano_visconti_prasca
-				small=GFX_portrait_ITA_sebastiano_visconti_prasca_small
+				small="gfx/interface/ideas/idea_ITA_sebastiano_visconti_prasca.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist career_officer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
+			traits={ inflexible_strategist infantry_leader }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
 		}
 	}
-
 	ITA_ubaldo_soddu={
-		name=ITA_ubaldo_soddu
+		name="Ubaldo Soddu"
 		portraits={
 			army={
-				large=GFX_portrait_ITA_ubaldo_soddu
-				small=GFX_portrait_ITA_ubaldo_soddu_small
+				small="gfx/interface/ideas/idea_ITA_ubaldo_soddu.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Ubaldo_Soddu.dds"
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_cautious }
-			skill=1
-			attack_skill=1
+			traits={ trait_cautious infantry_leader naval_invader }
+			skill=4
+			attack_skill=4
 			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
 		}
 	}
-
 	ITA_italo_balbo={
-		name=ITA_italo_balbo
+		name="Italo Balbo"
+		# advisor={
+		# 	slot = air_chief
+		# 	idea_token = italo_balbo
+		# 	allowed  = {
+		# 			original_tag  = ITA 
+		# 		}
+		# 		traits  = {
+		# 			air_chief_all_weather_2 
+		# 		}
+		# 		ai_will_do  = {
+		# 			factor  = 1.000
+		# 		}
+		# }
 		portraits={
 			army={
 				small="GFX_idea_italo_balbo"
 			}
 			army={
-				large=GFX_portrait_ITA_italo_balbo
+				large="gfx/leaders/ITA/portrait_italy_italo_balbo.dds"
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist infantry_leader trait_mountaineer commando }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ITA_angelo_di_maria={
+		name="Angelo Di Maria"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer infantry_leader skilled_staffer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ITA_mario_fama={
+		name="Mario Fama"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trickster hill_fighter }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ITA_mario_federico={
+		name="Mario Federico"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 			}
 		}
 		advisor={
-			slot = air_chief
-			idea_token = ITA_italo_balbo
-			allowed = {
-				original_tag = ITA
-			}
-			traits = {
-				air_chief_all_weather_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			slot = theorist
+			idea_token = ITA_mario_federico2
+			ledger  = army 
+				allowed  = {
+					original_tag  = ITA 
+				}
+				# modifier  = {
+				# 	naval_manufacturer_cost_factor  = -1.000
+				# }
+				cost  = 150.000
+				# research_bonus  = {
+				# 	cat_mobile_warfare  = 0.150
+				# }
+				available = {
+					has_completed_focus = ITA_promote_messe
+				}
+				traits  = {
+					mobile_warfare_expert 
+				}
 		}
-		
 		corps_commander={
-			traits={ career_officer politically_connected }
-			skill=1
-			attack_skill=1
-			defense_skill=1
+			traits={ infantry_leader hill_fighter }
+			skill=4
+			attack_skill=4
+			defense_skill=3
 			planning_skill=1
 			logistics_skill=1
-			legacy_id=0
+			legacy_id=-1
 		}
 	}
 
 	ITA_rodolfo_graziani={
-		name=ITA_rodolfo_graziani
+		name="Rodolfo Graziani"
+		advisor={
+			slot = theorist
+			idea_token = rodolfo_graziani
+			ledger  = army 
+				allowed  = {
+					original_tag  = ITA 
+				}
+				cost  = 150.000
+				# research_bonus  = {
+				# 	cat_grand_battle_plan  = 0.150
+				# }
+				traits  = {
+					grand_battle_plan_expert 
+				}
+				ai_will_do  = {
+					factor  = 3.000
+				}
+		}
 		portraits={
 			army={
 				small="GFX_idea_rodolfo_graziani"
 			}
 			army={
-				large=GFX_portrait_ITA_rodolfo_graziani
+				large="gfx/leaders/ITA/portrait_italy_radolfo_graziani.dds"
 			}
 		}
-		advisor={
-			slot = theorist
-			idea_token = ITA_rodolfo_graziani
-			cost = 250
-			allowed = {
-				original_tag = ITA
-			}
-			traits = {
-				grand_battle_plan_expert
-			}
-			ai_will_do = {
-				factor = 3.000
-			}
-		}
-
 		field_marshal={
-			traits={ trait_cautious politically_connected offensive_doctrine }
-			skill=2
-			attack_skill=2
-			defense_skill=2
+			traits={ organizer trickster brilliant_strategist }
+			skill=5
+			attack_skill=4
+			defense_skill=4
 			planning_skill=2
 			logistics_skill=1
-			legacy_id=0
+			legacy_id=-1
 		}
 	}
 
@@ -445,6 +533,7 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
+			cost = 100
 		}
 	}
 

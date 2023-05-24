@@ -8,6 +8,7 @@ state=
 	
 	history=
 	{
+		set_state_flag = ITA_controls
 		owner = ITA
 		victory_points = {
 			10007 1 

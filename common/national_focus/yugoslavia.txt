@@ -1363,9 +1363,6 @@ focus_tree = {
 		}
 
 		bypass = {
-			BUL = {
-				exists = no
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -1374,9 +1371,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			BUL = {
-				transfer_state = 106
-				transfer_state = 803
+			if = {
+				limit = {
+					country_exists = BUL
+				}
+				BUL = {
+					transfer_state = 106
+					transfer_state = 803
+				}
+			}
+			else = {
+				ITA = {
+					transfer_state = 106
+					transfer_state = 803
+				}
 			}
 			# 106 = {
 			# 	remove_core_of = ROOT
@@ -1515,7 +1523,7 @@ focus_tree = {
 
 	focus = {
 		id = YUG_Under_New_Regime
-		icon = GFX_focus_YUG_banovina_of_croatia
+		icon = GFX_goal_YUG_new_regime
 		prerequisite = { focus = YUG_surrender_hungarian_claims }
 		relative_position_id = YUG_surrender_hungarian_claims
 		x = 0
@@ -4068,7 +4076,7 @@ focus_tree = {
 
     focus = {
         id = YUG_Improved_Logistics
-        icon = GFX_focus_SOV_the_road_of_life
+        icon = GFX_goal_JAP_reorganized_supply_networks
         prerequisite = { focus = YUG_motorized_logistics }
         relative_position_id = YUG_motorized_logistics
         x = 0

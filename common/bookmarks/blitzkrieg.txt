@@ -169,8 +169,8 @@ bookmarks = {
 			}
 			focuses = {
 				IRE_empower_the_ira
-				IRE_integrate_the_north
-				IRE_incorporate_the_ira
+				IRE_island_defence
+				IRE_More_Intense_training
 			}
 		}
 		"BRA"={

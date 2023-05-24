@@ -2636,7 +2636,7 @@ focus_tree = {
 	focus = {
 		id = CZE_military_research_institute
 		icon = GFX_focus_CZE_military_research_institute
-		x = 11
+		x = 10
 		y = 0
 		relative_position_id = CZE_strategy_decisions
 
@@ -3104,6 +3104,10 @@ focus_tree = {
 			factor = 90
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 
 		}
@@ -3424,7 +3428,7 @@ focus_tree = {
 	focus = {
 		id = CZE_access_to_the_sea
 		icon = GFX_goal_generic_occupy_states_coastal
-		x = 7
+		x = -1
 		y = 0
 		relative_position_id = CZE_military_aeronautical_institute
 

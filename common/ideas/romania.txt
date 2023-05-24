@@ -834,9 +834,7 @@ ideas = {
 				}
 			}
 			
-			modifier = {
-				# heavily armored light tanks 7TP, weak vs air ,diesel powered
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		ROM_leonidas_works = {
@@ -880,6 +878,7 @@ ideas = {
 			
 			modifier = {
 				equipment_conversion_speed = 0.25
+				tank_manufacturer_cost_factor = -1
 			}
 		}
 	}
@@ -930,15 +929,16 @@ ideas = {
 			
 			traits = { naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 
 		ROM_coastal_defense_navy_designer = {
 			
 			picture = generic_coastal_navy
 
-			cost = 75
+			cost = 150
 
 			allowed = {
 				original_tag = ROM
@@ -967,15 +967,14 @@ ideas = {
 			
 			traits = { naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 		ROM_black_sea_dominance_designer = {
 			
 			picture = generic_sea_focused_navy
 
-			cost = 75
+			cost = 150
 
 			allowed = {		
 				original_tag = ROM
@@ -1004,8 +1003,7 @@ ideas = {
 			
 			traits = { naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 	}
 
@@ -1196,6 +1194,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		ROM_iar = {
@@ -1238,6 +1238,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		ROM_ICAR = {
@@ -1269,6 +1271,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		ROM_SET = {
@@ -1303,6 +1307,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 	}
 }

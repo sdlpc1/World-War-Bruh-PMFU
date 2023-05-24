@@ -1,0 +1,20 @@
+state={
+	id=843
+	name="STATE_843"
+	manpower = 900000
+	
+	state_category = rural
+	history = {
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			12806 15
+		}
+		add_core_of = WST
+	}
+	provinces={
+		7925 12806 10743 12862 2088 10784 12881 12826 12796 2046 2003
+	}
+}

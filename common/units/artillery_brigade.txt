@@ -543,22 +543,22 @@ sub_units = {
 		
 		maximum_speed = -1.0
 		
-		supply_consumption = 0.8
+		supply_consumption = 0.85
 
 		amphibious = {
 			attack = -1.0
 		}
 		
 		fort = {
-			attack = 0.8
+			attack = 0.15
 		}
 		
 		urban = {
-			attack = 0.2
+			attack = 0.15
 		}
 		
 		dense_urban = {
-			attack = 0.4
+			attack = 0.2
 		}
 		
 		town = {

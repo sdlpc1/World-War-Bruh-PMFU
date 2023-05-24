@@ -492,6 +492,9 @@ on_actions = {
 					ITA = {
 						MEDITERRANEAN_AXIS_bases_level_up = yes
 					}
+					ENG = {
+						MEDITERRANEAN_ALLIES_bases_level_down = yes
+					}
 				}
 			}
 	}
@@ -521,6 +524,9 @@ on_actions = {
 					}
 					ITA = {
 						MEDITERRANEAN_AXIS_bases_level_down = yes
+					}
+					ENG = {
+						MEDITERRANEAN_ALLIES_bases_level_up = yes
 					}
 				}
 			}

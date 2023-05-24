@@ -153,6 +153,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_original
 	volunteer_minimum_major
 	peace_training
+	no_grinding
 }
 #set_variable = { FRA_poster_center_icon_frame = 1 }
 set_variable = { FRA_new_propaganda_campaign = 0 } #Used to pick a poster slot
@@ -180,7 +181,7 @@ recruit_character = FRA_alphonse_juin
 recruit_character = FRA_maurice_gamelin
 recruit_character = FRA_maxime_weygand
 recruit_character = FRA_alphonse_georges
-recruit_character = FRA_antoinemariebenoit_besson
+# recruit_character = FRA_antoinemariebenoit_besson
 recruit_character = FRA_charles_de_gaulle
 recruit_character = FRA_philippe_leclerc
 recruit_character = FRA_henri_giraud
@@ -225,6 +226,7 @@ recruit_character = FRA_felix_gouin
 recruit_character = FRA_paul_baudouin
 recruit_character = FRA_maurice_gauche
 recruit_character = FRA_jacques_duclos
+recruit_character = FRA_antoinemariebenoît_besson
 
 create_equipment_variant = {
 	name = "Renault R35"
@@ -753,7 +755,7 @@ if = {
 		name = "F.222"
 		type = large_plane_airframe_0
 		modules = {
-			fixed_main_weapon_slot = large_bomb_bay
+			fixed_main_weapon_slot = early_large_bomb_bay
 			fixed_auxiliary_weapon_slot_2 = lmg_defense_turret
 			engine_type_slot = engine_1_4x
 		}

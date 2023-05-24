@@ -506,13 +506,13 @@ ETH_upgrade_main_city = {
 			value = 2
 		}
 	}
-	ELSE_IF = {
-		limit = { state = 840 }
-		add_victory_points = {
-			province = 13242
-			value = 2
-		}
-	}
+	# ELSE_IF = {
+	# 	limit = { state = 840 }
+	# 	add_victory_points = {
+	# 		province = 13242
+	# 		value = 2
+	# 	}
+	# }
 	ELSE_IF = {
 		limit = { state = 839 }
 		add_victory_points = {
@@ -520,20 +520,20 @@ ETH_upgrade_main_city = {
 			value = 2
 		}
 	}
-	ELSE_IF = {
-		limit = { state = 838 }
-		add_victory_points = {
-			province = 13244
-			value = 2
-		}
-	}
-	ELSE_IF = {
-		limit = { state = 837 }
-		add_victory_points = {
-			province = 13246
-			value = 2
-		}
-	}
+	# ELSE_IF = {
+	# 	limit = { state = 838 }
+	# 	add_victory_points = {
+	# 		province = 13244
+	# 		value = 2
+	# 	}
+	# }
+	# ELSE_IF = {
+	# 	limit = { state = 837 }
+	# 	add_victory_points = {
+	# 		province = 13246
+	# 		value = 2
+	# 	}
+	# }
 	ELSE_IF = {
 		limit = { state = 836 }
 		add_victory_points = {
@@ -548,13 +548,13 @@ ETH_upgrade_main_city = {
 			value = 2
 		}
 	}
-	ELSE_IF = {
-		limit = { state = 908 }
-		add_victory_points = {
-			province = 13240
-			value = 2
-		}
-	}
+	# ELSE_IF = {
+	# 	limit = { state = 908 }
+	# 	add_victory_points = {
+	# 		province = 13240
+	# 		value = 2
+	# 	}
+	# }
 }
 
 # Local resistance fighters rising up (historically some 50000 or so rose up in the North )

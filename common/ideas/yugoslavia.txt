@@ -1049,6 +1049,8 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			
 			traits = { YUG_light_tank_designer }
 		}
@@ -1075,6 +1077,8 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			
 			traits = { YUG_medium_tank_designer }
 		}
@@ -1088,6 +1092,7 @@ ideas = {
 			
 			picture = generic_naval_manufacturer_2
 
+			cost = 150
 			
 			allowed = {
 				original_tag = YUG
@@ -1103,8 +1108,7 @@ ideas = {
 			
 			traits = { naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 	}
 	
@@ -1134,6 +1138,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		YUG_ikarus = {
@@ -1162,6 +1168,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		rogozarski = {
@@ -1186,6 +1194,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		YUG_rogozarski = {
@@ -1214,6 +1224,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		zmaj = {
@@ -1238,6 +1250,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		YUG_zmaj = {
@@ -1266,6 +1280,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 	}
 	materiel_manufacturer = {

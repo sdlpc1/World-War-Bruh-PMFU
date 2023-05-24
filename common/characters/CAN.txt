@@ -40,46 +40,6 @@ characters={
 			id=-1
 		}
 	}
-	CAN_charles_foulkes={
-		name="Charles Foulkes"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_CAN_charles_foulkes.dds"
-			}
-			army={
-				large="gfx/leaders/CAN/Portrait_Canada_Charles_Foulkes.dds"
-			}
-		}
-		field_marshal={
-			traits={ brilliant_strategist organizer cavalry_leader trickster }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	CAN_bert_hoffmeister={
-		name="Bert Hoffmeister"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_CAN_bert_hoffmeister.dds"
-			}
-			army={
-				large="gfx/leaders/CAN/Portrait_Canada_Bert_Hoffmeister.dds"
-			}
-		}
-		corps_commander={
-			traits={ armor_officer trickster trait_engineer panzer_leader hill_fighter }
-			skill=4
-			attack_skill=5
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
 	CAN_harry_dewolf={
 		name="Harry DeWolf"
 		portraits={
@@ -100,67 +60,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	CAN_harry_crerar={
-		name="Harry Crerar"
-		portraits={
-			army={
-				small="GFX_idea_CAN_harry_crerar"
-			}
-		}
-		corps_commander={
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-		advisor={
-			slot = army_chief
-			idea_token = CAN_harry_crerar
-			allowed = {
-				original_tag = CAN
-			}
-			traits  = {
-				army_chief_old_guard 
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	CAN_guy_simonds={
-		name="Guy Simonds"
-		portraits={
-			army={
-				small="GFX_idea_CAN_guy_simonds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_leader commando naval_invader }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=4
-			legacy_id=-1
-		}
-		advisor={
-			slot = high_command
-			idea_token = CAN_guy_simonds
-			ledger = army 
-			allowed = {
-				original_tag = CAN
-			}
-			traits  = {
-				army_artillery_2 
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 	CAN_j._s._woodsworth={
 		name="J. S. Woodsworth"
 		portraits={
@@ -174,21 +73,81 @@ characters={
 			id=-1
 		}
 	}
-	CAN_jeff_nicklin={
-		name="Jeff Nicklin"
+	CAN_thomas_victor_anderson={
+		name="Thomas Victor Anderson"
 		portraits={
 			army={
-				small="gfx/leaders/CAN/Portrait_Canada_Michael_Caine.dds"
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
 			}
 			army={
-				large="gfx/leaders/CAN/Portrait_Canada_Michael_Caine.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 			}
 		}
 		corps_commander={
-			traits={ ranger }
-			skill=3
-			attack_skill=3
-			defense_skill=1
+			traits={ trait_engineer panzer_leader hill_fighter }
+			skill=5
+			attack_skill=6
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=666
+		}
+	}
+	CAN_charles_foulkes={
+		name="Charles Foulkes"
+		portraits={
+			army={
+				small="GFX_CAN_charles_foulkes_small"
+			}
+			army={
+				large="GFX_CAN_charles_foulkes"
+			}
+		}
+		field_marshal={
+			traits={ organizer panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=667
+		}
+	}
+	CAN_percival_john_montague={
+		name="Percival John Montague"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ naval_invader commando urban_assault_specialist }
+			skill=4
+			attack_skill=6
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	CAN_bert_hoffmeister={
+		name="Bert Hoffmeister"
+		portraits={
+			army={
+				small="GFX_CAN_bert_hoffmeister_small"
+			}
+			army={
+				large="GFX_CAN_bert_hoffmeister"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader hill_fighter }
+			skill=4
+			attack_skill=4
+			defense_skill=3
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1

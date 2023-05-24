@@ -243,6 +243,8 @@
  rock_desc:0 ""
  islands_home_of:0 "§RI S L A N D S, HOME TO ADVANCED CIVILIZATIONS, ANCIENT MYSTERIES, LEGENDS FROM MILLENNIA AGO...§!"
  islands_home_of_desc:0 ""
+ naval_base_construction:0 "§1France can't build naval ports before capitulation§!"
+ air_base_construction:0 "§1Airfields can be built up to 10 levels§!"
 
 # Annexation Choices
  ENG_annex_ire:0 "Annex Ireland"
@@ -293,6 +295,8 @@ off_theatre_tt:0 "A random §YSkill 2§! or lower General will gain a §Y"Terrai
 off_mass_tt:0 "A random §YSkill 3§! or lower General with the trait §Y"Infantry Officer"§! will gain §Y"Infantry Leader"§!"
 off_mobile_tt:0 "A random §YSkill 3§! or lower General with the trait §Y"Armour Officer"§! will gain §Y"Armour Leader"§!"
 off_superior_tt:0 "A random §YSkill 3§! or lower General with §Y"Engineer Officer"§! will gain §Y"Engineer"§!"
+
+five_terrain_penalty_reduction:0 "From focus"
 
  #### UNITS ####
  mountaineers:0 "Light Infantry"

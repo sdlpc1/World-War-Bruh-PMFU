@@ -1,20 +1,20 @@
 characters={
 	BRA_eurico_gaspar_dutra={
 		name="Eurico Gaspar Dutra"
-		advisor={
-			slot = army_chief
-			idea_token = BRA_eurico_gaspar_dutra
-			allowed  = {
-				original_tag  = BRA
-			}
-			traits  = {
-				army_chief_morale_2 
-			}
-			cost = 100
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
+		# advisor={
+		# 	slot = army_chief
+		# 	idea_token = BRA_eurico_gaspar_dutra
+		# 	allowed  = {
+		# 		original_tag  = BRA
+		# 	}
+		# 	traits  = {
+		# 		army_chief_morale_2 
+		# 	}
+		# 	cost = 100
+		# 	ai_will_do  = {
+		# 		factor  = 1.000
+		# 	}
+		# }
 		portraits={
 			army={
 				small="GFX_idea_generic_army_south_america_3"
@@ -24,12 +24,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ ranger }
+			traits={ ranger infantry_leader trait_engineer }
 			skill=4
 			attack_skill=4
 			defense_skill=3
 			planning_skill=4
-			logistics_skill=2
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -44,9 +44,9 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ jungle_rat }
+			traits={ jungle_rat commando trickster }
 			skill=4
-			attack_skill=3
+			attack_skill=5
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=4
@@ -524,12 +524,29 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ naval_invader invader_ii }
-			skill=1
-			attack_skill=1
-			defense_skill=1
+			traits={ naval_invader trait_engineer commando }
+			skill=4
+			attack_skill=5
+			defense_skill=3
 			planning_skill=1
-			logistics_skill=1
+			logistics_skill=5
+		}
+	}
+
+	BRA_oswaldo_cordeiro_de_farias={
+		name="Oswaldo Cordeiro de Farias"
+		portraits={
+			army={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+			}
+		}
+		field_marshal ={
+			traits={ organizer infantry_leader }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=4
 		}
 	}
 }

@@ -72,6 +72,7 @@ add_ideas = neutrality_idea
 add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
 add_ideas = peace_training
 add_ideas = minors_no_air
+add_ideas = no_grinding
 
 
 #Kick off kings crazy life
@@ -128,7 +129,7 @@ recruit_character = ROM_ioan_mihail_racovita
 recruit_character = ROM_ion_antonescu
 recruit_character = ROM_horia_macellariu
 recruit_character = ROM_gheorghe_avramescu
-recruit_character = ROM_iuliu_maniu
+# recruit_character = ROM_iuliu_maniu
 recruit_character = ROM_gheorghe_argeseanu
 recruit_character = ROM_nicolae_malaxa
 recruit_character = ROM_petru_groza
@@ -142,6 +143,8 @@ recruit_character = ROM_constantin_sanatescu
 recruit_character = ROM_gheorghe_mihail
 recruit_character = ROM_paul_teodorescu
 recruit_character = ROM_gheorghe_vasiliu
+recruit_character = ROM_nicolae_ciupercă
+recruit_character = ROM_mihail_ascăr
 
 create_equipment_variant = {
 	name = "FT-17"

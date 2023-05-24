@@ -1941,7 +1941,7 @@ ideas = {
 				has_completed_focus = JAP_supremacy_of_the_battlefleet
 			}
 
-			cost = 75
+			cost = 150
 						
 			research_bonus = {
 				naval_equipment = 0.15
@@ -1949,6 +1949,7 @@ ideas = {
 			
 			traits = { battlefleet_designer } # built Yamato
 
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		yokosuka_naval_arsenal = {
@@ -1966,6 +1967,10 @@ ideas = {
 			equipment_bonus = {
 				# 
 			}
+
+			cost = 150
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		maizuru_naval_arsenal = {
@@ -1983,6 +1988,10 @@ ideas = {
 			equipment_bonus = {
 				# 
 			}
+
+			cost = 150
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 			
 	}
@@ -2007,9 +2016,7 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer_2 }
 
-			modifier = {
-
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		nakajima = {
@@ -2024,6 +2031,7 @@ ideas = {
 			
 			traits = { nakajima_manufacturer }
 
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		yokosuka = {
@@ -2037,6 +2045,8 @@ ideas = {
 			}
 			
 			traits = { naval_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 	}
 	
@@ -2154,6 +2164,8 @@ ideas = {
 			}
 			
 			traits = { tank_manufacturer }
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}	
 	}
 	

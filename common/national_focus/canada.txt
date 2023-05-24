@@ -2821,6 +2821,10 @@ focus_tree = {
 			factor = 3
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 
 		}
@@ -3317,7 +3321,7 @@ focus_tree = {
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 27
+		x = 23
 		y = 0
 
 		cost = 5

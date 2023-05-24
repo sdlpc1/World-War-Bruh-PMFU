@@ -66,7 +66,8 @@ NZL_historical = {
 	}
 
 	ideas = {
-		
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
 	}
 
 	traits = {

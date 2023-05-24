@@ -82,6 +82,39 @@ on_actions = {
 				}
 			}
 		}
+
+		effect = { 
+			ENG = {
+				every_owned_state = {
+					limit = { is_core_of = ENG }
+					add_to_array = {
+						array = ENG.starting_core_states
+						value = THIS
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = ENG.starting_core_states	
+				add_to_variable= { ENG.shadow_civs1 = industrial_complex_level }
+			}
+		}
+
+		effect = { 
+			every_country = {
+				limit = {
+					NOT = {
+						tag = FRA
+					}
+				}
+				set_technology = { naval_base_construction = 1 popup = no }
+			}
+		}
+
+		effect = { 
+			every_country = {
+				set_technology = { air_base_construction = 1 popup = no }
+			}
+		}
 	}
 
 	on_declare_war = {
@@ -94,6 +127,45 @@ on_actions = {
 				}
 				YUG = {
 					activate_mission = YUG_impending_german_coup
+				}
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						FROM = { tag = USA }
+						tag = USA
+					}
+				}
+				USA = {
+					379 = {
+						add_resource = {
+							type = aluminium
+							amount = 250
+						}
+					}
+					385 = {
+						add_resource = {
+							type = aluminium
+							amount = 250
+						}
+					}
+					378 = {
+						add_resource = {
+							type = aluminium
+							amount = 250
+						}
+					}
+					383 = {
+						add_resource = {
+							type = aluminium
+							amount = 300
+						}
+					}
 				}
 			}
 		}

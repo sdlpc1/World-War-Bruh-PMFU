@@ -776,6 +776,111 @@ on_actions = {
 		}
 	}
 
+	#ROOT is capitulated country, FROM is winner.
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = BEL
+						is_in_faction = yes
+						#is_government_in_exile = yes
+					}
+				}
+				if = {
+					limit = {
+						295 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					295 = { set_state_flag = prevent_auto_flip_after_capitulation }
+				}
+
+				if = {
+					limit = {
+						538 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+
+					538 = { set_state_flag = prevent_auto_flip_after_capitulation }
+				}
+
+				if = {
+					limit = {
+						888 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+
+					888 = { set_state_flag = prevent_auto_flip_after_capitulation }
+				}
+
+				if = {
+					limit = {
+						889 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					889 = { set_state_flag = prevent_auto_flip_after_capitulation }
+
+				}
+
+				if = {
+					limit = {
+						890 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+
+					890 = { set_state_flag = prevent_auto_flip_after_capitulation }
+
+				}
+
+				if = {
+					limit = {
+						769 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+
+					769  = { set_state_flag = prevent_auto_flip_after_capitulation }
+				}
+
+				if = {
+					limit = {
+						768 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					768 = { set_state_flag = prevent_auto_flip_after_capitulation }
+				}
+
+				if = {
+					limit = {
+						718 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					718 = { set_state_flag = prevent_auto_flip_after_capitulation }
+				}
+			}
+			
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = FRA
+						is_in_faction = yes
+					}
+
+					635 = { is_fully_controlled_by = ROOT }
+				}
+
+				635 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			}
+		}
+	}
+
 	on_government_change = {
 		effect = {
 			#Make sure Soviet can always create factions
@@ -1297,6 +1402,24 @@ on_actions = {
 				}
 				FROM.FROM = { remove_dynamic_modifier = { modifier = international_city } }
 			}
+
+			if = {
+				limit = {
+					FROM = {
+						is_in_faction = yes
+					}
+
+					FROM.FROM = {
+						has_state_flag = prevent_auto_flip_after_capitulation
+					}
+				}
+
+				FROM.FROM = { clr_state_flag = prevent_auto_flip_after_capitulation }
+				FROM = {
+					set_state_controller = FROM.FROM
+				}
+
+			}
 		}
 	}
 	
@@ -1435,6 +1558,74 @@ on_actions = {
 		}
 	}
 
+	on_peaceconference_started = {
+		effect = {
+			if = {
+				limit = {
+					295 = { has_state_flag = prevent_auto_flip_after_capitulation }
+				}
+				295 = { clr_state_flag = prevent_auto_flip_after_capitulation }
+			}
+
+			if = {
+				limit = {
+					538 = { has_state_flag = prevent_auto_flip_after_capitulation }
+				}
+				538 = { clr_state_flag = prevent_auto_flip_after_capitulation }
+			}
+
+			if = {
+				limit = {
+					888 = { has_state_flag = prevent_auto_flip_after_capitulation }
+				}
+				888 = { clr_state_flag = prevent_auto_flip_after_capitulation }
+			}
+
+			if = {
+				limit = {
+					889 = { has_state_flag = prevent_auto_flip_after_capitulation }
+				}
+				889 = { clr_state_flag = prevent_auto_flip_after_capitulation }
+			}
+
+			if = {
+				limit = {
+					890 = { has_state_flag = prevent_auto_flip_after_capitulation }
+				}
+				890 = { clr_state_flag = prevent_auto_flip_after_capitulation }
+			}
+
+
+			if = {
+				limit = {
+					769 = { has_state_flag = prevent_auto_flip_after_capitulation }
+				}
+				769 = { clr_state_flag = prevent_auto_flip_after_capitulation }
+			}
+
+			if = {
+				limit = {
+					768 = { has_state_flag = prevent_auto_flip_after_capitulation }
+				}
+				768 = { clr_state_flag = prevent_auto_flip_after_capitulation }
+			}
+
+			if = {
+				limit = {
+					718 = { has_state_flag = prevent_auto_flip_after_capitulation }
+				}
+				718 = { clr_state_flag = prevent_auto_flip_after_capitulation }
+			}
+
+			if = {
+				limit = {
+					635 = { has_state_flag = prevent_auto_flip_after_capitulation }
+				}
+				635 = { clr_state_flag = prevent_auto_flip_after_capitulation }
+			}
+		}
+	}
+
 	on_startup = {
 		effect = {
 			every_country={
@@ -1442,6 +1633,17 @@ on_actions = {
 			}
 		}
 	}
+
+	on_startup = {
+		effect = {
+			hidden_effect = {
+				FRA = {
+					country_event = { id = election.18 days = 180 } #180
+				}
+			}
+		}
+	}
+
 	on_startup = {
 		effect = {
 			if = {
@@ -1456,7 +1658,7 @@ on_actions = {
 				}
 			}
 		}
-	}
+	}	
 
 	on_startup = {
 		effect = {

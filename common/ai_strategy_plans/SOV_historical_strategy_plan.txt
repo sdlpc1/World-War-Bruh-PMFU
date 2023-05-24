@@ -107,8 +107,10 @@ SOV_historical_plan = {
 	}
 
 	ideas = {
-
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
 	}
+	
 	traits = {
 		captain_of_industry = 10
 		popular_figurehead = 5

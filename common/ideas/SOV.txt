@@ -11,6 +11,71 @@ ideas = {
 
 	country= {
 
+		SOV_winter_offensive = {
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_infantry_attack_factor = 0.1
+				winter_attrition_factor = -1
+			}
+		}
+
+		SOV_uranus = {
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			modifier = {
+				army_armor_attack_factor = 0.10
+				army_infantry_attack_factor = 0.10
+				winter_attrition_factor = -1
+			}
+		}
+		
+		SOV_bagration = {
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			modifier = {
+				army_armor_attack_factor = 0.25
+				army_infantry_attack_factor = 0.20
+				winter_attrition_factor = -1
+			}
+		}
+
+		SOV_rubber_refining = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = generic_rubber_refining
+			
+			modifier = {
+				production_speed_synthetic_rubber_refinery_factor = 0.15
+			}
+		}
 
 		SOV_modernisation_mech_2 = {
 		
@@ -2529,6 +2594,9 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_start_efficiency_factor = 0.1
 				production_speed_arms_factory_factor = 0.05
+				# production_factory_efficiency_gain_factor = 0.15
+				# production_factory_start_efficiency_factor = 0.1
+				# production_speed_arms_factory_factor = 0.1
 			}
 		}
 
@@ -2616,6 +2684,10 @@ ideas = {
 				consumer_goods_factor = -0.01
 				conscription = 0.01
 				industrial_capacity_factory = 0.05
+
+				# consumer_goods_factor = -0.05
+				# conscription = 0.01
+				# industrial_capacity_factory = 0.1
 			}
 		
 		}
@@ -5428,8 +5500,7 @@ ideas = {
 			
 			traits = { morozov }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		
@@ -5466,8 +5537,7 @@ ideas = {
 			
 			traits = { fast_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_astrov_design_bureau_1 = {
@@ -5498,6 +5568,8 @@ ideas = {
 					maximum_speed = 0.03
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_astrov_design_bureau_2 = {
@@ -5531,6 +5603,8 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_astrov_design_bureau_3 = {
@@ -5561,6 +5635,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_astrov_design_bureau_1_2 = {
@@ -5592,6 +5668,8 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_astrov_design_bureau_1_3 = {
@@ -5623,6 +5701,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_astrov_design_bureau_2_3 = {
@@ -5654,6 +5734,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_astrov_design_bureau_final = {
@@ -5686,6 +5768,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		
 
@@ -5719,8 +5803,7 @@ ideas = {
 			
 			traits = { okmo_trait }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		
@@ -5762,6 +5845,7 @@ ideas = {
 				equipment_conversion_speed = 0.15
 				# equipment_capture_factor = 0.15
 				land_equipment_upgrade_xp_cost = -0.1
+				tank_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -5792,6 +5876,7 @@ ideas = {
 				equipment_conversion_speed = 0.15
 				# equipment_capture_factor = 0.15
 				land_equipment_upgrade_xp_cost = -0.1
+				tank_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -5828,6 +5913,7 @@ ideas = {
 				equipment_conversion_speed = 0.15
 				# equipment_capture_factor = 0.15
 				land_equipment_upgrade_xp_cost = -0.1
+				tank_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -5864,6 +5950,7 @@ ideas = {
 				equipment_conversion_speed = 0.15
 				# equipment_capture_factor = 0.15
 				land_equipment_upgrade_xp_cost = -0.1
+				tank_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -5900,6 +5987,7 @@ ideas = {
 				equipment_conversion_speed = 0.15
 				# equipment_capture_factor = 0.15
 				land_equipment_upgrade_xp_cost = -0.1
+				tank_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -5937,6 +6025,7 @@ ideas = {
 				equipment_conversion_speed = 0.15
 				# equipment_capture_factor = 0.15
 				land_equipment_upgrade_xp_cost = -0.1
+				tank_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -5974,6 +6063,7 @@ ideas = {
 				equipment_conversion_speed = 0.15
 				# equipment_capture_factor = 0.15
 				land_equipment_upgrade_xp_cost = -0.1
+				tank_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -6011,6 +6101,7 @@ ideas = {
 				equipment_conversion_speed = 0.15
 				# equipment_capture_factor = 0.15
 				land_equipment_upgrade_xp_cost = -0.1
+				tank_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -6058,8 +6149,7 @@ ideas = {
 			
 			traits = { kharkiv }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_kirov_1 = {
@@ -6090,6 +6180,8 @@ ideas = {
 					maximum_speed = 0.03
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_kirov_2 = {
@@ -6115,8 +6207,7 @@ ideas = {
 			
 			traits = { heavy_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				armor = {
@@ -6153,6 +6244,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_kirov_1_2 = {
@@ -6184,6 +6277,8 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_kirov_1_3 = {
@@ -6215,6 +6310,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_kirov_2_3 = {
@@ -6246,6 +6343,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_kirov_final = {
@@ -6278,6 +6377,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 
@@ -6319,11 +6420,12 @@ ideas = {
 				naval_equipment = 0.15
 				naval_air = 0.1
 			}
+
+			cost = 150
 			
 			traits = { battlefleet_designer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_nevskoye_design_bureau_1 = {
@@ -6348,11 +6450,12 @@ ideas = {
 				naval_equipment = 0.15
 				naval_air = 0.1
 			}
+
+			cost = 150
 			
 			traits = { battlefleet_designer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				coastal_defense_ships = {
@@ -6386,14 +6489,15 @@ ideas = {
 			
 			traits = { battlefleet_designer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				destroyer = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_nevskoye_design_bureau_3 = {
@@ -6421,14 +6525,15 @@ ideas = {
 			
 			traits = { battlefleet_designer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				submarine = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_nevskoye_design_bureau_4 = {
@@ -6459,7 +6564,10 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
+
+			cost = 150
 		}
 
 		SOV_nevskoye_design_bureau_1_2 = {
@@ -6487,8 +6595,7 @@ ideas = {
 			
 			traits = { battlefleet_designer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				coastal_defense_ships = {
@@ -6498,6 +6605,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_nevskoye_design_bureau_1_3 = {
@@ -6525,8 +6634,7 @@ ideas = {
 			
 			traits = { battlefleet_designer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				coastal_defense_ships = {
@@ -6536,6 +6644,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_nevskoye_design_bureau_1_4 = {
@@ -6566,6 +6676,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -6573,6 +6684,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_nevskoye_design_bureau_2_4 = {
@@ -6603,6 +6716,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -6610,6 +6724,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_nevskoye_design_bureau_3_4 = {
@@ -6640,6 +6756,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -6647,6 +6764,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_nevskoye_design_bureau_final_2 = {
@@ -6677,6 +6796,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -6687,6 +6807,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_nevskoye_design_bureau_final_3 = {
@@ -6717,6 +6839,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -6727,6 +6850,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 
@@ -6762,8 +6887,9 @@ ideas = {
 			
 			traits = { raiding_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 
 		SOV_rubin_design_bureau_1 = {
@@ -6790,14 +6916,15 @@ ideas = {
 			
 			traits = { raiding_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				coastal_defense_ships = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_rubin_design_bureau_2 = {
@@ -6824,14 +6951,15 @@ ideas = {
 			
 			traits = { raiding_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				destroyer = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_rubin_design_bureau_3 = {
@@ -6858,14 +6986,15 @@ ideas = {
 			
 			traits = { raiding_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				submarine = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_rubin_design_bureau_4 = {
@@ -6895,7 +7024,10 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
+
+			cost = 150
 		}
 
 		SOV_rubin_design_bureau_1_2 = {
@@ -6922,8 +7054,7 @@ ideas = {
 			
 			traits = { raiding_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				coastal_defense_ships = {
@@ -6933,6 +7064,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_rubin_design_bureau_1_3 = {
@@ -6959,8 +7092,7 @@ ideas = {
 			
 			traits = { raiding_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				coastal_defense_ships = {
@@ -6970,6 +7102,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_rubin_design_bureau_1_4 = {
@@ -6999,6 +7133,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7006,6 +7141,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_rubin_design_bureau_2_4 = {
@@ -7035,6 +7172,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7042,6 +7180,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_rubin_design_bureau_3_4 = {
@@ -7071,6 +7211,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7078,6 +7219,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_rubin_design_bureau_final_2 = {
@@ -7107,6 +7250,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7117,6 +7261,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_rubin_design_bureau_final_3 = {
@@ -7146,6 +7292,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7156,6 +7303,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 
@@ -7191,8 +7340,9 @@ ideas = {
 			
 			traits = { black_sea_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 
 		SOV_black_sea_shipyard_1 = {
@@ -7219,14 +7369,15 @@ ideas = {
 			
 			traits = { black_sea_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				coastal_defense_ships = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_black_sea_shipyard_2 = {
@@ -7253,14 +7404,15 @@ ideas = {
 			
 			traits = { black_sea_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				destroyer = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_black_sea_shipyard_3 = {
@@ -7287,14 +7439,15 @@ ideas = {
 			
 			traits = { black_sea_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				submarine = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_black_sea_shipyard_4 = {
@@ -7324,7 +7477,10 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
+
+			cost = 150
 		}
 
 		SOV_black_sea_shipyard_1_2 = {
@@ -7351,8 +7507,7 @@ ideas = {
 			
 			traits = { black_sea_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				coastal_defense_ships = {
@@ -7362,6 +7517,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_black_sea_shipyard_1_3 = {
@@ -7396,6 +7553,10 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 
 		SOV_black_sea_shipyard_1_4 = {
@@ -7425,6 +7586,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7432,6 +7594,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_black_sea_shipyard_2_4 = {
@@ -7461,6 +7625,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7468,6 +7633,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_black_sea_shipyard_3_4 = {
@@ -7497,6 +7664,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7504,6 +7672,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_black_sea_shipyard_final_2 = {
@@ -7533,6 +7703,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7543,6 +7714,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_black_sea_shipyard_final_3 = {
@@ -7572,6 +7745,7 @@ ideas = {
 			
 			modifier = {
 				repair_speed_factor = 0.05
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7582,6 +7756,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 
@@ -7622,7 +7798,10 @@ ideas = {
 				repair_speed_factor = 0.1
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
+
+			cost = 150
 		}
 
 		SOV_sevastopol_marine_plant_1 = {
@@ -7654,6 +7833,7 @@ ideas = {
 				repair_speed_factor = 0.1
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7661,6 +7841,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_sevastopol_marine_plant_2 = {
@@ -7692,6 +7874,7 @@ ideas = {
 				repair_speed_factor = 0.1
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7699,6 +7882,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_sevastopol_marine_plant_3 = {
@@ -7730,6 +7915,7 @@ ideas = {
 				repair_speed_factor = 0.1
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7737,6 +7923,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_sevastopol_marine_plant_4 = {
@@ -7769,7 +7957,10 @@ ideas = {
 				repair_speed_factor = 0.15
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
+
+			cost = 150
 		}
 
 		SOV_sevastopol_marine_plant_1_2 = {
@@ -7801,6 +7992,7 @@ ideas = {
 				repair_speed_factor = 0.1
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7811,6 +8003,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_sevastopol_marine_plant_1_3 = {
@@ -7842,6 +8036,7 @@ ideas = {
 				repair_speed_factor = 0.1
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7852,6 +8047,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_sevastopol_marine_plant_1_4 = {
@@ -7884,6 +8081,7 @@ ideas = {
 				repair_speed_factor = 0.15
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7891,6 +8089,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_sevastopol_marine_plant_2_4 = {
@@ -7923,6 +8123,7 @@ ideas = {
 				repair_speed_factor = 0.15
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7930,6 +8131,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_sevastopol_marine_plant_3_4 = {
@@ -7962,6 +8165,7 @@ ideas = {
 				repair_speed_factor = 0.15
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -7969,6 +8173,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_sevastopol_marine_plant_final_2 = {
@@ -8001,6 +8207,7 @@ ideas = {
 				repair_speed_factor = 0.15
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -8011,6 +8218,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 
 		SOV_sevastopol_marine_plant_final_3 = {
@@ -8043,6 +8252,7 @@ ideas = {
 				repair_speed_factor = 0.15
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+				naval_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -8053,6 +8263,8 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			cost = 150
 		}
 	}
 	
@@ -8098,8 +8310,7 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_mig_design_bureau_1 = {
@@ -8129,8 +8340,7 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				small_plane_cas_airframe = {
@@ -8201,6 +8411,7 @@ ideas = {
 			
 			modifier = {
 				air_mission_efficiency = 0.10
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -8233,6 +8444,7 @@ ideas = {
 			
 			modifier = {
 				air_agility_factor = 0.10
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -8272,6 +8484,7 @@ ideas = {
 			
 			modifier = {
 				air_mission_efficiency = 0.10
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -8312,6 +8525,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.10
 				air_mission_efficiency = 0.10
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -8346,6 +8560,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.10
 				air_mission_efficiency = 0.10
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -8392,8 +8607,7 @@ ideas = {
 			
 			traits = { medium_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_ilyushin_design_bureau_1 = {
@@ -8423,8 +8637,7 @@ ideas = {
 			
 			traits = { medium_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				medium_plane_airframe = {
@@ -8462,6 +8675,7 @@ ideas = {
 			
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -8495,6 +8709,7 @@ ideas = {
 			
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -8527,6 +8742,7 @@ ideas = {
 			
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -8566,6 +8782,7 @@ ideas = {
 			
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -8606,6 +8823,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -8640,6 +8858,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -8687,8 +8906,7 @@ ideas = {
 			
 			traits = { heavy_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_tupolev_design_bureau_1 = {
@@ -8718,8 +8936,7 @@ ideas = {
 			
 			traits = { heavy_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				medium_plane_airframe = {
@@ -8757,6 +8974,7 @@ ideas = {
 			
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -8790,6 +9008,7 @@ ideas = {
 			
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -8822,6 +9041,7 @@ ideas = {
 			
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -8861,6 +9081,7 @@ ideas = {
 			
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -8901,6 +9122,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -8935,6 +9157,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -8981,8 +9204,7 @@ ideas = {
 			
 			traits = { naval_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		SOV_yakovlev_design_bureau_1 = {
@@ -9012,8 +9234,7 @@ ideas = {
 			
 			traits = { naval_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 
 			equipment_bonus = {
 				medium_plane_airframe = {
@@ -9051,6 +9272,7 @@ ideas = {
 			
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -9084,6 +9306,7 @@ ideas = {
 			
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -9116,6 +9339,7 @@ ideas = {
 			
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -9155,6 +9379,7 @@ ideas = {
 			
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -9195,6 +9420,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 
@@ -9229,6 +9455,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -1
 			}
 
 			equipment_bonus = {
@@ -10729,5 +10956,5 @@ ideas = {
 		# 		industrial_capacity_dockyard = 0.05
 		# 	}
 		# }
-
+		}
 }

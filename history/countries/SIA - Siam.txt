@@ -50,6 +50,7 @@ add_ideas = {
 	peace_training
 	SIA_trade_treaty_with_jap
 	minors_no_air
+	no_grinding
 }
 
 set_politics = {
@@ -85,6 +86,7 @@ recruit_character = SIA_decisive_battle
 recruit_character = SIA_all_weather
 recruit_character = SIA_wichit_wichitwathakarn
 recruit_character = SIA_army_regrouping
+recruit_character = SIA_chao_phraya_surasakmontri
 
 1939.1.1 = {
 	set_politics = {

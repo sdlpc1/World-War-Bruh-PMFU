@@ -37,4 +37,9 @@ mexico_historical = {
 		MEX_focus_capital_reserves
 		# random army and navy NF after
 	}
+
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
 }

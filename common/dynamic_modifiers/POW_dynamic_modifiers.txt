@@ -1,0 +1,4 @@
+POW_industry_mod = {
+	industrial_capacity_factory = pow_factory_putput
+	local_resources_factor  = pow_resource_gain
+}

@@ -34,4 +34,9 @@ Hungary_historical = {
         HUN_secret_rearmament
         HUN_bled_agreement
 	}
+
+        ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
 }

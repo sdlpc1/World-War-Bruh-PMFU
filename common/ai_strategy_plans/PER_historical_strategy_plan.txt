@@ -21,4 +21,9 @@ PER_historical = {
 		fighter_focus
 		aviation_effort_2
 	}
+
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
 }

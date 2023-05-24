@@ -1854,6 +1854,10 @@ focus_tree = {
 			factor = 1
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 
 		}
@@ -2152,7 +2156,7 @@ focus_tree = {
 	focus = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 28
+		x = 24
 		y = 0		
 
 		cost = 5

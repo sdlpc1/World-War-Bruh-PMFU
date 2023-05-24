@@ -38,8 +38,10 @@ CZE_historical_strategy_plan = {
 	}
 
 	ideas = {
-		
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
 	}
+	
 	ai_strategy = {
 		type = alliance
 		id = "FRA"

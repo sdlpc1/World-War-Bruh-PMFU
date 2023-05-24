@@ -23,4 +23,9 @@ Ireland_Historical = {
         IRE_emergency_power_act
         IRE_island_defence
 	}
+
+    ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
 }

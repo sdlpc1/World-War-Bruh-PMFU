@@ -43,7 +43,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 150
+			# add_political_power = 150
+			add_ideas = war_economy
 		}
 	}
 
@@ -1168,64 +1169,64 @@ focus_tree = {
 			663  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			449  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			451  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			661  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			662  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			448  = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 
-			build_railway = {
-				path = { 1149 4194 7209 9980 1118 1041 4047 10046 10117 12088 4057 }
-			}
-			build_railway = {
-				path = { 4057 1198 1127 4120 }
-			}
-			build_railway = {
-				path = { 11954 4120 1062 4063 }
-			}
-			build_railway = {
-				path = { 4063 1204 7082 9992 1130 }
-			}
-			build_railway = {
-				path = { 4063 1204 7082 9992 1130 }
-			}
-			build_railway = {
-				path = { 1130 4136 10120 }
-			}
+			# build_railway = {
+			# 	path = { 1149 4194 7209 9980 1118 1041 4047 10046 10117 12088 4057 }
+			# }
+			# build_railway = {
+			# 	path = { 4057 1198 1127 4120 }
+			# }
+			# build_railway = {
+			# 	path = { 11954 4120 1062 4063 }
+			# }
+			# build_railway = {
+			# 	path = { 4063 1204 7082 9992 1130 }
+			# }
+			# build_railway = {
+			# 	path = { 4063 1204 7082 9992 1130 }
+			# }
+			# build_railway = {
+			# 	path = { 1130 4136 10120 }
+			# }
 		}
 	}
 	
@@ -1825,91 +1826,91 @@ focus_tree = {
 			158 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			159 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			39 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			160 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			161 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			162 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			157 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			2 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			117 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			156 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			115 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			114 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			736 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2021,91 +2022,91 @@ focus_tree = {
 			158 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			159 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			39 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			160 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			161 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			162 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			157 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			2 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			117 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			156 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			115 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			114 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			736 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2356,6 +2357,7 @@ focus_tree = {
 					}
 				}
 			}
+			date > 1936.5.1
 		}
 
 		available_if_capitulated = yes
@@ -2469,6 +2471,9 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = ITA_neutrality_idea
 			add_to_tech_sharing_group = axis_research
+			GER = {
+				country_event = generic.2
+			}
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = ITA_vincere_prop
 		}
@@ -3417,6 +3422,7 @@ focus_tree = {
 				has_war_with = FRA
 				has_war_with = SOV
 			}
+			date > 1936.5.1
 		}
 
 		available_if_capitulated = yes
@@ -3475,10 +3481,10 @@ focus_tree = {
 			create_field_marshal = {
 				name = "Italo Gariboldi"
 				picture = "Portrait_Italy_Italo_Gariboldi.dds"
-				traits = { old_guard inflexible_strategist }
-				skill = 3
-				attack_skill = 2
-				defense_skill = 3
+				traits = { old_guard inflexible_strategist organizer infantry_leader unyielding_defender defensive_doctrine }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 6
 				planning_skill = 2
 				logistics_skill = 3
 			}
@@ -3544,6 +3550,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ITA_shock_tactics
+			hidden_effect = {
+				every_army_leader={
+					add_trait = {
+     					trait = five_terrain_penalty_reduction
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -3665,13 +3678,13 @@ focus_tree = {
 			create_field_marshal = {
 				name = "Benito Mussolini"
 				picture = "Portrait_Italy_Benito_Mussolini.dds"
-				skill = 2
+				skill = 1
 				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
 				id = 91203
-				traits = { old_guard }
+				traits = { media_personality militias_officer ascari_officer }
 			}
 		}
 	}
@@ -3756,7 +3769,7 @@ focus_tree = {
 		}
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 		}
 
 		available_if_capitulated = yes
@@ -3768,10 +3781,10 @@ focus_tree = {
 				add_idea = ITA_old_guard_ino_1
 				remove_idea = ITA_old_guard_base
 			}
-			add_timed_idea = {
-				idea = ITA_reforming
-				days = 180
-			}
+			# add_timed_idea = {
+			# 	idea = ITA_reforming
+			# 	days = 180
+			# }
 			every_army_leader = {
 				limit = {				
 					has_trait = old_guard
@@ -3796,7 +3809,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3806,10 +3819,10 @@ focus_tree = {
 				remove_idea = ITA_old_guard_ino_1
 				add_idea = ITA_old_guard_ino_2
 			}
-			add_timed_idea = {
-				idea = ITA_reforming
-				days = 180
-			}
+			# add_timed_idea = {
+			# 	idea = ITA_reforming
+			# 	days = 180
+			# }
 		}
 	}
 	
@@ -3828,7 +3841,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 			is_in_faction_with = GER
 		}
 
@@ -3836,10 +3849,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ITA_general_staff_idea
-			add_timed_idea = {
-				idea = ITA_reforming
-				days = 180
-			}
+			# add_timed_idea = {
+			# 	idea = ITA_reforming
+			# 	days = 180
+			# }
 		}
 	}
 	
@@ -3858,23 +3871,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			remove_ideas = ITA_incompetent_officers
-			add_timed_idea = {
-				idea = ITA_reforming
-				days = 180
-			}
+			# add_timed_idea = {
+			# 	idea = ITA_reforming
+			# 	days = 180
+			# }
 		}
 	}
 	
 	focus = {
 		id = ITA_promote_messe
-		icon = GFX_goal_ita_tankini_messe
+		icon = GFX_goal_ita_tankini_mario
 		prerequisite = { focus = ITA_new_ncos }
 		x = 0
 		y = 1
@@ -3887,18 +3900,18 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = ITA_giovanni_messe2
-			add_timed_idea = {
-				idea = ITA_reforming
-				days = 180
-			}
+			show_ideas_tooltip = ITA_mario_federico2
+			# add_timed_idea = {
+			# 	idea = ITA_reforming
+			# 	days = 180
+			# }
 		}
 	}
 	
@@ -3918,7 +3931,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-			NOT = { has_idea = ITA_reforming }
+			# NOT = { has_idea = ITA_reforming }
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -4111,12 +4124,12 @@ focus_tree = {
 			create_corps_commander = {
 				name = "Enrico Frattini"
 				picture = "Portrait_Italy_Generic_land_5.dds"
-				traits = { commando }
+				traits = { commando paratrooper scavenger }
 				skill = 3
 				attack_skill = 3
-				defense_skill = 3
+				defense_skill = 5
 				planning_skill = 2
-				logistics_skill = 2
+				logistics_skill = 4
 			}
 			add_tech_bonus = {
 				name = sf_bonus
@@ -4869,7 +4882,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_flottiglia_mas
-		icon = GFX_focus_ITA_xmas
+		icon = GFX_focus_ITA_trade_interdiction
 		prerequisite = { focus = ITA_convoy_defence }
 		x = -1
 		y = 1
@@ -5091,7 +5104,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_seaplanes
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_focus_ITA_naval_air_effort_2
 		prerequisite = { focus = ITA_airfield_expansion }
 		x = -3
 		y = 1
@@ -5167,7 +5180,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_replace_biplanes
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_focus_ITA_air_innovation_3
 		prerequisite = { focus = ITA_airfield_expansion }
 		x = -1
 		y = 1
@@ -5274,7 +5287,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_technical_assistance
-		icon = GFX_luftwaffe_laurel
+		icon = GFX_focus_ITA_german_air_cooperation
 		prerequisite = { focus = ITA_airfield_expansion }
 		x = 3
 		y = 1

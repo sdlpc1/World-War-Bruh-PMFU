@@ -57,6 +57,7 @@ categories =  {
 
 		units = {
 			attack = -0.3
+			defence = -0.1
 			#movement = -0.2
 		}
 		enemy_army_bonus_air_superiority_factor = -0.05
@@ -98,6 +99,7 @@ categories =  {
 
 		units = {
 			attack = -0.6
+			defence = -0.2
 			#movement = -0.4
 		}
 
@@ -241,7 +243,7 @@ categories =  {
 		color = { 255 127 0 }
 		movement_cost = 2.5
 		attrition = 0.2
-		combat_width = 150
+		combat_width = 90
 		combat_support_width = 30
 		ai_terrain_importance_factor = 8.0
 		match_value = 8
@@ -249,6 +251,11 @@ categories =  {
 		enemy_army_bonus_air_superiority_factor = 0.10
 		air_cas_present_factor = 0.05
 		
+		units = {
+			attack = -0.15
+			defence = -0.05
+		}
+
 		sickness_chance = 0.5
 		supply_flow_penalty_factor = 0.14
 		

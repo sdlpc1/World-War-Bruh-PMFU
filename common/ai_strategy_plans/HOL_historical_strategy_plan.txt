@@ -28,4 +28,9 @@ HOL_historical = {
 		HOL_expand_the_artillerieinrichtingen
 		HOL_the_zuiderzee_works
 	}
+
+	ideas = {
+		partial_economic_mobilisation = 1000
+		war_economy = 2000
+	}
 }

@@ -268,115 +268,115 @@ on_actions = {
 	}
 
 	# ROOT is capitulated country, FROM is winner
-	on_capitulation = {
-		effect = {
-			if = { 
-				limit = {
-					original_tag = BEL
-					GER = {
-						controls_state = 295
-						controls_state = 538
-						controls_state = 718
-						controls_state = 769
-						controls_state = 768
-					}
-					AND = {
-						NOT = {
-							660 = {
-								CONTROLLER = {
-									OR = {
-										tag = JAP
-										is_in_faction_with = JAP
-										tag = GER
-										is_in_faction_with = GER
-									}
-								}
-							}
-						}
-						NOT = {
-							549 = {
-								CONTROLLER = {
-									OR = {
-										tag = JAP
-										is_in_faction_with = JAP
-										tag = GER
-										is_in_faction_with = GER
-									}
-								}
-							}
-						}
-						NOT = {
-							548 = {
-								CONTROLLER = {
-									OR = {
-										tag = JAP
-										is_in_faction_with = JAP
-										tag = GER
-										is_in_faction_with = GER
-									}
-								}
-							}
-						}
-						NOT = {
-							546 = {
-								CONTROLLER = {
-									OR = {
-										tag = JAP
-										is_in_faction_with = JAP
-										tag = GER
-										is_in_faction_with = GER
-									}
-								}
-							}
-						}
-						NOT = {
-							540 = {
-								CONTROLLER = {
-									OR = {
-										tag = JAP
-										is_in_faction_with = JAP
-										tag = GER
-										is_in_faction_with = GER
-									}
-								}
-							}
-						}
-						NOT = {
-							771 = {
-								CONTROLLER = {
-									OR = {
-										tag = JAP
-										is_in_faction_with = JAP
-										tag = GER
-										is_in_faction_with = GER
-									}
-								}
-							}
-						}
-						NOT = {
-							772 = {
-								CONTROLLER = {
-									OR = {
-										tag = JAP
-										is_in_faction_with = JAP
-										tag = GER
-										is_in_faction_with = GER
-									}
-								}
-							}
-						}
-					}
-				}
-				BEL = {
-					transfer_state = 295
-					transfer_state = 538
-					transfer_state = 718
-					transfer_state = 769
-					transfer_state = 768
-				}
-			}
-		}
-	}
+	# on_capitulation = {
+	# 	effect = {
+	# 		if = { 
+	# 			limit = {
+	# 				original_tag = BEL
+	# 				GER = {
+	# 					controls_state = 295
+	# 					controls_state = 538
+	# 					controls_state = 718
+	# 					controls_state = 769
+	# 					controls_state = 768
+	# 				}
+	# 				AND = {
+	# 					NOT = {
+	# 						660 = {
+	# 							CONTROLLER = {
+	# 								OR = {
+	# 									tag = JAP
+	# 									is_in_faction_with = JAP
+	# 									tag = GER
+	# 									is_in_faction_with = GER
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 					NOT = {
+	# 						549 = {
+	# 							CONTROLLER = {
+	# 								OR = {
+	# 									tag = JAP
+	# 									is_in_faction_with = JAP
+	# 									tag = GER
+	# 									is_in_faction_with = GER
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 					NOT = {
+	# 						548 = {
+	# 							CONTROLLER = {
+	# 								OR = {
+	# 									tag = JAP
+	# 									is_in_faction_with = JAP
+	# 									tag = GER
+	# 									is_in_faction_with = GER
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 					NOT = {
+	# 						546 = {
+	# 							CONTROLLER = {
+	# 								OR = {
+	# 									tag = JAP
+	# 									is_in_faction_with = JAP
+	# 									tag = GER
+	# 									is_in_faction_with = GER
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 					NOT = {
+	# 						540 = {
+	# 							CONTROLLER = {
+	# 								OR = {
+	# 									tag = JAP
+	# 									is_in_faction_with = JAP
+	# 									tag = GER
+	# 									is_in_faction_with = GER
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 					NOT = {
+	# 						771 = {
+	# 							CONTROLLER = {
+	# 								OR = {
+	# 									tag = JAP
+	# 									is_in_faction_with = JAP
+	# 									tag = GER
+	# 									is_in_faction_with = GER
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 					NOT = {
+	# 						772 = {
+	# 							CONTROLLER = {
+	# 								OR = {
+	# 									tag = JAP
+	# 									is_in_faction_with = JAP
+	# 									tag = GER
+	# 									is_in_faction_with = GER
+	# 								}
+	# 							}
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 			BEL = {
+	# 				transfer_state = 295
+	# 				transfer_state = 538
+	# 				transfer_state = 718
+	# 				transfer_state = 769
+	# 				transfer_state = 768
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	on_startup = {	
 		effect = {	

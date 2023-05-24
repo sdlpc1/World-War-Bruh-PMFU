@@ -8,7 +8,7 @@ state={
 	
 	resources={
 		oil=2000 # was: 350
-		aluminium=200 # was: 14
+		# aluminium=200 # was: 14
 	}
 
 	history={

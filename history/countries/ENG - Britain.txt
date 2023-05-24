@@ -13,6 +13,10 @@ if = {
 	}
 }
 
+set_rule = { 
+	can_send_volunteers = yes
+}
+
 create_intelligence_agency = {
     name = "MI6"
 }
@@ -32,6 +36,12 @@ set_variable = { ENG_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLO
 set_variable = { ENG_poster_left_icon_frame = ENG_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
 set_variable = { ENG_poster_center_icon_frame = ENG_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+set_variable = { Royal_Commandos_division_cap = 0 }
+set_variable = { Royal_Commandos_increase = 1 }
+set_variable = { Royal_Commandos_increase_double = 2 }
+
+
+set_country_flag = Royal_Commandos_division_standard
 
 # MP_garrison_division_standard = yes
 
@@ -160,29 +170,30 @@ add_ideas = {
 	ENG_great_depression_1
 	ENG_the_sun_never_sets_idea_1
 	PACIFIC_COMMONWEALTH_controls_original
+	volunteer_minimum_major
 	peace_training
+	MEDITERRANEAN_ALLIES_controls_original
+	ENG_tension_vol
+	no_grinding
 }
 	
 
 add_equipment_to_stockpile = {
-
-type = anti_tank_equipment
-amount = 500
-producer = ENG
+	type = anti_tank_equipment
+	amount = 500
+	producer = ENG
 }
 
 add_equipment_to_stockpile = {
-
-type = infantry_equipment_0
-amount = 5000
-producer = ENG
+	type = infantry_equipment_0
+	amount = 5000
+	producer = ENG
 }
 
 add_equipment_to_stockpile = {
-
-type = squad_equipment
-amount = 1000
-producer = ENG
+	type = squad_equipment
+	amount = 1000
+	producer = ENG
 }
 
 set_convoys = 800
@@ -289,19 +300,19 @@ recruit_character = ENG_neil_ritchie
 recruit_character = ENG_alan_cunningham
 recruit_character = ENG_william_slim
 recruit_character = ENG_richard_oconnor
-recruit_character = ENG_william_platt
-recruit_character = ENG_george_giffard
+# recruit_character = ENG_william_platt
+# recruit_character = ENG_george_giffard
 recruit_character = ENG_harold_alexander
-recruit_character = ENG_jackie_smyth
-recruit_character = ENG_thomas_jacomb_hutton
+# recruit_character = ENG_jackie_smyth
+# recruit_character = ENG_thomas_jacomb_hutton
 recruit_character = ENG_arthur_percival
-recruit_character = ENG_merton_beckwithsmith
-recruit_character = ENG_henry_pownall
-recruit_character = ENG_henry_wilson
-recruit_character = ENG_william_gott
-recruit_character = ENG_jock_campbell
+# recruit_character = ENG_merton_beckwithsmith
+# recruit_character = ENG_henry_pownall
+# recruit_character = ENG_henry_wilson
+# recruit_character = ENG_william_gott
+# recruit_character = ENG_jock_campbell
 recruit_character = ENG_oliver_leese
-recruit_character = ENG_miles_dempsey
+# recruit_character = ENG_miles_dempsey
 recruit_character = ENG_brian_horrocks
 recruit_character = ENG_archibald_wavell
 recruit_character = ENG_james_fownes_somerville
@@ -314,7 +325,7 @@ recruit_character = ENG_john_cunningham
 recruit_character = ENG_charles_forbes
 recruit_character = ENG_algernon_willis
 recruit_character = ENG_arthur_power
-recruit_character = ENG_john_vereker_lord_gort
+# recruit_character = ENG_john_vereker_lord_gort
 recruit_character = ENG_max_grant
 recruit_character = ENG_clement_attlee
 # recruit_character = ENG_john_beckett

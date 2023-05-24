@@ -56,11 +56,11 @@ host_decisions = {
 						idea = spirit_of_bozo_japan
 						days = 365
 					}
-				}			
-			}		
-			USA = {
-				add_offsite_building = { type = arms_factory level = 10 }
-			}	
+				}		
+				USA = {
+					add_offsite_building = { type = arms_factory level = 10 }
+				}	
+			}
 			JAP = {
 				annex_country = {
 					target = CHI
@@ -1987,57 +1987,57 @@ war_measures = {
 }
 
 foreign_politics = {
-	object_to_attaches = {
+	# object_to_attaches = {
 
-		allowed = {
-            has_dlc = "Waking the Tiger"
-        }
+	# 	allowed = {
+    #         has_dlc = "Waking the Tiger"
+    #     }
 
-        cost = 50
-        fire_only_once = no
+    #     cost = 50
+    #     fire_only_once = no
 
-        days_re_enable = 30
+    #     days_re_enable = 30
 
-        available = {
-        }
+    #     available = {
+    #     }
 
-        visible = {
-        	FROM = {
-        		NOT = { has_country_flag = rejected_withdrawing_attache }
-        		NOT = { has_country_flag = rejected_withdrawing_attache@ROOT }
-        		NOT = { has_country_flag = object_attache_going_on }
-        	}
-        	has_war = yes
-        	has_capitulated = no
-        	NOT = { has_war_with = FROM }
-        	any_enemy_country = {
-				has_attache_from = FROM
-			}
-		}
+    #     visible = {
+    #     	FROM = {
+    #     		NOT = { has_country_flag = rejected_withdrawing_attache }
+    #     		NOT = { has_country_flag = rejected_withdrawing_attache@ROOT }
+    #     		NOT = { has_country_flag = object_attache_going_on }
+    #     	}
+    #     	has_war = yes
+    #     	has_capitulated = no
+    #     	NOT = { has_war_with = FROM }
+    #     	any_enemy_country = {
+	# 			has_attache_from = FROM
+	# 		}
+	# 	}
 
-		target_root_trigger = {
-			has_war = yes
-			has_capitulated = no
-		}
+	# 	target_root_trigger = {
+	# 		has_war = yes
+	# 		has_capitulated = no
+	# 	}
 
-		target_trigger = {
-			NOT = { has_war_with = FROM }
-			#FROM = { has_sent_attache = yes } # Make such trigger to optimize if it becomes a performance problem again.
-			any_enemy_country = {
-				has_attache_from = FROM
-			}			
-		}
+	# 	target_trigger = {
+	# 		NOT = { has_war_with = FROM }
+	# 		#FROM = { has_sent_attache = yes } # Make such trigger to optimize if it becomes a performance problem again.
+	# 		any_enemy_country = {
+	# 			has_attache_from = FROM
+	# 		}			
+	# 	}
 
-        complete_effect = {
-			FROM = { country_event = { id = generic.14 hours = 6 } }
-			hidden_effect = {
-				FROM = { set_country_flag = object_attache_going_on }
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+    #     complete_effect = {
+	# 		FROM = { country_event = { id = generic.14 hours = 6 } }
+	# 		hidden_effect = {
+	# 			FROM = { set_country_flag = object_attache_going_on }
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# }
 }
 
 economy_decisions = {

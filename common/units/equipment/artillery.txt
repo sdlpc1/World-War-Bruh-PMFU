@@ -459,6 +459,13 @@ equipments = {
 			#motorized #Removing motorized type
 		}
 		group_by = archetype
+
+		upgrades = {
+			# infantry_quality_upgrade
+			infantry_quantity_upgrade
+			artillery_soft_upgrade
+			# artillery_accuracy_upgrade
+		}
 		
 		interface_category = interface_category_land
 
@@ -466,7 +473,7 @@ equipments = {
 		reliability = 1.0
 
 		#Offensive Abilities
-		soft_attack = 60
+		soft_attack = 30
 
 		#Space taken in convoy
 		lend_lease_cost = 4
@@ -494,7 +501,7 @@ equipments = {
 		priority = 50
 		visual_level = 1
 
-		soft_attack = 90
+		soft_attack = 40
 		
 		build_cost_ic = 120
 	}

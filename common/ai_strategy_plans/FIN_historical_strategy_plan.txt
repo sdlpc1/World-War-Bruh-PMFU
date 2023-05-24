@@ -38,20 +38,25 @@ FIN_historical_strategy_plan = {
         FIN_join_axis
         FIN_continuation
     }
+  
+    ideas = {
+      partial_economic_mobilisation = 1000
+      war_economy = 2000
+    }
 
-  ai_strategy = {
-		type = prepare_for_war
-		id = SOV
-		value = 100
-	}
-  ai_strategy = {
-		type = ignore
-		id = NOR
-		value = 100
-	}
-  ai_strategy = {
-		type = dont_join_wars_with
-		id = NOR
-		value = 100
-	}
+    ai_strategy = {
+		  type = prepare_for_war
+		  id = SOV
+		  value = 100
+	  }
+    ai_strategy = {
+		  type = ignore
+		  id = NOR
+		  value = 100
+	  }
+    ai_strategy = {
+		  type = dont_join_wars_with
+		  id = NOR
+		  value = 100
+	  }
 }

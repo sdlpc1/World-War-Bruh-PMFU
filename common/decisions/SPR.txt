@@ -1,4 +1,190 @@
 operations = {
+	SPA_SCW_republican_spirit_dwindling = {
+
+		icon = generic_operation
+
+		is_good = yes
+
+		allowed = {
+			always = no
+		}
+		activation = {
+			# SCW START - custom flag? or just starti t with the event?
+		}
+
+		available = {
+			has_global_flag = scw_over
+			# scw ended
+		}
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		# visible = {
+		# }
+
+		days_mission_timeout  = 30
+		
+		complete_effect = {
+			# nothing ig
+		}
+
+		timeout_effect = {
+			activate_mission = SPA_SCW_republican_spirit_dwindling
+			SPD = {
+				SCW_dwindle_republican_spirit = yes
+			}
+			# lower republican surrender limit
+		}
+	}
+
+	SPA_SCW_axis_victory = {
+
+		icon = generic_operation
+
+		is_good = yes
+
+		allowed = {
+			always = no
+		}
+		activation = {
+			# SCW START - custom flag? or just starti t with the event?
+		}
+
+		available = {
+			has_global_flag = scw_over
+			# scw ended
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		# visible = {
+		# }
+
+		days_mission_timeout  = 180
+		
+		complete_effect = {
+			ITA = {
+				army_experience = 125
+				air_experience = 50
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = land_doctrine
+				}
+			}
+			GER = {
+				army_experience = 125
+				air_experience = 50
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = land_doctrine
+				}
+			}
+			SPA = {
+				add_ideas = SPA_SCW_axis_victory
+			}
+			# good effect
+		}
+
+		timeout_effect = {
+			activate_mission = SPA_SCW_status_quo
+			# next stage
+		}
+	}
+
+	SPA_SCW_status_quo = {
+
+		icon = generic_operation
+
+		is_good = yes
+
+		allowed = {
+			always = no
+		}
+		available = {
+			has_global_flag = scw_over
+			# scw ended
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		# visible = {
+		# }
+
+		days_mission_timeout  = 360
+		
+		complete_effect = {
+			# good effect
+		}
+
+		timeout_effect = {
+			activate_mission = SPA_SCW_comintern_victory
+			# next stage
+		}
+	}
+
+	SPA_SCW_comintern_victory = {
+
+		icon = generic_operation
+
+		is_good = yes
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			has_global_flag = scw_over
+			# scw ended
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		# visible = {
+		# }
+
+		days_mission_timeout  = 9999
+		
+		complete_effect = {
+			SOV = {
+				army_experience = 125
+				air_experience = 50
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = land_doctrine
+				}
+			}
+			FRA = {
+				army_experience = 125
+				air_experience = 50
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = land_doctrine
+				}
+			}
+			# good effect
+		}
+	}
+
 	SPA_save_the_alcazar_mission = {
 
 		name = SPA_save_the_alcazar

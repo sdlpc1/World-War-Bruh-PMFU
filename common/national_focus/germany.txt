@@ -46,7 +46,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_grosraumwirtschaft
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_GER_grosraumwirtschaft
 		prerequisite = { focus = GER_four_year_plan }
 		x = -4
 		y = 1
@@ -63,7 +63,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_autarky
-		icon = GFX_ger_autarchy1
+		icon = GFX_focus_GER_autarky
 		prerequisite = { focus = GER_grosraumwirtschaft }
 		x = -3
 		y = 1
@@ -1450,7 +1450,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_fighter_effort
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_junker_production
 		prerequisite = { focus = GER_luft }
 		x = -2
 		y = 1
@@ -1474,7 +1474,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_fighter_effort2
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_focus_GER_air_innovation_2
 		prerequisite = { focus = GER_fighter_effort }
 		x = 0
 		y = 2
@@ -1510,7 +1510,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_fighter_effort3
-		icon = GFX_goal_ar
+		icon = GFX_focus_GER_peenemunde_research_jet_engine
 		prerequisite = { focus = GER_fighter_effort2 }
 		x = 0
 		y = 2
@@ -1649,7 +1649,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_strategic_air_effort2
-		icon = GFX_Bombs_Away
+		icon = GFX_focus_GER_Amerika_Bomber
 		prerequisite = { focus = GER_strategic_air_effort }
 		x = 0
 		y = 2
@@ -2304,7 +2304,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_waffen_ss
-		icon = GFX_ger_restrict_recruitment
+		icon = GFX_GER_SS_armed_branch
 		prerequisite = { focus = GER_rhineland }
 		x = 3
 		y = 1
@@ -2341,7 +2341,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_anschluss
-		icon = GFX_goal_anschluss
+		icon = GFX_focus_GER_anschluss
 		prerequisite = { focus = GER_rhineland }
 		available = {
 			is_puppet = no
@@ -2618,7 +2618,7 @@ focus_tree = {
 				}
 			}
 		}	
-		completion_reward = {
+		completion_reward = { 
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			if = {
 				limit = {
@@ -2858,7 +2858,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_prepare_barb
-		icon = GFX_ger_prepare_to_invade_union
+		icon = GFX_GER_special_operation
 		prerequisite = { focus = GER_danzig_or_war }
 		
 		available = {
@@ -3032,6 +3032,62 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_fall_blau
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_barb }
+		
+		available = {
+			Date > 1942.5.1
+			NOT = { has_idea = GER_barbarossa }
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = GER_barb
+		cancel_if_invalid = yes
+		available_if_capitulated = no
+		continue_if_invalid = no
+		cost = 1
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_faction_with = GER
+				}
+				add_timed_idea = { idea = GER_blau days = 60 }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_operation_citadel
+		icon = GFX_focus_GER_unternehmen_zitadelle
+		prerequisite = { focus = GER_fall_blau }
+		
+		available = {
+			date > 1943.5.1
+			NOT = { has_idea = GER_blau }
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_fall_blau
+		cancel_if_invalid = yes
+		available_if_capitulated = no
+		continue_if_invalid = no
+		cost = 1
+		
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_faction_with = GER
+				}
+				add_timed_idea = { idea = GER_citadel days = 60 }
+			}
+		}
+	}
+
+	focus = {
 		id = GER_roa
 		icon = GFX_roa
 		prerequisite = { focus = GER_barb }
@@ -3041,7 +3097,7 @@ focus_tree = {
 		}
 
 		
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_barb
 		cost = 5
@@ -3790,7 +3846,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_end_of_czechoslovakia
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_GER_end_of_czechslovakia
 		prerequisite = { focus = GER_first_vienna_award }
 		available = { 
 			is_puppet = no
@@ -3919,7 +3975,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_mol_rib_pact
-		icon = GFX_goal_molotov_ribbentrop_pact
+		icon = GFX_focus_GER_mol_rib_pact
 		prerequisite = { focus = GER_end_of_czechoslovakia }
 		available = {
 			is_puppet = no
@@ -3976,7 +4032,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_soviet_treaty
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_focus_GER_soviet_treaty
 		prerequisite = { focus = GER_mol_rib_pact }
 		available = {
 		}
@@ -4262,7 +4318,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_avenge_versailles
-		icon = GFX_GER_curtail_france
+		icon = GFX_focus_GER_germania
 		prerequisite = { focus = GER_danzig_or_war }
 		available = {
 			has_full_control_of_state = 16
@@ -5614,7 +5670,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_volksturm
-		icon = GFX_GER_volkdeutsche
+		icon = GFX_focus_GER_volkssturm
 		prerequisite = { focus = GER_mobilise_reich }
 		available = {
 			surrender_progress > 0.1
@@ -5922,11 +5978,94 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = GER_steiner
+		icon = GFX_GER_loyalty_to_the_fuhrer
+		prerequisite = { focus = GER_defend_berlin }
+		relative_position_id = GER_defend_berlin
+		x = 0
+		y = 1
+		cost = 1
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_corps_commander = {
+				name = "Felix Steiner's Long Lost Brother"
+				picture = "GFX_portrait_ger_felix_steiner"
+				traits = {brilliant_strategist trickster trait_engineer panzer_leader ranger panzer_expert}
+				skill=6
+				attack_skill=10
+				defense_skill=6
+				planning_skill=7
+				logistics_skill=9
+			}
+			
+		   add_timed_idea = {idea = GER_steiner_idea days = 14 }
+
+			hidden_effect ={
+			# 	every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
+			# 		scoped_sound_effect="untergang"
+			#    }
+			   division_template = {
+					name = "Panzerjagd-Division"
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 0 y = 1 }
+						medium_armor = { x = 0 y = 2 }
+						medium_armor = { x = 0 y = 3 }
+				
+						medium_armor = { x = 1 y = 0 }
+						medium_armor = { x = 1 y = 1 }
+						medium_armor = { x = 1 y = 2 }
+				
+						mechanized = { x = 2 y = 0 }
+						mechanized = { x = 2 y = 1 }
+						mechanized = { x = 2 y = 2 }
+				
+						mechanized = { x = 3 y = 0 }
+						mechanized = { x = 3 y = 1 }
+						mechanized = { x = 3 y = 2 }
+						mechanized = { x = 3 y = 3 }
+				
+						medium_tank_destroyer_brigade = { x = 4 y = 0 }
+						medium_tank_destroyer_brigade = { x = 4 y = 1 }
+				
+					}
+					support = {
+						logistics_company = { x = 0 y = 0 }
+						logistics_company_mot = { x = 0 y = 1 }
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+				
+						ss_hq_company_medium = { x = 1 y = 0 }
+						assault_engineer = { x = 1 y = 1 }
+						signal_company = { x = 1 y = 2 }
+						maintenance_company = { x = 1 y = 3 }
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 4
+						create_unit = {
+							division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 2.0"
+							owner = GER
+						}
+					}
+				}
+			}
+		}
+	}
+
 ####################### NAVY ##############
 	
 	focus = {
 		id = GER_naval_rearmament
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_focus_GER_naval_rearm
 		x = 40
 		y = 0
 		cost = 5
@@ -6078,7 +6217,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_plan_z
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_GER_h_class
 		prerequisite = { focus = GER_naval_rearmament }
 		mutually_exclusive = { focus = GER_u_boat_effort }
 		x = -1

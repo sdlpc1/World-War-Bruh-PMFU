@@ -64,12 +64,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ inflexible_strategist cavalry_officer armor_officer infantry_leader }
-			skill=3
-			attack_skill=4
-			defense_skill=3
+			traits={ inflexible_strategist infantry_leader organizer infantry_leader }
+			skill=5
+			attack_skill=5
+			defense_skill=5
 			planning_skill=5
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
@@ -83,10 +83,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer trickster hill_fighter }
+			traits={ commando trickster hill_fighter }
 			skill=3
 			attack_skill=2
-			defense_skill=2
+			defense_skill=4
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
@@ -102,11 +102,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox }
+			traits={ infantry_leader trait_engineer desert_fox }
 			skill=3
-			attack_skill=1
-			defense_skill=3
-			planning_skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
 		}

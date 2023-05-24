@@ -860,6 +860,8 @@ ideas = {
 			}
 			
 			traits = { tank_manufacturer }
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 	
@@ -939,6 +941,8 @@ ideas = {
 			}
 			
 			traits = { light_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		savoia_marchetti = {
@@ -953,6 +957,8 @@ ideas = {
 			}
 			
 			traits = { medium_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		caproni = {
@@ -970,6 +976,8 @@ ideas = {
 			}
 			
 			traits = { naval_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		piaggio = {
@@ -983,6 +991,8 @@ ideas = {
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 	}
 	
@@ -1090,8 +1100,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 		
@@ -1110,8 +1124,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { mediterranean_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 		ITA_navalmeccanica = { #SOUTH
@@ -1128,8 +1146,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { convoy_escort_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 		ITA_cantiere_navale_di_ancona = { #SOUTH
@@ -1147,8 +1169,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { raiding_fleet_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 		ITA_cantieri_navali_tosi = { #SOUTH
@@ -1165,8 +1191,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { submarine_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 	}

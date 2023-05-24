@@ -38,7 +38,7 @@ ideas = {
 				intelligence_agency_defense = 5
 			}
 		}
-		
+
 		FIN_victorious_idea = {
 			
 			allowed = {
@@ -320,6 +320,7 @@ ideas = {
 			
 			picture = generic_naval_manufacturer_1
 
+			cost = 150
 			
 			allowed = {
 				original_tag = FIN
@@ -332,6 +333,8 @@ ideas = {
 			# submarine and defence ship production
 			
 			traits = { naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 	}
 	
@@ -360,6 +363,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 	}
 }
