@@ -383,6 +383,21 @@ characters={
 			logistics_skill=3
 			legacy_id=11
 		}
+		advisor={
+			slot = high_command
+			idea_token = maximilian_von_weichs
+			ledger  = army 
+				allowed  = {
+					original_tag  = GER 
+				}
+				traits  = {
+					army_CombinedArms_3
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+				cost = 150
+		}
 	}
 	GER_wilhelm_ritter_von_leeb={
 		name="Wilhelm Ritter von Leeb"

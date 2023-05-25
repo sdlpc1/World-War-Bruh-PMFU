@@ -217,13 +217,13 @@ free_templates = {
 					
 			
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					anti_air = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	anti_air = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# }
 			}
 		}		
 	}
@@ -269,13 +269,13 @@ free_templates = {
 					
 			
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					anti_air = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	anti_air = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# }
 			}
 		}		
 	}
@@ -330,16 +330,16 @@ free_templates = {
 					
 			
 				}
-				support = {
-					assault_engineer = { x = 0 y = 0 }   
-					anti_air = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	assault_engineer = { x = 0 y = 0 }   
+				# 	anti_air = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -394,16 +394,16 @@ free_templates = {
 					
 			
 				}
-				support = {
-					assault_engineer = { x = 0 y = 0 }   
-					anti_air = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	assault_engineer = { x = 0 y = 0 }   
+				# 	anti_air = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -456,16 +456,16 @@ free_templates = {
 					pack_artillery_brigade = { x = 4 y = 2 }
 					pack_artillery_brigade = { x = 4 y = 3 }
 				}
-				support = {
-					assault_engineer = { x = 0 y = 0 }   
-					anti_air = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	assault_engineer = { x = 0 y = 0 }   
+				# 	anti_air = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -513,16 +513,16 @@ free_templates = {
 					light_armor = { x = 3 y = 2 }
 					light_armor = { x = 3 y = 3 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -575,16 +575,16 @@ free_templates = {
 					# light_tank_destroyer_brigade = { x = 4 y = 2 }
 					# light_tank_destroyer_brigade = { x = 4 y = 3 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -632,16 +632,16 @@ free_templates = {
 					light_armor = { x = 3 y = 2 }
 					light_armor = { x = 3 y = 3 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -694,16 +694,16 @@ free_templates = {
 					# light_tank_destroyer_brigade = { x = 4 y = 2 }
 					# light_tank_destroyer_brigade = { x = 4 y = 3 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -751,16 +751,16 @@ free_templates = {
 					medium_armor = { x = 3 y = 2 }
 					medium_armor = { x = 3 y = 3 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -810,16 +810,16 @@ free_templates = {
 					medium_tank_destroyer_brigade = { x = 4 y = 0 }
 					medium_tank_destroyer_brigade = { x = 4 y = 1 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -867,16 +867,16 @@ free_templates = {
 					medium_armor = { x = 3 y = 2 }
 					medium_armor = { x = 3 y = 3 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -926,16 +926,16 @@ free_templates = {
 					medium_tank_destroyer_brigade = { x = 4 y = 0 }
 					medium_tank_destroyer_brigade = { x = 4 y = 1 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -983,16 +983,16 @@ free_templates = {
 					heavy_armor = { x = 3 y = 2 }
 					heavy_armor = { x = 3 y = 3 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -1042,16 +1042,16 @@ free_templates = {
 					heavy_tank_destroyer_brigade = { x = 4 y = 0 }
 					heavy_tank_destroyer_brigade = { x = 4 y = 1 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -1099,16 +1099,16 @@ free_templates = {
 					heavy_armor = { x = 3 y = 2 }
 					heavy_armor = { x = 3 y = 3 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}
@@ -1158,16 +1158,16 @@ free_templates = {
 					heavy_tank_destroyer_brigade = { x = 4 y = 0 }
 					heavy_tank_destroyer_brigade = { x = 4 y = 1 }
 				}
-				support = {
-					engineer = { x = 0 y = 0 }   
-					mot_anti_air_brigade = { x = 0 y = 1 }
-					hq_company = { x = 0 y = 2 }
-					mot_recon = { x = 0 y = 3 }
-					logistics_company_mot = { x = 1 y = 0 }
-					maintenance_company = { x = 1 y = 1 }
-					signal_company = { x = 1 y = 2 }
-					military_police = { x = 1 y = 3 }
-				}
+				# support = {
+				# 	engineer = { x = 0 y = 0 }   
+				# 	mot_anti_air_brigade = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	mot_recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
 			}
 		}		
 	}

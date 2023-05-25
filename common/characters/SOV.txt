@@ -581,7 +581,7 @@ SOV_semyon_timoshenko={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader skilled_staffer trait_cautious }
+			traits={ infantry_leader trait_cautious }
 			skill=3
 			attack_skill=3
 			defense_skill=3

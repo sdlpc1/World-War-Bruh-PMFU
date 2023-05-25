@@ -1217,7 +1217,7 @@ leader_traits = {
 		cost = 2000
 		
 		corps_commander_modifier = {
-			max_commander_army_size = 10
+			max_commander_army_size = 999
 		}
 		# non_shared_modifier = {
 		# 	experience_gain_factor = -0.1

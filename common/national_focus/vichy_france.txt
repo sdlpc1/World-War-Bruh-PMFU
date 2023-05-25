@@ -1980,7 +1980,7 @@ focus_tree = {
                     # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
                     # 	}
                     # }
-                        traits={ infantry_leader trickster skilled_staffer old_guard }
+                        traits={ infantry_leader trickster old_guard }
                         skill=4
                         attack_skill=6
                         defense_skill=4
