@@ -262,6 +262,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6012;74;impassable;-1;-1;-1;-1;-1;;Finland
 6012;9203;impassable;-1;-1;-1;-1;-1;;Finland
 6012;142;impassable;-1;-1;-1;-1;-1;;Finland
+12320;1636;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
+6997;1636;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
+6997;4755;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
+4660;4755;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
+4660;4825;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
+9715;4825;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
+9715;10454;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
+11704;10454;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
+12434;10454;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
 5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto
 13052;13255;sea;8908;-1;-1;-1;-1;;Midway
 13047;13256;sea;7247;-1;-1;-1;-1;;Wake North

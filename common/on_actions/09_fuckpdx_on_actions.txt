@@ -181,21 +181,21 @@ on_actions = {
 				}
 			# weird island near venezuela
 			ENG = { transfer_state = 695 }
-			695 = { set_compliance = 60 }
+			695 = { set_compliance = 20 }
 			# suriname
 			ENG = { transfer_state = 309 }
-			309 = { set_compliance = 60 }
+			309 = { set_compliance = 20 }
 
 			# DEI - go to australia
 			AST = { annex_country = { target = INS transfer_troops = yes } }
-			672 = { set_compliance = 60 }
-			334 = { set_compliance = 60 }
-			335 = { set_compliance = 60 }
-			667 = { set_compliance = 60 }
-			673 = { set_compliance = 60 }
-			668 = { set_compliance = 60 }
-			669 = { set_compliance = 60 }
-			738 = { set_compliance = 60 }
+			672 = { set_compliance = 20 }
+			334 = { set_compliance = 20 }
+			335 = { set_compliance = 20 }
+			667 = { set_compliance = 20 }
+			673 = { set_compliance = 20 }
+			668 = { set_compliance = 20 }
+			669 = { set_compliance = 20 }
+			738 = { set_compliance = 20 }
 			}	
 		}
 	}

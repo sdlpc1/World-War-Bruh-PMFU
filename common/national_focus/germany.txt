@@ -5708,6 +5708,17 @@ focus_tree = {
 					}
 				}
 			}
+			create_field_marshal = {
+				name = "Adolf Hitler"
+				picture = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				id = -1
+				traits = { substance_abuser media_personality militias_officer substance_addict trait_reckless }
+			}
 		}
 	}
 

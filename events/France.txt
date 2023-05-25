@@ -246,6 +246,17 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_global_flag = NO_ASIA
+			}
+			276 = {
+				add_resource = {
+					type = aluminium
+					amount = 1300
+				}
+			}
+		}
 		SPR = {
 			# COMINTERN
 			send_embargo = SOV

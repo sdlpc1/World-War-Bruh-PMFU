@@ -196,10 +196,11 @@
   ENG_equip_foreign_exiles:0 "Equip Foreign Exiles"
   ENG_equip_foreign_exiles_desc:0 "Soldiers from France have managed to be evacuated to our territory. We should hastily equip these men and get them back in to the fight!"
   ENG_commonwealth_ties_desc:0 "Developing the Commonwealth will lead to stronger allies across the British Empire."
-  shadow_scheme_focus_conv_tt:1 "Grants §G1§! Building Slot and §Y1 Military Factory§! for every §Y2 Civilian Factories§! built.\nThe maximum number of §YMilitary Factories§! we can cover up is §Y15§!. "
+  shadow_scheme_focus_conv_tt:1 "Grants §G1§! Building Slot and §Y1 Military Factory§! for every §Y2 Civilian Factories§! built.\nThe maximum number of §YMilitary Factories§! we can cover up is §Y10§!. "
   ENG_build_up_airfields:0 "Build Up Airfields"
   ENG_air_defenses:0 "Mainland Air Defenses"
   ENG_fortify_the_coast:0 "Fortify the Coast" 
+  ENG_british_invasion_of_iran:0 "Operation Countenance"
 
   #### EVENTS ####
   britain.500.t:0 "Anglo-Soviet Agreement"

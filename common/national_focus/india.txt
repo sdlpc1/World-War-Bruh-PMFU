@@ -966,7 +966,7 @@ focus_tree = {
 					gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
 					traits = { infantry_leader trickster hill_fighter}
 					skill = 4
-					attack_skill = 5
+					attack_skill = 4
 					defense_skill = 2
 					planning_skill = 2
 					logistics_skill = 2
@@ -1183,7 +1183,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_chindits
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = RAJ_british_army_support }
+		prerequisite = { focus = RAJ_red_eagle_division }
 		x = 1
 		y = 2
 		relative_position_id = RAJ_british_army_support

@@ -1196,6 +1196,14 @@ five_terrain_penalty_reduction:0 "From focus"
  RULE_JUNE_1_1940:0 "June 1st 1940"
  RULE_JAPAN_STRIKE_THE_WEST_JUNE_1_1940_DESC:0 "Allows Japan to Strike the West after June 1st 1940"
 
+ RULE_NO_ASIA_BRA_MEX_STATUS:0 "Status of Brazil and Mexico"
+ RULE_MEX_BRA_EXIST:0 "Mexico and Brazil exist"
+ RULE_NO_ASIA_BRA_MEX_STATUS_EXIST_DESC:0 "Leaves Brazil and Mexico to stay as independant countries"
+ RULE_MEX_BRA_REMOVED:0 "Mexico and Brazil removed"
+ RULE_NO_ASIA_BRA_MEX_STATUS_REMOVED_DESC:0 "Mexico and Brazil get annexed by wasteland"
+ RULE_MEX_BRA_ANNEXED_AST:0 "Mexico and Brazil annexed by Australia"
+ RULE_NO_ASIA_BRA_MEX_STATUS_ANNEXED_AST_DESC:0 "Mexico and Brazil get annexed by Australia"
+
  ### FREE TEMPLATES ###
  free_templates:0 "Free Templates"
  free_templates_desc:0 "Free templates for the free templates gamerule\n\n§RNOTE: These templates likely need editing before using§!"

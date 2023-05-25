@@ -1795,6 +1795,77 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+
+			if = {
+				limit = {
+					NOT = {
+						ENG = {
+							has_completed_focus = ENG_british_invasion_of_iran
+						}
+					}	
+					446 = {
+						CONTROLLER = {
+							tag = ENG
+							is_in_faction_with = ENG
+						}
+					}
+				}
+				ENG = {
+					every_army_leader = {
+						add_attack = 1
+					}
+				}
+				CAN = {
+					every_army_leader = {
+						add_attack = 1
+					}
+				}
+				BRA = {
+					every_army_leader = {
+						add_attack = 1
+					}
+				}
+				MEX = {
+					every_army_leader = {
+						add_attack = 1
+					}
+				}
+				IRE = {
+					every_army_leader = {
+						add_attack = 1
+					}
+				}
+				HOL = {
+					every_army_leader = {
+						add_attack = 1
+					}
+				}
+				FRA = {
+					every_army_leader = {
+						add_attack = 1
+					}
+				}
+				SAF = {
+					every_army_leader = {
+						add_attack = 1
+					}
+				}
+				RAJ = {
+					every_army_leader = {
+						add_attack = 1
+					}
+				}
+				AST = {
+					every_army_leader = {
+						add_attack = 1
+					}
+				}
+				NZL = {
+					every_army_leader = {
+						add_attack = 1
+					}
+				}
+			}
 			# PMFU - END
 
 			effect_tooltip = {

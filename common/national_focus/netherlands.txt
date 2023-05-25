@@ -213,16 +213,16 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			309 = {
-				add_resource = {
-					type = aluminium
-					amount = 500
-				}
+				# add_resource = {
+				# 	type = aluminium
+				# 	amount = 500
+				# }
 				if = {
 					limit = {
 						309 = {
 							free_building_slots = {
 								building = industrial_complex
-								size > 0
+								size > 1
 								include_locked = yes
 							}
 						}

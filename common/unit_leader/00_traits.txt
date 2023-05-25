@@ -1203,25 +1203,25 @@ leader_traits = {
 	}
 	skilled_staffer = { 
 		type = corps_commander
-		gain_xp_leader = {
-			if = {
-				limit = { is_leading_army_group = yes }
-				check_variable = { num_units > 74 }
-			}
-			else = {
-				check_variable = { num_units > 24 }
-			}
-		}
-		custom_gain_xp_trigger_tooltip = fighting_with_enough_units
+		# gain_xp_leader = {
+		# 	if = {
+		# 		limit = { is_leading_army_group = yes }
+		# 		check_variable = { num_units > 74 }
+		# 	}
+		# 	else = {
+		# 		check_variable = { num_units > 24 }
+		# 	}
+		# }
+		# custom_gain_xp_trigger_tooltip = fighting_with_enough_units
 		
 		cost = 2000
 		
 		corps_commander_modifier = {
-			max_commander_army_size = 999
+			max_commander_army_size = 210
 		}
-		# non_shared_modifier = {
-		# 	experience_gain_factor = -0.1
-		# }
+		non_shared_modifier = {
+			experience_gain_factor = -0.50
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1229,6 +1229,10 @@ leader_traits = {
 		logistics_skill_factor = 2
 		
 		gui_row = 15
+
+		gain_xp = {
+			always = no # not gainable
+		}
 		
 		slot = high_command
 		specialist_advisor_trait = army_logistics_1

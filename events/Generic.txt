@@ -1904,22 +1904,22 @@ country_event = {
 		add_resource = {
 			type = tungsten
 			amount = 2200
-			state = 481
+			state = 121
 		}	
-		add_resource = {
-			type = aluminium
-			amount = 2800
-			state = 276
-		}	
+		# add_resource = {
+		# 	type = aluminium
+		# 	amount = 2800
+		# 	state = 682
+		# }	
 		add_resource = {
 			type = chromium
 			amount = 250
-			state = 276
+			state = 122
 		}		
 		add_resource = {
 			type = chromium
 			amount = 250
-			state = 504
+			state = 129
 		}
 
 	}
@@ -1980,60 +1980,59 @@ country_event = {
     hidden = yes
 
 	immediate = {
+		# aluminium
+		add_resource = {
+			type = aluminium
+			amount = 500
+			state = 276
+		}	
+		# rest
+		# north ire
 		add_resource = {
 			type = steel
 			amount = 1000
-			state = 276
-		}					
-		add_resource = {
-			type = aluminium
-			amount = 2800
-			state = 276
-		}					
-		add_resource = {
-			type = oil
-			amount = 3000
-			state = 276
-		}					
+			state = 119
+		}		
 		add_resource = {
 			type = tungsten
 			amount = 1000
-			state = 276
-		}						
+			state = 119
+		}
+
+		add_resource = {
+			type = oil
+			amount = 3000
+			state = 136
+		}											
 		add_resource = {
 			type = steel
 			amount = 3000
-			state = 481
-		}					
-		add_resource = {
-			type = aluminium
-			amount = 1000
-			state = 481
-		}					
+			state = 121
+		}										
 		add_resource = {
 			type = oil
 			amount = 4000
-			state = 481
+			state = 120
 		}					
 		add_resource = {
 			type = tungsten
 			amount = 1600
-			state = 481
+			state = 123
 		}						
 		add_resource = {
 			type = chromium
 			amount = 200
-			state = 481
+			state = 128
 		}						
 		add_resource = {
 			type = steel
 			amount = 3000
-			state = 504
+			state = 126
 		}						
 		add_resource = {
 			type = oil
 			amount = 1000
-			state = 504
+			state = 125
 		}			
 		add_resource = {
 			type = rubber
@@ -2044,17 +2043,17 @@ country_event = {
 		add_resource = {
 			type = rubber
 			amount = 280
-			state = 446
+			state = 133
 		}					
 		add_resource = {
 			type = rubber
 			amount = 265
-			state = 551
+			state = 132
 		}					
 		add_resource = {
 			type = rubber
 			amount = 265
-			state = 765
+			state = 338
 		}
 	}
 	# option = {

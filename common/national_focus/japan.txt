@@ -3348,6 +3348,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_advisor_role = {
+				character = JAP_kanin_kotohito
+				activate = yes
+				advisor = {
+					slot = army_chief
+					cost = 150
+					idea_token = JAP_character_token_offense_genius
+					traits = {
+						army_chief_offensive_3
+					}
+				}
+			}
 			declare_war_on = {
 				target = ENG
 				type = annex_everything

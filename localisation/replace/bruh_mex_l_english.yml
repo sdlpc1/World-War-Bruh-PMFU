@@ -332,10 +332,10 @@
  MEX_escort_fleet:0 "Convoy Protector"
 
  ### TOOLTIP ###
- general_cascar_de_patata_tt:0 "§OCascara de Patata§! §Ybecomes a skill 4 General with 6 attack, 3 defense, 6 planning, 6 logistics, and Panzer Leader, Brilliant Strategist and Fortress Buster§!"
+ general_cascar_de_patata_tt:0 "§OCascara de Patata§! §Ybecomes a skill 4 General with 4 attack, 3 defense, 6 planning, 6 logistics, and Panzer Leader, Brilliant Strategist and Fortress Buster§!"
  
- general_muro_de_hierro_tt:0 "§OMuro de Hierro§! §Ybecomes a skill 4 General with 5 attack, 4 defense, 4 planning, 5 logistics, and Infantry Leader, Inflexible Strategist, Cautious and Engineer Officer§!"
+ general_muro_de_hierro_tt:0 "§OMuro de Hierro§! §Ybecomes a skill 4 General with 4 attack, 4 defense, 4 planning, 5 logistics, and Infantry Leader, Inflexible Strategist, Cautious and Engineer Officer§!"
 
- general_dolar_de_montanismo_tt:0 "§ODólar de Montañismo§! §Ybecomes a skill 4 General with 5 attack, 3 defense, 6 planning, 7 logistics, and Infantry Leader, Trickster, Mountaineer and Brilliant Strategist§!"
+ general_dolar_de_montanismo_tt:0 "§ODólar de Montañismo§! §Ybecomes a skill 4 General with 3 attack, 3 defense, 6 planning, 7 logistics, and Infantry Leader, Trickster, Mountaineer and Brilliant Strategist§!"
  
- general_rata_de_aqua_tt:0 "§ORata de Aqua§! §Ybecomes a skill 4 General with 7 attack, 3 defense, 4 planning, 5 logistics, and Naval Invader, Reckless, Infantry Leader and Commando§!"
+ general_rata_de_aqua_tt:0 "§ORata de Aqua§! §Ybecomes a skill 4 General with 5 attack, 3 defense, 4 planning, 5 logistics, and Naval Invader, Reckless, Infantry Leader and Commando§!"
