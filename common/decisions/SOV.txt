@@ -255,6 +255,11 @@ foreign_politics = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			SOV = {
+				MON = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = { target = MON transfer_troops = yes }
 			add_state_core = 287
 			add_state_core = 329

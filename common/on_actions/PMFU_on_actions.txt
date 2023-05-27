@@ -29,6 +29,11 @@ on_actions = {
 			}
 			# Mexicope
 			AST = {
+				MEX = {
+					every_unit_leader = {
+						set_nationality = AST
+					}
+				}
 				annex_country = { target = MEX transfer_troops = yes }
 				add_state_core = 484
 				add_state_core = 483
@@ -46,6 +51,11 @@ on_actions = {
 			}
 			# Brazil
 			AST = {
+				BRA = {
+					every_unit_leader = {
+						set_nationality = AST
+					}
+				}
 				annex_country = { target = BRA transfer_troops = yes }
 				add_state_core = 495
 				add_state_core = 497

@@ -232,6 +232,11 @@ operations = {
 		fire_only_once = yes
 
 		complete_effect = {
+			GER = {
+				VIC = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = {
 				target = VIC
 			}

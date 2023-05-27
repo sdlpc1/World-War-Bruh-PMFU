@@ -178,6 +178,11 @@ political_actions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			ITA = {
+				BUL = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = { target = BUL transfer_troops = yes }
 			add_state_core = 48
 			add_state_core = 211

@@ -2046,6 +2046,11 @@ political_actions = {
 					set_nationality = HOL
 				}
 			}
+			HOL = {
+				INS = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = {
 			    target = INS
 			    transfer_troops = yes
@@ -2093,6 +2098,11 @@ political_actions = {
 		complete_effect = {
 			effect_tooltip = {
 				set_cosmetic_tag = HOL_benelux_unified
+				HOL = {
+					BEL = {
+						pow_before_annex = yes
+					}
+				}
 				BEL = {
 					every_unit_leader = {
 						set_nationality = ROOT

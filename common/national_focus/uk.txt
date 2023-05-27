@@ -4006,9 +4006,11 @@ focus_tree = {
 				}
 			}
 			446 = {
-				CONTROLLER = {
-					tag = GER
-					is_in_faction_with = GER
+				NOT = {
+					CONTROLLER = {
+						tag = ENG
+						is_in_faction_with = ENG		
+					}	
 				}
 			}
 		}

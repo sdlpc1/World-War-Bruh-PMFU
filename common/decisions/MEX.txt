@@ -72,6 +72,11 @@ foreign_politics = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			MEX = {
+				BRA = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = { target = BRA transfer_troops = yes }
 			add_state_core = 280
 			add_state_core = 495

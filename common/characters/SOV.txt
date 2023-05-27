@@ -499,7 +499,7 @@ SOV_semyon_timoshenko={
 			}
 		}
 		field_marshal={
-			traits={ old_guard politically_connected cavalry_leader brilliant_strategist aggressive_assaulter logistics_wizard fast_planner inspirational_leader }
+			traits={ old_guard politically_connected cavalry_leader brilliant_strategist aggressive_assaulter logistics_wizard fast_planner inspirational_leader offensive_doctrine }
 			skill=4
 			attack_skill=5
 			defense_skill=4

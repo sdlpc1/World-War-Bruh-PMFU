@@ -1471,6 +1471,11 @@ political_actions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			JAP = {
+				MAN = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = { target = MAN transfer_troops = yes }
 			add_state_core = 328
 			add_state_core = 610
@@ -1505,6 +1510,11 @@ political_actions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			JAP = {
+				CHI = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = { target = CHI transfer_troops = no }
 
 		}

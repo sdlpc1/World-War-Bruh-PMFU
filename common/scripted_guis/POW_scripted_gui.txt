@@ -76,11 +76,19 @@ scripted_gui = {
 						add_to_temp_variable = { casualty1 = 1 }
 					}
 
-
 					multiply_temp_variable = { casualty1 = 0.25 }
-					add_to_variable = { ROOT.pow_total = casualty1 } 
+					if = {
+						limit = {
+							check_variable = { getting_annexed = 1 }
+						}
+						add_to_variable= { PREV.pow_other_sources = casualty1 }
+					}
+					else = {
+						add_to_variable = { ROOT.pow_total = casualty1 }
+					}
 				}
-
+				
+				add_to_variable = { ROOT.pow_total = pow_other_sources  } 
 				set_variable = { ROOT.pow_unassigned = ROOT.pow_total }
 				subtract_from_variable = { ROOT.pow_unassigned = ROOT.pow_assinged_total }
 			}

@@ -608,7 +608,7 @@ characters={
 		}
 		corps_commander={
 			traits={ harsh_leader panzer_leader trait_engineer trait_SPA_nationalist_sympathies }
-			skill=4
+			skill=5
 			attack_skill=5
 			defense_skill=2
 			planning_skill=2
@@ -772,14 +772,14 @@ characters={
 					}
 				}
 				traits = {
-					army_chief_offensive_2
+					army_chief_offensive_3
 				}
 				cost = 100
 			}
 
 			corps_commander={
 				traits={ brilliant_strategist hill_fighter trickster trait_SPA_nationalist_sympathies }
-				skill=4
+				skill=6
 				attack_skill=5
 				defense_skill=3
 				planning_skill=2

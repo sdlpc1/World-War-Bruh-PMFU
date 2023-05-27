@@ -424,6 +424,11 @@ operations = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			USA = {
+				MEX = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = { target = MEX transfer_troops = yes }
 			add_state_core = 484
 			add_state_core = 483
@@ -464,6 +469,11 @@ operations = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			USA = {
+				BRA = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = { target = BRA transfer_troops = yes }
 			add_state_core = 495
 			add_state_core = 497

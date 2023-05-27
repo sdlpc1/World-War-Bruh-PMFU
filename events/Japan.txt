@@ -471,6 +471,12 @@ country_event = {
 	
 	option = {
 		name = japan.13.a
+		
+		JAP = {
+			SIA = {
+				pow_before_annex = yes
+			}
+		}
 		annex_country = {
 			target = SIA
 			transfer_troops = no
