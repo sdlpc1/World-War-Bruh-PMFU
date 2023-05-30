@@ -2911,6 +2911,23 @@ ideas = {
 				terrain_penalty_reduction = 0.1
 			}
 
+			on_remove = {
+				hidden_effect = {
+					every_army_leader={
+						remove_trait = {
+     						trait = ten_terrain_penalty_reduction
+						}
+					}
+					MON = {
+						every_army_leader={
+							remove_trait = {
+								 trait = ten_terrain_penalty_reduction
+							}
+						}
+					}
+				}
+			}
+
 		}
 
 		nkvd = {

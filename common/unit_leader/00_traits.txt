@@ -3697,4 +3697,32 @@ leader_traits = {
 			factor = 0
 		}
 	}
+
+	ten_terrain_penalty_reduction = {
+		type = corps_commander
+
+		trait_type = personality_trait
+
+		corps_commander_modifier = {
+			terrain_penalty_reduction = 0.10
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	twenty_terrain_penalty_reduction = {
+		type = corps_commander
+
+		trait_type = personality_trait
+
+		corps_commander_modifier = {
+			terrain_penalty_reduction = 0.20
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 }

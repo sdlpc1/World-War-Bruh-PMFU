@@ -1913,8 +1913,26 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 10
-			set_technology = {
-				inf_radio1 = 1
+			# set_technology = {
+			# 	inf_radio1 = 1
+			# }
+			if = {
+				limit = {
+					NOT = {
+						has_tech = inf_radio1
+					}
+				}
+				set_technology = {
+					inf_radio1 = 1
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = radio_bonus
+					bonus = 0.25
+					uses = 1
+					category = electronics
+				}
 			}
 		}
 	}
@@ -1974,8 +1992,26 @@ focus_tree = {
 				technology = railway_gun
 				technology = railway_gun_2
 			}
-			set_technology = {
-				art_radio1 = 1
+			# set_technology = {
+			# 	art_radio1 = 1
+			# }
+			if = {
+				limit = {
+					NOT = {
+						has_tech = art_radio1
+					}
+				}
+				set_technology = {
+					art_radio1 = 1
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = radio_bonus
+					bonus = 0.25
+					uses = 1
+					category = electronics
+				}
 			}
 		}
 	}
@@ -2032,8 +2068,26 @@ focus_tree = {
 				uses = 1
 				technology = mechanised_infantry
 			}
-			set_technology = {
-				mot_radio1 = 1
+			# set_technology = {
+			# 	mot_radio1 = 1
+			# }
+			if = {
+				limit = {
+					NOT = {
+						has_tech = mot_radio1
+					}
+				}
+				set_technology = {
+					mot_radio1 = 1
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = radio_bonus
+					bonus = 0.25
+					uses = 1
+					category = electronics
+				}
 			}
 		}
 	}
@@ -2065,8 +2119,23 @@ focus_tree = {
 				uses = 2
 				category = cat_light_armor
 			}
-			set_technology = {
-				mot_radio2 = 1
+			if = {
+				limit = {
+					NOT = {
+						has_tech = mot_radio2
+					}
+				}
+				set_technology = {
+					mot_radio2 = 1
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = radio_bonus
+					bonus = 0.25
+					uses = 1
+					category = electronics
+				}
 			}
 		}
 	}

@@ -4,6 +4,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_five_terrain_penalty_reduction"
 		texturefile = "gfx/interface/traits/personal/trait_recently_promoted.dds"		
+	}
+	spriteType = {
+		name = "GFX_trait_ten_terrain_penalty_reduction"
+		texturefile = "gfx/interface/traits/personal/trait_recently_promoted.dds"		
+	}	
+	spriteType = {
+		name = "GFX_trait_twenty_terrain_penalty_reduction"
+		texturefile = "gfx/interface/traits/personal/trait_recently_promoted.dds"		
 	}	
 
 	### TECH ###
@@ -52,6 +60,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_generic_rubber_refining"
 		texturefile = "gfx/interface/ideas/idea_generic_rubber_refining_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Fate_Of_Med"
+		textureFile = "gfx/interface/ideas/Fate_Of_Med.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_All_Quiet_On_The_Western_Front"
+		textureFile = "gfx/interface/ideas/GER_Festung_Europa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_LIBYA_OIL"
+		textureFile = "gfx/interface/ideas/ROM_oil.dds"
 	}
     ## FOCUS ICONS
     spriteType = {

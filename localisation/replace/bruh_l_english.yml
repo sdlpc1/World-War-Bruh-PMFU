@@ -297,6 +297,8 @@ off_mobile_tt:0 "A random §YSkill 3§! or lower General with the trait §Y"Armo
 off_superior_tt:0 "A random §YSkill 3§! or lower General with §Y"Engineer Officer"§! will gain §Y"Engineer"§!"
 
 five_terrain_penalty_reduction:0 "From focus"
+ten_terrain_penalty_reduction:0 "From focus"
+twenty_terrain_penalty_reduction:0 "From focus"
 
  #### UNITS ####
  mountaineers:0 "Light Infantry"
@@ -501,6 +503,18 @@ five_terrain_penalty_reduction:0 "From focus"
  ship_heavy_battery_sub_1:0 "Heavy Submarine Battery"
  ship_armor_bb_light_2:0 "Fast Battleship Armour II"
  ship_armor_bb_light_3:0 "Fast Battleship Armour III"
+
+ ship_light_battery_main_1:0 "Light Battery I"
+ ship_light_battery_main_2:0 "Light Battery II"
+ ship_light_battery_main_3:0 "Light Battery III"
+ ship_light_battery_main_4:0 "Light Battery IV"
+ dp_light_battery_main_1:1 "Dual-Purpose Main Battery I"
+ dp_light_battery_main_2:1 "Dual-Purpose Main Battery II"
+ dp_light_battery_main_3:1 "Dual-Purpose Main Battery III"
+ dp_light_battery_main_4:0 "Dual-Purpose Main Battery IV"
+
+ EQ_MOD_CAT_ship_light_battery_main_TITLE:0 "Rapid Fire Guns"
+ EQ_MOD_CAT_dp_light_battery_main_TITLE:0 "Rapid Fire Guns (DP)"
 
  ### TECHS ####
  early_ship_hull_heavy:0 "1922 Heavy Ship Hull"

@@ -46,7 +46,7 @@ state=
 		}
 
 		add_core_of = WST
-
+		set_state_flag = AFRICA_COMMONWEALTH_controls
 	}
 
 	provinces={

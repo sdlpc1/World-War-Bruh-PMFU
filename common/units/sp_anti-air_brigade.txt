@@ -37,7 +37,7 @@ sub_units = {
 		supply_consumption = 0.16
 		
 		breakthrough = -0.95
-		air_attack = -0.3
+		# air_attack = -0.3
 		
 		same_support_type = anti_air
 	}
@@ -79,6 +79,7 @@ sub_units = {
 		supply_consumption = 0.20
 		
 		breakthrough = -0.95
+		air_attack = 0.15
 		
 		same_support_type = anti_air
 	}

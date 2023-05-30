@@ -1234,6 +1234,13 @@ focus_tree = {
 			add_named_threat = { threat = 15 name = JAP_secure_china }		
 			USA = { add_war_support = 0.10 }	
 			add_timed_idea = { idea = JAP_ichi_go days = 365 }
+			hidden_effect = {
+				every_army_leader={
+					add_trait = {
+     					trait = twenty_terrain_penalty_reduction
+					}
+				}
+			}
 		}
 	}	
 

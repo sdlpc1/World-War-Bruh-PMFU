@@ -1548,6 +1548,16 @@ ideas = {
 				no_supply_grace = 48
 				terrain_penalty_reduction = 0.2
 			}
+
+			on_remove = {
+				hidden_effect = {
+					every_army_leader={
+						remove_trait = {
+     						trait = twenty_terrain_penalty_reduction
+						}
+					}
+				}
+			}
 		}
 
 		JAP_the_london_naval_treaty = {

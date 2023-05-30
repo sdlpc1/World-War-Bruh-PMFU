@@ -4313,6 +4313,13 @@ focus_tree = {
 
         completion_reward = {
 			add_ideas = YUG_terrain_training
+			hidden_effect = {
+				every_army_leader={
+					add_trait = {
+     					trait = five_terrain_penalty_reduction
+					}
+				}
+			}
 			add_tech_bonus = {
 				name = YUG_light_tank
 				bonus = 0.50

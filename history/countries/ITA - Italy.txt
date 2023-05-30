@@ -15,6 +15,7 @@ set_variable = { ITA_poster_left_icon_frame = ITA_propaganda_empty_slot_index } 
 set_variable = { ITA_poster_center_icon_frame = ITA_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
 set_variable = { ITA_re_unit_camelry_design_cost_factor = 0 }
+set_variable = { AFRICA_COMMONWEALTH_BASES_LEVEL = 6 } #What level variable to use
 
 create_intelligence_agency = {
     name = "Servizio Informazioni Militare"
@@ -38,6 +39,7 @@ add_ideas = {
 	MEDITERRANEAN_AXIS_controls_original
 	peace_training
 	no_grinding
+	AFRICA_COMMONWEALTH_controls_axis_idea_6
 }
 
 # MP_garrison_division_standard = yes
@@ -533,7 +535,7 @@ if = {
 		name_group = ITA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -550,7 +552,7 @@ if = {
 		name_group = ITA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -568,7 +570,7 @@ if = {
 		name_group = ITA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -584,7 +586,7 @@ if = {
 		name_group = ITA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = empty
 			fixed_ship_radar_slot = empty

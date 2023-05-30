@@ -1654,15 +1654,15 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.025
+				defense_bonus_against = 0.025
 			}
 			modifier = {
 				army_speed_factor = 0.05
-				supply_consumption_factor = -0.2
-				planning_speed = 0.25
-				no_supply_grace = 96
-				out_of_supply_factor = -0.2
+				supply_consumption_factor = -0.125
+				planning_speed = 0.1
+				no_supply_grace = 72
+				out_of_supply_factor = -0.15
 				production_speed_rail_way_factor = 0.2
 			}
 
@@ -3068,6 +3068,14 @@ ideas = {
 				module_dp_light_battery_2_design_cost_factor = -1
 				module_dp_light_battery_3_design_cost_factor = -1
 				module_dp_light_battery_4_design_cost_factor = -1
+				module_ship_light_battery_main_1_design_cost_factor = -1
+				module_ship_light_battery_main_2_design_cost_factor = -1
+				module_ship_light_battery_main_3_design_cost_factor = -1
+				module_ship_light_battery_main_4_design_cost_factor = -1
+				module_dp_light_battery_main_1_design_cost_factor = -1
+				module_dp_light_battery_main_2_design_cost_factor = -1
+				module_dp_light_battery_main_3_design_cost_factor = -1
+				module_dp_light_battery_main_4_design_cost_factor = -1
 				module_ship_heavy_battery_1_design_cost_factor = -1
 				module_ship_heavy_battery_2_design_cost_factor = -1
 				module_ship_heavy_battery_3_design_cost_factor = -1

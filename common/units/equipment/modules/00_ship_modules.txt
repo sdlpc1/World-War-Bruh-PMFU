@@ -227,7 +227,7 @@ equipment_modules = {
 
 	dp_light_battery_4 = {
 		abbreviation = "sah"
-		category = dp_light_battery
+		category = dp_light_battery_
 		gui_category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
 	
@@ -253,6 +253,282 @@ equipment_modules = {
 			
 		can_convert_from = {
 			module = ship_light_battery_3
+			convert_cost_ic = 130
+		}
+		critical_parts = { damaged_light_guns }
+	}
+
+	### MAIN LIGHT GUN
+	ship_light_battery_main_1 = {
+		abbreviation = "saam"
+		category = ship_light_battery_main
+		gui_category = ship_light_battery
+		sfx = sfx_ui_sd_module_turret
+		gfx = ship_light_battery_1
+		
+		add_stats = {
+			lg_attack = 1
+			build_cost_ic = 90	
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
+		}
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			lg_armor_piercing = 1
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_battery_main
+			convert_cost_ic = 60
+		}
+
+		critical_parts = { damaged_light_guns }
+	}
+
+	ship_light_battery_main_2 = {
+		abbreviation = "sabm"
+		category = ship_light_battery_main
+		gui_category = ship_light_battery
+		parent = ship_light_battery_1
+		sfx = sfx_ui_sd_module_turret
+		gfx = ship_light_battery_2
+		
+		add_stats = {
+			lg_attack = 1.5
+			build_cost_ic = 120
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
+		}
+		multiply_stats = {
+			naval_speed = -0.04
+		}
+		add_average_stats = {
+			lg_armor_piercing = 2
+		}
+		build_cost_resources = {
+			steel = 1			
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_battery_main
+			convert_cost_ic = 75 #conversion cost from ANY ship_light_battery module
+		}
+		
+		can_convert_from = {
+			module = ship_light_battery_main_1
+			convert_cost_ic = 45 #conversion cost from that specific module
+		}
+		critical_parts = { damaged_light_guns }
+	}
+
+	ship_light_battery_main_3 = {
+		abbreviation = "sacm"
+		category = ship_light_battery_main
+		gui_category = ship_light_battery
+		parent = ship_light_battery_2
+		sfx = sfx_ui_sd_module_turret
+		gfx = ship_light_battery_3
+		
+		add_stats = {
+			lg_attack = 2
+			build_cost_ic = 150		
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80	
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 2.5
+		}
+		multiply_stats = {
+			naval_speed = -0.06
+		}
+		can_convert_from = {
+			module_category = ship_light_battery_main
+			convert_cost_ic = 75
+		}
+		build_cost_resources = {
+			steel = 2			
+		}
+		
+		can_convert_from = {
+			module= ship_light_battery_main_2
+			convert_cost_ic = 45
+		}
+		critical_parts = { damaged_light_guns }
+	}
+
+	ship_light_battery_main_4 = {
+		abbreviation = "sadm"
+		category = ship_light_battery_main
+		gui_category = ship_light_battery
+		parent = ship_light_battery_3
+		sfx = sfx_ui_sd_module_turret
+		gfx = ship_light_battery_4
+		
+		add_stats = {
+			lg_attack = 3.0
+			build_cost_ic = 175	
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
+		}
+		build_cost_resources = {
+			steel = 3
+		}
+		multiply_stats = {
+			naval_speed = -0.08
+		}
+		add_average_stats = {
+			lg_armor_piercing = 2.5
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_battery_main
+			convert_cost_ic = 190
+		}
+			
+		can_convert_from = {
+			module = ship_light_battery_main_3
+			convert_cost_ic = 120
+		}
+		critical_parts = { damaged_light_guns }
+	}
+
+	dp_light_battery_main_1 = {
+		abbreviation = "saem"
+		category = dp_light_battery_main
+		gui_category = ship_light_battery
+		sfx = sfx_ui_sd_module_turret
+		gfx = dp_light_battery_1
+	
+		add_stats = {
+			lg_attack = 1
+			anti_air_attack = 1
+			build_cost_ic = 100
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
+		}
+		multiply_stats = {
+			naval_speed = -0.04
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		add_average_stats = {
+			lg_armor_piercing = 0.5
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_battery_main
+			convert_cost_ic = 100
+		}
+		critical_parts = { damaged_light_guns }
+	}
+
+	dp_light_battery_main_2 = {
+		abbreviation = "safm"
+		category = dp_light_battery_main
+		gui_category = ship_light_battery
+		sfx = sfx_ui_sd_module_turret
+		gfx = dp_light_battery_2
+	
+		add_stats = {
+			lg_attack = 1.5
+			anti_air_attack = 2
+			build_cost_ic = 130
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
+		}
+		multiply_stats = {
+			naval_speed = -0.08
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		add_average_stats = {
+			lg_armor_piercing = 1
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_battery_main
+			convert_cost_ic = 85 #conversion cost from ANY ship_light_battery module
+		}
+		
+		can_convert_from = {
+			module = ship_light_battery_main_1
+			convert_cost_ic = 55 #conversion cost from that specific module
+		}
+		critical_parts = { damaged_light_guns }
+	}
+
+	dp_light_battery_main_3 = {
+		abbreviation = "sagm"
+		category = dp_light_battery_main
+		gui_category = ship_light_battery
+		sfx = sfx_ui_sd_module_turret
+		gfx = dp_light_battery_3
+	
+		add_stats = {
+			lg_attack = 2
+			anti_air_attack = 3
+			build_cost_ic = 160
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
+		}
+		multiply_stats = {
+			naval_speed = -0.12
+		}
+		build_cost_resources = {
+			steel = 3
+		}
+		add_average_stats = {
+			lg_armor_piercing = 1.75
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_battery_main
+			convert_cost_ic = 85
+		}
+		
+		can_convert_from = {
+			module= ship_light_battery_main_2
+			convert_cost_ic = 55
+		}
+		critical_parts = { damaged_light_guns }
+	}
+
+	dp_light_battery_main_4 = {
+		abbreviation = "sahm"
+		category = dp_light_battery_main
+		gui_category = ship_light_battery
+		sfx = sfx_ui_sd_module_turret
+		gfx = dp_light_battery_4
+	
+		add_stats = {
+			lg_attack = 3
+			anti_air_attack = 4
+			build_cost_ic = 185
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
+		}
+		multiply_stats = {
+			naval_speed = -0.16
+		}
+		build_cost_resources = {
+			steel = 4
+		}
+		add_average_stats = {
+			lg_armor_piercing = 1.75
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_battery_main
+			convert_cost_ic = 200
+		}
+			
+		can_convert_from = {
+			module = ship_light_battery_main_3
 			convert_cost_ic = 130
 		}
 		critical_parts = { damaged_light_guns }
@@ -602,6 +878,8 @@ equipment_modules = {
 		add_stats = {	
 			lg_attack = 3
 			build_cost_ic = 300
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
 		}
 		multiply_stats = {
 			naval_speed = -0.03
@@ -634,6 +912,8 @@ equipment_modules = {
 		add_stats = {	
 			lg_attack = 6
 			build_cost_ic = 350
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
 		}
 		multiply_stats = {
 			naval_speed = -0.05
@@ -674,6 +954,8 @@ equipment_modules = {
 			
 			lg_attack = 9
 			build_cost_ic = 375
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
 		}
 		multiply_stats = {
 			naval_speed = -0.06
@@ -714,6 +996,8 @@ equipment_modules = {
 			lg_attack = 12
 			
 			build_cost_ic = 425
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
 		}
 		multiply_stats = {
 			naval_speed = -0.07
@@ -754,6 +1038,8 @@ equipment_modules = {
 			lg_attack = 6
 			anti_air_attack = 4.5
 			build_cost_ic = 450
+			naval_torpedo_enemy_critical_chance_factor = -0.60
+			naval_torpedo_damage_reduction_factor = 0.80
 		}
 
 		multiply_stats = {
