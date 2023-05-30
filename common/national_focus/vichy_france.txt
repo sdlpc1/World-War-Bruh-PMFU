@@ -2347,7 +2347,7 @@ focus_tree = {
 			add_equipment_production = {
 				equipment = {
 					type = ship_hull_heavy_3
-					creator = "FRA"
+					creator = "VIC"
 					version_name = "Richelieu Class"
 				}
 				# name = "Dunkerque"
@@ -2358,7 +2358,7 @@ focus_tree = {
             add_equipment_production = {
 				equipment = {
 					type = ship_hull_heavy_3
-					creator = "FRA"
+					creator = "VIC"
 					version_name = "Richelieu Class"
 				}
 				# name = "Dunkerque"
