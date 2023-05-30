@@ -811,6 +811,7 @@ if = {
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
 			tac_0 = 1
+			tac_1 = 1
 	}
 	else = {
 		set_air_oob = "SOV_1936_air_legacy"
