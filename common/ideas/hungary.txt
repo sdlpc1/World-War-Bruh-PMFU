@@ -553,7 +553,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				equipment_conversion_speed = 0.4
+				equipment_conversion_speed = 0.6
 			}
 		}
 	}

@@ -817,9 +817,17 @@ ALLIES_propaganda_campaigns = {
 			NOT = {
 				has_country_flag = ALLIES_running_prop
 			}
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				date > 1938.1.1
+			}
+			else = {
 			USA = {
 				has_completed_focus = USA_two_ocean_navy_act
 			}
+		}
 		}
 
 		days_remove = 365
@@ -866,9 +874,17 @@ ALLIES_propaganda_campaigns = {
 			NOT = {
 				has_country_flag = ALLIES_running_prop
 			}
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				date > 1938.9.1
+			}
+			else = {
 			USA = {
 				has_completed_focus = USA_the_giant_wakes
 			}
+		}
 		}
 
 		days_remove = 365
@@ -915,9 +931,17 @@ ALLIES_propaganda_campaigns = {
 			NOT = {
 				has_country_flag = ALLIES_running_prop
 			}
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				date > 1939.9.1
+			}
+			else = {
 			USA = {
 				has_completed_focus = USA_fair_labour_standards_act
 			}
+		}
 		}
 
 		days_remove = 365
@@ -1066,9 +1090,17 @@ ALLIES_propaganda_campaigns = {
 			NOT = {
 				has_country_flag = ALLIES_running_prop
 			}
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				date > 1941.1.1
+			}
+			else = {
 			USA = {
 				has_completed_focus = USA_wartime_industry
 			}
+		}
 		}
 
 		days_remove = 365

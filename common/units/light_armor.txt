@@ -69,13 +69,21 @@ sub_units = {
 			movement = -0.3
 			defence = -0.1
 		}
+		# urban = {
+		# 	attack = -0.2
+		# 	defence = -0.1
+		# }
+		# dense_urban = {
+		# 	attack = -0.3
+		# 	defence = -0.15
+		# }
 		urban = {
-			attack = -0.2
-			defence = -0.1
+			attack = -0.5
+			defence = -0.5
 		}
 		dense_urban = {
-			attack = -0.3
-			defence = -0.15
+			attack = -0.6
+			defence = -0.6
 		}
 		town = {
 			attack = -0.05

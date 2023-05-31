@@ -39,6 +39,27 @@ ideas = {
 			}
 		}	
 
+		volunteer_minimum_GER_NA = {
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				NOT = {
+					has_global_flag = NO_ASIA
+				}
+			}
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+
+			modifier = {
+                send_volunteer_size = 3
+			}
+		}
+
 		volunteer_minimum_minor = {
 			allowed = {
 				always = no

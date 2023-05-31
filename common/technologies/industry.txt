@@ -263,7 +263,7 @@ technologies = {
 	
 	advanced_equipment_conversion = {
 		
-		equipment_conversion_speed = 0.4
+		equipment_conversion_speed = 0.8
 
 		research_cost = 1.5
 		start_year = 1942

@@ -439,6 +439,29 @@ ideas = {
 				send_volunteer_size = 5
 				lend_lease_tension = -0.30
 			}
+		}		
+		
+		SPA_spanish_civil_war_commitments_2 = {
+
+			picture = generic_manpower_bonus
+
+			allowed = {
+				OR = {
+					original_tag = ITA
+					original_tag = GER
+					original_tag = SOV
+					original_tag = FRA
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				send_volunteer_size = 8
+				lend_lease_tension = -0.30
+			}
 		}
 
 		SPA_foreign_training_staff = {
