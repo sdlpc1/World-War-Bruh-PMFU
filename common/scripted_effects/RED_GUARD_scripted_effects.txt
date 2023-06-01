@@ -6,7 +6,7 @@ RG_armored_division_medium = {
 			division_names_group = SOV_GTC_01
 			is_locked = yes
 			force_allow_recruiting = yes
-			template_counter = 69
+			template_counter = 70
 		regiments = {
 			medium_armor = { x = 0 y = 0 }
 			medium_armor = { x = 0 y = 1 }
@@ -53,7 +53,7 @@ RG_armored_division_light = {
 			division_names_group = SOV_GTC_01
 			is_locked = yes
 			force_allow_recruiting = yes
-			template_counter = 69
+			template_counter = 70
 		regiments = {
 			light_armor = { x = 0 y = 0 }
 			light_armor = { x = 0 y = 1 }
@@ -100,7 +100,7 @@ RG_armored_division_heavy = {
 			division_names_group = SOV_GTC_01
 			is_locked = yes
 			force_allow_recruiting = yes
-			template_counter = 69
+			template_counter = 70
 		regiments = {
 			heavy_armor = { x = 0 y = 0 }
 			heavy_armor = { x = 0 y = 1 }

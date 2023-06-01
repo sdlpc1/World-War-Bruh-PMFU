@@ -5,7 +5,8 @@ state={
 	manpower = 88126
 	
 	state_category = wasteland
-
+	impassable = yes
+	
 	history={
 		owner = SOV
 		buildings = {

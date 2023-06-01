@@ -2372,6 +2372,94 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.25
+			663 = {
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 7063
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 4133
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 9977
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 1186
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 13078
+					instant_build = yes
+				}
+			}
+			451 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 12094
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 4151
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 1204
+					instant_build = yes
+				}
+			}
+			449 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 12088
+					instant_build = yes
+				}
+			}
+			662 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 13073
+					instant_build = yes
+				}
+			}
+			661 = {
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 4962
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 4
+					province = 11940
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 1174
+					instant_build = yes
+				}
+			}
 		}
 	}
 	

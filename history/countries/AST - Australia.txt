@@ -20,6 +20,8 @@ set_technology = {
 	basic_train = 1
 }
 
+starting_train_buffer = 2
+
 # MP_garrison_division_standard = yes
 
 if = {

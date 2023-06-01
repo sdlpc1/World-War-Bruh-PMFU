@@ -4035,7 +4035,7 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					type = ger_light_tank_chassis_p38
 					amount = 300
-					producer = CZE
+					producer = GER
 				}
 				
 			}

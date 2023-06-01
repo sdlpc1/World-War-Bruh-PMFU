@@ -16,6 +16,8 @@ set_party_name = {
 	name = SOV_fascism_party_russian
 }
 
+starting_train_buffer = 5
+
 # DIPLOMACY
 if = {
 	limit = {

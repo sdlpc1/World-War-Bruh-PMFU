@@ -5,7 +5,8 @@ state = {
 	manpower = 21974
 	
 	state_category = pastoral
-
+	impassable = yes
+	
 	history = {
 		owner = SOV
 		buildings = {

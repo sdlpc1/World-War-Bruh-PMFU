@@ -30,7 +30,7 @@ division_template = {
 		division_names_group = SOV_GTC_01
 		is_locked = yes
 		force_allow_recruiting = yes
-		template_counter = 69
+		template_counter = 70
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
@@ -365,7 +365,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 72
 		}
-		location = 3151
+		location = 13306
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
@@ -373,7 +373,7 @@ units = {
 	}
 	division= {			
 		name = "LVO Mekhanizirovanaya Gruppa"		
-		location = 3151
+		location = 13306
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9

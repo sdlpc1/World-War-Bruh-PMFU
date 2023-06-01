@@ -10,6 +10,8 @@ set_variable = { COM_poster_center_icon_frame = 1 }
 
 # MP_garrison_division_standard = yes
 
+starting_train_buffer = 2
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
