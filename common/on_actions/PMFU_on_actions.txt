@@ -194,19 +194,25 @@ on_actions = {
 				}
 			}
 		}
-
+	
+	### UK VOL WT REMOVAL ###
 	on_weekly_SPR = {
         effect ={
 			if ={
 				limit = {
-					has_volunteers_amount_from = { tag = ENG count > 0 }
+					SPD = {
+						has_volunteers_amount_from = { tag = ENG count > 0 }
+					}
 					NOT = {
 						has_global_flag = uk_spr_vols
 					}
 				}
+				set_global_flag = uk_spr_vols
+				# add_threat = -1.2
+				ENG = {
+					add_named_threat = { threat = -1.2 name = "Removed World Tension from UK volunteers for balance reasons" }
+				}
 			}
-			set_global_flag = uk_spr_vols
-			add_threat = -1.2
 		}
-	}
+	} 
 }

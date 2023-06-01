@@ -1833,31 +1833,29 @@ focus_tree = {
 		available = {
 			country_exists = PER
 			NOT = { has_war_with = PER }
-			is_subject = no
-			any_enemy_country = { is_major = yes }
-			OR = {
-			291 = {
-				controller = {
-				is_in_faction_with = eng
-				}
-				
-			}
-			444 = {
-				controller = {
-				is_in_faction_with = eng
-				}
-				
-			}
-		}
+			# is_subject = no
+			# any_enemy_country = { is_major = yes }
+			# OR = {
+			# 	291 = {
+			# 		controller = {
+			# 			is_in_faction_with = eng
+			# 		}
+			# 	}
+			# 	444 = {
+			# 		controller = {
+			# 			is_in_faction_with = eng
+			# 		}
+			# 	}
+			# }
 		}
 		
 		search_filters = {}
 
 		completion_reward = {
-			PER = {
-				set_country_flag = SOV_ultimatum_sent_flag
-				country_event = { id = NSB_soviet_foreign_politics_events.210 hours = 16 random_hours = 8 }
-			}
+			# PER = {
+			# 	set_country_flag = SOV_ultimatum_sent_flag
+			# 	country_event = { id = NSB_soviet_foreign_politics_events.210 hours = 16 random_hours = 8 }
+			# }
 
 			# PMFU
 			229 = {
@@ -1895,7 +1893,120 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-		
+			
+			### ACTUAL EFFECT NGL ###
+			ENG = {
+				annex_country = { target = PER transfer_troops = no }
+				if = {
+					limit = {
+						446 = {
+							CONTROLLER = {
+								is_in_faction_with = GER
+								tag = GER
+							}
+						}
+					}
+					division_template = {
+						name = "Colonial Infantry (Iran)"
+						division_names_group = ENG_INF_01
+					
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							anti_tank_brigade = { x = 4 y = 0 }
+							anti_tank_brigade = { x = 4 y = 1 }
+						}
+						support = {
+							hq_company = { x = 0 y = 0 } 
+							engineer = { x = 0 y = 1 }   
+							recon = { x = 0 y = 2 }
+							logistics_company_mot  = { x = 0 y = 3 }
+							anti_air = { x = 1 y = 0 }
+						}
+					}
+					444 = {
+						for_loop_effect = {
+							end = 10
+							create_unit = {
+								division = "name = \"Colonial Infantry (Iran)\" division_template = \"Colonial Infantry (Iran)\" start_experience_factor = 0.5"
+								owner = ENG
+							}
+						}
+					}
+					ENG = {
+						custom_effect_tooltip = ENG_iran_spawn_in_tt
+					}
+				}
+			}
+			SOV = {
+				if = {
+					limit = {
+						446 = {
+							CONTROLLER = {
+								is_in_faction_with = GER
+								tag = GER
+							}
+						}
+					}
+					division_template = {
+						name = "1st Iranian Front"
+						division_names_group = SOV_INF_01
+					
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							anti_tank_brigade = { x = 4 y = 0 }
+							anti_tank_brigade = { x = 4 y = 1 }
+						}
+						support = {
+							hq_company = { x = 0 y = 0 } 
+							engineer = { x = 0 y = 1 }   
+							recon = { x = 0 y = 2 }
+							logistics_company_mot  = { x = 0 y = 3 }
+							anti_air = { x = 1 y = 0 }
+						}
+					}
+					229 = {
+						for_loop_effect = {
+							end = 10
+							create_unit = {
+								division = "name = \"1st Iranian Front\" division_template = \"1st Iranian Front\" start_experience_factor = 0.5"
+								owner = SOV
+							}
+						}
+					}
+					SOV = {
+						custom_effect_tooltip = SOV_iran_spawn_in_tt
+					}
+				}
+			}
+			transfer_state = 419 #Tibriz (AZB)
+			transfer_state = 420 #Gilan (AZB)
+			transfer_state = 416 #Khorasan
+			ENG = {
+				give_resource_rights = { receiver = SOV state = 411 }
+				give_resource_rights = { receiver = SOV state = 412 }
+			}
+			hidden_effect = {
+				ENG = { country_event = { id = NSB_soviet_foreign_politics_events.270 days = 1 } } #Hidden Effect to transfer states and give resource rights
+			}
+
 			if = {
 				limit = {
 					NOT = {
@@ -1968,19 +2079,19 @@ focus_tree = {
 			}
 			# PMFU - END
 
-			effect_tooltip = {
-				custom_effect_tooltip = if_they_accept_tt
-				ROOT = {
-					puppet = PER
-				}
+			# effect_tooltip = {
+			# 	custom_effect_tooltip = if_they_accept_tt
+			# 	ROOT = {
+			# 		puppet = PER
+			# 	}
 
-				custom_effect_tooltip = if_they_refuse_tt
-				effect_tooltip = {
-					activate_mission = SOV_preparations_for_operation_countenance
-					custom_effect_tooltip = SOV_preparations_for_operation_countenance_tt
-				}
-				custom_effect_tooltip = SOV_preemptive_invasion_of_iran_tt
-			}
+			# 	custom_effect_tooltip = if_they_refuse_tt
+			# 	effect_tooltip = {
+			# 		activate_mission = SOV_preparations_for_operation_countenance
+			# 		custom_effect_tooltip = SOV_preparations_for_operation_countenance_tt
+			# 	}
+			# 	custom_effect_tooltip = SOV_preemptive_invasion_of_iran_tt
+			# }
 		}
 	}
 	

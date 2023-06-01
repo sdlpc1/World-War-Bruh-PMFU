@@ -12535,3 +12535,22 @@ country_event = {
 		name = soviet.2222.a
 	}
 }
+
+country_event = {
+	id = NSB_soviet_foreign_politics_events.270
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		ENG = {
+			give_resource_rights = { receiver = SOV state = 411 }
+			give_resource_rights = { receiver = SOV state = 412 }
+			# give_resource_rights = { receiver = ENG state = 413 }
+		}
+		411 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
+		412 = { set_state_flag = SOV_soviet_resource_rights_iran_flag }
+		413 = { set_state_flag = SOV_british_resource_rights_iran_flag }
+	}
+}

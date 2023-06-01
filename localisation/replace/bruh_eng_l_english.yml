@@ -304,7 +304,8 @@
   ENG_mil_arms_purchases_tt:0 "Unlocks decisions to §YBuy Equipment§! for our army"
   Royal_Commandos_increase_tt:0 "Increase template cap of §YRoyal Commandos§! by §G+1§!."
   Royal_Commandos_increase_double_tt:0 "Increase template cap of §YRoyal Commandos§! by §G+2§!."
-  ENG_iran_spawn_in_tt:0 "Mobilizes §R10 Units§! of §R20 Width Colonial Infantry§! in §GBaluchistan§!"
+  ENG_iran_spawn_in_tt:0 "Mobilizes §R10 Units§! of §R20 Width Colonial Infantry§! in §GBaluchistan§!\n"
+  SOV_iran_spawn_in_tt:0 "Mobilizes §R10 20 Width Units§! of the §R1st Iranian Front§! in §GAzerbaijan§!\n"
 
   #### FLAGS ####
   ENG_seize_col:0 "Has Seized Portugese Colonies"

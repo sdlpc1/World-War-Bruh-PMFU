@@ -4101,10 +4101,58 @@ focus_tree = {
 				for_loop_effect = {
 					end = 10
 					create_unit = {
-						division = "name = \"Colonial Infantry (Iran)\" division_template = \"Colonial Infantry (Iran)\" start_experience_factor = 1.0"
+						division = "name = \"Colonial Infantry (Iran)\" division_template = \"Colonial Infantry (Iran)\" start_experience_factor = 0.5"
 						owner = ENG
 					}
 				}
+			}
+			SOV = {
+				division_template = {
+					name = "1st Iranian Front"
+					division_names_group = SOV_INF_01
+					
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						anti_tank_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company_mot  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+					}
+				}
+				229 = {
+					for_loop_effect = {
+						end = 10
+						create_unit = {
+							division = "name = \"1st Iranian Front\" division_template = \"1st Iranian Front\" start_experience_factor = 0.5"
+							owner = SOV
+						}
+					}
+				}
+				SOV = {
+					custom_effect_tooltip = SOV_iran_spawn_in_tt
+				}
+				transfer_state = 419 #Tibriz (AZB)
+				transfer_state = 420 #Gilan (AZB)
+				transfer_state = 416 #Khorasan
+			}
+			give_resource_rights = { receiver = SOV state = 411 }
+			give_resource_rights = { receiver = SOV state = 412 }
+			hidden_effect = {
+				ENG = { country_event = { id = NSB_soviet_foreign_politics_events.270 days = 1 } } #Hidden Effect to transfer states and give resource rights
 			}
 			custom_effect_tooltip = ENG_iran_spawn_in_tt
 			ENG = {
