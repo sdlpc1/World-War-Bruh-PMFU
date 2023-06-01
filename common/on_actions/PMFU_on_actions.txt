@@ -194,4 +194,19 @@ on_actions = {
 				}
 			}
 		}
+
+	on_weekly_SPR = {
+        effect ={
+			if ={
+				limit = {
+					has_volunteers_amount_from = { tag = ENG count > 0 }
+					NOT = {
+						has_global_flag = uk_spr_vols
+					}
+				}
+			}
+			set_global_flag = uk_spr_vols
+			add_threat = -1.2
+		}
+	}
 }
