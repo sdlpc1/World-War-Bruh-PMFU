@@ -200,11 +200,15 @@ on_actions = {
         effect ={
 			if ={
 				limit = {
-					SPD = {
-						has_volunteers_amount_from = { tag = ENG count > 0 }
-					}
+					has_global_flag = SPA_SCW_started_confirmed
 					NOT = {
 						has_global_flag = uk_spr_vols
+					}
+					NOT = {
+						has_global_flag = SCW_over
+					}
+					SPD = {
+						has_volunteers_amount_from = { tag = ENG count > 0 }
 					}
 				}
 				set_global_flag = uk_spr_vols
