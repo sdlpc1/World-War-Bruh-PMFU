@@ -245,6 +245,7 @@
  islands_home_of_desc:0 ""
  naval_base_construction:0 "§1France can't build naval ports before capitulation§!"
  air_base_construction:0 "§1Airfields can be built up to 10 levels§!"
+ DELETE_DOCK:0 "Remove a Dockyard"
 
 # Annexation Choices
  ENG_annex_ire:0 "Annex Ireland"

@@ -215,4 +215,187 @@ on_actions = {
 			}
 		}
 	} 
+
+	### MAIN CONTROLL ###
+	on_weekly_VEN = {
+		effect={
+			# sealion_core_defense=yes
+			# update_academy_weekly=yes
+			# update_sov_major_city_status = yes
+			# set_variable={scaled_weekly_manpower=max_manpower_k}
+			# multiply_variable={scaled_weekly_manpower=0.001}
+			if = {
+				limit = {
+					date > 1941.1.1
+					ITA = { surrender_progress > 0.80 }
+					country_exists = ITA
+					NOT = {
+						has_global_flag = GER_ITA_spawn_ins_spawned
+					}
+				}
+				GER = {	
+					division_template = {
+						name = "SS-Panzergrenadier"
+						regiments = {
+							medium_armor = { x = 0 y = 0 }
+							medium_armor = { x = 0 y = 1 }
+							medium_armor = { x = 0 y = 2 }
+							medium_armor = { x = 0 y = 3 }
+					
+							medium_armor = { x = 1 y = 0 }
+							medium_armor = { x = 1 y = 1 }
+							medium_armor = { x = 1 y = 2 }
+					
+							mechanized = { x = 2 y = 0 }
+							mechanized = { x = 2 y = 1 }
+							mechanized = { x = 2 y = 2 }
+					
+							mechanized = { x = 3 y = 0 }
+							mechanized = { x = 3 y = 1 }
+							mechanized = { x = 3 y = 2 }
+							mechanized = { x = 3 y = 3 }
+					
+							medium_tank_destroyer_brigade = { x = 4 y = 0 }
+							medium_tank_destroyer_brigade = { x = 4 y = 1 }
+					
+						}
+						support = {
+							logistics_company = { x = 0 y = 0 }
+							logistics_company_mot = { x = 0 y = 1 }
+							mot_recon = { x = 0 y = 2 }
+							mot_anti_air_brigade = { x = 0 y = 3 }
+					
+							ss_hq_company_medium = { x = 1 y = 0 }
+							assault_engineer = { x = 1 y = 1 }
+							signal_company = { x = 1 y = 2 }
+							maintenance_company = { x = 1 y = 3 }
+						}
+					}	
+					division_template = {
+						name = "Infanterie Division Italien"
+						division_names_group = GER_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
+							anti_tank_brigade = { x = 4 y = 0 }
+							anti_tank_brigade = { x = 4 y = 1 }
+							anti_tank_brigade = { x = 4 y = 2 }
+							anti_tank_brigade = { x = 4 y = 3 }
+						}
+						support = {
+							hq_company = { x = 0 y = 0 } 
+							engineer = { x = 0 y = 1 }   
+							recon = { x = 0 y = 2 }
+							logistics_company_mot  = { x = 0 y = 3 }
+							anti_air = { x = 1 y = 0 }
+						}
+					}
+ 					153 = {
+						for_loop_effect = {
+							end = 4
+							create_unit = {
+								division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
+								owner = GER
+							}
+						}
+ 						for_loop_effect = {
+ 							end = 20
+ 							create_unit = {
+ 								#prioritize_location =9135
+ 								division = "name = \"Infanterie Division Italien\" division_template = \"Infanterie Division Italien\" start_experience_factor = 0.2"
+ 								owner = GER
+ 							}
+ 						}
+					}	
+					set_global_flag = GER_ITA_spawn_ins_spawned
+				}
+			}
+			every_country = {
+				limit = {
+					has_war = yes
+					is_playable_country = yes
+				}
+				calculate_click_effect = yes
+			}
+		}
+	}
+
+	on_weekly_SOV = {
+		effect = {
+			if = {
+				limit = {
+					has_equipment = {
+						convoy > 799
+					}
+				}
+				set_temp_variable = { convoy_count = 0 }
+				while_loop_effect = {
+					limit = {
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 100 }
+				}
+				if = {
+					limit = {
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -100 }
+				}
+				while_loop_effect = {
+					limit = {
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 10 }
+				}
+				if = {
+					limit = {
+						has_equipment = {
+							convoy < convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = -10}
+				}
+				while_loop_effect = {
+					limit = {
+						has_equipment = {
+							convoy > convoy_count
+						}
+					}
+					add_to_temp_variable = { convoy_count = 1 }
+				}
+				add_to_temp_variable = { convoy_count = -800 }
+				set_temp_variable = { convoy_count2 = convoy_count }
+				multiply_temp_variable = { convoy_count2 = -1 }
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = convoy_count2
+				}
+				ENG = {
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = SOV.convoy_count
+					}
+				}
+			}
+		}
+	}
 }

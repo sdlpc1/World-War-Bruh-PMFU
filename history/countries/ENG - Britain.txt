@@ -13,7 +13,7 @@ if = {
 	}
 }
 
-starting_train_buffer = 3
+starting_train_buffer = 2.5
 
 set_rule = { 
 	can_send_volunteers = yes

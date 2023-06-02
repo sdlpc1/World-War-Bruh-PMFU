@@ -13,6 +13,43 @@
 #	}
 #
 
+is_controlled_by_ROOT_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_ally
+		CONTROLLER = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+}
+is_controlled_by_ENG_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_ally
+		CONTROLLER = {
+			OR = {
+				tag = ENG
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
+		}
+	}
+}
+is_controlled_by_GER_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_ally
+		CONTROLLER = {
+			OR = {
+				tag = GER
+				is_subject_of = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+
 immune_to_pause_block = { OR = { tag = GER tag = ENG tag = SOV tag = USA tag = ITA  tag = JAP } }
 
 can_ROOT_get_wargoal_on_THIS = {

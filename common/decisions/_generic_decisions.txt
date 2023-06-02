@@ -14,7 +14,7 @@ host_decisions = {
 		}
 
 		complete_effect = {
-			hidden_effect = {
+			# hidden_effect = {
 				every_other_country = {
 					limit = { original_tag = SPR }
 					add_timed_idea = {
@@ -26,7 +26,38 @@ host_decisions = {
 					add_offsite_building = { type = arms_factory level = 10 }
 					army_experience = 50
 				}
-			}
+				SOV = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_comintern_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
+				}
+				FRA = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_comintern_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
+					add_war_support = 0.125
+				}
+				ENG = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_comintern_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
+				}
+			# }
 			every_other_country = {
 				limit = { original_tag = SPR }
 				SPA = { annex_country = { target = PREV transfer_troops = no } }
@@ -50,7 +81,7 @@ host_decisions = {
 		}
 
 		complete_effect = {
-			hidden_effect = {
+			# hidden_effect = {
 				JAP = {
 					add_timed_idea = {
 						idea = spirit_of_bozo_japan
@@ -60,7 +91,7 @@ host_decisions = {
 				USA = {
 					add_offsite_building = { type = arms_factory level = 10 }
 				}	
-			}
+			# }
 			JAP = {
 				annex_country = {
 					target = CHI

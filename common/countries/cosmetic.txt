@@ -231,8 +231,11 @@ JAP_showa_restoration = {
 }
 
 GER_greater_german_reich = {
-	color = rgb { 54 54 54 }
-	color_ui = rgb { 115 115 115 }
+	color = rgb { 77 93 83 }
+	# color = rgb { 96 116 103 }	## main color
+	color_ui = rgb { 96 116 103 } # idk what dis do
+	# color = rgb { 54 54 54 } # old
+	# color_ui = rgb { 115 115 115 } # old
 }
 
 CHI_warlord_PRC = {

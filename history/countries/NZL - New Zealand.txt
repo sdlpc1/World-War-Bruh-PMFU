@@ -20,7 +20,7 @@ set_technology = {
 	hq_1 = 1
 }
 
-starting_train_buffer = 2
+starting_train_buffer = 5
 
 # MP_garrison_division_standard = yes
 

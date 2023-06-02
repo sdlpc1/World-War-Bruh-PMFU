@@ -4,7 +4,7 @@
 }
 oob = "USA_1936"
 
-starting_train_buffer = 5
+starting_train_buffer = 2.5
 
 # MP_garrison_division_standard = yes
 

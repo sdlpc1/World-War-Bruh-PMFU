@@ -411,14 +411,14 @@ instant_effect = {
 		progress = 0.48
 		efficiency = 100
 	}
-	add_equipment_to_stockpile = {
-		type = ger_light_tank_chassis_p35
-		amount = 1000
-		producer = CZE
-	}
-	add_equipment_to_stockpile = {
-		type = ger_light_tank_chassis_p38 
-		amount = 500
-		producer = CZE
-	}
+	# add_equipment_to_stockpile = {
+	# 	type = ger_light_tank_chassis_p35
+	# 	amount = 1000
+	# 	producer = CZE
+	# }
+	# add_equipment_to_stockpile = {
+	# 	type = ger_light_tank_chassis_p38 
+	# 	amount = 500
+	# 	producer = CZE
+	# }
 }
