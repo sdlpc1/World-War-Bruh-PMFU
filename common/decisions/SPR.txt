@@ -71,40 +71,48 @@ operations = {
 		days_mission_timeout  = 180
 		
 		complete_effect = {
-			ITA = {
-				army_experience = 125
-				air_experience = 50
-				add_doctrine_cost_reduction = {
-					name = SPA_SCW_axis_victory
-					cost_reduction = 0.5
-					uses = 2
-					category = land_doctrine
+			if = {
+				limit = {
+					tag = SPR
+					NOT = {
+						has_idea = spirit_of_bozo_spain
+					}
 				}
-			}
-			GER = {
-				army_experience = 125
-				air_experience = 50
-				add_doctrine_cost_reduction = {
-					name = SPA_SCW_axis_victory
-					cost_reduction = 0.5
-					uses = 2
-					category = land_doctrine
+				ITA = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_axis_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
 				}
-			}
-			JAP = {
-				army_experience = 125
-				air_experience = 50
-				add_doctrine_cost_reduction = {
-					name = SPA_SCW_axis_victory
-					cost_reduction = 0.5
-					uses = 2
-					category = land_doctrine
+				GER = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_axis_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
 				}
+				JAP = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_axis_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
+				}
+				SPA = {
+					add_ideas = SPA_SCW_axis_victory
+				}
+				# good effect
 			}
-			SPA = {
-				add_ideas = SPA_SCW_axis_victory
-			}
-			# good effect
 		}
 
 		timeout_effect = {
@@ -175,35 +183,43 @@ operations = {
 		days_mission_timeout  = 9999
 		
 		complete_effect = {
-			SOV = {
-				army_experience = 125
-				air_experience = 50
-				add_doctrine_cost_reduction = {
-					name = SPA_SCW_comintern_victory
-					cost_reduction = 0.5
-					uses = 2
-					category = land_doctrine
+			if = {
+				limit = {
+					tag = SPR
+					NOT = {
+						has_idea = spirit_of_bozo_spain
+					}
 				}
-			}
-			FRA = {
-				army_experience = 125
-				air_experience = 50
-				add_doctrine_cost_reduction = {
-					name = SPA_SCW_comintern_victory
-					cost_reduction = 0.5
-					uses = 2
-					category = land_doctrine
+				SOV = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_comintern_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
 				}
-				add_war_support = 0.125
-			}
-			ENG = {
-				army_experience = 125
-				air_experience = 50
-				add_doctrine_cost_reduction = {
-					name = SPA_SCW_comintern_victory
-					cost_reduction = 0.5
-					uses = 2
-					category = land_doctrine
+				FRA = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_comintern_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
+					add_war_support = 0.125
+				}
+				ENG = {
+					army_experience = 125
+					air_experience = 50
+					add_doctrine_cost_reduction = {
+						name = SPA_SCW_comintern_victory
+						cost_reduction = 0.5
+						uses = 2
+						category = land_doctrine
+					}
 				}
 			}
 			# good effect
