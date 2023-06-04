@@ -9651,6 +9651,26 @@ operations = {
 
 }
 
+political_actions = {
+	assasinate_trotsky ={
+
+		days_remove = 220
+
+        allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+            has_global_flag = NO_ASIA
+			has_completed_focus = SOV_behead_the_snake
+		}
+
+		remove_effect = {
+			SOV_kill_trotsky_effect = yes
+		}
+	}	
+}
+
 # political_actions = {
 
 # 	demand_tribute_from_new_communist_china = {
