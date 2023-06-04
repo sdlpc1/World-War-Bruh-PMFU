@@ -15,6 +15,7 @@ host_decisions = {
 
 		complete_effect = {
 			# hidden_effect = {
+				set_global_flag = SCW_ended_by_host
 				every_other_country = {
 					limit = { original_tag = SPR }
 					add_timed_idea = {

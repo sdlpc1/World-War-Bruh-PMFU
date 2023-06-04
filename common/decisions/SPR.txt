@@ -73,9 +73,8 @@ operations = {
 		complete_effect = {
 			if = {
 				limit = {
-					tag = SPR
 					NOT = {
-						has_idea = spirit_of_bozo_spain
+						has_global_flag = SCW_ended_by_host
 					}
 				}
 				ITA = {
@@ -185,9 +184,8 @@ operations = {
 		complete_effect = {
 			if = {
 				limit = {
-					tag = SPR
 					NOT = {
-						has_idea = spirit_of_bozo_spain
+						has_global_flag = SCW_ended_by_host
 					}
 				}
 				SOV = {
