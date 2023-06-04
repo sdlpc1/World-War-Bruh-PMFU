@@ -9652,23 +9652,23 @@ operations = {
 }
 
 political_actions = {
-	assasinate_trotsky ={
+	# assasinate_trotsky ={
 
-		days_remove = 220
+	# 	days_remove = 220
 
-        allowed = {
-			original_tag = SOV
-		}
+    #     allowed = {
+	# 		original_tag = SOV
+	# 	}
 
-		visible = {
-            has_global_flag = NO_ASIA
-			has_completed_focus = SOV_behead_the_snake
-		}
+	# 	visible = {
+    #         has_global_flag = NO_ASIA
+	# 		has_completed_focus = SOV_behead_the_snake
+	# 	}
 
-		remove_effect = {
-			SOV_kill_trotsky_effect = yes
-		}
-	}	
+	# 	remove_effect = {
+	# 		SOV_kill_trotsky_effect = yes
+	# 	}
+	# }	
 }
 
 # political_actions = {
