@@ -51,16 +51,8 @@ foreign_politics = {
 		}
 
 		available = {
-			MEX = { has_war = yes }
-			BRA = {is_ai = yes}
-			OR = {
-				ENG = {
-					has_war_with = JAP
-				}
-				USA = {
-					has_war_with = GER
-				}
-			}
+			date > 1939.1.1
+			BRA = { is_ai = yes }
 		}
 
 		ai_will_do = {

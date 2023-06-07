@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_leader trickster expert_improviser }
+			traits={ cavalry_leader combined_arms_expert trickster expert_improviser }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -317,7 +317,7 @@ characters={
 				has_completed_focus = MON_spirit_of_genghis
 			}
 			traits  = {
-				army_cavalry_3 
+				army_CombinedArms_3
 			}
 			cost = 150
 			ai_will_do = {

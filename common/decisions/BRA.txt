@@ -6,12 +6,8 @@ operations = {
         }
 
         available = {
-            MEX = {is_ai = YES}
-            BRA = { has_war = yes }
-            OR = {
-                ENG = { has_war_with = JAP }
-                USA = { has_war_with = GER }
-            }
+            date > 1939.1.1
+			MEX = { is_ai = yes }
         }
 
         ai_will_do = {

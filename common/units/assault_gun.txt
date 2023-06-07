@@ -79,13 +79,13 @@ sub_units = {
 			attack = -2.0
 		}
 		fort = {
-			attack = 0.5
+			attack = 0.6
 		}
 		urban = {
-			attack = 0.15
+			attack = 0.2
 		}
 		dense_urban = {
-			attack = 0.35
+			attack = 0.4
 		}
 		town = {
 			attack = 0.05
@@ -169,16 +169,16 @@ sub_units = {
 			attack = -2.0
 		}
 		fort = {
-			attack = 0.70
+			attack = 0.6
 		}
 		urban = {
-			attack = 0.3
+			attack = 0.2
 		}
 		dense_urban = {
-			attack = 0.65
+			attack = 0.4
 		}
 		town = {
-			attack = 0.15
+			attack = 0.05
 		}
 	}
 
@@ -260,16 +260,16 @@ sub_units = {
 			attack = -2.0
 		}
 		fort = {
-			attack = 0.9
+			attack = 0.6
 		}
 		urban = {
-			attack = 0.4
+			attack = 0.2
 		}
 		dense_urban = {
-			attack = 0.95
+			attack = 0.4
 		}
 		town = {
-			attack = 0.2
+			attack = 0.05
 		}
 	}
 }
