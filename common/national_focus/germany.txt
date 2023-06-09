@@ -4432,7 +4432,7 @@ focus_tree = {
 							}
 							is_on_continent = europe
 						}
-						add_compliance = 15
+						add_compliance = 30
 					}
 				}
 			}

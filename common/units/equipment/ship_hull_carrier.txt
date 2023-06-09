@@ -109,7 +109,7 @@ equipments = {
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
 
-		build_cost_ic = 2450
+		build_cost_ic = 2400
 		resources = {
 			steel = 20
 			chromium = 10
@@ -117,7 +117,7 @@ equipments = {
 
 		manpower = 4500
 
-		naval_supremacy_factor = 2.4
+		naval_supremacy_factor = 2.5
 	}
 
 	ship_hull_carrier_1 = {
@@ -240,7 +240,7 @@ equipments = {
 
 
 
-		build_cost_ic = 3250
+		build_cost_ic = 2800
 		resources = {
 			steel = 20
 			chromium = 10
@@ -331,10 +331,10 @@ equipments = {
 		naval_speed = 34
 
 
-		build_cost_ic = 12000
+		build_cost_ic = 7000
 		resources = {
-			steel = 20
-			chromium = 20
+			steel = 50
+			chromium = 25
 		}
 		manpower = 8000
 	}
@@ -377,7 +377,7 @@ equipments = {
 		naval_speed = 24
 
 
-		build_cost_ic = 2700
+		build_cost_ic = 2400
 		resources = {
 			steel = 20
 			chromium = 10
@@ -417,10 +417,11 @@ equipments = {
 		max_strength = 125
 
 		reliability = 0.65
-		naval_speed = 22
-		build_cost_ic = 2700
+		naval_speed = 28
+		build_cost_ic = 2100
 		resources = {
-			steel = 3
+			steel = 15
+			chromium = 5
 		}
 		manpower = 1000
 	}

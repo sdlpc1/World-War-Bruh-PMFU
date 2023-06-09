@@ -60,7 +60,7 @@ equipments = {
 					ship_light_battery
 				}
 			}
-			rear_1_custom_slot = mid_1_custom_slot
+			rear_1_custom_slot = mid_1_custom_slot			
 		}
 		
 		module_count_limit = {
@@ -170,7 +170,7 @@ equipments = {
 
 
 		reliability = 0.85
-		naval_range = 1800
+		naval_range = 1750
 		max_strength = 40
 		build_cost_ic = 550
 		resources = {
@@ -239,7 +239,7 @@ equipments = {
 		surface_detection = 20
 		surface_visibility = 10
 		reliability = 0.90
-		naval_range = 2000
+		naval_range = 2250
 		max_strength = 50
 		build_cost_ic = 600
 		manpower = 400
@@ -305,7 +305,7 @@ equipments = {
 
 
 		surface_detection = 20
-		reliability = 0.92
+		reliability = 0.95
 		naval_range = 2500
 		max_strength = 60
 		build_cost_ic = 650

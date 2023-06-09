@@ -1,5 +1,29 @@
 on_actions = {
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = navy_cap
+						option = ENABLED
+					}
+				}
+				HMP_check_fleet_size = yes 
+			}
+		}
+	}
    on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = navy_cap
+						option = ENABLED
+					}
+				}
+				SWE = { HMP_startup_on_actions = yes }
+			}
+		}
 		effect = {
 			# every_country = { 
 			# 	limit = { tag = GER }

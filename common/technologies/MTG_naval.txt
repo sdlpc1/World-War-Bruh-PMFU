@@ -491,7 +491,7 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 1943
+		start_year = 1944
 
 		path = {
 			leads_to_tech = modern_sonar
@@ -1087,7 +1087,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 12 }
+			position = {  x = 0 y = 14 }
 		}
 
 		ai_will_do = {
@@ -1132,7 +1132,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 18 }
+			position = {  x = 0 y = 20 }
 		}
 
 		ai_will_do = {

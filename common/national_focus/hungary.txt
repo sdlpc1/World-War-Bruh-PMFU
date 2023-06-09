@@ -667,7 +667,7 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			num_of_factories > 60
+			# num_of_factories > 60
 		}
 
 		cancel_if_invalid = yes
@@ -689,7 +689,7 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			num_of_factories > 80
+			# num_of_factories > 80
 		}
 
 		cancel_if_invalid = yes

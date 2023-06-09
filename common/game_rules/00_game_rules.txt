@@ -22,6 +22,23 @@
 # }
 
 # TFB CUSTOM RULES
+
+navy_cap = {
+	name = "RULE_NAVY_CAP"
+	group = "RULE_GROUP_TFB"
+	icon = "GFX_airwing_carrier_icon"
+	default = {
+		name = "ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_OPTION_NAVY_CAP_ENABLED_DESC"
+	}
+	option = {
+		name = "DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_OPTION_NAVY_CAP_DISABLED_DESC"
+	}
+}
+
 allow_china_waves = {
 	name = "RULE_CHINA_WAVES"
 	group = "RULE_GROUP_TFB"
@@ -83,12 +100,12 @@ free_templates = {
 	name = "RULE_FREE_TEMPLATES"
 	group = "RULE_GROUP_TFB"
 	icon = ""
-	default = {
+	option = {
 		name = "DISABLED"
 		text = "RULE_OPTION_DISABLED"
 		desc = "RULE_FREE_TEMPLATES_DISABLED_DESC"
 	}
-	option = {
+	default = {
 		name = "ENABLED"
 		text = "RULE_OPTION_ENABLED"
 		desc = "RULE_FREE_TEMPLATES_ENABLED_DESC"

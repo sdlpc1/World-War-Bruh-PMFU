@@ -23,7 +23,7 @@ weather_rain_heavy = { # on Region
 	naval_detection = -0.2
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -1.0
+	carrier_traffic = -0.75
 	naval_strike = -0.4
 	air_accidents = 0.3
 	air_bombing_targetting = -0.5
@@ -125,12 +125,12 @@ flooded = { # on Province
 }
 
 unplanned_offensive = { # on Province
-	air_cas_present_factor = -0.33
-	ground_attack_factor = -0.5
-	army_speed_factor = -0.5
-	army_attack_factor = -0.40
-	local_org_regain = -0.5
-	org_loss_at_low_org_factor = -0.33
+air_cas_present_factor = -0.33
+ground_attack_factor = -0.5
+army_speed_factor = -0.5
+army_attack_factor = -0.40
+local_org_regain = -0.5
+org_loss_at_low_org_factor = -0.33
 }
 
 night = { # On province. Multiplied by amount of darkness.
@@ -570,7 +570,7 @@ screening_bonus = {
 
 capital_screening_bonus = { 
   naval_retreat_speed = 0.2
-  sortie_efficiency = 0.1
+  sortie_efficiency = 0.15
 }
 
 country_is_at_peace = {
@@ -614,7 +614,7 @@ intel_network_state_level_bonus = {
 
 # modifiers applied to enemy divisions in an intel network
 intel_network_state_level_penalty = {
-	max_planning_factor = -0.2
+	max_planning_factor = -1
 	max_dig_in = -5
 }
 

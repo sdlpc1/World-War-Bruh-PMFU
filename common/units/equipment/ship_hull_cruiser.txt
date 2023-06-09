@@ -116,7 +116,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 15
-		naval_speed = 27
+		naval_speed = 28
 		reliability = 0.80
 		
 		naval_range = 2500
@@ -133,7 +133,7 @@ equipments = {
 		
 		manpower = 600
 
-		naval_supremacy_factor = 2.3
+		naval_supremacy_factor = 2
 	}
 
 	ship_hull_cruiser_1 = {
@@ -155,7 +155,7 @@ equipments = {
 		priority = 1900
 		parent = ship_hull_cruiser_1
 		manpower = 800
-		naval_speed = 30
+		naval_speed = 28
 		reliability = 0.85
 		build_cost_ic = 2100
 		naval_range = 3000
@@ -231,7 +231,7 @@ equipments = {
 		archetype = ship_hull_cruiser
 		priority = 1900
 		parent = ship_hull_cruiser_2
-		naval_speed = 32
+		naval_speed = 30
 		build_cost_ic = 2200
 		reliability = 0.90
 		max_strength = 120
@@ -322,7 +322,7 @@ equipments = {
 		archetype = ship_hull_cruiser
 		priority = 1900
 		parent = ship_hull_cruiser_3
-		naval_speed = 33
+		naval_speed = 30
 		reliability = 0.95
 		manpower = 1400
 		build_cost_ic = 2300
@@ -348,8 +348,8 @@ equipments = {
 					ship_depth_charge
 					ship_torpedo
 					dp_light_battery
-					# ship_light_medium_battery
-					# ship_medium_battery
+					ship_light_medium_battery
+					ship_medium_battery
 				}
 			}
 			
@@ -434,7 +434,7 @@ equipments = {
 		surface_detection = 15
 		sub_detection = 5
 		surface_visibility = 15
-		naval_speed = 25
+		naval_speed = 26
 		reliability = 0.8
 		resources = {
 			#oil = 1
@@ -471,7 +471,7 @@ equipments = {
 		
 		surface_detection = 20
 		sub_detection = 5
-		naval_speed = 30
+		naval_speed = 31
 		reliability = 0.85
 
 		naval_range = 3000
@@ -522,7 +522,7 @@ equipments = {
 		
 		surface_detection = 30
 		sub_detection = 10
-		naval_speed = 33
+		naval_speed = 34
 		reliability = 0.90
 
 		naval_range = 4000
@@ -574,7 +574,7 @@ equipments = {
 		
 		surface_detection = 40
 		sub_detection = 10
-		naval_speed = 35
+		naval_speed = 36
 		reliability = 0.92
 
 		naval_range = 4500
@@ -692,8 +692,8 @@ equipments = {
 		
 		surface_detection = 12
 		sub_detection = 5
-		surface_visibility = 15
-		naval_speed = 29
+		surface_visibility = 14
+		naval_speed = 31
 		reliability = 0.80
 		
 		naval_range = 3000
@@ -743,8 +743,8 @@ equipments = {
 		
 		surface_detection = 15
 		sub_detection = 5
-		surface_visibility = 15
-		naval_speed = 30
+		surface_visibility = 14
+		naval_speed = 32
 		reliability = 0.85
 
 		naval_range = 4000
@@ -793,8 +793,8 @@ equipments = {
 		
 		surface_detection = 25
 		sub_detection = 5
-		surface_visibility = 15
-		naval_speed = 33
+		surface_visibility = 14
+		naval_speed = 35
 		reliability = 0.90
 
 		naval_range = 4500
@@ -844,8 +844,8 @@ equipments = {
 		
 		surface_detection = 40
 		sub_detection = 5
-		surface_visibility = 15
-		naval_speed = 33
+		surface_visibility = 14
+		naval_speed = 35
 		reliability = 0.92
 
 		naval_range = 5000
@@ -1052,8 +1052,8 @@ equipments = {
 		
 		surface_detection = 20
 		sub_detection = 1
-		surface_visibility = 15
-		naval_speed = 30
+		surface_visibility = 14
+		naval_speed = 32
 		reliability = 0.9
 		
 		naval_range = 4000
@@ -1077,11 +1077,11 @@ equipments = {
 		archetype = ship_hull_cruiser
 		priority = 1850
 		manpower = 1800
-		build_cost_ic = 3500
-		naval_speed = 23
-		surface_visibility = 22
+		build_cost_ic = 3000
+		naval_speed = 26
+		surface_visibility = 20
 		naval_range = 7500
-		max_strength = 220
+		max_strength = 200
 		resources = {
 			steel = 20
 		}
@@ -1107,7 +1107,7 @@ equipments = {
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_medium_battery
+					ship_light_medium_battery
 					ship_anti_air
 					#ship_secondaries
 					#ship_dp_secondaries
@@ -1149,9 +1149,9 @@ equipments = {
 		}
 
 		hg_attack = 0
-		naval_speed = 20
+		naval_speed = 22
 		reliability = 0.80
-		surface_visibility = 20
+		surface_visibility = 18
 		naval_range = 1500
 		module_slots = {
 			fixed_ship_battery_slot = {
