@@ -148,7 +148,7 @@ categories =  {
 		sound_type = plains
 
 		units = {
-			attack = -0.75
+			attack = -0.775
 			movement = -0.2
 		}
 		enemy_army_bonus_air_superiority_factor = -0.60
