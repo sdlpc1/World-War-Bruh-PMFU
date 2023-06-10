@@ -7,13 +7,10 @@ on_actions = {
 						rule = navy_cap
 						option = ENABLED
 					}
-					NOT = {
-						OR = {
-							GER = { has_war = yes }
-							ENG = { has_war = yes }
-							USA = { has_war = yes }
-						}
-					}
+					GER = {has_war = no }
+					USA = {has_war = no }
+					ENG = {has_war = no }
+					
 				}
 				HMP_check_fleet_size = yes 
 			}
@@ -28,9 +25,9 @@ on_actions = {
 						option = ENABLED
 					}
 					OR = {
-						GER = { has_war = yes }
-						ENG = { has_war = yes }
-						USA = { has_war = yes }
+						GER = {has_war = yes }
+						USA = {has_war = yes }
+						ENG = {has_war = yes }
 					}
 				}
 				HMP_check_fleet_size = yes 

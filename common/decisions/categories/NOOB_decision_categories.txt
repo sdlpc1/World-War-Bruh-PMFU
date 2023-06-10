@@ -4,5 +4,6 @@ NEW_player_decisions = {
 	icon = generic_propaganda
 
 	visible = {
+		NOT = { has_country_flag = new_player_help_disabled }
 	}
 }

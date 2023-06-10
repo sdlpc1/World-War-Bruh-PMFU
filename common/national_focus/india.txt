@@ -826,7 +826,7 @@ focus_tree = {
 		id = RAJ_indian_gurkhas
 		icon = GFX_focus_RAJ_indian_gurkhas
 		prerequisite = { focus = RAJ_indianisation_of_army }
-		x = -1
+		x = 1
 		y = 2
 		relative_position_id = RAJ_indianisation_of_army
 
@@ -979,7 +979,7 @@ focus_tree = {
 		id = RAJ_lions_of_the_great_war
 		icon = GFX_focus_RAJ_lions_of_the_great_war
 		prerequisite = { focus = RAJ_indianisation_of_army }
-		x = 1
+		x = -1
 		y = 2
 		relative_position_id = RAJ_indianisation_of_army
 
@@ -1108,7 +1108,7 @@ focus_tree = {
 		id = RAJ_red_eagle_division
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = RAJ_british_army_support }
-		x = 1
+		x = -3
 		y = 1
 		relative_position_id = RAJ_british_army_support
 
@@ -1184,9 +1184,9 @@ focus_tree = {
 		id = RAJ_chindits
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = RAJ_red_eagle_division }
-		x = 1
-		y = 2
-		relative_position_id = RAJ_british_army_support
+		x = 0
+		y = 1
+		relative_position_id = RAJ_red_eagle_division
 
 		cost = 5
 
@@ -1243,9 +1243,9 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = RAJ_chindits }
 		prerequisite = { focus = RAJ_indian_gurkhas }
-		x = 1
-		y = 3
-		relative_position_id = RAJ_british_army_support
+		x = -1
+		y = 1
+		relative_position_id = RAJ_chindits
 
 		cost = 5
 
@@ -1284,7 +1284,7 @@ focus_tree = {
 		id = RAJ_the_bangalore_torpedo
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = RAJ_british_army_support }
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = RAJ_british_army_support
 

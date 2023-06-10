@@ -799,7 +799,7 @@ operations = {
 	# 		tag = ENG
 	# 		has_government = democratic
 	# 		has_war_with = GER
-	# 		# ICE = { exists = yes }
+	# 		ICE = { exists = yes }
 	# 	}
 
 	# 	cost = 50
@@ -813,12 +813,17 @@ operations = {
 	# 	visible = {
 	# 		tag = ENG
 	# 		has_war_with = GER
-	# 		# ICE = { exists = yes }
+	# 		ICE = { exists = yes }
 	# 		NOT = { ICE = { is_in_faction_with = ROOT } }
 	# 	}
 		
 	# 	complete_effect = {
 	# 		annex_country = { target = ICE }
+	# 		ENG = {
+	# 			transfer_state = 337
+	# 		}
+	# 		100 = { set_compliance = 80 }
+	# 		337 = { set_compliance = 80 }
 	# 	}
 	# }
 
