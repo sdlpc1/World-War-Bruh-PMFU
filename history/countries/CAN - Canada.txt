@@ -140,6 +140,7 @@ recruit_character = CAN_john_murchie
 recruit_character = CAN_frederick_m_w_harvey
 recruit_character = CAN_percival_john_montague
 recruit_character = CAN_thomas_victor_anderson
+recruit_character = CAN_ronald_okeden_alexander
 
 
 ### VARIANTS ###

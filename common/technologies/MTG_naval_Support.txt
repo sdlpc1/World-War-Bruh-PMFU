@@ -73,7 +73,7 @@ technologies = {
 
 	basic_light_battery = {
 
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1936
 
@@ -114,9 +114,9 @@ technologies = {
 
 	basic_light_shell = {
 		
-		research_cost = 0.5
+		research_cost = 1
 
-		start_year = 1936
+		start_year = 1937
 
 		path = {
 			leads_to_tech = improved_light_battery
@@ -175,7 +175,7 @@ technologies = {
 
 	improved_light_battery = {
 
-		research_cost = 0.5
+		research_cost = 1.5
 
 		start_year = 1939
 
@@ -218,9 +218,9 @@ technologies = {
 
 	improved_light_shell = {
 
-		research_cost = 0.5
+		research_cost = 1
 
-		start_year = 1936
+		start_year = 1941
 
 		path = {
 			leads_to_tech = advanced_light_battery
@@ -273,7 +273,7 @@ technologies = {
 
 	advanced_light_battery = {
 
-		research_cost = 0.5
+		research_cost = 1.5
 
 		start_year = 1942
 
@@ -309,7 +309,7 @@ technologies = {
 
 	basic_medium_battery = {
 
-		research_cost = 0.5
+		research_cost = 1.5
 
 		start_year = 1936
 
@@ -354,9 +354,9 @@ technologies = {
 
 	basic_medium_shell = {
 
-		research_cost = 0.5
+		research_cost = 1
 
-		start_year = 1936
+		start_year = 1937
 
 		path = {
 			leads_to_tech = improved_medium_battery
@@ -392,7 +392,7 @@ technologies = {
 
 	improved_medium_battery = {
 
-		research_cost = 0.5
+		research_cost = 1.5
 
 		start_year = 1939
 
@@ -433,9 +433,9 @@ technologies = {
 
 	improved_medium_shell = {
 
-		research_cost = 0.5
+		research_cost = 1
 
-		start_year = 1936
+		start_year = 1941
 
 		path = {
 			leads_to_tech = advanced_medium_battery
@@ -477,7 +477,7 @@ technologies = {
 
 	advanced_medium_battery = {
 
-		research_cost = 0.5
+		research_cost = 1.5
 
 		start_year = 1942
 
@@ -509,7 +509,7 @@ technologies = {
 
 	basic_heavy_battery = {
 
-		research_cost = 0.5
+		research_cost = 1.5
 
 		start_year = 1936
 
@@ -555,7 +555,7 @@ technologies = {
 	}
 	improved_heavy_battery = {
 
-		research_cost = 0.5
+		research_cost = 1.5
 
 		start_year = 1939
 
@@ -600,7 +600,7 @@ technologies = {
 	}
 	advanced_heavy_battery = {
 
-		research_cost = 0.5
+		research_cost = 1.5
 
 		start_year = 1942
 
@@ -640,9 +640,9 @@ technologies = {
 	}
 	basic_heavy_shell = {
 
-		research_cost = 0.5
+		research_cost = 1
 
-		start_year = 1936
+		start_year = 1937
 
 		path = {
 			leads_to_tech = improved_heavy_battery
@@ -679,9 +679,9 @@ technologies = {
 	}
 	improved_heavy_shell = {
 
-		research_cost = 0.5
+		research_cost = 1
 
-		start_year = 1936
+		start_year = 1941
 
 		path = {
 			leads_to_tech = advanced_heavy_battery
@@ -718,7 +718,7 @@ technologies = {
 
 	basic_dp_light_battery = {
 
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1938
 
@@ -763,9 +763,9 @@ technologies = {
 
 	improved_dp_light_battery = {
 
-		research_cost = 1
+		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1940
 
 		enable_equipment_modules = {
 			dp_light_battery_2
@@ -808,9 +808,9 @@ technologies = {
 
 	advanced_dp_light_battery = {
 
-		research_cost = 1
+		research_cost = 1.5
 
-		start_year = 1936
+		start_year = 1942
 
 		enable_equipment_modules = {
 			dp_light_battery_3
@@ -849,7 +849,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1936
+		start_year = 1942
 
 		enable_equipment_modules = {
 			dp_ship_medium_1

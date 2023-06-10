@@ -258,13 +258,14 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
-			creator = "MEX"
+			type = train_equipment_1
+			creator = "MEX" 
 		}
 		requested_factories = 1
-		progress = 0.20
-		efficiency = 100
+		progress = 0.3
+		efficiency = 50
 	}
+
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -274,6 +275,7 @@ instant_effect = {
 		progress = 0.20
 		efficiency = 100
 	}
+
 	add_equipment_production = {
 		equipment = {
 			type = squad_equipment_0
@@ -283,15 +285,27 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-	# add_equipment_production = {
-	# 	equipment = {
-	# 		type = small_plane_cas_airframe_0
-	# 		creator = "MEX" 
-	# 	}
-	# 	requested_factories = 1
-	# 	progress = 0.20
-	# 	efficiency = 100
-	# }
+
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "MEX" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "MEX"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 100
+	}
+
 	add_equipment_production = {
 		equipment = {
 			type = convoy_1
@@ -300,14 +314,5 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.20
 		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = train_equipment_1
-			creator = "MEX" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
 	}
 }

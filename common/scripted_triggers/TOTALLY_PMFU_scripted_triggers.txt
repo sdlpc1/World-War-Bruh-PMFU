@@ -29,3 +29,39 @@ is_playable_country = {
 	}
 }
 
+british_coastline = {
+	OR = {
+		state = 123
+		state = 127
+		state = 126
+		state = 125
+		state = 129
+		state = 130
+		state = 131
+		state = 121
+		state = 136
+		state = 120
+		state = 133
+		state = 132
+		state = 122
+		state = 338
+		state = 119
+		state = 113
+		state = 134
+		state = 135
+	}
+}
+
+the_axis = {
+	OR = { 
+		original_tag = GER
+		original_tag = ITA
+		original_tag = SPR
+		original_tag = VIC
+		original_tag = FIN
+		original_tag = ROM
+		original_tag = HUN
+		original_tag = YUG
+		original_tag = BUL
+	}
+}

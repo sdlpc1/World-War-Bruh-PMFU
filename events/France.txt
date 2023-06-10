@@ -257,6 +257,20 @@ country_event = {
 				}
 			}
 		}
+		450 = {
+			set_building_level = {
+				type = air_base
+				level = 20
+				instant_build = yes
+			}
+		}
+		446 = {
+			set_building_level = {
+				type = air_base
+				level = 20
+				instant_build = yes
+			}
+		}
 		SPR = {
 			# COMINTERN
 			send_embargo = SOV

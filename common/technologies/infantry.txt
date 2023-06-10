@@ -1,4 +1,4 @@
-technologies = {
+technologies = { 
 	
 	@1918 = 0
 	@1936 = 2

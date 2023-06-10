@@ -103,7 +103,6 @@ if = {
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "GER_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			photo_reconnaisance = 1
@@ -117,6 +116,8 @@ if = {
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
 		}
+		# set_air_oob = "GER_1936_air_bba"
+		set_air_oob = "GER_1936_AIR_NEW"
 	else = {
 		set_air_oob = "GER_1936_air_legacy"
 		set_technology = {

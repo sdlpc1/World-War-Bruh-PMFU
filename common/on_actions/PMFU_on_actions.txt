@@ -402,4 +402,88 @@ on_actions = {
 			}
 		}
 	}
+
+	on_naval_invasion = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						british_coastline = yes
+					}
+					OR = {
+						ALL = {
+							has_game_rule = {
+								rule = sealion_auto_tp
+								option = ENABLED
+							}
+							118 = {
+								CONTROLLER = {
+									tag = ENG
+									is_in_faction_with = ENG
+								}
+							}
+							446 = {
+								CONTROLLER = {
+									tag = ENG
+									is_in_faction_with = ENG
+								}
+							}
+						}
+						has_global_flag = NO_ASIA
+					}
+				}
+				teleport_armies = {
+					limit = { 
+						the_axis = yes  
+					}
+					to_state = FROM 
+				}
+				PREV = { 
+					transfer_state_to = ENG
+				} 	
+			}
+		}
+	}
+
+	on_paradrop = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						british_coastline = yes
+					}
+					OR = {
+						ALL = {
+							has_game_rule = {
+								rule = sealion_auto_tp
+								option = ENABLED
+							}
+							118 = {
+								CONTROLLER = {
+									tag = ENG
+									is_in_faction_with = ENG
+								}
+							}
+							446 = {
+								CONTROLLER = {
+									tag = ENG
+									is_in_faction_with = ENG
+								}
+							}
+						}
+						has_global_flag = NO_ASIA
+					}
+				}
+				teleport_armies = {
+					limit = { 
+						the_axis = yes  
+					}
+					to_state = FROM 
+				}
+				PREV = { 
+					transfer_state_to = ENG
+				} 	
+			}
+		}
+	}
 }

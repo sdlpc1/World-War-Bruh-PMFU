@@ -135,7 +135,7 @@ org_loss_at_low_org_factor = -0.33
 
 night = { # On province. Multiplied by amount of darkness.
 	naval_hit_chance = -0.25
-	carrier_traffic = -1.0
+	carrier_traffic = -0.75 
 	air_bombing_targetting = -0.5
 	naval_retreat_speed = 0.1
 }
@@ -570,7 +570,7 @@ screening_bonus = {
 
 capital_screening_bonus = { 
   naval_retreat_speed = 0.2
-  sortie_efficiency = 0.15
+  sortie_efficiency = 0.3
 }
 
 country_is_at_peace = {

@@ -655,6 +655,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
 	}
 	SpriteType = {
+		name = "GFX_improved_heavy_tank_chassis_upgrade_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
+	}
+	SpriteType = {
 		name = "GFX_ger_heavy_tank_chassis_p6_b_medium"
 		texturefile = "gfx/interface/technologies/tanks/ger/ger_p6_b_hull.dds"
 	}

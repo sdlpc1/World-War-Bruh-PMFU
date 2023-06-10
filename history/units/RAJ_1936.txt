@@ -214,31 +214,34 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
-			creator = "RAJ"
-		}
-		requested_factories = 1
-		progress = 0.12
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = squad_equipment_0
+			type = train_equipment_1
 			creator = "RAJ" 
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 100
+		efficiency = 50
 	}
+
 	add_equipment_production = {
 		equipment = {
-			type = horse_equipment_0
+			type = artillery_equipment_1
 			creator = "RAJ" 
 		}
 		requested_factories = 1
-		progress = 0.3
-		efficiency = 100
+		progress = 0.1
+		efficiency = 50
 	}
+
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "RAJ" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -248,6 +251,17 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 100
 	}
+
+	add_equipment_production = {
+		equipment = {
+			type = squad_equipment_0
+			creator = "RAJ" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+
 	add_equipment_production = {
 		equipment = {
 			type = sf_equipment_0
@@ -257,13 +271,24 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 100
 	}
+
 	add_equipment_production = {
 		equipment = {
-			type = train_equipment_1
+			type = horse_equipment_0
 			creator = "RAJ" 
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 50
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "RAJ"
+		}
+		requested_factories = 1
+		progress = 0.12
+		efficiency = 100
 	}
 }

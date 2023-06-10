@@ -35,7 +35,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				intelligence_agency_defense = 5
+				intelligence_agency_defense = 10
 			}
 		}
 

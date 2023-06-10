@@ -422,4 +422,28 @@ NEW_player_decisions = {
 			FROM = {news_event = { id = newPlayer.15 }}
 		}
 	}
+
+	explain_fleet_command_limit = {
+		icon = generic_propaganda
+
+		allowed = {
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = { country_event = { id = startingevent.29 } }
+		}
+	}
 }

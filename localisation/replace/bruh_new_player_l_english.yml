@@ -68,3 +68,5 @@
   explain_free_fra:0 "Free France"
   newPlayer.15.t:0 "Free France"
   newPlayer.15.d:0 "Based on your army path you picked as regular France, this will determine which army path you may go down for free as Free France. Note that going Democratic or Conservative will prevent you from reaching your army path until January of 1940."
+ 
+  explain_fleet_command_limit:0 "Fleet Command Limit"

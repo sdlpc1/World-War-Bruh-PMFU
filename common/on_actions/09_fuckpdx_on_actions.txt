@@ -7,12 +7,37 @@ on_actions = {
 						rule = navy_cap
 						option = ENABLED
 					}
+					NOT = {
+						OR = {
+							GER = { has_war = yes }
+							ENG = { has_war = yes }
+							USA = { has_war = yes }
+						}
+					}
 				}
 				HMP_check_fleet_size = yes 
 			}
 		}
 	}
-   on_startup = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = navy_cap
+						option = ENABLED
+					}
+					OR = {
+						GER = { has_war = yes }
+						ENG = { has_war = yes }
+						USA = { has_war = yes }
+					}
+				}
+				HMP_check_fleet_size = yes 
+			}
+		}
+	}
+   	on_startup = {
 		effect = {
 			if = {
 				limit = {
@@ -91,6 +116,11 @@ on_actions = {
 			# 		id = startingevent.1001
 			# 	}
 			# }
+			every_country = { 
+				country_event = { 
+					id = startingevent.29
+				}
+			}
 		}
 
 		effect = {

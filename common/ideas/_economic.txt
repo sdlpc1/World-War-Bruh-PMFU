@@ -440,8 +440,8 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
-				civilian_intel_to_others = 30.0
-				navy_intel_to_others = 15.0
+				civilian_intel_to_others = 15.0
+				navy_intel_to_others = 10.0
 			}
 			
 			cancel_if_invalid = no
@@ -506,8 +506,8 @@ ideas = {
 				industrial_capacity_dockyard = 0.10
 				production_speed_buildings_factor = 0.10
 				research_speed_factor = 0.10
-				civilian_intel_to_others = 20.0
-				navy_intel_to_others = 10.0
+				civilian_intel_to_others = 10.0
+				navy_intel_to_others = 6.0
 			}
 			
 			default = yes
@@ -582,8 +582,8 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 				production_speed_buildings_factor = 0.05
 				research_speed_factor = 0.05
-				civilian_intel_to_others = 10.0
-				navy_intel_to_others = 5
+				civilian_intel_to_others = 5.0
+				navy_intel_to_others = 3
 			}
 			
 			cancel_if_invalid = no

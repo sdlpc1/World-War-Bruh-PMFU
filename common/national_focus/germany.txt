@@ -1541,7 +1541,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_luft
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -1586,7 +1586,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_luft
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1675,7 +1675,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_tactical_air_effort
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 0.1
 		}
@@ -1726,6 +1726,13 @@ focus_tree = {
 					country_event = { id = germany.78 days = 1 }
 				}
 			}
+			64 = {
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1736,7 +1743,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_luft_2
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}

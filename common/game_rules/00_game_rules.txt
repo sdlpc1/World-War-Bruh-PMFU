@@ -96,6 +96,22 @@ fatherless_spirit = {
 	}
 }
 
+sealion_auto_tp = {
+	name = "RULE_SEALION_AUTO_TP"
+	group = "RULE_GROUP_TFB"
+	icon = ""
+	default = {
+		name = "ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_SEALION_AUTO_TP_ENABLED_DESC"
+	}
+	option = {
+		name = "DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_SEALION_AUTO_TP_DISABLED_DESC"
+	}
+}
+
 free_templates = {
 	name = "RULE_FREE_TEMPLATES"
 	group = "RULE_GROUP_TFB"

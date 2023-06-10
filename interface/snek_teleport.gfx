@@ -1,5 +1,18 @@
 spriteTypes = {	
 
+	### TANK SPRITE ###
+	SpriteType = {
+		name = "GFX_generic_heavy_tank_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/generic_heavy_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_heavy_tank_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/generic_heavy_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_heavy_tank_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/generic_heavy_tank_chassis_3.dds"
+	}
 	### TRAITS ###
 	spriteType = {
 		name = "GFX_trait_five_terrain_penalty_reduction"
