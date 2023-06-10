@@ -6570,7 +6570,7 @@ leader_traits = {
 				naval_range = -0.25 naval_speed = 0.2
 			}
 			screen_ship = {
-				naval_range = -0.25 naval_speed = 0.2
+				naval_range = -0.25 naval_speed = 0.1
 			}
 		}
 		
