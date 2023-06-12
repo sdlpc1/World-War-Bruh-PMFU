@@ -6116,10 +6116,10 @@ focus_tree = {
 				picture = "GFX_portrait_ger_felix_steiner"
 				traits = {brilliant_strategist trickster trait_engineer panzer_leader ranger panzer_expert}
 				skill=6
-				attack_skill=10
+				attack_skill=8
 				defense_skill=6
-				planning_skill=7
-				logistics_skill=9
+				planning_skill=6
+				logistics_skill=7
 			}
 			
 		   add_timed_idea = {idea = GER_steiner_idea days = 14 }

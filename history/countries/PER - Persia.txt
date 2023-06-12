@@ -15,6 +15,9 @@ set_technology = {
 add_ideas  = {
 	stupid_ai
 	peace_training
+	neutrality_idea
+	neutrality_idea2 
+	free_trade
 }
 
 # MP_garrison_division_standard = yes

@@ -6019,7 +6019,7 @@ leader_traits = {
 	dive_bomber = {
 		sprite = 14
 		equipment_bonus = {
-			medium_plane_airframe = {
+			small_plane_cas_airframe = {
 				instant = yes
 				air_ground_attack = 0.1 
 			}

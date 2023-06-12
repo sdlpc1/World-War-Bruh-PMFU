@@ -286,6 +286,7 @@
   SOV_winter_offensive:0 "Winter Offensive"
   SOV_uranus:0 "Operation Uranus"
   SOV_bagration:0 "Operation Bagration"
+  SOV_no_wargoal_before_august_41:0 "No Wargoal before August 1941"
 
   #### DESIGNER ####
   kharkiv:0 "Versatile Tank Desginer"

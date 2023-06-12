@@ -20,7 +20,7 @@ equipment_modules = {
 			build_cost_ic = 90	
 		}
 		multiply_stats = {
-			naval_speed = -0.01
+			naval_speed = -0.02
 		}
 		add_average_stats = {
 			lg_armor_piercing = 1
@@ -48,7 +48,7 @@ equipment_modules = {
 			
 		}
 		multiply_stats = {
-			naval_speed = -0.02
+			naval_speed = -0.04
 		}
 		add_average_stats = {
 			lg_armor_piercing = 2
@@ -84,7 +84,7 @@ equipment_modules = {
 			lg_armor_piercing = 3
 		}
 		multiply_stats = {
-			naval_speed = -0.03
+			naval_speed = -0.06
 		}
 		can_convert_from = {
 			module_category = ship_light_battery
@@ -115,7 +115,7 @@ equipment_modules = {
 			steel = 4
 		}
 		multiply_stats = {
-			naval_speed = -0.04
+			naval_speed = -0.08
 		}
 		add_average_stats = {
 			lg_armor_piercing = 4
@@ -145,7 +145,7 @@ equipment_modules = {
 			build_cost_ic = 120
 		}
 		multiply_stats = {
-			naval_speed = -0.01
+			naval_speed = -0.04
 		}
 		build_cost_resources = {
 			steel = 1
@@ -173,7 +173,7 @@ equipment_modules = {
 			build_cost_ic = 150
 		}
 		multiply_stats = {
-			naval_speed = -0.02
+			naval_speed = -0.08
 		}
 		build_cost_resources = {
 			steel = 2
@@ -206,7 +206,7 @@ equipment_modules = {
 			build_cost_ic = 180
 		}
 		multiply_stats = {
-			naval_speed = -0.3
+			naval_speed = -0.12
 		}
 		build_cost_resources = {
 			steel = 3
@@ -2143,7 +2143,7 @@ equipment_modules = {
 			build_cost_ic = 90
 		}
 		multiply_stats = {
-			naval_speed = -0.01
+			naval_speed = -0.03
 		}
 		build_cost_resources = {
 			steel = 0
@@ -2164,7 +2164,7 @@ equipment_modules = {
 			build_cost_ic = 120
 		}
 		multiply_stats = {
-			naval_speed = -0.02
+			naval_speed = -0.06
 		}
 		build_cost_resources = {
 			steel = 0
@@ -2198,7 +2198,7 @@ equipment_modules = {
 			naval_torpedo_hit_chance_factor = 0.015
 		}
 		multiply_stats = {
-			naval_speed = -0.03	
+			naval_speed = -0.09
 		}
 		dismantle_cost_ic = 60
 
@@ -2222,7 +2222,7 @@ equipment_modules = {
 			naval_torpedo_hit_chance_factor = 0.02
 		}
 		multiply_stats = {
-			naval_speed = -0.04	
+			naval_speed = -0.12
 		}
 		dismantle_cost_ic = 60
 

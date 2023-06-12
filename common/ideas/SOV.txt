@@ -2556,9 +2556,13 @@ ideas = {
 			picture = man_five_year_plan_industry
 			
 			modifier = {
-				production_speed_arms_factory_factor = 0.35
+				production_speed_arms_factory_factor = 0.40
 				political_power_gain = -0.1
 				production_speed_bunker_factor = -0.25
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.025
 			}
 		}
 
@@ -4373,6 +4377,26 @@ ideas = {
 
 
 	hidden_ideas = {
+
+		SOV_no_wargoal_before_august_41 = {
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				# date > 1936.02.1
+				date > 1941.08.01
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				enemy_justify_war_goal_time = 1000
+			}
+		}
 
 		SOV_allow_mongolian_trade = {		
 			removal_cost = -1

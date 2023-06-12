@@ -5477,10 +5477,11 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_game_rule = {
-				rule = italian_costal_forts_focus
-				option = ENABLED
-			}
+			# has_game_rule = {
+			# 	rule = italian_costal_forts_focus
+			# 	option = ENABLED
+			# }
+			always = no
 		}
        
 		completion_reward = {

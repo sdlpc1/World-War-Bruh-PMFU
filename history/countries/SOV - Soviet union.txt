@@ -841,6 +841,7 @@ add_ideas = {
 	volunteer_minimum_major
 	peace_training
 	no_grinding
+	SOV_no_wargoal_before_august_41
 }
 
 1939.1.1 = {

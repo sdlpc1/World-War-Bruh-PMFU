@@ -300,6 +300,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_light_battery
 					ship_medium_battery
+					ship_anti_air
 				}
 			}
 			rear_1_custom_slot = {
@@ -307,6 +308,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_light_battery
 					ship_medium_battery
+					ship_anti_air
 				}
 			}
 			rear_2_custom_slot = {
@@ -314,6 +316,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_light_battery
 					ship_medium_battery
+					ship_anti_air
 				}
 			}
 		}

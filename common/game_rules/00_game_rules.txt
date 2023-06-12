@@ -293,36 +293,36 @@ horst_host_country = {
 	}
 }
 
-italian_costal_forts_focus = {
-	name = "RULE_ITALIAN_COSTAL_FORTS_FOCUS"
-	group = "RULE_GROUP_TFB"
-	icon = ""
-	default = {
-		name = "DISABLED"
-		text = "RULE_OPTION_DISABLED"
-		desc = "RULE_ITALIAN_COSTAL_FORTS_FOCUS_DISABLED_DESC"
-	}
-	option = {
-		name = "ENABLED"
-		text = "RULE_OPTION_ENABLED"
-		desc = "RULE_ITALIAN_COSTAL_FORTS_FOCUS_ENABLED_DESC"
-	}
-}
+# italian_costal_forts_focus = {
+# 	name = "RULE_ITALIAN_COSTAL_FORTS_FOCUS"
+# 	group = "RULE_GROUP_TFB"
+# 	icon = ""
+# 	default = {
+# 		name = "DISABLED"
+# 		text = "RULE_OPTION_DISABLED"
+# 		desc = "RULE_ITALIAN_COSTAL_FORTS_FOCUS_DISABLED_DESC"
+# 	}
+# 	option = {
+# 		name = "ENABLED"
+# 		text = "RULE_OPTION_ENABLED"
+# 		desc = "RULE_ITALIAN_COSTAL_FORTS_FOCUS_ENABLED_DESC"
+# 	}
+# }
 
-ussr_war_focus_only = {
-	name = "RULE_USSR_WAR_FOCUS_ONLY"
-	group = "RULE_GROUP_TFB"
-	default = {
-		name = "DISABLED"
-		text = "RULE_USSR_WAR_FOCUS_ONLY_DISABLED"
-		desc = "RULE_USSR_WAR_FOCUS_ONLY_DISABLED_DESC"
-	}
-	option = {
-		name = "ENABLED"
-		text = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED"
-		desc = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED_DESC"
-	}
-}
+# ussr_war_focus_only = {
+# 	name = "RULE_USSR_WAR_FOCUS_ONLY"
+# 	group = "RULE_GROUP_TFB"
+# 	default = {
+# 		name = "DISABLED"
+# 		text = "RULE_USSR_WAR_FOCUS_ONLY_DISABLED"
+# 		desc = "RULE_USSR_WAR_FOCUS_ONLY_DISABLED_DESC"
+# 	}
+# 	option = {
+# 		name = "ENABLED"
+# 		text = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED"
+# 		desc = "RULE_USSR_WAR_FOCUS_ONLY_ENABLED_DESC"
+# 	}
+# }
 
 # FOREIGN POLICY
 
