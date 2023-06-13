@@ -1199,7 +1199,7 @@ add_ideas = {
 }
 
 
-set_convoys = 350
+set_convoys = 550
 
 set_politics = {
 	ruling_party = communism
