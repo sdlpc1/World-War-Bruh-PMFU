@@ -124,6 +124,8 @@
   FRA_expand_intelligence_idea:0 "Spy Agency Investments"
   FRA_expand_intelligence_idea2:0 "Resistance Networks"
   FRA_expand_intelligence_idea3:0 "French Sabotage"
+  FRA_quick_army_mobilization:0 "Armed Forces Mobilization"
+  FRA_accelerated_production_reorganization:0 "Reorganization of Production"
 
   #### EVENTS ####
   france.500.t:0 "Terrain Specialization"

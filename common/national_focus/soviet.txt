@@ -3582,9 +3582,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#Kamenev
 			if = {
 				limit = {
@@ -3594,9 +3594,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#Smirnov
 			if = {
 				limit = {
@@ -3606,9 +3606,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 
 			#NOT-SO-HISTORICAL
 			#Sokolnikov
@@ -3620,9 +3620,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#Shlyapnikov
 			if = {
 				limit = {
@@ -3632,9 +3632,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			
 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
 			hidden_effect = {
@@ -3855,9 +3855,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#NOT-SO-HISTORICAL
 			#Smilga
 			if = {
@@ -3868,9 +3868,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#Preobrazhensky
 			if = {
 				limit = {
@@ -3880,9 +3880,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#Ryutin
 			if = {
 				limit = {
@@ -3892,9 +3892,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#Ustryalov
 			if = {
 				limit = {
@@ -4032,9 +4032,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#NOT-SO-HISTORICAL
 			#Yegorov
 			# if = {
@@ -4134,9 +4134,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#Rykov
 			if = {
 				limit = {
@@ -4146,9 +4146,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#NOT-SO-HISTORICAL
 			#Tomsky
 			if = {
@@ -4159,9 +4159,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 			#Litvinov
 			if = {
 				limit = {
@@ -4171,9 +4171,9 @@ focus_tree = {
 					set_character_flag = SOV_targeted_for_purge_flag
 				}
 			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
+			# else = {
+			# 	SOV_add_random_character_to_purge_targets_effect = yes
+			# }
 
 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
 			hidden_effect = {
@@ -4719,10 +4719,14 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
+			declare_war_on = {
 				target = JAP
+				type = annex_everything
 			}
+			# create_wargoal = {
+			# 	type = puppet_wargoal_focus
+			# 	target = JAP
+			# }
 		}
 	}
 	
@@ -5377,18 +5381,26 @@ focus_tree = {
 			# 	target = GER
 			# 	type = annex_everything
 			# }
-			SOV = {
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = FIN
-				}
+			declare_war_on = {
+				target = FIN
+				type = annex_everything
 			}
-			SOV = {
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = GER
-				}
+			declare_war_on = {
+				target = GER
+				type = annex_everything
 			}
+			# SOV = {
+			# 	create_wargoal = {
+			# 		type = puppet_wargoal_focus
+			# 		target = FIN
+			# 	}
+			# }
+			# SOV = {
+			# 	create_wargoal = {
+			# 		type = puppet_wargoal_focus
+			# 		target = GER
+			# 	}
+			# }
 		}
 	}
 

@@ -3511,12 +3511,12 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 5 }
+			add_offsite_building = { type = industrial_complex level = 15 }
 			ENG = {
-				add_offsite_building = { type = industrial_complex level = 5 }
+				add_offsite_building = { type = industrial_complex level = 15 }
 			}
 			FRA = {
-				add_offsite_building = { type = industrial_complex level = 5 }
+				add_offsite_building = { type = industrial_complex level = 15 }
 			}
 		}
 	}
@@ -3525,7 +3525,7 @@ focus_tree = {
 		id = USA_japan_first
 		icon = GFX_USA_the_island_hopping_campaign
 		prerequisite = { focus = USA_casablanca_conference }
-		mutually_exclusive = { focus = USA_germany_first }
+		# mutually_exclusive = { focus = USA_germany_first }
 		x = -1
 		y = 1
 		relative_position_id = USA_casablanca_conference
@@ -3535,6 +3535,22 @@ focus_tree = {
 		available = {
 			has_war_with = JAP
 			has_war_with = GER
+			if = {
+				limit = {
+					has_country_flag = USA_war_plan_cooldown
+				}
+				has_country_flag = {
+					flag = USA_war_plan_cooldown
+					days > 365
+				}
+				custom_trigger_tooltip = {
+					tooltip = USA_war_plan_cooldown_tt
+					has_country_flag = {
+						flag = USA_war_plan_cooldown
+						days > 365
+					}
+				}
+			}
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
@@ -3542,6 +3558,7 @@ focus_tree = {
 				idea = USA_japan_first_idea
 				days = 730
 			}
+			set_country_flag = USA_war_plan_cooldown
 		}
 	}
 	
@@ -3574,7 +3591,7 @@ focus_tree = {
 		id = USA_germany_first
 		icon = GFX_USA_fight_fascist_with_fire
 		prerequisite = { focus = USA_casablanca_conference }
-		mutually_exclusive = { focus = USA_japan_first }
+		# mutually_exclusive = { focus = USA_japan_first }
 		x = 1
 		y = 1
 		relative_position_id = USA_casablanca_conference
@@ -3584,6 +3601,22 @@ focus_tree = {
 		available = {
 			has_war_with = JAP
 			has_war_with = GER
+			if = {
+				limit = {
+					has_country_flag = USA_war_plan_cooldown
+				}
+				has_country_flag = {
+					flag = USA_war_plan_cooldown
+					days > 365
+				}
+				custom_trigger_tooltip = {
+					tooltip = USA_war_plan_cooldown_tt
+					has_country_flag = {
+						flag = USA_war_plan_cooldown
+						days > 365
+					}
+				}
+			}
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
@@ -3591,6 +3624,7 @@ focus_tree = {
 				idea = USA_germany_first_idea
 				days = 730
 			}
+			set_country_flag = USA_war_plan_cooldown
 		}
 	}
 	

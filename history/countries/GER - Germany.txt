@@ -9,6 +9,8 @@ create_intelligence_agency = {
     name = "Abwehr"
 }
 
+set_country_flag=fuel_system_enabled
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

@@ -1967,8 +1967,38 @@ SOV_semyon_timoshenko={
 	  ###  #  # #    #   #   #  #    #### #       #### #  #  # #   #   #  #  # ###   #  
 	  #    #  # #    #   #   #  #  # #  # #       #  # #  #  # #   #    # #  # #  #   # 
 	  #     ##  ### ###  #  ###  ##  #  # ###     #  # ###    #   ### ##   ##  #  # ##  
-  
-  
+	
+	  SOV_arno_andreyev = {
+		name = "Arno Andreyev"
+		portraits = {
+			army = { small = GFX_idea_martial_valin }
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = arno_andreyev
+			allowed = {
+				original_tag = SOV
+			}
+			
+			visible = {
+				NOT = {
+					has_character_flag = SOV_character_purged_flag 
+				}
+			}
+			available = {
+				if = {
+					limit = { 
+						has_government = communism
+					}
+				}
+			}
+			traits = {
+				state_planner 
+			}
+		}
+	}
+	
 	  SOV_mikhail_kalinin = {
 		  name = SOV_mikhail_kalinin
 		  portraits = {

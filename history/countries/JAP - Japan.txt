@@ -24,6 +24,8 @@ add_ideas = {
 	no_grinding
 }
 
+set_country_flag=fuel_system_enabled
+
 create_intelligence_agency = {
     name = "G-2 Department"
 }

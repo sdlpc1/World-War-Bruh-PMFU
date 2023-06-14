@@ -91,6 +91,8 @@
 
   ### COSMETIC ###
   YUG_croatia:0 "Independent State of Croatia"
+  YUG_croatia_DEF:0 "Croatia"
+  YUG_croatia_ADJ:0 "Croatian"
 
   ### TOOLTIP ###
   general_vinko_zganec_tt:0 "§OVinko Žganec§! §Ybecomes a skill 4 Field Marshal with 6 attack, 3 defense, 4 planning, 5 logistics, and Hill Fighter, Ranger, Reckless and Panzer Leader§!"

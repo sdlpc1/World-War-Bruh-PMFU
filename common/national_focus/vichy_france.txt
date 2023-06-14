@@ -798,6 +798,20 @@ focus_tree = {
             GER = {
 				country_event = generic.2
 			}
+            hidden_effect = {
+                every_country = {
+                    limit = {
+                        OR = {
+                            tag = USA
+                            tag = BRA
+                            tag = MEX
+                            tag = ENG
+                            is_in_faction_with = ENG
+                        }
+                    }
+                    news_event = vichy.4
+                }
+            }
         }
     }
 
@@ -1418,6 +1432,21 @@ focus_tree = {
             GER = {
                 country_event = vichy.2
             }
+            hidden_effect = {
+                every_country = {
+                    limit = {
+                        OR = {
+                            tag = USA
+                            tag = BRA
+                            tag = MEX
+                            tag = ENG
+                            is_in_faction_with = ENG
+                        }
+                    }
+                    news_event = vichy.4
+                }
+            }
+            custom_effect_tooltip = vic_puppeted_by_ger_tt
             # 100pp
             # unlocks decision to gain some french states reducing independence from germany
         }

@@ -120,3 +120,19 @@ country_event = {
 		name = vichy.3.b
 	}
 }
+
+
+news_event = {
+	id = vichy.4
+	title = vichy.4.t
+	desc = vichy.4.d
+	picture = GFX_news_event_003
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = vichy.4.a
+	}
+}

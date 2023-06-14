@@ -2168,3 +2168,19 @@ news_event = {
 		add_political_power = -1
 	}
 }
+
+add_namespace = horsthelp
+country_event = {   
+	id = horsthelp.1
+	title = horsthelp.1.t
+	desc = horsthelp.1.d
+
+	picture = GFX_report_event_physics_lab_01 
+
+	is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+		name =  horsthelp.1.a	
+	}
+}

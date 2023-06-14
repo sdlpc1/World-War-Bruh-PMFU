@@ -1008,35 +1008,35 @@ SOV_check_for_a_new_purge_effect = { #Useless now. Leaving it just in case
 SOV_manage_a_regular_purge_effect = { # Phase 2: Set the Area to be purged (admin, army, navy, airforce), then set the actual targets (people), then trigger event (Phase 3)
 	# Randomly choose an area to purge
 	random_list = {
-		25 = { # ADMINISTRATION
-			modifier = { #Don't repeat last purge please
-				factor = 0.1
-				check_variable = { SOV_last_regular_purge_area = 1 }
-			}
-			modifier = { #Someone is a potential target
-				factor = 2
-				any_character = {
-					is_character_slot = political_advisor
-					has_character_flag = SOV_potential_target_flag
-				}
-			}
-			modifier = { #Yagoda is in the NKVD -> He shall be purged
-				factor = 1.5
-				has_idea = SOV_genrikh_yagoda
-			}
-			modifier = { #There are no purges available
-				factor = 0
-				NOT = {
-					any_character = {
-						is_character_slot = political_advisor
-						SOV_character_can_be_purged = yes
-					}
-				}
-				has_idea = SOV_understaffed_bureaucracy
-				has_idea = SOV_lavrenty_beriya
-			}
-			SOV_pick_regular_purge_administration_type_effect = yes
-		}
+		# 25 = { # ADMINISTRATION
+		# 	modifier = { #Don't repeat last purge please
+		# 		factor = 0.1
+		# 		check_variable = { SOV_last_regular_purge_area = 1 }
+		# 	}
+		# 	modifier = { #Someone is a potential target
+		# 		factor = 2
+		# 		any_character = {
+		# 			is_character_slot = political_advisor
+		# 			has_character_flag = SOV_potential_target_flag
+		# 		}
+		# 	}
+		# 	modifier = { #Yagoda is in the NKVD -> He shall be purged
+		# 		factor = 1.5
+		# 		has_idea = SOV_genrikh_yagoda
+		# 	}
+		# 	modifier = { #There are no purges available
+		# 		factor = 0
+		# 		NOT = {
+		# 			any_character = {
+		# 				is_character_slot = political_advisor
+		# 				SOV_character_can_be_purged = yes
+		# 			}
+		# 		}
+		# 		has_idea = SOV_understaffed_bureaucracy
+		# 		has_idea = SOV_lavrenty_beriya
+		# 	}
+		# 	SOV_pick_regular_purge_administration_type_effect = yes
+		# }
 		25 = { # ARMY
 			modifier = { #Don't repeat last purge please
 				factor = 0.1
@@ -1654,7 +1654,7 @@ SOV_trigger_regular_purge_advisor_accused_effect = {
 				#ROOT = { log = "This is [THIS.GetName] // PREV is [PREV.GetName] // ROOT is [ROOT.GetName] // VAR is [?ROOT.SOV_purged_character_for_loc.GetName]" } #Debug
 			}
 		}
-		#log = "Person is [?SOV_purged_character_for_loc.GetName]" #Debug
+		#log = "Person is [?SOV_purged_character_for_loc.GetName]" #Debug 
 	}
 
 	country_event = NSB_soviet_paranoia_system_events.11 # TRIGGER EVENT

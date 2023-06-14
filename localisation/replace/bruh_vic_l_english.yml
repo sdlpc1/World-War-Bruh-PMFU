@@ -90,9 +90,13 @@
  vichy.3.d:0 "In response to Germany's acceptance of their previous request, Petain has made a new request for the return of Alsace-Lorraine to French control, with Vichy staying as a puppet of Germany. This proposal has proven most unpopular in the inner circles of the Nazi party, as Alsace-Lorraine is believed to be rightful German territory."
  vichy.3.a:0 "Do not disappoint us, we expect great things from the French people."
  vichy.3.b:0 "We have been more than generous enough, Marshal."
+ vichy.4.t:0 "Vichy France Joins the War"
+ vichy.4.d:0 "At 6:00 in the morning, Marshal Philippe Petain has declared that Vichy France has joined the war on the side of the Axis powers"
+ vichy.4.a:0 "Extremely worrying..."
  
  ### TOOLTIP ###
- vic_hand_over_navy_tt:0 "§YHands over Vichy fleet to the German Reich§!"
+ vic_hand_over_navy_tt:0 "§RHANDS OVER THE VICHY FLEET TO THE [GER.GetName]§!"
+ vic_puppeted_by_ger_tt:0 "§RYOU WILL BECOME A PUPPET OF THE [GER.GetName] AND JOIN THE WAR§!"
 
  general_maxime_giroux_tt:0 "§OMaxime Giroux§! §Ybecomes a skill 3 General with 3 attack, 4 defense, 3 planning, 4 logistics, and Armour Officer, Inflexible Strategist, Old Guard, Urban Assault Specialist and Ambusher§!"
 

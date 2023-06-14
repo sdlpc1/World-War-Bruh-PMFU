@@ -402,7 +402,8 @@
   ITA_go_to_war_with_france_event:0 "French War Event Trigger"
   demilitarize_ethiopia:0 "Demilitarize Ethiopia"
   demilitarize_ethiopia_desc:0 "No asia means that there is no Raj to take out Ethiopia, to avoid exploiting this ,Italy will need to get out with its units within 90 days"
-
+  ITA_invade_iran:0 "Pre-emptive invasion of Iran"
+  ITA_invade_iran_desc:0 "Invasione preventiva dell'Iran"
   #### TOOLTIP ####
   ITA_oil_extraction_tt:0 "§GProvides Oil in Libya increasing with each completed search for oil§!"
   ITA_blackshirts_tt:0 "Spawns in §Y10 Blackshirt divisions§! in Rome"

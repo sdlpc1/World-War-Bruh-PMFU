@@ -807,6 +807,16 @@ country_event = {
 				# }
 			}
 		}
+		FRA = {
+			FRA_transfer_central_africa_effect = yes  #central africa switches sides
+			random_list = {
+				50 = { FRA_transfer_western_africa_effect = yes set_capital =  { state = 539 } } #western africa switches sides 
+				50 = { } #western africa remains with Vichy
+			}
+			add_timed_idea = { idea = FRA_quick_army_mobilization days = 60 }
+			add_timed_idea = { idea = FRA_accelerated_production_reorganization days = 30 }
+			transfer_state = 268
+		}
 	}
 	
 }

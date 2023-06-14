@@ -19,6 +19,8 @@ set_rule = {
 	can_send_volunteers = yes
 }
 
+set_country_flag=fuel_system_enabled
+
 create_intelligence_agency = {
     name = "MI6"
 }

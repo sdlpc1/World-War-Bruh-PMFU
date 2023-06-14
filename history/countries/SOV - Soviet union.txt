@@ -148,6 +148,7 @@ recruit_character = SOV_nikolai_berzarin
 recruit_character = SOV_alexander_gorbatov
 # recruit_character = SOV_andrei_grechko
 recruit_character = SOV_vasily_chuikov
+recruit_character = SOV_arno_andreyev
 
 # recruit_character = SOV_vitaly_primakov
 #Not available at game start
@@ -182,6 +183,8 @@ if = {
 	# recruit_character = SOV_anton_denikin
 }
 
+set_country_flag=fuel_system_enabled
+
 set_variable = { SOV_RG_division_cap = 0 }
 set_variable = { SOV_RG_cap_increase = 2 }
 set_variable = { SOV_RG_cap_decrease = -2 }
@@ -190,6 +193,36 @@ set_variable = { SOV_RG_cap_increase_light_double = 6 }
 set_variable = { SOV_RG_cap_increase_heavy_double = 2 }
 
 #Initialize character flags Part I (aka who's safe)
+SOV_filipp_golikov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_arno_andreyev = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_aleksandr_vasilevsky = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_ivan_konev = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_vasily_kuznetsov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_semyon_timoshenko = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_vasily_chuikov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_konstantin_rokossovsky = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_georgy_zhukov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_nikolai_vatutin = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
 SOV_nikolay_voznesensky = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
@@ -920,7 +953,7 @@ add_ideas = {
 	set_country_flag = SOV_third_moscow_trial_flag
 	set_country_flag = SOV_trial_of_the_generals_flag
 
-	#PURGE ALL THESE PEOPLES
+	#PURGE ALL THESE PEOPLES 
 	SOV_grigory_zinovyev = { SOV_purge_character_effect = yes }
 	SOV_lev_kamenev = { SOV_purge_character_effect = yes }
 	SOV_ivan_smirnov = { SOV_purge_character_effect = yes }
