@@ -466,8 +466,8 @@ BBA_purchase_old_ships_category = {
 	visible_when_empty = no
 }
 
-officer_training = {
-	icon = ger_military_buildup
-	priority = 100
+# officer_training = {
+# 	icon = ger_military_buildup
+# 	priority = 100
 	
-}
+# }

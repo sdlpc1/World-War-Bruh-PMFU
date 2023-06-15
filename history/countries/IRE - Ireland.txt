@@ -18,6 +18,11 @@ set_technology = {
 	basic_train = 1
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 add_ideas = {
 	IRE_ira_1
 	IRE_anglo_trade_war

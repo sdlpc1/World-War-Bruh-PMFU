@@ -13,6 +13,11 @@ set_research_slots = 5
 
 # MP_garrison_division_standard = yes
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 add_ideas = {
 	limited_conscription
 	sisu

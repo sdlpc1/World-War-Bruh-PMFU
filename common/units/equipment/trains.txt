@@ -19,6 +19,9 @@ equipments = {
 		resources = {
 			steel = 10
 		}
+
+		#Space taken in convoy
+		lend_lease_cost = 7
 	}
 	# regular trains
 	train_equipment_1 = {

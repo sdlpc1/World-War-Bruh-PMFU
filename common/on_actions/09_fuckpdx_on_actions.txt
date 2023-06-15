@@ -230,24 +230,54 @@ on_actions = {
 					HOL = { is_ai = yes }
 					FROM = { is_in_faction_with = GER }
 				}
-			# weird island near venezuela
-			ENG = { transfer_state = 695 }
-			695 = { set_compliance = 20 }
-			# suriname
-			ENG = { transfer_state = 309 }
-			309 = { set_compliance = 20 }
+				# weird island near venezuela
+				ENG = { transfer_state = 695 }
+				695 = { set_compliance = 20 }
+				# suriname
+				ENG = { transfer_state = 309 }
+				309 = { set_compliance = 20 }
 
-			# DEI - go to australia
-			AST = { annex_country = { target = INS transfer_troops = yes } }
-			672 = { set_compliance = 20 }
-			334 = { set_compliance = 20 }
-			335 = { set_compliance = 20 }
-			667 = { set_compliance = 20 }
-			673 = { set_compliance = 20 }
-			668 = { set_compliance = 20 }
-			669 = { set_compliance = 20 }
-			738 = { set_compliance = 20 }
+				# DEI - go to australia
+				AST = { annex_country = { target = INS transfer_troops = yes } }
+				672 = { set_compliance = 20 }
+				334 = { set_compliance = 20 }
+				335 = { set_compliance = 20 }
+				667 = { set_compliance = 20 }
+				673 = { set_compliance = 20 }
+				668 = { set_compliance = 20 }
+				669 = { set_compliance = 20 }
+				738 = { set_compliance = 20 }
+
+				# ENG ANNEX
+				ENG = {
+					HOL = {
+						pow_before_annex = yes
+					}
+				}
+				ENG = { annex_country = { target = HOL transfer_troops = yes } }
 			}	
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = BEL
+					FROM = { is_in_faction_with = GER }
+				}
+				GER = {
+					transfer_state = 6
+					transfer_state = 34
+					transfer_state = 8
+				}
+				ENG = { annex_country = { target = BEL transfer_troops = no } }
+				SAF = {
+					transfer_state = 538
+					transfer_state = 718
+					transfer_state = 295
+				}
+			}
 		}
 	}
 

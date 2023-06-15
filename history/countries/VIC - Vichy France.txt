@@ -10,6 +10,11 @@ set_rule = {
 	can_not_declare_war = no
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 # MP_garrison_division_standard = yes
 
 # Starting tech

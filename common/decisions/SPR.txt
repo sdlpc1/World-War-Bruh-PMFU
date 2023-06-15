@@ -68,7 +68,7 @@ operations = {
 		# visible = {
 		# }
 
-		days_mission_timeout  = 180
+		days_mission_timeout  = 210
 		
 		complete_effect = {
 			if = {

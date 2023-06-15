@@ -2773,7 +2773,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 25
@@ -2915,7 +2915,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_integrate_princely_railways
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 25
@@ -3151,6 +3151,37 @@ focus_tree = {
 				}
 				set_state_flag = RAJ_british_rail_investors_IC2
 			}
+		}
+	}
+
+	focus = {
+		id = RAJ_factory_retooling
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = RAJ_british_rail_investors }
+		x = -2
+		y = 2
+		relative_position_id = RAJ_british_rail_investors
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = RAJ_idea_factory_retooling
 		}
 	}
 	

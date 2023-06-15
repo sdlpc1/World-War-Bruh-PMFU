@@ -151,7 +151,8 @@ equipments = {
 		resources = {
 			steel = 10
 		}
-
+		#Space taken in convoy
+		lend_lease_cost = 2
 	}
 
 	# Medium Tank Base Template
@@ -314,7 +315,8 @@ equipments = {
 			tungsten = 10
 			chromium = 10
 		}
-
+		#Space taken in convoy
+		lend_lease_cost = 2.3
 	}
 
 	# Heavy Tank Base Template
@@ -337,7 +339,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_armament_tier_heavy_1
+					# tank_armament_tier_heavy_1
 				}
 			}
 			turret_type_slot = {
@@ -465,7 +467,8 @@ equipments = {
 			tungsten = 20
 			chromium = 15
 		}
-
+		#Space taken in convoy
+		lend_lease_cost = 2.6
 	}
 
 	modern_tank_chassis = {
@@ -611,6 +614,8 @@ equipments = {
 
 		manpower = 2
 
+		#Space taken in convoy
+		lend_lease_cost = 2.9
 	}
 
 	modern_tank_chassis_1 = {
@@ -746,6 +751,8 @@ equipments = {
 
 		manpower = 2
 
+		#Space taken in convoy
+		lend_lease_cost = 3.2
 	}
 
 	super_heavy_tank_chassis_1 = {
@@ -918,6 +925,8 @@ equipments = {
 
 		manpower = 2
 
+		#Space taken in convoy
+		lend_lease_cost = 2.2
 	}
 
 	amphibious_tank_chassis_1 = {

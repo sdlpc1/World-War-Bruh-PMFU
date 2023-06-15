@@ -12,6 +12,11 @@ create_intelligence_agency = {
     name = "Office of Strategic Services"
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"

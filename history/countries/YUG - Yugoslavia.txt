@@ -13,6 +13,11 @@ if = {
 
 set_research_slots = 3
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 if = {
 	limit = {
 		has_dlc = "Death or Dishonor"

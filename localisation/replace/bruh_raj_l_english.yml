@@ -29,6 +29,7 @@
   RAJ_indian_labourers_desc:0 "No other nation on earth has access to the vast manpower we can draw upon. Some may call it slavery, but in matters of national defense, some compromises must be made."
   RAJ_burma_rail:0 "Burma Rail"
   RAJ_burma_rail_desc:0 "In order to better supply out troops in Burma we must ensure we have a rail system taht connects us through the mountains."
+  RAJ_factory_retooling:0 "Factory Retooling"
 
   #### TOOLTIPS ####
   RAJ_create_unit_gurkas_tt:0 "Gain an elite unit of Gurkhas in Delhi, a 30 width §YMountaineer§! unit with §Y12 Mountaineer§! and §Y6 Pack Artillery§! battalions."
@@ -41,6 +42,7 @@
   RAJ_the_sun_never_sets:0 "The Eastern Buffer"
   RAJ_the_sun_never_sets_desc:0 "Bases Mechanic: for every region we still controll we will recieve a bonus\n§YSingapore\nSumatra\nBurma\nMandalay§!" 
   RAJ_indian_labour:0 "Indian Labourers"
+  RAJ_idea_factory_retooling:0 "Factory Retooling"
 
   #### DECISIONS ####
   RAJ_famine_descsion:0 "Bengal Famine"

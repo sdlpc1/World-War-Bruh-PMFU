@@ -8,6 +8,11 @@ SIA = {
 	send_embargo = CHI
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 oob = "SIA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

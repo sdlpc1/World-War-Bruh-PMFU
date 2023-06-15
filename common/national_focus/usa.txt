@@ -2212,99 +2212,18 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = USA_lend_lease_act
-		icon = GFX_USA_lend_lease_act_2
-		x = 2
-		y = 1
-		prerequisite = { focus = USA_wilkies_deal focus = USA_fdr_again }
-		relative_position_id = USA_fdr_again
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			if = {
-				limit = {
-					has_war = yes
-				}
-			}
-			else_if = {
-				limit = {
-					has_war_support > 0.6
-				}
-				congress_low_support_trigger = yes
-			}
-			else_if = {
-				limit = {
-					has_war_support > 0.4
-				}
-				congress_medium_support_trigger = yes
-			}
-			else = {
-				congress_high_support_trigger = yes
-			}
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-		search_filters = {FOCUS_FILTER_USA_CONGRESS}
-		completion_reward = {
-			custom_effect_tooltip = USA_congress_focus_support3_tt
-			if = {
-				limit = { has_completed_focus = USA_neutrality_act }
-				swap_ideas = {
-					remove_idea = USA_neutrality_act
-					add_idea = USA_lend_lease_act_na
-				}
-			}
-			else = {
-				add_ideas = USA_lend_lease_act_dummy #should never get here, just for tooltip purposes
-			}
-			if = {
-				limit = {
-					has_war_support > 0.6
-					has_war = no
-				}
-				USA_congress_small_support = yes
-			}
-			else_if = {
-				limit = {
-					has_war_support > 0.4
-					has_war = no
-				}
-				USA_congress_medium_opposition = yes
-			}
-			else_if = {
-				limit = {
-					has_war_support < 0.4
-					has_war = no
-				}
-				USA_congress_large_opposition = yes
-			}
-			USA_neutrality_level_up = yes
-		}
-	}
 
 	focus = {
 		id = USA_military_construction
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = USA_lend_lease_act }
 
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 0
+		x = 2
 		y = 1
-		relative_position_id = USA_lend_lease_act
+		prerequisite = { focus = USA_wilkies_deal focus = USA_fdr_again }
+		relative_position_id = USA_fdr_again
 		cost = 5
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -2937,7 +2856,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = USA_office_of_scientific_research_and_development
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3175,6 +3094,50 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = USA_lend_lease_act
+		icon = GFX_USA_lend_lease_act_2
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_arsenal_of_democracy focus = USA_public_projects }
+		relative_position_id = USA_arsenal_of_democracy
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				FRA = {
+					has_capitulated = yes
+				}
+				date > 1940.1.1
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_USA_CONGRESS}
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = USA_neutrality_act }
+				swap_ideas = {
+					remove_idea = USA_neutrality_act
+					add_idea = USA_lend_lease_act_na
+				}
+			}
+			else = {
+				add_ideas = USA_lend_lease_act_dummy #should never get here, just for tooltip purposes
+			}
+			USA_neutrality_level_up = yes
 		}
 	}
 

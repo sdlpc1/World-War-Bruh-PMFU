@@ -40,7 +40,26 @@ ideas = {
 	# }
 
 	country = {
-	
+		
+		RAJ_idea_factory_retooling = {
+
+			picture = GER_arbeitsinsatz
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+
 		RAJ_lions_of_the_great_war = {
 
 			picture = GFX_idea_RAJ_lions_of_the_great_war

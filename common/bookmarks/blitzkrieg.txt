@@ -45,7 +45,7 @@ bookmarks = {
 			}
 			focuses = {
 				ENG_raf
-				ENG_britannia_waves
+				ENG_capital_effort
 				ENG_special_air_service
 			}
 		}

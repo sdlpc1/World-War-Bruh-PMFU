@@ -120,9 +120,13 @@
  ### COUNTRY NAME ###
  VIC_fascism:0 "Vichy France"
  VIC_fascism_DEF:0 "Vichy France"
+ VIC_fascism_ADJ:0 "Vichy French"
  VIC_neutrality:0 "Vichy France"
  VIC_neutrality_DEF:0 "Vichy France"
+ VIC_neutrality_ADJ:0 "Vichy French"
  VIC_democratic:0 "Vichy France"
  VIC_democratic_DEF:0 "Vichy France"
+ VIC_democratic_ADJ:0 "Vichy French"
  VIC_communism:0 "Vichy France"
  VIC_communsim_DEF:0 "Vichy France"
+ VIC_communsim_ADJ:0 "Vichy French"

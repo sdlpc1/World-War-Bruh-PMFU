@@ -17,6 +17,11 @@ MAN = {
 	send_embargo = CHI
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 set_research_slots = 5
 
 if = {

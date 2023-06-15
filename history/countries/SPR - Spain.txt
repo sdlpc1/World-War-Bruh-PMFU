@@ -12,6 +12,11 @@ if = {
 
 # MP_garrison_division_standard = yes
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 if = {
 	limit = {
 		NOT = {

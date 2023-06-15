@@ -2802,7 +2802,7 @@ equipment_modules = {
 			build_cost_ic = 1.5		
 		}
 		multiply_stats = {
-			maximum_speed = -0.05
+			# maximum_speed = -0.05
 		}
 	}
 }

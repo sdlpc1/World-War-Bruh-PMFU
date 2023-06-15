@@ -12,7 +12,7 @@ state={
 	
 	history={
 		set_state_flag = ENG_controls
-		owner = IRQ
+		owner = ENG
 		victory_points = {
 			2097 15
 		}
@@ -21,7 +21,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 5
-			arms_factory = 2
+			arms_factory = 4
 			industrial_complex = 3
 			air_base = 4
 			2089 = {

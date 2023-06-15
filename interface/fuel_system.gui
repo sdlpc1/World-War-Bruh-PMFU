@@ -117,13 +117,30 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "entry_name2"
-			position = { x = 170 y = 15 }
+			position = { x = 170 y = 11 }
 			text = "Our Minimum Fuel:"
 			font = "hoi_18mbs"
 			format = left
 			maxWidth = 410
 			multiline = no
 			alwaystransparent = yes
+		}
+		iconType = {
+			name = "fuel_icon"
+			spriteType = "GFX_fuel"
+			position = { x = 174 y = 28 }
+			scale = 0.75
+		}
+		instantTextboxType = { 	     
+			name = "entry2_name" 
+			position = { x = 194 y = 29 }
+			text = "country_fuel_info_tt"  
+			font = "hoi_16mbs" 
+			format = left
+			maxWidth = 410
+			multiline = no
+			alwaystransparent = yes
+			  
 		}
 		buttonType = {
 			name = "enable_send_fuel_root"
@@ -262,7 +279,7 @@ guiTypes = {
 
 		instantTextboxType = { 	     
 			name = "entry2_name" 
-			position = { x = 175 y = 13 }
+			position = { x = 175 y = 12 }
 			text = "country_fuel_info_tt"  
 			font = "hoi_16mbs" 
 			format = left

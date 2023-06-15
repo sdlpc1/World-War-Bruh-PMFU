@@ -2,6 +2,14 @@ on_actions = {
 	on_startup = {
 		effect = {
 			every_country = {
+				add_dynamic_modifier = { modifier = academy_over_time }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
 				limit = { has_country_flag = fuel_system_enabled }
 				add_to_array = { GLOBAL.fuel_system_manager = THIS.id }
 			}
@@ -233,7 +241,7 @@ on_actions = {
 	on_weekly_VEN = {
 		effect={
 			# sealion_core_defense=yes
-			# update_academy_weekly=yes
+			update_academy_weekly=yes
 			# update_sov_major_city_status = yes
 			# set_variable={scaled_weekly_manpower=max_manpower_k}
 			# multiply_variable={scaled_weekly_manpower=0.001}
@@ -696,6 +704,298 @@ on_actions = {
 				subtract_from_temp_variable = { currentfuel = 1 }
 				multiply_temp_variable = { currentfuel = 88 }
 				set_variable = { fuel_bar_fuel = currentfuel }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			GER = {
+				every_country = {
+					limit = {
+						NOT = { tag = GER }
+						OR = {
+							is_in_faction_with = GER
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = SPR
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = FIN
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = ITA
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = VIC
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = HUN
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = ROM
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								tag = BUL
+							}
+							AND = {
+								GER = {
+									tag = GER
+								}
+								if = {
+									limit = {
+										YUG = {
+											is_ai = no
+										}
+									}
+									tag = YUG
+								}
+							}
+						}
+						NOT = {
+							is_in_array = {
+								GER.faction_members_array = THIS.id
+							}
+						}
+					}
+					add_to_array = { GER.faction_members_array = THIS.id }
+				}
+				if = {
+					limit = {
+						any_of_scopes = {
+							array = GER.faction_members_array
+							NOT = {
+								is_in_array = {
+									GLOBAL.fuel_countries = THIS.id
+								}
+							}
+						}
+					}
+					for_each_scope_loop={
+						array = GER.faction_members_array
+						if = {
+							limit = {
+								NOT = {
+									is_in_array = {
+										GLOBAL.fuel_countries = THIS.id
+									}
+								}
+							}
+							add_to_array = { GLOBAL.fuel_countries = THIS.id }
+						}
+					}
+				}
+				set_variable = { send_fuel_enabled = 2 }
+				for_each_scope_loop = {
+					array = GER.faction_members_array
+					set_variable = { send_fuel_enabled = 2 }
+				}
+			}
+			ENG = {
+				every_country = {
+					limit = {
+						NOT = {
+							tag = ENG
+						}
+						OR = {
+							is_in_faction_with = ENG
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = USA 
+							}
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = BRA 
+							}
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = MEX 
+							}
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = HOL 
+							}
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = INS 
+							}
+						}
+						NOT = {
+							is_in_array = {
+								ENG.faction_members_array = THIS.id
+							}
+						}
+					}
+					add_to_array = { ENG.faction_members_array = THIS.id }
+				}
+				if = {
+					limit = {
+						any_of_scopes = {
+							array = ENG.faction_members_array
+							NOT = {
+								is_in_array = {
+									GLOBAL.fuel_countries = THIS.id
+								}
+							}
+						}
+					}
+					for_each_scope_loop = {
+						array = ENG.faction_members_array
+						if = {
+							limit = {
+								NOT = {
+									is_in_array = {
+										GLOBAL.fuel_countries = THIS.id
+									}
+								}
+							}
+							add_to_array = { GLOBAL.fuel_countries = THIS.id }
+						}
+					}
+				}
+				set_variable = { send_fuel_enabled = 2 }
+				for_each_scope_loop = {
+					array = ENG.faction_members_array
+					set_variable = { send_fuel_enabled = 2 }
+				}
+			}
+			SOV = {
+				every_country = {
+					limit = {
+						NOT = {
+							tag = SOV
+						}
+						OR = {
+							is_in_faction_with = SOV
+							AND = {
+								SOV = {
+									tag = GER
+								}
+								tag = SPR 
+							}
+						}
+						NOT = {
+							is_in_array = {
+								SOV.faction_members_array = THIS.id
+							}
+						}
+					}
+					add_to_array = { SOV.faction_members_array = THIS.id }
+				}
+				if = {
+					limit = {
+						any_of_scopes = {
+							array = SOV.faction_members_array
+							NOT = {
+								is_in_array = {
+									GLOBAL.fuel_countries = THIS.id
+								}
+							}
+						}
+					}
+					for_each_scope_loop = {
+						array = SOV.faction_members_array
+						if = {
+							limit = {
+								NOT = {
+									is_in_array = {
+										GLOBAL.fuel_countries = THIS.id
+									}
+								}
+							}
+							add_to_array = { GLOBAL.fuel_countries = THIS.id }
+						}
+					}
+				}
+				set_variable = { send_fuel_enabled = 2 }
+				for_each_scope_loop = {
+					array = SOV.faction_members_array
+					set_variable = { send_fuel_enabled = 2 }
+				}
+			}
+			JAP = {
+				every_country = {
+					limit = {
+						NOT = {
+							tag = JAP
+						}
+						OR = {
+							is_in_faction_with = JAP
+							AND = {
+								JAP = {
+									tag = GER
+								}
+								tag = SPR 
+							}
+						}
+						NOT = {
+							is_in_array = {
+								JAP.faction_members_array = THIS.id
+							}
+						}
+					}
+					add_to_array = { JAP.faction_members_array = THIS.id }
+				}
+				if = {
+					limit = {
+						any_of_scopes = {
+							array = JAP.faction_members_array
+							NOT = {
+								is_in_array = {
+									GLOBAL.fuel_countries = THIS.id
+								}
+							}
+						}
+					}
+					for_each_scope_loop = {
+						array = JAP.faction_members_array
+						if = {
+							limit = {
+								NOT = {
+									is_in_array = {
+										GLOBAL.fuel_countries = THIS.id
+									}
+								}
+							}
+							add_to_array = { GLOBAL.fuel_countries = THIS.id }
+						}
+					}
+				}
+				set_variable = { send_fuel_enabled = 2 }
+				for_each_scope_loop = {
+					array = JAP.faction_members_array
+					set_variable = { send_fuel_enabled = 2 }
+				}
 			}
 		}
 	}

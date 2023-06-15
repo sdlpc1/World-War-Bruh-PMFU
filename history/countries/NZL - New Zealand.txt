@@ -20,6 +20,11 @@ set_technology = {
 	hq_1 = 1
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 starting_train_buffer = 5
 
 # MP_garrison_division_standard = yes

@@ -21,6 +21,11 @@ create_intelligence_agency = {
     name = "Servizio Informazioni Militare"
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 army_experience = 200
 air_experience = 100
 

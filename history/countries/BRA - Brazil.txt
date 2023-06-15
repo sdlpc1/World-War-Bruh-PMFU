@@ -14,6 +14,10 @@ set_technology = {
 	basic_train = 1
 	
 }
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 set_variable = { allies_poster_center_icon_frame = 1 }
 add_ideas = {
 	BRA_great_depression_1

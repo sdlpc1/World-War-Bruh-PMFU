@@ -11,6 +11,11 @@ create_intelligence_agency = {
 
 set_country_flag=fuel_system_enabled
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

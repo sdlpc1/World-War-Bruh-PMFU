@@ -183,6 +183,11 @@ if = {
 	# recruit_character = SOV_anton_denikin
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 set_country_flag=fuel_system_enabled
 
 set_variable = { SOV_RG_division_cap = 0 }
