@@ -309,7 +309,7 @@
   JAP_usa2:0 "Leave the USA"
   JAP_strike_south_tt:0 "You will recieve a series of events giving you choices on how you want to expand South."
   JAP_strike_west_tt:0 "If you chose to include USA and Phillipines when doing the Strike South Doctine focus, you will declare on them too"
-  JAP_adaptable_armor_designs:0 "Enables §HAdaptable Light Armor Designs§!\n§HLight Tanks and Variants:\n    Jungle§!\n     Attack: §G+10%§!\n      Movement: §G+15%§!\n    §HMountain§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!"
+  JAP_adaptable_armor_designs:0 "Enables §HAdaptable Light Armor Designs§!\n§HLight Tanks and Variants:\n    Jungle§!\n     Attack: §G+5%§!\n      Movement: §G+5%§!\n    §HMountain§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!"
   JAP_war_start_tt:0 "§0Japan can either go in after July 1940, January 1941, or July 1941 based on which post-china branch they pick.§!"
   JAP_early_war_start_tt:0 "\nAfter §YJanuary 1st 1941§!, most of this spirits buffs will go away.§!\n§RExample:§!§!"
   JAP_mid_war_start_tt:0 "\nAfter §YJanuary 1st 1941§!, most of this spirits buffs will go away.§!\n§RExample:§!§!"

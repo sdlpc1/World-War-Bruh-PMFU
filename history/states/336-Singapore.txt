@@ -19,7 +19,7 @@ state={
 		owner = ENG
 
 		victory_points = {
-			12299 10
+			12299 25
 		}
 		victory_points = {
 			7329 1 

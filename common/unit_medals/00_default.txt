@@ -774,7 +774,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_morale_factor = 0.1
+			army_attack_factor = 0.05
 		}
 		
 		one_time_effect = {
@@ -816,8 +816,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_defence_factor = 0.05
-			recon_factor = 0.1
+			army_defence_factor = 0.1   
 		}
 		
 		one_time_effect = {
@@ -838,7 +837,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			experience_loss_factor = -0.25
+			army_strength_factor = 0.1
 		}
 		
 		one_time_effect = {
@@ -861,8 +860,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			supply_consumption_factor = -0.15
-			army_fuel_consumption_factor = -0.15
+			army_attack_factor = 0.05
 		}
 		
 		one_time_effect = {
@@ -883,8 +881,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_morale_factor = 0.1
-			army_defence_factor = 0.05
+			supply_consumption_factor = -0.15
 		}
 		
 		one_time_effect = {
@@ -905,7 +902,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_org_factor = 0.1
+			army_defence_factor = 0.1   
 		}
 		
 		one_time_effect = {
@@ -949,7 +946,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_org_factor = 0.1
+			army_attack_factor = 0.05
 		}
 		
 		one_time_effect = {
@@ -970,7 +967,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_attack_factor = 0.05
+			supply_consumption_factor = -0.15
 		}
 		
 		one_time_effect = {
@@ -991,8 +988,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			armor_factor = 0.1
-			recon_factor = 0.1
+			army_defence_factor = 0.1   
 		}
 		
 		one_time_effect = {
@@ -1013,7 +1009,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			breakthrough_factor = 0.1
+			army_strength_factor = 0.1
 		}
 		
 		one_time_effect = {
@@ -1036,8 +1032,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_defence_factor = 0.05
-			max_dig_in_factor = 0.1
+			army_attack_factor = 0.05
 		}
 		
 		one_time_effect = {
@@ -1059,7 +1054,6 @@ unit_medals = {
 		
 		unit_modifiers = {
 			supply_consumption_factor = -0.15
-			army_morale_factor = 0.1
 		}
 		
 		one_time_effect = {
@@ -1080,7 +1074,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_attack_factor = 0.05
+			army_defence_factor = 0.1   
 		}
 		
 		one_time_effect = {
@@ -1101,8 +1095,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			experience_loss_factor = -0.2
-			army_morale_factor = 0.05
+			army_strength_factor = 0.1
 		}
 		
 		one_time_effect = {

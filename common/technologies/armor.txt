@@ -285,8 +285,8 @@ technologies = {
 
 		category_light_tanks = {
 			jungle = {
-				attack = 0.1
-				movement = 0.15
+				attack = 0.05
+				movement = 0.05
 			}
 			mountain = {
 				attack = 0.05

@@ -12,6 +12,7 @@ set_technology = {
 	tech_recon = 1
 	basic_train = 1
 	hq_1 = 1
+	motorised_infantry = 1
 }
 
 add_ideas = {

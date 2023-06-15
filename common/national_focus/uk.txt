@@ -634,6 +634,32 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = ENG_learn_from_war
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = ENG_army_rearmament }
+		available = { has_army_experience > 50 }
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = ENG_army_rearmament
+		
+		cancel_if_invalid = yes
+		
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			army_experience = -50
+			add_doctrine_cost_reduction = {
+				name = doc_bonus
+				cost_reduction = 0.40
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
 		id = ENG_royal_ordnance
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = ENG_army_rearmament }
@@ -1018,7 +1044,7 @@ focus_tree = {
 		id = ENG_cruiser_tanks2
 		icon = GFX_royal_tank_regiment
 		prerequisite = { focus = ENG_war_office }
-		x = -1
+		x = 2
 		y = 1
 		cost = 5
 		relative_position_id = ENG_war_office
@@ -1061,7 +1087,7 @@ focus_tree = {
 		id = ENG_infantry_tanks2
 		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = ENG_war_office }
-		x = 1
+		x = 0
 		y = 1
 		cost = 5
 		relative_position_id = ENG_war_office
@@ -1079,36 +1105,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ENG_learn_from_war
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = ENG_war_office }
-		available = { has_army_experience > 50 }
-		x = 3
-		y = 1
-		cost = 5
-		relative_position_id = ENG_war_office
-		
-		cancel_if_invalid = yes
-		
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			army_experience = -50
-			add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 0.40
-				uses = 3
-				category = land_doctrine
-			}
-		}
-	}
-	
-	focus = {
 		id = ENG_special_forces
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = ENG_war_office }
-		x = -4
+		x = -2
 		y = 1
 		cost = 5
 		relative_position_id = ENG_war_office
@@ -2366,18 +2366,18 @@ focus_tree = {
 			336 = {
 				add_building_construction = {
 					type = naval_base
-					level = 5
+					level = 7
 					province = 12299
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = air_base
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 				# add_extra_state_shared_building_slots = 8

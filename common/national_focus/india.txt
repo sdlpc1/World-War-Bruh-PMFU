@@ -2036,12 +2036,45 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RAJ_tata_steel
-		icon = GFX_goal_generic_construct_civilian
+		id = RAJ_indian_institute_of_science
+		icon = GFX_focus_research
 		prerequisite = { focus = RAJ_industrial_expansion }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = RAJ_tata_steel
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RAJ_indian_institute_of_science }
+		x = -1
+		y = 1
+		relative_position_id = RAJ_indian_institute_of_science
 
 		cost = 10
 
@@ -2088,10 +2121,10 @@ focus_tree = {
 	focus = {
 		id = RAJ_assam_oil
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = RAJ_industrial_expansion }
+		prerequisite = { focus = RAJ_indian_institute_of_science }
 		x = 1
 		y = 1
-		relative_position_id = RAJ_industrial_expansion
+		relative_position_id = RAJ_indian_institute_of_science
 
 		cost = 10
 
@@ -2124,40 +2157,6 @@ focus_tree = {
 					amount = 300
 				}
 			}
-		}
-	}
-
-	focus = {
-		id = RAJ_indian_institute_of_science
-		icon = GFX_focus_research
-		prerequisite = { focus = RAJ_tata_steel }
-		prerequisite = { focus = RAJ_assam_oil }
-		x = 0
-		y = 2
-		relative_position_id = RAJ_industrial_expansion
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_research_slot = 1
 		}
 	}
 
@@ -3154,36 +3153,36 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RAJ_factory_retooling
-		icon = GFX_goal_generic_production2
-		prerequisite = { focus = RAJ_british_rail_investors }
-		x = -2
-		y = 2
-		relative_position_id = RAJ_british_rail_investors
+	# focus = {
+	# 	id = RAJ_factory_retooling
+	# 	icon = GFX_goal_generic_production2
+	# 	prerequisite = { focus = RAJ_british_rail_investors }
+	# 	x = -2
+	# 	y = 2
+	# 	relative_position_id = RAJ_british_rail_investors
 
-		cost = 3
+	# 	cost = 3
 
-		ai_will_do = {
-			factor = 30
-		}
+	# 	ai_will_do = {
+	# 		factor = 30
+	# 	}
 
-		available = {
+	# 	available = {
 
-		}
+	# 	}
 
-		bypass = {
+	# 	bypass = {
 
-		}
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
 
-		completion_reward = {
-			add_ideas = RAJ_idea_factory_retooling
-		}
-	}
+	# 	completion_reward = {
+	# 		add_ideas = RAJ_idea_factory_retooling
+	# 	}
+	# }
 	
 	focus = {
 		id = RAJ_ishapore_arsenal
@@ -3383,6 +3382,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = RAJ_idea_factory_retooling
 			add_ideas = RAJ_indian_labour
 		}
 	}

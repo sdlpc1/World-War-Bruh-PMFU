@@ -235,6 +235,17 @@ instant_effect = {
 		efficiency = 50
 	}
 
+	add_equipment_production = { 
+		equipment = { 
+			type = motorized_equipment_1 
+			creator = "AST" 
+		} 
+
+		requested_factories = 1 
+		progress = 0.1 
+		efficiency = 50 
+	} 
+
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -259,6 +270,16 @@ instant_effect = {
 		equipment = {
 			type = support_equipment_1
 			creator = "HOL" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_0
+			creator = "AST" 
 		}
 		requested_factories = 1
 		progress = 0.1
