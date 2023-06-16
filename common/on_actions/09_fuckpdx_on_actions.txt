@@ -370,6 +370,11 @@ on_actions = {
 					transfer_state = 803
 					transfer_state = 106
 				}
+				ENG = {
+					YUG = {
+						pow_before_annex = yes
+					}
+				}
 				ENG = { annex_country = { target = YUG transfer_troops = no } }
 			}
 		}
