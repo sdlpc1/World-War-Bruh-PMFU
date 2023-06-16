@@ -526,6 +526,11 @@ equipments = {
 				}
 			}
 		}
+		
+		upgrades = {
+		tank_nsb_Heavy_engine_1_upgrade
+		}
+
 		maximum_speed = 4.5
 		build_cost_ic = 38
 		reliability = 0.75

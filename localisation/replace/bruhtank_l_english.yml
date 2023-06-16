@@ -14,6 +14,7 @@
  tank_nsb_med_armor_3_upgrade:0 "Armor"
  tank_nsb_heavy_armor_1_upgrade:0 "Armor"
  tank_nsb_heavy_armor_2_upgrade:0 "Armor"
+ tank_nsb_Heavy_engine_1_upgrade:0 "Engine"
  tank_nsb_medium_hardness_1_upgrade:0 "Quality"
  p34_upgrade_1_tt:0 "Enables §YArmor§! and §YEngine§! Upgrades for §YPanzer 3/4§!"
  p34_upgrade_2_tt:0 "Enables Further §YArmor§! Upgrades for §Y Improved Panzer 3/4 Chassis§!"
