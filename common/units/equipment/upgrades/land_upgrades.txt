@@ -24,6 +24,7 @@ upgrades = {
 		add_stats = {
 			fuel_consumption = 0.05
 			build_cost_ic = 0.05
+			breakthrough = 2
 		}
 	}
 
@@ -58,7 +59,7 @@ upgrades = {
 		}
 
 		maximum_speed = -0.05
-		reliability = -0.025
+		reliability = 0.025 # was -0.025 before
 		armor_value = 0.075
 		add_stats = {
 			breakthrough = 1.25
@@ -98,7 +99,7 @@ upgrades = {
 		add_stats = {
 			breakthrough = 10
 			armor_value = 15
-			reliability = -0.05
+			reliability = 0.05
 			build_cost_ic = 5
 		}
 	}
@@ -151,7 +152,7 @@ upgrades = {
 		add_stats = {
 			breakthrough = 5
 			armor_value = 7.5
-			reliability = -0.025
+			reliability = 0.025
 			build_cost_ic = 1.5
 		}
 	}
@@ -185,7 +186,8 @@ upgrades = {
 		
 		add_stats = {
 			fuel_consumption = 0.1
-			build_cost_ic = 2
+			build_cost_ic = 1.5
+			breakthrough = 2
 		}
 	}
 	tank_nsb_Heavy_engine_1_upgrade = {
@@ -260,7 +262,7 @@ upgrades = {
 		}
 
 		maximum_speed = -0.025
-		reliability = -0.025
+		reliability = 0.025
 		add_stats = {
 			breakthrough = 5
 			armor_value = 5
@@ -296,7 +298,7 @@ upgrades = {
 		}
 
 		maximum_speed = -0.025
-		reliability = -0.025
+		reliability = 0.025
 		add_stats = {
 			breakthrough = 2.5
 			armor_value = 7.5
@@ -335,7 +337,7 @@ upgrades = {
 		}
 
 		maximum_speed = -0.025
-		reliability = -0.02
+		reliability = 0.02
 		add_stats = {
 			breakthrough = 2.5
 			armor_value = 5
@@ -372,14 +374,14 @@ upgrades = {
 		}
 
 		maximum_speed = -0.02
-		reliability = -0.02
+		reliability = 0.02
 		add_stats = {
 			breakthrough = 2
 			armor_value = 7
 			build_cost_ic = 2.2
-			}
 		}
-
+	}	
+	
 	tank_gun_upgrade = {
 		max_level = 2
 
@@ -493,5 +495,3 @@ upgrades = {
 		ap_attack = 0.05
 	}
 }
-
-	
