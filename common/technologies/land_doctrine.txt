@@ -413,13 +413,13 @@ technologies = {
 			max_strength = 1
 		}
 		motorized = {
-			max_strength = 3
+			max_strength = 2
 		}
 		mechanized = {
-			max_strength = 3
+			max_strength = 2
 		}
 		amphibious_mechanized = {
-			max_strength = 3
+			max_strength = 2
 		}
 		
 		org_loss_when_moving = -0.05
@@ -2129,11 +2129,11 @@ technologies = {
 		max_planning = 0.05
 		category_all_infantry = {
 			max_organisation = 10
-			max_strength = 5
+			max_strength = 6
 		}
 		category_militia= {
 			max_organisation = 5
-			max_strength = 5
+			max_strength = 6
 		}
 
 
@@ -2254,7 +2254,7 @@ technologies = {
 		cas_damage_reduction = 0.15
 		category_all_armor = {
 			default_morale = 0.1
-			max_strength = 1
+			max_strength = 2
 		}
 		
 		mechanized = {

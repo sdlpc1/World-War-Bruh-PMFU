@@ -2780,8 +2780,9 @@ focus_tree = {
 				ahead_reduction = 0.5
 				uses = 1
 				technology = pack_artillery_2
-				technology = heavy_artillery2
-				technology = heavy_artillery3
+				category = heavy_artillery
+				# technology = heavy_artillery2
+				# technology = heavy_artillery3
 			}
 		}
 	}
