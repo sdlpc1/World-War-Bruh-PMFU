@@ -217,7 +217,7 @@ if = {
 	}
 	set_autonomy = {
 		target = MAL
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_annex
 	}
 	set_autonomy = {
 		target = RAJ
@@ -251,7 +251,7 @@ if = {
 	}
 	set_autonomy = {
 		target = IRQ
-		autonomous_state = autonomy_protectorate
+		autonomous_state = autonomy_annex
 		freedom_level = 0.1
 	}
 	else = {
