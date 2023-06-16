@@ -783,6 +783,29 @@ on_actions = {
 			if = {
 				limit = {
 					ROOT = {
+						original_tag = ENG
+						is_in_faction = yes
+						#is_government_in_exile = yes
+					}
+				}
+				if = {
+					limit = {
+						118 = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					119 = { set_state_flag = prevent_auto_flip_after_capitulation }
+				}
+			}
+		}
+	}
+
+	#ROOT is capitulated country, FROM is winner.
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
 						original_tag = BEL
 						is_in_faction = yes
 						#is_government_in_exile = yes

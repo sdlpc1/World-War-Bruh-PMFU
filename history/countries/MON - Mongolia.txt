@@ -69,6 +69,7 @@ recruit_character = MON_dagva
 recruit_character = MON_ganbaatar
 recruit_character = MON_ulanhu
 recruit_character = MON_khan
+recruit_character = MON_throat_singer
 
 add_operation_token = {
 	tag = ENG

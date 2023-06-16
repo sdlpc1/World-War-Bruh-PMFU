@@ -53,7 +53,7 @@ operation_warsaw_uprising = { ### 8 2/40
 	required_tokens = {
 		token_resistance_contacts
 	}
-	risk_chance = 0
+	risk_chance = 0.5
 	experience = 1.5
 	outcome_extra_chance = 0.25
 	outcome_modifiers = { boost_resistance_factor }
