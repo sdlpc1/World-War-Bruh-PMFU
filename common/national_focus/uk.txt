@@ -83,8 +83,8 @@ focus_tree = {
 	focus = {
 		id = ENG_general_rearmament
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = limited_rearmament_focus }
-		x = 1
+		prerequisite = { Focus = ENG_army_rearmament }
+		x = 0
 		y = 1
 		cost = 5
 		
@@ -95,7 +95,7 @@ focus_tree = {
 			}
 		}
 		
-		relative_position_id = limited_rearmament_focus
+		relative_position_id = ENG_army_rearmament
 		continue_if_invalid = yes
 		
 		ai_will_do = {
@@ -349,7 +349,7 @@ focus_tree = {
 		id = ENG_fighter_effort
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = ENG_modernise_the_raf }
-		x = 0
+		x = -1
 		y = 1
 		cost = 5
 		relative_position_id = ENG_modernise_the_raf
@@ -363,36 +363,37 @@ focus_tree = {
 				uses = 1
 				technology = improved_small_airframe
 			}
-			air_experience = 50
-			add_ideas = ENG_fighter_com
+			
+			
 		}
 	}
 	
-	# focus = {
-	# 	id = ENG_fighter_command
-	# 	icon = GFX_fighter_command
-	# 	prerequisite = { focus = ENG_fighter_effort }
-	# 	x = 0
-	# 	y = 2
-	# 	cost = 5
-	# 	relative_position_id = ENG_fighter_effort
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 	}	
-	# 	completion_reward = {
-	# 		air_experience = 50
-	# 		add_ideas = ENG_fighter_com
-	# 	}
-	# }
+	 focus = {
+	
+	 	id = ENG_fighter_command
+	 	icon = GFX_fighter_command
+	 	prerequisite = { focus = ENG_fighter_effort }
+	 	x = 0
+	 	y = 1
+	 	cost = 5
+	 	relative_position_id = ENG_fighter_effort
+	 	ai_will_do = {
+	 		factor = 1
+	 	}	
+	 	completion_reward = {
+	 		air_experience = 50
+	 		add_ideas = ENG_fighter_com
+	 	}
+	 }
 	
 	focus = {
 		id = ENG_bomber_effort
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = ENG_fighter_effort }
+		prerequisite = { focus = ENG_modernise_the_raf }
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = ENG_fighter_effort
+		relative_position_id = ENG_modernise_the_raf
 		ai_will_do = {
 			factor = 1
 		}	
@@ -403,57 +404,62 @@ focus_tree = {
 				uses = 2
 				category = cat_strategic_bomber
 			}
-			air_experience = 50
-			add_ideas = ENG_bomber_com
-		}
-	}
-	
-	# focus = {
-	# 	id = ENG_bomber_command
-	# 	icon = GFX_bomber_command
-	# 	prerequisite = { focus = ENG_bomber_effort }
-	# 	x = 0
-	# 	y = 2
-	# 	cost = 5
-	# 	relative_position_id = ENG_bomber_effort
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 	}	
-	# 	completion_reward = {
-	# 		air_experience = 50
-	# 		add_ideas = ENG_bomber_com
-	# 	}
-	# }
-
-	focus = {
-		id = ENG_naval_effort
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = ENG_fighter_effort }
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = ENG_fighter_effort
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
 			add_tech_bonus = {
 				name = bomb_bonus
 				bonus = 0.50
 				uses = 2
 				category = tactical_bomber
 			}
-			air_experience = 50
-			add_ideas = ENG_coastal_com
+			
 		}
 	}
+	
+	 focus = {
+	 	id = ENG_bomber_command
+	 	icon = GFX_bomber_command
+	 	prerequisite = { focus = ENG_bomber_effort }
+	 	x = 0
+	 	y = 1
+	 	cost = 5
+	 	relative_position_id = ENG_bomber_effort
+	 	ai_will_do = {
+	 		factor = 1
+	 	}	
+	 	completion_reward = {
+	 		air_experience = 50
+	 		add_ideas = ENG_bomber_com
+			add_ideas = ENG_coastal_com
+	 	}
+	 }
+
+#	focus = {
+#		id = ENG_naval_effort
+#		prerequisite = { focus = ENG_fighter_effort }
+#		x = -1
+#		y = 1
+#		cost = 5
+#		relative_position_id = ENG_fighter_effort
+#		ai_will_do = {
+#			factor = 1
+#		}	
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = bomb_bonus
+#				bonus = 0.50
+#				uses = 2
+#				category = tactical_bomber
+#			}
+#			air_experience = 50
+#			add_ideas = ENG_coastal_com
+#		}
+#	}
 	
 	focus = {
 		id = ENG_raf
 		icon = GFX_the_raf
-		prerequisite = { focus = ENG_naval_effort }
-		prerequisite = { focus = ENG_bomber_effort }
-		x = 0
+		prerequisite = { focus = ENG_bomber_command }
+		prerequisite = { focus = ENG_fighter_command }
+		x = 1
 		y = 2
 		cost = 5
 		relative_position_id = ENG_fighter_effort
@@ -473,7 +479,7 @@ focus_tree = {
 	focus = {
 		id = ENG_radar
 		icon = GFX_goal_generic_radar
-		x = 0
+		x = 1
 		y = 1
 		prerequisite = { focus = ENG_raf }
 		relative_position_id = ENG_raf
@@ -636,12 +642,13 @@ focus_tree = {
 	focus = {
 		id = ENG_learn_from_war
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = ENG_army_rearmament }
+		prerequisite = { focus = ENG_nuffield_aero }
+		prerequisite = { focus = ENG_filler }
 		available = { has_army_experience > 50 }
 		x = 0
-		y = 1
+		y = 4
 		cost = 2
-		relative_position_id = ENG_army_rearmament
+		relative_position_id = ENG_royal_ordnance
 		
 		cancel_if_invalid = yes
 		
@@ -1026,7 +1033,8 @@ focus_tree = {
 		id = ENG_war_office
 		icon = GFX_focus_eng_the_sun_never_sets
 		prerequisite = { focus = ENG_cruiser_tanks focus = ENG_infantry_tanks }
-		prerequisite = { focus = ENG_nuffield_aero focus = ENG_filler }
+		prerequisite = { focus = ENG_learn_from_war }
+		
 		available = { has_completed_focus = ENG_war_cabinet }
 		x = -1
 		y = 1
