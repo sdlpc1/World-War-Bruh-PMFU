@@ -283,9 +283,9 @@ SOV_boris_shaposhnikov={
 			allowed  = {
 				original_tag  = SOV 
 			}
-			research_bonus  = {
-				land_doctrine  = 0.100
-			}
+			# research_bonus  = {
+			# 	land_doctrine  = 0.100
+			# }
 			traits  = {
 				military_theorist 
 			}

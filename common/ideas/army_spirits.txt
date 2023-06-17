@@ -1,7 +1,7 @@
 ideas = {
 	academy_spirit = {
 		
-		professional_officer_corps_spirit = {
+		professional_officer_corps_spirit = { 
 			ledger = army
 			modifier = {
 				experience_gain_army = 0.05
@@ -90,20 +90,6 @@ ideas = {
 			}
 			ai_will_do = {
 				factor = 0.5
-			}
-		}
-		grand_battleplan_army_spirit = {
-			# visible = { has_tech = trench_warfare }
-			ledger = army
-			modifier = {
-				custom_modifier_tooltip = academy_weekly_special_forces_tooltip_gain
-				custom_modifier_tooltip = academy_weekly_special_forces_tooltip_current
-				# special_forces_no_supply_grace = 168
-				# special_forces_out_of_supply_factor = -0.2
-				# amphibious_invasion_defence = 0.2
-			}
-			ai_will_do = {
-				factor = 1
 			}
 		}
 		state_serves_the_military_spirit = {
@@ -452,8 +438,24 @@ ideas = {
 				tactic_infantry_charge_preferred_weight_factor = 1
 				intel_from_combat_factor = 0.25
 				recon_factor = 0.25
-				special_forces_attack_factor = 0.1
 				# # equipment_capture_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		grand_battleplan_army_spirit = {
+			# visible = { has_tech = trench_warfare }
+			ledger = army
+			modifier = {
+				special_forces_attack_factor = 0.1
+				# custom_modifier_tooltip = academy_weekly_special_forces_tooltip_gain
+				# custom_modifier_tooltip = academy_weekly_special_forces_tooltip_current
+				
+				# special_forces_no_supply_grace = 168
+				# special_forces_out_of_supply_factor = -0.2
+				# amphibious_invasion_defence = 0.2
 			}
 			ai_will_do = {
 				factor = 1

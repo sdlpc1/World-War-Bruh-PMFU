@@ -423,18 +423,18 @@ update_academy_weekly ={
 		# 	}
 		# 	add_to_variable = { academy_experience_gain = 0.005 }	
 		# }
-		if = {
-			limit = {
-				has_idea = grand_battleplan_army_spirit
-			}
-			add_to_variable = { academy_special_forces_capacity = 0.5 }
-			if = {
-				limit = {
-					is_major = yes
-				}
-				add_to_variable = { academy_special_forces_capacity = 0.5 }
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		has_idea = grand_battleplan_army_spirit
+		# 	}
+		# 	add_to_variable = { academy_special_forces_capacity = 0.5 }
+		# 	if = {
+		# 		limit = {
+		# 			is_major = yes
+		# 		}
+		# 		add_to_variable = { academy_special_forces_capacity = 0.5 }
+		# 	}
+		# }
 	}
 	set_variable = { academy_weekly_training_speed_total = modifier@training_time_army_factor }
 	add_to_variable = { academy_weekly_training_speed_total = academy_weekly_training_speed }

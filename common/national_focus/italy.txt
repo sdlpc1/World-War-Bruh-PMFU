@@ -162,7 +162,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			GER = { country_event = italy.500 }
+			# GER = { country_event = italy.500 }
+			give_resource_rights = { receiver = ITA state = 66 }
+			ITA = { add_timed_idea = { idea = ITA_german_payments days = 180 } }
+			set_global_flag = ITA_ger_steel
 		}
 	}
 	
@@ -430,7 +433,22 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			ROM = { country_event = italy.501 }
+			# ROM = { country_event = italy.501 } 
+			give_resource_rights = { receiver = ITA state = 81 }
+			ITA = { add_timed_idea = { idea = ITA_romanian_payments days = 180 } }
+			46 = {
+				add_resource = {
+					type = oil
+					amount = -200
+				}
+			}
+			81 = {
+				add_resource = {
+					type = oil
+					amount = 200
+				}
+			}
+			set_global_flag = ITA_rom_oil
 		}
 	}
 	

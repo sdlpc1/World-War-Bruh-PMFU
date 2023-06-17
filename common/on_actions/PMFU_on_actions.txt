@@ -762,14 +762,7 @@ on_actions = {
 								GER = {
 									tag = GER
 								}
-								if = {
-									limit = {
-										YUG = {
-											is_ai = no
-										}
-									}
-									tag = YUG
-								}
+								tag = YUG
 							}
 						}
 						NOT = {

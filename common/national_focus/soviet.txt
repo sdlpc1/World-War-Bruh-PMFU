@@ -4825,9 +4825,12 @@ focus_tree = {
 			USA = {
 				set_country_flag = { flag = USA_baltic_window days = 60 value = 1 }
 			}
-			EST = { country_event = { id = baltic.1 days = 1 } }
-			LAT = { country_event = { id = baltic.2 days = 1 } }
-			LIT = { country_event = { id = baltic.3 days = 1 } }
+			# EST = { country_event = { id = baltic.1 days = 1 } } 
+			# LAT = { country_event = { id = baltic.2 days = 1 } }
+			# LIT = { country_event = { id = baltic.3 days = 1 } }
+			annex_country = { target = EST }
+			annex_country = { target = LAT }
+			annex_country = { target = LIT }
 		}
 	}
 
@@ -4889,7 +4892,37 @@ focus_tree = {
 			add_state_claim = 78
 			add_state_claim = 766
 			add_state_claim = 80
-			ROM = { country_event = { id = romania.1 days = 1 } }
+			# ROM = { country_event = { id = romania.1 days = 1 } }
+			ROM = {
+				set_country_flag = bessarabia_ceded
+				set_country_flag = bessarabia_finished
+				SOV = { #Scoping for tooltip reasons
+					if = { #NSB note: Now this will check for ownership and control so that in edge cases where there might be more than one controller, it won't break.
+						limit = {
+							78 = { is_owned_and_controlled_by = ROM }
+						}
+						transfer_state = 78
+					}
+					if = {
+						limit = {
+							80 = { is_owned_and_controlled_by = ROM }
+						}
+						transfer_state = 80
+					}
+					if = {
+						limit = {
+							766 = { is_owned_and_controlled_by = ROM }
+						}
+						transfer_state = 766
+					}
+				}
+				hidden_effect = {
+					SOV = {
+						country_event = { days = 1 id = news.10 }
+					}
+					news_event = { id = news.199 }
+				}
+			}
 		}
 	}
 	

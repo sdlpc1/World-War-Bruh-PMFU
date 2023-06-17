@@ -1058,7 +1058,7 @@ focus_tree = {
                     # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
                     # 	}
                     # }
-                        traits={ armor_officer inflexible_strategist old_guard urban_assault_specialist ambusher }
+                        traits={ panzer_leader inflexible_strategist old_guard urban_assault_specialist ambusher }
                         skill=3
                         attack_skill=3
                         defense_skill=4
@@ -1168,7 +1168,7 @@ focus_tree = {
                     # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
                     # 	}
                     # }
-                        traits={ armor_officer desert_fox brilliant_strategist trickster }
+                        traits={ panzer_leader desert_fox brilliant_strategist trickster }
                         skill=3
                         attack_skill=4
                         defense_skill=3
@@ -1311,7 +1311,7 @@ focus_tree = {
                     # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
                     # 	}
                     # }
-                        traits={ armor_officer winter_specialist ranger fortress_buster }
+                        traits={ panzer_leader winter_specialist ranger fortress_buster }
                         skill=3
                         attack_skill=3
                         defense_skill=3

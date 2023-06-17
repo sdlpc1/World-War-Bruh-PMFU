@@ -799,7 +799,20 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.2
 			add_threat = 1
-			ROM = { country_event = { id = DOD_hungary.40 } }		
+			if = {
+				limit = {has_idea = HUN_treaty_of_triannon}
+				remove_ideas = HUN_treaty_of_triannon
+			}
+			if = {
+				limit = {has_idea = HUN_treaty_of_triannon_2}
+				remove_ideas = HUN_treaty_of_triannon_2
+			}
+			if = {
+				limit = {has_idea = HUN_treaty_of_triannon_3}
+				remove_ideas = HUN_treaty_of_triannon_3
+			}
+			news_event = { id = news.298 days = 1 }
+			# ROM = { country_event = { id = DOD_hungary.40 } }	
 		}
 	}
 
