@@ -100,6 +100,7 @@
   FIN_capture_t28:0 "Reverse Engineer T-28"
   FIN_capture_bt:0 "Reverse Engineer BTs"
   FIN_capture_t34:0 "Reverse Engineer T-34"
+  FIN_german_pressure:0 "German Pressure to Declare War"
 
   #### TOOLTIP ####
   FIN_revanchism_tt:0 "§RWill be removed once we have reclaimed the land lost in the Winter War§!"

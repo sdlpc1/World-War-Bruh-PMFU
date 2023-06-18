@@ -1377,32 +1377,32 @@ create_equipment_variant = {
 		special_type_slot_3 = secondary_turret_small_cannon
 	}
 }
-create_equipment_variant = {
-	name = "Placeholder TD to fix bug with special templates"
-	type = medium_tank_destroyer_chassissov_medium_tank_chassis_t34_placeholder
-	parent_version = 0
-	modules = {
-		main_armament_slot = tank_medium_td_placeholder
-		turret_type_slot = tank_medium_superstructure
-		suspension_type_slot = tank_bogie_suspension
-		armor_type_slot = tank_welded_armor
-		engine_type_slot = tank_gasoline_engine
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Placeholder SPAA to fix bug with special templates"
-	type = light_tank_aa_chassissov_light_tank_chassis_t26
-	parent_version = 0
-	modules = {
-		main_armament_slot = tank_anti_air_gun_placeholder
-		turret_type_slot = tank_light_turret_open
-		suspension_type_slot = tank_bogie_suspension
-		armor_type_slot = tank_welded_armor
-		engine_type_slot = tank_gasoline_engine
-	}
-	obsolete = yes
-}
+# create_equipment_variant = {
+# 	name = "Placeholder TD to fix bug with special templates"
+# 	type = medium_tank_destroyer_chassissov_medium_tank_chassis_t34_placeholder
+# 	parent_version = 0
+# 	modules = {
+# 		main_armament_slot = tank_medium_td_placeholder
+# 		turret_type_slot = tank_medium_superstructure
+# 		suspension_type_slot = tank_bogie_suspension
+# 		armor_type_slot = tank_welded_armor
+# 		engine_type_slot = tank_gasoline_engine
+# 	}
+# 	obsolete = yes
+# }
+# create_equipment_variant = {
+# 	name = "Placeholder SPAA to fix bug with special templates"
+# 	type = light_tank_aa_chassissov_light_tank_chassis_t26
+# 	parent_version = 0
+# 	modules = {
+# 		main_armament_slot = tank_anti_air_gun_placeholder
+# 		turret_type_slot = tank_light_turret_open
+# 		suspension_type_slot = tank_bogie_suspension
+# 		armor_type_slot = tank_welded_armor
+# 		engine_type_slot = tank_gasoline_engine
+# 	}
+# 	obsolete = yes
+# }
 
 ### VARIANTS ###
 # 1936 Start #

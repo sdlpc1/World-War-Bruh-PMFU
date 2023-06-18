@@ -517,7 +517,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 1 y = @1941 }
 		}
 		
 		categories = {
@@ -659,7 +659,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 1 y = @1941 }
 		}
 		
 		categories = {
@@ -780,7 +780,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 1 y = @1941 }
 		}
 		
 		categories = {
@@ -839,7 +839,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2
-		start_year = 1936
+		start_year = 1940
 		categories = {
 			year_1936
 			cat_special_forces_generic
@@ -847,7 +847,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1936 }
+			position = { x = 1 y = @1941 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -864,7 +864,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1941
 		categories = {
 			year_1939
 			cat_special_forces_generic
@@ -872,7 +872,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 1 y = @1942 }
 		}
 	}
 

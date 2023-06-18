@@ -15,14 +15,14 @@ technologies = {
 			ship_anti_air_1
 			tank_auto_cannon
 			tank_small_gun_1
-			tank_anti_air_gun_placeholder
+			# tank_anti_air_gun_placeholder
 			tank_anti_air_gun_1
 			tank_med_cs_gun_1
 			secondary_turret_small_cannon
 			secondary_turret_howitzer
 			smoke_launchers
 			extra_ammo_storage
-			tank_medium_td_placeholder
+			# tank_medium_td_placeholder
 		}
 		
 		path = {

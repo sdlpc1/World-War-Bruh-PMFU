@@ -2082,8 +2082,8 @@ operations = {
 					days = 60	
 					value = 1	
 				}	
-				custom_effect_tooltip = in_60_days	
-				activate_targeted_decision = { target = JAP decision = JAP_border_conflict_escalate_to_war }
+				# custom_effect_tooltip = in_60_days	
+				# activate_targeted_decision = { target = JAP decision = JAP_border_conflict_escalate_to_war }
 			}
 			else = {	
 				set_border_war_data = {	
@@ -2105,8 +2105,8 @@ operations = {
 					days = 60	
 					value = 1	
 				}	
-				custom_effect_tooltip = in_60_days	
-				activate_targeted_decision = { target = SOV decision = JAP_border_conflict_escalate_to_war }	
+				# custom_effect_tooltip = in_60_days	
+				# activate_targeted_decision = { target = SOV decision = JAP_border_conflict_escalate_to_war }	
 			}	
 			
 		}
