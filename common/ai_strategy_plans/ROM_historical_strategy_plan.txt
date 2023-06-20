@@ -16,7 +16,7 @@ ROM_historical = {
 		ROM_national_humiliation
 		ROM_northern_refugees
 		ROM_southern_refugees
-		ROM_western_refugees
+		# ROM_western_refugees
 		ROM_eastern_refugees
 		#Politics
 		ROM_institute_royal_dictatorship

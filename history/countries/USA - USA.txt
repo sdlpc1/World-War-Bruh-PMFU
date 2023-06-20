@@ -212,6 +212,7 @@ set_popularities = {
 }
 
 add_ideas = {
+	ENG_tension_vol
 	undisturbed_isolation
 	great_depression
 	disarmed_nation

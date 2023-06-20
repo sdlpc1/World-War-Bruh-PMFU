@@ -10,7 +10,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				send_volunteers_tension = -0.9
+				send_volunteers_tension = -1
 			}
 		}	
 	}
