@@ -191,7 +191,7 @@ characters = {
 		}
 	}
 	corps_commander={
-		traits={ media_personality trait_cautious armor_officer war_hero ranger winter_expert panzer_expert panzer_leader trickster brilliant_strategist trait_engineer }
+		traits={ trait_SOV_stalinist media_personality trait_cautious armor_officer war_hero ranger winter_expert panzer_expert panzer_leader trickster brilliant_strategist trait_engineer }
 		skill=5
 		attack_skill=5
 		defense_skill=4
@@ -230,7 +230,7 @@ SOV_konstantin_rokossovsky={
 		}
 	}
 	corps_commander={
-		traits={ trait_cautious trait_reckless armor_officer ranger winter_expert panzer_expert panzer_leader brilliant_strategist trait_engineer }
+		traits={ trait_SOV_stalinist trait_cautious trait_reckless armor_officer ranger winter_expert panzer_expert panzer_leader brilliant_strategist trait_engineer }
 		skill=5
 		attack_skill=6
 		defense_skill=3
@@ -265,7 +265,7 @@ SOV_aleksandr_vasilevsky={
 		}
 	}
 	corps_commander={
-		traits={ armor_officer politically_connected panzer_expert panzer_leader expert_improviser ranger }
+		traits={ armor_officer politically_connected panzer_expert panzer_leader expert_improviser ranger trait_SOV_stalinist }
 		skill=4
 		attack_skill=5
 		defense_skill=3
@@ -299,7 +299,7 @@ SOV_boris_shaposhnikov={
 		}
 	}
 	corps_commander={
-		traits={ trait_cautious trait_cautious infantry_leader ambusher }
+		traits={ trait_cautious trait_cautious infantry_leader ambusher trait_SOV_stalinist }
 		skill=3
 		attack_skill=2
 		defense_skill=3
@@ -319,7 +319,7 @@ SOV_nikolai_vatutin={
 		}
 	}
 	corps_commander={
-		traits={ trait_reckless infantry_officer trait_reckless infantry_officer infantry_leader ambusher }
+		traits={ trait_reckless infantry_officer trait_reckless infantry_officer infantry_leader ambusher trait_SOV_stalinist }
 		skill=4
 		attack_skill=3
 		defense_skill=4
@@ -354,7 +354,7 @@ SOV_ivan_konev={
 		}
 	}
 	corps_commander={
-		traits={ arsh_leader armor_officer politically_connected inflexible_strategist trickster combined_arms_expert }
+		traits={ harsh_leader armor_officer politically_connected inflexible_strategist trickster combined_arms_expert trait_SOV_stalinist }
 		skill=4
 		attack_skill=4
 		defense_skill=5
@@ -402,7 +402,7 @@ SOV_semyon_timoshenko={
 		}
 	}
 	corps_commander={
-		traits={ cavalry_officer politically_connected combined_arms_expert expert_improviser cavalry_leader }
+		traits={ cavalry_officer politically_connected combined_arms_expert expert_improviser cavalry_leader trait_SOV_stalinist }
 		skill=3
 		attack_skill=5
 		defense_skill=2
@@ -439,7 +439,7 @@ SOV_semyon_timoshenko={
 			}
 		}
 		field_marshal={
-			traits={ old_guard politically_connected unyielding_defender logistics_wizard fast_planner }
+			traits={ old_guard politically_connected unyielding_defender logistics_wizard fast_planner trait_SOV_stalinist }
 			skill=4
 			attack_skill=4
 			defense_skill=5
@@ -499,7 +499,7 @@ SOV_semyon_timoshenko={
 			}
 		}
 		field_marshal={
-			traits={ old_guard politically_connected cavalry_leader brilliant_strategist aggressive_assaulter logistics_wizard fast_planner inspirational_leader offensive_doctrine }
+			traits={ trait_SOV_stalinist old_guard politically_connected cavalry_leader brilliant_strategist aggressive_assaulter logistics_wizard fast_planner inspirational_leader offensive_doctrine }
 			skill=4
 			attack_skill=5
 			defense_skill=4
@@ -541,7 +541,7 @@ SOV_semyon_timoshenko={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader bearer_of_artillery war_hero }
+			traits={ infantry_leader bearer_of_artillery war_hero trait_SOV_stalinist }
 			skill=3
 			attack_skill=3
 			defense_skill=4
@@ -622,7 +622,7 @@ SOV_semyon_timoshenko={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader skilled_staffer }
+			traits={ infantry_leader skilled_staffer trait_SOV_stalinist }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -742,7 +742,7 @@ SOV_semyon_timoshenko={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader commando }
+			traits={ infantry_leader commando trait_SOV_stalinist }
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -842,7 +842,7 @@ SOV_semyon_timoshenko={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer infantry_leader swamp_fox }
+			traits={ infantry_officer infantry_leader swamp_fox trait_SOV_stalinist }
 			skill=3
 			attack_skill=4
 			defense_skill=3
@@ -982,7 +982,7 @@ SOV_semyon_timoshenko={
 			}
 		}
 		corps_commander={
-			traits={ urban_assault_specialist infantry_leader organizer }
+			traits={ urban_assault_specialist infantry_leader organizer trait_SOV_stalinist }
 			skill=3
 			attack_skill=4
 			defense_skill=3
