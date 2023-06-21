@@ -354,71 +354,71 @@ on_actions = {
 		}
 	}
 
-	on_weekly_SOV = {
-		effect = {
-			if = {
-				limit = {
-					has_equipment = {
-						convoy > 799
-					}
-				}
-				set_temp_variable = { convoy_count = 0 }
-				while_loop_effect = {
-					limit = {
-						has_equipment = {
-							convoy > convoy_count
-						}
-					}
-					add_to_temp_variable = { convoy_count = 100 }
-				}
-				if = {
-					limit = {
-						has_equipment = {
-							convoy < convoy_count
-						}
-					}
-					add_to_temp_variable = { convoy_count = -100 }
-				}
-				while_loop_effect = {
-					limit = {
-						has_equipment = {
-							convoy > convoy_count
-						}
-					}
-					add_to_temp_variable = { convoy_count = 10 }
-				}
-				if = {
-					limit = {
-						has_equipment = {
-							convoy < convoy_count
-						}
-					}
-					add_to_temp_variable = { convoy_count = -10}
-				}
-				while_loop_effect = {
-					limit = {
-						has_equipment = {
-							convoy > convoy_count
-						}
-					}
-					add_to_temp_variable = { convoy_count = 1 }
-				}
-				add_to_temp_variable = { convoy_count = -800 }
-				set_temp_variable = { convoy_count2 = convoy_count }
-				multiply_temp_variable = { convoy_count2 = -1 }
-				add_equipment_to_stockpile = {
-					type = convoy_1
-					amount = convoy_count2
-				}
-				ENG = {
-					add_equipment_to_stockpile = {
-						type = convoy
-						amount = SOV.convoy_count
-					}
-				}
-			}
-		}
-	}
+	# on_weekly_SOV = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				has_equipment = {
+	# 					convoy > 799
+	# 				}
+	# 			}
+	# 			set_temp_variable = { convoy_count = 0 }
+	# 			while_loop_effect = {
+	# 				limit = {
+	# 					has_equipment = {
+	# 						convoy > convoy_count
+	# 					}
+	# 				}
+	# 				add_to_temp_variable = { convoy_count = 100 }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					has_equipment = {
+	# 						convoy < convoy_count
+	# 					}
+	# 				}
+	# 				add_to_temp_variable = { convoy_count = -100 }
+	# 			}
+	# 			while_loop_effect = {
+	# 				limit = {
+	# 					has_equipment = {
+	# 						convoy > convoy_count
+	# 					}
+	# 				}
+	# 				add_to_temp_variable = { convoy_count = 10 }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					has_equipment = {
+	# 						convoy < convoy_count
+	# 					}
+	# 				}
+	# 				add_to_temp_variable = { convoy_count = -10}
+	# 			}
+	# 			while_loop_effect = {
+	# 				limit = {
+	# 					has_equipment = {
+	# 						convoy > convoy_count
+	# 					}
+	# 				}
+	# 				add_to_temp_variable = { convoy_count = 1 }
+	# 			}
+	# 			add_to_temp_variable = { convoy_count = -800 }
+	# 			set_temp_variable = { convoy_count2 = convoy_count }
+	# 			multiply_temp_variable = { convoy_count2 = -1 }
+	# 			add_equipment_to_stockpile = {
+	# 				type = convoy_1
+	# 				amount = convoy_count2
+	# 			}
+	# 			ENG = {
+	# 				add_equipment_to_stockpile = {
+	# 					type = convoy
+	# 					amount = SOV.convoy_count
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	on_weekly_GER = {
 		effect = {

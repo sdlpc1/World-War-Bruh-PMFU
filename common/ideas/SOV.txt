@@ -2559,10 +2559,10 @@ ideas = {
 				production_speed_arms_factory_factor = 0.40
 				political_power_gain = -0.1
 				production_speed_bunker_factor = -0.25
-				industrial_capacity_factory = 0.1
 				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.15
 				production_factory_efficiency_gain_factor = 0.10
-				production_factory_max_efficiency_factor = 0.025
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 
