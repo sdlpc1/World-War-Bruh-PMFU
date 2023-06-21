@@ -159,6 +159,35 @@ host_decisions = {
 }
 political_actions = {
 	
+	enabled_game_rules_decision = {
+
+		icon = GFX_decision_generic_break_treaty
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+		}	
+		
+		visible = {
+		}
+
+		fire_only_once = no
+
+		ai_will_do = {
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = "Gets event 'Enabled Game Rules'"
+			hidden_effect = {
+				FROM = { 
+					country_event = startingevent.1002
+				}
+			}
+		}
+	}
+
 	targeted_race_for_the_bomb = {
 
 		icon = generic_research

@@ -118,6 +118,11 @@ on_actions = {
 					id = startingevent.29
 				}
 			}
+			every_country = { # game rules
+				country_event = { 
+					id = startingevent.1002
+				}
+			}
 		}
 
 		effect = {

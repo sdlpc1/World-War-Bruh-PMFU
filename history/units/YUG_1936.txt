@@ -364,7 +364,7 @@ instant_effect = {
 	add_equipment_production = { 
 		equipment = { 
 			type = motorized_equipment_1 
-			creator = "AST" 
+			creator = "YUG" 
 		} 
 
 		requested_factories = 1 

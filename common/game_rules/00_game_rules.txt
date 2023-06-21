@@ -22,7 +22,7 @@
 # }
 
 # TFB CUSTOM RULES
-
+ 
 navy_cap = {
 	name = "RULE_NAVY_CAP"
 	group = "RULE_GROUP_TFB"
@@ -232,7 +232,7 @@ horst_host_country = {
 	# allies
 	option = {
 		name = ENG
-		text = "Great Britain"
+		text = "United Kingdom of Great Britain and Northern Ireland"
 		desc = ""
 	}
 	option = {
