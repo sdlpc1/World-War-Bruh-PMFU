@@ -16,7 +16,7 @@ set_variable = {
 	value = 0.800
 }
 
-add_dynamic_modifier = { modifier = GER_tank_purhcases }
+# add_dynamic_modifier = { modifier = GER_tank_purhcases }
 
 # Starting tech
 set_technology = {
