@@ -2331,11 +2331,11 @@ leader_traits = {
 		sub_unit_modifiers = {
 			light_cruiser = {
 				naval_damage_factor = 0.1
-				naval_speed_factor = 0.1
+				naval_speed_factor = 0.05
 			}
 			heavy_cruiser = {
 				naval_damage_factor = 0.1
-				naval_speed_factor = 0.1
+				naval_speed_factor = 0.05
 			}
 		}	
 		ai_will_do = {
@@ -2924,7 +2924,7 @@ leader_traits = {
 	
 		modifier = { # WARNING! Changing the value of these modifiers requires changing them also in the tooltip ITA_flotta_d_evasione_admiral_traits_tt
 			naval_damage_factor = 0.05
-			naval_speed_factor = 0.1
+			naval_speed_factor = 0.05
 		}
 		new_commander_weight = {
 			factor = 1  

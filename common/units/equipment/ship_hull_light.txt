@@ -100,13 +100,13 @@ equipments = {
 		
 		surface_detection = 20
 		sub_detection = 1
-		surface_visibility = 10
+		surface_visibility = 12.5
 		naval_speed = 30
 		reliability = 0.80
 		
 		naval_range = 1500
 		
-		max_strength = 25
+		max_strength = 20
 		
 
 		fuel_consumption = 0
@@ -171,11 +171,8 @@ equipments = {
 
 		reliability = 0.85
 		naval_range = 1750
-		max_strength = 40
+		max_strength = 30
 		build_cost_ic = 550
-		resources = {
-			steel = 20
-		}
 		manpower = 325
 	}
 
@@ -232,15 +229,10 @@ equipments = {
 		}
 
 		
-		resources = {
-			steel = 20
-		}
 
-		surface_detection = 20
-		surface_visibility = 10
 		reliability = 0.90
 		naval_range = 2250
-		max_strength = 50
+		max_strength = 40
 		build_cost_ic = 600
 		manpower = 400
 
@@ -304,16 +296,17 @@ equipments = {
 		}
 
 
-		surface_detection = 20
 		reliability = 0.95
 		naval_range = 2500
-		max_strength = 60
+		max_strength = 50
 		build_cost_ic = 650
-		resources = {
-			steel = 20
-		}
 		manpower = 500
 	}
+
+   ###################################################
+   ### Prescripted designs for people without MtG  ###
+   ###################################################
+
 	destroyer_1 = {
 		year = 1922
 

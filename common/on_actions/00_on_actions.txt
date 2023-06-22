@@ -889,118 +889,118 @@ on_actions = {
 					718 = { set_state_flag = prevent_auto_flip_after_capitulation }
 				}
 			}
-			
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = HOL
-						is_in_faction = yes
-						#is_government_in_exile = yes
-						NOT = { has_war_with = JAP }
-					}
-				}
-				if = {
-					limit = {
-						672 = {
-							OR = {
-								is_fully_controlled_by = ROOT
-								is_fully_controlled_by = INS
-							}
-						}
-					}
-					672 = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
 
-				if = {
-					limit = {
-						335 = {
-							OR = {
-								is_fully_controlled_by = ROOT
-								is_fully_controlled_by = INS
-							}
-						}
-					}
+			# if = {
+			# 	limit = {
+			# 		ROOT = {
+			# 			original_tag = HOL
+			# 			is_in_faction = yes
+			# 			#is_government_in_exile = yes
+			# 			NOT = { has_war_with = JAP }
+			# 		}
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			672 = {
+			# 				OR = {
+			# 					is_fully_controlled_by = ROOT
+			# 					is_fully_controlled_by = INS
+			# 				}
+			# 			}
+			# 		}
+			# 		672 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
 
-					335 = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
+			# 	if = {
+			# 		limit = {
+			# 			335 = {
+			# 				OR = {
+			# 					is_fully_controlled_by = ROOT
+			# 					is_fully_controlled_by = INS
+			# 				}
+			# 			}
+			# 		}
 
-				if = {
-					limit = {
-						334 = {
-							OR = {
-								is_fully_controlled_by = ROOT
-								is_fully_controlled_by = INS
-							}
-						}
-					}
+			# 		335 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
 
-					334 = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
+			# 	if = {
+			# 		limit = {
+			# 			334 = {
+			# 				OR = {
+			# 					is_fully_controlled_by = ROOT
+			# 					is_fully_controlled_by = INS
+			# 				}
+			# 			}
+			# 		}
 
-				if = {
-					limit = {
-						673 = {
-							OR = {
-								is_fully_controlled_by = ROOT
-								is_fully_controlled_by = INS
-							}
-						}
-					}
-					673 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 		334 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
 
-				}
+			# 	if = {
+			# 		limit = {
+			# 			673 = {
+			# 				OR = {
+			# 					is_fully_controlled_by = ROOT
+			# 					is_fully_controlled_by = INS
+			# 				}
+			# 			}
+			# 		}
+			# 		673 = { set_state_flag = prevent_auto_flip_after_capitulation }
 
-				if = {
-					limit = {
-						668 = {
-							OR = {
-								is_fully_controlled_by = ROOT
-								is_fully_controlled_by = INS
-							}
-						}
-					}
+			# 	}
 
-					668 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	if = {
+			# 		limit = {
+			# 			668 = {
+			# 				OR = {
+			# 					is_fully_controlled_by = ROOT
+			# 					is_fully_controlled_by = INS
+			# 				}
+			# 			}
+			# 		}
 
-				}
+			# 		668 = { set_state_flag = prevent_auto_flip_after_capitulation }
 
-				if = {
-					limit = {
-						667 = {
-							OR = {
-								is_fully_controlled_by = ROOT
-								is_fully_controlled_by = INS
-							}
-						}
-					}
+			# 	}
 
-					667  = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
+			# 	if = {
+			# 		limit = {
+			# 			667 = {
+			# 				OR = {
+			# 					is_fully_controlled_by = ROOT
+			# 					is_fully_controlled_by = INS
+			# 				}
+			# 			}
+			# 		}
 
-				if = {
-					limit = {
-						738 = {
-							OR = {
-								is_fully_controlled_by = ROOT
-								is_fully_controlled_by = INS
-							}
-						}
-					}
-					738 = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
+			# 		667  = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
 
-				if = {
-					limit = {
-						669 = {
-							OR = {
-								is_fully_controlled_by = ROOT
-								is_fully_controlled_by = INS
-							}
-						}
-					}
-					669 = { set_state_flag = prevent_auto_flip_after_capitulation }
-				}
-			}
+			# 	if = {
+			# 		limit = {
+			# 			738 = {
+			# 				OR = {
+			# 					is_fully_controlled_by = ROOT
+			# 					is_fully_controlled_by = INS
+			# 				}
+			# 			}
+			# 		}
+			# 		738 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
+
+			# 	if = {
+			# 		limit = {
+			# 			669 = {
+			# 				OR = {
+			# 					is_fully_controlled_by = ROOT
+			# 					is_fully_controlled_by = INS
+			# 				}
+			# 			}
+			# 		}
+			# 		669 = { set_state_flag = prevent_auto_flip_after_capitulation }
+			# 	}
+			# }
 			
 			if = {
 				limit = {
