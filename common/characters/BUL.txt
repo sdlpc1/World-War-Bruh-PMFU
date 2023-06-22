@@ -122,7 +122,7 @@ characters={
 			skill=5
 			attack_skill=6
 			defense_skill=3
-			planning_skill=2
+			planning_skill=3
 			logistics_skill=4
 			legacy_id=-1
 		}

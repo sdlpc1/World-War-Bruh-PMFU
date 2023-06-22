@@ -31,11 +31,11 @@ SOV_unit_production = {
 	# 	value = 3
 	# }
 
-	ai_strategy = {
-		type = role_ratio
-		id = paratroopers
-		value = 0
-	}
+	# ai_strategy = {
+	# 	type = role_ratio
+	# 	id = paratroopers
+	# 	value = 0
+	# }
 
 	ai_strategy = {
 		type = role_ratio
@@ -375,11 +375,11 @@ SOV_template_design_1 = {
 		value = -50
 	}
 
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
-	}
+	# ai_strategy = {
+	# 	type = template_prio
+	# 	id = paratroopers
+	# 	value = -50
+	# }
 	
 	ai_strategy = {
 		type = template_prio
@@ -430,11 +430,11 @@ SOV_template_design_2 = {
 		value = 20
 	}
 
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
-	}
+	# ai_strategy = {
+	# 	type = template_prio
+	# 	id = paratroopers
+	# 	value = -50
+	# }
 	
 	ai_strategy = {
 		type = template_prio

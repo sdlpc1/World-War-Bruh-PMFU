@@ -472,7 +472,7 @@ sub_units = {
 		supply_consumption = 0.12
 		supply_consumption_factor = 0.03
 		breakthrough = 0.2
-		maximum_speed = -0.75
+		# maximum_speed = -0.75
 
 		need = {
 			infantry_equipment = 120

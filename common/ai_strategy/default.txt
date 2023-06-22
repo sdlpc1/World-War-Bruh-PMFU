@@ -145,11 +145,11 @@ default_unit_production = {
 		}
 	}
 	
-	ai_strategy = {
-		type = role_ratio
-		id = paratroopers
-		value = 0
-	}
+	# ai_strategy = {
+	# 	type = role_ratio
+	# 	id = paratroopers
+	# 	value = 0
+	# }
 
 	ai_strategy = {
 		type = role_ratio
@@ -477,21 +477,21 @@ default_pp_spend_amount = {
 	}
 }
 
-default_paratroopers_production = {
-	enable = {
-		NOT = { original_tag = GER }
-		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
-	}
-	abort = {
-		ai_wants_divisions < 13 #Massively decreasing the amount of paratroopers the AI wants
-	}
+# default_paratroopers_production = {
+# 	enable = {
+# 		NOT = { original_tag = GER }
+# 		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
+# 	}
+# 	abort = {
+# 		ai_wants_divisions < 13 #Massively decreasing the amount of paratroopers the AI wants
+# 	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = paratroopers
-		value = 0
-	}
-}
+# 	ai_strategy = {
+# 		type = role_ratio
+# 		id = paratroopers
+# 		value = 0
+# 	}
+# }
 
 default_garrison_production = {
 	enable = {
@@ -874,11 +874,11 @@ DEFAULT_template_design = {
 		value = -50
 	}
 
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
-	}
+	# ai_strategy = {
+	# 	type = template_prio
+	# 	id = paratroopers
+	# 	value = -50
+	# }
 	
 	ai_strategy = {
 		type = template_prio
@@ -939,11 +939,11 @@ DEFAULT_template_design = {
 		value = 10
 	}
 
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
-	}
+	# ai_strategy = {
+	# 	type = template_prio
+	# 	id = paratroopers
+	# 	value = -50
+	# }
 	
 	ai_strategy = {
 		type = template_prio

@@ -24,7 +24,7 @@
  startingevent.1001.d:0 "TFB recently removed it's Air Designer, but if you wish to continue using it you may search on the workshop for 'TFB Plane Designer' and download the sub mod.\nIf you wish to play on NSB then search for 'TFB No Step Back'.\nTo play on BTFB patch pre tank designer, search for 'TFB Battle for the Bosporus'."
  startingevent.1001.a:0 "Ok"
  startingevent.1002.t:0 "§bEnabled Game Rules§!"
- startingevent.1002.d:0 "Admiral Command Limit: §B[navy_cap_rule_sl]§!\n\nChinese Waves: §B[allow_china_waves_rule_sl]§!\n\nVoice Lines: §B[allow_voice_lines_rule_sl]§!\n\nFatherless Spirit: §B[fatherless_spirit_rule_sl]§!\n\nSealion Auto Teleport: §B[sealion_auto_tp_rule_sl]§!\n\nFree Templates: §B[free_templates_rule_sl]§!\n\nStrike the West: §B[japan_strike_the_west_rule_sl]§!\n\nStatus of Brazil and Mexico: §B[no_asia_bra_mex_status_rule_sl]§!\n\nHost Country: §B[horst_host_country_rule_sl]§!"
+ startingevent.1002.d:0 "Admiral Command Limit: §F[navy_cap_rule_sl]§!\n\nChinese Waves: §F[allow_china_waves_rule_sl]§!\n\nVoice Lines: §F[allow_voice_lines_rule_sl]§!\n\nFatherless Spirit: §F[fatherless_spirit_rule_sl]§!\n\nSealion Auto Teleport: §F[sealion_auto_tp_rule_sl]§!\n\nFree Templates: §F[free_templates_rule_sl]§!\n\nStrike the West: §F[japan_strike_the_west_rule_sl]§!\n\nStatus of Brazil and Mexico: §F[no_asia_bra_mex_status_rule_sl]§!\n\nHost Country: §F[horst_host_country_rule_sl]§!"
  enabled_game_rules_decision:0 "Display Enabled Game Rules"
  #### LEVELS ####
  UNIT_LEVEL_0:0 "Fresh"

@@ -27,11 +27,11 @@ CZE_unit_production = {
 		value = 5
 	}
 	
-	ai_strategy = {
-		type = role_ratio
-		id = paratroopers
-		value = 0
-	}
+	# ai_strategy = {
+	# 	type = role_ratio
+	# 	id = paratroopers
+	# 	value = 0
+	# }
 
 	ai_strategy = {
 		type = role_ratio
@@ -326,11 +326,11 @@ CZE_template_design = {
 		value = -50
 	}
 
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
-	}
+	# ai_strategy = {
+	# 	type = template_prio
+	# 	id = paratroopers
+	# 	value = -50
+	# }
 }
 CZE_industry = {
 	enable = {
