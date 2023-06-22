@@ -99,7 +99,7 @@ host_decisions = {
 					transfer_troops = no
 				}
 				add_named_threat = {
-					threat = 30
+					threat = 45
 					name = JAP_threat_treaty_of_nanjing
 				}
 			}

@@ -3053,7 +3053,11 @@ focus_tree = {
 				has_government = fascism
 				has_government = neutrality
 			}
-		}
+		} 
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
 
 		available = {
 			threat > 0.35

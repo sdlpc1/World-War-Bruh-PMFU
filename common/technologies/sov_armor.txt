@@ -146,7 +146,7 @@ technologies = {
 
 		enable_equipments = {
 			sov_light_tank_chassis_bt5
-			sov_medium_tank_chassis_t34_placeholder
+			# sov_medium_tank_chassis_t34_placeholder
 		}
 	
 		path = {

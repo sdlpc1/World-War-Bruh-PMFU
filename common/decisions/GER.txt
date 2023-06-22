@@ -2652,6 +2652,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -2662,6 +2666,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_pzr_2
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 		}
 	}
 
@@ -2692,6 +2697,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -2702,6 +2711,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_luchs
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 		}
 	}
 
@@ -2733,6 +2743,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -2745,6 +2759,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_2
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 		}
 	}
 
@@ -2775,6 +2790,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -2785,6 +2804,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_34_1
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 		}
 	}
 
@@ -2819,6 +2839,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -2829,6 +2853,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_34_2
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 		}
 	}
 
@@ -2859,6 +2884,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -2869,6 +2898,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_5
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 		}
 	}
 	
@@ -2903,6 +2933,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -2913,6 +2947,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_5_2
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 		}
 	}
 	
@@ -2943,6 +2978,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -2953,6 +2992,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_3
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 		}
 	}
 
@@ -2983,6 +3023,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -2993,6 +3037,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_3_upgrd
+			add_to_variable = { GER_tank_purchase_cost_total = ,10 }
 		}
 	}
 
@@ -3023,6 +3068,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -3033,6 +3082,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_3_b
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 		}
 	}
 
@@ -3067,6 +3117,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -3077,6 +3131,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_3_c
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 		}
 	}
 
@@ -3108,6 +3163,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -3118,6 +3177,7 @@ GER_share_tanks = {
 					}
 				}
 			}
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 			custom_effect_tooltip = ger_share_tanks_tt_cze_1
 		}
 	}
@@ -3149,6 +3209,10 @@ GER_share_tanks = {
 			civilian_factory_use = 10
 		}
 
+		complete_effect = {
+			add_to_variable = { GER_tank_purchase_cost_total = 10 }
+		}
+
 		remove_effect = {
 			hidden_effect = {
 				ROOT = {
@@ -3159,6 +3223,7 @@ GER_share_tanks = {
 				}
 			}
 			custom_effect_tooltip = ger_share_tanks_tt_cze_2
+			add_to_variable = { GER_tank_purchase_cost_total = -10 }
 		}
 	}
 }
