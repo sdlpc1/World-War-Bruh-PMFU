@@ -489,11 +489,20 @@ sub_units = {
 			attack = 0.15
 			defence = 0.05
 		}
+		town = {
+			attack = 0.05
+			movement = 0.05
+			defence = 0.025
+		}
 		urban = {
 			attack = 0.10
 			movement = 0.1
 			defence = 0.05
-
+		}
+		dense_urban = {
+			attack = 0.10
+			movement = 0.1
+			defence = 0.05
 		}
 		fort = {
 			attack = 0.10
