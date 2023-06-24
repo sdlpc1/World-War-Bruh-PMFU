@@ -604,6 +604,8 @@ equipment_modules = {
 		add_stats = {	
 			lg_attack = 5
 			build_cost_ic = 350
+			naval_torpedo_enemy_critical_chance_factor = -1
+			naval_torpedo_damage_reduction_factor = 1
 		}
 		multiply_stats = {
 			naval_speed = -0.03
@@ -637,6 +639,8 @@ equipment_modules = {
 		add_stats = {	
 			lg_attack = 10
 			build_cost_ic = 400
+			naval_torpedo_enemy_critical_chance_factor = -1
+			naval_torpedo_damage_reduction_factor = 1
 		}
 		multiply_stats = {
 			naval_speed = -0.05
@@ -677,7 +681,9 @@ equipment_modules = {
 		add_stats = {
 			
 			lg_attack = 15
-			build_cost_ic = 450
+			build_cost_ic = 450'
+			naval_torpedo_enemy_critical_chance_factor = -1
+			naval_torpedo_damage_reduction_factor = 1
 		}
 		multiply_stats = {
 			naval_speed = -0.06
@@ -716,6 +722,8 @@ equipment_modules = {
 		add_stats = {			
 			lg_attack = 20			
 			build_cost_ic = 500
+			naval_torpedo_enemy_critical_chance_factor = -1
+			naval_torpedo_damage_reduction_factor = 1
 		}
 		multiply_stats = {
 			naval_speed = -0.07
@@ -756,6 +764,8 @@ equipment_modules = {
 			lg_attack = 8
 			anti_air_attack = 6
 			build_cost_ic = 400
+			naval_torpedo_enemy_critical_chance_factor = -1
+			naval_torpedo_damage_reduction_factor = 1
 		}
 
 		multiply_stats = {
