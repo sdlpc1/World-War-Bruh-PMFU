@@ -8630,8 +8630,8 @@ leader_traits = {
 
 	navy_chief_decisive_battle_2 = {
 		sprite = 3
-		navy_capital_ship_attack_factor = 0.6
-		navy_screen_attack_factor = 0.6
+		navy_capital_ship_attack_factor = 0.06
+		navy_screen_attack_factor = 0.06
 		experience_gain_navy = @chief_experience_gain_medium
 
 		command_cap = @tier2
