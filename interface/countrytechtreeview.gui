@@ -1340,7 +1340,7 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "armour_subtitle_heavy"
-					position = { x = 545 y = -50 }
+					position = { x = 615 y = 505 } #x = 545 y = -50
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1405,7 +1405,7 @@ guiTypes = {
 				format = "UP"
 			}
 			gridboxtype = {
-				name = "ger_heavy_tank_0_tree"
+				name = "ger_heavy_tank_1_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }

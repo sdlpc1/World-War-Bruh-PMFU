@@ -342,7 +342,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_tiny_1
+				# tank_armament_tier_tiny_1
 				tank_armament_tier_light_1
 			}
 		}
@@ -370,7 +370,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_tiny_2
+				# tank_armament_tier_tiny_2
 				tank_armament_tier_light_2
 			}
 		}

@@ -50,7 +50,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = basic_heavy_tank_chassis
+			leads_to_tech = improved_heavy_tank_chassis #basic_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -214,43 +214,43 @@ technologies = {
 		}
 	}
 
-	basic_heavy_tank_chassis = {
+	# basic_heavy_tank_chassis = {
 
-		# enable_equipments = {
-		# 	heavy_tank_chassis_1
-		# }
+	# 	# enable_equipments = {
+	# 	# 	heavy_tank_chassis_1
+	# 	# }
 
-		# enable_subunits = {
-		# 	heavy_armor
-		# }
+	# 	# enable_subunits = {
+	# 	# 	heavy_armor
+	# 	# }
 
-		enable_equipments = {
-			# ger_heavy_tank_chassis_neub
-			generic_heavy_tank_chassis_1
-		}
-		enable_equipment_modules = {
-			tank_multi_turret_1
-			tank_multi_turret_2
-		}
+	# 	enable_equipments = {
+	# 		# ger_heavy_tank_chassis_neub
+	# 		generic_heavy_tank_chassis_1
+	# 	}
+	# 	enable_equipment_modules = {
+	# 		tank_multi_turret_1
+	# 		tank_multi_turret_2
+	# 	}
 
-		path = {
-			leads_to_tech = improved_heavy_tank_chassis
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = improved_heavy_tank_chassis
+	# 		research_cost_coeff = 1
+	# 	}
 
-		research_cost = 2
-		start_year = 1936
+	# 	research_cost = 2
+	# 	start_year = 1936
 
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 7 y = 2 }
-		}
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 7 y = 2 }
+	# 	}
 
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-	}
+	# 	categories = {
+	# 		armor
+	# 		cat_heavy_armor
+	# 	}
+	# }
 
 	improved_heavy_tank_chassis = {
 
@@ -1128,10 +1128,10 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = 12 }
+			position = { x = 2 y = 10 }
 		}
 
 		categories = {
@@ -1151,10 +1151,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = 14 }
+			position = { x = 2 y = 12 }
 		}
 
 		categories = {
