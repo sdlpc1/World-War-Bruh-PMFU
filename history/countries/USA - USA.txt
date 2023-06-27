@@ -8,9 +8,9 @@ starting_train_buffer = 2.5
 
 # MP_garrison_division_standard = yes
 
-create_intelligence_agency = {
-    name = "Office of Strategic Services"
-}
+# create_intelligence_agency = {
+#     name = "Office of Strategic Services"
+# }
 
 set_variable = {
 	var = min_fuel

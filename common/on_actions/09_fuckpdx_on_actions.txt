@@ -113,11 +113,11 @@ on_actions = {
 			# 		id = startingevent.1001
 			# 	}
 			# }
-			every_country = { 
-				country_event = { 
-					id = startingevent.29
-				}
-			}
+			# every_country = {  # navy event
+			# 	country_event = { 
+			# 		id = startingevent.29
+			# 	}
+			# }
 			every_country = { # game rules
 				country_event = { 
 					id = startingevent.1002
@@ -236,6 +236,10 @@ on_actions = {
 					FROM = { is_in_faction_with = GER }
 					NOT = {
 						has_global_flag = DEI_transfered
+					}
+					has_game_rule = {
+						rule = ast_annex_dei_at_hol_cap
+						option = ENABLED
 					}
 				}
 				# weird island near venezuela

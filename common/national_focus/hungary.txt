@@ -1063,7 +1063,7 @@ focus_tree = {
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 		dynamic = yes
 
-		cost = 20
+		cost = 10 #20
 
 		ai_will_do = {
 			factor = 80
@@ -2086,7 +2086,21 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.15
-			ROM = { country_event = DOD_hungary.140 }
+			# ROM = { country_event = DOD_hungary.140 }
+			if = {
+				limit = { has_idea = HUN_treaty_of_triannon }
+				swap_ideas = {
+					remove_idea = HUN_treaty_of_triannon
+					add_idea = HUN_treaty_of_triannon_3
+				}
+			}
+			if = {
+				limit = { has_idea = HUN_treaty_of_triannon_2 }
+				swap_ideas = {
+					remove_idea = HUN_treaty_of_triannon_2
+					add_idea = HUN_treaty_of_triannon_3
+				}
+			}
 		}
 	}
 

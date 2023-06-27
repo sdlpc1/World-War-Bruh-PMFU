@@ -1,5 +1,270 @@
 ideas = {
 	country = {
+
+		CHI_spirit_dwindling = {
+
+			name = "Chinese Spirit high"
+
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = 0
+			}
+		}
+
+		CHI_spirit_dwindling_2 = {
+
+			name = "Chinese Spirit Dwindling"
+
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.05
+			}
+		}
+
+		CHI_spirit_dwindling_3 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.10
+			}
+		}
+
+		CHI_spirit_dwindling_4 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.15
+			}
+		}
+
+		CHI_spirit_dwindling_5 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.20
+			}
+		}
+
+		CHI_spirit_dwindling_6 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.25
+			}
+		}
+
+		CHI_spirit_dwindling_7 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.30
+			}
+		}
+
+		CHI_spirit_dwindling_8 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.35
+			}
+		}
+
+		CHI_spirit_dwindling_9 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.40
+			}
+		}
+
+		CHI_spirit_dwindling_10 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.45
+			}
+		}
+
+		CHI_spirit_dwindling_11 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.50
+			}
+		}
+
+		CHI_spirit_dwindling_12 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.55
+			}
+		}
+
+		CHI_spirit_dwindling_13 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.60
+			}
+		}
+
+		CHI_spirit_dwindling_14 = {
+			
+			name = "Chinese Spirit Dwindling"
+			
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = -0.65
+			}
+		}
+
 		german_advisors = {
 		
 			allowed = {
@@ -235,8 +500,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				surrender_limit = 1.0
-				max_surrender_limit_offset = 0.15
+				# surrender_limit = 1.0
+				# max_surrender_limit_offset = 0.15
 			}
 
 		}
@@ -257,8 +522,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				surrender_limit = 1.0
-				max_surrender_limit_offset = 0.10
+				# surrender_limit = 1.0
+				# max_surrender_limit_offset = 0.10
 			}
 
 		}
@@ -278,8 +543,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				surrender_limit = 1.0
-				max_surrender_limit_offset = 0.1
+				# surrender_limit = 1.0
+				# max_surrender_limit_offset = 0.1
 			}
 
 		}
@@ -575,7 +840,7 @@ ideas = {
 				army_core_defence_factor = 0.25
 				dig_in_speed_factor = 0.5
 				resistance_target_on_our_occupied_states = 0.2
-				surrender_limit = 0.1 
+				# surrender_limit = 0.1 
 			}
 		}
 

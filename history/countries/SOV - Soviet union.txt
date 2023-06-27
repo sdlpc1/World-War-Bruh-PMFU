@@ -31,9 +31,9 @@ if = {
 	}
 }
 
-create_intelligence_agency = {
-    name = "NKVD"
-}
+# create_intelligence_agency = {
+#     name = "NKVD"
+# }
 
 # MP_garrison_division_standard = yes
 
@@ -2303,3 +2303,5 @@ add_operation_token = {
 	tag = MON
 	token = token_navy_friendly
 }
+
+SOV = { SOV = { set_occupation_law = liberate_workers_occupation } } # set default law

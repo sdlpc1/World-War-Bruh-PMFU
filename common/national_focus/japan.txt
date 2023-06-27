@@ -818,6 +818,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			MAN = {
+				country_event = wtt_manchukou.12
+			}
 			add_ideas = JAP_liaison_conference
 			every_army_leader = {
 				add_planning = 1
@@ -893,28 +896,35 @@ focus_tree = {
 						can_send_volunteers = no
 					}
 				}
-				
-				SOV = {
-					swap_ideas = {
-						remove_idea = volunteer_minimum_major
-						add_idea = volunteer_minimum_minor
-					}
-				}
+
 				# ENG = {
 				# 	swap_ideas = {
 				# 		remove_idea = volunteer_minimum_major
 				# 		add_idea = volunteer_minimum_minor
 				# 	}
 				# }
-				USA = {
-					add_ideas = volunteer_minimum_minor
-					set_rule = { 
-						can_send_volunteers = yes
+				
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = usa_volunteers_in_china
+							option = ENABLED
+						}
+					}
+					SOV = {
+						swap_ideas = {
+							remove_idea = volunteer_minimum_major
+							add_idea = volunteer_minimum_minor
+						}
+					}
+					
+					USA = {
+						add_ideas = volunteer_minimum_minor
+						set_rule = { 
+							can_send_volunteers = yes
+						}
 					}
 				}
-			}
-			MAN = {
-				country_event = wtt_manchukou.12
 			}
 			if = {
 				limit = { 
@@ -3160,12 +3170,28 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SIA = { country_event = japan.12 }
+			# SIA = { country_event = japan.12 }
+			JAP = {
+				SIA = {
+					pow_before_annex = yes
+				}
+			}
+			annex_country = {
+				target = SIA
+				transfer_troops = no
+			}
+			
+			every_controlled_state = {
+				limit = {
+					is_core_of = SIA
+				}
+				add_compliance = 75
+			}
 		}
 	}
 	
 	focus = {
-		id = JAP_befriend_siam
+		id = JAP_befriend_siam 
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = JAP_strike_south_doctrine }
 		mutually_exclusive = { focus = JAP_pressure_siam }
@@ -3175,6 +3201,10 @@ focus_tree = {
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
+			has_country_flag = JAP_siam2
+		}
+
+		bypass = {
 			has_country_flag = JAP_siam2
 		}
 

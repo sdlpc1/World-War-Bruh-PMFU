@@ -888,7 +888,8 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			org_loss_when_moving = -0.1
+			# org_loss_when_moving = -0.1
+			offence = 0.025
 		}
 		
 		slot = army_chief
@@ -1293,6 +1294,7 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
+			terrain_penalty_reduction = 0.1
 			acclimatization_cold_climate_gain_factor = 0.2
 			acclimatization_hot_climate_gain_factor = 0.2
 		}

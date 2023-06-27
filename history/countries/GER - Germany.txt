@@ -5,9 +5,9 @@ oob = "GER_1936"
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
-create_intelligence_agency = {
-    name = "Abwehr"
-}
+# create_intelligence_agency = {
+#     name = "Abwehr"
+# }
 
 set_country_flag=fuel_system_enabled
 

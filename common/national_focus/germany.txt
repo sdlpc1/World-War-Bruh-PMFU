@@ -3184,7 +3184,7 @@ focus_tree = {
 			# has_army_manpower = { size > 1199999 }
 			OR = {
 				AND = {
-					date > 1941.3.1
+					date > 1941.5.1
 					date < 1941.8.1
 				}
 				AND = {

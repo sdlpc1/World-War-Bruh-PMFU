@@ -4,8 +4,8 @@ state={
 
 	resources = {
 		steel = 250
-		tungsten = 300
-		chromium = 150
+		# tungsten = 300
+		# chromium = 150
 		# aluminium = 300
 	}
 
@@ -13,7 +13,7 @@ state={
 		owner = MON
 		add_core_of = WST
 		buildings = {
-			infrastructure = 5
+			infrastructure = 6
 			industrial_complex = 6
 
 		}

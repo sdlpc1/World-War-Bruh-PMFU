@@ -7,7 +7,7 @@ state={
 	state_category = large_city
 	
 	resources={
-		steel=210 # was: 8
+		steel=560 # was: 8
 		chromium=380 # was: 80
 		tungsten = 570 # moved from raj
 	}

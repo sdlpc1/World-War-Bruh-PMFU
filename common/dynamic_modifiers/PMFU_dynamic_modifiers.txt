@@ -13,3 +13,7 @@ academy_over_time = {
 GER_tank_purhcases = {
 	industrial_factory_donations = GER_tank_purchase_cost_total
 }
+
+training_time_balancer = {
+	training_time_army_factor = training_time_balancer
+}

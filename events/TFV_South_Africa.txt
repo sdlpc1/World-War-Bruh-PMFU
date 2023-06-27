@@ -14,44 +14,44 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
-		name = tfv_south_africa.1.a	# ENG accepts the proposal
+	# option = {
+	# 	name = tfv_south_africa.1.a	# ENG accepts the proposal
 		
-		ai_chance = {
-			base = 80
+	# 	ai_chance = {
+	# 		base = 80
 
-		}
+	# 	}
 		
-		effect_tooltip = {
-			SAF = {
-				transfer_state = 542
-				transfer_state = 545
-				transfer_state = 546
-				transfer_state = 547
-				transfer_state = 548
-				transfer_state = 771
-				transfer_state = 770
-				#Belgian Congo
-				transfer_state = 295
-				transfer_state = 538
-				transfer_state = 718
-				transfer_state = 769
-				transfer_state = 768
-			}
-		}
-		hidden_effect = {
-			SAF = {
-				country_event = { id = tfv_south_africa.2 }
-			}
-			set_global_flag = SAF_ENG_accepted_transfering_africa
-		}
-	}
+	# 	effect_tooltip = {
+	# 		SAF = {
+	# 			transfer_state = 542
+	# 			transfer_state = 545
+	# 			transfer_state = 546
+	# 			transfer_state = 547
+	# 			transfer_state = 548
+	# 			transfer_state = 771
+	# 			transfer_state = 770
+	# 			#Belgian Congo
+	# 			transfer_state = 295
+	# 			transfer_state = 538
+	# 			transfer_state = 718
+	# 			transfer_state = 769
+	# 			transfer_state = 768
+	# 		}
+	# 	}
+	# 	hidden_effect = {
+	# 		SAF = {
+	# 			country_event = { id = tfv_south_africa.2 }
+	# 		}
+	# 		set_global_flag = SAF_ENG_accepted_transfering_africa
+	# 	}
+	# }
 
 	option = {
 		name = tfv_south_africa.1.c_tt # territory but keeps resource rights
 		
 		ai_chance = {
-			base = 0
+			base = 100
 		}
 
 		effect_tooltip = {
@@ -230,14 +230,14 @@ country_event = {
 #ENG compromises
 country_event = {
 	id = tfv_south_africa.4
-	title = tfv_south_africa.4.t	#
-	desc = tfv_south_africa.4.d		#
+	title = tfv_south_africa.4.t_cc	#
+	desc = tfv_south_africa.4.d_c		#
 	picture = GFX_report_event_saf_soldiers					#
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = tfv_south_africa.4.a
+		name = tfv_south_africa.4.a_c
 		if = {
 			limit = {
 				545 = {	is_fully_controlled_by = ENG }

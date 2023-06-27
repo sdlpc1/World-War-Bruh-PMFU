@@ -11,9 +11,9 @@ if = {
 	}
 }
 
-create_intelligence_agency = {
-    name = "Deuxième Bureau"
-}
+# create_intelligence_agency = {
+#     name = "Deuxième Bureau"
+# }
 
 set_variable = {
 	var = min_fuel

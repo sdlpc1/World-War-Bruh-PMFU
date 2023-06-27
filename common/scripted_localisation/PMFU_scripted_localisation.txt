@@ -14,6 +14,7 @@ defined_text = { # global
 	}
 }
 
+### GAME RULES ###
 defined_text = { # global
 	name = navy_cap_rule_sl
 	text = {
@@ -126,25 +127,37 @@ defined_text = { # global
 		trigger = {
 			has_game_rule = {
 				rule = sealion_auto_tp
-				option = ENABLED
+				option = SEALION_AT_CONDITIONS_MET
 			}
 			NOT = {
 				has_global_flag = NO_ASIA
 			}
 		}
-		localization_key = RULE_OPTION_ENABLED
+		localization_key = RULE_OPTION_SEALION_AT_CONDITIONS_MET
 	}
 	text = {
 		trigger = {
 			has_game_rule = {
 				rule = sealion_auto_tp
-				option = DISABLED
+				option = SEALION_DISABLED
 			}
 			NOT = {
 				has_global_flag = NO_ASIA
 			}
 		}
-		localization_key = RULE_OPTION_DISABLED
+		localization_key = RULE_OPTION_SEALION_DISABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = sealion_auto_tp
+				option = SEALION_NO_CONDITIONS
+			}
+			NOT = {
+				has_global_flag = NO_ASIA
+			}
+		}
+		localization_key = RULE_OPTION_SEALION_NO_CONDITIONS
 	}
 	text = {
 		trigger = {
@@ -235,6 +248,50 @@ defined_text = { # global
 			}
 		}
 		localization_key = RULE_MEX_BRA_ANNEXED_AST
+	}
+}
+
+defined_text = { # global
+	name = usa_volunteers_in_china_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = usa_volunteers_in_china
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = usa_volunteers_in_china
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = ast_annex_dei_at_hol_cap_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = ast_annex_dei_at_hol_cap
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = ast_annex_dei_at_hol_cap
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
 	}
 }
 

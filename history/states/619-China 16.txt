@@ -8,8 +8,8 @@ state={
 	
 	resources={
 		aluminium=120 # was: 2
-		chromium=80 # was: 3
-		tungsten = 100
+		# chromium=80 # was: 3
+		# tungsten = 100
 	}
 
 	history={

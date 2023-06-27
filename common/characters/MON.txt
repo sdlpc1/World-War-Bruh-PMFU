@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_leader combined_arms_expert trickster expert_improviser }
+			traits={ cavalry_leader combined_arms_expert trickster expert_improviser organizer }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -131,6 +131,24 @@ characters={
 			}
 			traits  = {
 				war_industrialist 
+			}
+		}
+	}
+	MON_pdchigin_abaga={
+		name="Odchigin Abaga"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_pdchigin_abaga
+			allowed  = {
+				original_tag = MON
+			}
+			traits  = {
+				captain_of_industry 
 			}
 		}
 	}
@@ -336,7 +354,7 @@ characters={
 			traits  = {
 				army_CombinedArms_3
 			}
-			cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 1
 			}

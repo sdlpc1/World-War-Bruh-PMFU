@@ -17,9 +17,9 @@ set_variable = { ITA_poster_center_icon_frame = ITA_propaganda_empty_slot_index 
 set_variable = { ITA_re_unit_camelry_design_cost_factor = 0 }
 set_variable = { AFRICA_COMMONWEALTH_BASES_LEVEL = 6 } #What level variable to use
 
-create_intelligence_agency = {
-    name = "Servizio Informazioni Militare"
-}
+# create_intelligence_agency = {
+#     name = "Servizio Informazioni Militare"
+# }
 
 set_variable = {
 	var = min_fuel

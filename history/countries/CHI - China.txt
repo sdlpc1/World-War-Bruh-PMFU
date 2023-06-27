@@ -53,6 +53,7 @@ if = {
 
 add_ideas = {
 	german_advisors
+	CHI_spirit_dwindling
 }
 
 if = {

@@ -29,7 +29,7 @@ state={
 			arms_factory = 10
 			industrial_complex = 11
 			steel_refinery = 1
-			air_base = 3
+			air_base = 10 #3
 
 		}
 		add_core_of = GER

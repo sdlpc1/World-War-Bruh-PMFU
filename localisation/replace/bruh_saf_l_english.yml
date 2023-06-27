@@ -17,9 +17,13 @@
 
   ### DECISIONS ###
   develop_congolese_rubber:0 "Develop Congolese Rubber Plantations"
+  SAF_get_ethiopia:0 "Get Ethiopia"
 
   ### FLAGS ###
   SAF_ENG_accepted_transfering_africa:0 "§YUnited Kingdom accepted our request§!"
  
   ### EVENTS ###
   tfv_south_africa.1.c_tt:0 "Keep rights to the resources."
+  tfv_south_africa.4.t_cc:0 "The Resource Compromise"
+  tfv_south_africa.4.d_c:0 "After long deliberation, the British government has come up with a compromise regarding the defense of the African colonies. Under this new scheme, the colonies will be governed by South Africa but UK keeps access to the resources"
+  tfv_south_africa.4.a_c:0 "A good compromise"

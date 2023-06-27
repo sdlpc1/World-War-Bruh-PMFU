@@ -19,7 +19,7 @@ add_ideas = {
 	JAP_gekokoju
 	JAP_island_hopping8
 	volunteer_minimum_major
-	JAP_no_equipment_capture
+	# JAP_no_equipment_capture
 	peace_training
 	no_grinding
 }
@@ -31,9 +31,9 @@ set_variable = {
 
 set_country_flag=fuel_system_enabled
 
-create_intelligence_agency = {
-    name = "G-2 Department"
-}
+# create_intelligence_agency = {
+#     name = "G-2 Department"
+# }
 
 # MP_garrison_division_standard = yes
 
