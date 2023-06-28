@@ -871,3 +871,19 @@ obsolete_focus_branches_visibility = {
 }
 
 #We could add stuff for political advisor visibility filters here too, in the future
+
+### RISE OF ALBANIA ###
+rise_of_albania = {
+	name = "RISE_OF_ALBANIA"
+	group = "RULE_GROUP_RISE_OF_ALBANIA"
+	default = {
+		name = DISABLED
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_OPTION_RISE_OF_ALBANIA_DESC"
+	}
+	option = {
+		name = ENABLED
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_OPTION_RISE_OF_ALBANIA_DESC"
+	}
+}

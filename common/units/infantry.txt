@@ -394,7 +394,7 @@ sub_units = {
 		supply_consumption = 0.06
 		supply_consumption_factor = 0.075
 
-		can_be_parachuted = yes
+		can_be_parachuted = no #yes
 	
 		need = {
 			infantry_equipment = 125
@@ -894,7 +894,7 @@ sub_units = {
 		
 		transport =	infantry_equipment
 		
-		can_be_parachuted = yes
+		can_be_parachuted = no
 	
 		supply_consumption = 0.10
 		supply_consumption_factor = 0.03

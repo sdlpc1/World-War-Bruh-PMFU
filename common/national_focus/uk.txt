@@ -4163,6 +4163,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			hidden_effect = { 
+				every_country = {
+					news_event = generic.33
+				}
+			}
 			ENG = {
 				annex_country = { target = PER transfer_troops = no }
 			}

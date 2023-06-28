@@ -1833,6 +1833,12 @@ focus_tree = {
 		available = {
 			country_exists = PER
 			NOT = { has_war_with = PER }
+			446 = {
+				CONTROLLER = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
 			# is_subject = no
 			# any_enemy_country = { is_major = yes }
 			# OR = {
@@ -1852,47 +1858,52 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					news_event = generic.33
+				}
+			}
 			# PER = {
 			# 	set_country_flag = SOV_ultimatum_sent_flag
 			# 	country_event = { id = NSB_soviet_foreign_politics_events.210 hours = 16 random_hours = 8 }
 			# }
 
 			# PMFU
-			229 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
+			# 229 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
 
-			230 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
+			# 230 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
 
-			586 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
+			# 586 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
 
-			405 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
+			# 405 = {
+			# 	add_extra_state_shared_building_slots = 4
+			# 	add_building_construction = {
+			# 		type = arms_factory
+			# 		level = 4
+			# 		instant_build = yes
+			# 	}
+			# }
 			
 			### ACTUAL EFFECT NGL ###
 			ENG = {
@@ -2107,12 +2118,30 @@ focus_tree = {
 		available = { }
 		
 		completion_reward = {
-					every_controlled_state = {
+			every_controlled_state = {
 				limit = {
 					is_core_of = PER
 				}
 				add_compliance = 100
 			}
+			# FROM IRAN FOCUS #
+			229 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			230 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			# FROM IRAN FOCUS END
 			229 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
@@ -2152,6 +2181,25 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			# FROM IRAN FOCUS #
+			586 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+
+			405 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			# FROM IRAN FOCUS END #
 			586 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {

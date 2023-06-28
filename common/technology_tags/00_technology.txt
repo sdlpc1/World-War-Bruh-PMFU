@@ -119,6 +119,7 @@ technology_categories = {
 	year_1943
 	jaeger_tech
 	cat_armored_car
+	land_doctrine_non_cost
 }
 
 technology_folders = {

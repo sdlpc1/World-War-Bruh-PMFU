@@ -33,6 +33,8 @@ recruit_character = ALB_hasan_begolli
 recruit_character = ALB_fiqri_dine
 recruit_character = ALB_midhat_frasheri
 recruit_character = ALB_jocelyn_percy
+# RISE OF ALB #
+recruit_character = ALB_sali_berisha 
 
 
 set_politics = {

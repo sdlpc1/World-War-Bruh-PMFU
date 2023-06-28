@@ -2062,6 +2062,19 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	dislikes_serbia = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "YUG"			
+			value = 200
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	tenacious_defender = {
 		random = no

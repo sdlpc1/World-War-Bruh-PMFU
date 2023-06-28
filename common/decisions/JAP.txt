@@ -1659,6 +1659,11 @@ operations = {
 		}
 		
 		complete_effect = {
+			hidden_effect = {
+				every_country = {
+					news_event = generic.33
+				}
+			}
 			declare_war_on = {
 				target = PER
 				type = annex_everything

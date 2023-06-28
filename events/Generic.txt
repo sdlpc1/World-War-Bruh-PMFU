@@ -2141,6 +2141,21 @@ country_event = {
 	# }
 }
 
+news_event = {
+	id = generic.33 # iran invasion
+	title = "Invasion of [PER.GetName]"
+	desc = "In the early moring hours of[GetDateText], [From.GetLeader] announced invasion of [PER.GetName] by [From.GetNameDef]"
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Concerning..."
+	}
+}
+
 add_namespace = horsttool
 news_event = {
 	id = horsttool.1

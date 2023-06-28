@@ -79,6 +79,7 @@ country_event = {
 			SAF = {
 				country_event = { id = tfv_south_africa.4 }
 			}
+			set_global_flag = SAF_ENG_accepted_transfering_africa
 		}
 	}
 

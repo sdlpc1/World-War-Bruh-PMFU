@@ -39,8 +39,9 @@ technologies = {
 		}
 		
 		categories = {
-			land_doctrine
-			cat_mobile_warfare
+			land_doctrine_non_cost
+			# land_doctrine
+			# cat_mobile_warfare
 		}
 		
 		ai_will_do = {
@@ -462,7 +463,7 @@ technologies = {
 	firebrigades = { #Branch focused on mobile warfares
 		
 		dependencies = {
-			mot_radio2 = 1
+			# mot_radio2 = 1
 		}
 
 		category_all_infantry = {
@@ -727,8 +728,9 @@ technologies = {
 		research_cost = 0
 		
 		categories = {
-			land_doctrine
-			cat_superior_firepower
+			land_doctrine_non_cost
+			# land_doctrine
+			# cat_superior_firepower
 		}
 
 		
@@ -1335,8 +1337,9 @@ technologies = {
 		research_cost = 0
 		
 		categories = {
-			land_doctrine
-			cat_grand_battle_plan
+			land_doctrine_non_cost
+			# land_doctrine
+			# cat_grand_battle_plan
 		}
 
 		
@@ -1942,8 +1945,9 @@ technologies = {
 		research_cost = 0
 		
 		categories = {
-			land_doctrine
-			cat_mass_assault
+			land_doctrine_non_cost
+			# land_doctrine
+			# cat_mass_assault
 		}
 
 		

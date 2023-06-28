@@ -892,6 +892,12 @@ on_actions = {
 								}
 								tag = INS 
 							}
+							AND = {
+								ENG = {
+									tag = ENG
+								}
+								tag = FRA 
+							}
 						}
 						NOT = {
 							is_in_array = {
