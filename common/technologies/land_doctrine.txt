@@ -25,7 +25,7 @@ technologies = {
 			
 		planning_speed = 0.15
 		
-		enable_tactic = tactic_unexpected_thrust
+		# enable_tactic = tactic_unexpected_thrust
 		org_loss_when_moving = -0.15
 		army_speed_factor = 0.05
 		
@@ -64,6 +64,7 @@ technologies = {
 		}
 		
 		enable_tactic = tactic_delay
+		enable_tactic = tactic_unexpected_thrust
 		
 		path = {
 			leads_to_tech = elastic_defence
@@ -721,7 +722,7 @@ technologies = {
 			hard_attack = 0.1
 		}
 		
-		enable_tactic = tactic_barrage
+		# enable_tactic = tactic_barrage
 		
 		
 		doctrine = yes	
@@ -758,6 +759,7 @@ technologies = {
 		}
 		
 		enable_tactic = tactic_delay
+		enable_tactic = tactic_barrage
 		path = {
 			leads_to_tech = mobile_defence 
 			research_cost_coeff = 1
