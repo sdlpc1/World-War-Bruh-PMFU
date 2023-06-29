@@ -12,7 +12,12 @@ set_technology = {
 	gw_artillery = 1
 	support_weapons = 1
 	basic_train = 1
-	
+	hq_1 = 1
+	motorised_infantry = 1
+}
+set_variable = {
+	var = min_fuel
+	value = 0.800
 }
 set_variable = { allies_poster_center_icon_frame = 1 }
 add_ideas = {
@@ -145,7 +150,7 @@ if = {
 		name_group = BRA_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -162,7 +167,7 @@ if = {
 		name_group = BRA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty

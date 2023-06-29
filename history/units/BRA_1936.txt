@@ -128,15 +128,17 @@ units = {
 
 
 instant_effect = {
+	
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
-			creator = "BRA"
+			type = train_equipment_1
+			creator = "BRA" 
 		}
 		requested_factories = 1
-		progress = 0.59
-		efficiency = 100
+		progress = 0.3
+		efficiency = 50
 	}
+
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -149,12 +151,11 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = train_equipment_1
-			creator = "BRA" 
+			type = infantry_equipment_0
+			creator = "BRA"
 		}
 		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
+		progress = 0.59
+		efficiency = 100
 	}
-
 }

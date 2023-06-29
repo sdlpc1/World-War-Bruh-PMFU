@@ -667,7 +667,7 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			num_of_factories > 60
+			# num_of_factories > 60
 		}
 
 		cancel_if_invalid = yes
@@ -689,7 +689,7 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			num_of_factories > 80
+			# num_of_factories > 80
 		}
 
 		cancel_if_invalid = yes
@@ -799,7 +799,20 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.2
 			add_threat = 1
-			ROM = { country_event = { id = DOD_hungary.40 } }		
+			if = {
+				limit = {has_idea = HUN_treaty_of_triannon}
+				remove_ideas = HUN_treaty_of_triannon
+			}
+			if = {
+				limit = {has_idea = HUN_treaty_of_triannon_2}
+				remove_ideas = HUN_treaty_of_triannon_2
+			}
+			if = {
+				limit = {has_idea = HUN_treaty_of_triannon_3}
+				remove_ideas = HUN_treaty_of_triannon_3
+			}
+			news_event = { id = news.298 days = 1 }
+			# ROM = { country_event = { id = DOD_hungary.40 } }	
 		}
 	}
 
@@ -1043,14 +1056,14 @@ focus_tree = {
 
 	focus = {
 		id = HUN_proclaim_greater_hungary
-		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+		icon = GFX_focus_GER_Greater_Hungary
 		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
 		x = -1
 		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 		dynamic = yes
 
-		cost = 20
+		cost = 10 #20
 
 		ai_will_do = {
 			factor = 80
@@ -2073,7 +2086,21 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.15
-			ROM = { country_event = DOD_hungary.140 }
+			# ROM = { country_event = DOD_hungary.140 }
+			if = {
+				limit = { has_idea = HUN_treaty_of_triannon }
+				swap_ideas = {
+					remove_idea = HUN_treaty_of_triannon
+					add_idea = HUN_treaty_of_triannon_3
+				}
+			}
+			if = {
+				limit = { has_idea = HUN_treaty_of_triannon_2 }
+				swap_ideas = {
+					remove_idea = HUN_treaty_of_triannon_2
+					add_idea = HUN_treaty_of_triannon_3
+				}
+			}
 		}
 	}
 
@@ -2780,8 +2807,9 @@ focus_tree = {
 				ahead_reduction = 0.5
 				uses = 1
 				technology = pack_artillery_2
-				technology = heavy_artillery2
-				technology = heavy_artillery3
+				category = heavy_artillery
+				# technology = heavy_artillery2
+				# technology = heavy_artillery3
 			}
 		}
 	}

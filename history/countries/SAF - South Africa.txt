@@ -27,6 +27,49 @@ set_technology = {
 	basic_train = 1
 }
 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 5000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = horse_equipment_0
+	amount = 1250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = squad_equipment_0
+	amount = 1250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = radio_equipment_0
+	amount = 250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 375
+	producer = ENG
+}
+
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
+starting_train_buffer = 2.35
+
 # MP_garrison_division_standard = yes
 
 if = {
@@ -103,7 +146,7 @@ recruit_character = SAF_pierre_van_ryneveld
 recruit_character = SAF_s_p_le_roux
 recruit_character = SAF_robert_palmer
 recruit_character = SAF_leonard_beyers
-recruit_character = SAF_c_de_weenburg_du_toit
+# recruit_character = SAF_c_de_weenburg_du_toit #unneeded panzer expert
 recruit_character = SAF_james_mitchell_baker
 recruit_character = SAF_jacobus_herculaas_de_la_rey
 

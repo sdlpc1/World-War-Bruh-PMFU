@@ -1,4 +1,4 @@
-technologies = {
+technologies = { 
 	
 	@1918 = 0
 	@1936 = 2
@@ -517,7 +517,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 1 y = @1941 }
 		}
 		
 		categories = {
@@ -659,7 +659,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 1 y = @1941 }
 		}
 		
 		categories = {
@@ -780,7 +780,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 1 y = @1941 }
 		}
 		
 		categories = {
@@ -872,7 +872,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 1 y = @1941 }
 		}
 	}
 
@@ -902,7 +902,7 @@ technologies = {
 		special_forces_min = 44
 		
 		#dependencies = {
-		#	OR = {
+		#	OR = { 
 		#		marines = 1
 		#		paratrooper = 1
 		#		mountaineer = 1
@@ -2136,7 +2136,7 @@ technologies = {
 			need = {
 				infantry_equipment = -15
 			}
-		}		
+		}			
 		allow = {
 			always = no
 		}
@@ -2163,7 +2163,7 @@ technologies = {
 			 	motorized_equipment = -20
 		 	}
 		}
-
+		
 		allow = {
 			always = no
 		}

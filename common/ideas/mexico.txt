@@ -1001,8 +1001,8 @@ ideas = {
 			}
 			
 			modifier = {
-				license_purchase_cost = -0.5
-				license_production_speed = 0.25
+				# license_purchase_cost = -0.5
+				license_production_speed = 0.20
 			}
 		}
 		
@@ -1321,6 +1321,7 @@ ideas = {
 			
 			traits = { tank_manufacturer }
 
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		
 		germano_mexican_tanks = {
@@ -1342,6 +1343,7 @@ ideas = {
 			
 			traits = { heavy_tank_manufacturer }
 
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		
 		russo_mexican_tanks = {
@@ -1366,6 +1368,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		
 		american_mexican_tanks = {
@@ -1390,6 +1394,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 	
@@ -1412,8 +1418,12 @@ ideas = {
 			equipment_bonus = {
 
 			}
+
+			cost = 150
 			
 			traits = { convoy_escort_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		MEX_astimar_gulf = {
@@ -1430,11 +1440,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { atlantic_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		MEX_astimar_pacific = {
@@ -1447,6 +1458,8 @@ ideas = {
 			available = {
 				# has_completed_focus = MEX_focus_pacific_coast_naval_yards
 			}
+
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -1454,8 +1467,7 @@ ideas = {
 			
 			traits = { pacific_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 	}
 	
@@ -1487,6 +1499,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		mex_heavy_aircraft_manufacturer = {
@@ -1509,6 +1523,8 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			
 			traits = { heavy_aircraft_manufacturer }
 		}
@@ -1532,6 +1548,8 @@ ideas = {
 			}
 
 			traits = { CAS_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 	}
@@ -1642,7 +1660,7 @@ ideas = {
 
 			modifier = {
 				tank_manufacturer_cost_factor = -0.25
-				naval_manufacturer_cost_factor = -0.25
+				# naval_manufacturer_cost_factor = -0.25
 				aircraft_manufacturer_cost_factor = -0.25
 				materiel_manufacturer_cost_factor = -0.25
 			}

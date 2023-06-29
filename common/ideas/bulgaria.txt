@@ -1156,7 +1156,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				send_volunteer_divisions_required = -0.75
+				# send_volunteer_divisions_required = -0.75
 				send_volunteer_size = 3
 				send_volunteers_tension = -1
 			} 
@@ -1175,7 +1175,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				send_volunteer_divisions_required = -0.75
+				# send_volunteer_divisions_required = -0.75
 				send_volunteer_size = 3
 				send_volunteers_tension = -1
 			} 
@@ -2035,6 +2035,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		BUL_italian_tank_designer = {
@@ -2083,6 +2085,8 @@ ideas = {
 			}
 			
 			traits = { infantry_tank_manufacturer }
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 
@@ -2146,6 +2150,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		dar = { #VANILLA
@@ -2169,6 +2175,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}	
 	}
 

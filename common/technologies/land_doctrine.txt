@@ -39,8 +39,9 @@ technologies = {
 		}
 		
 		categories = {
-			land_doctrine
-			cat_mobile_warfare
+			land_doctrine_non_cost
+			# land_doctrine
+			# cat_mobile_warfare
 		}
 		
 		ai_will_do = {
@@ -142,7 +143,7 @@ technologies = {
 		}
 		
 		dependencies = {
-			mot_radio1 = 1
+			# mot_radio1 = 1
 		}
 		
 		motorized = {
@@ -273,7 +274,7 @@ technologies = {
 	armored_spearhead = { #Branch focused on Tanks 
 	
 		dependencies = {
-			mot_radio1 = 1
+			# mot_radio1 = 1
 		}
 		
 		category_all_armor = {
@@ -413,13 +414,13 @@ technologies = {
 			max_strength = 1
 		}
 		motorized = {
-			max_strength = 3
+			max_strength = 2
 		}
 		mechanized = {
-			max_strength = 3
+			max_strength = 2
 		}
 		amphibious_mechanized = {
-			max_strength = 3
+			max_strength = 2
 		}
 		
 		org_loss_when_moving = -0.05
@@ -462,7 +463,7 @@ technologies = {
 	firebrigades = { #Branch focused on mobile warfares
 		
 		dependencies = {
-			mot_radio2 = 1
+			# mot_radio2 = 1
 		}
 
 		category_all_infantry = {
@@ -727,8 +728,9 @@ technologies = {
 		research_cost = 0
 		
 		categories = {
-			land_doctrine
-			cat_superior_firepower
+			land_doctrine_non_cost
+			# land_doctrine
+			# cat_superior_firepower
 		}
 
 		
@@ -829,7 +831,7 @@ technologies = {
 	intergrated_support = { 
 	
 		dependencies = {
-			art_radio1 = 1
+			# art_radio1 = 1
 		}
 	
 		xor={
@@ -907,7 +909,7 @@ technologies = {
 	dispersed_support = { # Branch is focused on support units as part of the regular brigades
 	
 		dependencies = {
-			art_radio1 = 1
+			# art_radio1 = 1
 		}
 		
 		xor = {
@@ -1335,8 +1337,9 @@ technologies = {
 		research_cost = 0
 		
 		categories = {
-			land_doctrine
-			cat_grand_battle_plan
+			land_doctrine_non_cost
+			# land_doctrine
+			# cat_grand_battle_plan
 		}
 
 		
@@ -1942,8 +1945,9 @@ technologies = {
 		research_cost = 0
 		
 		categories = {
-			land_doctrine
-			cat_mass_assault
+			land_doctrine_non_cost
+			# land_doctrine
+			# cat_mass_assault
 		}
 
 		
@@ -2050,7 +2054,7 @@ technologies = {
 			peoples_army
 		}
 		
-		training_time_factor = -0.15
+		training_time_factor = -0.10
 		supply_consumption_factor = -0.10
 
 		enable_tactic = tactic_relentless_assault
@@ -2129,11 +2133,11 @@ technologies = {
 		max_planning = 0.05
 		category_all_infantry = {
 			max_organisation = 10
-			max_strength = 5
+			max_strength = 6
 		}
 		category_militia= {
 			max_organisation = 5
-			max_strength = 5
+			max_strength = 6
 		}
 
 
@@ -2254,7 +2258,7 @@ technologies = {
 		cas_damage_reduction = 0.15
 		category_all_armor = {
 			default_morale = 0.1
-			max_strength = 1
+			max_strength = 2
 		}
 		
 		mechanized = {
@@ -2298,7 +2302,7 @@ technologies = {
 
         land_reinforce_rate = 0.01
 		org_loss_when_moving = -0.1
-		training_time_factor = -0.10
+		# training_time_factor = -0.05
 		category_all_armor = {
 			default_morale = 0.1
 		}
@@ -2344,7 +2348,7 @@ technologies = {
 			max_strength = 2.5
 		}
 		
-		training_time_factor = -0.15
+		training_time_factor = -0.10
 		land_reinforce_rate = 0.05
 				
 		enable_tactic = tactic_human_wave_tactics
@@ -2509,7 +2513,7 @@ technologies = {
 	
 	guerilla_warfare = {
 		out_of_supply_factor = -0.2
-		training_time_factor = -0.25
+		# training_time_factor = -0.05
 		dig_in_speed_factor = 0.25
 		pocket_penalty = -0.1
 		cas_damage_reduction = 0.10

@@ -162,7 +162,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			GER = { country_event = italy.500 }
+			# GER = { country_event = italy.500 }
+			GER = {
+				give_resource_rights = { receiver = ITA state = 66 }
+			}
+			ITA = { add_timed_idea = { idea = ITA_german_payments days = 180 } }
+			set_global_flag = ITA_ger_steel
 		}
 	}
 	
@@ -355,6 +360,24 @@ focus_tree = {
 					}
 				}
 			}
+			BUL = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+						is_core_of = BUL
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	
@@ -430,7 +453,24 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			ROM = { country_event = italy.501 }
+			# ROM = { country_event = italy.501 } 
+			ROM = {
+				give_resource_rights = { receiver = ITA state = 81 }
+			}
+			ITA = { add_timed_idea = { idea = ITA_romanian_payments days = 180 } }
+			46 = {
+				add_resource = {
+					type = oil
+					amount = -200
+				}
+			}
+			81 = {
+				add_resource = {
+					type = oil
+					amount = 200
+				}
+			}
+			set_global_flag = ITA_rom_oil
 		}
 	}
 	
@@ -2372,6 +2412,94 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.25
+			663 = {
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 7063
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 4133
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 9977
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 1186
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 13078
+					instant_build = yes
+				}
+			}
+			451 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 12094
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 4151
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 1204
+					instant_build = yes
+				}
+			}
+			449 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 12088
+					instant_build = yes
+				}
+			}
+			662 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 13073
+					instant_build = yes
+				}
+			}
+			661 = {
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 4962
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 4
+					province = 11940
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = 1174
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -3481,10 +3609,10 @@ focus_tree = {
 			create_field_marshal = {
 				name = "Italo Gariboldi"
 				picture = "Portrait_Italy_Italo_Gariboldi.dds"
-				traits = { old_guard inflexible_strategist }
-				skill = 3
-				attack_skill = 2
-				defense_skill = 3
+				traits = { old_guard inflexible_strategist organizer infantry_leader unyielding_defender defensive_doctrine }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 6
 				planning_skill = 2
 				logistics_skill = 3
 			}
@@ -3678,13 +3806,13 @@ focus_tree = {
 			create_field_marshal = {
 				name = "Benito Mussolini"
 				picture = "Portrait_Italy_Benito_Mussolini.dds"
-				skill = 2
+				skill = 1
 				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
 				id = 91203
-				traits = { old_guard }
+				traits = { media_personality militias_officer ascari_officer }
 			}
 		}
 	}
@@ -4124,12 +4252,12 @@ focus_tree = {
 			create_corps_commander = {
 				name = "Enrico Frattini"
 				picture = "Portrait_Italy_Generic_land_5.dds"
-				traits = { commando }
+				traits = { commando paratrooper scavenger }
 				skill = 3
 				attack_skill = 3
-				defense_skill = 3
+				defense_skill = 5
 				planning_skill = 2
-				logistics_skill = 2
+				logistics_skill = 4
 			}
 			add_tech_bonus = {
 				name = sf_bonus
@@ -4882,7 +5010,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_flottiglia_mas
-		icon = GFX_focus_ITA_xmas
+		icon = GFX_focus_ITA_trade_interdiction
 		prerequisite = { focus = ITA_convoy_defence }
 		x = -1
 		y = 1
@@ -5104,7 +5232,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_seaplanes
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_focus_ITA_naval_air_effort_2
 		prerequisite = { focus = ITA_airfield_expansion }
 		x = -3
 		y = 1
@@ -5180,7 +5308,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_replace_biplanes
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_focus_ITA_air_innovation_3
 		prerequisite = { focus = ITA_airfield_expansion }
 		x = -1
 		y = 1
@@ -5287,7 +5415,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_technical_assistance
-		icon = GFX_luftwaffe_laurel
+		icon = GFX_focus_ITA_german_air_cooperation
 		prerequisite = { focus = ITA_airfield_expansion }
 		x = 3
 		y = 1
@@ -5389,10 +5517,11 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_game_rule = {
-				rule = italian_costal_forts_focus
-				option = ENABLED
-			}
+			# has_game_rule = {
+			# 	rule = italian_costal_forts_focus
+			# 	option = ENABLED
+			# }
+			always = no
 		}
        
 		completion_reward = {

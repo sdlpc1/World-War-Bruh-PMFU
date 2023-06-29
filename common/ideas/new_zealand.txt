@@ -293,6 +293,9 @@ ideas = {
 			
 			traits = { convoy_escort_naval_manufacturer }
 
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 		
 		NZL_port_chalmers_shipbuilding = {
@@ -304,13 +307,15 @@ ideas = {
 				has_dlc = "Together for Victory"
 			}
 			
-
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer }
+
+			cost = 150
 		}
 			
 	}
@@ -385,8 +390,7 @@ ideas = {
 			
 			traits = { fast_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		NZL_christchurch_workshops = {
@@ -406,8 +410,7 @@ ideas = {
 			
 			traits = { heavy_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 }

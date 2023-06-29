@@ -8,6 +8,11 @@ add_ideas = {
 
 set_research_slots = 5
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -43,6 +48,7 @@ add_ideas = { #DLC
 	peace_training
 	minors_no_air
 	no_grinding
+	AFRICA_COMMONWEALTH_controls_axis_idea_6
 }
 
 #SET FLAGS AND VARIABLES

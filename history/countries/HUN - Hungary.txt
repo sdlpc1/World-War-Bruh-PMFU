@@ -20,6 +20,11 @@ set_technology = {
 	basic_train = 1
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 # MP_garrison_division_standard = yes
 
 add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
@@ -36,6 +41,7 @@ if = {
 		peace_training
 		minors_no_air
 		no_grinding
+		AFRICA_COMMONWEALTH_controls_axis_idea_6
 	}
 }
 set_variable = { axis_poster_center_icon_frame = 1 }

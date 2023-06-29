@@ -3396,7 +3396,7 @@ focus_tree = {
 						gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
 						traits = { infantry_leader inflexible_strategist trait_cautious engineer_officer }
 						skill = 4
-						attack_skill = 5
+						attack_skill = 4
 						defense_skill = 4
 						planning_skill = 4
 						logistics_skill = 5
@@ -3475,7 +3475,25 @@ focus_tree = {
 					uses = 2
 					category = support_tech
 				}
-				set_technology = { inf_radio1 = 1 }
+				# set_technology = { inf_radio1 = 1 }
+				if = {
+					limit = {
+						NOT = {
+							has_tech = inf_radio1
+						}
+					}
+					set_technology = {
+						inf_radio1 = 1
+					}
+				}
+				else = {
+					add_tech_bonus = {
+						name = radio_bonus
+						bonus = 0.25
+						uses = 1
+						category = electronics
+					}
+				}
 			}
 	}
 
@@ -3752,7 +3770,7 @@ focus_tree = {
 						gfx = "GFX_RAJ_kodendera_subayya_thimayya"
 						traits = { naval_invader trait_reckless infantry_leader commando }
 						skill = 4
-						attack_skill = 7
+						attack_skill = 5
 						defense_skill = 3
 						planning_skill = 4
 						logistics_skill = 5
@@ -4043,7 +4061,7 @@ focus_tree = {
 						gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
 						traits = { infantry_leader trickster trait_mountaineer brilliant_strategist }
 						skill = 4
-						attack_skill = 5
+						attack_skill = 3
 						defense_skill = 3
 						planning_skill = 6
 						logistics_skill = 7
@@ -4246,7 +4264,7 @@ focus_tree = {
 						gfx = "GFX_RAJ_kodandera_madappa_cariappa"
 						traits = { panzer_leader brilliant_strategist fortress_buster }
 						skill = 4
-						attack_skill = 6
+						attack_skill = 4
 						defense_skill = 3
 						planning_skill = 6
 						logistics_skill = 6
@@ -4324,7 +4342,25 @@ focus_tree = {
 			available_if_capitulated = yes
 
 			completion_reward = {
-				set_technology = { mot_radio1 = 1 }
+				# set_technology = { mot_radio1 = 1 }
+				if = {
+					limit = {
+						NOT = {
+							has_tech = mot_radio1
+						}
+					}
+					set_technology = {
+						mot_radio1 = 1
+					}
+				}
+				else = {
+					add_tech_bonus = {
+						name = radio_bonus
+						bonus = 0.25
+						uses = 1
+						category = electronics
+					}
+				}
 			}
 	}
 
@@ -4434,7 +4470,25 @@ focus_tree = {
 			available_if_capitulated = yes
 
 			completion_reward = {
-				set_technology = { mot_radio2 = 1 }
+				# set_technology = { mot_radio2 = 1 }
+				if = {
+					limit = {
+						NOT = {
+							has_tech = mot_radio2
+						}
+					}
+					set_technology = {
+						mot_radio2 = 1
+					}
+				}
+				else = {
+					add_tech_bonus = {
+						name = radio_bonus
+						bonus = 0.25
+						uses = 1
+						category = electronics
+					}
+				}
 				add_ideas = MEX_improvement_of_armor
 			}
 	}

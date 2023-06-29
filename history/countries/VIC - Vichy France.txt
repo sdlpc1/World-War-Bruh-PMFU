@@ -10,6 +10,11 @@ set_rule = {
 	can_not_declare_war = no
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 # MP_garrison_division_standard = yes
 
 # Starting tech
@@ -33,7 +38,6 @@ set_technology = {
 	light_tank_1 = 1
 	medium_tank_1 = 1
 	heavy_tank_1 = 1
-	jaegers = 1
 	
 
 	trench_warfare = 1
@@ -310,7 +314,7 @@ if = {
 		name_group = FRA_DE_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -327,7 +331,7 @@ if = {
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -344,7 +348,7 @@ if = {
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_battery_slot = ship_light_battery_main_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -360,7 +364,7 @@ if = {
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = dp_light_battery_2
+			fixed_ship_battery_slot = dp_light_battery_main_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -596,7 +600,7 @@ if = {
 		name = "F.222"
 		type = large_plane_airframe_0
 		modules = {
-			fixed_main_weapon_slot = large_bomb_bay
+			fixed_main_weapon_slot = early_large_bomb_bay
 			fixed_auxiliary_weapon_slot_2 = lmg_defense_turret
 			engine_type_slot = engine_1_4x
 		}

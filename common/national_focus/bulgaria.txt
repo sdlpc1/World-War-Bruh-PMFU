@@ -512,8 +512,9 @@ focus_tree = {
 	focus = {
 		id = BUL_tactical_innovations
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = BUL_armour }
-		prerequisite = { focus = BUL_new_artillery }
+		prerequisite = { focus = BUL_armour focus = BUL_new_artillery }
+		# prerequisite = { focus = BUL_armour }
+		# prerequisite = { focus = BUL_new_artillery }
 		x = -1
 		y = 1
 		relative_position_id = BUL_armour
@@ -2790,7 +2791,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			num_of_factories > 40
+			# num_of_factories > 40
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -2817,7 +2818,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			num_of_factories > 50
+			# num_of_factories > 50
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -3052,7 +3053,11 @@ focus_tree = {
 				has_government = fascism
 				has_government = neutrality
 			}
-		}
+		} 
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
 
 		available = {
 			threat > 0.35

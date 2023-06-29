@@ -22,6 +22,11 @@ add_ideas = {
 	peace_training
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.050
+}
+
 # MP_garrison_division_standard = yes
 
 recruit_character = IRQ_ghazi_i
@@ -44,42 +49,6 @@ recruit_character = IRQ_abdullah
 recruit_character = IRQ_amir_al_illah
 recruit_character = IRQ_ali_abn_hussein
 recruit_character = IRQ_nuri_as_said
-
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 20000
-	producer = GER
-}
-
-add_equipment_to_stockpile = {
-	type = horse_equipment_0
-	amount = 5000
-	producer = GER
-}
-
-add_equipment_to_stockpile = {
-	type = squad_equipment_0
-	amount = 5000
-	producer = GER
-}
-
-add_equipment_to_stockpile = {
-	type = motorized_equipment_1
-	amount = 1000
-	producer = GER
-}
-
-add_equipment_to_stockpile = {
-	type = radio_equipment_0
-	amount = 1000
-	producer = GER
-}
-
-add_equipment_to_stockpile = {
-	type = support_equipment_1
-	amount = 1500
-	producer = GER
-}
 
 1939.1.1 = {
 

@@ -52,28 +52,28 @@ sub_units = {
 		}
 
 		forest = {
-			movement = 0.05
+			movement = 0.04
 		}
 		hills = {
-			movement = 0.05
+			movement = 0.04
 		}
 		mountain = {
-			movement = 0.05
+			movement = 0.04
 		}
 		jungle = {
-			movement = 0.05
+			movement = 0.04
 		}
 		marsh = {
-			movement = 0.05
+			movement = 0.04
 		}
 		plains = {
-			movement = 0.05
+			movement = 0.04
 		}
 		desert = {
-			movement = 0.05
+			movement = 0.04
 		}
 		river = {
-			movement = 0.05
+			movement = 0.04
 		}
 		
 		same_support_type = recon
@@ -130,28 +130,28 @@ sub_units = {
 		}
 
 		forest = {
-			movement = 0.08
+			movement = 0.06
 		}
 		hills = {
-			movement = 0.08
+			movement = 0.06
 		}
 		mountain = {
-			movement = 0.08
+			movement = 0.06
 		}
 		jungle = {
-			movement = 0.08
+			movement = 0.06
 		}
 		marsh = {
-			movement = 0.08
+			movement = 0.06
 		}
 		plains = {
-			movement = 0.08
+			movement = 0.06
 		}
 		desert = {
-			movement = 0.08
+			movement = 0.06
 		}
 		river = {
-			movement = 0.08
+			movement = 0.06
 		}
 		
 		same_support_type = recon
@@ -191,7 +191,7 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		recon = 3
-		can_be_parachuted = yes
+		can_be_parachuted = no
 
 		
 		essential = {
@@ -209,28 +209,28 @@ sub_units = {
 		}
 
 		forest = {
-			movement = 0.1
+			movement = 0.08
 		}
 		hills = {
-			movement = 0.1
+			movement = 0.08
 		}
 		mountain = {
-			movement = 0.1
+			movement = 0.08
 		}
 		jungle = {
-			movement = 0.1
+			movement = 0.08
 		}
 		marsh = {
-			movement = 0.1
+			movement = 0.08
 		}
 		plains = {
-			movement = 0.1
+			movement = 0.08
 		}
 		desert = {
-			movement = 0.1
+			movement = 0.08
 		}
 		river = {
-			movement = 0.1
+			movement = 0.08
 		}
 		
 		same_support_type = recon
@@ -386,7 +386,7 @@ sub_units = {
 		desert = {
 			movement = 0.10
 			attack = 0.10
-			defence = 0.10
+			# defence = 0.10
 		}
 		river = {
 			movement = 0.10

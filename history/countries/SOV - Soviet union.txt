@@ -16,6 +16,8 @@ set_party_name = {
 	name = SOV_fascism_party_russian
 }
 
+starting_train_buffer = 3.2
+
 # DIPLOMACY
 if = {
 	limit = {
@@ -29,9 +31,9 @@ if = {
 	}
 }
 
-create_intelligence_agency = {
-    name = "NKVD"
-}
+# create_intelligence_agency = {
+#     name = "NKVD"
+# }
 
 # MP_garrison_division_standard = yes
 
@@ -83,21 +85,21 @@ recruit_character = SOV_aleksandr_novikov
 # recruit_character = SOV_aleksandr_yegorov
 # recruit_character = SOV_andrey_grechko
 recruit_character = SOV_andrey_vlasov
-recruit_character = SOV_andrey_yeryomenko
+# recruit_character = SOV_andrey_yeryomenko
 recruit_character = SOV_arseny_golovko
 recruit_character = SOV_boris_shaposhnikov
-recruit_character = SOV_dmitry_lelyushenko
+# recruit_character = SOV_dmitry_lelyushenko
 recruit_character = SOV_filipp_golikov
 recruit_character = SOV_filipp_oktyabrsky
 
 # recruit_character = SOV_georgy_zakharov
 recruit_character = SOV_georgy_zhukov
 recruit_character = SOV_gordey_levchenko
-recruit_character = SOV_grigory_kulik
+# recruit_character = SOV_grigory_kulik
 recruit_character = SOV_igor_kurchatov
-recruit_character = SOV_issa_pliyev
+# recruit_character = SOV_issa_pliyev
 recruit_character = SOV_ivan_chernyakhovsky
-recruit_character = SOV_ivan_fedyuninsky
+# recruit_character = SOV_ivan_fedyuninsky
 recruit_character = SOV_ivan_konev
 recruit_character = SOV_ivan_yumashev
 recruit_character = SOV_kirill_meretskov
@@ -105,7 +107,7 @@ recruit_character = SOV_kirill_moskalenko
 recruit_character = SOV_kliment_voroshilov
 recruit_character = SOV_konstantin_rokossovsky
 recruit_character = SOV_konstantin_vershinin
-recruit_character = SOV_kuzma_galitsky
+# recruit_character = SOV_kuzma_galitsky
 recruit_character = SOV_leonid_govorov
 recruit_character = SOV_maksim_purkayev
 recruit_character = SOV_markian_popov
@@ -123,7 +125,7 @@ recruit_character = SOV_nikolay_kuznetsov
 recruit_character = SOV_pavel_rychagov
 recruit_character = SOV_pavel_zhigarev
 recruit_character = SOV_pyotr_smirnov
-recruit_character = SOV_rodion_malinovsky
+# recruit_character = SOV_rodion_malinovsky
 recruit_character = SOV_semyon_budyonny
 recruit_character = SOV_semyon_timoshenko
 recruit_character = SOV_sergey_khudyakov
@@ -137,15 +139,16 @@ recruit_character = SOV_vasily_kuznetsov
 recruit_character = SOV_vladimir_kasatonov
 recruit_character = SOV_vladimir_tributs
 
-recruit_character = SOV_yakov_cherevichenko
+# recruit_character = SOV_yakov_cherevichenko
 recruit_character = SOV_yakov_smushkevich
 recruit_character = SOV_nikolai_vatutin
-recruit_character = SOV_georgiy_zakharov
-recruit_character = SOV_max_reyter
+# recruit_character = SOV_georgiy_zakharov
+# recruit_character = SOV_max_reyter
 recruit_character = SOV_nikolai_berzarin
 recruit_character = SOV_alexander_gorbatov
-recruit_character = SOV_andrei_grechko
+# recruit_character = SOV_andrei_grechko
 recruit_character = SOV_vasily_chuikov
+recruit_character = SOV_arno_andreyev
 
 # recruit_character = SOV_vitaly_primakov
 #Not available at game start
@@ -180,6 +183,13 @@ if = {
 	# recruit_character = SOV_anton_denikin
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
+set_country_flag=fuel_system_enabled
+
 set_variable = { SOV_RG_division_cap = 0 }
 set_variable = { SOV_RG_cap_increase = 2 }
 set_variable = { SOV_RG_cap_decrease = -2 }
@@ -188,6 +198,36 @@ set_variable = { SOV_RG_cap_increase_light_double = 6 }
 set_variable = { SOV_RG_cap_increase_heavy_double = 2 }
 
 #Initialize character flags Part I (aka who's safe)
+SOV_filipp_golikov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_arno_andreyev = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_aleksandr_vasilevsky = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_ivan_konev = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_vasily_kuznetsov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_semyon_timoshenko = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_vasily_chuikov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_konstantin_rokossovsky = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_georgy_zhukov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_nikolai_vatutin = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
 SOV_nikolay_voznesensky = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
@@ -719,7 +759,7 @@ if = {
 	}
 }
 
-set_research_slots = 6
+set_research_slots = 5
 set_stability = 0.4
 set_war_support = 0.45
 # Starting tech
@@ -811,7 +851,9 @@ if = {
 			iw_medium_airframe = 1
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
+			tac_0 = 1
 			tac_1 = 1
+			photo_reconnaisance = 1
 	}
 	else = {
 		set_air_oob = "SOV_1936_air_legacy"
@@ -839,6 +881,7 @@ add_ideas = {
 	volunteer_minimum_major
 	peace_training
 	no_grinding
+	SOV_no_wargoal_before_august_41
 }
 
 1939.1.1 = {
@@ -917,7 +960,7 @@ add_ideas = {
 	set_country_flag = SOV_third_moscow_trial_flag
 	set_country_flag = SOV_trial_of_the_generals_flag
 
-	#PURGE ALL THESE PEOPLES
+	#PURGE ALL THESE PEOPLES 
 	SOV_grigory_zinovyev = { SOV_purge_character_effect = yes }
 	SOV_lev_kamenev = { SOV_purge_character_effect = yes }
 	SOV_ivan_smirnov = { SOV_purge_character_effect = yes }
@@ -1196,7 +1239,7 @@ add_ideas = {
 }
 
 
-set_convoys = 350
+set_convoys = 550
 
 set_politics = {
 	ruling_party = communism
@@ -1367,7 +1410,7 @@ if = {
 		name_group = SOV_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_2
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1384,7 +1427,7 @@ if = {
 		name_group = SOV_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1401,7 +1444,7 @@ if = {
 		name_group = SOV_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_battery_slot = ship_light_battery_main_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1417,7 +1460,7 @@ if = {
 		name_group = SOV_MINELAYERS_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -2148,3 +2191,5 @@ add_operation_token = {
 	tag = MON
 	token = token_navy_friendly
 }
+
+SOV = { SOV = { set_occupation_law = liberate_workers_occupation } } # set default law

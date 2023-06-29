@@ -214,6 +214,158 @@ operations = {
 		}
 	}
 
+	GER_annex_vichy = {
+
+		icon = generic_operation
+
+		available = {
+			VIC = {
+				has_war_with = ENG
+				is_ai = yes
+			}
+		}
+
+		visible = {
+			original_tag = GER
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			GER = {
+				VIC = {
+					pow_before_annex = yes
+				}
+			}
+			annex_country = {
+				target = VIC
+			}
+			VIC = {
+				transfer_units_fraction = {
+					target = GER
+					size = 1
+					stockpile_ratio = 0.8
+					army_ratio = 0
+					navy_ratio = 1.0
+					air_ratio = 0
+				}
+			}
+			ITA = {
+				# MARRAKECH
+				if = {
+					limit = {
+						462 = {
+							CONTROLLER = {
+								OR = {
+									tag = GER
+									tag = VIC
+									is_subject_of = GER
+									is_in_faction_with = GER
+								}
+							}
+						}
+					}
+					transfer_state = 462
+				}
+				# CASABLANCA
+				if = {
+					limit = {
+						461 = {
+							CONTROLLER = {
+								OR = {
+									tag = GER
+									tag = VIC
+									is_subject_of = GER
+									is_in_faction_with = GER
+								}
+							}
+						}
+					}
+					transfer_state = 461
+				}
+				# TLEMCEN
+				if = {
+					limit = {
+						513 = {
+							CONTROLLER = {
+								OR = {
+									tag = GER
+									tag = VIC
+									is_subject_of = GER
+									is_in_faction_with = GER
+								}
+							}
+						}
+					}
+					transfer_state = 513
+				}
+				# ALGIERS
+				if = {
+					limit = {
+						459 = {
+							CONTROLLER = {
+								OR = {
+									tag = GER
+									tag = VIC
+									is_subject_of = GER
+									is_in_faction_with = GER
+								}
+							}
+						}
+					}
+					transfer_state = 459
+				}
+				# CONSTATINE
+				if = {
+					limit = {
+						460 = {
+							CONTROLLER = {
+								OR = {
+									tag = GER
+									tag = VIC
+									is_subject_of = GER
+									is_in_faction_with = GER
+								}
+							}
+						}
+					}
+					transfer_state = 460
+				}
+				# TUNISIA
+				if = {
+					limit = {
+						458 = {
+							CONTROLLER = {
+								OR = {
+									tag = GER
+									tag = VIC
+									is_subject_of = GER
+									is_in_faction_with = GER
+								}
+							}
+						}
+					}
+					transfer_state = 458
+				}
+				if = {
+					limit = {
+						665 = {
+							CONTROLLER = {
+								OR = {
+									tag = GER
+									tag = VIC
+									is_subject_of = GER
+									is_in_faction_with = GER
+								}
+							}
+						}
+					}
+					transfer_state = 665
+				}
+			}
+		}
+	}
+
 	GER_occupy_hungary = {
 		icon = generic_operation
 		available = {
@@ -1463,7 +1615,7 @@ special_projects = {
 			set_country_flag = { flag = GER_atlantik_flag value = 1 days = 90 }
 		}
 	}
-	
+
 	GER_atlantik_west_france_mission = {
 
 		icon = generic_construction
@@ -1852,7 +2004,7 @@ special_projects = {
 			set_country_flag = { flag = GER_atlantik_flag value = 1 days = 90 }
 		}
 	}
-	
+
 	GER_atlantik_north_france_mission = {
 
 		icon = generic_construction
@@ -2078,7 +2230,7 @@ special_projects = {
 			set_country_flag = { flag = GER_atlantik_flag value = 1 days = 90 }
 		}
 	}
-	
+
 	GER_atlantik_benelux_mission = {
 
 		icon = generic_construction

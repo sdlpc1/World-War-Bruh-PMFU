@@ -799,7 +799,7 @@ operations = {
 	# 		tag = ENG
 	# 		has_government = democratic
 	# 		has_war_with = GER
-	# 		# ICE = { exists = yes }
+	# 		ICE = { exists = yes }
 	# 	}
 
 	# 	cost = 50
@@ -813,12 +813,17 @@ operations = {
 	# 	visible = {
 	# 		tag = ENG
 	# 		has_war_with = GER
-	# 		# ICE = { exists = yes }
+	# 		ICE = { exists = yes }
 	# 		NOT = { ICE = { is_in_faction_with = ROOT } }
 	# 	}
 		
 	# 	complete_effect = {
 	# 		annex_country = { target = ICE }
+	# 		ENG = {
+	# 			transfer_state = 337
+	# 		}
+	# 		100 = { set_compliance = 80 }
+	# 		337 = { set_compliance = 80 }
 	# 	}
 	# }
 
@@ -842,6 +847,11 @@ operations = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			ENG = {
+				IRE = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = { target = IRE transfer_troops = yes }
 			add_state_core = 113
 			add_state_core = 134
@@ -870,6 +880,11 @@ operations = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			ENG = {
+				SAF = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = { target = SAF transfer_troops = yes }
 			add_state_core = 275
 			add_state_core = 541
@@ -2798,7 +2813,7 @@ ENG_propaganda_campaigns = {
 
 		available = {
 			ENG_propaganda_poster_slot_available = yes
-			has_completed_focus = ENG_inchindown_fuel
+			has_completed_focus = ENG_new_dockyards 
 		}
 
 		days_remove = 365

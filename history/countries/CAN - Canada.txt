@@ -10,6 +10,11 @@ if = {
 	}
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 set_research_slots = 5
 set_country_flag = monroe_doctrine
 set_stability = 0.8
@@ -18,6 +23,8 @@ set_war_support = 0.15
 set_variable = { COM_poster_center_icon_frame = 1 }
 
 # MP_garrison_division_standard = yes
+
+starting_train_buffer = 2
 
 # Starting tech
 set_technology = {
@@ -96,6 +103,41 @@ set_popularities = {
 	communism = 1
 }
 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 5000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = horse_equipment_0
+	amount = 1250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = squad_equipment_0
+	amount = 1250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = radio_equipment_0
+	amount = 250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 375
+	producer = ENG
+}
 
 set_convoys = 200
 set_stability = 0.75
@@ -138,6 +180,7 @@ recruit_character = CAN_john_murchie
 recruit_character = CAN_frederick_m_w_harvey
 recruit_character = CAN_percival_john_montague
 recruit_character = CAN_thomas_victor_anderson
+recruit_character = CAN_ronald_okeden_alexander
 
 
 ### VARIANTS ###
@@ -167,7 +210,7 @@ if = {
 		name_group = CAN_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -184,7 +227,7 @@ if = {
 		name_group = CAN_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_battery_slot = ship_light_battery_main_2
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty

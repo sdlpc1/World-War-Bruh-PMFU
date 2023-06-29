@@ -181,6 +181,7 @@ ideas = {
 				production_speed_steel_refinery_factor = 0.1
 				production_speed_synthetic_rubber_refinery_factor = 0.1
 				production_speed_synthetic_refinery_factor = 0.1
+				min_export = -0.1
 			}
 
 		}
@@ -597,6 +598,8 @@ ideas = {
 			traits = {
 				cope_trait
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 	

@@ -64,14 +64,14 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -234,56 +234,56 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = IRE_secure_interests
-		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = IRE_dominion_status }
-		x = 0
-		y = 1
-		relative_position_id = IRE_dominion_status
+	# focus = {
+	# 	id = IRE_secure_interests
+	# 	icon = GFX_focus_chi_british_cooperation
+	# 	prerequisite = { focus = IRE_dominion_status }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = IRE_dominion_status
 		
-		cost = 10
+	# 	cost = 10
 
-		available = {
-			is_ai = no
-		}
+	# 	available = {
+	# 		is_ai = no
+	# 	}
 
-		ai_will_do = {
-			factor = 8
-		}
+	# 	ai_will_do = {
+	# 		factor = 8
+	# 	}
 
-		completion_reward = {
-   			transfer_state = 119
-		}
-	}
+	# 	completion_reward = {
+   	# 		transfer_state = 119
+	# 	}
+	# }
 	
-	focus = {
-		id = IRE_integrate_the_north
-		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = IRE_secure_interests }
-		x = 0
-		y = 1
-		relative_position_id = IRE_secure_interests
+	# focus = {
+	# 	id = IRE_integrate_the_north
+	# 	icon = GFX_focus_generic_self_management
+	# 	prerequisite = { focus = IRE_secure_interests }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = IRE_secure_interests
 		
-		cost = 10
+	# 	cost = 10
 
-		ai_will_do = {
-			factor = 8
-		}
+	# 	ai_will_do = {
+	# 		factor = 8
+	# 	}
 
-		completion_reward = {
-   			ENG = { remove_state_core = 119 }
-			add_state_core = 119
-		}
-	}
+	# 	completion_reward = {
+   	# 		ENG = { remove_state_core = 119 }
+	# 		add_state_core = 119
+	# 	}
+	# }
 	
 	focus = {
 		id = IRE_clamp_down
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-		prerequisite = { focus = IRE_integrate_the_north }
+		prerequisite = { focus = IRE_dominion_status }
 		x = 0
 		y = 1
-		relative_position_id = IRE_integrate_the_north
+		relative_position_id = IRE_dominion_status
 		
 		cost = 10
 
@@ -338,8 +338,8 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = IRE_ira_1
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = IRE_sean_russell
+			# custom_effect_tooltip = available_political_advisor
+			# show_ideas_tooltip = IRE_sean_russell
 		}
 	}
 	

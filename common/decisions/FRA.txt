@@ -77,7 +77,12 @@ FRA_vichy_france = {
 
 		timeout_effect = {
 			transfer_navy = { target = GER }
-			GER = { annex_country = { target = ROOT } }
+			GER = {
+				VIC = {
+					pow_before_annex = yes
+				}
+			}
+			GER = { annex_country = { target = VIC } }
 			if = {
 				limit = {
 					NOT = { has_country_flag = scuttled_fleet }
@@ -2584,8 +2589,8 @@ FRA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			army_core_defence_factor = 0.2
-			army_core_attack_factor = 0.2
+			army_core_defence_factor = 0.15
+			army_core_attack_factor = 0.15
 			supply_combat_penalties_on_core_factor = -0.2
 		}
 
@@ -2716,11 +2721,11 @@ FRA_propaganda_campaigns = {
 
 		targeted_modifier = {
 			tag = VIC
-			attack_bonus_against = 0.2
+			attack_bonus_against = 0.15
 		}
 		targeted_modifier = {
 			tag = GER
-			attack_bonus_against = 0.2
+			attack_bonus_against = 0.15
 		}
 
 		complete_effect = {

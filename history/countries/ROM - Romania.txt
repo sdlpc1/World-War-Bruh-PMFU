@@ -13,6 +13,11 @@ set_research_slots = 5
 set_stability = 0.6
 set_war_support = 0.6
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 # Starting tech
 set_technology = {
 	tech_support = 1		
@@ -32,6 +37,7 @@ set_technology = {
 # MP_garrison_division_standard = yes
 
 add_ideas = volunteer_minimum_minor
+add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_6
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -182,7 +188,7 @@ if = {
 		name_group = ROM_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -199,7 +205,7 @@ if = {
 		name_group = ROM_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty

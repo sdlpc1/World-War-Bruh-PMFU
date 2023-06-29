@@ -19,14 +19,21 @@ add_ideas = {
 	JAP_gekokoju
 	JAP_island_hopping8
 	volunteer_minimum_major
-	JAP_no_equipment_capture
+	# JAP_no_equipment_capture
 	peace_training
 	no_grinding
 }
 
-create_intelligence_agency = {
-    name = "G-2 Department"
+set_variable = {
+	var = min_fuel
+	value = 0.800
 }
+
+set_country_flag=fuel_system_enabled
+
+# create_intelligence_agency = {
+#     name = "G-2 Department"
+# }
 
 # MP_garrison_division_standard = yes
 
@@ -141,6 +148,7 @@ if = {
 			iw_medium_airframe = 1
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
+			photo_reconnaisance = 1
 	}
 	else = {
 		set_air_oob = "JAP_1936_air_legacy"
@@ -804,7 +812,7 @@ if = {
 			name_group = JAP_DD_HISTORICAL
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_battery_slot = ship_light_battery_main_1
 				fixed_ship_anti_air_slot = empty
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
@@ -821,7 +829,7 @@ if = {
 			name_group = JAP_DD_HISTORICAL
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_battery_slot = ship_light_battery_main_1
 				fixed_ship_anti_air_slot = empty
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
@@ -838,7 +846,7 @@ if = {
 			name_group = JAP_DD_HISTORICAL
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = dp_light_battery_1
+				fixed_ship_battery_slot = dp_light_battery_main_1
 				fixed_ship_anti_air_slot = empty
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
@@ -854,7 +862,7 @@ if = {
 			name_group = JAP_MINELAYERS_HISTORICAL
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_battery_slot = ship_light_battery_main_1
 				fixed_ship_anti_air_slot = empty
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty

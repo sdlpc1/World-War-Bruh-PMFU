@@ -10,6 +10,49 @@ set_variable = { COM_poster_center_icon_frame = 1 }
 
 # MP_garrison_division_standard = yes
 
+starting_train_buffer = 2
+
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 5000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = horse_equipment_0
+	amount = 1250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = squad_equipment_0
+	amount = 1250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = radio_equipment_0
+	amount = 250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 375
+	producer = ENG
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -27,6 +70,8 @@ set_technology = {
 	fuel_refining = 1
 	support_weapons = 1
 	basic_train = 1
+	hq_1 = 1
+	motorised_infantry = 1
 }
 if = {	
 	limit = {	
@@ -196,6 +241,7 @@ recruit_character = RAJ_ram_singh_thakur
 recruit_character = RAJ_agha_khan_iii
 recruit_character = RAJ_bahadur_jayla_of_khoch_bahur
 recruit_character = RAJ_sir_mohammed_iqbal
+recruit_character = RAJ_douglas_gracey_father
 
 # Adding this line since you need a newline otherwise recruit character won't work, and it's liable to get removed if I just have an empty line
 

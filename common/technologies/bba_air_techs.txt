@@ -759,7 +759,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = tac_1
+			leads_to_tech = tac_0
 			research_cost_coeff = 1
 		}
 		
@@ -989,6 +989,50 @@ technologies = {
 		}
 	}
 	
+	tac_0 = {
+
+		xp_research_type = air
+		xp_unlock_cost = 0
+		xp_boost_cost = 50
+		xp_research_bonus = 0.75
+		enable_equipment_modules = {
+			early_large_bomb_bay
+		}
+		
+		research_cost = 0.5
+		start_year = 1936
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 4 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = tac_1
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			tactical_bomber
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+
 	tac_1 = {
 
 		xp_research_type = air
@@ -1000,11 +1044,11 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1936
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 4 y = 4 }
+			position = { x = 4 y = 6 }
 		}
 
 		path = {
@@ -1043,11 +1087,11 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1939
+		start_year = 1942
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 4 y = 6 }
+			position = { x = 4 y = 8 }
 		}
 
 		path = {

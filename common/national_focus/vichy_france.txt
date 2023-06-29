@@ -798,6 +798,20 @@ focus_tree = {
             GER = {
 				country_event = generic.2
 			}
+            hidden_effect = {
+                every_country = {
+                    limit = {
+                        OR = {
+                            tag = USA
+                            tag = BRA
+                            tag = MEX
+                            tag = ENG
+                            is_in_faction_with = ENG
+                        }
+                    }
+                    news_event = vichy.4
+                }
+            }
         }
     }
 
@@ -1044,7 +1058,7 @@ focus_tree = {
                     # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
                     # 	}
                     # }
-                        traits={ armor_officer inflexible_strategist old_guard urban_assault_specialist ambusher }
+                        traits={ panzer_leader inflexible_strategist old_guard urban_assault_specialist ambusher }
                         skill=3
                         attack_skill=3
                         defense_skill=4
@@ -1154,7 +1168,7 @@ focus_tree = {
                     # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
                     # 	}
                     # }
-                        traits={ armor_officer desert_fox brilliant_strategist trickster }
+                        traits={ panzer_leader desert_fox brilliant_strategist trickster }
                         skill=3
                         attack_skill=4
                         defense_skill=3
@@ -1297,7 +1311,7 @@ focus_tree = {
                     # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
                     # 	}
                     # }
-                        traits={ armor_officer winter_specialist ranger fortress_buster }
+                        traits={ panzer_leader winter_specialist ranger fortress_buster }
                         skill=3
                         attack_skill=3
                         defense_skill=3
@@ -1418,6 +1432,21 @@ focus_tree = {
             GER = {
                 country_event = vichy.2
             }
+            hidden_effect = {
+                every_country = {
+                    limit = {
+                        OR = {
+                            tag = USA
+                            tag = BRA
+                            tag = MEX
+                            tag = ENG
+                            is_in_faction_with = ENG
+                        }
+                    }
+                    news_event = vichy.4
+                }
+            }
+            custom_effect_tooltip = vic_puppeted_by_ger_tt
             # 100pp
             # unlocks decision to gain some french states reducing independence from germany
         }
@@ -1980,7 +2009,7 @@ focus_tree = {
                     # 		large="gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
                     # 	}
                     # }
-                        traits={ infantry_leader trickster skilled_staffer old_guard }
+                        traits={ infantry_leader trickster old_guard }
                         skill=4
                         attack_skill=6
                         defense_skill=4
@@ -2347,7 +2376,7 @@ focus_tree = {
 			add_equipment_production = {
 				equipment = {
 					type = ship_hull_heavy_3
-					creator = "FRA"
+					creator = "VIC"
 					version_name = "Richelieu Class"
 				}
 				# name = "Dunkerque"
@@ -2358,7 +2387,7 @@ focus_tree = {
             add_equipment_production = {
 				equipment = {
 					type = ship_hull_heavy_3
-					creator = "FRA"
+					creator = "VIC"
 					version_name = "Richelieu Class"
 				}
 				# name = "Dunkerque"

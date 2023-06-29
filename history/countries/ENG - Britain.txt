@@ -13,13 +13,22 @@ if = {
 	}
 }
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
+starting_train_buffer = 2.5
+
 set_rule = { 
 	can_send_volunteers = yes
 }
 
-create_intelligence_agency = {
-    name = "MI6"
-}
+set_country_flag=fuel_system_enabled
+
+# create_intelligence_agency = {
+#     name = "MI6"
+# }
 
 load_oob = "ENG_Motorized"
 
@@ -206,10 +215,7 @@ if = {
 			has_dlc = "Man the Guns"
 		}
 	}
-	set_autonomy = {
-		target = MAL
-		autonomous_state = autonomy_integrated_puppet
-	}
+	
 	set_autonomy = {
 		target = RAJ
 		autonomous_state = autonomy_colony
@@ -240,11 +246,7 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
-	set_autonomy = {
-		target = IRQ
-		autonomous_state = autonomy_protectorate
-		freedom_level = 0.1
-	}
+	
 	else = {
 		puppet = MAL
 		puppet = RAJ
@@ -502,7 +504,7 @@ if = {
 		name_group = ENG_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = dp_light_battery_2
+			fixed_ship_battery_slot = dp_light_battery_main_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = ship_sonar_1
@@ -519,7 +521,7 @@ if = {
 		name_group = ENG_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = dp_light_battery_2
+			fixed_ship_battery_slot = dp_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = ship_sonar_1
@@ -535,7 +537,7 @@ if = {
 		name_group = ENG_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = dp_light_battery_1
+			fixed_ship_battery_slot = dp_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -552,7 +554,7 @@ if = {
 		name_group = ENG_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -651,7 +653,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = empty
@@ -747,7 +749,7 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bc_1
 			front_1_custom_slot = ship_heavy_battery_1
 			mid_1_custom_slot = ship_airplane_launcher_1
@@ -768,7 +770,7 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bc_2
 			front_1_custom_slot = ship_heavy_battery_1
 			mid_1_custom_slot = empty
@@ -916,7 +918,7 @@ if = {
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = carrier_ship_engine_2
-				fixed_ship_secondaries_slot = dp_ship_secondaries_2
+				fixed_ship_secondaries_slot = dp_ship_secondaries_1
 				front_1_custom_slot = ship_deck_space
 			}
 		}

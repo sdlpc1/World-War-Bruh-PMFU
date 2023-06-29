@@ -31,8 +31,8 @@ equipments = {
 		armor_value = 145
 
 		#Offensive Abilities
-		soft_attack = 38
-		hard_attack = 45
+		soft_attack = 40
+		hard_attack = 47
 		ap_attack = 146
 		air_attack = 0
 
@@ -83,8 +83,8 @@ equipments = {
 		armor_value = 100
 
 		#Offensive Abilities
-		soft_attack = 85
-		hard_attack = 3
+		soft_attack = 87
+		hard_attack = 5
 		ap_attack = 9
 		air_attack = 0
 		
@@ -131,8 +131,8 @@ equipments = {
 		armor_value = 145
 
 		#Offensive Abilities
-		soft_attack = 12
-		hard_attack = 70
+		soft_attack = 14
+		hard_attack = 72
 		ap_attack = 170
 		air_attack = 0
 		
@@ -179,8 +179,8 @@ equipments = {
 		armor_value = 100
 
 		#Offensive Abilities
-		soft_attack = 11.5
-		hard_attack = 9
+		soft_attack = 13.5
+		hard_attack = 11
 		ap_attack = 98
 		air_attack = 50
 		
@@ -211,8 +211,8 @@ equipments = {
 
 		defense = 11		#poor breakthrough and defense but high attack. Unit is designed to take losses to compensate for extreme offensive capability
 		breakthrough = 70   #10 less than a tiger
-		soft_attack = 75	#E75 values
-		hard_attack = 85
+		soft_attack = 77	#E75 values
+		hard_attack = 87
 		
 		air_attack = -2.0 #ensure always takes a fair bit of damage from CAS
 

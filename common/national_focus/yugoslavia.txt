@@ -1363,9 +1363,6 @@ focus_tree = {
 		}
 
 		bypass = {
-			BUL = {
-				exists = no
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -1374,9 +1371,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			BUL = {
-				transfer_state = 106
-				transfer_state = 803
+			if = {
+				limit = {
+					country_exists = BUL
+				}
+				BUL = {
+					transfer_state = 106
+					transfer_state = 803
+				}
+			}
+			else = {
+				ITA = {
+					transfer_state = 106
+					transfer_state = 803
+				}
 			}
 			# 106 = {
 			# 	remove_core_of = ROOT
@@ -4019,7 +4027,9 @@ focus_tree = {
             add_tech_bonus = {
 				name = YUG_motorize_the_cavalry
 				bonus = 0.75
-				technology = motorised_infantry
+				uses = 1
+				# technology = motorised_infantry
+				category = cat_mechanized_equipment
 			}
 		}
 	}
@@ -4305,6 +4315,13 @@ focus_tree = {
 
         completion_reward = {
 			add_ideas = YUG_terrain_training
+			hidden_effect = {
+				every_army_leader={
+					add_trait = {
+     					trait = five_terrain_penalty_reduction
+					}
+				}
+			}
 			add_tech_bonus = {
 				name = YUG_light_tank
 				bonus = 0.50

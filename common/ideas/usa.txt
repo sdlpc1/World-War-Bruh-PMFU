@@ -36,7 +36,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.075
 			}
 		}
 
@@ -55,7 +55,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.025
 			}
 		}
 
@@ -289,11 +289,11 @@ ideas = {
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
-				line_change_production_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
-				production_factory_start_efficiency_factor = 0.1
-				consumer_goods_factor = -0.05
-				conscription_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				consumer_goods_factor = -0.1
+				# conscription_factor = 0.2
 				local_resources_factor = 0.2
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.2
@@ -2171,7 +2171,7 @@ ideas = {
 				army_core_attack_factor = 0.25
 				army_core_defence_factor = 0.25
 				training_time_factor = -0.5
-				# equipment_capture = 0.125
+				equipment_capture = 0.125
 				consumer_goods_factor = -0.1	
 				conscription_factor = 0.25
 			}			
@@ -2197,8 +2197,7 @@ ideas = {
 			
 			traits = { fast_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		
 		chrysler = {
@@ -2216,8 +2215,7 @@ ideas = {
 			
 			traits = { medium_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		detroit_arsenal = {
 			
@@ -2270,9 +2268,7 @@ ideas = {
 				}
 			}
 
-			modifier = {
-
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		tank_destroyer_board = {
 			
@@ -2309,9 +2305,7 @@ ideas = {
 				}
 			}
 
-			modifier = {
-
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		
 		army_ordnance_department = {
@@ -2329,8 +2323,7 @@ ideas = {
 			
 			traits = { heavy_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}	
 	}
 	
@@ -2345,7 +2338,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -2353,8 +2346,7 @@ ideas = {
 			
 			traits = { raiding_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		brooklyn_naval_yard = {
@@ -2363,8 +2355,8 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
 
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -2372,8 +2364,7 @@ ideas = {
 			
 			traits = { atlantic_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		newport_news_shipbuilding = {
@@ -2383,7 +2374,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -2391,8 +2382,7 @@ ideas = {
 			
 			traits = { pacific_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 	}
 	
@@ -2415,8 +2405,7 @@ ideas = {
 			
 			traits = { messerschmitt_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		#bell = {
@@ -2453,8 +2442,7 @@ ideas = {
 			
 			traits = { lockheed_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		douglas_aircraft_company = {
@@ -2472,8 +2460,7 @@ ideas = {
 			
 			traits = { CAS_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		boeing = {
@@ -2491,8 +2478,7 @@ ideas = {
 			
 			traits = { heavy_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		#consolidated_aircraft = {
@@ -2528,8 +2514,7 @@ ideas = {
 			
 			traits = { naval_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}		
 	}
 	

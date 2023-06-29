@@ -717,21 +717,21 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
-			creator = "GER"
+			type = train_equipment_1
+			creator = "GER" 
 		}
-		requested_factories = 10
-		progress = 0.1
+		requested_factories = 1
+		progress = 0.3
 		efficiency = 50
 	}
 
 	add_equipment_production = {
 		equipment = {
-			type = support_equipment_1
+			type = motorized_equipment_1
 			creator = "GER" 
 		}
 		requested_factories = 2
-		progress = 0.3
+		progress = 0.4
 		efficiency = 50
 	}
 
@@ -744,20 +744,10 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
-			type = pack_artillery_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
-	
-	add_equipment_production = {
-		equipment = {
-			type = horse_equipment_0
+			type = anti_air_equipment_1
 			creator = "GER" 
 		}
 		requested_factories = 1
@@ -771,6 +761,16 @@ instant_effect = {
 			creator = "GER" 
 		}
 		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 2
 		progress = 0.3
 		efficiency = 50
 	}
@@ -796,22 +796,22 @@ instant_effect = {
 	}
 
 	add_equipment_production = {
-		equipment = { 
-			type = ger_light_tank_equipment_1
+		equipment = {
+			type = horse_equipment_0
 			creator = "GER" 
 		}
-		requested_factories = 2
-		progress = 0.4
+		requested_factories = 1
+		progress = 0.3
 		efficiency = 50
 	}
 
 	add_equipment_production = {
 		equipment = {
-			type = motorized_equipment_1
-			creator = "GER" 
+			type = infantry_equipment_1
+			creator = "GER"
 		}
-		requested_factories = 2
-		progress = 0.4
+		requested_factories = 10
+		progress = 0.1
 		efficiency = 50
 	}
 
@@ -849,16 +849,6 @@ instant_effect = {
 		type = ger_light_tank_equipment_1
 		amount = 1000
 		producer = GER
-	}
-	
-	add_equipment_production = {
-		equipment = {
-			type = train_equipment_1
-			creator = "GER" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
 	}
 }
 

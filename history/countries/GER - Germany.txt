@@ -5,9 +5,18 @@ oob = "GER_1936"
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
-create_intelligence_agency = {
-    name = "Abwehr"
+# create_intelligence_agency = {
+#     name = "Abwehr"
+# }
+
+set_country_flag=fuel_system_enabled
+
+set_variable = {
+	var = min_fuel
+	value = 0.800
 }
+
+# add_dynamic_modifier = { modifier = GER_tank_purhcases }
 
 # Starting tech
 set_technology = {
@@ -103,7 +112,6 @@ if = {
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "GER_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			photo_reconnaisance = 1
@@ -117,6 +125,8 @@ if = {
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
 		}
+		# set_air_oob = "GER_1936_air_bba"
+		set_air_oob = "GER_1936_AIR_NEW"
 	else = {
 		set_air_oob = "GER_1936_air_legacy"
 		set_technology = {
@@ -184,8 +194,10 @@ add_ideas = {
 	partial_economic_mobilisation
 	PACIFIC_COMMONWEALTH_controls_axis_original
 	volunteer_minimum_major
+	volunteer_minimum_GER_NA # no asia
 	peace_training
 	no_grinding
+	AFRICA_COMMONWEALTH_controls_axis_idea_6
 }
 
 # MP_garrison_division_standard = yes
@@ -323,15 +335,16 @@ if = {
 		name_group = GER_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-        	fixed_ship_anti_air_slot = ship_anti_air_1
+        	fixed_ship_anti_air_slot = ship_anti_air_2
 			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			rear_1_custom_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_airplane_launcher_1
-			mid_2_custom_slot = ship_torpedo_1
+			front_1_custom_slot = ship_heavy_battery_2
+			rear_1_custom_slot = ship_torpedo_2
+			mid_1_custom_slot = ship_light_medium_battery_2
+			mid_2_custom_slot = ship_light_medium_battery_2
     	}
 	}
 	create_equipment_variant = {
@@ -340,7 +353,7 @@ if = {
 		name_group = GER_TB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -357,7 +370,7 @@ if = {
 		name_group = GER_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_battery_slot = ship_light_battery_main_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -375,7 +388,7 @@ if = {
 		name_group = GER_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_battery_slot = ship_light_battery_main_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -451,7 +464,7 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty

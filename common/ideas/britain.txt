@@ -10,7 +10,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				send_volunteers_tension = -0.9
+				send_volunteers_tension = -1
 			}
 		}	
 	}
@@ -2189,6 +2189,9 @@ ideas = {
 			
 			traits = { convoy_escort_naval_manufacturer }
 
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 		
 		harland_wolff = {
@@ -2197,13 +2200,15 @@ ideas = {
 				original_TAG = ENG
 			}
 			
-
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		
 		cammell_laird = {
@@ -2212,7 +2217,7 @@ ideas = {
 				original_TAG = ENG
 			}
 			
-
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -2220,8 +2225,7 @@ ideas = {
 			
 			traits = { atlantic_fleet_naval_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}	
 	}
 	
@@ -2243,8 +2247,7 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		hawker = {
@@ -2261,8 +2264,7 @@ ideas = {
 			
 			traits = { CAS_manufacturer } 
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}	
 		de_havilland = {
 			
@@ -2278,8 +2280,7 @@ ideas = {
 			
 			traits = { medium_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		avro = {
@@ -2296,8 +2297,7 @@ ideas = {
 			
 			traits = { heavy_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		fairey_aviation = {
@@ -2314,8 +2314,7 @@ ideas = {
 			
 			traits = { naval_aircraft_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}			
 	}
 	
@@ -2443,8 +2442,7 @@ ideas = {
 			
 			traits = { medium_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		vauxhall = {
 			
@@ -2459,8 +2457,7 @@ ideas = {
 			traits = { medium_tank_manufacturer }
 			traits = { vauxhall_trait }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 	

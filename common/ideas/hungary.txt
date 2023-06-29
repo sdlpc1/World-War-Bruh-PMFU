@@ -553,7 +553,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				equipment_conversion_speed = 0.4
+				equipment_conversion_speed = 0.6
 			}
 		}
 	}
@@ -582,6 +582,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 	}
 
@@ -612,6 +614,8 @@ ideas = {
 			}
 			
 			traits = { naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 	}
 
@@ -741,6 +745,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 		HUN_italian_tank_designer = {
@@ -786,6 +792,8 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			
 			traits = { infantry_tank_manufacturer }
 		}

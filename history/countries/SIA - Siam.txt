@@ -4,6 +4,15 @@ set_war_support = 0.4
 
 # MP_garrison_division_standard = yes
 
+SIA = {
+	send_embargo = CHI
+}
+
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 oob = "SIA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -23,6 +32,7 @@ set_technology = {
 	tech_recon = 1
 	basic_train = 1
 	hq_1 = 1
+	motorised_infantry = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -126,7 +136,7 @@ if = {
 		name_group = SIA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty

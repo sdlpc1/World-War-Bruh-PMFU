@@ -11,8 +11,13 @@ if = {
 	}
 }
 
-create_intelligence_agency = {
-    name = "Deuxième Bureau"
+# create_intelligence_agency = {
+#     name = "Deuxième Bureau"
+# }
+
+set_variable = {
+	var = min_fuel
+	value = 0.800
 }
 
 set_research_slots = 5
@@ -154,6 +159,8 @@ add_ideas = {
 	volunteer_minimum_major
 	peace_training
 	no_grinding
+	FRA_no_weird_licensed_tanks
+	FRA_outdated_tank_production_lines
 }
 #set_variable = { FRA_poster_center_icon_frame = 1 }
 set_variable = { FRA_new_propaganda_campaign = 0 } #Used to pick a poster slot
@@ -413,7 +420,7 @@ if = {
 		name_group = FRA_DE_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -430,7 +437,7 @@ if = {
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -447,11 +454,11 @@ if = {
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_battery_slot = ship_light_battery_main_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_2
 			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_depth_charge_1
@@ -463,13 +470,13 @@ if = {
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = dp_light_battery_2
+			fixed_ship_battery_slot = dp_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_2
-			mid_1_custom_slot = dp_light_battery_2
+			mid_1_custom_slot = dp_light_battery_1
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
@@ -699,7 +706,7 @@ if = {
 		name = "F.222"
 		type = large_plane_airframe_0
 		modules = {
-			fixed_main_weapon_slot = large_bomb_bay
+			fixed_main_weapon_slot = early_large_bomb_bay
 			fixed_auxiliary_weapon_slot_2 = lmg_defense_turret
 			engine_type_slot = engine_1_4x
 		}

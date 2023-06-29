@@ -30,7 +30,7 @@ division_template = {
 		division_names_group = SOV_GTC_01
 		is_locked = yes
 		force_allow_recruiting = yes
-		template_counter = 69
+		template_counter = 70
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
@@ -365,7 +365,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 72
 		}
-		location = 3151
+		location = 13306
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
@@ -373,7 +373,7 @@ units = {
 	}
 	division= {			
 		name = "LVO Mekhanizirovanaya Gruppa"		
-		location = 3151
+		location = 13306
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
@@ -2182,25 +2182,24 @@ units = {
 	## STARTING PRODUCTION ##
 	#########################
 instant_effect = {
-	
 
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
-			creator = "SOV"
+			type = train_equipment_1
+			creator = "SOV" 
 		}
-		requested_factories = 7
-		progress = 0.1
+		requested_factories = 1
+		progress = 0.3
 		efficiency = 50
 	}
 
 	add_equipment_production = {
 		equipment = {
-			type = support_equipment_1
+			type = motorized_equipment_1
 			creator = "SOV" 
 		}
-		requested_factories = 2
-		progress = 0.3
+		requested_factories = 3
+		progress = 0.4
 		efficiency = 50
 	}
 
@@ -2213,20 +2212,10 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
-			type = pack_artillery_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
-	
-	add_equipment_production = {
-		equipment = {
-			type = horse_equipment_0
+			type = anti_air_equipment_1
 			creator = "SOV" 
 		}
 		requested_factories = 1
@@ -2240,6 +2229,16 @@ instant_effect = {
 			creator = "SOV" 
 		}
 		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SOV" 
+		}
+		requested_factories = 2
 		progress = 0.3
 		efficiency = 50
 	}
@@ -2266,33 +2265,36 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = sov_bt_tank_equipment_2
-			creator = "SOV"
-			version_name = "BT-7"
-		}
-		requested_factories = 3
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 3
-		progress = 0.4
-		efficiency = 50
-	}	
-	add_equipment_production = {
-		equipment = {
-			type = train_equipment_1
+			type = horse_equipment_0
 			creator = "SOV" 
 		}
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
 	}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 7
+		progress = 0.1
+		efficiency = 50
+	}
+
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = sov_light_tank_chassis_bt7
+	# 		creator = "SOV"
+	# 		version_name = "BT-7"
+	# 	}
+	# 	requested_factories = 3
+	# 	progress = 0.4
+	# 	efficiency = 50
+	# }
+
+
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0
 		amount = 10000

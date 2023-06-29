@@ -67,9 +67,9 @@ operations = {
 			}
 		}
 		
-		days_remove = 365
+		# days_remove = 365
 		
-		remove_effect = {
+		complete_effect = {
 			set_technology = { hun_cze_tank_1 = 1 }
 		}
 	}

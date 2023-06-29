@@ -141,9 +141,9 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
-				industrial_capacity_factory = 0.07
-				industrial_capacity_dockyard = 0.07
+				consumer_goods_factor = -0.025
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 				stability_factor = 0.05
 			}
 		}
@@ -163,9 +163,9 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.1
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
 				stability_factor = 0.10
 			}
 		}
@@ -652,8 +652,7 @@ ideas = {
 			
 			traits = { fast_tank_manufacturer }
 			
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 
 	}
@@ -677,6 +676,9 @@ ideas = {
 			
 			traits = { convoy_escort_naval_manufacturer }
 
+			modifier = { naval_manufacturer_cost_factor = -1 }
+
+			cost = 150
 		}
 		
 		evans_deakin_co = {
@@ -688,16 +690,16 @@ ideas = {
 				has_dlc = "Together for Victory"
 			}
 			
-
+			cost = 150
 			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
-		
-		
 	}
 
 	materiel_manufacturer = {
@@ -784,6 +786,8 @@ ideas = {
 					air_ground_attack = 0.05
 				}
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			
 			ai_will_do = {
 				factor = 1

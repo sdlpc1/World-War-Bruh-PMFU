@@ -12,6 +12,8 @@ set_technology = {
 	tech_recon = 1
 	gw_artillery = 1
 	support_weapons = 1
+	motorised_infantry = 1
+	hq_1 = 1
 	
 	trench_warfare = 1
 	fuel_silos = 1
@@ -19,6 +21,13 @@ set_technology = {
 	fleet_in_being = 1
 	basic_train = 1
 }
+
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
+starting_train_buffer = 2
 
 # MP_garrison_division_standard = yes
 
@@ -119,6 +128,42 @@ add_ideas = {
 	peace_training
 	minors_no_air
 	no_grinding
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 5000
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = horse_equipment_0
+	amount = 1250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = squad_equipment_0
+	amount = 1250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = radio_equipment_0
+	amount = 250
+	producer = ENG
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 375
+	producer = ENG
 }
 
 set_convoys = 200
@@ -232,7 +277,7 @@ if = {
 		name_group = AST_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -248,7 +293,7 @@ if = {
 		name_group = AST_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty

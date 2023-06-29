@@ -884,9 +884,9 @@ ideas = {
 
 			picture = jap_intervene_in_china
 
-			modifier = {
-				experience_gain_factor = -0.1
-			}
+			# modifier = {
+			# 	experience_gain_factor = -0.1
+			# }
 
 			targeted_modifier = {
 				tag = CHI
@@ -911,9 +911,9 @@ ideas = {
 
 			picture = jap_intervene_in_china
 
-			modifier = {
-				experience_gain_factor = -0.2
-			}
+			# modifier = {
+			# 	experience_gain_factor = -0.2
+			# }
 
 			targeted_modifier = {
 				tag = CHI
@@ -938,9 +938,9 @@ ideas = {
 
 			picture = jap_intervene_in_china
 
-			modifier = {
-				experience_gain_factor = -0.3
-			}
+			# modifier = {
+			# 	experience_gain_factor = -0.3
+			# }
 
 			targeted_modifier = {
 				tag = CHI
@@ -965,9 +965,9 @@ ideas = {
 
 			picture = jap_intervene_in_china
 
-			modifier = {
-				experience_gain_factor = -0.4
-			}
+			# modifier = {
+			# 	experience_gain_factor = -0.4
+			# }
 
 			targeted_modifier = {
 				tag = CHI
@@ -992,9 +992,9 @@ ideas = {
 
 			picture = jap_intervene_in_china
 
-			modifier = {
-				experience_gain_factor = -0.5
-			}
+			# modifier = {
+			# 	experience_gain_factor = -0.5
+			# }
 
 			targeted_modifier = {
 				tag = CHI
@@ -1051,6 +1051,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		MAN_mamc_medium = {
 
@@ -1072,6 +1074,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		MAN_mamc_heavy = {
 
@@ -1093,6 +1097,8 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 	}
@@ -1157,6 +1163,8 @@ ideas = {
 					}
 				}
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 

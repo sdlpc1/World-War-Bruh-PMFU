@@ -11,6 +11,16 @@ set_technology = {
 	support_weapons = 1
 	basic_train = 1
 	hq_1 = 1
+	motorised_infantry = 1
+}
+
+MAN = {
+	send_embargo = CHI
+}
+
+set_variable = {
+	var = min_fuel
+	value = 0.800
 }
 
 set_research_slots = 5

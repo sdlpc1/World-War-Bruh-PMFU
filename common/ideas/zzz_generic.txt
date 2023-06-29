@@ -198,6 +198,7 @@ ideas = {
 				air_training_xp_gain_factor = 5
 				experience_gain_navy_unit_factor = 10
 				experience_gain_army_unit_factor = 2.5
+				attrition = -1
 			}
 		}
 
@@ -410,10 +411,14 @@ ideas = {
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				consumer_goods_factor = -0.1
+				# conscription_factor = 0.2
+				local_resources_factor = 0.2
+				industrial_capacity_factory = 0.2
 				production_speed_arms_factory_factor = 0.2
-				consumer_goods_factor = -0.05
-				conscription_factor = 0.05
-				local_resources_factor = 0.1
 			}
 		}
 	
@@ -1421,7 +1426,7 @@ ideas = {
 			picture = MTG_naval_treaty_adherent
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 10000
+				production_cost_max_ship_hull_heavy = 9550
 				production_cost_max_ship_hull_carrier = 9500
 				industrial_capacity_dockyard = -0.25
 			}
@@ -1441,7 +1446,7 @@ ideas = {
 			picture = MTG_naval_treaty_adherent_reduced
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 12000
+				production_cost_max_ship_hull_heavy = 11550
 				production_cost_max_ship_hull_carrier = 10500
 				industrial_capacity_dockyard = -0.15
 			}
@@ -1461,7 +1466,7 @@ ideas = {
 			picture = MTG_naval_treaty_adherent
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 11500
+				production_cost_max_ship_hull_heavy = 11050
 				production_cost_max_ship_hull_carrier = 10250
 				industrial_capacity_dockyard = -0.20
 			}
@@ -1481,7 +1486,7 @@ ideas = {
 			picture = MTG_naval_treaty_adherent_reduced
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 14000
+				production_cost_max_ship_hull_heavy = 13550
 				production_cost_max_ship_hull_carrier = 10750
 				industrial_capacity_dockyard = -0.10
 			}
@@ -1547,6 +1552,8 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			
 			traits = { tank_manufacturer }
 		}
@@ -1591,6 +1598,8 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			
 			traits = { naval_manufacturer }
 		}
@@ -1635,6 +1644,8 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			
 			traits = { light_aircraft_manufacturer }
 		}
@@ -1668,6 +1679,8 @@ ideas = {
 				}
 			}
 			
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
+
 			cost = 150
 			removal_cost = 10
 			
@@ -1714,6 +1727,8 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
+
 			traits = { heavy_aircraft_manufacturer }
 		}
 		
@@ -1748,6 +1763,8 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			
 			traits = { naval_aircraft_manufacturer }
 		}

@@ -471,22 +471,25 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
-			creator = "ROM"
-		}
-		requested_factories = 2
-		progress = 0.87
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "ROM"
+			type = train_equipment_1
+			creator = "ROM" 
 		}
 		requested_factories = 1
-		progress = 0.19
-		efficiency = 100
+		progress = 0.3
+		efficiency = 50
 	}
+
+	add_equipment_production = { 
+		equipment = { 
+			type = motorized_equipment_1 
+			creator = "ROM" 
+		} 
+
+		requested_factories = 1 
+		progress = 0.1 
+		efficiency = 50 
+	} 
+
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -496,21 +499,55 @@ instant_effect = {
 		progress = 0.24
 		efficiency = 100
 	}
+
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_1
+			type = anti_air_equipment_1
+			creator = "ROM"
 		}
 		requested_factories = 1
-		progress = 0.4
+		progress = 0.24
 		efficiency = 100
 	}
+
 	add_equipment_production = {
 		equipment = {
-			type = train_equipment_1
+			type = radio_equipment_0
 			creator = "ROM" 
 		}
 		requested_factories = 1
-		progress = 0.3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ROM"
+		}
+		requested_factories = 1
+		progress = 0.19
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = squad_equipment_0
+			creator = "ROM" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	
+	add_equipment_production = {
+		equipment = {
+			type = sf_equipment_0
+			creator = "ROM" 
+		}
+		requested_factories = 1
+		progress = 0.1
 		efficiency = 50
 	}
 
@@ -526,42 +563,20 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = squad_equipment_0
-			creator = "ROM" 
+			type = infantry_equipment_1
+			creator = "ROM"
 		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
-	}
-	
-	add_equipment_production = {
-		equipment = {
-			type = radio_equipment_0
-			creator = "ROM" 
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
+		requested_factories = 2
+		progress = 0.87
+		efficiency = 100
 	}
 
-	add_equipment_production = { 
-		equipment = { 
-			type = motorized_equipment_1 
-			creator = "ROM" 
-		} 
-
-		requested_factories = 1 
-		progress = 0.1 
-		efficiency = 50 
-	} 
-	
-	add_equipment_production = {
-		equipment = {
-			type = sf_equipment_0
-			creator = "ROM" 
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
-	}
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = fra_light_tank_chassis_ft
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.4
+	# 	efficiency = 100
+	# }
 }

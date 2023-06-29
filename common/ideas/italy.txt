@@ -381,7 +381,7 @@ ideas = {
 			
 			modifier = {
 				max_dig_in = 2.5
-				experience_gain_factor = -0.30
+				# experience_gain_factor = -0.30
 				planning_speed = -0.25
 				max_planning = 0.10
 				cat_mobile_warfare_cost_factor = 0.25
@@ -403,7 +403,7 @@ ideas = {
 			
 			modifier = {
 				max_dig_in = 5
-				experience_gain_factor = -0.25
+				# experience_gain_factor = -0.25
 				planning_speed = -0.25
 				max_planning = 0.20
 				cat_mobile_warfare_cost_factor = 0.25
@@ -426,7 +426,7 @@ ideas = {
 			
 			modifier = {
 				max_dig_in = 2.5
-				experience_gain_factor = -0.20
+				# experience_gain_factor = -0.20
 				planning_speed = -0.20
 				cat_mobile_warfare_cost_factor = 0.25
 				cat_superior_firepower_cost_factor = -0.1
@@ -447,7 +447,7 @@ ideas = {
 			
 			modifier = {
 				max_dig_in = 1
-				experience_gain_factor = -0.10
+				# experience_gain_factor = -0.10
 				planning_speed = -0.10
 				max_planning = 0.15
 				fascism_drift = 0.10
@@ -469,7 +469,7 @@ ideas = {
 			picture = italian_general_staff
 			
 			modifier = {
-				experience_gain_factor = -0.10
+				# experience_gain_factor = -0.10
 				planning_speed = -0.10
 				cat_mobile_warfare_cost_factor = -0.05
 				cat_superior_firepower_cost_factor = 0.25
@@ -489,7 +489,7 @@ ideas = {
 			picture = italian_general_staff
 			
 			modifier = {
-				experience_gain_factor = 0.15
+				# experience_gain_factor = 0.15
 				planning_speed = 0.1
 				cat_mobile_warfare_cost_factor = -0.05
 				cat_superior_firepower_cost_factor = 0.25
@@ -830,14 +830,15 @@ ideas = {
 		}
 		
 	    ITA_idea_esploratori = {
-		allowed = { original_tag = ITA}
-		allowed_civil_war = { always = yes }
-		removal_cost = -1
-		picture = generic_navy_bonus
-		modifier = { 
-			refit_ic_cost = -0.1
-			refit_speed = 0.2
-			naval_speed_factor = 0.1	}
+			allowed = { original_tag = ITA}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = { 
+				refit_ic_cost = -0.1
+				refit_speed = 0.2
+				naval_speed_factor = 0.05	
+			}
 		}	
 	
 	}
@@ -860,6 +861,8 @@ ideas = {
 			}
 			
 			traits = { tank_manufacturer }
+
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 	
@@ -939,6 +942,8 @@ ideas = {
 			}
 			
 			traits = { light_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		savoia_marchetti = {
@@ -953,6 +958,8 @@ ideas = {
 			}
 			
 			traits = { medium_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		caproni = {
@@ -970,6 +977,8 @@ ideas = {
 			}
 			
 			traits = { naval_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		
 		piaggio = {
@@ -983,6 +992,8 @@ ideas = {
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
+
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 	}
 	
@@ -1090,8 +1101,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 		
@@ -1110,8 +1125,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { mediterranean_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 		ITA_navalmeccanica = { #SOUTH
@@ -1128,8 +1147,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { convoy_escort_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 		ITA_cantiere_navale_di_ancona = { #SOUTH
@@ -1147,8 +1170,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { raiding_fleet_naval_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 		ITA_cantieri_navali_tosi = { #SOUTH
@@ -1165,8 +1192,12 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+
+			cost = 150
 			
 			traits = { submarine_manufacturer }
+
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 
 	}

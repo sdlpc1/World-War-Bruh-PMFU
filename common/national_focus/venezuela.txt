@@ -56,6 +56,80 @@ focus_tree = {
 	}
 
 	focus = {
+		id = kandy_manis1
+		icon = GFX_goal_generic_consumer_goods
+		x = 14
+		y = 0
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+			date > 1938.1.1
+			has_global_flag = NO_ASIA
+			has_game_rule = {
+				rule = no_asia_bra_mex_status
+				option = MEX_BRA_REMOVED
+			}
+		}
+
+		available_if_capitulated = yes
+		completion_reward = {
+			AST = {
+				add_offsite_building = { type = industrial_complex level = 15 }
+				add_offsite_building = { type = arms_factory level = 15 }
+			}
+			ENG = {
+				add_offsite_building = { type = industrial_complex level = 15 }
+				add_offsite_building = { type = arms_factory level = 15 }
+			}
+		}
+	}
+
+	focus = {
+		id = kandy_manis2
+		icon = GFX_goal_generic_consumer_goods
+		x = 14
+		y = 1
+		cost = 0
+		
+		ai_will_do = {
+			factor = 200
+		}
+
+		available = {
+			date > 1940.1.1
+			has_global_flag = NO_ASIA
+			has_game_rule = {
+				rule = no_asia_bra_mex_status
+				option = MEX_BRA_REMOVED
+			}	
+		}
+
+		available_if_capitulated = yes
+		completion_reward = {
+			CAN = {
+				add_offsite_building = { type = industrial_complex level = 20 }
+				add_offsite_building = { type = arms_factory level = 20 }
+			}
+			SAF = {
+				add_offsite_building = { type = industrial_complex level = 20 }
+				add_offsite_building = { type = arms_factory level = 20 }
+			}
+			AST = {
+				add_offsite_building = { type = industrial_complex level = 5 }
+				add_offsite_building = { type = arms_factory level = 5 }
+			}
+			ENG = {
+				add_offsite_building = { type = industrial_complex level = 5 }
+				add_offsite_building = { type = arms_factory level = 5 }
+			}
+		}
+	}
+
+	focus = {
 		id = infrastructure_effort_ven
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 0

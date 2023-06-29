@@ -1256,9 +1256,27 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_technology = {
-				#mot_radio = 1
-				mot_radio2 = 1
+			# set_technology = {
+			# 	#mot_radio = 1
+			# 	mot_radio2 = 1
+			# }
+			if = {
+				limit = {
+					NOT = {
+						has_tech = mot_radio2
+					}
+				}
+				set_technology = {
+					mot_radio2 = 1
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = radio_bonus
+					bonus = 0.25
+					uses = 1
+					category = electronics
+				}
 			}
 		}
 	}
@@ -1275,7 +1293,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = FRA_tank_conversion_spirit
+			remove_ideas = FRA_outdated_tank_production_lines
+			# add_ideas = FRA_tank_conversion_spirit
 		}
 	}
 

@@ -275,6 +275,7 @@
   GER_steiner_idea:0 "Steiner's Counterattack"
   GER_blau:0 "Fall Blau"
   GER_citadel:0 "Operation Citadel"
+  volunteer_minimum_GER_NA:0 "+3 Volunteers for No Asia"
 
   #### TRAITS ####
   schacht:0 "Reichsbank President"
@@ -353,6 +354,7 @@
   GER_turkey_allied_embargo_axis:0 "Allies and Comintern - Turkish Embargo"
   GER_turkey_allied_embargo_allies:0 "Allies and Comintern - Turkish Embargo Breaking"
   GER_sweden_allied_embargo_allies:0 "Allies and Comintern - Swedish Embargo Breaking"
+  GER_annex_vichy:0 "Annex Vichy France"
 
   #### PROPAGANDA ####
   GER_propaganda_campaigns:0 "Reichsministerium für Volksaufklärung"
@@ -419,3 +421,4 @@
   GER_ss_template_light_tt:0 "This will set the §RWaffen-SS Panzer Division§! to §YLight Tanks§!"
   GER_ss_template_medium_tt:0 "This will keep the §RWaffen-SS Panzer Division§! as §YMedium Tanks§!"
   GER_ss_template_heavy_tt:0 "This will set the §RWaffen-SS Panzer Division§! to §YHeavy Tanks§!"
+  GER_greater_german_reich_fascism:0 "Großdeutsches Reich"

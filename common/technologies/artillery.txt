@@ -15,14 +15,14 @@ technologies = {
 			ship_anti_air_1
 			tank_auto_cannon
 			tank_small_gun_1
-			tank_anti_air_gun_placeholder
-			tank_anti_air_gun_1
-			tank_med_cs_gun_1
+			# tank_anti_air_gun_placeholder
+			# tank_anti_air_gun_1
+			# tank_med_cs_gun_1
 			secondary_turret_small_cannon
 			secondary_turret_howitzer
 			smoke_launchers
 			extra_ammo_storage
-			tank_medium_td_placeholder
+			# tank_medium_td_placeholder
 		}
 		
 		path = {
@@ -72,6 +72,7 @@ technologies = {
 			air_attack = 0.1
 		}
 		enable_equipment_modules = {
+			tank_anti_air_gun_1
 			ship_anti_air_2
 			tank_auto_cannon_2
 			tank_small_gun_2
@@ -275,6 +276,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_med_gun_1
 			tank_art_gun_1
+			tank_med_cs_gun_1
 		}		
 		path = {
 			leads_to_tech = artillery_research2
@@ -811,28 +813,28 @@ technologies = {
 	}
 
 	# Siege Artillery 1
-	siege_artillery1 = {
+	# siege_artillery1 = {
 
-		enable_equipments = {
-			siege_artillery_equipment_1
-		}
-		enable_equipment_modules = {
+	# 	enable_equipments = {
+	# 		siege_artillery_equipment_1
+	# 	}
+	# 	enable_equipment_modules = {
 			
-		}
+	# 	}
 		
-		research_cost = 2.0
-		start_year = 1939
+	# 	research_cost = 2.0
+	# 	start_year = 1939
 		
-		folder = {
-			name = artillery_folder
-			position = { x = 6 y = 8 }
-		}
+	# 	folder = {
+	# 		name = artillery_folder
+	# 		position = { x = 6 y = 8 }
+	# 	}
 		
-		categories = {
-			heavy_artillery
-		}
+	# 	categories = {
+	# 		heavy_artillery
+	# 	}
 
-	}
+	# }
 
 	# Heavy Anti Air 1
 	heavy_antiair1 = {
@@ -954,28 +956,28 @@ technologies = {
 	}
 
 	# Siege Artillery 2
-	siege_artillery2 = {
+	# siege_artillery2 = {
 
-		enable_equipments = {
-			siege_artillery_equipment_2
-		}
-		enable_equipment_modules = {
+	# 	enable_equipments = {
+	# 		siege_artillery_equipment_2
+	# 	}
+	# 	enable_equipment_modules = {
 			
-		}
+	# 	}
 		
-		research_cost = 2.0
-		start_year = 1942
+	# 	research_cost = 2.0
+	# 	start_year = 1942
 		
-		folder = {
-			name = artillery_folder
-			position = { x = 6 y = 12 }
-		}
+	# 	folder = {
+	# 		name = artillery_folder
+	# 		position = { x = 6 y = 12 }
+	# 	}
 		
-		categories = {
-			heavy_artillery
-		}
+	# 	categories = {
+	# 		heavy_artillery
+	# 	}
 
-	}
+	# }
 	
 	# Heavy Anti Tank 1
 	heavy_antitank = {

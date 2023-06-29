@@ -33,8 +33,8 @@ equipments = {
 
 		defense = 8
 		breakthrough = 50
-		soft_attack = 34
-		hard_attack = 30
+		soft_attack = 36
+		hard_attack = 32
 
 		#Space taken in convoy
 		lend_lease_cost = 10
@@ -77,8 +77,8 @@ equipments = {
 
 		defense = 10
 		breakthrough = 65
-		soft_attack = 40
-		hard_attack = 40
+		soft_attack = 42
+		hard_attack = 42
 
 
 		build_cost_ic = 44

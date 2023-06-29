@@ -619,6 +619,70 @@ JAP_interservice_rivalry = {
 }
 
 foreign_politics = {
+
+	JAP_chinese_spirit_dwindling = {
+
+		icon = generic_operation
+
+		is_good = yes
+
+		allowed = {
+			tag = JAP
+			# always = yes
+		}
+
+		activation = {
+			605 = { #chongqing
+				CONTROLLER = {
+					OR = {
+						tag = JAP
+						is_subject_of = JAP
+						is_in_faction_with = JAP
+					}
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				has_global_flag = JAP_china_has_capped
+				605 = { #chongqing
+					CONTROLLER = {
+						NOT = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+				}
+			}
+		}
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		# visible = {
+		# }
+
+		days_mission_timeout  = 30
+		
+		complete_effect = {
+			# nothing ig
+		}
+
+		timeout_effect = {
+			activate_mission = JAP_chinese_spirit_dwindling
+			CHI = {
+				CHI_dwindle_spirit = yes
+			}
+		}
+	}
+
 	JAP_transfer_indochina = {
 		icon = generic_operation
 
@@ -1028,52 +1092,56 @@ JAP_southern_expansion = {
 		cost = 75
 
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 0
-				FRA = { has_war = no }
-			}			
-			modifier = {
-				factor = 3
-				FRA = { has_war = yes } 
-				strength_ratio = {
-					tag = FRA
-					ratio > 0.9
-				}
-			}
+			# factor = 5
+			# modifier = {
+			# 	factor = 0
+			# 	FRA = { has_war = no }
+			# }			
+			# modifier = {
+			# 	factor = 3
+			# 	FRA = { has_war = yes } 
+			# 	strength_ratio = {
+			# 		tag = FRA
+			# 		ratio > 0.9
+			# 	}
+			# }
+			base = 200
 			
 		}
 
-		complete_effect = {
-			if = {
-				limit = {
-					FRA = {
-						OR = {
-							controls_state = 671
-							671 = { CONTROLLER = { is_subject_of = FRA } }
-							controls_state = 670
-							670 = { CONTROLLER = { is_subject_of = FRA } }
-							controls_state = 286
-							286 = { CONTROLLER = { is_subject_of = FRA } }
-						}
-					}
-				}
-				FRA = { country_event = { id = france.1 } }
-			}
-			else_if = {
-				limit = {
-					VIC = {
-						OR = {
-							controls_state = 671
-							controls_state = 670
-							controls_state = 286
-							671 = { CONTROLLER = { is_subject_of = VIC } }
-							670 = { CONTROLLER = { is_subject_of = VIC } }
-							286 = { CONTROLLER = { is_subject_of = VIC } }
-						}
-					}
-				}
-				VIC = { country_event = { id = france.1 } }
+		complete_effect = { 
+			# if = {
+			# 	limit = {
+			# 		FRA = {
+			# 			OR = {
+			# 				controls_state = 671
+			# 				671 = { CONTROLLER = { is_subject_of = FRA } }
+			# 				controls_state = 670
+			# 				670 = { CONTROLLER = { is_subject_of = FRA } }
+			# 				controls_state = 286
+			# 				286 = { CONTROLLER = { is_subject_of = FRA } }
+			# 			}
+			# 		}
+			# 	}
+			# 	FRA = { country_event = { id = france.1 } }
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		VIC = {
+			# 			OR = {
+			# 				controls_state = 671
+			# 				controls_state = 670
+			# 				controls_state = 286
+			# 				671 = { CONTROLLER = { is_subject_of = VIC } }
+			# 				670 = { CONTROLLER = { is_subject_of = VIC } }
+			# 				286 = { CONTROLLER = { is_subject_of = VIC } }
+			# 			}
+			# 		}
+			# 	}
+			# 	VIC = { country_event = { id = france.1 } }
+			# }
+			JAP = {
+				country_event = { days = 5 id = japan.6 }
 			}
 		}
 
@@ -1471,6 +1539,11 @@ political_actions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			JAP = {
+				MAN = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = { target = MAN transfer_troops = yes }
 			add_state_core = 328
 			add_state_core = 610
@@ -1505,6 +1578,11 @@ political_actions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			JAP = {
+				CHI = {
+					pow_before_annex = yes
+				}
+			}
 			annex_country = { target = CHI transfer_troops = no }
 
 		}
@@ -1559,6 +1637,39 @@ political_actions = {
 }
 
 operations = {
+
+	JAP_invade_iran = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			RAJ = {
+				has_capitulated = yes
+			}
+			GER = {
+				has_war_with = SOV
+			}
+			country_exists = PER
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				every_country = {
+					news_event = generic.33
+				}
+			}
+			declare_war_on = {
+				target = PER
+				type = annex_everything
+			}
+		}
+	}
 
 	
 	# SOV_border_war_JAP = {
@@ -2068,8 +2179,8 @@ operations = {
 					days = 60	
 					value = 1	
 				}	
-				custom_effect_tooltip = in_60_days	
-				activate_targeted_decision = { target = JAP decision = JAP_border_conflict_escalate_to_war }
+				# custom_effect_tooltip = in_60_days	
+				# activate_targeted_decision = { target = JAP decision = JAP_border_conflict_escalate_to_war }
 			}
 			else = {	
 				set_border_war_data = {	
@@ -2091,8 +2202,8 @@ operations = {
 					days = 60	
 					value = 1	
 				}	
-				custom_effect_tooltip = in_60_days	
-				activate_targeted_decision = { target = SOV decision = JAP_border_conflict_escalate_to_war }	
+				# custom_effect_tooltip = in_60_days	
+				# activate_targeted_decision = { target = SOV decision = JAP_border_conflict_escalate_to_war }	
 			}	
 			
 		}
@@ -3006,7 +3117,7 @@ JAP_propaganda_campaigns = {
 		modifier = {
 			navy_max_range_factor = 0.25
 			naval_strike = 0.1
-			naval_speed_factor = 0.1
+			naval_speed_factor = 0.05
 			naval_has_potf_in_combat_attack = 0.1
 		}
 

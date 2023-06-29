@@ -13,6 +13,11 @@ if = {
 
 set_research_slots = 3
 
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+
 if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
@@ -49,6 +54,7 @@ set_technology = {
 	support_weapons = 1
 	basic_train = 1
 	axis_light_tank_1 = 1
+	motorised_infantry = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -279,7 +285,7 @@ if = {
 		name_group = YUG_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_battery_slot = ship_light_battery_main_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
