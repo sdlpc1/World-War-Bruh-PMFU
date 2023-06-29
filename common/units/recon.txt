@@ -33,7 +33,7 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		recon = 1
-		can_be_parachuted = no
+		can_be_parachuted = yes
 
 		
 		
@@ -113,7 +113,7 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		recon = 2
-		can_be_parachuted = no
+		can_be_parachuted = yes
 
 		
 		
@@ -348,7 +348,7 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		recon = 3
-		can_be_parachuted = no
+		can_be_parachuted = yes
 
 		
 		essential = {

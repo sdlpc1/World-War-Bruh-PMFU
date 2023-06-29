@@ -180,25 +180,25 @@ division_template = {
 	}
 }
 
-# division_template = {
-# 	name = "Fallschirmjäger-Regiment"
+division_template = {
+	name = "Fallschirmjäger-Regiment"
 
-# 	division_names_group = GER_PAR_01
+	division_names_group = GER_PAR_01
 
-# 	regiments = {
-# 		paratrooper = { x = 0 y = 0 }
-# 		paratrooper = { x = 0 y = 1 }
-# 		paratrooper = { x = 0 y = 2 }
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
 		
-# 	}
+	}
 	
-# 	support = {
-#         engineer = { x = 0 y = 0 }
-# 		hq_company = { x = 0 y = 1 }
-# 		recon = { x = 0 y = 2 }
-# 		logistics_company = { x = 0 y = 3 }
-# 	}
-# }
+	support = {
+        engineer = { x = 0 y = 0 }
+		hq_company = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+	}
+}
 
 division_template = {
 	name = "Seelande-Regiment"

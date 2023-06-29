@@ -386,7 +386,7 @@ focus_tree = {
 		icon = GFX_focus_hol_war_on_pacifism
 		prerequisite = { focus = USA_new_deal_2 }
 		relative_position_id = USA_new_deal_2
-		x = -1
+		x = 0
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -524,7 +524,7 @@ focus_tree = {
 		icon = GFX_focus_usa_union_representation_act
 		prerequisite = { focus = USA_new_deal_2 }
 		relative_position_id = USA_new_deal_2
-		x = -4
+		x = -7
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -1814,40 +1814,43 @@ focus_tree = {
 	#FLINT STRIKES
 	###############################################
 
-	focus = {
-		id = USA_flint_strikes
-		icon = GFX_focus_mex_privatisation
-		prerequisite = { focus = USA_new_deal_2 }
-		relative_position_id = USA_new_deal_2
-		x = -7
-		y = 1
-		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-			USA = { has_idea = USA_flint_strikes_idea }
-		}
+	# focus = {
+	# 	id = USA_flint_strikes 
+	# 	icon = GFX_focus_mex_privatisation
+	# 	prerequisite = { focus = USA_new_deal_2 }
+	# 	relative_position_id = USA_new_deal_2
+	# 	x = -7
+	# 	y = 1
+	# 	cost = 5
+	# 	#ai_will_do = {
+	# 	#	factor = 1
+	# 	#}
+	# 	available = {
+	# 		USA = { has_idea = USA_flint_strikes_idea }
+	# 	}
 
-		bypass = {
-			USA = { has_idea = USA_flint_strikes_idea }
-		}
+	# 	bypass = {
+	# 		USA = { has_idea = USA_flint_strikes_idea }
+	# 	}
 
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-		}
-	}
+	# 	available_if_capitulated = yes
+	# 	search_filters = {FOCUS_FILTER_POLITICAL}
+	# 	completion_reward = {
+	# 	}
+	# }
 
 	focus = {
 		id = USA_side_with_big_business
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = USA_flint_strikes }
-		relative_position_id = USA_flint_strikes
+		prerequisite = { focus = USA_new_deal_2 }
+		relative_position_id = USA_new_deal_2
 		mutually_exclusive = {
 			focus = USA_side_with_workers_union
 		}
-		x = -1
+		available = {
+			date > 1936.12.30
+		}
+		x = -5
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -1866,10 +1869,13 @@ focus_tree = {
 	focus = {
 		id = USA_side_with_workers_union
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = USA_flint_strikes }
+		prerequisite = { focus = USA_new_deal_2 }
 		mutually_exclusive = { focus = USA_side_with_big_business }
-		relative_position_id = USA_flint_strikes
-		x = 1
+		available = {
+			date > 1936.12.30
+		}
+		relative_position_id = USA_new_deal_2
+		x = -3
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -1885,26 +1891,26 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = USA_sit_down_strikes
-		icon = GFX_focus_usa_union_representation_act
-		prerequisite = { focus = USA_side_with_big_business focus = USA_side_with_workers_union }
-		relative_position_id = USA_flint_strikes
-		x = 0
-		y = 2
-		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-		}
+	# focus = {
+	# 	id = USA_sit_down_strikes
+	# 	icon = GFX_focus_usa_union_representation_act
+	# 	prerequisite = { focus = USA_side_with_big_business focus = USA_side_with_workers_union }
+	# 	relative_position_id = USA_side_with_workers_union
+	# 	x = -1
+	# 	y = 2
+	# 	cost = 5
+	# 	#ai_will_do = {
+	# 	#	factor = 1
+	# 	#}
+	# 	available = {
+	# 	}
 
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			remove_ideas = USA_flint_strikes_idea
-		}
-	}
+	# 	available_if_capitulated = yes
+	# 	search_filters = {FOCUS_FILTER_POLITICAL}
+	# 	completion_reward = {
+	# 		remove_ideas = USA_flint_strikes_idea
+	# 	}
+	# }
 	
 	focus = {
 		id = USA_fdr_again
@@ -2618,10 +2624,10 @@ focus_tree = {
 	focus = {
 		id = USA_fair_labour_standards_act
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		x = 0
-		y = 3
+		x = -1
+		y = 4
 		prerequisite = { focus = USA_side_with_big_business focus = USA_side_with_workers_union }
-		relative_position_id = USA_flint_strikes
+		relative_position_id = USA_side_with_workers_union
 		cost = 10
 
 		ai_will_do = {
@@ -2679,8 +2685,8 @@ focus_tree = {
 		prerequisite = { focus = USA_fair_labour_standards_act }
 		prerequisite = { focus = USA_agricultural_adjustment_act }
 		relative_position_id = USA_fair_labour_standards_act
-		x = 3
-		y = 3
+		x = 2
+		y = 2
 		cost = 10
 
 		ai_will_do = {
@@ -3392,48 +3398,104 @@ focus_tree = {
 		continue_if_invalid = yes
 		
 		completion_reward = {
-			add_timed_idea = { idea = USA_vic_plan days = 180 }
-			add_offsite_building = {
-				type = industrial_complex
-				level = 30
-			}
-			add_offsite_building = {
-				type = arms_factory
-				level = 30
-			}
-		    CAN = { 
-				add_timed_idea = { idea = allied_vic_plan days = 180 }
+			USA = {
 				add_offsite_building = {
-				type = industrial_complex
-				level = 10
-			}
+					type = industrial_complex
+					level = 30
+				}
 				add_offsite_building = {
-				type = arms_factory
-				level = 20
-			}
-				} 
-			MEX = { 
-				add_timed_idea = { idea = allied_vic_plan days = 180 }
-				add_offsite_building = {
-				type = industrial_complex
-				level = 10
-			}
-				add_offsite_building = {
-				type = arms_factory
-				level = 20
+					type = arms_factory
+					level = 30
+				}
 			}	
-					}
-			BRA = {
-				add_timed_idea = { idea = allied_vic_plan days = 180 }
+			ENG = {
 				add_offsite_building = {
-				type = industrial_complex
-				level = 10
-			}
+					type = industrial_complex
+					level = 20
+				}
 				add_offsite_building = {
-				type = arms_factory
-				level = 20
+					type = arms_factory
+					level = 20
+				}
 			}
+			every_country = { # majors
+				limit = {
+					victory_plan_nations_major = yes
+				}
+				add_timed_idea = { idea = USA_vic_plan days = 365 }
 			}
+			every_country = { # 2 of them for better tooltip
+				limit = {
+					victory_plan_nations_1 = yes
+				}
+				add_timed_idea = { idea = allied_vic_plan days = 365 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 10
+				}
+			}
+			every_country = { # 2 of them for better tooltip
+				limit = {
+					victory_plan_nations_2 = yes
+				}
+				add_timed_idea = { idea = allied_vic_plan days = 365 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 10
+				}
+			}
+		    # CAN = { 
+			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
+			# 	add_offsite_building = {
+			# 		type = industrial_complex
+			# 		level = 20
+			# 	}
+			# 	add_offsite_building = {
+			# 		type = arms_factory
+			# 		level = 20
+			# 	}
+			# }
+			# SAF = {
+			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
+			# 	add_offsite_building = {
+			# 		type = industrial_complex
+			# 		level = 20
+			# 	}
+			# 	add_offsite_building = {
+			# 		type = arms_factory
+			# 		level = 20
+			# 	}
+			# }
+			# MEX = { 
+			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
+			# 	add_offsite_building = {
+			# 		type = industrial_complex
+			# 		level = 20
+			# 	}
+			# 	add_offsite_building = {
+			# 		type = arms_factory
+			# 		level = 20
+			# 	}	
+			# }
+			# BRA = {
+			# 	add_timed_idea = { idea = allied_vic_plan days = 180 }
+			# 	add_offsite_building = {
+			# 		type = industrial_complex
+			# 		level = 20
+			# 	}
+			# 	add_offsite_building = {
+			# 		type = arms_factory
+			# 		level = 20
+			# 	}
+			# }
 			
 		}
 	}

@@ -53,7 +53,7 @@
   FRA_upgrade_tanks_desc:0 "We need to modernize our older tanks to newer standards!"
   FRA_tank_radios:0 "Tank Radios"
   FRA_tank_radios_desc:0 "With radios our tanks can communicate efficiently and have more success on the battlefield."
-  FRA_tank_refit:0 "Streamlined Tank Factories"
+  FRA_tank_refit:0 "Modernize Tank Production Lines"
   FRA_tank_refit_desc:0 "We need to build large efficient tank factories."
   FRA_defensive_focus2:0 "Supremacy of the Soldier"
   FRA_aggressive_focus2:0 "Supremacy of the Machine"
@@ -110,6 +110,7 @@
   FRA_matignon_agreements_2:0 "Matignon Agreements"
   FRA_special_forces_spirit:0 "Special Forces Expansion"
   FRA_special_forces_idea:0 "Special Forces"
+  FRA_no_weird_licensed_tanks:0 "No Weird Licensed Equipment Pre-Cap"
 
   # Free France
   FRA_special_forces3:0 "Special Forces Empowerment"
@@ -126,6 +127,7 @@
   FRA_expand_intelligence_idea3:0 "French Sabotage"
   FRA_quick_army_mobilization:0 "Armed Forces Mobilization"
   FRA_accelerated_production_reorganization:0 "Reorganization of Production"
+  FRA_outdated_tank_production_lines:0 "Outdated Tank Production Lines"
 
   #### EVENTS ####
   france.500.t:0 "Terrain Specialization"

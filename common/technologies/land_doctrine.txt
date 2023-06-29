@@ -143,7 +143,7 @@ technologies = {
 		}
 		
 		dependencies = {
-			mot_radio1 = 1
+			# mot_radio1 = 1
 		}
 		
 		motorized = {
@@ -274,7 +274,7 @@ technologies = {
 	armored_spearhead = { #Branch focused on Tanks 
 	
 		dependencies = {
-			mot_radio1 = 1
+			# mot_radio1 = 1
 		}
 		
 		category_all_armor = {
@@ -831,7 +831,7 @@ technologies = {
 	intergrated_support = { 
 	
 		dependencies = {
-			art_radio1 = 1
+			# art_radio1 = 1
 		}
 	
 		xor={
@@ -909,7 +909,7 @@ technologies = {
 	dispersed_support = { # Branch is focused on support units as part of the regular brigades
 	
 		dependencies = {
-			art_radio1 = 1
+			# art_radio1 = 1
 		}
 		
 		xor = {

@@ -51,7 +51,7 @@ sub_units = {
 			squad_equipment = 5
 		}
 
-		can_be_parachuted = no
+		can_be_parachuted = yes
 
 		forest = {
 			defence = 0.15
@@ -154,7 +154,7 @@ sub_units = {
 			squad_equipment = 10
 		}
 
-		can_be_parachuted = no
+		can_be_parachuted = yes
 
 		forest = {
 			defence = 0.15

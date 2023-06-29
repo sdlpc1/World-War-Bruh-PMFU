@@ -159,6 +159,8 @@ add_ideas = {
 	volunteer_minimum_major
 	peace_training
 	no_grinding
+	FRA_no_weird_licensed_tanks
+	FRA_outdated_tank_production_lines
 }
 #set_variable = { FRA_poster_center_icon_frame = 1 }
 set_variable = { FRA_new_propaganda_campaign = 0 } #Used to pick a poster slot

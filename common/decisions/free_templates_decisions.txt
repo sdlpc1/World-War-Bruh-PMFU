@@ -408,67 +408,67 @@ free_templates = {
 		}		
 	}
 
-	# free_template_paratroopers = {
+	free_template_paratroopers = {
 
-	# 	# icon = generic_naval
+		# icon = generic_naval
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_template = "11/8 Paratroopers"
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_template = "11/8 Paratroopers"
+			}
+		}
 
-	# 	fire_only_once = no
+		fire_only_once = no
 		
-	# 	visible = {
-	# 		has_game_rule = {
-	# 			rule = free_templates
-	# 			option = ENABLED
-	# 		}
-	# 	}
+		visible = {
+			has_game_rule = {
+				rule = free_templates
+				option = ENABLED
+			}
+		}
 
-	# 	complete_effect = {
-	# 		division_template = {
-	# 			name = "11/8 Paratroopers"
-	# 			is_locked = no
-	# 			regiments = {
-	# 				paratrooper = { x = 0 y = 0 }
-	# 				paratrooper = { x = 0 y = 1 }
-	# 				paratrooper = { x = 0 y = 2 }
-	# 				paratrooper = { x = 0 y = 3 }
+		complete_effect = {
+			division_template = {
+				name = "11/8 Paratroopers"
+				is_locked = no
+				regiments = {
+					paratrooper = { x = 0 y = 0 }
+					paratrooper = { x = 0 y = 1 }
+					paratrooper = { x = 0 y = 2 }
+					paratrooper = { x = 0 y = 3 }
 			
-	# 				paratrooper = { x = 1 y = 0 }
-	# 				paratrooper = { x = 1 y = 1 }
-	# 				paratrooper = { x = 1 y = 2 }
-	# 				paratrooper = { x = 1 y = 3 }
+					paratrooper = { x = 1 y = 0 }
+					paratrooper = { x = 1 y = 1 }
+					paratrooper = { x = 1 y = 2 }
+					paratrooper = { x = 1 y = 3 }
 			
-	# 				paratrooper = { x = 2 y = 0 }
-	# 				paratrooper = { x = 2 y = 1 }
-	# 				paratrooper = { x = 2 y = 2 }
+					paratrooper = { x = 2 y = 0 }
+					paratrooper = { x = 2 y = 1 }
+					paratrooper = { x = 2 y = 2 }
 			
-	# 				pack_artillery_brigade = { x = 3 y = 0 }
-	# 				pack_artillery_brigade = { x = 3 y = 1 }
-	# 				pack_artillery_brigade = { x = 3 y = 2 }
-	# 				pack_artillery_brigade = { x = 3 y = 3 }
+					pack_artillery_brigade = { x = 3 y = 0 }
+					pack_artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 3 y = 2 }
+					pack_artillery_brigade = { x = 3 y = 3 }
 					
-	# 				pack_artillery_brigade = { x = 4 y = 0 }
-	# 				pack_artillery_brigade = { x = 4 y = 1 }
-	# 				pack_artillery_brigade = { x = 4 y = 2 }
-	# 				pack_artillery_brigade = { x = 4 y = 3 }
-	# 			}
-	# 			# support = {
-	# 			# 	assault_engineer = { x = 0 y = 0 }   
-	# 			# 	anti_air = { x = 0 y = 1 }
-	# 			# 	hq_company = { x = 0 y = 2 }
-	# 			# 	recon = { x = 0 y = 3 }
-	# 			# 	logistics_company_mot = { x = 1 y = 0 }
-	# 			# 	maintenance_company = { x = 1 y = 1 }
-	# 			# 	signal_company = { x = 1 y = 2 }
-	# 			# 	military_police = { x = 1 y = 3 }
-	# 			# }
-	# 		}
-	# 	}		
-	# }
+					pack_artillery_brigade = { x = 4 y = 0 }
+					pack_artillery_brigade = { x = 4 y = 1 }
+					pack_artillery_brigade = { x = 4 y = 2 }
+					pack_artillery_brigade = { x = 4 y = 3 }
+				}
+				# support = {
+				# 	assault_engineer = { x = 0 y = 0 }   
+				# 	anti_air = { x = 0 y = 1 }
+				# 	hq_company = { x = 0 y = 2 }
+				# 	recon = { x = 0 y = 3 }
+				# 	logistics_company_mot = { x = 1 y = 0 }
+				# 	maintenance_company = { x = 1 y = 1 }
+				# 	signal_company = { x = 1 y = 2 }
+				# 	military_police = { x = 1 y = 3 }
+				# }
+			}
+		}		
+	}
 
 	free_template_light_tank_mot_no_td = {
 

@@ -1293,7 +1293,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = FRA_tank_conversion_spirit
+			remove_ideas = FRA_outdated_tank_production_lines
+			# add_ideas = FRA_tank_conversion_spirit
 		}
 	}
 

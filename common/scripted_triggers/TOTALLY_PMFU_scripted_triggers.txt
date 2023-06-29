@@ -29,6 +29,29 @@ is_playable_country = {
 	}
 }
 
+victory_plan_nations_1 = {
+	OR = {
+		tag = CAN
+		tag = BRA
+		tag = MEX
+	}
+}
+
+victory_plan_nations_2 = {
+	OR = {
+		tag = SAF
+		tag = RAJ
+		tag = AST
+	}
+}
+
+victory_plan_nations_major = {
+	OR = {
+		tag = USA
+		tag = ENG
+	}
+}
+
 british_coastline = {
 	OR = {
 		state = 123

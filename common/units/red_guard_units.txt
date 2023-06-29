@@ -36,7 +36,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.2
 		supply_consumption = 0.01
-		can_be_parachuted = no
+		can_be_parachuted = yes
 		
 		initiative = 0.15
 		
@@ -96,7 +96,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.2
 		supply_consumption = 0.01
-		can_be_parachuted = no
+		can_be_parachuted = yes
 		
 		initiative = 0.15
 		
@@ -156,7 +156,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.2
 		supply_consumption = 0.01
-		can_be_parachuted = no
+		can_be_parachuted = yes
 		
 		initiative = 0.15
 		

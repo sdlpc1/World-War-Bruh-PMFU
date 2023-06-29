@@ -31,7 +31,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.02
-		can_be_parachuted = no
+		can_be_parachuted = yes
 		
 		# Important Ability
 		initiative = 0.20
@@ -85,7 +85,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.2
 		supply_consumption = 0.1
-		can_be_parachuted = no
+		can_be_parachuted = yes
 		
 		defense = -0.5
 		breakthrough = -0.5
