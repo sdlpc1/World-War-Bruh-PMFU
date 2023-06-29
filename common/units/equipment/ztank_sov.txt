@@ -345,9 +345,9 @@ equipments = {
 		ap_attack = 55
 
 		defense = 8
-		breakthrough = 45
+		breakthrough = 47
 		soft_attack = 40
-		hard_attack = 30
+		hard_attack = 34
 
 		build_cost_ic = 39
 	}
@@ -372,7 +372,7 @@ equipments = {
 		soft_attack = 44
 		hard_attack = 34
 		
-		build_cost_ic = 42
+		build_cost_ic = 41
 	}
 	
 	sov_medium_tank_equipment_4 = {

@@ -8,10 +8,6 @@ ideas = {
 				always = no
 			}
 
-			cancel = {
-				has_war = yes
-			}
-
 			removal_cost = -1
 
 			picture = generic_acquire_tanks
@@ -27,10 +23,6 @@ ideas = {
 				always = no
 			}
 
-			cancel = {
-				has_war = yes
-			}
-
 			removal_cost = -1
 
 			picture = generic_infantry_bonus
@@ -43,10 +35,6 @@ ideas = {
 
 			allowed = {
 				always = no
-			}
-
-			cancel = {
-				has_war = yes
 			}
 
 			removal_cost = -1
