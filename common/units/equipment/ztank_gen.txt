@@ -156,7 +156,7 @@ equipments = {
 		is_convertable = yes
 						
 		#Misc Abilities
-		maximum_speed = 4
+		maximum_speed = 4.5
 
 		armor_value = 50
 		ap_attack = 40
@@ -179,7 +179,7 @@ equipments = {
 		is_convertable = yes
 						
 		#Misc Abilities
-		maximum_speed = 4.2
+		maximum_speed = 4.7
 
 		armor_value = 85
 		ap_attack = 80
@@ -202,7 +202,7 @@ equipments = {
 		is_convertable = yes
 						
 		#Misc Abilities
-		maximum_speed = 4.5
+		maximum_speed = 5
 
 		armor_value = 95
 		ap_attack = 85
@@ -225,7 +225,7 @@ equipments = {
 		is_convertable = yes
 						
 		#Misc Abilities
-		maximum_speed = 4.8
+		maximum_speed = 5.3
 
 		armor_value = 105
 		ap_attack = 95
