@@ -17,8 +17,8 @@ equipments = {
 
 		defense = 8
 		breakthrough = 44
-		soft_attack = 30
-		hard_attack = 30
+		soft_attack = 31
+		hard_attack = 31
 
 		build_cost_ic = 32
 	
@@ -41,8 +41,8 @@ equipments = {
 
 		defense = 8
 		breakthrough = 48
-		soft_attack = 34
-		hard_attack = 34
+		soft_attack = 35
+		hard_attack = 35
 
 		build_cost_ic = 36
 	}
@@ -64,8 +64,8 @@ equipments = {
 
 		defense = 9
 		breakthrough = 55
-		soft_attack = 38
-		hard_attack = 36
+		soft_attack = 39
+		hard_attack = 37
 
 		build_cost_ic = 40
 	}
@@ -87,8 +87,8 @@ equipments = {
 
 		defense = 10
 		breakthrough = 65
-		soft_attack = 44
-		hard_attack = 40
+		soft_attack = 45
+		hard_attack = 41
 		
 		build_cost_ic = 44
 	}
@@ -110,8 +110,8 @@ equipments = {
 
 		defense = 12
 		breakthrough = 70
-		soft_attack = 50
-		hard_attack = 47
+		soft_attack = 51
+		hard_attack = 48
 
 		build_cost_ic = 48
 	}
@@ -133,8 +133,8 @@ equipments = {
 
 		defense = 15
 		breakthrough = 80
-		soft_attack = 62
-		hard_attack = 62
+		soft_attack = 63
+		hard_attack = 63
 
 		build_cost_ic = 54
 	}
@@ -156,8 +156,8 @@ equipments = {
 		ap_attack = 70
 		armor_value = 35
 
-		soft_attack = 8
-		hard_attack = 34
+		soft_attack = 9
+		hard_attack = 35
 		
 		build_cost_ic = 28
 			
@@ -181,8 +181,8 @@ equipments = {
 		ap_attack = 80
 		armor_value = 45
 
-		soft_attack = 8
-		hard_attack = 39
+		soft_attack = 9
+		hard_attack = 40
 		
 		build_cost_ic = 32
 			
@@ -208,8 +208,8 @@ equipments = {
 		armor_value = 55
 
 		#Offensive Abilities
-		soft_attack = 10
-		hard_attack = 46
+		soft_attack = 11
+		hard_attack = 47
 		
 		build_cost_ic = 36
 		
@@ -235,8 +235,8 @@ equipments = {
 		armor_value = 75
 
 		#Offensive Abilities
-		soft_attack = 12
-		hard_attack = 54
+		soft_attack = 13
+		hard_attack = 55
 		
 		build_cost_ic = 36
 		
@@ -261,8 +261,8 @@ equipments = {
 		armor_value = 55
 
 		#Offensive Abilities
-		soft_attack = 62
-		hard_attack = 4
+		soft_attack = 63
+		hard_attack = 5
 		
 		build_cost_ic = 30
 	}
@@ -287,8 +287,8 @@ equipments = {
 		armor_value = 60
 
 		#Offensive Abilities
-		soft_attack = 72
-		hard_attack = 4
+		soft_attack = 73
+		hard_attack = 5
 		
 		build_cost_ic = 32
 	}
@@ -314,8 +314,8 @@ equipments = {
 		armor_value = 40
 
 		#Offensive Abilities
-		air_attack = 38
-		soft_attack = 6
+		air_attack = 39
+		soft_attack = 7
 		hard_attack = 18
 		
 		build_cost_ic = 30
@@ -344,8 +344,8 @@ equipments = {
 
 		#Offensive Abilities
 		air_attack = 42
-		soft_attack = 7
-		hard_attack = 20
+		soft_attack = 8
+		hard_attack = 21
 		
 		build_cost_ic = 34
 	}
@@ -368,10 +368,10 @@ equipments = {
 
 		defense = 8
 		breakthrough = 55
-		soft_attack = 32
-		hard_attack = 27
+		soft_attack = 33
+		hard_attack = 28
 
-		build_cost_ic = 55
+		build_cost_ic = 51
 	}
 	
 	eng_heavy_tank_equipment_2 = {
@@ -391,10 +391,10 @@ equipments = {
 
 		defense = 12
 		breakthrough = 60
-		soft_attack = 48
-		hard_attack = 44
+		soft_attack = 49
+		hard_attack = 45
 
-		build_cost_ic = 66
+		build_cost_ic = 62
 	}
 	
 	eng_heavy_tank_equipment_3 = {
@@ -414,10 +414,10 @@ equipments = {
 
 		defense = 14
 		breakthrough = 80
-		soft_attack = 54
-		hard_attack = 54
+		soft_attack = 55
+		hard_attack = 55
 
-		build_cost_ic = 72
+		build_cost_ic = 68
 	}
 	
 	eng_heavy_tank_equipment_4 = {
@@ -437,10 +437,10 @@ equipments = {
 
 		defense = 16
 		breakthrough = 90
-		soft_attack = 64
-		hard_attack = 64
+		soft_attack = 65
+		hard_attack = 65
 
-		build_cost_ic = 79
+		build_cost_ic = 75
 	}
 	
 	eng_heavy_tank_equipment_5 = {
@@ -460,10 +460,10 @@ equipments = {
 
 		defense = 18
 		breakthrough = 100
-		soft_attack = 74
-		hard_attack = 74
+		soft_attack = 75
+		hard_attack = 75
 
-		build_cost_ic = 85
+		build_cost_ic = 81
 	}
 	
 	eng_heavy_td_equipment_1 = {
@@ -484,10 +484,10 @@ equipments = {
 		armor_value = 80
 		ap_attack = 100
 
-		soft_attack = 8
-		hard_attack = 72
+		soft_attack = 9
+		hard_attack = 73
 
-		build_cost_ic = 68
+		build_cost_ic = 64
 	}
 	
 	### ASSAULT GUNS ###
@@ -511,8 +511,8 @@ equipments = {
 		
 		hardness = 0.95
 
-		soft_attack = 82
-		hard_attack = 10
+		soft_attack = 83
+		hard_attack = 11
 		defense = 6
 		breakthrough = 100
 
@@ -539,8 +539,8 @@ equipments = {
 		
 		hardness = 0.95
 
-		soft_attack = 92
-		hard_attack = 12
+		soft_attack = 93
+		hard_attack = 13
 		defense = 8
 		breakthrough = 110
 
@@ -567,8 +567,8 @@ equipments = {
 		
 		hardness = 0.95
 
-		soft_attack = 102
-		hard_attack = 14
+		soft_attack = 103
+		hard_attack = 15
 		defense = 10
 		breakthrough = 120
 
