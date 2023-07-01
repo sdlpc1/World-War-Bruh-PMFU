@@ -39,6 +39,10 @@ technologies = {
 		enable_equipments = {
 			medium_tank_equipment_2
 		}
+
+		sub_technologies = {
+			medium_td_1
+		}
 	
 		path = {
 			leads_to_tech = axis_medium_tank_3
@@ -66,6 +70,10 @@ technologies = {
 
 		enable_equipments = {
 			medium_tank_equipment_3
+		}
+
+		sub_technologies = {
+			medium_td_2
 		}
 	
 		path = {
@@ -102,6 +110,44 @@ technologies = {
 			name = armour_axis_folder
 			position = { x = -4 y = 16 }
 		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}	
+
+	medium_td_1 = { 
+
+		enable_equipments = {
+			medium_td_equipment_1
+		}
+		
+		research_cost = 1.0
+		start_year = 1940
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
+	medium_td_2 = { 
+
+		enable_equipments = {
+			medium_td_equipment_2
+		}
+		
+		research_cost = 1.0
+		start_year = 1942
 		
 		ai_will_do = {
 			factor = 0
