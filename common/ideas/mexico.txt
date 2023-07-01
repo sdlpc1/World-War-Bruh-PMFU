@@ -1302,101 +1302,27 @@ ideas = {
 		
 		designer = yes
 		
-		MEX_tga = {
+		# MEX_tga = {
 		
-			cost = 75
+		# 	cost = 75
 			
-			allowed = {
-				original_tag = MEX
-				has_dlc = "Man the Guns"
-			}
+		# 	allowed = {
+		# 		original_tag = MEX
+		# 		has_dlc = "Man the Guns"
+		# 	}
 			
-			available = {
-				has_completed_focus = MEX_focus_tank_workshops
-			}
+		# 	available = {
+		# 		has_completed_focus = MEX_focus_tank_workshops
+		# 	}
 			
-			research_bonus = {
-				armor = 0.15
-			}
+		# 	research_bonus = {
+		# 		armor = 0.15
+		# 	}
 			
-			traits = { tank_manufacturer }
+		# 	traits = { tank_manufacturer }
 
-			modifier = { tank_manufacturer_cost_factor = -1 }
-		}
-		
-		germano_mexican_tanks = {
-		
-			picture = porsche
-			
-			allowed = {
-				original_tag = MEX
-				has_dlc = "Man the Guns"
-			}
-			
-			available = {
-				is_in_faction_with = GER
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { heavy_tank_manufacturer }
-
-			modifier = { tank_manufacturer_cost_factor = -1 }
-		}
-		
-		russo_mexican_tanks = {
-
-			picture = morozov_design_bureau
-			
-			allowed = {
-				original_tag = MEX
-				has_dlc = "Man the Guns"
-			}
-			
-			available = {
-				is_in_faction_with = SOV
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { fast_tank_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-
-			modifier = { tank_manufacturer_cost_factor = -1 }
-		}
-		
-		american_mexican_tanks = {
-
-			picture = chrysler
-			
-			allowed = {
-				original_tag = MEX
-				has_dlc = "Man the Guns"
-			}
-			
-			available = {
-				is_in_faction_with = USA
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { medium_tank_manufacturer }
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			modifier = { tank_manufacturer_cost_factor = -1 }
-		}
+		# 	modifier = { tank_manufacturer_cost_factor = -1 }
+		# }
 	}
 	
 	naval_manufacturer = { 

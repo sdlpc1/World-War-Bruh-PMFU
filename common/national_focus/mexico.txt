@@ -4439,7 +4439,11 @@ focus_tree = {
 					category = armor
 				}
 				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = MEX_tga
+				show_ideas_tooltip = COM_vauxhall
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = COM_churchillgrad
+				# custom_effect_tooltip = available_designer
+				# show_ideas_tooltip = MEX_tga
 			}
 	}
 

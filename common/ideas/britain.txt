@@ -2453,7 +2453,10 @@ ideas = {
 					original_tag = NZL
 					original_tag = RAJ
 					original_tag = SAF
-					original_tag = IRE
+					original_tag = IRE			
+					original_tag = HOL
+					original_tag = MEX
+					original_tag = BRA
 				}
 			}
 			
@@ -2509,12 +2512,18 @@ ideas = {
 					original_tag = RAJ
 					original_tag = SAF
 					original_tag = IRE
+					original_tag = HOL
+					original_tag = MEX
+					original_tag = BRA
 				}
 			}
 
 			available = {
 				OR = {
 					original_tag = ENG
+					original_tag = HOL
+					original_tag = MEX
+					original_tag = BRA
 					has_completed_focus = COM_employ_gloucestershire_diesel_factory
 				}
 			}
@@ -2565,12 +2574,18 @@ ideas = {
 					original_tag = RAJ
 					original_tag = SAF
 					original_tag = IRE
+					original_tag = HOL
+					original_tag = MEX
+					original_tag = BRA
 				}
 			}
 
 			available = {
 				OR = {
 					original_tag = ENG
+					original_tag = HOL
+					original_tag = MEX
+					original_tag = BRA
 					has_completed_focus = COM_employ_gloucestershire_diesel_factory
 				}
 			}
@@ -2620,6 +2635,7 @@ ideas = {
 					original_tag = RAJ
 					original_tag = SAF
 					original_tag = IRE
+					original_tag = MEX
 				}
 			}
 			
@@ -2629,6 +2645,7 @@ ideas = {
 				OR = {
 					original_tag = ENG
 					has_completed_focus = COM_employ_vauxhall
+					has_completed_focus = MEX_focus_tank_workshops # mex
 				}
 			}
 			
@@ -2674,12 +2691,14 @@ ideas = {
 					original_tag = RAJ
 					original_tag = SAF
 					original_tag = IRE
+					original_tag = MEX
 				}
 			}
 			
 			available = {
 				OR = {
 					original_tag = ENG
+					has_completed_focus = MEX_focus_tank_workshops # mex
 					has_completed_focus = COM_employ_vauxhall
 				}
 			}
