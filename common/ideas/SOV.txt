@@ -5974,11 +5974,7 @@ ideas = {
 					build_cost_ic = -0.10
 					reliability = 0.05
 				}
-				heavy_tank_amphibious_chassis = {
-					armor_value = 0.10
-					build_cost_ic = -0.10
-					reliability = 0.05
-				}
+
 			}
 			
 			modifier = { tank_manufacturer_cost_factor = -1 }
@@ -6004,23 +6000,19 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				heavy_tank_chassis = {
+				heavy_tank_equipment = {
 					armor_value = 0.1
 					soft_attack = 0.1
 				}
-				heavy_tank_artillery_chassis = {
+				heavy_tank_artillery_equipment = {
 					armor_value = 0.1
 					soft_attack = 0.05
 				}
-				heavy_tank_destroyer_chassis = {
+				heavy_tank_destroyer_equipment = {
 					armor_value = 0.1
 					soft_attack = 0.05
 				}
-				heavy_assault_gun_chassis = {
-					armor_value = 0.1
-					soft_attack = 0.05
-				}
-				heavy_tank_amphibious_chassis = {
+				assault_gun_equipment = {
 					armor_value = 0.1
 					soft_attack = 0.05
 				}
@@ -6054,23 +6046,19 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				heavy_tank_chassis = {
+				heavy_tank_equipment = {
 					armor_value = 0.1
 					hard_attack = 0.1
 				}
-				heavy_tank_artillery_chassis = {
+				heavy_tank_artillery_equipment = {
 					armor_value = 0.1
 					hard_attack = 0.05
 				}
-				heavy_tank_destroyer_chassis = {
+				heavy_tank_destroyer_equipment = {
 					armor_value = 0.1
 					hard_attack = 0.05
 				}
-				heavy_assault_gun_chassis = {
-					armor_value = 0.1
-					hard_attack = 0.05
-				}
-				heavy_tank_amphibious_chassis = {
+				assault_gun_equipment = {
 					armor_value = 0.1
 					hard_attack = 0.05
 				}
