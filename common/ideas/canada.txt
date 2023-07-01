@@ -776,81 +776,25 @@ ideas = {
 		
 		designer = yes
 		
-		vickers_armstrong_can = {
+		# vickers_armstrong_can = {
 
-			picture = generic_tank_manufacturer_1
+		# 	picture = generic_tank_manufacturer_1
 
 			
-			allowed = {
-				original_tag = CAN
-			}
+		# 	allowed = {
+		# 		original_tag = CAN
+		# 	}
 			
-			research_bonus = {
-				armor = 0.15
-			}
+		# 	research_bonus = {
+		# 		armor = 0.15
+		# 	}
 			
-			traits = { medium_tank_manufacturer }
+		# 	traits = { medium_tank_manufacturer }
 			
-			# quite the useless tanks the vickers 6-ton
+		# 	# quite the useless tanks the vickers 6-ton
 
-			modifier = { tank_manufacturer_cost_factor = -1 }
-		}
-
-		COM_nuffield = {
-			
-			allowed = {
-				OR = {
-					original_tag = CAN
-					original_tag = AST
-					original_tag = NZL
-					original_tag = RAJ
-					original_tag = SAF
-					original_tag = IRE
-				}
-			}
-			
-			picture = vickers_armstrong_eng
-			
-			available = {
-				has_completed_focus = COM_employ_nuffield
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { nuffield_trait }
-
-			modifier = { tank_manufacturer_cost_factor = -1 }
-		}
-		
-		COM_vauxhall = {
-			
-			allowed = {
-				OR = {
-					original_tag = CAN
-					original_tag = AST
-					original_tag = NZL
-					original_tag = RAJ
-					original_tag = SAF
-					original_tag = IRE
-				}
-			}
-			
-			picture = vauxhall
-			
-			available = {
-				has_completed_focus = COM_employ_vauxhall
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { vauxhall_trait }
-
-			modifier = { tank_manufacturer_cost_factor = -1 }
-		}
+		# 	modifier = { tank_manufacturer_cost_factor = -1 }
+		# }
 	}
 
 	industrial_concern = {

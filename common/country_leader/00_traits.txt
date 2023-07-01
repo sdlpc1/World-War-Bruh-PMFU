@@ -22,60 +22,60 @@ leader_traits = {
 		research_speed_factor = 0.05
 	}
 
-	vauxhall_trait = {
-		random = no
-		equipment_bonus = {
-			heavy_tank_equipment = {
-				soft_attack = 0.1
-				build_cost_ic = -0.05
-			}
-			heavy_tank_artillery_equipment = {
-				build_cost_ic = -0.05
-			}
-			heavy_tank_destroyer_equipment = {
-				build_cost_ic = -0.05
-			}
-			assault_gun_equipment = {
-				build_cost_ic = -0.05
-			}
-			amphibious_tank_equipment = {
-				build_cost_ic = -0.05
-			}
-		}
+	# vauxhall_trait = {
+	# 	random = no
+	# 	equipment_bonus = {
+	# 		heavy_tank_chassis = {
+	# 			soft_attack = 0.1
+	# 			build_cost_ic = -0.05
+	# 		}
+	# 		heavy_tank_artillery_chassis = {
+	# 			build_cost_ic = -0.05
+	# 		}
+	# 		heavy_tank_destroyer_chassis = {
+	# 			build_cost_ic = -0.05
+	# 		}
+	# 		heavy_assault_gun_chassis = {
+	# 			build_cost_ic = -0.05
+	# 		}
+	# 		heavy_tank_amphibious_chassis = {
+	# 			build_cost_ic = -0.05
+	# 		}
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 
-	nuffield_trait = {
-		random = no
-		equipment_bonus = {
-			medium_tank_equipment = {
-				maximum_speed = 0.15
-				hard_attack = 0.1
-			}
-			medium_tank_artillery_equipment = {
-				maximum_speed = 0.15
-			}
-			medium_tank_destroyer_equipment = {
-				maximum_speed = 0.15
-			}
-			medium_tank_aa_equipment = {
-				maximum_speed = 0.15
-			}
-			assault_gun_equipment = {
-				maximum_speed = 0.15
-			}
-			amphibious_tank_equipment = {
-				maximum_speed = 0.15
-			}
-		}
+	# gloucestershire_diesel_factory_trait = {
+	# 	random = no
+	# 	equipment_bonus = {
+	# 		medium_tank_chassis = {
+	# 			maximum_speed = 0.15
+	# 			hard_attack = 0.1
+	# 		}
+	# 		medium_tank_artillery_chassis = {
+	# 			maximum_speed = 0.15
+	# 		}
+	# 		medium_tank_destroyer_chassis = {
+	# 			maximum_speed = 0.15
+	# 		}
+	# 		medium_tank_aa_chassis = {
+	# 			maximum_speed = 0.15
+	# 		}
+	# 		medium_assault_gun_chassis = {
+	# 			maximum_speed = 0.15
+	# 		}
+	# 		medium_tank_amphibious_chassis = {
+	# 			maximum_speed = 0.15
+	# 		}
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 
 	nation_leader = {
 		random = no
@@ -1088,79 +1088,104 @@ leader_traits = {
 		}
 	}
 
-	porsche_manufacturer = {
-		random = no
-		equipment_bonus = {
-			light_tank_equipment = {
-				maximum_speed = 0.1
-				soft_attack = 0.1
-				hard_attack = 0.1
-			}
-			light_tank_artillery_equipment = {
-				maximum_speed = 0.1
-			}
-			light_tank_destroyer_equipment = {
-				maximum_speed = 0.1
-			}
-			light_tank_aa_equipment = {
-				maximum_speed = 0.1
-			}
-			assault_gun_equipment = {
-				maximum_speed = 0.1
-			}
-			amphibious_tank_equipment = {
-				maximum_speed = 0.1
-			}
-		}
+	# porsche_manufacturer = {
+	# 	random = no
+	# 	equipment_bonus = {
+	# 		light_tank_chassis = {
+	# 			maximum_speed = 0.1
+	# 			soft_attack = 0.1
+	# 			hard_attack = 0.1
+	# 		}
+	# 		light_tank_artillery_chassis = {
+	# 			maximum_speed = 0.1
+	# 		}
+	# 		light_tank_destroyer_chassis = {
+	# 			maximum_speed = 0.1
+	# 		}
+	# 		light_tank_aa_chassis = {
+	# 			maximum_speed = 0.1
+	# 		}
+	# 		light_assault_gun_chassis = {
+	# 			maximum_speed = 0.1
+	# 		}
+	# 		light_tank_amphibious_chassis = {
+	# 			maximum_speed = 0.1
+	# 		}
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 
-	man_manufacturer = {
-		random = no
-		equipment_bonus = {
-			medium_tank_equipment = {
-				ap_attack = 0.1
-				hard_attack = 0.1
-			}
-			assault_gun_equipment = {
-				soft_attack = 0.1
-				breakthrough = 0.15
-			}
-		}
+	# man_manufacturer = {
+	# 	random = no
+	# 	equipment_bonus = {
+	# 		medium_tank_chassis = {
+	# 			ap_attack = 0.1
+	# 			hard_attack = 0.05
+	# 			soft_attack = 0.05
+	# 		}
+	# 		medium_tank_artillery_chassis = {
+	# 			hard_attack = 0.05
+	# 			soft_attack = 0.05
+	# 		}
+	# 		medium_tank_destroyer_chassis = {
+	# 			hard_attack = 0.05
+	# 			soft_attack = 0.05
+	# 		}
+	# 		medium_tank_aa_chassis = {
+	# 			hard_attack = 0.05
+	# 			soft_attack = 0.05
+	# 		}
+	# 		medium_tank_amphibious_chassis = {
+	# 			hard_attack = 0.05
+	# 			soft_attack = 0.05
+	# 		}
+	# 		light_assault_gun_chassis = {
+	# 			soft_attack = 0.1
+	# 			breakthrough = 0.15
+	# 		}
+	# 		medium_assault_gun_chassis = {
+	# 			soft_attack = 0.1
+	# 			breakthrough = 0.15
+	# 		}
+	# 		heavy_assault_gun_chassis = {
+	# 			soft_attack = 0.1
+	# 			breakthrough = 0.15
+	# 		}
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 	
-	henschel_manufacturer = {
-		random = no
-		equipment_bonus = {
-			heavy_tank_equipment = {
-				armor_value = 0.1
-				hard_attack = 0.1
-			}
-			heavy_tank_artillery_equipment = {
-				armor_value = 0.1
-			}
-			heavy_tank_destroyer_equipment = {
-				armor_value = 0.1
-			}
-			assault_gun_equipment = {
-				armor_value = 0.1
-			}
-			amphibious_tank_equipment = {
-				armor_value = 0.1
-			}
-		}
+	# henschel_manufacturer = {
+	# 	random = no
+	# 	equipment_bonus = {
+	# 		heavy_tank_chassis = {
+	# 			armor_value = 0.1
+	# 			hard_attack = 0.1
+	# 		}
+	# 		heavy_tank_artillery_chassis = {
+	# 			armor_value = 0.1
+	# 		}
+	# 		heavy_tank_destroyer_chassis = {
+	# 			armor_value = 0.1
+	# 		}
+	# 		heavy_assault_gun_chassis = {
+	# 			armor_value = 0.1
+	# 		}
+	# 		heavy_tank_amphibious_chassis = {
+	# 			armor_value = 0.1
+	# 		}
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 
 	state_planner = {
 		random = no

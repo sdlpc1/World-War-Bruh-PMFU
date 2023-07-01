@@ -276,6 +276,10 @@
   GER_blau:0 "Fall Blau"
   GER_citadel:0 "Operation Citadel"
   volunteer_minimum_GER_NA:0 "+3 Volunteers for No Asia"
+  GER_idea_alkett:0 "Alkett"
+  nibelungenwerke:0 "Nibelungenwerke"
+  daimler_Benz_AG:0 "Daimler-Benz"
+  daimler_Benz_AG_desc:1 "Daimler-Benz was a manufacturer of automobiles, motor vehicles, and high-quality engines."
 
   #### TRAITS ####
   schacht:0 "Reichsbank President"

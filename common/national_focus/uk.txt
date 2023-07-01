@@ -665,7 +665,7 @@ focus_tree = {
 	focus = {
 		id = ENG_learn_from_war
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = ENG_nuffield_aero }
+		prerequisite = { focus = ENG_gloucestershire_diesel_factory_aero }
 		prerequisite = { focus = ENG_filler }
 		available = { has_army_experience > 50 }
 		x = 0
@@ -744,7 +744,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ENG_nuffield_aero
+		id = ENG_gloucestershire_diesel_factory_aero
 		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = ENG_bsa }
 		x = 0

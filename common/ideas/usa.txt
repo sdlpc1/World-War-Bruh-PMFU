@@ -2195,25 +2195,79 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { fast_tank_manufacturer }
+			# traits = { fast_tank_manufacturer }
+			# equipment_bonus = {
+			# 	armor = {
+			# 		maximum_speed = 0.1 reliability = 0.1 
+			# 	}
+			# }
+			equipment_bonus = {
+				armor = {
+					armor_value = 0.05 
+					soft_attack = 0.05 
+					breakthrough = 0.05
+				}
+			}
 			
 			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		
 		chrysler = {
 			
-			
 			allowed = {
 				original_tag = USA
 			}
-			
 
+			available = {
+				has_completed_focus = USA_main_battle_tanks
+			}
 			
 			research_bonus = {
 				armor = 0.15
 			}
 			
-			traits = { medium_tank_manufacturer }
+			# traits = { medium_tank_manufacturer }
+			# equipment_bonus = {
+			# 	armor = {
+			# 		reliability = 0.05 
+			# 		soft_attack = 0.05 
+			# 		hard_attack = 0.05 
+			# 	}
+			# }
+			equipment_bonus = {
+				medium_tank_equipment = {
+					soft_attack = 0.1
+					build_cost_ic = -0.1
+				}
+				medium_tank_artillery_equipment = {
+					soft_attack = 0.05
+					build_cost_ic = -0.1
+				}
+				medium_tank_destroyer_equipment = {
+					soft_attack = 0.05
+					build_cost_ic = -0.1
+				}
+				medium_tank_aa_equipment = {
+					soft_attack = 0.05
+					build_cost_ic = -0.1
+				}
+				assault_gun_equipment = {
+					soft_attack = 0.05
+					build_cost_ic = -0.1
+				}
+				light_tank_equipment = {
+					build_cost_ic = -0.15
+				}
+				light_tank_artillery_equipment = {
+					build_cost_ic = -0.15
+				}
+				light_tank_destroyer_equipment = {
+					build_cost_ic = -0.15
+				}
+				light_tank_aa_equipment = {
+					build_cost_ic = -0.15
+				}
+			}
 			
 			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
@@ -2240,18 +2294,23 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 				medium_tank_artillery_equipment = {
+					hard_attack = 0.05
 					build_cost_ic = -0.1
 				}
-				medium_tank_artillery_equipment = {
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.05
 					build_cost_ic = -0.1
 				}
 				medium_tank_aa_equipment = {
+					hard_attack = 0.05
 					build_cost_ic = -0.1
 				}
 				assault_gun_equipment = {
+					hard_attack = 0.05
 					build_cost_ic = -0.1
 				}
 				amphibious_tank_equipment = {
+					hard_attack = 0.05
 					build_cost_ic = -0.1
 				}
 				light_tank_equipment = {
@@ -2298,7 +2357,7 @@ ideas = {
 					ap_attack = 0.1
 					hard_attack = 0.1
 				}
-				heavy_tank_destroyer_chassis = {
+				heavy_tank_destroyer_equipment = {
 					build_cost_ic = -0.1
 					ap_attack = 0.1
 					hard_attack = 0.1
@@ -2321,7 +2380,14 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { heavy_tank_manufacturer }
+			# traits = { heavy_tank_manufacturer }
+			equipment_bonus = {
+				armor = {
+					armor_value = 0.05 
+					hard_attack = 0.05 
+					breakthrough = 0.05
+				}
+			}
 			
 			modifier = { tank_manufacturer_cost_factor = -1 }
 		}	
