@@ -293,7 +293,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = COM_employ_nuffield
+	id = COM_employ_gloucestershire_diesel_factory
 	icon = GFX_goal_generic_army_tanks
 	prerequisite = { focus = COM_invite_british_experts }
 	x = -1
@@ -311,7 +311,9 @@ shared_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = COM_nuffield
+		show_ideas_tooltip = COM_gloucestershire_diesel_factory
+		custom_effect_tooltip = available_designer
+		show_ideas_tooltip = COM_Leyland
 	}
 }
 
@@ -335,6 +337,8 @@ shared_focus = {
 	completion_reward = {
 		custom_effect_tooltip = available_designer
 		show_ideas_tooltip = COM_vauxhall
+		custom_effect_tooltip = available_designer
+		show_ideas_tooltip = COM_churchillgrad
 	}
 }
 

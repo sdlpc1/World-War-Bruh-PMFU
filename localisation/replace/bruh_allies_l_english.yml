@@ -19,8 +19,8 @@
   COM_armed_forces_development_desc:0 "Our armed forces are in need of development."
   COM_invite_british_experts:0 "Invite British Experts"
   COM_invite_british_experts_desc:0 "British experts can help us develop our armed forces."
-  COM_employ_nuffield:0 "Contract Nuffield Aero"
-  COM_employ_nuffield_desc:0 "Nuffield Aero can help our medium tank development efforts."
+  COM_employ_gloucestershire_diesel_factory:0 "Contract Gloucestershire Diesel Factory"
+  COM_employ_gloucestershire_diesel_factory_desc:0 "Gloucestershire Diesel Factory can help our medium tank development efforts."
   COM_employ_vauxhall:0 "Contract Vauxhall Motors"
   COM_employ_vauxhall_desc:0 "Vauxhall Motors can help our heavy tank development efforts."
   COM_contract_enfield:0 "Contract Enfield"
@@ -39,7 +39,6 @@
   COM_national_uprising_idea:0 "National Uprising"
   COM_rebels_idea:0 "Resistance Contacts"
   COM_vauxhall:0 "Vauxhall Motors"
-  COM_nuffield:0 "Nuffield Mech and Aero"
   COM_rsaf_enfield:0 "RSAF Enfield"
 
   #### PROPAGANDA ####

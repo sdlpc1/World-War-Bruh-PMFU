@@ -49,8 +49,8 @@
   ENG_fund_private_desc:0 "We need to fund private factories to produce a sufficient amount of arms."
   ENG_bsa:0 "Expand BSA"
   ENG_bsa_desc:0 "The Birmingham Small Arms Company Limited needs expansion to produce our arms for the war."
-  ENG_nuffield_aero:0 "Expand the Nuffield Plant"
-  ENG_nuffield_aero_desc:0 "The current Nuffield Plant is too small to produce sufficient amount of arms."
+  ENG_gloucestershire_diesel_factory_aero:0 "Expand the Gloucestershire Diesel Factory Plant"
+  ENG_gloucestershire_diesel_factory_aero_desc:0 "The current Gloucestershire Diesel Factory Plant is too small to produce sufficient amount of arms."
   ENG_rof:0 "New Royal Ordinance Factories"
   ENG_rof_desc:0 "We need new royal ordinance factories to produce arms."
   ENG_enfield:0 "Expand RSAF Enfield"
@@ -248,11 +248,13 @@
   ENG_the_sun_never_sets_desc:0 "Bases Mechanic: for every base we own that is listed we will recieve a bonus\n§YGibraltar\nMalta\nSinai§!" 
   ENG_air_prod:0 "Propaganda Air Production" 
   ENG_tallboys:0 "Tallboys"
-  ENG_vickers_armstrong_eng:0 "Nuffield Mech and Aeri"
   bedford_behicles:0 "Bedford Vehicles"
+  vickers_armstrong_eng:0 "Vickers-Armstrong"
+  COM_Leyland:0 "Leyland"
+  COM_churchillgrad:0 "Churchillgrad Tractor Factory"
+  COM_gloucestershire_diesel_factory:0 "Gloucestershire Diesel Factory"
 
   #### TRAITS ####
-  nuffield_trait:0 "Cruiser Tank Manufacturer"
   vauxhall_trait:0 "Infantry Tank Manufacturer"
   cope_trait:0 "Cope Seethe"
 

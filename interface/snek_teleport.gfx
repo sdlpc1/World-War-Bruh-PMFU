@@ -86,6 +86,62 @@ spriteTypes = {
 		name = "GFX_idea_ROM_LIBYA_OIL"
 		textureFile = "gfx/interface/ideas/ROM_oil.dds"
 	}
+	# idea - designers #
+	SpriteType = {
+		name = "GFX_idea_nibelungenwerke"
+		texturefile = "gfx/interface/ideas/idea_nibelungenwerke.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_Alkett"
+		texturefile = "gfx/interface/ideas/idea_alkett.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_daimler_Benz_AG"
+		texturefile = "gfx/interface/ideas/idea_daimler_Benz_AG.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vickers_armstrong_eng"
+		texturefile = "gfx/interface/ideas/vickers_armstrong_eng.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_COM_Leyland"
+		texturefile = "gfx/interface/ideas/Leyland.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_COM_churchillgrad"
+		texturefile = "gfx/interface/ideas/idea_churchillgrad.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_COM_gloucestershire_diesel_factory"
+		texturefile = "gfx/interface/ideas/idea_gloucestershire_diesel_factory.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_toyota_tank"
+		texturefile = "gfx/interface/ideas/JAP_toyota.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_kharkiv_diesel_factory"
+		texturefile = "gfx/interface/ideas/idea_malyshev.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_ordzhonikidze_ural_heavy_machine_building_plant_UZTM"
+		texturefile = "gfx/interface/ideas/idea_uralmash.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_dzerzhinsky_stalingrad_tractor_factory"
+		texturefile = "gfx/interface/ideas/idea_volgograd_tractor_plant.dds"
+	}
+
     ## FOCUS ICONS
     spriteType = {
 		name = "GFX_goal_ITA_expand_naval_dockyards"
