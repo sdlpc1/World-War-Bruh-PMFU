@@ -402,10 +402,10 @@ ideas = {
 			
 			modifier = {
 				min_export = 0.0
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
-				production_speed_buildings_factor = 0.15
-				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.075
 	
 			}
 			

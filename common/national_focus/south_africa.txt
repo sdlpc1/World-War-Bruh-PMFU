@@ -742,12 +742,12 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = infrastructure
-							size > 1
+							size > 0
 						}
 					}	
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -757,12 +757,12 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = infrastructure
-							size > 1
+							size > 0
 						}
 					}	
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -772,12 +772,12 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = infrastructure
-							size > 1
+							size > 0
 						}
 					}	
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -787,12 +787,12 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = infrastructure
-							size > 1
+							size > 0
 						}
 					}	
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -802,12 +802,12 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = infrastructure
-							size > 1
+							size > 0
 						}
 					}	
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
