@@ -142,6 +142,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_volgograd_tractor_plant.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_COM_massachusetts_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_massachusetts_design_bureau.dds"
+	}
+
     ## FOCUS ICONS
     spriteType = {
 		name = "GFX_goal_ITA_expand_naval_dockyards"

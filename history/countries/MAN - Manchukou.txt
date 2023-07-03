@@ -56,7 +56,7 @@ set_popularities = {
 
 # MP_garrison_division_standard = yes
 
-# recruit_character = MAN_zhang_jinghui
+recruit_character = MAN_zhang_jinghui
 recruit_character = MAN_zhang_haipeng
 # recruit_character = MAN_aisin_gioro_xiqia
 # recruit_character = MAN_yoshiko_kawashima

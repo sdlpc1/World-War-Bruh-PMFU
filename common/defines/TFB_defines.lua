@@ -433,8 +433,8 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns if target ih profil
 		55.0	-- small guns
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
-	1.0,	-- big guns
-	3.0,	-- torpedoes
+	2.0,	-- big guns
+	2.0,	-- torpedoes
 	1.0,	-- small guns
 }
 NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE 									= 0.25		-- chance for critical hit from torpedo.

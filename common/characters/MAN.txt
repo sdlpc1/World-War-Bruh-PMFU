@@ -1,4 +1,29 @@
 characters={
+	MAN_zhang_jinghui={
+		name=MAN_zhang_jinghui
+		portraits={
+			army={
+				large="GFX_portrait_man_zhang_jinghui"
+				small="GFX_idea_MAN_zhang_jinghui"
+			}
+		}
+		country_leader={
+			ideology=rexism
+			expire="1960.1.1.1"
+			id=-1
+			traits = {
+				paramilitary_leader
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1960.1.1.1"
+			id=-1
+			traits = {
+				paramilitary_leader
+			}
+		}
+	}
 	MAN_zhang_haipeng={
 		name="Zhang Haipeng"
 		portraits={

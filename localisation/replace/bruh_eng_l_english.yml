@@ -253,6 +253,7 @@
   COM_Leyland:0 "Leyland"
   COM_churchillgrad:0 "Churchillgrad Tractor Factory"
   COM_gloucestershire_diesel_factory:0 "Gloucestershire Diesel Factory"
+  COM_massachusetts_design_bureau:0 "Massachusetts Design Bureau"
 
   #### TRAITS ####
   vauxhall_trait:0 "Infantry Tank Manufacturer"

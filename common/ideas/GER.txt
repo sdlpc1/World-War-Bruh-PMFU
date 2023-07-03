@@ -2721,38 +2721,65 @@ ideas = {
 			
 			# traits = { man_manufacturer }
 			equipment_bonus = {
+				# medium_tank_chassis = {
+				# 	ap_attack = 0.075
+				# 	reliability = 0.1
+				# 	hard_attack = 0.05
+				# 	soft_attack = 0.05
+				# }
+				# medium_tank_artillery_chassis = {
+				# 	reliability = 0.1
+				# 	hard_attack = 0.025
+				# 	soft_attack = 0.025
+				# }
+				# medium_tank_destroyer_chassis = {
+				# 	ap_attack = 0.025
+				# 	reliability = 0.1
+				# 	hard_attack = 0.025
+				# 	soft_attack = 0.025
+				# }
+				# medium_tank_aa_chassis = {
+				# 	anti_air_attack = 0.05
+				# 	reliability = 0.1
+				# 	hard_attack = 0.025
+				# 	soft_attack = 0.025
+				# }
+				# medium_assault_gun_chassis = {
+				# 	reliability = 0.1
+				# 	hard_attack = 0.025
+				# 	soft_attack = 0.025
+				# }
+				# medium_tank_amphibious_chassis = {
+				# 	reliability = 0.1
+				# 	hard_attack = 0.025
+				# 	soft_attack = 0.025
+				# }
 				medium_tank_chassis = {
-					ap_attack = 0.075
-					reliability = 0.1
-					hard_attack = 0.05
-					soft_attack = 0.05
+					build_cost_ic = 0.2
+					soft_attack = 0.15
+					hard_attack = 0.15
 				}
 				medium_tank_artillery_chassis = {
-					reliability = 0.1
-					hard_attack = 0.025
-					soft_attack = 0.025
+					build_cost_ic = 0.2
+					soft_attack = 0.20
 				}
 				medium_tank_destroyer_chassis = {
-					ap_attack = 0.025
-					reliability = 0.1
-					hard_attack = 0.025
-					soft_attack = 0.025
+					build_cost_ic = 0.2
+					ap_attack = 0.1
+					hard_attack = 0.20
 				}
 				medium_tank_aa_chassis = {
-					anti_air_attack = 0.05
-					reliability = 0.1
-					hard_attack = 0.025
-					soft_attack = 0.025
+					build_cost_ic = 0.2
+					air_attack = 0.25
 				}
 				medium_assault_gun_chassis = {
-					reliability = 0.1
-					hard_attack = 0.025
-					soft_attack = 0.025
+					build_cost_ic = 0.2
+					soft_attack = 0.2
 				}
 				medium_tank_amphibious_chassis = {
-					reliability = 0.1
-					hard_attack = 0.025
-					soft_attack = 0.025
+					build_cost_ic = 0.2
+					soft_attack = 0.15
+					hard_attack = 0.15
 				}
 			}
 
@@ -2881,7 +2908,7 @@ ideas = {
 					hard_attack = 0.1
 				}
 				medium_tank_amphibious_chassis = {
-					armor_value = 0.05
+					hardness = 0.05
 					hard_attack = 0.1
 				}
 			}
