@@ -1284,15 +1284,57 @@ focus_tree = {
 				add_idea = SOV_3_5_plan_ger
 			}
 
-			if = {
-				limit = { has_country_flag = RG_armored_division_medium }
-				SOV_increase_RG_cap_medium = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_light }
-				SOV_increase_RG_cap_light = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_heavy }
-				SOV_increase_RG_cap_heavy = yes
+			# if = {
+			# 	limit = { has_country_flag = RG_armored_division_medium }
+			# 	SOV_increase_RG_cap_medium = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_light }
+			# 	SOV_increase_RG_cap_light = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_heavy }
+			# 	SOV_increase_RG_cap_heavy = yes
+			# }
+			custom_effect_tooltip = SOV_RG_spawn_in_2
+			hidden_effect = {
+				division_template = {
+					name = "RG Converter"
+					division_names_group = SOV_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				219 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+							owner = SOV
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1510,15 +1552,57 @@ focus_tree = {
 			add_ideas = tot_economic_mobilisation
 			add_ideas = SOV_war_mob
 
-			if = {
-				limit = { has_country_flag = RG_armored_division_medium }
-				SOV_increase_RG_cap_medium = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_light }
-				SOV_increase_RG_cap_light = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_heavy }
-				SOV_increase_RG_cap_heavy = yes
+			# if = {
+			# 	limit = { has_country_flag = RG_armored_division_medium }
+			# 	SOV_increase_RG_cap_medium = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_light }
+			# 	SOV_increase_RG_cap_light = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_heavy }
+			# 	SOV_increase_RG_cap_heavy = yes
+			# }
+			custom_effect_tooltip = SOV_RG_spawn_in_2
+			hidden_effect = {
+				division_template = {
+					name = "RG Converter"
+					division_names_group = SOV_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				219 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+							owner = SOV
+						}
+					}
+				}
 			}
 
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
@@ -1682,15 +1766,57 @@ focus_tree = {
 				sov_zis30_tech = 1
 			}
 
-			if = {
-				limit = { has_country_flag = RG_armored_division_medium }
-				SOV_increase_RG_cap_medium = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_light }
-				SOV_increase_RG_cap_light = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_heavy }
-				SOV_increase_RG_cap_heavy = yes
+			# if = {
+			# 	limit = { has_country_flag = RG_armored_division_medium }
+			# 	SOV_increase_RG_cap_medium = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_light }
+			# 	SOV_increase_RG_cap_light = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_heavy }
+			# 	SOV_increase_RG_cap_heavy = yes
+			# }
+			custom_effect_tooltip = SOV_RG_spawn_in_2
+			hidden_effect = {
+				division_template = {
+					name = "RG Converter"
+					division_names_group = SOV_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				219 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+							owner = SOV
+						}
+					}
+				}
 			}
 
 			add_ideas = SOV_tankograd_idea
@@ -1732,15 +1858,57 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SOV_guards_ideas
 
-			if = {
-				limit = { has_country_flag = RG_armored_division_medium }
-				SOV_increase_RG_cap_medium_double = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_light }
-				SOV_increase_RG_cap_light_double = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_heavy }
-				SOV_increase_RG_cap_heavy_double = yes
+			# if = {
+			# 	limit = { has_country_flag = RG_armored_division_medium }
+			# 	SOV_increase_RG_cap_medium_double = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_light }
+			# 	SOV_increase_RG_cap_light_double = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_heavy }
+			# 	SOV_increase_RG_cap_heavy_double = yes
+			# }
+			custom_effect_tooltip = SOV_RG_spawn_in_4
+			hidden_effect = {
+				division_template = {
+					name = "RG Converter"
+					division_names_group = SOV_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				219 = {
+					for_loop_effect = {
+						end = 4
+						create_unit = {
+							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+							owner = SOV
+						}
+					}
+				}
 			}
 		}
 	}
@@ -2010,6 +2178,8 @@ focus_tree = {
 			transfer_state = 419 #Tibriz (AZB)
 			transfer_state = 420 #Gilan (AZB)
 			transfer_state = 416 #Khorasan
+			transfer_state = 266 #Tehran
+			transfer_state = 418 #Semnan
 			ENG = {
 				give_resource_rights = { receiver = SOV state = 411 }
 				give_resource_rights = { receiver = SOV state = 412 }
@@ -3087,15 +3257,57 @@ focus_tree = {
 			}
 			custom_effect_tooltip = SOV_frontline_mob_tt
 
-			if = {
-				limit = { has_country_flag = RG_armored_division_medium }
-				SOV_increase_RG_cap_medium = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_light }
-				SOV_increase_RG_cap_light = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_heavy }
-				SOV_increase_RG_cap_heavy = yes
+			# if = {
+			# 	limit = { has_country_flag = RG_armored_division_medium }
+			# 	SOV_increase_RG_cap_medium = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_light }
+			# 	SOV_increase_RG_cap_light = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_heavy }
+			# 	SOV_increase_RG_cap_heavy = yes
+			# }
+			custom_effect_tooltip = SOV_RG_spawn_in_2
+			hidden_effect = {
+				division_template = {
+					name = "RG Converter"
+					division_names_group = SOV_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				219 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+							owner = SOV
+						}
+					}
+				}
 			}
 		}
 	}
@@ -3470,9 +3682,9 @@ focus_tree = {
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		x = 0
 		y = 1
-		offset = {
-			x = 8
-			y = 1
+		# offset = {
+		# 	x = 8
+		# 	y = 1
 			# trigger = {
 			# 	has_game_rule = {
 			# 		rule = obsolete_focus_branches_visibility
@@ -3482,7 +3694,7 @@ focus_tree = {
 			# 	always = no
 			# 	#NOT = { has_completed_focus = SOV_the_hands_do }
 			# }
-		}
+		# }
 		relative_position_id = SOV_the_path_of_marxism_leninism
 		cost = 2
 
@@ -6244,18 +6456,57 @@ focus_tree = {
 			}
 			custom_effect_tooltip = SOV_an_adaptable_army_ns_tt
 
-			if = {
-				limit = { has_country_flag = RG_armored_division_medium }
-				SOV_increase_RG_cap_medium_double = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_light }
-				SOV_increase_RG_cap_light_double = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_heavy }
-				SOV_increase_RG_cap_heavy_double = yes
-			}
-			SOV = {
-				country_event = soviet.1112
+			# if = {
+			# 	limit = { has_country_flag = RG_armored_division_medium }
+			# 	SOV_increase_RG_cap_medium_double = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_light }
+			# 	SOV_increase_RG_cap_light_double = yes
+			# } else_if = {
+			# 	limit = { has_country_flag = RG_armored_division_heavy }
+			# 	SOV_increase_RG_cap_heavy_double = yes
+			# }
+			custom_effect_tooltip = SOV_RG_spawn_in_4
+			hidden_effect = {
+				division_template = {
+					name = "RG Converter"
+					division_names_group = SOV_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				219 = {
+					for_loop_effect = {
+						end = 4
+						create_unit = {
+							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+							owner = SOV
+						}
+					}
+				}
 			}
 		}
 	}

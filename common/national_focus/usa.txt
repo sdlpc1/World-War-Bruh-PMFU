@@ -4644,7 +4644,7 @@ focus_tree = {
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = USA_louisiana_maneuvers
-				cost_reduction = 0.25
+				cost_reduction = 0.5 #0.25
 				uses = 2
 				category = land_doctrine
 			}
@@ -4709,7 +4709,7 @@ focus_tree = {
 			add_ideas = USA_army_of_the_united_states
 			add_tech_bonus = {
 				name = USA_infantry
-				bonus = 0.75
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 			}
@@ -4804,7 +4804,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
 				uses = 3
-				bonus = 0.5
+				bonus = 0.75
 				category = armor
 			}
 		}
@@ -5046,10 +5046,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 	
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_doctrine_cost_reduction = {
 				name = USA_air_war_plans_division
-				cost_reduction = 0.25
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			} # REVISIT May use modifier?

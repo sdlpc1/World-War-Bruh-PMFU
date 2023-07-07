@@ -169,6 +169,9 @@
   #### CHARACTERS ####
   USA_james_byrne:0 "James Bryne"
 
+  ### DYNAMIC MODIFIER ###
+  USA_islands_local_supply:0 "Island Local Supply"
+
   #### TRAITS ####
   american_caesar_2:0 "American Caesar"
   free_trade_champion:0 "Free Trade Champion"
@@ -178,6 +181,11 @@
   USA_join_the_allies_2:0 "Contain Japan"
   USA_join_the_allies_3:0 "Contain Japan (Early War)"
   USA_Lend_Lease_Soviets:0 "Support Soviet War Industry"
+  USA_fortify_guam:0 "Fortify Guam"
+  USA_fortify_wake:0 "Fortify Wake Island"
+  USA_fortify_midway:0 "Fortify Midway"
+  USA_fortify_hawaii:0 "Fortify Hawaii"
+  USA_island_fortification:0 "Island Fortification"
 
   #### PROPAGANDA ####
   USA_propaganda_campaigns:0 "United States Office of War Information"
@@ -281,6 +289,7 @@
   USA_Marine_Corps_increase_double_tt:0 "Increase template cap of §YMarine Corps§! by §G+2§!."
   US_Airborne_increase_tt:0 "Increase template cap of §YUS Airborne§! by §G+1§!."
   US_Airborne_increase_double_tt:0 "Increase template cap of §YUS Airborne§! by §G+2§!."
+  USA_island_fortification_ongoing:0 "Island Fortification in Progress"
 
   #### FLAG ####
   USA_fdr_win:0 "FDR Reelected"

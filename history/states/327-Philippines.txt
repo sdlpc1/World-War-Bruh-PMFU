@@ -12,17 +12,15 @@ state=
 	history={
 		set_state_flag = ASN_ALLIES_controls
 		set_state_flag = PACIFIC_COMMONWEALTH_controls
-				owner = USA
+		owner = USA
 		1936.1.1.13 = {
 			owner = WST
 		}
-		1936.1.1.13 = {
-			owner = WST
-		}
+		add_extra_state_shared_building_slots = 13
 		buildings = {
 			infrastructure = 5
-			arms_factory = 1
-			industrial_complex = 3
+			arms_factory = 7 #1
+			industrial_complex = 10 #3
 			air_base = 6
 			10265 = {
 				naval_base = 5

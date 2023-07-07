@@ -3553,15 +3553,15 @@ country_event = {
 	
 	option = {
 		name = wtt_germany.1005.b
-		SS_armored_division_light = yes
-		GER_swap_SS_medium_light = yes
-		GER_refresh_SS_cap_light = yes
+		# SS_armored_division_light = yes
+		# GER_swap_SS_medium_light = yes
+		# GER_refresh_SS_cap_light = yes
 	}
 
 	option = {
 		name = wtt_germany.1005.c	
-		SS_armored_division_heavy = yes
-		GER_swap_SS_medium_heavy = yes
-		GER_refresh_SS_cap_heavy = yes
+		# SS_armored_division_heavy = yes
+		# GER_swap_SS_medium_heavy = yes
+		# GER_refresh_SS_cap_heavy = yes
 	}
 }

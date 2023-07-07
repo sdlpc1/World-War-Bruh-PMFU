@@ -31,6 +31,8 @@
   COM_american_trade_deal_desc:0 "Trade with the Americans will help our economy grow."
   COM_allied_supreme_command:0 "Allied Supreme Command"
   COM_allied_supreme_command_desc:0 "We need a unified allied supreme command to coordinate our efforts."
+  COM_allied_high_command:0 "Advanced High Command"
+  COM_allied_commander_training:0 "Allied Officer Training"
 
   #### IDEAS ####
   COM_delegated_command_idea:0 "Delegated Command"

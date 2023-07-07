@@ -745,6 +745,33 @@ DIPLOMACY_SEND_EXP_FORCE_ENABLE_TRIGGER = {
 		}
 		always = no
 	}
+	if = {
+		limit = {
+			AND = {
+				FROM = {
+					has_tech = trench_warfare
+				}
+				NOT = {
+					has_tech = trench_warfare
+				}
+			}
+		}
+		hidden_trigger = {
+			if = {
+				limit = {
+					FROM = {
+						NOT = {
+							tag = ITA
+						}
+					}
+				}
+				always = no
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = EXPED_GBP_NOT_ALLOWED_TT
+		}
+	}
 }
 game_weight_can_add_fascist = {
 	GER = {

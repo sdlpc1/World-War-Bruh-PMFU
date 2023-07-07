@@ -280,4 +280,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2431;2382;;-1;-1;-1;-1;-1;ORESUND_STRAIT;ORESUND
 2431;2408;;-1;-1;-1;-1;-1;THE_BELTS;TheBelts
 2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
+1496;2919;sea;7982;-1;-1;-1;-1;IRAN_CANAL;Countenance
 -1;-1;;-1;-1;-1;-1;-1;-1

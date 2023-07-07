@@ -30,6 +30,10 @@ on_actions = {
 				limit = {has_game_rule = {rule = horst_host_country option = BUL}}
 				set_variable={host = BUL.id}
 			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = YUG}}
+				set_variable={host = YUG.id}
+			}
 			# Co-prosperity Sphere
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = JAP}}

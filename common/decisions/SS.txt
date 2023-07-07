@@ -30,15 +30,47 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			if = {
-				limit = { has_country_flag = SS_armored_division_medium }
-				GER_increase_SS_cap_medium = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_light }
-				GER_increase_SS_cap_light = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_heavy }
-				GER_increase_SS_cap_heavy = yes
+			custom_effect_tooltip = GER_SS_spawn_in_2
+			hidden_effect = {
+				division_template = {
+					name = "SS Converter"
+					division_names_group = GER_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+							owner = GER
+						}
+					}
+				}
 			}
 		}
 	}
@@ -89,15 +121,47 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			if = {
-				limit = { has_country_flag = SS_armored_division_medium }
-				GER_increase_SS_cap_medium_double = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_light }
-				GER_increase_SS_cap_light_double = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_heavy }
-				GER_increase_SS_cap_heavy_double = yes
+			custom_effect_tooltip = GER_SS_spawn_in_2 #GER_SS_spawn_in_4
+			hidden_effect = {
+				division_template = {
+					name = "SS Converter"
+					division_names_group = GER_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 2 #4
+						create_unit = {
+							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+							owner = GER
+						}
+					}
+				}
 			}
 		}
 	}
@@ -142,15 +206,47 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			if = {
-				limit = { has_country_flag = SS_armored_division_medium }
-				GER_increase_SS_cap_medium = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_light }
-				GER_increase_SS_cap_light = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_heavy }
-				GER_increase_SS_cap_heavy = yes
+			custom_effect_tooltip = GER_SS_spawn_in_2
+			hidden_effect = {
+				division_template = {
+					name = "SS Converter"
+					division_names_group = GER_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+							owner = GER
+						}
+					}
+				}
 			}
 		}
 	}
@@ -185,15 +281,47 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			if = {
-				limit = { has_country_flag = SS_armored_division_medium }
-				GER_increase_SS_cap_medium = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_light }
-				GER_increase_SS_cap_light = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_heavy }
-				GER_increase_SS_cap_heavy = yes
+			custom_effect_tooltip = GER_SS_spawn_in_2
+			hidden_effect = {
+				division_template = {
+					name = "SS Converter"
+					division_names_group = GER_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+							owner = GER
+						}
+					}
+				}
 			}
 		}
 	}
@@ -244,15 +372,47 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			if = {
-				limit = { has_country_flag = SS_armored_division_medium }
-				GER_increase_SS_cap_medium_double = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_light }
-				GER_increase_SS_cap_light_double = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_heavy }
-				GER_increase_SS_cap_heavy_double = yes
+			custom_effect_tooltip = GER_SS_spawn_in_2 #GER_SS_spawn_in_4
+			hidden_effect = {
+				division_template = {
+					name = "SS Converter"
+					division_names_group = GER_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 2 #4
+						create_unit = {
+							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+							owner = GER
+						}
+					}
+				}
 			}
 		}
 	}
@@ -287,15 +447,47 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			if = {
-				limit = { has_country_flag = SS_armored_division_medium }
-				GER_increase_SS_cap_medium = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_light }
-				GER_increase_SS_cap_light = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_heavy }
-				GER_increase_SS_cap_heavy = yes
+			custom_effect_tooltip = GER_SS_spawn_in_2
+			hidden_effect = {
+				division_template = {
+					name = "SS Converter"
+					division_names_group = GER_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+							owner = GER
+						}
+					}
+				}
 			}
 		}
 	}
@@ -330,15 +522,47 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			if = {
-				limit = { has_country_flag = SS_armored_division_medium }
-				GER_increase_SS_cap_medium = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_light }
-				GER_increase_SS_cap_light = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_heavy }
-				GER_increase_SS_cap_heavy = yes
+			custom_effect_tooltip = GER_SS_spawn_in_2
+			hidden_effect = {
+				division_template = {
+					name = "SS Converter"
+					division_names_group = GER_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+							owner = GER
+						}
+					}
+				}
 			}
 		}
 	}
@@ -373,15 +597,47 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			if = {
-				limit = { has_country_flag = SS_armored_division_medium }
-				GER_increase_SS_cap_medium = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_light }
-				GER_increase_SS_cap_light = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_heavy }
-				GER_increase_SS_cap_heavy = yes
+			custom_effect_tooltip = GER_SS_spawn_in_2
+			hidden_effect = {
+				division_template = {
+					name = "SS Converter"
+					division_names_group = GER_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+							owner = GER
+						}
+					}
+				}
 			}
 		}
 	}
@@ -405,15 +661,47 @@ SS_recruitment = {
 			factor = 1
 		}
 		complete_effect = {
-			if = {
-				limit = { has_country_flag = SS_armored_division_medium }
-				GER_increase_SS_cap_medium = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_light }
-				GER_increase_SS_cap_light = yes
-			} else_if = {
-				limit = { has_country_flag = SS_armored_division_heavy }
-				GER_increase_SS_cap_heavy = yes
+			custom_effect_tooltip = GER_SS_spawn_in_2
+			hidden_effect = {
+				division_template = {
+					name = "SS Converter"
+					division_names_group = GER_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+
+						infantry = { x = 4 y = 0 }
+						infantry = { x = 4 y = 1 }
+						infantry = { x = 4 y = 2 }
+						infantry = { x = 4 y = 3 }
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+							owner = GER
+						}
+					}
+				}
 			}
 		}
 	}

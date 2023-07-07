@@ -2,7 +2,7 @@ guiTypes = {
 	containerWindowType = {    
 		name = "horst_admiral_current_command_limit_used_window"
 		size = { width = 450 height = 1100 } 
-		position = { x=55 y =-260 }  	 
+		position = { x=55 y =-400 }  	 
 		fade_time = 300
 		fade_type = linear
 		show_sound = menu_open_window
@@ -16,7 +16,7 @@ guiTypes = {
 			containerWindowType = {
 			name = "admirals_leading_battlefleets_list_container"
 			position = { x=12 y =-2 }
-			size = { width = 444 height=324 }
+			size = { width = 444 height=400 }
 			margin = { top = 10 bottom = 10 }
 			Orientation = upper_left
 			verticalScrollbar = "right_vertical_slider"
@@ -41,7 +41,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "admirals_with_fleets_list"
 		position = { x = 0 y = 0}	
-		size = { width = 422 height = 70 }
+		size = { width = 422 height = 90 }
 		background = {
 			name = "Background"		
 			quadTextureSprite = "GFX_tiled_plain_bg"
@@ -162,6 +162,37 @@ guiTypes = {
 			maxWidth = 65
 			maxHeight = 24
 			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "Capitals"
+			position = { x = 55 y = 65 }
+			font = "hoi_18mbs"
+			text = "Capitals: [?capital_count]" 
+			format = left
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "Screens Have"
+			position = { x = 160 y = 65 } 
+			font = "hoi_18mbs"
+			text = "Screens: [GetScreenCount]" 
+			format = left
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes		
+		}
+		instantTextBoxType = {
+			name = "Screens Needed"
+			position = { x = 280 y = 65 }
+			font = "hoi_18mbs"
+			text = "[GetScreensNeededCount]" 
+			format = left
+			maxWidth = 150
+			maxHeight = 24
+			fixedsize = yes		
 		}	
+
 	}
 }

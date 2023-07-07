@@ -330,6 +330,7 @@
  More_Rescources:0 "Mining Permits"
  Industrial_Development:0 "Industrial Development"
  MEX_escort_fleet:0 "Convoy Protector"
+ no_guarantees:0 "No Guarantees"
 
  ### TOOLTIP ###
  general_cascar_de_patata_tt:0 "§OCascara de Patata§! §Ybecomes a skill 4 General with 4 attack, 3 defense, 6 planning, 6 logistics, and Panzer Leader, Brilliant Strategist and Fortress Buster§!"

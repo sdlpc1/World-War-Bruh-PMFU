@@ -1,3 +1,239 @@
+USA_island_fortification = {
+	USA_fortify_guam = {
+
+		icon = generic_construction
+
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = USA
+					is_in_faction_with = USA
+				}
+				has_full_control_of_state = 638
+			}
+			FRA = {
+				has_capitulated = yes
+			}
+			NOT = { has_country_flag = USA_island_fortification_ongoing }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 120
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			638 = {
+				set_building_level  = {
+            	    type = coastal_bunker
+            	    province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 4
+            	    instant_build = yes
+            	}
+				set_building_level  = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 120 }
+		}
+	}
+
+	USA_fortify_wake = {
+
+		icon = generic_construction
+
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = USA
+					is_in_faction_with = USA
+				}
+				has_full_control_of_state = 632
+			}
+			FRA = {
+				has_capitulated = yes
+			}
+			NOT = { has_country_flag = USA_island_fortification_ongoing }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 120
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			632 = {
+				set_building_level  = {
+            	    type = coastal_bunker
+            	    province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 4
+            	    instant_build = yes
+            	}
+				set_building_level  = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 120 }
+		}
+	}
+
+	USA_fortify_midway = {
+
+		icon = generic_construction
+
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = USA
+					is_in_faction_with = USA
+				}
+				has_full_control_of_state = 631
+			}
+			FRA = {
+				has_capitulated = yes
+			}
+			NOT = { has_country_flag = USA_island_fortification_ongoing }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 120
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			631 = {
+				set_building_level  = {
+            	    type = coastal_bunker
+            	    province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 4
+            	    instant_build = yes
+            	}
+				set_building_level  = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 120 }
+		}
+	}
+
+	USA_fortify_hawaii = {
+
+		icon = generic_construction
+
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			any_country = {
+				OR = {
+					tag = USA
+					is_in_faction_with = USA
+				}
+				has_full_control_of_state = 629
+			}
+			FRA = {
+				has_capitulated = yes
+			}
+			NOT = { has_country_flag = USA_island_fortification_ongoing }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 120
+		modifier = {
+			civilian_factory_use = 10
+		}
+		
+		remove_effect = {
+			629 = {
+				set_building_level  = {
+            	    type = coastal_bunker
+            	    province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 4
+            	    instant_build = yes
+            	}
+				set_building_level  = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 5
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = USA_island_fortification_ongoing value = 1 days = 120 }
+		}
+	}
+}
+
 war_measures = {
 
 	USA_homeland_defense = {
@@ -156,120 +392,120 @@ USA_aid_britain = {
 }
 
 operations = {
-		USA_phillipines_factories = {
+	# USA_phillipines_factories = {
 	
-		icon = generic_tank
+	# 	icon = generic_tank
 	
-		allowed = {
-			original_tag = USA
-		}
+	# 	allowed = {
+	# 		original_tag = USA
+	# 	}
 	
-		fire_only_once = yes
-		days_mission_timeout = 1
+	# 	fire_only_once = yes
+	# 	days_mission_timeout = 1
 			
-		available = {
-			always = no
-		}
+	# 	available = {
+	# 		always = no
+	# 	}
 			
-		timeout_effect = {
-			random_state = {
-				prioritize = {
-					327
-					623
-					624
-					625
-					626
-					627
-					628
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}	
-			}
-			random_state = {
-				prioritize = {
-					327
-					623
-					624
-					625
-					626
-					627
-					628
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}	
-			}
-			random_state = {
-				prioritize = {
-					327
-					623
-					624
-					625
-					626
-					627
-					628
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}	
-			}
-			random_state = {
-				prioritize = {
-					327
-					623
-					624
-					625
-					626
-					627
-					628
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}	
-			}
-			random_state = {
-				prioritize = {
-					327
-					623
-					624
-					625
-					626
-					627
-					628
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}	
-			}
-			random_state = {
-				prioritize = {
-					327
-					623
-					624
-					625
-					626
-					627
-					628
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}	
-			}
-		}
-	}
+	# 	timeout_effect = {
+	# 		random_state = {
+	# 			prioritize = {
+	# 				327
+	# 				623
+	# 				624
+	# 				625
+	# 				626
+	# 				627
+	# 				628
+	# 			}
+	# 			add_building_construction = {
+	# 				type = industrial_complex
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}	
+	# 		}
+	# 		random_state = {
+	# 			prioritize = {
+	# 				327
+	# 				623
+	# 				624
+	# 				625
+	# 				626
+	# 				627
+	# 				628
+	# 			}
+	# 			add_building_construction = {
+	# 				type = industrial_complex
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}	
+	# 		}
+	# 		random_state = {
+	# 			prioritize = {
+	# 				327
+	# 				623
+	# 				624
+	# 				625
+	# 				626
+	# 				627
+	# 				628
+	# 			}
+	# 			add_building_construction = {
+	# 				type = industrial_complex
+	# 				level = 3
+	# 				instant_build = yes
+	# 			}	
+	# 		}
+	# 		random_state = {
+	# 			prioritize = {
+	# 				327
+	# 				623
+	# 				624
+	# 				625
+	# 				626
+	# 				627
+	# 				628
+	# 			}
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}	
+	# 		}
+	# 		random_state = {
+	# 			prioritize = {
+	# 				327
+	# 				623
+	# 				624
+	# 				625
+	# 				626
+	# 				627
+	# 				628
+	# 			}
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}	
+	# 		}
+	# 		random_state = {
+	# 			prioritize = {
+	# 				327
+	# 				623
+	# 				624
+	# 				625
+	# 				626
+	# 				627
+	# 				628
+	# 			}
+	# 			add_building_construction = {
+	# 				type = arms_factory
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}	
+	# 		}
+	# 	}
+	# }
 	USA_join_the_allies = {
 		icon = generic_operation
 		allowed = {

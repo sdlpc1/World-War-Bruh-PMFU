@@ -12495,16 +12495,16 @@ country_event = {
 	
 	option = {
 		name = soviet.1112.b
-		RG_armored_division_light = yes
-		SOV_swap_RG_medium_light = yes
-		SOV_refresh_RG_cap_light = yes
+		# RG_armored_division_light = yes
+		# SOV_swap_RG_medium_light = yes
+		# SOV_refresh_RG_cap_light = yes
 	}
 
 	option = {
 		name = soviet.1112.c	
-		RG_armored_division_heavy = yes
-		SOV_swap_RG_medium_heavy = yes
-		SOV_refresh_RG_cap_heavy = yes
+		# RG_armored_division_heavy = yes
+		# SOV_swap_RG_medium_heavy = yes
+		# SOV_refresh_RG_cap_heavy = yes
 	}
 }
 

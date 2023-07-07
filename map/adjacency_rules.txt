@@ -57,6 +57,37 @@ adjacency_rule =
 	offset = { 1 0 -6 }
 }
 
+adjacency_rule={
+	name = "IRAN_CANAL"
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	required_provinces = { 4580 7982 } # above teran and southern port, near british land
+	icon = 10837 # tehran
+	offset = { 5 0 -6 }
+}
+
 #Gibraltar Strait
 adjacency_rule =
 {
@@ -339,7 +370,7 @@ adjacency_rule =
 		trade = yes
 	}
 	
-	required_provinces = { 10904 7982 }
+	required_provinces = { 10904 1889 } #7982
 		
 	icon = 10904
 	offset = { 2 0 12 }

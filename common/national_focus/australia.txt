@@ -116,19 +116,19 @@ focus_tree = {
 		prerequisite = { focus =AST_additional_militia_training}
 		mutually_exclusive = { focus = AST_hmas_assault}
 		x = -3
-		y = 2
+		y = 3
 		relative_position_id = AST_additional_militia_training
 		cost = 5
 
 		available_if_capitulated = yes
 
-		offset = {
-			x = 0
-			y = 1
-			trigger = {
-				has_global_flag = NO_ASIA
-			}
-		}
+		# offset = {
+		# 	x = 0
+		# 	y = 1
+		# 	trigger = {
+		# 		has_global_flag = NO_ASIA
+		# 	}
+		# }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -178,7 +178,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = AST_royal_australian_artillery
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = artillery
 			}
 		}
@@ -207,7 +207,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			has_global_flag = NO_ASIA
+			# has_global_flag = NO_ASIA
 		}
 
 		cancel_if_invalid = yes
@@ -233,16 +233,16 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = AST_hmas_assault focus = AST_cruiser_tanks}
 		x = 0
-		y = 3
+		y = 4
 		relative_position_id = AST_additional_militia_training
 
-		offset = {
-			x = 0
-			y = 1
-			trigger = {
-				has_global_flag = NO_ASIA
-			}
-		}
+		# offset = {
+		# 	x = 0
+		# 	y = 1
+		# 	trigger = {
+		# 		has_global_flag = NO_ASIA
+		# 	}
+		# }
 
 		cost = 5
 
@@ -330,16 +330,16 @@ focus_tree = {
 		prerequisite = { focus = AST_additional_militia_training }
 		mutually_exclusive = { focus = AST_cruiser_tanks}
 		x = 3
-		y = 2
+		y = 3
 		relative_position_id = AST_additional_militia_training
 
-		offset = {
-			x = 0
-			y = 1
-			trigger = {
-				has_global_flag = NO_ASIA
-			}
-		}
+		# offset = {
+		# 	x = 0
+		# 	y = 1
+		# 	trigger = {
+		# 		has_global_flag = NO_ASIA
+		# 	}
+		# }
 
 		cost = 5
 

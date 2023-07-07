@@ -208,7 +208,7 @@ ast_annex_dei_at_hol_cap = {
 }
 
 horst_host_country = {
-	name = "Select Host"
+	name = "Select Host Country"
 	group = "RULE_GROUP_TFB"
 	icon = "GFX_volunteers"
 	# axis
@@ -217,7 +217,6 @@ horst_host_country = {
 		text = "Germany"
 		desc = ""
 	}
-
 	option = {
 		name = ITA
 		text = "Italy"
@@ -246,6 +245,11 @@ horst_host_country = {
 	option = {
 		name = BUL
 		text = "Bulgaria"
+		desc = ""
+	}
+	option = {
+		name = YUG
+		text = "Croatia"
 		desc = ""
 	}
 

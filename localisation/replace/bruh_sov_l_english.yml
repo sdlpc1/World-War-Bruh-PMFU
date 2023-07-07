@@ -378,6 +378,8 @@
   SOV_red_guard_template_heavy_tt:0 "This will set the §RRed Guard Template§! to §YHeavy Tanks§!"
   SOV_pc_of_mortar_armament_ns_tt:0 "$SOV_modify_defense_industry_ns_intro$ \nArtillery Defense: §G+5.0%§! \n\n"
   SOV_industry_relocation_complete_effect_tt:0 "Up to §Y10 Military or Civilian Factories§! will be removed from §Y[FROM.GetName]§!.\n"
+  SOV_RG_spawn_in_2:0 "Spawns in §G2§! §YRG Converter Divisions§!"
+  SOV_RG_spawn_in_4:0 "Spawns in §G4§! §YRG Converter Divisions§!"
 
   ### UNITS ###
   rg_hq_company_heavy:0 "Red Guards HQ Company"

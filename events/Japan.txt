@@ -744,39 +744,39 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = japan.503
-	title = japan.503.t
-	desc = japan.503.d
-	picture = GFX_report_event_chinese_soldiers_02
+# country_event = {
+# 	id = japan.503
+# 	title = japan.503.t
+# 	desc = japan.503.d
+# 	picture = GFX_report_event_chinese_soldiers_02
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		tag = JAP
-		focus_progress = {
-			focus = JAP_strike_south_doctrine
-			progress > 0.5
-		}
-	}
+# 	trigger = {
+# 		tag = JAP
+# 		focus_progress = {
+# 			focus = JAP_strike_south_doctrine
+# 			progress > 0.5
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {
-		set_country_flag = JAP_usa1
-		name = japan.503.a
-		custom_effect_tooltip = japan.503.a_desc
+# 	option = {
+# 		set_country_flag = JAP_usa1
+# 		name = japan.503.a
+# 		custom_effect_tooltip = japan.503.a_desc
 		
-	}
-	# option = {
-	# 	set_country_flag = JAP_usa2
-	# 	name = japan.503.b
-	# 	custom_effect_tooltip = japan.503.b_desc
+# 	}
+# 	# option = {
+# 	# 	set_country_flag = JAP_usa2
+# 	# 	name = japan.503.b
+# 	# 	custom_effect_tooltip = japan.503.b_desc
 		
-	# }
-}
+# 	# }
+# }
 
 # Divide up China - 29.2 Threat generated
 country_event = {

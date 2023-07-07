@@ -100,6 +100,12 @@ USA_split_china = {
 	}
 }
 
+USA_island_fortification = {
+	allowed = {
+		original_tag = USA
+	}
+	priority = 84
+}
 
 USA_war_measures = {
 	

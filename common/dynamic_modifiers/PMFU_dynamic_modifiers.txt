@@ -10,10 +10,19 @@ academy_over_time = {
 	political_power_factor = academy_weekly_pp
 }
 
-GER_tank_purhcases = {
-	industrial_factory_donations = GER_tank_purchase_cost_total
-}
-
 training_time_balancer = {
 	training_time_army_factor = training_time_balancer
+}
+
+USA_islands_local_supply = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			is_controlled_by = USA
+		}
+	}
+
+	icon = GFX_modifiers_generic_supply
+	
+	local_supplies_for_controller = 6
 }

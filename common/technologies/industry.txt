@@ -954,10 +954,10 @@ technologies = {
 
 	fuel_silos = {
 
-		enable_building = {
-			building = fuel_silo
-			level = 3
-		}
+		# enable_building = {
+		# 	building = fuel_silo
+		# 	level = 3
+		# }
 				
 		path = {
 			leads_to_tech = synth_oil_experiments 
@@ -2546,6 +2546,10 @@ technologies = {
 	excavation3 = {
 		
 		local_resources_factor = 0.10
+		enable_building = {
+			building = steel_refinery
+			level = 2
+		}
 		on_research_complete = {
 			modify_building_resources = {
 			   building = steel_refinery
@@ -2656,6 +2660,10 @@ technologies = {
 	excavation4 = {
 		
 		local_resources_factor = 0.10
+		enable_building = {
+			building = steel_refinery
+			level = 3
+		}
 		on_research_complete = {
 			modify_building_resources = {
 			   building = steel_refinery
@@ -2826,6 +2834,13 @@ technologies = {
 		enable_building = {
 			building = naval_base
 			level = 10
+		}
+	}
+
+	fuel_silo_construction_disabled = {
+		enable_building = {
+			building = fuel_silo
+			level = 1
 		}
 	}
 

@@ -1,4 +1,18 @@
 on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = FRA
+					FROM = { is_in_faction_with = GER }
+				}
+				USA = {
+					activate_decision = USA_arsenal_of_democracy_decision
+				}
+			}
+		}
+	}
+
 	on_startup = {
 		effect = {
 			every_country = {

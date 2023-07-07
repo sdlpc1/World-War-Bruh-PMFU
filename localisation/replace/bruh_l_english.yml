@@ -305,6 +305,7 @@
  pontoon_bridges_tt:0 "§REngineer battalions will require 10 more Support and Infantry equipment per battalion§!"
  mountain_training_effect:0 "Enables §HMountain Training§!\n§HAll Infantry:\n    Mountain§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
  motti_tactic:0 "Enables §HMotti Tactics§!\n§HAll Infantry:\n    HP: §G+100%    §!\nForest§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!\n§HMilitia and Garrisons:\n    HP: §G+100%"
+ EXPED_GBP_NOT_ALLOWED_TT:0 "§RYou are not allowed to expeditionary forces to a nation with GBP without having GBP yourself\n\nExcept Germany sending expeditionaries to Italy"
 
  MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
  GetAdmiralNameTitle_def:0 "Admiral [THIS.GetName]"
@@ -312,11 +313,17 @@
  GetCommandLimit_under_def:0 "£command_power_texticon §GCommand Limit: [?THIS.command_limit_used]/150§!"
  GetCommandLimit_equal_def:0 "£command_power_texticon §HCommand Limit: [?THIS.command_limit_used]/150§!"
  GetCommandLimit_over_def:0 "£command_power_texticon §RCommand Limit: [?THIS.command_limit_used]/150§!"
+ GetScreens_under_def:0 "§G[?THIS.screen_count]§!"
+ GetScreens_equal_def:0 "§H[?THIS.screen_count]§!"
+ GetScreens_over_def:0 "§R[?THIS.screen_count]§!"
+ GetScreensNeeded_under_def:0 "§GScreens Needed: [?THIS.needed_screen_count]§!"
+ GetScreensNeeded_equal_def:0 "§HScreens Needed: [?THIS.needed_screen_count]§!"
+ GetScreensNeeded_over_def:0 "§RScreens Needed: [?THIS.needed_screen_count]§!"
  GetCommandLimit_disabled:0 "£command_power_texticon §RCmd Limit: §0(DISABLED)§!"
  GetAdmiralPortrait_tt:0 "[GetAdmiralPortrait]"
 
  startingevent.29.t:0 "Naval Fleet Size §0(Important)§!"
- startingevent.29.desc:0 "1) You should have multiple fleets, with no fleet exceeding a Command Limit of 150.\n2) Fleets should have high screening values for capitals and carriers\n3) You can now only have 4 carriers per fleet without getting an overstacking penalty\n\n§BFleet Command Limit§!\n\nEvery ship class has a 'command limit' value. A fleet (all taskforces underneath one admiral) can support at most 150 'command limit'. As long as you are at or below your command limit value for every fleet with an admiral leading it, then you will not have special debuffs applied to your admiral and country. Any admiral which is leading a fleet that contains capitals or light cruisers will appear in a list just right of the admiral portraits. This list contains useful information about your fleets so that you can easily adhere to this system.\n\nDestroyers/Submarines - 1 command limit\nLight Cruisers/Heavy Cruisers - 2 command limit\nBattleships and Battlecruisers - 6 command limit\nCarriers/Super Heavy Battleships - 8 command limit.\n\nFor each Command Limit you are over the cap, your country will deal 1% less naval damage. Command Limit is recalculated every week when there is no war, so you may need to wait to see the changes update. Once at war it will update the calculation daily."
+ startingevent.29.desc:0 "1) You should have multiple fleets, with no fleet exceeding a Command Limit of 150.\n2) Fleets should have high screening values for capitals and carriers\n3) You can now only have 8 carriers per fleet without getting an overstacking penalty\n\n§BFleet Command Limit§!\n\nEvery ship class has a 'command limit' value. A fleet (all taskforces underneath one admiral) can support at most 150 'command limit'. As long as you are at or below your command limit value for every fleet with an admiral leading it, then you will not have special debuffs applied to your admiral and country. Any admiral which is leading a fleet that contains capitals or light cruisers will appear in a list just right of the admiral portraits. This list contains useful information about your fleets so that you can easily adhere to this system.\n\nDestroyers/Submarines - 1 command limit\nLight Cruisers/Heavy Cruisers - 2 command limit\nBattleships and Battlecruisers - 6 command limit\nCarriers/Super Heavy Battleships - 8 command limit.\n\nFor each Command Limit you are over the cap, your country will deal 1% less naval damage. Command Limit is recalculated every week when there is no war, so you may need to wait to see the changes update. Once at war it will update the calculation daily."
 
 officer_training_flag:0 "Officer Training in Progress"
 superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General with §Y"Engineer Officer"§! the trait §Y"Engineer"§!"
@@ -547,17 +554,7 @@ twenty_terrain_penalty_reduction:0 "From focus"
  ship_armor_bb_light_2:0 "Fast Battleship Armour II"
  ship_armor_bb_light_3:0 "Fast Battleship Armour III"
 
- ship_light_battery_main_1:0 "Light Battery I"
- ship_light_battery_main_2:0 "Light Battery II"
- ship_light_battery_main_3:0 "Light Battery III"
- ship_light_battery_main_4:0 "Light Battery IV"
- dp_light_battery_main_1:1 "Dual-Purpose Main Battery I"
- dp_light_battery_main_2:1 "Dual-Purpose Main Battery II"
- dp_light_battery_main_3:1 "Dual-Purpose Main Battery III"
- dp_light_battery_main_4:0 "Dual-Purpose Main Battery IV"
 
- EQ_MOD_CAT_ship_light_battery_main_TITLE:0 "Rapid Fire Guns"
- EQ_MOD_CAT_dp_light_battery_main_TITLE:0 "Rapid Fire Guns (DP)"
 
  ### TECHS ####
  early_ship_hull_heavy:0 "1922 Heavy Ship Hull"
@@ -1213,6 +1210,9 @@ twenty_terrain_penalty_reduction:0 "From focus"
  jaegers3:0"Ranger III"
  jaegers3_desc:0"Rangers, or 'hunters,' are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train." 
  jaeger:0 "Rangers"
+
+ ### TECHNOLOGIES ###
+ fuel_silo_construction_disabled:0 "§1Fuel Silo Construction Disabled§!"
  
 # GAME RULES
  RULE_GROUP_TFB:0 "Custom TFB Game Rules"

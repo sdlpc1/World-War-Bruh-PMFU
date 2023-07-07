@@ -60,7 +60,51 @@ HMP_check_fleet_size = {
 		add_to_variable = { 
 			var = shbb_count
 			value = num_ships_with_type@sh_battleship
-		}			
+		}
+
+		# New stuff I added
+		clear_variable = capital_count 
+		add_to_variable = { 
+			var = capital_count
+			value = num_ships_with_type@heavy_cruiser
+		}
+		add_to_variable = { 
+			var = capital_count
+			value = num_ships_with_type@battleship
+		}
+		add_to_variable = { 
+			var = capital_count
+			value = num_ships_with_type@battle_cruiser
+		}
+		add_to_variable = { 
+			var = capital_count
+			value = num_ships_with_type@carrier
+		}
+		add_to_variable = { 
+			var = capital_count
+			value = num_ships_with_type@sh_battleship
+		}
+
+		clear_variable = screen_count
+		add_to_variable = { 
+			var = screen_count
+			value = num_ships_with_type@destroyer
+		}
+		add_to_variable = { 
+			var = screen_count
+			value = num_ships_with_type@light_cruiser
+		}
+
+		clear_variable = needed_screen_count 
+		add_to_variable = { 
+			var = needed_screen_count
+			value = capital_count
+		}
+		multiply_variable = { 
+			var = needed_screen_count
+			value = 3
+		}
+
 		
 		set_temp_variable = {
 			var = command_limit_used_temp

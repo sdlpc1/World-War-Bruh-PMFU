@@ -1156,7 +1156,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_lessons
-				bonus = 0.50
+				bonus = 0.75
 				uses = 2
 				category = armor
 			}
@@ -3470,10 +3470,6 @@ focus_tree = {
 				target = RAJ
 				type = annex_everything
 			}
-			create_wargoal = {
-				target = CAN
-				type = annex_everything
-			}
 			declare_war_on = {
 				target = SAF
 				type = annex_everything
@@ -3500,8 +3496,16 @@ focus_tree = {
 					}
 				}	
 			}
-			create_wargoal = {
+			declare_war_on = {
 				target = FRA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CAN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = USA
 				type = annex_everything
 			}
 			hidden_effect = {
@@ -3527,10 +3531,6 @@ focus_tree = {
 						target = RAJ
 						type = annex_everything
 					}
-					create_wargoal = {
-						target = CAN
-						type = annex_everything
-					}
 					declare_war_on = {
 						target = SAF
 						type = annex_everything
@@ -3556,6 +3556,14 @@ focus_tree = {
 								type = annex_everything
 							}
 						}	
+					}
+					declare_war_on = {
+						target = FRA
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = CAN
+						type = annex_everything
 					}
 				}
 				SIA = {
@@ -3580,10 +3588,6 @@ focus_tree = {
 						target = RAJ
 						type = annex_everything
 					}
-					create_wargoal = {
-						target = CAN
-						type = annex_everything
-					}
 					declare_war_on = {
 						target = SAF
 						type = annex_everything
@@ -3610,161 +3614,38 @@ focus_tree = {
 							}
 						}	
 					}
-				}
-				if = {
-					limit = {
-						has_country_flag = JAP_usa1
+					declare_war_on = {
+						target = FRA
+						type = annex_everything
 					}
+					declare_war_on = {
+						target = CAN
+						type = annex_everything
+					}
+				}
+				# USA
+				MAN = {
 					declare_war_on = {
 						target = USA
 						type = annex_everything
 					}
-					# declare_war_on = {
-					# 	target = PHI
-					# 	type = annex_everything 
-					# }
-					MAN = {
-						declare_war_on = {
-							target = USA
-							type = annex_everything
-						}
-						# declare_war_on = {
-						# 	target = PHI
-						# 	type = annex_everything 
-						# }
-					}
-					SIA = {
-						declare_war_on = {
-							target = USA
-							type = annex_everything
-						}
-						# declare_war_on = {
-						# 	target = PHI
-						# 	type = annex_everything 
-						# }
-					}
-					if = {
-						limit = {
-							has_country_flag = JAP_early_war
-						}
-						add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 120 }
-					} else = {
-						add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+				}
+				SIA = {
+					declare_war_on = {
+						target = USA
+						type = annex_everything
 					}
 				}
-				# if = {
-				# 	limit = {
-				# 		has_country_flag = JAP_late_war
-				# 	}
-				# 	if = {
-				# 		limit = {
-				# 			has_country_flag = JAP_usa1
-				# 		}
-				# 		638 = {
-				# 			damage_building = {
-				# 				type = bunker
-				# 				damage = 2
-				# 			}
-				# 			damage_building = {
-				# 				type = coastal_bunker
-				# 				damage = 2
-				# 			}
-				# 			damage_building = {
-				# 				type = air_base
-				# 				damage = 1
-				# 			}
-				# 			damage_building = {
-				# 				type = anti_air_building
-				# 				damage = 1
-				# 			}
-				# 			damage_building = {
-				# 				type = radar_station
-				# 				damage = 1
-				# 			}
-				# 		}
-				# 		632 = {
-				# 			damage_building = {
-				# 				type = bunker
-				# 				damage = 2
-				# 			}
-				# 			damage_building = {
-				# 				type = coastal_bunker
-				# 				damage = 2
-				# 			}
-				# 			damage_building = {
-				# 				type = air_base
-				# 				damage = 1
-				# 			}
-				# 			damage_building = {
-				# 				type = anti_air_building
-				# 				damage = 1
-				# 			}
-				# 			damage_building = {
-				# 				type = radar_station
-				# 				damage = 1
-				# 			}
-				# 		}
-				# 		every_state = {
-				# 			limit = {
-				# 				state = 627
-				# 				state = 628
-				# 				state = 625
-				# 				state = 624
-				# 				state = 626
-				# 				state = 327
-				# 				state = 623
-				# 			}
-				# 			damage_building = {
-				# 				type = bunker
-				# 				damage = 1
-				# 			}
-				# 			damage_building = {
-				# 				type = coastal_bunker
-				# 				damage = 1
-				# 			}
-				# 			damage_building = {
-				# 				type = air_base
-				# 				damage = 1
-				# 			}
-				# 		}
-				# 	}
-				# 	every_state = {
-				# 		limit = {
-				# 			OR = {
-				# 				is_core_of = INS
-				# 				is_core_of = MAL
-				# 			}
-				# 		}
-				# 		damage_building = {
-				# 			type = bunker
-				# 			damage = 1
-				# 		}
-				# 		damage_building = {
-				# 			type = coastal_bunker
-				# 			damage = 1
-				# 		}
-				# 		damage_building = {
-				# 			type = air_base
-				# 			damage = 1
-				# 		}
-				# 	}
-				# 	add_collaboration = {
-				# 		target = MAL
-				# 		value = 0.6
-				# 	}
-				# 	add_collaboration = {
-				# 		target = INS
-				# 		value = 0.6
-				# 	}
-				# 	add_collaboration = {
-				# 		target = HOL
-				# 		value = 0.6
-				# 	}
-				# 	# add_collaboration = {
-				# 	# 	target = PHI
-				# 	# 	value = 0.6
-				# 	# }
-				# }
+				if = {
+					limit = {
+						has_country_flag = JAP_early_war
+					}
+					add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 120 }
+				}
+				else = {
+					add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+				}
+			
 				GER = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				ITA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				ROM = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
@@ -3782,15 +3663,8 @@ focus_tree = {
 				RAJ = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				HOL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }	
 			}
-			custom_effect_tooltip = JAP_strike_west_tt
-			if = {
-				limit = {
-					has_country_flag = JAP_early_war
-				}
-				add_timed_idea = { idea = for_the_emperor_idea days = 120 }
-			} else = {
-				add_timed_idea = { idea = for_the_emperor_idea days = 120 }
-			}
+			# custom_effect_tooltip = JAP_strike_west_tt
+			add_timed_idea = { idea = for_the_emperor_idea days = 120 }
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = JAP_strike_prop
 		}

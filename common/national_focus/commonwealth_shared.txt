@@ -451,3 +451,95 @@ shared_focus = {
 		}
 	}
 }
+
+shared_focus = {
+	id = COM_allied_commander_training
+	icon = GFX_focus_generic_military_mission
+	prerequisite = { focus = COM_allied_supreme_command }
+	x = 1
+	y = 1
+	relative_position_id = COM_allied_supreme_command
+
+	cost = 5
+
+	available = {
+		date > 1942.1.1
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		every_army_leader = {
+			add_attack = 1
+			# add_defense = 1 # maybe later
+			# add_planning = 1
+			add_logistics = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = COM_allied_high_command
+	icon = GFX_focus_eng_chiefs_of_staff_committee
+	prerequisite = { focus = COM_allied_supreme_command }
+	x = -1
+	y = 1
+	relative_position_id = COM_allied_supreme_command
+
+	cost = 5
+
+	available = {
+		date > 1942.1.1
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	completion_reward = {
+		if = {
+			limit = {
+				original_tag = CAN
+			}
+			AHC_CANADA_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = AST
+			}
+			AHC_AUSTRALIA_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = NZL
+			}
+			AHC_NEW_ZEALAND_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = SAF
+			}
+			AHC_SOUTH_AFRICA_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = RAJ
+			}
+			AHC_BRITISH_RAJ_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			AHC_UK_HIGH_COMMAND = yes
+		}
+		if = {
+			limit = {
+				original_tag = IRE
+			}
+			AHC_IRELAND_HIGH_COMMAND = yes
+		}
+	}
+}

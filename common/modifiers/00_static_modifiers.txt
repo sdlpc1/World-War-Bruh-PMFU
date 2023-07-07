@@ -565,12 +565,14 @@ water_modifier_shark_infested = {
 screening_bonus = { 
   naval_retreat_speed = 0.2 
   naval_hit_chance = 0.2
-  navy_visibility = -0.1 
+  navy_visibility = -0.1
+  naval_heavy_gun_hit_chance_factor = 0.75
+  sortie_efficiency = 0.40
 }
 
 capital_screening_bonus = { 
   naval_retreat_speed = 0.2
-  sortie_efficiency = 0.3
+  sortie_efficiency = 0.15
 }
 
 country_is_at_peace = {

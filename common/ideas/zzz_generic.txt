@@ -1,6 +1,23 @@
 ideas = {
 
 	hidden_ideas = {
+
+		no_guarantees = {
+
+			cancel = {
+				date > 1940.6.1
+			}
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				guarantee_cost = 100
+			}
+		}
 	
 		league_of_nations_member_idea = { 
 			allowed = {
@@ -396,6 +413,10 @@ ideas = {
 					build_cost_ic = 2.00
 				}
 				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 2.00
+				}
+				CAS_equipment = {
 					instant = yes
 					build_cost_ic = 2.00
 				}
@@ -1519,7 +1540,7 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = SPR tag = HOL tag = HUN tag = BUL tag = YUG tag = FIN tag = MON tag = SIA tag = BUL } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = SPR tag = HOL tag = HUN tag = BUL tag = YUG tag = FIN tag = MON tag = SIA tag = BUL tag = RAJ } }
 				NOT = {
 					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
 				}

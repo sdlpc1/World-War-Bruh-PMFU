@@ -302,7 +302,10 @@ MAN_propaganda_campaigns = {
 		icon = eng_propaganda_campaigns
 
 		allowed = {
-			original_tag = MAN
+			OR = {
+				original_tag = SIA
+				original_tag = MAN
+			}
 		}
 
 		available = {
@@ -339,7 +342,10 @@ MAN_propaganda_campaigns = {
 		icon = eng_propaganda_campaigns
 
 		allowed = {
-			original_tag = MAN
+			OR = {
+				original_tag = SIA
+				original_tag = MAN
+			}
 		}
 
 		available = {
@@ -376,7 +382,10 @@ MAN_propaganda_campaigns = {
 		icon = eng_propaganda_campaigns
 
 		allowed = {
-			original_tag = MAN
+			OR = {
+				original_tag = SIA
+				original_tag = MAN
+			}
 		}
 
 		available = {
@@ -415,7 +424,10 @@ MAN_propaganda_campaigns = {
 		icon = eng_propaganda_campaigns
 
 		allowed = {
-			original_tag = MAN
+			OR = {
+				original_tag = SIA
+				original_tag = MAN
+			}
 		}
 
 		available = {
@@ -454,7 +466,10 @@ MAN_propaganda_campaigns = {
 		icon = eng_propaganda_campaigns
 
 		allowed = {
-			original_tag = MAN
+			OR = {
+				original_tag = SIA
+				original_tag = MAN
+			}
 		}
 
 		available = {
@@ -497,7 +512,10 @@ MAN_propaganda_campaigns = {
 		icon = eng_propaganda_campaigns
 
 		allowed = {
-			original_tag = MAN
+			OR = {
+				original_tag = SIA
+				original_tag = MAN
+			}
 		}
 
 		available = {

@@ -444,3 +444,5 @@
   GER_ss_template_medium_tt:0 "This will keep the §RWaffen-SS Panzer Division§! as §YMedium Tanks§!"
   GER_ss_template_heavy_tt:0 "This will set the §RWaffen-SS Panzer Division§! to §YHeavy Tanks§!"
   GER_greater_german_reich_fascism:0 "Großdeutsches Reich"
+  GER_SS_spawn_in_2:0 "Spawns in §G2§! §YSS Converter Divisions§!"
+  GER_SS_spawn_in_4:0 "Spawns in §G4§! §YSS Converter Divisions§!"

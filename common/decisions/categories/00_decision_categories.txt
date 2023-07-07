@@ -24,7 +24,7 @@ free_templates = {
 		NOT = { has_country_flag = free_template_decisions_off }
 	}
 
-	priority = 30
+	priority = 1
 }
 debug_decisions = {
 	icon = generic_research
@@ -99,6 +99,8 @@ political_actions = {
 	allowed = {
 		always = yes
 	}
+
+	priority = 2
 
 	visible = {
 		if = {

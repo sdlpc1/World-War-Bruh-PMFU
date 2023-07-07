@@ -4533,6 +4533,30 @@ guiTypes = {
 				}
 
 			}
+			instantTextBoxType = {
+				name = "plane_subtitle_medium2_research_lock"
+				position = { x = 1335 y = 530 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "------January 1941 ------"
+				maxWidth = 800
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+			}	
+			instantTextBoxType = {
+				name = "plane_subtitle_medium3_research_lock"
+				position = { x = 835 y = 530 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "January------------1941      "
+				maxWidth = 800
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
 			# instantTextBoxType = {
 			# 		name = "plane_subtitle_medium_research_lock"
 			# 		position = { x = 900 y = 670 }

@@ -239,13 +239,12 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-
+			date > 1940.6.1
 			ENG = {
 				has_war_with = GER
 			}
 
-		
-	}
+		}
 
 		ai_will_do = {
 			factor = 0
