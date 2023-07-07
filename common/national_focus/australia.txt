@@ -116,19 +116,19 @@ focus_tree = {
 		prerequisite = { focus =AST_additional_militia_training}
 		mutually_exclusive = { focus = AST_hmas_assault}
 		x = -3
-		y = 3
+		y = 2
 		relative_position_id = AST_additional_militia_training
 		cost = 5
 
 		available_if_capitulated = yes
 
-		# offset = {
-		# 	x = 0
-		# 	y = 1
-		# 	trigger = {
-		# 		has_global_flag = NO_ASIA
-		# 	}
-		# }
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				has_global_flag = NO_ASIA
+			}
+		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -199,7 +199,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_tech = pack_artillery_2
+			# has_tech = pack_artillery_2
 		}
 
 		bypass = {
@@ -207,7 +207,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			# has_global_flag = NO_ASIA
+			has_global_flag = NO_ASIA
 		}
 
 		cancel_if_invalid = yes
@@ -217,14 +217,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_indian_armor
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = artillery
 			}
-			set_technology = {
-				# mountain_arty = 1
-				pack_artillery_3 = 1
-			}
+			# set_technology = {
+			# 	# mountain_arty = 1
+			# 	pack_artillery_3 = 1
+			# }
 		}
 	}
 
@@ -233,16 +233,16 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = AST_hmas_assault focus = AST_cruiser_tanks}
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = AST_additional_militia_training
 
-		# offset = {
-		# 	x = 0
-		# 	y = 1
-		# 	trigger = {
-		# 		has_global_flag = NO_ASIA
-		# 	}
-		# }
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				has_global_flag = NO_ASIA
+			}
+		}
 
 		cost = 5
 
@@ -330,16 +330,16 @@ focus_tree = {
 		prerequisite = { focus = AST_additional_militia_training }
 		mutually_exclusive = { focus = AST_cruiser_tanks}
 		x = 3
-		y = 3
+		y = 2
 		relative_position_id = AST_additional_militia_training
 
-		# offset = {
-		# 	x = 0
-		# 	y = 1
-		# 	trigger = {
-		# 		has_global_flag = NO_ASIA
-		# 	}
-		# }
+		offset = {
+			x = 0
+			y = 1
+			trigger = {
+				has_global_flag = NO_ASIA
+			}
+		}
 
 		cost = 5
 

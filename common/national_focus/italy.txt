@@ -4141,43 +4141,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_mountain_artillery
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = ITA_new_artillery }
-		x = -1
-		y = 1
-		relative_position_id = ITA_new_artillery
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_tech = pack_artillery_2
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			set_technology = {
-				# mountain_arty = 1
-				pack_artillery_3 = 1
 			}
 		}
 	}

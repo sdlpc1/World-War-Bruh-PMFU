@@ -2842,7 +2842,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_tech = pack_artillery_2
+			# has_tech = pack_artillery_2
 		}
 
 		bypass = {
@@ -2854,16 +2854,23 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_technology = {
-				# mountain_arty = 1
-				pack_artillery_3 = 1
+			# set_technology = {
+			# 	# mountain_arty = 1
+			# 	pack_artillery_3 = 1
+			# }
+			add_tech_bonus = {
+				name = RAJ_indian_armor
+				bonus = 1
+				uses = 2
+				category = artillery
 			}
 			add_tech_bonus = {
 				name = ROM_modern_at_guns
 				ahead_reduction = 0.5
 				bonus = 0.75
 				uses = 1
-				category = artillery
+				category = heavy_artillery
+				category = cat_anti_tank
 			}
 		}
 	}

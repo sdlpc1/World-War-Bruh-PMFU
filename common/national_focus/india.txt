@@ -1448,7 +1448,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_tech = pack_artillery_2
+			# has_tech = pack_artillery_2
 		}
 
 		bypass = {
@@ -1462,14 +1462,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_indian_armor
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = artillery
 			}
-			set_technology = {
-				# mountain_arty = 1
-				pack_artillery_3 = 1
-			}
+			# set_technology = {
+			# 	# mountain_arty = 1
+			# 	pack_artillery_3 = 1
+			# }
 		}
 	}
 
