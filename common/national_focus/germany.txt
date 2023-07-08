@@ -5829,6 +5829,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = ger_share_tanks_tt_4
+			custom_effect_tooltip = GER_tank_sharing_designer_tt
 		}
 	}
 	

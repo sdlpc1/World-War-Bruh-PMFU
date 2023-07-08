@@ -1482,7 +1482,7 @@ on_actions = {
 							#log = "The disruptor is [THIS.GetName]"
 						}
 
-						country_event = NSB_soviet_five_year_plan.01
+						# country_event = NSB_soviet_five_year_plan.01
 					}
 				}
 				if = {

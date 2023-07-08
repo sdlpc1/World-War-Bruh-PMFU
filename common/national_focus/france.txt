@@ -1289,6 +1289,12 @@ focus_tree = {
 		y = 2
 		relative_position_id = FRA_light_medium_armor
 		cost = 5
+		available = {
+			OR = {
+				GER = { has_completed_focus = GER_anschluss }
+				threat > 0.3
+			}	
+		}
 
 		available_if_capitulated = yes
 

@@ -1331,6 +1331,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		on_research_complete = {
+			custom_effect_tooltip = GBP_NO_EXPED_WARN
+		}
+
 		xp_research_type = army
 		xp_unlock_cost = 0
 		

@@ -246,6 +246,7 @@
  air_power_projection_spirit_cas_reduction:0 "Camouflage Expert"
  bold_attack_spririt:1 "Reliable Command"
  static_warfare_spirit_fort_tt:0 "£defence_texticon Fort Defense §G+5.0%§!"
+ GBP_NO_EXPED_WARN:0 "§RYOU WONT BE ABLE TO RECIVE EXPEDITIONARY FORCES UNLESS THE NATION SENDING ALSO HAS GBP\n\nONLY EXCEPTION IS SENDING EXPEDITIONARIES TO ITALY§!"
 
  ### FUEL SYSTEM ###
  country_fuel_info_tt:0 "[?THIS.fuel_k|.1]K/[?THIS.max_fuel_k|.1]K"

@@ -127,6 +127,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/JAP_toyota.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_isuzu_tank"
+		texturefile = "gfx/interface/ideas/JAP_isuzu.dds"
+	}
+
 	spriteType = {
 		name = "GFX_idea_kharkiv_diesel_factory"
 		texturefile = "gfx/interface/ideas/idea_malyshev.dds"
@@ -145,6 +150,16 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_COM_massachusetts_design_bureau"
 		texturefile = "gfx/interface/ideas/idea_massachusetts_design_bureau.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_krupp_tank"
+		texturefile = "gfx/interface/ideas/idea_krupp.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_GER_ckd"
+		texturefile = "gfx/interface/ideas/idea_GER_ckd.dds"
 	}
 
     ## FOCUS ICONS

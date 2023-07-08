@@ -931,10 +931,12 @@ focus_tree = {
 				target = GER
 				modifier = ROM_license_german_equipment
 			}
-            country_event = vichy.1
+            # country_event = vichy.1
 			add_to_tech_sharing_group = axis_research
             # custom_effect_tooltip = vic_unlock_tank_share_tt
             set_country_flag = VIC_join_tank_sharing
+            custom_effect_tooltip = VIC_ger_engineering
+            add_political_power = 150
             # Join axis research program
             # 50 army XP
             # 20% license production speed of germany

@@ -107,6 +107,8 @@
  general_elodie_deforest_tt:0 "§OÉlodie Deforest§! §Ybecomes a skill 4 General with 6 attack, 4 defense, 6 planning, 4 logistics, and Infantry Leader, Trickster, Skilled Staffer and Old Guard§!"
 
  general_fernand_clement_tt:0 "§OFernand Clément§! §Ybecomes a skill 4 General with 7 attack, 5 defense, 4 planning, 5 logistics, and Infantry Leader, War Hero Inflexible Strategist, Old Guard, Cautious and Organizer§!"
+
+ VIC_ger_engineering:0 "§Y\nGives us access to German tank designers§!"
  
  ### FLAGS ### 
  VIC_chose_PORSCHE:0 "Chose Porsche"

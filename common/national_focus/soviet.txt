@@ -6642,6 +6642,7 @@ focus_tree = {
 		id = SOV_heavy_tank2
 		icon = GFX_SOV_choose_okmo
 		prerequisite = { focus = SOV_heavy_tank1 }
+		mutually_exclusive = { focus = SOV_heavy_tank_2_2 }
 		x = 1
 		y = 1
 		cost = 5
@@ -6668,6 +6669,7 @@ focus_tree = {
 		id = SOV_heavy_tank_2_2
 		icon = GFX_SOV_choose_okmo
 		prerequisite = { focus = SOV_heavy_tank1 }
+		mutually_exclusive = { focus = SOV_heavy_tank2	}
 		x = -1
 		y = 1
 		cost = 5

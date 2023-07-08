@@ -280,6 +280,10 @@
   nibelungenwerke:0 "Nibelungenwerke"
   daimler_Benz_AG:0 "Daimler-Benz"
   daimler_Benz_AG_desc:1 "Daimler-Benz was a manufacturer of automobiles, motor vehicles, and high-quality engines."
+  GER_ckd:0 "CKD"
+  GER_ckd_desc:1"Czech Light Tanks"
+  krupp_tank:0 "Krupp"
+  krupp_tank_desc:1 "Krupp focuses on heavy industry and armaments production"
 
   #### TRAITS ####
   schacht:0 "Reichsbank President"
@@ -446,3 +450,4 @@
   GER_greater_german_reich_fascism:0 "Großdeutsches Reich"
   GER_SS_spawn_in_2:0 "Spawns in §G2§! §YSS Converter Divisions§!"
   GER_SS_spawn_in_4:0 "Spawns in §G4§! §YSS Converter Divisions§!"
+  GER_tank_sharing_designer_tt:0 "§Y\nGives our allies access to German tank designers§!"

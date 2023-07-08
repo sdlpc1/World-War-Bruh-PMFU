@@ -310,7 +310,15 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { IRE_timoney_trait }
+			# traits = { IRE_timoney_trait }
+			equipment_bonus = {
+				armored_car_chassis = {
+					build_cost_ic = -0.15
+					reliability = 0.10
+					soft_attack = 0.10
+					hard_attack = 0.10
+				}
+			}
 			
 			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
