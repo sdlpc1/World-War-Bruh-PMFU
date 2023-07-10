@@ -6830,7 +6830,7 @@ focus_tree = {
 		id = SOV_medium_tank1
 		icon = GFX_SOV_armour_development
 		prerequisite = { focus = SOV_tank2 }
-		mutually_exclusive = { focus = SOV_heavy_tank1 focus = SOV_light_tank_1 }
+		mutually_exclusive = { focus = SOV_heavy_tank1 focus = SOV_light_tank1 }
 		x = 3
 		y = 1
 		cost = 5
