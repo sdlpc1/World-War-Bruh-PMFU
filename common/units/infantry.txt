@@ -501,7 +501,7 @@ sub_units = {
 		# }
 		jungle = {
 
-			attack = 0.15
+			attack = 0.125
 			defence = 0.05
 		}
 		# town = {
@@ -529,9 +529,9 @@ sub_units = {
 		# 	movement = 0.1
 		# }
 		forest = {
-			attack = 0.15
+			attack = 0.125
 			defence = 0.05
-			movement = 0.1
+			movement = 0.05
 		}
 	}
 

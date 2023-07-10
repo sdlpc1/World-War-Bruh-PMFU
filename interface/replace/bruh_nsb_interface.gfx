@@ -388,6 +388,10 @@ spriteTypes = {
 		name = "GFX_EMI_apcr_round"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/apcr_rounds.dds"
 	}
+	spriteType = {
+		name = "GFX_EMI_advanced_artillery_round"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/apcr_rounds.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_EMI_tank_armament_tier_tiny_1"

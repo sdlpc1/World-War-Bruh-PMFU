@@ -3761,7 +3761,7 @@ focus_tree = {
 					name = MEX_rocket_upgrades
 					bonus = 0.75
 					uses = 2
-					technology = rocket_artillery
+					category = rocketry
 				}
 				custom_effect_tooltip = general_rata_de_aqua_tt
 				hidden_effect = {

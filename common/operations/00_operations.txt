@@ -1608,6 +1608,17 @@ operation_collaboration_government = { ### 10 2/55
 	}
 
 	available = {
+		hidden_trigger = {
+			FROM = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = "Cant do collaboration governments on the USSR or other communist countries"
+		}
+
 		has_collaboration = {
 			target = FROM
 			value < 1.0

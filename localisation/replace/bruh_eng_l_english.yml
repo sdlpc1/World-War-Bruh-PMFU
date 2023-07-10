@@ -201,6 +201,7 @@
   ENG_air_defenses:0 "Mainland Air Defenses"
   ENG_fortify_the_coast:0 "Fortify the Coast" 
   ENG_british_invasion_of_iran:0 "Operation Countenance"
+  ENG_khartoum_airfield:0 "Build Up the Khartoum Airfield"
 
   #### EVENTS ####
   britain.500.t:0 "Anglo-Soviet Agreement"

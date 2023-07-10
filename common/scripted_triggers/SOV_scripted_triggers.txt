@@ -322,113 +322,113 @@ SOV_has_already_built_national_academy_of_sciences = {
 ### TANK DESIGNER ###
 #####################
 
-SOV_has_active_tank_designer_any = {
-	custom_trigger_tooltip = {
-		tooltip = SOV_has_active_tank_designer_any_tt
-		OR = {
-			SOV_has_active_tank_designer_morozov = yes
-			SOV_has_active_tank_designer_astrov = yes
-			SOV_has_active_tank_designer_okmo = yes
-			SOV_has_active_tank_designer_mytishchy = yes
-			SOV_has_active_tank_designer_kirov = yes
-		}
-	}
-}
+# SOV_has_active_tank_designer_any = {
+# 	custom_trigger_tooltip = {
+# 		tooltip = SOV_has_active_tank_designer_any_tt
+# 		OR = {
+# 			SOV_has_active_tank_designer_morozov = yes
+# 			SOV_has_active_tank_designer_astrov = yes
+# 			SOV_has_active_tank_designer_okmo = yes
+# 			SOV_has_active_tank_designer_mytishchy = yes
+# 			SOV_has_active_tank_designer_kirov = yes
+# 		}
+# 	}
+# }
 
-SOV_has_active_tank_designer_morozov = {
-	OR = {
-		has_idea = SOV_morozov_design_bureau
-		has_idea = SOV_morozov_design_bureau_1
-		has_idea = SOV_morozov_design_bureau_2
-		has_idea = SOV_morozov_design_bureau_3
-		has_idea = SOV_morozov_design_bureau_1_2
-		has_idea = SOV_morozov_design_bureau_1_3
-		has_idea = SOV_morozov_design_bureau_2_3
-		has_idea = SOV_morozov_design_bureau_final
-	}
-}
+# SOV_has_active_tank_designer_morozov = {
+# 	OR = {
+# 		has_idea = SOV_morozov_design_bureau
+# 		has_idea = SOV_morozov_design_bureau_1
+# 		has_idea = SOV_morozov_design_bureau_2
+# 		has_idea = SOV_morozov_design_bureau_3
+# 		has_idea = SOV_morozov_design_bureau_1_2
+# 		has_idea = SOV_morozov_design_bureau_1_3
+# 		has_idea = SOV_morozov_design_bureau_2_3
+# 		has_idea = SOV_morozov_design_bureau_final
+# 	}
+# }
 
-SOV_has_active_tank_designer_astrov = {
-	OR = {
-		has_idea = SOV_astrov_design_bureau
-		has_idea = SOV_astrov_design_bureau_1
-		has_idea = SOV_astrov_design_bureau_2
-		has_idea = SOV_astrov_design_bureau_3
-		has_idea = SOV_astrov_design_bureau_1_2
-		has_idea = SOV_astrov_design_bureau_1_3
-		has_idea = SOV_astrov_design_bureau_2_3
-		has_idea = SOV_astrov_design_bureau_final
-	}
-}
+# SOV_has_active_tank_designer_astrov = {
+# 	OR = {
+# 		has_idea = SOV_astrov_design_bureau
+# 		has_idea = SOV_astrov_design_bureau_1
+# 		has_idea = SOV_astrov_design_bureau_2
+# 		has_idea = SOV_astrov_design_bureau_3
+# 		has_idea = SOV_astrov_design_bureau_1_2
+# 		has_idea = SOV_astrov_design_bureau_1_3
+# 		has_idea = SOV_astrov_design_bureau_2_3
+# 		has_idea = SOV_astrov_design_bureau_final
+# 	}
+# }
 
-SOV_has_active_tank_designer_okmo = {
-	OR = {
-		has_idea = SOV_okmo
-		has_idea = SOV_okmo_1
-		has_idea = SOV_okmo_2
-		has_idea = SOV_okmo_3
-		has_idea = SOV_okmo_1_2
-		has_idea = SOV_okmo_1_3
-		has_idea = SOV_okmo_2_3
-		has_idea = SOV_okmo_final
-	}
-}
+# SOV_has_active_tank_designer_okmo = {
+# 	OR = {
+# 		has_idea = SOV_okmo
+# 		has_idea = SOV_okmo_1
+# 		has_idea = SOV_okmo_2
+# 		has_idea = SOV_okmo_3
+# 		has_idea = SOV_okmo_1_2
+# 		has_idea = SOV_okmo_1_3
+# 		has_idea = SOV_okmo_2_3
+# 		has_idea = SOV_okmo_final
+# 	}
+# }
 
-SOV_has_active_tank_designer_mytishchy = {
-	OR = {
-		has_idea = SOV_mytishchy_machine_building_plant
-		has_idea = SOV_mytishchy_machine_building_plant_1
-		has_idea = SOV_mytishchy_machine_building_plant_2
-		has_idea = SOV_mytishchy_machine_building_plant_3
-		has_idea = SOV_mytishchy_machine_building_plant_1_2
-		has_idea = SOV_mytishchy_machine_building_plant_1_3
-		has_idea = SOV_mytishchy_machine_building_plant_2_3
-		has_idea = SOV_mytishchy_machine_building_plant_final
-	}
-}
+# SOV_has_active_tank_designer_mytishchy = {
+# 	OR = {
+# 		has_idea = SOV_mytishchy_machine_building_plant
+# 		has_idea = SOV_mytishchy_machine_building_plant_1
+# 		has_idea = SOV_mytishchy_machine_building_plant_2
+# 		has_idea = SOV_mytishchy_machine_building_plant_3
+# 		has_idea = SOV_mytishchy_machine_building_plant_1_2
+# 		has_idea = SOV_mytishchy_machine_building_plant_1_3
+# 		has_idea = SOV_mytishchy_machine_building_plant_2_3
+# 		has_idea = SOV_mytishchy_machine_building_plant_final
+# 	}
+# }
 
-SOV_has_active_tank_designer_kirov = {
-	OR = {
-		has_idea = SOV_kirov
-		has_idea = SOV_kirov_1
-		has_idea = SOV_kirov_2
-		has_idea = SOV_kirov_3
-		has_idea = SOV_kirov_1_2
-		has_idea = SOV_kirov_1_3
-		has_idea = SOV_kirov_2_3
-		has_idea = SOV_kirov_final
-	}
-}
+# SOV_has_active_tank_designer_kirov = {
+# 	OR = {
+# 		has_idea = SOV_kirov
+# 		has_idea = SOV_kirov_1
+# 		has_idea = SOV_kirov_2
+# 		has_idea = SOV_kirov_3
+# 		has_idea = SOV_kirov_1_2
+# 		has_idea = SOV_kirov_1_3
+# 		has_idea = SOV_kirov_2_3
+# 		has_idea = SOV_kirov_final
+# 	}
+# }
 
-SOV_has_tank_merged_1 = {
-	OR = {
-		has_country_flag = SOV_merge_tank_morozov_1_flag
-		has_country_flag = SOV_merge_tank_astrov_1_flag
-		has_country_flag = SOV_merge_tank_okmo_1_flag
-		has_country_flag = SOV_merge_tank_mytishchy_1_flag
-		has_country_flag = SOV_merge_tank_kirov_1_flag
-	}
-}
+# SOV_has_tank_merged_1 = {
+# 	OR = {
+# 		has_country_flag = SOV_merge_tank_morozov_1_flag
+# 		has_country_flag = SOV_merge_tank_astrov_1_flag
+# 		has_country_flag = SOV_merge_tank_okmo_1_flag
+# 		has_country_flag = SOV_merge_tank_mytishchy_1_flag
+# 		has_country_flag = SOV_merge_tank_kirov_1_flag
+# 	}
+# }
 
-SOV_has_tank_merged_2 = {
-	OR = {
-		has_country_flag = SOV_merge_tank_morozov_2_flag
-		has_country_flag = SOV_merge_tank_astrov_2_flag
-		has_country_flag = SOV_merge_tank_okmo_2_flag
-		has_country_flag = SOV_merge_tank_mytishchy_2_flag
-		has_country_flag = SOV_merge_tank_kirov_2_flag
-	}
-}
+# SOV_has_tank_merged_2 = {
+# 	OR = {
+# 		has_country_flag = SOV_merge_tank_morozov_2_flag
+# 		has_country_flag = SOV_merge_tank_astrov_2_flag
+# 		has_country_flag = SOV_merge_tank_okmo_2_flag
+# 		has_country_flag = SOV_merge_tank_mytishchy_2_flag
+# 		has_country_flag = SOV_merge_tank_kirov_2_flag
+# 	}
+# }
 
-SOV_has_tank_merged_3 = {
-	OR = {
-		has_country_flag = SOV_merge_tank_morozov_3_flag
-		has_country_flag = SOV_merge_tank_astrov_3_flag
-		has_country_flag = SOV_merge_tank_okmo_3_flag
-		has_country_flag = SOV_merge_tank_mytishchy_3_flag
-		has_country_flag = SOV_merge_tank_kirov_3_flag
-	}
-}
+# SOV_has_tank_merged_3 = {
+# 	OR = {
+# 		has_country_flag = SOV_merge_tank_morozov_3_flag
+# 		has_country_flag = SOV_merge_tank_astrov_3_flag
+# 		has_country_flag = SOV_merge_tank_okmo_3_flag
+# 		has_country_flag = SOV_merge_tank_mytishchy_3_flag
+# 		has_country_flag = SOV_merge_tank_kirov_3_flag
+# 	}
+# }
 
 
 #####################

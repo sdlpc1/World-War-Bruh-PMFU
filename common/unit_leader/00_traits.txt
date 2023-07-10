@@ -1018,7 +1018,8 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			breakthrough_factor = 0.20
+			breakthrough_factor = 0.10
+			army_fuel_capacity_factor = 0.10
 		}
 		custom_effect_tooltip = INCREASED_ASSAULT_AND_SHOCK_CHANCE
 		

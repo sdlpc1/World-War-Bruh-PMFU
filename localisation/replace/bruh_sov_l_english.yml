@@ -212,6 +212,9 @@
   SOV_operation_uranus:0 "Operation Uranus"
   SOV_operation_bagration:0 "Operation Bagration"
   SOV_heavy_tank_2_2:0 "Appoint Ordzhonikidze"
+  SOV_light_tank1:0 "Develop the T-70"
+  SOV_light_tank2:0 "Appoint Stalingrad Tractor Factory"
+  SOV_medium_tank_2_2:0 "Appoint Astrov"
 
   #### EVENTS ####
   soviet.26.c1:0 "Zhukov and Tukhachevsky's Deep Battle ideas must be overturned."

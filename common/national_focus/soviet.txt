@@ -6402,7 +6402,7 @@ focus_tree = {
 				date > 1941.1.1
 			}
 		}
-		x = 35
+		x = 38
 		y = 0
 		cost = 1
 
@@ -6547,7 +6547,7 @@ focus_tree = {
 		id = SOV_tank1
 		icon = GFX_SOV_armour_development
 		prerequisite = { focus = SOV_deep_operations }
-		x = -4
+		x = -6
 		y = 1
 		cost = 5
 		relative_position_id = SOV_deep_operations
@@ -6603,13 +6603,88 @@ focus_tree = {
 			SOV_modernisation_towards_mech = yes
 		}
 	}
+
+	focus = {
+		id = SOV_light_tank1
+		icon = GFX_SOV_armour_development
+		prerequisite = { focus = SOV_tank2 }
+		mutually_exclusive = { focus = SOV_medium_tank1 focus = SOV_heavy_tank1 }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SOV_tank2
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doc_bonus
+				bonus = 0.5
+				ahead_reduction = 0.5
+				uses = 1
+				category = cat_light_armor
+			}
+			add_tech_bonus = {
+				name = art_bonus
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_light_tank2
+		icon = GFX_SOV_choose_okmo
+		prerequisite = { focus = SOV_light_tank1 }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SOV_light_tank1
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			set_country_flag = SOV_merge_tank_dzerzhinsky_stalingrad_tractor_factory_1_flag
+			if = {
+				limit = {
+					has_idea = dzerzhinsky_stalingrad_tractor_factory
+				}
+				swap_ideas = {
+					remove_idea = dzerzhinsky_stalingrad_tractor_factory
+					add_idea = dzerzhinsky_stalingrad_tractor_factory_1
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = dzerzhinsky_stalingrad_tractor_factory
+						add_idea = dzerzhinsky_stalingrad_tractor_factory_1
+					}
+				}
+				add_ideas = dzerzhinsky_stalingrad_tractor_factory_1
+			}
+		}
+	}
 	
 	focus = {
 		id = SOV_heavy_tank1
 		icon = GFX_SOV_armour_development
 		prerequisite = { focus = SOV_tank2 }
-		mutually_exclusive = { focus = SOV_medium_tank1 }
-		x = -2
+		mutually_exclusive = { focus = SOV_medium_tank1 focus = SOV_light_tank1 }
+		x = -3
 		y = 1
 		cost = 5
 		relative_position_id = SOV_tank2
@@ -6657,11 +6732,31 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = SOV_okmo
-			hidden_effect = {
-				add_ideas = SOV_okmo 
+			set_country_flag = SOV_merge_tank_SOV_okmo_1_flag
+			if = {
+				limit = {
+					has_idea = SOV_okmo
+				}
+				swap_ideas = {
+					remove_idea = SOV_okmo
+					add_idea = SOV_okmo_1
+				}
 			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SOV_okmo
+						add_idea = SOV_okmo_1
+					}
+				}
+				add_ideas = SOV_okmo_1
+			}
+
+			# custom_effect_tooltip = available_designer
+			# show_ideas_tooltip = SOV_okmo
+			# hidden_effect = {
+			# 	add_ideas = SOV_okmo 
+			# }
 		}
 	}
 	
@@ -6684,13 +6779,50 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
-			hidden_effect = {
-				add_ideas = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
-			} 
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = kharkiv_diesel_factory
+			set_country_flag = SOV_merge_tank_ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1_flag
+			set_country_flag = SOV_merge_tank_kharkiv_diesel_factory_1_flag
+			if = {
+				limit = {
+					has_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
+				}
+				swap_ideas = {
+					remove_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
+					add_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
+						add_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					has_idea = kharkiv_diesel_factory
+				}
+				swap_ideas = {
+					remove_idea = kharkiv_diesel_factory
+					add_idea = kharkiv_diesel_factory_1
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = kharkiv_diesel_factory
+						add_idea = kharkiv_diesel_factory_1
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = { has_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1 }
+				}
+				add_ideas = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1
+			}
 		}
 	}
 	
@@ -6698,8 +6830,8 @@ focus_tree = {
 		id = SOV_medium_tank1
 		icon = GFX_SOV_armour_development
 		prerequisite = { focus = SOV_tank2 }
-		mutually_exclusive = { focus = SOV_heavy_tank1 }
-		x = 2
+		mutually_exclusive = { focus = SOV_heavy_tank1 focus = SOV_light_tank_1 }
+		x = 3
 		y = 1
 		cost = 5
 		relative_position_id = SOV_tank2
@@ -6726,7 +6858,8 @@ focus_tree = {
 		id = SOV_medium_tank2
 		icon = GFX_SOV_choose_morozov
 		prerequisite = { focus = SOV_medium_tank1 }
-		x = 0
+		mutually_exclusive = { focus = SOV_medium_tank_2_2 }
+		x = -1
 		y = 1
 		cost = 5
 		relative_position_id = SOV_medium_tank1
@@ -6740,13 +6873,72 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = SOV_morozov_design_bureau
-			hidden_effect = {
-				add_ideas = SOV_morozov_design_bureau
+			set_country_flag = SOV_merge_tank_SOV_morozov_design_bureau_1_flag
+			if = {
+				limit = {
+					has_idea = SOV_morozov_design_bureau
+				}
+				swap_ideas = {
+					remove_idea = SOV_morozov_design_bureau
+					add_idea = SOV_morozov_design_bureau_1
+				}
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = dzerzhinsky_stalingrad_tractor_factory
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SOV_morozov_design_bureau
+						add_idea = SOV_morozov_design_bureau_1
+					}
+				}
+				add_ideas = SOV_morozov_design_bureau_1
+			}
+
+			# custom_effect_tooltip = available_designer
+			# show_ideas_tooltip = SOV_morozov_design_bureau
+			# hidden_effect = {
+			# 	add_ideas = SOV_morozov_design_bureau
+			# }
+		}
+	}
+
+	focus = {
+		id = SOV_medium_tank_2_2
+		icon = GFX_SOV_choose_morozov
+		prerequisite = { focus = SOV_medium_tank1 }
+		mutually_exclusive = { focus = SOV_medium_tank2 }
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = SOV_medium_tank1
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+		}
+
+		completion_reward = {
+			set_country_flag = SOV_merge_tank_SOV_astrov_design_bureau_1_flag
+			if = {
+				limit = {
+					has_idea = SOV_astrov_design_bureau
+				}
+				swap_ideas = {
+					remove_idea = SOV_astrov_design_bureau
+					add_idea = SOV_astrov_design_bureau_1
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SOV_astrov_design_bureau
+						add_idea = SOV_astrov_design_bureau_1
+					}
+				}
+				add_ideas = SOV_astrov_design_bureau_1
+			}
 		}
 	}
 	
@@ -6830,7 +7022,7 @@ focus_tree = {
 		id = SOV_infantry1
 		icon = GFX_SOV_ppsh_hand_angry
 		prerequisite = { focus = SOV_deep_operations }
-		x = 4
+		x = 5
 		y = 1
 		cost = 5
 		relative_position_id = SOV_deep_operations
@@ -6935,11 +7127,11 @@ focus_tree = {
 		icon = GFX_SOV_army_revision_board
 		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_rehabilitated_army }
 		prerequisite = { focus = SOV_arty3 }
-		prerequisite = { focus = SOV_heavy_tank_2_2 focus = SOV_heavy_tank2 focus = SOV_medium_tank2 }
-		x = -5
+		prerequisite = { focus = SOV_heavy_tank_2_2 focus = SOV_heavy_tank2 focus = SOV_medium_tank2 focus = SOV_medium_tank_2_2 focus = SOV_light_tank2 }
+		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SOV_rehabilitated_army
+		relative_position_id = SOV_arty3
 		ai_will_do = {
 			factor = 5
 		}
@@ -6960,7 +7152,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = SOV_red_army }
 		mutually_exclusive = { focus = SOV_deep_operations }
-		x = 5
+		x = 6
 		y = 1
 		cost = 3
 		relative_position_id = SOV_red_army
@@ -7173,9 +7365,28 @@ focus_tree = {
 				uses = 2
 				category = electronics
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = SOV_kirov
-			add_ideas = SOV_kirov
+			set_country_flag = SOV_merge_tank_kirov_1_flag
+			if = {
+				limit = {
+					has_idea = SOV_kirov
+				}
+				swap_ideas = {
+					remove_idea = SOV_kirov
+					add_idea = SOV_kirov_1
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SOV_kirov
+						add_idea = SOV_kirov_1
+					}
+				}
+				add_ideas = SOV_kirov_1
+			}
+			# custom_effect_tooltip = available_designer
+			# show_ideas_tooltip = SOV_kirov
+			# add_ideas = SOV_kirov
 		}
 	}
 	
@@ -7440,7 +7651,7 @@ focus_tree = {
 		id = SOV_transpolar_flights
 
 		icon = GFX_focus_SOV_transpolar_flights
-		x = 49
+		x = 52
 		y = 0
 		cost = 3
 

@@ -1225,7 +1225,10 @@ equipment_modules = {
 		abbreviation = "hmg"
 		category = tank_armament_tier_tiny_1
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_tank
+		forbid_equipment_type = {
+			anti_tank
+			artillery
+		}
 
 		add_stats = {
 			soft_attack = 8
@@ -1661,7 +1664,8 @@ equipment_modules = {
 		forbid_equipment_type_exact_match = armor
 
 		add_stats = {
-			soft_attack = 30
+			soft_attack = 34
+			hard_attack = 5
 			build_cost_ic = 4
 		}
 		multiply_stats = {  }
@@ -1681,7 +1685,8 @@ equipment_modules = {
 		parent = tank_art_gun_1
 
 		add_stats = {
-			soft_attack = 36
+			soft_attack = 39
+			hard_attack = 7
 			build_cost_ic = 6
 		}
 		# multiply_stats = {
@@ -1703,7 +1708,8 @@ equipment_modules = {
 		parent = tank_art_gun_2
 
 		add_stats = {
-			soft_attack = 42
+			soft_attack = 44
+			hard_attack = 8
 			build_cost_ic = 8
 		}
 		# multiply_stats = {
@@ -1966,7 +1972,7 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 5
-			hard_attack = 36
+			hard_attack = 34
 			ap_attack = 81
 			build_cost_ic = 9
 		}
@@ -1991,7 +1997,7 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 7
-			hard_attack = 44
+			hard_attack = 39
 			ap_attack = 104
 			build_cost_ic = 10
 		}
@@ -2016,7 +2022,7 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 8
-			hard_attack = 49
+			hard_attack = 44
 			ap_attack = 110
 			build_cost_ic = 11
 		}
@@ -2392,7 +2398,8 @@ equipment_modules = {
 		forbid_equipment_type_exact_match = armor
 
 		add_stats = {
-			soft_attack = 42
+			soft_attack = 50 #42
+			hard_attack = 11 #0
 			build_cost_ic = 10
 		}
 		multiply_stats = {  }
@@ -2413,7 +2420,8 @@ equipment_modules = {
 		parent = tank_heavy_art_gun_1
 
 		add_stats = {
-			soft_attack = 48
+			soft_attack = 59 #48
+			hard_attack = 14
 			# breakthrough = -10
 			build_cost_ic = 14
 		}
@@ -2554,7 +2562,10 @@ equipment_modules = {
 		abbreviation = "thmg"
 		category = tank_secondary_turret
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_tank
+		forbid_equipment_type = {
+			anti_tank
+			artillery
+		}
 
 		add_stats = {
 			soft_attack = 6
@@ -2689,7 +2700,10 @@ equipment_modules = {
 		abbreviation = "mg"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_tank
+		forbid_equipment_type = {
+			anti_tank
+			artillery
+		}
 
 		add_stats = {
 			soft_attack = 4
@@ -2704,7 +2718,10 @@ equipment_modules = {
 		abbreviation = "mg"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_tank
+		forbid_equipment_type = {
+			anti_tank
+			artillery
+		}
 
 		add_stats = {
 			soft_attack = 6
@@ -2721,7 +2738,10 @@ equipment_modules = {
 		abbreviation = "hfl"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_tank
+		forbid_equipment_type = {
+			anti_tank
+			artillery
+		}
 
 		add_stats = {
 			soft_attack = 10
@@ -2752,7 +2772,10 @@ equipment_modules = {
 		abbreviation = "rok"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_tank
+		forbid_equipment_type = {
+			anti_tank
+			artillery
+		}
 
 		add_stats = {
 			soft_attack = 6
@@ -2788,6 +2811,20 @@ equipment_modules = {
 		multiply_stats = {
 			ap_attack = 0.1
 			hard_attack = 0.05
+		}
+		dismantle_cost_ic = 1
+	}
+
+	advanced_artillery_round = {
+		abbreviation = "aar"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 2
+		}
+
+		multiply_stats = {
+			soft_attack = 0.05
 		}
 		dismantle_cost_ic = 1
 	}

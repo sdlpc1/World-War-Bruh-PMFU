@@ -134,6 +134,10 @@ equipments = {
 			module = apcr_round
 			count < 2
 		}
+		module_count_limit = {
+			module = advanced_artillery_round
+			count < 2
+		}
 
 		default_modules = {
 			main_armament_slot = empty
@@ -296,6 +300,10 @@ equipments = {
 			module = apcr_round
 			count < 2
 		}
+		module_count_limit = {
+			module = advanced_artillery_round
+			count < 2
+		}
 
 		default_modules = {
 			main_armament_slot = empty
@@ -448,6 +456,10 @@ equipments = {
 			module = apcr_round
 			count < 2
 		}
+		module_count_limit = {
+			module = advanced_artillery_round
+			count < 2
+		}
 		
 		default_modules = {
 			main_armament_slot = empty
@@ -591,6 +603,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = apcr_round
+			count < 2
+		}
+		module_count_limit = {
+			module = advanced_artillery_round
 			count < 2
 		}
 

@@ -592,11 +592,44 @@ ideas = {
 			}
 
 			research_bonus = {
-					armor = 0.15
+				armor = 0.15
 			}
 
-			traits = {
-				cope_trait
+			# traits = {
+			# 	cope_trait
+			# }
+
+			equipment_bonus = {
+				heavy_tank_chassis = {
+					armor_value = 0.05
+					maximum_speed = 0.1
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+				}
+				heavy_tank_artillery_chassis = {
+					armor_value = 0.05
+					maximum_speed = 0.1
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+				}
+				heavy_tank_destroyer_chassis = {
+					armor_value = 0.05
+					maximum_speed = 0.1
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+				}
+				heavy_assault_gun_chassis = {
+					armor_value = 0.05
+					maximum_speed = 0.1
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+				}
+				heavy_tank_amphibious_chassis = {
+					armor_value = 0.05
+					maximum_speed = 0.1
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+				}
 			}
 
 			modifier = { tank_manufacturer_cost_factor = -1 }
