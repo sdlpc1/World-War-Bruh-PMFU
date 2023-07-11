@@ -219,6 +219,18 @@ spriteTypes = {
 		name = "GFX_goal_YUG_new_regime"
 		texturefile = "gfx/interface/goals/goal_YUG_new_regime.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_SOV_appoint_astrov"
+		texturefile = "gfx/interface/goals/sov/SOV_appoint_astrov.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SOV_appoint_ordzhonikidze"
+		texturefile = "gfx/interface/goals/sov/SOV_appoint_ordzhonikidze.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SOV_appoint_stalingrad_tractor_factory"
+		texturefile = "gfx/interface/goals/sov/SOV_appoint_stalingrad_tractor_factory.dds"
+	}
 
     ## DIV ICONS
     spriteType = { ## 139 and up to use

@@ -6641,7 +6641,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_light_tank2
-		icon = GFX_SOV_choose_okmo
+		icon = GFX_goal_SOV_appoint_stalingrad_tractor_factory
 		prerequisite = { focus = SOV_light_tank1 }
 		x = 0
 		y = 1
@@ -6762,7 +6762,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_heavy_tank_2_2
-		icon = GFX_SOV_choose_okmo
+		icon = GFX_goal_SOV_appoint_ordzhonikidze
 		prerequisite = { focus = SOV_heavy_tank1 }
 		mutually_exclusive = { focus = SOV_heavy_tank2	}
 		x = -1
@@ -6903,7 +6903,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_medium_tank_2_2
-		icon = GFX_SOV_choose_morozov
+		icon = GFX_goal_SOV_appoint_astrov
 		prerequisite = { focus = SOV_medium_tank1 }
 		mutually_exclusive = { focus = SOV_medium_tank2 }
 		x = 1
