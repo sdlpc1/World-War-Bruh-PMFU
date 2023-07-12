@@ -1139,6 +1139,10 @@ technologies = {
 			tank_heavy_gun_2
 			tank_heavy_hv_gun_2
 		}
+		path = {
+			leads_to_tech = heavy_cannon_3
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2.0
 		start_year = 1943
@@ -1152,6 +1156,26 @@ technologies = {
 			heavy_artillery
 			cat_anti_tank
 		}
+	}
+
+	heavy_cannon_3 = {
+
+		enable_equipment_modules = {
+			tank_heavy_gun_3
+		}
+		
+		research_cost = 2.0
+		start_year = 1944
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 12 y = 16 }
+		}
+		
+		categories = {
+			heavy_artillery
+		}
+
 	}
 
   # Rocket Artillery
@@ -1268,7 +1292,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 13 y = 16 }
+			position = { x = 14 y = 16 }
 		}
 
 		categories = {

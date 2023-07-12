@@ -255,6 +255,9 @@
   COM_churchillgrad:0 "Churchillgrad Tractor Factory"
   COM_gloucestershire_diesel_factory:0 "Gloucestershire Diesel Factory"
   COM_massachusetts_design_bureau:0 "Massachusetts Design Bureau"
+  ENG_crusader:0 "Operation Crusader"
+  OPERATION_TORCH:0 "Operation Torch"
+  ENG_compass:0 "Operation Compass"
 
   #### TRAITS ####
   vauxhall_trait:0 "Infantry Tank Manufacturer"
@@ -298,6 +301,9 @@
   ENG_blood_prop:0 "Urgent Call For Blood!"
   ENG_german_prop:0 "We Beat 'Em Before..."
   ENG_war_savings_prop:0 "Back The Great Attack"
+  ENG_operation_compass:0 "Operation Compass"
+  ENG_operation_crusader:0 "Operation Crusader"
+  ENG_operation_torch:0 "Operation Torch"
 
   #### TOOLTIP ####
   ENG_home_guard_30w_tt:0 "Create the Home Guard, Spawning §Y28 30 Width Garrison Divisions§! across the UK.\n§RIf we don't control all the states we won't get all 28 divisions§!"
@@ -310,6 +316,7 @@
   Royal_Commandos_increase_double_tt:0 "Increase template cap of §YRoyal Commandos§! by §G+2§!."
   ENG_iran_spawn_in_tt:0 "Mobilizes §R10 Units§! of §R20 Width Colonial Infantry§! in §GBaluchistan§!\n"
   SOV_iran_spawn_in_tt:0 "Mobilizes §R10 20 Width Units§! of the §R1st Iranian Front§! in §GAzerbaijan§!\n"
+  OPERATION_TORCH_ONGING:0 "Operation Torch Ongoing"
 
   #### FLAGS ####
   ENG_seize_col:0 "Has Seized Portugese Colonies"

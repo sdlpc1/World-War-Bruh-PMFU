@@ -32,8 +32,8 @@ characters={
 			legacy_id=-1
 		}
 	}
-	SIA_greg={
-		name="Greg"
+	SIA_phra_silpasakrakorn={
+		name="Phra Silpasakrakorn"
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_asia_generic_land_5.dds"
@@ -69,6 +69,26 @@ characters={
 			defense_skill=2
 			planning_skill=1
 			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	SIA_luang_sinthusongkhramchai={
+		name="Luang Sinthusongkhramchai"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_asia_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader jungle_rat brilliant_strategist }
+			skill=4	
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4	
 			legacy_id=-1
 		}
 	}

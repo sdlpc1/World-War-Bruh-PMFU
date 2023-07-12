@@ -7576,6 +7576,11 @@ spriteTypes = {
 		name = "GFX_heavy_antitank2_medium"
 		texturefile = "gfx/interface/technologies/allies_heavy_at_2.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_heavy_cannon_3_medium"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_gun_3.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_interwar_antiair_medium"

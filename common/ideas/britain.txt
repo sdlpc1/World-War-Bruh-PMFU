@@ -16,6 +16,56 @@ ideas = {
 	}
 
 	country = {
+		ENG_compass = {
+
+			picture =  eng_the_sun_never_sets
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		ENG_crusader = {
+
+			picture =  eng_the_sun_never_sets
+
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				any_state = {
+					europe_dday_coastline = yes
+					OR = { 
+						is_controlled_by = ENG
+						is_controlled_by = USA
+						is_controlled_by = FRA
+						is_controlled_by = SAF
+						is_controlled_by = CAN
+						is_controlled_by = AST
+						is_controlled_by = RAJ
+						is_controlled_by = NZL
+						is_controlled_by = MEX
+						is_controlled_by = BRA
+						is_controlled_by = HOL
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+		}
 		ENG_tallboys = {
 
 			picture = generic_air_research

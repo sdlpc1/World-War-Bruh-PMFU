@@ -166,6 +166,8 @@
  tank_heavy_gun_1_desc:0 "§3Basic§! §RHeavy§! Armament"
  tank_heavy_gun_2:0 "Heavy Cannon II - ~120mm"
  tank_heavy_gun_2_desc:0 "§6Advanced§! §RHeavy§! Armament"
+ tank_heavy_gun_3:0 "Heavy Cannon III - ~150mm"
+ tank_heavy_gun_3_desc:0 "§6Advanced§! §RHeavy§! Armament"
  #tank_heavy_gun_naval:0 "Converted Naval Cannon"
  #tank_heavy_gun_naval_desc:0 "Converted Naval Cannon"
  tank_heavy_hv_gun_1:0 "Heavy HV Cannon I - ~90mm Long Barrel"

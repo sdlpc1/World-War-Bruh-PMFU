@@ -5209,13 +5209,13 @@ guiTypes = {
 				format = "UP"
 			}
 
-			gridboxtype = {
-				name = "Juggle2_tree"
-				position = { x = 974 y = 172 }
-				size = { width = 72 height = 650 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
+			# gridboxtype = {
+			# 	name = "Juggle2_tree"
+			# 	position = { x = 974 y = 172 }
+			# 	size = { width = 72 height = 650 }
+			# 	slotsize = { width = 70 height = 70 }
+			# 	format = "UP"
+			# }
 
 			# END JUGGLE
 			
