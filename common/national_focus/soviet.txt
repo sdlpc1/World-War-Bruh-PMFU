@@ -1668,6 +1668,11 @@ focus_tree = {
 				}
 				add_timed_idea = { idea = SOV_winter_offensive days = 60 }
 			}
+			hidden_effect = {
+				every_country = {
+					news_event = generic.36
+				}
+			}
 		}
 	}
 
@@ -1700,6 +1705,11 @@ focus_tree = {
 				}
 				add_timed_idea = { idea = SOV_uranus days = 60 }
 			}
+			hidden_effect = {
+				every_country = {
+					news_event = generic.37
+				}
+			}
 		}
 	}
 
@@ -1727,6 +1737,11 @@ focus_tree = {
 					is_in_faction_with = SOV
 				}
 				add_timed_idea= { idea= SOV_bagration days = 60 }
+			}
+			hidden_effect = {
+				every_country = {
+					news_event = generic.38
+				}
 			}
 		}
 	}

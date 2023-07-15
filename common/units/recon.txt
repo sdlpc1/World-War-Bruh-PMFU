@@ -384,9 +384,9 @@ sub_units = {
 			movement = 0.10
 		}
 		desert = {
-			movement = 0.10
+			movement = 0.075
 			attack = 0.10
-			# defence = 0.10
+			defence = 0.025
 		}
 		river = {
 			movement = 0.10

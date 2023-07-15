@@ -706,6 +706,10 @@ equipments = {
 				}
 			}
 		}
+		upgrades = {			
+			tank_nsb_med_armor_1_upgrade
+			tank_nsb_med_engine_1_upgrade
+		}
 		maximum_speed = 6.0
 		build_cost_ic = 20
 		reliability = 0.8
@@ -742,6 +746,10 @@ equipments = {
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
 			special_type_slot_4 = inherit
+		}
+		upgrades = {			
+			tank_nsb_med_armor_1_upgrade
+			tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 6
 		build_cost_ic = 32

@@ -49,7 +49,7 @@ buildings = {
 		value = 28
 		infrastructure_construction_effect = yes
 		allied_build = yes
-		damage_factor = 0.35
+		damage_factor = 0.25
 	}
 
 	supply_node = {

@@ -22,7 +22,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 0 y = 1000 }
+	continuous_focus_position = { x = 1950 y = 700 }
 	
 	default = no
 
@@ -474,6 +474,21 @@ focus_tree = {
 				add_idea = GER_expand_mefo_fast
 				remove_idea = GER_expand_mefo
 			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 3
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -497,6 +512,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_expand_mefo_fast_2
+				remove_idea = GER_expand_mefo_fast
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -550,6 +569,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_expand_mefo_fast_3
+				remove_idea = GER_expand_mefo_fast_2
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3275,6 +3298,11 @@ focus_tree = {
 				}
 				add_timed_idea = { idea = GER_blau days = 60 }
 			}
+			hidden_effect = {
+				every_country = {
+					news_event = generic.34
+				}
+			}
 		}
 	}
 
@@ -3302,6 +3330,11 @@ focus_tree = {
 					is_in_faction_with = GER
 				}
 				add_timed_idea = { idea = GER_citadel days = 60 }
+			}
+			hidden_effect = {
+				every_country = {
+					news_event = generic.35
+				}
 			}
 		}
 	}
@@ -4201,24 +4234,6 @@ focus_tree = {
 						country_event = { hours = 6 id = news.61 }
 					}
 				}
-			}
-			if = {
-				limit = { 
-					OR = {
-						CZE = {
-							is_subject_of = HUN
-						}
-						HUN = {
-							owns_state = 9#Prague - AH annexed CZE
-						}
-					}
-				}
-				add_state_claim = 9
-				add_state_claim = 75
-			}
-			if = {
-				limit = { NOT = { country_exists = CZE } }
-				country_event = { id = germany.55 hours = 6 }
 			}
 			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
 			hidden_effect = {
@@ -6468,7 +6483,7 @@ focus_tree = {
 		}
 	}
 
-####################### NAVY ##############
+####################### NAVY TFB ##############
 	
 	focus = {
 		id = GER_naval_rearmament
@@ -6808,6 +6823,1834 @@ focus_tree = {
 			add_ideas = GER_modular_construction
 		}
 	}
+
+	####################### NAVY PACMAN ##############
+	
+	# focus = {
+	# 	id = GER_fullscale_krigsmarine_rearmament
+	# 	icon = GFX_goal_generic_build_navy
+	# 	x = 55
+	# 	y = 0
+	# 	cost = 10
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	available = {
+    #         owns_state = 61
+
+    #     }
+
+	# 	completion_reward = {
+	# 		navy_experience = 25
+	# 		61 = {
+	# 			add_extra_state_shared_building_slots = 8
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 8
+	# 				instant_build = yes
+	# 			}
+	# 		}
+
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_further_naval_rearmament
+	# 	icon = GFX_goal_generic_construct_naval_dockyard
+	# 	prerequisite = { focus = GER_fullscale_krigsmarine_rearmament }
+	# 	relative_position_id = GER_fullscale_krigsmarine_rearmament
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	available = {
+    #         owns_state = 58
+
+    #     }
+
+	# 	completion_reward = {
+	# 		58 = {
+	# 			add_extra_state_shared_building_slots = 4
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 4
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_naval_development_in_denmark
+	# 	icon = GFX_goal_generic_construct_naval_dockyard
+	# 	prerequisite = { focus = GER_further_naval_rearmament }
+	# 	relative_position_id = GER_further_naval_rearmament
+	# 	x = 2
+	# 	y = 0
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = no
+	# 	available = {
+    #         owns_state = 99
+	# 		owns_state = 37
+    #     }
+
+	# 	completion_reward = {
+	# 		99 = {
+	# 			add_extra_state_shared_building_slots = 4
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 4
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_naval_development_in_norway
+	# 	icon = GFX_goal_generic_construct_naval_dockyard
+	# 	prerequisite = { focus = GER_further_naval_rearmament }
+	# 	relative_position_id = GER_further_naval_rearmament
+	# 	x = 4
+	# 	y = 0
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = no
+	# 	available = {
+    #         owns_state = 142
+	# 		owns_state = 110
+	# 		owns_state = 143
+	# 		owns_state = 144
+
+    #     }
+
+	# 	completion_reward = {
+	# 		142 = {
+	# 			add_extra_state_shared_building_slots = 4
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 4
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = GER_krigsmarine_takes_controll
+	# 	icon = GFX_goal_generic_political_pressure
+	# 	prerequisite = { focus = GER_further_naval_rearmament }
+	# 	relative_position_id = GER_further_naval_rearmament
+	# 	# mutually_exclusive = { focus = GER_heer }
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	
+	# 		add_timed_idea = { idea = GER_krigsmarine_takover days = 365 }
+	# 		add_ideas = GER_steel_for_ships
+	# 		hidden_effect = {
+	# 			create_equipment_variant = {
+	# 			name = "Name Class"
+	# 			type = ship_hull_cruiser_2
+	# 			name_group = GER_BB_HISTORICAL
+	# 			parent_version = 0
+	# 			modules = {
+	# 				fixed_ship_battery_slot = ship_medium_battery_2
+	# 				fixed_ship_anti_air_slot = ship_anti_air_2
+	# 				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+	# 				fixed_ship_radar_slot = empty
+	# 				fixed_ship_engine_slot = cruiser_ship_engine_2
+	# 				fixed_ship_secondaries_slot = ship_anti_air_2
+	# 				fixed_ship_armor_slot = ship_armor_cruiser_2
+	# 				front_1_custom_slot = ship_anti_air_2
+	# 				mid_1_custom_slot = ship_anti_air_2
+	# 				rear_1_custom_slot = ship_anti_air_2
+	# 			}
+	# 		}
+	# 		}
+			
+	# 		add_equipment_production = {
+	# 			equipment = {
+	# 				type = ship_hull_cruiser_2
+	# 				creator = "GER" 
+	# 				version_name = "Name Class"
+	# 			}
+	# 			name = "Name" 
+	# 			requested_factories = 1
+	# 			progress = 0.50
+	# 			amount = 1
+	# 		}
+	# 		add_equipment_production = {
+	# 			equipment = {
+	# 				type = ship_hull_cruiser_2
+	# 				creator = "GER" 
+	# 				version_name = "Name Class"
+	# 			}
+	# 			name = "Name" 
+	# 			requested_factories = 1
+	# 			progress = 0.50
+	# 			amount = 1
+	# 		}
+	# 		add_equipment_production = {
+	# 			equipment = {
+	# 				type = ship_hull_cruiser_2
+	# 				creator = "GER" 
+	# 				version_name = "Name Class"
+	# 			}
+	# 			name = "Name" 
+	# 			requested_factories = 1
+	# 			progress = 0.50
+	# 			amount = 1
+	# 		}
+	# 		add_equipment_production = {
+	# 			equipment = {
+	# 				type = ship_hull_cruiser_2
+	# 				creator = "GER" 
+	# 				version_name = "Name Class"
+	# 			}
+	# 			name = "Name" 
+	# 			requested_factories = 1
+	# 			progress = 0.50
+	# 			amount = 1
+	# 		}
+	# 		add_equipment_production = {
+	# 			equipment = {
+	# 				type = ship_hull_cruiser_2
+	# 				creator = "GER" 
+	# 				version_name = "Name Class"
+	# 			}
+	# 			name = "Name" 
+	# 			requested_factories = 1
+	# 			progress = 0.50
+	# 			amount = 1
+	# 		}
+	# 		add_equipment_production = {
+	# 			equipment = {
+	# 				type = ship_hull_cruiser_2
+	# 				creator = "GER" 
+	# 				version_name = "Name Class"
+	# 			}
+	# 			name = "Name" 
+	# 			requested_factories = 1
+	# 			progress = 0.50
+	# 			amount = 1
+	# 		}
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_our_time_in_the_sun
+	# 	icon = GFX_focus_AST_never_gallipoli
+	# 	prerequisite = { focus = GER_further_naval_rearmament }
+	# 	relative_position_id = GER_further_naval_rearmament
+	# 	x = 6
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_ideas =  GER_germania_rules_the_waves
+	# 			62 = {
+	# 			add_extra_state_shared_building_slots = 4
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 4
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_terror_of_the_atlantic
+	# 	icon = GFX_goal_generic_navy_submarine
+	# 	prerequisite = { focus = GER_further_naval_rearmament }
+	# 	relative_position_id = GER_further_naval_rearmament
+	# 	x = -5
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		navy_experience = 25
+	# 		add_tech_bonus = {
+	# 			name = GER_u_boat_effort
+	# 			bonus = 0.5
+	# 			uses = 2
+	# 			category = ss_tech
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_go_with_donitz
+	# 	icon = GFX_focus_generic_military_mission
+	# 	prerequisite = { focus = GER_krigsmarine_takes_controll }
+	# 	relative_position_id = GER_krigsmarine_takes_controll
+	# 	mutually_exclusive = { focus = GER_go_with_raeder }
+	# 	x = -1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		create_country_leader = {
+	# 			name = "Karl dönitz"
+	# 			desc = "POLITICS_ADOLF_HITLER_DESC"
+	# 			picture = "Portrait_Germany_Karl_Donitz.dds"
+	# 			expire = "1965.1.1"
+	# 			ideology = nazism
+	# 			traits = {
+	# 				naval_genius
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_go_with_raeder
+	# 	icon = GFX_focus_generic_military_mission
+	# 	prerequisite = { focus = GER_krigsmarine_takes_controll }
+	# 	relative_position_id = GER_krigsmarine_takes_controll
+	# 	mutually_exclusive = { focus = GER_go_with_donitz }
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		create_country_leader = {
+	# 			name = "Erich Raeder"
+	# 			desc = "POLITICS_ADOLF_HITLER_DESC"
+	# 			picture = "Portrait_Germany_Erich_Raeder.dds"
+	# 			expire = "1965.1.1"
+	# 			ideology = nazism
+	# 			traits = {
+	# 				naval_genius2
+	# 			}
+	# 		}
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_a_new_way_to_wage_war
+	# 	icon = GFX_goal_generic_amphibious_assault
+	# 	prerequisite = { focus = GER_go_with_raeder focus = GER_go_with_donitz }
+	# 	relative_position_id = GER_go_with_donitz
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		63 = {
+	# 			add_extra_state_shared_building_slots = 4
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 4
+	# 				instant_build = yes
+	# 			}
+	# 		}
+
+	# 		add_tech_bonus = {
+	# 			name = GER_a_new_way_to_wage_war
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			technology = marines2
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = GER_a_new_way_to_wage_war
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			technology = marines3
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = GER_a_new_way_to_wage_war
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			technology = tech_special_forces
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = GER_a_new_way_to_wage_war
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			technology = improved_special_forces
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_equp_panzerfausts
+	# 	icon = GFX_goal_generic_small_arms
+	# 	prerequisite = { focus = GER_a_new_way_to_wage_war }
+	# 	relative_position_id = GER_a_new_way_to_wage_war
+	# 	x = -1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		set_technology = {
+	# 			panzerfaust = 1
+	# 		}
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_form_the_new_wermacht
+	# 	icon = GFX_goal_generic_axis_build_infantry
+	# 	prerequisite = { focus = GER_equp_panzerfausts}
+	# 	relative_position_id = GER_equp_panzerfausts
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		set_technology = {
+	# 			panzer_jaegers_tech = 1
+	# 		}
+	# 		hidden_effect = {
+	# 			load_oob = GER_elite_panzer_jaegers
+	# 		}
+	# 		custom_effect_tooltip = GER_elite_panzer_jaegers_tt
+	# 		create_corps_commander = {
+	# 			name = "Epic gamer man"
+	# 			gfx = GFX_portrait_Germany_Erich_Raeder.dds
+	# 			skill = 4
+	# 			attack_skill = 4
+	# 			defense_skill = 2
+	# 			planning_skill = 3
+	# 			logistics_skill = 4
+	# 			traits = { naval_invader }
+	# 		}
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_uppadated_equipment
+	# 	icon = GFX_goal_generic_army_tanks
+	# 	prerequisite = { focus = GER_a_new_way_to_wage_war }
+	# 	relative_position_id = GER_a_new_way_to_wage_war
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = GER_a_new_way_to_wage_war
+	# 			bonus = 0.75
+	# 			ahead_reduction = 1
+	# 			uses = 1
+	# 			technology= amphibious_tank
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = GER_a_new_way_to_wage_war
+	# 			bonus = 0.75
+	# 			ahead_reduction = 1
+	# 			uses = 1
+	# 			technology= amphibious_tank_2
+	# 		}
+			
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_form_new_tank_divisions
+	# 	icon = GFX_goal_generic_build_navy
+	# 	prerequisite = { focus = GER_uppadated_equipment }
+	# 	relative_position_id = GER_uppadated_equipment
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+
+	# 		hidden_effect = {
+	# 			load_oob = GER_elite_amtanks
+	# 		}
+	# 		custom_effect_tooltip = GER_elite_amtanks_tt
+	# 	}
+		
+	# }
+	# focus = {
+	# 	id = GER_deal_with_russia
+	# 	icon = GFX_goal_anti_comintern_pact
+	# 	prerequisite = { focus = GER_form_the_new_wermacht}
+	# 	prerequisite = { focus = GER_form_new_tank_divisions }
+	# 	relative_position_id = GER_form_the_new_wermacht
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 5
+	# 	available = {
+	# 		is_puppet = no
+	# 		surrender_progress > 0.15
+	# 		casualties > 500000
+	# 	}
+	# 	cancel = {
+	# 		OR = {
+	# 			is_subject = yes
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_timed_idea = { idea = GER_offensive_in_russia days = 140 }
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = GER_new_battleships
+	# 	icon = GFX_goal_generic_navy_battleship
+	# 	prerequisite = { focus = GER_our_time_in_the_sun }
+	# 	relative_position_id = GER_our_time_in_the_sun
+	# 	x = -2
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = GER_new_battleships
+	# 			bonus = 0.5
+	# 			ahead_reduction = 1
+	# 			uses = 1
+	# 			category = bb_tech
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = GER_new_battleships
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			category = shbb_tech
+	# 		}
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_approach_japan
+	# 	icon = GFX_goal_indyclone_befriend_japan
+	# 	prerequisite = { focus = GER_our_time_in_the_sun }
+	# 	relative_position_id = GER_our_time_in_the_sun
+	# 	x = 2
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		custom_effect_tooltip = available_high_command
+	# 		show_ideas_tooltip = nishizo_tsukahara
+
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_the_bismarck
+	# 	icon = GFX_focus_generic_navy_battleship2
+	# 	prerequisite = { focus = GER_new_battleships }
+	# 	relative_position_id = GER_new_battleships
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+
+	# 		create_equipment_variant = {
+	# 			name = "Bismarck Class"
+	# 			type = ship_hull_heavy_2
+	# 			name_group = GER_BB_HISTORICAL
+	# 			parent_version = 0
+	# 			modules = {
+	# 				fixed_ship_battery_slot = ship_heavy_battery_triple_3
+	# 				fixed_ship_anti_air_slot = ship_anti_air_2
+	# 				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+	# 				fixed_ship_radar_slot = empty
+	# 				fixed_ship_engine_slot = heavy_ship_engine_2
+	# 				fixed_ship_secondaries_slot = ship_anti_air_2
+	# 				fixed_ship_armor_slot = ship_armor_bb_light_3
+	# 				front_1_custom_slot = ship_heavy_battery_triple_3
+	# 				front_2_custom_slot = ship_anti_air_2
+	# 				mid_1_custom_slot = ship_airplane_launcher_1
+	# 				mid_2_custom_slot = ship_airplane_launcher_1
+	# 				mid_3_custom_slot = ship_airplane_launcher_1
+	# 				rear_1_custom_slot = ship_heavy_battery_triple_3
+	# 			}
+	# 		}
+	# 		add_equipment_production = {
+	# 			equipment = {
+	# 				type = ship_hull_heavy_2
+	# 				creator = "GER" 
+	# 				version_name = "Bismarck Class"
+	# 			}
+	# 			name = "Bismarck" 
+	# 			requested_factories = 1
+	# 			progress = 0.90
+	# 			amount = 1
+	# 		}
+
+	# 	}
+		
+
+	# }
+	# focus = {
+	# 	id = GER_the_tirpitz
+	# 	icon = GFX_focus_generic_navy_battleship2
+	# 	prerequisite = { focus = GER_new_battleships }
+	# 	relative_position_id = GER_new_battleships
+	# 	x = -1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		create_equipment_variant = {
+	# 			name = "Tirpitz Class"
+	# 			type = ship_hull_heavy_2
+	# 			name_group = GER_BB_HISTORICAL
+	# 			parent_version = 0
+	# 			modules = {
+	# 				fixed_ship_battery_slot = ship_heavy_battery_triple_3
+	# 				fixed_ship_anti_air_slot = ship_anti_air_2
+	# 				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+	# 				fixed_ship_radar_slot = empty
+	# 				fixed_ship_engine_slot = heavy_ship_engine_2
+	# 				fixed_ship_secondaries_slot = ship_anti_air_2
+	# 				fixed_ship_armor_slot = ship_armor_bb_light_3
+	# 				front_1_custom_slot = ship_heavy_battery_triple_3
+	# 				front_2_custom_slot = ship_anti_air_2
+	# 				mid_1_custom_slot = ship_anti_air_2
+	# 				mid_2_custom_slot = ship_anti_air_2
+	# 				mid_3_custom_slot = ship_anti_air_2
+	# 				rear_1_custom_slot = ship_heavy_battery_triple_3
+	# 			}
+	# 		}
+	# 		add_equipment_production = {
+	# 			equipment = {
+	# 				type = ship_hull_heavy_2
+	# 				creator = "GER" 
+	# 				version_name = "Tirpitz Class"
+	# 			}
+	# 			name = "Tirpitz" 
+	# 			requested_factories = 1
+	# 			progress = 0.90
+	# 			amount = 1
+	# 		}
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_uppgraded_ships
+	# 	icon = GFX_focus_generic_cryptologic_bomb
+	# 	prerequisite = { focus = GER_the_tirpitz }
+	# 	prerequisite = { focus = GER_the_bismarck }
+	# 	relative_position_id = GER_the_tirpitz
+	# 	x = 2
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = cv_bonus
+	# 			bonus = 0.50
+	# 			uses = 3
+	# 			technology = improved_medium_battery
+	# 			technology = advanced_medium_battery
+	# 			technology = improved_heavy_battery
+	# 			technology = advanced_heavy_battery
+	# 			technology = modern_heavy_battery
+	# 		}
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_new_doctrine
+	# 	icon = GFX_goal_generic_navy_doctrines_tactics
+	# 	prerequisite = { focus = GER_the_tirpitz }
+	# 	prerequisite = { focus = GER_the_bismarck }
+	# 	relative_position_id = GER_the_tirpitz
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = GER_new_doctrine
+	# 			bonus = 1
+	# 			uses = 3
+	# 			category = cat_fleet_in_being
+	# 		}
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_rule_the_seas
+	# 	icon = GFX_goal_generic_occupy_states_coastal
+	# 	prerequisite = { focus = GER_uppgraded_ships focus = GER_new_doctrine }
+	# 	relative_position_id = GER_new_doctrine
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_ideas = GER_masters_of_the_sea
+	# 		63 = {
+	# 			add_extra_state_shared_building_slots = 4
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 4
+	# 				instant_build = yes
+	# 			}
+	# 		}
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_japanese_doctrine 
+	# 	icon = GFX_JAP_navy
+	# 	prerequisite = { focus = GER_approach_japan }
+	# 	relative_position_id = GER_approach_japan
+	# 	mutually_exclusive = {focus = GER_new_ships}
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = GER_japanese_doctrine
+	# 			bonus = 1
+	# 			uses = 3
+	# 			category = cat_base_strike
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_new_ships 
+	# 	icon = GFX_goal_generic_navy_carrier
+	# 	prerequisite = { focus = GER_approach_japan }
+	# 	relative_position_id = GER_approach_japan
+	# 	mutually_exclusive = {focus = GER_japanese_doctrine}
+	# 	x = -1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name =  GER_new_ships
+	# 			bonus = 0.5
+	# 			ahead_reduction = 1
+	# 			uses = 1
+	# 			category = cv_tech
+	# 		}
+
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_blitzkrieg_of_the_seas
+	# 	icon = GFX_goal_generic_air_naval_bomber
+	# 	prerequisite = { focus = GER_new_ships focus = GER_japanese_doctrine }
+	# 	relative_position_id = GER_new_ships
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_ideas = GER_sea_blitz
+	# 	}
+	# }
+	
+	# focus = {
+	# 	id = GER_u_boat_effort_pcmn
+	# 	icon = GFX_goal_generic_navy_submarine
+	# 	prerequisite = { focus = GER_terror_of_the_atlantic }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = GER_terror_of_the_atlantic
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+
+	# 	available_if_capitulated = yes
+
+	# 	complete_tooltip = {
+	# 		navy_experience = 25
+	# 		every_state = {
+	# 			limit = { has_state_flag = GER_u_boat_effort_2dockyards }
+	# 			add_extra_state_shared_building_slots = 4
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 4
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = GER_u_boat_effort
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			category = ss_tech
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_dlc = "Man the Guns"
+	# 			}
+	# 			set_technology = { cruiser_submarines = 1 }
+	# 		}
+	# 	}
+		
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				dockyard > 0
+	# 				free_building_slots = {
+	# 					building = dockyard
+	# 					size > 1
+	# 					include_locked = yes
+	# 				}
+	# 			}
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			set_state_flag = GER_u_boat_effort_2dockyards
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_dlc = "Man the Guns"
+	# 			}
+	# 			set_technology = { cruiser_submarines = 1 }
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_trade_interdiction_pcmn
+	# 	icon = GFX_goal_generic_wolf_pack
+	# 	prerequisite = { focus = GER_u_boat_effort_pcmn }
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = GER_u_boat_effort_pcmn
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+			
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = ti_bonus
+	# 			name = GER_trade_interdiction
+	# 			bonus = 0.5
+	# 			uses = 2
+	# 			category = trade_interdiction_tree
+	# 		}
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = GER_modular_construction_pcmn
+	# 	icon = GFX_goal_generic_production
+	# 	prerequisite = { focus = GER_u_boat_effort_pcmn }
+	# 	x = -1
+	# 	y = 1
+	# 	relative_position_id = GER_u_boat_effort_pcmn
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+			
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_ideas = GER_modular_construction
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_block_the_atlantic_gap_pcmn
+	# 	icon = GFX_focus_generic_cryptologic_bomb
+	# 	prerequisite = { focus = GER_modular_construction_pcmn focus = GER_trade_interdiction_pcmn }
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = GER_modular_construction_pcmn
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+			
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = GER_block_the_atlantic_gap
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			technology = improved_ship_torpedo_launcher
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = GER_block_the_atlantic_gap
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			technology = advanced_ship_torpedo_launcher
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = GER_block_the_atlantic_gap
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			technology = magnetic_detonator
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = GER_block_the_atlantic_gap
+	# 			bonus = 0.5
+	# 			uses = 1
+	# 			technology = electric_torpedo
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_the_black_pit_pcmn
+	# 	icon = GFX_goal_generic_wolf_pack
+	# 	prerequisite = { focus = GER_block_the_atlantic_gap_pcmn}
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = GER_block_the_atlantic_gap_pcmn
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+			
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		add_ideas = GER_blockade
+	# 	}
+	# }
+
+	# # ### NAVY LW ###
+	# focus = {
+	# 	id = GER_naval_rearmament
+	# 	icon = GFX_focus_GER_naval_rearm
+	# 	x = 55
+	# 	y = 10
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	bypass = {
+	# 		custom_trigger_tooltip =  {
+	# 			tooltip = naval_effort_tt
+	# 			NOT = {
+	# 				any_owned_state = {
+	# 					free_building_slots = {
+	# 						building = dockyard
+	# 						size > 1
+	# 						include_locked = yes
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	complete_tooltip = {
+	# 		every_state = {
+	# 			limit = {	has_state_flag = GER_naval_rearmament_2dockyards }
+	# 			add_extra_state_shared_building_slots = 3
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 3
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		every_state = {
+	# 			limit = {	has_state_flag = GER_naval_rearmament_1dockyard }
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				dockyard > 0
+	# 				free_building_slots = {
+	# 					building = dockyard
+	# 					size > 1
+	# 					include_locked = yes
+	# 				}
+	# 			}
+	# 			add_extra_state_shared_building_slots = 3
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 3
+	# 				instant_build = yes
+	# 			}
+	# 			set_state_flag = GER_naval_rearmament_2dockyards
+	# 		}
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				dockyard > 0
+	# 				free_building_slots = {
+	# 					building = dockyard
+	# 					size > 0
+	# 					include_locked = yes
+	# 				}
+	# 			}
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			set_state_flag = GER_naval_rearmament_1dockyard
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_naval_effort
+	# 	text = naval_effort
+	# 	icon = GFX_goal_generic_navy_doctrines_tactics
+	# 	prerequisite = { focus = GER_naval_rearmament }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = GER_naval_rearmament
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	complete_tooltip = {
+	# 		navy_experience = 25
+	# 		every_state = {
+	# 			limit = { has_state_flag = GER_naval_effort_2dockyards }
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = dd_bonus
+	# 			bonus = 1.0
+	# 			uses = 1
+	# 			category = dd_tech
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = cr_bonus
+	# 			bonus = 1.0
+	# 			uses = 1
+	# 			category = cl_tech
+	# 			category = ca_tech
+	# 		}
+	# 	}
+	# 	completion_reward = {
+	# 		navy_experience = 25
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				dockyard > 0
+	# 				free_building_slots = {
+	# 					building = dockyard
+	# 					size > 2
+	# 					include_locked = yes
+	# 				}
+	# 			}
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			set_state_flag = GER_naval_effort_2dockyards
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = radar_tech_bonus
+	# 			bonus = 1.0
+	# 			uses = 3
+	# 			category = radar_tech
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = dd_bonus
+	# 			bonus = 1.0
+	# 			uses = 1
+	# 			category = dd_tech
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = cr_bonus
+	# 			bonus = 1.0
+	# 			uses = 1
+	# 			category = cl_tech
+	# 			category = ca_tech
+	# 		}
+	# 		add_tech_bonus = {
+	# 			name = ti_bonus
+	# 			name = GER_all_options
+	# 			bonus = 100
+	# 			uses = 2
+	# 			category = naval_doctrine
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_all_options
+	# 	icon = GFX_focus_GER_all_options
+	# 	prerequisite = { focus = GER_naval_effort }
+	# 	mutually_exclusive = { focus = GER_u_boat_effort focus = GER_plan_z }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = GER_naval_effort
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available={date>1940.1.1
+	# 	OR = {has_idea=blohm_und_voss has_idea=germaniawerft}}
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
+	# 		add_ideas = GER_all_options
+	# 		add_tech_bonus = {
+	# 			name = ti_bonus
+	# 			name = GER_all_options
+	# 			bonus = 100
+	# 			uses = 2
+	# 			category = naval_doctrine
+	# 		}
+	# 		set_technology = {
+	# 			improved_ship_hull_cruiser = 1
+	# 		}
+	# 		create_equipment_variant = {
+	# 			name = "Hindenburg-Klasse"
+	# 			type = ship_hull_cruiser_3
+	# 			name_group = GER_BB_HISTORICAL
+	# 			parent_version = 0
+	# 			modules = {
+	# 				fixed_ship_battery_slot=ship_light_medium_battery_3
+	# 				fixed_ship_anti_air_slot=ship_anti_air_2
+	# 				fixed_ship_fire_control_system_slot=ship_fire_control_system_2
+	# 				fixed_ship_engine_slot=cruiser_ship_engine_3
+	# 				fixed_ship_secondaries_slot=ship_secondaries_2
+	# 				fixed_ship_armor_slot=ship_armor_cruiser_3
+	# 				front_1_custom_slot=ship_light_medium_battery_3
+	# 				mid_1_custom_slot=ship_light_medium_battery_3
+	# 				mid_2_custom_slot=ship_light_medium_battery_3
+	# 				rear_1_custom_slot=ship_airplane_launcher_2
+	# 				rear_2_custom_slot=ship_light_medium_battery_3
+	# 			}
+	# 		}
+	# 		custom_effect_tooltip="Adds two Hindenburg-Klasse Light Cruisers to the production queue, at 85% and 90% complete, respectively."
+	# 		hidden_effect = {
+	# 			add_equipment_production = {
+	# 				equipment = {
+	# 					type = ship_hull_cruiser_3
+	# 					creator = "GER"
+	# 					version_name = "Hindenburg-Klasse"
+	# 				}
+	# 				name = "Hindenburg"
+	# 				requested_factories = 1
+	# 				progress = 0.9
+	# 				amount = 1
+	# 			}
+	# 			add_equipment_production = {
+	# 				equipment = {
+	# 					type = ship_hull_cruiser_3
+	# 					creator = "GER"
+	# 					version_name = "Hindenburg-Klasse"
+	# 				}
+	# 				name = "Roon"
+	# 				requested_factories = 1
+	# 				progress = 0.85
+	# 				amount = 1
+	# 			}
+	# 		}
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				dockyard > 0
+	# 				free_building_slots = {
+	# 					building = dockyard
+	# 					size > 2
+	# 					include_locked = yes
+	# 				}
+	# 				NOT = { has_state_flag = GER_naval_effort2_2dockyards }
+	# 			}
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			set_state_flag = GER_naval_effort2_2dockyards
+	# 		}
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				dockyard > 0
+	# 				free_building_slots = {
+	# 					building = dockyard
+	# 					size > 2
+	# 					include_locked = yes
+	# 				}
+	# 				NOT = { has_state_flag = GER_naval_effort2_2dockyards }
+	# 			}
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			set_state_flag = GER_naval_effort2_2dockyards
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_plan_z
+	# 	icon = GFX_focus_GER_plan_z
+	# 	prerequisite = { focus = GER_naval_effort }
+	# 	mutually_exclusive = { focus = GER_u_boat_effort focus = GER_all_options }
+	# 	x = -3
+	# 	y = 1
+	# 	relative_position_id = GER_naval_effort
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 0.25
+	# 	}
+	# 	available={date>1940.1.1
+	# 	OR = {has_idea=blohm_und_voss has_idea=germaniawerft}}
+	# 	available_if_capitulated = yes
+	# 	complete_tooltip = {
+	# 	}
+	# 	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
+	# 		navy_experience = 50
+	# 		add_tech_bonus = {
+	# 			name = ti_bonus
+	# 			name = GER_all_options
+	# 			bonus = 100
+	# 			uses = 2
+	# 			category = naval_doctrine
+	# 		}
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				dockyard > 0
+	# 				free_building_slots = {
+	# 					building = dockyard
+	# 					size > 1
+	# 					include_locked = yes
+	# 				}
+	# 			}
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			set_state_flag = GER_plan_z_dockyards
+	# 		}
+	# 		set_technology = {
+	# 			improved_ship_hull_heavy = 1
+	# 		}
+	# 		create_equipment_variant = {
+	# 			name = "Bismarck-Klasse"
+	# 			type = ship_hull_heavy_3
+	# 			name_group = GER_BB_HISTORICAL
+	# 			parent_version = 0
+	# 			modules = {
+	# 				fixed_ship_battery_slot = ship_heavy_battery_3
+	# 				fixed_ship_anti_air_slot = ship_anti_air_3
+	# 				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+	# 				fixed_ship_radar_slot = empty
+	# 				fixed_ship_engine_slot = heavy_ship_engine_3
+	# 				fixed_ship_secondaries_slot = ship_secondaries_2
+	# 				fixed_ship_armor_slot = ship_armor_bb_3
+	# 				front_1_custom_slot = ship_heavy_battery_3
+	# 				mid_1_custom_slot = ship_anti_air_3
+	# 				mid_2_custom_slot = ship_anti_air_3
+	# 				mid_3_custom_slot = ship_heavy_battery_3
+	# 				rear_1_custom_slot = ship_heavy_battery_3
+	# 			}
+	# 		}
+	# 		custom_effect_tooltip="Adds two Bismarck-Klasse Battleships to the production queue, at 85% and 90% complete, respectively."
+	# 		hidden_effect = {
+	# 			add_equipment_production = {
+	# 				equipment = {
+	# 					type = ship_hull_heavy_3
+	# 					creator = "GER"
+	# 					version_name = "Bismarck-Klasse"
+	# 				}
+	# 				name = "Bismarck"
+	# 				requested_factories = 1
+	# 				progress = 0.9
+	# 				amount = 1
+	# 			}
+	# 			add_equipment_production = {
+	# 				equipment = {
+	# 					type = ship_hull_heavy_3
+	# 					creator = "GER"
+	# 					version_name = "Bismarck-Klasse"
+	# 				}
+	# 				name = "Tirpitz"
+	# 				requested_factories = 1
+	# 				progress = 0.85
+	# 				amount = 1
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_u_boat_effort
+	# 	icon = GFX_focus_GER_sub_plan
+	# 	prerequisite = { focus = GER_naval_effort }
+	# 	mutually_exclusive = { focus = GER_plan_z focus = GER_all_options}
+	# 	available={date>1940.1.1
+	# 	OR = {has_idea=blohm_und_voss has_idea=germaniawerft}}
+	# 	x = 3
+	# 	y = 1
+	# 	relative_position_id = GER_naval_effort
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+		
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = ti_bonus
+	# 			name = GER_all_options
+	# 			bonus = 100
+	# 			uses = 2
+	# 			category = naval_doctrine
+	# 		}
+	# 		navy_experience = 25
+	# 		random_owned_controlled_state = {
+	# 			limit = {
+	# 				dockyard > 0
+	# 				free_building_slots = {
+	# 					building = dockyard
+	# 					size > 3
+	# 					include_locked = yes
+	# 				}
+	# 			}
+	# 			add_extra_state_shared_building_slots = 4
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 4
+	# 				instant_build = yes
+	# 			}
+	# 			set_state_flag = GER_u_boat_effort_2dockyards
+	# 		}
+	# 		set_technology={ improved_ship_hull_submarine=1}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_trade_interdiction
+	# 	icon = GFX_goal_generic_wolf_pack
+	# 	prerequisite = { focus = GER_u_boat_effort }
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = GER_u_boat_effort
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = ti_bonus
+	# 			name = GER_trade_interdiction
+	# 			bonus = 2.0
+	# 			uses = 4
+	# 			category = naval_doctrine
+	# 		}
+	# 		add_ideas=GER_trade_interdiction
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_graf_zeppelin
+	# 	icon = GFX_goal_generic_wolf_pack
+	# 	prerequisite = { focus=GER_plan_z focus=GER_all_options }
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = GER_plan_z
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = cv_bonus
+	# 			bonus = 2.0
+	# 			uses = 1
+	# 			category = cv_tech
+	# 		}
+	# 		set_technology = {
+	# 			basic_ship_hull_carrier = 1
+	# 			early_ship_hull_carrier = 1
+	# 		}
+	# 		create_equipment_variant = {
+	# 			name = "Graf-Zeppelin-Klasse"
+	# 			type = ship_hull_carrier_1
+	# 			name_group = GER_CV_HISTORICAL
+	# 			parent_version = 0
+	# 			modules={
+	# 				fixed_ship_engine_slot=carrier_ship_engine_2
+	# 				fixed_ship_deck_slot_1=ship_deck_space
+	# 				fixed_ship_deck_slot_2=ship_deck_space
+	# 				front_1_custom_slot=ship_deck_space
+	# 				fixed_ship_secondaries_slot=ship_secondaries_2
+	# 				fixed_ship_anti_air_slot=ship_anti_air_2
+	# 			}
+	# 		}
+	# 		custom_effect_tooltip="Adds two Graf-Zeppelin-Klasse Carriers to the production queue, at 75% and 50% complete, respectively."
+	# 		hidden_effect = {
+	# 			add_equipment_production = {
+	# 				equipment = {
+	# 					type = ship_hull_carrier_1
+	# 					creator = "GER"
+	# 					version_name = "Graf-Zeppelin-Klasse"
+	# 				}
+	# 				name = "Graf Zeppelin"
+	# 				requested_factories = 1
+	# 				progress = 0.75
+	# 				amount = 1
+	# 			}
+	# 			add_equipment_production = {
+	# 				equipment = {
+	# 					type = ship_hull_carrier_1
+	# 					creator = "GER"
+	# 					version_name = "Graf-Zeppelin-Klasse"
+	# 				}
+	# 				name = "Peter Strasser"
+	# 				requested_factories = 1
+	# 				progress = 0.5
+	# 				amount = 1
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_naval_air_effort
+	# 	text = naval_air_effort
+	# 	icon = GFX_focus_ger_arado
+	# 	prerequisite = { focus = GER_graf_zeppelin  }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = GER_graf_zeppelin
+	# 	cost = 3
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = nav_bomber_bonus
+	# 			bonus = 1.0
+	# 			uses = 2
+	# 			category = naval_bomber
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_recover_from_operation_chariot
+	# 	icon = GFX_goal_generic_wolf_pack
+	# 	prerequisite = { focus=GER_all_options focus=GER_u_boat_effort focus=GER_plan_z }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = GER_all_options
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available={controls_state=30}
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	completion_reward = {
+	# 		30 = {
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 2
+	# 				instant_build = yes
+	# 			}
+	# 			add_building_construction = {
+	# 				type = naval_base
+	# 				province=10393
+	# 				level = 10
+	# 				instant_build = yes
+	# 			}
+	# 			add_building_construction = {
+	# 				type = bunker
+	# 				province=10393
+	# 				level = 3
+	# 				instant_build = yes
+	# 			}
+	# 			add_building_construction = {
+	# 				type = coastal_bunker
+	# 				province=10393
+	# 				level = 5
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_fjord_fleet_basing
+	# 	icon = GFX_focus_ger_arado
+	# 	prerequisite = { focus = GER_recover_from_operation_chariot  }
+	# 	x = 0
+	# 	y = 1
+	# 	available={controls_state=140}
+	# 	relative_position_id = GER_recover_from_operation_chariot
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	completion_reward = {
+	# 		140 = {
+	# 			add_building_construction = {
+	# 				type = naval_base
+	# 				province=10030
+	# 				level = 5
+	# 				instant_build = yes
+	# 			}
+	# 			add_building_construction = {
+	# 				type = air_base
+	# 				level = 5
+	# 				instant_build = yes
+	# 			}
+	# 			add_building_construction = {
+	# 				type = bunker
+	# 				province=10030
+	# 				level = 3
+	# 				instant_build = yes
+	# 			}
+	# 			add_building_construction = {
+	# 				type = coastal_bunker
+	# 				province=10030
+	# 				level = 3
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_germaniawerft
+	# 	icon = GFX_focus_GER_germaniawerft
+	# 	prerequisite = { focus=GER_plan_z  }
+	# 	x = -1
+	# 	y = 1
+	# 	relative_position_id = GER_plan_z
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	completion_reward = {
+	# 		add_ideas=GER_germaniawerft
+	# 		58 = {
+	# 			add_extra_state_shared_building_slots = 5
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 5
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_h_class
+	# 	icon = GFX_focus_GER_h_class
+	# 	prerequisite = { focus = GER_germaniawerft  }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = GER_germaniawerft
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	completion_reward = {
+	# 		set_technology = {
+	# 			ship_hull_super_heavy = 1
+	# 		}
+	# 		create_equipment_variant = {
+	# 			name = "H-Klasse"
+	# 			type = ship_hull_super_heavy_1
+	# 			name_group = GER_BB_HISTORICAL
+	# 			parent_version = 0
+	# 			modules = {
+	# 				fixed_ship_battery_slot = ship_super_heavy_battery_1
+	# 				fixed_ship_anti_air_slot = ship_anti_air_2
+	# 				fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+	# 				fixed_ship_radar_slot = empty
+	# 				fixed_ship_engine_slot = heavy_ship_engine_2
+	# 				fixed_ship_secondaries_slot = ship_secondaries_2
+	# 				fixed_ship_armor_slot = ship_armor_shbb
+	# 				front_1_custom_slot = empty
+	# 				front_2_custom_slot = ship_super_heavy_battery_1
+	# 				mid_1_custom_slot = ship_anti_air_2
+	# 				mid_2_custom_slot = ship_secondaries_2
+	# 				mid_3_custom_slot = ship_secondaries_2
+	# 				rear_1_custom_slot = ship_super_heavy_battery_1
+	# 				rear_2_custom_slot = ship_airplane_launcher_2
+	# 			}
+	# 		}
+	# 		custom_effect_tooltip="Adds two H-Klasse Battleships to the production queue, at 75% and 50% complete, respectively."
+	# 		hidden_effect = {
+	# 			add_equipment_production = {
+	# 				equipment = {
+	# 					type = ship_hull_super_heavy_1
+	# 					creator = "GER"
+	# 					version_name = "H-Klasse"
+	# 				}
+	# 				name = "Schlachtschiff H"
+	# 				requested_factories = 1
+	# 				progress = 0.75
+	# 				amount = 1
+	# 			}
+	# 			add_equipment_production = {
+	# 				equipment = {
+	# 					type = ship_hull_super_heavy_1
+	# 					creator = "GER"
+	# 					version_name = "H-Klasse"
+	# 				}
+	# 				name = "Schlachtschiff J"
+	# 				requested_factories = 1
+	# 				progress = 0.5
+	# 				amount = 1
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_modular_construction
+	# 	icon = GFX_goal_generic_construct_naval_dockyard
+	# 	prerequisite = { focus = GER_trade_interdiction }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = GER_trade_interdiction
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
+	# 		add_ideas = GER_modular_construction
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_u_boot_bunker
+	# 	icon = GFX_focus_ger_arado
+	# 	prerequisite = { focus = GER_u_boat_effort focus=GER_all_options  }
+	# 	x = -1
+	# 	y = 1
+	# 	relative_position_id =GER_u_boat_effort
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	completion_reward = {
+	# 		58 = {
+	# 			add_extra_state_shared_building_slots = 4
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 4
+	# 				instant_build = yes
+	# 			}
+	# 			set_building_level = {
+	# 				type = naval_base
+	# 				province=5898
+	# 				level = 20
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_u_boot_bunker2
+	# 	icon = GFX_goal_generic_wolf_pack
+	# 	prerequisite = { focus=GER_u_boot_bunker  }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = GER_u_boot_bunker
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available={controls_state=19}
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	completion_reward = {
+	# 		19 = {
+	# 			add_extra_state_shared_building_slots = 4
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 4
+	# 				instant_build = yes
+	# 			}
+	# 			set_building_level = {
+	# 				type = naval_base
+	# 				province=8954
+	# 				level = 20
+	# 				instant_build = yes
+	# 			}
+	# 			set_building_level = {
+	# 				type = bunker
+	# 				province=8954
+	# 				level = 5
+	# 				instant_build = yes
+	# 			}
+	# 			set_building_level = {
+	# 				type = coastal_bunker
+	# 				province=8954
+	# 				level = 5
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_operation_sealion
+	# 	icon = GFX_focus_GER_operation_sealion
+	# 	prerequisite = { focus=GER_naval_air_effort }
+	# 	prerequisite = { focus = GER_h_class  }
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id =GER_h_class
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available={date>1942.1.1}
+	# 	available_if_capitulated = yes
+	# 	completion_reward = {
+	# 		add_timed_idea = {idea = GER_operation_sealion days=70}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_atlantikschlacht
+	# 	icon = GFX_focus_GER_atlantikschlacht
+	# 	prerequisite = { focus = GER_modular_construction focus=GER_naval_air_effort }
+	# 	prerequisite = { focus = GER_fjord_fleet_basing }
+	# 	x = 0
+	# 	y = 1
+	# 	available={date>1941.6.1}
+	# 	relative_position_id =GER_fjord_fleet_basing
+	# 	cost = 0
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	completion_reward = {
+	# 		add_timed_idea = {idea = GER_atlantikschlacht days= 365}
+	# 	}
+	# }
+	# focus = {
+	# 	id = GER_monsoon_boats
+	# 	icon = GFX_focus_ger_arado
+	# 	prerequisite = {  focus = GER_modular_construction }
+	# 	prerequisite = { focus = GER_u_boot_bunker2 }
+	# 	x = -1
+	# 	y = 1
+	# 	available={date>1942.1.1}
+	# 	relative_position_id =GER_modular_construction
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available_if_capitulated = yes
+	# 	completion_reward = {
+	# 		add_ideas = GER_monsoon_boats
+	# 	}
+	# }
+
+
+	
 	############################################
 	############## BALKAN BRANCH ###############
 	############################################
@@ -6898,7 +8741,7 @@ focus_tree = {
 			NOT = { is_in_faction_with = GRE }
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_demand_slovenia
 		cost = 5
 		ai_will_do = {
@@ -6959,8 +8802,8 @@ focus_tree = {
 			}
 		}
 		}
-		x = 44
-		y = 0
+		x = 12
+		y = 7
 		cost = 2
 
 		available_if_capitulated = yes
@@ -7018,7 +8861,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = GER_japan_friend }
 		x = 0
-		y = 2
+		y = 1
 		cost = 2
 		relative_position_id = GER_japan_friend
 
@@ -7040,8 +8883,8 @@ focus_tree = {
 				NOT = { has_war_with = ITA }
 			}
 		}
-		x = 46
-		y = 0
+		x = 14
+		y = 7
 		cost = 2
 		
 
@@ -7068,7 +8911,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = GER_italy_friend }
 		x = 0
-		y = 2
+		y = 1
 		cost = 2
 		relative_position_id = GER_italy_friend
 		
@@ -7095,7 +8938,7 @@ focus_tree = {
 		prerequisite = { focus = GER_japan_friend2 }
 		prerequisite = { focus = GER_italy_friend2 }
 		x = -1
-		y = 2
+		y = 1
 		cost = 2
 		relative_position_id = GER_italy_friend2
 		

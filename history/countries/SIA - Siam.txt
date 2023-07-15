@@ -25,6 +25,7 @@ set_variable = { axis_poster_center_icon_frame = 1 }
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 	gw_artillery = 1
 	support_weapons = 1
 	tech_support = 1

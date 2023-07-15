@@ -2156,6 +2156,126 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = generic.34 # generic operation
+	title = "Fall Blau"
+	desc = "In the early moring hours of[GetDateText], Fall Blau Begun"
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Concerning..."
+	}
+}
+
+news_event = {
+	id = generic.35 # generic operation
+	title = "Operation Citadel"
+	desc = "In the early moring hours of[GetDateText], Operation Citadel Begun"
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Concerning..."
+	}
+}
+
+news_event = {
+	id = generic.36 # generic operation
+	title = "Winter Offensive"
+	desc = "In the early moring hours of[GetDateText], The Soviet Winter Offensive Begun"
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Concerning..."
+	}
+}
+
+news_event = {
+	id = generic.37 # generic operation
+	title = "Operation Uranus"
+	desc = "In the early moring hours of[GetDateText], Operation Uranus Begun"
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Concerning..."
+	}
+}
+
+news_event = {
+	id = generic.38 # generic operation
+	title = "Operation Bagration"
+	desc = "In the early moring hours of[GetDateText], Operation Bagration Begun"
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Concerning..."
+	}
+}
+
+news_event = {
+	id = generic.39 # generic operation
+	title = "Operation Compass"
+	desc = "In the early moring hours of[GetDateText], Operation Compass Begun"
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Concerning..."
+	}
+}
+
+news_event = {
+	id = generic.40 # generic operation
+	title = "Operation Crusader"
+	desc = "In the early moring hours of[GetDateText], Operation Compass Crusader"
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Concerning..."
+	}
+}
+
+news_event = {
+	id = generic.41 # generic operation
+	title = "Operation Torch"
+	desc = "In the early moring hours of[GetDateText], Operation Compass Torch"
+	
+	picture = GFX_news_event_004
+
+	is_triggered_only = yes
+    hidden = no
+
+	option = {
+		name = "Concerning..."
+	}
+}
+
 add_namespace = horsttool
 news_event = {
 	id = horsttool.1

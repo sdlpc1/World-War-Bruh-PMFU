@@ -18,6 +18,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 1
 			build_cost_ic = 90	
+			lg_armor_piercing = 0.25
 		}
 		multiply_stats = {
 			naval_speed = -0.01
@@ -45,7 +46,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 2
 			build_cost_ic = 120
-			
+			lg_armor_piercing = 0.25
 		}
 		multiply_stats = {
 			naval_speed = -0.02
@@ -77,7 +78,8 @@ equipment_modules = {
 		
 		add_stats = {
 			lg_attack = 3
-			build_cost_ic = 150			
+			build_cost_ic = 150	
+			lg_armor_piercing = 0.25		
 		}
 		
 		add_average_stats = {
@@ -110,6 +112,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 4
 			build_cost_ic = 180	
+			lg_armor_piercing = 0.25
 		}
 		build_cost_resources = {
 			steel = 4
@@ -598,7 +601,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {	
-			lg_attack = 5
+			lg_attack = 3
 			build_cost_ic = 350
 		}
 		multiply_stats = {
@@ -630,7 +633,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {	
-			lg_attack = 10
+			lg_attack = 6
 			build_cost_ic = 400
 		}
 		multiply_stats = {
@@ -669,7 +672,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
-			lg_attack = 15
+			lg_attack = 9
 			build_cost_ic = 450
 		}
 		multiply_stats = {
@@ -706,7 +709,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		parent = ship_light_medium_battery_3
 		add_stats = {			
-			lg_attack = 20			
+			lg_attack = 12			
 			build_cost_ic = 500
 		}
 		multiply_stats = {
@@ -2550,6 +2553,8 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 4
+			naval_torpedo_enemy_critical_chance_factor = -0.05
+			naval_torpedo_damage_reduction_factor = 0.1
 		}
 		build_cost_resources = {
 			steel = 5
@@ -2569,6 +2574,8 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 8
+			naval_torpedo_enemy_critical_chance_factor = -0.1
+			naval_torpedo_damage_reduction_factor = 0.2
 		}
 		build_cost_resources = {
 			steel = 10
@@ -2588,6 +2595,8 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 10
+			naval_torpedo_enemy_critical_chance_factor = -0.15
+			naval_torpedo_damage_reduction_factor = 0.3
 		}
 		build_cost_resources = {
 			steel = 15
@@ -2607,6 +2616,8 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 12
+			naval_torpedo_enemy_critical_chance_factor = -0.2
+			naval_torpedo_damage_reduction_factor = 0.4
 		}
 		build_cost_resources = {
 			steel = 20

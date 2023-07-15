@@ -819,6 +819,11 @@ operations = {
  				CAN = { add_timed_idea = { idea = ENG_compass days = 60 } }
  				AST = { add_timed_idea = { idea = ENG_compass days = 60 } }
  			}
+			hidden_effect = {
+				every_country = {
+					news_event = generic.39
+				}
+			}
 		}
 	}
 
@@ -876,6 +881,11 @@ operations = {
  				CAN = { add_timed_idea = { idea = ENG_crusader days = 100 } }
  				AST = { add_timed_idea = { idea = ENG_crusader days = 100 } }
  			}
+			hidden_effect = {
+				every_country = {
+					news_event = generic.40
+				}
+			}
 		}
 	}
 
@@ -919,6 +929,11 @@ operations = {
 				add_dynamic_modifier = { modifier = OPERATION_TORCH days=90  }
 			}
 			set_country_flag = { flag = OPERATION_TORCH_ONGING value = 1 days = 90 }
+			hidden_effect = {
+				every_country = {
+					news_event = generic.41
+				}
+			}
 		}
 	}
 

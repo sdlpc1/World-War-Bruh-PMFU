@@ -86,7 +86,7 @@ ENG_heavy_water_raids = {
 			controls_state = 110
 		}
 		110 = {
-			resistance > 52
+			resistance > 25
 		}
 	}
 	

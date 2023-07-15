@@ -993,6 +993,14 @@ if = {
 		}
 		icon = "GFX_JAP_tactical_bomber1_medium"
 	}
+	create_equipment_variant = {
+		name = "Ki-46"
+		type = medium_plane_scout_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = recon_camera
+			engine_type_slot = engine_1_2x
+		}
+	}
 }
 	# 1939 Start #			
 	1939.1.1 = {
