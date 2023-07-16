@@ -4018,72 +4018,72 @@ country_event = {
 }
 
 # Germany: Treaty Of Craiova
-country_event = {
-	id = germany.106
-	title = germany.106.t
-	desc = { text = germany.106.d_second_vienna_accepted_all trigger = { ROM = { has_country_flag = second_vienna_accepted_all } } }
-	desc = { text = germany.106.d_second_vienna_accepted_north trigger = { ROM = { has_country_flag = second_vienna_accepted_north } } }
-	desc = {
-		text = germany.106.d_no_vienna
-		trigger = {
-			ROM = {
-				NOT = { has_country_flag = second_vienna_accepted_all }
-				NOT = { has_country_flag = second_vienna_accepted_north }
-			}
-		}
-	}
-	picture = GFX_report_event_vienna_award_hungary
+# country_event = {
+# 	id = germany.106
+# 	title = germany.106.t
+# 	desc = { text = germany.106.d_second_vienna_accepted_all trigger = { ROM = { has_country_flag = second_vienna_accepted_all } } }
+# 	desc = { text = germany.106.d_second_vienna_accepted_north trigger = { ROM = { has_country_flag = second_vienna_accepted_north } } }
+# 	desc = {
+# 		text = germany.106.d_no_vienna
+# 		trigger = {
+# 			ROM = {
+# 				NOT = { has_country_flag = second_vienna_accepted_all }
+# 				NOT = { has_country_flag = second_vienna_accepted_north }
+# 			}
+# 		}
+# 	}
+# 	picture = GFX_report_event_vienna_award_hungary
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = { # Give Bulgaria state 77
-		name = germany.106.a
-		ai_chance = { factor = 95
-			modifier = {
-				factor = 0
-				BUL = {
-					is_in_faction = yes
-					NOT = { is_in_faction_with = GER }
-				}
-			}
-		}
-		add_named_threat = { threat = 2 name = germany.106_threat }
-		BUL = {
-			add_opinion_modifier = { target = GER modifier = GER_treaty_of_craiova_GER }
+# 	option = { # Give Bulgaria state 77
+# 		name = germany.106.a
+# 		ai_chance = { factor = 95
+# 			modifier = {
+# 				factor = 0
+# 				BUL = {
+# 					is_in_faction = yes
+# 					NOT = { is_in_faction_with = GER }
+# 				}
+# 			}
+# 		}
+# 		add_named_threat = { threat = 2 name = germany.106_threat }
+# 		BUL = {
+# 			add_opinion_modifier = { target = GER modifier = GER_treaty_of_craiova_GER }
 
-			every_other_country = {
-				limit = {
-					is_faction_leader = yes
-					NOT = { tag = GER }
-				}
-				reverse_add_opinion_modifier = { target = BUL modifier = GER_treaty_of_craiova_other }
-			}
-		}
-		ROM = {
-			country_event = { id = romania.5 hours = 3 }
-		}
-	}
-	option = { # Give Bulgaria nothing
-		name = germany.106.b
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-				NOT = {
-					BUL = {
-						is_in_faction = yes
-						NOT = { is_in_faction_with = GER }
-					}
-				}
-			}
-		}
-		BUL = {
-			add_opinion_modifier = { target = GER modifier = GER_treaty_of_craiova_noland }
-			country_event = { id = bulgaria.5 hours = 4 }
-		}
-	}
-}
+# 			every_other_country = {
+# 				limit = {
+# 					is_faction_leader = yes
+# 					NOT = { tag = GER }
+# 				}
+# 				reverse_add_opinion_modifier = { target = BUL modifier = GER_treaty_of_craiova_other }
+# 			}
+# 		}
+# 		ROM = {
+# 			country_event = { id = romania.5 hours = 3 }
+# 		}
+# 	}
+# 	# option = { # Give Bulgaria nothing
+# 	# 	name = germany.106.b
+# 	# 	ai_chance = {
+# 	# 		factor = 10
+# 	# 		modifier = {
+# 	# 			factor = 0
+# 	# 			is_historical_focus_on = yes
+# 	# 			NOT = {
+# 	# 				BUL = {
+# 	# 					is_in_faction = yes
+# 	# 					NOT = { is_in_faction_with = GER }
+# 	# 				}
+# 	# 			}
+# 	# 		}
+# 	# 	}
+# 	# 	BUL = {
+# 	# 		add_opinion_modifier = { target = GER modifier = GER_treaty_of_craiova_noland }
+# 	# 		country_event = { id = bulgaria.5 hours = 4 }
+# 	# 	}
+# 	# }
+# }
 
 # Flight of Rudolf No Hindenburg
 country_event = {

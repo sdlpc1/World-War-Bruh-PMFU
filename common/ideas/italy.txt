@@ -1104,7 +1104,19 @@ ideas = {
 		crda = {
 						
 			allowed = {
-				original_tag = ITA
+				OR = {
+					original_tag = ITA
+					original_tag = SPR
+				}
+			}
+
+			available = {
+				if = {
+					limit = {
+						original_tag = SPR
+					}
+					has_completed_focus = SPA_italian_naval_designers
+				}
 			}
 						
 			research_bonus = {
@@ -1123,12 +1135,22 @@ ideas = {
 			picture	= ITA_oto
 
 			allowed = {
-				original_tag = ITA
+				OR = {
+					original_tag = ITA
+					original_tag = SPR
+				}
 			}
 
-
 			available = {
-				has_completed_focus = ITA_green_water_navy
+				ITA = {
+					has_completed_focus = ITA_green_water_navy
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+					}
+					has_completed_focus = SPA_italian_naval_designers
+				}
 			}
 						
 			research_bonus = {
@@ -1146,11 +1168,22 @@ ideas = {
 			picture	= ITA_navalmeccanica
 
 			allowed = {
-				original_tag = ITA
+				OR = {
+					original_tag = ITA
+					original_tag = SPR
+				}
 			}
 
 			available = {
-				has_completed_focus = ITA_convoy_defence
+				ITA = {
+					has_completed_focus = ITA_convoy_defence
+				}	
+				if = {
+					limit = {
+						original_tag = SPR
+					}
+					has_completed_focus = SPA_italian_naval_designers
+				}
 			}
 						
 			research_bonus = {
@@ -1168,12 +1201,23 @@ ideas = {
 			picture	= ITA_cantera_navale_di_ancona
 
 			allowed = {
-				original_tag = ITA
+				OR = {
+					original_tag = ITA
+					original_tag = SPR
+				}
 			}
 
 
 			available = {
-				has_completed_focus = ITA_new_cruisers
+				ITA = {
+					has_completed_focus = ITA_new_cruisers
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+					}
+					has_completed_focus = SPA_italian_naval_designers
+				}
 			}
 						
 			research_bonus = {
@@ -1191,11 +1235,22 @@ ideas = {
 			picture	= ITA_cantieri_navali_tosi
 
 			allowed = {
-				original_tag = ITA
+				OR = {
+					original_tag = ITA
+					original_tag = SPR
+				}
 			}
 
 			available = {
-				has_completed_focus = ITA_sub_raiders
+				ITA = {
+					has_completed_focus = ITA_sub_raiders
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+					}
+					has_completed_focus = SPA_italian_naval_designers
+				}
 			}
 						
 			research_bonus = {

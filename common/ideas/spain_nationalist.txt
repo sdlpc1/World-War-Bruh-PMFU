@@ -870,6 +870,44 @@ ideas = {
 			}
 		}
 
+		SPA_the_plan_cruiser = {
+
+			picture = generic_sea_focused_navy
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		SPA_the_plan_submarine = {
+
+			picture = generic_sea_focused_navy
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				ship_hull_submarine = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
 		SPA_la_division_azul = {
 
 			picture = SPA_la_division_azul

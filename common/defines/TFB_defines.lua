@@ -557,6 +557,10 @@ NDefines.NIntel.RECON_PLANE_INTEL_BASE = 0.04 				-- intel base amount for a str
 NDefines.NIntel.RECON_PLANE_LAND_DISTRIBUTION = { 15.0, 10.0, 0.0, 10.0 }    -- controls for land and sea zones how much of each intel typee is given (civ, army, navy, air)
 NDefines.NIntel.RECON_PLANE_SEA_DISTRIBUTION = { 0.0, 0.0, 15.0, 0.0 }
 NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.1 			-- max combat bonus that will apply when intel is high enough
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 40
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_ABSOLUTE_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 50
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_MAXIMUMS = { 30, 30, 30, 30 }
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_ABSOLUTE_MAXIMUMS = 	{ 40, 40, 40, 40 }
 
 NDefines.NSupply.CAPITAL_SUPPLY_CIVILIAN_FACTORIES = 0.2 -- supply from one civilian factory
 NDefines.NSupply.CAPITAL_SUPPLY_MILITARY_FACTORIES = 0.3 -- supply from one military factory

@@ -2005,7 +2005,7 @@ focus_tree = {
 		icon = GFX_goal_poland_goal
 		prerequisite = { focus = HUN_secret_rearmament }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = HUN_secret_rearmament
 
 		cost = 5
@@ -2039,7 +2039,7 @@ focus_tree = {
 		id = HUN_bled_agreement
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = HUN_secret_rearmament }
-		x = 1
+		x = -2
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 
@@ -2843,7 +2843,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ger_bonus
-				bonus = 0.50
+				bonus = 0.75
 				uses = 2
 				category = cat_medium_armor
 			}
@@ -2858,7 +2858,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_mobile_focus
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 60
@@ -2890,7 +2890,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_mobile_corps_doctrine
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 60
@@ -2930,7 +2930,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_armored_warfare
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 30
@@ -3104,7 +3104,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_home_defense
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 60
@@ -3135,7 +3135,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_expand_the_reserve
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 60
@@ -3169,6 +3169,9 @@ focus_tree = {
 		x = 7
 		y = 1
 		relative_position_id = HUN_secret_rearmament
+		allow_branch = {
+			has_global_flag = HUN_NAVY_ON
+		}
 
 		cost = 10
 

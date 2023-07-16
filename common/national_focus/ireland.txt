@@ -484,6 +484,55 @@ focus_tree = {
 			add_ideas = deterrence
 		}
 	}
+
+	focus = {
+		id = IRE_fortify_the_coast
+		available = {
+			
+		}
+		bypass = {
+		}
+		prerequisite = { focus = IRE_island_defence }
+		
+		icon = GFX_goal_generic_construct_military
+		x = 0
+		y = 1
+		relative_position_id = IRE_island_defence
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = IRE_fortify_the_coast_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_coastal = yes
+						is_core_of = ROOT
+						is_controlled_by = ROOT
+					}
+					set_building_level  = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						level = 3
+						instant_build = yes
+					}
+					set_building_level  = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_naval_base = yes
+						}
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
 	
 	focus = {
 		id = IRE_modernisation

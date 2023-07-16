@@ -174,3 +174,16 @@ europe_dday_coastline = {
 		state = 173
 	}
 }
+
+GER_flak_36_states = {
+	OR = {
+		state = 64
+		state = 64
+		state = 59
+		state = 60
+		state = 54
+		state = 51
+		state = 55
+		state = 42
+	}
+}

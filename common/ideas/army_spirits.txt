@@ -176,7 +176,7 @@ ideas = {
 			ledger = army
 			# visible = { has_tech = trench_warfare }
 			modifier = {
-				supply_consumption_factor = -0.05
+				supply_consumption_factor = -0.10
 				supply_node_range = 0.1
 				# tactic_planned_attack_preferred_weight_factor = 1
 				# supply_consumption_factor = -0.05

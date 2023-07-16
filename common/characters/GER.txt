@@ -797,7 +797,7 @@ characters={
 				has_completed_focus = GER_appoint_raeder
 			}
 			traits  = {
-				raeder_trait 
+				navy_chief_decisive_battle_2 
 			}
 			ai_will_do = {
 				factor = 1

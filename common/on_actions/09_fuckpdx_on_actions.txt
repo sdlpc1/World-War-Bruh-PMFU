@@ -351,9 +351,20 @@ on_actions = {
 					transfer_state = 186
 					transfer_state = 187
 				}
-				BUL = {
-					transfer_state = 184
-					transfer_state = 731
+				if = { # check if bulgaria exist
+					limit = {
+						country_exists = BUL
+					}
+					BUL = {
+						transfer_state = 184
+						transfer_state = 731
+					}
+				}
+				else = { # if bulgaria no exist give to italy
+					ITA = {
+						transfer_state = 184
+						transfer_state = 731
+					}
 				}
 				ENG = { annex_country = { target = GRE transfer_troops = no } }
 			}
@@ -367,8 +378,10 @@ on_actions = {
 					original_tag = YUG
 					FROM = { is_in_faction_with = GER }
 				}
-				ITA = {
+				GER = {
 					transfer_state = 102
+				}
+				ITA = {
 					transfer_state = 109
 					transfer_state = 103
 					transfer_state = 104
@@ -382,9 +395,20 @@ on_actions = {
 					transfer_state = 45
 					transfer_state = 764
 				}
-				BUL = {
-					transfer_state = 803
-					transfer_state = 106
+				if = { # check if bulgaria exist
+					limit = {
+						country_exists = BUL
+					}
+					BUL = {
+						transfer_state = 803
+						transfer_state = 106
+					}
+				}
+				else = { # if bulgaria no exist give to italy
+					ITA = {
+						transfer_state = 803
+						transfer_state = 106
+					}
 				}
 				ENG = {
 					YUG = {

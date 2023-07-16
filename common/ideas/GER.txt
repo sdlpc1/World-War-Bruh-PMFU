@@ -86,7 +86,7 @@ ideas = {
 			picture = generic_navy_bonus
 			equipment_bonus = {
 				submarine = {
-					naval_range = 0.50 instant = yes
+					naval_range = 0.30 instant = yes
 				}
 			}
 		}

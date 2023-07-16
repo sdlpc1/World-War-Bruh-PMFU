@@ -1218,6 +1218,9 @@ twenty_terrain_penalty_reduction:0 "From focus"
  fuel_silo_construction_disabled:0 "§1Fuel Silo Construction Disabled§!"
  Juggle1:0 "Juggle"
  Juggle1_desc:0 "Juggle Juggle"
+ improved_ship_hull_heavy:0 "1936 Heavy Ship Hull"
+ ship_hull_super_heavy:0 "Super Heavy Battleship Hull" 
+ improved_ship_hull_submarine:0 "1939 Submarine Hull"
  
 # GAME RULES
  RULE_GROUP_TFB:0 "Custom TFB Game Rules"
