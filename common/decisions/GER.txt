@@ -2631,7 +2631,7 @@ GER_share_tanks = {
 
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -2676,7 +2676,7 @@ GER_share_tanks = {
 
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -2721,7 +2721,7 @@ GER_share_tanks = {
 
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -2769,7 +2769,7 @@ GER_share_tanks = {
 
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -2814,7 +2814,7 @@ GER_share_tanks = {
 
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -2863,7 +2863,7 @@ GER_share_tanks = {
 		
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -2908,7 +2908,7 @@ GER_share_tanks = {
 		
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -2957,7 +2957,7 @@ GER_share_tanks = {
 		
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -3002,7 +3002,7 @@ GER_share_tanks = {
 		
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -3047,7 +3047,7 @@ GER_share_tanks = {
 		
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -3092,7 +3092,7 @@ GER_share_tanks = {
 		
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -3141,7 +3141,7 @@ GER_share_tanks = {
 		
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 
@@ -3188,7 +3188,7 @@ GER_share_tanks = {
 		
 		allowed = {
 			OR = {
-				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC
+				tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA tag = YUG tag = VIC tag = FIN
 			}
 		}
 

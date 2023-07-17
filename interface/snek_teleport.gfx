@@ -26,6 +26,10 @@ spriteTypes = {
 		name = "GFX_trait_twenty_terrain_penalty_reduction"
 		texturefile = "gfx/interface/traits/personal/trait_recently_promoted.dds"		
 	}	
+	spriteType = {
+		name = "GFX_trait_fifty_cas_dmg_reduction"
+		texturefile = "gfx/interface/traits/personal/trait_recently_promoted.dds"		
+	}	
 
 	### TECH ###
 	SpriteType = {

@@ -3728,4 +3728,18 @@ leader_traits = {
 			factor = 0
 		}
 	}
+
+	fifty_cas_dmg_reduction = {
+		type = corps_commander
+
+		trait_type = personality_trait
+
+		corps_commander_modifier = {
+			cas_damage_reduction = 0.5
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 }

@@ -36,7 +36,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 550 y = 2250 }
+	continuous_focus_position = { x = 725 y = 2250 }
 
 #  #  ##  ### ###  ##  #  #  ##  #   ###  ## ###     ###  #  # ### #   ###     #  # ###  
 ## # #  #  #   #  #  # ## # #  # #    #  #    #      #  # #  #  #  #   #  #    #  # #  # 
@@ -525,6 +525,213 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SPA_the_national_and_popular_army_of_spain
+		available = {
+			has_global_flag = scw_over
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_fuse_the_parties }
+		
+		icon = GFX_goal_generic_army_doctrines
+		x = -5
+		y = 1
+		relative_position_id = SPA_fuse_the_parties
+		cost = 10
+
+		available_if_capitulated = yes
+		complete_tooltip = {
+			every_state = {
+				limit	= {	has_state_flag = SPA_the_national_and_popular_army_of_spain_2mil }
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			army_experience = 10
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+					}
+					is_core_of = ROOT
+				}
+				set_state_flag = SPA_the_national_and_popular_army_of_spain_2mil
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_the_army_of_africa_model
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_the_national_and_popular_army_of_spain }
+		
+		icon = GFX_goal_generic_army_artillery
+		x = 0
+		y = 1
+		relative_position_id = SPA_the_national_and_popular_army_of_spain
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = SPA_the_army_of_africa_model
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_equipment_modernization
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_the_army_of_africa_model }
+		
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 1
+		relative_position_id = SPA_the_army_of_africa_model
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_equipment_modernization
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_artillery_modernization
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_equipment_modernization }
+		
+		icon = GFX_goal_generic_army_artillery2
+		x = -1
+		y = 2
+		relative_position_id = SPA_equipment_modernization
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_artillery_modernization
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_expand_the_special_forces
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_equipment_modernization }
+		
+		icon = GFX_goal_generic_special_forces
+		x = 1
+		y = 2
+		relative_position_id = SPA_equipment_modernization
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_expand_the_special_forces
+				bonus = 0.5
+				uses = 2
+				category = cat_special_forces_generic
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_motorization
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_equipment_modernization }
+		
+		icon = GFX_goal_generic_army_motorized
+		x = 0
+		y = 1
+		relative_position_id = SPA_equipment_modernization
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_equipment_modernization
+				bonus = 0.75
+				uses = 1
+				category = motorized_equipment
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_an_armored_corps
+		available = {
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_motorization }
+		
+		icon = GFX_goal_generic_army_tanks
+		x = 0
+		y = 2
+		relative_position_id = SPA_motorization
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_an_armored_corps
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
 		id = SPA_national_recovery
 		available = {
 			has_global_flag = scw_over
@@ -791,7 +998,7 @@ focus_tree = {
 	focus = {
 		id = SPA_italian_shipbuilding_expertise
 		available = {
-			
+			is_in_faction_with = ITA
 		}
 		bypass = {
 		}
@@ -916,6 +1123,7 @@ focus_tree = {
 	focus = {
 		id = SPA_the_duty_to_work
 		available = {
+			is_in_faction_with = GER
 		}
 		bypass = {
 		}
@@ -1546,57 +1754,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPA_the_iberian_wall
-		available = {
-			
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_dictator_for_life }
-		icon = GFX_focus_generic_coastal_fort
-		x = 2
-		y = 1
-		relative_position_id = SPA_dictator_for_life
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = SPR_iberian_wall_tt
-			hidden_effect = {
-				every_owned_state = {
-					limit = {
-						is_coastal = yes
-						is_core_of = ROOT
-						is_controlled_by = ROOT
-					}
-					set_building_level  = {
-						type = coastal_bunker
-						province = {
-							all_provinces = yes
-							limit_to_coastal = yes
-						}
-						level = 3
-						instant_build = yes
-					}
-					set_building_level  = {
-						type = coastal_bunker
-						province = {
-							all_provinces = yes
-							limit_to_naval_base = yes
-						}
-						level = 4
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = SPA_invest_in_naval_infrastructure
 		available = {
-			has_completed_focus = SPA_unify_the_nationalist_front
 		}
 		bypass = {
 		}
@@ -1632,7 +1791,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -2066,19 +2225,19 @@ focus_tree = {
 	# 		}
 	# 	}
 	# }
-
+	
 	focus = {
 		id = SPA_defenses_against_strategic_bombing
 		available = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_the_iberian_wall }
+		prerequisite = { focus = SPA_dictator_for_life }
 		
 		icon = GFX_focus_GER_flak_36
-		x = 0
+		x = 2
 		y = 1
-		relative_position_id = SPA_the_iberian_wall
+		relative_position_id = SPA_dictator_for_life
 		cost = 5
 
 		available_if_capitulated = yes
@@ -2119,6 +2278,122 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = SPA_the_iberian_wall
+		available = {
+			
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_defenses_against_strategic_bombing }
+		icon = GFX_focus_generic_coastal_fort
+		x = 0
+		y = 1
+		relative_position_id = SPA_defenses_against_strategic_bombing
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = SPR_iberian_wall_tt
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_coastal = yes
+						is_core_of = ROOT
+						is_controlled_by = ROOT
+					}
+					set_building_level  = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						level = 3
+						instant_build = yes
+					}
+					set_building_level  = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_naval_base = yes
+						}
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+        id = SPA_garrison_the_iberian_wall
+        icon = GFX_focus_generic_military_mission
+        prerequisite = { focus = SPA_the_iberian_wall }
+        relative_position_id = SPA_the_iberian_wall
+        x = 0
+        y = 2
+
+        cost = 5
+
+        available = {
+			has_completed_focus = SPA_abandon_neutrality
+        }
+
+        bypass = {
+
+        }
+
+        available_if_capitulated = no
+
+        completion_reward = {
+			division_template = {
+				name = "Guardia Nacional"
+				division_names_group = SPA_INF_01
+				
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_tank_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					hq_company = { x = 0 y = 0 } 
+					engineer = { x = 0 y = 1 }   
+					recon = { x = 0 y = 2 }
+					logistics_company_mot = { x = 0 y = 3 }
+					anti_air = { x = 1 y = 0 }
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					is_controlled_by = ROOT
+				}
+				create_unit = {
+					division = "name = \"Guardia Nacional\" division_template = \"Guardia Nacional\" start_experience_factor = 0.5"
+					owner = SPR
+				}
+				create_unit = {
+					division = "name = \"Guardia Nacional\" division_template = \"Guardia Nacional\" start_experience_factor = 0.5"
+					owner = SPR
+				}
+				# create_unit = {
+				# 	division = "name = \"Guardia Nacional\" division_template = \"Guardia Nacional\" start_experience_factor = 0.5"
+				# 	owner = SPR
+				# }
+			}
+        }
+    }
 
 	focus = {
 		id = SPA_retake_gibraltar
@@ -2165,7 +2440,6 @@ focus_tree = {
 				NOT = { has_idea = SPA_national_recovery_6 }			
 				NOT = { has_idea = SPA_national_recovery_7 }				
 			}
-			fascism > 0.65
 		}
 		prerequisite = { focus = SPA_ensure_agricultural_self_sufficiency }
 		mutually_exclusive = { focus = SPA_maintain_neutrality }

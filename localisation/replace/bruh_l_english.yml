@@ -351,6 +351,7 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General with §Y"Engineer Off
 five_terrain_penalty_reduction:0 "From focus"
 ten_terrain_penalty_reduction:0 "From focus"
 twenty_terrain_penalty_reduction:0 "From focus"
+fifty_cas_dmg_reduction:0 "From focus"
 
  #### UNITS ####
  mountaineers:0 "Light Infantry"

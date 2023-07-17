@@ -215,6 +215,7 @@
   SOV_light_tank1:0 "Develop the T-70"
   SOV_light_tank2:0 "Appoint Stalingrad Tractor Factory"
   SOV_medium_tank_2_2:0 "Appoint Astrov"
+  SOV_last_stand_of_communism:0 "Last Stand of Communism"
 
   #### EVENTS ####
   soviet.26.c1:0 "Zhukov and Tukhachevsky's Deep Battle ideas must be overturned."
@@ -294,6 +295,7 @@
   kharkiv_diesel_factory:0 "Kharkiv Diesel Factory"
   dzerzhinsky_stalingrad_tractor_factory:0 "Stalingrad Tractor Factory"
   ordzhonikidze_ural_heavy_machine_building_plant_UZTM:0 "Ordzhonikidze: Heavy Machine Building Plant"
+  SOV_last_stand_of_the_ussr:0 "Last Stand of the Soviet Union"
 
   #### DESIGNER ####
   kharkiv:0 "Versatile Tank Desginer"

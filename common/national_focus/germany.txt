@@ -419,7 +419,10 @@ focus_tree = {
 			factor = 1
 		}
 
-		available_if_capitulated = no
+		cancel_if_invalid = no
+        continue_if_invalid = yes
+        available_if_capitulated = yes
+		
 		available = {
 			has_idea = GER_mefo_bills_1
 			has_idea = GER_herman_goring
@@ -592,7 +595,10 @@ focus_tree = {
 			factor = 1
 		}
 
-		available_if_capitulated = no
+		cancel_if_invalid = no
+        continue_if_invalid = yes
+        available_if_capitulated = yes
+		
 		available = {
 			has_idea = GER_mefo_bills_1
 			has_idea = GER_hjalmar_schacht
@@ -1047,13 +1053,13 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 51 }
-				limit = {
-					free_building_slots = {
-						building = steel_refinery
-						size > 1
-						include_locked = yes
-					}
-				}
+				# limit = {
+				# 	free_building_slots = {
+				# 		building = steel_refinery
+				# 		size > 1
+				# 		include_locked = yes
+				# 	}
+				# }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = steel_refinery
@@ -1063,13 +1069,13 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {	
 				prioritize = { 59 }
-				limit = {
-					free_building_slots = {
-						building = steel_refinery
-						size > 1
-						include_locked = yes
-					}
-				}
+				# limit = {
+				# 	free_building_slots = {
+				# 		building = steel_refinery
+				# 		size > 1
+				# 		include_locked = yes
+				# 	}
+				# }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = steel_refinery
@@ -1079,13 +1085,13 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {	
 				prioritize = { 64 }
-				limit = {
-					free_building_slots = {
-						building = steel_refinery
-						size > 1
-						include_locked = yes
-					}
-				}
+				# limit = {
+				# 	free_building_slots = {
+				# 		building = steel_refinery
+				# 		size > 1
+				# 		include_locked = yes
+				# 	}
+				# }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = steel_refinery
@@ -2520,157 +2526,162 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 10 
-			if = {
-				limit = {
-					country_exists = AUS
-					AUS = {
-						has_civil_war = no
-						OR = {
-							owns_state = 4
-							owns_state = 152
-							owns_state = 153
-						}
-					}
-				}
-
-				4 = {
-					if = {
-						limit = { is_owned_by = AUS }
-						add_core_of = GER
-					}
-				}
-				152 = {
-					if = {
-						limit = { is_owned_by = AUS }
-						add_core_of = GER
-					}
-				}
-				153 = {
-					if = {
-						limit = { is_owned_by = AUS }
-						add_core_of = GER
-					}
-				}
-				AUS = {
-					every_unit_leader = {
-						set_nationality = GER
-					}
-				}
-				add_named_threat = { threat = 10 name = germany.4.t }
-				annex_country = { target = AUS transfer_troops = yes }
-				add_political_power = 75
-				set_country_flag = AUS_annexed
-				add_war_support = 0.1
-				add_stability = 0.05
-				USA = {
-					set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
-				}
-				
+			hidden_effect = {
+				country_event = { id = germany.503 days = 1 }
+			}
+			effect_tooltip = {
+				army_experience = 10 
 				if = {
 					limit = {
-						has_dlc = "Death or Dishonor"
-						country_exists = YUG
-						YUG = { has_war = no }
-					}
-					country_event = {
-						id = DOD_yugoslavia.30
-						days = 4
-					}
-				}
-				hidden_effect = {
-					news_event = { hours = 6 id = news.36 }
-				}
-				# AUS = {
-				# 	country_event = germany.28
-				# }				
-			}
-			if = {
-				limit = {
-					any_other_country = {
-						original_tag = AUS
-						has_civil_war = yes
-						OR = {
-							owns_state = 4
-							owns_state = 152
-							owns_state = 153
+						country_exists = AUS
+						AUS = {
+							has_civil_war = no
+							OR = {
+								owns_state = 4
+								owns_state = 152
+								owns_state = 153
+							}
 						}
 					}
+
+					4 = {
+						if = {
+							limit = { is_owned_by = AUS }
+							add_core_of = GER
+						}
+					}
+					152 = {
+						if = {
+							limit = { is_owned_by = AUS }
+							add_core_of = GER
+						}
+					}
+					153 = {
+						if = {
+							limit = { is_owned_by = AUS }
+							add_core_of = GER
+						}
+					}
+					AUS = {
+						every_unit_leader = {
+							set_nationality = GER
+						}
+					}
+					add_named_threat = { threat = 10 name = germany.4.t }
+					annex_country = { target = AUS transfer_troops = yes }
+					add_political_power = 75
+					set_country_flag = AUS_annexed
+					add_war_support = 0.1
+					add_stability = 0.05
+					USA = {
+						set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
+					}
+					
+					if = {
+						limit = {
+							has_dlc = "Death or Dishonor"
+							country_exists = YUG
+							YUG = { has_war = no }
+						}
+						country_event = {
+							id = DOD_yugoslavia.30
+							days = 4
+						}
+					}
+					hidden_effect = {
+						news_event = { hours = 6 id = news.36 }
+					}
+					# AUS = {
+					# 	country_event = germany.28
+					# }				
 				}
-				custom_effect_tooltip = germany.126.warning
-				random_other_country = {
+				if = {
 					limit = {
-						original_tag = AUS
-						OR = {
-							has_government = fascism
-							AND = {
-								has_government = neutrality
+						any_other_country = {
+							original_tag = AUS
+							has_civil_war = yes
+							OR = {
+								owns_state = 4
+								owns_state = 152
+								owns_state = 153
+							}
+						}
+					}
+					custom_effect_tooltip = germany.126.warning
+					random_other_country = {
+						limit = {
+							original_tag = AUS
+							OR = {
+								has_government = fascism
+								AND = {
+									has_government = neutrality
+									NOT = {
+										any_other_country = {
+											original_tag = AUS
+											has_government = fascism
+										}
+									}
+								}
 								NOT = {
 									any_other_country = {
 										original_tag = AUS
-										has_government = fascism
+										OR = {
+											has_government = fascism
+											has_government = neutrality
+										}
 									}
-								}
+								}							
 							}
-							NOT = {
-								any_other_country = {
-									original_tag = AUS
-									OR = {
-										has_government = fascism
-										has_government = neutrality
-									}
-								}
-							}							
 						}
+						country_event = { id = germany.126 days = 1 }
 					}
-					country_event = { id = germany.126 days = 1 }
 				}
-			}
 
-			if = {
-				limit = {
-					4 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 4
-			}
-			if = {
-				limit = {
-					152 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
+				if = {
+					limit = {
+						4 = {
+							owner = {
+								NOT = {
+									tag = AUS
+								}
+								NOT = {
+									is_in_faction_with = ROOT
+								}
 							}
 						}
 					}
+					add_state_core = 4
 				}
-				add_state_core = 152
-			}
-			if = {
-				limit = {
-					153 = {
-						owner = {
-							NOT = {
-								tag = AUS
-							}
-							NOT = {
-								is_in_faction_with = ROOT
+				if = {
+					limit = {
+						152 = {
+							owner = {
+								NOT = {
+									tag = AUS
+								}
+								NOT = {
+									is_in_faction_with = ROOT
+								}
 							}
 						}
 					}
+					add_state_core = 152
 				}
-				add_state_core = 153
+				if = {
+					limit = {
+						153 = {
+							owner = {
+								NOT = {
+									tag = AUS
+								}
+								NOT = {
+									is_in_faction_with = ROOT
+								}
+							}
+						}
+					}
+					add_state_core = 153
+				}
 			}
 		}
 	}
@@ -6759,54 +6770,56 @@ focus_tree = {
 				uses = 1
 				category = bb_tech
 			}
-			set_technology = {
-				improved_ship_hull_heavy = 1
-			}
-			create_equipment_variant = {
-				name = "Bismarck-Klasse"
-				type = ship_hull_heavy_3
-				name_group = GER_BB_HISTORICAL
-				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = ship_heavy_battery_3
-			        fixed_ship_anti_air_slot = ship_anti_air_3
-			        fixed_ship_fire_control_system_slot = ship_fire_control_system_3
-			        fixed_ship_radar_slot = ship_radar_3
-			        fixed_ship_engine_slot = heavy_ship_engine_3
-			        fixed_ship_secondaries_slot = dp_ship_secondaries_3
-			        fixed_ship_armor_slot = ship_armor_bc_3
-			        front_1_custom_slot = ship_heavy_battery_3
-			        mid_1_custom_slot = ship_anti_air_3
-					mid_2_custom_slot = ship_anti_air_3
-			        mid_3_custom_slot = dp_ship_secondaries_3
-			        rear_1_custom_slot = ship_heavy_battery_3
-				}
-			}
-			custom_effect_tooltip="Adds two Bismarck-Klasse Battleships to the production queue, at 85% and 90% complete, respectively."
-			hidden_effect = {
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_heavy_3
-						creator = "GER"
-						version_name = "Bismarck-Klasse"
-					}
-					name = "Bismarck"
-					requested_factories = 1
-					progress = 0.9
-					amount = 1
-				}
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_heavy_3
-						creator = "GER"
-						version_name = "Bismarck-Klasse"
-					}
-					name = "Tirpitz"
-					requested_factories = 1
-					progress = 0.85
-					amount = 1
-				}
-			}
+			# EVENT FOR IT - germany.2004
+			
+			# set_technology = {
+			# 	improved_ship_hull_heavy = 1
+			# }
+			# create_equipment_variant = {
+			# 	name = "Bismarck-Klasse"
+			# 	type = ship_hull_heavy_3
+			# 	name_group = GER_BB_HISTORICAL
+			# 	parent_version = 0
+			# 	modules = {
+			# 		fixed_ship_battery_slot = ship_heavy_battery_3
+			#         fixed_ship_anti_air_slot = ship_anti_air_3
+			#         fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			#         fixed_ship_radar_slot = ship_radar_3
+			#         fixed_ship_engine_slot = heavy_ship_engine_3
+			#         fixed_ship_secondaries_slot = dp_ship_secondaries_3
+			#         fixed_ship_armor_slot = ship_armor_bc_3
+			#         front_1_custom_slot = ship_heavy_battery_3
+			#         mid_1_custom_slot = ship_anti_air_3
+			# 		mid_2_custom_slot = ship_anti_air_3
+			#         mid_3_custom_slot = dp_ship_secondaries_3
+			#         rear_1_custom_slot = ship_heavy_battery_3
+			# 	}
+			# }
+			custom_effect_tooltip="Adds two Bismarck-Klasse Battleships to the production queue, at 85% and 90% complete, respectively when the date researches January 1st 1939 or you research the 1939 Heavy Ship Hull"
+			# hidden_effect = {
+			# 	add_equipment_production = {
+			# 		equipment = {
+			# 			type = ship_hull_heavy_3
+			# 			creator = "GER"
+			# 			version_name = "Bismarck-Klasse"
+			# 		}
+			# 		name = "Bismarck"
+			# 		requested_factories = 1
+			# 		progress = 0.9
+			# 		amount = 1
+			# 	}
+			# 	add_equipment_production = {
+			# 		equipment = {
+			# 			type = ship_hull_heavy_3
+			# 			creator = "GER"
+			# 			version_name = "Bismarck-Klasse"
+			# 		}
+			# 		name = "Tirpitz"
+			# 		requested_factories = 1
+			# 		progress = 0.85
+			# 		amount = 1
+			# 	}
+			# }
 		}
 	}
 

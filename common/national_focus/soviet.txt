@@ -24,7 +24,7 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 1700 y = 1850 }
+	continuous_focus_position = { x = 2400 y = 1075 }
 
 	focus = {
 		id = SOV_socialist_realism
@@ -1932,7 +1932,7 @@ focus_tree = {
 		id = SOV_technical_assistance
 		icon = GFX_SOV_usa_sov_agreement
 		prerequisite = { focus = SOV_war_mobilisation }
-		x = 7
+		x = 6
 		y = 1
 		relative_position_id = SOV_war_mobilisation
 		cost = 5
@@ -3425,7 +3425,39 @@ focus_tree = {
 		}
 	}
 
-	
+	focus = {
+		id = SOV_last_stand_of_communism
+		icon = GFX_focus_SOV_lessons
+		prerequisite = { focus = SOV_fareast_reserves }
+		x = 0
+		y = 1
+		relative_position_id = SOV_fareast_reserves
+		cost = 1
+		
+		available = {
+			surrender_progress > 0.75
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = SOV_last_stand_of_the_ussr days = 60
+			}
+			hidden_effect = {
+				every_army_leader={
+					add_trait = {
+						trait = twenty_terrain_penalty_reduction
+					}
+				}
+			}
+			hidden_effect = {
+				every_army_leader={
+					add_trait = {
+						trait = fifty_cas_dmg_reduction
+					}
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = SOV_study_our_losses
@@ -3595,7 +3627,7 @@ focus_tree = {
 		icon = GFX_SOV_great_archipelago
 		prerequisite = { focus = SOV_coordinate_industry }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SOV_coordinate_industry
 		cost = 5
 		ai_will_do = {

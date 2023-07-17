@@ -11,6 +11,47 @@ ideas = {
 
 	country= {
 
+		SOV_last_stand_of_the_ussr = {
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+
+			modifier = {
+				out_of_supply_factor = -0.75
+				dig_in_speed_factor = 1
+				planning_speed = 0.5
+				max_planning_factor = 0.3
+				max_dig_in = 5
+				pocket_penalty = -0.5
+				no_supply_grace = 72
+				terrain_penalty_reduction = 0.2
+				cas_damage_reduction = 0.5
+			}
+
+			on_remove = {
+				hidden_effect = {
+					every_army_leader={
+						remove_trait = {
+     						trait = twenty_terrain_penalty_reduction
+						}
+					}
+				}
+			}
+			on_remove = {
+				hidden_effect = {
+					every_army_leader={
+						remove_trait = {
+     						trait = fifty_cas_dmg_reduction
+						}
+					}
+				}
+			}
+		}
 		SOV_winter_offensive = {
 
 			allowed = {

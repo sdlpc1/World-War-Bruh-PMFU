@@ -17,6 +17,7 @@
   SPA_italian_firecontrol:0 "Italian Firecontrol"
   SPA_italian_naval_designers:0 "Italian Naval Designers"
   SPA_the_iberian_wall:0 "The Iberian Wall"
+  SPA_garrison_the_iberian_wall:0 "The National Guard"
 
   #### DECISIONS ####
   SPA_civil_war:0 "The Start of the Spanish Civil War"
@@ -44,6 +45,7 @@
   SPA_SCW_axis_victory:0 "Spanish Civil War - Total Axis Victory"
   SPA_the_plan_cruiser:0 "The Cruiser Plan"
   SPA_the_plan_submarine:0 "The Submarine Plan"
+  SPA_the_plan_imperial:0 "The Heavy Ship Plan"
 
   #### EVENTS ####
   lar_spain.39.t:0 "[From.GetNameDefCap] Demands North Africa"

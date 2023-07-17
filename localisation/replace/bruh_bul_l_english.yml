@@ -68,6 +68,9 @@
   BUL_black_sea_fleet_desc:0 "We're certain that the Russians won't mind a contesting power in the Black Sea."
   BUL_raiding_fleet:0 "Raiding Fleet"
   BUL_raiding_fleet_desc:0 "The Kriegsmarine's U-Boats are brilliant in design and function. We would do well to mimic these innovations."
+  BUL_expand_the_shipyards:0 "Expand the Shipyards"
+  BUL_the_heavy_ship_plan:0 "The Heavy Ship Plan"
+  BUL_the_submarine_plan:0 "The Submarine Plan"
 
   #### EVENTS ####
   bftb_bulgarian_claims.501.t:0 "Bulgaria Offers to Purchase Dobrudja"

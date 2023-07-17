@@ -67,12 +67,7 @@ news_event = {
 
 	immediate = {
 		hidden_effect = {
-			if = {
-				limit = {
-					has_completed_focus = SPA_unify_the_nationalist_front
-				}
-				set_global_flag = SPR_franco_won
-			}
+			set_global_flag = SPR_franco_won
 			if = {
 				limit = {
 					OR = {

@@ -1,6 +1,25 @@
 ideas = {
 	country = {
 		
+		ITA_naval_strike = {			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = air_support_focus
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = -0.05
+					naval_strike_attack = 0.05
+					instant = yes
+				}
+			}
+		}
+
 		ITA_mobilized_naval_workers = {			
 			
 			allowed = {
@@ -92,7 +111,7 @@ ideas = {
 				naval_torpedo_screen_penetration_factor = 0.10
 			}
 		}
-	
+
 		ITA_naval_air = {			
 			
 			allowed = {
@@ -108,9 +127,9 @@ ideas = {
 				sortie_efficiency = 0.1
 			}
 			equipment_bonus = {
-			cv_small_plane_naval_bomber_airframe = {
-				naval_strike_attack = 0.1
-			}
+				small_plane_naval_bomber_airframe = {
+					naval_strike_attack = 0.1 instant = yes
+				}
 			}
 		}
 	
