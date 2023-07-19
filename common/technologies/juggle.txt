@@ -12,16 +12,82 @@ technologies = {
 			}
 		}
 	}
-	# Juggle2 = {
-	# 	research_cost = 0
-	# 	folder = {
-	# 		name = industry_folder
-	# 		# position = { x = 2 y = 0 }
-	# 	}
-	# 	on_research_complete = {
-	# 		set_technology = {
-	# 			Juggle2 = 0
-	# 		}
-	# 	}
-	# }
+	Juggle2 = {
+		research_cost = 0
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		on_research_complete = {
+			set_technology = {
+				Juggle2 = 0
+			}
+		}
+	}
+	Juggle3 = {
+		research_cost = 0
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		on_research_complete = {
+			set_technology = {
+				Juggle3 = 0
+			}
+		}
+	}
+	Juggle4 = {
+		research_cost = 0
+		folder = {
+			name = ger_armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		on_research_complete = {
+			set_technology = {
+				Juggle4 = 0
+			}
+		}
+	}
+	Juggle5 = {
+		research_cost = 0
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		on_research_complete = {
+			set_technology = {
+				Juggle5 = 0
+			}
+		}
+	}
+	Juggle6 = {
+		research_cost = 0
+		folder = {
+			name = eng_armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		on_research_complete = {
+			set_technology = {
+				Juggle6 = 0
+			}
+		}
+	}
+	Juggle7 = {
+		research_cost = 0
+		folder = {
+			name = usa_armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		on_research_complete = {
+			set_technology = {
+				Juggle7 = 0
+			}
+		}
+	}
 }

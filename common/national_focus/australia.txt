@@ -1471,37 +1471,37 @@ focus_tree = {
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
-			navy_experience = 25
+			navy_experience = 50
 			random_state = {
 				limit = {
 					has_state_flag = AST_cockatoo_island_shipyards_DY
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 			}
 		}
 
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 50
 			random_owned_controlled_state = {
 				prioritize = { 285 }
 				limit = {
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
-						size > 2
+						size > 4
 						include_locked = yes
 					}
 					NOT = { state = 674 }
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = AST_cockatoo_island_shipyards_DY
@@ -1540,7 +1540,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = AST_protect_overseas_commerce
-				cost_reduction = 0.25
+				cost_reduction = 0.5
 				uses = 2
 				category = fleet_in_being_tree
 				category = convoy_defense_tree
@@ -1579,7 +1579,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = AST_fly_the_jolly_roger
-				cost_reduction = 0.25
+				cost_reduction = 0.5
 				uses = 2
 				category = submarine_doctrine
 			}
@@ -1725,15 +1725,15 @@ focus_tree = {
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
-							size > 1
+							size > 2
 							include_locked = yes
 						}
 						dockyard > 1
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1818,15 +1818,15 @@ focus_tree = {
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 					dockyard > 1
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}

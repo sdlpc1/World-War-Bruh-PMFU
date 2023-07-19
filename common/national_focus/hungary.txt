@@ -34,7 +34,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 850 y = 1100 }
+	continuous_focus_position = { x = 1575 y = 1075 }
 
 #	focus = {
 #		id = HUN_
@@ -1113,7 +1113,7 @@ focus_tree = {
 	focus = {
 		id = HUN_industrial_revitalization
 		icon = GFX_goal_generic_construction
-		x = 13
+		x = 11
 		y = 0
 
 		cost = 5
@@ -1563,7 +1563,7 @@ focus_tree = {
 		id = HUN_invite_foreign_investors
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = HUN_civilian_industry }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = HUN_civilian_industry
 
@@ -1598,7 +1598,7 @@ focus_tree = {
 		id = HUN_expand_the_manfred_weiss_steel_works
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = HUN_invite_foreign_investors }
-		x = -3
+		x = -2
 		y = 2
 		relative_position_id = HUN_civilian_industry
 
@@ -1669,7 +1669,7 @@ focus_tree = {
 		id = HUN_expand_the_aluminum_industry
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = HUN_invite_foreign_investors }
-		x = -1
+		x = 0
 		y = 2
 		relative_position_id = HUN_civilian_industry
 
@@ -1801,8 +1801,8 @@ focus_tree = {
 		id = HUN_boost_hungarian_aviation_industry
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = HUN_domestic_arms_industry }
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = HUN_domestic_arms_industry
 
 		cost = 5
@@ -1870,7 +1870,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_announce_the_gyor_program
 
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 40
@@ -1907,10 +1907,10 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_factory
 		prerequisite = { focus = HUN_autarky }
 		x = 0
-		y = 3
+		y = 4
 		relative_position_id = HUN_announce_the_gyor_program
 
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 40
@@ -1970,7 +1970,7 @@ focus_tree = {
 	focus = {
 		id = HUN_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 20
+		x = 17
 		y = 0
 
 		cost = 5
@@ -2684,8 +2684,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = HUN_italian_tank_designer
-			show_ideas_tooltip = HUN_german_tank_designer
+			show_ideas_tooltip = fiat
 		}
 	}
 	

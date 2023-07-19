@@ -1554,6 +1554,22 @@ political_actions = {
 			add_state_core = 716
 			add_state_core = 717
 			add_state_core = 761
+			every_state = {
+				limit = {
+					OR = {
+						state = 328
+						state = 610
+						state = 611
+						state = 612
+						state = 714
+						state = 715
+						state = 716
+						state = 717
+						state = 761
+					}
+				}
+				add_dynamic_modifier = { modifier = annex_manpower_reudction }
+			}
 		}
 	}
 

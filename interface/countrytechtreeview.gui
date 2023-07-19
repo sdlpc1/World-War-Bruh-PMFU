@@ -552,6 +552,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+
+			# gridboxtype = {
+			# 	name = "Juggle1_tree"
+			# 	position = { x = 134 y = 172 }
+			# 	size = { width = 72 height = 650 }
+			# 	slotsize = { width = 70 height = 70 }
+			# 	format = "UP"
+			# }
 		}
 
 
@@ -1411,6 +1419,13 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			gridboxtype = {
+				name = "Juggle4_tree"
+				position = { x = 1749 y = 72 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
 		
 		containerWindowType = {
@@ -1802,6 +1817,13 @@ guiTypes = {
 				name = "sov_heavy_tank_1_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "Juggle5_tree"
+				position = { x = 1474 y = 172 }
+				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
@@ -2225,6 +2247,13 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			gridboxtype = {
+				name = "Juggle6_tree"
+				position = { x = 1474 y = 172 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
 		
 		containerWindowType = {
@@ -2627,6 +2656,13 @@ guiTypes = {
 				name = "usa_light_tank_1_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "Juggle7_tree"
+				position = { x = 1274 y = 172 }
+				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
@@ -3058,6 +3094,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+
+			gridboxtype = {
+				name = "Juggle3_tree"
+				position = { x = 1534 y = 172 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
 
 		containerWindowType = {
@@ -3417,6 +3461,13 @@ guiTypes = {
 				name = "rocket_artillery_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "Juggle2_tree"
+				position = { x = 1634 y = 172 }
+				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
@@ -4868,6 +4919,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+
+			# gridboxtype = {
+			# 	name = "Juggle1_tree"
+			# 	position = { x = 1034 y = 72 }
+			# 	size = { width = 72 height = 650 }
+			# 	slotsize = { width = 70 height = 70 }
+			# 	format = "UP"
+			# }
 		}
 
 		containerWindowType = {

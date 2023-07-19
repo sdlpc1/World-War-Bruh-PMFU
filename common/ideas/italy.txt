@@ -868,17 +868,24 @@ ideas = {
 	
 		fiat = {
 			
-			
 			allowed = {
-				original_tag = ITA
+				OR = {
+					original_tag = ITA
+					original_tag = HUN
+				}	
 			}
 			
+			available = {
+				OR = {
+					original_tag = ITA
+					has_completed_focus = HUN_mobile_focus
+				}
+			}
 			
 			research_bonus = {
 				armor = 0.15
 			}
 			
-			# traits = { tank_manufacturer }
 			equipment_bonus = {
 				armor = {
 					reliability = 0.05
@@ -901,7 +908,6 @@ ideas = {
 		designer = yes
 		
 		beretta = {
-			
 			
 			allowed = {
 				original_tag = ITA

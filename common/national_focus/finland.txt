@@ -22,7 +22,7 @@ focus_tree = {
 		}
 		
 	}
-	continuous_focus_position = { x = 50 y = 850 }
+	continuous_focus_position = { x = 425 y = 675 }
 	default = no
 	
 	focus = {
@@ -1020,7 +1020,7 @@ focus_tree = {
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = FIN_winter_war }
 		mutually_exclusive = { focus = FIN_victorious }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = FIN_winter_war
 
@@ -1067,7 +1067,7 @@ focus_tree = {
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = FIN_winter_war }
 		mutually_exclusive = { focus = FIN_revanchism }
-		x = 5
+		x = 4
 		y = 1
 		relative_position_id = FIN_winter_war
 
@@ -1245,8 +1245,8 @@ focus_tree = {
 		id = FIN_field_kitchens
 		icon = GFX_focus_secret_rearmament
 		prerequisite = { focus = FIN_winter_war }
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = FIN_winter_war
 
 		cost = 5

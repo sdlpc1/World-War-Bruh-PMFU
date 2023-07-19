@@ -7713,18 +7713,35 @@ spriteTypes = {
 	}
 
 	# JUGGLE TECH
-
-	SpriteType = {
-		name = "GFX_Juggle2_medium"
-		texturefile = "gfx/interface/technologies/industry/juggle.dds"
-	}
-
 	SpriteType = {
 		name = "GFX_Juggle1_medium"
 		texturefile = "gfx/interface/technologies/industry/juggle.dds"
 	}
-	
-	
+	SpriteType = {
+		name = "GFX_Juggle2_medium"
+		texturefile = "gfx/interface/technologies/industry/juggle.dds"
+	}
+	SpriteType = {
+		name = "GFX_Juggle3_medium"
+		texturefile = "gfx/interface/technologies/industry/juggle.dds"
+	}
+	SpriteType = {
+		name = "GFX_Juggle4_medium"
+		texturefile = "gfx/interface/technologies/industry/juggle.dds"
+	}
+	SpriteType = {
+		name = "GFX_Juggle5_medium"
+		texturefile = "gfx/interface/technologies/industry/juggle.dds"
+	}
+	SpriteType = {
+		name = "GFX_Juggle6_medium"
+		texturefile = "gfx/interface/technologies/industry/juggle.dds"
+	}
+	SpriteType = {
+		name = "GFX_Juggle7_medium"
+		texturefile = "gfx/interface/technologies/industry/juggle.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_goal_continuous_armor_production_shine"
 		texturefile = "gfx/interface/goals/goal_continuous_armor_production.dds"

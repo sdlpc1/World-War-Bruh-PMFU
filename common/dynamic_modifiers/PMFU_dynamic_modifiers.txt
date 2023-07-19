@@ -33,3 +33,9 @@ OPERATION_TORCH = {
 
 	icon = GFX_idea_generic_fortify_the_borders
 }
+
+annex_manpower_reudction  = {
+	icon = GFX_idea_SPR_disbanded_army
+	
+	local_manpower = -0.9
+}

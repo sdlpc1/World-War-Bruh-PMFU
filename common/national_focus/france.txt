@@ -3628,7 +3628,7 @@ focus_tree = {
 	focus = {
 		id = FRA_air_focus
 		icon = GFX_goal_generic_build_airforce
-		x = 31
+		x = 30
 		y = 5
 		cost = 5
 

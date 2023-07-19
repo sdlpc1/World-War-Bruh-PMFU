@@ -51,7 +51,7 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 14
+		x = 7
 		y = 0
 		trigger = {
 			tag = ENG
