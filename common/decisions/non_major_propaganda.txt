@@ -1069,9 +1069,9 @@ ALLIES_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			naval_detection = 0.25
-			convoy_escort_efficiency = 0.25
-			convoy_retreat_speed = 0.25
+			naval_detection = 0.3
+			convoy_escort_efficiency = 0.3
+			convoy_retreat_speed = 0.3
 		}
 
 		complete_effect = {

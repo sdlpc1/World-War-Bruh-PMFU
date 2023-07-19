@@ -92,6 +92,8 @@
  POL_allied_industry:0 "Allied Industrial Support"
  POL_allied_factories:0 "Allied Factory Support"
  POL_buy_equipment:0 "Puchase Allied Equipment"
+ POL_no_agency:0 "Underfunded Espionage"
+ POL_no_agency_desc:0 "We won't be able to build a Spy Agency while our government remains in Warsaw"
  
  POL_learn_from_defeat:0 "Learn From Our Defeat"
  POL_new_tank:0 "New Tank Strategy"
@@ -326,7 +328,7 @@
  GetAdmiralPortrait_tt:0 "[GetAdmiralPortrait]"
 
  startingevent.29.t:0 "Naval Fleet Size §0(Important)§!"
- startingevent.29.desc:0 "1) You should have multiple fleets, with no fleet exceeding a Command Limit of 150.\n2) Fleets should have high screening values for capitals and carriers\n3) You can now only have 8 carriers per fleet without getting an overstacking penalty\n\n§BFleet Command Limit§!\n\nEvery ship class has a 'command limit' value. A fleet (all taskforces underneath one admiral) can support at most 150 'command limit'. As long as you are at or below your command limit value for every fleet with an admiral leading it, then you will not have special debuffs applied to your admiral and country. Any admiral which is leading a fleet that contains capitals or light cruisers will appear in a list just right of the admiral portraits. This list contains useful information about your fleets so that you can easily adhere to this system.\n\nDestroyers/Submarines - 1 command limit\nLight Cruisers/Heavy Cruisers - 2 command limit\nBattleships and Battlecruisers - 6 command limit\nCarriers/Super Heavy Battleships - 8 command limit.\n\nFor each Command Limit you are over the cap, your country will deal 1% less naval damage. Command Limit is recalculated every week when there is no war, so you may need to wait to see the changes update. Once at war it will update the calculation daily."
+ startingevent.29.desc:0 "1) You should have multiple fleets, with no fleet exceeding a Command Limit of 150.\n2) Fleets should have high screening values for capitals and carriers\n3) You need 1 destroyer for every 2 convoys in a battle, and one for every 40 convoys in a space for escort efficiency.\n4)Your host should require an admiral on all fleets\n\n§BFleet Command Limit§!\n\nEvery ship class has a 'command limit' value. A fleet (all taskforces underneath one admiral) can support at most 150 'command limit'. As long as you are at or below your command limit value for every fleet with an admiral leading it, then you will not have special debuffs applied to your admiral and country. Any admiral which is leading a fleet will appear in a list just right of the admiral portraits. This list contains useful information about your fleets so that you can easily adhere to this system.\n\nDestroyers/Submarines - 1 command limit\nLight Cruisers/Heavy Cruisers - 2 command limit\nBattleships and Battlecruisers - 6 command limit\nCarriers/Super Heavy Battleships - 8 command limit.\n\n§RIf you are over the cap you will deal 5% less damage, and for each Command Limit you are over the cap, your country will deal an additional 1% less naval damage.§! Command Limit is recalculated every week when there is no war, so you may need to wait to see the changes update. Once at war it will update the calculation daily."
 
 officer_training_flag:0 "Officer Training in Progress"
 superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General with §Y"Engineer Officer"§! the trait §Y"Engineer"§!"

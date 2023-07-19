@@ -568,6 +568,7 @@ screening_bonus = {
   navy_visibility = -0.1
   naval_heavy_gun_hit_chance_factor = 0.75
   sortie_efficiency = 0.40
+  convoy_retreat_speed = 0.3
 }
 
 capital_screening_bonus = { 

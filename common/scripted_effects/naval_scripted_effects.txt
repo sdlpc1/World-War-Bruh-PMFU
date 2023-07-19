@@ -208,7 +208,7 @@ HMP_check_fleet_size = {
 			}
 			subtract_from_temp_variable = {
 				var = command_limit_penalty_calc
-				value = 150
+				value = 145
 			}
 			multiply_temp_variable = {
 				var = command_limit_penalty_calc
@@ -228,11 +228,13 @@ HMP_check_fleet_size = {
 			custom_trigger_tooltip = {  
 				OR = { 
 					check_variable = { num_ships_with_type@carrier > 0 }
-					check_variable = { num_ships_with_type@sh_battleship > 1 } 
-					check_variable = { num_ships_with_type@light_cruiser > 1 } 
+					check_variable = { num_ships_with_type@sh_battleship > 0 } 
+					check_variable = { num_ships_with_type@light_cruiser > 0 } 
 					check_variable = {  num_ships_with_type@battleship > 0 } 
 					check_variable = { num_ships_with_type@battle_cruiser > 0 } 
 					check_variable = {  num_ships_with_type@heavy_cruiser > 0  }  
+					check_variable = {  num_ships_with_type@destroyer > 1  }  
+					check_variable = {  num_ships_with_type@submarine > 1  }  
 				}
 			}	
 		}
