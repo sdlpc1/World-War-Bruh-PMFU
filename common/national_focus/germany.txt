@@ -6706,28 +6706,28 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = radar_tech_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 3
 				category = radar_tech
 			}
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = dd_tech
 			}
 			add_tech_bonus = {
 				name = cr_bonus
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = cl_tech
 				category = ca_tech
 			}
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.75
-				uses = 3
-				category = naval_doctrine
-			}
+			# add_doctrine_cost_reduction = {
+			# 	cost_reduction = 0.75
+			# 	uses = 3
+			# 	category = naval_doctrine
+			# }
 		}
 	}
 
@@ -6938,7 +6938,7 @@ focus_tree = {
 				name = ti_bonus
 				name = GER_trade_interdiction
 				cost_reduction = 0.5
-				uses = 4
+				uses = 2
 				category = naval_doctrine
 			}
 			add_tech_bonus = {
@@ -6967,7 +6967,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = cv_bonus
-				bonus = 2.0
+				bonus = 0.75
 				uses = 1
 				category = cv_tech
 			}
@@ -7084,13 +7084,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			set_technology = { improved_ship_hull_submarine = 1 }
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = { cruiser_submarines = 1 }
-			}
+			# set_technology = { improved_ship_hull_submarine = 1 }
 		}
 		
 		completion_reward = {
@@ -7224,7 +7218,7 @@ focus_tree = {
 				name = ti_bonus
 				name = GER_trade_interdiction
 				cost_reduction = 0.5
-				uses = 4
+				uses = 2
 				category = naval_doctrine
 			}
 		}
@@ -7245,6 +7239,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_technology = { cruiser_submarines = 1 }
+			}
 			add_ideas = GER_modular_construction
 		}
 	}
