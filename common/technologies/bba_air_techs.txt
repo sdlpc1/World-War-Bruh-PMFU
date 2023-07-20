@@ -968,6 +968,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = air_tech_after_41_tt
 		}
+		show_effect_as_desc = yes
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1097,6 +1098,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = air_tech_after_41_tt
 		}
+		show_effect_as_desc = yes
 		
 		research_cost = 0.5
 		start_year = 1942
@@ -1381,6 +1383,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = air_tech_after_41_tt
 		}
+		show_effect_as_desc = yes
 		research_cost = 0.5
 		start_year = 1942
 		folder = {
@@ -1622,6 +1625,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = air_tech_after_41_tt
 		}
+		show_effect_as_desc = yes
 		enable_equipment_modules = {
 			engine_4_1x
 			engine_4_2x
@@ -1801,6 +1805,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = armor_tech_1_tt
 		}
+		show_effect_as_desc = yes
 		categories = {
 			air_equipment
 			plane_modules_tech

@@ -330,21 +330,21 @@ SOV_nikolai_vatutin={
 }
 SOV_ivan_konev={
 	name="Ivan Konev"
-	advisor={
-		slot = high_command
-		idea_token = ivan_konev
-		ledger  = army 
-			allowed  = {
-				original_tag  = SOV 
-			}
-			traits  = {
-				army_concealment_2
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-			cost = 100
-	}
+	# advisor={
+	# 	slot = high_command
+	# 	idea_token = ivan_konev
+	# 	ledger  = army 
+	# 		allowed  = {
+	# 			original_tag  = SOV 
+	# 		}
+	# 		traits  = {
+	# 			army_concealment_2
+	# 		}
+	# 		ai_will_do  = {
+	# 			factor  = 1.000
+	# 		}
+	# 		cost = 100
+	# }
 	portraits={
 		army={
 			small="GFX_idea_ivan_konev"
@@ -354,7 +354,7 @@ SOV_ivan_konev={
 		}
 	}
 	corps_commander={
-		traits={ harsh_leader armor_officer politically_connected inflexible_strategist trickster combined_arms_expert trait_SOV_stalinist }
+		traits={ harsh_leader panzer_leader armor_officer politically_connected inflexible_strategist trickster combined_arms_expert trait_SOV_stalinist }
 		skill=4
 		attack_skill=4
 		defense_skill=5

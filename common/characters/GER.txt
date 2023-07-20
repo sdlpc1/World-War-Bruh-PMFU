@@ -391,7 +391,7 @@ characters={
 					original_tag  = GER 
 				}
 				traits  = {
-					army_CombinedArms_3
+					army_CombinedArms_2
 				}
 				ai_will_do  = {
 					factor  = 1.000

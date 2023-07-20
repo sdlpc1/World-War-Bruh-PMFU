@@ -1981,23 +1981,11 @@ focus_tree = {
 			# set_technology = {
 			# 	inf_radio1 = 1
 			# }
-			if = {
-				limit = {
-					NOT = {
-						has_tech = inf_radio1
-					}
-				}
-				set_technology = {
-					inf_radio1 = 1
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = radio_bonus
-					bonus = 0.25
-					uses = 1
-					category = electronics
-				}
+			add_tech_bonus = {
+				name = radio_bonus
+				bonus = 1000
+				uses = 1
+				technology = inf_radio1
 			}
 		}
 	}
@@ -2060,23 +2048,11 @@ focus_tree = {
 			# set_technology = {
 			# 	art_radio1 = 1
 			# }
-			if = {
-				limit = {
-					NOT = {
-						has_tech = art_radio1
-					}
-				}
-				set_technology = {
-					art_radio1 = 1
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = radio_bonus
-					bonus = 0.25
-					uses = 1
-					category = electronics
-				}
+			add_tech_bonus = {
+				name = radio_bonus
+				bonus = 1000
+				uses = 1
+				technology = art_radio1
 			}
 		}
 	}
@@ -2136,23 +2112,11 @@ focus_tree = {
 			# set_technology = {
 			# 	mot_radio1 = 1
 			# }
-			if = {
-				limit = {
-					NOT = {
-						has_tech = mot_radio1
-					}
-				}
-				set_technology = {
-					mot_radio1 = 1
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = radio_bonus
-					bonus = 0.25
-					uses = 1
-					category = electronics
-				}
+			add_tech_bonus = {
+				name = radio_bonus
+				bonus = 1000
+				uses = 1
+				technology = mot_radio1
 			}
 		}
 	}
@@ -2184,23 +2148,11 @@ focus_tree = {
 				uses = 2
 				category = cat_light_armor
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_tech = mot_radio2
-					}
-				}
-				set_technology = {
-					mot_radio2 = 1
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = radio_bonus
-					bonus = 0.25
-					uses = 1
-					category = electronics
-				}
+			add_tech_bonus = {
+				name = radio_bonus
+				bonus = 1000
+				uses = 1
+				technology = mot_radio2
 			}
 		}
 	}
@@ -7112,13 +7064,13 @@ focus_tree = {
 				uses = 1
 				category = ss_tech
 			}
-			set_technology = { improved_ship_hull_submarine = 1 }
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = { cruiser_submarines = 1 }
-			}
+			# set_technology = { improved_ship_hull_submarine = 1 }
+			# if = {
+			# 	limit = {
+			# 		has_dlc = "Man the Guns"
+			# 	}
+			# 	set_technology = { cruiser_submarines = 1 }
+			# }
 		}
 	}
 

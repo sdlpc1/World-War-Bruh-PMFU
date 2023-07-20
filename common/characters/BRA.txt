@@ -306,7 +306,7 @@ characters={
 	}
 	BRA_francisco_mello={
 		advisor={
-			slot = high_command
+			slot = air_chief
 			idea_token = BRA_francisco_mello
 			ledger = air 
 			allowed = {

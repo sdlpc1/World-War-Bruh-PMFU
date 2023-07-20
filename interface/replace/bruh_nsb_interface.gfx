@@ -791,6 +791,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/tanks/sov/sov_t34_hull.dds"
 	}
 	SpriteType = {
+		name = "sov_medium_tank_chassis_t34_m1942"
+		texturefile = "gfx/interface/technologies/tanks/sov/sov_t34_hull.dds"
+	}
+	SpriteType = {
 		name = "GFX_sov_medium_tank_chassis_t44_medium"
 		texturefile = "gfx/interface/technologies/tanks/sov/sov_t44_hull.dds"
 	}
@@ -850,7 +854,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/tanks/sov/sov_t34_hull.dds"
 	}
 	SpriteType = {
-		name = "GFX_sov_medium_tank_4_medium"
+		name = "GFX_sov_medium_tank_3_medium"
+		texturefile = "gfx/interface/technologies/tanks/sov/sov_t34_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_medium_tank_5_medium"
 		texturefile = "gfx/interface/technologies/tanks/sov/sov_t44_hull.dds"
 	}
 	SpriteType = {
@@ -890,11 +898,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_sov_medium_tank_3_medium"
+		name = "GFX_sov_medium_tank_4_medium"
 		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_sov_medium_tank_5_medium"
+		name = "GFX_sov_medium_tank_6_medium"
 		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
 	}
 	SpriteType = {

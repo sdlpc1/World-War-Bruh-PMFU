@@ -384,9 +384,9 @@ characters={
 				traits={ brilliant_strategist hill_fighter trickster trait_SPA_nationalist_sympathies }
 				skill=6
 				attack_skill=6
-				defense_skill=3
-				planning_skill=3
-				logistics_skill=4
+				defense_skill=4	
+				planning_skill=4
+				logistics_skill=5
 				legacy_id=1112
 			}
 		}

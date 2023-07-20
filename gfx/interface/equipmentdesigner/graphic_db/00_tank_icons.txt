@@ -965,7 +965,6 @@ default = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/tanks/sov/sov_medium_tank_2.dds"
-				"gfx/interface/technologies/tanks/sov/sov_medium_tank_3.dds"
 				"gfx/interface/technologies/tanks/sov/sov_medium_tank_4.dds"
 				"gfx/interface/technologies/tanks/sov/sov_medium_tank_5.dds"
 				"gfx/interface/technologies/tanks/sov/sov_medium_spg_1.dds"
@@ -979,6 +978,24 @@ default = {
 	sov_medium_tank_chassis_t34 = {
 		pool = {
 			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_medium_tank_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_tank_3.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_tank_4.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_tank_5.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_td_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_td_2.dds"
+			}
+		}
+	}
+	sov_medium_tank_chassis_t34_m1942 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_t44_tank_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_t44_tank_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_t44_tank_3.dds"
 				"gfx/interface/technologies/tanks/sov/sov_medium_tank_2.dds"
 				"gfx/interface/technologies/tanks/sov/sov_medium_tank_3.dds"
 				"gfx/interface/technologies/tanks/sov/sov_medium_tank_4.dds"

@@ -11,7 +11,7 @@
 #!gfx:interface\replace\bruh_sov_interface.gfx
 
 focus_tree = {
-	id = italian_focus
+	id = italian_focus 
 
 	country = {
 		factor = 0
@@ -5358,7 +5358,7 @@ focus_tree = {
 					}
 					upgrades = {
 						plane_engine_upgrade = 5
-						 plane_armor_upgrade = 5
+						plane_armor_upgrade = 5
 					}
 				}
 			}

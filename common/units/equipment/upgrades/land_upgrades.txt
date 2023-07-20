@@ -245,7 +245,7 @@ upgrades = {
 			}
 			2 = {
 				OR = {
-					has_tech = sov_medium_tank_3 #T-34 Model 43
+					has_tech = sov_medium_tank_4 #T-34 Model 43
 					has_tech = usa_medium_tank_5 #M4 Jumbo
 					has_tech = usa_medium_tank_7 #Super Pershing
 				}
@@ -284,7 +284,7 @@ upgrades = {
 		level_requirements = {
 			1 = {
 				OR = {
-					has_tech = sov_medium_tank_5 #T-44 Model 46
+					has_tech = sov_medium_tank_6 #T-44 Model 46
 					has_tech = sov_heavy_tank_7 #IS3 Upgrade
 				}
 			}

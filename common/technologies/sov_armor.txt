@@ -246,7 +246,7 @@ technologies = {
 		
 	
 		path = {
-			leads_to_tech = sov_medium_tank_3 #T-34 Model 43
+			leads_to_tech = sov_medium_tank_3 #T-34 Model 42
 			research_cost_coeff = 1
 		}
 		
@@ -270,9 +270,67 @@ technologies = {
 			factor = 0
 		}
 	}	
+
+	#T-34 Model 42
+	sov_medium_tank_3 = {
+
+		enable_equipments = {
+			sov_medium_tank_chassis_t34_m1942
+		}
+		
+		path = {
+			leads_to_tech = sov_medium_tank_4 #T-34 Model 43
+			research_cost_coeff = 1
+		}
+
+		# on_research_complete = {
+		# 	create_equipment_variant = {
+		# 		name = "T-34 M1942 Chassis A-1"
+		# 		type = sov_medium_tank_chassis_t34_m1942
+		# 		obsolete = no
+		# 		modules = {
+		# 			main_armament_slot = tank_med_hv_gun_2
+		# 			turret_type_slot = tank_medium_turret_2
+		# 			suspension_type_slot = tank_christie_suspension
+		# 			armor_type_slot = tank_welded_armor
+		# 			engine_type_slot = tank_gasoline_engine
+		# 			special_type_slot_1 = tank_radio_2
+		# 			special_type_slot_2 = additional_heavy_machine_guns
+		# 			special_type_slot_3 = extra_ammo_storage
+		# 			special_type_slot_4 = stabilizer
+		# 		}
+		# 	}
+		# 	add_equipment_production = {
+		# 		equipment = {
+		# 			type = sov_medium_tank_chassis_t34_m1942
+		# 			creator = "SOV"
+		# 			version_name = "T-34 M1942 Chassis A-1"
+		# 		}
+		# 		requested_factories = 1
+		# 		progress = 0.1
+		# 		efficiency = 40
+		# 	}
+		# }
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	
 	#T-34 Model 43
-	sov_medium_tank_3 = { 
+	sov_medium_tank_4 = { 
 
 		on_research_complete = {
 			custom_effect_tooltip = t34_upgrade_2_tt
@@ -280,10 +338,11 @@ technologies = {
 		show_effect_as_desc = yes
 		enable_equipment_modules = {
 			tank_large_medium_superstructure
+			tank_medium_turret_3
 		}
 	
 		path = {
-			leads_to_tech = sov_medium_tank_4
+			leads_to_tech = sov_medium_tank_5
 			research_cost_coeff = 1
 		}
 		
@@ -304,17 +363,18 @@ technologies = {
 		}
 	}	
 	
-	sov_medium_tank_4 = {
+	sov_medium_tank_5 = {
 
 		enable_equipments = {
 			sov_medium_tank_chassis_t44
 		}
-		
+
 		enable_equipment_modules = {
-			tank_medium_turret_3
+			tank_modern_tank_turret
 		}
+		
 		path = {
-			leads_to_tech = sov_medium_tank_5 #T-44 Model 46
+			leads_to_tech = sov_medium_tank_6 #T-44 Model 46
 			research_cost_coeff = 1
 		}
 
@@ -336,14 +396,14 @@ technologies = {
 	}	
 	
 	#T-44 Model 46
-	sov_medium_tank_5 = { 
+	sov_medium_tank_6 = { 
 
 		on_research_complete = {
 			custom_effect_tooltip = t44_upgrade_1_tt
 		}
 		show_effect_as_desc = yes
 		enable_equipment_modules = {
-			tank_modern_tank_turret
+			# tank_modern_tank_turret
 		}
 		
 		research_cost = 1.0

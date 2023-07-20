@@ -408,7 +408,7 @@ focus_tree = {
 		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = ROM_preserve_greater_romania }
 		# mutually_exclusive = { focus = ROM_expand_greater_romania }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
@@ -446,8 +446,8 @@ focus_tree = {
 		id = ROM_southern_refugees
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		prerequisite = { focus = ROM_national_humiliation }
-		x = -1
-		y = 2
+		x = -2
+		y = 1
 		relative_position_id = ROM_national_humiliation
 
 		cost = 5
@@ -580,8 +580,8 @@ focus_tree = {
 		id = ROM_eastern_refugees
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		prerequisite = { focus = ROM_national_humiliation }
-		x = 1
-		y = 2
+		x = 2
+		y = 1
 		relative_position_id = ROM_national_humiliation
 
 		cost = 5
@@ -671,7 +671,7 @@ focus_tree = {
 		id = ROM_civil_works
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = 3
+		x = 5
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
@@ -1290,7 +1290,7 @@ focus_tree = {
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 12
+		x = 15
 		y = 0
 
 		cost = 10
@@ -1507,7 +1507,7 @@ focus_tree = {
 		prerequisite = { focus = ROM_militarize_the_sentinels }
 	
 		x = 0
-		y = 4
+		y = 2
 		relative_position_id = ROM_his_majestys_loyal_government
 
 		cost = 10
@@ -2545,7 +2545,7 @@ focus_tree = {
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 16
+		x = 19
 		y = 0
 
 		cost = 5
@@ -3168,7 +3168,7 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 24
+		x = 27
 		y = 0
 
 		cost = 5

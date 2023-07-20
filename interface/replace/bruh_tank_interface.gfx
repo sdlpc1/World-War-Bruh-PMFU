@@ -401,17 +401,17 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_sov_medium_tank_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/tanks/sov/sov_medium_tank_3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_sov_medium_tank_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/tanks/sov/sov_medium_tank_4.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_sov_medium_tank_equipment_5_medium"
+		name = "GFX_sov_medium_tank_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/tanks/sov/sov_medium_tank_5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_sov_medium_tank_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/tanks/sov/sov_medium_tank_6.dds"
 	}
 	
 	SpriteType = {

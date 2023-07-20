@@ -1011,6 +1011,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_heavy_gun_1
+			tank_heavy_hv_gun_1
 			apcr_round
 		}
 		
@@ -1035,7 +1036,7 @@ technologies = {
 			heavy_anti_air_equipment_2
 		}
 		enable_equipment_modules = {
-			tank_heavy_hv_gun_1
+			
 			tank_heavy_aa_gun_2
 		}
 		

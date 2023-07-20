@@ -1260,23 +1260,11 @@ focus_tree = {
 			# 	#mot_radio = 1
 			# 	mot_radio2 = 1
 			# }
-			if = {
-				limit = {
-					NOT = {
-						has_tech = mot_radio2
-					}
-				}
-				set_technology = {
-					mot_radio2 = 1
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = radio_bonus
-					bonus = 0.25
-					uses = 1
-					category = electronics
-				}
+			add_tech_bonus = {
+				name = radio_bonus
+				bonus = 1000
+				uses = 1
+				technology = mot_radio2
 			}
 		}
 	}
