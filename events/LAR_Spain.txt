@@ -51,9 +51,11 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = spain_war_rule
-						option = ENABLED
+					NOT = {
+						has_game_rule = {
+							rule = spain_war_rule
+							option = DISABLED
+						}
 					}
 				}
 				if = {
@@ -90,9 +92,11 @@ country_event = {
 		name = lar_spain.2.a
 		if = {
 			limit = {
-				has_game_rule = {
-					rule = spain_war_rule
-					option = ENABLED
+				NOT = {
+					has_game_rule = {
+						rule = spain_war_rule
+						option = DISABLED
+					}
 				}
 			}
 			hidden_effect = {
@@ -148,7 +152,7 @@ country_event = {
 					}
 				}
 				# Trigger war between the sides
-				SPA = {
+				SPR = {
 					declare_war_on = {
 						target = SPD
 						type = civil_war
@@ -166,7 +170,7 @@ country_event = {
 					inherit_technology = SPA
 					country_lock_all_division_template = no
 				}
-				SPA = { set_capital = { state = 176 } }
+				SPR = { set_capital = { state = 176 } }
 				SPD = { set_capital = { state = 41 } }
 				# We need to teleport the railway guns after capitals have been set. transfer_units_fraction will
 				# teleport them but to the wrong province.
@@ -195,7 +199,7 @@ country_event = {
 					}
 				}
 	
-				SPA = {
+				SPR = {
 					load_oob = "SPA_Civil_War"
 					set_equipment_fraction = 1.0
 					set_stability = 0.6

@@ -600,6 +600,7 @@ country_event = {
 					transfer_state = 665
 				}
 				Vichy_Spawn = yes
+				inherit_technology = FRA
 			}
 		}
 		random_country = {

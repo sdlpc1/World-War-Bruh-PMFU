@@ -198,7 +198,7 @@ characters={
 		}
 		advisor={
 			slot = high_command
-			idea_token = SAF_evered_poole
+			idea_token = SAF_dan_pienaar
 			ledger = army
 			allowed  = {
 				original_tag = SAF
