@@ -187,3 +187,28 @@ GER_flak_36_states = {
 		state = 42
 	}
 }
+
+china_dwindle_avaiable = {
+	605 = { #chongqing
+		CONTROLLER = {
+			NOT = {
+				OR = {
+					tag = JAP
+					is_subject_of = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+	}
+	613 = { #nanjing
+		CONTROLLER = {
+			NOT = {
+				OR = {
+					tag = JAP
+					is_subject_of = JAP
+					is_in_faction_with = JAP
+				}
+			}
+		}
+	}
+}

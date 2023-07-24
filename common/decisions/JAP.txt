@@ -641,22 +641,21 @@ foreign_politics = {
 					}
 				}
 			}
+			613 = { #nanjing
+				CONTROLLER = {
+					OR = {
+						tag = JAP
+						is_subject_of = JAP
+						is_in_faction_with = JAP
+					}
+				}
+			}
 		}
 
 		available = {
 			OR = {
 				has_global_flag = JAP_china_has_capped
-				605 = { #chongqing
-					CONTROLLER = {
-						NOT = {
-							OR = {
-								tag = JAP
-								is_subject_of = JAP
-								is_in_faction_with = JAP
-							}
-						}
-					}
-				}
+				china_dwindle_avaiable = yes
 			}
 		}
 

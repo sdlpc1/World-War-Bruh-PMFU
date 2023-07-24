@@ -1,4 +1,26 @@
 defined_text = { # global
+	name = secure_china_name_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = china_war_rule
+				option = ENABLED
+			}
+		}
+		localization_key = "Secure China"
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = china_war_rule
+				option = DISABLED
+			}
+		}
+		localization_key = "Second Sino-Japanese War"
+	}
+}
+
+defined_text = { # global
 	name = academy_special_forces_gain_major
 	text = {
 		trigger = {
@@ -30,6 +52,50 @@ defined_text = { # global
 		trigger = {
 			has_game_rule = {
 				rule = navy_cap
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = china_war_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = china_war_rule
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = china_war_rule
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
+	name = spain_war_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = spain_war_rule
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = spain_war_rule
 				option = DISABLED
 			}
 		}

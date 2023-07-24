@@ -39,3 +39,9 @@ annex_manpower_reudction  = {
 	
 	local_manpower = -0.9
 }
+
+factory_reduction_balancer  = {
+	icon = GFX_idea_SPR_disbanded_army
+	
+	local_factories = -0.3
+}

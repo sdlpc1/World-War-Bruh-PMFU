@@ -537,7 +537,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		complete_tooltip = {
@@ -585,7 +585,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_the_national_and_popular_army_of_spain
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -612,7 +612,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_the_army_of_africa_model
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -638,7 +638,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SPA_equipment_modernization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -664,7 +664,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = SPA_equipment_modernization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -690,7 +690,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_equipment_modernization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -717,7 +717,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SPA_motorization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}

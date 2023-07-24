@@ -39,6 +39,36 @@ navy_cap = {
 	}
 }
 
+china_war_rule = {
+	name = "RULE_CHINA_WAR"
+	group = "RULE_GROUP_TFB"
+	default = {
+		name = "ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_CHINA_WAR_ENABLED_DESC"
+	}
+	option = {
+		name = "DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_CHINA_WAR_DISABLED_DESC"
+	}
+}
+
+spain_war_rule = {
+	name = "RULE_SPAIN_WAR"
+	group = "RULE_GROUP_TFB"
+	default = {
+		name = "ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_SPAIN_WAR_ENABLED_DESC"
+	}
+	option = {
+		name = "DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_SPAIN_WAR_DISABLED_DESC"
+	}
+}
+
 allow_china_waves = {
 	name = "RULE_CHINA_WAVES"
 	group = "RULE_GROUP_TFB"

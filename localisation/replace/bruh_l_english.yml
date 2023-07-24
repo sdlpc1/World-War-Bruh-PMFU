@@ -25,7 +25,7 @@
  startingevent.1001.d:0 "TFB recently removed it's Air Designer, but if you wish to continue using it you may search on the workshop for 'TFB Plane Designer' and download the sub mod.\nIf you wish to play on NSB then search for 'TFB No Step Back'.\nTo play on BTFB patch pre tank designer, search for 'TFB Battle for the Bosporus'."
  startingevent.1001.a:0 "Ok"
  startingevent.1002.t:0 "§bEnabled Game Rules§!"
- startingevent.1002.d:0 "Admiral Command Limit: §F[navy_cap_rule_sl]§!\n\nChinese Waves: §F[allow_china_waves_rule_sl]§!\n\nVoice Lines: §F[allow_voice_lines_rule_sl]§!\n\nFatherless Spirit: §F[fatherless_spirit_rule_sl]§!\n\nSealion Auto Teleport: §F[sealion_auto_tp_rule_sl]§!\n\nFree Templates: §F[free_templates_rule_sl]§!\n\nStrike the West: §F[japan_strike_the_west_rule_sl]§!\n\nStatus of Brazil and Mexico: §F[no_asia_bra_mex_status_rule_sl]§!\n\nUS Volunteers in China: §F[usa_volunteers_in_china_rule_sl]§!\n\nAustralia DEI Annex if Netherlands AI: §F[ast_annex_dei_at_hol_cap_rule_sl]§!\n\nHost Country: §F[horst_host_country_rule_sl]§!"
+ startingevent.1002.d:0 "Admiral Command Limit: §F[navy_cap_rule_sl]§!\n\nChina War: §F[china_war_rule_sl]§!\n\nThe Spanish Civil War: §F[spain_war_rule_sl]§!\n\n Chinese Waves: §F[allow_china_waves_rule_sl]§!\n\nVoice Lines: §F[allow_voice_lines_rule_sl]§!\n\nFatherless Spirit: §F[fatherless_spirit_rule_sl]§!\n\nSealion Auto Teleport: §F[sealion_auto_tp_rule_sl]§!\n\nFree Templates: §F[free_templates_rule_sl]§!\n\nStrike the West: §F[japan_strike_the_west_rule_sl]§!\n\nStatus of Brazil and Mexico: §F[no_asia_bra_mex_status_rule_sl]§!\n\nUS Volunteers in China: §F[usa_volunteers_in_china_rule_sl]§!\n\nAustralia DEI Annex if Netherlands AI: §F[ast_annex_dei_at_hol_cap_rule_sl]§!\n\nHost Country: §F[horst_host_country_rule_sl]§!"
  enabled_game_rules_decision:0 "Display Enabled Game Rules"
  #### LEVELS ####
  UNIT_LEVEL_0:0 "Fresh"
@@ -284,6 +284,7 @@
  air_base_construction:0 "§1Airfields can be built up to 10 levels§!"
  DELETE_DOCK:0 "Remove a Dockyard"
  annex_manpower_reudction:0 "Core Manpower Reduction"
+ factory_reduction_balancer:0 "Factory Reduction Balancer"
 
 # Annexation Choices
  ENG_annex_ire:0 "Annex Ireland"
@@ -1299,7 +1300,12 @@ fifty_cas_dmg_reduction:0 "From focus"
  RULE_AST_ANNEX_DEI_AT_HOL_CAP:0 "Australia DEI Annex if Netherlands AI"
  RULE_AST_ANNEX_DEI_AT_HOL_CAP_ENABLED_DESC:0 "Dutch East Indies will get annexed by Australia if Netherlands is AI"
  RULE_AST_ANNEX_DEI_AT_HOL_CAP_DISABLED_DESC:0 "Dutch East Indies will not get annexed by Australia if Netherlands is AI"
-
+ RULE_CHINA_WAR:0 "China War"
+ RULE_CHINA_WAR_ENABLED_DESC:0 "China War will happen as normal"
+ RULE_CHINA_WAR_DISABLED_DESC:0 "China War is disabled and scripted by focuses"
+ RULE_SPAIN_WAR:0 "Spanish Civil War"
+ RULE_SPAIN_WAR_ENABLED_DESC:0 "The Spanish Civil War will happen as normal"
+ RULE_SPAIN_WAR_DISABLED_DESC:0 "The Spanish Civil War is disabled"
  ### FREE TEMPLATES ###
  free_templates:0 "Free Templates"
  free_templates_desc:0 "Free templates for the free templates gamerule\n\n§RNOTE: These templates likely need editing before using§!"

@@ -3,45 +3,45 @@ ai_historical_focus_list_GER = {
 		GER_volksturm
 		GER_defend_berlin
 		GER_rhineland
-		GER_abwehr
-		GER_luft
-		GER_fighter_effort
 		GER_four_year_plan
 		GER_autobahn
 		GER_civ_1
 		GER_civ_2
-		GER_org_todt
-		GER_oade
-		GER_steel_werke
-		GER_reichsarbeit
-		GER_extra_research
+		# grab whicher was picked via descsion
 		GER_grosraumwirtschaft
 		GER_expand_mefo
-		# grab whicher was picked via descsion
 		GER_rearm_fast
 		GER_rearm_slow
 		GER_rearm_fast2
 		GER_rearm_slow2
 		GER_rearm_fast3
 		GER_rearm_slow3
-		# End Rearm
-		GER_anschluss
-		GER_demand_sudetenland
 		GER_rearmed_and_ready
+		GER_anschluss
+		GER_org_todt
+		GER_oade
+		GER_steel_werke
+		GER_reichsarbeit
+		GER_extra_research
+		GER_luft
+		GER_fighter_effort
+		# End Rearm
+		GER_demand_memel
+		GER_demand_sudetenland
 		GER_first_vienna_award
 		GER_end_of_czechoslovakia
 		GER_second_vienna_award
-		GER_demand_memel
 		#GER_air_doc
+		GER_heer
+		GER_bewegungskrieg
+		GER_panzer
+		GER_share_tanks
+		GER_panzer_support
+		GER_mech
 		GER_autarky
 		GER_synthetic_rubber
 		GER_synthetic_rubber2
 		GER_ig_farben
-		GER_heer
-		GER_bewegungskrieg
-		GER_panzer
-		GER_panzer_support
-		GER_mech
 		GER_cas_air_effort
 		GER_cas_air_effort2
 		GER_mol_rib_pact
@@ -51,6 +51,7 @@ ai_historical_focus_list_GER = {
 		GER_war_with_france
 		GER_avenge_versailles
 		GER_plunder_west
+		GER_abwehr
 		GER_swiss_banks
 		GER_mobilise_reich
 		GER_sweden_trade
@@ -60,7 +61,6 @@ ai_historical_focus_list_GER = {
 		GER_improved_command
 		GER_lessons_of_war
 		GER_atlantikwall
-		GER_share_tanks
 		GER_west_research
 		GER_soviet_treaty
 		GER_reintegrate_luxemburg_and_alsace_lorraine

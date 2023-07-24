@@ -51,47 +51,35 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					has_global_flag = NO_ASIA
+					has_game_rule = {
+						rule = spain_war_rule
+						option = ENABLED
+					}
 				}
-				JAP = {
-					add_named_threat = { threat = 1.2 name = "Japanese Volunteers" }
-					add_named_threat = { threat = 2 name = "Japan left the naval treaty" }
+				if = {
+					limit = {
+						has_global_flag = NO_ASIA
+					}
+					JAP = {
+						add_named_threat = { threat = 1.2 name = "Japanese Volunteers" }
+						add_named_threat = { threat = 2 name = "Japan left the naval treaty" }
+					}
+				}
+				activate_mission = SPA_SCW_republican_spirit_dwindling
+				activate_mission = SPA_SCW_axis_victory
+				every_owned_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					set_state_flag = SPR_core_of_spain_flag
+				}
+				set_global_flag = { flag = SPR_civil_war_startup value = 1 days = 3 } # Make AI avoid attacking for a few days
+				FRA = {
+					complete_national_focus = FRA_intervention_in_spain
 				}
 			}
 			set_global_flag = SPA_SCW_started_confirmed
-			activate_mission = SPA_SCW_republican_spirit_dwindling
-			activate_mission = SPA_SCW_axis_victory
-			# JAP = {
-			# 	add_named_threat = { threat = 1.2 name = "Japanese Volunteers" }
-			# 	add_named_threat = { threat = 2 name = "Japan left the naval treaty" }
-			# }
-			every_owned_state = {
-				limit = {
-					is_core_of = ROOT
-				}
-				set_state_flag = SPR_core_of_spain_flag
-			}
-			set_global_flag = { flag = SPR_civil_war_startup value = 1 days = 3 } # Make AI avoid attacking for a few days
-			FRA = {
-				complete_national_focus = FRA_intervention_in_spain
-			}
 		}
-
-	#  #  ##  ### ###  ##  #  #  ##  #   ###  ## ###     ### ### ### ###  ##  ### 
-	## # #  #  #   #  #  # ## # #  # #    #  #    #      #   #   #   #   #  #  #  
-	# ## ####  #   #  #  # # ## #### #    #   #   #      ##  ##  ##  ##  #     #  
-	#  # #  #  #   #  #  # #  # #  # #    #    #  #      #   #   #   #   #  #  #  
-	#  # #  #  #  ###  ##  #  # #  # ### ### ##   #      ### #   #   ###  ##   #  
-
-	# Removed and put into the button in the descsion instead so people can pause and the AI doesn't do stuff.
-
-	###  ### ###  #  # ###  #   ###  ##   ##  #  #     ### ### ### ###  ##  ### 
-	#  # #   #  # #  # #  # #    #  #  # #  # ## #     #   #   #   #   #  #  #  
-	###  ##  ###  #  # ###  #    #  #    #### # ##     ##  ##  ##  ##  #     #  
-	#  # #   #    #  # #  # #    #  #  # #  # #  #     #   #   #   #   #  #  #  
-	#  # ### #     ##  ###  ### ###  ##  #  # #  #     ### #   #   ###  ##   #  
-
-		# check Nationalist effect for detailed comments
 		hidden_effect = {
 			# Marks gui as "dirty" so the code updates the layout to properly hide the unused branches
 			mark_focus_tree_layout_dirty = yes
@@ -100,32 +88,320 @@ country_event = {
 	
 	option = { # Option for Nationalists - Franco
 		name = lar_spain.2.a
-		hidden_effect = {
-			SPA = { # Switch the tag alias for SPA - it now becomes SPD - the republicans
-				clr_country_flag = SPR_nationalist_spain_flag
-				drop_cosmetic_tag = yes
-				set_country_flag = SPR_republican_spain_flag
-				set_cosmetic_tag = SPR_republican_spain
-				set_politics = {
-					ruling_party = democratic
-				}
-				set_popularities = {
-					democratic = 40
-					communism = 60
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = spain_war_rule
+					option = ENABLED
 				}
 			}
-			SPD = { # Remove Carlist/Falangist country leaders for new SPD tag
-				create_country_leader = {
-					name = "Manuel Azaña"
-					desc = "POLITICS_MANUEL_AZANA_DESC"
-					picture = GFX_portrait_Manuel_Azana
-					expire = "1965.1.1"
-					ideology = conservatism
-					traits = {
-						figurehead_president
+			hidden_effect = {
+				SPA = { # Switch the tag alias for SPA - it now becomes SPD - the republicans
+					clr_country_flag = SPR_nationalist_spain_flag
+					drop_cosmetic_tag = yes
+					set_country_flag = SPR_republican_spain_flag
+					set_cosmetic_tag = SPR_republican_spain
+					set_politics = {
+						ruling_party = democratic
+					}
+					set_popularities = {
+						democratic = 40
+						communism = 60
 					}
 				}
+				SPD = { # Remove Carlist/Falangist country leaders for new SPD tag
+					create_country_leader = {
+						name = "Manuel Azaña"
+						desc = "POLITICS_MANUEL_AZANA_DESC"
+						picture = GFX_portrait_Manuel_Azana
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							figurehead_president
+						}
+					}
+				}
+				# Give SPD Madrid if the Nationalists don't have complete garrison control over it - becomes capital
+				SPD = {
+					transfer_state = 41
+					transfer_state = 165
+					transfer_state = 167
+					transfer_state = 168
+					transfer_state = 173
+					transfer_state = 175
+					transfer_state = 790
+					transfer_state = 792
+					transfer_state = 793
+					transfer_state = 794
+				}
+				transfer_units_fraction = {
+					target = SPD
+					size = 0.5 # Fallback in case one of the ratios below are not stipulated
+					stockpile_ratio = 0.5
+					army_ratio = 0.5
+					navy_ratio = 0.5
+					air_ratio = 0.5
+					keep_unit_leaders = {	
+					}
+					keep_unit_leaders_trigger = {
+						has_trait = trait_SPA_nationalist_sympathies
+					}
+				}
+				# Trigger war between the sides
+				SPA = {
+					declare_war_on = {
+						target = SPD
+						type = civil_war
+					}
+					add_civil_war_target = SPD
+				}
+				# Unlock division templates for Republicans
+				SPD = {
+					every_state = {
+						limit = {
+							is_core_of = SPR
+						}
+						add_core_of = SPD
+					}
+					inherit_technology = SPA
+					country_lock_all_division_template = no
+				}
+				SPA = { set_capital = { state = 176 } }
+				SPD = { set_capital = { state = 41 } }
+				# We need to teleport the railway guns after capitals have been set. transfer_units_fraction will
+				# teleport them but to the wrong province.
+				teleport_railway_guns_to_deploy_province = ROOT
+				teleport_railway_guns_to_deploy_province = SPD
+				SPD = {
+					# add_ideas = SPR_death_before_surrender
+					# add_ideas = SPR_disbanded_army_1
+					add_ideas = SPA_neutrality_idea
+					remove_ideas = SPR_political_violence
+					remove_ideas = SPR_national_strikes_3
+					remove_ideas = SPA_carlism_1
+					set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
+				}
+				SPD = {
+					load_oob = "SPR_Civil_War"
+					set_equipment_fraction = 1.0
+					set_stability = 0.6
+					set_war_support = 0.8
+				}
+				SOV = {
+					diplomatic_relation = {
+						country = SPD
+						relation = military_access
+						active = yes
+					}
+				}
+	
+				SPA = {
+					load_oob = "SPA_Civil_War"
+					set_equipment_fraction = 1.0
+					set_stability = 0.6
+					set_war_support = 0.5
+					add_ideas = SPA_death_before_surrender
+					remove_ideas = SPR_political_violence
+					remove_ideas = SPR_national_strikes_3
+				}
+				# Add various loyalist traits that now become relevant - indicating loyalties to the different subfactions
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 1108
+							has_id = 1109
+							has_id = 1111
+							has_id = 1112
+							has_id = 1113
+						}
+					}
+					add_unit_leader_trait = trait_SPA_falangist_loyalties
+				}
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 1114
+							has_id = 1115
+							has_id = 1116
+						}
+					}
+					add_unit_leader_trait = trait_SPA_carlist_loyalties
+					#retire = yes
+				}
+				SPD = {
+					every_unit_leader = {
+						limit = {
+							OR = {
+								has_id = 1101
+								has_id = 1102
+								has_id = 1103
+							}
+						}
+						add_unit_leader_trait = trait_SPR_republican_loyalties
+					}
+					every_unit_leader = {
+						limit = {
+							OR = {
+								has_id = 1104
+								has_id = 1105
+								has_id = 1106
+							}
+						}
+						# add_unit_leader_trait = trait_SPR_stalinist_loyalties
+						retire = yes
+					}
+				}
+				SPD = {
+					every_unit_leader = {
+						limit = {
+							#Clear out SPR_mohamed_meziane for some reason - This doesn't work right
+								has_id = 1109
+						}
+						retire = yes
+					}
+				}
+				ITA = {
+					if = {
+					   limit = {
+							has_global_flag = NO_ASIA
+					   }
+					   add_ideas = SPA_spanish_civil_war_commitments_2
+					   add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
+					}  
+					else = {
+						add_ideas = SPA_spanish_civil_war_commitments
+						add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = SPA_the_army_of_africa
+					}
+					division_template = {
+						name = "División del Ejército de África"
+						template_counter = 4
+						division_names_group = SPR_INF_06
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+						}
+					}
+					290 = {
+						create_unit = {
+							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 41
+							state = 165
+							state = 166
+							state = 167
+							state = 168
+							state = 169
+							state = 170
+							state = 171
+							state = 172
+							state = 173
+							state = 174
+							state = 175
+							state = 176
+							state = 788
+							state = 789
+							state = 790
+							state = 791
+							state = 792
+							state = 793
+							state = 794
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { unplanned_offensive }
+						province = {
+							all_provinces = yes
+						}
+					}
+					set_state_flag = SPR_unplanned_offensive_flag
+				}
+				SPD = { add_ideas = SCW_republican_spirit_dwindling }
+				SPD = { add_timed_idea = { idea = SPA_death_before_surrender_rep days = 900 } }
+				SPD = { add_equipment_to_stockpile = { type = train_equipment_1 amount = 100 producer = SPD } }
+				SPD = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1100 producer = SPD } }
 			}
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = spain_war_rule
+					option = DISABLED
+				}
+			}
+			add_named_threat = { threat = 6.8 name = "Volunteers to the SCW" }
+			activate_mission = SPA_SCW_ending
+			GER = {
+				army_experience = 200
+				air_experience = 100
+			}
+			ITA = {
+				army_experience = 200
+				air_experience = 100
+			}
+			JAP = {
+				army_experience = 200
+				air_experience = 100
+			}
+			FRA = {
+				army_experience = 200
+				air_experience = 100
+			}
+			ENG = {
+				army_experience = 200
+				air_experience = 100
+			}
+			SOV = {
+				army_experience = 200
+				air_experience = 100
+			}
+			SPR = {
+				army_experience = 500
+			}
+			add_ideas = war_economy
+			add_political_power = -150
+		}
+		hidden_effect = {
+			set_global_flag = spanish_civil_war # Start civil war - used in many triggers
 			# Switch the tag alias for the player's country - the player goes from SPR to SPA
 			set_country_flag = SPR_nationalist_spain_flag
 			set_cosmetic_tag = SPR_nationalist_spain
@@ -147,95 +423,12 @@ country_event = {
 					the_lion_of_the_rif
 				}
 			}
-			# Give SPD Madrid if the Nationalists don't have complete garrison control over it - becomes capital
-			SPD = {
-				transfer_state = 41
-				transfer_state = 165
-				transfer_state = 167
-				transfer_state = 168
-				transfer_state = 173
-				transfer_state = 175
-				transfer_state = 790
-				transfer_state = 792
-				transfer_state = 793
-				transfer_state = 794
-			}
-			transfer_units_fraction = {
-				target = SPD
-				size = 0.5 # Fallback in case one of the ratios below are not stipulated
-				stockpile_ratio = 0.5
-				army_ratio = 0.5
-				navy_ratio = 0.5
-				air_ratio = 0.5
-				keep_unit_leaders = {	
-				}
-				keep_unit_leaders_trigger = {
-					has_trait = trait_SPA_nationalist_sympathies
-				}
-			}
-			# Trigger war between the sides
-			SPA = {
-				declare_war_on = {
-					target = SPD
-					type = civil_war
-				}
-				add_civil_war_target = SPD
-			}
 			# Unlock division templates for Nationalists
 			country_lock_all_division_template = no
 			every_owned_state = {
 				set_state_flag = SPR_sided_with_nationalists_flag
 			}
-			# Unlock division templates for Republicans
-			SPD = {
-				every_state = {
-					limit = {
-						is_core_of = SPR
-					}
-					add_core_of = SPD
-				}
-				inherit_technology = SPA
-				country_lock_all_division_template = no
-			}
-			SPA = { set_capital = { state = 176 } }
-			SPD = { set_capital = { state = 41 } }
-			# We need to teleport the railway guns after capitals have been set. transfer_units_fraction will
-			# teleport them but to the wrong province.
-			teleport_railway_guns_to_deploy_province = ROOT
-			teleport_railway_guns_to_deploy_province = SPD
-			SPD = {
-				# add_ideas = SPR_death_before_surrender
-				# add_ideas = SPR_disbanded_army_1
-				add_ideas = SPA_neutrality_idea
-				remove_ideas = SPR_political_violence
-				remove_ideas = SPR_national_strikes_3
-				remove_ideas = SPA_carlism_1
-				set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
-			}
 			set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
-			SPD = {
-				load_oob = "SPR_Civil_War"
-				set_equipment_fraction = 1.0
-				set_stability = 0.6
-				set_war_support = 0.8
-			}
-			SOV = {
-				diplomatic_relation = {
-					country = SPD
-					relation = military_access
-					active = yes
-				}
-			}
-
-			SPA = {
-				load_oob = "SPA_Civil_War"
-				set_equipment_fraction = 1.0
-				set_stability = 0.6
-				set_war_support = 0.5
-				add_ideas = SPA_death_before_surrender
-				remove_ideas = SPR_political_violence
-				remove_ideas = SPR_national_strikes_3
-			}
 			# Remove unnecessary traits from Nationalist commanders (no longer relevant to see for the player, as the SCW has started)
 			every_unit_leader = {
 				limit = {
@@ -243,413 +436,19 @@ country_event = {
 				}
 				remove_unit_leader_trait = trait_SPA_nationalist_sympathies
 			}
-			# Add various loyalist traits that now become relevant - indicating loyalties to the different subfactions
-			every_unit_leader = {
-				limit = {
-					OR = {
-						has_id = 1108
-						has_id = 1109
-						has_id = 1111
-						has_id = 1112
-						has_id = 1113
-					}
-				}
-				add_unit_leader_trait = trait_SPA_falangist_loyalties
-			}
-			every_unit_leader = {
-				limit = {
-					OR = {
-						has_id = 1114
-						has_id = 1115
-						has_id = 1116
-					}
-				}
-				add_unit_leader_trait = trait_SPA_carlist_loyalties
-				#retire = yes
-			}
-			SPD = {
-				every_unit_leader = {
-					limit = {
-						OR = {
-							has_id = 1101
-							has_id = 1102
-							has_id = 1103
-						}
-					}
-					add_unit_leader_trait = trait_SPR_republican_loyalties
-				}
-				every_unit_leader = {
-					limit = {
-						OR = {
-							has_id = 1104
-							has_id = 1105
-							has_id = 1106
-						}
-					}
-					# add_unit_leader_trait = trait_SPR_stalinist_loyalties
-					retire = yes
-				}
-			}
-			SPD = {
-				every_unit_leader = {
-					limit = {
-						#Clear out SPR_mohamed_meziane for some reason - This doesn't work right
-							has_id = 1109
-					}
-					retire = yes
-				}
-			}
-			set_global_flag = spanish_civil_war # Start civil war - used in many triggers
 			country_event = { id = lar_spain.78 days = 7 random_days = 7 } # Sanjurjo dies
-			ITA = {
-				if = {
-				   limit = {
-						has_global_flag = NO_ASIA
-				   }
-				   add_ideas = SPA_spanish_civil_war_commitments_2
-				   add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
-				}  
-				else = {
-					add_ideas = SPA_spanish_civil_war_commitments
-					add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = SPA_the_army_of_africa
-				}
-				division_template = {
-					name = "División del Ejército de África"
-					template_counter = 4
-					division_names_group = SPR_INF_06
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-						artillery_brigade = { x = 3 y = 0 }
-						artillery_brigade = { x = 3 y = 1 }
-					}
-					support = {
-						recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-					}
-				}
-				290 = {
-					create_unit = {
-						division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
-						owner = SPR
-					}
-					create_unit = {
-						division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
-						owner = SPR
-					}
-					create_unit = {
-						division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
-						owner = SPR
-					}
-					create_unit = {
-						division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
-						owner = SPR
-					}
-					create_unit = {
-						division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
-						owner = SPR
-					}
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						state = 41
-						state = 165
-						state = 166
-						state = 167
-						state = 168
-						state = 169
-						state = 170
-						state = 171
-						state = 172
-						state = 173
-						state = 174
-						state = 175
-						state = 176
-						state = 788
-						state = 789
-						state = 790
-						state = 791
-						state = 792
-						state = 793
-						state = 794
-					}
-				}
-				add_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
-				}
-				set_state_flag = SPR_unplanned_offensive_flag
+			SPR = {
+				set_equipment_fraction = 1.0
+				set_stability = 0.6
+				set_war_support = 0.5
+				add_ideas = SPA_death_before_surrender
+				remove_ideas = SPR_political_violence
+				remove_ideas = SPR_national_strikes_3
 			}
 		}
 		custom_effect_tooltip = nationalists_chosen
-		SPD = { add_ideas = SCW_republican_spirit_dwindling }
-		SPD = { add_timed_idea = { idea = SPA_death_before_surrender_rep days = 900 } }
 		SPR = { add_equipment_to_stockpile = { type = train_equipment_1 amount = 100 producer = SPR } }
-		SPD = { add_equipment_to_stockpile = { type = train_equipment_1 amount = 100 producer = SPD } }
-		SPD = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1100 producer = SPD } }
 	}
-		# option = { # Option for Nationalists - Falangism
-		# 	name = lar_spain.2.b
-		# 	trigger = { has_completed_focus = SPA_sin_paquito }
-		# 	ai_chance = {
-		# 		base = 30
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				has_country_flag = SPR_AI_RANDOM_CARLIST
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = CARLIST
-		# 				}
-		# 			}
-		# 		}
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				AND = {
-		# 					is_historical_focus_on = yes
-		# 					has_game_rule = {
-		# 						rule = SPR_ai_behavior 
-		# 						option = DEFAULT
-		# 					}
-		# 				}
-		# 				has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = NATIONALIST_HISTORICAL
-		# 				}
-		# 			}
-		# 		}
-		# 	}
-		# 	# Remove Spirits that will no longer be relevant
-		# 	custom_effect_tooltip = nationalists_chosen
-		# 	remove_ideas = SPR_military_disloyalty
-		# 	remove_ideas = SPR_political_violence
-		# 	SPR_clr_national_strikes = yes
-		# 	effect_tooltip = {
-		# 		add_timed_idea = { idea = SPA_death_before_surrender days = 900 }
-		# 		SPD = { add_timed_idea = { idea = SPR_death_before_surrender days = 900 } }
-		# 		set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
-		# 	}
-		# 	complete_national_focus = SPA_the_phalanx_ascendant
-		# }
-		# option = { # Option for Nationalists - Carlism
-		# 	name = lar_spain.2.c
-		# 	trigger = { has_completed_focus = SPA_a_great_spain }
-		# 	ai_chance = {
-		# 		base = 30
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				has_country_flag = SPR_AI_RANDOM_FALANGIST
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = FALANGIST
-		# 				}
-		# 			}
-		# 		}
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				AND = {
-		# 					is_historical_focus_on = yes
-		# 					has_game_rule = {
-		# 						rule = SPR_ai_behavior 
-		# 						option = DEFAULT
-		# 					}
-		# 				}
-		# 				has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = NATIONALIST_HISTORICAL
-		# 				}
-		# 			}
-		# 		}
-		# 	}
-		# 	# Remove Spirits that will no longer be relevant
-		# 	custom_effect_tooltip = nationalists_chosen
-		# 	remove_ideas = SPR_military_disloyalty
-		# 	remove_ideas = SPR_political_violence
-		# 	SPR_clr_national_strikes = yes
-		# 	effect_tooltip = {
-		# 		add_timed_idea = { idea = SPA_death_before_surrender days = 900 }
-		# 		SPD = { add_timed_idea = { idea = SPR_death_before_surrender days = 900 } }
-		# 		set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
-		# 		kill_ideology_leader = fascism
-		# 	}
-		# }
-		# option = { # Option for Republicans - Democratic
-		# 	name = lar_spain.2.d
-		# 	trigger = { has_completed_focus = SPR_the_popular_front }
-		# 	ai_chance = {
-		# 		base = 40
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				has_country_flag = SPR_AI_RANDOM_ANARCHIST
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = ANARCHIST
-		# 				}
-		# 			}
-		# 		}
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				has_country_flag = SPR_AI_RANDOM_INDEPENDENT_COMMUNIST
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = INDEPENDENT_COMMUNIST
-		# 				}
-		# 			}
-		# 		}
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				has_country_flag = SPR_AI_RANDOM_STALINIST
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = STALINIST
-		# 				}
-		# 			}
-		# 		}
-		# 		modifier = {
-		# 			factor = 0
-		# 			has_global_flag = SOV_covert_support_for_poum_flag #Soviet Right Opposition is providing support to the POUM
-		# 		}
-		# 	}
-		# 	# Remove Spirits that will no longer be relevant
-		# 	custom_effect_tooltip = republicans_chosen
-		# 	remove_ideas = SPA_carlism_1
-		# 	remove_ideas = SPR_military_disloyalty
-		# 	remove_ideas = SPR_political_violence
-		# 	SPR_clr_national_strikes = yes
-		# 	effect_tooltip = {
-		# 		add_ideas = SPR_disbanded_army_1
-		# 	}
-		# 	effect_tooltip = {
-		# 		add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
-		# 		SPA = { add_timed_idea = { idea = SPA_death_before_surrender days = 900 } }
-		# 		set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
-		# 	}
-		# }
-		# option = { # Option for Republicans - Communism
-		# 	name = lar_spain.2.e
-		# 	trigger = { has_completed_focus = SPR_the_popular_front }
-		# 	ai_chance = {
-		# 		base = 30
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				has_country_flag = SPR_AI_RANDOM_ANARCHIST
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = ANARCHIST
-		# 				}
-		# 			}
-		# 		}
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				has_country_flag = SPR_AI_RANDOM_SECOND_REPUBLIC
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = SECOND_REPUBLIC
-		# 				}
-		# 			}
-		# 		}
-		# 		modifier = {
-		# 			add = 30
-		# 			has_global_flag = SOV_covert_support_for_poum_flag #Soviet Right Opposition is providing support to the POUM
-		# 		}
-		# 	}
-		# 	# Remove Spirits that will no longer be relevant
-		# 	custom_effect_tooltip = republicans_chosen
-		# 	remove_ideas = SPA_carlism_1
-		# 	remove_ideas = SPR_military_disloyalty
-		# 	remove_ideas = SPR_political_violence
-		# 	SPR_clr_national_strikes = yes
-		# 	effect_tooltip = {
-		# 		add_ideas = SPR_disbanded_army_1
-		# 	}
-		# 	effect_tooltip = {
-		# 		add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
-		# 		SPA = { add_timed_idea = { idea = SPA_death_before_surrender days = 900 } }
-		# 		set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
-		# 	}
-		# 	complete_national_focus = SPR_the_anti_fascist_workers_revolution
-		# }
-		# option = { # Option for Republicans - Anarchism
-		# 	name = lar_spain.2.f
-		# 	trigger = { has_completed_focus = SPR_the_popular_front }
-		# 	ai_chance = {
-		# 		base = 30
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				has_country_flag = SPR_AI_RANDOM_SECOND_REPUBLIC
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = SECOND_REPUBLIC
-		# 				}
-		# 			}
-		# 		}
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				has_country_flag = SPR_AI_RANDOM_INDEPENDENT_COMMUNIST
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = INDEPENDENT_COMMUNIST
-		# 				}
-		# 			}
-		# 		}
-		# 		modifier = {
-		# 			factor = 0
-		# 			OR = {
-		# 				has_country_flag = SPR_AI_RANDOM_STALINIST
-		# 				has_game_rule = {
-		# 					rule = SPR_ai_behavior 
-		# 					option = STALINIST
-		# 				}
-		# 			}
-		# 		}
-		# 		modifier = {
-		# 			factor = 0
-		# 			has_global_flag = SOV_covert_support_for_poum_flag #Soviet Right Opposition is providing support to the POUM
-		# 		}
-		# 	}
-		# 	# Remove Spirits that will no longer be relevant
-		# 	custom_effect_tooltip = republicans_chosen
-		# 	remove_ideas = SPA_carlism_1
-		# 	remove_ideas = SPR_military_disloyalty
-		# 	remove_ideas = SPR_political_violence
-		# 	SPR_clr_national_strikes = yes
-		# 	effect_tooltip = {
-		# 		add_ideas = SPR_disbanded_army_1
-		# 	}
-		# 	effect_tooltip = {
-		# 		add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
-		# 		SPA = { add_timed_idea = { idea = SPA_death_before_surrender days = 900 } }
-		# 		set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
-		# 	}
-		# }
 }
 
 # Tangiers Enclave - Event for UK

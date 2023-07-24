@@ -1,4 +1,51 @@
 operations = {
+
+	SPA_SCW_ending = {
+
+		name = "The Spanish Civil War"
+
+		icon = generic_operation
+
+		is_good = yes
+
+		allowed = {
+			always = no
+		}
+
+		activation = {
+			# SCW START - custom flag? or just starti t with the event?
+		}
+
+		available = {
+			always = no
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		days_mission_timeout = 365
+
+		timeout_effect = {
+			every_country = {
+				limit = {
+					original_tag = SPR
+				}
+				if = { # Nationalist victory SCW
+					limit = {
+						SPR_scw_in_progress = yes
+					}
+					set_global_flag = nationalist_victory
+					set_global_flag = scw_over
+					country_event = { id = lar_news.1 }
+				}
+			}
+			custom_effect_tooltip = "Ends the Spanish Civil War"
+		}
+	}
+
 	SPA_SCW_republican_spirit_dwindling = {
 
 		icon = generic_operation

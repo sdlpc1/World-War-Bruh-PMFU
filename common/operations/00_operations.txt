@@ -1615,6 +1615,13 @@ operation_collaboration_government = { ### 10 2/55
 				}
 			}
 		}
+		# FROM = {
+		# 	any_country = {
+		# 		original_tag = SOV
+		# 		original_tag = MON
+		# 		original_tag = FIN
+		# 	}
+		# }
 		custom_trigger_tooltip = {
 			tooltip = "Cant do collaboration governments on the USSR or other communist countries"
 		}

@@ -541,13 +541,28 @@ SOV_semyon_timoshenko={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader bearer_of_artillery war_hero trait_SOV_stalinist }
-			skill=3
+			traits={ infantry_leader bearer_of_artillery war_hero trait_SOV_stalinist trait_engineer fortress_buster }
+			skill=4
 			attack_skill=3
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ivan_chernyakhovsky
+			ledger = army 
+			allowed  = {
+				original_tag  = SOV 
+			}
+			traits  = {
+				army_artillery_2
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			cost = 100
 		}
 	}
 	SOV_issa_pliyev={
@@ -623,12 +638,27 @@ SOV_semyon_timoshenko={
 		}
 		corps_commander={
 			traits={ infantry_leader skilled_staffer trait_SOV_stalinist }
-			skill=3
+			skill=4
 			attack_skill=3
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=4
 			legacy_id=-1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = filipp_golikov
+			ledger = army 
+			allowed  = {
+				original_tag  = SOV 
+			}
+			traits  = {
+				army_logistics_2
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			cost = 100
 		}
 	}
 	SOV_andrey_yeryomenko={

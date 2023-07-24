@@ -59,26 +59,13 @@ host_decisions = {
 					}
 				}
 			# }
-			every_other_country = {
+			every_country = {
 				limit = {
 					original_tag = SPR
 				}
 				if = { # Nationalist victory SCW
 					limit = {
-						PREV = {
-							original_tag = SPR
-						}
 						SPR_scw_in_progress = yes
-						NOT = {
-							any_other_country = {
-								NOT = {
-									tag = ROOT
-									tag = FROM
-								}
-								original_tag = SPR
-								exists = yes
-							}
-						}
 					}
 					set_global_flag = nationalist_victory
 					set_global_flag = scw_over
@@ -88,6 +75,7 @@ host_decisions = {
 					annex_country = { target = PREV transfer_troops = no }
 				}
 			}
+			custom_effect_tooltip = "Ends the Spanish Civil War"
 		}
 
 	}
@@ -879,21 +867,74 @@ operations = {
 
         available = {
 			command_power > 49
-			date > 1938.1.1
-			NOT = {
-				GER = {
-					has_completed_focus = GER_danzig_or_war
+			if = {
+				limit = {
+					OR = {
+						has_game_rule = {
+							rule = china_war_rule
+							option = ENABLED
+						}
+						has_global_flag = NO_ASIA
+					}
+				}
+				date > 1937.12.1
+				NOT = {
+					GER = {
+						has_completed_focus = GER_danzig_or_war
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = DISABLED
+					}
+				}
+				JAP = {
+					has_completed_focus = JAP_intervene_in_china
+				}
+				NOT = {
+					JAP = {
+						has_completed_focus = JAP_secure_china
+					}
 				}
 			}
         }
 
         visible = {
-        	has_global_flag = NO_ASIA
+			OR = {
+				has_global_flag = NO_ASIA
+				has_game_rule = {
+					rule = china_war_rule
+					option = DISABLED
+				}
+			}
+			NOT = {
+				original_tag = JAP
+				original_tag = MAN
+				original_tag = SIA
+				original_tag = CHI
+			}
 		}
 
         complete_effect = {
 			add_command_power = -50
-			add_ideas = NO_ASIA_attache_idea
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = DISABLED
+					}
+					NOT = {
+						has_global_flag = NO_ASIA
+					}
+				}
+				add_ideas = NO_CHINA_attache_idea
+			}
+			else = {
+				add_ideas = NO_ASIA_attache_idea
+			}
 		}
 		ai_will_do = {
 			factor = 999
@@ -2135,39 +2176,39 @@ economy_decisions = {
             always = yes
         }
 
-        cost = 100
+        cost = 50
         fire_only_once = no
 
         days_re_enable = 30
 
-	available = {
-		any_owned_state = {
-			NOT = { has_state_flag = infrastructure_building_slot_flag }
-			is_fully_controlled_by = ROOT
-			free_building_slots = {
-				building = infrastructure
-				size < 1
+		available = {
+			any_owned_state = {
+				NOT = { has_state_flag = infrastructure_building_slot_flag }
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
 			}
 		}
-	}
 
-	visible = {
-		any_owned_state = {
-			NOT = { has_state_flag = infrastructure_building_slot_flag }
-			is_fully_controlled_by = ROOT
-			free_building_slots = {
-				building = infrastructure
-				size < 1
+		visible = {
+			any_owned_state = {
+				NOT = { has_state_flag = infrastructure_building_slot_flag }
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
 			}
 		}
-	}
 
-        complete_effect = {
+		complete_effect = {
 			random_owned_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
 					is_owned_by = ROOT
-            		free_building_slots = {
+					free_building_slots = {
 						building = industrial_complex
 						size > 1
 						include_locked = yes
@@ -2178,10 +2219,11 @@ economy_decisions = {
 					}
 					NOT = { has_state_flag = infrastructure_building_slot_flag }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				set_state_flag = infrastructure_building_slot_flag
 			}
 		}
+
 		ai_will_do = {
 			factor = 1
 			modifier = {

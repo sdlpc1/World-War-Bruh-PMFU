@@ -159,6 +159,7 @@
   JAP_oceanic_collaborators:0 "Oceanic Collaborators"
   JAP_war_with_SOV:0 "Operation Kantokuen"
   JAP_war_with_SOV_desc:0 "Kantōgun Tokushu Enshū is a plan created by the General Staff of the Imperial Japanese Army for an invasion and occupation of the Russian Far East."
+  JAP_secure_china:0 "[secure_china_name_sl]"
 
   #### EVENTS ####
   japan.500.t:0 "Southern Strike: Siam"

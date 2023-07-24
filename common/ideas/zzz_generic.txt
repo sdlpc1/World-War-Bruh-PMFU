@@ -259,15 +259,36 @@ ideas = {
 			}
 		}
 
-		NO_ASIA_attache_idea = {
+		NO_CHINA_attache_idea = {
 
+			name = NO_ASIA_attache_idea
+			
 			allowed = {
 				always = no
 			}
 
 			cancel = {
-				GER = {
-					has_completed_focus = GER_danzig_or_war
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = china_war_rule
+							option = ENABLED
+						}
+					}
+					GER = {
+						has_completed_focus = GER_danzig_or_war
+					}
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = china_war_rule
+							option = DISABLED
+						}
+					}
+					JAP = {
+						has_completed_focus = JAP_secure_china
+					}
 				}
 			}
 
@@ -277,6 +298,48 @@ ideas = {
 			
 			modifier = {
 				experience_gain_army = 0.3
+				experience_gain_air = 0.05
+			}
+		}
+
+		NO_ASIA_attache_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = china_war_rule
+							option = ENABLED
+						}
+					}
+					GER = {
+						has_completed_focus = GER_danzig_or_war
+					}
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = china_war_rule
+							option = DISABLED
+						}
+					}
+					JAP = {
+						has_completed_focus = JAP_secure_china
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				experience_gain_army = 0.3
+				experience_gain_air = 0.05
 				war_support_factor = 0.1
 			}
 		}

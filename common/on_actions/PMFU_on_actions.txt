@@ -264,6 +264,10 @@ on_actions = {
         effect ={
 			if ={
 				limit = {
+					has_game_rule = {
+						rule = spain_war_rule
+						option = ENABLED
+					}
 					has_global_flag = SPA_SCW_started_confirmed
 					NOT = {
 						has_global_flag = uk_spr_vols

@@ -6361,7 +6361,7 @@ focus_tree = {
 			#has_idea = SOV_modernisation_mech_2
 		}
 		
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -6370,7 +6370,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 3
 				category = electronics
 			}
@@ -6425,7 +6425,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_progress_cult
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -6450,7 +6450,7 @@ focus_tree = {
 				date > 1941.1.1
 			}
 		}
-		x = 38
+		x = 39
 		y = 0
 		cost = 1
 
@@ -6564,7 +6564,7 @@ focus_tree = {
 		icon = GFX_SOV_operation_luna
 		prerequisite = { focus = SOV_red_army }
 		mutually_exclusive = { focus = SOV_new_ideas }
-		x = -5
+		x = -6
 		y = 1
 		cost = 3
 		relative_position_id = SOV_red_army
@@ -7075,7 +7075,7 @@ focus_tree = {
 		id = SOV_infantry1
 		icon = GFX_SOV_ppsh_hand_angry
 		prerequisite = { focus = SOV_deep_operations }
-		x = 5
+		x = 6
 		y = 1
 		cost = 5
 		relative_position_id = SOV_deep_operations
@@ -7195,6 +7195,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			every_army_leader = {
+				add_logistics = 1
+				add_planning = 1
+				add_attack = 1
+				add_defense = 1
+			}
 			add_ideas = SOV_stavka_idea
 			SOV_modernisation_towards_mech = yes
 		}
@@ -7465,8 +7471,8 @@ focus_tree = {
 		completion_reward = {
 			every_army_leader = {
 				add_logistics = 2
-				add_planning = 1
-				add_attack = 1
+				add_planning = 2
+				add_attack = 2
 				add_defense = 2
 			}
 			add_ideas = SOV_new_officers
@@ -7693,8 +7699,8 @@ focus_tree = {
 		completion_reward = {
 			every_army_leader = {
 				add_logistics = 2
-				add_planning = 1
-				add_attack = 1
+				add_planning = 2
+				add_attack = 2
 				add_defense = 2
 			}
 			add_ideas = SOV_new_officers
@@ -7705,7 +7711,7 @@ focus_tree = {
 		id = SOV_transpolar_flights
 
 		icon = GFX_focus_SOV_transpolar_flights
-		x = 52
+		x = 53
 		y = 0
 		cost = 3
 
