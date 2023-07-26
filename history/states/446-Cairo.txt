@@ -19,9 +19,9 @@ state=
 			industrial_complex = 4 # 1
 			arms_factory = 2
 			air_base = 5
-			10005 = { #12049
-				naval_base = 2
-			}
+			# 10005 = { #12049
+			# 	naval_base = 2
+			# }
 		}
 		
 		victory_points = {
