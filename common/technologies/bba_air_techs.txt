@@ -34,6 +34,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			year_1933
 		}
 
 		
@@ -82,6 +83,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			year_1936
 		}
 		
 		
@@ -157,6 +159,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -229,6 +232,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -290,6 +294,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			year_1945
 		}
 
 		ai_will_do = {
@@ -331,6 +336,7 @@ technologies = {
 		categories = {
 			medium_air
 			air_equipment
+			year_1933
 		}
 		
 		ai_will_do = {
@@ -365,6 +371,7 @@ technologies = {
 		categories = {
 			medium_air
 			air_equipment
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -423,6 +430,7 @@ technologies = {
 		categories = {
 			medium_air
 			air_equipment
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -481,6 +489,7 @@ technologies = {
 		categories = {
 			medium_air
 			air_equipment
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -529,6 +538,7 @@ technologies = {
 		categories = {
 			medium_air
 			air_equipment
+			year_1945
 		}
 		
 		ai_will_do = {
@@ -562,6 +572,7 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
+			year_1933
 		}
 		
 		ai_will_do = {
@@ -601,6 +612,7 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -640,6 +652,7 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -678,6 +691,7 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -717,6 +731,7 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
+			year_1945
 		}
 		
 		ai_will_do = {
@@ -767,6 +782,7 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_bombs
+			year_1943
 		}
 		
 		ai_will_do = {
@@ -811,6 +827,7 @@ technologies = {
 			plane_modules_tech
 			cas_bomber
 			cat_air_bombs
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -849,6 +866,7 @@ technologies = {
 			plane_modules_tech
 			cas_bomber
 			cat_air_bombs
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -893,6 +911,7 @@ technologies = {
 			plane_modules_tech
 			naval_air
 			naval_bomber
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -936,6 +955,7 @@ technologies = {
 			plane_modules_tech
 			naval_air
 			naval_bomber
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -981,6 +1001,7 @@ technologies = {
 			plane_modules_tech
 			naval_air
 			naval_bomber
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -1025,6 +1046,7 @@ technologies = {
 			cat_air_bombs
 			tactical_bomber
 			cat_strategic_bomber
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -1069,6 +1091,7 @@ technologies = {
 			cat_air_bombs
 			tactical_bomber
 			cat_strategic_bomber
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -1119,6 +1142,7 @@ technologies = {
 			cat_air_bombs
 			tactical_bomber
 			cat_strategic_bomber
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -1145,7 +1169,7 @@ technologies = {
 		research_cost = 2.0
 		start_year = 1944
 		categories = {
-			year_1943
+			year_1944
 		}
 
 		allow = { date > 1943.1.1 }
@@ -1202,6 +1226,7 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_scout_plane
+			year_1933
 		}
 		
 		ai_will_do = {
@@ -1248,6 +1273,7 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_guns
+			year_1933
 		}
 		
 		ai_will_do = {
@@ -1292,6 +1318,7 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_guns
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -1342,6 +1369,7 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_guns
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -1394,6 +1422,7 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_guns
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -1457,6 +1486,7 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_engine
+			year_1933
 		}
 		
 		ai_will_do = {
@@ -1523,6 +1553,7 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_engine
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -1588,6 +1619,7 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_engine
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -1648,6 +1680,7 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_engine
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -1699,6 +1732,7 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -1750,6 +1784,11 @@ technologies = {
 			self_sealing_fuel_tanks_medium
 			self_sealing_fuel_tanks_large
 		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			year_1939
+		}
 	}
 	aircraft_construction = {
 
@@ -1780,6 +1819,7 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -1809,6 +1849,7 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
+			year_1939
 		}
 		
 		ai_will_do = {

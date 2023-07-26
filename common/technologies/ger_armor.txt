@@ -54,6 +54,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -82,6 +83,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -109,6 +111,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -142,6 +145,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1936
 		}
 		on_research_complete = {
 			custom_effect_tooltip = ger_cze_tank_equipment_1_short_tt
@@ -172,6 +176,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1938
 		}
 		on_research_complete = {
 			custom_effect_tooltip = ger_cze_tank_equipment_1_short_tt
@@ -198,6 +203,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1943
 		}
 
 		on_research_complete = {
@@ -232,6 +238,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -260,6 +267,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -298,6 +306,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1940
 		}
 		
 		ai_will_do = {
@@ -325,6 +334,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -359,6 +369,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1943
 		}
 		
 		ai_will_do = {
@@ -385,6 +396,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1945
 		}
 		
 		ai_will_do = {
@@ -456,6 +468,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1940
 		}
 		
 		ai_will_do = {
@@ -491,6 +504,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -553,6 +567,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1943
 		}
 		
 		ai_will_do = {
@@ -579,6 +594,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1945
 		}
 		
 		ai_will_do = {

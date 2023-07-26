@@ -2,7 +2,7 @@
 state={
 	id=453
 	name="STATE_453"
-	manpower = 15359
+	manpower = 11359
 	
 	state_category = wasteland
 	
@@ -18,13 +18,13 @@ state={
 		}
 
 		add_core_of = WST
-		# victory_points = {
-		# 	1155  1
-		# }
+		victory_points = {
+			10099  5
+		}
 
 	}
 
 	provinces={
-		1112 1155 4161 9947 10002 10099 11922 11979 12073 
+		1112 4161 10002 10099 11922 11979 12073 #9947 1155
 	}
 }

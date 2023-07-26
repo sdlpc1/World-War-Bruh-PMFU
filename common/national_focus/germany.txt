@@ -3082,7 +3082,15 @@ focus_tree = {
 			add_state_core = 86
 			add_state_core = 762
 			add_state_core = 807
-
+			if = {
+				limit = {
+					has_global_flag = DENIED_CZE
+				}
+				transfer_state = 69
+				add_state_core = 69
+				transfer_state = 74
+				add_state_core = 74
+			}
 		}
 	}
 	

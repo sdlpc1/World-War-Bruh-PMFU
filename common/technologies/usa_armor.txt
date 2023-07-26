@@ -51,6 +51,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1935
 		}
 		
 		ai_will_do = {
@@ -80,6 +81,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -111,6 +113,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -143,6 +146,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -166,6 +170,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1944
 		}
 
 		on_research_complete = {
@@ -196,6 +201,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1943
 		}
 		
 		ai_will_do = {
@@ -234,6 +240,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1938
 		}
 		
 		ai_will_do = {
@@ -266,6 +273,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -306,6 +314,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -337,6 +346,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1943
 		}
 		
 		ai_will_do = {
@@ -362,6 +372,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1944
 		}
 		
 		ai_will_do = {
@@ -390,6 +401,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1944
 		}
 		
 		ai_will_do = {
@@ -420,6 +432,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1945
 		}
 		
 		ai_will_do = {
@@ -458,6 +471,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -485,6 +499,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1944
 		}
 		
 		ai_will_do = {
@@ -508,6 +523,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1944
 		}
 		
 		ai_will_do = {

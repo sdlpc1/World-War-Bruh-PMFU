@@ -60,6 +60,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			dd_tech
+			year_1922
 		}
 	}
 
@@ -104,6 +105,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			dd_tech
+			year_1936
 		}
 	}
 
@@ -146,6 +148,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			dd_tech
+			year_1939
 		}
 	}
 
@@ -183,6 +186,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			dd_tech
+			year_1942
 		}
 	}
 
@@ -212,6 +216,7 @@ technologies = {
 			naval_equipment
 			dd_tech
 			ship_modules_tech
+			year_1922
 		}
 	}
 
@@ -267,6 +272,7 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			year_1922
 		}
 	}
 	improved_depth_charges = {
@@ -312,6 +318,7 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			year_1935
 		}
 	}
 	advanced_depth_charges = {
@@ -356,6 +363,7 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			year_1939
 		}
 	}
 	modern_depth_charges = {
@@ -397,6 +405,7 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			year_1942
 		}
 	}
 	sonar = {
@@ -437,6 +446,7 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			year_1922
 		}
 	}
 
@@ -479,6 +489,7 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			year_1936
 		}
 	}
 
@@ -521,6 +532,7 @@ technologies = {
 			dd_tech
 			asw_tech
 			ship_modules_tech
+			year_1944
 		}
 	}
 
@@ -618,6 +630,7 @@ technologies = {
 			naval_equipment
 			cl_tech
 			ca_tech
+			year_1922
 		}
 	}
 
@@ -662,6 +675,7 @@ technologies = {
 			naval_equipment
 			cl_tech
 			ca_tech
+			year_1936
 		}
 	}
 
@@ -704,6 +718,7 @@ technologies = {
 			naval_equipment
 			cl_tech
 			ca_tech
+			year_1939
 		}
 	}
 
@@ -740,6 +755,7 @@ technologies = {
 			naval_equipment
 			cl_tech
 			ca_tech
+			year_1942
 		}
 	}
 
@@ -781,6 +797,7 @@ technologies = {
 			cl_tech
 			ca_tech
 			ship_modules_tech
+			year_1936
 		}
 	}
 	basic_cruiser_armor_scheme = {
@@ -833,6 +850,7 @@ technologies = {
 			cl_tech
 			ca_tech
 			ship_modules_tech
+			year_1922
 		}
 	}
 
@@ -896,6 +914,7 @@ technologies = {
 			naval_equipment
 			bb_tech
 			bc_tech
+			year_1922
 		}
 	}
 
@@ -949,6 +968,7 @@ technologies = {
 			naval_equipment
 			bb_tech
 			bc_tech
+			year_1936
 		}
 	}
 	ship_hull_super_heavy = {
@@ -978,6 +998,7 @@ technologies = {
 			naval_equipment
 			bb_tech
 			bc_tech
+			year_1936
 		}
 	}
 
@@ -1020,6 +1041,7 @@ technologies = {
 			naval_equipment
 			bb_tech
 			bc_tech
+			year_1939
 		}
 	}
 
@@ -1058,6 +1080,7 @@ technologies = {
 			naval_equipment
 			bb_tech
 			bc_tech
+			year_1942
 		}
 	}
 	basic_heavy_armor_scheme = {
@@ -1108,6 +1131,7 @@ technologies = {
 			bb_tech
 			bc_tech
 			ship_modules_tech
+			year_1939
 		}
 	}
 
@@ -1156,6 +1180,7 @@ technologies = {
 			bb_tech
 			bc_tech
 			ship_modules_tech
+			year_1942
 		}
 	}
 
@@ -1208,6 +1233,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			cv_tech
+			year_1922
 		}
 	}
 
@@ -1253,6 +1279,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			cv_tech
+			year_1936
 		}
 	}
 
@@ -1294,6 +1321,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			cv_tech
+			year_1939
 		}
 	}
 
@@ -1350,6 +1378,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			cv_tech
+			year_1936
 		}
 	}
 
@@ -1399,6 +1428,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			ss_tech
+			year_1922
 		}
 	}
 
@@ -1440,6 +1470,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			ss_tech
+			year_1936
 		}
 	}
 
@@ -1487,6 +1518,7 @@ early_ship_hull_carrier = {
 		categories = {
 			naval_equipment
 			ss_tech
+			year_1939
 		}
 	}
 
@@ -1524,6 +1556,7 @@ early_ship_hull_carrier = {
 	# 	categories = {
 	# 		naval_equipment
 	# 		ss_tech
+	# 		year_1944
 	# 	}
 	# }
 
@@ -1571,6 +1604,7 @@ early_ship_hull_carrier = {
 			naval_equipment
 			ss_tech
 			ship_modules_tech
+			year_1940
 		}
 	}
 
@@ -1616,6 +1650,7 @@ early_ship_hull_carrier = {
 			naval_equipment
 			ss_tech
 			ship_modules_tech
+			year_1944
 		}
 	}
 	###Special snowflake hulls for special snowflake nations

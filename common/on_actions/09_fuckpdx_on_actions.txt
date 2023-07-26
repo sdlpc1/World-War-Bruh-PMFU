@@ -228,6 +228,24 @@ on_actions = {
 	}
 
 	on_capitulation_immediate = {
+		# Poland Loses Agency Debuff
+		effect = { 
+			if = {
+				limit = {
+					original_tag = POL
+					OR = {
+						FROM = { original_tag = GER }
+						FROM = { original_tag = ROM }
+						FROM = { original_tag = HUN }
+						FROM = { original_tag = BUL }
+						FROM = { original_tag = YUG }
+						FROM = { original_tag = SOV }
+					}
+				}
+				POL = { remove_ideas = POL_no_agency }
+			}
+		}
+		
 		effect = {
 			if = {
 				limit = {

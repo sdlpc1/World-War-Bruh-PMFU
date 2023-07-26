@@ -67,6 +67,7 @@ technologies = {
 		   cat_ship_light_battery
 		   cat_ship_medium_battery
 		   cat_ship_heavy_battery
+		   year_1922
 	   }
    }
 
@@ -107,6 +108,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_ship_light_battery
+		   year_1936
 	   }
    }
 
@@ -168,6 +170,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1937
 	   }
    }
 
@@ -210,6 +213,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_ship_light_battery
+		   year_1939
 	   }
    }
 
@@ -265,6 +269,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1941
 	   }
    }
 
@@ -300,6 +305,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_ship_light_battery
+		   year_1942
 	   }
    }
 
@@ -345,6 +351,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_ship_medium_battery
+		   year_1936
 	   }
    }
 
@@ -383,6 +390,7 @@ technologies = {
 
 	   categories = {
 		   naval_equipment
+		   year_1937
 	   }
    }
 
@@ -424,6 +432,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_ship_medium_battery
+		   year_1939
 	   }
    }
 
@@ -468,6 +477,7 @@ technologies = {
 
 	   categories = {
 		   naval_equipment
+		   year_1941
 	   }
    }
 
@@ -499,6 +509,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_ship_medium_battery
+		   year_1942
 	   }
    }
    
@@ -547,6 +558,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_ship_heavy_battery
+		   year_1936
 	   }
    }
    improved_heavy_battery = {
@@ -592,6 +604,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_ship_heavy_battery
+		   year_1939
 	   }
    }
    advanced_heavy_battery = {
@@ -632,6 +645,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_ship_heavy_battery
+		   year_1942
 	   }
    }
    basic_heavy_shell = {
@@ -671,6 +685,7 @@ technologies = {
 
 	   categories = {
 		   naval_equipment
+		   year_1937
 	   }
    }
    improved_heavy_shell = {
@@ -709,6 +724,7 @@ technologies = {
 
 	   categories = {
 		   naval_equipment
+		   year_1941
 	   }
    }
 
@@ -753,6 +769,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1938
 	   }
    }
 
@@ -797,6 +814,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1940
 	   }
    }
 
@@ -835,6 +853,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1942
 	   }
    }
 
@@ -872,14 +891,15 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1942
 	   }
    }
 
-###  ##  ###  ###  ### ###   ##      #   #  ##  ###   ##  ### ###  ###
-#  #  # #  # #  # #   #  # #  #     #   # #  # #  # #  # #   #  # #  
-#  #  # ###  ###  ##  #  # #  #     # # # #### ###  #### ##  ###  ## 
-#  #  # #  # #    #   #  # #  #     # # # #  # #  # #  # #   #  # #  
-#   ##  #  # #    ### ###   ##       # #  #  # #  # #  # #   #  # ###
+######  ##  ###  ###  ### ###   ##      #   #  ##  ###   ##  ### ###  ###
+  #  #  # #  # #  # #   #  # #  #     #   # #  # #  # #  # #   #  # #  
+  #  #  # ###  ###  ##  #  # #  #     # # # #### ###  #### ##  ###  ## 
+  #  #  # #  # #    #   #  # #  #     # # # #  # #  # #  # #   #  # #  
+  #   ##  #  # #    ### ###   ##       # #  #  # #  # #  # #   #  # ###
 
    basic_torpedo = {
 
@@ -932,6 +952,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_torpedoes
+		   year_1922
 	   }
    }
 
@@ -955,16 +976,16 @@ technologies = {
 	   }
 
 	   destroyer = {
-		   torpedo_attack = 0.2
+		   torpedo_attack = 0.1
 	   }
 	   submarine = {
-		   torpedo_attack = 0.2
+		   torpedo_attack = 0.1
 	   }
 	   light_cruiser = {
-		   torpedo_attack = 0.2
+		   torpedo_attack = 0.1
 	   }
 	   heavy_cruiser = {
-		   torpedo_attack = 0.2
+		   torpedo_attack = 0.1
 	   }
 
 
@@ -998,6 +1019,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_torpedoes
+		   year_1939
 	   }
    }
 
@@ -1046,6 +1068,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_torpedoes
+		   year_1942
 	   }
    }
 
@@ -1059,7 +1082,7 @@ technologies = {
 	   start_year = 1941
 
 
-	   naval_torpedo_reveal_chance_factor = -0.25
+	   naval_torpedo_reveal_chance_factor = -0.15
 
 
 	   folder = {
@@ -1083,6 +1106,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_torpedoes
+		   year_1941
 	   }
    }
    improved_ship_torpedo_launcher = {
@@ -1124,6 +1148,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_torpedoes
+		   year_1936
 	   }
    }
    advanced_ship_torpedo_launcher = {
@@ -1164,6 +1189,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_torpedoes
+		   year_1939
 	   }
    }
    modern_ship_torpedo_launcher = {
@@ -1198,6 +1224,7 @@ technologies = {
 		   naval_equipment
 		   ship_modules_tech
 		   cat_torpedoes
+		   year_1942
 	   }
    }
 
@@ -1225,6 +1252,8 @@ technologies = {
 		   position = { x = 0 y = 1 }
 	   }
 
+	   start_year = 1936
+
 	   ai_will_do = {
 		   factor = 3
 		   modifier = {
@@ -1245,6 +1274,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1936
 	   }
    }
 
@@ -1286,6 +1316,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1939
 	   }
    }
 
@@ -1323,6 +1354,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1942
 	   }
    }
 
@@ -1356,6 +1388,7 @@ technologies = {
 		   name = mtgnavalsupportfolder
 		   position = { x = 0 y = 1 }
 	   }
+	   start_year = 1936
 
 	   ai_will_do = {
 		   factor = 3
@@ -1372,6 +1405,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1936
 	   }
    }
 
@@ -1418,6 +1452,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1939
 	   }
    }
 
@@ -1468,6 +1503,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   ship_modules_tech
+		   year_1942
 	   }
    }
 
@@ -1968,6 +2004,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   tp_tech
+		   year_1922
 	   }
    }
 
@@ -2033,6 +2070,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   tp_tech
+		   year_1939
 	   }
    }
 
@@ -2080,6 +2118,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   tp_tech
+		   year_1943
 	   }
    }
 
@@ -2140,6 +2179,7 @@ technologies = {
 	   categories = {
 		   naval_equipment
 		   tp_tech
+		   year_1941
 	   }
    }
 }

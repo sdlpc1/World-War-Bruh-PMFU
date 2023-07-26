@@ -21,6 +21,25 @@ ideas = {
 
 country = {
 
+	POL_no_agency = {
+		picture = generic_spy_intel
+
+		allowed = {
+			has_capitulated = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			agency_upgrade_time = 20
+		}
+		
+	}
+	
 	POL_new_military_academy_idea = {
 
 		allowed = {

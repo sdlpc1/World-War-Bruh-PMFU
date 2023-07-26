@@ -1,5 +1,25 @@
 ﻿##### Division Templates #####
 division_template = {
+	name = "Garrison Brigade"  		# used for island defense (older equipment, lower experience)
+
+	division_names_group = USA_GAR_01		# Brigade level irregular unit, so no default names
+
+	regiments = {
+		garrison = { x = 0 y = 0 }
+		garrison = { x = 0 y = 1 }
+		garrison = { x = 0 y = 2 }
+		
+		garrison = { x = 1 y = 0 }
+		garrison = { x = 1 y = 1 }
+		garrison = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+	priority = 0
+}
+
+division_template = {
 	name = "Infantry Division"  	# Standard formation for frontline divisions
 
 	division_names_group = USA_INF_01
@@ -162,25 +182,6 @@ division_template = {
 		recon = { x = 0 y = 2 }
 		logistics_company = { x = 0 y = 3 }
 	}
-}
-division_template = {
-	name = "Garrison Brigade"  		# used for island defense (older equipment, lower experience)
-
-	division_names_group = USA_GAR_01		# Brigade level irregular unit, so no default names
-
-	regiments = {
-		garrison = { x = 0 y = 0 }
-		garrison = { x = 0 y = 1 }
-		garrison = { x = 0 y = 2 }
-		
-		garrison = { x = 1 y = 0 }
-		garrison = { x = 1 y = 1 }
-		garrison = { x = 1 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }   
-	}
-	priority = 0
 }
 
 division_template = {

@@ -37,6 +37,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1918
 		}
 		
 		ai_will_do = {
@@ -64,6 +65,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -106,6 +108,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -153,6 +156,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -190,6 +194,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1945
 		}
 		
 		ai_will_do = {
@@ -233,6 +238,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1937
 		}
 		
 		ai_will_do = {
@@ -273,6 +279,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -315,6 +322,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -352,6 +360,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1944
 		}
 		
 		ai_will_do = {
@@ -398,6 +407,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1936
 		}
 		
 	}
@@ -423,6 +433,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1939
 		}
 		
 	}
@@ -443,6 +454,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1942
 		}
 		
 	}
@@ -480,6 +492,7 @@ technologies = {
 		categories = {
 			para_tech
 			cat_special_forces_generic
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -517,12 +530,13 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1941 }
+			position = { x = 1 y = @1940 }
 		}
 		
 		categories = {
 			para_tech
 			cat_special_forces_generic
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -562,6 +576,7 @@ technologies = {
 		categories = {
 			para_tech
 			cat_special_forces_generic
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -618,6 +633,7 @@ technologies = {
 		categories = {
 			marine_tech
 			cat_special_forces_generic
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -659,12 +675,13 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1941 }
+			position = { x = 1 y = @1940 }
 		}
 		
 		categories = {
 			marine_tech
 			cat_special_forces_generic
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -707,6 +724,7 @@ technologies = {
 		categories = {
 			marine_tech
 			cat_special_forces_generic
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -758,6 +776,7 @@ technologies = {
 			infantry_tech
 			mountaineers_tech
 			cat_special_forces_generic
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -780,13 +799,14 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1941 }
+			position = { x = 1 y = @1940 }
 		}
 		
 		categories = {
 			infantry_tech
 			mountaineers_tech
 			cat_special_forces_generic
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -810,6 +830,7 @@ technologies = {
 			infantry_tech
 			mountaineers_tech
 			cat_special_forces_generic
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -841,9 +862,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1936
 		categories = {
-			year_1936
 			cat_special_forces_generic
 			jaeger_tech
+			year_1936
 		}
 		folder = {
 			name = infantry_folder
@@ -866,13 +887,13 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1939
 		categories = {
-			year_1939
 			cat_special_forces_generic
 			jaeger_tech
+			year_1939
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1941 }
+			position = { x = 1 y = @1940 }
 		}
 	}
 
@@ -883,9 +904,9 @@ technologies = {
 		research_cost = 2.0
 		start_year = 1942
 		categories = {
-			year_1942
 			cat_special_forces_generic
 			jaeger_tech
+			year_1942
 		}
 		folder = {
 			name = infantry_folder
@@ -930,7 +951,9 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
+			jaeger_tech
 			cat_special_forces_generic
+			year_1938
 		}
 		
 		ai_will_do = {
@@ -971,7 +994,9 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
+			jaeger_tech
 			cat_special_forces_generic
+			year_1940
 		}
 		
 		ai_will_do = {
@@ -1009,7 +1034,9 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
+			jaeger_tech
 			cat_special_forces_generic
+			year_1940
 		}
 		
 		ai_will_do = {
@@ -1049,7 +1076,9 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
+			jaeger_tech
 			cat_special_forces_generic
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -1084,7 +1113,9 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
+			jaeger_tech
 			cat_special_forces_generic
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -1116,7 +1147,9 @@ technologies = {
 			mountaineers_tech
 			marine_tech
 			para_tech
+			jaeger_tech
 			cat_special_forces_generic
+			year_1944
 		}
 		
 		ai_will_do = {
@@ -1268,6 +1301,7 @@ technologies = {
 		
 		categories = {
 			night_vision
+			year_1943
 		}
 		
 		ai_will_do = {
@@ -1308,6 +1342,7 @@ technologies = {
 		
 		categories = {
 			night_vision
+			year_1946
 		}
 		
 		ai_will_do = {
@@ -1355,6 +1390,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1918
 		}
 		
 	}
@@ -1379,6 +1415,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1938
 		}
 		
 		ai_will_do = {
@@ -1440,6 +1477,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -1486,6 +1524,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			year_1944
 		}
 		
 		ai_will_do = {
@@ -1564,6 +1603,7 @@ technologies = {
 		categories = {
 			motorized_equipment
 			infantry_tech
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -1612,6 +1652,7 @@ technologies = {
 		
 		categories = {
 			mot_rockets
+			year_1940
 		}
 	}
 	
@@ -1635,6 +1676,7 @@ technologies = {
 		
 		categories = {
 			mot_rockets
+			year_1936
 		}
 	}
 
@@ -1682,6 +1724,7 @@ technologies = {
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
+			year_1940
 		}
 		
 		sub_technologies = {
@@ -1715,6 +1758,7 @@ technologies = {
 		categories = {
 			mot_rockets
 			cat_mechanized_equipment
+			year_1940
 		}
 	}
 
@@ -1754,6 +1798,7 @@ technologies = {
 			infantry_tech
 			cat_mechanized_equipment
 			tp_tech
+			year_1940
 		}
 		
 		ai_will_do = {
@@ -1785,6 +1830,7 @@ technologies = {
 			infantry_tech
 			cat_mechanized_equipment
 			tp_tech
+			year_1943
 		}
 		
 		ai_will_do = {
@@ -1807,6 +1853,7 @@ technologies = {
 		
 		categories = {
 			armor
+			year_1942
 		}
 		
 	}
@@ -1838,6 +1885,7 @@ technologies = {
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -1867,6 +1915,7 @@ technologies = {
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
+			year_1944
 		}
 		
 		ai_will_do = {
@@ -1907,6 +1956,7 @@ technologies = {
 			motorized_equipment
 			armor
 			cat_armored_car
+			year_1914
 		}
 		
 	}
@@ -1941,6 +1991,7 @@ technologies = {
 			motorized_equipment
 			armor
 			cat_armored_car
+			year_1939
 		}
 		
 	}
@@ -1971,6 +2022,7 @@ technologies = {
 			motorized_equipment
 			armor
 			cat_armored_car
+			year_1941
 		}
 
 	}

@@ -15,6 +15,14 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			every_country={
+				add_ideas = research_35
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
 			every_country = {
 				limit = {
 					NOT = {

@@ -108,7 +108,15 @@ technology_categories = {
 	cat_air_guns
 	cat_air_engine
 	cat_air_bombs
+	year_1910
+	year_1914
 	year_1918
+	year_1922
+	year_1926
+	year_1932
+	year_1933
+	year_1934
+	year_1935
 	year_1936
 	year_1937
 	year_1938
@@ -117,6 +125,9 @@ technology_categories = {
 	year_1941
 	year_1942
 	year_1943
+	year_1944
+	year_1945
+	year_1946
 	jaeger_tech
 	cat_armored_car
 	land_doctrine_non_cost

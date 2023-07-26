@@ -1234,7 +1234,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			every_owned_state = {
+			every_owned_state = { # olf effect
 				limit = {
 					is_core_of = ROOT
 					is_controlled_by = ROOT
@@ -1246,19 +1246,19 @@ focus_tree = {
 				}
 			}
 			build_railway = { #Madrid - Crodoba - Sevilla
-				level = 3
+				level = 5
 				path = {
 					3938 13224 13229 6800 6832 6948 3810 3871 875 1178 7183
 				}
 			}
 			build_railway = { #Madrid - Granada
-				level = 3
+				level = 5
 				path = {
 					13229 9778 9828 12083 4095 1176
 				}
 			}
 			build_railway = { #Madrid - Murcia - Valencia
-				level = 3
+				level = 5
 				path = {
 					3938 6914 9757 942 832 9903 1093 10024 4098 9889 6959 6906
 				}
@@ -1273,7 +1273,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_improve_cross_country_railways }
+		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports focus = SPA_improve_cross_country_railways }
 		
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = 0
@@ -1437,6 +1437,53 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+
+			# custom_effect_tooltip = "Gain 1 Building slot for each level of infrastructure above 5"
+		    # every_owned_state = {
+			# 	limit= {
+			# 		AND = {
+			# 			infrastructure > 5 
+			# 			is_core_of = SPR
+			# 		}  
+			# 	}
+			# 	add_extra_state_shared_building_slots = 1
+			# }
+			# every_owned_state = {
+			# 	limit= {
+			# 		AND = {
+			# 			infrastructure > 6
+			# 			is_core_of = SPR
+			# 		}  
+			# 	}
+			# 	add_extra_state_shared_building_slots = 1
+			# }
+			# every_owned_state = {
+			# 	limit= {
+			# 		AND = {
+			# 			infrastructure > 7
+			# 			is_core_of = SPR
+			# 		}  
+			# 	}
+			# 	add_extra_state_shared_building_slots = 1
+			# }
+			# every_owned_state = {
+			# 	limit= {
+			# 		AND = {
+			# 			infrastructure > 8 
+			# 			is_core_of = SPR
+			# 		}  
+			# 	}
+			# 	add_extra_state_shared_building_slots = 1
+			# }
+			# every_owned_state = {
+			# 	limit= {
+			# 		AND = {
+			# 			infrastructure > 9
+			# 			is_core_of = SPR
+			# 		}  
+			# 	}
+			# 	add_extra_state_shared_building_slots = 1
+			# }
 		}
 	}
 

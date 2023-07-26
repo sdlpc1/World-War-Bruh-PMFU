@@ -40,6 +40,7 @@ technologies = {
 		
 		categories = {
 			electronics
+			year_1936
 		}
 		
 
@@ -58,7 +59,7 @@ technologies = {
 			breakthrough = 0.1
 		}
 
-		
+		start_year = 1936
 
 		on_research_complete = {
 			custom_effect_tooltip = tooltip_2radio
@@ -78,6 +79,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1936
 		}
 	}
 	
@@ -127,6 +129,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1937
 		}
 	}
 	
@@ -155,6 +158,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1937
 		}
 	}
 	
@@ -203,6 +207,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1938
 		}
 	}
 	
@@ -251,6 +256,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1940
 		}
 	}
 	
@@ -294,6 +300,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1942
 		}
 	}
 	
@@ -328,6 +335,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1938
 		}
 	}
 	
@@ -362,6 +370,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1940
 		}
 	}
 	
@@ -391,6 +400,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1942
 		}
 	}
 	
@@ -451,6 +461,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1938
 		}
 	}
 	
@@ -491,6 +502,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1940
 		}
 	}
 	
@@ -525,6 +537,7 @@ technologies = {
 
 		categories = {
 			electronics
+			year_1942
 		}
 	}
 	
@@ -558,10 +571,13 @@ technologies = {
 				factor = 4
 			}
 		}
+
+		start_year = 1936
 		
 		categories = {
 			electronics
 			radar_tech
+			year_1936
 		}
 	}
 	
@@ -602,6 +618,7 @@ technologies = {
 		categories = {
 			electronics
 			radar_tech
+			year_1938
 		}
 		
 		enable_building = {
@@ -655,6 +672,7 @@ technologies = {
 		categories = {
 			electronics
 			radar_tech
+			year_1939
 		}
 	}
 	
@@ -704,6 +722,7 @@ technologies = {
 		categories = {
 			electronics
 			radar_tech
+			year_1940
 		}
 	}
 	
@@ -753,6 +772,7 @@ technologies = {
 		categories = {
 			electronics
 			radar_tech
+			year_1941
 		}
 	}
 	
@@ -794,6 +814,7 @@ technologies = {
 		categories = {
 			electronics
 			radar_tech
+			year_1942
 		}
 	}
 	
@@ -814,6 +835,8 @@ technologies = {
 		
 		research_cost = 2.5
 
+		start_year = 1936
+
 		folder = {
 			name = electronics_folder
 			position = { x = 4 y = 2 }
@@ -826,6 +849,7 @@ technologies = {
 		categories = {
 			electronics
 			computing_tech
+			year_1936
 		}
 	}
 	
@@ -877,6 +901,7 @@ technologies = {
 			encryption_tech
 			decryption_tech
 			computing_tech
+			year_1938
 		}
 	}
 	
@@ -933,6 +958,7 @@ technologies = {
 			encryption_tech
 			decryption_tech
 			computing_tech
+			year_1940
 		}
 	}
 	
@@ -981,6 +1007,7 @@ technologies = {
 			encryption_tech
 			decryption_tech
 			computing_tech
+			year_1942
 		}
 	}
 	
@@ -1257,6 +1284,8 @@ technologies = {
 			leads_to_tech = improved_fire_control_system
 			research_cost_coeff = 1
 		}
+
+		start_year = 1936
 		
 		ai_will_do = {
 			factor = 0.75
@@ -1281,6 +1310,7 @@ technologies = {
 			electronics
 			computing_tech
 			naval_equipment
+			year_1936
 		}
 	}
 
@@ -1329,6 +1359,7 @@ technologies = {
 			electronics
 			computing_tech
 			naval_equipment
+			year_1939
 		}
 	}
 
@@ -1367,6 +1398,7 @@ technologies = {
 			electronics
 			computing_tech
 			naval_equipment
+			year_1941
 		}
 	}
 
@@ -1397,6 +1429,7 @@ technologies = {
 		
 		categories = {
 			rocketry
+			year_1942
 		}
 	}
 	
@@ -1448,6 +1481,7 @@ technologies = {
 		
 		categories = {
 			rocketry
+			year_1943
 		}		
 	}
 	
@@ -1491,6 +1525,7 @@ technologies = {
 		
 		categories = {
 			rocketry
+			year_1944
 		}
 	}
 	
@@ -1530,6 +1565,7 @@ technologies = {
 		
 		categories = {
 			rocketry
+			year_1946
 		}
 	}
 	
@@ -1569,6 +1605,7 @@ technologies = {
 		categories = {
 			rocketry
 			jet_technology
+			year_1944
 		}
 	}
 	
@@ -1615,6 +1652,7 @@ technologies = {
 		
 		categories = {
 			nuclear
+			year_1940
 		}
 		
 
@@ -1647,6 +1685,7 @@ technologies = {
 		
 		categories = {
 			nuclear
+			year_1944
 		}
 		
 		enable_building = {
@@ -1673,6 +1712,7 @@ technologies = {
 		
 		categories = {
 			nuclear
+			year_1946
 		}
 	}
 

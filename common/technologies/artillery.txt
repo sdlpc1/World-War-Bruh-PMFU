@@ -39,6 +39,7 @@ technologies = {
 		}
 		
 		research_cost = 2.0
+		start_year = 1934
 		
 		folder = {
 			name = artillery_folder
@@ -47,6 +48,11 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1934
+		}
+
+		ai_will_do = {
+			factor = 30
 		}
 
 	}
@@ -101,6 +107,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
+			year_1938
 		}
 	}
 
@@ -126,6 +133,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
+			year_1938
 		}
 	}
 	
@@ -150,6 +158,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			year_1938
 		}
 	}
 
@@ -201,6 +210,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
+			year_1941
 		}
 	}
 	
@@ -226,6 +236,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
+			year_1941
 		}
 	}
 
@@ -253,6 +264,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1941
 		}
 
 	}
@@ -305,8 +317,12 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1938
 		}
 
+		ai_will_do = {
+			factor = 30
+		}
 	}	
 
 	# Artillery 2
@@ -330,8 +346,12 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1939
 		}
 
+		ai_will_do = {
+			factor = 30
+		}
 	}
 
 	# Anti Tank 2
@@ -356,6 +376,11 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			year_1939
+		}
+
+		ai_will_do = {
+			factor = 30
 		}
 	}
 
@@ -405,6 +430,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1939
 		}
 
 	}
@@ -416,7 +442,7 @@ technologies = {
 			pack_artillery_equipment_2
 		}
 		
-		research_cost = 2.0
+		research_cost = 1.5
 		start_year = 1940
 
 		folder = {
@@ -426,6 +452,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1940
 		}
 	}
 	
@@ -447,6 +474,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1940
 		}
 		enable_equipment_modules = {
 			
@@ -527,8 +555,12 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1940
 		}
 
+		ai_will_do = {
+			factor = 30
+		}
 	}
 
 	# Artillery 3
@@ -555,8 +587,12 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1941
 		}
 
+		ai_will_do = {
+			factor = 30
+		}
 	}
 
 	# Anti Tank 3
@@ -589,6 +625,11 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			year_1941
+		}
+
+		ai_will_do = {
+			factor = 30
 		}
 	}
 
@@ -599,7 +640,7 @@ technologies = {
 			mountain_artillery_gun
 		}
 		
-		research_cost = 2.0
+		research_cost = 1.5
 		start_year = 1942
 
 		folder = {
@@ -609,6 +650,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1942
 		}
 	}
 
@@ -630,6 +672,7 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1942
 		}
 	}
 
@@ -694,8 +737,12 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1942
 		}
 
+		ai_will_do = {
+			factor = 30
+		}
 	}
 	
 	# Artillery 4
@@ -719,8 +766,12 @@ technologies = {
 		
 		categories = {
 			artillery
+			year_1943
 		}
 
+		ai_will_do = {
+			factor = 30
+		}
 	}
 
 	# Anti Tank 4
@@ -746,6 +797,11 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			year_1943
+		}
+
+		ai_will_do = {
+			factor = 30
 		}
 	}
 	
@@ -802,6 +858,7 @@ technologies = {
 		
 		categories = {
 			heavy_artillery
+			year_1938
 		}
 
 	}
@@ -831,6 +888,7 @@ technologies = {
 		
 		categories = {
 			heavy_artillery
+			year_1939
 		}
 
 	}
@@ -881,6 +939,7 @@ technologies = {
 		
 		categories = {
 			heavy_artillery
+			year_1939
 		}
 	}
 	
@@ -945,6 +1004,7 @@ technologies = {
 		
 		categories = {
 			heavy_artillery
+			year_1940
 		}
 
 	}
@@ -975,6 +1035,7 @@ technologies = {
 		
 		categories = {
 			heavy_artillery
+			year_1941
 		}
 		
 	}
@@ -1026,6 +1087,7 @@ technologies = {
 		categories = {
 			heavy_artillery
 			cat_anti_tank
+			year_1941
 		}
 	}
 
@@ -1053,6 +1115,7 @@ technologies = {
 		
 		categories = {
 			heavy_artillery
+			year_1942
 		}
 	}
 
@@ -1106,6 +1169,7 @@ technologies = {
 		
 		categories = {
 			heavy_artillery
+			year_1942
 		}
 
 	}
@@ -1130,6 +1194,7 @@ technologies = {
 		
 		categories = {
 			heavy_artillery
+			year_1943
 		}
 		
 	}
@@ -1160,6 +1225,7 @@ technologies = {
 		categories = {
 			heavy_artillery
 			cat_anti_tank
+			year_1943
 		}
 	}
 
@@ -1179,6 +1245,7 @@ technologies = {
 		
 		categories = {
 			heavy_artillery
+			year_1944
 		}
 
 	}
@@ -1214,6 +1281,7 @@ technologies = {
 		categories = {
 			rocketry
 			artillery
+			year_1940
 		}
 	}
 
@@ -1248,6 +1316,7 @@ technologies = {
 		categories = {
 			rocketry
 			artillery
+			year_1942
 		}
 	}
 	
@@ -1278,6 +1347,7 @@ technologies = {
 		categories = {
 			rocketry
 			artillery
+			year_1944
 		}
 	}
 
@@ -1303,6 +1373,7 @@ technologies = {
 		categories = {
 			rocketry
 			artillery
+			year_1944
 		}
 	}
 

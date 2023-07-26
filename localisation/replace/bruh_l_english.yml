@@ -1209,6 +1209,7 @@ fifty_cas_dmg_reduction:0 "From focus"
  
  ### STATES ###
  STATE_843:0 "South Khartoum"
+ STATE_844:0 "Suez Canal"
 
  ### UNITS ###
  jaegers:0"Ranger I"

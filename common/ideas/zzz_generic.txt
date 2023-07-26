@@ -522,8 +522,8 @@ ideas = {
 			picture = german_advisors
 	
 			research_bonus = {
-				armor = 0.10
-				air_equipment = 0.10
+				armor = 0.25
+				air_equipment = 0.25
 			}
 			modifier = {
 				land_doctrine_cost_factor = -0.15

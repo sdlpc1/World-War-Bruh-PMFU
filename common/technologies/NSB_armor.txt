@@ -79,6 +79,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1936
 		}
 	}
 
@@ -106,6 +107,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1939
 		}
 	}
 
@@ -129,6 +131,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1941
 		}
 	}
 
@@ -160,6 +163,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1938
 		}
 	}
 
@@ -188,6 +192,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1941
 		}
 	}
 
@@ -211,6 +216,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1943
 		}
 	}
 
@@ -249,6 +255,7 @@ technologies = {
 	# 	categories = {
 	# 		armor
 	# 		cat_heavy_armor
+	#		year_1936
 	# 	}
 	# }
 
@@ -284,6 +291,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1940
 		}
 	}
 
@@ -319,6 +327,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1941
 		}
 	}
 
@@ -347,6 +356,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1943
 		}
 	}
 
@@ -369,6 +379,7 @@ technologies = {
 	
 		categories = {
 			armor
+			year_1938
 		}
 	}
 
@@ -387,6 +398,7 @@ technologies = {
 
 		categories = {
 			armor
+			year_1942
 		}
 	}
 
@@ -478,6 +490,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1936
 		}
 	}
 	
@@ -500,6 +513,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1939
 		}
 	}
 
@@ -527,6 +541,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1941
 		}
 	}
 	
@@ -547,6 +562,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1945
 		}
 	}
 
@@ -572,6 +588,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1937
 		}
 	}
 
@@ -599,6 +616,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1940
 		}
 	}
 	
@@ -626,6 +644,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1942
 		}
 	}
 	
@@ -648,6 +667,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1945
 		}
 	}
 
@@ -675,6 +695,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1938
 		}
 	}
 	fra_heavy_tank_2 = {
@@ -702,6 +723,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1941
 		}
 	}
 
@@ -721,6 +743,7 @@ technologies = {
 		categories = {
 			armor
 			cat_heavy_armor
+			year_1944
 		}
 	}
 	
@@ -769,6 +792,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1936
 		}
 	}
 
@@ -798,6 +822,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1940
 		}
 	}
 
@@ -817,6 +842,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1941
 		}
 	}
 	
@@ -847,6 +873,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1936
 		}
 	}
 	
@@ -872,6 +899,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1938
 		}
 	}
 
@@ -904,6 +932,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1940
 		}
 	}
 	
@@ -931,6 +960,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1942
 		}
 	}
 	
@@ -950,6 +980,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1943
 		}
 	}
 
@@ -973,6 +1004,12 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 6 y = 12 }
 		}
+
+		categories = {
+			armor
+			cat_heavy_armor
+			year_1942
+		}
 	}
 
 	ita_heavy_tank_2 = {
@@ -986,6 +1023,12 @@ technologies = {
 		folder	= {
 			name = nsb_armour_folder
 			position = { x = 6 y = 16 }
+		}
+
+		categories = {
+			armor
+			cat_heavy_armor
+			year_1944
 		}
 	}
 
@@ -1039,6 +1082,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1938
 		}
 	}
 
@@ -1062,6 +1106,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1941
 		}
 	}
 	
@@ -1113,6 +1158,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1940
 		}
 	}
 	
@@ -1137,6 +1183,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1941
 		}
 	}
 	
@@ -1160,6 +1207,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1942
 		}
 	}
 	
@@ -1220,6 +1268,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1936
 		}
 	}
 
@@ -1246,6 +1295,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1940
 		}
 	}
 
@@ -1263,11 +1313,10 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			year_1941
 		}
 	}
 
-
-	
 	jap_medium_tank_1 = {
 
 		enable_equipments = {
@@ -1289,6 +1338,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1938
 		}
 	}
 
@@ -1316,6 +1366,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1940
 		}
 	}
 
@@ -1343,6 +1394,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1943
 		}
 	}
 	
@@ -1365,6 +1417,7 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			year_1945
 		}
 	}
 }

@@ -281,4 +281,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2431;2408;;-1;-1;-1;-1;-1;THE_BELTS;TheBelts
 2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
 1496;2919;sea;7982;-1;-1;-1;-1;IRAN_CANAL;Countenance
+9617;10115;sea;;-1;-1;-1;-1;Bucharest-Korea;Bucharest-Korea
+949;10115;sea;;-1;-1;-1;-1;Sofia-Korea;Sofia-Korea
+9660;10115;sea;;-1;-1;-1;-1;Budapest-Korea;Budapest-Korea
 -1;-1;;-1;-1;-1;-1;-1;-1

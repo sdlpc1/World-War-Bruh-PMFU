@@ -1454,15 +1454,15 @@ operations = {
 			has_dlc = "Waking the Tiger"
 		}
 		available = {
-			controls_state = 446
-			controls_state = 453
+			has_full_control_of_state = 844
 			OR = {
 				NOT = {
-					owns_state = 446
-					owns_state = 453
+					owns_state = 844
 				}
 				any_enemy_country = {
 					OR = {
+						controls_state = 446
+						controls_state = 453
 						controls_state = 452
 						controls_state = 447
 						controls_state = 456
@@ -1501,14 +1501,16 @@ operations = {
 				if = {
 					limit = {
 						NOT = {
-							owns_state = 446
-							owns_state = 453
+							# owns_state = 446
+							# owns_state = 453
+							owns_state = 844
 						}
 					}
 					random_country = {
 						limit = {
-							owns_state = 446
-							owns_state = 453
+							# owns_state = 446
+							# owns_state = 453
+							owns_state = 844
 						}
 						country_event = { id = generic.12 days = 1 }
 					}
@@ -1520,8 +1522,9 @@ operations = {
 			if = {
 				limit = {
 					OR = {
-						has_full_control_of_state = 446
-						has_full_control_of_state = 453
+						has_full_control_of_state = 844
+						# has_full_control_of_state = 446
+						# has_full_control_of_state = 453
 					}
 				}
 				set_country_flag = blew_up_suez
@@ -1532,8 +1535,9 @@ operations = {
 				if = {
 					limit = {
 						ENG = {
-							owns_state = 446
-							owns_state = 453
+							owns_state = 844
+							# owns_state = 446
+							# owns_state = 453
 						}
 					}
 					add_war_support = -0.05
@@ -1695,8 +1699,9 @@ special_projects = {
 		icon = GFX_decision_generic_special_project
 
 		available = {
-			has_full_control_of_state = 446
-			has_full_control_of_state = 453
+			has_full_control_of_state = 844
+			# has_full_control_of_state = 446
+			# has_full_control_of_state = 453
 			num_of_civilian_factories > 15
 		}
 	
@@ -1717,8 +1722,9 @@ special_projects = {
 		remove_effect = {
 			if = {
 				limit = {
-					has_full_control_of_state = 446
-					has_full_control_of_state = 453
+					has_full_control_of_state = 844
+					# has_full_control_of_state = 446
+					# has_full_control_of_state = 453
 				}
 				set_country_flag = rebuilt_suez
 				clr_global_flag = SUEZ_CANAL_BLOCKED

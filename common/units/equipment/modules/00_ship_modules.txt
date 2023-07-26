@@ -2133,6 +2133,9 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.01
 		}
+		add_stats = {
+			naval_torpedo_damage_reduction_factor = 0.03
+		}
 	}
 
 	ship_depth_charge_2 = {
@@ -2153,6 +2156,9 @@ equipment_modules = {
 
 		multiply_stats = {
 			naval_speed = -0.01
+		}
+		add_stats = {
+			naval_torpedo_damage_reduction_factor = 0.04
 		}
 	}
 
@@ -2175,6 +2181,9 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.02
 		}
+		add_stats = {
+			naval_torpedo_damage_reduction_factor = 0.05
+		}
 	}
 
 	ship_depth_charge_4 = {
@@ -2195,6 +2204,9 @@ equipment_modules = {
 
 		multiply_stats = {
 			naval_speed = -0.02
+		}
+		add_stats = {
+			naval_torpedo_damage_reduction_factor = 0.06
 		}
 	}
 

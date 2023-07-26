@@ -920,18 +920,18 @@ focus_tree = {
 					}
 				}
 				hidden_effect = {
-					ENG = {
-						set_rule = { 
-							can_send_volunteers = no
-						}
-					}
-	
 					# ENG = {
-					# 	swap_ideas = {
-					# 		remove_idea = volunteer_minimum_major
-					# 		add_idea = volunteer_minimum_minor
+					# 	set_rule = { 
+					# 		can_send_volunteers = no
 					# 	}
 					# }
+	
+					ENG = {
+						swap_ideas = {
+							remove_idea = volunteer_minimum_major
+							add_idea = volunteer_minimum_minor
+						}
+					}
 					
 					if = {
 						limit = {
@@ -1079,7 +1079,7 @@ focus_tree = {
 					add_dynamic_modifier = { modifier = factory_reduction_balancer }
 				}
 				JAP = {
-					add_named_threat = { threat = 15.8 name = "Marco Polo Bridge Incident" }
+					add_named_threat = { threat = 20.3 name = "Marco Polo Bridge Incident" }
 				}
 				hidden_effect = {
 					JAP = {
@@ -1114,7 +1114,7 @@ focus_tree = {
 						add_war_support = 0.1
 					}
 					USA = {
-						country_event = { id = panay_incident.2 days = 20 }
+						country_event = { id = panay_incident.2 days = 40 }
 					}
 					add_war_support = 0.05
 					country_event = { days = 5 id = news.1 }

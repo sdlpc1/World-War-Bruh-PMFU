@@ -6434,7 +6434,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 0.75
 				uses = 4
 				category = industry
 			}
@@ -7015,7 +7015,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = art_bonus
-				bonus = 0.5
+				bonus = 0.75
 				uses = 2
 				category = artillery
 			}
@@ -7091,7 +7091,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = doc_bonus
-				bonus = 0.50
+				bonus = 0.75
 				uses = 2
 				category = infantry_weapons
 			}	
@@ -7235,6 +7235,12 @@ focus_tree = {
 				uses = 2
 				category = cat_superior_firepower
 				category = cat_mobile_warfare
+			}
+			add_tech_bonus = {
+				name = doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
 			}
 			SOV_modernisation_towards_mech = yes
 		}
@@ -7501,7 +7507,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = doc_bonus
 				cost_reduction = 0.25
-				uses = 1
+				uses = 2
 				category = cat_superior_firepower
 			}
 		}
@@ -7555,7 +7561,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = doc_bonus
 				cost_reduction = 0.25
-				uses = 1
+				uses = 2
 				category = cat_superior_firepower
 			}
 			add_doctrine_cost_reduction = {

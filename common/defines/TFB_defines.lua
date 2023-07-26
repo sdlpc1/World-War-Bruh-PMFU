@@ -143,6 +143,7 @@ NDefines.NBuildings.SUPPLY_PORT_LEVEL_THROUGHPUT = 4   -- supply throughput per 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50				-- Max slots shared by factories
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.06 -- multiplactive resource bonus for each level of (non damaged) infrastructure
 NDefines.NBuildings.SUPPLY_ROUTE_RESOURCE_BONUS = 0.05   -- multiplicative resource bonus for having a railway/naval connection to the capital
+NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.07		-- Each level of navalbase building repairs X strength and can repair as many ships as its level
 
 NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.5		-- speed impact at 0 org.
 NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.03	-- speed penalty per infrastucture below maximum.
@@ -442,6 +443,7 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns if target ih profil
 		145.0,	-- torpedos
 		55.0	-- small guns
 	}
+NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE 										= 80	-- hit profile for depth charges
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 	2.0,	-- big guns
 	2.0,	-- torpedoes

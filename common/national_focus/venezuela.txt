@@ -14,25 +14,6 @@ focus_tree = {
 	reset_on_civilwar = no
 
 	focus = {
-		id = yames_yames
-		icon = GFX_goal_generic_consumer_goods
-		x = 10
-		y = 0
-		cost = 0
-		
-		ai_will_do = {
-			factor = 200
-		}
-
-		available_if_capitulated = yes
-		completion_reward = {
-			every_country={
-				remove_ideas = starting_cap
-			}
-		}
-	}
-
-	focus = {
 		id = beefy_beefy
 		icon = GFX_goal_generic_consumer_goods
 		x = 12
@@ -130,41 +111,77 @@ focus_tree = {
 	}
 
 	focus = {
-		id = infrastructure_effort_ven
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 0
+		id = yames_yames
+		icon = GFX_goal_generic_consumer_goods
+		x = 10
 		y = 0
-		cost = 10
+		cost =0
+		
 		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_35
+					add_idea = research_36
 				}
 			}
-		}
-
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
+			every_country={
+				remove_ideas = starting_cap
 			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
-		}
-
-		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -221,96 +238,380 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
-		id = infrastructure_effort_ven_2
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = infrastructure_effort_ven }
+		id = yames_yames2
+		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
-		cost = 10
+		cost = 0
+		prerequisite = { focus = yames_yames }
+		relative_position_id = yames_yames
 		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
+		available = {
+			date > 1936.6.1
 		}
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+			every_country={
+				swap_ideas={
+					remove_idea = research_36
+					add_idea = research_36_mid
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
+		}
+	}
+	focus = {
+		id = yames_yames3
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames2 }
+		relative_position_id = yames_yames2
+		available_if_capitulated = yes
+		available = {
+			date > 1937.1.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_36_mid
+					add_idea = research_37
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = yames_yames4
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames3 }
+		relative_position_id = yames_yames3
+		available_if_capitulated = yes
+		available = {
+			date > 1937.6.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_37
+					add_idea = research_37_mid
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames5
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames4 }
+		relative_position_id = yames_yames4
+		available_if_capitulated = yes
+		available = {
+			date > 1938.1.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_37_mid
+					add_idea = research_38
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames6
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames5 }
+		relative_position_id = yames_yames5
+		available_if_capitulated = yes
+		available = {
+			date > 1938.6.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_38
+					add_idea = research_38_mid
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames7
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames6 }
+		relative_position_id = yames_yames6
+		available_if_capitulated = yes
+		available = {
+			date > 1939.1.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_38_mid
+					add_idea = research_39
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames8
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames7 }
+		relative_position_id = yames_yames7
+		available_if_capitulated = yes
+		available = {
+			date > 1939.6.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_39
+					add_idea = research_39_mid
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames9
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames8 }
+		relative_position_id = yames_yames8
+		available_if_capitulated = yes
+		available = {
+			date > 1940.1.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_39_mid
+					add_idea = research_40
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames10
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames9 }
+		relative_position_id = yames_yames9
+		available_if_capitulated = yes
+		available = {
+			date > 1940.6.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_40
+					add_idea = research_40_mid
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames11
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames10 }
+		relative_position_id = yames_yames10
+		available_if_capitulated = yes
+		available = {
+			date > 1941.1.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_40_mid
+					add_idea = research_41
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames12
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames11 }
+		relative_position_id = yames_yames11
+		available_if_capitulated = yes
+		available = {
+			date > 1941.6.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_41
+					add_idea = research_41_mid
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames13
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames12 }
+		relative_position_id = yames_yames12
+		available_if_capitulated = yes
+		available = {
+			date > 1942.1.1
+		}
+		completion_reward = {	
+			every_country={
+				swap_ideas={
+					remove_idea = research_41_mid
+					add_idea = research_42
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames14
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames13 }
+		relative_position_id = yames_yames13
+		available_if_capitulated = yes
+		available = {
+			date > 1942.6.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_42
+					add_idea = research_42_mid
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames15
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames14 }
+		relative_position_id = yames_yames14
+		available_if_capitulated = yes
+		available = {
+			date > 1943.1.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_42_mid
+					add_idea = research_43
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames16
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames15 }
+		relative_position_id = yames_yames15
+		available_if_capitulated = yes
+		available = {
+			date > 1943.6.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_43
+					add_idea = research_43_mid
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames17
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames16 }
+		relative_position_id = yames_yames16
+		available_if_capitulated = yes
+		available = {
+			date > 1944.1.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_43_mid
+					add_idea = research_44
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames18
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = yames_yames17 }
+		relative_position_id = yames_yames17
+		available_if_capitulated = yes
+		available = {
+			date > 1944.6.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_44
+					add_idea = research_44_mid
+				}
+			}
+		}
+	}
+	focus = {
+		id = yames_yames19
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = yames_yames18 }
+		x = 0
+		y = 1
+		cost = 0
+		relative_position_id = yames_yames18
+		available_if_capitulated = yes
+		available = {
+			date > 1945.1.1
+		}
+		completion_reward = {
+			every_country={
+				swap_ideas={
+					remove_idea = research_44_mid
+					add_idea = research_45
 				}
 			}
 		}

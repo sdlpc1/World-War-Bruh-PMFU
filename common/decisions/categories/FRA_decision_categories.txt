@@ -2,6 +2,15 @@
 ##### FRA ######
 ################
 
+category_test_decisions_non_debug = {
+	priority = 150
+	visible = {
+		is_debug = no
+		GER = { is_ai = yes }
+		ITA = { is_ai = yes }
+	}
+}
+
 FRA_vichy_france = {
 	
 	allowed = {

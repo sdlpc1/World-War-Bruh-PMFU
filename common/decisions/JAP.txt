@@ -739,6 +739,40 @@ foreign_politics = {
 
 	}
 
+	JAP_owned_china_to_manchu = {
+		icon = generic_operation
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			any_state = {
+				is_core_of = CHI
+				is_controlled_by = JAP
+			}
+			has_game_rule = {
+				rule = china_war_rule
+				option = DISABLED
+			}
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_of = CHI
+					is_controlled_by = JAP
+				}
+				MAN = {
+					transfer_state = PREV
+				}
+			}
+		}
+
+	}
+
 	JAP_sue_for_peace_CHI = {
 
 		allowed = {

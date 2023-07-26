@@ -59,6 +59,7 @@ technologies = {
 		
 		categories = {
 			support_tech
+			year_1918
 		}
 		
 		ai_will_do = {
@@ -105,6 +106,7 @@ technologies = {
 		categories = {
 			support_tech
 			engineers_tech
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -169,6 +171,7 @@ technologies = {
 		categories = {
 			support_tech
 			engineers_tech
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -207,6 +210,7 @@ technologies = {
 		categories = {
 			support_tech
 			engineers_tech
+			year_1939
 		}
 		
 	}
@@ -249,6 +253,7 @@ technologies = {
 		categories = {
 			support_tech
 			engineers_tech
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -298,6 +303,7 @@ technologies = {
 		categories = {
 			support_tech
 			engineers_tech
+			year_1942
 		}
 		
 	}
@@ -347,6 +353,7 @@ technologies = {
 		categories = {
 			support_tech
 			engineers_tech
+			year_1945
 		}
 		
 		ai_will_do = {
@@ -393,6 +400,7 @@ technologies = {
 		categories = {
 			support_tech
 			recon_tech
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -550,6 +558,7 @@ technologies = {
 		categories = {
 			support_tech
 			recon_tech
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -729,6 +738,7 @@ technologies = {
 		categories = {
 			support_tech
 			recon_tech
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -871,6 +881,7 @@ technologies = {
 		categories = {
 			support_tech
 			recon_tech
+			year_1945
 		}
 		
 		ai_will_do = {
@@ -914,6 +925,7 @@ technologies = {
 		categories = {
 			support_tech
 			military_police_tech
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -982,6 +994,7 @@ technologies = {
 		categories = {
 			support_tech
 			military_police_tech
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -1015,6 +1028,7 @@ technologies = {
 		categories = {
 			support_tech
 			military_police_tech
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -1043,6 +1057,7 @@ technologies = {
 		categories = {
 			support_tech
 			military_police_tech
+			year_1945
 		}
 		
 		ai_will_do = {
@@ -1090,6 +1105,7 @@ technologies = {
 		categories = {
 			support_tech
 			maintenance_company_tech
+			year_1936
 		}
 		
 		on_research_complete = {
@@ -1140,6 +1156,7 @@ technologies = {
 		categories = {
 			support_tech
 			maintenance_company_tech
+			year_1939
 		}
 
 		on_research_complete = {
@@ -1194,6 +1211,7 @@ technologies = {
 		categories = {
 			support_tech
 			maintenance_company_tech
+			year_1942
 		}
 		
 		on_research_complete = {
@@ -1238,6 +1256,7 @@ technologies = {
 		categories = {
 			support_tech
 			maintenance_company_tech
+			year_1945
 		}
 		
 		on_research_complete = {
@@ -1290,6 +1309,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -1335,6 +1355,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -1379,6 +1400,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -1418,6 +1440,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			year_1945
 		}
 		
 		ai_will_do = {
@@ -1476,6 +1499,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -1529,6 +1553,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -1583,6 +1608,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -1626,6 +1652,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			year_1945
 		}
 		
 		ai_will_do = {
@@ -1676,6 +1703,7 @@ technologies = {
 			support_tech
 			signal_company_tech
 			electronics
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -1714,6 +1742,7 @@ technologies = {
 			support_tech
 			signal_company_tech
 			electronics
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -1760,6 +1789,7 @@ technologies = {
 			support_tech
 			signal_company_tech
 			electronics
+			year_1942
 		}
 		
 		ai_will_do = {
@@ -1800,6 +1830,7 @@ technologies = {
 			support_tech
 			signal_company_tech
 			electronics
+			year_1945
 		}
 		
 		ai_will_do = {
@@ -1869,6 +1900,7 @@ technologies = {
 		
 		categories = {
 			train_tech
+			year_1910
 		}
 		
 		ai_will_do = {
@@ -1912,6 +1944,7 @@ technologies = {
 		categories = {
 			train_tech
 			heavy_artillery
+			year_1936
 		}
 		
 		ai_will_do = {
@@ -1946,6 +1979,7 @@ technologies = {
 		
 		categories = {
 			train_tech
+			year_1939
 		}
 		
 		ai_will_do = {
@@ -2044,6 +2078,7 @@ technologies = {
 		categories = {
 			train_tech
 			heavy_artillery
+			year_1939
 		}
 		
 	}
