@@ -57,39 +57,54 @@ characters={
 		name="Carl Gustaf Emil Mannerheim"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_FIN_carl_mannerheim.dds"
+				small="GFX_idea_carl_mannerheim"
 			}
 			army={
 				large="gfx/leaders/FIN/portrait_fin_carl_mannerheim.dds"
 			}
 		}
 		field_marshal={
-			traits={ infantry_leader inflexible_strategist trait_cautious war_hero infantry_leader trickster ranger }
-			skill=5
+			traits={ infantry_leader inflexible_strategist trait_cautious infantry_leader trickster ranger logistics_wizard winter_specialist } #war_hero
+			skill=6
 			attack_skill=3
-			defense_skill=5
+			defense_skill=6
 			planning_skill=5
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=58
+		}
+		advisor={
+			slot = army_chief
+			idea_token = FIN_carl_mannerheim
+			allowed  = {
+				original_tag  = FIN
+			}
+			traits  = {
+				army_chief_defensive_3 
+			}
+			cost = 150
+			ai_will_do  = {
+				factor  = 1.000
+			}
 		}
 	}
 	FIN_erik_heinrichs={
 		name="Erik Heinrichs"
 		portraits={
 			army={
-				small="gfx/leaders/FIN/Portrait_Finland__erik_heinrichs.dds"
+				# small="gfx/leaders/FIN/Portrait_Finland__erik_heinrichs.dds"
+				small = GFX_portrait_FIN_vilho_petter_nenonen_small
 			}
 			army={
 				large="gfx/leaders/FIN/Portrait_Finland__erik_heinrichs.dds"
 			}
 		}
 		corps_commander={
-			traits={ winter_specialist ranger }
+			traits={ winter_specialist ranger infantry_leader trickster commando }
 			skill=4
 			attack_skill=4
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=2
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -103,32 +118,33 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ commando winter_specialist }
-			skill=3
+			traits={ commando winter_specialist trait_engineer fortress_buster infantry_leader ranger }
+			skill=4
 			attack_skill=3
-			defense_skill=1
+			defense_skill=4
 			planning_skill=4
-			logistics_skill=2
-			legacy_id=-1
+			logistics_skill=3
+			legacy_id=23834
 		}
 	}
 	FIN_erkki_raappana={
 		name="Erkki Raappana"
 		portraits={
 			army={
-				small="gfx/leaders/FIN/Portrait_Finland_erkki_raappana.dds"
+				# small="gfx/leaders/FIN/Portrait_Finland_erkki_raappana.dds"
+				small = GFX_portrait_FIN_vilho_petter_nenonen_small
 			}
 			army={
 				large="gfx/leaders/FIN/Portrait_Finland_erkki_raappana.dds"
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist infantry_officer infantry_leader ranger }
+			traits={ brilliant_strategist infantry_officer infantry_leader ranger commando winter_specialist }
 			skill=4
 			attack_skill=3
-			defense_skill=5
-			planning_skill=2
-			logistics_skill=4
+			defense_skill=6
+			planning_skill=3
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -318,28 +334,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_air_europe_1"
-			}
-		}
-	}
-	FIN_carl_mannerheim={
-		advisor={
-			slot = army_chief
-			idea_token = FIN_carl_mannerheim
-			allowed  = {
-				original_tag  = FIN
-			}
-			traits  = {
-				army_chief_defensive_3 
-			}
-			cost = 150
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-		name="FIN_carl_mannerheim"
-		portraits={
-			army={
-				small="GFX_idea_carl_mannerheim"
 			}
 		}
 	}

@@ -297,12 +297,161 @@ on_actions = {
 		}
 	}
 
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = POL
+					FROM = { is_in_faction_with = GER }
+				}
+				POL = {
+					set_equipment_fraction = 0
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = POL
+					FROM = { is_in_faction_with = GER }
+				}
+				POL = {
+					set_equipment_fraction = 0
+				}
+				GER = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 75000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment
+						amount = 16000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = anti_tank_equipment
+						amount = 250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 30000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = sf_equipment
+						amount = 250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 3250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = radio_equipment
+						amount = 250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 2500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 50
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 100
+						producer = GER
+					}
+				}
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = BEL
+					FROM = { is_in_faction_with = GER }
+				}
+				BEL = {
+					set_equipment_fraction = 0
+				}
+			}
+		}
+	}
+
 	on_capitulation = {
 		effect = {
 			if = {
 				limit = {
 					original_tag = BEL
 					FROM = { is_in_faction_with = GER }
+				}
+				BEL = {
+					set_equipment_fraction = 0
+				}
+				GER = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 25000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment
+						amount = 4000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 10000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 1000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = radio_equipment
+						amount = 250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 550
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 75
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 300
+						producer = GER
+					}
 				}
 				GER = {
 					transfer_state = 6
@@ -321,6 +470,19 @@ on_actions = {
 		}
 	}
 
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = NOR
+					FROM = { is_in_faction_with = GER }
+				}
+				NOR = {
+					set_equipment_fraction = 0
+				}
+			}
+		}
+	}
 
 	on_capitulation = {
 		effect = {
@@ -334,6 +496,56 @@ on_actions = {
 					transfer_state = 142
 					transfer_state = 143
 					transfer_state = 144
+				}
+				NOR = {
+					set_equipment_fraction = 0
+				}
+				GER = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 43500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment
+						amount = 10000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 18000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 2250
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = radio_equipment
+						amount = 1100
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 1200
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 50
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 900
+						producer = GER
+					}
 				}
 				ENG = { annex_country = { target = NOR transfer_troops = no } }
 			}
@@ -351,7 +563,24 @@ on_actions = {
 					transfer_state = 99
 					transfer_state = 37
 				}
+				DEN = {
+					set_equipment_fraction = 0
+				}
 				ENG = { annex_country = { target = DEN transfer_troops = no } }
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = GRE
+					FROM = { is_in_faction_with = GER }
+				}
+				GRE = {
+					set_equipment_fraction = 0
+				}
 			}
 		}
 	}
@@ -362,6 +591,66 @@ on_actions = {
 				limit = {
 					original_tag = GRE
 					FROM = { is_in_faction_with = GER }
+				}
+				GRE = {
+					set_equipment_fraction = 0
+				}
+				ITA = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 25000
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment
+						amount = 5000
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 50
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = anti_air_equipment
+						amount = 50
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 8500
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 250
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = radio_equipment
+						amount = 250
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = sf_equipment
+						amount = 750
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 300
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 50
+						producer = ITA
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 500
+						producer = ITA
+					}
 				}
 				ITA = {
 					transfer_state = 185
@@ -389,12 +678,76 @@ on_actions = {
 		}
 	}
 
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = YUG
+					FROM = { is_in_faction_with = GER }
+				}
+				YUG = {
+					set_equipment_fraction = 0
+				}
+			}
+		}
+	}
+
 	on_capitulation = {
 		effect = {
 			if = {
 				limit = {
 					original_tag = YUG
 					FROM = { is_in_faction_with = GER }
+				}
+				YUG = {
+					set_equipment_fraction = 0
+				}
+				ITA = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 35000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment
+						amount = 7000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 150
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 15000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 1550
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = radio_equipment
+						amount = 10000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 50
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 125
+						producer = GER
+					}
 				}
 				GER = {
 					transfer_state = 102

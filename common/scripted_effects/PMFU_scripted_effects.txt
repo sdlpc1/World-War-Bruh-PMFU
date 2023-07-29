@@ -3,8 +3,19 @@ pow_before_annex = {
 		set_variable = { getting_annexed = 1 }
 		every_enemy_country = {
 			limit = {
-				is_playable_country =yes 
-				# OR = { NOT = { original_tag = FRA } has_global_flag = fall_of_france } 
+				is_playable_country = yes 
+				OR = {
+					NOT = {
+						original_tag = FRA
+					}
+					has_global_flag = fall_of_france
+				}
+				OR = {
+					NOT = {
+						original_tag = HOL
+					}
+					has_global_flag = fall_of_france
+				}
 			}
 			calculate_click_effect = yes
 		}
@@ -14,9 +25,20 @@ pow_before_annex = {
 calculate_click_effect = { #prevent spam hidden idea for one day
 	clear_variable = ROOT.pow_total
 	every_enemy_country = {
-		limit={
+		limit = {
 			is_playable_country = yes
-			# OR = { NOT = { original_tag = FRA } has_global_flag = fall_of_france } 
+			OR = {
+				NOT = {
+					original_tag = FRA
+				}
+				has_global_flag = fall_of_france
+			}
+			OR = {
+				NOT = {
+					original_tag = HOL
+				}
+				has_global_flag = fall_of_france
+			}
 		}
 
 		set_temp_variable = { casualty1 = 0 }
@@ -396,6 +418,65 @@ AFRICA_COMMONWEALTH_AXIS_bases_level_up = {
 		swap_ideas = {
 			remove_idea = AFRICA_COMMONWEALTH_controls_axis_idea_17
 			add_idea = AFRICA_COMMONWEALTH_controls_axis_idea_16
+		}
+	}
+}
+
+update_sov_major_city_status = {
+	SOV = {
+		set_variable = { major_city_status = 0 }
+		if = {
+			limit = {
+				NOT = {
+					count_triggers = {
+						amount = 2
+						controls_state = 219 # moscow
+						controls_state = 195 # leningrad
+						controls_state = 217 # stalingrad
+					}
+				}
+			}
+			add_to_variable = { major_city_status = -0.15 } 
+		} 
+		if = {
+			limit = {
+				NOT = {
+					controls_state = 249 #kazan
+				}
+			}
+			add_to_variable = {
+				major_city_status = -0.0375
+			}  
+		}
+		if = {
+			limit = {
+				NOT = {
+					controls_state = 239 # saratov
+				}
+			}
+			add_to_variable = {
+				major_city_status = -0.0375
+			}  
+		}
+		if = {
+			limit = {
+				NOT = {
+					controls_state = 248 # yaroslavl
+				}
+			}
+			add_to_variable = {
+				major_city_status = -0.0375
+			}  
+		}
+		if = {
+			limit = {
+				NOT = {
+					controls_state = 229 # azerbaijan
+				}
+			}
+			add_to_variable = {
+				major_city_status = -0.0375
+			}  
 		}
 	}
 }

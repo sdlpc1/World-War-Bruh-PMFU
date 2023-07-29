@@ -2964,9 +2964,44 @@ focus_tree = {
 					NOT = { DEN = { is_in_faction_with = GER } }
 					country_exists = DEN					
 				} 
-				declare_war_on = {
-					target = DEN
-					type = annex_everything
+				DEN = {
+					delete_unit = {
+						disband = yes #will refund equipment and manpower
+					}
+					set_equipment_fraction = 0
+				}
+				annex_country = { target = DEN transfer_troops = no }
+				GER = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 30000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment
+						amount = 7000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 7500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 1850
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 25
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = convoy_1
+						amount = 300
+						producer = GER
+					}
 				}
 			}
 
@@ -2979,6 +3014,96 @@ focus_tree = {
 				declare_war_on = {
 					target = NOR
 					type = annex_everything
+				}
+				custom_effect_tooltip = "A German Task Force spawns on the Norwegian coast"
+				division_template = {
+					name = "Norwegische Task Force"
+					division_names_group = GER_INF_01
+				
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
+						artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 4 y = 2 }
+						artillery_brigade = { x = 4 y = 3 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company_mot  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						field_hospital = { x = 1 y = 2 }
+					}
+				}
+				NOR = {
+					delete_unit = {
+						disband = yes #will refund equipment and manpower
+					}
+				}
+				110 = {
+					for_loop_effect = {
+						end = 4
+						create_unit = {
+							prioritize_location = 6115
+							allow_spawning_on_enemy_provs = yes
+							division = "division_template = \"Norwegische Task Force\" start_experience_factor = 0.5"
+							owner = GER
+						}
+					}
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							prioritize_location = 14
+							allow_spawning_on_enemy_provs = yes
+							division = "division_template = \"Norwegische Task Force\" start_experience_factor = 0.5"
+							owner = GER
+						}
+					}
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							prioritize_location = 3171
+							allow_spawning_on_enemy_provs = yes
+							division = "division_template = \"Norwegische Task Force\" start_experience_factor = 0.5"
+							owner = GER
+						}
+					}
+				}
+				142 = {
+					for_loop_effect = {
+						end = 3
+						create_unit = {
+							prioritize_location = 9296
+							allow_spawning_on_enemy_provs = yes
+							division = "division_template = \"Norwegische Task Force\" start_experience_factor = 0.5"
+							owner = GER
+						}
+					}
+					for_loop_effect = {
+						end = 3
+						create_unit = {
+							prioritize_location = 53
+							allow_spawning_on_enemy_provs = yes
+							division = "division_template = \"Norwegische Task Force\" start_experience_factor = 0.5"
+							owner = GER
+						}
+					}
 				}
 			}
 			
@@ -3870,7 +3995,10 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = GER_around_maginot }
 		available = {
-			FRA = { has_capitulated = yes }
+			# FRA = { has_capitulated = yes }
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
 			OR = {
 				SPR = { has_government = democratic }
 				SPR = { has_government = communism }
@@ -4242,27 +4370,27 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
 					amount = 10000
-					producer = CZE
+					producer = GER
 				}
 				add_equipment_to_stockpile = {
 					type = squad_equipment_0
 					amount = 2000
-					producer = CZE
+					producer = GER
 				}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
 					amount = 500
-					producer = CZE
+					producer = GER
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
 					amount = 1000
-					producer = CZE
+					producer = GER
 				}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment
 					amount = 2000
-					producer = CZE
+					producer = GER
 				}
 				create_equipment_variant = {
 					name = "LT-35"
@@ -4683,7 +4811,10 @@ focus_tree = {
 			has_full_control_of_state = 8
 			has_full_control_of_state = 28
 			OR = {
-				FRA = { has_capitulated = yes }
+				# FRA = { has_capitulated = yes }
+				VIC = {
+					has_country_flag = VIC_france_capped
+				}
 				FRA = { is_subject_of = GER }
 				NOT = {
 					any_country = {
@@ -4895,7 +5026,10 @@ focus_tree = {
 		prerequisite = { focus = GER_plunder_west }
 		available = {
 			OR = {
-				FRA = { has_capitulated = yes }
+				# FRA = { has_capitulated = yes }
+				VIC = {
+					has_country_flag = VIC_france_capped
+				}
 				NOT = { country_exists = FRA }
 				has_full_control_of_state = 16
 			}

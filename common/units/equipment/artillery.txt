@@ -105,6 +105,13 @@ equipments = {
 		priority = 100
 		visual_level = 2
 		
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+			artillery_soft_hard_upgrade
+			artillery_accuracy_upgrade
+		}
+
 		defense = 6
 		breakthrough = 4
 		soft_attack = 20
@@ -127,6 +134,13 @@ equipments = {
 		priority = 100
 		visual_level = 2
 		
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+			artillery_soft_hard_upgrade
+			artillery_accuracy_upgrade
+		}
+
 		defense = 8
 		breakthrough = 6
 		soft_attack = 22

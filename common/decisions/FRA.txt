@@ -2300,7 +2300,7 @@ FRA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			army_core_defence_factor = 0.05
+			army_core_defence_factor = 0.075
 			dig_in_speed_factor = 0.5
 		}
 

@@ -45,3 +45,9 @@ factory_reduction_balancer  = {
 	
 	local_factories = -0.3
 }
+
+SOV_major_cities_lost = {
+	icon = GFX_modifiers_generic_supply
+	
+	supply_consumption_factor = SOV.major_city_status
+}

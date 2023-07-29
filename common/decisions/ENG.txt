@@ -445,7 +445,10 @@ political_actions = {
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 			has_war_with = GER
 			is_in_faction_with = FRA
-			FRA = { has_capitulated = yes }
+			# FRA = { has_capitulated = yes }
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
 		}
 
 		cost = 50
@@ -492,7 +495,10 @@ political_actions = {
 			has_war_with = GER
 			IRE = { exists = yes }
 			NOT = { is_in_faction_with = IRE }
-			FRA = { has_capitulated = yes }
+			# FRA = { has_capitulated = yes }
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
 			is_in_faction_with = FRA
 		}
 
@@ -984,7 +990,10 @@ operations = {
 		}
 
 		available = {
-			FRA = { has_capitulated = yes }
+			# FRA = { has_capitulated = yes }
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
 			IRE = {is_ai = yes}
 		}
 
@@ -997,6 +1006,12 @@ operations = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			custom_effect_tooltip = uk_into_uk_w_ireland_tt
+			hidden_effect = {
+				ENG = {
+					set_cosmetic_tag = ENG_ireland_annex
+				}
+			}
 			ENG = {
 				IRE = {
 					pow_before_annex = yes
@@ -1017,7 +1032,10 @@ operations = {
 		}
 
 		available = {
-			FRA = { has_capitulated = yes }
+			# FRA = { has_capitulated = yes }
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
 			SAF = {is_ai = yes}
 		}
 
@@ -1060,7 +1078,10 @@ operations = {
 			NOT = { is_in_faction_with = IRE }
 			NOR = { has_capitulated = yes }
 			is_in_faction_with = NOR
-			FRA = { has_capitulated = yes }
+			# FRA = { has_capitulated = yes }
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
 			is_in_faction_with = FRA
 		}
 

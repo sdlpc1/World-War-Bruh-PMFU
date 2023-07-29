@@ -762,7 +762,7 @@ if = {
 	}
 }
 
-set_research_slots = 5
+set_research_slots = 5 #5
 set_stability = 0.4
 set_war_support = 0.45
 # Starting tech
@@ -2314,5 +2314,7 @@ add_operation_token = {
 	tag = MON
 	token = token_navy_friendly
 }
+
+add_dynamic_modifier = { modifier = SOV_major_cities_lost }
 
 SOV = { SOV = { set_occupation_law = liberate_workers_occupation } } # set default law

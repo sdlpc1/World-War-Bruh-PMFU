@@ -9493,7 +9493,7 @@ operations = {
 
 		available = {
 			has_war_with = FIN
-			casualties > 125000
+			casualties > 75000
 		}
 
 		fire_only_once = yes

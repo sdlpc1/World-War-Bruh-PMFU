@@ -517,14 +517,12 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				# attack_bonus_against = -0.125
-				attack_bonus_against = 0
+				attack_bonus_against = -0.1
 				#defense_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = MON
-				# attack_bonus_against = -0.125
-				attack_bonus_against = 0
+				attack_bonus_against = -0.1
 				#defense_bonus_against = 0.0
 			}
 			picture = Fate_Of_Med
@@ -547,14 +545,12 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				# attack_bonus_against = -0.1
-				attack_bonus_against = 0
+				attack_bonus_against = -0.08
 				#defense_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = MON
-				# attack_bonus_against = -0.1
-				attack_bonus_against = 0
+				attack_bonus_against = -0.08
 				#defense_bonus_against = 0.0
 			}
 			picture = Fate_Of_Med
@@ -577,14 +573,12 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				# attack_bonus_against = -0.075
-				attack_bonus_against = 0
+				attack_bonus_against = -0.06
 				#defense_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = MON
-				# attack_bonus_against = -0.075
-				attack_bonus_against = 0
+				attack_bonus_against = -0.06
 				#defense_bonus_against = 0.0
 			}
 			picture = Fate_Of_Med
@@ -608,14 +602,12 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				# attack_bonus_against = -0.05
-				attack_bonus_against = 0
+				attack_bonus_against = -0.04
 				#defense_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = MON
-				# attack_bonus_against = -0.05
-				attack_bonus_against = 0
+				attack_bonus_against = -0.04
 				#defense_bonus_against = 0.0
 			}
 	
@@ -641,14 +633,12 @@ ideas = {
 	
 			targeted_modifier = {
 				tag = SOV
-				# attack_bonus_against = -0.025
-				attack_bonus_against = 0
+				attack_bonus_against = -0.02
 				#defense_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = MON
-				# attack_bonus_against = -0.025
-				attack_bonus_against = 0
+				attack_bonus_against = -0.02
 				#defense_bonus_against = 0.0
 			}
 	
@@ -674,12 +664,12 @@ ideas = {
 			targeted_modifier = {
 				tag = SOV
 				attack_bonus_against = 0.0
-				#defense_bonus_against = 0.05
+				defense_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = MON
 				attack_bonus_against = 0.0
-				#defense_bonus_against = 0.0
+				defense_bonus_against = 0.05
 			}
 			picture = Fate_Of_Med
 			

@@ -525,3 +525,5 @@ add_operation_token = {
 }
 
 MON = { MON = { set_occupation_law = liberate_workers_occupation } } # set default law
+
+diplomatic_relation = { country = CHI relation = non_aggression_pact }

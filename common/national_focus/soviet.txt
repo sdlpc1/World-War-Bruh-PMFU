@@ -5165,6 +5165,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			FIN = {
+				complete_national_focus = FIN_winter_war
+			}
 			add_state_claim = 146 # Karjala
 			add_state_claim = 147
 			declare_war_on = {
@@ -7478,7 +7481,7 @@ focus_tree = {
 			every_army_leader = {
 				add_logistics = 2
 				add_planning = 2
-				add_attack = 2
+				add_attack = 1
 				add_defense = 2
 			}
 			add_ideas = SOV_new_officers
@@ -7706,7 +7709,7 @@ focus_tree = {
 			every_army_leader = {
 				add_logistics = 2
 				add_planning = 2
-				add_attack = 2
+				add_attack = 1
 				add_defense = 2
 			}
 			add_ideas = SOV_new_officers

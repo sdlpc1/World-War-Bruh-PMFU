@@ -317,6 +317,7 @@
   ENG_iran_spawn_in_tt:0 "Mobilizes §R10 Units§! of §R20 Width Colonial Infantry§! in §GBaluchistan§!\n"
   SOV_iran_spawn_in_tt:0 "Mobilizes §R10 20 Width Units§! of the §R1st Iranian Front§! in §GAzerbaijan§!\n"
   OPERATION_TORCH_ONGING:0 "Operation Torch Ongoing"
+  uk_into_uk_w_ireland_tt:0 "§YThe United Kingdom of Great Britain and Northern Ireland will be known as the United Kingdom of Great Britain and Ireland§!"
 
   #### FLAGS ####
   ENG_seize_col:0 "Has Seized Portugese Colonies"

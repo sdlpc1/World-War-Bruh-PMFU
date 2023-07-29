@@ -165,7 +165,6 @@ recruit_character = FIN_karl_oesch
 recruit_character = FIN_ralf_torngren
 recruit_character = FIN_olavi_arho
 recruit_character = FIN_valio_porvari
-recruit_character = FIN_carl_mannerheim
 recruit_character = FIN_lauri_malmberg
 recruit_character = FIN_vaino_valve
 recruit_character = FIN_harald_ohquist

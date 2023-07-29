@@ -8,6 +8,18 @@ scripted_gui = {
 				every_enemy_country = {
 					limit = {
 						is_playable_country = yes
+						OR = {
+							NOT = {
+								original_tag = FRA 
+							}
+							has_global_flag = fall_of_france 
+						}
+						OR = {
+							NOT = {
+								original_tag = HOL 
+							}
+							has_global_flag = fall_of_france 
+						}
 					}
 
 					set_temp_variable = { casualty1 = 0 }

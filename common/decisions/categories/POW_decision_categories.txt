@@ -1,6 +1,18 @@
 POW = {
 	visible= {
-		has_war=yes
+		has_war = yes
+		OR = {
+			NOT = {
+				original_tag = FRA
+			}
+			has_global_flag = fall_of_france
+		} 
+		OR = {
+			NOT = {
+				original_tag = HOL
+			}
+			has_global_flag = fall_of_france
+		} 
 	}
 	allowed = {
 		OR = {

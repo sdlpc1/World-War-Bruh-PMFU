@@ -2256,7 +2256,10 @@ form_greater_german_reich_category = { # greater german reich
 			OR = {
 				AND = {
 					has_war_with = FRA
-					FRA = { has_capitulated = yes }
+					# FRA = { has_capitulated = yes }
+					VIC = {
+						has_country_flag = VIC_france_capped
+					}
 				}
 				AND = {
 					owns_state = 16

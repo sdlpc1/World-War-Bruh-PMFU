@@ -26,7 +26,10 @@ characters={
 		name="Mongolian Throat Singer"
 		portraits={
 			civilian={
-				large="GFX_portrait_mon_anandyn_amar"
+				large="GFX_Mongolia_Throat_Singer"
+			}
+			army = {
+				small = "GFX_Mongolia_Throat_Singer_small"
 			}
 		}
 		corps_commander={

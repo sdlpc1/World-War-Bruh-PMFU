@@ -582,6 +582,16 @@ spriteTypes = {
 		name = "GFX_idea_genghis_ghost"
 		texturefile = "gfx/interface/ideas/idea_genghis_ghost.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Mongolia_Throat_Singer"
+		texturefile = "gfx/leaders/MON/Mongolia_Gen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Mongolia_Throat_Singer_small"
+		texturefile = "gfx/leaders/MON/Mongolia_Gen_small.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_portrait_kublai"

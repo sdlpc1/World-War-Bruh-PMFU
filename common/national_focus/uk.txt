@@ -3748,7 +3748,10 @@ focus_tree = {
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = ENG_war_cabinet }
 		available = {
-			FRA = { has_capitulated = yes }
+			# FRA = { has_capitulated = yes }
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
 			OR = {
 				controls_state = 126
 				controls_state = 127

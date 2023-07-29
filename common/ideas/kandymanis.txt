@@ -44,13 +44,17 @@ ideas = {
 				always = no
 			}
 
+			cancel = {
+				date > 1939.1.1
+			}
+
 			removal_cost = -1
 
 			picture = MEX_revolutionary_army
 
-
 			modifier = {
                 send_volunteer_size = 5
+				special_forces_min = 66
 			}
 		}	
 
@@ -60,18 +64,22 @@ ideas = {
 			}
 
 			cancel = {
-				NOT = {
-					has_global_flag = NO_ASIA
+				OR = {
+					NOT = {
+						has_global_flag = NO_ASIA
+					}
+					date > 1939.1.1
 				}
+				
 			}
 
 			removal_cost = -1
 
 			picture = MEX_revolutionary_army
 
-
 			modifier = {
                 send_volunteer_size = 3
+				special_forces_min = 44
 			}
 		}
 
@@ -80,6 +88,10 @@ ideas = {
 				always = no
 			}
 
+			cancel = {
+				date > 1939.1.1
+			}
+
 			removal_cost = -1
 
 			picture = MEX_revolutionary_army
@@ -87,6 +99,7 @@ ideas = {
 
 			modifier = {
                 send_volunteer_size = 3
+				special_forces_min = 44
 			}
 		}	
 	}

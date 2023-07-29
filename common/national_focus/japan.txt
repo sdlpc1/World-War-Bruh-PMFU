@@ -1079,7 +1079,7 @@ focus_tree = {
 					add_dynamic_modifier = { modifier = factory_reduction_balancer }
 				}
 				JAP = {
-					add_named_threat = { threat = 20.3 name = "Marco Polo Bridge Incident" }
+					add_named_threat = { threat = 22.5 name = "Marco Polo Bridge Incident" }
 				}
 				hidden_effect = {
 					JAP = {
@@ -1499,6 +1499,48 @@ focus_tree = {
 					ITA = {
 						army_experience = 200
 						air_experience = 125
+					}
+				}
+				custom_effect_tooltip = "8 Sino-Japanese War veterans spawn in Tokyo"
+				JAP = {
+					division_template = {
+						name = "Sino-Japanese Veterans"
+						division_names_group = JAP_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+	
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							infantry = { x = 2 y = 3 }
+	
+							infantry = { x = 3 y = 0 }
+							infantry = { x = 3 y = 1 }
+							infantry = { x = 3 y = 2 }
+							infantry = { x = 3 y = 3 }
+	
+							infantry = { x = 4 y = 0 }
+							infantry = { x = 4 y = 1 }
+							infantry = { x = 4 y = 2 }
+							infantry = { x = 4 y = 3 }
+						}
+					}
+					282 = {
+						for_loop_effect = {
+							end = 8
+							create_unit = {
+								division = "division_template = \"Sino-Japanese Veterans\" start_experience_factor = 1"
+								owner = SOV
+							}
+						}
 					}
 				}
 			}
@@ -3673,10 +3715,10 @@ focus_tree = {
 				target = SAF
 				type = annex_everything
 			}
-			declare_war_on = {
-				target = MAL
-				type = annex_everything
-			}
+			# declare_war_on = {
+			# 	target = MAL
+			# 	type = annex_everything
+			# }
 			if = {
 				limit = {
 					INS = { exists = yes }
@@ -3734,10 +3776,10 @@ focus_tree = {
 						target = SAF
 						type = annex_everything
 					}
-					declare_war_on = {
-						target = MAL
-						type = annex_everything
-					}
+					# declare_war_on = {
+					# 	target = MAL
+					# 	type = annex_everything
+					# }
 					if = {
 						limit = {
 							INS = { exists = yes }
@@ -3791,10 +3833,10 @@ focus_tree = {
 						target = SAF
 						type = annex_everything
 					}
-					declare_war_on = {
-						target = MAL
-						type = annex_everything
-					}
+					# declare_war_on = {
+					# 	target = MAL
+					# 	type = annex_everything
+					# }
 					if = {
 						limit = {
 							INS = { exists = yes }

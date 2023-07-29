@@ -833,7 +833,10 @@ defined_text = {
 	text = {
 		trigger = {
 			country_exists = FRA
-			FRA = { has_capitulated = no }
+			# FRA = { has_capitulated = no }
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
 		}
 		localization_key = SOV_seek_a_defense_pact_with_the_allies_target_fra
 	}
@@ -854,7 +857,10 @@ defined_text = {
 	text = {
 		trigger = {
 			country_exists = FRA
-			FRA = { has_capitulated = no }
+			# FRA = { has_capitulated = no }
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
 		}
 		localization_key = SOV_seek_a_defense_pact_with_the_allies_target_fra_caps
 	}

@@ -1520,7 +1520,10 @@ focus_tree = {
 			}
 			OR = {
 				threat > 0.99
-				FRA = { has_capitulated = yes }
+				# FRA = { has_capitulated = yes }
+				VIC = {
+					has_country_flag = VIC_france_capped
+				}
 				date > 1941.1.1
 			}
 		}
@@ -2720,7 +2723,10 @@ focus_tree = {
 			}
 			OR = {
 				threat > 0.99
-				FRA = { has_capitulated = yes }
+				# FRA = { has_capitulated = yes }
+				VIC = {
+					has_country_flag = VIC_france_capped
+				}
 				date > 1941.1.1
 			}
 		}

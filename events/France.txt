@@ -216,9 +216,10 @@ country_event = {
 		ai_chance = {
 			factor = 85
 		}
-		set_global_flag = fall_of_france
 		save_global_event_target_as = free_france
+		VIC = { inherit_technology = FRA }
 		GER = { country_event = france.14 }
+		# GER = { country_event = { id = france.14 days = 2 } }
 		custom_effect_tooltip = france.10.b_tt
 		USA = {
 			375 = {
@@ -442,6 +443,138 @@ country_event = {
 		trigger = {
 			has_government = fascism
 		}
+		# POW CLEAR
+		set_global_flag = fall_of_france
+		GER = {
+			custom_effect_tooltip = "Gets 120,000 French POWs"
+			add_to_variable = { pow_other_sources = 120 }
+		}
+		FRA = {
+			transfer_units_fraction = {
+				target = VEN
+				size = 1
+				stockpile_ratio = 1
+				army_ratio = 1.0
+				navy_ratio = 1.0
+				air_ratio = 1.0
+			}
+		}
+		VIC = { annex_country = { target = FRA transfer_troops = no } }
+		GER = {
+			transfer_state = 28
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 27
+			transfer_state = 29
+			transfer_state = 785
+			transfer_state = 16
+			transfer_state = 24
+			transfer_state = 28
+			transfer_state = 15
+			transfer_state = 30
+			transfer_state = 14
+			transfer_state = 23
+			transfer_state = 19
+			transfer_state = 806
+		}
+		FRA = {
+			every_state = {
+				limit = {
+					is_controlled_by = VIC
+					NOT = {
+						state = 713
+					}
+				}
+				FRA = {
+					transfer_state = PREV
+				}
+			}
+		}
+		ENG = { add_to_faction = FRA }
+		GER = {
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
+
+			GER={
+				set_variable = { collabo = has_collaboration@FRA }
+				multiply_variable = { collabo = 100 }
+			}
+
+			every_owned_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				add_compliance = GER.collabo
+				# if = {
+				# 	limit = {
+				# 		GER = {
+				# 			has_collaboration = {
+				# 				target = FRA
+				# 				value > 0.99
+				# 			}
+				# 		}
+				# 	}
+				# 	add_compliance = 1.0
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		GER = {
+				# 			has_collaboration = {
+				# 				target = FRA
+				# 				value > 0.79
+				# 			}
+				# 		}
+				# 	}
+				# 	add_compliance = 0.8
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		GER = {
+				# 			has_collaboration = {
+				# 				target = FRA
+				# 				value > 0.59
+				# 			}
+				# 		}
+				# 	}
+				# 	add_compliance = 0.6
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		GER = {
+				# 			has_collaboration = {
+				# 				target = FRA
+				# 				value > 0.39
+				# 			}
+				# 		}
+				# 	}
+				# 	add_compliance = 0.4
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		GER = {
+				# 			has_collaboration = {
+				# 				target = FRA
+				# 				value > 0.19
+				# 			}
+				# 		}
+				# 	}
+				# 	add_compliance = 0.2
+				# }
+			}
+		}
+		VEN = {
+			transfer_units_fraction = {
+				target = FRA
+				size = 1
+				stockpile_ratio = 1
+				army_ratio = 1.0
+				navy_ratio = 1.0
+				air_ratio = 1.0
+			}
+		}
+		# POW CLEAR END
 		GER = {
 			set_country_flag = GER_start_turkey_allied_embargo_axis_mission_first_time
 		}
@@ -461,7 +594,7 @@ country_event = {
 				}
 				set_capital = { state = 635 }
 			}
-			country_event = france.20
+			country_event = { id = france.20 days = 1 }
 			every_owned_state = {
 				limit = { 
 					is_controlled_by = ITA 
@@ -469,12 +602,10 @@ country_event = {
 				}
 				set_state_flag = vichy_italian_conquest
 			}
+			become_exiled_in = { target = ENG legitimacy = 60 }
 		}
 		custom_effect_tooltip = establishing_vichy_tt
 		hidden_effect = {
-			# create_dynamic_country = {
-			# 	original_tag = FRA
-			# 	save_event_target_as = vichy_france
 			VIC = {
 				set_country_flag = VIC_france_capped
 				every_state = { #transfer French colonial empire
@@ -567,20 +698,8 @@ country_event = {
 					neutrality = 30
 					communism = 2
 				}
-				# set_cosmetic_tag = FRA_VICHY
-				# create_country_leader = {
-				# 	name = "Philippe Pétain"
-				# 	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-				# 	picture = "Portrait_France_Philippe_Petain.dds"
-				# 	expire = "1965.1.1"
-				# 	ideology = fascism_ideology
-				# 	traits = {
-						
-				# 	}
-				# }
 				
 				add_ideas = FRA_occupation_costs_4
-				# load_focus_tree = vichy_french_focus
 				FRA = {
 					transfer_units_fraction = {
 						target = VIC
@@ -600,7 +719,6 @@ country_event = {
 					transfer_state = 665
 				}
 				Vichy_Spawn = yes
-				inherit_technology = FRA
 			}
 		}
 		random_country = {
@@ -611,171 +729,12 @@ country_event = {
 			GER = {
 				give_guarantee = PREV
 			}
-			# GER = { add_to_faction = PREV }
-			# VIC = {
-			# 	declare_war_on = {
-			# 		target = ENG
-			# 		type = annex_everything
-			# 	}
-			# }
 			every_unit_leader = {
 				limit = {
 					has_id = 101 #de Gaulle
 				}
 				set_nationality = FRA
 			}
-			# generate_character = {
-			# 	token_base = generic_fascist_demagogue # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = political_advisor
-			# 		traits = { fascist_demagogue }
-			# 		available = {
-			# 			if = {
-			# 				limit = { has_dlc = "Man the Guns" }	
-			# 				NOT = { has_autonomy_state = autonomy_supervised_state }
-			# 			}				
-			# 		}
-			# 		ai_will_do = {
-			# 			factor = 0
-			# 		}
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_generic_fascist_demagogue }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_paramilitary_leader # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = political_advisor
-			# 		traits = { paramilitary_leader }
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_viktor_schutze }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_reorganiser # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = political_advisor
-			# 		traits = { reorganiser }
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_viktor_schutze }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_silent_workhorse # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = political_advisor
-			# 		traits = { silent_workhorse }
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_heisenberg }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_prince_of_terror # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = political_advisor
-			# 		traits = { prince_of_terror }
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_viktor_schutze }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_popular_figurehead # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = political_advisor
-			# 		traits = { popular_figurehead }
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_martial_valin }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_army_art # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = high_command
-			# 		traits = { army_artillery_1 }
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_martial_valin }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_navy_fleet_log # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = high_command
-			# 		traits = { navy_fleet_logistics_1 }
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_viktor_schutze }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_air_air_combat_trainer # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = high_command
-			# 		traits = { air_air_combat_training_2 }
-			# 		cost = 100
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_dudley_pound }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_air_close_air_sup # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = air_chief
-			# 		traits = { air_close_air_support_2 }
-			# 		cost = 100
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_viktor_schutze }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_air_chief_all_weather # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = air_chief
-			# 		traits = { air_chief_all_weather_2 }
-			# 		cost = 100
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_viktor_schutze }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_military_theorist # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = theorist
-			# 		traits = { military_theorist }
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_martial_valin }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_naval_theorist # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = theorist
-			# 		traits = { naval_theorist }
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_heisenberg }
-			# 	}
-			# }
-			# generate_character = {
-			# 	token_base = generic_air_warfare_theorist # token will be TAG_token_base
-			# 	advisor = {
-			# 		slot = theorist
-			# 		traits = { air_warfare_theorist }
-			# 	}
-			# 	portraits = { 
-			# 		army = { small = GFX_idea_viktor_schutze }
-			# 	}
-			# }
 			every_army_leader = {
 				limit = {
 					NOT = { has_trait = old_guard }
@@ -800,12 +759,6 @@ country_event = {
 					}
 					set_nationality = PREV.PREV
 				}
-				# every_navy_leader = {
-				# 	limit = {
-				# 		has_id = 102 #Darlan
-				# 	}
-				# 	set_nationality = PREV.PREV
-				# }
 			}
 		}
 		FRA = {
@@ -824,6 +777,23 @@ country_event = {
 
 #Capital captured by non french faction
 country_event = {
+	id = france.144
+	title = france.144.t
+	desc = france.144.d
+	picture = GFX_report_event_french_resistance_02
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+
+	option = {
+		name = france.16.a
+		
+	}
+}
+
+#Capital captured by non french faction
+country_event = {
 	id = france.16
 	title = france.16.t
 	desc = france.16.d
@@ -834,7 +804,10 @@ country_event = {
 	trigger = {
 		original_tag = FRA
 		16 = { controller = { NOT = { original_tag = FRA } } }
-		has_capitulated = yes
+		# has_capitulated = yes
+		VIC = {
+			has_country_flag = VIC_france_capped
+		}
 		#16 = { is_owned_by = FRA }
 	}
 	

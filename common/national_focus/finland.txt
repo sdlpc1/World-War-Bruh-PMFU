@@ -699,8 +699,8 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = suomi
-				bonus = 0.5
-				uses = 1
+				bonus = 1
+				uses = 2
 				category = artillery
 			}
 			add_tech_bonus = {
@@ -833,6 +833,13 @@ focus_tree = {
 				idea = FIN_winter_war 
 				days = 210
 			}  
+			hidden_effect = {
+				every_army_leader={
+					add_trait = {
+						trait = fifty_cas_dmg_reduction
+					}
+				}
+			}
 			add_ace = {
 				name = "Ilmari"
 				surname = "Juutilainen"
@@ -881,7 +888,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_timed_idea = { idea = FIN_arms_purchases days = 90 }
+			add_timed_idea = { idea = FIN_arms_purchases days = 60 }
 			add_equipment_to_stockpile = {
 				type = small_plane_airframe
 				amount = 300
@@ -969,7 +976,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_timed_idea = { idea = FIN_arms_purchases days = 90 }
+			add_timed_idea = { idea = FIN_arms_purchases days = 60 }
 			random_owned_controlled_state = {
 				limit = {
 					NOT = {
@@ -1057,6 +1064,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			FIN = {
+				every_army_leader = {
+					limit = {
+						OR = {
+							has_id = 58
+							has_id = 23834
+						}
+					}
+					add_attack = 2
+				}
+			}
 			add_political_power = -100
 			add_war_support = 0.25
 		}
@@ -1083,6 +1101,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			FIN = {
+				every_army_leader = {
+					limit = {
+						OR = {
+							has_id = 58
+							has_id = 23834
+						}
+					}
+					add_attack = 2
+				}
+			}
 			add_political_power = 200
 			add_stability = 0.25
 			add_war_support = 0.25
@@ -1275,38 +1304,38 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_manpower = 12000
+			add_manpower = 15000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 1200
+				amount = 2500
 			}
 			add_equipment_to_stockpile = {
 				type = squad_equipment
-				amount = 500
+				amount = 100
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
-				amount = 50
+				amount = 75
 			}
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment_1
-				amount = 50
+				amount = 75
 			}
 			add_equipment_to_stockpile = {
-					type = horse_equipment
-					amount = 300
+				type = horse_equipment
+				amount = 100
 			}
 			add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = 100
+				type = support_equipment
+				amount = 300
 			}
 			add_equipment_to_stockpile = {
-					type = radio_equipment
-					amount = 50
+				type = radio_equipment
+				amount = 150
 			}
 			add_equipment_to_stockpile = {
 				type = anti_air_equipment
-				amount = 40
+				amount = 50
 			}
 
 		 }

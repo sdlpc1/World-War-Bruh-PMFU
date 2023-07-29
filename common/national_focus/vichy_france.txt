@@ -67,7 +67,9 @@ focus_tree = {
 		}
 
 		available = {
-            has_country_flag = VIC_france_capped
+            VIC = {
+                has_country_flag = VIC_france_capped
+            }
 		}
 		
 		bypass = {
@@ -636,13 +638,8 @@ focus_tree = {
         completion_reward = {
             hidden_effect = {
                 VIC = {
-                    transfer_units_fraction = {
+                    transfer_navy = {
                         target = GER
-                        size = 1
-                        stockpile_ratio = 0
-                        army_ratio = 0
-                        navy_ratio = 1.0
-                        air_ratio = 0
                     }
                 }
             }

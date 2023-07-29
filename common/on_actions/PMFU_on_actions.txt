@@ -307,7 +307,7 @@ on_actions = {
 			# sealion_core_defense=yes
 			intel_sharing_fixer_effect = yes # hope it works
 			update_academy_weekly=yes
-			# update_sov_major_city_status = yes
+			update_sov_major_city_status = yes
 			# set_variable={scaled_weekly_manpower=max_manpower_k}
 			# multiply_variable={scaled_weekly_manpower=0.001}
 			if = {

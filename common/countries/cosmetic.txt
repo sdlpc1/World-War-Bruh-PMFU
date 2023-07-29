@@ -4,10 +4,10 @@ ETH_ITA = {
 	color_ui = rgb { 116 195 200 }
 }
 
-MAL_UK = {
-    color = rgb { 201 56 93 }
-    color_ui = rgb { 255 73 121 }
-}
+# MAL_UK = {
+#     color = rgb { 201 56 93 }
+#     color_ui = rgb { 255 73 121 }
+# }
 
 RAJ_UK = {
 	color = rgb { 93  9  9 }
