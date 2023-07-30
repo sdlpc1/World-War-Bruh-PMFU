@@ -10,6 +10,9 @@ technologies = {
 			anti_tank_equipment_1
 			heavy_anti_air_equipment_0
 			pack_artillery_equipment_1
+			dp_artillery_equipment_1
+			heavy_anti_tank_equipment_1
+			anti_tank_equipment_squeeze_1
 		}
 		enable_equipment_modules = {
 			ship_anti_air_1
@@ -123,17 +126,17 @@ technologies = {
 		}
 		
 		research_cost = 2.0
-		start_year = 1938
+		start_year = 1939
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -10 y = 4 }
+			position = { x = -10 y = 6 }
 		}
 
 		categories = {
 			artillery
 			cat_anti_air
-			year_1938
+			year_1939
 		}
 	}
 	
@@ -141,24 +144,25 @@ technologies = {
 	antitank_squeeze_1 = {
 		
 		enable_equipments = {
-			anti_tank_equipment_squeeze_1
+			anti_tank_equipment_squeeze_2
 		}
 		enable_equipment_modules = { 
+			tank_small_gun_squeeze1
 			tank_light_td_1
 		}
 		
 		research_cost = 2.0
-		start_year = 1938
+		start_year = 1939
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -6 y = 4 }
+			position = { x = -6 y = 6 }
 		}
 
 		categories = {
 			artillery
 			cat_anti_tank
-			year_1938
+			year_1939
 		}
 	}
 
@@ -185,7 +189,6 @@ technologies = {
 		}
 		enable_equipment_modules = { 
 			ship_anti_air_4
-			tank_small_gun_squeeze
 			tank_small_gun_3
 		}
 		
@@ -197,20 +200,24 @@ technologies = {
 			leads_to_tech = antitank_squeeze_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = antiair_research3
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		
-		start_year = 1941
+		start_year = 1940
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -8 y = 10 }
+			position = { x = -8 y = 8 }
 		}
 		
 		categories = {
 			artillery
 			cat_anti_air
-			year_1941
+			year_1940
 		}
 	}
 	
@@ -244,7 +251,7 @@ technologies = {
 	antitank_squeeze_2 = {
 	
 		enable_equipments = {
-			anti_tank_equipment_squeeze_2
+			anti_tank_equipment_squeeze_3
 		}
 
 		enable_equipment_modules = {
@@ -252,7 +259,6 @@ technologies = {
 			tank_light_td_2
 		}
 		
-
 		research_cost = 2.0
 
 		start_year = 1941
@@ -265,6 +271,99 @@ technologies = {
 		categories = {
 			artillery
 			year_1941
+		}
+
+	}
+
+	# Stat Buff Research 
+	antiair_research3 = {
+
+		anti_air = {
+			air_attack = 0.1
+		}
+		mot_anti_air_brigade = {
+			air_attack = 0.1
+		}
+		motorised_anti_air = {
+			air_attack = 0.1
+		}
+		light_sp_anti_air_brigade  = {
+			air_attack = 0.1
+		}
+		medium_sp_anti_air_brigade  = {
+			air_attack = 0.1
+		}
+		pack_antitank_brigade = {
+			hard_attack = 0.15
+		}
+		
+		path = {
+			leads_to_tech = antiair4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = antitank_squeeze_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		start_year = 1942
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -8 y = 12 }
+		}
+		
+		categories = {
+			artillery
+			cat_anti_air
+			year_1942
+		}
+	}
+
+	# AA3
+	antiair4 = {
+
+		enable_equipments = {
+			anti_air_equipment_4
+		}	
+		
+		research_cost = 2.0
+
+		start_year = 1943
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -10 y = 14 }
+		}
+
+		categories = {
+			artillery
+			cat_anti_air
+			year_1943
+		}
+	}
+
+	# Pack AT 3
+	antitank_squeeze_3 = {
+	
+		enable_equipments = {
+			anti_tank_equipment_squeeze_4
+		}
+		
+		research_cost = 2.0
+
+		start_year = 1943
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -6 y = 14 }
+		}
+		
+		categories = {
+			artillery
+			year_1943
 		}
 
 	}
@@ -330,6 +429,7 @@ technologies = {
 	
 		enable_equipments = {
 			artillery_equipment_2
+			pack_artillery_equipment_2
 		}
 		enable_equipment_modules = {
 			
@@ -357,8 +457,11 @@ technologies = {
 	# Anti Tank 2
 	antitank2 = {
 		
+		name = anti_tank_equipment_2
+
 		enable_equipments = {
 			anti_tank_equipment_2
+			dp_artillery_equipment_2
 		}
 		enable_equipment_modules = { 
 			tank_med_hv_gun_1
@@ -388,120 +491,22 @@ technologies = {
 	artillery_research2 = {
 
 		artillery_brigade = {
-			soft_attack = 0.05
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.05			
-		}
-		pack_artillery_brigade = {
-			soft_attack = 0.05			
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.05
-		}		
-		mot_anti_tank_brigade = {
-			hard_attack = 0.05
-		}
-		path = {
-			leads_to_tech = artillery_research3
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = pack_artillery_2
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = dp_artillery
-			research_cost_coeff = 1
-		}
-
-		enable_equipment_modules = {
-			tank_med_cs_gun_2						
-		}
-		
-		research_cost = 1
-		
-		start_year = 1939
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 0 y = 6 }
-		}
-		
-		categories = {
-			artillery
-			year_1939
-		}
-
-	}
-	
-	# Pack Artillery 2
-	pack_artillery_2 = { 
-
-		enable_equipments = {
-			pack_artillery_equipment_2
-		}
-		
-		research_cost = 1.5
-		start_year = 1940
-
-		folder = {
-			name = artillery_folder
-			position = { x = -2 y = 8 }
-		}
-		
-		categories = {
-			artillery
-			year_1940
-		}
-	}
-	
-	# Dual Purpose Artillery
-	dp_artillery = {
-	
-		enable_equipments = {
-			dp_artillery_equipment
-		}
-		
-		research_cost = 2.0
-
-		start_year = 1940
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 2 y = 8 }
-		}
-		
-		categories = {
-			artillery
-			year_1940
-		}
-		enable_equipment_modules = {
-			
-		}
-
-	}
-
-	# Stat Buff Research
-	artillery_research3 = {
-
-		artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 			fort = {
 				attack = 0.1
 			}
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 			fort = {
 				attack = 0.1
-			}
+			}	
 		}
 		pack_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 			fort = {
 				attack = 0.1
-			}
+			}		
 		}
 		light_assault_gun_brigade = {
 			fort = {
@@ -514,14 +519,10 @@ technologies = {
 			}
 		}
 		anti_tank_brigade = {
-			hard_attack = 0.05
-		}
+			hard_attack = 0.1
+		}		
 		mot_anti_tank_brigade = {
-			hard_attack = 0.05
-		}
-		enable_equipment_modules = {
-			tank_art_gun_2
-			advanced_artillery_round
+			hard_attack = 0.1
 		}
 		path = {
 			leads_to_tech = artillery3
@@ -535,13 +536,21 @@ technologies = {
 			leads_to_tech = artillery_research4
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = pack_artillery_3
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = dp_artillery_2
-			research_cost_coeff = 1
+		# path = {
+		# 	leads_to_tech = artillery_research3
+		# 	research_cost_coeff = 1
+		# }
+		# path = {
+		# 	leads_to_tech = pack_artillery_2
+		# 	research_cost_coeff = 1
+		# }
+		# path = {
+		# 	leads_to_tech = dp_artillery
+		# 	research_cost_coeff = 1
+		# }
+
+		enable_equipment_modules = {
+			tank_med_cs_gun_2						
 		}
 		
 		research_cost = 1
@@ -558,9 +567,6 @@ technologies = {
 			year_1940
 		}
 
-		ai_will_do = {
-			factor = 30
-		}
 	}
 
 	# Artillery 3
@@ -568,6 +574,7 @@ technologies = {
 	
 		enable_equipments = {
 			artillery_equipment_3
+			pack_artillery_equipment_3
 		}
 		enable_equipment_modules = {
 			tank_med_gun_2
@@ -600,6 +607,7 @@ technologies = {
 		
 		enable_equipments = {
 			anti_tank_equipment_3
+			dp_artillery_equipment_3
 		}
 		
 		enable_equipment_modules = {
@@ -633,48 +641,48 @@ technologies = {
 		}
 	}
 
-	# Pack Artillery 3
-	pack_artillery_3 = { 
+	# # Pack Artillery 3
+	# pack_artillery_3 = { 
 
-		enable_equipments = {
-			mountain_artillery_gun
-		}
+	# 	enable_equipments = {
+	# 		pack_artillery_equipment_3
+	# 	}
 		
-		research_cost = 1.5
-		start_year = 1942
+	# 	research_cost = 1.5
+	# 	start_year = 1942
 
-		folder = {
-			name = artillery_folder
-			position = { x = -4 y = 12 }
-		}
+	# 	folder = {
+	# 		name = artillery_folder
+	# 		position = { x = -4 y = 12 }
+	# 	}
 		
-		categories = {
-			artillery
-			year_1942
-		}
-	}
+	# 	categories = {
+	# 		artillery
+	# 		year_1942
+	# 	}
+	# }
 
-	# Dual Purpose Artillery 2
-	dp_artillery_2 = {
+	# # Dual Purpose Artillery 2
+	# dp_artillery_2 = {
 	
-		enable_equipments = {
-			dp_artillery_equipment_2
-		}
+	# 	enable_equipments = {
+	# 		dp_artillery_equipment_3
+	# 	}
 		
-		research_cost = 2.0
+	# 	research_cost = 2.0
 
-		start_year = 1942
+	# 	start_year = 1942
 		
-		folder = {
-			name = artillery_folder
-			position = { x = 4 y = 12 }
-		}
+	# 	folder = {
+	# 		name = artillery_folder
+	# 		position = { x = 4 y = 12 }
+	# 	}
 		
-		categories = {
-			artillery
-			year_1942
-		}
-	}
+	# 	categories = {
+	# 		artillery
+	# 		year_1942
+	# 	}
+	# }
 
 	# Stat Buff Research
 	artillery_research4 = {
@@ -750,6 +758,7 @@ technologies = {
 	
 		enable_equipments = {
 			artillery_equipment_4
+			pack_artillery_equipment_4
 		}
 		enable_equipment_modules = {
 			tank_med_gun_3
@@ -779,6 +788,7 @@ technologies = {
 	
 		enable_equipments = {
 			anti_tank_equipment_4
+			dp_artillery_equipment_4
 		}	
 		enable_equipment_modules = {
 			tank_med_gun_squeeze2
@@ -844,7 +854,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = heavy_antiair1
+			leads_to_tech = heavy_antitank
 			research_cost_coeff = 1
 		}
 		
@@ -893,34 +903,11 @@ technologies = {
 
 	}
 
-	# Siege Artillery 1
-	# siege_artillery1 = {
-
-	# 	enable_equipments = {
-	# 		siege_artillery_equipment_1
-	# 	}
-	# 	enable_equipment_modules = {
-			
-	# 	}
-		
-	# 	research_cost = 2.0
-	# 	start_year = 1939
-		
-	# 	folder = {
-	# 		name = artillery_folder
-	# 		position = { x = 6 y = 8 }
-	# 	}
-		
-	# 	categories = {
-	# 		heavy_artillery
-	# 	}
-
-	# }
-
 	# Heavy Anti Air 1
-	heavy_antiair1 = {
+	heavy_antitank = {
 
 		enable_equipments = {
+			heavy_anti_tank_equipment_2
 			heavy_anti_air_equipment_1
 		}
 		enable_equipment_modules = {
@@ -946,13 +933,10 @@ technologies = {
 	# Stat Buff Research
 	heavy_artillery_research2 = {
 
-		# Scrapped Choking Artillery Tractor
-		# heavy_sp_artillery_brigade = {
-		# 	soft_attack = 0.05
-		# 	fort = {
-		# 		attack = 0.40
-		# 	}
-		# }
+		enable_equipment_modules = {
+			tank_heavy_art_gun_1
+			advanced_artillery_round
+		}
 
 		heavy_artillery_brigade = {
 			soft_attack = 0.05
@@ -986,7 +970,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = heavy_antitank
+			leads_to_tech = heavy_antitank2
 			research_cost_coeff = 1
 		}
 		path = {
@@ -1015,10 +999,6 @@ technologies = {
 		enable_equipments = {
 			heavy_artillery_equipment_3
 		}
-		enable_equipment_modules = {
-			tank_heavy_art_gun_1
-			advanced_artillery_round
-		}
 
 		path = {
 			leads_to_tech = siege_artillery2
@@ -1039,41 +1019,19 @@ technologies = {
 		}
 		
 	}
-
-	# Siege Artillery 2
-	# siege_artillery2 = {
-
-	# 	enable_equipments = {
-	# 		siege_artillery_equipment_2
-	# 	}
-	# 	enable_equipment_modules = {
-			
-	# 	}
-		
-	# 	research_cost = 2.0
-	# 	start_year = 1942
-		
-	# 	folder = {
-	# 		name = artillery_folder
-	# 		position = { x = 6 y = 12 }
-	# 	}
-		
-	# 	categories = {
-	# 		heavy_artillery
-	# 	}
-
-	# }
 	
 	# Heavy Anti Tank 1
-	heavy_antitank = {
+	heavy_antitank2 = {
 
 		enable_equipments = {
-			heavy_anti_tank_equipment_1
+			heavy_anti_tank_equipment_3
+			heavy_anti_air_equipment_2
 		}
 		enable_equipment_modules = {
 			tank_heavy_gun_1
 			tank_heavy_hv_gun_1
-			apcr_round
+			tank_heavy_aa_gun_2
+			apcr_round			
 		}
 		
 		research_cost = 2.0
@@ -1081,7 +1039,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 12 y = 10 }
+			position = { x = 10 y = 10 }
 		}
 		
 		categories = {
@@ -1091,44 +1049,8 @@ technologies = {
 		}
 	}
 
-	# Heavy Anti Air 2
-	heavy_antiair2 = {
-
-		enable_equipments = {
-			heavy_anti_air_equipment_2
-		}
-		enable_equipment_modules = {
-			
-			tank_heavy_aa_gun_2
-		}
-		
-		static_anti_air_damage_factor = 0.1
-
-		research_cost = 2.0
-
-		start_year = 1942
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 10 y = 12 }
-		}
-		
-		categories = {
-			heavy_artillery
-			year_1942
-		}
-	}
-
 	# Stat Buff Research
 	heavy_artillery_research3 = {
-
-		# Scrapped Choking Artillery Tractor
-		# heavy_sp_artillery_brigade = {
-		# 	soft_attack = 0.05
-		# 	fort = {
-		# 		attack = 0.40
-		# 	}
-		# }
 		
 		heavy_artillery_brigade = {
 			soft_attack = 0.05
@@ -1150,7 +1072,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = heavy_antitank2
+			leads_to_tech = heavy_antitank3
 			research_cost_coeff = 1
 		}
 
@@ -1200,18 +1122,15 @@ technologies = {
 	}
 
 	# Heavy Anti Tank 2
-	heavy_antitank2 = {
+	heavy_antitank3 = {
 
 		enable_equipments = {
-			heavy_anti_tank_equipment_2
+			heavy_anti_tank_equipment_4
+			heavy_anti_air_equipment_3
 		}
 		enable_equipment_modules = {
 			tank_heavy_gun_2
 			tank_heavy_hv_gun_2
-		}
-		path = {
-			leads_to_tech = heavy_cannon_3
-			research_cost_coeff = 1
 		}
 		
 		research_cost = 2.0
@@ -1219,7 +1138,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 12 y = 14 }
+			position = { x = 10 y = 14 }
 		}
 		
 		categories = {
@@ -1227,27 +1146,6 @@ technologies = {
 			cat_anti_tank
 			year_1943
 		}
-	}
-
-	heavy_cannon_3 = {
-
-		enable_equipment_modules = {
-			tank_heavy_gun_3
-		}
-		
-		research_cost = 2.0
-		start_year = 1944
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 12 y = 16 }
-		}
-		
-		categories = {
-			heavy_artillery
-			year_1944
-		}
-
 	}
 
   # Rocket Artillery
@@ -1456,7 +1354,7 @@ technologies = {
 		start_year = 1936
 
 		enable_equipments = {
-			mountain_artillery_gun
+			pack_artillery_equipment_3
 		}		
 	}
 }

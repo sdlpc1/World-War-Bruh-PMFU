@@ -854,11 +854,17 @@ technologies = {
 		}
 		
 		research_cost = 0.5
-		start_year = 1939
+		start_year = 1942
+
+		allow = { date > 1941.1.1 }
+
+		on_research_complete = {
+			custom_effect_tooltip = air_tech_after_41_tt
+		}
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 8 }
 		}
 
 		categories = {
@@ -866,7 +872,7 @@ technologies = {
 			plane_modules_tech
 			cas_bomber
 			cat_air_bombs
-			year_1939
+			year_1942
 		}
 		
 		ai_will_do = {

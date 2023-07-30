@@ -1730,10 +1730,17 @@ focus_tree = {
 		completion_reward = {			
 			add_tech_bonus = {
 				name = SAF_modern_at_guns
-				bonus = 0.75
+				bonus = 1
 				uses = 1
 				technology = heavy_antitank
 				technology = heavy_antitank2
+				technology = heavy_antitank3
+			}
+			add_tech_bonus = {
+				name = SAF_modern_at_guns
+				bonus = 0.75
+				uses = 1
+				category = heavy_artillery
 			}
 		}
 	}
@@ -1769,7 +1776,7 @@ focus_tree = {
 			add_ideas = SAF_heavy_artillery2
 			add_tech_bonus = {
 				name = SAF_expand_the_south_african_artillery
-				bonus = 0.5
+				bonus = 0.75
 				uses = 1
 				category = artillery
 			}

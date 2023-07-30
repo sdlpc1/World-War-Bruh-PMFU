@@ -69,7 +69,7 @@ equipments = {
 	}
 	
 	anti_air_equipment_3 = {
-		year = 1943
+		year = 1941
 
 		archetype = anti_air_equipment
 		parent = anti_air_equipment_2
@@ -82,6 +82,22 @@ equipments = {
 		air_attack = 25
 
 		build_cost_ic = 10
+	}
+
+	anti_air_equipment_4 = {
+		year = 1941
+
+		archetype = anti_air_equipment
+		parent = anti_air_equipment_3
+		priority = 80
+		visual_level = 2
+		
+		soft_attack = 5
+		hard_attack = 5
+		ap_attack = 25
+		air_attack = 28
+
+		build_cost_ic = 11
 	}
 	
 	heavy_anti_air_equipment = {
@@ -120,7 +136,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1.8
 		
-		build_cost_ic = 18
+		build_cost_ic = 20
 		resources = {
 			steel = 30
 			tungsten = 10
@@ -149,11 +165,11 @@ equipments = {
 		ap_attack = 50
 		air_attack = 28
 
-		build_cost_ic = 20
+		build_cost_ic = 22
 	}
 	
 	heavy_anti_air_equipment_2 = {
-		year = 1942
+		year = 1941
 
 		archetype = heavy_anti_air_equipment
 		parent = heavy_anti_air_equipment_1
@@ -165,7 +181,23 @@ equipments = {
 		ap_attack = 70
 		air_attack = 36
 
-		build_cost_ic = 24
+		build_cost_ic = 26
+	}
+
+	heavy_anti_air_equipment_3 = {
+		year = 1943
+
+		archetype = heavy_anti_air_equipment
+		parent = heavy_anti_air_equipment_2
+		priority = 80
+		visual_level = 1
+		
+		soft_attack = 10
+		hard_attack = 24
+		ap_attack = 90
+		air_attack = 44
+
+		build_cost_ic = 26
 	}
 	
 	anti_air_equipment_sam = {

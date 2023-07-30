@@ -98,12 +98,17 @@ equipments = {
 	}
 	
 	dp_artillery_equipment = {
-		year = 1940
+		year = 1936
 
-		archetype = artillery_equipment
-		parent = artillery_equipment_2
-		priority = 100
-		visual_level = 2
+		is_archetype = yes
+		picture = archetype_artillery_equipment		
+		type = {
+			artillery
+			infantry #adding infantry type
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
 		
 		upgrades = {
 			infantry_quality_upgrade
@@ -112,11 +117,66 @@ equipments = {
 			artillery_accuracy_upgrade
 		}
 
+		#Misc Abilities
+		reliability = 0.8
+
+		#Defensive Abilities
 		defense = 6
 		breakthrough = 4
-		soft_attack = 20
-		hard_attack = 10
+
+		#Offensive Abilities
+		soft_attack = 16
+		hard_attack = 6
+		ap_attack = 30
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 0.8
+		
+		build_cost_ic = 8
+
+		resources = {
+			tungsten = 10
+			steel = 20
+		}
+	}
+
+	dp_artillery_equipment_1 = {
+		year = 1936
+
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+			artillery_soft_hard_upgrade
+			artillery_accuracy_upgrade
+		}
+
+		archetype = dp_artillery_equipment
+		priority = 100
+		visual_level = 2
+	}
+
+	dp_artillery_equipment_2 = {
+		year = 1939
+
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+			artillery_soft_hard_upgrade
+			artillery_accuracy_upgrade
+		}
+
+		archetype = dp_artillery_equipment
+		parent = dp_artillery_equipment_1
+		priority = 100
+		visual_level = 2
+
+		defense = 8
+		breakthrough = 6
+		soft_attack = 18
+		hard_attack = 8
 		ap_attack = 45
+		reliability = 0.8
 		
 		build_cost_ic = 10
 
@@ -126,14 +186,9 @@ equipments = {
 		}
 	}
 
-	dp_artillery_equipment_2 = {
-		year = 1942
+	dp_artillery_equipment_3 = {
+		year = 1941
 
-		archetype = artillery_equipment
-		parent = dp_artillery_equipment
-		priority = 100
-		visual_level = 2
-		
 		upgrades = {
 			infantry_quality_upgrade
 			infantry_quantity_upgrade
@@ -141,14 +196,49 @@ equipments = {
 			artillery_accuracy_upgrade
 		}
 
+		archetype = dp_artillery_equipment
+		parent = dp_artillery_equipment_2
+		priority = 100
+		visual_level = 2
+
 		defense = 8
 		breakthrough = 6
-		soft_attack = 22
-		hard_attack = 12
+		soft_attack = 20
+		hard_attack = 10
 		ap_attack = 60
 		reliability = 0.8
 		
 		build_cost_ic = 12
+
+		resources = {
+			tungsten = 10
+			steel = 20
+		}
+	}
+
+	dp_artillery_equipment_4 = {
+		year = 1943
+
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+			artillery_soft_hard_upgrade
+			artillery_accuracy_upgrade
+		}
+
+		archetype = dp_artillery_equipment
+		parent = dp_artillery_equipment_3
+		priority = 100
+		visual_level = 2
+
+		defense = 8
+		breakthrough = 6
+		soft_attack = 22
+		hard_attack = 12
+		ap_attack = 75
+		reliability = 0.8
+		
+		build_cost_ic = 14
 
 		resources = {
 			tungsten = 10
@@ -220,14 +310,14 @@ equipments = {
 
 		defense = 6
 		breakthrough = 4
-		soft_attack = 22
+		soft_attack = 20
 		hard_attack = 2
 		
-		build_cost_ic = 7
+		build_cost_ic = 9
 	}
 
-	mountain_artillery_gun = {
-		year = 1939
+	pack_artillery_equipment_3 = {
+		year = 1941
 
 		archetype = pack_artillery_equipment
 		parent = pack_artillery_equipment_2
@@ -236,10 +326,26 @@ equipments = {
 
 		defense = 8
 		breakthrough = 6
-		soft_attack = 26
+		soft_attack = 24
 		hard_attack = 2
 		
 		build_cost_ic = 10
+	}
+
+	pack_artillery_equipment_4 = {
+		year = 1943
+
+		archetype = pack_artillery_equipment
+		parent = pack_artillery_equipment_3
+		priority = 200
+		visual_level = 1
+
+		defense = 8
+		breakthrough = 6
+		soft_attack = 28
+		hard_attack = 2
+		
+		build_cost_ic = 11
 	}
 
 	heavy_artillery_equipment = {
@@ -279,7 +385,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1.6
 		
-		build_cost_ic = 17
+		build_cost_ic = 19
 		resources = {
 			tungsten = 10
 			steel = 30
@@ -306,7 +412,7 @@ equipments = {
 		breakthrough = 5
 		soft_attack = 30
 		
-		build_cost_ic = 19
+		build_cost_ic = 21
 	}
 	
 	heavy_artillery_equipment_3 = {
@@ -321,7 +427,7 @@ equipments = {
 		breakthrough = 6
 		soft_attack = 34
 		
-		build_cost_ic = 21
+		build_cost_ic = 23
 	}
 	
 	heavy_artillery_equipment_4 = {
@@ -336,7 +442,7 @@ equipments = {
 		breakthrough = 7
 		soft_attack = 40
 		
-		build_cost_ic = 23
+		build_cost_ic = 25
 	}
 
 	# Nebelwerfers!

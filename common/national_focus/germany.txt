@@ -2016,7 +2016,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_artillery2
+		id = GER_artillery2_focus
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = GER_artillery }
 		x = 0
