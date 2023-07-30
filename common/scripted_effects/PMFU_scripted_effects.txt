@@ -436,7 +436,7 @@ update_sov_major_city_status = {
 					}
 				}
 			}
-			add_to_variable = { major_city_status = -0.15 } 
+			add_to_variable = { major_city_status = -0.20 } 
 		} 
 		if = {
 			limit = {
@@ -445,7 +445,7 @@ update_sov_major_city_status = {
 				}
 			}
 			add_to_variable = {
-				major_city_status = -0.0375
+				major_city_status = -0.025
 			}  
 		}
 		if = {
@@ -455,7 +455,7 @@ update_sov_major_city_status = {
 				}
 			}
 			add_to_variable = {
-				major_city_status = -0.0375
+				major_city_status = -0.025
 			}  
 		}
 		if = {
@@ -465,7 +465,7 @@ update_sov_major_city_status = {
 				}
 			}
 			add_to_variable = {
-				major_city_status = -0.0375
+				major_city_status = -0.025
 			}  
 		}
 		if = {
@@ -475,7 +475,7 @@ update_sov_major_city_status = {
 				}
 			}
 			add_to_variable = {
-				major_city_status = -0.0375
+				major_city_status = -0.025
 			}  
 		}
 	}

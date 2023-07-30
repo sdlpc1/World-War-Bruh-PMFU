@@ -1538,7 +1538,7 @@ focus_tree = {
 							end = 8
 							create_unit = {
 								division = "division_template = \"Sino-Japanese Veterans\" start_experience_factor = 1"
-								owner = SOV
+								owner = JAP
 							}
 						}
 					}

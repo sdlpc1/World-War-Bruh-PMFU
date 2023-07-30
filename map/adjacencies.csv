@@ -272,6 +272,20 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9715;10454;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
 11704;10454;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
 12434;10454;impassable;-1;-1;-1;-1;-1;;SOV-IRAN
+8037;10315;impassable;-1;-1;-1;-1;-1;;MON-CHI
+4914;10315;impassable;-1;-1;-1;-1;-1;;MON-CHI
+10865;10315;impassable;-1;-1;-1;-1;-1;;MON-CHI
+10865;2074;impassable;-1;-1;-1;-1;-1;;MON-CHI
+12890;2074;impassable;-1;-1;-1;-1;-1;;MON-CHI
+12890;1698;impassable;-1;-1;-1;-1;-1;;MON-CHI
+7997;1698;impassable;-1;-1;-1;-1;-1;;MON-CHI
+12596;1698;impassable;-1;-1;-1;-1;-1;;MON-CHI
+12820;1838;impassable;-1;-1;-1;-1;-1;;MON-CHI
+12820;4843;impassable;-1;-1;-1;-1;-1;;MON-CHI
+1778;4843;impassable;-1;-1;-1;-1;-1;;MON-CHI
+1778;1781;impassable;-1;-1;-1;-1;-1;;MON-CHI
+7727;1781;impassable;-1;-1;-1;-1;-1;;MON-CHI
+7727;4786;impassable;-1;-1;-1;-1;-1;;MON-CHI
 5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto
 13052;13255;sea;8908;-1;-1;-1;-1;;Midway
 13047;13256;sea;7247;-1;-1;-1;-1;;Wake North
