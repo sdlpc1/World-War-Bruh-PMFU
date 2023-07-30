@@ -2974,32 +2974,32 @@ focus_tree = {
 				GER = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 30000
+						amount = 15000
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = squad_equipment
-						amount = 7000
+						amount = 3500
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = horse_equipment
-						amount = 7500
+						amount = 3750
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = support_equipment
-						amount = 1850
+						amount = 925
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = train_equipment_1
-						amount = 25
+						amount = 12
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = convoy_1
-						amount = 300
+						amount = 150
 						producer = GER
 					}
 				}

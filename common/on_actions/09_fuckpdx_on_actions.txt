@@ -324,57 +324,57 @@ on_actions = {
 				GER = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 75000
+						amount = 37500
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = squad_equipment
-						amount = 16000
+						amount = 8000
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = artillery_equipment
-						amount = 250
+						amount = 125
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = anti_tank_equipment
-						amount = 250
+						amount = 125
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = horse_equipment
-						amount = 30000
+						amount = 15000
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = sf_equipment
-						amount = 250
+						amount = 125
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = support_equipment
-						amount = 3250
+						amount = 1625
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = radio_equipment
-						amount = 250
+						amount = 125
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = motorized_equipment_1
-						amount = 2500
+						amount = 1250
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = train_equipment_1
-						amount = 50
+						amount = 25
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = convoy_1
-						amount = 100
+						amount = 50
 						producer = GER
 					}
 				}
@@ -409,47 +409,47 @@ on_actions = {
 				GER = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 25000
+						amount = 12500
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = squad_equipment
-						amount = 4000
+						amount = 200
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = artillery_equipment
-						amount = 500
-						producer = GER
-					}
-					add_equipment_to_stockpile = {
-						type = horse_equipment
-						amount = 10000
-						producer = GER
-					}
-					add_equipment_to_stockpile = {
-						type = support_equipment
-						amount = 1000
-						producer = GER
-					}
-					add_equipment_to_stockpile = {
-						type = radio_equipment
 						amount = 250
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 5000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = radio_equipment
+						amount = 125
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
 						type = motorized_equipment_1
-						amount = 550
+						amount = 255
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = train_equipment_1
-						amount = 75
+						amount = 37
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = convoy_1
-						amount = 300
+						amount = 150
 						producer = GER
 					}
 				}
@@ -503,47 +503,47 @@ on_actions = {
 				GER = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 43500
+						amount = 21750
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = squad_equipment
-						amount = 10000
+						amount = 5000
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = artillery_equipment
-						amount = 250
+						amount = 125
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = horse_equipment
-						amount = 18000
+						amount = 9000
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = support_equipment
-						amount = 2250
+						amount = 1125
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = radio_equipment
-						amount = 1100
+						amount = 550
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = motorized_equipment_1
-						amount = 1200
+						amount = 600
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = train_equipment_1
-						amount = 50
+						amount = 25
 						producer = GER
 					}
 					add_equipment_to_stockpile = {
 						type = convoy_1
-						amount = 900
+						amount = 450
 						producer = GER
 					}
 				}
@@ -598,57 +598,57 @@ on_actions = {
 				ITA = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 25000
+						amount = 12500
 						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = squad_equipment
-						amount = 5000
+						amount = 2500
 						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = artillery_equipment
-						amount = 50
+						amount = 25
 						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = anti_air_equipment
-						amount = 50
+						amount = 25
 						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = horse_equipment
-						amount = 8500
+						amount = 4250
 						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = support_equipment
-						amount = 250
+						amount = 125
 						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = radio_equipment
-						amount = 250
+						amount = 125
 						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = sf_equipment
-						amount = 750
+						amount = 375
 						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = motorized_equipment_1
-						amount = 300
+						amount = 150
 						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = train_equipment_1
-						amount = 50
+						amount = 25
 						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = convoy_1
-						amount = 500
+						amount = 250
 						producer = ITA
 					}
 				}
@@ -705,48 +705,48 @@ on_actions = {
 				ITA = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 35000
-						producer = GER
+						amount = 17500
+						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = squad_equipment
-						amount = 7000
-						producer = GER
+						amount = 3500
+						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = artillery_equipment
-						amount = 150
-						producer = GER
+						amount = 75
+						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = horse_equipment
-						amount = 15000
-						producer = GER
+						amount = 7500
+						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = support_equipment
-						amount = 1550
-						producer = GER
+						amount = 775
+						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = radio_equipment
-						amount = 10000
-						producer = GER
+						amount = 5000
+						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = motorized_equipment_1
-						amount = 500
-						producer = GER
+						amount = 250
+						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = train_equipment_1
-						amount = 50
-						producer = GER
+						amount = 25
+						producer = ITA
 					}
 					add_equipment_to_stockpile = {
 						type = convoy_1
-						amount = 125
-						producer = GER
+						amount = 62
+						producer = ITA
 					}
 				}
 				GER = {
