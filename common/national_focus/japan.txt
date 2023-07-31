@@ -863,6 +863,7 @@ focus_tree = {
 		}
 		
 		bypass = {
+			has_global_flag = HOST_SSJW_START
 			if = {
 				limit = {
 					has_game_rule = {
@@ -1042,6 +1043,8 @@ focus_tree = {
 					}
 				}
 				JAP = {
+					add_ideas = closed_economy
+					add_political_power = -150
 					transfer_state = 608
 					transfer_state = 614
 					transfer_state = 597
@@ -1086,9 +1089,9 @@ focus_tree = {
 						army_experience = 300
 						air_experience = 125
 					}
-					USA = {
-						add_war_support = 0.1
-					}
+					# USA = {
+					# 	add_war_support = 0.1
+					# }
 					ENG = {
 						add_war_support = 0.1
 					}
@@ -1114,7 +1117,7 @@ focus_tree = {
 						add_war_support = 0.1
 					}
 					USA = {
-						country_event = { id = panay_incident.2 days = 40 }
+						country_event = { id = panay_incident.2 days = 150 } #40 days before
 					}
 					add_war_support = 0.05
 					country_event = { days = 5 id = news.1 }
@@ -1413,6 +1416,7 @@ focus_tree = {
 		}
 
 		bypass = {
+			has_global_flag = HOST_SSJW_END
 			if = {
 				limit = {
 					has_game_rule = {
@@ -1471,7 +1475,7 @@ focus_tree = {
 						is_core_of = CHI
 						is_on_continent = asia
 					}
-					add_compliance = 80
+					add_compliance = 100
 				}
 				every_state = {
 					limit = {

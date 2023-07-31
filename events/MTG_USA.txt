@@ -170,7 +170,7 @@ country_event = {
 		name = panay_incident.2.b
 		custom_effect_tooltip = panay_incident.2.b.tt
 		ai_chance = { factor = 85 }
-		add_war_support = 0.05
+		add_war_support = 0.15
 		set_country_flag = { flag = USA_panay_window days = 90 value = 1 }
 		hidden_effect = { JAP = { country_event = { id = panay_incident.3 days = 2 } } } #Delay added so events are spaced out - historically it took months to get JAP to agree to compensation, but that'd be a bit hard to follow in-game, so timelines compressed.
 		add_opinion_modifier = { target = JAP modifier = panay_inc_opinion_modifier }

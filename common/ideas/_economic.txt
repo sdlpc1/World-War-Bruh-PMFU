@@ -169,6 +169,7 @@ ideas = {
 		
 		war_economy = {
 			
+			# name = "General Mobilization"
 			
 			available = {
 			    OR = {

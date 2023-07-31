@@ -14,51 +14,49 @@ host_decisions = {
 		}
 
 		complete_effect = {
-			# hidden_effect = {
-				set_global_flag = SCW_ended_by_host
-				every_other_country = {
-					limit = { original_tag = SPR }
-					add_timed_idea = {
-						idea = spirit_of_bozo_spain
-						days = 365
-					}
+			set_global_flag = SCW_ended_by_host
+			every_other_country = {
+				limit = { original_tag = SPR }
+				add_timed_idea = {
+					idea = spirit_of_bozo_spain
+					days = 365
 				}
-				SOV = {
-					add_offsite_building = { type = arms_factory level = 10 }
-					army_experience = 50
+			}
+			SOV = {
+				add_offsite_building = { type = arms_factory level = 10 }
+				army_experience = 50
+			}
+			SOV = {
+				army_experience = 125
+				air_experience = 50
+				add_doctrine_cost_reduction = {
+					name = SPA_SCW_comintern_victory
+					cost_reduction = 0.5
+					uses = 2
+					category = land_doctrine
 				}
-				SOV = {
-					army_experience = 125
-					air_experience = 50
-					add_doctrine_cost_reduction = {
-						name = SPA_SCW_comintern_victory
-						cost_reduction = 0.5
-						uses = 2
-						category = land_doctrine
-					}
+			}
+			FRA = {
+				army_experience = 125
+				air_experience = 50
+				add_doctrine_cost_reduction = {
+					name = SPA_SCW_comintern_victory
+					cost_reduction = 0.5
+					uses = 2
+					category = land_doctrine
 				}
-				FRA = {
-					army_experience = 125
-					air_experience = 50
-					add_doctrine_cost_reduction = {
-						name = SPA_SCW_comintern_victory
-						cost_reduction = 0.5
-						uses = 2
-						category = land_doctrine
-					}
-					add_war_support = 0.125
+				add_war_support = 0.125
+			}
+			ENG = {
+				army_experience = 125
+				air_experience = 50
+				add_doctrine_cost_reduction = {
+					name = SPA_SCW_comintern_victory
+					cost_reduction = 0.5
+					uses = 2
+					category = land_doctrine
 				}
-				ENG = {
-					army_experience = 125
-					air_experience = 50
-					add_doctrine_cost_reduction = {
-						name = SPA_SCW_comintern_victory
-						cost_reduction = 0.5
-						uses = 2
-						category = land_doctrine
-					}
-				}
-			# }
+			}
 			every_country = {
 				limit = {
 					original_tag = SPR
@@ -95,17 +93,16 @@ host_decisions = {
 		}
 
 		complete_effect = {
-			# hidden_effect = {
-				JAP = {
-					add_timed_idea = {
-						idea = spirit_of_bozo_japan
-						days = 365
-					}
-				}		
-				USA = {
-					add_offsite_building = { type = arms_factory level = 10 }
-				}	
-			# }
+			set_global_flag = HOST_SSJW_END
+			JAP = {
+				add_timed_idea = {
+					idea = spirit_of_bozo_japan
+					days = 365
+				}
+			}		
+			USA = {
+				add_offsite_building = { type = arms_factory level = 10 }
+			}
 			JAP = {
 				annex_country = {
 					target = CHI
@@ -158,6 +155,7 @@ host_decisions = {
 		}
 		
 		complete_effect = {
+			set_global_flag = HOST_SSJW_START
 			JAP = { add_ideas = JAP_intervene_in_china_5 }
 			MAN = { add_ideas = MAN_intervene_in_china_5 }			
             JAP = {

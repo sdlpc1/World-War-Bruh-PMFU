@@ -43,7 +43,7 @@ annex_manpower_reudction  = {
 factory_reduction_balancer  = {
 	icon = GFX_idea_SPR_disbanded_army
 	
-	local_factories = -0.3
+	local_factories = -0.15
 }
 
 SOV_major_cities_lost = {
