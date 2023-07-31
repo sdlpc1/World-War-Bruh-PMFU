@@ -164,19 +164,6 @@ if = {
 	}
 }
 
-add_equipment_to_stockpile = {
-type = infantry_equipment_0
-amount = 15000
-producer = JAP
-}
-
-add_equipment_to_stockpile = {
-
-type = squad_equipment_0
-amount = 1500
-producer = JAP
-}
-
 set_convoys = 400
 
 if = {

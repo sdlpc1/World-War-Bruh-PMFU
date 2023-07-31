@@ -296,6 +296,7 @@
   JAP_chinese_spirit_dwindling:0 "Chinese Spirit Dwindling"
   JAP_invade_iran:0 "Japanese Invasion of Iran"
   JAP_owned_china_to_manchu:0 "Transfer Owned Chinese States to Manchukuo"
+  JAP_closed_economy_decision:0 "Get Closed Economy"
 
   #### FLAGS ####
   JAP_early_war:0 "Early War Japan"

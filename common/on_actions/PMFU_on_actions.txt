@@ -1,4 +1,60 @@
 on_actions = {
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					date > 1938.2.1
+					has_game_rule = {
+						rule = china_war_rule
+						option = DISABLED
+					}
+				}
+				JAP = {
+					complete_national_focus = JAP_intervene_in_china
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = DISABLED
+					}
+				}
+				JAP = {
+					set_equipment_fraction = 0.5
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = ENABLED
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 15000
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = squad_equipment_0
+					amount = 1500
+					producer = JAP
+				}
+			}
+		}
+	}
+
 	on_capitulation = {
 		effect = {
 			if = {

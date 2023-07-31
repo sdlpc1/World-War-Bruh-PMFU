@@ -2335,6 +2335,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/lw_tech_cas_3.dds"
 	}
 	SpriteType = {
+		name = "GFX_cas_3_medium"
+		texturefile = "gfx/interface/technologies/lw_tech_cas_3.dds"
+	}
+	SpriteType = {
 		name = "GFX_nav_3_medium"
 		texturefile = "gfx/interface/technologies/lw_tech_nav_3.dds"
 	}

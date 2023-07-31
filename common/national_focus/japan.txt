@@ -1043,8 +1043,6 @@ focus_tree = {
 					}
 				}
 				JAP = {
-					add_ideas = closed_economy
-					add_political_power = -150
 					transfer_state = 608
 					transfer_state = 614
 					transfer_state = 597
@@ -3411,6 +3409,9 @@ focus_tree = {
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
+			SIA = {
+				is_ai = yes
+			}
 			has_country_flag = JAP_siam1
 		}
 

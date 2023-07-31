@@ -85,7 +85,8 @@ ideas = {
 			modifier = {
 				# custom_modifier_tooltip = academy_experience_tooltip_gain
 				# custom_modifier_tooltip = academy_experience_tooltip_acurrent
-				experience_gain_army_factor = 0.3
+				# experience_gain_army_factor = 0.3
+				experience_gain_army = 0.1
 				army_advisor_cost_factor = -0.5
 			}
 			ai_will_do = {

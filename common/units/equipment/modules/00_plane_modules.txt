@@ -853,6 +853,48 @@ equipment_modules = {
 		dismantle_cost_ic = 0.5
 	}
     cluster_bombs = {
+		abbreviation = "cb2"
+		category = special_bombs
+		gui_category = cas_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+		#xp_cost = 2
+		allow_mission_type = {
+			cas
+			# attack_logistics
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+			}
+            multiply_stats = {
+                air_agility = -0.15
+            }
+			add_stats = {
+				weight = 6
+				air_ground_attack = 8
+			}
+		}
+        	mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+            multiply_stats = {
+                air_agility = -0.25
+            }
+			add_stats = {
+				weight = 6
+				air_ground_attack = 0.6
+			}
+       		}
+		
+		dismantle_cost_ic = 0.5
+	}
+	cluster_bombs_2 = {
 		abbreviation = "cb"
 		category = special_bombs
 		gui_category = cas_weapon

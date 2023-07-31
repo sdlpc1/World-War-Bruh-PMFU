@@ -3657,6 +3657,7 @@ ideas = {
 				module_aircraft_cannon_2_2x_design_cost_factor = -1
 				module_bomb_locks_design_cost_factor = -1
 				module_cluster_bombs_design_cost_factor = -1
+				module_cluster_bombs_2_design_cost_factor = -1
 				module_small_bomb_bay_design_cost_factor = -1
 				module_medium_bomb_bay_design_cost_factor = -1
 				module_early_large_bomb_bay_design_cost_factor = -1

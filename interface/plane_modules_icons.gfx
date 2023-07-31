@@ -125,6 +125,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_cluster_bombs.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_EMI_cluster_bombs_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_cluster_bombs_2.dds"
+		legacy_lazy_load = no
+	}
 	
 	spriteType = {
 		name = "GFX_EMI_engine_1_1x"

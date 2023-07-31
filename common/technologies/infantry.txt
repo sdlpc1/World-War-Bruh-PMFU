@@ -1682,6 +1682,10 @@ technologies = {
 
 	mechanised_infantry = {
 
+		enable_subunits = {
+			mechanized
+		}
+
 		enable_equipments = {
 			mechanized_equipment_1
 		}
@@ -1840,6 +1844,12 @@ technologies = {
 	
 	amphibious_tank = {
 
+		enable_subunits = {
+			amphibious_light_armor
+			amphibious_medium_armor
+			amphibious_heavy_armor
+		}
+
 		enable_equipment_modules = {
 			amphibious_drive
 		}
@@ -1925,6 +1935,9 @@ technologies = {
 	
 	armored_car1 = {
 
+		enable_subunits = {
+			armored_car_recon
+		}
 		enable_equipments = {
 			gw_armored_car_chassis
 		}
