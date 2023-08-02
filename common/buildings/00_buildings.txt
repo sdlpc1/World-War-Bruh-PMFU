@@ -168,7 +168,7 @@ buildings = {
 		damage_factor = 0.20
 		
 		show_modifier = yes
-		fuel_gain_from_states = 5.0 
+		fuel_gain_from_states = 2
 	}
 	
 	# synthetic_rubber_refinery = {
