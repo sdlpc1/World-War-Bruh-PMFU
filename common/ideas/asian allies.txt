@@ -161,6 +161,10 @@ ideas = {
 			# modifier = {
 			# 	industrial_capacity_factory = 0.06
 			# }
+			modifier = {
+				amphibious_invasion_defence = 0.06
+				naval_invasion_prep_speed = 0.15
+			}
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -212,6 +216,10 @@ ideas = {
 			# modifier = {
 			# 	industrial_capacity_factory = 0.04
 			# }
+			modifier = {
+				amphibious_invasion_defence = 0.04
+				naval_invasion_prep_speed = 0.1
+			}
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -263,6 +271,10 @@ ideas = {
 			# modifier = {
 			# 	industrial_capacity_factory = 0.02
 			# }
+			modifier = {
+				amphibious_invasion_defence = 0.02
+				naval_invasion_prep_speed = 0.05
+			}
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -313,6 +325,10 @@ ideas = {
 				tag = VIC
 				attack_bonus_against = 0.0
 				#defense_bonus_against = -0.025
+			}
+			modifier = {
+				amphibious_invasion_defence = 0
+				naval_invasion_prep_speed = 0
 			}
 			picture = warrior_traditions_idea
 			
@@ -366,7 +382,10 @@ ideas = {
 				attack_bonus_against = 0.0
 				#defense_bonus_against = 0.0
 			}
-
+			modifier = {
+				amphibious_invasion_defence = 0
+				naval_invasion_prep_speed = 0
+			}
 
 
 			picture = warrior_traditions_idea
@@ -422,6 +441,10 @@ ideas = {
 				attack_bonus_against = 0.0
 				#defense_bonus_against = 0.0
 			}
+			modifier = {
+				amphibious_invasion_defence = 0
+				naval_invasion_prep_speed = 0
+			}
 
 
 			picture = warrior_traditions_idea
@@ -442,44 +465,48 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.01
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.01
+			# 	#defense_bonus_against = -0.025
+			# }
 			# modifier = {
 			# 	industrial_capacity_factory = -0.0125
 			# }
+			modifier = {
+				amphibious_invasion_defence = -0.02
+				naval_invasion_prep_speed = -0.05
+			}
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -498,44 +525,48 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.02
-				#defense_bonus_against = -0.05
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.02
-				#defense_bonus_against = -0.05
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.02
-				#defense_bonus_against = -0.05
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.02
-				#defense_bonus_against = -0.05
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.02
-				#defense_bonus_against = -0.05
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.02
-				#defense_bonus_against = -0.05
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.02
-				#defense_bonus_against = -0.05
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.02
+			# 	#defense_bonus_against = -0.05
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.02
+			# 	#defense_bonus_against = -0.05
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.02
+			# 	#defense_bonus_against = -0.05
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.02
+			# 	#defense_bonus_against = -0.05
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.02
+			# 	#defense_bonus_against = -0.05
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.02
+			# 	#defense_bonus_against = -0.05
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.02
+			# 	#defense_bonus_against = -0.05
+			# }
 			# modifier = {
 			# 	industrial_capacity_factory = -0.025
 			# }
+			modifier = {
+				amphibious_invasion_defence = -0.04
+				naval_invasion_prep_speed = -0.1
+			}
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -554,44 +585,48 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.03
-				#defense_bonus_against = -0.075
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.03
-				#defense_bonus_against = -0.075
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.03
-				#defense_bonus_against = -0.075
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.03
-				#defense_bonus_against = -0.075
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.03
-				#defense_bonus_against = -0.075
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.03
-				#defense_bonus_against = -0.075
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.03
-				#defense_bonus_against = -0.075
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.03
+			# 	#defense_bonus_against = -0.075
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.03
+			# 	#defense_bonus_against = -0.075
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.03
+			# 	#defense_bonus_against = -0.075
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.03
+			# 	#defense_bonus_against = -0.075
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.03
+			# 	#defense_bonus_against = -0.075
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.03
+			# 	#defense_bonus_against = -0.075
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.03
+			# 	#defense_bonus_against = -0.075
+			# }
 			# modifier = {
 			# 	industrial_capacity_factory = -0.0375
 			# }
+			modifier = {
+				amphibious_invasion_defence = -0.06
+				naval_invasion_prep_speed = -0.15
+			}
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -610,44 +645,46 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.04
-				#defense_bonus_against = -0.10
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.04
-				#defense_bonus_against = -0.10
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.04
-				#defense_bonus_against = -0.10
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.04
-				#defense_bonus_against = -0.10
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.04
-				#defense_bonus_against = -0.10
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.04
-				#defense_bonus_against = -0.10
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.04
-				#defense_bonus_against = -0.10
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.04
+			# 	#defense_bonus_against = -0.10
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.04
+			# 	#defense_bonus_against = -0.10
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.04
+			# 	#defense_bonus_against = -0.10
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.04
+			# 	#defense_bonus_against = -0.10
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.04
+			# 	#defense_bonus_against = -0.10
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.04
+			# 	#defense_bonus_against = -0.10
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.04
+			# 	#defense_bonus_against = -0.10
+			# }
 			modifier = {
 				#industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = 0.025
+				amphibious_invasion_defence = -0.08
+				naval_invasion_prep_speed = -0.2
 			}
 			picture = warrior_traditions_idea
 			
@@ -667,44 +704,46 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.05
-				#defense_bonus_against = -0.125
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.05
-				#defense_bonus_against = -0.125
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.05
-				#defense_bonus_against = -0.125
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.05
-				#defense_bonus_against = -0.125
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.05
-				#defense_bonus_against = -0.125
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.05
-				#defense_bonus_against = -0.125
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.05
-				#defense_bonus_against = -0.125
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.05
+			# 	#defense_bonus_against = -0.125
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.05
+			# 	#defense_bonus_against = -0.125
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.05
+			# 	#defense_bonus_against = -0.125
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.05
+			# 	#defense_bonus_against = -0.125
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.05
+			# 	#defense_bonus_against = -0.125
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.05
+			# 	#defense_bonus_against = -0.125
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.05
+			# 	#defense_bonus_against = -0.125
+			# }
 			modifier = {
 				#industrial_capacity_factory = -0.0625
 				industrial_capacity_dockyard = 0.025
+				amphibious_invasion_defence = -0.1
+				naval_invasion_prep_speed = -0.25
 			}
 			picture = warrior_traditions_idea
 			
@@ -724,44 +763,46 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.06
-				#defense_bonus_against = -0.15
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.06
-				#defense_bonus_against = -0.15
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.06
-				#defense_bonus_against = -0.15
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.06
-				#defense_bonus_against = -0.15
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.06
-				#defense_bonus_against = -0.15
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.06
-				#defense_bonus_against = -0.15
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.06
-				#defense_bonus_against = -0.15
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.06
+			# 	#defense_bonus_against = -0.15
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.06
+			# 	#defense_bonus_against = -0.15
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.06
+			# 	#defense_bonus_against = -0.15
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.06
+			# 	#defense_bonus_against = -0.15
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.06
+			# 	#defense_bonus_against = -0.15
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.06
+			# 	#defense_bonus_against = -0.15
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.06
+			# 	#defense_bonus_against = -0.15
+			# }
 			modifier = {
 				#industrial_capacity_factory = -0.075
 				industrial_capacity_dockyard = 0.025
+				amphibious_invasion_defence = -0.12
+				naval_invasion_prep_speed = -0.3
 			}
 			picture = warrior_traditions_idea
 			
@@ -781,44 +822,46 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.07
-				#defense_bonus_against = -0.175
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.07
-				#defense_bonus_against = -0.175
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.07
-				#defense_bonus_against = -0.175
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.07
-				#defense_bonus_against = -0.175
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.07
-				#defense_bonus_against = -0.175
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.07
-				#defense_bonus_against = -0.175
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.07
-				#defense_bonus_against = -0.175
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.07
+			# 	#defense_bonus_against = -0.175
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.07
+			# 	#defense_bonus_against = -0.175
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.07
+			# 	#defense_bonus_against = -0.175
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.07
+			# 	#defense_bonus_against = -0.175
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.07
+			# 	#defense_bonus_against = -0.175
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.07
+			# 	#defense_bonus_against = -0.175
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.07
+			# 	#defense_bonus_against = -0.175
+			# }
 			modifier = {
 				#industrial_capacity_factory = -0.0875
 				industrial_capacity_dockyard = 0.025
+				amphibious_invasion_defence = -0.14
+				naval_invasion_prep_speed = -0.35
 			}
 			picture = warrior_traditions_idea
 			
@@ -838,44 +881,46 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.08
-				#defense_bonus_against = -0.20
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.08
-				#defense_bonus_against = -0.20
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.08
-				#defense_bonus_against = -0.20
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.08
-				#defense_bonus_against = -0.20
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.08
-				#defense_bonus_against = -0.20
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.08
-				#defense_bonus_against = -0.20
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.08
-				#defense_bonus_against = -0.20
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.08
+			# 	#defense_bonus_against = -0.20
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.08
+			# 	#defense_bonus_against = -0.20
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.08
+			# 	#defense_bonus_against = -0.20
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.08
+			# 	#defense_bonus_against = -0.20
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.08
+			# 	#defense_bonus_against = -0.20
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.08
+			# 	#defense_bonus_against = -0.20
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.08
+			# 	#defense_bonus_against = -0.20
+			# }
 			modifier = {
 				#industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = 0.05
+				amphibious_invasion_defence = -0.16
+				naval_invasion_prep_speed = -0.4
 			}
 			picture = warrior_traditions_idea
 			
@@ -895,44 +940,46 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.09
-				#defense_bonus_against = -0.225
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.09
-				#defense_bonus_against = -0.225
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.09
-				#defense_bonus_against = -0.225
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.09
-				#defense_bonus_against = -0.225
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.09
-				#defense_bonus_against = -0.225
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.09
-				#defense_bonus_against = -0.225
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.09
-				#defense_bonus_against = -0.225
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.09
+			# 	#defense_bonus_against = -0.225
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.09
+			# 	#defense_bonus_against = -0.225
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.09
+			# 	#defense_bonus_against = -0.225
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.09
+			# 	#defense_bonus_against = -0.225
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.09
+			# 	#defense_bonus_against = -0.225
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.09
+			# 	#defense_bonus_against = -0.225
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.09
+			# 	#defense_bonus_against = -0.225
+			# }
 			modifier = {
 				#industrial_capacity_factory = -0.1125
 				industrial_capacity_dockyard = 0.05
+				amphibious_invasion_defence = -0.18
+				naval_invasion_prep_speed = -0.45
 			}
 			picture = warrior_traditions_idea
 			
@@ -952,44 +999,46 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.1
-				#defense_bonus_against = -0.25
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.1
-				#defense_bonus_against = -0.25
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.1
-				#defense_bonus_against = -0.25
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.1
-				#defense_bonus_against = -0.25
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.1
-				#defense_bonus_against = -0.25
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.1
-				#defense_bonus_against = -0.25
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.1
-				#defense_bonus_against = -0.25
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.1
+			# 	#defense_bonus_against = -0.25
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.1
+			# 	#defense_bonus_against = -0.25
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.1
+			# 	#defense_bonus_against = -0.25
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.1
+			# 	#defense_bonus_against = -0.25
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.1
+			# 	#defense_bonus_against = -0.25
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.1
+			# 	#defense_bonus_against = -0.25
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.1
+			# 	#defense_bonus_against = -0.25
+			# }
 			modifier = {
 				#industrial_capacity_factory = -0.125
 				industrial_capacity_dockyard = 0.05
+				amphibious_invasion_defence = -0.2
+				naval_invasion_prep_speed = -0.5
 			}
 			picture = warrior_traditions_idea
 			
@@ -1009,44 +1058,46 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.11
-				#defense_bonus_against = -0.275
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.11
-				#defense_bonus_against = -0.275
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.11
-				#defense_bonus_against = -0.275
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.11
-				#defense_bonus_against = -0.275
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.11
-				#defense_bonus_against = -0.275
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.11
-				#defense_bonus_against = -0.275
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.11
-				#defense_bonus_against = -0.275
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.11
+			# 	#defense_bonus_against = -0.275
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.11
+			# 	#defense_bonus_against = -0.275
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.11
+			# 	#defense_bonus_against = -0.275
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.11
+			# 	#defense_bonus_against = -0.275
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.11
+			# 	#defense_bonus_against = -0.275
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.11
+			# 	#defense_bonus_against = -0.275
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.11
+			# 	#defense_bonus_against = -0.275
+			# }
 			modifier = {
 				#industrial_capacity_factory = -0.1375
 				industrial_capacity_dockyard = 0.05
+				amphibious_invasion_defence = -0.22
+				naval_invasion_prep_speed = -0.55
 			}
 			picture = warrior_traditions_idea
 			
@@ -1066,44 +1117,46 @@ ideas = {
 				always = yes
 			}
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.12
-				#defense_bonus_against = -0.30
-			}
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.12
-				#defense_bonus_against = -0.30
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.12
-				#defense_bonus_against = -0.30
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.12
-				#defense_bonus_against = -0.30
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.12
-				#defense_bonus_against = -0.30
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.12
-				#defense_bonus_against = -0.30
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.12
-				#defense_bonus_against = -0.30
-			}
+			# targeted_modifier = {
+			# 	tag = GER
+			# 	attack_bonus_against = -0.12
+			# 	#defense_bonus_against = -0.30
+			# }
+			# targeted_modifier = {
+			# 	tag = ITA
+			# 	attack_bonus_against = -0.12
+			# 	#defense_bonus_against = -0.30
+			# }
+			# targeted_modifier = {
+			# 	tag = SPA
+			# 	attack_bonus_against = -0.12
+			# 	#defense_bonus_against = -0.30
+			# }
+			# targeted_modifier = {
+			# 	tag = ROM
+			# 	attack_bonus_against = -0.12
+			# 	#defense_bonus_against = -0.30
+			# }
+			# targeted_modifier = {
+			# 	tag = HUN
+			# 	attack_bonus_against = -0.12
+			# 	#defense_bonus_against = -0.30
+			# }
+			# targeted_modifier = {
+			# 	tag = BUL
+			# 	attack_bonus_against = -0.12
+			# 	#defense_bonus_against = -0.30
+			# }
+			# targeted_modifier = {
+			# 	tag = VIC
+			# 	attack_bonus_against = -0.12
+			# 	#defense_bonus_against = -0.30
+			# }
 			modifier = {
 				#industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = 0.075
+				amphibious_invasion_defence = -0.24
+				naval_invasion_prep_speed = -0.6
 			}
 			picture = warrior_traditions_idea
 			
@@ -1162,6 +1215,7 @@ ideas = {
 			# modifier = {
 			# 	industrial_capacity_factory = 0.06
 			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -1213,6 +1267,7 @@ ideas = {
 			# modifier = {
 			# 	industrial_capacity_factory = 0.04
 			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -1264,6 +1319,7 @@ ideas = {
 			# modifier = {
 			# 	industrial_capacity_factory = 0.02
 			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -1345,6 +1401,7 @@ ideas = {
 				attack_bonus_against = 0.0
 				#defense_bonus_against = -0.025
 			}
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -1427,7 +1484,7 @@ ideas = {
 				attack_bonus_against = 0.0
 				#defense_bonus_against = -0.025
 			}
-	
+			
 	
 	
 			picture = warrior_traditions_idea
@@ -1513,7 +1570,7 @@ ideas = {
 				attack_bonus_against = 0.0
 				#defense_bonus_against = -0.025
 			}
-	
+			
 	
 			picture = warrior_traditions_idea
 			
@@ -1533,71 +1590,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.01
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.01
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.01
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.01
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.01
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.01
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.01
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.01
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.01
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -1616,71 +1674,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.02
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.02
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.02
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.02
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.02
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.02
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.02
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.02
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.02
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.02
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.02
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.02
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.02
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.02
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -1699,71 +1758,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.03
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.03
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.03
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.03
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.03
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.03
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.03
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.03
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.03
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.03
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.03
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.03
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.03
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.03
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -1782,71 +1842,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.04
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.04
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.04
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.04
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.04
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.04
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.04
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.04
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.04
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.04
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.04
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.04
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.04
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.04
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -1865,71 +1926,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.05
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.05
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.05
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.05
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.05
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.05
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.05
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.05
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.05
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.05
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.05
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.05
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.05
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.05
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -1948,71 +2010,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.06
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.06
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.06
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.06
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.06
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.06
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.06
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.06
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.06
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.06
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.06
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.06
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.06
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.06
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -2031,71 +2094,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.07
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.07
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.07
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.07
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.07
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.07
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.07
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.07
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.07
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.07
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.07
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.07
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.07
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.07
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -2114,71 +2178,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.08
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.08
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.08
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.08
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.08
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.08
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.08
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.08
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.08
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.08
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.08
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.08
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.08
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.08
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -2197,71 +2262,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.09
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.09
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.09
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.09
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.09
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.09
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.09
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.09
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.09
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.09
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.09
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.09
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.09
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.09
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -2280,71 +2346,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.1
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.1
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.1
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.1
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.1
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.1
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.1
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.1
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.1
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.1
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.1
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.1
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.1
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.1
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -2363,71 +2430,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.11
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.11
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.11
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.11
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.11
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.11
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.11
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.11
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.11
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.11
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.11
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.11
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.11
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.11
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	
@@ -2446,71 +2514,72 @@ ideas = {
 				always = yes
 			}
 	
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.12
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.12
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.12
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = MEX
-				attack_bonus_against = 0.12
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = BRA
-				attack_bonus_against = 0.12
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = 0.12
-				#defense_bonus_against = 0.0
-			}
-			targeted_modifier = {
-				tag = POL
-				attack_bonus_against = 0.12
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.12
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.12
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.12
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = NZL
-				attack_bonus_against = 0.12
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.12
-				#defense_bonus_against = -0.025
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = 0.12
-				#defense_bonus_against = -0.025
-			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = CAN
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = SAF
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = MEX
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = BRA
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = HOL
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = 0.0
+			# }
+			# targeted_modifier = {
+			# 	tag = POL
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = AST
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = NZL
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = RAJ
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = -0.025
+			# }
+			# targeted_modifier = {
+			# 	tag = IRE
+			# 	attack_bonus_against = 0.12
+			# 	#defense_bonus_against = -0.025
+			# }
+			
 			picture = warrior_traditions_idea
 			
 			removal_cost = -1	

@@ -422,7 +422,7 @@ DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 		}
 	}
 }
-DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
+DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 	if = {
 		limit = {
 			has_game_rule = {
@@ -436,7 +436,23 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 			NOT = { has_idea = FRA_protected_by_the_maginot_line }
 		}
 		OR = {
+			NOT = { 
+				FROM = {
+					tag = FRA
+				}
+			}
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+		}
+		OR = {
 			NOT = { tag = USA }
+			has_completed_focus = USA_lend_lease_act
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = USA
+				}
+			}
 			has_completed_focus = USA_lend_lease_act
 		}
 	}
@@ -451,10 +467,25 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 		OR = {
 			NOT = { tag = FRA }
 			NOT = { has_idea = FRA_protected_by_the_maginot_line }
-			
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = FRA
+				}
+			}
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
 		}
 		OR = {
 			NOT = { tag = USA }
+			has_completed_focus = USA_lend_lease_act
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = USA
+				}
+			}
 			has_completed_focus = USA_lend_lease_act
 		}
 	}
@@ -495,7 +526,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 		}
 	}
 }
-DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
+DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 	if = {
 		limit = {
 			has_game_rule = {
@@ -509,8 +540,27 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 			NOT = { has_idea = FRA_protected_by_the_maginot_line }
 		}
 		OR = {
+			NOT = { 
+				FROM = {
+					tag = FRA
+				}
+			}
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+		}
+		OR = {
 			NOT = { tag = USA }
 			has_completed_focus = USA_lend_lease_act
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = USA
+				}
+			}
+			has_completed_focus = USA_lend_lease_act
+		}
+		FROM = {
+			is_ai = no
 		}
 	}
 	if = {
@@ -526,8 +576,27 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 			NOT = { has_idea = FRA_protected_by_the_maginot_line }
 		}
 		OR = {
+			NOT = { 
+				FROM = {
+					tag = FRA
+				}
+			}
+			NOT = { has_idea = FRA_protected_by_the_maginot_line }
+		}
+		OR = {
 			NOT = { tag = USA }
 			has_completed_focus = USA_lend_lease_act
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = USA
+				}
+			}
+			has_completed_focus = USA_lend_lease_act
+		}
+		FROM = {
+			is_ai = no
 		}
 	}
 	if = {
@@ -683,7 +752,7 @@ DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 		}
 	}
 }
- DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
+DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
 	if = {
 		limit = {
 			has_game_rule = {

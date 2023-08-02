@@ -157,7 +157,8 @@ buildings = {
 	synthetic_refinery = {
 		show_on_map = 1
 		base_cost = 8000
-		icon_frame = 10
+		icon_frame = 17
+		local_resources_rubber = 30
 		refinery = yes
 		max_level = 3 # This is the max unlock level
 		shares_slots = no
@@ -170,21 +171,22 @@ buildings = {
 		fuel_gain_from_states = 5.0 
 	}
 	
-	synthetic_rubber_refinery = {
-		show_on_map = 1
-		base_cost = 8000
-		icon_frame = 17
-		local_resources_rubber = 30
-		refinery = yes
-		max_level = 3 # This is the max unlock level
-		shares_slots = no
-		value = 8
-		allied_build = yes
-		infrastructure_construction_effect = yes
-		damage_factor = 0.20
+	# synthetic_rubber_refinery = {
+	# 	show_on_map = 1
+	# 	base_cost = 8000
+	# 	icon_frame = 10
+	# 	local_resources_rubber = 30
+	# 	refinery = yes
+	# 	max_level = 3 # This is the max unlock level
+	# 	shares_slots = no
+	# 	value = 8
+	# 	allied_build = yes
+	# 	infrastructure_construction_effect = yes
+	# 	damage_factor = 0.20
 		
-		show_modifier = yes
-	}
+	# 	show_modifier = yes
+	# 	fuel_gain_from_states = 5.0 
+	# }
 	
 	steel_refinery = {
 		show_on_map = 1

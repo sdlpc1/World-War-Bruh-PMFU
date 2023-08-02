@@ -8,6 +8,7 @@
 #!gfx:interface\replace\bruh_nsb_interface.gfx
 #!gfx:interface\replace\bruh_sov_interface.gfx
 #!gfx:interface\lw_goals.gfx
+#!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 
 focus_tree = {
@@ -903,7 +904,7 @@ focus_tree = {
 		
 		completion_reward = {
         	modify_building_resources = {
-        	   building = synthetic_rubber_refinery
+        	   building = synthetic_refinery #synthetic_rubber_refinery
         	   resource = rubber
         	   amount = 10
         	}
@@ -1085,9 +1086,9 @@ focus_tree = {
 				name = "Rubber Refining"
 				bonus = 1
 				uses = 2
-				technology = improved_rubber_processing
-				technology = advanced_rubber_processing
-				technology = modern_rubber_processing
+				technology = improved_oil_processing
+				technology = advanced_oil_processing
+				technology = modern_oil_processing
 			}
 			random_owned_controlled_state = {
 				prioritize = { 583 }
@@ -1101,7 +1102,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = synthetic_rubber_refinery
+					type = synthetic_refinery #synthetic_rubber_refinery
 					level = 2
 					instant_build = yes
 				}
@@ -1118,7 +1119,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = synthetic_rubber_refinery
+					type = synthetic_refinery #synthetic_rubber_refinery
 					level = 2
 					instant_build = yes
 				}
@@ -1135,7 +1136,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = synthetic_rubber_refinery
+					type = synthetic_refinery #synthetic_rubber_refinery
 					level = 2
 					instant_build = yes
 				}
@@ -1667,7 +1668,7 @@ focus_tree = {
 				limit = {
 					is_in_faction_with = SOV
 				}
-				add_timed_idea = { idea = SOV_winter_offensive days = 60 }
+				add_timed_idea = { idea = SOV_winter_offensive days = 100 }
 			}
 			hidden_effect = {
 				every_country = {
@@ -1704,7 +1705,7 @@ focus_tree = {
 				limit = {
 					is_in_faction_with = SOV
 				}
-				add_timed_idea = { idea = SOV_uranus days = 60 }
+				add_timed_idea = { idea = SOV_uranus days = 100 }
 			}
 			hidden_effect = {
 				every_country = {
@@ -1737,7 +1738,7 @@ focus_tree = {
 				limit = {
 					is_in_faction_with = SOV
 				}
-				add_timed_idea= { idea= SOV_bagration days = 60 }
+				add_timed_idea= { idea= SOV_bagration days = 100 }
 			}
 			hidden_effect = {
 				every_country = {
@@ -1775,7 +1776,22 @@ focus_tree = {
 		cost = 4
 
 		available = {
-			surrender_progress > 0.24 
+			# surrender_progress > 0.24 
+			if = {
+				limit = {
+					has_completed_focus = SOV_secure_new_conquests
+				}
+				surrender_progress > 0.3
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SOV_improve_stalin_line
+				}
+				surrender_progress > 0.24 
+			}
+			else = {
+				surrender_progress > 0.24
+			}
 		}
 		completion_reward = {
 			set_technology = {
@@ -1849,7 +1865,22 @@ focus_tree = {
 		relative_position_id = SOV_tankograd
 		available = {
 			casualties > 2000000
-			surrender_progress > 0.32
+			# surrender_progress > 0.32
+			if = {
+				limit = {
+					has_completed_focus = SOV_secure_new_conquests
+				}
+				surrender_progress > 0.38
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SOV_improve_stalin_line
+				}
+				surrender_progress > 0.32 
+			}
+			else = {
+				surrender_progress > 0.32
+			}
 		}
 		completion_reward = {
 			hidden_effect = {
@@ -2471,7 +2502,22 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			surrender_progress > 0.4
+			# surrender_progress > 0.4
+			if = {
+				limit = {
+					has_completed_focus = SOV_secure_new_conquests
+				}
+				surrender_progress > 0.46
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SOV_improve_stalin_line
+				}
+				surrender_progress > 0.4 
+			}
+			else = {
+				surrender_progress > 0.4
+			}
 		}
 
 		ai_will_do = {
@@ -3101,7 +3147,22 @@ focus_tree = {
 		cost = 1
 		
 		available = {
-			surrender_progress > 0.22
+			# surrender_progress > 0.22
+			if = {
+				limit = {
+					has_completed_focus = SOV_secure_new_conquests
+				}
+				surrender_progress > 0.28
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SOV_improve_stalin_line
+				}
+				surrender_progress > 0.22 
+			}
+			else = {
+				surrender_progress > 0.22
+			}
 			casualties > 500000
 		}
 
@@ -3179,7 +3240,22 @@ focus_tree = {
 		
 		available = {
 			casualties > 2000000
-			surrender_progress > 0.32
+			# surrender_progress > 0.32
+			if = {
+				limit = {
+					has_completed_focus = SOV_secure_new_conquests
+				}
+				surrender_progress > 0.38
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SOV_improve_stalin_line
+				}
+				surrender_progress > 0.32 
+			}
+			else = {
+				surrender_progress > 0.32
+			}
 		}
 
 		completion_reward = {
@@ -3339,7 +3415,22 @@ focus_tree = {
 		
 		available = {
 			casualties > 3000000
-			surrender_progress > 0.47
+			# surrender_progress > 0.47
+			if = {
+				limit = {
+					has_completed_focus = SOV_secure_new_conquests
+				}
+				surrender_progress > 0.53
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SOV_improve_stalin_line
+				}
+				surrender_progress > 0.47 
+			}
+			else = {
+				surrender_progress > 0.47
+			}
 		}
 
 		completion_reward = {
@@ -3465,7 +3556,22 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = SOV_order_270 }
 		available = {
-			surrender_progress > 0.27
+			# surrender_progress > 0.27
+			if = {
+				limit = {
+					has_completed_focus = SOV_secure_new_conquests
+				}
+				surrender_progress > 0.33
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SOV_improve_stalin_line
+				}
+				surrender_progress > 0.27 
+			}
+			else = {
+				surrender_progress > 0.27
+			}
 		}
 		x = 0
 		y = 1
@@ -3589,7 +3695,22 @@ focus_tree = {
 		relative_position_id = SOV_order_270
 		available = {
 			casualties > 2000000
-			surrender_progress > 0.32
+			# surrender_progress > 0.32
+			if = {
+				limit = {
+					has_completed_focus = SOV_secure_new_conquests
+				}
+				surrender_progress > 0.38
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SOV_improve_stalin_line
+				}
+				surrender_progress > 0.32 
+			}
+			else = {
+				surrender_progress > 0.32
+			}
 		}
 		completion_reward = {
 			hidden_effect = {
@@ -3612,7 +3733,22 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			surrender_progress > 0.25
+			# surrender_progress > 0.25
+			if = {
+				limit = {
+					has_completed_focus = SOV_secure_new_conquests
+				}
+				surrender_progress > 0.28
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SOV_improve_stalin_line
+				}
+				surrender_progress > 0.25 
+			}
+			else = {
+				surrender_progress > 0.25
+			}
 			casualties > 1000000
 		}
 
@@ -3638,7 +3774,22 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-			surrender_progress > 0.3
+			# surrender_progress > 0.3
+			if = {
+				limit = {
+					has_completed_focus = SOV_secure_new_conquests
+				}
+				surrender_progress > 0.36
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SOV_improve_stalin_line
+				}
+				surrender_progress > 0.3 
+			}
+			else = {
+				surrender_progress > 0.3
+			}
 		}
 
 		completion_reward = {
@@ -5430,33 +5581,66 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = SOV_CONQ_TT
+			# custom_effect_tooltip = SOV_CONQ_TT
 
-			every_controlled_state = {
+			# every_controlled_state = {
+			# 	limit = {
+			# 		is_core_of = POL
+			# 	}
+			# 	add_compliance = 80
+			# }
+			# every_controlled_state = {
+			# 	limit = {
+			# 		is_core_of = LIT
+			# 	}
+			# 	add_compliance = 80
+			# }
+			# every_controlled_state = {
+			# 	limit = {
+			# 		is_core_of = LAT
+			# 	}
+			# 	add_compliance = 80
+			# }
+			# every_controlled_state = {
+			# 	limit = {
+			# 		is_core_of = EST
+			# 	}
+			# 	add_compliance = 80
+			# }
+			add_state_core = 97
+			add_state_core = 784
+			add_state_core = 96
+			add_state_core = 95
+			add_state_core = 94
+			add_state_core = 93
+			add_state_core = 91
+			add_state_core = 89
+			add_state_core = 11
+			add_state_core = 189
+			add_state_core = 12
+			add_state_core = 190
+			add_state_core = 13
+			add_state_core = 191
+			add_state_core = 808
+			add_state_core = 809
+			add_state_core = 810
+			add_state_core = 811
+			add_state_core = 812
+			add_state_core = 813
+			add_state_core = 814
+			add_state_core = 815
+			if = {
 				limit = {
-					is_core_of = POL
+					AND = {
+						owns_state = 78
+						owns_state = 766
+						owns_state = 80
+					}
 				}
-				add_compliance = 80
+				add_state_core = 78
+				add_state_core = 766
+				add_state_core = 80
 			}
-			every_controlled_state = {
-				limit = {
-					is_core_of = LIT
-				}
-				add_compliance = 80
-			}
-			every_controlled_state = {
-				limit = {
-					is_core_of = LAT
-				}
-				add_compliance = 80
-			}
-			every_controlled_state = {
-				limit = {
-					is_core_of = EST
-				}
-				add_compliance = 80
-			}
-			
 		}
 	}
 	

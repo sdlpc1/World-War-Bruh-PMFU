@@ -297,6 +297,9 @@ country_event = {
 		ROM = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		HUN = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		BUL = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		SPR = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		VIC = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		YUG = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		CAN = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		SAF = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		AST = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
@@ -308,6 +311,16 @@ country_event = {
 		SPR = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		RAJ = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
 		HOL = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		hidden_effect = {
+			GER = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			ITA = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			ROM = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			HUN = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			BUL = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			SPR = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			VIC = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			YUG = { add_ideas = GER_africaaaaaaaaaaaaaa }
+		}
 		# enable ports on francce
 		FRA = { set_technology = { naval_base_construction = 1 popup = no } }
 	}

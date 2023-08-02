@@ -1,4 +1,5 @@
 #!gfx:interface\lw_goals.gfx
+#!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 #!gfx:interface\replace\bruh_interface.gfx
 #!gfx:interface\replace\bruh_bra_interface.gfx
@@ -568,7 +569,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = takuo_godo
+			show_ideas_tooltip = JAP_takuo_godo
 			add_political_power = 100
 		}
 	}
@@ -1473,14 +1474,14 @@ focus_tree = {
 						is_core_of = CHI
 						is_on_continent = asia
 					}
-					add_compliance = 100
+					add_compliance = 80
 				}
-				every_state = {
-					limit = {
-						has_dynamic_modifier = { modifier = factory_reduction_balancer }
-					}
-					remove_dynamic_modifier = { modifier = factory_reduction_balancer }
-				}
+				# every_state = {
+				# 	limit = {
+				# 		has_dynamic_modifier = { modifier = factory_reduction_balancer }
+				# 	}
+				# 	remove_dynamic_modifier = { modifier = factory_reduction_balancer }
+				# }
 				hidden_effect = {
 					JAP = {
 						army_experience = 550
@@ -3897,6 +3898,9 @@ focus_tree = {
 				ROM = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				HUN = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				BUL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				SPR = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				VIC = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				YUG = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				CAN = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				SAF = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				AST = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
@@ -3907,7 +3911,17 @@ focus_tree = {
 				BRA = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				SPR = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
 				RAJ = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
-				HOL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }	
+				HOL = { remove_ideas = GER_africa_hp set_technology = { africa_hp_off = 1 popup = no } }
+				hidden_effect = {
+					GER = { remove_ideas = GER_africaaaaaaaaaaaaaa }
+					ITA = { remove_ideas = GER_africaaaaaaaaaaaaaa }
+					ROM = { remove_ideas = GER_africaaaaaaaaaaaaaa }
+					HUN = { remove_ideas = GER_africaaaaaaaaaaaaaa }
+					BUL = { remove_ideas = GER_africaaaaaaaaaaaaaa }
+					SPR = { remove_ideas = GER_africaaaaaaaaaaaaaa }
+					VIC = { remove_ideas = GER_africaaaaaaaaaaaaaa }
+					YUG = { remove_ideas = GER_africaaaaaaaaaaaaaa }
+				}
 			}
 			# custom_effect_tooltip = JAP_strike_west_tt
 			add_timed_idea = { idea = for_the_emperor_idea days = 120 }

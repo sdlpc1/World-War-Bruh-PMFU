@@ -13,6 +13,8 @@ add_ideas = {
 	DEN_surrender
 	stupid_ai
 	peace_training
+	neutrality_idea
+	neutrality_idea2 
 }
 
 # MP_garrison_division_standard = yes

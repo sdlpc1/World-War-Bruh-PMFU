@@ -35,7 +35,8 @@ on_actions = {
 					}
 				}
 				JAP = {
-					set_equipment_fraction = 0.5
+					add_ideas = JAP_no_china_industry_reducer
+					set_equipment_fraction = 0.4
 				}
 			}
 		}
@@ -60,6 +61,28 @@ on_actions = {
 					amount = 1500
 					producer = JAP
 				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = POL
+					FROM = { is_in_faction_with = GER }
+					has_global_flag = sov_yes_pact
+					SOV = { exists = yes }
+				}
+				SOV = { transfer_state = 96 }
+				SOV = { transfer_state = 95 }
+				SOV = { transfer_state = 94 }
+				SOV = { transfer_state = 93 }
+				SOV = { transfer_state = 91 }
+				SOV = { transfer_state = 97 }
+				SOV = { transfer_state = 89 }
+				SOV = { transfer_state = 784 }
+				SOV = { country_event = germany.15 }
 			}
 		}
 	}

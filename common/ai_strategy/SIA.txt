@@ -24,7 +24,7 @@ SIA_rubber_refs = {
 	}
 	ai_strategy = {
 		type = building_target
-		id = synthetic_rubber_refinery
+		id = synthetic_refinery
 		value = 1000
 	}
 }

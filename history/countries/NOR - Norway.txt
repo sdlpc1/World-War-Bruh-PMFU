@@ -14,6 +14,9 @@ set_variable = { allies_poster_center_icon_frame = 1 }
 add_ideas = {
 	limited_conscription
 	peace_training
+	neutrality_idea
+	neutrality_idea2 
+	stupid_ai
 }
 
 # MP_garrison_division_standard = yes

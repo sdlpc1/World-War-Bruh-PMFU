@@ -1796,19 +1796,19 @@ technologies = {
 
 	synth_oil_experiments = {
 
-		enable_building = {
-			building = synthetic_refinery
-			level = 3
-		}
+		# enable_building = {
+		# 	building = synthetic_refinery
+		# 	level = 3
+		# }
 				
 		path = {
 			leads_to_tech = oil_processing 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = rubber_processing 
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = rubber_processing 
+		# 	research_cost_coeff = 1
+		# }
 		
 		research_cost = 3
 		start_year = 1936
@@ -1865,6 +1865,11 @@ technologies = {
 		
 		fuel_gain_factor_from_states = 0.5
 
+		enable_building = {
+			building = synthetic_refinery #synthetic_rubber_refinery
+			level = 3
+		}
+
 		start_year = 1938
 
 		path = {
@@ -1876,7 +1881,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = -1 y = 4 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
@@ -1919,6 +1924,14 @@ technologies = {
 	
 	improved_oil_processing = {
 		
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery #synthetic_rubber_refinery
+				resource = rubber
+				amount = 10
+			}
+		}
+
 		fuel_gain_factor_from_states = 0.5
 
 		path = {
@@ -1931,7 +1944,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = -1 y = 6 }
+			position = { x = 0 y = 6 }
 		}
 		
 		categories = {
@@ -1979,6 +1992,14 @@ technologies = {
 	
 	advanced_oil_processing = {
 
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery #synthetic_rubber_refinery
+				resource = rubber
+				amount = 10
+			}
+		}
+
 		fuel_gain_factor_from_states = 0.5
 
 		path = {
@@ -1991,7 +2012,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = -1 y = 8 }
+			position = { x = 0 y = 8 }
 		}
 		
 		categories = {
@@ -2034,6 +2055,14 @@ technologies = {
 
 	modern_oil_processing = {
 
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery #synthetic_rubber_refinery
+				resource = rubber
+				amount = 10
+			}
+		}
+
 		fuel_gain_factor_from_states = 0.5
 		
 		research_cost = 1.5
@@ -2041,7 +2070,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = -1 y = 10 }
+			position = { x = 0 y = 10 }
 		}
 		
 		categories = {
@@ -2074,237 +2103,237 @@ technologies = {
 	}
 
 	#####################################
-	rubber_processing = {
+	# rubber_processing = {
 
-		enable_building = {
-			building = synthetic_rubber_refinery
-			level = 3
-		}
+	# 	enable_building = {
+	# 		building = synthetic_refinery #synthetic_rubber_refinery
+	# 		level = 3
+	# 	}
 		
-		path = {
-			leads_to_tech = improved_rubber_processing
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = improved_rubber_processing
+	# 		research_cost_coeff = 1
+	# 	}
 		
-		research_cost = 1.5
-		start_year = 1938
+	# 	research_cost = 1.5
+	# 	start_year = 1938
 		
-		folder = {
-			name = industry_folder
-			position = { x = 1 y = 4 }
-		}
+	# 	folder = {
+	# 		name = industry_folder
+	# 		position = { x = 1 y = 4 }
+	# 	}
 		
-		categories = {
-			industry
-			synth_resources
-			year_1938
-		}
+	# 	categories = {
+	# 		industry
+	# 		synth_resources
+	# 		year_1938
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-				}
-				has_war = yes
-				factor = 15
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 10
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 20
-			}	
-			modifier = {
-				factor = 0.5
-				rubber > 30
-			}	
-			modifier = {
-				factor = 1200
-				OR = {
-					tag = SIA
-					tag = BRA
-					tag = GER
-				}
-			}		
-		}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			OR = {
+	# 				tag = GER
+	# 				tag = ITA
+	# 			}
+	# 			has_war = yes
+	# 			factor = 15
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 10
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 30
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1200
+	# 			OR = {
+	# 				tag = SIA
+	# 				tag = BRA
+	# 				tag = GER
+	# 			}
+	# 		}		
+	# 	}
 		
-		ai_research_weights = {
-			rubber = -2.0
-		}
+	# 	ai_research_weights = {
+	# 		rubber = -2.0
+	# 	}
 		
-		show_effect_as_desc = yes
-	}
+	# 	show_effect_as_desc = yes
+	# }
 	
-	improved_rubber_processing = {
+	# improved_rubber_processing = {
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_rubber_refinery
-				resource = rubber
-				amount = 10
-			}
-		}
+	# 	on_research_complete = {
+	# 		modify_building_resources = {
+	# 			building = synthetic_refinery #synthetic_rubber_refinery
+	# 			resource = rubber
+	# 			amount = 10
+	# 		}
+	# 	}
 
-		path = {
-			leads_to_tech = advanced_rubber_processing
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = advanced_rubber_processing
+	# 		research_cost_coeff = 1
+	# 	}
 		
-		research_cost = 1.5
-		start_year = 1940
+	# 	research_cost = 1.5
+	# 	start_year = 1940
 		
-		folder = {
-			name = industry_folder
-			position = { x = 1 y = 6 }
-		}
+	# 	folder = {
+	# 		name = industry_folder
+	# 		position = { x = 1 y = 6 }
+	# 	}
 		
-		categories = {
-			industry
-			synth_resources
-			year_1940
-		}
+	# 	categories = {
+	# 		industry
+	# 		synth_resources
+	# 		year_1940
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-				}
-				has_war = yes
-				factor = 15
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 10
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 20
-			}	
-			modifier = {
-				factor = 0.5
-				rubber > 30
-			}			
-		}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			OR = {
+	# 				tag = GER
+	# 				tag = ITA
+	# 			}
+	# 			has_war = yes
+	# 			factor = 15
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 10
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 30
+	# 		}			
+	# 	}
 		
-		ai_research_weights = {
-			rubber = -2.0
-		}
+	# 	ai_research_weights = {
+	# 		rubber = -2.0
+	# 	}
 		
-		show_effect_as_desc = yes
-	}
+	# 	show_effect_as_desc = yes
+	# }
 	
-	advanced_rubber_processing = {
+	# advanced_rubber_processing = {
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_rubber_refinery
-				resource = rubber
-				amount = 10
-			}
-		}
+	# 	on_research_complete = {
+	# 		modify_building_resources = {
+	# 			building = synthetic_refinery #synthetic_rubber_refinery
+	# 			resource = rubber
+	# 			amount = 10
+	# 		}
+	# 	}
 
-		path = {
-			leads_to_tech = modern_rubber_processing
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = modern_rubber_processing
+	# 		research_cost_coeff = 1
+	# 	}
 		
-		research_cost = 1.5
-		start_year = 1942
+	# 	research_cost = 1.5
+	# 	start_year = 1942
 		
-		folder = {
-			name = industry_folder
-			position = { x = 1 y = 8 }
-		}
+	# 	folder = {
+	# 		name = industry_folder
+	# 		position = { x = 1 y = 8 }
+	# 	}
 		
-		categories = {
-			industry
-			synth_resources
-			year_1942
-		}
+	# 	categories = {
+	# 		industry
+	# 		synth_resources
+	# 		year_1942
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = GER
-					tag = ITA
-				}
-				has_war = yes
-				factor = 15
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 10
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 20
-			}	
-			modifier = {
-				factor = 0.5
-				rubber > 30
-			}			
-		}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			OR = {
+	# 				tag = GER
+	# 				tag = ITA
+	# 			}
+	# 			has_war = yes
+	# 			factor = 15
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 10
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 30
+	# 		}			
+	# 	}
 		
-		ai_research_weights = {
-			rubber = -2.0
-		}
+	# 	ai_research_weights = {
+	# 		rubber = -2.0
+	# 	}
 		
-		show_effect_as_desc = yes
-	}
+	# 	show_effect_as_desc = yes
+	# }
 
-	modern_rubber_processing = {
+	# modern_rubber_processing = {
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_rubber_refinery
-				resource = rubber
-				amount = 10
-			}
-		}
+	# 	on_research_complete = {
+	# 		modify_building_resources = {
+	# 			building = synthetic_refinery #synthetic_rubber_refinery
+	# 			resource = rubber
+	# 			amount = 10
+	# 		}
+	# 	}
 		
-		research_cost = 1.5
-		start_year = 1944
+	# 	research_cost = 1.5
+	# 	start_year = 1944
 		
-		folder = {
-			name = industry_folder
-			position = { x = 1 y = 10 }
-		}
+	# 	folder = {
+	# 		name = industry_folder
+	# 		position = { x = 1 y = 10 }
+	# 	}
 		
-		categories = {
-			industry
-			synth_resources
-			year_1944
-		}
+	# 	categories = {
+	# 		industry
+	# 		synth_resources
+	# 		year_1944
+	# 	}
 		
-		ai_will_do = {
-			factor = 0.5
-			modifier = {
-				factor = 0.5
-				rubber > 10
-			}
-			modifier = {
-				factor = 0.5
-				rubber > 20
-			}	
-			modifier = {
-				factor = 0.5
-				rubber > 30
-			}			
-		}
+	# 	ai_will_do = {
+	# 		factor = 0.5
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 10
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			rubber > 30
+	# 		}			
+	# 	}
 		
-		ai_research_weights = {
-			rubber = -2.0
-		}
+	# 	ai_research_weights = {
+	# 		rubber = -2.0
+	# 	}
 		
-		show_effect_as_desc = yes
-	}
+	# 	show_effect_as_desc = yes
+	# }
 	#####################################
 	
 	construction1 = {

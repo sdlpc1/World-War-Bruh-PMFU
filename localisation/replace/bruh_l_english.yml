@@ -256,7 +256,7 @@
  bold_attack_spririt:1 "Reliable Command"
  static_warfare_spirit_fort_tt:0 "£defence_texticon Fort Defense §G+5.0%§!"
  GBP_NO_EXPED_WARN:0 "§RYOU WONT BE ABLE TO RECIVE EXPEDITIONARY FORCES UNLESS THE NATION SENDING ALSO HAS GBP\n\nONLY EXCEPTION IS SENDING EXPEDITIONARIES TO ITALY§!"
-
+ DDAY_WALL_ENTRENCHMENT:0 "The State of the Pacific"
  ### FUEL SYSTEM ###
  country_fuel_info_tt:0 "[?THIS.fuel_k|.1]K/[?THIS.max_fuel_k|.1]K"
  country_fuel_name_tt:0 "§H[THIS.GetFlag][THIS.GetAdjective]§! Fuel" 
@@ -318,7 +318,6 @@
  mountain_training_effect:0 "Enables §HMountain Training§!\n§HAll Infantry:\n    Mountain§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
  motti_tactic:0 "Enables §HMotti Tactics§!\n§HAll Infantry:\n    HP: §G+100%    §!\nForest§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!\n§HMilitia and Garrisons:\n    HP: §G+100%"
  EXPED_GBP_NOT_ALLOWED_TT:0 "§RYou are not allowed to expeditionary forces to a nation with GBP without having GBP yourself\n\nExcept Germany sending expeditionaries to Italy"
-
  MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
  GetAdmiralNameTitle_def:0 "Admiral [THIS.GetName]"
  GetShipCount_def:0 "£fleet_texticon Ship Count: [?THIS.get_num_ships]"

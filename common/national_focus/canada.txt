@@ -1,4 +1,5 @@
 #!gfx:interface\lw_goals.gfx
+#!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 #!gfx:interface\replace\bruh_interface.gfx
 #!gfx:interface\replace\bruh_bra_interface.gfx
@@ -1342,7 +1343,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_technology = { synth_oil_experiments = 1 }
-			set_technology = { rubber_processing = 1 }
+			set_technology = { oil_processing = 1 }
 			random_owned_controlled_state = {
 				prioritize = { 682 }
 				limit = {
@@ -1385,7 +1386,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = synthetic_rubber_refinery
+					type = synthetic_refinery #synthetic_rubber_refinery
 					level = 2
 					instant_build = yes
 				}

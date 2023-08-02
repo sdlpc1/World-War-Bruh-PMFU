@@ -43,11 +43,17 @@ annex_manpower_reudction  = {
 factory_reduction_balancer  = {
 	icon = GFX_idea_SPR_disbanded_army
 	
-	local_factories = -0.15
+	local_factories = -0.3
 }
 
 SOV_major_cities_lost = {
 	icon = GFX_modifiers_generic_supply
 	
 	supply_consumption_factor = SOV.major_city_status
+}
+
+DDAY_WALL_ENTRENCHMENT = {
+	max_dig_in = global.DDAY_WALL_ENTRENCHMENT_MOD
+
+	icon = GFX_idea_generic_fortify_the_borders
 }

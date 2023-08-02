@@ -1587,6 +1587,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			14 = {
 				set_building_level  = {
@@ -1608,6 +1609,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			set_country_flag = GER_atlantik_west_france_completed_normal
 		}
@@ -1669,6 +1671,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			14 = {
 				set_building_level  = {
@@ -1690,6 +1693,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			set_country_flag = GER_atlantik_west_france_mission_completed
 			clr_country_flag = GER_atlantik_auto_in_progress
@@ -1764,6 +1768,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			19 = {
 				set_building_level  = {
@@ -1785,6 +1790,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			23 = {
 				set_building_level  = {
@@ -1806,6 +1812,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			set_country_flag = GER_atlantik_south_france_completed_normal
 		}
@@ -1867,6 +1874,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			19 = {
 				set_building_level  = {
@@ -1888,6 +1896,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			23 = {
 				set_building_level  = {
@@ -1909,6 +1918,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			set_country_flag = GER_atlantik_south_france_mission_completed
 			clr_country_flag = GER_atlantik_auto_in_progress
@@ -1976,6 +1986,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			29 = {
 				set_building_level  = {
@@ -1997,6 +2008,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			set_country_flag = GER_atlantik_north_france_completed_normal
 		}
@@ -2058,6 +2070,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			29 = {
 				set_building_level  = {
@@ -2079,6 +2092,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			set_country_flag = GER_atlantik_north_france_mission_completed
 			clr_country_flag = GER_atlantik_auto_in_progress
@@ -2160,6 +2174,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			35 = {
 				set_building_level  = {
@@ -2181,6 +2196,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			7 = {
 				set_building_level  = {
@@ -2202,6 +2218,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			36 = {
 				set_building_level  = {
@@ -2223,6 +2240,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			set_country_flag = GER_atlantik_benelux_completed_normal
 		}
@@ -2284,6 +2302,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			35 = {
 				set_building_level  = {
@@ -2305,6 +2324,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			7 = {
 				set_building_level  = {
@@ -2326,6 +2346,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			36 = {
 				set_building_level  = {
@@ -2347,6 +2368,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			set_country_flag = GER_atlantik_benelux_mission_completed
 			clr_country_flag = GER_atlantik_auto_in_progress
@@ -2428,6 +2450,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			59 = {
 				set_building_level  = {
@@ -2449,6 +2472,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			58 = {
 				set_building_level  = {
@@ -2470,6 +2494,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			99 = {
 				set_building_level  = {
@@ -2491,6 +2516,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			set_country_flag = GER_atlantik_germany_completed_normal
 		}
@@ -2552,6 +2578,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			59 = {
 				set_building_level  = {
@@ -2573,6 +2600,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			58 = {
 				set_building_level  = {
@@ -2594,6 +2622,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			99 = {
 				set_building_level  = {
@@ -2615,6 +2644,7 @@ special_projects = {
 					instant_build = yes
 				}
 				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 			}
 			set_country_flag = GER_atlantik_germany_mission_completed
 			clr_country_flag = GER_atlantik_auto_in_progress

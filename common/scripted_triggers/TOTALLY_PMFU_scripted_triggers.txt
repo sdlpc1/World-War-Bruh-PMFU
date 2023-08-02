@@ -175,6 +175,24 @@ europe_dday_coastline = {
 	}
 }
 
+europe_pacific_modifier_states_non_atlantikwall = {
+	OR = {
+		state = 31
+		state = 22
+		state = 21
+		state = 735
+		state = 158
+		state = 162
+		state = 2
+		state = 117
+		state = 156
+		state = 157
+		state = 161
+		state = 160
+		state = 736
+	}
+}
+
 GER_flak_36_states = {
 	OR = {
 		state = 64

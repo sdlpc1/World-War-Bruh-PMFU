@@ -1,4 +1,5 @@
 #!gfx:interface\lw_goals.gfx
+#!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 #!gfx:interface\replace\bruh_interface.gfx
 #!gfx:interface\replace\bruh_bra_interface.gfx
@@ -1444,7 +1445,7 @@ focus_tree = {
 			329 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = synthetic_rubber_refinery
+					type = synthetic_refinery #synthetic_rubber_refinery
 					level = 2
 					instant_build = yes
 				}
@@ -1453,7 +1454,7 @@ focus_tree = {
 			820 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = synthetic_rubber_refinery
+					type = synthetic_refinery #synthetic_rubber_refinery
 					level = 2
 					instant_build = yes
 				}

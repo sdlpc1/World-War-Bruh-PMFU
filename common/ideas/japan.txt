@@ -1,5 +1,20 @@
 ideas = {
 
+	hidden_ideas = {
+		JAP_no_china_industry_reducer = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.075
+				production_speed_dockyard_factor = -0.15
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+			}
+		}
+	}
 	country = {
 	
 		## NO EQ CAPTURE

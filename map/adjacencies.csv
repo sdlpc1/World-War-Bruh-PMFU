@@ -242,9 +242,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1787;4856;impassable;-1;-1;-1;-1;-1;;Gobi
 12612;4856;impassable;-1;-1;-1;-1;-1;;Gobi
 12612;4655;impassable;-1;-1;-1;-1;-1;;Gobi
-13228;1048;impassable;-1;-1;-1;-1;-1;;Gibraltarimage.png
-13228;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
-4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
+13228;1048;impassable;-1;-1;-1;-1;-1;;Gibraltar
+13308;1048;impassable;-1;-1;-1;-1;-1;;Gibraltar
+13308;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
+13308;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
 6210;2998;impassable;-1;-1;-1;-1;-1;;Finland
 6210;80;impassable;-1;-1;-1;-1;-1;;Finland
