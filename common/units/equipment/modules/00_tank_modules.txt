@@ -656,7 +656,9 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_medium_td
+				tank_armament_tier_medium_td_1
+				tank_armament_tier_medium_td_2
+				tank_armament_tier_medium_td_3
 			}
 		}
 
@@ -869,7 +871,9 @@ equipment_modules = {
 				tank_armament_tier_aa
 				tank_armament_tier_heavy_aa
 				# tank_armament_tier_light_td
-				tank_armament_tier_medium_td
+				tank_armament_tier_medium_td_1
+				tank_armament_tier_medium_td_2
+				tank_armament_tier_medium_td_3
 			}
 		}
 
@@ -905,7 +909,9 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_armament_tier_assault
 				# tank_armament_tier_light_td
-				tank_armament_tier_medium_td
+				tank_armament_tier_medium_td_1
+				tank_armament_tier_medium_td_2
+				tank_armament_tier_medium_td_3
 			}
 		}
 		
@@ -966,7 +972,9 @@ equipment_modules = {
 				tank_armament_tier_aa
 				tank_armament_tier_heavy_aa
 				# tank_armament_tier_light_td
-				tank_armament_tier_medium_td
+				tank_armament_tier_medium_td_1
+				tank_armament_tier_medium_td_2
+				tank_armament_tier_medium_td_3
 			}
 		}
 		
@@ -1216,7 +1224,9 @@ equipment_modules = {
    # tank_armament_tier_heavy_3
 
    # tank_armament_tier_light_td
-   # tank_armament_tier_medium_td
+   # tank_armament_tier_medium_td_1
+   # tank_armament_tier_medium_td_2
+   # tank_armament_tier_medium_td_3
    # tank_armament_tier_aa
    # tank_armament_tier_heavy_aa
    # tank_armament_tier_arty
@@ -1943,7 +1953,8 @@ equipment_modules = {
 
 	tank_medium_td_placeholder = { ###6
 		abbreviation = "mtdp"
-		category = tank_armament_tier_medium_td
+		category = tank_armament_tier_medium_td_1
+		gui_category = tank_armament_tier_medium_td
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 
@@ -1967,7 +1978,8 @@ equipment_modules = {
 
 	tank_medium_td_1 = { ###6
 		abbreviation = "mtd"
-		category = tank_armament_tier_medium_td
+		category = tank_armament_tier_medium_td_2
+		gui_category = tank_armament_tier_medium_td
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 
@@ -1991,7 +2003,8 @@ equipment_modules = {
 
 	tank_medium_td_2 = { ###6
 		abbreviation = "mtd2"
-		category = tank_armament_tier_medium_td
+		category = tank_armament_tier_medium_td_3
+		gui_category = tank_armament_tier_medium_td
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_medium_td_1
@@ -2753,7 +2766,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 6
 			hard_attack = 2
-			air_attack = 1
+			# air_attack = 1
 			defense = 2
 			build_cost_ic = 3
 		}

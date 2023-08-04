@@ -224,7 +224,7 @@ technologies = {
 		}
 	
 		path = {
-			leads_to_tech = ger_p34_tank_2  # Second Wave Upgrade
+			leads_to_tech = ger_p3_tank_2  # Second Wave Upgrade
 			research_cost_coeff = 1
 		}
 		
@@ -253,7 +253,7 @@ technologies = {
 		}
 	
 		path = {
-			leads_to_tech = ger_p34_tank_2  # Second Wave Upgrade
+			leads_to_tech = ger_p4_tank_2  # Second Wave Upgrade
 			research_cost_coeff = 1
 		}
 		
@@ -267,7 +267,65 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
-			year_1936
+			year_1939
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ger_p3_tank_2 = { 
+
+		enable_equipments = {
+			ger_medium_tank_chassis_p3_2
+		}
+	
+		path = {
+			leads_to_tech = ger_p34_tank_2  # Second Wave Upgrade
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 1940
+		folder = {
+			name = ger_armour_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+			year_1940
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ger_p4_tank_2 = { 
+
+		enable_equipments = {
+			ger_medium_tank_chassis_p4_2
+		}
+	
+		path = {
+			leads_to_tech = ger_p34_tank_2  # Second Wave Upgrade
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 1940
+		folder = {
+			name = ger_armour_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+			year_1940
 		}
 		
 		ai_will_do = {

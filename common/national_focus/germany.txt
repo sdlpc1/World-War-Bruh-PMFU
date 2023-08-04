@@ -2143,7 +2143,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = tnk_bonus
 				bonus = 0.75
-				uses = 1
+				uses = 2
 				category = cat_medium_armor
 			}
 			add_tech_bonus = {
@@ -3364,7 +3364,10 @@ focus_tree = {
 				limit = {
 					GER  = { is_ai = yes }
 				}
-				FRA  = { has_capitulated = yes }
+				VIC = {
+					has_country_flag = VIC_france_capped
+				}
+				# FRA  = { has_capitulated = yes }
 			}
 		}
 

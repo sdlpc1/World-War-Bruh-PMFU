@@ -2,7 +2,7 @@ upgrades = {
 
 	tank_nsb_engine_upgrade = {
 		abbreviation = "eng"
-		max_level = 20 #each level represents ~50HP
+		max_level = 2 #each level represents ~50HP
 		cost = land
 
 		linear_cost = {
@@ -14,9 +14,9 @@ upgrades = {
 		}
 
 		resource_cost_thresholds = {
-			10 = { #higher level engines do require more strategic resources
-				chromium = 1
-			}
+			# 10 = { #higher level engines do require more strategic resources
+			# 	chromium = 1
+			# }
 		}
 
 		maximum_speed = 0.1
@@ -24,13 +24,13 @@ upgrades = {
 		add_stats = {
 			fuel_consumption = 0.05
 			build_cost_ic = 0.05
-			breakthrough = 2
+			breakthrough = 1
 		}
 	}
 
 	tank_nsb_armor_upgrade = {
 		abbreviation = "arm"
-		max_level = 20 #each level represents ~10mm of armor 
+		max_level = 4 #each level represents ~10mm of armor 
 		cost = land
 
 		linear_cost = {
@@ -45,24 +45,24 @@ upgrades = {
 		}
 
 		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
-			5 = { #more armor requires more resources
+			3 = { #more armor requires more resources
 				steel = 1 
 			}
-			10 = {
-				steel = 2
-				chromium = 1
-			}
-			15 = {
-				steel = 2
-				chromium = 2
-			}
+			# 10 = {
+			# 	steel = 2
+			# 	chromium = 1
+			# }
+			# 15 = {
+			# 	steel = 2
+			# 	chromium = 2
+			# }
 		}
 
 		maximum_speed = -0.05
 		reliability = 0.025 # was -0.025 before
 		armor_value = 0.075
 		add_stats = {
-			breakthrough = 1.25
+			breakthrough = 0.6
 			build_cost_ic = 0.25
 		}
 	}
@@ -97,7 +97,35 @@ upgrades = {
 
 		maximum_speed = -0.05
 		add_stats = {
-			breakthrough = 10
+			breakthrough = 5
+			armor_value = 15
+			reliability = 0.05
+			build_cost_ic = 5
+		}
+	}
+
+	tank_nsb_light_armor_2_upgrade = {
+		abbreviation = "arm"
+		max_level = 1 #each level represents ~10mm of armor 
+		cost = land
+
+		linear_cost = {
+			cost_by_level = 0
+			cost_by_level_for_licensed_equipment = 2
+		}
+
+		level_requirements = {
+		}
+
+		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
+			1 = {
+				steel = 5
+			}
+		}
+
+		maximum_speed = -0.05
+		add_stats = {
+			breakthrough = 5
 			armor_value = 15
 			reliability = 0.05
 			build_cost_ic = 5
@@ -151,7 +179,7 @@ upgrades = {
 
 		maximum_speed = -0.025
 		add_stats = {
-			breakthrough = 5
+			breakthrough = 2.5
 			armor_value = 7.5
 			reliability = 0.025
 			build_cost_ic = 1.5
@@ -189,7 +217,7 @@ upgrades = {
 		add_stats = {
 			fuel_consumption = 0.1
 			build_cost_ic = 1.5
-			breakthrough = 2
+			breakthrough = 1
 		}
 	}
 	tank_nsb_Heavy_engine_1_upgrade = {
@@ -223,6 +251,34 @@ upgrades = {
 		add_stats = {
 			fuel_consumption = 0.1
 			build_cost_ic = 2
+			breakthrough = 1
+		}
+	}
+	tank_nsb_Heavy_engine_2_upgrade = {
+		abbreviation = "eng"
+		max_level = 1
+		cost = land
+
+		linear_cost = {
+			cost_by_level = 0
+			cost_by_level_for_licensed_equipment = 5
+		}
+
+		level_requirements = {
+		}
+
+		resource_cost_thresholds = {
+			1 = {
+				steel = 2 
+			}
+		}
+
+		maximum_speed = 0.1
+		
+		add_stats = {
+			fuel_consumption = 0.1
+			build_cost_ic = 2
+			breakthrough = 1
 		}
 	}
 	tank_nsb_med_armor_2_upgrade = {
@@ -266,7 +322,7 @@ upgrades = {
 		maximum_speed = -0.025
 		reliability = 0.025
 		add_stats = {
-			breakthrough = 5
+			breakthrough = 2.5
 			armor_value = 5
 			build_cost_ic = 2
 		}
@@ -302,7 +358,7 @@ upgrades = {
 		maximum_speed = -0.025
 		reliability = 0.025
 		add_stats = {
-			breakthrough = 2.5
+			breakthrough = 1.25
 			armor_value = 7.5
 			build_cost_ic = 2
 		}
@@ -341,7 +397,7 @@ upgrades = {
 		maximum_speed = -0.025
 		reliability = 0.02
 		add_stats = {
-			breakthrough = 2.5
+			breakthrough = 1.25
 			armor_value = 5
 			build_cost_ic = 1.1
 		}
@@ -378,7 +434,7 @@ upgrades = {
 		maximum_speed = -0.02
 		reliability = 0.02
 		add_stats = {
-			breakthrough = 2
+			breakthrough = 1
 			armor_value = 7
 			build_cost_ic = 2.2
 		}

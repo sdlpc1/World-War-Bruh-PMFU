@@ -2963,7 +2963,7 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = yes
+			# is_subject = yes
 		}
 		
 		bypass = {

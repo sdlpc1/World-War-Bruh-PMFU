@@ -1047,6 +1047,9 @@ equipments = {
 				}
 			}
 		}
+		upgrades = {
+			tank_nsb_Heavy_engine_2_upgrade
+		}
 		maximum_speed = 4.5
 		build_cost_ic = 36
 		reliability = 0.75
@@ -1063,6 +1066,9 @@ equipments = {
 		archetype = heavy_tank_chassis
 		priority = 2000
 		module_slots = inherit
+		upgrades = {
+			tank_nsb_Heavy_engine_2_upgrade
+		}
 		maximum_speed = 5
 		build_cost_ic = 43
 		reliability = 0.75

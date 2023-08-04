@@ -1796,10 +1796,10 @@ technologies = {
 
 	synth_oil_experiments = {
 
-		# enable_building = {
-		# 	building = synthetic_refinery
-		# 	level = 3
-		# }
+		enable_building = {
+			building = synthetic_refinery
+			level = 3
+		}
 				
 		path = {
 			leads_to_tech = oil_processing 
@@ -1865,10 +1865,10 @@ technologies = {
 		
 		fuel_gain_factor_from_states = 0.5
 
-		enable_building = {
-			building = synthetic_refinery #synthetic_rubber_refinery
-			level = 3
-		}
+		# enable_building = {
+		# 	building = synthetic_refinery #synthetic_rubber_refinery
+		# 	level = 3
+		# }
 
 		start_year = 1938
 

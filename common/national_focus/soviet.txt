@@ -7238,7 +7238,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_arty3
-		icon = GFX_SOV_stalins_hammer
+		icon = GFX_focus_CIC_stalins_organ
 		prerequisite = { focus = SOV_arty2 }
 		x = 0
 		y = 2

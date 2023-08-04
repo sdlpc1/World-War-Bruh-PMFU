@@ -4951,8 +4951,8 @@ focus_tree = {
 					surrender_progress < 0.5
 				}
 			}
-			FRA = {
-				has_capitulated = yes
+			VIC = {
+				has_country_flag = VIC_france_capped
 			}
 
 		}

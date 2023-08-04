@@ -57,6 +57,9 @@ equipments = {
 			engine_type_slot = inherit
 			special_type_slot_2 = inherit
 		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
+		}
 		maximum_speed = 7
 		build_cost_ic = 10
 		reliability = 0.85
@@ -86,6 +89,9 @@ equipments = {
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_2 = inherit
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 7.5
 		build_cost_ic = 12
@@ -119,6 +125,9 @@ equipments = {
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.5
 		build_cost_ic = 12
@@ -154,6 +163,9 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6
 		build_cost_ic = 14
@@ -191,6 +203,9 @@ equipments = {
 					tank_engine_type
 				}
 			}
+		}
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 4
 		build_cost_ic = 4
@@ -278,6 +293,7 @@ equipments = {
 		}
 		upgrades = {
 			tank_nsb_med_armor_2_upgrade
+			tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 1
 		build_cost_ic = 50000
@@ -363,7 +379,7 @@ equipments = {
 		maximum_speed = 6
 		build_cost_ic = 28
 		reliability = 0.75
-		armor_value = 75
+		armor_value = 70
 		defense = 8
 		breakthrough = 60
 	}
@@ -400,6 +416,7 @@ equipments = {
 		}
 		upgrades = {
 			tank_nsb_med_armor_3_upgrade
+			tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 6
 		build_cost_ic = 32
@@ -449,6 +466,9 @@ equipments = {
 			}
 			special_type_slot_4 = inherit
 		}
+		upgrades = {
+			tank_nsb_Heavy_engine_1_upgrade
+		}
 		maximum_speed = 4.5
 		build_cost_ic = 30
 		reliability = 0.7
@@ -492,6 +512,9 @@ equipments = {
 			}
 			special_type_slot_3 = inherit
 			special_type_slot_4 = inherit
+		}
+		upgrades = {
+			tank_nsb_Heavy_engine_1_upgrade
 		}
 		maximum_speed = 4.5
 		build_cost_ic = 34
@@ -619,6 +642,9 @@ equipments = {
 	# 		special_type_slot_4 = inherit
 	# 		special_type_slot_5 = inherit
 	# 	}
+	# upgrades = {
+	# 	tank_nsb_Heavy_engine_1_upgrade
+	# }
 	# 	maximum_speed = 5.5
 	# 	build_cost_ic = 48
 	# 	reliability = 0.75

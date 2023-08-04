@@ -269,48 +269,48 @@ default = {
 			}
 		}
 	}
-	# ger_medium_tank_chassis_p3_2 = {
-	# 	pool = {
-	# 		icons = {
-	# 			"gfx/interface/technologies/tanks/ger/ger_p3_tank_1.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p3_tank_2.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p3_tank_3.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p3_tank_4.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p3_spg_1.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p3_td_1.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p3_td_2.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p34_td_1.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_ag_1.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_ag_2.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_spaa_1.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_spaa_2.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_spg_2.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_amph_tank_2.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_amph_tank_1.dds"
-	# 		}
-	# 	}
-	# }
-	# ger_medium_tank_chassis_p4_2 = {
-	# 	pool = {
-	# 		icons = {
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_tank_1.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_tank_2.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_tank_3.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_tank_4.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_tank_5.dds"
-	# 			"gfx/interface/technologies/tanks/ger/fin_medium_tank_3.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_td_1.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_td_2.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p34_td_1.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_spaa_1.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_spaa_2.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_spg_1.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_spg_2.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_p4_spaa_3.dds"
-	# 			"gfx/interface/technologies/tanks/ger/ger_amph_tank_1.dds"
-	# 		}
-	# 	}
-	# }
+	ger_medium_tank_chassis_p3_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_p3_tank_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_tank_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_tank_4.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_spg_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_td_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_td_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p34_td_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_ag_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_ag_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spaa_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spg_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_amph_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_amph_tank_1.dds"
+			}
+		}
+	}
+	ger_medium_tank_chassis_p4_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_p4_tank_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_tank_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_tank_4.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_tank_5.dds"
+				"gfx/interface/technologies/tanks/ger/fin_medium_tank_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_td_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_td_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p34_td_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spaa_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spg_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spg_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spaa_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_amph_tank_1.dds"
+			}
+		}
+	}
 	ger_medium_tank_chassis_p5 = {
 		pool = {
 			icons = {

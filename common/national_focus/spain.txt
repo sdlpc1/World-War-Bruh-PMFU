@@ -2375,73 +2375,73 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-        id = SPA_garrison_the_iberian_wall
-        icon = GFX_focus_generic_military_mission
-        prerequisite = { focus = SPA_the_iberian_wall }
-        relative_position_id = SPA_the_iberian_wall
-        x = 0
-        y = 2
+	# focus = {
+    #     id = SPA_garrison_the_iberian_wall
+    #     icon = GFX_focus_generic_military_mission
+    #     prerequisite = { focus = SPA_the_iberian_wall }
+    #     relative_position_id = SPA_the_iberian_wall
+    #     x = 0
+    #     y = 2
 
-        cost = 5
+    #     cost = 5
 
-        available = {
-			has_completed_focus = SPA_abandon_neutrality
-        }
+    #     available = {
+	# 		has_completed_focus = SPA_abandon_neutrality
+    #     }
 
-        bypass = {
+    #     bypass = {
 
-        }
+    #     }
 
-        available_if_capitulated = no
+    #     available_if_capitulated = no
 
-        completion_reward = {
-			division_template = {
-				name = "Guardia Nacional"
-				division_names_group = SPA_INF_01
+    #     completion_reward = {
+	# 		division_template = {
+	# 			name = "Guardia Nacional"
+	# 			division_names_group = SPA_INF_01
 				
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-					artillery_brigade = { x = 3 y = 0 }
-					artillery_brigade = { x = 3 y = 1 }
-					anti_tank_brigade = { x = 4 y = 0 }
-					anti_tank_brigade = { x = 4 y = 1 }
-				}
-				support = {
-					hq_company = { x = 0 y = 0 } 
-					engineer = { x = 0 y = 1 }   
-					recon = { x = 0 y = 2 }
-					logistics_company_mot = { x = 0 y = 3 }
-					anti_air = { x = 1 y = 0 }
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_core_of = ROOT
-					is_controlled_by = ROOT
-				}
-				create_unit = {
-					division = "name = \"Guardia Nacional\" division_template = \"Guardia Nacional\" start_experience_factor = 0.5"
-					owner = SPR
-				}
-				create_unit = {
-					division = "name = \"Guardia Nacional\" division_template = \"Guardia Nacional\" start_experience_factor = 0.5"
-					owner = SPR
-				}
-				# create_unit = {
-				# 	division = "name = \"Guardia Nacional\" division_template = \"Guardia Nacional\" start_experience_factor = 0.5"
-				# 	owner = SPR
-				# }
-			}
-        }
-    }
+	# 			regiments = {
+	# 				infantry = { x = 0 y = 0 }
+	# 				infantry = { x = 0 y = 1 }
+	# 				infantry = { x = 0 y = 2 }
+	# 				infantry = { x = 1 y = 0 }
+	# 				infantry = { x = 1 y = 1 }
+	# 				infantry = { x = 1 y = 2 }
+	# 				infantry = { x = 2 y = 0 }
+	# 				infantry = { x = 2 y = 1 }
+	# 				artillery_brigade = { x = 3 y = 0 }
+	# 				artillery_brigade = { x = 3 y = 1 }
+	# 				anti_tank_brigade = { x = 4 y = 0 }
+	# 				anti_tank_brigade = { x = 4 y = 1 }
+	# 			}
+	# 			support = {
+	# 				hq_company = { x = 0 y = 0 } 
+	# 				engineer = { x = 0 y = 1 }   
+	# 				recon = { x = 0 y = 2 }
+	# 				logistics_company_mot = { x = 0 y = 3 }
+	# 				anti_air = { x = 1 y = 0 }
+	# 			}
+	# 		}
+	# 		every_owned_state = {
+	# 			limit = {
+	# 				is_core_of = ROOT
+	# 				is_controlled_by = ROOT
+	# 			}
+	# 			create_unit = {
+	# 				division = "name = \"Guardia Nacional\" division_template = \"Guardia Nacional\" start_experience_factor = 0.5"
+	# 				owner = SPR
+	# 			}
+	# 			create_unit = {
+	# 				division = "name = \"Guardia Nacional\" division_template = \"Guardia Nacional\" start_experience_factor = 0.5"
+	# 				owner = SPR
+	# 			}
+	# 			# create_unit = {
+	# 			# 	division = "name = \"Guardia Nacional\" division_template = \"Guardia Nacional\" start_experience_factor = 0.5"
+	# 			# 	owner = SPR
+	# 			# }
+	# 		}
+    #     }
+    # }
 
 	focus = {
 		id = SPA_retake_gibraltar

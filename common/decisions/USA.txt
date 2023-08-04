@@ -14,8 +14,8 @@ USA_island_fortification = {
 				}
 				has_full_control_of_state = 638
 			}
-			FRA = {
-				has_capitulated = yes
+			VIC = {
+				has_country_flag = VIC_france_capped
 			}
 			NOT = { has_country_flag = USA_island_fortification_ongoing }
 		}
@@ -72,8 +72,8 @@ USA_island_fortification = {
 				}
 				has_full_control_of_state = 632
 			}
-			FRA = {
-				has_capitulated = yes
+			VIC = {
+				has_country_flag = VIC_france_capped
 			}
 			NOT = { has_country_flag = USA_island_fortification_ongoing }
 		}
@@ -130,8 +130,8 @@ USA_island_fortification = {
 				}
 				has_full_control_of_state = 631
 			}
-			FRA = {
-				has_capitulated = yes
+			VIC = {
+				has_country_flag = VIC_france_capped
 			}
 			NOT = { has_country_flag = USA_island_fortification_ongoing }
 		}
@@ -188,8 +188,8 @@ USA_island_fortification = {
 				}
 				has_full_control_of_state = 629
 			}
-			FRA = {
-				has_capitulated = yes
+			VIC = {
+				has_country_flag = VIC_france_capped
 			}
 			NOT = { has_country_flag = USA_island_fortification_ongoing }
 		}
