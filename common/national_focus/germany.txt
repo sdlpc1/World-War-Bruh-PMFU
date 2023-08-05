@@ -2975,11 +2975,6 @@ focus_tree = {
 					set_equipment_fraction = 0
 				}
 				annex_country = { target = DEN transfer_troops = no }
-				ENG = {
-					transfer_state = 100
-					transfer_state = 101
-					transfer_state = 337
-				}
 				GER = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment

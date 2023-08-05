@@ -8,9 +8,6 @@ on_actions = {
 						rule = china_war_rule
 						option = DISABLED
 					}
-					NOT = {
-						has_global_flag = NO_ASIA
-					}
 					JAP = {
 						NOT = {
 							has_completed_focus = JAP_intervene_in_china
