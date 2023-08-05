@@ -1,0 +1,18 @@
+state={
+	id=799
+	name="STATE_799"
+	provinces={
+		12029 
+	}
+	manpower = 1 #234379
+	
+	state_category = enclave
+
+	history= {
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 5
+		}
+	}
+}

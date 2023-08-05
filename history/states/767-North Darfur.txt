@@ -1,0 +1,19 @@
+state=
+{
+	id=767
+	name="STATE_767" # North Darfur
+	manpower = 1 #8143
+	
+	state_category = wasteland
+	impassable = yes
+	
+	history= {
+		# buildings = {
+		# 	infrastructure = 0
+		# }
+		
+	}
+	provinces={
+		7987 8103 10900 13242 13240 13236 13239 13238 13241 4961
+	}
+}

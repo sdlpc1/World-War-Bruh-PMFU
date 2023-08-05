@@ -1,0 +1,30 @@
+state={
+	id=844
+	name="STATE_844"
+	manpower = 1512537
+	
+	state_category = rural
+	history = {
+		owner = ENG
+		buildings = {
+			infrastructure = 5
+			air_base = 1
+			12049 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			9947 9
+		}
+		victory_points = {
+			12049 5
+		}
+		victory_points = {
+			4073 3
+		}
+		add_core_of = WST
+	}
+	provinces={
+		12049 4073 1155 9947
+	}
+}

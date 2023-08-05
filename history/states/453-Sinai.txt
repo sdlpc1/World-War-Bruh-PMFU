@@ -1,0 +1,30 @@
+
+state={
+	id=453
+	name="STATE_453"
+	manpower = 11359
+	
+	state_category = wasteland
+	
+	
+	history = {
+		set_state_flag = UK_controls
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			10099 = {
+				naval_base = 5
+			}
+		}
+
+		add_core_of = WST
+		victory_points = {
+			10099  5
+		}
+
+	}
+
+	provinces={
+		1112 4161 10002 10099 11922 11979 12073 #9947 1155
+	}
+}
