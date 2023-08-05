@@ -762,7 +762,7 @@ if = {
 	}
 }
 
-set_research_slots = 6 #5
+set_research_slots = 5 #5
 set_stability = 0.4
 set_war_support = 0.45
 # Starting tech
