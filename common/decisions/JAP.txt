@@ -773,6 +773,69 @@ foreign_politics = {
 
 	}
 
+	JAP_northern_china_to_manchu = {
+		icon = generic_operation
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			616 = { #Ningxia
+				CONTROLLER = {
+					OR = {
+						tag = JAP
+						is_in_faction_with = JAP
+						is_puppet_of = JAP
+					}
+				}
+			}
+			621 = { #Suiyuan
+				CONTROLLER = {
+					OR = {
+						tag = JAP
+						is_in_faction_with = JAP
+						is_puppet_of = JAP
+					}
+				}
+			}
+			756 = { #Jinquan
+				CONTROLLER = {
+					OR = {
+						tag = JAP
+						is_in_faction_with = JAP
+						is_puppet_of = JAP
+					}
+				}
+			}
+			746 = { #Jinquan
+				CONTROLLER = {
+					OR = {
+						tag = JAP
+						is_in_faction_with = JAP
+						is_puppet_of = JAP
+					}
+				}
+			}
+			has_game_rule = {
+				rule = china_war_rule
+				option = DISABLED
+			}
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			MAN = {
+				transfer_state = 616 #Ningxia
+				transfer_state = 621 #Suiyuan
+				transfer_state = 756 #Jinquan
+				transfer_state = 746 #Ordos
+			}
+		}
+
+	}
+
 	JAP_sue_for_peace_CHI = {
 
 		allowed = {

@@ -1665,6 +1665,10 @@ focus_tree = {
 		cost = 5
 
 		available = {
+			has_game_rule = {
+				rule = china_war_rule
+				option = ENABLED
+			}
 			has_global_flag = JAP_china_has_capped
 		}
 
