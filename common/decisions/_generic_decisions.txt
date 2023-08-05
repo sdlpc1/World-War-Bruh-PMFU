@@ -93,23 +93,12 @@ host_decisions = {
 		}
 
 		complete_effect = {
-			JAP = {
-				set_variable = { collabo_CHI = has_collaboration@FRA }
-				multiply_variable = { collabo_CHI = 100 }
-				every_owned_state = {
-					limit = {
-						is_core_of = CHI
-					}
-					add_compliance = JAP.collabo_CHI
-				}
-			}
 			set_global_flag = HOST_SSJW_END
 			JAP = {
 				add_timed_idea = {
 					idea = spirit_of_bozo_japan
 					days = 365
 				}
-				unlock_national_focus = JAP_secure_china
 			}		
 			USA = {
 				add_offsite_building = { type = arms_factory level = 10 }

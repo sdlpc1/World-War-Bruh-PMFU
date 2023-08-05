@@ -1425,13 +1425,7 @@ focus_tree = {
 				}
 				NOT = { country_exists = CHI }
 			}
-			else_if = {
-				limit = {
-					has_game_rule = {
-						rule = china_war_rule
-						option = DISABLED
-					}
-				}
+			else = {
 				always = no
 			}
 		}
