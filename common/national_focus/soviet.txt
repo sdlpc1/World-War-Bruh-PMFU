@@ -4973,12 +4973,12 @@ focus_tree = {
 			add_country_leader_trait = stalin_great_commander
 			add_field_marshal_role = {
 				character = "SOV_iosif_stalin"
-				traits={ old_guard politically_connected media_personality harsh_leader }
-				skill=3
+				traits={ politically_connected media_personality substance_abuser }
+				skill=1
 				attack_skill=1
-				defense_skill=3
-				planning_skill=3
-				logistics_skill=3
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
 				legacy_id=0
 			}
 		}

@@ -98,7 +98,15 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_turret.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_medium_turret_open_p3_early"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_turret.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_medium_superstructure"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/fixed_superstructure.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_superstructure_p3_early"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/fixed_superstructure.dds"
 	}
 	spriteType = {
@@ -107,6 +115,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_medium_open_superstructure"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_open_superstructure_p3_early"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
 	}
 	spriteType = {
@@ -312,6 +324,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_hv_gun_2.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_heavy_hv_gun_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_hv_gun_3.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_heavy_aa_gun_1"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_aa_gun_1.dds"
 	}
@@ -320,12 +336,20 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_aa_gun_2.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_heavy_aa_gun_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_aa_gun_3.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_heavy_cs_gun_1"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_cs_gun_1.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_heavy_cs_gun_2"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_cs_gun_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_cs_gun_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_cs_gun_3.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_heavy_art_gun_1"
@@ -572,6 +596,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_medium_turret_type_open_superstructure"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_turret_type_open_superstructure_p3_early"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
 	}
 	spriteType = {

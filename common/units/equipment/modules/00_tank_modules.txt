@@ -656,9 +656,7 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_medium_td_1
-				tank_armament_tier_medium_td_2
-				tank_armament_tier_medium_td_3
+				tank_armament_tier_light_td
 			}
 		}
 
@@ -894,6 +892,42 @@ equipment_modules = {
 		dismantle_cost_ic = 3
 	}
 
+	# Medium Open Turret
+	tank_medium_turret_open_p3_early = { ## TIER 7 ##
+		abbreviation = "momp3"
+		category = tank_medium_turret_type_open_p3_early
+		gui_category = tank_medium_turret_type_open
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = flame
+		forbid_equipment_type_exact_match = armor
+		
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_arty
+				tank_armament_tier_aa
+				tank_armament_tier_heavy_aa
+				# tank_armament_tier_light_td
+				tank_armament_tier_medium_td_1
+			}
+		}
+
+		add_stats = {
+			build_cost_ic = 3
+			# hardness = -0.15
+		}
+		
+		multiply_stats = {
+			armor_value = -0.25
+			breakthrough = -0.2
+			defense = -0.3
+			maximum_speed = 0.05
+		}
+		build_cost_resources = {
+			steel = 5
+		}
+		dismantle_cost_ic = 3
+	}
+
 	# Fixed Medium Casemate
 	tank_medium_superstructure = { ## TIER 7 ##
 		abbreviation = "mfs"
@@ -912,6 +946,37 @@ equipment_modules = {
 				tank_armament_tier_medium_td_1
 				tank_armament_tier_medium_td_2
 				tank_armament_tier_medium_td_3
+			}
+		}
+		
+		add_stats = {
+			build_cost_ic = 3
+		}
+
+		multiply_stats = {
+			breakthrough = -0.15
+			armor_value = 0.05
+		}
+		dismantle_cost_ic = 3
+	}
+
+	# Fixed Medium Casemate
+	tank_medium_superstructure_p3_early = { ## TIER 7 ##
+		abbreviation = "mfsp3"
+		category = tank_medium_turret_type_casemate_p3_early
+		gui_category = tank_medium_turret_type_casemate
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			artillery
+		}
+		forbid_equipment_type_exact_match = armor
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_assault
+				# tank_armament_tier_light_td
+				tank_armament_tier_medium_td_1
 			}
 		}
 		
@@ -975,6 +1040,43 @@ equipment_modules = {
 				tank_armament_tier_medium_td_1
 				tank_armament_tier_medium_td_2
 				tank_armament_tier_medium_td_3
+			}
+		}
+		
+		add_stats = {
+			hardness = -0.3
+		}
+
+		multiply_stats = {
+			armor_value = -0.5
+			breakthrough = -0.4
+			defense = -0.6
+			maximum_speed = 0.1
+			air_attack = -0.2
+		}
+		dismantle_cost_ic = 3
+
+	}
+
+	# Medium Open Superstructure
+	tank_medium_open_superstructure_p3_early = { ## TIER 7 ##
+		abbreviation = "mos"
+		category = tank_medium_turret_type_open_superstructure_p3_early
+		gui_category = tank_medium_turret_type_open_superstructure
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type_exact_match = armor
+		forbid_equipment_type = {
+			flame
+			amphibious
+		}
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_arty
+				tank_armament_tier_aa
+				tank_armament_tier_heavy_aa
+				# tank_armament_tier_light_td
+				tank_armament_tier_medium_td_1
 			}
 		}
 		
@@ -1913,8 +2015,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 4
-			hard_attack = 24
+			soft_attack = 8 #4
+			hard_attack = 48 #24
 			ap_attack = 55
 			build_cost_ic = 6
 		}
@@ -1935,8 +2037,8 @@ equipment_modules = {
 		parent = tank_light_td_1
 
 		add_stats = {
-			soft_attack = 6
-			hard_attack = 29
+			soft_attack = 12 #6
+			hard_attack = 58 #29
 			ap_attack = 77
 			build_cost_ic = 8
 		}
@@ -1947,6 +2049,30 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 15
 			steel = 15
+		}
+		dismantle_cost_ic = 2
+	}
+
+	tank_light_td_3 = { ###6
+		abbreviation = "ltd3"
+		category = tank_armament_tier_light_td
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		parent = tank_light_td_1
+
+		add_stats = {
+			soft_attack = 16 #6
+			hard_attack = 68 #29
+			ap_attack = 99
+			build_cost_ic = 10
+		}
+		multiply_stats = {
+			maximum_speed = -0.15
+		}
+		
+		build_cost_resources = {
+			tungsten = 20
+			steel = 20
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1978,14 +2104,14 @@ equipment_modules = {
 
 	tank_medium_td_1 = { ###6
 		abbreviation = "mtd"
-		category = tank_armament_tier_medium_td_2
+		category = tank_armament_tier_medium_td_1
 		gui_category = tank_armament_tier_medium_td
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 5
-			hard_attack = 34
+			soft_attack = 10 #5
+			hard_attack = 68 #34
 			ap_attack = 71
 			build_cost_ic = 9
 		}
@@ -2003,15 +2129,15 @@ equipment_modules = {
 
 	tank_medium_td_2 = { ###6
 		abbreviation = "mtd2"
-		category = tank_armament_tier_medium_td_3
+		category = tank_armament_tier_medium_td_2
 		gui_category = tank_armament_tier_medium_td
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_medium_td_1
 
 		add_stats = {
-			soft_attack = 7
-			hard_attack = 39
+			soft_attack = 14 #7
+			hard_attack = 78 #39
 			ap_attack = 94
 			build_cost_ic = 10
 		}
@@ -2029,14 +2155,14 @@ equipment_modules = {
 
 	tank_medium_td_3 = { ###6
 		abbreviation = "mtd3"
-		category = tank_armament_tier_medium_td
+		category = tank_armament_tier_medium_td_3
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_medium_td_1
 
 		add_stats = {
-			soft_attack = 8
-			hard_attack = 44
+			soft_attack = 16 #8
+			hard_attack = 88 #44
 			ap_attack = 100
 			build_cost_ic = 11
 		}
@@ -2285,8 +2411,8 @@ equipment_modules = {
 		parent = tank_heavy_gun_1
 
 		add_stats = {
-			soft_attack = 11
-			hard_attack = 50
+			soft_attack = 22 #11
+			hard_attack = 100 #50
 			ap_attack = 109
 			# breakthrough = -10
 			build_cost_ic = 15
@@ -2313,8 +2439,8 @@ equipment_modules = {
 		parent = tank_heavy_hv_gun_1
 
 		add_stats = {
-			soft_attack = 14
-			hard_attack = 59
+			soft_attack = 28 #14
+			hard_attack = 118 #59
 			ap_attack = 129
 			# breakthrough = -10
 			build_cost_ic = 18
@@ -2326,6 +2452,34 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 20
 			steel = 20
+			chromium = 3
+		}
+		dismantle_cost_ic = 3
+	}
+
+	tank_heavy_hv_gun_3 = { ###9
+		abbreviation = "hh3"
+		category = tank_armament_tier_heavy_td
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		forbid_equipment_type = amphibious 
+		forbid_equipment_type_exact_match = armor
+		parent = tank_heavy_hv_gun_1
+
+		add_stats = {
+			soft_attack = 34 #14
+			hard_attack = 136 #59
+			ap_attack = 149
+			# breakthrough = -10
+			build_cost_ic = 21
+		}
+		multiply_stats = {
+			maximum_speed = -0.3
+			breakthrough = -0.10
+		}
+		build_cost_resources = {
+			tungsten = 20
+			steel = 25
 			chromium = 3
 		}
 		dismantle_cost_ic = 3
@@ -2380,6 +2534,31 @@ equipment_modules = {
 		dismantle_cost_ic = 2
 	}
 
+	tank_heavy_aa_gun_3 = { ###7
+		abbreviation = "saa2"
+		category = tank_armament_tier_heavy_aa
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+		parent = tank_heavy_aa_gun_1
+
+		add_stats = {
+			air_attack = 42
+			soft_attack = 22
+			hard_attack = 28
+			ap_attack = 70
+			build_cost_ic = 22
+		}
+		multiply_stats = {
+			maximum_speed = -0.175
+		}
+		build_cost_resources = {
+			steel = 20
+			chromium = 3
+		}
+		dismantle_cost_ic = 2
+	}
+
 	tank_heavy_cs_gun_1 = { ###5
 		abbreviation = "hc1"
 		category = tank_armament_tier_heavy_1
@@ -2424,6 +2603,33 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 15
+			chromium = 3
+		}
+		dismantle_cost_ic = 3
+	}
+
+	tank_heavy_cs_gun_3 = { ###6
+		abbreviation = "hc3"
+		category = tank_armament_tier_heavy_3
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = flame
+		forbid_equipment_type = amphibious 
+		forbid_equipment_type_exact_match = armor
+		parent = tank_heavy_cs_gun_1
+
+		add_stats = {
+			soft_attack = 90
+			hard_attack = 36
+			ap_attack = 70
+			# breakthrough = -10
+			build_cost_ic = 16
+		}
+		multiply_stats = {
+			maximum_speed = -0.175
+			breakthrough = -0.10
+		}
+		build_cost_resources = {
+			steel = 20
 			chromium = 3
 		}
 		dismantle_cost_ic = 3

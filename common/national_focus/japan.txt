@@ -1415,24 +1415,26 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_global_flag = HOST_SSJW_END
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = china_war_rule
-						option = ENABLED
+			OR = {
+				has_global_flag = HOST_SSJW_END
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = china_war_rule
+							option = ENABLED
+						}
 					}
+					NOT = { country_exists = CHI }
 				}
-				NOT = { country_exists = CHI }
-			}
-			else_if = {
-				limit = {
-					has_game_rule = {
-						rule = china_war_rule
-						option = DISABLED
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = china_war_rule
+							option = DISABLED
+						}
 					}
+					always = no
 				}
-				always = no
 			}
 		}
 

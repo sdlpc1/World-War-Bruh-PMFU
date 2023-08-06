@@ -29,6 +29,9 @@ technologies = {
 			tank_horstmann_suspension
 			tank_torsion_bar_suspension
 			expanded_fuel_tank
+			tank_medium_turret_open_p3_early
+			tank_medium_superstructure_p3_early
+			tank_medium_open_superstructure_p3_early
 		}
 	
 		path = {
