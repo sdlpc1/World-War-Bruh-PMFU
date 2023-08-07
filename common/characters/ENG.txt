@@ -1076,7 +1076,7 @@ characters={
 		name=ENG_stewart_menzies
 		portraits={
 			army={
-				small="GFX_idea_stewart_menzies"
+				small="GFX_idea_eng_stewart_menzies"
 			}
 		}
 		advisor={
@@ -1098,7 +1098,7 @@ characters={
 		name=ENG_alan_turing
 		portraits={
 			army={
-				small="GFX_idea_alan_turing"
+				small="GFX_idea_eng_alan_turing"
 			}
 		}
 		advisor={

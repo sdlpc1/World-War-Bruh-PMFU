@@ -554,7 +554,6 @@ free_templates = {
 					motorized = { x = 0 y = 0 }
 					motorized = { x = 0 y = 1 }
 					motorized = { x = 0 y = 2 }
-					motorized = { x = 0 y = 3 }
 			
 					motorized = { x = 1 y = 0 }
 					motorized = { x = 1 y = 1 }
@@ -673,7 +672,6 @@ free_templates = {
 					mechanized = { x = 0 y = 0 }
 					mechanized = { x = 0 y = 1 }
 					mechanized = { x = 0 y = 2 }
-					mechanized = { x = 0 y = 3 }
 			
 					mechanized = { x = 1 y = 0 }
 					mechanized = { x = 1 y = 1 }
@@ -792,7 +790,6 @@ free_templates = {
 					motorized = { x = 0 y = 0 }
 					motorized = { x = 0 y = 1 }
 					motorized = { x = 0 y = 2 }
-					motorized = { x = 0 y = 3 }
 			
 					motorized = { x = 1 y = 0 }
 					motorized = { x = 1 y = 1 }
@@ -908,7 +905,6 @@ free_templates = {
 					mechanized = { x = 0 y = 0 }
 					mechanized = { x = 0 y = 1 }
 					mechanized = { x = 0 y = 2 }
-					mechanized = { x = 0 y = 3 }
 			
 					mechanized = { x = 1 y = 0 }
 					mechanized = { x = 1 y = 1 }
@@ -1024,7 +1020,6 @@ free_templates = {
 					motorized = { x = 0 y = 0 }
 					motorized = { x = 0 y = 1 }
 					motorized = { x = 0 y = 2 }
-					motorized = { x = 0 y = 3 }
 			
 					motorized = { x = 1 y = 0 }
 					motorized = { x = 1 y = 1 }
@@ -1140,7 +1135,6 @@ free_templates = {
 					mechanized = { x = 0 y = 0 }
 					mechanized = { x = 0 y = 1 }
 					mechanized = { x = 0 y = 2 }
-					mechanized = { x = 0 y = 3 }
 			
 					mechanized = { x = 1 y = 0 }
 					mechanized = { x = 1 y = 1 }

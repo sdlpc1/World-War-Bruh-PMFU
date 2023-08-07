@@ -984,6 +984,7 @@
  MODIFIER_NAVAL_HAS_POTF_IN_COMBAT_DEFENSE_DESC:0 "Defense bonus for all ships fighting alongside the pride of the fleet."
  modifier_production_cost_max_ship_hull_cruiser:0 "£navprod_cost  Cruiser Max Cost"
  modifier_production_cost_max_ship_hull_heavy:0 "£navprod_cost  Heavy Ship Max Cost"
+ modifier_production_cost_max_ship_hull_super_heavy:0 "£navprod_cost  Super Heavy Ship Max Cost"
  modifier_production_cost_max_ship_hull_carrier:0 "£navprod_cost  Carrier Max Cost"
  MODIFIER_INDUSTRIAL_REFIT_SPEED_FACTOR:0 "£going_to_refit  Refitting Speed"
  MODIFIER_INDUSTRIAL_REFIT_SPEED_FACTOR_DESC:0 "The speed at which the refitting of an equipment is performed"

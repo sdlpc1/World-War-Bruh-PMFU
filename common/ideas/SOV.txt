@@ -2942,7 +2942,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = spr_anti_fascist_crusade
+			picture = SPR_anti_fascist_crusade
 
 			targeted_modifier = {
 				tag = GER
@@ -3092,7 +3092,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = yug_yugoslavian_general_staff
+			picture = YUG_yugoslavian_general_staff
 
 			modifier = {
 				army_leader_start_level = 2
@@ -6306,26 +6306,26 @@ ideas = {
 					hard_attack = 0.05
 					soft_attack = 0.05
 					maximum_speed = 0.10
-					defense = 0.1
+					defense = 0.15
 				}
 				medium_tank_destroyer_chassis = {
 					hard_attack = 0.1
 					ap_attack = 0.05
 					maximum_speed = 0.10
-					defense = 0.1
+					defense = 0.15
 				}
 				medium_tank_artillery_chassis = {
 					soft_attack = 0.1
 					maximum_speed = 0.10
 					ap_attack = 0.1
-					defense = 0.1
+					defense = 0.15
 				}
 				medium_tank_aa_chassis = {
 					hard_attack = 0.05
 					soft_attack = 0.05
 					maximum_speed = 0.10
 					anti_air_attack = 0.15
-					defense = 0.1
+					defense = 0.15
 				}
 				medium_assault_gun_chassis = {
 					hard_attack = 0.05
@@ -6337,7 +6337,7 @@ ideas = {
 					hard_attack = 0.05
 					soft_attack = 0.05
 					maximum_speed = 0.10
-					defense = 0.1
+					defense = 0.15
 				}
 			}
 

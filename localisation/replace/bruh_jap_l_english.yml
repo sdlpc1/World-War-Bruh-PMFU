@@ -298,6 +298,7 @@
   JAP_owned_china_to_manchu:0 "Transfer Owned Chinese States to Manchukuo"
   JAP_northern_china_to_manchu:0 "Transfer Northern Chinese Manpower States to Manchukuo"
   JAP_closed_economy_decision:0 "Get Closed Economy"
+  JAP_time_to_complete_marco_polo:0 "Timeframe to Complete Marco Polo Bridge Incident"
 
   #### FLAGS ####
   JAP_early_war:0 "Early War Japan"

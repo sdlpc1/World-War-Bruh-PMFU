@@ -460,6 +460,26 @@ equipments = {
 			module = advanced_artillery_round
 			count < 2
 		}
+		module_count_limit = {
+			module = tank_anti_air_gun_1
+			count < 0
+		}
+		module_count_limit = {
+			module = tank_anti_air_gun_2
+			count < 0
+		}
+		module_count_limit = {
+			module = tank_anti_air_gun_3
+			count < 0
+		}
+		module_count_limit = {
+			module = tank_heavy_aa_gun_1
+			count < 0
+		}
+		module_count_limit = {
+			module = tank_heavy_aa_gun_2
+			count < 0
+		}
 		
 		default_modules = {
 			main_armament_slot = empty

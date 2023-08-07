@@ -100,10 +100,19 @@ HMP_check_fleet_size = {
 			var = needed_screen_count
 			value = capital_count
 		}
-		multiply_variable = { 
-			var = needed_screen_count
-			value = 3
-		}
+		if= {
+            limit = { has_trait = fleet_protector }
+            multiply_variable = { 
+                var = needed_screen_count
+                value = 2.5
+            }
+        }
+        else = {
+            multiply_variable = { 
+                var = needed_screen_count
+                value = 3
+            }
+        }
 
 		
 		set_temp_variable = {

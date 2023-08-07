@@ -14,9 +14,14 @@ USA_island_fortification = {
 				}
 				has_full_control_of_state = 638
 			}
-			VIC = {
-				has_country_flag = VIC_france_capped
-			}
+			# OR = {
+			# 	VIC = {
+			# 		has_country_flag = VIC_france_capped
+			# 	}
+			# 	date > 1940.1.1
+			# }
+			date > 1940.1.1
+			num_of_available_civilian_factories > 9
 			NOT = { has_country_flag = USA_island_fortification_ongoing }
 		}
 
@@ -72,9 +77,14 @@ USA_island_fortification = {
 				}
 				has_full_control_of_state = 632
 			}
-			VIC = {
-				has_country_flag = VIC_france_capped
-			}
+			# OR = {
+			# 	VIC = {
+			# 		has_country_flag = VIC_france_capped
+			# 	}
+			# 	date > 1940.1.1
+			# }
+			date > 1940.1.1
+			num_of_available_civilian_factories > 9
 			NOT = { has_country_flag = USA_island_fortification_ongoing }
 		}
 
@@ -130,9 +140,14 @@ USA_island_fortification = {
 				}
 				has_full_control_of_state = 631
 			}
-			VIC = {
-				has_country_flag = VIC_france_capped
-			}
+			# OR = {
+			# 	VIC = {
+			# 		has_country_flag = VIC_france_capped
+			# 	}
+			# 	date > 1940.1.1
+			# }
+			date > 1940.1.1
+			num_of_available_civilian_factories > 9
 			NOT = { has_country_flag = USA_island_fortification_ongoing }
 		}
 
@@ -188,9 +203,14 @@ USA_island_fortification = {
 				}
 				has_full_control_of_state = 629
 			}
-			VIC = {
-				has_country_flag = VIC_france_capped
-			}
+			# OR = {
+			# 	VIC = {
+			# 		has_country_flag = VIC_france_capped
+			# 	}
+			# 	date > 1940.1.1
+			# }
+			date > 1940.1.1
+			num_of_available_civilian_factories > 9
 			NOT = { has_country_flag = USA_island_fortification_ongoing }
 		}
 

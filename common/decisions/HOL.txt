@@ -2071,6 +2071,56 @@ political_actions = {
 		}
 	}
 
+	##########################
+	###### Move Capital ######
+	##########################
+
+	HOL_move_capital_java = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = HOL
+		}
+		
+		available = {
+			335 = {
+				is_controlled_by = HOL
+				is_capital = no
+			}
+		}
+
+		visible = {
+		}
+		
+		complete_effect = {
+			set_capital =  { state = 335 }
+		}
+	}
+
+	HOL_move_capital_amsterdam = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = HOL
+		}
+		
+		available = {
+			7 = {
+				is_controlled_by = HOL
+				is_capital = no
+			}
+		}
+
+		visible = {
+		}
+		
+		complete_effect = {
+			set_capital =  { state = 7 }
+		}
+	}
+
 	HOL_propose_benelux_unification = {
 
 		icon = eng_trade_unions_support
