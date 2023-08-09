@@ -996,9 +996,12 @@ operations = {
 
 		available = {
 			# FRA = { has_capitulated = yes }
-			VIC = {
-                has_country_flag = VIC_france_capped
-            }
+			# VIC = {
+            #     has_country_flag = VIC_france_capped
+            # }
+			GER = {
+				has_war = yes
+			}
 			IRE = {is_ai = yes}
 		}
 
@@ -1038,9 +1041,12 @@ operations = {
 
 		available = {
 			# FRA = { has_capitulated = yes }
-			VIC = {
-                has_country_flag = VIC_france_capped
-            }
+			# VIC = {
+            #     has_country_flag = VIC_france_capped
+            # }
+			GER = {
+				has_war = yes
+			}
 			SAF = {is_ai = yes}
 		}
 

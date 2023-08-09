@@ -86,6 +86,14 @@ host_decisions = {
 			always = yes
 		}
 
+		visible = {
+			has_game_rule = {
+				rule = china_war_rule
+				option = ENABLED
+			}
+			country_exists = CHI
+		}
+
 		available = {
 			JAP = {
 				has_war_with = CHI
@@ -158,6 +166,10 @@ host_decisions = {
 				NOT = { has_war_with = CHI }
 			}
 			country_exists = CHI
+			has_game_rule = {
+				rule = china_war_rule
+				option = ENABLED
+			}
 		}
 
 		fire_only_once = yes

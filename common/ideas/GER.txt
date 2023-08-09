@@ -161,7 +161,7 @@ ideas = {
 			picture = generic_acquire_tanks
 			equipment_bonus = {
 				motorized_equipment = {
-					max_strength = 27 instant = yes
+					max_strength = 26 instant = yes
 				}
 				mechanized_equipment = {
 					max_strength = 22 instant = yes
@@ -1704,6 +1704,9 @@ ideas = {
 				artillery_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
+				dp_artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
 			}
 		}
 
@@ -2635,6 +2638,9 @@ ideas = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				dp_artillery_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				heavy_artillery_equipment = {
@@ -3886,9 +3892,13 @@ ideas = {
 				module_tank_anti_air_gun_1_design_cost_factor = -1
 				module_tank_anti_air_gun_2_design_cost_factor = -1
 				module_tank_anti_air_gun_3_design_cost_factor = -1
+				module_tank_anti_air_gun_4_design_cost_factor = -1
 				module_tank_art_gun_1_design_cost_factor = -1
 				module_tank_art_gun_2_design_cost_factor = -1
 				module_tank_art_gun_3_design_cost_factor = -1
+				module_tank_light_art_gun_1_design_cost_factor = -1
+				module_tank_light_art_gun_2_design_cost_factor = -1
+				module_tank_light_art_gun_3_design_cost_factor = -1
 				module_tank_med_gun_1_design_cost_factor = -1
 				module_tank_med_gun_2_design_cost_factor = -1
 				module_tank_med_gun_3_design_cost_factor = -1
@@ -3939,6 +3949,7 @@ ideas = {
 				module_advanced_artillery_round_design_cost_factor = -1
 				module_tank_light_td_1_design_cost_factor = -1
 				module_tank_light_td_2_design_cost_factor = -1
+				module_tank_light_td_3_design_cost_factor = -1
 				module_tank_medium_td_placeholder_design_cost_factor = -1
 				module_tank_medium_td_1_design_cost_factor = -1
 				module_tank_medium_td_2_design_cost_factor = -1

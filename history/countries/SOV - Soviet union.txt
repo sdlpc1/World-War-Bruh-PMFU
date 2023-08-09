@@ -762,7 +762,7 @@ if = {
 	}
 }
 
-set_research_slots = 5 #5
+set_research_slots = 6 #5
 set_stability = 0.4
 set_war_support = 0.45
 # Starting tech
@@ -1354,33 +1354,33 @@ create_equipment_variant = {
 	}
 	icon = "gfx/interface/technologies/tanks/sov/sov_bt_tank_2.dds"
 }
-create_equipment_variant = {
-	name = "T-28"
-	type = sov_medium_tank_chassis_t28
-	parent_version = 0
-	modules = {
-		main_armament_slot = tank_small_gun_1
-		turret_type_slot = tank_multi_turret_1
-		suspension_type_slot = tank_bogie_suspension
-		armor_type_slot = tank_riveted_armor
-		engine_type_slot = tank_gasoline_engine
-		special_type_slot_2 = secondary_turret_hmg
-	}
-}
-create_equipment_variant = {
-	name = "T-35"
-	type = sov_heavy_tank_chassis_t35
-	parent_version = 0
-	modules = {
-		main_armament_slot = tank_small_gun_1
-		turret_type_slot = tank_multi_turret_1
-		suspension_type_slot = tank_bogie_suspension
-		armor_type_slot = tank_riveted_armor
-		engine_type_slot = tank_gasoline_engine
-		special_type_slot_2 = secondary_turret_small_cannon
-		special_type_slot_3 = secondary_turret_small_cannon
-	}
-}
+# create_equipment_variant = {
+# 	name = "T-28"
+# 	type = sov_medium_tank_chassis_t28
+# 	parent_version = 0
+# 	modules = {
+# 		main_armament_slot = tank_small_gun_1
+# 		turret_type_slot = tank_multi_turret_1
+# 		suspension_type_slot = tank_bogie_suspension
+# 		armor_type_slot = tank_riveted_armor
+# 		engine_type_slot = tank_gasoline_engine
+# 		special_type_slot_2 = secondary_turret_hmg
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "T-35"
+# 	type = sov_heavy_tank_chassis_t35
+# 	parent_version = 0
+# 	modules = {
+# 		main_armament_slot = tank_small_gun_1
+# 		turret_type_slot = tank_multi_turret_1
+# 		suspension_type_slot = tank_bogie_suspension
+# 		armor_type_slot = tank_riveted_armor
+# 		engine_type_slot = tank_gasoline_engine
+# 		special_type_slot_2 = secondary_turret_small_cannon
+# 		special_type_slot_3 = secondary_turret_small_cannon
+# 	}
+# }
 # create_equipment_variant = {
 # 	name = "Placeholder TD to fix bug with special templates"
 # 	type = medium_tank_destroyer_chassissov_medium_tank_chassis_t34_placeholder

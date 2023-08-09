@@ -55,6 +55,7 @@ USA_island_fortification = {
 					level = 5
 					instant_build = yes
 				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
 			}
 		}
 		complete_effect = {
@@ -118,6 +119,7 @@ USA_island_fortification = {
 					level = 5
 					instant_build = yes
 				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
 			}
 		}
 		complete_effect = {
@@ -181,6 +183,7 @@ USA_island_fortification = {
 					level = 5
 					instant_build = yes
 				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
 			}
 		}
 		complete_effect = {

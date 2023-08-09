@@ -23,7 +23,7 @@ upgrades = {
 		reliability = -0.025
 		add_stats = {
 			fuel_consumption = 0.05
-			build_cost_ic = 0.05
+			build_cost_ic = 1.5
 			breakthrough = 1
 		}
 	}
@@ -63,7 +63,7 @@ upgrades = {
 		armor_value = 0.075
 		add_stats = {
 			breakthrough = 0.6
-			build_cost_ic = 0.25
+			build_cost_ic = 1.5
 		}
 	}
 
@@ -100,7 +100,7 @@ upgrades = {
 			breakthrough = 5
 			armor_value = 15
 			reliability = 0.05
-			build_cost_ic = 5
+			build_cost_ic = 1.5
 		}
 	}
 
@@ -128,7 +128,7 @@ upgrades = {
 			breakthrough = 5
 			armor_value = 15
 			reliability = 0.05
-			build_cost_ic = 5
+			build_cost_ic = 1.5
 		}
 	}
 
@@ -250,7 +250,7 @@ upgrades = {
 		
 		add_stats = {
 			fuel_consumption = 0.1
-			build_cost_ic = 2
+			build_cost_ic = 1.5
 			breakthrough = 1
 		}
 	}
@@ -277,7 +277,7 @@ upgrades = {
 		
 		add_stats = {
 			fuel_consumption = 0.1
-			build_cost_ic = 2
+			build_cost_ic = 1.5
 			breakthrough = 1
 		}
 	}
@@ -324,7 +324,7 @@ upgrades = {
 		add_stats = {
 			breakthrough = 2.5
 			armor_value = 5
-			build_cost_ic = 2
+			build_cost_ic = 1.5
 		}
 	}
 	tank_nsb_med_armor_3_upgrade = {
@@ -360,7 +360,7 @@ upgrades = {
 		add_stats = {
 			breakthrough = 1.25
 			armor_value = 7.5
-			build_cost_ic = 2
+			build_cost_ic = 1.5
 		}
 	}
 	tank_nsb_heavy_armor_1_upgrade = {
@@ -399,7 +399,7 @@ upgrades = {
 		add_stats = {
 			breakthrough = 1.25
 			armor_value = 5
-			build_cost_ic = 1.1
+			build_cost_ic = 1.5
 		}
 	}
 
@@ -436,7 +436,7 @@ upgrades = {
 		add_stats = {
 			breakthrough = 1
 			armor_value = 7
-			build_cost_ic = 2.2
+			build_cost_ic = 1.5
 		}
 	}	
 	

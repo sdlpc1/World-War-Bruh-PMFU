@@ -150,7 +150,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 25
 		defense = 5
-		breakthrough = 35
+		breakthrough = 30
 	}
 
 	# Crusier MkIV
@@ -189,7 +189,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 35
 		defense = 5
-		breakthrough = 35
+		breakthrough = 30
 	}
 	
 	# Coventer - Removed
@@ -260,7 +260,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 45
 		defense = 6
-		breakthrough = 45
+		breakthrough = 40
 	}
 
 	# Cromwell
@@ -301,7 +301,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 75
 		defense = 7
-		breakthrough = 65
+		breakthrough = 60
 	}
 
 	# Comet
@@ -342,7 +342,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 80
 		defense = 8
-		breakthrough = 70
+		breakthrough = 65
 	}
 
 	# Centurion
@@ -382,7 +382,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 95
 		defense = 10
-		breakthrough = 70
+		breakthrough = 65
 	}
 
 	# Canadian RAM
@@ -422,7 +422,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 65
 		defense = 6
-		breakthrough = 55
+		breakthrough = 50
 	}
 
 	# AST/NZL Sentinel
@@ -462,7 +462,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 65
 		defense = 6
-		breakthrough = 55
+		breakthrough = 50
 	}
 
 	# AST/NZL Thunderbolt
@@ -503,7 +503,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 75
 		defense = 7
-		breakthrough = 60
+		breakthrough = 55
 	}
 
   # Heavy Tanks

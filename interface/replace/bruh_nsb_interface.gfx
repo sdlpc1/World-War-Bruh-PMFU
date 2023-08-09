@@ -198,6 +198,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/light_td_2.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_light_td_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/light_td_3.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_anti_air_gun_placeholder"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/aa_gun_1.dds"
 	}
@@ -212,6 +216,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_anti_air_gun_3"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/aa_gun_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_anti_air_gun_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/aa_gun_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_art_gun_1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_arty_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_art_gun_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_arty_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_art_gun_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_arty_3.dds"
 	}
 	
 	spriteType = {
@@ -475,6 +495,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_armament_tier_arty"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_arty_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_armament_tier_light_arty"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_arty_1.dds"
 	}
 	spriteType = {

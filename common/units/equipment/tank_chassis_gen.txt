@@ -151,7 +151,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 30
 		defense = 6
-		breakthrough = 35
+		breakthrough = 30
 	}
 
 	# Improved Light Tank
@@ -191,7 +191,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 45
 		defense = 7
-		breakthrough = 50
+		breakthrough = 45
 	}
 
 	# Advanced Light Tank
@@ -232,7 +232,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 75
 		defense = 8
-		breakthrough = 55
+		breakthrough = 50
 	}
 	
 
@@ -273,7 +273,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 30
 		defense = 6
-		breakthrough = 35
+		breakthrough = 30
 	}
 	heavy_tank_chassis_0 = {
 		abbreviation = "md1"

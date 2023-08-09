@@ -905,6 +905,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = air_tech_after_41_tt
 		}
+		show_effect_as_desc = yes
 
 		folder = {
 			name = bba_air_techs_folder

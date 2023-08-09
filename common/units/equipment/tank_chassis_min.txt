@@ -174,7 +174,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 45
 		defense = 6
-		breakthrough = 40
+		breakthrough = 35
 	}
 
 	# French S40
@@ -213,7 +213,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 55
 		defense = 7
-		breakthrough = 45
+		breakthrough = 40
 	}
 
 	# French SARL42
@@ -253,7 +253,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 60
 		defense = 8
-		breakthrough = 55
+		breakthrough = 50
 	}
 
 	# French AMX4
@@ -288,7 +288,7 @@ equipments = {
 		reliability = 0.85
 		armor_value = 60
 		defense = 8
-		breakthrough = 65
+		breakthrough = 60
 	}
 
 	# French B1 Biss
@@ -305,10 +305,10 @@ equipments = {
 				allowed_module_categories = {
 					tank_light_turret_type_1
 					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_light_turret_type_open
 					tank_light_turret_type_casemate
 					tank_light_turret_type_open_superstructure
-					tank_light_turret_type_3
 					tank_heavy_turret_type_0
 				}
 			}
@@ -514,7 +514,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 25
 		defense = 5
-		breakthrough = 35
+		breakthrough = 30
 	}
 
 	# Italian M13/40
@@ -553,7 +553,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 30
 		defense = 6
-		breakthrough = 40
+		breakthrough = 35
 	}
 
 	# Italian M14/41
@@ -592,7 +592,7 @@ equipments = {
 		reliability = 0.80
 		armor_value = 40
 		defense = 8
-		breakthrough = 45
+		breakthrough = 40
 	}
 
 	# Italian M15/42
@@ -632,7 +632,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 40
 		defense = 7
-		breakthrough = 45
+		breakthrough = 40
 	}
 
 	# Italian P26/40
@@ -672,7 +672,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 55
 		defense = 8
-		breakthrough = 50
+		breakthrough = 45
 	}
 
 	# Italian P30/43
@@ -775,7 +775,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 45
 		defense = 8
-		breakthrough = 45
+		breakthrough = 40
 	}
 
 	# Hungarian 44M
@@ -816,7 +816,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 90
 		defense = 8
-		breakthrough = 60
+		breakthrough = 55
 	}
 
   # Japanese Tanks
@@ -930,7 +930,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 15
 		defense = 5
-		breakthrough = 35
+		breakthrough = 30
 	}
 
 	# Japanese T97 Chi-Ha
@@ -969,7 +969,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 20
 		defense = 6
-		breakthrough = 40
+		breakthrough = 35
 	}
 
 	# Japanese T01 Chi-He
@@ -1008,7 +1008,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 40
 		defense = 6
-		breakthrough = 45
+		breakthrough = 40
 	}
 	
 	# Japanese T03 Chi-Nu
@@ -1048,7 +1048,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 50
 		defense = 6
-		breakthrough = 55
+		breakthrough = 50
 	}
 
 	# Japanese T04 Chi-To
@@ -1089,6 +1089,6 @@ equipments = {
 		reliability = 0.8
 		armor_value = 75
 		defense = 8
-		breakthrough = 60
+		breakthrough = 55
 	}
 }

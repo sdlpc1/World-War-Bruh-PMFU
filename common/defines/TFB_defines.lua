@@ -410,6 +410,8 @@ NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 1.6 -- How much aircrafts in region
 NDefines.NAir.ESCORT_FACTOR = 4  		-- cas enters battle earlier, fucks a lot of shit up
 NDefines.NAir.COMBAT_BETTER_AGILITY_DAMAGE_REDUCTION = 0.60
 NDefines.NAir.COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.60
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.2			--	Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
+NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
 
 NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.20								-- random factor in damage. So if max damage is fe. 10 and randomness is 30% then damage will be between 7-10.
 NDefines.NNavy.COMBAT_MAX_GROUPS = 2										-- Max amount of "Fire Exchange" groups (FEX).

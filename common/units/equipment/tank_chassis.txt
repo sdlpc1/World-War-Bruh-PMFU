@@ -473,6 +473,10 @@ equipments = {
 			count < 0
 		}
 		module_count_limit = {
+			module = tank_anti_air_gun_4
+			count < 0
+		}
+		module_count_limit = {
 			module = tank_heavy_aa_gun_1
 			count < 0
 		}

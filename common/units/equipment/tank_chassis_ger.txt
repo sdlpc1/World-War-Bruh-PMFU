@@ -260,7 +260,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 30
 		defense = 6
-		breakthrough = 35
+		breakthrough = 30
 	}
 
 	# Panzer 4
@@ -301,7 +301,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 35
 		defense = 8
-		breakthrough = 40
+		breakthrough = 35
 	}
 
 	ger_medium_tank_chassis_p4_2 = {
@@ -340,7 +340,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 55
 		defense = 8
-		breakthrough = 45
+		breakthrough = 40
 	}
 
 	ger_medium_tank_chassis_p3_2 = {
@@ -378,7 +378,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 50
 		defense = 6
-		breakthrough = 40
+		breakthrough = 35
 	}
 
 	# Panther
@@ -420,7 +420,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 80
 		defense = 8
-		breakthrough = 60
+		breakthrough = 55
 	}
 	
 	# E50
@@ -468,7 +468,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 100
 		defense = 10
-		breakthrough = 65
+		breakthrough = 60
 	}
 	
   # Heavy Tanks

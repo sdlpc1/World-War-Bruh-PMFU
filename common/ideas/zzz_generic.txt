@@ -268,26 +268,28 @@ ideas = {
 			}
 
 			cancel = {
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = china_war_rule
-							option = ENABLED
+				OR = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = china_war_rule
+								option = ENABLED
+							}
+						}
+						GER = {
+							has_completed_focus = GER_danzig_or_war
 						}
 					}
-					GER = {
-						has_completed_focus = GER_danzig_or_war
-					}
-				}
-				else_if = {
-					limit = {
-						has_game_rule = {
-							rule = china_war_rule
-							option = DISABLED
+					else_if = {
+						limit = {
+							has_game_rule = {
+								rule = china_war_rule
+								option = DISABLED
+							}
 						}
-					}
-					JAP = {
-						has_completed_focus = JAP_secure_china
+						JAP = {
+							has_completed_focus = JAP_secure_china
+						}
 					}
 				}
 			}
@@ -309,26 +311,28 @@ ideas = {
 			}
 
 			cancel = {
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = china_war_rule
-							option = ENABLED
+				OR = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = china_war_rule
+								option = ENABLED
+							}
+						}
+						GER = {
+							has_completed_focus = GER_danzig_or_war
 						}
 					}
-					GER = {
-						has_completed_focus = GER_danzig_or_war
-					}
-				}
-				else_if = {
-					limit = {
-						has_game_rule = {
-							rule = china_war_rule
-							option = DISABLED
+					else_if = {
+						limit = {
+							has_game_rule = {
+								rule = china_war_rule
+								option = DISABLED
+							}
 						}
-					}
-					JAP = {
-						has_completed_focus = JAP_secure_china
+						JAP = {
+							has_completed_focus = JAP_secure_china
+						}
 					}
 				}
 			}

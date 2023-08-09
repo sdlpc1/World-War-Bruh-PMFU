@@ -615,7 +615,7 @@ country_event = {
 				}
 				set_state_flag = vichy_italian_conquest
 			}
-			become_exiled_in = { target = ENG legitimacy = 60 }
+			# become_exiled_in = { target = ENG legitimacy = 60 } #not working really
 		}
 		custom_effect_tooltip = establishing_vichy_tt
 		hidden_effect = {

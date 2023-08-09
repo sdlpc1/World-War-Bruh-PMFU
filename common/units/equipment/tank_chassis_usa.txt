@@ -234,7 +234,7 @@ equipments = {
 		reliability = 0.75
 		armor_value = 35
 		defense = 6
-		breakthrough = 35
+		breakthrough = 30
 	}
 
 	# Medium M3 Lee
@@ -279,7 +279,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 50
 		defense = 7
-		breakthrough = 40
+		breakthrough = 35
 	}
 
 	# Medium M4 Sherman
@@ -320,7 +320,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 65
 		defense = 8
-		breakthrough = 55
+		breakthrough = 50
 	}
 
 	# Medium M26 Pershing
@@ -361,7 +361,7 @@ equipments = {
 		reliability = 0.8
 		armor_value = 100
 		defense = 10
-		breakthrough = 65
+		breakthrough = 60
 	}
 
   # Heavy Tanks

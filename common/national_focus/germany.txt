@@ -1779,14 +1779,17 @@ focus_tree = {
 				uses = 1
 				category = radar_tech
 			}
-			if = {
-				limit = {
-					has_opinion_modifier = sov_ger_treaty
-					NOT = { has_war_with = SOV }
-				}
-				SOV = {
-					country_event = { id = germany.78 days = 1 }
-				}
+			# if = {
+			# 	limit = {
+			# 		has_opinion_modifier = sov_ger_treaty
+			# 		NOT = { has_war_with = SOV }
+			# 	}
+			# 	SOV = {
+			# 		country_event = { id = germany.78 days = 1 }
+			# 	}
+			# }
+			SOV = {
+				country_event = { id = germany.78 days = 1 }
 			}
 			64 = {
 				set_building_level = {
@@ -4883,7 +4886,14 @@ focus_tree = {
 		icon = GFX_focus_GER_germania
 		prerequisite = { focus = GER_danzig_or_war }
 		available = {
-			has_full_control_of_state = 16
+			# has_full_control_of_state = 16
+			16 = {
+				CONTROLLER = {
+					original_tag = ROOT
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
 		}
 		bypass = {
 		}

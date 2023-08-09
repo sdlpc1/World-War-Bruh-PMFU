@@ -803,6 +803,29 @@ on_actions = {
 		}
 	}
 
+	on_capitulation_immediate = {
+		# finland
+		effect = {
+			if = {
+				limit = {
+					original_tag = FIN
+					FROM = { is_in_faction_with = SOV }
+					date < 1941.1.1
+				}
+				SOV = {
+					white_peace = FIN
+				}
+				MON = {
+					white_peace = FIN
+				}
+				SOV = {
+					transfer_state = 146
+					transfer_state = 147
+				}
+			}
+		}	
+	}
+	
 	on_capitulation = {
 		## Capitulation of China
 		# Japan and Manchu split China

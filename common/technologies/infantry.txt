@@ -488,6 +488,11 @@ technologies = {
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
+
+		on_research_complete = {
+			custom_effect_tooltip = paras_storm_troopers_tt
+		}
+		show_effect_as_desc = yes
 		
 		categories = {
 			para_tech
@@ -532,6 +537,11 @@ technologies = {
 			name = infantry_folder
 			position = { x = 1 y = @1940 }
 		}
+
+		on_research_complete = {
+			custom_effect_tooltip = paras_storm_troopers_tt
+		}
+		show_effect_as_desc = yes
 		
 		categories = {
 			para_tech
@@ -572,6 +582,11 @@ technologies = {
 			name = infantry_folder
 			position = { x = 1 y = @1943 }
 		}
+
+		on_research_complete = {
+			custom_effect_tooltip = paras_storm_troopers_tt
+		}
+		show_effect_as_desc = yes
 		
 		categories = {
 			para_tech
@@ -2293,7 +2308,7 @@ technologies = {
 		research_cost = 1
 
 		motorized = {
-			max_strength = 27
+			max_strength = 26
 		}
 		mechanized = {
 			max_strength = 22
@@ -2314,7 +2329,7 @@ technologies = {
 		research_cost = 1
 
 		motorized = {
-			max_strength = -27
+			max_strength = -26
 		}
 		mechanized = {
 			max_strength = -22

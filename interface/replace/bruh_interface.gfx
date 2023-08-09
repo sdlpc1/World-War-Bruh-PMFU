@@ -8432,6 +8432,10 @@ spriteTypes = {
 		name = "GFX_heavy_artillery_research3_medium"
 		texturefile = "gfx/interface/technologies/rocket_artillery3.dds"
 	}	
+	SpriteType = {
+		name = "GFX_heavy_artillery_research4_medium"
+		texturefile = "gfx/interface/technologies/rocket_artillery3.dds"
+	}	
 
 	SpriteType = {
 		name = "GFX_artillery_research1_medium"
@@ -8454,6 +8458,12 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
+		name = "GFX_artillery_research5_medium"
+		texturefile = "gfx/interface/technologies/artillery4.dds"
+	}	
+
+
+	SpriteType = {
 		name = "GFX_antiair_research1_medium"
 		texturefile = "gfx/interface/technologies/antiair1.dds"
 	}	
@@ -8466,6 +8476,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_antiair_research3_medium"
 		texturefile = "gfx/interface/technologies/antiair5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_antiair_research4_medium"
+		texturefile = "gfx/interface/technologies/antiair2.dds"
 	}
 	
 	SpriteType = {

@@ -146,7 +146,7 @@ sub_units = {
 			support_equipment
 		}
 		
-		
+		maximum_speed = 2.0
 
 		need = {
 			infantry_equipment = 25
