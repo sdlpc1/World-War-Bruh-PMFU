@@ -81,18 +81,18 @@ division_template = {
         recon = { x = 0 y = 0 }
 	}
 }
-division_template = {
-	name = "Tank Brigade"
-	division_names_group = ENG_ARM_02
-	regiments = {
-		medium_armor = { x = 0 y = 0 }
-		medium_armor = { x = 0 y = 1 }
-		heavy_armor = { x = 1 y = 0 }
-		heavy_armor = { x = 1 y = 1 }
-		infantry_mot = { x = 2 y = 0 }
-		infantry_mot = { x = 2 y = 1 }
-	}
-}
+# division_template = {
+# 	name = "Tank Brigade"
+# 	division_names_group = ENG_ARM_02
+# 	regiments = {
+# 		medium_armor = { x = 0 y = 0 }
+# 		medium_armor = { x = 0 y = 1 }
+# 		heavy_armor = { x = 1 y = 0 }
+# 		heavy_armor = { x = 1 y = 1 }
+# 		infantry_mot = { x = 2 y = 0 }
+# 		infantry_mot = { x = 2 y = 1 }
+# 	}
+# }
 division_template = {
 	name = "Light Infantry"
 	division_names_group = ENG_COL_01
@@ -352,12 +352,12 @@ units = {
 
 	}
 	#Southern Command
-	division= {	
-		name = "Royal Tank Regiment"
-		location = 9239
-		division_template = "Tank Brigade"
-		start_experience_factor = 0.8
-	}
+	# division= {	
+	# 	name = "Royal Tank Regiment"
+	# 	location = 9239
+	# 	division_template = "Tank Brigade"
+	# 	start_experience_factor = 0.8
+	# }
 	division= {	# "3rd Infantry Division"
 		division_name = {
 			is_name_ordered = yes
@@ -728,15 +728,15 @@ instant_effect = {
 	}
 	
 	add_equipment_to_stockpile = {
-		type = eng_light_tank_chassis_mk6
-		amount = 200
+		type = eng_light_tank_chassis_mk6 
+		amount = 350
 		producer = ENG
 	}
-	add_equipment_to_stockpile = {
-		type = eng_medium_tank_chassis_a10
-		amount = 100
-		producer = ENG
-	}
+	# add_equipment_to_stockpile = {
+	# 	type = eng_medium_tank_chassis_a10
+	# 	amount = 100
+	# 	producer = ENG
+	# }
 
 	
 }

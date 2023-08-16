@@ -177,13 +177,13 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				RAJ_agrarian_society
-				RAJ_princely_states
+				RAJ_indian_army_2
 				RAJ_risk_of_famine
 			}
 			focuses = {
-				RAJ_one_india
+				RAJ_declare_the_republic_of_india
 				RAJ_indian_gurkhas
-				RAJ_the_smiling_buddha
+				RAJ_far_east_development_plan
 			}
 		}
 		"IRE"={

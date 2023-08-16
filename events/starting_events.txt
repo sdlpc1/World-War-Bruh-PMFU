@@ -70,3 +70,31 @@ country_event = {
 		name = startingevent.999.a
 	}
 }
+
+# AA CHANGE
+country_event = {
+	id = startingevent.1003
+	title = startingevent.1003.t
+	desc = startingevent.1003.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# AIR SOVIET
+country_event = {
+	id = startingevent.1004
+	title = startingevent.1004.t
+	desc = startingevent.1004.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = startingevent.999.a
+	}
+}

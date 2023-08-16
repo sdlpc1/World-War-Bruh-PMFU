@@ -1014,11 +1014,9 @@ operations = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			custom_effect_tooltip = uk_into_uk_w_ireland_tt
-			hidden_effect = {
-				ENG = {
-					set_cosmetic_tag = ENG_ireland_annex
-				}
+			# custom_effect_tooltip = uk_into_uk_w_ireland_tt
+			ENG = {
+				set_cosmetic_tag = ENG_ireland_annex
 			}
 			ENG = {
 				IRE = {

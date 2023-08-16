@@ -438,7 +438,7 @@ country_event = {
 			remove_idea = GER_preparing_ITA_coup
 			add_idea = GER_preparing_ITA_coup2
 		}
-		remove_ideas = victor_emmanuel
+		remove_ideas = vittorio_emanuele
 		create_country_leader = {
 			name = "Victor Emmanuel III"
 			desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"

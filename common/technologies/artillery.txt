@@ -103,6 +103,7 @@ technologies = {
 			tank_auto_cannon_2
 			tank_small_gun_2
 			tank_light_art_gun_1
+			tank_light_cs_gun_1
 		}
 		path = {
 			leads_to_tech = antiair_research2
@@ -209,6 +210,7 @@ technologies = {
 			ship_anti_air_4
 			tank_small_gun_3
 			tank_light_art_gun_2
+			tank_light_cs_gun_2
 		}
 		
 		path = {
@@ -318,6 +320,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_light_art_gun_3
+			tank_light_cs_gun_3
 		}
 		
 		path = {
@@ -460,6 +463,9 @@ technologies = {
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
 		}
+		pack_antitank_brigade = {
+			hard_attack = 0.05
+		}
 		dp_artillery_brigade = {
 			soft_attack = 0.025
 			hard_attack = 0.025
@@ -599,9 +605,12 @@ technologies = {
 		mot_anti_tank_brigade = {
 			hard_attack = 0.1
 		}
+		pack_antitank_brigade = {
+			hard_attack = 0.1
+		}
 		dp_artillery_brigade = {
-			soft_attack = 0.025
-			hard_attack = 0.025
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 		path = {
 			leads_to_tech = artillery3
@@ -801,6 +810,9 @@ technologies = {
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
 		}
+		pack_antitank_brigade = {
+			hard_attack = 0.05
+		}
 		dp_artillery_brigade = {
 			soft_attack = 0.025
 			hard_attack = 0.025
@@ -935,6 +947,9 @@ technologies = {
 			}
 		}
 		anti_tank_brigade = {
+			hard_attack = 0.05
+		}
+		pack_antitank_brigade = {
 			hard_attack = 0.05
 		}
 		mot_anti_tank_brigade = {

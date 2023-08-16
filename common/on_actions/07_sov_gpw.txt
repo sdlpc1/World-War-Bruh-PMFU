@@ -1,5 +1,40 @@
 on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	# on_weekly_SOV = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				date > 1941.1.1
+	# 				NOT = {
+	# 					has_global_flag = SOV_eq_cache
+	# 				}
+	# 			}
+	# 			SOV = {
+	# 				add_equipment_to_stockpile = {
+	# 					type = infantry_equipment
+	# 					amount = 30000
+	# 					producer = SOV
+	# 				}
+	# 				add_equipment_to_stockpile = {
+	# 					type = squad_equipment
+	# 					amount = 7500
+	# 					producer = SOV
+	# 				}
+	# 				add_equipment_to_stockpile = {
+	# 					type = horse_equipment
+	# 					amount = 500
+	# 					producer = SOV
+	# 				}
+	# 				add_equipment_to_stockpile = {
+	# 					type = support_equipment
+	# 					amount = 2500
+	# 					producer = SOV
+	# 				}
+	# 			}
+	# 			set_global_flag = SOV_eq_cache
+	# 		}
+	# 	}
+	# }
 	on_state_control_changed = {
 		effect = {
 			if = {

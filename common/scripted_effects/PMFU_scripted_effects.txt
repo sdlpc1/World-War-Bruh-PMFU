@@ -623,3 +623,31 @@ training_time_fixer = {
 		else_if = { limit = { check_variable = { training_time_mod_total = -1.50 } } set_variable = { training_time_balancer = 0.85 } }
 	}
 }
+
+dockyard_cg_calculation = {
+	set_variable = { dockcount1 = 0 }
+	while_loop_effect = {
+		limit = {
+			num_of_naval_factories > dockcount1
+		}
+		add_to_variable = { dockcount1 = 1 }
+	}
+	set_variable = { dockcount2 = dockcount1 }
+	multiply_variable = { dockcount2 = 0.1 }
+	round_variable = dockcount2
+	set_variable = { dockcount3 = 0 }
+	set_variable = { dockyard_cg = 0 }
+	while_loop_effect = {
+		limit = {
+			check_variable = { dockcount3 < dockcount2 }
+		}
+		add_to_variable = { dockcount3 = 1 }
+		add_to_variable = { dockyard_cg = 0.005 }
+	}
+	if = {
+		limit = {
+			has_naval_treaty_trigger = yes
+		}
+		set_variable = { dockyard_cg = 0 }
+	}
+}

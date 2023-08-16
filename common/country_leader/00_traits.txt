@@ -858,8 +858,10 @@ leader_traits = {
 		mobilization_speed = 0.1
 		fascism_drift = 0.1
 		foreign_subversive_activites = -0.5
-		stability_weekly = -0.002
+		# stability_weekly = -0.002
 		justify_war_goal_time = -0.35
+		dig_in_speed_factor = 0.05
+		max_dig_in = 2.5
 	}
 
 	hardened_officer = { #Kimon Georgiev and Hristo Lukov
@@ -867,7 +869,7 @@ leader_traits = {
 		conscription_factor = 0.05
 		army_core_defence_factor = 0.05
 		dig_in_speed_factor = 0.05
-		max_dig_in = 5
+		max_dig_in = 1.25
 	}
 
 	incompetent_leader = { #Georgi Kyoseivanov

@@ -362,6 +362,50 @@ defined_text = { # global
 }
 
 defined_text = { # global
+	name = assault_gun_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = assault_gun
+				option = ASSAULT_GUN_LINE
+			}
+		}
+		localization_key = RULE_OPTION_ASSAULT_GUN_LINE
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = assault_gun
+				option = ASSAULT_GUN_SUPPORT
+			}
+		}
+		localization_key = RULE_OPTION_ASSAULT_GUN_SUPPORT
+	}
+}
+
+defined_text = { # global
+	name = allow_paratroopers_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = allow_paratroopers
+				option = yes
+			}
+		}
+		localization_key = RULE_OPTION_ALLOWED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = allow_paratroopers
+				option = no
+			}
+		}
+		localization_key = RULE_OPTION_BLOCKED
+	}
+}
+
+defined_text = { # global
 	name = horst_host_country_rule_sl
 	# axis
 	text = {

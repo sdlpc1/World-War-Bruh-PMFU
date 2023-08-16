@@ -1461,7 +1461,26 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_war = yes
+			OR = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = china_war_rule
+							option = DISABLED
+						}
+					}
+					JAP = {
+						has_completed_focus = JAP_intervene_in_china
+					}
+					NOT = {
+						JAP = {
+							has_completed_focus = JAP_secure_china
+						}
+					}
+				}
+				has_war = yes
+			}
+			
 		}
 
 		cancel_if_invalid = yes

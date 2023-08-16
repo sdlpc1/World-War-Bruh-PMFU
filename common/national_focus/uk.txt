@@ -2517,9 +2517,27 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_building_level = {
+					type = bunker
+					level = 4
+					province = 13309
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 4
+					province = 13310
+					instant_build = yes
+				}
+				set_building_level = {
 					type = coastal_bunker
 					level = 4
-					province = 10062
+					province = 13309
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 4
+					province = 13310
 					instant_build = yes
 				}
 				add_building_construction = {

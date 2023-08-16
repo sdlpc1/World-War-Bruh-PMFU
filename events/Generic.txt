@@ -2291,19 +2291,6 @@ news_event = {
 	}
 }
 
-country_event = {
-	id = generic.4333 # sov air
-	title = "Air on Soviets"
-	desc = "You are now expected todo air on the USSR, you have got an additional research slot, and have reduced focus time + rubber focuses from before, you are excepected to try to have yellow air and also get air lend lease from your allies."
-
-	is_triggered_only = yes
-    hidden = no
-
-	option = {
-		name = "OK"
-	}
-}
-
 add_namespace = horsttool
 news_event = {
 	id = horsttool.1

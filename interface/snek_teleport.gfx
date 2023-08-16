@@ -1,5 +1,18 @@
 spriteTypes = {	
 
+	SpriteType = {
+		name = "GFX_idea_bop_imperial_japanese_army"
+		texturefile = "gfx/interface/bop/bop_JAP_IJA.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_bop_imperial_japanese_navy"
+		texturefile = "gfx/interface/bop/bop_JAP_IJN.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_naval_dockyard_cg"
+		texturefile = "gfx/interface/ideas/icons/naval_dockyard_cg.dds"
+	}
+
 	### TANK SPRITE ###
 	SpriteType = {
 		name = "GFX_generic_heavy_tank_chassis_1_medium"
@@ -28,6 +41,10 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_trait_fifty_cas_dmg_reduction"
+		texturefile = "gfx/interface/traits/personal/trait_recently_promoted.dds"		
+	}	
+	spriteType = {
+		name = "GFX_trait_twenty_five_cas_dmg_reduction"
 		texturefile = "gfx/interface/traits/personal/trait_recently_promoted.dds"		
 	}	
 
@@ -234,6 +251,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_SOV_appoint_stalingrad_tractor_factory"
 		texturefile = "gfx/interface/goals/sov/SOV_appoint_stalingrad_tractor_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_RAJ_stop_the_rising_sun"
+		texturefile = "gfx/interface/goals/raj/focus_RAJ_stop_the_rising_sun.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_RAJ_indian_army"
+		texturefile = "gfx/interface/goals/raj/focus_RAJ_indian_army.dds"
 	}
 
     ## DIV ICONS
@@ -906,6 +931,70 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/sov/SOV_appoint_stalingrad_tractor_factory.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_RAJ_stop_the_rising_sun_shine"
+		texturefile = "gfx/interface/goals/raj/focus_RAJ_stop_the_rising_sun.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/raj/focus_RAJ_stop_the_rising_sun.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/raj/focus_RAJ_stop_the_rising_sun.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_RAJ_indian_army_shine"
+		texturefile = "gfx/interface/goals/raj/focus_RAJ_indian_army.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/raj/focus_RAJ_indian_army.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/raj/focus_RAJ_indian_army.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

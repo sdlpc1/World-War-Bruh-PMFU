@@ -4,6 +4,11 @@ POW_industry_mod = {
 	local_resources_factor  = pow_resource_gain
 }
 
+dockyard_cg_mod = {
+	icon = "GFX_idea_naval_dockyard_cg"
+	consumer_goods_factor = dockyard_cg
+}
+
 academy_over_time = {
 	training_time_army_factor = academy_weekly_training_speed_result
 	special_forces_min = academy_special_forces_capacity

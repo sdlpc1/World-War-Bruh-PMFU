@@ -1097,7 +1097,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 2 }
+			position = { x = 2 y = 2 }
 		}
 		
 		categories = {
@@ -1163,7 +1163,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 4 }
+			position = { x = 2 y = 4 }
 		}
 		
 		categories = {
@@ -1220,7 +1220,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 6 }
+			position = { x = 2 y = 6 }
 		}
 		
 		categories = {
@@ -1268,7 +1268,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 8 }
+			position = { x = 2 y = 8 }
 		}
 		
 		categories = {
@@ -1312,7 +1312,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 10 }
+			position = { x = 2 y = 10 }
 		}
 		
 		categories = {

@@ -270,14 +270,12 @@ characters={
 			legacy_id=-1
 		}
 	}
-	ENG_william_slim={
-		name="William Slim"
+	ENG_Hastings_Ismay={
+		name="Hastings Ismay"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_ENG_william_slim.dds"
-			}
-			army={
-				large="gfx/leaders/ENG/Portrait_Britain_William_Slim.dds"
+				large="GFX_portrait_raj_hastings_ismay"
+				small=GFX_portrait_raj_hastings_ismay
 			}
 		}
 		corps_commander={

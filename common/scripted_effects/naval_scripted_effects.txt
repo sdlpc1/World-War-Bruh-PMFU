@@ -210,14 +210,14 @@ HMP_check_fleet_size = {
 			value = command_limit_used_temp
 		}
 		if = {  
-			limit = { check_variable = {  command_limit_used > 150 } }
+			limit = { check_variable = {  command_limit_used > 100 } }
 			add_to_temp_variable = { 
 				var = command_limit_penalty_calc
 				value = command_limit_used
 			}
 			subtract_from_temp_variable = {
 				var = command_limit_penalty_calc
-				value = 145
+				value = 95
 			}
 			multiply_temp_variable = {
 				var = command_limit_penalty_calc

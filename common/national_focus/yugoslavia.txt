@@ -1552,8 +1552,8 @@ focus_tree = {
 			GER = {
 				country_event = generic.2
 			}
-			custom_effect_tooltip = yugo_into_croatia_tt
-			hidden_effect = {
+			# custom_effect_tooltip = yugo_into_croatia_tt
+			YUG = {
 				set_cosmetic_tag = YUG_croatia
 			}
 			set_politics = {

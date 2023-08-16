@@ -1901,7 +1901,7 @@ guiTypes = {
 			font = "hoi_24header"
 			maxWidth = 370
 			maxHeight = 16
-			text = "FE_HISTORICAL"
+			text = "Historical AI Focuses - Keep ON" #"FE_HISTORICAL"
 			pdx_tooltip = "FE_HISTORICAL_TOOLTIP"
 			format = left
 			fixedsize = yes
@@ -1914,15 +1914,15 @@ guiTypes = {
 			clicksound = click_checkbox
 		}
 
-		containerWindowType = {
-			name = "hist_block"
-			size = { width = 100 height = 100 } 
-			position = { x=530 y =145}	
-			background = {
-				name = "Background"
-				spriteType = "GFX_tiled_window_transparent"
-			}
-		}
+		# containerWindowType = {
+		# 	name = "hist_block"
+		# 	size = { width = 100 height = 100 } 
+		# 	position = { x=530 y =145}	
+		# 	background = {
+		# 		name = "Background"
+		# 		spriteType = "GFX_tiled_window_transparent"
+		# 	}
+		# }
 	}
 
 	containerWindowType = {

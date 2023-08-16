@@ -4351,6 +4351,8 @@ SOV_kill_trotsky_effect = { # Poor bwoy D: -> ROOT = SOV (or it doesn't work! :D
 		#	}
 		#}
 	}
+	ROOT = { set_country_flag = SOV_raided_trotskys_villa_flag }
+	news_event = nsb_news.100
 }
 
 

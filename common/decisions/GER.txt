@@ -859,6 +859,51 @@ GER_reichskommissariats = {
 }
 political_actions = {
 
+	GER_preplace_atlantikwall = {
+		name = "Place Converters on The Atlantikwall"
+		icon = generic_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
+			date > 1941.1.1
+			NOT = {
+				any_state = {
+					hidden_trigger = {
+						europe_dday_coastline = yes
+					}
+					custom_trigger_tooltip = {
+						tooltip = "European Coastline"
+					}
+					OR = { 
+						is_controlled_by = ENG
+						is_controlled_by = USA
+						is_controlled_by = FRA
+						is_controlled_by = SAF
+						is_controlled_by = CAN
+						is_controlled_by = AST
+						is_controlled_by = RAJ
+						is_controlled_by = NZL
+						is_controlled_by = MEX
+						is_controlled_by = BRA
+						is_controlled_by = HOL
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			load_oob = "DDAY_WALL_OOB"
+		}
+	}
+
 	# Reinstate Wilhelm IV into the line of succession
 	reinstate_wilhelm_iv_succession_rights = {
 

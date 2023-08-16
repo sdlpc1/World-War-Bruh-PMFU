@@ -550,7 +550,7 @@ AHC_BRITISH_RAJ_HIGH_COMMAND = {
 	if = {
 		limit = {
 			RAJ_frank_messervy = {
-				has_trait = army_commando_1
+				has_trait = army_armored_1
 			}
 		}
 		add_advisor_role = {
@@ -561,25 +561,6 @@ AHC_BRITISH_RAJ_HIGH_COMMAND = {
 				cost = 50
 				idea_token = RAJ_frank_messervy
 				traits = {
-					army_commando_3
-				}
-			}
-		}
-	}
-	if = {
-		limit = {
-			RAJ_douglas_gracey_father = {
-				has_trait = army_armored_1
-			}
-		}
-		add_advisor_role = {
-			character = RAJ_douglas_gracey_father
-			activate = no
-			advisor = {
-				slot = high_command
-				cost = 50
-				idea_token = RAJ_douglas_gracey_father
-				traits = {
 					army_armored_3
 				}
 			}
@@ -587,17 +568,17 @@ AHC_BRITISH_RAJ_HIGH_COMMAND = {
 	}
 	if = {
 		limit = {
-			RAJ_douglas_gracey_father = {
+			RAJ_frank_messervy = {
 				has_trait = army_combinedArms_1
 			}
 		}
 		add_advisor_role = {
-			character = RAJ_douglas_gracey_father
+			character = RAJ_frank_messervy
 			activate = no
 			advisor = {
 				slot = high_command
 				cost = 50
-				idea_token = RAJ_douglas_gracey_father
+				idea_token = RAJ_frank_messervy
 				traits = {
 					army_combinedArms_3
 				}

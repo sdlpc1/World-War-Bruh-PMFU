@@ -1,5 +1,37 @@
 JAP_interservice_rivalry_towards_army = {
 	
+	# if = {
+	# 	limit = {  has_idea = JAP_interservice_rivalry_army_strengthened }
+	# 	swap_ideas = {
+	# 		remove_idea = JAP_interservice_rivalry_army_strengthened
+	# 		add_idea = JAP_interservice_rivalry_army_dominant
+	# 	}
+	# }
+
+	# if = {
+	# 	limit = { has_idea = JAP_interservice_rivalry_balanced }
+	# 	swap_ideas = {
+	# 		remove_idea = JAP_interservice_rivalry_balanced
+	# 		add_idea = JAP_interservice_rivalry_army_strengthened
+	# 	}
+	# }
+
+	# if = {
+	# 	limit = { has_idea = JAP_interservice_rivalry_navy_strengthened }
+	# 	swap_ideas = {
+	# 		remove_idea = JAP_interservice_rivalry_navy_strengthened
+	# 		add_idea = JAP_interservice_rivalry_balanced
+	# 	}
+	# }
+
+	# if = {
+	# 	limit = { has_idea = JAP_interservice_rivalry_navy_dominant }
+	# 	swap_ideas = {
+	# 		remove_idea = JAP_interservice_rivalry_navy_dominant
+	# 		add_idea = JAP_interservice_rivalry_navy_strengthened
+	# 	}
+	# }
+
 	if = {
 		limit = {  has_idea = JAP_interservice_rivalry_army_strengthened }
 		swap_ideas = {
@@ -31,11 +63,39 @@ JAP_interservice_rivalry_towards_army = {
 			add_idea = JAP_interservice_rivalry_navy_strengthened
 		}
 	}
-
 }
 
 JAP_interservice_rivalry_towards_navy = {
 
+	# if = {
+	# 	limit = { has_idea = JAP_interservice_rivalry_navy_strengthened }
+	# 	swap_ideas = {
+	# 		remove_idea = JAP_interservice_rivalry_navy_strengthened
+	# 		add_idea = JAP_interservice_rivalry_navy_dominant
+	# 	}
+	# }	
+	# if = {
+	# 	limit = { has_idea = JAP_interservice_rivalry_balanced }
+	# 	swap_ideas = {
+	# 		remove_idea = JAP_interservice_rivalry_balanced
+	# 		add_idea = JAP_interservice_rivalry_navy_strengthened
+	# 	}
+	# }
+	# if = {
+	# 	limit = { has_idea = JAP_interservice_rivalry_army_strengthened }
+	# 	swap_ideas = {
+	# 		remove_idea = JAP_interservice_rivalry_army_strengthened
+	# 		add_idea = JAP_interservice_rivalry_balanced
+	# 	}
+	# }
+	# if = {
+	# 	limit = { has_idea = JAP_interservice_rivalry_army_dominant }
+	# 	swap_ideas = {
+	# 		remove_idea = JAP_interservice_rivalry_army_dominant
+	# 		add_idea = JAP_interservice_rivalry_army_strengthened
+	# 	}
+	# }
+	
 	if = {
 		limit = { has_idea = JAP_interservice_rivalry_navy_strengthened }
 		swap_ideas = {
@@ -64,8 +124,6 @@ JAP_interservice_rivalry_towards_navy = {
 			add_idea = JAP_interservice_rivalry_army_strengthened
 		}
 	}
-	
-	
 	
 }
 

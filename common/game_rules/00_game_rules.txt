@@ -39,6 +39,21 @@ navy_cap = {
 	}
 }
 
+assault_gun = {
+	name = "RULE_ASSAULT_GUNS"
+	group = "RULE_GROUP_TFB"
+	default = {
+		name = "ASSAULT_GUN_LINE"
+		text = "RULE_OPTION_ASSAULT_GUN_LINE"
+		desc = "RULE_OPTION_ASSAULT_GUN_LINE_DESC"
+	}
+	option = {
+		name = "ASSAULT_GUN_SUPPORT"
+		text = "RULE_OPTION_ASSAULT_GUN_SUPPORT"
+		desc = "RULE_OPTION_ASSAULT_GUN_SUPPORT_DESC"
+	}
+}
+
 china_war_rule = {
 	name = "RULE_CHINA_WAR"
 	group = "RULE_GROUP_TFB"

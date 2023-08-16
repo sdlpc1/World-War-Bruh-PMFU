@@ -119,6 +119,51 @@ prospect_for_resources = {
 
 political_actions = {
 
+	ITA_preplace_atlantikwall = {
+		name = "Place Converters on The Atlantikwall"
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			VIC = {
+                has_country_flag = VIC_france_capped
+            }
+			date > 1941.1.1
+			NOT = {
+				any_state = {
+					hidden_trigger = {
+						europe_dday_coastline = yes
+					}
+					custom_trigger_tooltip = {
+						tooltip = "European Coastline"
+					}
+					OR = { 
+						is_controlled_by = ENG
+						is_controlled_by = USA
+						is_controlled_by = FRA
+						is_controlled_by = SAF
+						is_controlled_by = CAN
+						is_controlled_by = AST
+						is_controlled_by = RAJ
+						is_controlled_by = NZL
+						is_controlled_by = MEX
+						is_controlled_by = BRA
+						is_controlled_by = HOL
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			load_oob = "DDAY_WALL_OOB"
+		}
+	}
+
 	demilitarize_ethiopia = {
         days_mission_timeout = 90
 		allowed = {

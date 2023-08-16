@@ -1631,6 +1631,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = SOV_massed_arty
 			add_tech_bonus = {
 				name = MONgaria
 				bonus = 1
@@ -1770,7 +1771,7 @@ focus_tree = {
 			army_experience = 100
 		}
 	}
-	
+
 	focus = {
 		id = MON_legacy_of_khanate
 		icon = GFX_focus_ger_great_red_menace
@@ -1789,12 +1790,12 @@ focus_tree = {
 			add_ideas = MON_spirit_of_genghis_idea
 			add_corps_commander_role = {
 				character = MON_khan
-				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer }
-				skill = 4
-				attack_skill = 3
-				defense_skill = 4
-				planning_skill = 5
-				logistics_skill = 6
+				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer infantry_leader winter_expert ranger }
+				skill = 6
+				attack_skill = 5
+				defense_skill = 6
+				planning_skill = 7
+				logistics_skill = 7
 			}
 		}
 	}
@@ -1819,4 +1820,27 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = MON_anti_fascism
+		icon = GFX_USA_fight_fascist_with_fire
+		prerequisite = { focus = MON_spirit_of_genghis }
+		prerequisite = { focus = MON_legacy_of_khanate }
+		x = -1
+		y = 1
+		relative_position_id = MON_spirit_of_genghis
+
+		available = {
+			SOV = { has_war_with = GER }
+		}
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_ideas = MON_anti_fascism
+		}
+	}
 }		

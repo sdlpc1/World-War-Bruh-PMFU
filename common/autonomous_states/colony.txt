@@ -54,7 +54,7 @@ autonomy_state = {
 			limit = {
 				original_tag = RAJ			
 			}
-			has_completed_focus = RAJ_cripps_mission
+			has_completed_focus = RAJ_declare_the_republic_of_india
 		}
 		#trigger here
 	}

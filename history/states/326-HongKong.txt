@@ -10,7 +10,7 @@ state=
 		# 1936.1.1.13 = {
 		# 	owner = WST
 		# }
-		add_core_of = ENG
+		# add_core_of = ENG
 		add_core_of = CHI
 		victory_points = {
 			10062 3 
@@ -20,7 +20,7 @@ state=
 			infrastructure = 5
 			dockyard = 1
 			air_base = 1
-			10062 = {
+			13310 = {
 				naval_base = 6
 				coastal_bunker = 1
 				bunker = 1
@@ -28,6 +28,6 @@ state=
 		}
 	}
 	provinces={
-		10062
+		10062 13309 13310 
 	}
 }

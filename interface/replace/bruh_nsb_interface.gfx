@@ -11,6 +11,16 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_heavy_assault_gun_brigade_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_flamethrower_tank_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_heavy_assault_gun_brigade_icon_small"					textureFile = "gfx/texticons/unit_heavy_flame_tank_icon_small.dds" legacy_lazy_load = no noOfFrames = 2}
 
+	spriteType = { name = "GFX_unit_light_assault_gun_support_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_light_flamethrower_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_assault_gun_support_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_flamethrower_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_light_assault_gun_support_icon_small"					textureFile = "gfx/texticons/unit_light_flame_tank_icon_small.dds" legacy_lazy_load = no noOfFrames = 2}
+	spriteType = { name = "GFX_unit_medium_assault_gun_support_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_medium_flamethrower_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_assault_gun_support_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_flamethrower_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_medium_assault_gun_support_icon_small"					textureFile = "gfx/texticons/unit_medium_flame_tank_icon_small.dds" legacy_lazy_load = no noOfFrames = 2}
+	spriteType = { name = "GFX_unit_heavy_assault_gun_support_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_flamethrower_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_assault_gun_support_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_flamethrower_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_heavy_assault_gun_support_icon_small"					textureFile = "gfx/texticons/unit_heavy_flame_tank_icon_small.dds" legacy_lazy_load = no noOfFrames = 2}
+	
 	### MODULES ## 
 	
 	spriteType = {
@@ -232,6 +242,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_light_art_gun_3"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_arty_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_cs_gun_1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_cs_gun_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_cs_gun_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_cs_gun_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_cs_gun_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_cs_gun_3.dds"
 	}
 	
 	spriteType = {

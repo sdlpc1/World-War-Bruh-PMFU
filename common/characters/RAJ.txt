@@ -12,7 +12,6 @@ characters={
 			id=-1
 		}
 	}
-
 	RAJ_v_d_savarkar={
 		name="V. D. Savarkar"
 		portraits={
@@ -26,7 +25,6 @@ characters={
 			id=-1
 		}
 	}
-
 	RAJ_p_krishna_pillai={
 		name=RAJ_p_krishna_pillai
 		portraits={
@@ -40,7 +38,6 @@ characters={
 			id=-1
 		}
 	}
-
 	RAJ_b_p_sitaramayya={
 		name=RAJ_b_p_sitaramayya
 		portraits={
@@ -54,7 +51,6 @@ characters={
 			id=-1
 		}
 	}
-
 	RAJ_noel_beresfordpeirse={
 		name=RAJ_noel_beresfordpeirse
 		portraits={
@@ -64,16 +60,15 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ inflexible_strategist infantry_leader organizer infantry_leader }
+			traits={ inflexible_strategist infantry_leader infantry_leader urban_assault_specialist }
 			skill=5
-			attack_skill=4
-			defense_skill=5
-			planning_skill=5
-			logistics_skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
-
 	RAJ_frank_messervy={
 		name=RAJ_frank_messervy
 		portraits={
@@ -83,10 +78,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ commando trickster hill_fighter }
+			traits={ panzer_leader trickster desert_fox}
 			skill=3
-			attack_skill=2
-			defense_skill=4
+			attack_skill=4
+			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
@@ -112,25 +107,25 @@ characters={
 		}
 	}
 
-	RAJ_douglas_gracey_father={
-		name="Douglas Gracey's Father"
-		portraits={
-			army={
-				large="GFX_RAJ_douglas_gracey"
-				small=GFX_portrait_RAJ_douglas_gracey_small
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader media_personality trait_engineer }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
-			legacy_id=-1
-		}
-	}
-
+	# RAJ_douglas_gracey_father={
+	# 	name="Douglas Gracey's Father"
+	# 	portraits={
+	# 		army={
+	# 			large="GFX_RAJ_douglas_gracey"
+	# 			small=GFX_portrait_RAJ_douglas_gracey_small
+	# 		}
+	# 	}
+	# 	corps_commander={
+	# 		traits={ panzer_leader media_personality trait_engineer }
+	# 		skill=3
+	# 		attack_skill=3
+	# 		defense_skill=3
+	# 		planning_skill=2
+	# 		logistics_skill=4
+	# 		legacy_id=-1
+	# 	}
+	# }
+	
 	RAJ_herbert_fitzherbert={
 		name=RAJ_herbert_fitzherbert
 		portraits={
@@ -206,6 +201,31 @@ characters={
 			}
 		}
 	}
+	# Political Advisors
+	# RAJ_auchinleck={ #retard obama
+	# 	name="Claude Auchinleck"
+	# 	portraits={
+	# 		army={
+	# 			small="GFX_idea_todt"
+	# 		}
+	# 	}
+	# 	advisor={
+	# 		slot = political_advisor
+	# 		idea_token = GER_fritz_todt
+	# 		allowed  = {
+	# 			original_tag = RAJ
+	# 		}
+	# 		traits  = {
+	# 			speer_idea
+	# 		}
+	# 		available = {
+	# 			has_completed_focus = RAJ_war_politics
+	# 		}
+	# 		ai_will_do = {
+	# 			factor = 1000
+	# 		}
+	# 	}
+	# }
 	RAJ_w_h_gould_bradford={
 		advisor={
 			slot = high_command
@@ -429,7 +449,7 @@ characters={
 					limit  = {
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus  = RAJ_indian_national_congress 
+					has_completed_focus  = RAJ_Indian_reforms 
 				}
 				if  = {
 					limit  = {
@@ -487,7 +507,7 @@ characters={
 			idea_token = RAJ_homi_j_bhabha
 			ledger  = army 
 			available  = {
-				has_completed_focus  = RAJ_institute_of_fundamental_research 
+				has_completed_focus  = RAJ_bangalore_university 
 			}
 			allowed  = {
 				original_tag  = RAJ
@@ -823,6 +843,47 @@ characters={
 			army={
 				small="GFX_idea_generic_political_advisor_arab_3"
 			}
+		}
+	}
+	####################################################################################################
+	#Obama##############################################################################################
+	####################################################################################################
+		RAJ_thomas_wynford_rees={
+		name="Thomas Wynford Rees"
+		portraits={
+			army={
+				large="GFX_portrait_raj_thomas_wynford_rees"
+				small=GFX_portrait_raj_thomas_wynford_rees
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader trait_reckless hill_fighter traits expert_improviser infantry_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+		}
+		RAJ_william_slim={
+		name="William Slim"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ENG_william_slim.dds"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_William_Slim.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist trait_reckless organizer infantry_leader trait_engineer hill_fighter }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
 		}
 	}
 }

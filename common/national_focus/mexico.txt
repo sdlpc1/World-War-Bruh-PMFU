@@ -3409,7 +3409,7 @@ focus_tree = {
 
     focus = {
 		id = MEX_focus_better_weapons
-			icon = GFX_goal_generic_small_arms
+			icon = GFX_USA_well_supplied_and_motivated
 			prerequisite = { focus = MEX_focus_leg_day }
 			relative_position_id = MEX_focus_leg_day
 			x = 0
@@ -4092,7 +4092,7 @@ focus_tree = {
 					uses = 2
 					category = cat_special_forces_generic
 				}
-				add_ideas = MEX_cheap_sfeq
+				# add_ideas = MEX_cheap_sfeq
 			}
 	}
 

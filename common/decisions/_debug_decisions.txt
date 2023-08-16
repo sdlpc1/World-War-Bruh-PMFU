@@ -20,6 +20,66 @@ debug_decisions = {
 		}	
 	}
 
+	dday_oob = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			load_oob = "DDAY_WALL_OOB"
+		}	
+	}
+
+	stalin_oob = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			load_oob = "STALIN_LINE_OOB"
+		}	
+	}
+
+	finland_and_ports_oob = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			load_oob = "FINLAND_AND_PORTS_OOB"
+		}	
+	}
+
 	add_efficiency_growth_debug = {
 		icon = generic_research
 

@@ -2521,7 +2521,7 @@ focus = {
 		cost = 5
 
 		cancel_if_invalid = no
-
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 5

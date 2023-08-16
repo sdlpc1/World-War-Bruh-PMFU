@@ -197,6 +197,46 @@ foreign_politics = {
 	# 		}
 	# 	}
 	# }
+	
+	SOV_preplace_stalin_line = {
+		name = "Place Converters on The Stalin line"
+		icon = generic_operation
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			has_war = no
+			date > 1941.1.1
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			load_oob = "STALIN_LINE_OOB"
+		}
+	}
+
+	SOV_preplace_finland_and_ports = {
+		name = "Place Converters on Finland and on Ports"
+		icon = generic_operation
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			has_war = no 
+			date > 1941.1.1
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			load_oob = "FINLAND_AND_PORTS_OOB"
+		}
+	}
 
 	SOV_transfer_iran = {
 		icon = generic_operation
@@ -7640,7 +7680,7 @@ SOV_industry_relocation = {
 				569 = {
 					add_resource = {
 						type = aluminium
-						amount = 12
+						amount = 120
 					}
 				}
 			}
@@ -9505,6 +9545,24 @@ operations = {
 				idea = SOV_winter_war_adapt
 				days = 120
 			}
+			FIN = {
+				swap_ideas = {
+					remove_idea = FIN_winter_war
+					add_idea = FIN_winter_war_2
+				}
+				hidden_effect = {
+					every_army_leader={
+						remove_trait = {
+							trait = fifty_cas_dmg_reduction
+						}
+					}
+					every_army_leader={
+						add_trait = {
+							trait = twenty_five_cas_dmg_reduction
+						}
+					}
+				}
+			}
 		}
 
 	}
@@ -9652,23 +9710,24 @@ operations = {
 }
 
 political_actions = {
-	# assasinate_trotsky ={
+	assasinate_trotsky ={
 
-	# 	days_remove = 220
+		days_remove = 120
 
-    #     allowed = {
-	# 		original_tag = SOV
-	# 	}
+		fire_only_once = yes
 
-	# 	visible = {
-    #         has_global_flag = NO_ASIA
-	# 		has_completed_focus = SOV_behead_the_snake
-	# 	}
+        allowed = {
+			original_tag = SOV
+		}
 
-	# 	remove_effect = {
-	# 		SOV_kill_trotsky_effect = yes
-	# 	}
-	# }	
+		visible = {
+			has_completed_focus = SOV_behead_the_snake
+		}
+
+		remove_effect = {
+			SOV_kill_trotsky_effect = yes
+		}
+	}	
 }
 
 # political_actions = {

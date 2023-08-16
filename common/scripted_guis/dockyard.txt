@@ -10,6 +10,7 @@ scripted_gui = {
 			FROM = {
 				is_coastal = yes
 			}
+			always = no
 		}
 
 		effects = {
@@ -26,7 +27,6 @@ scripted_gui = {
 				is_owned_and_controlled_by = ROOT
 				dockyard > 0
 			}
-
 		}
 	}
 }

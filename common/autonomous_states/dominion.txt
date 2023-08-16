@@ -50,7 +50,7 @@ autonomy_state = {
 			limit = {
 				original_tag = RAJ
 			}
-			has_completed_focus = RAJ_quit_india_movement
+			has_completed_focus = RAJ_start_quit_india_movement
 		}
 	}
 

@@ -4685,6 +4685,7 @@ focus_tree = {
 				# }
 				# else = {	
 				custom_effect_tooltip = SOV_behead_the_snake_lar_tt
+				activate_decision = assasinate_trotsky
 				create_operative_leader = {
 					name = "Ramón Mercader"
 					GFX = GFX_portrait_SOV_ramon_mercader
@@ -5640,6 +5641,39 @@ focus_tree = {
 				add_state_core = 78
 				add_state_core = 766
 				add_state_core = 80
+				MON = {
+					hidden_effect = {
+						add_state_core = 78
+						add_state_core = 766
+						add_state_core = 80
+					}
+				}
+			}
+			MON = {
+				hidden_effect = {
+					add_state_core = 97
+					add_state_core = 784
+					add_state_core = 96
+					add_state_core = 95
+					add_state_core = 94
+					add_state_core = 93
+					add_state_core = 91
+					add_state_core = 89
+					add_state_core = 11
+					add_state_core = 189
+					add_state_core = 12
+					add_state_core = 190
+					add_state_core = 13
+					add_state_core = 191
+					add_state_core = 808
+					add_state_core = 809
+					add_state_core = 810
+					add_state_core = 811
+					add_state_core = 812
+					add_state_core = 813
+					add_state_core = 814
+					add_state_core = 815
+				}
 			}
 		}
 	}
@@ -6893,24 +6927,32 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
-			set_country_flag = SOV_merge_tank_dzerzhinsky_stalingrad_tractor_factory_1_flag
-			if = {
+			every_country = {
 				limit = {
-					has_idea = dzerzhinsky_stalingrad_tractor_factory
+					OR = {
+						tag = MON
+						tag = SOV
+					}
 				}
-				swap_ideas = {
-					remove_idea = dzerzhinsky_stalingrad_tractor_factory
-					add_idea = dzerzhinsky_stalingrad_tractor_factory_1
-				}
-			}
-			else = {
-				effect_tooltip = {
+				set_country_flag = SOV_merge_tank_dzerzhinsky_stalingrad_tractor_factory_1_flag
+				if = {
+					limit = {
+						has_idea = dzerzhinsky_stalingrad_tractor_factory
+					}
 					swap_ideas = {
 						remove_idea = dzerzhinsky_stalingrad_tractor_factory
 						add_idea = dzerzhinsky_stalingrad_tractor_factory_1
 					}
 				}
-				add_ideas = dzerzhinsky_stalingrad_tractor_factory_1
+				else = {
+					effect_tooltip = {
+						swap_ideas = {
+							remove_idea = dzerzhinsky_stalingrad_tractor_factory
+							add_idea = dzerzhinsky_stalingrad_tractor_factory_1
+						}
+					}
+					add_ideas = dzerzhinsky_stalingrad_tractor_factory_1
+				}
 			}
 		}
 	}
@@ -6969,24 +7011,32 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
-			set_country_flag = SOV_merge_tank_SOV_okmo_1_flag
-			if = {
+			every_country = {
 				limit = {
-					has_idea = SOV_okmo
+					OR = {
+						tag = MON
+						tag = SOV
+					}
 				}
-				swap_ideas = {
-					remove_idea = SOV_okmo
-					add_idea = SOV_okmo_1
-				}
-			}
-			else = {
-				effect_tooltip = {
+				set_country_flag = SOV_merge_tank_SOV_okmo_1_flag
+				if = {
+					limit = {
+						has_idea = SOV_okmo
+					}
 					swap_ideas = {
 						remove_idea = SOV_okmo
 						add_idea = SOV_okmo_1
 					}
 				}
-				add_ideas = SOV_okmo_1
+				else = {
+					effect_tooltip = {
+						swap_ideas = {
+							remove_idea = SOV_okmo
+							add_idea = SOV_okmo_1
+						}
+					}
+					add_ideas = SOV_okmo_1
+				}
 			}
 
 			# custom_effect_tooltip = available_designer
@@ -7017,49 +7067,56 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
-			set_country_flag = SOV_merge_tank_ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1_flag
-			set_country_flag = SOV_merge_tank_kharkiv_diesel_factory_1_flag
-			if = {
+			every_country = {
 				limit = {
-					has_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
+					OR = {
+						tag = MON
+						tag = SOV
+					}
 				}
-				swap_ideas = {
-					remove_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
-					add_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1
-				}
-			}
-			else = {
-				effect_tooltip = {
+				set_country_flag = SOV_merge_tank_ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1_flag
+				set_country_flag = SOV_merge_tank_kharkiv_diesel_factory_1_flag
+				if = {
+					limit = {
+						has_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
+					}
 					swap_ideas = {
 						remove_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
 						add_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1
 					}
 				}
-			}
-			
-			if = {
-				limit = {
-					has_idea = kharkiv_diesel_factory
+				else = {
+					effect_tooltip = {
+						swap_ideas = {
+							remove_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM
+							add_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1
+						}
+					}
 				}
-				swap_ideas = {
-					remove_idea = kharkiv_diesel_factory
-					add_idea = kharkiv_diesel_factory_1
-				}
-			}
-			else = {
-				effect_tooltip = {
+				
+				if = {
+					limit = {
+						has_idea = kharkiv_diesel_factory
+					}
 					swap_ideas = {
 						remove_idea = kharkiv_diesel_factory
 						add_idea = kharkiv_diesel_factory_1
 					}
 				}
-			}
-
-			if = {
-				limit = {
-					NOT = { has_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1 }
+				else = {
+					effect_tooltip = {
+						swap_ideas = {
+							remove_idea = kharkiv_diesel_factory
+							add_idea = kharkiv_diesel_factory_1
+						}
+					}
 				}
-				add_ideas = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1
+				if = {
+					limit = {
+						NOT = { has_idea = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1 }
+					}
+					add_ideas = ordzhonikidze_ural_heavy_machine_building_plant_UZTM_1
+				}
 			}
 		}
 	}
@@ -7112,24 +7169,32 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
-			set_country_flag = SOV_merge_tank_SOV_morozov_design_bureau_1_flag
-			if = {
+			every_country = {
 				limit = {
-					has_idea = SOV_morozov_design_bureau
+					OR = {
+						tag = MON
+						tag = SOV
+					}
 				}
-				swap_ideas = {
-					remove_idea = SOV_morozov_design_bureau
-					add_idea = SOV_morozov_design_bureau_1
-				}
-			}
-			else = {
-				effect_tooltip = {
+				set_country_flag = SOV_merge_tank_SOV_morozov_design_bureau_1_flag
+				if = {
+					limit = {
+						has_idea = SOV_morozov_design_bureau
+					}
 					swap_ideas = {
 						remove_idea = SOV_morozov_design_bureau
 						add_idea = SOV_morozov_design_bureau_1
 					}
 				}
-				add_ideas = SOV_morozov_design_bureau_1
+				else = {
+					effect_tooltip = {
+						swap_ideas = {
+							remove_idea = SOV_morozov_design_bureau
+							add_idea = SOV_morozov_design_bureau_1
+						}
+					}
+					add_ideas = SOV_morozov_design_bureau_1
+				}
 			}
 
 			# custom_effect_tooltip = available_designer
@@ -7160,24 +7225,32 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
-			set_country_flag = SOV_merge_tank_SOV_astrov_design_bureau_1_flag
-			if = {
+			every_country = {
 				limit = {
-					has_idea = SOV_astrov_design_bureau
+					OR = {
+						tag = MON
+						tag = SOV
+					}
 				}
-				swap_ideas = {
-					remove_idea = SOV_astrov_design_bureau
-					add_idea = SOV_astrov_design_bureau_1
-				}
-			}
-			else = {
-				effect_tooltip = {
+				set_country_flag = SOV_merge_tank_SOV_astrov_design_bureau_1_flag
+				if = {
+					limit = {
+						has_idea = SOV_astrov_design_bureau
+					}
 					swap_ideas = {
 						remove_idea = SOV_astrov_design_bureau
 						add_idea = SOV_astrov_design_bureau_1
 					}
 				}
-				add_ideas = SOV_astrov_design_bureau_1
+				else = {
+					effect_tooltip = {
+						swap_ideas = {
+							remove_idea = SOV_astrov_design_bureau
+							add_idea = SOV_astrov_design_bureau_1
+						}
+					}
+					add_ideas = SOV_astrov_design_bureau_1
+				}
 			}
 		}
 	}
@@ -7611,31 +7684,39 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
 			add_tech_bonus = {
 				name = electronics
 				bonus = 1
 				uses = 2
 				category = electronics
 			}
-			set_country_flag = SOV_merge_tank_kirov_1_flag
-			if = {
+			custom_effect_tooltip = "YOU WILL HAVE TO REDESIGN YOUR TANK FOR THE DESIGNER UPGRADE TO APPLY"
+			every_country = {
 				limit = {
-					has_idea = SOV_kirov
+					OR = {
+						tag = MON
+						tag = SOV
+					}
 				}
-				swap_ideas = {
-					remove_idea = SOV_kirov
-					add_idea = SOV_kirov_1
-				}
-			}
-			else = {
-				effect_tooltip = {
+				set_country_flag = SOV_merge_tank_kirov_1_flag
+				if = {
+					limit = {
+						has_idea = SOV_kirov
+					}
 					swap_ideas = {
 						remove_idea = SOV_kirov
 						add_idea = SOV_kirov_1
 					}
 				}
-				add_ideas = SOV_kirov_1
+				else = {
+					effect_tooltip = {
+						swap_ideas = {
+							remove_idea = SOV_kirov
+							add_idea = SOV_kirov_1
+						}
+					}
+					add_ideas = SOV_kirov_1
+				}
 			}
 			# custom_effect_tooltip = available_designer
 			# show_ideas_tooltip = SOV_kirov
@@ -8184,20 +8265,20 @@ focus_tree = {
 			}
 
 			hidden_effect = {
-			if = { #DEFAULT COMMIE
-				limit = {
-					has_government = communism
+				if = { #DEFAULT COMMIE
+					limit = {
+						has_government = communism
+					}
+					#Swap dynamic modifiers to show the bonus equipment custom tooltip
+					remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier }
+					add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier }
 				}
-				#Swap dynamic modifiers to show the bonus equipment custom tooltip
-				remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier }
-				add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier }
+				else = { #ALT IDEOLOGY
+					#Swap dynamic modifiers to show the bonus equipment custom tooltip
+					remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier_alt }
+					add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
+				}
 			}
-			else = { #ALT IDEOLOGY
-				#Swap dynamic modifiers to show the bonus equipment custom tooltip
-				remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier_alt }
-				add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
-			}
-		}
 
 			custom_effect_tooltip = SOV_increase_aircraft_production_ns_tt
 
@@ -8281,10 +8362,10 @@ focus_tree = {
 		cost = 3
 
 		available = {
-			any_enemy_country = {
-				SOV_is_major_not_original_sov = yes
-			}
-			has_full_control_of_state = 219 #MOSCOW
+			# any_enemy_country = {
+			# 	SOV_is_major_not_original_sov = yes
+			# }
+			# has_full_control_of_state = 219 #MOSCOW
 		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}

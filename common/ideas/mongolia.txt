@@ -21,6 +21,57 @@ ideas = {
 
 	country = {
 
+		MON_anti_fascism = {
+
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				original_tag = MON
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = HUN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ROM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = BUL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = FIN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = VIC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
 		MON_nomadic_war_idea = {
 
 			picture = generic_manpower_bonus

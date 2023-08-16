@@ -354,3 +354,7 @@
   JAP_intel_prop:0 "Supai no te ni wataranaide kudasai"
   JAP_tank2_prop:0 "Sensha-tai ni sanka suru"
   JAP_usa_prop:0 "Oni ni chūi"
+
+  ### BOP ###
+  imperial_japanese_army:0 "Imperial Japanese Army"
+  imperial_japanese_navy:0 "Imperial Japanese Navy"

@@ -6,6 +6,9 @@ state={
 	
 	state_category = metropolis
 
+	resources={
+		aluminium=120
+	}
 	history = {
 		set_state_flag = SOV_controls
 		owner = SOV

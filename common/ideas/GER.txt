@@ -1058,7 +1058,7 @@ ideas = {
 			picture = expand_mefo_1
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = -0.025
 				line_change_production_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_start_efficiency_factor = 0.1
@@ -1083,10 +1083,10 @@ ideas = {
 			picture = expand_mefo_1
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.0
-				line_change_production_efficiency_factor = 0.15
-				production_factory_efficiency_gain_factor = 0.15
-				production_factory_start_efficiency_factor = 0.15
+				production_speed_arms_factory_factor = -0.05
+				line_change_production_efficiency_factor = 0.125
+				production_factory_efficiency_gain_factor = 0.125
+				production_factory_start_efficiency_factor = 0.125
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 				political_power_gain = -0.40
@@ -1110,10 +1110,10 @@ ideas = {
 			name = GER_expand_mefo_fast_2
 
 			modifier = {
-				production_speed_arms_factory_factor = -0.05
-				line_change_production_efficiency_factor = 0.2
-				production_factory_efficiency_gain_factor = 0.2
-				production_factory_start_efficiency_factor = 0.2
+				production_speed_arms_factory_factor = -0.075
+				line_change_production_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				political_power_gain = -0.50
@@ -1140,6 +1140,7 @@ ideas = {
 				line_change_production_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_start_efficiency_factor = 0.05
+				industrial_capacity_dockyard = 0.05
 				political_power_gain = -0.3
 			}
 		}
@@ -1164,6 +1165,7 @@ ideas = {
 				line_change_production_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_start_efficiency_factor = 0.05
+				industrial_capacity_dockyard = 0.1
 				political_power_gain = -0.5
 			}
 		}
@@ -2677,9 +2679,10 @@ ideas = {
 			available = {
 				OR = {
 					original_tag = GER
-					GER = {
-						has_completed_focus = GER_share_tanks
-					}
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
 				}
 				if = {
 					limit = {
@@ -2749,9 +2752,10 @@ ideas = {
 			available = {
 				OR = {
 					original_tag = GER
-					GER = {
-						has_completed_focus = GER_share_tanks
-					}
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
 				}
 				if = {
 					limit = {
@@ -2821,9 +2825,10 @@ ideas = {
 			available = {
 				OR = {
 					original_tag = GER
-					GER = {
-						has_completed_focus = GER_share_tanks
-					}
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
 				}
 				if = {
 					limit = {
@@ -2899,9 +2904,10 @@ ideas = {
 			available = {
 				OR = {
 					original_tag = GER
-					GER = {
-						has_completed_focus = GER_share_tanks
-					}
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
 				}
 				if = {
 					limit = {
@@ -2994,9 +3000,10 @@ ideas = {
 			available = {
 				OR = {
 					original_tag = GER
-					GER = {
-						has_completed_focus = GER_share_tanks
-					}
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
 				}
 				if = {
 					limit = {
@@ -3065,9 +3072,10 @@ ideas = {
 			available = {
 				OR = {
 					original_tag = GER
-					GER = {
-						has_completed_focus = GER_share_tanks
-					}
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
 				}
 				if = {
 					limit = {
@@ -3136,9 +3144,10 @@ ideas = {
 			available = {
 				OR = {
 					original_tag = GER
-					GER = {
-						has_completed_focus = GER_share_tanks
-					}
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
 				}
 				if = {
 					limit = {
@@ -3211,9 +3220,10 @@ ideas = {
 				}
 				OR = {
 					original_tag = GER
-					GER = {
-						has_completed_focus = GER_share_tanks
-					}
+					# GER = {
+					# 	has_completed_focus = GER_share_tanks
+					# }
+					always = yes
 				}
 				if = {
 					limit = {
@@ -3575,6 +3585,9 @@ ideas = {
 				unit_light_assault_gun_brigade_design_cost_factor = -1
 				unit_medium_assault_gun_brigade_design_cost_factor = -1
 				unit_heavy_assault_gun_brigade_design_cost_factor = -1
+				unit_light_assault_gun_support_design_cost_factor = -1
+				unit_medium_assault_gun_support_design_cost_factor = -1
+				unit_heavy_assault_gun_support_design_cost_factor = -1
 				unit_cavalry_design_cost_factor = -1
 				unit_engineer_design_cost_factor = -1
 				unit_assault_engineer_design_cost_factor = -1
@@ -3907,6 +3920,9 @@ ideas = {
 				module_tank_med_hv_gun_3_design_cost_factor = -1
 				# module_tank_med_gun_squeeze_design_cost_factor = -1
 				# module_tank_med_gun_squeeze2_design_cost_factor = -1
+				module_tank_light_cs_gun_1_design_cost_factor = -1
+				module_tank_light_cs_gun_2_design_cost_factor = -1
+				module_tank_light_cs_gun_3_design_cost_factor = -1
 				module_tank_med_cs_gun_1_design_cost_factor = -1
 				module_tank_med_cs_gun_2_design_cost_factor = -1
 				module_tank_med_cs_gun_3_design_cost_factor = -1
@@ -4002,8 +4018,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				offence = -0.065
-				defence = -0.03
+				offence = -0.085
+				defence = -0.055
 			}
 		}
 

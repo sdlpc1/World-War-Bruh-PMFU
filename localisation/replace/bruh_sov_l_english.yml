@@ -363,6 +363,7 @@
   SOV_transfer_iran:0 "Transfer Iran to Mongolia"
   SOV_get_canadian_mech:0 "Stealing Canadian Mechanized"
   SOV_get_canadian_mech_desc:0 "Triggers when Canada researches mechanized, made to simulate stealing mechanized"
+  assasinate_trotsky:0 "Assasinate Trotsky"
 
   #### FLAG ####
   SOV_purge:0 "§RPurge has Begun§!\n"

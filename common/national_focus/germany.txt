@@ -23,14 +23,14 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 2050 y = 700 }
+	continuous_focus_position = { x = 1960 y = 700 }
 	
 	default = no
 
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_goring_plan
-		x = 6
+		x = 5
 		y = 0
 		cost = 5
 		
@@ -49,7 +49,7 @@ focus_tree = {
 		id = GER_grosraumwirtschaft
 		icon = GFX_focus_GER_grosraumwirtschaft
 		prerequisite = { focus = GER_four_year_plan }
-		x = -4
+		x = -3
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 5
@@ -371,7 +371,7 @@ focus_tree = {
 		id = GER_expand_mefo
 		icon = GFX_expand_mefo
 		prerequisite = { focus = GER_grosraumwirtschaft }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = GER_grosraumwirtschaft
 		cost = 5
@@ -418,6 +418,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		cancel_if_invalid = no
@@ -588,7 +592,7 @@ focus_tree = {
 		icon = GFX_rearm_slow
 		prerequisite = { focus = GER_expand_mefo }
 		mutually_exclusive = { focus = GER_rearm_fast }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_expand_mefo
 		cost = 5
@@ -602,7 +606,7 @@ focus_tree = {
 		
 		available = {
 			has_idea = GER_mefo_bills_1
-			has_idea = GER_hjalmar_schacht
+			# has_idea = GER_hjalmar_schacht
 		}
 		complete_tooltip = {
 		}
@@ -728,10 +732,10 @@ focus_tree = {
 	focus = {
 		id = GER_rearmed_and_ready
 		icon = GFX_goal_ammunitions
-		prerequisite = { focus = GER_rearm_slow3 focus = GER_rearm_fast3 }
-		x = 1
+		prerequisite = { focus = GER_rearm_slow3 } #focus = GER_rearm_fast3
+		x = 0
 		y = 1
-		relative_position_id = GER_rearm_fast3
+		relative_position_id = GER_rearm_slow3
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1311,8 +1315,8 @@ focus_tree = {
 		id = GER_align_hungary
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = GER_grosraumwirtschaft }
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = GER_grosraumwirtschaft
 		cost = 3
 		ai_will_do = {
@@ -1340,7 +1344,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_align_romania
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_GER_support_rom
 		prerequisite = { focus = GER_grosraumwirtschaft }
 		x = -1
 		y = 1
@@ -1402,7 +1406,7 @@ focus_tree = {
 	focus = {
 		id = GER_luft
 		icon = GFX_luftwaffe_laurel
-		x = 14
+		x = 13
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1689,7 +1693,7 @@ focus_tree = {
 		id = GER_strategic_air_effort
 		icon = GFX_Bombs_Away
 		prerequisite = { focus = GER_tactical_air_effort }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = GER_tactical_air_effort
 		cost = 5
@@ -1900,7 +1904,7 @@ focus_tree = {
 	focus = {
 		id = GER_heer
 		icon = GFX_baltic_cross
-		x = 24
+		x = 21
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -2234,7 +2238,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
-		x = 32
+		x = 29
 		y = 0
 		cost = 5
 		available = {
@@ -3237,15 +3241,15 @@ focus_tree = {
 		prerequisite = { focus = GER_danzig_or_war }
 		
 		available = {
-			98 = { controller = { is_in_faction_with = GER } } 
-			86 = { controller = { is_in_faction_with = GER } } 
-			85 = { controller = { is_in_faction_with = GER } } 
-			87 = { controller = { is_in_faction_with = GER } } 
-			88 = { controller = { is_in_faction_with = GER } } 
-			90 = { controller = { is_in_faction_with = GER } } 
-			92 = { controller = { is_in_faction_with = GER } } 
-			763 = { controller = { is_in_faction_with = GER } } 
-			5 = { controller = { is_in_faction_with = GER } } 
+			98 = { is_controlled_by_ROOT_or_ally = yes } 
+			86 = { is_controlled_by_ROOT_or_ally = yes } 
+			85 = { is_controlled_by_ROOT_or_ally = yes } 
+			87 = { is_controlled_by_ROOT_or_ally = yes } 
+			88 = { is_controlled_by_ROOT_or_ally = yes } 
+			90 = { is_controlled_by_ROOT_or_ally = yes } 
+			92 = { is_controlled_by_ROOT_or_ally = yes}
+			763 = { is_controlled_by_ROOT_or_ally = yes }
+			5 = { is_controlled_by_ROOT_or_ally = yes }
 		}
 		
 		x = -7
@@ -4888,13 +4892,14 @@ focus_tree = {
 		available = {
 			# has_full_control_of_state = 16
 			16 = {
-				CONTROLLER = {
-					OR = {
-						original_tag = ROOT
-						is_in_faction_with = ROOT
-						is_subject_of = ROOT
-					}
-				}
+				# CONTROLLER = {
+				# 	OR = {
+				# 		original_tag = ROOT
+				# 		is_in_faction_with = ROOT
+				# 		is_subject_of = ROOT
+				# 	}
+				# }
+				is_controlled_by_ROOT_or_ally = yes
 			}
 		}
 		bypass = {
@@ -4915,23 +4920,23 @@ focus_tree = {
  			}
 			add_ideas = triumphant_will
 			add_political_power = 200
-			hidden_effect = {
-				every_country = {
-					limit = {
-						is_in_faction_with = GER
-					}
-					every_controlled_state = {
-						limit = {
-							is_controlled_by = PREV
-							NOT = {
-								is_core_of = PREV
-							}
-							is_on_continent = europe
-						}
-						add_compliance = 30
-					}
-				}
-			}
+			# hidden_effect = {
+			# 	every_country = {
+			# 		limit = {
+			# 			is_in_faction_with = GER
+			# 		}
+			# 		every_controlled_state = {
+			# 			limit = {
+			# 				is_controlled_by = PREV
+			# 				NOT = {
+			# 					is_core_of = PREV
+			# 				}
+			# 				is_on_continent = europe
+			# 			}
+			# 			add_compliance = 15
+			# 		}
+			# 	}
+			# }
 		}
 	}
 	
@@ -4940,9 +4945,9 @@ focus_tree = {
 		icon = GFX_GER_exploit_and_plunder
 		prerequisite = { focus = GER_avenge_versailles }
 		available = {
-			16 = { controller = { is_in_faction_with = GER } } 
-			7 = { controller = { is_in_faction_with = GER } } 
-			6 = { controller = { is_in_faction_with = GER } } 
+			16 = { is_controlled_by_ROOT_or_ally = yes } 
+			7 = { is_controlled_by_ROOT_or_ally = yes } 
+			6 = { is_controlled_by_ROOT_or_ally = yes } 
 		}
 		bypass = {
 		}
@@ -5757,7 +5762,7 @@ focus_tree = {
 			}
 			ITA = { 
 				set_cosmetic_tag = ITA_ISR 
-				remove_ideas = victor_emmanuel
+				remove_ideas = vittorio_emanuele
 				add_ideas = ITA_german_occupation
 				set_capital =  { state = 159 }
 			}
@@ -6040,7 +6045,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = ger_share_tanks_tt_4
-			custom_effect_tooltip = GER_tank_sharing_designer_tt
+			# custom_effect_tooltip = GER_tank_sharing_designer_tt
 		}
 	}
 	
@@ -6684,7 +6689,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
-		x = 40
+		x = 36
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -8257,6 +8262,9 @@ focus_tree = {
 			is_subject = no
 			controls_state = 16
 		}
+		allow_branch = {
+			always = no
+		}
 		will_lead_to_war_with = YUG
 		bypass = {
 			OR = {
@@ -8269,10 +8277,10 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = yes
-		x = 3
-		y = 1
+		x = 2
+		y = 2
 		relative_position_id = GER_anschluss
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}	
@@ -8395,7 +8403,7 @@ focus_tree = {
 			}
 		}
 		}
-		x = -4
+		x = -5
 		y = 0
 		cost = 2
 
@@ -8476,7 +8484,7 @@ focus_tree = {
 				NOT = { has_war_with = ITA }
 			}
 		}
-		x = -2
+		x = -3
 		y = 0
 		cost = 2
 		

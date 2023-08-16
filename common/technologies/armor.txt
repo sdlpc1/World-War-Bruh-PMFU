@@ -326,5 +326,27 @@ technologies = {
 		}
 	}
 
-	
+	assault_gun_support_company = {
+
+		research_cost = 1
+
+		enable_subunits = {
+			light_assault_gun_support
+			medium_assault_gun_support
+			heavy_assault_gun_support
+		}
+	}
+
+	assault_gun_line_unit = {
+
+		research_cost = 1
+
+		enable_subunits = {
+			light_assault_gun_brigade
+			medium_assault_gun_brigade
+			heavy_assault_gun_brigade
+		}
+	}
+
+
 }

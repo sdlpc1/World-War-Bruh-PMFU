@@ -86,7 +86,7 @@ NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0					-- Based on number of navies.
 NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (which is typically a lot).
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
-NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.00016			-- num convoys needed per fuel land lease
+NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.00002			-- num convoys needed per fuel land lease
 NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 1 --was 0.3  	-- 	Multiplied to the difference between a country intel and the maximum value in the alliance to compute the amount of intel that flows from the alliance to that country.
 NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 3	             -- Number of days a war has to have existed before anyone can surrender in it
 NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  days to transfer escaping divisions to host nation
@@ -423,7 +423,7 @@ NDefines.NNavy.COORDINATION_EFFECT_ON_CONVOY_RAID_EFFICIENCY = 1.0			-- coordina
 NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.25							-- factor of planes that can sortie by default from a carrier
 NDefines.NNavy.NAVAL_SPEED_MODIFIER = 0.08	                    				-- basic speed control
 NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.6								-- required naval supremacy to perform invasions on an area
-NDefines.NNavy.CARRIER_STACK_PENALTY = 8										-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
+NDefines.NNavy.CARRIER_STACK_PENALTY = 4 --8										-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.ANTI_AIR_TARGETING = 0.4                                       -- how good ships are at hitting aircraft
 NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 12                          -- hours from start of combat when only carriers capitals and subs get to attack
 NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 24                                    -- hours where all get to attack
@@ -464,7 +464,7 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns if target ih profil
 NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE 										= 80	-- hit profile for depth charges
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 	2.0,	-- big guns
-	2.0,	-- torpedoes
+	4.0,	-- torpedoes - 2.0 before chezloc changes
 	1.0,	-- small guns
 }
 NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE 									= 0.25		-- chance for critical hit from torpedo.

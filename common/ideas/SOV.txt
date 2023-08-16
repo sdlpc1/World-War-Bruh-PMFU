@@ -3091,6 +3091,10 @@ ideas = {
 					hard_attack = 0.05 instant = yes
 					ap_attack = 0.05 instant = yes
 				}
+				motorized_rocket_equipment = {
+					build_cost_ic = -0.1 instant = yes
+					soft_attack = 0.1 instant = yes
+				}
 			}
 		}
 
@@ -8382,6 +8386,7 @@ ideas = {
 			
 			modifier = {
 				air_agility_factor = 0.10
+				aircraft_manufacturer_cost_factor = -1
 			}
 		}
 

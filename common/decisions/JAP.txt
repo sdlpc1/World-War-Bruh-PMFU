@@ -239,7 +239,11 @@ JAP_interservice_rivalry = {
 				}
 			}
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
-			JAP_interservice_rivalry_towards_army = yes
+			# JAP_interservice_rivalry_towards_army = yes
+			add_power_balance_value = {
+				id = JAP_interservice_rivalry
+				value = -0.5
+			}
 			set_country_flag = JAP_steel_for_guns
 		}
 	}
@@ -302,7 +306,11 @@ JAP_interservice_rivalry = {
 				}
 			}
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
-			JAP_interservice_rivalry_towards_navy = yes
+			# JAP_interservice_rivalry_towards_navy = yes
+			add_power_balance_value = {
+				id = JAP_interservice_rivalry
+				value = 0.5
+			}
 			set_country_flag = JAP_steel_for_ships
 		}
 	}
@@ -332,7 +340,11 @@ JAP_interservice_rivalry = {
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
 			add_ideas = JAP_prioritize_army_aircraft_construction
-			JAP_interservice_rivalry_towards_army = yes
+			# JAP_interservice_rivalry_towards_army = yes
+			add_power_balance_value = {
+				id = JAP_interservice_rivalry
+				value = -0.5
+			}
 			set_country_flag = JAP_prioritize_army_aircraft_construction
 		}
 	}
@@ -362,7 +374,11 @@ JAP_interservice_rivalry = {
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
 			add_ideas = JAP_prioritize_naval_aircraft_construction
-			JAP_interservice_rivalry_towards_navy = yes
+			# JAP_interservice_rivalry_towards_navy = yes
+			add_power_balance_value = {
+				id = JAP_interservice_rivalry
+				value = 0.5
+			}
 			set_country_flag = JAP_prioritize_naval_aircraft_construction
 		}
 	}
@@ -394,7 +410,11 @@ JAP_interservice_rivalry = {
 		}
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
-			JAP_interservice_rivalry_towards_army = yes
+			# JAP_interservice_rivalry_towards_army = yes
+			add_power_balance_value = {
+				id = JAP_interservice_rivalry
+				value = -0.5
+			}
 			set_country_flag = JAP_everybody_serves
 		}
 	}
@@ -427,7 +447,11 @@ JAP_interservice_rivalry = {
 		}
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
-			JAP_interservice_rivalry_towards_navy = yes
+			# JAP_interservice_rivalry_towards_navy = yes
+			add_power_balance_value = {
+				id = JAP_interservice_rivalry
+				value = 0.5
+			}
 			set_country_flag = JAP_draft_exemptions
 		}
 	}
@@ -460,7 +484,11 @@ JAP_interservice_rivalry = {
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
 			set_country_flag = JAP_raiding_regiments
-			JAP_interservice_rivalry_towards_army = yes
+			# JAP_interservice_rivalry_towards_army = yes
+			add_power_balance_value = {
+				id = JAP_interservice_rivalry
+				value = -0.5
+			}
 		}
 	}
 	JAP_special_air_landing_force = {
@@ -493,7 +521,11 @@ JAP_interservice_rivalry = {
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
 			set_country_flag = JAP_special_air_landing_force
-			JAP_interservice_rivalry_towards_navy = yes
+			# JAP_interservice_rivalry_towards_navy = yes
+			add_power_balance_value = {
+				id = JAP_interservice_rivalry
+				value = 0.5
+			}
 		}
 	}
 	JAP_favor_army = {
@@ -545,7 +577,7 @@ JAP_interservice_rivalry = {
 			}
 		}
 		cost = 50
-		fire_only_once = yes
+		fire_only_once = no
 		days_remove = -1
 		ai_will_do = {
 			factor = 1
@@ -553,7 +585,11 @@ JAP_interservice_rivalry = {
 		
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
-			JAP_interservice_rivalry_towards_army = yes
+			# JAP_interservice_rivalry_towards_army = yes
+			add_power_balance_value = {
+				id = JAP_interservice_rivalry
+				value = -0.5
+			}
 		}
 	}
 	JAP_favor_navy = {
@@ -605,7 +641,7 @@ JAP_interservice_rivalry = {
 			}
 		}
 		cost = 50
-		fire_only_once = yes
+		fire_only_once = no
 		days_remove = -1
 		ai_will_do = {
 			factor = 1
@@ -613,7 +649,11 @@ JAP_interservice_rivalry = {
 		
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
-			JAP_interservice_rivalry_towards_navy = yes
+			# JAP_interservice_rivalry_towards_navy = yes
+			add_power_balance_value = {
+				id = JAP_interservice_rivalry
+				value = 0.5
+			}
 		}
 	}
 }
@@ -3305,44 +3345,44 @@ JAP_propaganda_campaigns = {
 		}
 	}
 
-	JAP_strike_prop = { # ID = 6
-		priority = 8
+	# JAP_strike_prop = { # ID = 6
+	# 	priority = 8
 
-		icon = eng_propaganda_campaigns
+	# 	icon = eng_propaganda_campaigns
 
-		allowed = {
-			original_tag = JAP
-		}
+	# 	allowed = {
+	# 		original_tag = JAP
+	# 	}
 
-		available = {
-			JAP_propaganda_poster_slot_available = yes
-			has_completed_focus = JAP_strike_the_west
-		}
+	# 	available = {
+	# 		JAP_propaganda_poster_slot_available = yes
+	# 		has_completed_focus = JAP_strike_the_west
+	# 	}
 
-		days_remove = 365
+	# 	days_remove = 365
 
-		days_re_enable = 360
+	# 	days_re_enable = 360
 
-		cost = 25
+	# 	cost = 25
 
-		modifier = {
-			navy_max_range_factor = 0.25
-			naval_strike = 0.1
-			naval_speed_factor = 0.05
-			naval_has_potf_in_combat_attack = 0.1
-		}
+	# 	modifier = {
+	# 		navy_max_range_factor = 0.25
+	# 		naval_strike = 0.1
+	# 		naval_speed_factor = 0.05
+	# 		naval_has_potf_in_combat_attack = 0.1
+	# 	}
 
-		complete_effect = {
-			set_variable = { JAP_new_propaganda_campaign = 6 }
-			JAP_pick_propaganda_campaign_slot_effect = yes
-		}
+	# 	complete_effect = {
+	# 		set_variable = { JAP_new_propaganda_campaign = 6 }
+	# 		JAP_pick_propaganda_campaign_slot_effect = yes
+	# 	}
 
-		remove_effect = {
-			set_variable = { JAP_propaganda_campaign_to_remove = 6 }
-			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
-		}
-	}
+	# 	remove_effect = {
+	# 		set_variable = { JAP_propaganda_campaign_to_remove = 6 }
+	# 		JAP_reset_propaganda_campaign_slot_effect = yes
+	# 		hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+	# 	}
+	# }
 
 	JAP_bombing_prop = { # ID = 7
 		priority = 7
