@@ -35,7 +35,7 @@ focus_tree = {
 
 	shared_focus = COM_commonwealth_command
 
-	continuous_focus_position = { x = 2150 y = 550 }
+	continuous_focus_position = { x = 2450 y = 700 }
 
 	############################
 	## THE BIG QUEEN SECTION ###
