@@ -94,8 +94,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.01
-				production_speed_buildings_factor = 0.025
-				local_resources_factor = 0.025
+				production_speed_buildings_factor = 0.015
+				local_resources_factor = 0.015
 			}	
 	   	}
 	    RAJ_British_Investment_1 = {
@@ -113,7 +113,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.01
+				consumer_goods_factor = -0.0125
 				production_speed_buildings_factor = 0.025
 				local_resources_factor = 0.025
 
@@ -317,7 +317,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.025
 				local_resources_factor = 0.05
 			}
 		}
@@ -338,7 +338,7 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.1
-				production_factory_max_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.025
 				industrial_capacity_factory = 0.05
 			}
 		}
@@ -570,7 +570,7 @@ ideas = {
 			}
 
 			modifier = {
-				railway_gun_bombardment_factor = 0.15
+				railway_gun_bombardment_factor = 0.0752
 				dig_in_speed_factor = 0.3
 				enemy_army_bonus_air_superiority_factor = -0.05
 			}
@@ -588,7 +588,7 @@ ideas = {
 			}
 
 			modifier = {
-				railway_gun_bombardment_factor = 0.3
+				railway_gun_bombardment_factor = 0.15
 				dig_in_speed_factor = 0.3
 				terrain_penalty_reduction = 0.05
 				enemy_army_bonus_air_superiority_factor = -0.1
@@ -608,7 +608,7 @@ ideas = {
 			}
 
 			modifier = {
-				railway_gun_bombardment_factor = 0.3
+				railway_gun_bombardment_factor = 0.15
 				dig_in_speed_factor = 0.3
 				special_forces_attack_factor = 0.05
 				army_org_factor = 0.025
@@ -718,7 +718,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_infrastructure_factor = 0.25
+				production_speed_infrastructure_factor = 0.15
 				production_speed_coastal_bunker_factor = 0.25
 				production_speed_bunker_factor = 0.25
 				production_speed_naval_base_factor = 0.25

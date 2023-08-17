@@ -230,6 +230,9 @@ news_event = {
 					}
 				}
 			}
+			ITA = {
+				boot_naval_treaty_f = yes
+			}
 		}
 	}
 	
@@ -399,6 +402,9 @@ news_event = {
 						add_claim_by = SPB
 					}
 				}
+			}
+			ITA = {
+				boot_naval_treaty_f = yes
 			}
 		}
 	}

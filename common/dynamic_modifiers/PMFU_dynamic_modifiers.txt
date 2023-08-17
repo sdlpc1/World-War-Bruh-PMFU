@@ -9,6 +9,12 @@ dockyard_cg_mod = {
 	consumer_goods_factor = dockyard_cg
 }
 
+anti_dockyard_construction = {
+	icon = "GFX_idea_civilian_economy"
+	# production_speed_dockyard_factor = -0.7
+	local_building_slots_factor = -2
+}
+
 academy_over_time = {
 	training_time_army_factor = academy_weekly_training_speed_result
 	special_forces_min = academy_special_forces_capacity

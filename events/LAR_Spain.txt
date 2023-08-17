@@ -198,6 +198,13 @@ country_event = {
 						active = yes
 					}
 				}
+				MON = {
+					diplomatic_relation = {
+						country = SPD
+						relation = military_access
+						active = yes
+					}
+				}
 	
 				SPR = {
 					load_oob = "SPA_Civil_War"

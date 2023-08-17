@@ -206,7 +206,7 @@ GER_flak_36_states = {
 	}
 }
 
-china_dwindle_avaiable = {
+china_dwindle_available = {
 	605 = { #chongqing
 		CONTROLLER = {
 			NOT = {

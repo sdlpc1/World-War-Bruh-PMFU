@@ -43,7 +43,7 @@ st_country_powers = {
 		addpp_click = {
 			owner={
 				set_temp_variable = { ROOT.marks = this}
-				var:marks = { add_political_power = 50 news_event = { id = news.4002 } }
+				var:marks = { add_political_power = 50 news_event = { id = horsttool.4 } }
 			}
 		}
 	
@@ -101,7 +101,7 @@ st_country_powers = {
 			}
 		}
 
-		fix_production_click = { owner = { news_event = { id = news.4003 } add_timed_idea = { idea = fix_production_idea days = 1 } } }
+		fix_production_click = { owner = { news_event = { id = horsttool.3 } add_timed_idea = { idea = fix_production_idea days = 1 } } }
 
 		award_states_click = {
 			owner = {
@@ -152,8 +152,40 @@ st_country_powers = {
 						intel_sharing_fixer_effect = yes
 					}
 					if = { limit = { check_variable = { Root.selected_cheat = 17 } } add_command_power = 25 }
+					if = {
+						limit = { check_variable = { Root.selected_cheat = 19 } }
+						owner = {
+							for_each_loop = {
+								array = ROOT.marked_states
+								value = state
+								var:state = {
+									set_building_level = {
+										type = bunker
+										level = 0
+										province = {
+											all_provinces = yes
+										}
+									}
+									set_building_level = {
+										type = coastal_bunker
+										level = 0
+										province = {
+											all_provinces = yes
+										}
+									}
+								}
+							}
+							ROOT = {
+								for_each_scope_loop = {
+									array = marked_states
+									clear_variable = mark_status
+								}
+								clear_array = marked_states
+							}
+						}
+					}
 				}	
-		}
+			}
 			GER={
 				set_variable = { this.target_country = Root.target_country }
 				set_variable = { this.selected_cheat = Root.selected_cheat }
@@ -259,6 +291,7 @@ st_country_powers = {
 		cheat15_click = { set_variable = { Root.selected_cheat = 15 } ROOT = { clr_country_flag = cheating } }
 		cheat16_click = { set_variable = { Root.selected_cheat = 16 } ROOT = { clr_country_flag = cheating } }
 		cheat17_click = { set_variable = { Root.selected_cheat = 17 } ROOT = { clr_country_flag = cheating } }
+		cheat18_click = { set_variable = { Root.selected_cheat = 18 } ROOT = { clr_country_flag = cheating } }
 		}
 		properties = {
 			toogle_mark = { frame = mark_status }
@@ -303,6 +336,8 @@ st_country_powers = {
 		cheat16_text_visible = { ROOT = { has_country_flag = cheating } }
 		cheat17_visible = { ROOT = { has_country_flag = cheating } }
 		cheat17_text_visible = { ROOT = { has_country_flag = cheating } }
+		cheat18_visible = { ROOT = { has_country_flag = cheating } }
+		cheat18_text_visible = { ROOT = { has_country_flag = cheating } }
 		pause_blocker_all_visible ={ has_global_flag=blocking_pauses}
 		pause_blocker_major_visible ={ }
 		pause_blocker_host_visible ={has_global_flag=blocking_pauses }	

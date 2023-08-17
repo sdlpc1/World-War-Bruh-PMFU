@@ -767,7 +767,7 @@ foreign_politics = {
 		available = {
 			OR = {
 				has_global_flag = JAP_china_has_capped
-				china_dwindle_avaiable = yes
+				china_dwindle_available = yes
 			}
 		}
 

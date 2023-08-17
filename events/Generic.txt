@@ -2294,7 +2294,7 @@ news_event = {
 add_namespace = horsttool
 news_event = {
 	id = horsttool.1
-	title = "Horsttool"
+	title = "Hosttool"
 	desc = " [From.Getname] gave [Root.cheat_selected] to [From.From.Owner.Getname]"
 	picture = GFX_news_event_001
 	major = yes
@@ -2316,6 +2316,30 @@ news_event = {
 	option = {
 		name = "Im gonna break your kneecaps snek"
 		add_political_power = -1
+	}
+}
+
+news_event = {
+	id = horsttool.3
+	title = "Hosttool"
+	desc = " [From.Getname] gave production fixer to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Ja..."
+	}
+}
+
+news_event = {
+	id = horsttool.4
+	title = "Hosttool"
+	desc = " [From.Getname] added 50 PP to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "Ja..."
 	}
 }
 

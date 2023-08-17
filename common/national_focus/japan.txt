@@ -1088,6 +1088,7 @@ focus_tree = {
 					}
 					JAP = {
 						add_named_threat = { threat = 22.5 name = "Marco Polo Bridge Incident" }
+						boot_naval_treaty_f = yes
 					}
 					hidden_effect = {
 						JAP = {
