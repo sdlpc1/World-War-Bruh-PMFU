@@ -108,6 +108,22 @@ buildings = {
 		allied_build = yes
 	}
 
+	# https://hoi4.paradoxwikis.com/Building_modding
+	fortress = {
+		show_on_map = 1 
+		has_destroyed_mesh = no
+		base_cost = 3000
+		per_level_extra_cost = 1000
+		provincial = yes
+		disabled_in_dmz = yes
+		icon_frame = 7
+		land_fort = 1 # Maybe get rid of?
+		max_level = 19
+		value = 10 # Normal forts have 1 health
+		damage_factor = -0.5 # modifies the damage that this building gets from air bombing or land combat.
+		#allied_build = yes
+	}
+
 	coastal_bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
@@ -122,6 +138,23 @@ buildings = {
 		value = 5
 		damage_factor = 0.55
 		allied_build = yes
+	}
+
+	# https://hoi4.paradoxwikis.com/Building_modding
+	coastal_fortress = {
+		show_on_map = 1 
+		has_destroyed_mesh = no
+		base_cost = 2500
+		per_level_extra_cost = 800
+		provincial = yes
+		disabled_in_dmz = yes
+		only_costal = yes
+		icon_frame = 8
+		naval_fort = 1 # Maybe get rid of?
+		max_level = 10
+		value = 10 # Normal forts have 1 health
+		damage_factor = -0.5 # modifies the damage that this building gets from air bombing or land combat.
+		#allied_build = yes
 	}
 
 	dockyard = {

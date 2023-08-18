@@ -105,6 +105,17 @@ on_actions = {
 						has_global_flag = china_auto_happend
 					}
 				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = JAP_liaison_conference_happened_manchu
+						}
+					}
+					set_global_flag = JAP_liaison_conference_happened_manchu
+					MAN = {
+						country_event = wtt_manchukou.12
+					}
+				}
 				set_global_flag = china_auto_happend
 				JAP = {
 					add_named_threat = { threat = 22.5 name = "Marco Polo Bridge Incident" }

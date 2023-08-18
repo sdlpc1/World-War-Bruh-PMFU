@@ -17,20 +17,21 @@
 		infantry = { x = 2 y = 2 }
 		infantry = { x = 2 y = 3 }
 		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
+		# infantry = { x = 3 y = 1 }
+		# infantry = { x = 3 y = 2 }
 		
-		# artillery_brigade = { x = 4 y = 0 }
-		# artillery_brigade = { x = 4 y = 1 }
-		# artillery_brigade = { x = 4 y = 2 }
-		# artillery_brigade = { x = 4 y = 3 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }
 	}
-	# support = {
-	# 	hq_company = { x = 0 y = 0 } 
-	# 	engineer = { x = 0 y = 1 } 
-	# 	recon = { x = 0 y = 2 }
-	# 	#logistics_company  = { x = 0 y = 3 }
-	# }
+	support = {
+		hq_company = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 } 
+		recon = { x = 0 y = 2 }
+		logistics_company_mot  = { x = 0 y = 3 }
+		anti_air = { x = 1 y = 0 }
+	}
 	
 	priority = 2
 }
@@ -39,14 +40,19 @@ division_template = {
 	division_names_group = CHI_INF_01
 									# 	as well as two-division infantry corps (generally poorly-equipped militias),
 	regiments = {					#	and local militia groups.
-		militia = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
-		militia = { x = 0 y = 1 }
-		militia = { x = 0 y = 2 }
-		militia = { x = 0 y = 3 }
-		militia = { x = 1 y = 0 }
-		militia = { x = 1 y = 1 }
-		militia = { x = 1 y = 2 }
-		militia = { x = 1 y = 3	 }
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 }
 	}
 
 	priority = 0 # garrison
@@ -65,12 +71,14 @@ division_template = {
 		militia = { x = 2 y = 0 }
 		militia = { x = 2 y = 1 }
 		militia = { x = 2 y = 2 }
+		militia = { x = 2 y = 3 }
 		
 		# artillery_brigade = { x = 3 y = 0 }
 	}
-	# support = {  
-	# 	recon = { x = 0 y = 0 }
-	# }
+	support = {  
+		recon = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+	}
 }
 division_template = {
 	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
@@ -79,8 +87,13 @@ division_template = {
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
+	}
+
+	support = {
+		anti_air = { x = 0 y = 0 }
 	}
 }
 
@@ -102,349 +115,349 @@ units = {
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { 
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	###### Kuomintang Army (CO: Chang Kai-shek) ######
 	##### Beiping-Tianjin Area (CO: ) #####
@@ -453,111 +466,132 @@ units = {
 		location = 9843
 		division_template = "Reorganised Corps"
 		start_experience_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 10068
 		division_template = "Reorganised Corps"
 		start_experience_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 11761
 		division_template = "Reorganised Corps"
 		start_experience_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 9843
 		division_template = "Reorganised Corps"
 		start_experience_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 10068
 		division_template = "Reorganised Corps"
 		start_experience_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 11761
 		division_template = "Reorganised Corps"
 		start_experience_factor = 0.5
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "37 Bubing Shi"
 		location = 9843
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "38 Bubing Shi"
 		location = 10068
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "132 Bubing Shi"
 		location = 11761
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "143 Bubing Shi"
 		location = 4140
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
+		start_equipment_factor = 1
 	}
 	division = {
 		name = "144 Bubing Shi"
 		location = 4140
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 7101
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 7101
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 7101
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 7101
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 7101
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 7101
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 7101
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 7101
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 7101
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 	division = {
 		location = 7101
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 
 	##### First War Area (CO: Cheng Qian) #####
@@ -569,7 +603,7 @@ units = {
 		location = 4925
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	### 2nd Army Group (CO: Liu Shi) ###
@@ -581,7 +615,7 @@ units = {
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division = { # "2 Bubing Shi"
 		division_name = {
@@ -621,7 +655,7 @@ units = {
 		name = "1 Lujun Shi"
 		location = 8072
 		division_template = "Juntuán"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	## 14th Army ##
@@ -629,7 +663,7 @@ units = {
 		name = "14 Lujun Shi"
 		location = 10144
 		division_template = "Sanjiao Jun"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 
@@ -642,7 +676,7 @@ units = {
 		location = 1069
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 	}
 	division = { # "1 Qibing Jun"
 		division_name = {
@@ -652,7 +686,7 @@ units = {
 		location = 1069
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 	}
 	division = { # "2 Qibing Jun"https://www.twitch.tv/bokoen
 		division_name = {
@@ -662,7 +696,7 @@ units = {
 		location = 1069
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	### 7th Army Group (CO: Fu Zuoyi) ###
@@ -674,7 +708,7 @@ units = {
 		location = 9958
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		start_equipment_factor = 1
 
 	}
 	division = { # "89 Bubing Shi"
@@ -696,7 +730,7 @@ units = {
 		location = 4114
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	division = { # "6 Qibing Jun"
@@ -707,7 +741,7 @@ units = {
 		location = 4114
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	### 14th Army Group (CO: Wei Lihuang) ###
@@ -743,28 +777,28 @@ units = {
 		location = 7027
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	division = {
 		name = "1 Fujian Jingbei"
 		location = 9974
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "2 Fujian Jingbei"
 		location = 4169
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "3 Fujian Jingbei"
 		location = 4196
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	## Shanghai Defense Force ##
@@ -772,14 +806,14 @@ units = {
 		name = "Shanghai Jingbei"
 		location = 7014
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "Lu zhan Shi"
 		location = 7014
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	## 8th Army (CO: Zhang Fakui) ##
@@ -809,7 +843,7 @@ units = {
 		name = "8 Lujun Shi"
 		location = 4925
 		division_template = "Juntuán"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	## 9th Army (CO: Zhang Zhizhong) ##
@@ -851,7 +885,7 @@ units = {
 		name = "10 Lujun Shi"
 		location = 10076
 		division_template = "Juntuán"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	### 15th Army Group (CO: Chen Cheng) ###
@@ -885,7 +919,7 @@ units = {
 		location = 12076
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	division = { # "18 Juntuán"
@@ -896,7 +930,7 @@ units = {
 		location = 12076
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	division = { # "39 Juntuán"
@@ -907,7 +941,7 @@ units = {
 		location = 4042
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	division = { # "54 Juntuán"
@@ -918,7 +952,7 @@ units = {
 		location = 4042
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	division = { # "74 Juntuán"
@@ -929,7 +963,7 @@ units = {
 		location = 4042
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	### 19th Army Group (CO: Xu Yue) ###
@@ -963,7 +997,7 @@ units = {
 		location = 1096
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 
@@ -972,7 +1006,7 @@ units = {
 		name = "Wuhan Jingbei"
 		location = 4619
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	### River Defense Force (CO: ) ###
@@ -980,14 +1014,14 @@ units = {
 		name = "11 Lujun Shi"
 		location = 1036
 		division_template = "Juntuán"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "12 Lujun Shi"
 		location = 7637
 		division_template = "Juntuán"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	division = { # "43 Juntuán"
@@ -998,7 +1032,7 @@ units = {
 		location = 9959
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	### Capital Garrison Force (CO: ) ###
@@ -1006,7 +1040,7 @@ units = {
 		name = "2 Lujun Shi"
 		location = 11913
 		division_template = "Juntuán"
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	division = { # "Peixun Shi"
@@ -1024,28 +1058,28 @@ units = {
 		name = "1 Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "2 Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "3 Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "4 Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 
@@ -1058,14 +1092,14 @@ units = {
 		location = 10000
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	division = {
 		name = "Qingdao Jingbei"
 		location = 10000
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 		start_experience_factor = 0.1
 	}
 	## 3rd Army (CO: Han Fuqu) ##
@@ -1077,7 +1111,7 @@ units = {
 		location = 4205
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	division = { # "40 Juntuán"
@@ -1088,7 +1122,7 @@ units = {
 		location = 4205
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 

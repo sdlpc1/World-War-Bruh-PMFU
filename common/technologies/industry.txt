@@ -2928,4 +2928,15 @@ technologies = {
 			level = 10
 		}
 	}
+
+	fortress_construction = {
+		enable_building = {
+			building = fortress
+			level = 2
+		}
+		enable_building = {
+			building = coastal_fortress
+			level = 2
+		}
+	}
 }

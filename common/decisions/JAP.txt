@@ -660,77 +660,77 @@ JAP_interservice_rivalry = {
 
 foreign_politics = {
 
-	JAP_time_to_complete_marco_polo = {
+	# JAP_time_to_complete_marco_polo = {
 
-		icon = generic_operation
+	# 	icon = generic_operation
 
-		is_good = no
+	# 	is_good = no
 
-		allowed = {
-			tag = JAP
-			# always = yes
-		}
+	# 	allowed = {
+	# 		tag = JAP
+	# 		# always = yes
+	# 	}
 
-		activation = {
-			has_game_rule = {
-				rule = china_war_rule
-				option = DISABLED
-			}
-			NOT = {
-				has_global_flag = NO_ASIA
-			}
-		}
+	# 	activation = {
+	# 		has_game_rule = {
+	# 			rule = china_war_rule
+	# 			option = DISABLED
+	# 		}
+	# 		NOT = {
+	# 			has_global_flag = NO_ASIA
+	# 		}
+	# 	}
 
-		available = {
-			OR = {
-				has_completed_focus = JAP_intervene_in_china
-				has_global_flag = china_auto_happend
-			}
-		}
+	# 	available = {
+	# 		OR = {
+	# 			has_completed_focus = JAP_intervene_in_china
+	# 			has_global_flag = china_auto_happend
+	# 		}
+	# 	}
 
-		fire_only_once = no
+	# 	fire_only_once = no
 
-		ai_will_do = {
-			factor = 0
-		}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
 
-		# visible = {
-		# }
+	# 	# visible = {
+	# 	# }
 
-		days_mission_timeout = 2000
+	# 	days_mission_timeout = 2000
 		
-		complete_effect = {
-			# nothing ig
-		}
+	# 	complete_effect = {
+	# 		# nothing ig
+	# 	}
 
-		timeout_effect = {
-			effect_tooltip = {
-				set_global_flag = china_auto_happend
-				JAP = {
-					complete_national_focus = JAP_intervene_in_china
-				}
-				JAP = {
-					if = {
-						limit = {
-							NOT = {
-								has_completed_focus = JAP_liaison_conference
-							}
-						}
-						add_political_power = -100
-						add_stability = -0.05
-						add_war_support = -0.05
-					}
-					else_if = {
-						limit = {
-							has_completed_focus = JAP_liaison_conference
-						}
-						add_political_power = -100
-					}
-					custom_effect_tooltip = "If Japan has completed focus Liaison Conference the debuff will only be -100 political power"
-				}
-			}
-		}
-	}
+	# 	timeout_effect = {
+	# 		effect_tooltip = {
+	# 			set_global_flag = china_auto_happend
+	# 			JAP = {
+	# 				complete_national_focus = JAP_intervene_in_china
+	# 			}
+	# 			JAP = {
+	# 				if = {
+	# 					limit = {
+	# 						NOT = {
+	# 							has_completed_focus = JAP_liaison_conference
+	# 						}
+	# 					}
+	# 					add_political_power = -100
+	# 					add_stability = -0.05
+	# 					add_war_support = -0.05
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_completed_focus = JAP_liaison_conference
+	# 					}
+	# 					add_political_power = -100
+	# 				}
+	# 				custom_effect_tooltip = "If Japan has completed focus Liaison Conference the debuff will only be -100 political power"
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	JAP_chinese_spirit_dwindling = {
 

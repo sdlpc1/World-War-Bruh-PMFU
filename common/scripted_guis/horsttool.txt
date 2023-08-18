@@ -164,6 +164,7 @@ st_country_powers = {
 										level = 0
 										province = {
 											all_provinces = yes
+											level > 0
 										}
 									}
 									set_building_level = {
@@ -171,6 +172,7 @@ st_country_powers = {
 										level = 0
 										province = {
 											all_provinces = yes
+											level > 0
 										}
 									}
 								}

@@ -2487,7 +2487,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = RAJ_idea_factory_retooling
+			# add_ideas = RAJ_idea_factory_retooling # fuck you joshua
 			add_ideas = RAJ_indian_labour
 		}
 	}

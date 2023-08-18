@@ -819,9 +819,22 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			MAN = {
-				country_event = wtt_manchukou.12
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = DISABLED
+					}
+					NOT = {
+						has_global_flag = JAP_liaison_conference_happened_manchu
+					}
+				}
+				set_global_flag = JAP_liaison_conference_happened_manchu
+				MAN = {
+					country_event = wtt_manchukou.12
+				}
 			}
+		
 			add_ideas = JAP_liaison_conference
 			every_army_leader = {
 				add_planning = 1
@@ -922,16 +935,9 @@ focus_tree = {
 					}
 				}
 				hidden_effect = {
-					# ENG = {
-					# 	set_rule = { 
-					# 		can_send_volunteers = no
-					# 	}
-					# }
-	
 					ENG = {
-						swap_ideas = {
-							remove_idea = volunteer_minimum_major
-							add_idea = volunteer_minimum_minor
+						set_rule = { 
+							can_send_volunteers = no
 						}
 					}
 					
@@ -953,6 +959,19 @@ focus_tree = {
 							add_ideas = volunteer_minimum_minor
 							set_rule = { 
 								can_send_volunteers = yes
+							}
+						}
+
+						ENG = {
+							set_rule = { 
+								can_send_volunteers = yes
+							}
+						}
+
+						ENG = {
+							swap_ideas = {
+								remove_idea = volunteer_minimum_major
+								add_idea = volunteer_minimum_minor
 							}
 						}
 					}
@@ -1080,6 +1099,7 @@ focus_tree = {
 					}
 					add_dynamic_modifier = { modifier = factory_reduction_balancer }
 				}
+				set_country_flag = JAP_china_war_happening_cooldown
 				if = {
 					limit = {
 						NOT = {
@@ -1415,6 +1435,22 @@ focus_tree = {
 					has_game_rule = {
 						rule = china_war_rule
 						option = DISABLED
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = JAP_china_war_happening_cooldown
+					}
+					has_country_flag = {
+						flag = JAP_china_war_happening_cooldown
+						days > 396
+					}
+					custom_trigger_tooltip = {
+						tooltip = JAP_china_war_happening_cooldown_tt
+						has_country_flag = {
+							flag = JAP_china_war_happening_cooldown
+							days > 396
+						}
 					}
 				}
 				date > 1939.3.1

@@ -1020,8 +1020,8 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "pause_block_window"
-					size = { width = 155 height = 40 } 
-					position = { x=450 y =30 }  	 	
+					size = { width = 120 height = 40 } 
+					position = { x=525 y =30 }  	 	
 					background = {
 						name = "Background"
 						spriteType = "GFX_tiled_window_transparent"
