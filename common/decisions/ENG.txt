@@ -822,13 +822,13 @@ operations = {
 		fire_only_once = yes
 
 		complete_effect = {
-			add_timed_idea = { idea = ENG_compass days = 120 }
+			add_timed_idea = { idea = ENG_compass days = 240 }
 			custom_effect_tooltip = "Our allies will get the spirit aswell"
  			hidden_effect = {
- 				FRA = { add_timed_idea = { idea = ENG_compass days = 120 } }
- 				SAF = { add_timed_idea = { idea = ENG_compass days = 120 } }
- 				CAN = { add_timed_idea = { idea = ENG_compass days = 120 } }
- 				AST = { add_timed_idea = { idea = ENG_compass days = 120 } }
+ 				FRA = { add_timed_idea = { idea = ENG_compass days = 240 } }
+ 				SAF = { add_timed_idea = { idea = ENG_compass days = 240 } }
+ 				CAN = { add_timed_idea = { idea = ENG_compass days = 240 } }
+ 				AST = { add_timed_idea = { idea = ENG_compass days = 240 } }
  			}
 			hidden_effect = {
 				every_country = {
@@ -884,13 +884,13 @@ operations = {
 		fire_only_once = yes
 
 		complete_effect = {
-			add_timed_idea = { idea = ENG_crusader days = 120 }
+			add_timed_idea = { idea = ENG_crusader days = 240 }
 			custom_effect_tooltip = "Our allies will get the spirit aswell"
  			hidden_effect = {
- 				FRA = { add_timed_idea = { idea = ENG_crusader days = 120 } }
- 				SAF = { add_timed_idea = { idea = ENG_crusader days = 120 } }
- 				CAN = { add_timed_idea = { idea = ENG_crusader days = 120 } }
- 				AST = { add_timed_idea = { idea = ENG_crusader days = 120 } }
+ 				FRA = { add_timed_idea = { idea = ENG_crusader days = 240 } }
+ 				SAF = { add_timed_idea = { idea = ENG_crusader days = 240 } }
+ 				CAN = { add_timed_idea = { idea = ENG_crusader days = 240 } }
+ 				AST = { add_timed_idea = { idea = ENG_crusader days = 240 } }
  			}
 			hidden_effect = {
 				every_country = {
@@ -920,7 +920,7 @@ operations = {
 			always = yes
 		}
 
-		fire_only_once = yes
+		fire_only_once = yes 
 
 		complete_effect = {
 			every_state = {
@@ -937,9 +937,9 @@ operations = {
 						state = 665
 					}
 				}
-				add_dynamic_modifier = { modifier = OPERATION_TORCH days = 120  }
+				add_dynamic_modifier = { modifier = OPERATION_TORCH days = 240  }
 			}
-			set_country_flag = { flag = OPERATION_TORCH_ONGING value = 1 days = 120 }
+			set_country_flag = { flag = OPERATION_TORCH_ONGING value = 1 days = 240 }
 			hidden_effect = {
 				every_country = {
 					news_event = generic.41
@@ -1027,7 +1027,17 @@ operations = {
 			add_state_core = 113
 			add_state_core = 134
 			add_state_core = 135
-
+			ENG = {
+				if = { 
+					limit = {
+						has_game_rule = {
+							rule = allow_voice_lines
+							option = ENABLED
+						}
+					}
+				scoped_sound_effect = "wot_ze_fok"
+				}
+			}
 		}
 	}
 

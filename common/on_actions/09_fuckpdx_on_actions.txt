@@ -33,6 +33,37 @@ on_actions = {
 				HMP_check_fleet_size = yes 
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					any_other_country = {
+						has_volunteers_amount_from = {
+							tag = ROOT
+							count > 0
+						}
+						ROOT = {
+							not = {
+								has_military_access_to = PREV
+							}
+						}
+					}
+				}
+				every_other_country = {
+					limit = {
+						has_volunteers_amount_from = {
+							tag = ROOT
+							count > 0
+						}
+						ROOT = {
+							not = {
+								has_military_access_to = PREV
+							}
+						}
+					}
+					give_military_access = ROOT
+				}
+			}
+		}
 	}
    	on_startup = {
 		effect = {

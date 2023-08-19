@@ -10,6 +10,8 @@ category = {
 	Poland
 	Brazil
 	BlackShirts
+	wot_ze_fok
+	asia
 	}
 }
 
@@ -2948,11 +2950,38 @@ sound = {
 	name = "Brazil"
 	file = "playerQuotes/Brazil.wav"
 }
+
 soundeffect = {
 	name = "Brazil"
 	volume = 3
 	sounds = {
 		sound = "Brazil"
+	}
+	max_audible = 3
+	max_audible_behaviour = fail
+}
+sound = {
+	name = "wot_ze_fok"
+	file = "playerQuotes/wot_ze_fok.wav"
+}
+soundeffect = {
+	name = "wot_ze_fok"
+	volume = 2
+	sounds = {
+		sound = "wot_ze_fok"
+	}
+	max_audible = 3
+	max_audible_behaviour = fail
+}
+sound = {
+	name = "asia"
+	file = "playerQuotes/asia.wav"
+}
+soundeffect = {
+	name = "asia"
+	volume = 3
+	sounds = {
+		sound = "asia"
 	}
 	max_audible = 3
 	max_audible_behaviour = fail

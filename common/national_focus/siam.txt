@@ -1479,6 +1479,17 @@ focus_tree = {
         
         completion_reward = {
             army_experience = 50
+			SIA = {
+				if = { 
+					limit = {
+						has_game_rule = {
+							rule = allow_voice_lines
+							option = ENABLED
+						}
+					}
+					scoped_sound_effect = "asia"
+				}
+			}
         }
 
     }

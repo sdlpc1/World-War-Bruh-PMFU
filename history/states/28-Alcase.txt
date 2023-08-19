@@ -21,25 +21,32 @@ state={
 			industrial_complex = 5
 			arms_factory = 4
 			549 = {
-				fortress = 10
+				bunker = 5
+				fortress = 5
 			}
 			678 = {
-				fortress = 10
+				bunker = 5
+				fortress = 5
 			}
 			3629 = {
-				fortress = 10
+				bunker = 5
+				fortress = 5
 			}
 			6529 = {
-				fortress = 10
+				bunker = 5
+				fortress = 5
 			}
 			9503 = {
-				fortress = 10
+				bunker = 5
+				fortress = 5
 			}
 			9559 = {
-				fortress = 10
+				bunker = 5
+				fortress = 5
 			}
 			11502 = {
-				fortress = 10
+				bunker = 5
+				fortress = 5
 			}
 			anti_air_building = 5
 			air_base = 5

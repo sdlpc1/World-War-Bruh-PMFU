@@ -40,7 +40,7 @@ USA_islands_local_supply = {
 }
 
 OPERATION_TORCH = {
-	max_dig_in_factor = -0.3
+	max_dig_in_factor = -0.5
 
 	icon = GFX_idea_generic_fortify_the_borders
 }

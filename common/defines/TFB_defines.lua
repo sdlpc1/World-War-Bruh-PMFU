@@ -495,7 +495,8 @@ NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0
 NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 0
 NDefines.NNavy.NAVAL_MINES_ACCIDENT_STRENGTH_LOSS = 0
 NDefines.NNavy.NAVAL_MINES_ACCIDENT_ORG_LOSS_FACTOR = 0
-NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0
+NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0				-- cost to unassign/replace pride of the fleet
+NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.30			-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 
 NDefines.NRailwayGun.ANNEX_RATIO = 1				-- How many railway guns will be transferred on annexation
 

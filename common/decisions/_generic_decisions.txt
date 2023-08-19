@@ -2192,6 +2192,40 @@ foreign_politics = {
 	# 		factor = 0
 	# 	}
 	# }
+	revoke_attaches = {
+
+		allowed = {
+            has_dlc = "Waking the Tiger"
+        }
+
+        cost = 50
+        fire_only_once = no
+
+        available = {
+        }
+
+        visible = {
+        	has_war = yes
+        	NOT = { has_war_with = FROM }
+		}
+
+		target_root_trigger = {
+			has_war = yes
+			has_capitulated = no
+		}
+
+		target_trigger = {
+			NOT = { has_war_with = FROM }
+			ROOT = { has_attache_from = FROM } # Make such trigger to optimize if it becomes a performance problem again.
+		}
+
+        complete_effect = {
+			FROM = { recall_attache = ROOT }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
 
 economy_decisions = {
