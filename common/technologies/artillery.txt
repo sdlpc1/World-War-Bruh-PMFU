@@ -97,6 +97,9 @@ technologies = {
 		medium_sp_anti_air_brigade  = {
 			air_attack = 0.1
 		}
+		pack_antitank_brigade = {
+			hard_attack = 0.1
+		}
 		enable_equipment_modules = {
 			tank_anti_air_gun_1
 			ship_anti_air_2
@@ -204,7 +207,12 @@ technologies = {
 			air_attack = 0.1
 		}
 		pack_antitank_brigade = {
-			hard_attack = 0.15
+			hard_attack = 0.1
+		}
+		light_assault_gun_brigade = {
+			fort = {
+				attack = 0.3
+			}
 		}
 		enable_equipment_modules = { 
 			ship_anti_air_4
@@ -315,7 +323,12 @@ technologies = {
 			air_attack = 0.1
 		}
 		pack_antitank_brigade = {
-			hard_attack = 0.15
+			hard_attack = 0.1
+		}
+		light_assault_gun_brigade = {
+			fort = {
+				attack = 0.3
+			}
 		}
 
 		enable_equipment_modules = {
@@ -423,7 +436,7 @@ technologies = {
 			air_attack = 0.1
 		}
 		pack_antitank_brigade = {
-			hard_attack = 0.15
+			hard_attack = 0.1
 		}
 		
 		research_cost = 1
@@ -461,9 +474,6 @@ technologies = {
 			hard_attack = 0.05
 		}		
 		mot_anti_tank_brigade = {
-			hard_attack = 0.05
-		}
-		pack_antitank_brigade = {
 			hard_attack = 0.05
 		}
 		dp_artillery_brigade = {
@@ -589,11 +599,6 @@ technologies = {
 				attack = 0.1
 			}		
 		}
-		light_assault_gun_brigade = {
-			fort = {
-				attack = 0.3
-			}
-		}
 		medium_assault_gun_brigade = {
 			fort = {
 				attack = 0.4
@@ -603,9 +608,6 @@ technologies = {
 			hard_attack = 0.1
 		}		
 		mot_anti_tank_brigade = {
-			hard_attack = 0.1
-		}
-		pack_antitank_brigade = {
 			hard_attack = 0.1
 		}
 		dp_artillery_brigade = {
@@ -794,11 +796,6 @@ technologies = {
 				attack = 0.1
 			}
 		}
-		light_assault_gun_brigade = {
-			fort = {
-				attack = 0.3
-			}
-		}
 		medium_assault_gun_brigade = {
 			fort = {
 				attack = 0.4
@@ -808,9 +805,6 @@ technologies = {
 			hard_attack = 0.05
 		}
 		mot_anti_tank_brigade = {
-			hard_attack = 0.05
-		}
-		pack_antitank_brigade = {
 			hard_attack = 0.05
 		}
 		dp_artillery_brigade = {
@@ -936,20 +930,7 @@ technologies = {
 				attack = 0.1
 			}
 		}
-		light_assault_gun_brigade = {
-			fort = {
-				attack = 0.3
-			}
-		}
-		medium_assault_gun_brigade = {
-			fort = {
-				attack = 0.4
-			}
-		}
 		anti_tank_brigade = {
-			hard_attack = 0.05
-		}
-		pack_antitank_brigade = {
 			hard_attack = 0.05
 		}
 		mot_anti_tank_brigade = {
@@ -998,13 +979,11 @@ technologies = {
 				attack = 0.40
 			}
 		}
-		heavy_assault_gun_brigade = {
-			fort = {
-				attack = 0.6
-			}
-		}
 		heavy_anti_air = {
-			air_attack = 0.05
+			air_attack = 0.1
+			hard_attack = 0.05
+		}
+		heavy_anti_tank_brigade = {
 			hard_attack = 0.05
 		}
 		tech_air_damage_factor = -0.02
@@ -1110,11 +1089,11 @@ technologies = {
 		}
 		heavy_assault_gun_brigade = {
 			fort = {
-				attack = 0.6
+				attack = 0.5
 			}
 		}
 		heavy_anti_air = {
-			air_attack = 0.05
+			air_attack = 0.1
 			hard_attack = 0.05
 		}
 		heavy_anti_tank_brigade = {
@@ -1226,8 +1205,13 @@ technologies = {
 				attack = 0.4
 			}
 		}
+		heavy_assault_gun_brigade = {
+			fort = {
+				attack = 0.5
+			}
+		}
 		heavy_anti_air = {
-			air_attack = 0.05
+			air_attack = 0.1
 			hard_attack = 0.05
 		}
 		heavy_anti_tank_brigade = {
@@ -1277,7 +1261,7 @@ technologies = {
 			}
 		}
 		heavy_anti_air = {
-			air_attack = 0.05
+			air_attack = 0.1
 			hard_attack = 0.05
 		}
 		heavy_anti_tank_brigade = {

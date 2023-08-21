@@ -49,10 +49,10 @@
  SNEK_TP:0 "§HSnek teleported...§!\nSnek teleported again...\n\n"
  SNEK_TP_DELAYED:0 "§"
 
- CIVADD:0 "§HAdd 1 Civillian Factory§!\nClicking this button will add one offmap civillian factory to [This.Owner.GetName].\n\n"
+  CIVADD:0 "§HAdd 5 Civillian Factories§!\nClicking this button will add five offmap civilian factories to [This.Owner.GetName].\n\n"
  CIVADD_DELAYED:0 ""
 
- MILADD:0 "§HAdd 1 Military Factories§!\nClicking this button will add one offmap military factory to [This.Owner.GetName].\n\n"
+ MILADD:0 "§HAdd 5 Military Factories§!\nClicking this button will add five offmap military factories to [This.Owner.GetName].\n\n"
  MILADD_DELAYED:0 ""
 
  ADDPP:0 "§HAdd 50 Political Power§!\nClicking this button will add political power to [This.Owner.GetName].\n\n"

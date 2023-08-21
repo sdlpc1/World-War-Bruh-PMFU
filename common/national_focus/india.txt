@@ -387,7 +387,7 @@ focus_tree = {
 		relative_position_id = RAJ_anti_corruption_laws
 
 		completion_reward = {
-			custom_effect_tooltip = raj_bengal_famine_tt
+			# custom_effect_tooltip = raj_bengal_famine_tt
 			add_stability = -0.05
 			swap_ideas = {
 				remove_idea = RAJ_British_Investment_1

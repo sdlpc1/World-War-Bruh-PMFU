@@ -29,7 +29,7 @@ operations = {
 		}
 
 		fire_only_once = yes
-		days_mission_timeout = 1915
+		days_mission_timeout = 1975
 		
 		available = {
 			always = no

@@ -158,7 +158,10 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_armament_tier_tiny_1
-					tank_armament_tier_medium_td
+					tank_armament_tier_medium_td_1
+					tank_armament_tier_medium_td_2
+					tank_armament_tier_medium_td_3
+					tank_armament_tier_assault
 				}
 			}
 			turret_type_slot = {

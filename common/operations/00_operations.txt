@@ -1573,140 +1573,140 @@ operation_make_resistance_contacts = { ### 9 2/40
 	}
 }
 
-operation_collaboration_government = { ### 10 2/55
-	icon = GFX_operations_collaboration_government
-	map_icon = GFX_operations_collaboration_government_map
-	name = operation_collaboration_government
-	desc = operation_collaboration_government_desc
-	priority = 10
+# operation_collaboration_government = { ### 10 2/55
+# 	icon = GFX_operations_collaboration_government
+# 	map_icon = GFX_operations_collaboration_government_map
+# 	name = operation_collaboration_government
+# 	desc = operation_collaboration_government_desc
+# 	priority = 10
 
-	days = 120
-	network_strength = 50
-	operatives = 2
+# 	days = 120
+# 	network_strength = 50
+# 	operatives = 2
 	
-	cost_multiplier = 0.25
+# 	cost_multiplier = 0.25
 	
-	visible = {
-		network_strength = {
-			target = FROM
-			value > 25
-		}
-	}
+# 	visible = {
+# 		network_strength = {
+# 			target = FROM
+# 			value > 25
+# 		}
+# 	}
 
-	equipment = {
-		support_equipment = 100
-		infantry_equipment = 800
-		civilian_factories = {
-			amount = 5
-			days = 60
-		}
-	}
+# 	equipment = {
+# 		support_equipment = 100
+# 		infantry_equipment = 800
+# 		civilian_factories = {
+# 			amount = 5
+# 			days = 60
+# 		}
+# 	}
 
 
-	allowed = {
-		has_rule = can_create_collaboration_government
-	}
+# 	allowed = {
+# 		has_rule = can_create_collaboration_government
+# 	}
 
-	available = {
-		hidden_trigger = {
-			FROM = {
-				NOT = {
-					has_government = communism
-				}
-			}
-		}
-		# FROM = {
-		# 	any_country = {
-		# 		original_tag = SOV
-		# 		original_tag = MON
-		# 		original_tag = FIN
-		# 	}
-		# }
-		custom_trigger_tooltip = {
-			tooltip = "Cant do collaboration governments on the USSR or other communist countries"
-		}
+# 	available = {
+# 		hidden_trigger = {
+# 			FROM = {
+# 				NOT = {
+# 					has_government = communism
+# 				}
+# 			}
+# 		}
+# 		# FROM = {
+# 		# 	any_country = {
+# 		# 		original_tag = SOV
+# 		# 		original_tag = MON
+# 		# 		original_tag = FIN
+# 		# 	}
+# 		# }
+# 		custom_trigger_tooltip = {
+# 			tooltip = "Cant do collaboration governments on the USSR or other communist countries"
+# 		}
 
-		has_collaboration = {
-			target = FROM
-			value < 1.0
-		}
-	}
-	risk_chance = 0.1
-	experience = 3
-	outcome_extra_chance = 0
-	outcome_execute = { # SCOPE_OPERATION
-		ROOT = {
-			add_collaboration = {
-				target = FROM
-				value = 0.2
-			}
-		}
-	}
-	outcome_extra_execute = { # SCOPE_OPERATION
-		ROOT = {
-			add_collaboration = {
-				target = FROM
-				value = 0.45
-			}
-		}
-	}
+# 		has_collaboration = {
+# 			target = FROM
+# 			value < 1.0
+# 		}
+# 	}
+# 	risk_chance = 0.1
+# 	experience = 3
+# 	outcome_extra_chance = 0
+# 	outcome_execute = { # SCOPE_OPERATION
+# 		ROOT = {
+# 			add_collaboration = {
+# 				target = FROM
+# 				value = 0.2
+# 			}
+# 		}
+# 	}
+# 	outcome_extra_execute = { # SCOPE_OPERATION
+# 		ROOT = {
+# 			add_collaboration = {
+# 				target = FROM
+# 				value = 0.45
+# 			}
+# 		}
+# 	}
 
-	outcome_potential = {
-		ROOT = {
-			add_collaboration = {
-				target = FROM
-				value = 0.2
-			}
-		}
-	}
+# 	outcome_potential = {
+# 		ROOT = {
+# 			add_collaboration = {
+# 				target = FROM
+# 				value = 0.2
+# 			}
+# 		}
+# 	}
 
-	phases = { #infiltration
-		infiltration_border = { base = 25 }
-		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
-			modifier = {
-				ROOT = { 
-					has_equipment = {
-						transport_plane_equipment < 1
-					}
-				}
-				factor = 0
-			}
-		}
-		infiltration_diplomatic = {
-			base = 25
-			modifier = {
-				factor = 20
-				ROOT = { has_war = no }
-				FROM = {
-					has_war = no
-				}
-			}
-		}
-	}
-	phases = {
-		collaboration_government_set_up_planning_committees = { base = 33 }
-		collaboration_government_train_paramilitary_forces = { base = 33 }
-		collaboration_government_contact_military_officers = { base = 33 }
-	}
-	phases = { #exfiltration
-		exfiltration_air_pickup = { 
-			base = 15 
-			modifier = {
-				ROOT = { 
-					has_equipment = {
-						transport_plane_equipment < 1
-					}
-				}
-				factor = 0
-			}
-		}
-		#exfiltration_border = { base = 30 }
-		exfiltration_go_to_ground = { base = 30 }
-		exfiltration_submarine_pickup = { base = 25 }
-	}
-}
+# 	phases = { #infiltration
+# 		infiltration_border = { base = 25 }
+# 		infiltration_submarine = { base = 25 }
+# 		infiltration_paradrop = { 
+# 			base = 25 
+# 			modifier = {
+# 				ROOT = { 
+# 					has_equipment = {
+# 						transport_plane_equipment < 1
+# 					}
+# 				}
+# 				factor = 0
+# 			}
+# 		}
+# 		infiltration_diplomatic = {
+# 			base = 25
+# 			modifier = {
+# 				factor = 20
+# 				ROOT = { has_war = no }
+# 				FROM = {
+# 					has_war = no
+# 				}
+# 			}
+# 		}
+# 	}
+# 	phases = {
+# 		collaboration_government_set_up_planning_committees = { base = 33 }
+# 		collaboration_government_train_paramilitary_forces = { base = 33 }
+# 		collaboration_government_contact_military_officers = { base = 33 }
+# 	}
+# 	phases = { #exfiltration
+# 		exfiltration_air_pickup = { 
+# 			base = 15 
+# 			modifier = {
+# 				ROOT = { 
+# 					has_equipment = {
+# 						transport_plane_equipment < 1
+# 					}
+# 				}
+# 				factor = 0
+# 			}
+# 		}
+# 		#exfiltration_border = { base = 30 }
+# 		exfiltration_go_to_ground = { base = 30 }
+# 		exfiltration_submarine_pickup = { base = 25 }
+# 	}
+# }
 
 operation_coordinated_strike = { ### 11 2/70
 	icon = GFX_operations_coordinated_strike

@@ -319,55 +319,55 @@ sub_units = {
 		hard_attack = -0.30
 
 		plains = {
-			attack = 0.025 
-			movement = 0.025
+			attack = 0.0125
+			movement = 0.0125
 		}
 		desert = {
-			attack = 0.025
-			movement = 0.025
+			attack = 0.0125
+			movement = 0.0125
 		}
 		forest = {
-		    attack = -0.05
-			movement = -0.1
-			defence = -0.025
+		    attack = -0.025
+			movement = -0.05
+			defence = -0.0125
 		}
 		hills = {
-			attack = -0.025
-			movement = -0.025
+			attack = -0.0125
+			movement = -0.0125
 		}
 		mountain = 	{
-		    attack = -0.1
-			movement = -0.15
-			defence = -0.05
+		    attack = -0.05
+			movement = -0.75
+			defence = -0.025
 		}
 		jungle = {
-		    attack = -0.075
-			movement = -0.125
-			defence = -0.05
+		    attack = -0.0375
+			movement = -0.0625
+			defence = -0.025
 		}
 		marsh = {
-		    attack = -0.125
-			movement = -0.15
-			defence = -0.05
+		    attack = -0.0625
+			movement = -0.075
+			defence = -0.025
 		}
 		river = { 
-			attack = -0.075
-			movement = -0.125
+			attack = -0.0375
+			movement = -0.0625
 		}
 		amphibious = {
 			attack = -1.0
 		}
 		fort = {
-			attack = 0.3
+			attack = 0.15
 		}
 		urban = {
-			attack = 0.1
+			attack = 0.05
 		}
 		dense_urban = {
-			attack = 0.2
+			attack = 0.1
 		}
 		town = {
-			attack = 0.025
+			attack = 0.0125
 		}
 
 		same_support_type = light_assault_gun_support

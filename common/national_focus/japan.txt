@@ -1526,14 +1526,14 @@ focus_tree = {
 						is_core_of = CHI
 						is_on_continent = asia
 					}
-					add_compliance = 80
+					set_compliance = 80
 				}
-				# every_state = {
-				# 	limit = {
-				# 		has_dynamic_modifier = { modifier = factory_reduction_balancer }
-				# 	}
-				# 	remove_dynamic_modifier = { modifier = factory_reduction_balancer }
-				# }
+				every_state = {
+					limit = {
+						has_dynamic_modifier = { modifier = factory_reduction_balancer }
+					}
+					remove_dynamic_modifier = { modifier = factory_reduction_balancer }
+				}
 				hidden_effect = {
 					JAP = {
 						army_experience = 550

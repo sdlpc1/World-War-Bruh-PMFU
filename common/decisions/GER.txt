@@ -819,43 +819,43 @@ GER_case_anton_category = {
 
 #Category only allowed for GER
 GER_reichskommissariats = {
-	GER_reichskommissariat_norwegen = {
+	# GER_reichskommissariat_norwegen = {
 
-		icon = ger_reichskommissariats
+	# 	icon = ger_reichskommissariats
 
-		available = {
-			has_government = fascism
-			controls_state = 110
-			controls_state = 142
-			controls_state = 143
-			controls_state = 144
-		}
+	# 	available = {
+	# 		has_government = fascism
+	# 		controls_state = 110
+	# 		controls_state = 142
+	# 		controls_state = 143
+	# 		controls_state = 144
+	# 	}
 
-		cost = 0
-		fire_only_once = yes
+	# 	cost = 0
+	# 	fire_only_once = yes
 		
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				ENG = { has_capitulated = yes }
-			}
-		}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 		modifier = {
+	# 			add = 1
+	# 			ENG = { has_capitulated = yes }
+	# 		}
+	# 	}
 
-		visible = {
-			has_government = fascism
-		}
+	# 	visible = {
+	# 		has_government = fascism
+	# 	}
 
-		complete_effect = {
+	# 	complete_effect = {
 			
-			every_controlled_state = {
-				limit = {
-					is_core_of = NOR
-				}
-				add_compliance = 30
-			}
-		}
-	}
+	# 		every_controlled_state = {
+	# 			limit = {
+	# 				is_core_of = NOR
+	# 			}
+	# 			add_compliance = 40
+	# 		}
+	# 	}
+	# }
 }
 political_actions = {
 

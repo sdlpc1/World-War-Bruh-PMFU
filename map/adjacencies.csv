@@ -299,4 +299,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9617;10115;sea;;-1;-1;-1;-1;Bucharest-Korea;Bucharest-Korea
 949;10115;sea;;-1;-1;-1;-1;Sofia-Korea;Sofia-Korea
 9660;10115;sea;;-1;-1;-1;-1;Budapest-Korea;Budapest-Korea
+3938;6521;sea;;-1;-1;-1;-1;Berlin-Madrid;Berlin-Madrid
+6914;11666;sea;;-1;-1;-1;-1;Vienna-Madrid;Vienna-Madrid
 -1;-1;;-1;-1;-1;-1;-1;-1

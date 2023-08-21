@@ -510,72 +510,17 @@ country_event = {
 				type = annex_everything
 			}
 
-			GER={
-				set_variable = { collabo = has_collaboration@FRA }
-				multiply_variable = { collabo = 100 }
-			}
+			# GER={
+			# 	set_variable = { collabo = has_collaboration@FRA }
+			# 	multiply_variable = { collabo = 100 }
+			# }
 
-			every_owned_state = {
-				limit = {
-					is_core_of = FRA
-				}
-				add_compliance = GER.collabo
-				# if = {
-				# 	limit = {
-				# 		GER = {
-				# 			has_collaboration = {
-				# 				target = FRA
-				# 				value > 0.99
-				# 			}
-				# 		}
-				# 	}
-				# 	add_compliance = 1.0
-				# }
-				# else_if = {
-				# 	limit = {
-				# 		GER = {
-				# 			has_collaboration = {
-				# 				target = FRA
-				# 				value > 0.79
-				# 			}
-				# 		}
-				# 	}
-				# 	add_compliance = 0.8
-				# }
-				# else_if = {
-				# 	limit = {
-				# 		GER = {
-				# 			has_collaboration = {
-				# 				target = FRA
-				# 				value > 0.59
-				# 			}
-				# 		}
-				# 	}
-				# 	add_compliance = 0.6
-				# }
-				# else_if = {
-				# 	limit = {
-				# 		GER = {
-				# 			has_collaboration = {
-				# 				target = FRA
-				# 				value > 0.39
-				# 			}
-				# 		}
-				# 	}
-				# 	add_compliance = 0.4
-				# }
-				# else_if = {
-				# 	limit = {
-				# 		GER = {
-				# 			has_collaboration = {
-				# 				target = FRA
-				# 				value > 0.19
-				# 			}
-				# 		}
-				# 	}
-				# 	add_compliance = 0.2
-				# }
-			}
+			# every_owned_state = {
+			# 	limit = {
+			# 		is_core_of = FRA
+			# 	}
+			# 	add_compliance = GER.collabo
+			# }
 		}
 		VEN = {
 			transfer_units_fraction = {

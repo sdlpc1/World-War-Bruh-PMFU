@@ -934,6 +934,18 @@ on_actions = {
 						name = JAP_threat_treaty_of_nanjing
 					}
 				}
+				every_state = {
+					limit = {
+						OR = {
+							is_controlled_by = JAP
+							is_controlled_by = MAN
+							is_controlled_by = SIA
+						}
+						is_core_of = CHI
+						is_on_continent = asia
+					}
+					set_compliance = 80
+				}
 				JAP = {
 					set_global_flag = JAP_china_has_capped
 				}
@@ -989,6 +1001,18 @@ on_actions = {
 						threat = 30
 						name = JAP_threat_treaty_of_nanjing
 					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_controlled_by = JAP
+							is_controlled_by = MAN
+							is_controlled_by = SIA
+						}
+						is_core_of = CHI
+						is_on_continent = asia
+					}
+					set_compliance = 80
 				}
 				JAP = {
 					set_global_flag = JAP_china_has_capped
@@ -1048,6 +1072,18 @@ on_actions = {
 						threat = 30
 						name = JAP_threat_treaty_of_nanjing
 					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_controlled_by = JAP
+							is_controlled_by = MAN
+							is_controlled_by = SIA
+						}
+						is_core_of = CHI
+						is_on_continent = asia
+					}
+					set_compliance = 80
 				}
 				JAP = {
 					set_global_flag = JAP_china_has_capped

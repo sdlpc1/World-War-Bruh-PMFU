@@ -394,10 +394,18 @@ harsh_quotas_occupation = {
 	sound_effect = "Martial_Law_Interface_Harsh_Quotas_Occupation"
 
 	visible = {
-		NOT = {
-			OR = {
-				original_tag = JAP
-				original_tag = MAN
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = china_war_rule
+					option = ENABLED
+				}
+			}
+			NOT = {
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+				}
 			}
 		}
 	}

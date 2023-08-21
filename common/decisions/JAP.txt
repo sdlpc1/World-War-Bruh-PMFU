@@ -732,67 +732,67 @@ foreign_politics = {
 	# 	}
 	# }
 
-	JAP_chinese_spirit_dwindling = {
+	# JAP_chinese_spirit_dwindling = {
 
-		icon = generic_operation
+	# 	icon = generic_operation
 
-		is_good = yes
+	# 	is_good = yes
 
-		allowed = {
-			tag = JAP
-			# always = yes
-		}
+	# 	allowed = {
+	# 		tag = JAP
+	# 		# always = yes
+	# 	}
 
-		activation = {
-			605 = { #chongqing
-				CONTROLLER = {
-					OR = {
-						tag = JAP
-						is_subject_of = JAP
-						is_in_faction_with = JAP
-					}
-				}
-			}
-			613 = { #nanjing
-				CONTROLLER = {
-					OR = {
-						tag = JAP
-						is_subject_of = JAP
-						is_in_faction_with = JAP
-					}
-				}
-			}
-		}
+	# 	activation = {
+	# 		605 = { #chongqing
+	# 			CONTROLLER = {
+	# 				OR = {
+	# 					tag = JAP
+	# 					is_subject_of = JAP
+	# 					is_in_faction_with = JAP
+	# 				}
+	# 			}
+	# 		}
+	# 		613 = { #nanjing
+	# 			CONTROLLER = {
+	# 				OR = {
+	# 					tag = JAP
+	# 					is_subject_of = JAP
+	# 					is_in_faction_with = JAP
+	# 				}
+	# 			}
+	# 		}
+	# 	}
 
-		available = {
-			OR = {
-				has_global_flag = JAP_china_has_capped
-				china_dwindle_available = yes
-			}
-		}
+	# 	available = {
+	# 		OR = {
+	# 			has_global_flag = JAP_china_has_capped
+	# 			china_dwindle_available = yes
+	# 		}
+	# 	}
 
-		fire_only_once = no
+	# 	fire_only_once = no
 
-		ai_will_do = {
-			factor = 0
-		}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
 
-		# visible = {
-		# }
+	# 	# visible = {
+	# 	# }
 
-		days_mission_timeout  = 30
+	# 	days_mission_timeout  = 30
 		
-		complete_effect = {
-			# nothing ig
-		}
+	# 	complete_effect = {
+	# 		# nothing ig
+	# 	}
 
-		timeout_effect = {
-			activate_mission = JAP_chinese_spirit_dwindling
-			CHI = {
-				CHI_dwindle_spirit = yes
-			}
-		}
-	}
+	# 	timeout_effect = {
+	# 		activate_mission = JAP_chinese_spirit_dwindling
+	# 		CHI = {
+	# 			CHI_dwindle_spirit = yes
+	# 		}
+	# 	}
+	# }
 
 	JAP_transfer_indochina = {
 		icon = generic_operation

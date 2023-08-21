@@ -1000,6 +1000,7 @@ focus_tree = {
 		id = SPA_italian_shipbuilding_expertise
 		available = {
 			is_in_faction_with = ITA
+			has_completed_focus = SPA_abandon_neutrality
 		}
 		bypass = {
 		}
@@ -1125,6 +1126,7 @@ focus_tree = {
 		id = SPA_the_duty_to_work
 		available = {
 			is_in_faction_with = GER
+			has_completed_focus = SPA_abandon_neutrality
 		}
 		bypass = {
 		}
@@ -2500,6 +2502,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = "Going down this path will remilitarize your country"
+			set_global_flag = spain_joined
 			# remove_ideas = AFRICA_COMMONWEALTH_controls_axis_original
 					if = { limit = {check_variable = {ITA.AFRICA_COMMONWEALTH_BASES_LEVEL = 1 }} add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_1}
 					else_if = { limit = {check_variable = {ITA.AFRICA_COMMONWEALTH_BASES_LEVEL = 2 }} add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_2}
@@ -2540,6 +2544,75 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
+			GER = {
+				add_to_faction = ROOT
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = ENG
+					}
+				}
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = SAF
+					}
+				}
+				declare_war_on = {
+					target = SAF
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = CAN
+					}
+				}
+				declare_war_on = {
+					target = CAN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = AST
+					}
+				}
+				declare_war_on = {
+					target = AST
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = RAJ
+					}
+				}
+				declare_war_on = {
+					target = RAJ
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = FRA
+					}
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+			}
 			add_ideas = SPA_axis_coop
 		}
 	}
@@ -2599,7 +2672,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 100
-			set_rule = { can_send_volunteers = yes }
+			# set_rule = { can_send_volunteers = yes }
 			# every_owned_state = {
 			# 	limit = {
 			# 		OR = {
@@ -2630,6 +2703,76 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			GER = {
+				add_to_faction = ROOT
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = ENG
+					}
+				}
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = SAF
+					}
+				}
+				declare_war_on = {
+					target = SAF
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = CAN
+					}
+				}
+				declare_war_on = {
+					target = CAN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = AST
+					}
+				}
+				declare_war_on = {
+					target = AST
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = RAJ
+					}
+				}
+				declare_war_on = {
+					target = RAJ
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						has_war_with = FRA
+					}
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+			}
+			remove_ideas = SPA_neutrality_idea
 			add_ideas = SPA_la_division_azul
 		}
 	}

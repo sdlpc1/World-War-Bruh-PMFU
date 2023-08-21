@@ -98,3 +98,17 @@ country_event = {
 		name = startingevent.999.a
 	}
 }
+
+# AUTO COMPLIANCE ON CHINA
+country_event = {
+	id = startingevent.1005
+	title = startingevent.1005.t
+	desc = startingevent.1005.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = startingevent.999.a
+	}
+}
