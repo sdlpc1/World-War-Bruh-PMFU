@@ -32,7 +32,7 @@
  startingevent.1004.t:0 "Air on Soviets"
  startingevent.1004.d:0 "You are now expected todo air on the USSR, you have got an additional research slot, and have reduced focus time + rubber focuses from before, you are excepected to try to have yellow air and also get air lend lease from your allies. Also you should invest into better anti air since you now get max cas reduction at around 50 air attack"
  startingevent.1005.t:0 "Automatic Compliance on China"
- startingevent.1005.d:0 "Due to collaboration governments being removed, you and your allies will automatically get 80% compliance on China when they capitulate"
+ startingevent.1005.d:0 "Due to collaboration government missions being removed, you will get 60% collaboration on China and you and your allies will automatically get 80% compliance on China when they capitulate"
  #### LEVELS ####
  UNIT_LEVEL_0:0 "Fresh"
  UNIT_LEVEL_1:0 "Green"

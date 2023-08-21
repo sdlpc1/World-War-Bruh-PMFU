@@ -55,6 +55,10 @@ on_actions = {
 				}
 				JAP = {
 					country_event = startingevent.1005
+					add_collaboration = {
+						target = CHI
+						value = 0.6
+					}
 				}
 			}
 		}
