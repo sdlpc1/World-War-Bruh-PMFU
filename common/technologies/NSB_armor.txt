@@ -424,6 +424,9 @@ technologies = {
 			tank_torsion_bar_suspension
 			expanded_fuel_tank
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	fra_light_tank_1 = {

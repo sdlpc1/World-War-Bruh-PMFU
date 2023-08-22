@@ -293,6 +293,10 @@ technologies = {
 				movement = 0.05
 			}
 		}
+
+		ai_will_do = {
+			factor = 0
+		}
 		
 	}
 
@@ -309,6 +313,9 @@ technologies = {
 			}
 		}
 		
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	#Mon Genghis Khan Buffs
@@ -324,6 +331,10 @@ technologies = {
 			}
 
 		}
+
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	assault_gun_support_company = {
@@ -335,6 +346,10 @@ technologies = {
 			medium_assault_gun_support
 			heavy_assault_gun_support
 		}
+
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	assault_gun_line_unit = {
@@ -345,6 +360,10 @@ technologies = {
 			light_assault_gun_brigade
 			medium_assault_gun_brigade
 			heavy_assault_gun_brigade
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 	}
 

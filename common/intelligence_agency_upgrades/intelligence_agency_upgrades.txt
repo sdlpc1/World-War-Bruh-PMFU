@@ -145,7 +145,7 @@ branch_defense = {
 		sound = Spy_Agency_Defense_Upgrades_Confirm
 		
 		ai_will_do = {
-			factor = 2
+			factor = 700
 		}
 		
 		modifiers_during_progress = {
@@ -294,7 +294,7 @@ branch_operation = {
 		sound = Spy_Agency_Operations_Upgrades_Confirm
 		
 		ai_will_do = {
-			factor = 1
+			factor = 800
 		}
 		
 		modifiers_during_progress = {
@@ -360,7 +360,7 @@ branch_operation = {
 		sound = Spy_Agency_Operations_Upgrades_Confirm
 		
 		ai_will_do = {
-			factor = 1
+			factor = 900
 		}
 		
 		modifiers_during_progress = {
@@ -397,7 +397,7 @@ branch_operative = {
 		Sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
 		
 		ai_will_do = {
-			factor = 2
+			factor = 2000
 		}
 		
 		modifiers_during_progress = {
@@ -547,7 +547,7 @@ branch_crypto = {
 		sound = Spy_Agency_Cryptology_Upgrades_Confirm
 		
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 		
 		modifiers_during_progress = {

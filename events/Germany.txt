@@ -5224,7 +5224,8 @@ country_event = {
 			base = 100
 		}
 		set_province_name = { id = 3529 name = "Hindenburg"}
-		set_province_name = { id = 3151 name = "Ludendorff"}
+		set_province_name = { id = 13306 name = "Ludendorff"}
+		set_province_name = { id = 149 name = "East Ludendorff"}
 		set_global_flag = GER_cities_renamed
 	}
 

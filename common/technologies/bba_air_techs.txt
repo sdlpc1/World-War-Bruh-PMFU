@@ -1101,7 +1101,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				OR = {
 					has_tech = iw_small_airframe
@@ -1146,7 +1146,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				OR = {
 					has_tech = iw_small_airframe
@@ -1197,7 +1197,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				OR = {
 					has_tech = iw_small_airframe
@@ -1244,7 +1244,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				OR = {
 					has_tech = iw_small_airframe
@@ -1955,6 +1955,9 @@ technologies = {
 			amerikabomber_equipment
 		}
 		
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	
 	hs132 = {
@@ -1964,5 +1967,8 @@ technologies = {
 			jet_cas_bomb_extra
 		}
 		
+		ai_will_do = {
+			factor = 0
+		}
 	}
 }

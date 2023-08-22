@@ -834,6 +834,17 @@ focus_tree = {
 					country_event = wtt_manchukou.12
 				}
 			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = ENABLED
+					}
+				}
+				MAN = {
+					country_event = wtt_manchukou.12
+				}
+			}
 		
 			add_ideas = JAP_liaison_conference
 			every_army_leader = {

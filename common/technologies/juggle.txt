@@ -11,6 +11,10 @@ technologies = {
 				Juggle1 = 0
 			}
 		}
+
+		ai_will_do = {
+			factor = -100
+		}
 	}
 	Juggle2 = {
 		research_cost = 0
@@ -23,6 +27,10 @@ technologies = {
 			set_technology = {
 				Juggle2 = 0
 			}
+		}
+
+		ai_will_do = {
+			factor = -100
 		}
 	}
 	Juggle3 = {
@@ -37,6 +45,10 @@ technologies = {
 				Juggle3 = 0
 			}
 		}
+
+		ai_will_do = {
+			factor = -100
+		}
 	}
 	Juggle4 = {
 		research_cost = 0
@@ -49,6 +61,10 @@ technologies = {
 			set_technology = {
 				Juggle4 = 0
 			}
+		}
+
+		ai_will_do = {
+			factor = -100
 		}
 	}
 	Juggle5 = {
@@ -63,6 +79,10 @@ technologies = {
 				Juggle5 = 0
 			}
 		}
+
+		ai_will_do = {
+			factor = -100
+		}
 	}
 	Juggle6 = {
 		research_cost = 0
@@ -76,6 +96,10 @@ technologies = {
 				Juggle6 = 0
 			}
 		}
+
+		ai_will_do = {
+			factor = -100
+		}
 	}
 	Juggle7 = {
 		research_cost = 0
@@ -88,6 +112,10 @@ technologies = {
 			set_technology = {
 				Juggle7 = 0
 			}
+		}
+
+		ai_will_do = {
+			factor = -100
 		}
 	}
 }

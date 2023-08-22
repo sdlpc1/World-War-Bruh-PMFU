@@ -204,7 +204,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 8
+			factor = 3
 
 			modifier = {
 				factor = 2
@@ -255,7 +255,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 2
 
 			modifier = {
 				factor = 2
@@ -301,7 +301,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 2
 
 			modifier = {
 				factor = 2
@@ -349,7 +349,7 @@ technologies = {
 			factor = 2
 
 			modifier = {
-				factor = 4
+				factor = 2
 				has_war_with = GER
 			}
 			modifier = {
@@ -1218,7 +1218,7 @@ early_ship_hull_carrier = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 
 			modifier = {
 				factor = 8
@@ -1264,7 +1264,7 @@ early_ship_hull_carrier = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 
 			modifier = {
 				factor = 8
@@ -1306,7 +1306,7 @@ early_ship_hull_carrier = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 
 			modifier = {
 				factor = 8
@@ -1363,7 +1363,7 @@ early_ship_hull_carrier = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 
 			modifier = {
 				factor = 8

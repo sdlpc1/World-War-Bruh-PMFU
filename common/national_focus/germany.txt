@@ -1783,17 +1783,14 @@ focus_tree = {
 				uses = 1
 				category = radar_tech
 			}
-			# if = {
-			# 	limit = {
-			# 		has_opinion_modifier = sov_ger_treaty
-			# 		NOT = { has_war_with = SOV }
-			# 	}
-			# 	SOV = {
-			# 		country_event = { id = germany.78 days = 1 }
-			# 	}
-			# }
-			SOV = {
-				country_event = { id = germany.78 days = 1 }
+			if = {
+				limit = {
+					has_opinion_modifier = sov_ger_treaty
+					NOT = { has_war_with = SOV }
+				}
+				SOV = {
+					country_event = { id = germany.78 days = 1 }
+				}
 			}
 			64 = {
 				set_building_level = {
