@@ -1862,7 +1862,7 @@ technologies = {
 			max_organisation = 20
 		}
 		light_cruiser = {
-			max_organisation = 20
+			max_organisation = 10
 		}
 		modifier = {
 			naval_strike_targetting_factor = 0.1
@@ -2151,7 +2151,7 @@ technologies = {
 			max_organisation = 20
 		}
 		light_cruiser = {
-			max_organisation = 20
+			max_organisation = 10
 		}
 
 		navy_carrier_air_agility_factor = 0.10

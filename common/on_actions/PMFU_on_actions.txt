@@ -111,6 +111,8 @@ on_actions = {
 						}
 					}
 					add_ideas = stupid_ai
+					add_ideas = neutrality_idea
+					add_ideas = neutrality_idea2 
 				}
 			}
 		}

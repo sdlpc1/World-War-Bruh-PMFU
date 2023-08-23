@@ -5484,6 +5484,10 @@ focus_tree = {
 			has_tech = improved_small_airframe	
 		}
 
+		available = {
+			has_completed_focus = JAP_intervene_in_china
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
