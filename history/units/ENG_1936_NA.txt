@@ -666,15 +666,15 @@ instant_effect = {
 	}
 	
 	add_equipment_to_stockpile = {
-		type = eng_light_tank_chassis_mk6
-		amount = 200
+		type = eng_light_tank_chassis_mk6 
+		amount = 350
 		producer = ENG
 	}
-	add_equipment_to_stockpile = {
-		type = eng_medium_tank_chassis_a10
-		amount = 100
-		producer = ENG
-	}
+	# add_equipment_to_stockpile = {
+	# 	type = eng_medium_tank_chassis_a10
+	# 	amount = 100
+	# 	producer = ENG
+	# }
 
 	
 }

@@ -438,6 +438,7 @@ ideas = {
 			modifier = {
 				send_volunteer_size = 5
 				lend_lease_tension = -0.30
+				special_forces_min = 66
 			}
 		}		
 		
@@ -461,6 +462,7 @@ ideas = {
 			modifier = {
 				send_volunteer_size = 8
 				lend_lease_tension = -0.30
+				special_forces_min = 88
 			}
 		}
 

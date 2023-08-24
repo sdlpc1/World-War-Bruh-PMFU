@@ -36,10 +36,77 @@ on_actions = {
 		}
 	}
 
+	on_weekly_ENG = {
+		effect = {
+			set_variable = { ENG.shadow_civs_built_tt = 0 }
+			for_each_scope_loop = {
+				array = ENG.starting_core_states
+		
+				add_to_variable = { ENG.shadow_civs_built_tt = industrial_complex_level }
+			}
+			subtract_from_variable = { ENG.shadow_civs_built_tt = ENG.shadow_civs1 }
+			set_variable = { ENG.shadow_mils_gotten_tt = ENG.shadow_civs_built_tt }
+
+			clamp_variable = {
+				var = ENG.shadow_mils_gotten_tt
+				min = 0
+				max = 20
+			}
+			divide_variable = { ENG.shadow_mils_gotten_tt = 2 }
+			set_variable = { ENG.shadow_mils_gotten_2_tt = ENG.shadow_mils_gotten_tt }
+			round_variable = ENG.shadow_mils_gotten_tt
+			if = {
+				limit = {
+					check_variable = {
+						var = ENG.shadow_mils_gotten_2_tt
+						value = ENG.shadow_mils_gotten_tt
+						compare = less_than
+					}
+				}
+				subtract_from_variable = { ENG.shadow_mils_gotten_tt = 1 }	
+			}
+		}
+	}
+
 	on_startup = {
 		effect = {
 			SOV = {
 				country_event = startingevent.1004
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				559 = {
+					set_demilitarized_zone = yes
+	
+				}     
+				550 = {
+					set_demilitarized_zone = yes
+	
+				}          
+				271 = {
+					set_demilitarized_zone = yes
+	
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				ENG = {
+					add_ideas = home_of_the_free_NO_ASIA
+				}
 			}
 		}
 	}

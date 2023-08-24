@@ -26,6 +26,9 @@ political_actions = {
 					pow_before_annex = yes
 				}
 			}
+			ENG = {
+				add_ideas = ENG_AST_annex_operative
+			}
 			annex_country = { target = NZL transfer_troops = yes }
 			add_state_core = 723 
 			add_state_core = 284

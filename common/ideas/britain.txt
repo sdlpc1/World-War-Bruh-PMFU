@@ -13,6 +13,19 @@ ideas = {
 				send_volunteers_tension = -1
 			}
 		}	
+
+		ENG_AST_annex_operative = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 1
+			}
+		}	
 	}
 
 	country = {
