@@ -236,6 +236,12 @@ on_actions = {
 
 		effect = { 
 			every_country = {
+				set_technology = { anti_air_building_construction = 1 popup = no }
+			}
+		}
+
+		effect = { 
+			every_country = {
 				set_technology = { air_base_construction = 1 popup = no }
 			}
 		}

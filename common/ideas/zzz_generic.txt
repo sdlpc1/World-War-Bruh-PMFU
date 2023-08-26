@@ -280,7 +280,7 @@ ideas = {
 							has_completed_focus = GER_danzig_or_war
 						}
 					}
-					else_if = {
+					if = {
 						limit = {
 							has_game_rule = {
 								rule = china_war_rule
@@ -323,7 +323,7 @@ ideas = {
 							has_completed_focus = GER_danzig_or_war
 						}
 					}
-					else_if = {
+					if = {
 						limit = {
 							has_game_rule = {
 								rule = china_war_rule

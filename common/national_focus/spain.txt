@@ -2785,16 +2785,32 @@ focus_tree = {
 			}
 			every_owned_state = {
 				set_building_level = {
-					type = air_base
+					type = dockyard
 					level = 0
 				}
 			}
 			every_owned_state = {
 				set_building_level = {
-					type = dockyard
-					level = 0
+					type = anti_air_building
+					level = 5
 				}
 			}
+			every_owned_state = {
+				limit = {
+					air_base > 0
+				}
+				set_building_level = {
+					type = air_base
+					level = 1
+				}
+			}
+			41 = {
+				damage_building = {
+					type = air_base
+					damage = 10
+				}
+			}
+			custom_effect_tooltip = "The Madrid Airport will get destroyed and damaged weekly"
 			swap_ideas = {
 				remove_idea = SPA_neutrality_idea
 				add_idea = SPA_neutrality_idea_2

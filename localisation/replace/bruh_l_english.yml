@@ -324,6 +324,7 @@
  islands_home_of_desc:0 ""
  naval_base_construction:0 "§1France can't build naval ports before capitulation§!"
  air_base_construction:0 "§1Airfields can be built up to 10 levels§!"
+ anti_air_building_construction:0 "Anti-Air Construction"
  DELETE_DOCK:0 "Remove a Dockyard"
  annex_manpower_reudction:0 "Core Manpower Reduction"
  factory_reduction_balancer:0 "Factory Reduction Balancer"

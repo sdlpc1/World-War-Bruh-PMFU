@@ -50,6 +50,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		allied_build = yes
 		damage_factor = 0.25
+		disabled_in_dmz = yes
 	}
 
 	supply_node = {
@@ -193,7 +194,7 @@ buildings = {
 		icon_frame = 17
 		local_resources_rubber = 30
 		refinery = yes
-		max_level = 3 # This is the max unlock level
+		max_level = 99 # This is the max unlock level
 		shares_slots = no
 		value = 8
 		allied_build = yes

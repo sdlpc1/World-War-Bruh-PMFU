@@ -36,6 +36,30 @@ on_actions = {
 		}
 	}
 
+	on_weekly_SPR = {
+		effect = {
+			if = {
+				limit = {
+					SPR = {
+						has_completed_focus = SPA_la_division_azul
+					}
+				}
+				every_owned_state = {
+					set_building_level = {
+						type = air_base
+						level = 1
+					}
+				}
+				41 = {
+					damage_building = {
+						type = air_base
+						damage = 1
+					}
+				}
+			}
+		}
+	}
+
 	on_weekly_ENG = {
 		effect = {
 			set_variable = { ENG.shadow_civs_built_tt = 0 }
