@@ -57,6 +57,12 @@ factory_reduction_balancer  = {
 	local_factories = -0.3
 }
 
+no_factories  = {
+	icon = GFX_idea_SPR_disbanded_army
+	
+	local_factories = -1
+}
+
 SOV_major_cities_lost = {
 	icon = GFX_modifiers_generic_supply
 	

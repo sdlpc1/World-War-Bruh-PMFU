@@ -20,6 +20,53 @@ debug_decisions = {
 		}	
 	}
 
+	delete_equipmnt = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_equipment_fraction = 0
+		}	
+	}
+
+	offmap_mil_civ_test = {
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			is_debug = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1000
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1000
+			}
+		}	
+	}
+
 	dday_oob = {
 		icon = generic_research
 

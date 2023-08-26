@@ -131,6 +131,7 @@
  STRATEGICREGION_239:0 "Southern Egypt"
  STRATEGICREGION_240:0 "Middle East"
  STRATEGICREGION_241:0 "Southern Arabia"
+ STRATEGICREGION_242:0 "Gibraltar"
  STRATEGICREGION_NAMIBIA: "Namibia"
  STRATEGICREGION_NORTH_MALACCA: "North Malacca"
  OTRANTO_STRAIT:0 "Strait of Otranto"
@@ -326,12 +327,13 @@
  DELETE_DOCK:0 "Remove a Dockyard"
  annex_manpower_reudction:0 "Core Manpower Reduction"
  factory_reduction_balancer:0 "Factory Reduction Balancer"
+ no_factories:0 "No Factories"
  anti_dockyard_construction:0 "No Dockyard Construction"
 
 # Annexation Choices
  ENG_annex_ire:0 "Annex Ireland"
  MEX_annex_bra:0 "Annex Brazil"
- SOV_annex_mon:0 "Annex Mongolia"
+ SOV_annex_mon_t34:0 "Annex Mongolia - T34"
  ENG_annex_saf:0 "Annex South Africa"
  ITA_annex_bul:0 "Annex Bulgaria"
  USA_annex_mex:0 "Annex Mexico"

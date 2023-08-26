@@ -208,7 +208,7 @@ foreign_politics = {
 
 		available = {
 			has_war = no
-			date > 1941.1.1
+			date > 1940.3.1
 		}
 
 		fire_only_once = yes
@@ -228,7 +228,7 @@ foreign_politics = {
 
 		available = {
 			has_war = no 
-			date > 1941.1.1
+			date > 1940.3.1
 		}
 
 		fire_only_once = yes
@@ -275,15 +275,17 @@ foreign_politics = {
 
 	}
 
-	SOV_annex_mon = {
+	SOV_annex_mon_t34 = {
 
 		allowed = {
 			original_tag = SOV
 		}
 
 		available = {
-			SOV = { has_completed_focus = SOV_claim_bessarabia }
-			MON = {is_ai = yes}
+			# SOV = { has_completed_focus = SOV_claim_bessarabia }
+			date > 1941.1.1
+			MON = { is_ai = yes }
+			has_tech = sov_medium_tank_1
 		}
 
 		ai_will_do = {
@@ -300,7 +302,107 @@ foreign_politics = {
 					pow_before_annex = yes
 				}
 			}
-			annex_country = { target = MON transfer_troops = yes }
+			MON = {
+				set_equipment_fraction = 0
+			}
+			every_state = {
+				limit = {
+					OR = {
+						state = 287
+						state = 329
+						state = 330
+						state = 617
+						state = 618
+						state = 619
+						state = 759
+						state = 760
+						state = 817
+						state = 818
+						state = 819
+						state = 820
+					}
+				}
+				add_dynamic_modifier = { modifier = no_factories }
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 60
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 60
+			}
+			custom_effect_tooltip = "You will get given equipment if you have it researched, the tanks, mechanized, infanty weapons, squad weapons etc."
+			create_equipment_variant = {
+				name = "BT-7 - [MON]"
+				type = sov_light_tank_chassis_bt7
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_gun_1
+					turret_type_slot = tank_light_turret_1
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+				}
+			}
+			create_equipment_variant = {
+				name = "T-34 - [MON]"
+				type = sov_medium_tank_chassis_t34
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_med_hv_gun_1
+					turret_type_slot = tank_medium_turret_1
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = extra_ammo_storage
+					special_type_slot_3 = additional_machine_guns
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 7480
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment_1
+				amount = 1480
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = 1336
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = mechanized_equipment_1
+				amount = 3360
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 2120
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1080
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = sov_medium_tank_chassis_t34
+				amount = 2560
+				producer = SOV
+				variant_name = "T-34 - [MON]"
+			}
+			add_equipment_to_stockpile = {
+				type = sov_light_tank_chassis_bt7
+				amount = 320
+				producer = SOV
+				variant_name = "BT-7 - [MON]"
+			}
+			annex_country = { target = MON transfer_troops = no }
 			add_state_core = 287
 			add_state_core = 329
 			add_state_core = 330

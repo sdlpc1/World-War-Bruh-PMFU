@@ -263,7 +263,18 @@ DIPLOMACY_MILACC_ENABLE_TRIGGER = {
 		OR = {
 			NOT = { tag = USA }
 			NOT = { has_idea = USA_neutrality_idea }
-			
+		}
+		if = {
+			limit = {
+				FROM = {
+					original_tag = SOV
+				}
+				original_tag = USA
+			}
+			SOV = {
+				has_war = yes
+			}
+			date > 1941.5.1
 		}
 	}
 	if = {
@@ -302,6 +313,18 @@ DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
 		OR = {
 			NOT = { tag = USA }
 			NOT = { has_idea = USA_neutrality_idea }
+		}
+		if = {
+			limit = {
+				FROM = {
+					original_tag = USA
+				}
+				original_tag = SOV
+			}
+			SOV = {
+				has_war = yes
+			}
+			date > 1941.5.1
 		}
 		# USA = { 				
 		# 	AND = {
@@ -689,7 +712,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 			tooltip = RULE_ALLOW_WARGOALS_FOCUSES_ONLY_40_DESC
 			date > 1940.1.1
 		}
-	}
+	}	
 }
 DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 	if = {

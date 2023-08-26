@@ -2547,72 +2547,72 @@ focus_tree = {
 			GER = {
 				add_to_faction = ROOT
 			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = ENG
-					}
-				}
-				declare_war_on = {
-					target = ENG
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = SAF
-					}
-				}
-				declare_war_on = {
-					target = SAF
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = CAN
-					}
-				}
-				declare_war_on = {
-					target = CAN
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = AST
-					}
-				}
-				declare_war_on = {
-					target = AST
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = RAJ
-					}
-				}
-				declare_war_on = {
-					target = RAJ
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = FRA
-					}
-				}
-				declare_war_on = {
-					target = FRA
-					type = annex_everything
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = ENG
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = ENG
+			# 		type = annex_everything
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = SAF
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = SAF
+			# 		type = annex_everything
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = CAN
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = CAN
+			# 		type = annex_everything
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = AST
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = AST
+			# 		type = annex_everything
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = RAJ
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = RAJ
+			# 		type = annex_everything
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = FRA
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = FRA
+			# 		type = annex_everything
+			# 	}
+			# }
 			add_ideas = SPA_axis_coop
 		}
 	}
@@ -2706,74 +2706,99 @@ focus_tree = {
 			GER = {
 				add_to_faction = ROOT
 			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = ENG
-					}
-				}
-				declare_war_on = {
-					target = ENG
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = SAF
-					}
-				}
-				declare_war_on = {
-					target = SAF
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = CAN
-					}
-				}
-				declare_war_on = {
-					target = CAN
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = AST
-					}
-				}
-				declare_war_on = {
-					target = AST
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = RAJ
-					}
-				}
-				declare_war_on = {
-					target = RAJ
-					type = annex_everything
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_war_with = FRA
-					}
-				}
-				declare_war_on = {
-					target = FRA
-					type = annex_everything
-				}
-			}
-			remove_ideas = SPA_neutrality_idea
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = ENG
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = ENG
+			# 		type = annex_everything
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = SAF
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = SAF
+			# 		type = annex_everything
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = CAN
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = CAN
+			# 		type = annex_everything
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = AST
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = AST
+			# 		type = annex_everything
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = RAJ
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = RAJ
+			# 		type = annex_everything
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		GER = {
+			# 			has_war_with = FRA
+			# 		}
+			# 	}
+			# 	declare_war_on = {
+			# 		target = FRA
+			# 		type = annex_everything
+			# 	}
+			# }
 			add_ideas = SPA_la_division_azul
+			custom_effect_tooltip = "The Spanish Fleet will be disbanded"
+			hidden_effect = {
+				transfer_navy = {
+					target = VEN
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 150
+			}
+			every_owned_state = {
+				set_building_level = {
+					type = air_base
+					level = 0
+				}
+			}
+			every_owned_state = {
+				set_building_level = {
+					type = dockyard
+					level = 0
+				}
+			}
+			swap_ideas = {
+				remove_idea = SPA_neutrality_idea
+				add_idea = SPA_neutrality_idea_2
+			}
 		}
 	}
 

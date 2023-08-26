@@ -49,46 +49,46 @@ air_wings = {
 	# BOVO Aviatsya Komandovaniya -- Minsk
 	219 = {
 		# 8ya Istrebitel'nye Aviabrigada
-		small_plane_airframe_1 = {
-			owner = "SOV" 
-			amount = 100
-			version_name = "I-16"
-		}
-		small_plane_airframe_1 = {
-			owner = "SOV" 
-			amount = 100
-			version_name = "I-16"
-		}
-		small_plane_airframe_1 = {
-			owner = "SOV" 
-			amount = 100
-			version_name = "I-16"
-		}
-		small_plane_airframe_1 = {
-			owner = "SOV" 
-			amount = 100
-			version_name = "I-16"
-		}
-		small_plane_airframe_1 = {
-			owner = "SOV" 
-			amount = 100
-			version_name = "I-16"
-		}
-		small_plane_airframe_1 = {
-			owner = "SOV" 
-			amount = 100
-			version_name = "I-16"
-		}
-		small_plane_airframe_1 = {
-			owner = "SOV" 
-			amount = 100
-			version_name = "I-16"
-		}
-		small_plane_airframe_1 = {
-			owner = "SOV" 
-			amount = 100
-			version_name = "I-16"
-		}
+		# small_plane_airframe_1 = {
+		# 	owner = "SOV" 
+		# 	amount = 100
+		# 	version_name = "I-16"
+		# }
+		# small_plane_airframe_1 = {
+		# 	owner = "SOV" 
+		# 	amount = 100
+		# 	version_name = "I-16"
+		# }
+		# small_plane_airframe_1 = {
+		# 	owner = "SOV" 
+		# 	amount = 100
+		# 	version_name = "I-16"
+		# }
+		# small_plane_airframe_1 = {
+		# 	owner = "SOV" 
+		# 	amount = 100
+		# 	version_name = "I-16"
+		# }
+		# small_plane_airframe_1 = {
+		# 	owner = "SOV" 
+		# 	amount = 100
+		# 	version_name = "I-16"
+		# }
+		# small_plane_airframe_1 = {
+		# 	owner = "SOV" 
+		# 	amount = 100
+		# 	version_name = "I-16"
+		# }
+		# small_plane_airframe_1 = {
+		# 	owner = "SOV" 
+		# 	amount = 100
+		# 	version_name = "I-16"
+		# }
+		# small_plane_airframe_1 = {
+		# 	owner = "SOV" 
+		# 	amount = 100
+		# 	version_name = "I-16"
+		# }
 		
 		# 14ya Istrebitel'nye Aviabrigada
 		
@@ -113,21 +113,21 @@ air_wings = {
 	# KOVO Aviatsya Komandovaniya -- Kiev
 	219 = {
 		# 17ya Istrebitel'nye Aviabrigada
-		small_plane_airframe_1 = {
-			owner = "SOV" 
-			amount = 100
-			version_name = "I-16"
-		}
-		small_plane_airframe_1 = {
-			owner = "SOV" 
-			amount = 100
-			version_name = "I-16"
-		}
-		small_plane_airframe_1 = {
-			owner = "SOV" 
-			amount = 100
-			version_name = "I-16"
-		}
+		# small_plane_airframe_1 = {
+		# 	owner = "SOV" 
+		# 	amount = 100
+		# 	version_name = "I-16"
+		# }
+		# small_plane_airframe_1 = {
+		# 	owner = "SOV" 
+		# 	amount = 100
+		# 	version_name = "I-16"
+		# }
+		# small_plane_airframe_1 = {
+		# 	owner = "SOV" 
+		# 	amount = 100
+		# 	version_name = "I-16"
+		# }
 		small_plane_airframe_1 = {
 			owner = "SOV" 
 			amount = 100
