@@ -1,5 +1,81 @@
 political_actions = {
 
+	AST_annex_dei = {
+
+		allowed = {
+			original_tag = AST
+		}
+
+		available = {
+			original_tag = HOL
+			HOL = { is_ai = yes }
+			NOT = {
+				has_global_flag = DEI_transfered
+			}
+			has_game_rule = {
+				rule = ast_annex_dei_at_hol_cap
+				option = ENABLED
+			}
+			HOL = {
+				has_capitulated = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			# weird island near venezuela
+			ENG = { transfer_state = 695 }
+			695 = { set_compliance = 20 }
+			# suriname
+			ENG = { transfer_state = 309 }
+			309 = { set_compliance = 20 }
+
+			# DEI - go to australia
+			transfer_state = 672
+			672 = { set_compliance = 20 }
+			transfer_state = 334
+			334 = { set_compliance = 20 }
+			transfer_state = 335
+			335 = { set_compliance = 20 }
+			transfer_state = 667
+			667 = { set_compliance = 20 }
+			transfer_state = 673
+			673 = { set_compliance = 20 }
+			transfer_state = 668
+			668 = { set_compliance = 20 }
+			transfer_state = 669
+			669 = { set_compliance = 20 }
+			transfer_state = 738
+			738 = { set_compliance = 20 }
+			AST = { annex_country = { target = INS transfer_troops = yes } }
+
+			GER = {
+				transfer_state = 35
+				transfer_state = 7
+				transfer_state = 36
+			}
+
+			set_global_flag = DEI_transfered
+
+			# ENG ANNEX
+			ENG = {
+				HOL = {
+					pow_before_annex = yes
+				}
+			}
+			ENG = { annex_country = { target = HOL transfer_troops = yes } }
+		}
+	}
+
 	AST_annex_nz = {
 
 		allowed = {

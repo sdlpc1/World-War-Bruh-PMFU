@@ -181,35 +181,35 @@ focus_tree = {
 			653 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			572 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			573 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			582 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			583 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -406,63 +406,63 @@ focus_tree = {
 			216 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			204 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			244 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			248 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			247 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			246 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			400 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			263 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			195 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -560,147 +560,147 @@ focus_tree = {
 			232 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			233 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			235 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			234 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			137 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			238 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			237 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			217 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			401 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			239 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			245 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			218 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			265 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			196 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			200 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			227 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			228 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			260 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			258 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			257 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			254 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -983,12 +983,12 @@ focus_tree = {
 			}
  			add_resource = {
 				type = rubber
-				amount = 250
+				amount = 200
 				state = 229
 			}
 	 		add_resource = {
 				type = rubber
-				amount = 250
+				amount = 200
 				state = 232
 			}
 		}
@@ -1012,24 +1012,24 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = chromium
-				amount = 240
+				amount = 200
 				state = 573
 			}
 			add_resource = {
 				type = tungsten
-				amount = 400
+				amount = 300
 				state = 401
 			}
-        	modify_building_resources = {
-        	   building = steel_refinery
-        	   resource = chromium
-        	   amount = 20
-        	}
-        	modify_building_resources = {
-        	   building = steel_refinery
-        	   resource = tungsten
-        	   amount = 20
-        	}
+        	# modify_building_resources = {
+        	#    building = steel_refinery
+        	#    resource = chromium
+        	#    amount = 20
+        	# }
+        	# modify_building_resources = {
+        	#    building = steel_refinery
+        	#    resource = tungsten
+        	#    amount = 20
+        	# }
 		}
 	}
 	focus = {
@@ -1124,23 +1124,23 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				prioritize = { 588 }
-				limit = {
-					free_building_slots = {
-						building = synthetic_refinery
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = synthetic_refinery #synthetic_rubber_refinery
-					level = 2
-					instant_build = yes
-				}
-			}
+			# random_owned_controlled_state = {
+			# 	prioritize = { 588 }
+			# 	limit = {
+			# 		free_building_slots = {
+			# 			building = synthetic_refinery
+			# 			size > 1
+			# 			include_locked = yes
+			# 		}
+			# 		is_core_of = ROOT
+			# 	}
+			# 	add_extra_state_shared_building_slots = 2
+			# 	add_building_construction = {
+			# 		type = synthetic_refinery #synthetic_rubber_refinery
+			# 		level = 2
+			# 		instant_build = yes
+			# 	}
+			# }
 		}
 	}
 
@@ -5101,27 +5101,44 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_0
-					amount = 10000
-					producer = SOV
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = ENABLED
+					}
 				}
-				add_equipment_to_stockpile = {
-					type = squad_equipment_0
-					amount = 2000
-					producer = SOV
+				CHI = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						amount = 10000
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = squad_equipment_0
+						amount = 2000
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = horse_equipment
+						amount = 2000
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment_1
+						amount = 500
+						producer = SOV
+					}
 				}
-				add_equipment_to_stockpile = {
-					type = horse_equipment
-					amount = 2000
-					producer = SOV
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = china_war_rule
+						option = DISABLED
+					}
 				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 500
-					producer = SOV
-				}
+				army_experience = 50
 			}
 		}
 	}
@@ -6592,7 +6609,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
-				uses = 3
+				uses = 2
 				category = electronics
 			}
 		}
@@ -6655,7 +6672,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.75
+				bonus = 0.5
 				uses = 4
 				category = industry
 			}
@@ -7455,12 +7472,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_army_leader = {
-				add_logistics = 1
-				add_planning = 1
-				add_attack = 1
-				add_defense = 1
-			}
+			# every_army_leader = {
+			# 	add_logistics = 1
+			# 	add_planning = 1
+			# 	add_attack = 1
+			# 	add_defense = 1
+			# }
 			add_ideas = SOV_stavka_idea
 			SOV_modernisation_towards_mech = yes
 		}
@@ -7744,10 +7761,10 @@ focus_tree = {
 
 		completion_reward = {
 			every_army_leader = {
-				add_logistics = 2
-				add_planning = 2
-				add_attack = 2
-				add_defense = 2
+				add_logistics = 1
+				add_planning = 1
+				add_attack = 1
+				add_defense = 1
 			}
 			add_ideas = SOV_new_officers
 		}
@@ -7972,10 +7989,10 @@ focus_tree = {
 
 		completion_reward = {
 			every_army_leader = {
-				add_logistics = 2
-				add_planning = 2
-				add_attack = 2
-				add_defense = 2
+				add_logistics = 1
+				add_planning = 1
+				add_attack = 1
+				add_defense = 1
 			}
 			add_ideas = SOV_new_officers
 		}
@@ -8571,14 +8588,14 @@ focus_tree = {
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
-						size > 1
+						size > 3
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -9083,10 +9100,10 @@ focus_tree = {
 					}
 				}
 				else = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}

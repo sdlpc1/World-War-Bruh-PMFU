@@ -2310,7 +2310,7 @@ ideas = {
 				medium_tank_aa_chassis = {
 					soft_attack = 0.05
 					build_cost_ic = -0.1
-					anti_air_attack = 0.15
+					# anti_air_attack = 0.15
 				}
 				medium_assault_gun_chassis = {
 					soft_attack = 0.05
@@ -2332,7 +2332,7 @@ ideas = {
 				}
 				light_tank_aa_chassis = {
 					build_cost_ic = -0.15
-					anti_air_attack = 0.15
+					# anti_air_attack = 0.15
 				}
 				light_assault_gun_chassis = {
 					build_cost_ic = -0.15
@@ -2378,7 +2378,7 @@ ideas = {
 				medium_tank_aa_chassis = {
 					hard_attack = 0.05
 					build_cost_ic = -0.1
-					anti_air_attack = 0.15
+					# anti_air_attack = 0.15
 				}
 				medium_assault_gun_chassis = {
 					hard_attack = 0.05
@@ -2400,7 +2400,7 @@ ideas = {
 				}
 				light_tank_aa_chassis = {
 					build_cost_ic = -0.15
-					anti_air_attack = 0.15
+					# anti_air_attack = 0.15
 				}
 				light_assault_gun_chassis = {
 					build_cost_ic = -0.15
@@ -2488,7 +2488,7 @@ ideas = {
 				}
 				medium_tank_aa_chassis = {
 					# build_cost_ic = 0.075
-					anti_air_attack = 0.05
+					# anti_air_attack = 0.05
 					reliability = 0.1
 					armor_value = 0.15
 					hard_attack = 0.1

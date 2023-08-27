@@ -1792,10 +1792,10 @@ focus_tree = {
 				character = MON_khan
 				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer infantry_leader winter_expert ranger }
 				skill = 4
-				attack_skill = 5
+				attack_skill = 4
 				defense_skill = 5
-				planning_skill = 7
-				logistics_skill = 6
+				planning_skill = 4
+				logistics_skill = 5
 			}
 		}
 	}

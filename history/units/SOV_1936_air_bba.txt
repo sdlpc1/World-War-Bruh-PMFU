@@ -26,15 +26,15 @@ air_wings = {
 	# MVO Aviatsya Komandovaniya
 	219 = {
 		# 2ya Istrebitel'nye Aviabrigada
-		small_plane_airframe_0 = {
+		small_plane_cas_airframe_1 = {
 			owner = "SOV" 
 			amount = 100
-			version_name = "I-15"
+			version_name = "LBsh"
 		}
-		small_plane_airframe_0 = {
+		small_plane_cas_airframe_1 = {
 			owner = "SOV" 
 			amount = 100
-			version_name = "I-15"
+			version_name = "LBsh"
 		}
 		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
 		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada

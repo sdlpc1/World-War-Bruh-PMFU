@@ -49,7 +49,7 @@ buildings = {
 		value = 28
 		infrastructure_construction_effect = yes
 		allied_build = yes
-		damage_factor = 0.25
+		damage_factor = 0.2
 		disabled_in_dmz = yes
 	}
 
@@ -105,7 +105,7 @@ buildings = {
 		land_fort = 1
 		max_level = 10
 		value = 5
-		damage_factor = 0.55
+		damage_factor = 0.45
 		allied_build = yes
 	}
 
@@ -137,7 +137,7 @@ buildings = {
 		naval_fort = 1
 		max_level = 10
 		value = 5
-		damage_factor = 0.55
+		damage_factor = 0.45
 		allied_build = yes
 	}
 
