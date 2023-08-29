@@ -367,6 +367,7 @@
 
   #### FLAG ####
   SOV_purge:0 "§RPurge has Begun§!\n"
+  MON_annexed:0 "Mongolia Annexed"
 
   #### TOOLTIP ####
   SOV_increase_weekly_paranoia_in_trait_tt:0 "§Y[ROOT.GetLeader]§!: Modify trait §Y$stalin_political_paranoia$§! by \nWeekly Political Paranoia: §R+2§!"
@@ -388,7 +389,7 @@
   sov_ural_move:0 "Our Industry has been prepared for evacuation"
   SOV_frontline_mob_tt:0 "Creates §Y4 Infantry Divsions§! in every frontline state"
   SOV_frontline_mob_tt2:0 "Creates §Y3 Infantry Divsions§! in every frontline state"
-  SOV_propaganda_more_metal_tt:0 "Providing §G+10§! §Y$state_resource_aluminium$§!, §Y$state_resource_tungsten$§!, §Y$state_resource_steel$§! or §Y$state_resource_chromium$§! for each state producing any of those resources.\n§RNO LONGER PERMANENT§!"
+  SOV_propaganda_more_metal_tt:0 "Providing §G+10§! §Y$state_resource_aluminium$§!, §Y$state_resource_tungsten$§!, §Y$state_resource_steel$§! or §Y$state_resource_chromium$§! for each state producing any of those resources."
   SOV_CONQ_TT:0 "Gives 80% Compliance on all controlled Molotov States that will decrease during Barbarossa"
   SOV_cowed_by_stalin_trait_tt:0 "This Trait will be removed upon completion of the focus §Y$SOV_order_270$§!."
   SOV_dismantle_surrender_tt:0 "§RTaking this path will increase the Surrender Progress Threshold for some focuses, to compensate for gaining a large number of VP's cored.§!"
@@ -402,7 +403,8 @@
   SOV_industry_relocation_complete_effect_tt:0 "Up to §Y10 Military or Civilian Factories§! will be removed from §Y[FROM.GetName]§!.\n"
   SOV_RG_spawn_in_2:0 "Spawns in §G2§! §YRG Converter Divisions§!"
   SOV_RG_spawn_in_4:0 "Spawns in §G4§! §YRG Converter Divisions§!"
-
+  SOV_expand_shipbuilding_plants_tt:0 "Add §Y2 building slots§! and §Y"
+  SOV_expand_shipbuilding_plants_tt:0 "Add §Y2 building slots§! and §Y2 Dockyard§! in every state in which naval bases have been reinforced by previous focuses"
   ### UNITS ###
   rg_hq_company_heavy:0 "Red Guards HQ Company"
   rg_hq_company_medium:0 "Red Guards HQ Company"

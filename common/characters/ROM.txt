@@ -528,16 +528,14 @@ characters={
 			}
 		}
 		advisor={
-			ledger  = air 
-			slot = high_command
+			slot = political_advisor
 			idea_token = ROM_paul_teodorescu
-			allowed  = {
-				original_tag  = ROM
-			}
 			traits  = {
-				air_strategic_bombing_2 
+				war_industrialist 
 			}
-			cost = 100
+			ai_will_do = {
+				factor = 150
+			}
 		}
 	}
 	ROM_gheorghe_vasiliu={

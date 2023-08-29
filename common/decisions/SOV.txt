@@ -275,17 +275,28 @@ foreign_politics = {
 
 	}
 
-	SOV_annex_mon_t34 = {
+	SOV_annex_mon_bessarabia = {
 
 		allowed = {
 			original_tag = SOV
 		}
 
+		visible = {
+			has_game_rule = {
+				rule = mongolia_annex_time_rule
+				option = BESSARABIA
+			}
+		}
+
 		available = {
-			# SOV = { has_completed_focus = SOV_claim_bessarabia }
-			date > 1941.1.1
-			MON = { is_ai = yes }
-			has_tech = sov_medium_tank_1
+			NOT = {
+				has_global_flag = MON_annexed
+			}
+			has_game_rule = {
+				rule = mongolia_annex_time_rule
+				option = BESSARABIA
+			}
+			SOV = { has_completed_focus = SOV_claim_bessarabia }
 		}
 
 		ai_will_do = {
@@ -297,42 +308,201 @@ foreign_politics = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			SOV = {
-				MON = {
-					pow_before_annex = yes
-				}
+			set_global_flag = MON_annexed
+			add_offsite_building = {
+				type = industrial_complex
+				level = 35
 			}
-			MON = {
-				set_equipment_fraction = 0
+			add_offsite_building = {
+				type = arms_factory
+				level = 60
 			}
-			every_state = {
-				limit = {
-					OR = {
-						state = 287
-						state = 329
-						state = 330
-						state = 617
-						state = 618
-						state = 619
-						state = 759
-						state = 760
-						state = 817
-						state = 818
-						state = 819
-						state = 820
-					}
-				}
-				add_dynamic_modifier = { modifier = no_factories }
+		}
+	}
+
+	SOV_annex_mon_t70 = {
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_game_rule = {
+				rule = mongolia_annex_time_rule
+				option = IN_1941_1_1
 			}
+		}
+
+		available = {
+			NOT = {
+				has_global_flag = MON_annexed
+			}
+			has_tech = sov_light_tank_3
+			has_game_rule = {
+				rule = mongolia_annex_time_rule
+				option = IN_1941_1_1
+			}
+			date > 1941.1.1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_global_flag = MON_annexed
 			add_offsite_building = {
 				type = industrial_complex
 				level = 60
 			}
 			add_offsite_building = {
 				type = arms_factory
+				level = 80
+			}
+			custom_effect_tooltip = "You will get given equipment if you have it researched, the tanks, mechanized, 1939 infanty weapons, 1938 squad weapons etc."
+			create_equipment_variant = {
+				name = "T-70 - [MON]"
+				type = sov_light_tank_chassis_t70
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_gun_3
+					turret_type_slot = tank_light_turret_3
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = extra_ammo_storage
+					special_type_slot_3 = additional_machine_guns
+				}
+			}
+			create_equipment_variant = {
+				name = "T-70 SPG - [MON]"
+				type = light_tank_artillery_chassissov_light_tank_chassis_t70
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_light_art_gun_1
+					turret_type_slot = tank_light_turret_open
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = extra_ammo_storage
+				}
+			}
+			create_equipment_variant = {
+				name = "T-70 Tank Destroyer - [MON]"
+				type = light_tank_destroyer_chassissov_light_tank_chassis_t70
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_light_td_1
+					turret_type_slot = tank_light_superstructure
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = extra_ammo_storage
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 9350
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment_1
+				amount = 1850
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = 1180
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = mechanized_equipment_1
+				amount = 4200
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 2650
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1350
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = sov_light_tank_chassis_t70
+				amount = 1600
+				producer = SOV
+				variant_name = "T-70 - [MON]"
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_artillery_chassissov_light_tank_chassis_t70
+				amount = 480
+				producer = SOV
+				variant_name = "T-70 SPG - [MON]"
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_destroyer_chassissov_light_tank_chassis_t70
+				amount = 1920
+				producer = SOV
+				variant_name = "T-70 Tank Destroyer - [MON]"
+			}
+			
+		}
+	}
+
+	SOV_annex_mon_t34 = {
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_game_rule = {
+				rule = mongolia_annex_time_rule
+				option = IN_1941_1_1
+			}
+		}
+
+		available = {
+			NOT = {
+				has_global_flag = MON_annexed
+			}
+			has_tech = sov_medium_tank_1
+			has_game_rule = {
+				rule = mongolia_annex_time_rule
+				option = IN_1941_1_1
+			}
+			date > 1941.1.1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_global_flag = MON_annexed
+			add_offsite_building = {
+				type = industrial_complex
 				level = 60
 			}
-			custom_effect_tooltip = "You will get given equipment if you have it researched, the tanks, mechanized, infanty weapons, squad weapons etc."
+			add_offsite_building = {
+				type = arms_factory
+				level = 80
+			}
+			custom_effect_tooltip = "You will get given equipment if you have it researched, the tanks, mechanized, 1939 infanty weapons, 1938 squad weapons etc."
 			create_equipment_variant = {
 				name = "BT-7 - [MON]"
 				type = sov_light_tank_chassis_bt7
@@ -402,19 +572,222 @@ foreign_politics = {
 				producer = SOV
 				variant_name = "BT-7 - [MON]"
 			}
-			annex_country = { target = MON transfer_troops = no }
-			add_state_core = 287
-			add_state_core = 329
-			add_state_core = 330
-			add_state_core = 617
-			add_state_core = 618
-			add_state_core = 619
-			add_state_core = 759
-			add_state_core = 760
-			add_state_core = 817
-			add_state_core = 818
-			add_state_core = 819
-			add_state_core = 820
+		}
+	}
+
+	SOV_annex_mon_kv1 = {
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_game_rule = {
+				rule = mongolia_annex_time_rule
+				option = IN_1941_1_1
+			}
+		}
+
+		available = {
+			NOT = {
+				has_global_flag = MON_annexed
+			}
+			has_tech = sov_heavy_tank_2
+			has_game_rule = {
+				rule = mongolia_annex_time_rule
+				option = IN_1941_1_1
+			}
+			date > 1941.1.1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_global_flag = MON_annexed
+			add_offsite_building = {
+				type = industrial_complex
+				level = 60
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 80
+			}
+			custom_effect_tooltip = "You will get given equipment if you have it researched, the tanks, mechanized, 1939 infanty weapons, 1938 squad weapons etc."
+			create_equipment_variant = {
+				name = "BT-7 - [MON]"
+				type = sov_light_tank_chassis_bt7
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_gun_1
+					turret_type_slot = tank_light_turret_1
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+				}
+			}
+			create_equipment_variant = {
+				name = "KV-1 - [MON]"
+				type = sov_heavy_tank_chassis_kv1
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_med_hv_gun_1
+					turret_type_slot = tank_heavy_turret_early
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = extra_ammo_storage
+					special_type_slot_3 = additional_machine_guns
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 3740
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment_1
+				amount = 740
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = 472
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = mechanized_equipment_1
+				amount = 1680
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 1060
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 540
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = sov_heavy_tank_chassis_kv1
+				amount = 1280
+				producer = SOV
+				variant_name = "KV-1 - [MON]"
+			}
+			add_equipment_to_stockpile = {
+				type = sov_light_tank_chassis_bt7
+				amount = 160
+				producer = SOV
+				variant_name = "BT-7 - [MON]"
+			}
+		}
+	}
+
+	SOV_annex_mon_mot_at = {
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_game_rule = {
+				rule = mongolia_annex_time_rule
+				option = IN_1941_1_1
+			}
+		}
+
+		available = {
+			NOT = {
+				has_global_flag = MON_annexed
+			}
+			has_tech = antitank3
+			has_game_rule = {
+				rule = mongolia_annex_time_rule
+				option = IN_1941_1_1
+			}
+			date > 1941.1.1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_global_flag = MON_annexed
+			add_offsite_building = {
+				type = industrial_complex
+				level = 60
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 80
+			}
+			custom_effect_tooltip = "You will get given equipment if you have it researched, 1939 AT, 1941 AT, 1939 infanty weapons, 1938 squad weapons etc."
+			create_equipment_variant = {
+				name = "BT-7 - [MON]"
+				type = sov_light_tank_chassis_bt7
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_gun_1
+					turret_type_slot = tank_light_turret_1
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_2
+				amount = 1000
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_3
+				amount = 920
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 27600
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment_1
+				amount = 5700
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = 1800
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 22340
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 2700
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = sov_light_tank_chassis_bt7
+				amount = 800
+				producer = SOV
+				variant_name = "BT-7 - [MON]"
+			}
 		}
 	}
 }
@@ -3739,89 +4112,89 @@ SOV_propaganda_campaigns = {
 		}
 	}
 
-	SOV_propaganda_sweep_scum_out = { # ID = 18
-		priority = 17
+	# SOV_propaganda_sweep_scum_out = { # ID = 18
+	# 	priority = 17
 
-		icon = generic_prepare_civil_war
+	# 	icon = generic_prepare_civil_war
 
-		ai_will_do = {
-			base = 0.5
-			modifier = {
-				add = 100
-				has_country_flag = { flag = SOV_great_patriotic_war_flag days > 365 }
-			}
-			modifier = {
-				factor = 0.1
-				surrender_progress > 0.75
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { SOV_propaganda_sweep_scum_out_cost > 30 } #Less likely to do it a third time
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { SOV_propaganda_sweep_scum_out_cost > 45 } #Even less likely to do it a fourth time
-			}
-			modifier = {
-				factor = 0
-				check_variable = { SOV_propaganda_sweep_scum_out_cost > 90 } #Shouldn't even considered doing it a fifth time
-			}
-		}
+	# 	ai_will_do = {
+	# 		base = 0.5
+	# 		modifier = {
+	# 			add = 100
+	# 			has_country_flag = { flag = SOV_great_patriotic_war_flag days > 365 }
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.1
+	# 			surrender_progress > 0.75
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.1
+	# 			check_variable = { SOV_propaganda_sweep_scum_out_cost > 30 } #Less likely to do it a third time
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.1
+	# 			check_variable = { SOV_propaganda_sweep_scum_out_cost > 45 } #Even less likely to do it a fourth time
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			check_variable = { SOV_propaganda_sweep_scum_out_cost > 90 } #Shouldn't even considered doing it a fifth time
+	# 		}
+	# 	}
 
-		allowed = { 
-			original_tag = SOV
-		}
+	# 	allowed = { 
+	# 		original_tag = SOV
+	# 	}
 
-		available = {
-			SOV_propaganda_poster_slot_available = yes
+	# 	available = {
+	# 		SOV_propaganda_poster_slot_available = yes
 
-			has_war = yes
-			# any_enemy_country = {
-			# 	any_controlled_state = {
-			# 		is_core_of = ROOT
-			# 	}
-			# }
-		}
+	# 		has_war = yes
+	# 		# any_enemy_country = {
+	# 		# 	any_controlled_state = {
+	# 		# 		is_core_of = ROOT
+	# 		# 	}
+	# 		# }
+	# 	}
 
-		visible = {
-			OR = {
-				has_completed_focus = SOV_progress_cult
-				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
-			}
-		}
+	# 	visible = {
+	# 		OR = {
+	# 			has_completed_focus = SOV_progress_cult
+	# 			has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+	# 		}
+	# 	}
 
-		days_remove = SOV_default_propaganda_campaign_duration
+	# 	days_remove = SOV_default_propaganda_campaign_duration
 
-		days_re_enable = SOV_default_propaganda_campaign_cooldown
+	# 	days_re_enable = SOV_default_propaganda_campaign_cooldown
 
-		cost = SOV_propaganda_sweep_scum_out_cost
+	# 	cost = SOV_propaganda_sweep_scum_out_cost
 
-		modifier = {
-			army_core_attack_factor = 0.05
-			army_core_defence_factor = 0.05
-			offence = 0.05
-			defence = 0.05
-		}
+	# 	modifier = {
+	# 		army_core_attack_factor = 0.05
+	# 		army_core_defence_factor = 0.05
+	# 		offence = 0.05
+	# 		defence = 0.05
+	# 	}
 
-		complete_effect = {
-			set_variable = { SOV_new_propaganda_campaign = 18 }
-			SOV_pick_propaganda_campaign_slot_effect = yes
-			SOV_achievement_propaganda_counter_effect = yes
-		}
+	# 	complete_effect = {
+	# 		set_variable = { SOV_new_propaganda_campaign = 18 }
+	# 		SOV_pick_propaganda_campaign_slot_effect = yes
+	# 		SOV_achievement_propaganda_counter_effect = yes
+	# 	}
 
-		remove_effect = {
-			set_variable = { SOV_propaganda_campaign_to_remove = 18 }
-			SOV_reset_propaganda_campaign_slot_effect = yes
+	# 	remove_effect = {
+	# 		set_variable = { SOV_propaganda_campaign_to_remove = 18 }
+	# 		SOV_reset_propaganda_campaign_slot_effect = yes
 
-			set_variable = { SOV_propaganda_cost = SOV_propaganda_sweep_scum_out_cost }
-			SOV_increase_propaganda_campaign_cost_effect = yes
-			set_variable = { SOV_propaganda_sweep_scum_out_cost = SOV_propaganda_cost }
-			clear_variable = SOV_propaganda_cost
+	# 		set_variable = { SOV_propaganda_cost = SOV_propaganda_sweep_scum_out_cost }
+	# 		SOV_increase_propaganda_campaign_cost_effect = yes
+	# 		set_variable = { SOV_propaganda_sweep_scum_out_cost = SOV_propaganda_cost }
+	# 		clear_variable = SOV_propaganda_cost
 
-			custom_effect_tooltip = SOV_propaganda_campaign_cooldown_tt
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
-		}
-	}
+	# 		custom_effect_tooltip = SOV_propaganda_campaign_cooldown_tt
+	# 		hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+	# 	}
+	# }
 
 	SOV_propaganda_knowledge = { # ID = 19
 		priority = 18

@@ -84,6 +84,26 @@ spain_war_rule = {
 	}
 }
 
+mongolia_annex_time_rule = {
+	name = "RULE_MONGOLIA_ANNEX_TIME"
+	group = "RULE_GROUP_TFB"
+	default = {
+		name = "NO_ANNEX"
+		text = "RULE_OPTION_NO_ANNEX"
+		desc = "RULE_MONGOLIA_ANNEX_TIME_NO_ANNEX_DESC"
+	}
+	option = {
+		name = "IN_1941_1_1"
+		text = "RULE_OPTION_1941_1_1"
+		desc = "RULE_MONGOLIA_ANNEX_TIME_1941_1_1_DESC"
+	}
+	option = {
+		name = "BESSARABIA"
+		text = "RULE_OPTION_BESSARABIA"
+		desc = "RULE_MONGOLIA_ANNEX_TIME_BESSARABIA_DESC"
+	}	
+}
+
 allow_china_waves = {
 	name = "RULE_CHINA_WAVES"
 	group = "RULE_GROUP_TFB"

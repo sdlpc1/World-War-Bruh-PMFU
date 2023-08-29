@@ -100,6 +100,68 @@ on_actions = {
 		}
 	}
 
+	# MON ANNEX
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_game_rule = {
+							rule = mongolia_annex_time_rule
+							option = IN_1941_1_1
+						}
+						has_game_rule = {
+							rule = mongolia_annex_time_rule
+							option = BESSARABIA
+						}
+					}
+				}
+				SOV = {
+					MON = {
+						pow_before_annex = yes
+					}
+				}
+				MON = {
+					set_equipment_fraction = 0
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 287
+							state = 329
+							state = 330
+							state = 617
+							state = 618
+							state = 619
+							state = 759
+							state = 760
+							state = 817
+							state = 818
+							state = 819
+							state = 820
+						}
+					}
+					add_dynamic_modifier = { modifier = no_factories }
+				}
+				SOV = {
+					annex_country = { target = MON transfer_troops = no }
+					add_state_core = 287
+					add_state_core = 329
+					add_state_core = 330
+					add_state_core = 617
+					add_state_core = 618
+					add_state_core = 619
+					add_state_core = 759
+					add_state_core = 760
+					add_state_core = 817
+					add_state_core = 818
+					add_state_core = 819
+					add_state_core = 820
+				}
+			}
+		}
+	}
+
 	on_startup = {
 		effect = {
 			if = {

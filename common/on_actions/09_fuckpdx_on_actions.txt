@@ -1321,6 +1321,9 @@ on_actions = {
 					NOT = { has_global_flag = CMN_comintern_victory }
 					NOT = { has_global_flag = COM_allies_victory }
 				}
+				ENG = {
+					set_faction_name = "NATO"
+				}
 				set_global_flag = COMCMN_status_quo
 				white_peace = GER
 				white_peace = ITA
@@ -1573,6 +1576,9 @@ on_actions = {
 					16 = { NOT = { OR = { is_controlled_by = USA is_controlled_by = ENG is_controlled_by = SAF is_controlled_by = RAJ is_controlled_by = FRA is_controlled_by = HOL is_controlled_by = AST is_controlled_by = NZL is_controlled_by = CAN is_controlled_by = IRE is_controlled_by = MEX is_controlled_by = BRA } } }
 					10 = { OR = { is_controlled_by = SOV is_controlled_by = MON is_controlled_by = MEX } }
 				}
+				ENG = {
+					set_faction_name = "NATO"
+				}
 				set_global_flag = CMN_comintern_victory
 				white_peace = GER
 				white_peace = ITA
@@ -1792,6 +1798,9 @@ on_actions = {
 					10 = { NOT = { OR = { is_controlled_by = SOV is_controlled_by = MON is_controlled_by = MEX } } }
 					NOT = { has_global_flag = CMN_comintern_victory }
 					NOT = { has_global_flag = COMCMN_status_quo }
+				}
+				ENG = {
+					set_faction_name = "NATO"
 				}
 				set_global_flag = COM_allies_victory
 				white_peace = GER

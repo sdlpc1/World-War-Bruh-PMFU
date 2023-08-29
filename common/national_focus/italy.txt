@@ -2119,7 +2119,7 @@ focus_tree = {
 			117 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}

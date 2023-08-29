@@ -1356,6 +1356,9 @@ technologies = {
 			tank_rocket_launcher
 			
 		}
+		enable_subunits = {
+			rocket_artillery_brigade
+		}
 
 		path = {
 			leads_to_tech = rocket_artillery2
