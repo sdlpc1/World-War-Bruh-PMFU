@@ -233,18 +233,18 @@ on_actions = {
 		}
 	}
 
-	on_startup = {
-		effect = {
-			every_state = {
-				limit = {
-					is_core_of = SOV
-				}
-				MON = {
-					add_state_core = PREV
-				}
-			}
-		}
-	}
+	# on_startup = { # mongolia too strong
+	# 	effect = {
+	# 		every_state = {
+	# 			limit = {
+	# 				is_core_of = SOV
+	# 			}
+	# 			MON = {
+	# 				add_state_core = PREV
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	on_startup = {
 		effect = {

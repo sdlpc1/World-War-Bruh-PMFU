@@ -273,14 +273,14 @@ country_event = {
 				}
 				ITA = {
 					if = {
-					   limit = {
+					    limit = {
 							has_global_flag = NO_ASIA
-					   }
-					   add_ideas = SPA_spanish_civil_war_commitments_2
-					   add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
+					   	}
+					    # add_ideas = SPA_spanish_civil_war_commitments_2
+						add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
 					}  
 					else = {
-						add_ideas = SPA_spanish_civil_war_commitments
+						# add_ideas = SPA_spanish_civil_war_commitments
 						add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
 					}
 				}

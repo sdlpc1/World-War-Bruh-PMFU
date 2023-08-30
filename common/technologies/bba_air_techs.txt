@@ -294,6 +294,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			jet_technology
 			year_1945
 		}
 
@@ -538,6 +539,7 @@ technologies = {
 		categories = {
 			medium_air
 			air_equipment
+			jet_technology
 			year_1945
 		}
 		
@@ -731,6 +733,7 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
+			jet_technology
 			year_1945
 		}
 		

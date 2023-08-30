@@ -1790,12 +1790,12 @@ focus_tree = {
 			add_ideas = MON_spirit_of_genghis_idea
 			add_corps_commander_role = {
 				character = MON_khan
-				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer infantry_leader winter_expert ranger }
+				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer }
 				skill = 4
-				attack_skill = 4
-				defense_skill = 5
-				planning_skill = 4
-				logistics_skill = 5
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 5
+				logistics_skill = 6
 			}
 		}
 	}
