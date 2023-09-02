@@ -263,22 +263,6 @@ equipment_modules = {
 	# 	}
 	# }
 
-	# Soviet ZIS 'Gun Platform'
-	tank_light_superstructure_zis = { ## TIER 3 ##
-		abbreviation = "lfs"
-		category = tank_light_turret_type_zis
-		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = { 
-			artillery
-			flame
-		}
-		forbid_equipment_type_exact_match = armor
-		build_cost_resources = {
-			steel = 5
-		}
-		dismantle_cost_ic = 1
-	}
-
 	# Scrapped Choking concept for a Naval Gun
 	# tank_medium_superstructure_navy = { ## TIER 7 ##
 	# 	abbreviation = "lfs"
@@ -706,6 +690,104 @@ equipment_modules = {
 		dismantle_cost_ic = 2
 	}
 
+	# Soviet ZIS 'Gun Platform'
+	tank_light_superstructure_zis = { ## TIER 3 ##
+		abbreviation = "lfszis"
+		category = tank_light_turret_type_zis
+		gui_category = tank_light_turret_type_casemate
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = { 
+			# artillery
+			# flame
+			amphibious
+		}
+		forbid_equipment_type_exact_match = armor
+		
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_light_assault
+				tank_armament_tier_light_td
+			}
+		}
+		
+		add_stats = {
+			build_cost_ic = 2
+		}
+
+		multiply_stats = {
+			breakthrough = -0.15
+			armor_value = 0.05
+		}
+		build_cost_resources = {
+			steel = 5
+		}
+		dismantle_cost_ic = 2
+	}
+
+	# German hetzer 'Gun Platform'
+	tank_light_superstructure_hetzer = { ## TIER 3 ##
+		abbreviation = "lfshetz"
+		category = tank_light_turret_type_hetzer
+		gui_category = tank_light_turret_type_casemate
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			amphibious
+		}
+		forbid_equipment_type_exact_match = armor
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_light_assault
+				tank_armament_tier_light_td
+			}
+		}
+		
+		add_stats = {
+			build_cost_ic = 2
+		}
+
+		multiply_stats = {
+			breakthrough = -0.15
+			armor_value = 0.05
+		}
+		build_cost_resources = {
+			steel = 5
+		}
+		dismantle_cost_ic = 2
+	}
+
+	# German hellcat 'Gun Platform'
+	tank_light_superstructure_hellcat = { ## TIER 3 ##
+		abbreviation = "lfshetz"
+		category = tank_light_turret_type_hellcat
+		gui_category = tank_light_turret_type_casemate
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			amphibious
+		}
+		forbid_equipment_type_exact_match = armor
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_light_assault
+				tank_armament_tier_light_td
+			}
+		}
+		
+		add_stats = {
+			build_cost_ic = 2
+		}
+
+		multiply_stats = {
+			breakthrough = -0.15
+			armor_value = 0.05
+		}
+		build_cost_resources = {
+			steel = 5
+		}
+		dismantle_cost_ic = 2
+	}
+	
 	# Light Open Superstructure
 	tank_light_open_superstructure = { ## TIER 5 ##
 		abbreviation = "los"
@@ -1704,7 +1786,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = flame
 		forbid_equipment_type_exact_match = armor
-		parent = tank_med_cs_gun_1
+		parent = tank_light_cs_gun_1
 
 		add_stats = {
 			soft_attack = 36
@@ -1730,7 +1812,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = flame
 		forbid_equipment_type_exact_match = armor
-		parent = tank_med_cs_gun_1
+		parent = tank_light_cs_gun_1
 
 		add_stats = {
 			soft_attack = 41

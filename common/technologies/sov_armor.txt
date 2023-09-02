@@ -126,6 +126,11 @@ technologies = {
 			tank_light_turret_3
 		}
 		
+		path = {
+			leads_to_tech = sov_zis30_tech
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2
 		start_year = 1941
 		folder = {
@@ -750,20 +755,25 @@ technologies = {
 		}
 
 		allow = {
-			always = no
+			# always = no
+			date > 1942.6.1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = zis_after_42_mid_tt
 		}
 
 		research_cost = 2.0
-		start_year = 1936
+		start_year = 1943
 		folder = {
 			name = sov_armour_folder
-			position = { x = -2 y = 8 }
+			position = { x = -5 y = 12 }
 		}
 		
 		categories = {
 			armor
 			cat_light_armor
-			year_1936
+			year_1943
 		}
 
 		on_research_complete = {

@@ -1166,6 +1166,597 @@ ideas = {
 
 		################################################
 		################################################
+		#########  RELIANCE ON NATURAL RUBBER ##########
+		################################################
+		################################################
+
+		PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1 = {
+
+			name = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber
+
+			picture = rubber
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = -0.99
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2 = {
+
+			name = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber
+
+			picture = rubber
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = -0.60
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3 = {
+
+			name = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber
+
+			picture = rubber
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = -0.30
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4 = {
+
+			name = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_no_more
+
+			picture = rubber
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_5 = {
+
+			name = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_no_more
+
+			picture = rubber
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+
+		################################################
+		################################################
+		#########  DIFFICULTY WIH RUBBER ##########
+		################################################
+		################################################
+
+		PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1 = {
+
+			name = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply
+
+			picture = JAP_rubber_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		}
+
+		PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_2 = {
+
+			name = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply
+
+			picture = JAP_rubber_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				sf_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				armored_car_chassis = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				mot_anti_air_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				motorized_rocket_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				amphibious_mechanized_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				medium_plane_scout_plane_airframe = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					build_cost_ic = 0.04 instant = yes
+				}
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3 = {
+
+			name = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply
+
+			picture = JAP_rubber_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				sf_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				armored_car_chassis = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				mot_anti_air_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				motorized_rocket_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				amphibious_mechanized_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				medium_plane_scout_plane_airframe = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					build_cost_ic = 0.08 instant = yes
+				}
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_4 = {
+
+			name = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply
+
+			picture = JAP_rubber_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				sf_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				armored_car_chassis = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				mot_anti_air_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				motorized_rocket_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				amphibious_mechanized_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				medium_plane_scout_plane_airframe = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					build_cost_ic = 0.12 instant = yes
+				}
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_5 = {
+
+			name = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply
+
+			picture = JAP_rubber_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				sf_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				armored_car_chassis = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				mot_anti_air_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				motorized_rocket_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				amphibious_mechanized_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				medium_plane_scout_plane_airframe = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					build_cost_ic = 0.16 instant = yes
+				}
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_6 = {
+
+			name = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply
+
+			picture = JAP_rubber_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				sf_equipment = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				armored_car_chassis = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				mot_anti_air_equipment = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				motorized_rocket_equipment = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				amphibious_mechanized_equipment = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				medium_plane_scout_plane_airframe = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					build_cost_ic = 0.20 instant = yes
+				}
+			}
+		}
+
+		################################################
+		################################################
+		###########  PACIFIC CAPITALS STATUS ###########
+		################################################
+		################################################
+
+		PACIFIC_COMMONWEALTH_controls_capitals_1 = {
+
+			name = PACIFIC_COMMONWEALTH_controls_capitals
+
+			picture = JAP_capital_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_controls_capitals_2 = {
+
+			name = PACIFIC_COMMONWEALTH_controls_capitals
+
+			picture = JAP_capital_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_controls_capitals_3 = {
+
+			name = PACIFIC_COMMONWEALTH_controls_capitals
+
+			picture = JAP_capital_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.10
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_controls_capitals_4 = {
+
+			name = PACIFIC_COMMONWEALTH_controls_capitals
+
+			picture = JAP_capital_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.15
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_controls_capitals_5 = {
+
+			name = PACIFIC_COMMONWEALTH_controls_capitals
+
+			picture = JAP_capital_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.20
+			}
+		}
+
+		PACIFIC_COMMONWEALTH_controls_capitals_6 = {
+
+			name = PACIFIC_COMMONWEALTH_controls_capitals
+
+			picture = JAP_capital_fight
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		################################################
+		################################################
 		#############  AXIS ATTACK BONUS ###############
 		################################################
 		################################################

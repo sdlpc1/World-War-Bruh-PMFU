@@ -18,6 +18,10 @@ set_variable = {
 	value = 0.800
 }
 
+118 = {
+	add_dynamic_modifier = { modifier = gibraltar_defences }
+}
+
 starting_train_buffer = 2.5
 
 set_rule = { 
@@ -48,6 +52,8 @@ set_variable = { ENG_poster_center_icon_frame = ENG_propaganda_empty_slot_index 
 set_variable = { Royal_Commandos_division_cap = 0 }
 set_variable = { Royal_Commandos_increase = 1 }
 set_variable = { Royal_Commandos_increase_double = 2 }
+set_variable = { PACIFIC_COMMONWEALTH_RELIANCE_ON_NATURAL_RUBBER_LEVEL = 5 } #What level variable to use
+set_variable = { PACIFIC_COMMONWEALTH_BASES_CAPITAL_LEVEL = 5 } #What level variable to use
 
 
 set_country_flag = Royal_Commandos_division_standard
@@ -184,6 +190,9 @@ add_ideas = {
 	MEDITERRANEAN_ALLIES_controls_original
 	ENG_tension_vol
 	no_grinding
+	PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
+	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1
+	PACIFIC_COMMONWEALTH_controls_capitals_1
 }
 	
 
@@ -205,7 +214,7 @@ add_equipment_to_stockpile = {
 	producer = ENG
 }
 
-set_convoys = 800
+set_convoys = 1200
 
 # DIPLOMACY
 if = {

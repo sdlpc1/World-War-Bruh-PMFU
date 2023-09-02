@@ -728,6 +728,8 @@ country_event = {
 			add_timed_idea = { idea = FRA_quick_army_mobilization days = 60 }
 			add_timed_idea = { idea = FRA_accelerated_production_reorganization days = 30 }
 			transfer_state = 268
+			remove_ideas = FRA_defense_of_metropolitan_france
+			remove_ideas = FRA_cracks_in_the_army
 		}
 	}
 	

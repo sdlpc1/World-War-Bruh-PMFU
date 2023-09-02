@@ -27,7 +27,7 @@ set_variable = {
 
 # MP_garrison_division_standard = yes
 
-add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
+# add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
 
 if = {
 	limit = {

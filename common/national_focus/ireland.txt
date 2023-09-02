@@ -1,4 +1,5 @@
 #!gfx:interface\lw_goals.gfx
+#!gfx:interface\KR_goals.gfx
 #!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 #!gfx:interface\replace\bruh_interface.gfx
@@ -26,7 +27,7 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 100 y = 1300 }
+	continuous_focus_position = { x = 350 y = 950 }
 	shared_focus = COM_commonwealth_command
 	
 	focus = {
@@ -204,6 +205,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.2
+			add_ideas = IRE_fianna_fail
 		}
 	}
 
@@ -444,13 +446,33 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = IRE_emergency_power_act
-		icon = GFX_focus_usa_voter_registration_act
+		id = IRE_island_defence
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = IRE_establish_the_presidency }
 		prerequisite = { focus = IRE_fianna_fail }
 		x = 0
 		y = 1
 		relative_position_id = IRE_establish_the_presidency
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		completion_reward = {
+			add_ideas = deterrence
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = IRE_emergency_power_act
+		icon = GFX_focus_usa_voter_registration_act
+		prerequisite = { focus = IRE_island_defence}
+		x = 0
+		y = 1
+		relative_position_id = IRE_island_defence
 		
 		available = {
 			ENG = { has_war = yes }
@@ -463,26 +485,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = neutrality_idea2
-		}
-	}
-	
-	focus = {
-		id = IRE_island_defence
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = IRE_emergency_power_act }
-		x = 0
-		y = 1
-		relative_position_id = IRE_emergency_power_act
-		
-		cost = 10
-
-		ai_will_do = {
-			factor = 8
-		}
-
-		completion_reward = {
-			add_ideas = deterrence
+			swap_ideas = {
+				remove_idea = deterrence
+				add_idea = IRE_emergency_power_act
+			}
+			# remove_ideas = neutrality_idea2
 		}
 	}
 
@@ -493,12 +500,12 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = IRE_island_defence }
+		prerequisite = { focus = IRE_emergency_power_act }
 		
 		icon = GFX_goal_generic_construct_military
 		x = 0
 		y = 1
-		relative_position_id = IRE_island_defence
+		relative_position_id = IRE_emergency_power_act
 		cost = 5
 
 		available_if_capitulated = yes
@@ -529,6 +536,55 @@ focus_tree = {
 						}
 						level = 4
 						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = IRE_fortify_the_coast_home_guard_tt
+			hidden_effect = {
+				division_template = {
+					name = "Home Guard"
+					is_locked = no
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+				
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+				
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+				
+						artillery_brigade = { x = 3 y = 0}
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
+						
+						artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 4 y = 2 }
+						artillery_brigade = { x = 4 y = 3 }
+						
+				
+					}
+					support = {
+						engineer = { x = 0 y = 0 }   
+						anti_air = { x = 0 y = 1 }
+						hq_company = { x = 0 y = 2 }
+					}
+				}
+				# 4 Spawn Ins
+				113 = {
+					if = {					
+						limit = { is_controlled_by = IRE }
+						create_unit = { division = "division_template = \"Home Guard\" force_equipment_variants = { infantry_equipment_0 = { owner = \"IRE\" } }" owner = IRE }
+						create_unit = { division = "division_template = \"Home Guard\" force_equipment_variants = { infantry_equipment_0 = { owner = \"IRE\" } }" owner = IRE }
+						create_unit = { division = "division_template = \"Home Guard\" force_equipment_variants = { infantry_equipment_0 = { owner = \"IRE\" } }" owner = IRE }
+						create_unit = { division = "division_template = \"Home Guard\" force_equipment_variants = { infantry_equipment_0 = { owner = \"IRE\" } }" owner = IRE }
 					}
 				}
 			}
@@ -771,7 +827,7 @@ focus_tree = {
 		x = 11
 		y = 0
 		
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 8
@@ -796,7 +852,7 @@ focus_tree = {
         x = 1
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -834,7 +890,7 @@ focus_tree = {
         x = -1
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -883,7 +939,7 @@ focus_tree = {
         x = 0
         y = 2
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -924,7 +980,7 @@ focus_tree = {
         x = -1
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -962,7 +1018,7 @@ focus_tree = {
         x = 0
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1005,7 +1061,7 @@ focus_tree = {
         x = 0
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1047,7 +1103,7 @@ focus_tree = {
         x = 1
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1083,7 +1139,7 @@ focus_tree = {
         x = 0
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1124,7 +1180,7 @@ focus_tree = {
         x = 0
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1164,7 +1220,7 @@ focus_tree = {
         x = 2
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1201,7 +1257,7 @@ focus_tree = {
         x = 1
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1226,7 +1282,7 @@ focus_tree = {
         completion_reward = {
 			add_advisor_role = {
 				character = IRE_tadhg_powell
-				activate = yes
+				activate = no
 				advisor = {
 					slot = high_command
 					cost = 75
@@ -1249,7 +1305,7 @@ focus_tree = {
         x = -1
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1274,7 +1330,7 @@ focus_tree = {
         completion_reward = {
 			add_advisor_role = {
 				character = IRE_jacob_kilroy
-				activate = yes
+				activate = no
 				advisor = {
 					slot = high_command
 					cost = 75
@@ -1298,7 +1354,7 @@ focus_tree = {
         x = 1
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1323,7 +1379,7 @@ focus_tree = {
         completion_reward = {
 			add_advisor_role = {
 				character = IRE_william_fox
-				activate = yes
+				activate = no
 				advisor = {
 					slot = army_chief
 					cost = 75
@@ -1347,7 +1403,7 @@ focus_tree = {
         x = 4
         y = 0
 
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -1400,7 +1456,7 @@ focus_tree = {
         x = -1
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1443,7 +1499,7 @@ focus_tree = {
         x = 0
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1480,7 +1536,7 @@ focus_tree = {
         x = 1
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1533,7 +1589,7 @@ focus_tree = {
         x = 0
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1571,7 +1627,7 @@ focus_tree = {
         x = 0
         y = 1
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1
@@ -1612,7 +1668,7 @@ focus_tree = {
         x = 0
         y = 3
     
-        cost = 10
+        cost = 5
     
         ai_will_do = {
             factor = 1

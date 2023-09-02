@@ -80,6 +80,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_light_superstructure_hetzer"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_superstructure_hellcat"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_light_superstructure_cv33"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
 	}
@@ -605,6 +613,14 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_light_turret_type_zis"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_turret_type_hetzer"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_turret_type_hellcat"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
 	}
 	spriteType = {

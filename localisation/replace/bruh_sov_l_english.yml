@@ -216,6 +216,7 @@
   SOV_light_tank2:0 "Appoint Stalingrad Tractor Factory"
   SOV_medium_tank_2_2:0 "Appoint Astrov"
   SOV_last_stand_of_communism:0 "Last Stand of Communism"
+  SOV_transpolar_flights:0 "The Soviet Air Force"
 
   #### EVENTS ####
   soviet.26.c1:0 "Zhukov and Tukhachevsky's Deep Battle ideas must be overturned."
@@ -405,6 +406,7 @@
   SOV_RG_spawn_in_4:0 "Spawns in §G4§! §YRG Converter Divisions§!"
   SOV_expand_shipbuilding_plants_tt:0 "Add §Y2 building slots§! and §Y"
   SOV_expand_shipbuilding_plants_tt:0 "Add §Y2 building slots§! and §Y2 Dockyard§! in every state in which naval bases have been reinforced by previous focuses"
+  zis_after_42_mid_tt:0 "§RCan only be researched after June 1st 1942§!" 
   ### UNITS ###
   rg_hq_company_heavy:0 "Red Guards HQ Company"
   rg_hq_company_medium:0 "Red Guards HQ Company"

@@ -26,21 +26,45 @@ set_variable = {
 add_ideas = {
 	IRE_ira_1
 	IRE_anglo_trade_war
-	neutrality_idea2
+	# neutrality_idea2
 	PACIFIC_COMMONWEALTH_controls_original
 	father_check
 	peace_training
 	minors_no_air
 	no_grinding
+	PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
+	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1
+	PACIFIC_COMMONWEALTH_controls_capitals_1
 }
 
 set_variable = { COM_poster_center_icon_frame = 1 }
 
 # MP_garrison_division_standard = yes
 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 2000
+	producer = IRE
+}
+add_equipment_to_stockpile = {
+	type = squad_equipment_0
+	amount = 400
+	producer = IRE
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 750
+	producer = IRE
+}
+add_equipment_to_stockpile = {
+	type = horse_equipment
+	amount = 500
+	producer = IRE
+}
+
 set_stability = 0.4
-set_war_support = 0.1
-set_convoys = 10
+set_war_support = 0.15
+set_convoys = 50
 
 recruit_character = IRE_Éamon_de_valera
 recruit_character = IRE_eoin_oduffy

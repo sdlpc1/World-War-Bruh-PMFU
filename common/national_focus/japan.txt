@@ -1,4 +1,5 @@
 #!gfx:interface\lw_goals.gfx
+#!gfx:interface\KR_goals.gfx
 #!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 #!gfx:interface\replace\bruh_interface.gfx
@@ -856,7 +857,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_intervene_in_china
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_JAP_conquest #GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = JAP_liaison_conference }
 		will_lead_to_war_with = CHI
 		x = 0
@@ -1150,6 +1151,9 @@ focus_tree = {
 						RAJ = {
 							add_war_support = 0.1
 						}
+						IRE = {
+							add_war_support = 0.1
+						}
 						FRA = {
 							add_war_support = 0.1
 						}
@@ -1168,7 +1172,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_lessons_of_war
-		icon = GFX_goal_japanese_imperialism
+		icon = GFX_JAP_new_tactics
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = -7
 		y = 1
@@ -1204,7 +1208,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_infantry_lessons
-		icon = GFX_Japanese_Spirit
+		icon = GFX_JAP_massed_rifle_production
 		prerequisite = { focus = JAP_lessons_of_war }
 		x = -3
 		y = 1
@@ -3510,7 +3514,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_befriend_siam 
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_goal_JAP_alliance_with_siam
 		prerequisite = { focus = JAP_strike_south_doctrine }
 		mutually_exclusive = { focus = JAP_pressure_siam }
 		x = -3
@@ -4241,7 +4245,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_guide_the_zaibatsus
-		icon = GFX_focus_jap_zaibatsu
+		icon = GFX_JAP_zaibatsus_dominance
 		mutually_exclusive = { focus = JAP_challenge_the_zaibatsus }
 		x = 19
 		y = 0
@@ -4264,7 +4268,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_expand_the_big_four
-		icon = GFX_focus_generic_self_management
+		icon = GFX_JAP_unrestricted_zaibatsu_practices #GFX_focus_generic_self_management
 		prerequisite = { focus = JAP_guide_the_zaibatsus }
 		x = 0
 		y = 1
@@ -4344,7 +4348,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_bank_loans
-		icon = GFX_focus_mex_privatisation
+		icon = GFX_JAP_private_industry_subsidies #GFX_focus_mex_privatisation
 		prerequisite = { focus = JAP_yasuda }
 		x = 0
 		y = 1
@@ -4505,7 +4509,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_mitsubishi_deal
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_JAP_imperial_arsenals_upgrade #GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = JAP_promote_rivalry }
 		x = -1
 		y = 1
@@ -4545,7 +4549,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_mitsubishi_factories
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_JAP_expand_military_factories
 		prerequisite = { focus = JAP_mitsubishi_deal }
 		x = 0
 		y = 1
@@ -4801,7 +4805,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_imperial_factories
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_JAP_imperial_arsenals #GFX_focus_secret_rearmament
 		prerequisite = { focus = JAP_break_mitsubishi }
 		x = 0
 		y = 1
@@ -4843,8 +4847,8 @@ focus_tree = {
 
 	focus = {
 		id = JAP_expand_the_showa_steel_works
-		icon = GFX_goal_generic_construct_civilian
-		x = 38
+		icon = GFX_JAP_development
+		x = 16
 		y = 0
 
 		cost = 5
@@ -5001,7 +5005,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_new_naval_estimates
-		icon = GFX_JAP_navy
+		icon = GFX_goal_JAP_new_naval_estimates
 		x = 33
 		y = 0
 
@@ -5231,7 +5235,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_first_air_fleet
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_JAP_shokaku_class
 		prerequisite = { focus = JAP_carrier_warfare_experiments }
 		x = 0
 		y = 2
@@ -5431,7 +5435,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_escort_carriers
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_JAP_air_interdiction
 		prerequisite = { focus = JAP_supremacy_of_the_battlefleet }
 		x = 0
 		y = 2
@@ -5510,7 +5514,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_bomber_modernization
-		icon = GFX_goal_generic_air_naval_bomber
+		icon = GFX_goal_JAP_bomber2
 		prerequisite = { focus = JAP_the_zero }
 		x = 1
 		y = 1
@@ -5626,7 +5630,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_war_with_SOV
-		icon = GFX_focus_generic_attack_communists
+		icon = GFX_goal_JAP_the_unthinkable_option
 		prerequisite = { focus = JAP_strike_the_west }
 		x = -3
 		y = 1

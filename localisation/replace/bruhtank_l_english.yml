@@ -97,6 +97,8 @@
  EQ_MOD_CAT_tank_heavy_turret_type_3_TITLE:0 "Advanced Heavy Turret"
 
  EQ_MOD_CAT_tank_light_turret_type_zis_TITLE:0 "Gun Platforms"
+ EQ_MOD_CAT_tank_light_turret_type_hetzer_TITLE:0 "Gun Platforms"
+ EQ_MOD_CAT_tank_light_turret_type_hellcat_TITLE:0 "Gun Platforms"
  EQ_MOD_CAT_tank_light_turret_type_cv33_TITLE:0 "Tankette Superstructures"
  EQ_MOD_CAT_tank_light_turret_type_multi_TITLE:0 "Multi-Turret Designs"
  EQ_MOD_CAT_tank_light_turret_type_open_TITLE:0 "Open Turrets"
@@ -288,7 +290,11 @@
  tank_light_open_superstructure:0 "Light Open Superstructure"
  tank_light_open_superstructure_desc:0 "Enables §7Artillery§! Armaments\nEnables §0AA§! Armaments\nEnables §YLight§! §1TD§! Armaments"
  tank_light_superstructure_zis:0 "Gun Platform"
- tank_light_superstructure_zis_desc:0 "Enables §YLight§! §1TD§! Armaments\nEnables §0AA§! Armaments"
+ tank_light_superstructure_zis_desc:0 "Enables §YLight§! §1TD§! Armaments\nEnables §0AA§! Armaments" 
+ tank_light_superstructure_hetzer:0 "Gun Platform"
+ tank_light_superstructure_hetzer_desc:0 "Enables §YLight§! §1TD§! Armaments\nEnables §0AA§! Armaments"
+ tank_light_superstructure_hellcat:0 "Gun Platform"
+ tank_light_superstructure_hellcat_desc:0 "Enables §YLight§! §1TD§! Armaments\nEnables §0AA§! Armaments"
  tank_light_superstructure_cv33:0 "Tankette Superstructure"
  tank_light_superstructure_cv33_desc:0 "Enables §3Basic§! §LTiny§! Armaments\nEnables §CImproved§! §LTiny§! Armaments\nEnables §3Basic§! §YLight§! Armaments\nEnables §CImproved§! §YLight§! Armaments"
  # Medium Turrets

@@ -109,6 +109,9 @@ add_ideas = {
 		minors_no_air
 		no_grinding
 		no_guarantees
+		PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
+		PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1
+		PACIFIC_COMMONWEALTH_controls_capitals_1
 }
 
 # 1939.1.1 = {

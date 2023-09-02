@@ -334,8 +334,8 @@ on_actions = {
 					}
 				}
 				FROM.FROM = {  
-						set_state_flag = NOT_PACIFIC_COMMONWEALTH_controls
-						clr_state_flag = PACIFIC_COMMONWEALTH_controls
+					set_state_flag = NOT_PACIFIC_COMMONWEALTH_controls
+					clr_state_flag = PACIFIC_COMMONWEALTH_controls
 				}
 				if = {
 					limit = {
@@ -361,21 +361,22 @@ on_actions = {
 						}
 						PACIFIC_COMMONWEALTH_bases_level_down = yes
 					}
-					every_country = {
-						limit = {
-							OR = {
-								tag = FIN
-								tag = GER
-								tag = HUN
-								tag = ITA
-								tag = ROM
-								tag = SPR
-								tag = YUG
-							}
-						}
-						PACIFIC_COMMONWEALTH_AXIS_bases_level_down = yes
-					}
-				} else = {
+					# every_country = {
+					# 	limit = {
+					# 		OR = {
+					# 			tag = FIN
+					# 			tag = GER
+					# 			tag = HUN
+					# 			tag = ITA
+					# 			tag = ROM
+					# 			tag = SPR
+					# 			tag = YUG
+					# 		}
+					# 	}
+					# 	PACIFIC_COMMONWEALTH_AXIS_bases_level_down = yes
+					# }
+				}
+				else = {
 					add_to_variable = {
 						var = JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL
 						value = 1
@@ -413,8 +414,8 @@ on_actions = {
 					}
 				}
 				FROM.FROM = { 
-						set_state_flag = PACIFIC_COMMONWEALTH_controls
-						clr_state_flag = NOT_PACIFIC_COMMONWEALTH_controls
+					set_state_flag = PACIFIC_COMMONWEALTH_controls
+					clr_state_flag = NOT_PACIFIC_COMMONWEALTH_controls
 				}
 				if = {
 					limit = {
@@ -440,23 +441,296 @@ on_actions = {
 						}
 						PACIFIC_COMMONWEALTH_bases_level_up = yes
 					}
+					# every_country = {
+					# 	limit = {
+					# 		OR = {
+					# 			tag = FIN
+					# 			tag = GER
+					# 			tag = HUN
+					# 			tag = ITA
+					# 			tag = ROM
+					# 			tag = SPR
+					# 			tag = YUG
+					# 		}
+					# 	}
+					# 	PACIFIC_COMMONWEALTH_AXIS_bases_level_up = yes
+					# }
+				}
+				else = {
+					subtract_from_variable = {
+						var = JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL
+						value = 1
+					}
+				}
+			}
+		}
+	}
+
+	#Commonwealth Debuff for the Pacific - NATURAL RUBBER
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = INS
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+					}
+				}
+				FROM.FROM = {  
+					set_state_flag = NOT_PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+					clr_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+				}
+				if = {
+					limit = {
+						always = yes
+					}
 					every_country = {
 						limit = {
 							OR = {
-								tag = FIN
-								tag = GER
-								tag = HUN
-								tag = ITA
-								tag = ROM
-								tag = SPR
-								tag = YUG
+								tag = USA
+								tag = NZL
+								tag = AST
+								tag = SAF
+								tag = RAJ
+								tag = ENG
+								tag = IRE
+								tag = CAN
+								tag = BRA
+								tag = MEX
+								tag = FRA
+								tag = IRQ
+								tag = MAL
+								tag = INS
+								tag = HOL
 							}
 						}
-						PACIFIC_COMMONWEALTH_AXIS_bases_level_up = yes
+						PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_level_down = yes
+						PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_level_down = yes
 					}
-				} else = {
+				}
+				else = {
+					add_to_variable = {
+						var = ENG.PACIFIC_COMMONWEALTH_RELIANCE_ON_NATURAL_RUBBER_LEVEL
+						value = 1
+					}
+				}
+
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+						} 
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = INS
+						}
+					}
+					FROM.FROM = {
+						has_state_flag = NOT_PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+					}
+				}
+				FROM.FROM = { 
+					set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+					clr_state_flag = NOT_PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+				}
+				if = {
+					limit = {
+						always = yes
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = USA
+								tag = NZL
+								tag = AST
+								tag = SAF
+								tag = RAJ
+								tag = ENG
+								tag = IRE
+								tag = CAN
+								tag = BRA
+								tag = MEX
+								tag = FRA
+								tag = IRQ
+								tag = MAL
+								tag = INS
+								tag = HOL
+							}
+						}
+						PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_level_up = yes
+						PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_level_up = yes
+					}
+				}
+				else = {
 					subtract_from_variable = {
-						var = JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL
+						var = ENG.PACIFIC_COMMONWEALTH_RELIANCE_ON_NATURAL_RUBBER_LEVEL
+						value = 1
+					}
+				}
+			}
+		}
+	}
+
+	#Commonwealth Debuff for the Pacific - Pacific Capitals
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = INS
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = PACIFIC_COMMONWEALTH_CAPITALS_controls
+					}
+				}
+				FROM.FROM = {  
+					set_state_flag = NOT_PACIFIC_COMMONWEALTH_CAPITALS_controls
+					clr_state_flag = PACIFIC_COMMONWEALTH_CAPITALS_controls
+				}
+				if = {
+					limit = {
+						always = yes
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = USA
+								tag = NZL
+								tag = AST
+								tag = SAF
+								tag = RAJ
+								tag = ENG
+								tag = IRE
+								tag = CAN
+								tag = BRA
+								tag = MEX
+								tag = FRA
+								tag = IRQ
+								tag = MAL
+								tag = INS
+								tag = HOL
+							}
+						}
+						PACIFIC_COMMONWEALTH_capital_level_down = yes
+					}
+				}
+				else = {
+					add_to_variable = {
+						var = ENG.PACIFIC_COMMONWEALTH_BASES_CAPITAL_LEVEL
+						value = 1
+					}
+				}
+
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+						} 
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = INS
+						}
+					}
+					FROM.FROM = {
+						has_state_flag = NOT_PACIFIC_COMMONWEALTH_CAPITALS_controls
+					}
+				}
+				FROM.FROM = { 
+					set_state_flag = PACIFIC_COMMONWEALTH_CAPITALS_controls
+					clr_state_flag = NOT_PACIFIC_COMMONWEALTH_CAPITALS_controls
+				}
+				if = {
+					limit = {
+						always = yes
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = USA
+								tag = NZL
+								tag = AST
+								tag = SAF
+								tag = RAJ
+								tag = ENG
+								tag = IRE
+								tag = CAN
+								tag = BRA
+								tag = MEX
+								tag = FRA
+								tag = IRQ
+								tag = MAL
+								tag = INS
+								tag = HOL
+							}
+						}
+						PACIFIC_COMMONWEALTH_capital_level_up = yes
+					}
+				}
+				else = {
+					subtract_from_variable = {
+						var = ENG.PACIFIC_COMMONWEALTH_BASES_CAPITAL_LEVEL
 						value = 1
 					}
 				}

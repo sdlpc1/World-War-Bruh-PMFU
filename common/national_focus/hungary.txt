@@ -1,4 +1,5 @@
 ﻿#!gfx:interface\lw_goals.gfx
+#!gfx:interface\KR_goals.gfx
 #!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 #!gfx:interface\replace\bruh_interface.gfx
@@ -6,6 +7,7 @@
 #!gfx:interface\replace\bruh_eng_interface.gfx
 #!gfx:interface\replace\bruh_ger_interface.gfx
 #!gfx:interface\replace\bruh_hol_interface.gfx
+#!gfx:interface\replace\bruh_hun_interface.gfx
 #!gfx:interface\replace\bruh_ita_interface.gfx
 #!gfx:interface\replace\bruh_jap_interface.gfx
 #!gfx:interface\replace\bruh_nsb_interface.gfx
@@ -762,7 +764,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_renounce_the_treaty_of_trianon
-		icon = GFX_focus_renounce_the_treaty_of_trianon
+		icon = GFX_HUN_renounce_the_treaty_of_trianon
 		prerequisite = { focus = HUN_crusade_against_bolshevism focus = HUN_suffrage_reforms focus = HUN_italian_trade_deal }
 		x = 0
 		y = 7
@@ -861,7 +863,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_joint_aluminum_mining_company
-		icon = GFX_goal_generic_construction2
+		icon = GFX_HUN_joint_aluminum_mining_company
 		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
 		x = 1
 		y = 1
@@ -904,7 +906,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_join_axis
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_HUN_join_axis
 		prerequisite = { focus = HUN_joint_aluminum_mining_company }
 		x = 1
 		y = 2
@@ -1060,7 +1062,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_proclaim_greater_hungary
-		icon = GFX_focus_GER_Greater_Hungary
+		icon = GFX_HUN_proclaim_greater_hungary
 		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
 		x = -1
 		y = 1
@@ -1116,7 +1118,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_industrial_revitalization
-		icon = GFX_goal_generic_construction
+		icon = GFX_HUN_industrial_revitalization
 		x = 11
 		y = 0
 
@@ -1154,7 +1156,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_reintegrate_the_railroads
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_HUN_reintegrate_the_railroads
 		prerequisite = { focus = HUN_industrial_revitalization }
 		x = 0
 		y = 1
@@ -1288,7 +1290,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_support_domestic_industry
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_HUN_support_domestic_industry
 		prerequisite = { focus = HUN_reintegrate_the_railroads }
 		x = -1
 		y = 2
@@ -1362,7 +1364,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_support_urbanization
-		icon = GFX_goal_generic_construction
+		icon = GFX_HUN_support_urbanization
 		prerequisite = { focus = HUN_reintegrate_the_railroads }
 		x = 1
 		y = 2
@@ -1423,7 +1425,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_institute_for_industrial_techniques
-		icon = GFX_focus_research
+		icon = GFX_HUN_institute_for_industrial_techniques
 		prerequisite = { focus = HUN_support_urbanization focus = HUN_support_domestic_industry }
 		x = 0
 		y = 3
@@ -1458,7 +1460,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_announce_the_gyor_program
-		icon = GFX_goal_generic_production
+		icon = GFX_HUN_announce_the_gyor_program
 		prerequisite = { focus = HUN_institute_for_industrial_techniques }
 		x = 0
 		y = 4
@@ -1502,7 +1504,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_civilian_industry
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_HUN_civilian_industry
 		prerequisite = { focus = HUN_announce_the_gyor_program }
 		mutually_exclusive = { focus = HUN_domestic_arms_industry }
 		x = -1
@@ -1565,7 +1567,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_invite_foreign_investors
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_HUN_invite_foreign_investors
 		prerequisite = { focus = HUN_civilian_industry }
 		x = -1
 		y = 1
@@ -1600,7 +1602,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_expand_the_manfred_weiss_steel_works
-		icon = GFX_focus_generic_steel
+		icon = GFX_HUN_expand_the_manfred_weiss_steel_works
 		prerequisite = { focus = HUN_invite_foreign_investors }
 		x = -2
 		y = 2
@@ -1671,7 +1673,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_expand_the_aluminum_industry
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_HUN_expand_the_aluminum_industry
 		prerequisite = { focus = HUN_invite_foreign_investors }
 		x = 0
 		y = 2
@@ -1715,7 +1717,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_domestic_arms_industry
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_HUN_domestic_arms_industry
 		prerequisite = { focus = HUN_announce_the_gyor_program }
 		mutually_exclusive = { focus = HUN_civilian_industry }
 		x = 1
@@ -1803,7 +1805,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_boost_hungarian_aviation_industry
-		icon = GFX_goal_generic_production2
+		icon = GFX_HUN_boost_hungarian_aviation_industry
 		prerequisite = { focus = HUN_domestic_arms_industry }
 		x = 0
 		y = 2
@@ -1868,7 +1870,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_autarky
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_HUN_autarky
 		prerequisite = { focus = HUN_civilian_industry focus = HUN_domestic_arms_industry }
 		x = 0
 		y = 2
@@ -1908,7 +1910,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_synthetic_industry
-		icon = GFX_goal_generic_oil_factory
+		icon = GFX_HUN_synthetic_industry
 		prerequisite = { focus = HUN_autarky }
 		x = 0
 		y = 4
@@ -2724,7 +2726,7 @@ focus_tree = {
 	
 	focus = {
 		id = HUN_develop_tanks
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_goal_HUN_tanks
 		prerequisite = { focus = HUN_approach_sweden }
 		x = 0
 		y = 1
@@ -2756,7 +2758,7 @@ focus_tree = {
 	
 	focus = {
 		id = HUN_modernisation_effort
-		icon = GFX_focus_generic_tank_production
+		icon = GFX_HUN_modernize_our_armoured_battalions
 		prerequisite = { focus = HUN_develop_tanks }
 		x = 0
 		y = 1
@@ -2783,7 +2785,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_assault_gun_focus
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_hungarianzyrintank1
 		prerequisite = { focus = HUN_mobile_focus }
 		x = -1
 		y = 1
@@ -2819,7 +2821,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_joint_tank_procurement
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_hungarianantitankhetzer2
 		prerequisite = { focus = HUN_mobile_focus }
 		x = 1
 		y = 1
@@ -2887,7 +2889,7 @@ focus_tree = {
 	
 	focus = {
 		id = HUN_armored_warfare
-		icon = GFX_goal_generic_build_tank
+		icon = GFX_hungarianstoplightank
 		prerequisite = { focus = HUN_mobile_corps_doctrine }
 		x = 0
 		y = 1
@@ -3021,7 +3023,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_danuvia_submachine_guns
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_hungariannewrifles
 		prerequisite = { focus = HUN_home_defense }
 		x = 1
 		y = 1
@@ -3061,7 +3063,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_artillery_effort
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_hungermanoverhaulartillery2
 		prerequisite = { focus = HUN_home_defense }
 		x = 0
 		y = 2

@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_idea_osaka_artillery_arsenal"
 		texturefile = "gfx/interface/ideas/idea_osaka_army_arsenal.dds"
 	}	
+	spriteType = {
+		name = "GFX_idea_rubber"
+		texturefile = "gfx/interface/ideas/rubber.dds"
+	}
 }

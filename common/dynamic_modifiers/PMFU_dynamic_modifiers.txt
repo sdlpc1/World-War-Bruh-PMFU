@@ -29,8 +29,16 @@ training_time_balancer = {
 USA_islands_local_supply = {
 	enable = { always = yes }
 	remove_trigger = {
-		NOT = {
-			is_controlled_by = USA
+		OR = {
+			NOT = {
+				is_controlled_by = USA
+			}
+			JAP = {
+				NOT = {
+					has_idea = JAP_tora_tora_tora_idea
+				}
+				has_completed_focus = JAP_strike_the_west
+			}
 		}
 	}
 
@@ -73,4 +81,23 @@ DDAY_WALL_ENTRENCHMENT = {
 	max_dig_in = global.DDAY_WALL_ENTRENCHMENT_MOD
 
 	icon = GFX_idea_generic_fortify_the_borders
+}
+
+gibraltar_defences = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		NOT = {
+			is_controlled_by = ENG
+		}
+	}
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	# army_core_attack_factor = 0.3
+	# army_core_defence_factor = 0.3
+	cas_damage_reduction = 0.5
+	# dig_in_speed_factor = 0.5
+	
+	# local_supplies_for_controller = 0.5
 }

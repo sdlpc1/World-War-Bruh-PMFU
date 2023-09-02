@@ -161,14 +161,6 @@ ideas = {
 					has_completed_focus = CAN_commit_to_the_war
 					has_completed_focus = CAN_if_day
 				}
-				if = {
-					limit = {
-						original_tag = RAJ
-						has_dlc = "Together for Victory"
-					}
-					#has_autonomy_state = autonomy_dominion
-					surrender_progress > 0.2
-				}
 
 				if = {
 					limit = {

@@ -6,7 +6,7 @@ state=
 	
 	state_category = pastoral
 	history= {
-		owner = ENG
+		owner = MEX #ENG
 		victory_points = {
 			2077 1 
 		}

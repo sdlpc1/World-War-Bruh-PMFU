@@ -48,7 +48,7 @@ sub_units = {
 			movement = 0.15
 		}
 		forest = {
-		    attack = -0.15
+		    attack = -0.1
 			movement = -0.2
 			defence = -0.05
 		}
@@ -60,7 +60,7 @@ sub_units = {
 		mountain = 	{
 		    attack = -0.2
 			movement = -0.25
-			defence = -0.15
+			defence = -0.3
 		}
 		jungle = {
 		    attack = 0.05
@@ -69,28 +69,20 @@ sub_units = {
 		}
 		marsh = {
 		    attack = 0.025
-			defence = 0
+			defence = -0.05
 			movement = 0.05
 		}
-		# urban = {
-		# 	attack = -0.2
-		# 	defence = -0.1
-		# }
-		# dense_urban = {
-		# 	attack = -0.3
-		# 	defence = -0.15
-		# }
 		urban = {
-			attack = -0.6
-			defence = -0.95
+			attack = -0.3
+			defence = -0.75
 		}
 		dense_urban = {
-			attack = -0.8
-			defence = -1
+			attack = -0.4
+			defence = -0.85
 		}
 		town = {
-			attack = -0.4
-			defence = -0.6
+			attack = -0.2
+			defence = -0.45
 		}
 		river = { 
 			attack = -0.05
@@ -100,9 +92,8 @@ sub_units = {
 			attack = -1
 		}
 		rock = {
-			attack = -0.15
-			defence = -0.1
+			attack = -2
+			defence = -2
 		}
-
 	}
 }

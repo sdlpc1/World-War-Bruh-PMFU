@@ -783,7 +783,7 @@ tactic_banzai_charge = { #Special Japan attacker tactic
 	countered_by = tactic_overwhelming_fire
 	
 	base =  { 
-		factor = 6
+		factor = 4
 		modifier = {
 			add = 6
 			has_trait = JAP_samurai_lineage
@@ -796,8 +796,8 @@ tactic_banzai_charge = { #Special Japan attacker tactic
 	picture = tactic_banzai_charge
 	
 	attacker_movement_speed = 0.2
-	attacker = 0.50
-	defender = 0.45
+	attacker = 0.30
+	defender = 0.15
 }
 
 tactic_infantry_charge = { #GBP -> Infantry attacker tactic

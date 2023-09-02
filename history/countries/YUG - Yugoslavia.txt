@@ -31,7 +31,7 @@ if = {
 }
 add_ideas = {
 	anti_german_military
-	PACIFIC_COMMONWEALTH_controls_axis_original
+	# PACIFIC_COMMONWEALTH_controls_axis_original
 	peace_training
 	minors_no_air
 	no_grinding

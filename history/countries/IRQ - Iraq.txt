@@ -20,6 +20,9 @@ set_convoys = 50
 add_ideas = {
 	stupid_ai
 	peace_training
+	PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
+	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1
+	PACIFIC_COMMONWEALTH_controls_capitals_1
 }
 
 set_variable = {

@@ -116,23 +116,40 @@ sub_units = {
 		supply_consumption_factor = 0.05
 
 		forest = {
-		    attack = -0.2
-			movement = -0.4
+		    attack = -0.1
+			movement = -0.2
+			defence = -0.05
+		}
+		hills = {
+			attack = -0.075
+			defence = -0.05
+			movement = 0.05
 		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.2
+			movement = -0.25
+			defence = -0.3
 		}
 		plains = {
 			attack = -0.1
 			movement = -0.1
 		}
 		jungle = {
-		    attack = -0.3
-			movement = -0.4
+		    attack = -0.05
+			defence = 0.025
+			movement = -0.05
 		}
 		urban = {
+			attack = -0.3
+			defence = -0.75
+		}
+		dense_urban = {
 			attack = -0.4
-			defence = -0.1
+			defence = -0.85
+		}
+		town = {
+			attack = -0.2
+			defence = -0.45
 		}
 		marsh = {
 			attack = 0.3
@@ -184,23 +201,40 @@ sub_units = {
 		supply_consumption_factor = 0.065
 
 		forest = {
-		    attack = -0.2
-			movement = -0.4
+		    attack = -0.15
+			movement = -0.3
+			defence = -0.25
+		}
+		hills = {
+			attack = -0.2
+			movement = -0.3
+			defence = -0.3
 		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.35
+			movement = -0.35
+			defence = -0.45
 		}
 		plains = {
 			attack = -0.1
 			movement = -0.1
 		}
 		jungle = {
-		    attack = -0.3
-			movement = -0.4
+		    attack = -0.275
+			movement = -0.375
+			defence = -0.3
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.5
+			defence = -0.85
+		}
+		dense_urban = {
+			attack = -0.6
+			defence = -0.95
+		}
+		town = {
+			attack = -0.2
+			defence = -0.45
 		}
 		marsh = {
 			attack = 0.3
@@ -253,22 +287,39 @@ sub_units = {
 
 		forest = {
 		    attack = -0.2
-			movement = -0.4
+			movement = -0.3
+			defence = -0.35
+		}
+		hills = {
+		    attack = -0.35
+			movement = -0.3
+			defence = -0.45
 		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.45
+			movement = -0.6
+			defence = -0.55
 		}
 		plains = {
 			attack = -0.1
 			movement = -0.1
 		}
 		jungle = {
-		    attack = -0.3
-			movement = -0.4
+		    attack = -0.4
+			movement = -0.45
+			defence = -0.5
+		}
+		town = {
+			attack = -0.3
+			defence = -0.5
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.6
+			defence = -0.95
+		}
+		dense_urban = {
+			attack = -0.8
+			defence = -1
 		}
 		marsh = {
 			attack = 0.3

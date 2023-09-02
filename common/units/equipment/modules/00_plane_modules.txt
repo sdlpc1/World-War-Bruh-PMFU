@@ -1267,7 +1267,7 @@ equipment_modules = {
 				air_agility = -0.20
 			}
 			add_stats = {
-				air_ground_attack = 15
+				air_ground_attack = 14
 				weight = 10
                 air_attack = 8
 			}
@@ -1329,7 +1329,7 @@ equipment_modules = {
 				cas
 			}
 			add_stats = {
-				air_ground_attack = 10
+				air_ground_attack = 12
 			}
 		}
 		xp_cost = 2
@@ -1750,23 +1750,23 @@ equipment_modules = {
 		 dismantle_cost_ic = 0.5
 	 }
 
-	non_strategic_materials_small = {
-		abbreviation = "nsms"
-		category = plane_special_module_small
-		sfx = sfx_ui_sd_module_turret
+	# non_strategic_materials_small = {
+	# 	abbreviation = "nsms"
+	# 	category = plane_special_module_small
+	# 	sfx = sfx_ui_sd_module_turret
 
-		multiply_stats = {
-			air_defence = -0.1
-		}
-		build_cost_resources = {
-			aluminium = -5
-		}
-		dismantle_cost_ic = 7
-		dismantle_cost_resources = {
-			aluminium = 5
-		}
-		##xp_cost = 1
-	}
+	# 	multiply_stats = {
+	# 		air_defence = -0.1
+	# 	}
+	# 	build_cost_resources = {
+	# 		aluminium = -5
+	# 	}
+	# 	dismantle_cost_ic = 7
+	# 	dismantle_cost_resources = {
+	# 		aluminium = 5
+	# 	}
+	# 	##xp_cost = 1
+	# }
  	plane_easy_maintenance = {
  		abbreviation = "peasy"
  		category = plane_special_module_small
@@ -1981,23 +1981,23 @@ equipment_modules = {
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
 		##xp_cost = 1
 	}
-	non_strategic_materials_medium = {
-		 abbreviation = "nsmm"
-		 category = plane_special_module_medium
-		 sfx = sfx_ui_sd_module_turret
+	# non_strategic_materials_medium = {
+	# 	 abbreviation = "nsmm"
+	# 	 category = plane_special_module_medium
+	# 	 sfx = sfx_ui_sd_module_turret
 
-		 multiply_stats = {
-			 air_defence = -0.15
-		 }
-		 build_cost_resources = {
-			 aluminium = -15
-		 }
-		 #xp_cost = 1
-		 dismantle_cost_ic = 12
-		 dismantle_cost_resources = {
-			 aluminium = 10
-		 }
-	 }
+	# 	 multiply_stats = {
+	# 		 air_defence = -0.15
+	# 	 }
+	# 	 build_cost_resources = {
+	# 		 aluminium = -15
+	# 	 }
+	# 	 #xp_cost = 1
+	# 	 dismantle_cost_ic = 12
+	# 	 dismantle_cost_resources = {
+	# 		 aluminium = 10
+	# 	 }
+	#  }
 
 	flying_boat_medium = { 
 		abbreviation = "flbm"

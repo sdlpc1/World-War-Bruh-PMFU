@@ -10,6 +10,7 @@ state={
 		owner = NZL
 
 		set_state_flag = PACIFIC_COMMONWEALTH_controls
+		set_state_flag = PACIFIC_COMMONWEALTH_CAPITALS_controls
 		buildings = {
 			infrastructure = 8
 			arms_factory = 4

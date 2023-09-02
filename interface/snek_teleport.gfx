@@ -107,6 +107,14 @@ spriteTypes = {
 		name = "GFX_idea_ROM_LIBYA_OIL"
 		textureFile = "gfx/interface/ideas/ROM_oil.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_JAP_capital_fight"
+		textureFile = "gfx/interface/ideas/JAP_capital_fight_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_rubber_fight"
+		textureFile = "gfx/interface/ideas/JAP_rubber_fight_idea.dds"
+	}
 	# idea - designers #
 	SpriteType = {
 		name = "GFX_idea_nibelungenwerke"

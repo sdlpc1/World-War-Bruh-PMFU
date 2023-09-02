@@ -8,6 +8,7 @@
 #!gfx:interface\replace\bruh_nsb_interface.gfx
 #!gfx:interface\replace\bruh_sov_interface.gfx
 #!gfx:interface\lw_goals.gfx
+#!gfx:interface\KR_goals.gfx
 #!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 
@@ -1796,6 +1797,11 @@ focus_tree = {
 		completion_reward = {
 			set_technology = {
 				sov_zis30_tech = 1
+			}
+			MON = {
+				set_technology = {
+					sov_zis30_tech = 1
+				}
 			}
 
 			# if = {
@@ -3978,7 +3984,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_stalin_constitution
-		icon = GFX_goal_support_communism
+		icon = GFX_SOV_stalin_constitution #GFX_goal_support_communism
 		prerequisite = { focus = SOV_the_centre }
 		x = 1
 		y = 1
@@ -5253,7 +5259,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_claims_on_baltic
-		icon = GFX_SOV_goal_baltic_security
+		icon = GFX_SOV_claims_on_the_baltic #GFX_SOV_goal_baltic_security
 		prerequisite = { focus = SOV_anti_fascist_diplomacy }
 		x = -2
 		y = 1
@@ -5666,32 +5672,32 @@ focus_tree = {
 					}
 				}
 			}
-			MON = {
-				hidden_effect = {
-					add_state_core = 97
-					add_state_core = 784
-					add_state_core = 96
-					add_state_core = 95
-					add_state_core = 94
-					add_state_core = 93
-					add_state_core = 91
-					add_state_core = 89
-					add_state_core = 11
-					add_state_core = 189
-					add_state_core = 12
-					add_state_core = 190
-					add_state_core = 13
-					add_state_core = 191
-					add_state_core = 808
-					add_state_core = 809
-					add_state_core = 810
-					add_state_core = 811
-					add_state_core = 812
-					add_state_core = 813
-					add_state_core = 814
-					add_state_core = 815
-				}
-			}
+			# MON = {
+			# 	hidden_effect = {
+			# 		add_state_core = 97
+			# 		add_state_core = 784
+			# 		add_state_core = 96
+			# 		add_state_core = 95
+			# 		add_state_core = 94
+			# 		add_state_core = 93
+			# 		add_state_core = 91
+			# 		add_state_core = 89
+			# 		add_state_core = 11
+			# 		add_state_core = 189
+			# 		add_state_core = 12
+			# 		add_state_core = 190
+			# 		add_state_core = 13
+			# 		add_state_core = 191
+			# 		add_state_core = 808
+			# 		add_state_core = 809
+			# 		add_state_core = 810
+			# 		add_state_core = 811
+			# 		add_state_core = 812
+			# 		add_state_core = 813
+			# 		add_state_core = 814
+			# 		add_state_core = 815
+			# 	}
+			# }
 		}
 	}
 	
@@ -7685,7 +7691,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_combined_arms
-		icon = GFX_focus_generic_combined_arms
+		icon = GFX_SOV_mass_mechanization
 		prerequisite = { focus = SOV_mass_mechanisation }
 		x = 0
 		y = 1
@@ -7827,7 +7833,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_land_air_coordination
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_SOV_cas_designer
 		prerequisite = { focus = SOV_expand_artillery }
 		x = 0
 		y = 1
@@ -7860,7 +7866,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_wargames
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_SOV_improve_logistics
 		prerequisite = { focus = SOV_land_air_coordination }
 		x = 0
 		y = 1
@@ -8001,7 +8007,7 @@ focus_tree = {
 	focus = {
 		id = SOV_transpolar_flights
 
-		icon = GFX_focus_SOV_transpolar_flights
+		icon = GFX_SOV_red_army_airforce #GFX_focus_SOV_transpolar_flights
 		x = 53
 		y = 0
 		cost = 3
@@ -8056,7 +8062,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_fighter_effort2
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_SOV_fighter_designer
 		prerequisite = { focus = SOV_fighter_effort }
 		x = 0
 		y = 1
@@ -8371,7 +8377,7 @@ focus_tree = {
 	focus = {
 		id = SOV_raskovas_aviation_group
 
-		icon = GFX_goal_generic_CAS
+		icon = GFX_SOV_night_witches
 		prerequisite = { focus = SOV_women_in_aviation }
 		x = 1
 		y = 1
@@ -8506,7 +8512,7 @@ focus_tree = {
 	focus = {
 		id = SOV_long_range_aircraft
 
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_SOV_strat_bomber_doctrine
 		prerequisite = { focus = SOV_increase_aircraft_production focus = SOV_intensify_pilot_training_program }
 		x = 0
 		y = 1

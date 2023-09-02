@@ -258,6 +258,7 @@
   ENG_crusader:0 "Operation Crusader"
   OPERATION_TORCH:0 "Operation Torch"
   ENG_compass:0 "Operation Compass"
+  gibraltar_defences:0 "Gibraltar Defenses"
 
   #### TRAITS ####
   vauxhall_trait:0 "Infantry Tank Manufacturer"

@@ -381,231 +381,442 @@ PACIFIC_COMMONWEALTH_bases_level_up = {
 	}
 }
 
-PACIFIC_COMMONWEALTH_AXIS_bases_level_down = {
+PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_level_down = {
 	if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16 }
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4 }
 		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_17
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_5
 		}
 	}
 	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15 }
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3 }
 		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4
 		}
 	}
 	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14 }
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2 }
 		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3
 		}
 	}
 	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13 }
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1 }
 		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_1 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_1
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2
 		}
 	}
 }
-PACIFIC_COMMONWEALTH_AXIS_bases_level_up = {
+PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_level_up = {
 	if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2 }
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2 }
 		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_1
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
 		}
 	}
 	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3 }
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3 }
 		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2
 		}
 	}
 	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4 }
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4 }
 		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3
 		}
 	}
 	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5 }
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_5 }
 		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
-		}
-	}
-	else_if = {
-		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_17 }
-		swap_ideas = {
-			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_17
-			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_5
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4
 		}
 	}
 }
+
+PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_level_down = {
+	if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_5 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_5
+			add_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_4 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_4
+			add_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
+			add_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_2 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_2
+			add_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1
+			add_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_2
+		}
+	}
+}
+PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_level_up = {
+	if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_2 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_2
+			add_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
+			add_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_4 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_4
+			add_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_5 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_5
+			add_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_6 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_6
+			add_idea = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_5
+		}
+	}
+}
+
+PACIFIC_COMMONWEALTH_capital_level_down = {
+	if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_5 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_5
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_4 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_4
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_3 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_3
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_2 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_2
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_1 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_1
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_2
+		}
+	}
+}
+PACIFIC_COMMONWEALTH_capital_level_up = {
+	if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_2 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_2
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_3 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_3
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_4 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_4
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_5 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_5
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_6 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_6
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_5
+		}
+	}
+}
+
+# PACIFIC_COMMONWEALTH_AXIS_bases_level_down = {
+# 	if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_17
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_1 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_1
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
+# 		}
+# 	}
+# }
+# PACIFIC_COMMONWEALTH_AXIS_bases_level_up = {
+# 	if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_1
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_17 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_17
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
+# 		}
+# 	}
+# }

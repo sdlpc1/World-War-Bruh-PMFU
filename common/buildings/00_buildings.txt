@@ -49,7 +49,7 @@ buildings = {
 		value = 28
 		infrastructure_construction_effect = yes
 		allied_build = yes
-		damage_factor = 0.2
+		damage_factor = 0.15
 		disabled_in_dmz = yes
 	}
 
@@ -182,11 +182,10 @@ buildings = {
 		disabled_in_dmz = no
 		air_defence = 1
 		max_level = 5 # This is the max unlock level
-		damage_factor = 0.1
 		value = 10
 		allied_build = yes
 		infrastructure_construction_effect = yes
-		damage_factor = 0.2
+		damage_factor = 0.075
 	}
 
 	synthetic_refinery = {

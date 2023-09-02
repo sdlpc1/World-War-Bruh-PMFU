@@ -21,7 +21,7 @@ set_variable = {
 add_ideas = {
 	limited_conscription
 	sisu
-	PACIFIC_COMMONWEALTH_controls_axis_original
+	# PACIFIC_COMMONWEALTH_controls_axis_original
 	peace_training
 	minors_no_air
 	no_grinding

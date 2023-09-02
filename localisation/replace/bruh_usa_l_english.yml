@@ -3,7 +3,7 @@
   #### FOCUSES ####
   USA_new_deal_2:0 "Second New Deal"
   USA_new_deal_2_desc:0 "Although the economy has begun to rise since the tragedy of 1929, there is more work to be done. Millions remain unemployed, and radicals have begun to criticize FDR for not going far enough. His answer to this was the Second New Deal, a bundle of policies aimed specifically at alleviating the damages done by the Depression."
-  USA_construction_1:0 "Farm Security Administration"
+  USA_construction_1:0 "Revive Core Industry"
   USA_construction_1_desc:0 "The successor to the Resettlement Administration, the FSA was a program designed to emphasize the challenges of rural poverty and worked to alleviate its effects through generous spending and purchase of land."
   USA_construction_2:0 "National Labour Relations Act"
   USA_construction_2_desc:0 "The NLRA, also known as the Wagner Act, is the foundation of American labor law and fully legalizes trade unions under the principle of collective bargaining. Aimed at bestowing power to workers in the fact of abject poverty, company unions and unfair labor practices are banned under this law."
@@ -13,8 +13,8 @@
   USA_construction_4_desc:0 "Though rich in natural resources, the economic crisis has left mineral extraction as a secondary concern. This is simply the incorrect approach. Economic revitalization requires employment and stimulus, both of which mineral extraction provides."
   USA_construction_5:0 "Social Security Act"
   USA_construction_5_desc:0 "The bank crash has left its mark upon the elderly of America above all others. An unprecedented amount of retirement funds have been lost to the market, leaving many without the means to live. To prevent a repeat of this issue, the Social Security Act will impose a tax upon all individuals earning income, which will then be issued to those in retirement. It is in this way we may save prior generations from bearing our errors."
-  USA_construction_6:0 "Soil Conservation Service"
-  USA_construction_7:0 "Civilian Conservation Corps"
+  USA_construction_6:0 "Heavy Industry Revival"
+  USA_construction_7:0 "Industry Modernization"
   USA_balance_the_budget:0 "Balance the Budget"
   USA_deficit_spending:0 "Deficit Spending"
 
@@ -104,6 +104,7 @@
   USA_war_department:0 "Begin Rearmament"
   USA_public_projects:0 "Public Projects"
   USA_construction_4_1:0 "Expand the Aluminium Production"
+  USA_military_industrial_complex:0 "Military Industrial Complex"
 
   #### EVENTS ####
   usa.1001.t:0 "1936 Election Results"

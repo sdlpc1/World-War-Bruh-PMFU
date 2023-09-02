@@ -189,6 +189,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_light_turret_open_large
+			tank_light_superstructure_hellcat
 		}
 		
 		research_cost = 2

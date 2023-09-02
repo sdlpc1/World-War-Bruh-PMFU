@@ -2880,40 +2880,40 @@ bba_get_tac_ENG_effect = { #creates a tac design if necessary and exports a numb
 			variant_name = "Bristol Beaufort"
 		}
 	}
-	else_if = {
-		limit = {
-			ENG = {
-				has_tech = advanced_medium_airframe
-			}
-		}
-		if = {
-			limit = {
-				ENG = { NOT = { has_country_flag = ENG_advanced_export_tac_template } }
-			}
-			ENG = {
-				create_equipment_variant = {
-					name = "DH Mosquito"
-					type = medium_plane_airframe_3
-					modules = {
-						fixed_main_weapon_slot = medium_bomb_bay
-						fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-						fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
-						fixed_auxiliary_weapon_slot_3 = aircraft_cannon_1_2x
-						engine_type_slot = engine_3_2x
-						special_type_slot_1 = non_strategic_materials_medium
-					}
-					icon = "GFX_ENG_tactical_bomber3_medium"
-				}
-				set_country_flag = ENG_advanced_export_tac_template
-			}
-		}
-		add_equipment_to_stockpile = {
-			type = medium_plane_airframe_3
-			producer = ENG
-			amount = tac_buy_amount
-			variant_name = "DH Mosquito"
-		}
-	}
+	# else_if = {
+	# 	limit = {
+	# 		ENG = {
+	# 			has_tech = advanced_medium_airframe
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			ENG = { NOT = { has_country_flag = ENG_advanced_export_tac_template } }
+	# 		}
+	# 		ENG = {
+	# 			create_equipment_variant = {
+	# 				name = "DH Mosquito"
+	# 				type = medium_plane_airframe_3
+	# 				modules = {
+	# 					fixed_main_weapon_slot = medium_bomb_bay
+	# 					fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+	# 					fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
+	# 					fixed_auxiliary_weapon_slot_3 = aircraft_cannon_1_2x
+	# 					engine_type_slot = engine_3_2x
+	# 					special_type_slot_1 = non_strategic_materials_medium
+	# 				}
+	# 				icon = "GFX_ENG_tactical_bomber3_medium"
+	# 			}
+	# 			set_country_flag = ENG_advanced_export_tac_template
+	# 		}
+	# 	}
+	# 	add_equipment_to_stockpile = {
+	# 		type = medium_plane_airframe_3
+	# 		producer = ENG
+	# 		amount = tac_buy_amount
+	# 		variant_name = "DH Mosquito"
+	# 	}
+	# }
 }
 
 bba_get_heavy_fighter_ENG_effect = { #creates a heavy_fighter design if necessary and exports a number of them to ROOT
@@ -2988,41 +2988,41 @@ bba_get_heavy_fighter_ENG_effect = { #creates a heavy_fighter design if necessar
 			variant_name = "Bristol Beaufighter"
 		}
 	}
-	else_if = {
-		limit = {
-			ENG = {
-				has_tech = advanced_medium_airframe
-			}
-		}
-		if = {
-			limit = {
-				ENG = { NOT = { has_country_flag = ENG_advanced_export_heavy_fighter_template } }
-			}
-			ENG = {
-				create_equipment_variant = {
-					name = "DH Mosquito"
-					type = medium_plane_fighter_airframe_3
-					modules = {
-						fixed_main_weapon_slot = aircraft_cannon_1_2x
-						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-						fixed_auxiliary_weapon_slot_2 = bomb_locks
-						fixed_auxiliary_weapon_slot_3 = rocket_rails
-						engine_type_slot = engine_3_2x
-						special_type_slot_1 = non_strategic_materials_medium
-						special_type_slot_2 = empty
-					}
-					icon = "GFX_ENG_tactical_bomber3_medium"
-				}
-				set_country_flag = ENG_advanced_export_heavy_fighter_template
-			}
-		}
-		add_equipment_to_stockpile = {
-			type = medium_plane_fighter_airframe_3
-			producer = ENG
-			amount = heavy_fighter_buy_amount
-			variant_name = "DH Mosquito"
-		}
-	}
+	# else_if = {
+	# 	limit = {
+	# 		ENG = {
+	# 			has_tech = advanced_medium_airframe
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			ENG = { NOT = { has_country_flag = ENG_advanced_export_heavy_fighter_template } }
+	# 		}
+	# 		ENG = {
+	# 			create_equipment_variant = {
+	# 				name = "DH Mosquito"
+	# 				type = medium_plane_fighter_airframe_3
+	# 				modules = {
+	# 					fixed_main_weapon_slot = aircraft_cannon_1_2x
+	# 					fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+	# 					fixed_auxiliary_weapon_slot_2 = bomb_locks
+	# 					fixed_auxiliary_weapon_slot_3 = rocket_rails
+	# 					engine_type_slot = engine_3_2x
+	# 					special_type_slot_1 = non_strategic_materials_medium
+	# 					special_type_slot_2 = empty
+	# 				}
+	# 				icon = "GFX_ENG_tactical_bomber3_medium"
+	# 			}
+	# 			set_country_flag = ENG_advanced_export_heavy_fighter_template
+	# 		}
+	# 	}
+	# 	add_equipment_to_stockpile = {
+	# 		type = medium_plane_fighter_airframe_3
+	# 		producer = ENG
+	# 		amount = heavy_fighter_buy_amount
+	# 		variant_name = "DH Mosquito"
+	# 	}
+	# }
 }
 
 bba_get_fighter_USA_effect = { #creates a fighter design if necessary and exports a number of them to ROOT

@@ -15,6 +15,49 @@ ideas = {
 			}
 		}
 
+		IRE_fianna_fail = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_naval_auxiliary_patrol
+			
+			modifier = {
+				consumer_goods_factor = -0.05		
+			}
+		}
+
+		IRE_emergency_power_act = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
+
 		IRE_irish_coastal_defence_idea = {
 
 			allowed = {

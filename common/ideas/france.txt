@@ -2,6 +2,38 @@ ideas = {
 
 	country = {
 		
+		FRA_defense_of_metropolitan_france = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_undividable
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		FRA_cracks_in_the_army = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_undividable
+
+			modifier = {
+				army_core_attack_factor = -0.2
+				army_core_defence_factor = -0.2
+			}
+		}
+
 		FRA_no_weird_licensed_tanks = {
 
 			allowed = {
@@ -460,8 +492,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				# production_factory_efficiency_gain_factor = 0.1
 			}
 			research_bonus = { industry = 0.05}
 		}

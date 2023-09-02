@@ -1854,11 +1854,11 @@ technologies = {
 		enable_equipment_modules = {
 			dive_brakes_small
 			dive_brakes_medium 
-			non_strategic_materials_small
+			# non_strategic_materials_small
 			floats
-			non_strategic_materials_medium
+			# non_strategic_materials_medium
 			flying_boat_medium
-			non_strategic_materials_large
+			# non_strategic_materials_large
 			flying_boat_large
 		}
 		

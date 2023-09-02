@@ -1,4 +1,5 @@
 #!gfx:interface\lw_goals.gfx
+#!gfx:interface\KR_goals.gfx
 #!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 #!gfx:interface\replace\bruh_interface.gfx
@@ -1749,7 +1750,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = { MON_volunteers_idea }
+			# add_ideas = { MON_volunteers_idea }
+			army_experience = 75
 		}
 	}
 	
@@ -1790,9 +1792,9 @@ focus_tree = {
 			add_ideas = MON_spirit_of_genghis_idea
 			add_corps_commander_role = {
 				character = MON_khan
-				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer }
+				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer commando }
 				skill = 4
-				attack_skill = 3
+				attack_skill = 4
 				defense_skill = 4
 				planning_skill = 5
 				logistics_skill = 6

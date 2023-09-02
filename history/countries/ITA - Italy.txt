@@ -40,7 +40,7 @@ add_ideas = {
 	ITA_old_guard_base
 	ITA_incompetent_officers
 	ITA_outdated_industry
-	PACIFIC_COMMONWEALTH_controls_axis_original
+	# PACIFIC_COMMONWEALTH_controls_axis_original
 	MEDITERRANEAN_AXIS_controls_original
 	peace_training
 	no_grinding

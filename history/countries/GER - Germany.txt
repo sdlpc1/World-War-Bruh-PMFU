@@ -192,7 +192,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-	PACIFIC_COMMONWEALTH_controls_axis_original
+	# PACIFIC_COMMONWEALTH_controls_axis_original
 	volunteer_minimum_major
 	volunteer_minimum_GER_NA # no asia
 	peace_training

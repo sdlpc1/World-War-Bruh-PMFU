@@ -136,7 +136,7 @@ set_popularities = {
 set_variable = { axis_poster_center_icon_frame = 1 }
 
 add_ideas = {
-	PACIFIC_COMMONWEALTH_controls_axis_original
+	# PACIFIC_COMMONWEALTH_controls_axis_original
 	volunteer_minimum_minor
 	peace_training
 	minors_no_air

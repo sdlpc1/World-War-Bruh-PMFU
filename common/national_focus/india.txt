@@ -1,4 +1,5 @@
 #!gfx:interface\lw_goals.gfx
+#!gfx:interface\KR_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 #!gfx:interface\replace\bruh_interface.gfx
 #!gfx:interface\replace\bruh_bra_interface.gfx
@@ -1377,7 +1378,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_modern_military_training
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_RAJ_indian_army
 		prerequisite = { focus = RAJ_indian_engineer }
 		prerequisite = { focus = RAJ_jungle_training }
 		relative_position_id = RAJ_jungle_training
@@ -1434,7 +1435,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_bangalore_university
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_RAJ_delhi_university
 		prerequisite = { focus = RAJ_indian_mules }
 		prerequisite = { focus = RAJ_improfe_oure_doctrin }
 		relative_position_id = RAJ_indian_mules
@@ -2116,7 +2117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_west_india_railways
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_RAJ_east_india_railway
 		prerequisite = { focus = RAJ_burma_rail }
 		relative_position_id = RAJ_burma_rail
 		x = 1
@@ -2467,8 +2468,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_indian_labourers
 		icon = GFX_ger_arbeitsfront
-		prerequisite = { focus = RAJ_assam_oil }
-		prerequisite = { focus = RAJ_tata_steel }
+		prerequisite = { focus = RAJ_assam_oil focus = RAJ_tata_steel }
 		relative_position_id = RAJ_assam_oil
 		x = 1
 		y = 1
@@ -2604,7 +2604,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_ishapore_arsenal
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_RAJ_home_defence_industry
 		prerequisite = { focus = RAJ_indian_defence_plan }
 		relative_position_id = RAJ_indian_defence_plan
 		x = -1

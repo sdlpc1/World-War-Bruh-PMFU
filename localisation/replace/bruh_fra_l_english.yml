@@ -110,7 +110,9 @@
   FRA_matignon_agreements_2:0 "Matignon Agreements"
   FRA_special_forces_spirit:0 "Special Forces Expansion"
   FRA_special_forces_idea:0 "Special Forces"
-  FRA_no_weird_licensed_tanks:0 "No Weird Licensed Equipment Pre-Cap"
+  FRA_no_weird_licensed_tanks:0 "No Weird Licensed Equipment Pre-Cap" 
+  FRA_defense_of_metropolitan_france:0 "Défense de la France métropolitaine"
+  FRA_cracks_in_the_army:0 "Fissures dans les forces armées"
 
   # Free France
   FRA_special_forces3:0 "Special Forces Empowerment"

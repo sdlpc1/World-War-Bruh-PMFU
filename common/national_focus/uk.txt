@@ -1,4 +1,5 @@
 ﻿#!gfx:interface\lw_goals.gfx
+#!gfx:interface\KR_goals.gfx
 #!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 #!gfx:interface\replace\bruh_interface.gfx
@@ -592,7 +593,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_general_rearmament
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_ENG_general_rearmament
 		prerequisite = { Focus = ENG_army_rearmament }
 		x = 0
 		y = 1
@@ -1116,7 +1117,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_special_forces
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_ENG_special_forces
 		prerequisite = { focus = ENG_war_office }
 		x = -2
 		y = 1
@@ -2820,7 +2821,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ENG_fortify_suez
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -3398,7 +3399,7 @@ focus_tree = {
 		bypass = {
 			NOT = { country_exists = RAJ }
 		}
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_eng_develop_raj
 		x = 1
 		y = 1
 		relative_position_id = ENG_develop_the_empire
@@ -3483,7 +3484,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_appeasement
-		icon = GFX_focus_generic_concessions
+		icon = GFX_ENG_appeasement
 		prerequisite = { focus = ENG_steady_as_she_goes }
 		mutually_exclusive = { focus = ENG_containment }
 		available = {

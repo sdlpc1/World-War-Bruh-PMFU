@@ -9,8 +9,8 @@ characters={
 		corps_commander={
 			traits={ cavalry_leader combined_arms_expert trickster expert_improviser organizer }
 			skill=4
-			attack_skill=4
-			defense_skill=3
+			attack_skill=5
+			defense_skill=4
 			planning_skill=3
 			logistics_skill=4
 			legacy_id=-1
@@ -33,10 +33,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ panzer_leader trait_engineer ranger substance_abuser }
+			traits={ panzer_leader trait_engineer ranger substance_abuser trickster }
 			skill=4
 			attack_skill=4
-			defense_skill=2
+			defense_skill=5
 			planning_skill=3
 			logistics_skill=5
 			legacy_id=-1
@@ -170,7 +170,7 @@ characters={
 				original_tag = MON
 			}
 			traits  = {
-				army_chief_morale_2 
+				army_chief_offensive_2 
 			}
 			cost = 100
 			ai_will_do = {

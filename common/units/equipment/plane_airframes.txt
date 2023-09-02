@@ -135,10 +135,10 @@ small_plane_airframe = {
 		count < 3
 	}
 	
-	module_count_limit = {
-		module = non_strategic_materials_small
-		count < 2
-	}
+	# module_count_limit = {
+	# 	module = non_strategic_materials_small
+	# 	count < 2
+	# }
 
 	module_count_limit = {
 		module = drop_tanks
@@ -234,7 +234,6 @@ small_plane_airframe_0 = { #Inter-War
 	weight = 3
 	naval_strike_attack = 1
 	naval_strike_targetting = 8
-	# build_cost_ic = 75
 	upgrades = {
 		 plane_engine_upgrade
 		 plane_armor_upgrade
@@ -454,7 +453,6 @@ small_plane_airframe_3 = { #Advanced
 	weight = 6
 	naval_strike_attack = 1
 	naval_strike_targetting = 8
-	air_ground_attack = -6
 	build_cost_ic = 51
 	resources = {
 			aluminium = 30
@@ -574,7 +572,6 @@ small_plane_airframe_4 = { #modern
 	maximum_speed = 0
 	air_agility = 85
 	air_defence = 10
-	air_ground_attack = -10
 	weight = 7
 	naval_strike_attack = 1
 	naval_strike_targetting = 8
@@ -852,10 +849,10 @@ medium_plane_airframe = {
 		count < 2
 	}
 
-	module_count_limit = {
-		module = non_strategic_materials_medium
-		count < 2
-	}
+	# module_count_limit = {
+	# 	module = non_strategic_materials_medium
+	# 	count < 2
+	# }
 
 	module_count_limit = {
 		module = plane_easy_maintenance
@@ -967,7 +964,6 @@ medium_plane_airframe_0 = { #Inter-War
 	weight = 10
 	naval_strike_attack = 1
 	naval_strike_targetting = 4
-	# build_cost_ic = 136
 }
 
 medium_plane_airframe_1 = { #Basic
@@ -1623,10 +1619,10 @@ large_plane_airframe = {
 		count < 2
 	}
 
-	module_count_limit = {
-		module = non_strategic_materials_large
-		count < 2
-	}
+	# module_count_limit = {
+	# 	module = non_strategic_materials_large
+	# 	count < 2
+	# }
 
 	module_count_limit = {
 		module = flying_boat_large
@@ -1717,7 +1713,6 @@ large_plane_airframe_0 = { #Inter-War
 	weight = 20
 	naval_strike_attack = 1
 	naval_strike_targetting = 4
-	# build_cost_ic = 202
 }
 
 large_plane_airframe_1 = { #Basic
@@ -2251,10 +2246,10 @@ cv_small_plane_airframe = {
 		count < 2
 	}
 
-	module_count_limit = {
-		module = non_strategic_materials_small
-		count < 2
-	}
+	# module_count_limit = {
+	# 	module = non_strategic_materials_small
+	# 	count < 2
+	# }
 
 	module_count_limit = {
 		module = drop_tanks

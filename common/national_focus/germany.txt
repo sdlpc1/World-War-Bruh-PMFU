@@ -1,4 +1,5 @@
 #!gfx:interface\lw_goals.gfx
+#!gfx:interface\KR_goals.gfx
 #!gfx:interface\cic_goals.gfx
 #!gfx:interface\snek_teleport.gfx
 #!gfx:interface\replace\bruh_interface.gfx
@@ -1375,7 +1376,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_confiscate_romanian_oil
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_GER_romanian_oil
 		prerequisite = { focus = GER_align_romania }
 		x = -1
 		y = 3
@@ -1626,7 +1627,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_cas_air_effort2
-		icon = GFX_goal_generic_CAS
+		icon = GFX_cas
 		prerequisite = { focus = GER_cas_air_effort }
 		x = 0
 		y = 2
@@ -2358,7 +2359,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_abwehr
-		icon = GFX_goal_generic_defence
+		icon = GFX_GER_strengthen_die_abwehr
 		prerequisite = { focus = GER_rhineland }
 		x = -2
 		y = 1
@@ -2696,7 +2697,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_danzig_or_war
-		icon = GFX_GER_curtail_poland
+		icon = GFX_GER_danzig_or_war
 		prerequisite = { focus = GER_demand_memel }
 		prerequisite = { focus = GER_mol_rib_pact }
 		will_lead_to_war_with = POL
