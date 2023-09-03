@@ -342,22 +342,24 @@ on_actions = {
 				309 = { set_compliance = 20 }
 
 				# DEI - go to australia
-				transfer_state = 672
-				672 = { set_compliance = 20 }
-				transfer_state = 334
-				334 = { set_compliance = 20 }
-				transfer_state = 335
-				335 = { set_compliance = 20 }
-				transfer_state = 667
-				667 = { set_compliance = 20 }
-				transfer_state = 673
-				673 = { set_compliance = 20 }
-				transfer_state = 668
-				668 = { set_compliance = 20 }
-				transfer_state = 669
-				669 = { set_compliance = 20 }
-				transfer_state = 738
-				738 = { set_compliance = 20 }
+				AST = {
+					transfer_state = 672
+					672 = { set_compliance = 20 }
+					transfer_state = 334
+					334 = { set_compliance = 20 }
+					transfer_state = 335
+					335 = { set_compliance = 20 }
+					transfer_state = 667
+					667 = { set_compliance = 20 }
+					transfer_state = 673
+					673 = { set_compliance = 20 }
+					transfer_state = 668
+					668 = { set_compliance = 20 }
+					transfer_state = 669
+					669 = { set_compliance = 20 }
+					transfer_state = 738
+					738 = { set_compliance = 20 }
+				}
 				AST = { annex_country = { target = INS transfer_troops = yes } }
 
 				GER = {
@@ -1172,10 +1174,10 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = POR
-					FROM = { original_tag = SPA }
-					SPA = { NOT = { has_war_with = ENG } }
+					FROM = { original_tag = SPR }
+					SPR = { NOT = { has_war_with = ENG } }
 				}
-				SPA = {
+				SPR = {
 					annex_country = {
 						target = POR
 						transfer_troops = no
@@ -1186,7 +1188,7 @@ on_actions = {
 					limit = {
 						NOT = { SPA = { has_idea = peace_training } }
 					}
-					SPA = { add_ideas = peace_training }
+					SPR = { add_ideas = peace_training }
 				}
 			}
 		}

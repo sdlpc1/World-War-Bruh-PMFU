@@ -29,6 +29,7 @@ technologies = {
 			tank_horstmann_suspension
 			tank_torsion_bar_suspension
 			expanded_fuel_tank
+			tank_medium_turret_p3_early_1
 			tank_medium_turret_open_p3_early
 			tank_medium_superstructure_p3_early
 			tank_medium_open_superstructure_p3_early
@@ -246,6 +247,11 @@ technologies = {
 			cat_medium_armor
 			year_1936
 		}
+
+		on_research_complete = {
+			custom_effect_tooltip = p3_tooltip_tt
+		}
+		show_effect_as_desc = yes
 		
 		ai_will_do = {
 			factor = 0
@@ -269,6 +275,11 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 2 y = 2 }
 		}
+
+		on_research_complete = {
+			custom_effect_tooltip = p4_tooltip_tt
+		}
+		show_effect_as_desc = yes
 		
 		categories = {
 			armor
@@ -299,6 +310,11 @@ technologies = {
 			position = { x = -2 y = 8 }
 		}
 		
+		on_research_complete = {
+			custom_effect_tooltip = p3_ausf_e_tooltip_tt
+		}
+		show_effect_as_desc = yes
+
 		categories = {
 			armor
 			cat_medium_armor
@@ -327,6 +343,11 @@ technologies = {
 			name = ger_armour_folder
 			position = { x = 2 y = 8 }
 		}
+
+		on_research_complete = {
+			custom_effect_tooltip = p4_ausf_e_tooltip_tt
+		}
+		show_effect_as_desc = yes
 		
 		categories = {
 			armor

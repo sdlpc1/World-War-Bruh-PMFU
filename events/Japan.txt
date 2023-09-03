@@ -632,117 +632,117 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = japan.500
-	title = japan.500.t
-	desc = japan.500.d
-	picture = GFX_report_event_chinese_soldiers_02
+# country_event = {
+# 	id = japan.500
+# 	title = japan.500.t
+# 	desc = japan.500.d
+# 	picture = GFX_report_event_chinese_soldiers_02
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		tag = JAP
-		focus_progress = {
-			focus = JAP_strike_south_doctrine
-			progress > 0.25
-		}
-	}
+# 	trigger = {
+# 		tag = JAP
+# 		focus_progress = {
+# 			focus = JAP_strike_south_doctrine
+# 			progress > 0.25
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {
-		set_country_flag = JAP_siam1
-		name = japan.500.a
-		custom_effect_tooltip = japan.500.a_desc
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				SIA = { is_ai = no }
-			}
-		}
-	}
-	option = {
-		set_country_flag = JAP_siam2
-		name = japan.500.b
-		custom_effect_tooltip = japan.500.b_desc
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				SIA = { is_ai = yes }
-			}
-		}
-	}
-}
+# 	option = {
+# 		set_country_flag = JAP_siam1
+# 		name = japan.500.a
+# 		custom_effect_tooltip = japan.500.a_desc
+# 		ai_chance = {
+# 			factor = 1
+# 			modifier = {
+# 				factor = 0
+# 				SIA = { is_ai = no }
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		set_country_flag = JAP_siam2
+# 		name = japan.500.b
+# 		custom_effect_tooltip = japan.500.b_desc
+# 		ai_chance = {
+# 			factor = 1
+# 			modifier = {
+# 				factor = 0
+# 				SIA = { is_ai = yes }
+# 			}
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = japan.501
-	title = japan.501.t
-	desc = japan.501.d
-	picture = GFX_report_event_chinese_soldiers_02
+# country_event = {
+# 	id = japan.501
+# 	title = japan.501.t
+# 	desc = japan.501.d
+# 	picture = GFX_report_event_chinese_soldiers_02
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		tag = JAP
-		focus_progress = {
-			focus = JAP_strike_south_doctrine
-			progress > 0.25
-		}
-	}
+# 	trigger = {
+# 		tag = JAP
+# 		focus_progress = {
+# 			focus = JAP_strike_south_doctrine
+# 			progress > 0.25
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {
-		set_country_flag = JAP_army1
-		name = japan.501.a
-		custom_effect_tooltip = japan.501.a_desc
+# 	option = {
+# 		set_country_flag = JAP_army1
+# 		name = japan.501.a
+# 		custom_effect_tooltip = japan.501.a_desc
 		
-	}
-	option = {
-		set_country_flag = JAP_army2
-		name = japan.501.b
-		custom_effect_tooltip = japan.501.b_desc
-	}
-}
+# 	}
+# 	option = {
+# 		set_country_flag = JAP_army2
+# 		name = japan.501.b
+# 		custom_effect_tooltip = japan.501.b_desc
+# 	}
+# }
 
-country_event = {
-	id = japan.502
-	title = japan.502.t
-	desc = japan.502.d
-	picture = GFX_report_event_chinese_soldiers_02
+# country_event = {
+# 	id = japan.502
+# 	title = japan.502.t
+# 	desc = japan.502.d
+# 	picture = GFX_report_event_chinese_soldiers_02
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		tag = JAP
-		focus_progress = {
-			focus = JAP_strike_south_doctrine
-			progress > 0.5
-		}
-	}
+# 	trigger = {
+# 		tag = JAP
+# 		focus_progress = {
+# 			focus = JAP_strike_south_doctrine
+# 			progress > 0.5
+# 		}
+# 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
 
-	option = {
-		set_country_flag = JAP_buildup1
-		name = japan.502.a
-		custom_effect_tooltip = japan.502.a_desc
+# 	option = {
+# 		set_country_flag = JAP_buildup1
+# 		name = japan.502.a
+# 		custom_effect_tooltip = japan.502.a_desc
 		
-	}
-	option = {
-		set_country_flag = JAP_buildup2
-		name = japan.502.b
-		custom_effect_tooltip = japan.502.b_desc
-	}
-}
+# 	}
+# 	option = {
+# 		set_country_flag = JAP_buildup2
+# 		name = japan.502.b
+# 		custom_effect_tooltip = japan.502.b_desc
+# 	}
+# }
 
 # country_event = {
 # 	id = japan.503

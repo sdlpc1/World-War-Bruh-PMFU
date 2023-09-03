@@ -1,0 +1,131 @@
+
+scripted_gui = {
+
+	GER_EAST_OCCUPIED_NATIONS_Ui = {
+		context_type = decision_category
+		window_name = "GER_EAST_OCCUPIED_NATIONS_Ui_Window"
+		#context_type = player_context
+		
+		visible = {
+			GER = {
+		has_war_with = SOV
+				}
+			}
+		
+		triggers = {
+		BARB_BEL_visible = {
+			GER = {
+				AND = {
+				controls_state = 206
+				controls_state = 204
+				controls_state = 194
+				controls_state = 94
+				controls_state = 95
+				controls_state = 96
+				controls_state = 207
+				controls_state = 241
+				}
+			}
+		}
+		BARB_BES_visible = {
+			OR = {
+			GER = {
+				AND = {
+				controls_state = 766
+				controls_state = 78
+				}
+			}
+			ROM = {
+				AND = {
+				controls_state = 766
+				controls_state = 78
+				}
+			}
+			}
+		}
+		BARB_EST_visible = {
+			
+			GER = {
+				AND = {
+				controls_state = 813
+				controls_state = 191
+				controls_state = 812
+				controls_state = 13
+				}
+			}
+		}
+		BARB_LAT_visible = {
+			
+			GER = {
+				AND = {
+				controls_state = 810
+				controls_state = 809
+				controls_state = 808
+				controls_state = 190
+				controls_state = 12
+				}
+			}
+		}
+		BARB_LIT_visible = {
+			
+			GER = {
+				AND = {
+				controls_state = 11
+				controls_state = 815
+				controls_state = 814
+				controls_state = 189
+				controls_state = 815
+				}
+			}
+		}
+		BARB_UKR_visible = {
+			
+			200 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			226 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			196 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			259 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			197 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+		}
+			}
+		}
+	}

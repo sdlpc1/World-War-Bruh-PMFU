@@ -3488,7 +3488,7 @@ focus_tree = {
 			SIA = {
 				is_ai = yes
 			}
-			has_country_flag = JAP_siam1
+			# has_country_flag = JAP_siam1
 		}
 
 		completion_reward = {
@@ -3523,11 +3523,15 @@ focus_tree = {
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
-			has_country_flag = JAP_siam2
+			# has_country_flag = JAP_siam2
 		}
 
 		bypass = {
-			has_country_flag = JAP_siam2
+			# has_country_flag = JAP_siam2
+			is_in_faction_with = SIA
+			SIA = {
+				is_ai = no
+			}
 		}
 
 		completion_reward = {
@@ -3551,7 +3555,7 @@ focus_tree = {
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
-			has_country_flag = JAP_army1
+			# has_country_flag = JAP_army1
 		}
 
 		completion_reward = {
@@ -3576,7 +3580,7 @@ focus_tree = {
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
-			has_country_flag = JAP_army2
+			# has_country_flag = JAP_army2
 		}
 
 		completion_reward = {
@@ -3602,7 +3606,7 @@ focus_tree = {
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
-			has_country_flag = JAP_buildup1
+			# has_country_flag = JAP_buildup1
 		}
 
 		completion_reward = {
@@ -3650,7 +3654,7 @@ focus_tree = {
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
-			has_country_flag = JAP_buildup2
+			# has_country_flag = JAP_buildup2
 		}
 
 		completion_reward = {

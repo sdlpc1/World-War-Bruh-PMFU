@@ -28,7 +28,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 25 y = 800 }
+	continuous_focus_position = { x = 520 y = 550 }
 
 #	focus = {
 #		id = ROM_
@@ -109,7 +109,7 @@ focus_tree = {
 		id = ROM_a_deal_with_the_devil
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = -4
+		x = -8
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
@@ -183,7 +183,7 @@ focus_tree = {
 		id = ROM_trade_treaty_with_germany
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = -2
+		x = -6
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
@@ -409,8 +409,8 @@ focus_tree = {
 		id = ROM_national_humiliation
 		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = ROM_preserve_greater_romania }
-		# mutually_exclusive = { focus = ROM_expand_greater_romania }
-		x = 2
+		mutually_exclusive = { focus = ROM_expand_greater_romania }
+		x = -2
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
@@ -621,6 +621,272 @@ focus_tree = {
 			}
 			79 = {
 				add_extra_state_shared_building_slots = 6
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_expand_greater_romania
+		icon = GFX_goal_demand_sudetenland
+		relative_position_id = ROM_preserve_greater_romania
+		prerequisite = { focus = ROM_preserve_greater_romania }
+		mutually_exclusive = { focus = ROM_national_humiliation }
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 46
+			controls_state = 78
+			controls_state = 80
+			controls_state = 81
+			controls_state = 82
+			controls_state = 83
+			controls_state = 84
+			controls_state = 766
+
+
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			unlock_decision_tooltip = ROM_expand_greater_romania
+		}
+	}
+
+	focus = {
+		id = ROM_industrialise_transnistria
+		icon = GFX_focus_generic_industry_2
+		relative_position_id = ROM_expand_greater_romania
+		prerequisite = {
+			focus = ROM_expand_greater_romania
+		}
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_full_control_of_state = 192
+			has_full_control_of_state = 198
+			has_full_control_of_state = 834
+
+			192 = {
+					is_core_of = ROM
+			}
+			198 = {
+					is_core_of = ROM
+			}
+			834 = {
+					is_core_of = ROM
+			}
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+
+
+			192 = {			
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			198 = {			
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			834 = {			
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_continue_integration_efforts
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = ROM_expand_greater_romania
+		prerequisite = {
+			focus = ROM_expand_greater_romania
+		}
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_full_control_of_state= 192
+			has_full_control_of_state = 198
+			has_full_control_of_state = 834
+			
+			192 = {
+					is_core_of = ROM
+			}
+			198 = {
+					is_core_of = ROM
+			}
+			834 = {
+					is_core_of = ROM
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+
+
+			192 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				remove_dynamic_modifier = { modifier = ROM_unintegrated_territory }
+				add_dynamic_modifier = { modifier = ROM_ongoing_integration }
+
+			}
+			198 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				remove_dynamic_modifier = { modifier = ROM_unintegrated_territory }			
+				add_dynamic_modifier = { modifier = ROM_ongoing_integration }
+			}
+			834 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				remove_dynamic_modifier = { modifier = ROM_unintegrated_territory }
+				add_dynamic_modifier = { modifier = ROM_ongoing_integration }
+			}
+		}
+	}
+	
+	focus = {
+		id =  ROM_finalize_incorporation
+		icon = GFX_focus_ger_reichskommisariats
+		relative_position_id = ROM_industrialise_transnistria 
+		prerequisite = { focus = ROM_industrialise_transnistria }
+		prerequisite = { focus = ROM_continue_integration_efforts }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_full_control_of_state = 192
+			has_full_control_of_state = 198
+			has_full_control_of_state = 834
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+
+
+			192 = {
+				remove_dynamic_modifier = { modifier = ROM_ongoing_integration }
+				add_dynamic_modifier = { modifier = ROM_transnistria_governorate }
+			}
+			198 = {
+				remove_dynamic_modifier = { modifier = ROM_ongoing_integration }			
+				add_dynamic_modifier = { modifier = ROM_transnistria_governorate }
+				}
+			834 = {
+				remove_dynamic_modifier = { modifier = ROM_ongoing_integration }
+				add_dynamic_modifier = { modifier = ROM_transnistria_governorate }
 			}
 		}
 	}

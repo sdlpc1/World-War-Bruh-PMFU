@@ -1,0 +1,63 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "GER_EAST_OCCUPIED_NATIONS_Ui_Window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 600 }
+				#BACKGROUND
+				
+				
+				iconType = {
+					name ="GER_BARB_BASE"
+					spriteType = "GFX_GER_BARB_BASE"
+					position = { x=0 y=0 }
+				}
+				
+				##Belarus
+				iconType = {
+					name = "BARB_BEL"
+					spriteType = "GFX_BARB_BEL"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Bessarabia
+				iconType = {
+					name = "BARB_BES"
+					spriteType = "GFX_BARB_BES"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				##Estonia
+				iconType = {
+					name = "BARB_EST"
+					spriteType = "GFX_BARB_EST"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Latvia
+				iconType = {
+					name = "BARB_LAT"
+					spriteType = "GFX_BARB_LAT"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				##Lithuania
+				iconType = {
+					name = "BARB_LIT"
+					spriteType = "GFX_BARB_LIT"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Ukraine
+				iconType = {
+					name = "BARB_UKR"
+					spriteType = "GFX_BARB_UKR"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				
+	}
+}

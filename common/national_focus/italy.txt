@@ -707,7 +707,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_mining_effort
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_ITA_exploit_empire
 		prerequisite = { focus = ITA_economic_independence }
 		x = -3
 		y = 1
@@ -768,7 +768,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_steel_production
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_italy_bring_industry_to_the_mezzogiorno
 		prerequisite = { focus = ITA_elba_mines }
 		x = 0
 		y = 1
@@ -822,7 +822,7 @@ focus_tree = {
 	focus = {
 		id = ITA_focus_mil_expansion
 
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_ITA_fasci_e_corporazioni
 		
 		prerequisite = { focus = ITA_steel_production }		
 		
@@ -1961,7 +1961,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_railway_expansion
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_ita_via_balbia
 		prerequisite = { focus = ITA_highway_expansion }
 		x = 1
 		y = 1
@@ -2046,7 +2046,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_railway_expansion2
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_ita_develop_south #GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ITA_railway_expansion }
 		x = 0
 		y = 2
@@ -2167,7 +2167,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_light_industry
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_ITA_joint_industrial_dev #GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ITA_highway_expansion }
 		x = -1
 		y = 1
@@ -2320,7 +2320,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_heavy_industry
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_ita_statilize_iri
 		prerequisite = { focus = ITA_industry_nationalisation }
 		x = 0
 		y = 1
@@ -2573,7 +2573,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_pact_of_steel
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_focus_ITA_pact_of_steel
 		prerequisite = { focus = ITA_rome_berlin_axis }
 		x = 0
 		y = 2
@@ -3988,7 +3988,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_new_ncos
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_goal_ITA_new_NCOs
 		prerequisite = { focus = ITA_drain_the_swamp }
 		x = 4
 		y = 1
@@ -4047,7 +4047,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_new_army
-		icon = GFX_Vive_Italia
+		icon = GFX_goal_ITA_reformed_army #GFX_Vive_Italia
 		prerequisite = { focus = ITA_promote_messe }
 		prerequisite = { focus = ITA_general_staff }
 		x = -1
@@ -4126,7 +4126,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_new_artillery
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_goal_ITA_infantry_artillery_coordination
 		prerequisite = { focus = ITA_new_rifle }
 		x = 0
 		y = 1
@@ -4439,7 +4439,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_mobile_tanks
-		icon = GFX_focus_generic_license_production
+		icon = GFX_goal_ita_tank_focus
 		prerequisite = { focus = ITA_cavalry_modernisation }
 		x = -1
 		y = 1
@@ -4518,7 +4518,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_bersaglieri
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_goal_ITA_expand_rapido_corso
 		prerequisite = { focus = ITA_combined_arms }
 		x = 0
 		y = 1
@@ -4581,7 +4581,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_csir
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_focus_ITA_volunteers
 		prerequisite = { focus = ITA_bersaglieri focus = ITA_new_armour }
 		x = 0
 		y = 3
@@ -4627,7 +4627,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_armir
-		icon = GFX_focus_ITA_volunteers
+		icon = GFX_goal_ITA_reformed_army
 		prerequisite = { focus = ITA_eastern_experience }
 		x = 0
 		y = 1
@@ -4801,7 +4801,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_gunnery
-		icon = GFX_goal_navy_upgrade
+		icon = GFX_goal_ITA_new_gunnery_standards #GFX_goal_navy_upgrade
 		prerequisite = { focus = ITA_new_bb }
 		x = 0
 		y = 1
@@ -4922,7 +4922,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_sub_raiders
-		icon = GFX_goal_generic_navy_submarine
+		icon = GFX_goal_ITA_betasom #GFX_goal_generic_navy_submarine
 		prerequisite = { focus = ITA_green_water_navy focus = ITA_escape_the_cage }
 		x = 3
 		y = 1
@@ -4980,7 +4980,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_convoy_defence
-		icon = GFX_goal_generic_navy_cruiser
+		icon = GFX_goal_ITA_gabbiano
 		prerequisite = { focus = ITA_new_dd }
 		x = 0
 		y = 1
@@ -5093,7 +5093,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_fleet_air_arm
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_goal_ITA_project_gagnotto #GFX_goal_generic_navy_carrier
 		prerequisite = { focus = ITA_escape_the_cage }
 		x = 1
 		y = 1

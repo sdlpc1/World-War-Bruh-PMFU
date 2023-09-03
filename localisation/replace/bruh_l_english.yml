@@ -1498,11 +1498,13 @@ fifty_cas_dmg_reduction:0 "From focus"
 
  ### FUNNY 
  SOV_communism:0 "Union of Soviet Socialist Republics"
- SOV_communism_DEF:0 "the Union of Soviet Socialist Republics"
+ SOV_communism_DEF:0 "The Union of Soviet Socialist Republics"
  ENG_democratic:0 "United Kingdom of Great Britain and Northern Ireland"
- ENG_democratic_DEF:0 "the United Kingdom of Great Britain and Northern Ireland"
+ ENG_democratic_DEF:0 "The United Kingdom of Great Britain and Northern Ireland"
  ENG_ireland_annex:0 "United Kingdom of Great Britain and Ireland"
  ENG_ireland_annex_DEF:0 "The United Kingdom of Great Britain and Ireland"
+ USA_democratic:0 "United States of America"
+ USA_democratic_DEF:0 "The United States of America"
 
  artillery2:0 "Artillery II"
  artillery3:0 "Artillery III"

@@ -178,10 +178,10 @@ spriteTypes = {
 			name = "GFX_focus_ITA_oil"
 			texturefile = "gfx/interface/goals/ITA_oil.dds"
 		}
-		spriteType = {
-			name = "GFX_focus_ITA_pact_of_steel"
-			texturefile = "gfx/interface/goals/ITA_pact_of_steel.dds"
-		}
+		# spriteType = {
+		# 	name = "GFX_focus_ITA_pact_of_steel"
+		# 	texturefile = "gfx/interface/goals/ITA_pact_of_steel.dds"
+		# }
 		spriteType = {
 			name = "GFX_focus_ITA_trade_interdiction"
 			texturefile = "gfx/interface/goals/ITA_trade_interdiction.dds"

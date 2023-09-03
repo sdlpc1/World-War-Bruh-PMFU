@@ -9136,11 +9136,6 @@ spriteType = {
 	}
 
 	spriteType = {
-		name = "GFX_SOV_positive_heroism"
-		texturefile = "gfx/interface/goals/soviet/SOV_positive_heroism.dds"
-	}
-
-	spriteType = {
 		name = "GFX_SOV_red_army_reborn"
 		texturefile = "gfx/interface/goals/soviet/SOV_red_army_reborn.dds"
 	}
@@ -9416,11 +9411,6 @@ spriteType = {
 		name = "GFX_SOV_tractor_factories"
 		texturefile = "gfx/interface/goals/soviet/SOV_tractor_factories.dds"
 	}	
-
-	spriteType = {
-		name = "GFX_SOV_capitals_of_socialism"
-		texturefile = "gfx/interface/goals/soviet/SOV_capitals_of_socialism.dds"
-	}
 
 	spriteType = {
 		name = "GFX_SOV_cult_of_stalin"

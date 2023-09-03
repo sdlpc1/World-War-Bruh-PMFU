@@ -15,6 +15,9 @@
   ROM_expand_greater_romania_desc:0 "Romania grows even larger!"
   ROM_resita_75mm:0 "Develop The Resita 75mm AT Gun"
   ROM_resita_75mm_desc:0 "A comination of the ZiS-3 Soviet AT gun, the German PaK 40, and our very own 75mm Vickers Model 1936 AA gun, the Reșița Model 1943 has combined the firepower and piercing power of all three designs to create one of the greatest AT guns of the war."
+  ROM_industrialise_transnistria:0 "Industrialise Transnistria"
+  ROM_continue_integration_efforts:0 "Continue Integration Efforts"
+  ROM_finalize_incorporation:0 "Finalize Transnistria's Incorporation"
 
   #### IDEAS ####
   ROM_resita75:0 "Resita 75mm AT Gun"
@@ -38,3 +41,8 @@
   ROM_surrender_soviets:0 "Surrender to Soviets"
   ROM_victory_soviets:0 "Declare Victory Against Soviets"
   ROM_michaels_coup:0 "Romanian Ceasefire"
+
+  #### STATE MODIFIERS ####
+  ROM_unintegrated_territory:0 "Unintegrated Territory"
+  ROM_ongoing_integration:0 "Ongoing Integration"
+  ROM_transnistria_governorate:0 "Transnistria Governorate"

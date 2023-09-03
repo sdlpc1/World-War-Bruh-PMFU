@@ -30,7 +30,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_socialist_realism
-		icon = GFX_focus_generic_soviet_politics_1
+		icon = GFX_SOV_socialist_realism
 		x = 1
 		y = 0
 		cost = 3

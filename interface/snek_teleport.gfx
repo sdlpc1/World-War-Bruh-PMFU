@@ -1,5 +1,36 @@
 spriteTypes = {	
 
+	#######German Barb occupied nations
+	spriteType = {
+		name = "GFX_GER_BARB_BASE"
+		texturefile = "gfx/interface/BARB_GUI/BARB_BASE.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_BEL"
+		texturefile = "gfx/interface/BARB_GUI/BARB_BEL.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_BES"
+		texturefile = "gfx/interface/BARB_GUI/BARB_BES.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_EST"
+		texturefile = "gfx/interface/BARB_GUI/BARB_EST.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_LAT"
+		texturefile = "gfx/interface/BARB_GUI/BARB_LAT.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_LIT"
+		texturefile = "gfx/interface/BARB_GUI/BARB_LIT.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_UKR"
+		texturefile = "gfx/interface/BARB_GUI/BARB_UKR.dds"
+	}
+	#####
+
 	SpriteType = {
 		name = "GFX_idea_bop_imperial_japanese_army"
 		texturefile = "gfx/interface/bop/bop_JAP_IJA.dds"

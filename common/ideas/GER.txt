@@ -3870,6 +3870,7 @@ ideas = {
 				module_tank_light_turret_open_design_cost_factor = -1
 				module_tank_light_turret_open_large_design_cost_factor = -1
 				module_tank_light_superstructure_design_cost_factor = -1
+				module_tank_medium_turret_p3_early_1_design_cost_factor = -1
 				module_tank_light_open_superstructure_design_cost_factor = -1
 				module_tank_medium_turret_1_design_cost_factor = -1
 				module_tank_medium_turret_2_design_cost_factor = -1

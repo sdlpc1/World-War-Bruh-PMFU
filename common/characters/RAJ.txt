@@ -853,7 +853,7 @@ characters={
 		portraits={
 			army={
 				large="GFX_portrait_raj_thomas_wynford_rees"
-				small=GFX_portrait_raj_thomas_wynford_rees
+				small="gfx/interface/ideas/idea_ENG_william_slim.dds"
 			}
 		}
 		corps_commander={

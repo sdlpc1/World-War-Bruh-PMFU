@@ -986,7 +986,7 @@ technologies = {
 		heavy_anti_tank_brigade = {
 			hard_attack = 0.05
 		}
-		tech_air_damage_factor = -0.02
+		# tech_air_damage_factor = -0.02
 		
 		path = {
 			leads_to_tech = heavy_artillery_research2
@@ -1099,7 +1099,7 @@ technologies = {
 		heavy_anti_tank_brigade = {
 			hard_attack = 0.05
 		}
-		tech_air_damage_factor = -0.02
+		# tech_air_damage_factor = -0.02
 		
 		enable_equipment_modules = {
 		}
@@ -1217,7 +1217,7 @@ technologies = {
 		heavy_anti_tank_brigade = {
 			hard_attack = 0.1
 		}
-		tech_air_damage_factor = -0.02
+		# tech_air_damage_factor = -0.02
 		
 		path = {
 			leads_to_tech = heavy_artillery4
@@ -1267,7 +1267,7 @@ technologies = {
 		heavy_anti_tank_brigade = {
 			hard_attack = 0.1
 		}
-		tech_air_damage_factor = -0.02
+		# tech_air_damage_factor = -0.02
 
 		enable_equipment_modules = {
 			tank_heavy_gun_3

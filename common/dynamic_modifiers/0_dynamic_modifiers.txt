@@ -516,6 +516,26 @@ unplanned_offensive = {
 	local_org_regain = -0.5
 }
 
+ROM_unintegrated_territory = {
+	icon = GFX_idea_POL_disjointed_industry
+
+	production_speed_buildings_factor = -0.4
+	recruitable_population_factor = -0.8
+}
+
+ROM_ongoing_integration = {
+	icon = GFX_idea_generic_secret_police
+
+	recruitable_population_factor = -0.4
+}
+
+ROM_transnistria_governorate = {
+	icon = GFX_idea_ROM_iron_guard
+
+	production_speed_buildings_factor = 0.4
+	recruitable_population_factor = -0.2
+}
+
 
 ####
 #### SOVIET STATE MODIFIERS ####

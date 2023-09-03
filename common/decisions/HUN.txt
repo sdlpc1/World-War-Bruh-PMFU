@@ -66,17 +66,6 @@ operations = {
 						type = ger_light_tank_chassis_p35
 					}
 				}
-				AND = {
-					has_global_flag = DENIED_CZE
-					OR = {
-						HUN = { controls_state = 9 }
-						GER = { controls_state = 9 }
-					}
-					OR = {
-						HUN = { controls_state = 70 }
-						GER = { controls_state = 70 }
-					}
-				}
 			}
 		}
 		
