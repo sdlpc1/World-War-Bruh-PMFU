@@ -229,7 +229,7 @@ technologies = {
 	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
 	
-		equipment_conversion_speed = 0.4
+		equipment_conversion_speed = 0.1
 
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
@@ -270,7 +270,7 @@ technologies = {
 	
 	advanced_equipment_conversion = {
 		
-		equipment_conversion_speed = 0.8
+		equipment_conversion_speed = 0.1
 
 		research_cost = 1.5
 		start_year = 1942
