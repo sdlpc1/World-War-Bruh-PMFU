@@ -187,6 +187,7 @@ news_event = {
 					}
 				}
 				remove_ideas = SPA_death_before_surrender
+				# remove_ideas = disable_scorched_earth_spain
 				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
 				# if = {
 				# 	limit = {

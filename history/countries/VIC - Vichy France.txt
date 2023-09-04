@@ -139,7 +139,6 @@ add_ideas = {
 	# PACIFIC_COMMONWEALTH_controls_axis_original
 	volunteer_minimum_minor
 	peace_training
-	minors_no_air
 	no_grinding
 }
 

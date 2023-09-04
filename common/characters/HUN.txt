@@ -195,7 +195,7 @@ characters={
 		}
 		corps_commander={
 			traits={ bearer_of_artillery infantry_leader }
-			skill=3
+			skill=4
 			attack_skill=3
 			defense_skill=4
 			planning_skill=3

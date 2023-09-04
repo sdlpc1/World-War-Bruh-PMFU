@@ -730,6 +730,7 @@ country_event = {
 			transfer_state = 268
 			remove_ideas = FRA_defense_of_metropolitan_france
 			remove_ideas = FRA_cracks_in_the_army
+			add_ideas = FRA_capitulated
 		}
 	}
 	

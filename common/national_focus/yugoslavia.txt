@@ -2608,626 +2608,635 @@ focus_tree = {
 	######## AIR FORCE #########
 	############################
 
-	# focus = {
-	# 	id = YUG_modernize_the_air_force
-	# 	icon = GFX_goal_generic_air_doctrine
-	# 	x = 18
-	# 	y = 0
+	focus = {
+		id = YUG_modernize_the_air_force
+		icon = GFX_goal_generic_air_doctrine
+		x = 16
+		y = 7
 
-	# 	cost = 10
+		cost = 10
 
-	# 	ai_will_do = {
-	# 		factor = 60
-	# 		modifier = {
-	# 			factor = 1.2
-	# 			is_in_faction_with = GER
-	# 		}
-	# 	}
+		ai_will_do = {
+			factor = 60
+			modifier = {
+				factor = 1.2
+				is_in_faction_with = GER
+			}
+		}
 
-	# 	available = {
+		allow_branch = {
+			NOT = {
+				has_game_rule = {
+					rule = air_minors
+					option = DISABLED
+				}
+			}
+		}
 
-	# 	}
+		available = {
 
-	# 	bypass = {
+		}
 
-	# 	}
+		bypass = {
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	complete_tooltip = {
+		}
 
-	# 	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		complete_tooltip = {
 
-	# 	completion_reward = {
-	# 		add_doctrine_cost_reduction = {
-	# 			name = air_doc_bonus
-	# 			cost_reduction = 0.25
-	# 			uses = 1
-	# 			category = air_doctrine
-	# 		}
-	# 	}
-	# }
+		}
 
-	# focus = {
-	# 	id = YUG_local_developers
-	# 	icon = GFX_goal_generic_air_production
-	# 	prerequisite = { focus = YUG_modernize_the_air_force }
-	# 	mutually_exclusive = { focus = YUG_purchase_foreign }
-	# 	x = -2
-	# 	y = 1
-	# 	relative_position_id = YUG_modernize_the_air_force
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
 
-	# 	cost = 10
+	focus = {
+		id = YUG_local_developers
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = YUG_modernize_the_air_force }
+		mutually_exclusive = { focus = YUG_purchase_foreign }
+		x = -2
+		y = 1
+		relative_position_id = YUG_modernize_the_air_force
 
-	# 	ai_will_do = {
-	# 		factor = 60
-	# 	}
+		cost = 10
 
-	# 	available = {
+		ai_will_do = {
+			factor = 60
+		}
 
-	# 	}
+		available = {
 
-	# 	bypass = {
+		}
 
-	# 	}
+		bypass = {
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	complete_tooltip = {
+		}
 
-	# 	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		complete_tooltip = {
 
-	# 	completion_reward = {
-	# 		add_ideas = HUN_indigenous_designs #emergency fix
-	# 	}
-	# }
+		}
 
-	# focus = {
-	# 	id = YUG_ikarus
-	# 	icon = GFX_focus_YUG_ikarus
-	# 	prerequisite = { focus = YUG_local_developers }
-	# 	x = -2
-	# 	y = 1
-	# 	relative_position_id = YUG_local_developers
+		completion_reward = {
+			add_ideas = HUN_indigenous_designs #emergency fix
+		}
+	}
 
-	# 	cost = 10
+	focus = {
+		id = YUG_ikarus
+		icon = GFX_focus_YUG_ikarus
+		prerequisite = { focus = YUG_local_developers }
+		x = -2
+		y = 1
+		relative_position_id = YUG_local_developers
 
-	# 	ai_will_do = {
-	# 		factor = 50
-	# 	}
+		cost = 10
 
-	# 	available = {
+		ai_will_do = {
+			factor = 50
+		}
 
-	# 	}
+		available = {
 
-	# 	bypass = {
+		}
 
-	# 	}
+		bypass = {
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
-	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
-	# 	complete_tooltip = {
+		}
 
-	# 	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
 
-	# 	completion_reward = {
-	# 		custom_effect_tooltip = YUG_designer_tt
+		}
 
-	# 		random_owned_controlled_state = {
-	# 			prioritize = { 107 }
-	# 			limit = {
-	# 				ROOT = { has_full_control_of_state = PREV }
-	# 			}
-	# 			add_extra_state_shared_building_slots = 1
-	# 			add_building_construction = {
-	# 				type = arms_factory
-	# 				level = 1
-	# 				instant_build = yes
-	# 			}
-	# 		}
-	# 	}
-	# }
+		completion_reward = {
+			custom_effect_tooltip = YUG_designer_tt
 
-	# focus = {
-	# 	id = YUG_rogozarski
-	# 	icon = GFX_focus_YUG_rogozarski
-	# 	prerequisite = { focus = YUG_local_developers }
-	# 	x = 0
-	# 	y = 1
-	# 	relative_position_id = YUG_local_developers
+			random_owned_controlled_state = {
+				prioritize = { 107 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
 
-	# 	cost = 10
+	focus = {
+		id = YUG_rogozarski
+		icon = GFX_focus_YUG_rogozarski
+		prerequisite = { focus = YUG_local_developers }
+		x = 0
+		y = 1
+		relative_position_id = YUG_local_developers
 
-	# 	ai_will_do = {
-	# 		factor = 50
-	# 	}
+		cost = 10
 
-	# 	available = {
+		ai_will_do = {
+			factor = 50
+		}
 
-	# 	}
+		available = {
 
-	# 	bypass = {
+		}
 
-	# 	}
+		bypass = {
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
-	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
-	# 	complete_tooltip = {
+		}
 
-	# 	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
 
-	# 	completion_reward = {
-	# 		custom_effect_tooltip = YUG_designer_tt
-	# 		random_owned_controlled_state = {
-	# 			prioritize = { 107 }
-	# 			limit = {
-	# 				ROOT = { has_full_control_of_state = PREV }
-	# 			}
-	# 			add_extra_state_shared_building_slots = 1
-	# 			add_building_construction = {
-	# 				type = arms_factory
-	# 				level = 1
-	# 				instant_build = yes
-	# 			}
-	# 		}
-	# 	}
-	# }
+		}
 
-	# focus = {
-	# 	id = YUG_zmaj
-	# 	icon = GFX_focus_YUG_zmaj
-	# 	prerequisite = { focus = YUG_local_developers }
-	# 	x = 2
-	# 	y = 1
-	# 	relative_position_id = YUG_local_developers
+		completion_reward = {
+			custom_effect_tooltip = YUG_designer_tt
+			random_owned_controlled_state = {
+				prioritize = { 107 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
 
-	# 	cost = 10
+	focus = {
+		id = YUG_zmaj
+		icon = GFX_focus_YUG_zmaj
+		prerequisite = { focus = YUG_local_developers }
+		x = 2
+		y = 1
+		relative_position_id = YUG_local_developers
 
-	# 	ai_will_do = {
-	# 		factor = 50
-	# 	}
+		cost = 10
 
-	# 	available = {
+		ai_will_do = {
+			factor = 50
+		}
 
-	# 	}
+		available = {
 
-	# 	bypass = {
+		}
 
-	# 	}
+		bypass = {
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
-	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
-	# 	complete_tooltip = {
+		}
 
-	# 	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
 
-	# 	completion_reward = {
-	# 		custom_effect_tooltip = YUG_designer_tt
-	# 		random_owned_controlled_state = {
-	# 			prioritize = { 107 }
-	# 			limit = {
-	# 				ROOT = { has_full_control_of_state = PREV }
-	# 			}
-	# 			add_extra_state_shared_building_slots = 1
-	# 			add_building_construction = {
-	# 				type = arms_factory
-	# 				level = 1
-	# 				instant_build = yes
-	# 			}
-	# 		}
-	# 	}
-	# }
+		}
 
-	# focus = {
-	# 	id = YUG_the_ik_3
-	# 	icon = GFX_goal_generic_air_fighter2
-	# 	prerequisite = { focus = YUG_ikarus focus = YUG_rogozarski focus = YUG_zmaj }
-	# 	x = 0
-	# 	y = 2
-	# 	relative_position_id = YUG_local_developers
+		completion_reward = {
+			custom_effect_tooltip = YUG_designer_tt
+			random_owned_controlled_state = {
+				prioritize = { 107 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
 
-	# 	cost = 10
+	focus = {
+		id = YUG_the_ik_3
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = YUG_ikarus focus = YUG_rogozarski focus = YUG_zmaj }
+		x = 0
+		y = 2
+		relative_position_id = YUG_local_developers
 
-	# 	ai_will_do = {
-	# 		factor = 50
-	# 	}
+		cost = 10
 
-	# 	available = {
+		ai_will_do = {
+			factor = 50
+		}
 
-	# 	}
+		available = {
 
-	# 	bypass = {
+		}
 
-	# 	}
+		bypass = {
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	complete_tooltip = {
+		}
 
-	# 	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		complete_tooltip = {
 
-	# 	completion_reward = {
-	# 		add_tech_bonus = {
-	# 			name = YUG_the_ik_3
-	# 			bonus = 0.75
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_the_ik_3
+				bonus = 0.75
 				
-	# 			uses = 1
-	# 			category = light_fighter
-	# 		}
-	# 	}
-	# }
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
 
-	# focus = {
-	# 	id = YUG_heavy_fighter_project
-	# 	icon = GFX_goal_generic_air_fighter
-	# 	prerequisite = { focus = YUG_the_ik_3 }
-	# 	x = -1
-	# 	y = 3
-	# 	relative_position_id = YUG_local_developers
+	focus = {
+		id = YUG_heavy_fighter_project
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = YUG_the_ik_3 }
+		x = -1
+		y = 3
+		relative_position_id = YUG_local_developers
 
-	# 	cost = 10
+		cost = 10
 
-	# 	ai_will_do = {
-	# 		factor = 40
-	# 	}
+		ai_will_do = {
+			factor = 40
+		}
 
-	# 	available = {
+		available = {
 
-	# 	}
+		}
 
-	# 	bypass = {
+		bypass = {
 
-	# 	}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	complete_tooltip = {
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		complete_tooltip = {
 
-	# 	}
+		}
 
-	# 	completion_reward = {
-	# 		add_tech_bonus = {
-	# 			name = YUG_heavy_fighter_project
-	# 			bonus = 0.50
-	# 			uses = 1
-	# 			category = cat_heavy_fighter
-	# 		}
-	# 	}
-	# }
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_heavy_fighter_project
+				bonus = 0.50
+				uses = 1
+				category = cat_heavy_fighter
+			}
+		}
+	}
 
-	# focus = {
-	# 	id = YUG_bomber_project
-	# 	icon = GFX_goal_generic_air_bomber
-	# 	prerequisite = { focus = YUG_the_ik_3 }
-	# 	x = 1
-	# 	y = 3
-	# 	relative_position_id = YUG_local_developers
+	focus = {
+		id = YUG_bomber_project
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = YUG_the_ik_3 }
+		x = 1
+		y = 3
+		relative_position_id = YUG_local_developers
 
-	# 	cost = 10
+		cost = 10
 
-	# 	ai_will_do = {
-	# 		factor = 20
-	# 	}
+		ai_will_do = {
+			factor = 20
+		}
 
-	# 	available = {
+		available = {
 
-	# 	}
+		}
 
-	# 	bypass = {
+		bypass = {
 
-	# 	}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
-	# 	search_filters = { FOCUS_FILTER_RESEARCH }
-	# 	complete_tooltip = {
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		complete_tooltip = {
 
-	# 	}
+		}
 
-	# 	completion_reward = {
-	# 		add_tech_bonus = {
-	# 			name = YUG_bomber_project
-	# 			bonus = 0.50
-	# 			uses = 1
-	# 			category = tactical_bomber
-	# 		}
-	# 	}
-	# }
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_bomber_project
+				bonus = 0.50
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
 
-	# focus = {
-	# 	id = YUG_purchase_foreign
-	# 	icon = GFX_goal_generic_intelligence_exchange
-	# 	prerequisite = { focus = YUG_modernize_the_air_force }
-	# 	mutually_exclusive = { focus = YUG_local_developers }
-	# 	x = 2
-	# 	y = 1
-	# 	relative_position_id = YUG_modernize_the_air_force
+	focus = {
+		id = YUG_purchase_foreign
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = YUG_modernize_the_air_force }
+		mutually_exclusive = { focus = YUG_local_developers }
+		x = 2
+		y = 1
+		relative_position_id = YUG_modernize_the_air_force
 
-	# 	cost = 10
+		cost = 10
 
-	# 	ai_will_do = {
-	# 		factor = 60
-	# 	}
+		ai_will_do = {
+			factor = 60
+		}
 
-	# 	available = {
+		available = {
 
-	# 	}
+		}
 
-	# 	bypass = {
+		bypass = {
 
-	# 	}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-	# 	complete_tooltip = {
+		complete_tooltip = {
 
-	# 	}
+		}
 
-	# 	completion_reward = {
-	# 		if = {
-	# 			limit = {
-	# 				NOT = {
-	# 					has_war_with = GER
-	# 				}
-	# 			}
-	# 			GER = { country_event = DOD_yugoslavia.20 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				NOT = {
-	# 					has_war_with = ITA
-	# 				}
-	# 			}
-	# 			ITA = { country_event = DOD_yugoslavia.20 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				NOT = {
-	# 					has_war_with = ENG
-	# 				}
-	# 			}
-	# 			ENG = { country_event = DOD_yugoslavia.20 }
-	# 		}
-	# 		if = {
-	# 			limit = {
-	# 				NOT = {
-	# 					has_war_with = FRA
-	# 				}
-	# 			}
-	# 			FRA = { country_event = DOD_yugoslavia.20 }
-	# 		}
-	# 	}
-	# }
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = GER
+					}
+				}
+				GER = { country_event = DOD_yugoslavia.20 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = ITA
+					}
+				}
+				ITA = { country_event = DOD_yugoslavia.20 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = ENG
+					}
+				}
+				ENG = { country_event = DOD_yugoslavia.20 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = FRA
+					}
+				}
+				FRA = { country_event = DOD_yugoslavia.20 }
+			}
+		}
+	}
 
-	# focus = {
-	# 	id = YUG_license_production
-	# 	icon = GFX_focus_generic_license_production
-	# 	prerequisite = { focus = YUG_purchase_foreign }
-	# 	x = 0
-	# 	y = 1
-	# 	relative_position_id = YUG_purchase_foreign
+	focus = {
+		id = YUG_license_production
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = YUG_purchase_foreign }
+		x = 0
+		y = 1
+		relative_position_id = YUG_purchase_foreign
 
-	# 	cost = 10
+		cost = 10
 
-	# 	ai_will_do = {
-	# 		factor = 50
-	# 	}
+		ai_will_do = {
+			factor = 50
+		}
 
-	# 	available = {
+		available = {
 
-	# 	}
+		}
 
-	# 	bypass = {
+		bypass = {
 
-	# 	}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-	# 	complete_tooltip = {
+		complete_tooltip = {
 
-	# 	}
+		}
 
-	# 	completion_reward = {
-	# 		add_ideas = YUG_license_production
-	# 	}
-	# }
+		completion_reward = {
+			add_ideas = YUG_license_production
+		}
+	}
 
-	# focus = {
-	# 	id = YUG_fighter_license
-	# 	icon = GFX_goal_generic_air_fighter
-	# 	prerequisite = { focus = YUG_license_production }
-	# 	mutually_exclusive = { focus = YUG_bomber_license }
-	# 	x = -1
-	# 	y = 2
-	# 	relative_position_id = YUG_purchase_foreign
+	focus = {
+		id = YUG_fighter_license
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = YUG_license_production }
+		mutually_exclusive = { focus = YUG_bomber_license }
+		x = -1
+		y = 2
+		relative_position_id = YUG_purchase_foreign
 
-	# 	cost = 10
+		cost = 10
 
-	# 	ai_will_do = {
-	# 		factor = 50
-	# 	}
+		ai_will_do = {
+			factor = 50
+		}
 
-	# 	available = {
-	# 		NOT = {
-	# 			has_tech = fighter3
-	# 			has_tech = heavy_fighter3
-	# 		}
-	# 		OR = {
-	# 			GER = {
-	# 				custom_trigger_tooltip = {
-	# 					tooltip = fighter_tt
-	# 					OR = {
-	# 						is_available_fighter_YUG = yes
-	# 						is_available_heavy_fighter_YUG = yes
-	# 					}
-	# 				}
-	# 			}
-	# 			FRA = {
-	# 				custom_trigger_tooltip = {
-	# 					tooltip = fighter_tt
-	# 					OR = {
-	# 						is_available_fighter_YUG = yes
-	# 						is_available_heavy_fighter_YUG = yes
-	# 					}
-	# 				}
-	# 			}
-	# 			ITA = {
-	# 				custom_trigger_tooltip = {
-	# 					tooltip = fighter_tt
-	# 					OR = {
-	# 						is_available_fighter_YUG = yes
-	# 						is_available_heavy_fighter_YUG = yes
-	# 					}
-	# 				}
-	# 			}
-	# 			ENG = {
-	# 				custom_trigger_tooltip = {
-	# 					tooltip = fighter_tt
-	# 					OR = {
-	# 						is_available_fighter_YUG = yes
-	# 						is_available_heavy_fighter_YUG = yes
-	# 					}
-	# 				}
-	# 			}
-	# 			USA = {
-	# 				custom_trigger_tooltip = {
-	# 					tooltip = fighter_tt
-	# 					OR = {
-	# 						is_available_fighter_YUG = yes
-	# 						is_available_heavy_fighter_YUG = yes
-	# 					}
-	# 				}
-	# 			}
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_tech = fighter3
+				has_tech = heavy_fighter3
+			}
+			OR = {
+				GER = {
+					custom_trigger_tooltip = {
+						tooltip = fighter_tt
+						OR = {
+							is_available_fighter_YUG = yes
+							is_available_heavy_fighter_YUG = yes
+						}
+					}
+				}
+				FRA = {
+					custom_trigger_tooltip = {
+						tooltip = fighter_tt
+						OR = {
+							is_available_fighter_YUG = yes
+							is_available_heavy_fighter_YUG = yes
+						}
+					}
+				}
+				ITA = {
+					custom_trigger_tooltip = {
+						tooltip = fighter_tt
+						OR = {
+							is_available_fighter_YUG = yes
+							is_available_heavy_fighter_YUG = yes
+						}
+					}
+				}
+				ENG = {
+					custom_trigger_tooltip = {
+						tooltip = fighter_tt
+						OR = {
+							is_available_fighter_YUG = yes
+							is_available_heavy_fighter_YUG = yes
+						}
+					}
+				}
+				USA = {
+					custom_trigger_tooltip = {
+						tooltip = fighter_tt
+						OR = {
+							is_available_fighter_YUG = yes
+							is_available_heavy_fighter_YUG = yes
+						}
+					}
+				}
+			}
+		}
 
-	# 	bypass = {
+		bypass = {
 
-	# 	}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-	# 	complete_tooltip = {
+		complete_tooltip = {
 
-	# 	}
+		}
 
-	# 	completion_reward = {
-	# 		country_event = DOD_yugoslavia.150
-	# 	}
-	# }
+		completion_reward = {
+			country_event = DOD_yugoslavia.150
+		}
+	}
 
-	# focus = {
-	# 	id = YUG_bomber_license
-	# 	icon = GFX_goal_generic_air_bomber
-	# 	prerequisite = { focus = YUG_license_production }
-	# 	mutually_exclusive = { focus = YUG_fighter_license }
-	# 	x = 1
-	# 	y = 2
-	# 	relative_position_id = YUG_purchase_foreign
+	focus = {
+		id = YUG_bomber_license
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = YUG_license_production }
+		mutually_exclusive = { focus = YUG_fighter_license }
+		x = 1
+		y = 2
+		relative_position_id = YUG_purchase_foreign
 
-	# 	cost = 10
+		cost = 10
 
-	# 	ai_will_do = {
-	# 		factor = 25
-	# 	}
+		ai_will_do = {
+			factor = 25
+		}
 
 		
-	# 	available = {
-	# 		NOT = {
-	# 			has_tech = CAS3
-	# 			has_tech = tactical_bomber3
-	# 		}
-	# 		OR = {
-	# 			GER = {
-	# 				custom_trigger_tooltip = {
-	# 					tooltip = bomber_tt
-	# 					OR = {
-	# 						is_available_cas_YUG = yes
-	# 						is_available_tac_YUG = yes
-	# 					}
-	# 				}
-	# 			}
-	# 			FRA = {
-	# 				custom_trigger_tooltip = {
-	# 					tooltip = bomber_tt
-	# 					OR = {
-	# 						is_available_cas_YUG = yes
-	# 						is_available_tac_YUG = yes
-	# 					}
-	# 				}
-	# 			}
-	# 			ITA = {
-	# 				custom_trigger_tooltip = {
-	# 					tooltip = bomber_tt
-	# 					OR = {
-	# 						is_available_cas_YUG = yes
-	# 						is_available_tac_YUG = yes
-	# 					}
-	# 				}
-	# 			}
-	# 			ENG = {
-	# 				custom_trigger_tooltip = {
-	# 					tooltip = bomber_tt
-	# 					OR = {
-	# 						is_available_cas_YUG = yes
-	# 						is_available_tac_YUG = yes
-	# 					}
-	# 				}
-	# 			}
-	# 			USA = {
-	# 				custom_trigger_tooltip = {
-	# 					tooltip = bomber_tt
-	# 					OR = {
-	# 						is_available_cas_YUG = yes
-	# 						is_available_tac_YUG = yes
-	# 					}
-	# 				}
-	# 			}
-	# 		}
-	# 	}
+		available = {
+			NOT = {
+				has_tech = CAS3
+				has_tech = tactical_bomber3
+			}
+			OR = {
+				GER = {
+					custom_trigger_tooltip = {
+						tooltip = bomber_tt
+						OR = {
+							is_available_cas_YUG = yes
+							is_available_tac_YUG = yes
+						}
+					}
+				}
+				FRA = {
+					custom_trigger_tooltip = {
+						tooltip = bomber_tt
+						OR = {
+							is_available_cas_YUG = yes
+							is_available_tac_YUG = yes
+						}
+					}
+				}
+				ITA = {
+					custom_trigger_tooltip = {
+						tooltip = bomber_tt
+						OR = {
+							is_available_cas_YUG = yes
+							is_available_tac_YUG = yes
+						}
+					}
+				}
+				ENG = {
+					custom_trigger_tooltip = {
+						tooltip = bomber_tt
+						OR = {
+							is_available_cas_YUG = yes
+							is_available_tac_YUG = yes
+						}
+					}
+				}
+				USA = {
+					custom_trigger_tooltip = {
+						tooltip = bomber_tt
+						OR = {
+							is_available_cas_YUG = yes
+							is_available_tac_YUG = yes
+						}
+					}
+				}
+			}
+		}
 		
 
-	# 	bypass = {
+		bypass = {
 
-	# 	}
+		}
 
-	# 	cancel_if_invalid = yes
-	# 	continue_if_invalid = no
-	# 	available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-	# 	complete_tooltip = {
+		complete_tooltip = {
 
-	# 	}
+		}
 
-	# 	completion_reward = {
-	# 		country_event = DOD_yugoslavia.160
-	# 	}
-	# }
+		completion_reward = {
+			country_event = DOD_yugoslavia.160
+		}
+	}
 
-	############################
-	######## LAND FORCE ########
-	############################
+	###########################
+	####### LAND FORCE ########
+	###########################
 
 	# focus = {
 	# 	id = YUG_army_modernization

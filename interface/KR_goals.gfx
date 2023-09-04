@@ -8135,65 +8135,65 @@ spriteType = {
 		texturefile = "gfx/interface/goals/GER/GER_anschluss_icon.tga"
 	}
 
-	SpriteType = {
-		name = "GFX_GER_demand_sudetenland"
-		texturefile = "gfx/interface/goals/GER/GER_demand_sudetenland_icon.tga"
-	}
+	# SpriteType = {
+	# 	name = "GFX_GER_demand_sudetenland"
+	# 	texturefile = "gfx/interface/goals/GER/GER_demand_sudetenland_icon.tga"
+	# }
 
-	SpriteType = {
-		name = "GFX_GER_first_vienna_award"
-		texturefile = "gfx/interface/goals/GER/GER_first_vienna_award_icon.tga"
-	}
+	# SpriteType = {
+	# 	name = "GFX_GER_first_vienna_award"
+	# 	texturefile = "gfx/interface/goals/GER/GER_first_vienna_award_icon.tga"
+	# }
 
-	SpriteType = {
-		name = "GFX_GER_second_vienna_award"
-		texturefile = "gfx/interface/goals/GER/GER_second_vienna_award_icon.tga"
-	}
+	# SpriteType = {
+	# 	name = "GFX_GER_second_vienna_award"
+	# 	texturefile = "gfx/interface/goals/GER/GER_second_vienna_award_icon.tga"
+	# }
 
-	SpriteType = {
-		name = "GFX_GER_end_of_czechoslovakia"
-		texturefile = "gfx/interface/goals/GER/GER_end_of_czechoslovakia_icon.tga"
-	}
+	# SpriteType = {
+	# 	name = "GFX_GER_end_of_czechoslovakia"
+	# 	texturefile = "gfx/interface/goals/GER/GER_end_of_czechoslovakia_icon.tga"
+	# }
 
-	SpriteType = {
-		name = "GFX_GER_demand_memel"
-		texturefile = "gfx/interface/goals/GER/GER_eastern_claims_icon.tga"
-	}
+	# SpriteType = {
+	# 	name = "GFX_GER_demand_memel"
+	# 	texturefile = "gfx/interface/goals/GER/GER_eastern_claims_icon.tga"
+	# }
 
 	SpriteType = {
 		name = "GFX_GER_danzig_or_war"
 		texturefile = "gfx/interface/goals/GER/GER_danzig_or_war_icon.tga"
 	}
 
-	SpriteType = {
-		name = "GFX_GER_mol_rib_pact"
-		texturefile = "gfx/interface/goals/GER/GER_molotov_ribbentrop_pact_icon.tga"
-	}
+	# SpriteType = {
+	# 	name = "GFX_GER_mol_rib_pact"
+	# 	texturefile = "gfx/interface/goals/GER/GER_molotov_ribbentrop_pact_icon.tga"
+	# }
 
 	SpriteType = {
 		name = "GFX_GER_ussr_war_goal"
 		texturefile = "gfx/interface/goals/GER/GER_barbarossa_icon.tga"
 	}
 
-	SpriteType = {
-		name = "GFX_GER_around_maginot"
-		texturefile = "gfx/interface/goals/GER/GER_around_maginot_icon.tga"
-	}
+	# SpriteType = {
+	# 	name = "GFX_GER_around_maginot"
+	# 	texturefile = "gfx/interface/goals/GER/GER_around_maginot_icon.tga"
+	# }
 
 
 	SpriteType = {
 		name = "GFX_GER_romanian_oil"
 		texturefile = "gfx/interface/goals/GER/GER_romanian_oil_icon.tga"
 	}
-	SpriteType = {
-		name = "GFX_GER_weserubung"
-		texturefile = "gfx/interface/goals/GER/GER_wesereberung_icon.tga"
-	}
+	# SpriteType = {
+	# 	name = "GFX_GER_weserubung"
+	# 	texturefile = "gfx/interface/goals/GER/GER_wesereberung_icon.tga"
+	# }
 
-	SpriteType = {
-		name = "GFX_GER_mol_rib_pact"
-		texturefile = "gfx/interface/goals/GER/GER_molotov_ribbentrop_pact_icon.tga"
-	}
+	# SpriteType = {
+	# 	name = "GFX_GER_mol_rib_pact"
+	# 	texturefile = "gfx/interface/goals/GER/GER_molotov_ribbentrop_pact_icon.tga"
+	# }
 
 	SpriteType = {
 		name = "GFX_ENG_the_queen_of_the_desert"

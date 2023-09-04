@@ -39,6 +39,32 @@ navy_cap = {
 	}
 }
 
+air_minors = {
+	name = "RULE_AIR_MINORS"
+	group = "RULE_GROUP_TFB"
+	
+	default = {
+		name = "DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_OPTION_RULE_AIR_MINORS_DISABLED_DESC"
+	}
+	option = {
+		name = "ALLOW_FIGHTERS"
+		text = "RULE_OPTION_ALLOW_FIGHTERS"
+		desc = "RULE_OPTION_RULE_AIR_MINORS_ALLOW_FIGHTERS_DESC"
+	}
+	option = {
+		name = "ALLOW_FIGHTERS_LIGHT_AIRCRAFT"
+		text = "RULE_OPTION_ALLOW_FIGHTERS_LIGHT_AIRCRAFT"
+		desc = "RULE_OPTION_RULE_AIR_MINORS_ALLOW_FIGHTERS_LIGHT_AIRCRAFT_DESC"
+	}
+	option = {
+		name = "ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_OPTION_RULE_AIR_MINORS_ENABLED_DESC"
+	}
+}
+
 assault_gun = {
 	name = "RULE_ASSAULT_GUNS"
 	group = "RULE_GROUP_TFB"

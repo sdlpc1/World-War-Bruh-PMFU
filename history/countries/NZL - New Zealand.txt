@@ -103,7 +103,6 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_original
 	father_check
 	peace_training
-	minors_no_air
 	no_grinding
 	PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
 	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1

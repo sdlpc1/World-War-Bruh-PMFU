@@ -2824,7 +2824,12 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			always = no
+			NOT = {
+				has_game_rule = {
+					rule = air_minors
+					option = DISABLED
+				}
+			}
 		}
 
 		available = {
@@ -3325,6 +3330,19 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 23
 		y = 0
+
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
 
 		cost = 5
 

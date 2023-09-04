@@ -60,6 +60,46 @@ defined_text = { # global
 }
 
 defined_text = { # global
+	name = air_minors_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = ALLOW_FIGHTERS
+			}
+		}
+		localization_key = RULE_OPTION_ALLOW_FIGHTERS
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = ALLOW_FIGHTERS_LIGHT_AIRCRAFT
+			}
+		}
+		localization_key = RULE_OPTION_ALLOW_FIGHTERS_LIGHT_AIRCRAFT
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+}
+
+defined_text = { # global
 	name = china_war_rule_sl
 	text = {
 		trigger = {

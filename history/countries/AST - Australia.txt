@@ -126,7 +126,6 @@ add_ideas = {
 	ASN_ALLIES_the_sun_never_sets_idea_1
 	PACIFIC_COMMONWEALTH_controls_original
 	peace_training
-	minors_no_air
 	no_grinding
 	PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
 	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1

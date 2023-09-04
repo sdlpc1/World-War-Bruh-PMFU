@@ -473,7 +473,7 @@ focus_tree = {
 	focus = {
 		id = NZL_expand_the_nzpaf
 		icon = GFX_goal_generic_air_doctrine
-		x = 18
+		x = 16
 		y = 0
 
 		cost = 10
@@ -483,7 +483,12 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			always = no
+			NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
 		}
 
 		available = {
@@ -801,6 +806,19 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 17
 		y = 0
+
+		offset = {
+			x = 3
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
 
 		cost = 5
 
@@ -1313,6 +1331,19 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		x = 23
 		y = 0
+
+		offset = {
+			x = 3
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
 
 		cost = 5
 

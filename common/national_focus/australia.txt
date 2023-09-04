@@ -837,7 +837,7 @@ focus_tree = {
 	focus = {
 		id = AST_expand_the_raaf
 		icon = GFX_goal_generic_build_airforce
-		x = 12
+		x = 15
 		y = 0
 		cost = 10
 
@@ -854,7 +854,12 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			always = no
+			NOT = {
+				has_game_rule = {
+					rule = air_minors
+					option = DISABLED
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1848,6 +1853,19 @@ focus_tree = {
 		x = 14
 		y = 0
 
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
+
 		cost = 5
 
 		ai_will_do = {
@@ -2450,8 +2468,21 @@ focus_tree = {
 	focus = {
 		id = AST_establish_advisory_war_council
 		icon = GFX_goal_generic_demand_territory
-		x = 22
+		x = 23
 		y = 0
+
+		offset = {
+			x = 3
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
 
 		cost = 10
 
@@ -2988,8 +3019,21 @@ focus_tree = {
 	focus = {
 		id = AST_support_the_policy_of_appeasement
 		icon = GFX_goal_generic_improve_relations
-		x = 27
+		x = 28
 		y = 0
+
+		offset = {
+			x = 3
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
 
 		cost = 10
 

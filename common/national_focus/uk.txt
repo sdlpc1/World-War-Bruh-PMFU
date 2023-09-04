@@ -2668,6 +2668,11 @@ focus_tree = {
 					level = 5
 					instant_build = yes
 				}
+				set_building_level = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}

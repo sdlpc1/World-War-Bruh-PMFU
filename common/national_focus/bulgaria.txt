@@ -382,6 +382,19 @@ focus_tree = {
 		x = 22
 		y = 0
 
+		offset = {
+			x = 2
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
+
 		cost = 5
 
 		ai_will_do = {
@@ -401,6 +414,20 @@ focus_tree = {
 		prerequisite = { focus = BUL_armed_forces }
 		x = -2
 		y = 1
+
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
+
 		relative_position_id = BUL_armed_forces
 
 		cost = 10
@@ -668,7 +695,12 @@ focus_tree = {
 		cost = 10
 
 		allow_branch = {
-			always = no
+			NOT = {
+				has_game_rule = {
+					rule = air_minors
+					option = DISABLED
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -741,6 +773,20 @@ focus_tree = {
 		prerequisite = { focus = BUL_armed_forces }
 		x = 2
 		y = 1
+
+		offset = {
+			x = 2
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
+
 		relative_position_id = BUL_armed_forces
 
 		cost = 10

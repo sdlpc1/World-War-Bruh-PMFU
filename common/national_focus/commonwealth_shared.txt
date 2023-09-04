@@ -18,37 +18,92 @@ shared_focus = {
 	x = 40
 	y = 0
 	offset = {
-		x = -10
+		x = -6
 		y = 0
 		trigger = {
 			tag = CAN
 		}
 	}
 	offset = {
-		x = -6
+		x = -4
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
+			tag = CAN
+		}
+	}
+	offset = {
+		x = -2
 		y = 0
 		trigger = {
 			tag = AST
 		}
 	}
 	offset = {
-		x = -10
+		x = -3
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
+			tag = AST
+		}
+	}
+	offset = {
+		x = -6
 		y = 0
 		trigger = {
 			tag = NZL
 		}
 	}
 	offset = {
-		x = -9
+		x = -4
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
+			tag = NZL
+		}
+	}
+	offset = {
+		x = -5
 		y = 0
 		trigger = {
 			tag = SAF
 		}
 	}
 	offset = {
-		x = -9
+		x = -4
 		y = 0
 		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
+			tag = SAF
+		}
+	}
+	offset = {
+		x = -7
+		y = 0
+		trigger = {
+			tag = RAJ
+		}
+	}
+	offset = {
+		x = -3
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = air_minors
+				option = DISABLED
+			}
 			tag = RAJ
 		}
 	}

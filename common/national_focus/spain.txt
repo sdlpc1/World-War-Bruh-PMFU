@@ -2348,8 +2348,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = SPR_iberian_wall_tt
-			hidden_effect = {
-				every_owned_state = {
+			every_owned_state = {
 					limit = {
 						is_coastal = yes
 						is_core_of = ROOT
@@ -2373,8 +2372,36 @@ focus_tree = {
 						level = 4
 						instant_build = yes
 					}
+					add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
 				}
-			}
+				every_state = {
+					limit = {
+						OR = {
+							state = 179
+							state = 112
+							state = 180
+						}
+					}
+					set_building_level  = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						level = 3
+						instant_build = yes
+					}
+					set_building_level  = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_naval_base = yes
+						}
+						level = 4
+						instant_build = yes
+					}
+					add_dynamic_modifier = { modifier = DDAY_WALL_ENTRENCHMENT }
+				}
 		}
 	}
 

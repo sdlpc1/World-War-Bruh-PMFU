@@ -1221,9 +1221,9 @@ leader_traits = {
 		corps_commander_modifier = {
 			max_commander_army_size = 210
 		}
-		non_shared_modifier = {
-			experience_gain_factor = -0.50
-		}
+		# non_shared_modifier = {
+		# 	experience_gain_factor = -0.50
+		# }
 		
 		ai_will_do = {
 			factor = 1

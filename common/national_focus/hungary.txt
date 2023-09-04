@@ -1981,6 +1981,19 @@ focus_tree = {
 
 		cost = 5
 
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
+
 		ai_will_do = {
 			factor = 80
 		}
@@ -2119,7 +2132,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = HUN_war_games }
 		x = -5
-		y = 3
+		y = 2
 		relative_position_id = HUN_secret_rearmament
 
 		cost = 5
@@ -2129,7 +2142,12 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			always = no
+			NOT = {
+				has_game_rule = {
+					rule = air_minors
+					option = DISABLED
+				}
+			}
 		}
 
 		available = {
@@ -2163,9 +2181,8 @@ focus_tree = {
 		id = HUN_indigenous_designs
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = HUN_establish_the_air_force }
-		prerequisite = { focus = HUN_boost_hungarian_aviation_industry }
-		x = -2
-		y = 4
+		x = 0
+		y = 3
 		relative_position_id = HUN_establish_the_air_force
 
 		cost = 5
@@ -2175,7 +2192,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			has_completed_focus = HUN_boost_hungarian_aviation_industry
 		}
 
 		bypass = {
@@ -2572,7 +2589,7 @@ focus_tree = {
 		id = HUN_joint_air_development
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = HUN_establish_the_air_force }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = HUN_establish_the_air_force
 
@@ -2620,6 +2637,19 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = HUN_war_games
+
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
 
 		cost = 5
 

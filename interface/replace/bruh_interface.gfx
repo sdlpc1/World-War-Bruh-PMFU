@@ -1407,6 +1407,12 @@ spriteTypes = {
 		name = "GFX_mot_anti_air_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/tanks/usa/usa_mech_aa.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_mot_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_mech_aa.dds"
+	}
+	
 	
 	SpriteType = {
 		name = "GFX_armored_car_aa_equipment_medium"

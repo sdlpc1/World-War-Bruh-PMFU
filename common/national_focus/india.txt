@@ -1853,6 +1853,301 @@ focus_tree = {
 		}
 	}
 
+	############################
+	######## AIR SECTION #######
+	############################
+
+	focus = {
+		id = RAJ_british_pilot_training
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = RAJ_lessons_of_the_great_war }
+		x = 7
+		y = 1
+		relative_position_id = RAJ_lessons_of_the_great_war
+
+		allow_branch = {
+			NOT = {
+				has_game_rule = {
+					rule = air_minors
+					option = DISABLED
+				}
+			}
+		}
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		NOT = { is_in_faction_with = ENG }
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			air_experience = 25
+			add_doctrine_cost_reduction = {
+				name = RAJ_british_pilot_training
+				cost_reduction = 0.40
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_expand_air_bases
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = RAJ_british_pilot_training }
+		x = 0
+		y = 1
+		relative_position_id = RAJ_british_pilot_training
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = RAJ_expand_air_bases_AB1
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = RAJ_expand_air_bases_AB2
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 438 439 431 435 445 442 }
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = RAJ_expand_air_bases_AB1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 438 439 431 435 445 442 }
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = RAJ_expand_air_bases_AB2
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_air_support_effort
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = RAJ_expand_air_bases }
+		x = -1
+		y = 2
+		relative_position_id = RAJ_british_pilot_training
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {			
+			add_tech_bonus = {
+				name = RAJ_air_support_effort
+				bonus = 0.75
+				uses = 1
+				category = tactical_bomber
+				category = cas_bomber
+				category = naval_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_fighter_effort
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = RAJ_expand_air_bases }
+		x = 1
+		y = 2
+		relative_position_id = RAJ_british_pilot_training
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_fighter_effort
+				bonus = 0.75
+				uses = 1
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_royal_indian_air_force
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = RAJ_air_support_effort focus = RAJ_fighter_effort }
+		x = 0
+		y = 3
+		relative_position_id = RAJ_british_pilot_training
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			air_experience = 25
+			add_doctrine_cost_reduction = {
+				name = RAJ_royal_indian_air_force
+				cost_reduction = 0.40
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	# focus = {
+	# 	id = RAJ_the_smiling_buddha
+	# 	icon = GFX_focus_smiling_buddha
+	# 	prerequisite = { focus = RAJ_royal_indian_air_force }
+	# 	prerequisite = { focus = RAJ_institute_of_fundamental_research }
+	# 	x = 0
+	# 	y = 4
+	# 	relative_position_id = RAJ_british_pilot_training
+
+	# 	cost = 5
+
+	# 	ai_will_do = {
+	# 		factor = 50
+	# 	}
+
+	# 	available = {
+	# 		if = {
+	# 			limit = { NOT = { has_government = fascism } }
+	# 			compare_autonomy_state > autonomy_colony
+	# 		}
+	# 		if = {
+	# 			limit = { has_government = fascism }
+	# 			compare_autonomy_state > autonomy_reichsprotectorate
+	# 		}
+	# 	}
+
+	# 	bypass = {
+
+	# 	}
+
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = RAJ_the_smiling_buddha
+	# 			bonus = 0.75
+	# 			uses = 1
+	# 			category = nuclear
+	# 		}
+	# 	}
+	# }
+
 	############################################################################################
 	### Industry tree ##########################################################################
 	############################################################################################

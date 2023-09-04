@@ -2210,7 +2210,7 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 30
+		x = 28
 		y = 0
 
 		cost = 10
@@ -2220,7 +2220,12 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			always = no
+			NOT = {
+				has_game_rule = {
+					rule = air_minors
+					option = DISABLED
+				}
+			}
 		}
 
 		available = {
@@ -2738,8 +2743,8 @@ focus_tree = {
 		id = ROM_heavy_bombers
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = ROM_strategic_bomber_force }
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = ROM_strategic_bomber_force
 
 		cost = 10
@@ -2774,8 +2779,8 @@ focus_tree = {
 		id = ROM_nuclear_bomb_project
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = ROM_heavy_bombers }
-		x = 1
-		y = 2
+		x = 0
+		y = 3
 		relative_position_id = ROM_strategic_bomber_force
 
 		cost = 10
@@ -3438,6 +3443,19 @@ focus_tree = {
 		icon = GFX_ROM_expand_the_galati_shipyards
 		x = 27
 		y = 0
+
+		offset = {
+			x = 8
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
 
 		cost = 5
 

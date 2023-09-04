@@ -39,7 +39,6 @@ if = {
 		HUN_hussar_legacy
 		volunteer_minimum_minor
 		peace_training
-		minors_no_air
 		no_grinding
 		AFRICA_COMMONWEALTH_controls_axis_idea_6
 	}

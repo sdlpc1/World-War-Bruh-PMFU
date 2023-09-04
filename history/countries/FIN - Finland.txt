@@ -23,7 +23,6 @@ add_ideas = {
 	sisu
 	# PACIFIC_COMMONWEALTH_controls_axis_original
 	peace_training
-	minors_no_air
 	no_grinding
 	FIN_counter_intel
 }

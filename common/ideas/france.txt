@@ -2,6 +2,23 @@ ideas = {
 
 	country = {
 		
+		FRA_capitulated = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_undividable
+
+			modifier = {
+				# surrender_limit = 1
+				# max_surrender_limit_offset = 1
+				forced_surrender_limit = 1
+			}
+		}
+
 		FRA_defense_of_metropolitan_france = {
 
 			allowed = {

@@ -1888,7 +1888,12 @@ focus_tree = {
 		}
 
 		allow_branch = {
-			always = no
+			NOT = {
+				has_game_rule = {
+					rule = air_minors
+					option = DISABLED
+				}
+			}
 		}
 
 		available = {
@@ -2191,6 +2196,19 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 24
 		y = 0		
+
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				NOT = {
+					has_game_rule = {
+						rule = air_minors
+						option = DISABLED
+					}
+				}
+			}
+		}
 
 		cost = 5
 

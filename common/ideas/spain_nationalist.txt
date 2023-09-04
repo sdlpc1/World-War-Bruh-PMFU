@@ -2,6 +2,25 @@ ideas = {
 
 	country = {
 		
+		# disable_scorched_earth_spain = {
+       		
+		# 	picture = generic_morale_bonus
+			
+		# 	allowed = {
+		# 		original_tag = SPR
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+
+		# 	removal_cost = -1
+
+        # 	modifiers = {
+        #     	scorched_earth_damage = -99
+        # 	}
+		# }
+
 		SPA_SCW_axis_victory = {
 
 			picture = generic_morale_bonus
@@ -13,6 +32,8 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+
+			removal_cost = -1
 
 			modifier = { 
 				consumer_goods_factor = -0.025
@@ -35,6 +56,8 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+
+			removal_cost = -1
 
 			modifier = { 
 					compliance_gain = 0.05

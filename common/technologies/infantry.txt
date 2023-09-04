@@ -1681,7 +1681,7 @@ technologies = {
 		}
 	
 		research_cost = 1
-		start_year = 1936
+		start_year = 1938
 		
 		sub_tech_index = 2
 		
@@ -1691,7 +1691,7 @@ technologies = {
 		
 		categories = {
 			mot_rockets
-			year_1936
+			year_1938
 		}
 	}
 
@@ -1768,7 +1768,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1940
 		
-		sub_tech_index = 2
+		sub_tech_index = 1
 		
 		ai_will_do = {
 			factor = 1
@@ -1912,9 +1912,35 @@ technologies = {
 			cat_mechanized_equipment
 			year_1942
 		}
+
+		sub_technologies = {
+			mechanised_anti_air_2
+		}
 		
 		ai_will_do = {
 			factor = 1
+		}
+	}
+
+	mechanised_anti_air_2 = {
+
+		enable_equipments = {
+			mot_anti_air_equipment_3
+		}
+	
+		research_cost = 1
+		start_year = 1942
+		
+		sub_tech_index = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			mot_rockets
+			cat_mechanized_equipment
+			year_1942
 		}
 	}
 	

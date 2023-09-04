@@ -77,7 +77,6 @@ if = {
 add_ideas = neutrality_idea
 # add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
 add_ideas = peace_training
-add_ideas = minors_no_air
 add_ideas = no_grinding
 
 
